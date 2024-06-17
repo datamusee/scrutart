@@ -1,0 +1,167 @@
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Munch%20-%20Ebba%20Ridderstad%2C%201935%2C%20MM.M.00615.jpg" alt="" /></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p><em>Note: les chiffres de ce billet correspondent à la situation du 2024-01-29</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Je vais faire dans ce billet une analyse de la présence des œuvres de <a href="http://www.wikidata.org/entity/Q41406">Edvard Munch</a> dans Wikidata et de leur description.</p>
+<p>Cette analyse s'appuie sur des requêtes sparql qui permettent d'interroger les données de Wikidata. Un lien est fourni pour exécuter la requête dans WDQS, l'outil d'interrogation SPARQL de Wikidata</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Il y a <strong>0 œuvres de <a href="http://www.wikidata.org/entity/Q41406">Edvard Munch</a></strong> dans Wikidata.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#select%20%28count%28%3Fs%29%20as%20%3Fc%29%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ41406%20%7D">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Il s'agit de <strong>1797 peintures</strong>, 157 estampes, 123 dessins, 34 aquarelles, 17 œuvre d’arts, 12 études,  et d'autres types d'oeuvres plus exceptionnels.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#select%20%3Ftype%20%3FtypeLabel%20%28count%28%3Fs%29%20as%20%3Fc%29%20where%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ41406%3B%20wdt%3AP31%20%3Ftype%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cfr%2Cen%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20group%20by%20%3Ftype%20%3FtypeLabel%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20order%20by%20desc%28%3Fc%29">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pour décrire ces œuvres, <strong>0 propriétés</strong> sont utilisées.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#select%20%28count%28distinct%20%3Fp%29%20as%20%3Fc%29%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ41406%3B%20%3Fp%20%5B%5D%20%7D">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>15 propriétés</strong> sont utilisées sur plus de la <strong>moitié des œuvres</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#select%20%28count%28%3Fp%29%20as%20%3Fc%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20where%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20select%20%20%28count%28distinct%20%3Fs%29%20as%20%3Fnboeuvres%29%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ41406%20%7D%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20select%20%3Fp%20%28count%28distinct%20%3Fs%29%20as%20%3Foeuvresparprop%29%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ41406%3B%20%3Fp%20%5B%5D%20%7D%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20group%20by%20%3Fp%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28%21contains%28str%28%3Fp%29%2C%20%22schema%3A%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28%21contains%28str%28%3Fp%29%2C%20%22wikiba.se%3A%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28contains%28str%28%3Fp%29%2C%20%22direct%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20bind%20%28%20%28xsd%3Afloat%28%3Fnboeuvres%29/2.0%29%20as%20%3Fdemi%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28%3Foeuvresparprop%3E%3Fdemi%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Il y a <strong>0 paires (propriété, valeur)</strong> différentes utilisées sur au moins huit de ces œuvres.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#select%20distinct%20%3Fp%20%3Fv%20%28count%28distinct%20%3Fs%29%20as%20%3Fc%29%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ41406%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28%3Fp%21%3Dschema%3Adescription%29%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20group%20by%20%3Fp%20%3Fv%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%3E8%29">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cela concerne <strong>22 propriétés</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#SELECT%20DISTINCT%20%3Fp%20%3FpropLabel%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20DISTINCT%20%3Fp%20%3Fv%20%28COUNT%28DISTINCT%20%3Fs%29%20AS%20%3Fc%29%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ41406%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%21%3D%20schema%3Adescription%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20GROUP%20BY%20%3Fp%20%3Fv%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%20%3E%208%20%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fprop%20wikibase%3AdirectClaim%20%3Fp.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ce qui s'illustre dans la table:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P135">P135</a></td><td>movement</td><td><a href="http://www.wikidata.org/entity/Q80113">expressionnisme</a> (16), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P170">P170</a></td><td>creator</td><td><a href="http://www.wikidata.org/entity/Q41406">Edvard Munch</a> (2158), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P136">P136</a></td><td>genre</td><td><a href="http://www.wikidata.org/entity/Q134307">portrait</a> (348), <a href="http://www.wikidata.org/entity/Q191163">paysage</a> (307), <a href="http://www.wikidata.org/entity/Q40446">nu</a> (146), <a href="http://www.wikidata.org/entity/Q1047337">scène de genre</a> (79), <a href="http://www.wikidata.org/entity/Q192110">autoportrait</a> (65), <a href="http://www.wikidata.org/entity/Q19968941">double portrait</a> (38), <a href="http://www.wikidata.org/entity/Q1935974">paysage urbain</a> (17), <a href="http://www.wikidata.org/entity/Q2839016">allégorie</a> (14), <a href="http://www.wikidata.org/entity/Q16875712">art animalier</a> (11), <a href="http://www.wikidata.org/entity/Q2864737">art sacré</a> (11), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P31">P31</a></td><td>instance of</td><td><a href="http://www.wikidata.org/entity/Q3305213">peinture</a> (1797), <a href="http://www.wikidata.org/entity/Q11060274">estampe</a> (157), <a href="http://www.wikidata.org/entity/Q93184">dessin</a> (123), <a href="http://www.wikidata.org/entity/Q18761202">aquarelle</a> (34), <a href="http://www.wikidata.org/entity/Q838948">œuvre d’art</a> (17), <a href="http://www.wikidata.org/entity/Q2647254">étude</a> (12), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P140">P140</a></td><td>religion or worldview</td><td><a href="http://www.wikidata.org/entity/Q5043">christianisme</a> (10), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P361">P361</a></td><td>part of</td><td><a href="http://www.wikidata.org/entity/Q121863761">Q121863761</a> (44), <a href="http://www.wikidata.org/entity/Q122834712">Q122834712</a> (11), <a href="http://www.wikidata.org/entity/Q122202429">Q122202429</a> (11), <a href="http://www.wikidata.org/entity/Q122745957">Q122745957</a> (10), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P528">P528</a></td><td>catalog code</td><td><a href="21">21</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P571">P571</a></td><td>inception</td><td></td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P608">P608</a></td><td>exhibition history</td><td><a href="http://www.wikidata.org/entity/Q121910037">Q121910037</a> (153), <a href="http://www.wikidata.org/entity/Q122229556">Q122229556</a> (151), <a href="http://www.wikidata.org/entity/Q122205592">Q122205592</a> (142), <a href="http://www.wikidata.org/entity/Q123504502">Q123504502</a> (82), <a href="http://www.wikidata.org/entity/Q122751180">Q122751180</a> (57), <a href="http://www.wikidata.org/entity/Q123587350">Q123587350</a> (46), <a href="http://www.wikidata.org/entity/Q11986598">La Danse de la Vie - La collection de l'Antiquité à 1950</a> (17), <a href="http://www.wikidata.org/entity/Q115408407">Q115408407</a> (11), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P195">P195</a></td><td>collection</td><td></td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P276">P276</a></td><td>location</td><td><a href="http://www.wikidata.org/entity/Q844926">musée Munch</a> (1206), <a href="http://www.wikidata.org/entity/Q214867">National Gallery of Art</a> (172), <a href="http://www.wikidata.org/entity/Q1132918">musée national de l'art, de l'architecture et du design de Norvège</a> (61), <a href="http://www.wikidata.org/entity/Q3330707">Galerie nationale d'Oslo</a> (50), <a href="http://www.wikidata.org/entity/Q1770313">musée d'art de Bergen</a> (41), <a href="http://www.wikidata.org/entity/Q1801421">musée Stenersen</a> (35), <a href="http://www.wikidata.org/entity/Q111796449">Q111796449</a> (21), <a href="http://www.wikidata.org/entity/Q685038">Kunsthaus de Zurich</a> (17), <a href="http://www.wikidata.org/entity/Q768717">collection privée</a> (16), <a href="http://www.wikidata.org/entity/Q11970136">Q11970136</a> (13), <a href="http://www.wikidata.org/entity/Q252259">Galerie Thiel</a> (13), <a href="http://www.wikidata.org/entity/Q32659772">Neue Nationalgalerie</a> (12), <a href="http://www.wikidata.org/entity/Q12008498">Q12008498</a> (12), <a href="http://www.wikidata.org/entity/Q2578922">Q2578922</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P180">P180</a></td><td>depicts</td><td></td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P186">P186</a></td><td>made from material</td><td><a href="http://www.wikidata.org/entity/Q296955">peinture à l'huile</a> (1410), <a href="http://www.wikidata.org/entity/Q12321255">toile</a> (1383), <a href="http://www.wikidata.org/entity/Q18668582">carton</a> (103), <a href="http://www.wikidata.org/entity/Q69158">craie de cire</a> (103), <a href="http://www.wikidata.org/entity/Q1424515">fusain</a> (97), <a href="http://www.wikidata.org/entity/Q21279007">papier vélin</a> (87), <a href="http://www.wikidata.org/entity/Q175166">tempera</a> (77), <a href="http://www.wikidata.org/entity/Q22915256">aquarelle</a> (59), <a href="http://www.wikidata.org/entity/Q11472">papier</a> (47), <a href="http://www.wikidata.org/entity/Q106857709">panneau de bois</a> (46), <a href="http://www.wikidata.org/entity/Q189085">pastel</a> (34), <a href="http://www.wikidata.org/entity/Q14674">crayon</a> (23), <a href="http://www.wikidata.org/entity/Q204330">gouache</a> (16), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P793">P793</a></td><td>significant event</td><td><a href="http://www.wikidata.org/entity/Q22340494">acquisition</a> (21), <a href="http://www.wikidata.org/entity/Q177923">enchère</a> (16), <a href="http://www.wikidata.org/entity/Q707482">donation</a> (10), <a href="http://www.wikidata.org/entity/Q17781833">destruction</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P921">P921</a></td><td>main subject</td><td><a href="http://www.wikidata.org/entity/Q41406">Edvard Munch</a> (67), <a href="http://www.wikidata.org/entity/Q28661042">La Seine à Saint-Cloud</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1476">P1476</a></td><td>title</td><td><a href="The Sun">The Sun</a> (10), <a href="Alma Mater">Alma Mater</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1684">P1684</a></td><td>inscription</td><td><a href="E. Munch">E. Munch</a> (25), <a href="E Munch">E Munch</a> (16), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2048">P2048</a></td><td>height</td><td>100 (53), 90 (41), 100.5 (26), 80 (26), 72 (24), 80.5 (22), 60 (21), 90.5 (19), 70.5 (19), 81 (19), 68 (18), 110.5 (16), 91 (16), 70 (16), 72.5 (15), 89.5 (14), 65 (13), 55 (13), 75 (12), 130 (12), 110 (12), 50 (12), 65.5 (11), 73 (11), 150 (11), 120 (11), 120.5 (10), 79.5 (10), 60.5 (10), 309 (10), 92 (10), 85 (10), 46 (10), 200 (10), 85.5 (9), 48.5 (9), 45.5 (9), 99 (9), 97 (9), 67 (9), 59 (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2079">P2079</a></td><td>fabrication method</td><td><a href="http://www.wikidata.org/entity/Q133036">lithographie</a> (73), <a href="http://www.wikidata.org/entity/Q542340">pointe sèche</a> (48), <a href="http://www.wikidata.org/entity/Q186986">eau-forte</a> (31), <a href="http://www.wikidata.org/entity/Q173242">xylographie</a> (25), <a href="http://www.wikidata.org/entity/Q473236">aquatinte</a> (17), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2049">P2049</a></td><td>width</td><td>100 (71), 100.5 (38), 120 (33), 90 (33), 110 (24), 80 (23), 60 (20), 65 (17), 130 (17), 68 (16), 91 (15), 70 (15), 120.5 (14), 95.5 (14), 72.5 (14), 96 (14), 72 (13), 55 (13), 73 (12), 99.5 (11), 90.5 (11), 80.5 (11), 60.5 (11), 81 (11), 65.5 (10), 85 (10), 79 (10), 470 (10), 130.5 (9), 75.5 (9), 66.5 (9), 59.5 (9), 125 (9), 111 (9), 75 (9), 69 (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2610">P2610</a></td><td>thickness</td><td><a href="0.23">0.23</a> (12), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P6216">P6216</a></td><td>copyright status</td><td><a href="http://www.wikidata.org/entity/Q19652">domaine public</a> (1952), </td></tr></tbody></table><figcaption class="wp-element-caption"><strong>Table: Les paires (propriété, valeur) utilisées plus de 8 fois.</strong></figcaption></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#SELECT%20DISTINCT%20%3Fp%20%3FpropLabel%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20DISTINCT%20%3Fp%20%3Fv%20%28COUNT%28DISTINCT%20%3Fs%29%20AS%20%3Fc%29%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ41406%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%21%3D%20schema%3Adescription%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20GROUP%20BY%20%3Fp%20%3Fv%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%20%3E%208%20%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fprop%20wikibase%3AdirectClaim%20%3Fp.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:wp-mermaid/block -->
+<div class="wp-block-wp-mermaid-block mermaid">
+mindmap
+  root((Edvard Munch))
+    Genre
+      portrait
+      paysage
+      nu
+      scène de genre
+      autoportrait
+      double portrait
+      paysage urbain
+      allégorie
+      art sacré
+      art animalier
+    
+    Depicts
+      femme
+      homme
+      Edvard Munch
+      arbre
+      maison
+      Ingeborg Kaurin
+      Annie Fjeldbu
+      forêt
+      Birgit Prestøe
+      plage
+      fjord
+      fille
+      garçon
+      Åsgårdstrand
+      ciel
+      nudité
+      Inger Munch
+      neige
+      Oslofjord
+      jardin
+      route
+      The Death of Marat
+      Jappe Nilssen
+
+    Types
+      peinture
+      estampe
+      dessin
+      aquarelle
+      œuvre d’art
+      étude
+
+</div>
+<!-- /wp:wp-mermaid/block -->
+
+<!-- wp:paragraph -->
+<p>On peut accéder à une représentation graphique de la répartition par année des œuvres présentes sur Wikidata <a href="https://query.wikidata.org/embed.html#%23group%C3%A9s%20par%20niveau%20de%20distance%2C%20la%20couleur%20d%C3%A9pendant%20de%20la%20distance%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23defaultView%3ABarChart%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PREFIX%20var_muntype%3A%20%3Chttp%3A//www.wikidata.org/entity/Q15284%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PREFIX%20var_area%3A%20%3Chttp%3A//www.wikidata.org/entity/Q6308%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20%3Fyear%20%3Fc%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20DISTINCT%20%3Fp%20%3Fv%20%3FvLabel%20%28COUNT%28DISTINCT%20%3Fs%29%20AS%20%3Fc%29%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ41406%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%255BAUTO_LANGUAGE%255D%2Cen%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%21%3D%20schema%3Adescription%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28CONTAINS%28STR%28%3Fp%29%2C%20%22direct%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20GROUP%20BY%20%3Fp%20%3Fv%20%3FvLabel%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%20%3E%208%20%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%3D%20wdt%3AP571%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20BIND%28REPLACE%28%3FvLabel%2C%20%22-01-01T00%3A00%3A00Z%22%2C%20%22%22%29%20AS%20%3Fyear%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ORDER%20BY%20%28%3Fyear%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20">ici</a> (remarque: si certaines années ne sont pas dans le graphe, c'est qu'il n'y a pas d'œuvres présentes dans Wikidata pour ces années).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#%23group%C3%A9s%20par%20niveau%20de%20distance%2C%20la%20couleur%20d%C3%A9pendant%20de%20la%20distance%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23defaultView%3ABarChart%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PREFIX%20var_muntype%3A%20%3Chttp%3A//www.wikidata.org/entity/Q15284%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PREFIX%20var_area%3A%20%3Chttp%3A//www.wikidata.org/entity/Q6308%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20%3Fyear%20%3Fc%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20DISTINCT%20%3Fp%20%3Fv%20%3FvLabel%20%28COUNT%28DISTINCT%20%3Fs%29%20AS%20%3Fc%29%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ41406%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%255BAUTO_LANGUAGE%255D%2Cen%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%21%3D%20schema%3Adescription%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28CONTAINS%28STR%28%3Fp%29%2C%20%22direct%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20GROUP%20BY%20%3Fp%20%3Fv%20%3FvLabel%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%20%3E%208%20%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%3D%20wdt%3AP571%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20BIND%28REPLACE%28%3FvLabel%2C%20%22-01-01T00%3A00%3A00Z%22%2C%20%22%22%29%20AS%20%3Fyear%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ORDER%20BY%20%28%3Fyear%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>570 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#select%20%3Fwiki%20%23%20%28count%28%3Fwiki%29%20as%20%3Fc%29%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ41406%20.%20%3Fwiki%20schema%3Aabout%20%3Fs%20%7D">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Dont 24 dans le Wikipedia anglophone et 29 dans le Wikidata francophone.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#SELECT%20%3Flang%20%28count%28%3Fwiki%29%20as%20%3Fc%29%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ41406%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fwiki%20schema%3Aabout%20%3Fs.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28contains%28str%28%3Fwiki%29%2C%20%22wikipedia.org%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20bind%28substr%28str%28%3Fwiki%29%2C%209%2C%202%29%20as%20%3Flang%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20group%20by%20%3Flang%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20order%20by%20desc%28%3Fc%29">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>L'ensemble des <strong>pages</strong> concerne <strong>206 œuvres</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#SELECT%20distinct%20%3Fs%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ41406.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fwiki%20schema%3Aabout%20%3Fs.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28CONTAINS%28STR%28%3Fwiki%29%2C%20%22wikipedia.org%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20">sur WDQS</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Il y a <strong>2111 images</strong> dans Wikimedia Commons associées à ces œuvres.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(obtenu avec la requête sparql accessible <a href="https://query.wikidata.org/index.html#SELECT%20distinct%20%3Fimage%20WHERE%20%7B%20%20%3Fs%20wdt%3AP170%20wd%3AQ41406%3B%20%28wdt%3AP7420%7C%20wdt%3AP18%29%20%3Fimage.%20%7D">sur WDQS</a>)<br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<br>J'ai ainsi donné un aperçu de la visibilité des œuvres de <a href="http://www.wikidata.org/entity/Q41406">Edvard Munch</a> dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenues avec <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a>.
+<!-- /wp:paragraph -->
