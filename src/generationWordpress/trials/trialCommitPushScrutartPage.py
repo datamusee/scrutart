@@ -21,8 +21,9 @@ from pprint import pprint
 import base64
 from github import Github, InputGitAuthor, Auth
 from pprint import pprint
+from ..configPrivee import TOKEN_GITHUB
 
-token = "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" # limité au 14 juillet 2024
+token = TOKEN_GITHUB # limité au 14 juillet 2024
 
 def print_repo(repo):
     # repository full name
