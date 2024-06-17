@@ -23,7 +23,7 @@ from github import Github, InputGitAuthor, Auth
 from pprint import pprint
 from ..configPrivee import TOKEN_GITHUB
 
-token = TOKEN_GITHUB # limité au 14 juillet 2024
+token = TOKEN_GITHUB # limité au 14 juillet 2024...
 
 def print_repo(repo):
     # repository full name
