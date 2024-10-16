@@ -2,6 +2,7 @@ from WPPainterTemplate import WPPainterTemplate
 class WPPainterFrenchTemplate(WPPainterTemplate):
 
     def __init__(self):
+        self.version = "1.0.1"
         super().__init__("fr")
 
     def buildTitre(self, varstring="__NOMCREATEUR__"):

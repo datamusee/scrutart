@@ -2,10 +2,32 @@ from WPTemplateManager import WPTemplate
 
 dataConfig = {
     # "__TITRE_TEMPLATE__":
-    #    [ { "version": "1.0", "template": "Où trouver __NOMCREATEUR__ dans Wikidata, suivez le guide"} ],
+    #    [ { "version": "1.0.2", "template": "Où trouver __NOMCREATEUR__ dans Wikidata, suivez le guide"} ],
     "__DATE__": {"sparql": None,
                  "filtres": [{"filtre": "getCurrentDate", "key": "__DATE__"}],
                  "urlquery": None},
+    "__PROCESSPARAMS__": {"sparql": None,
+                 "filtres": [{"filtre": "getQid", "key": "__PROCESSPARAMS__"}],
+                 "urlquery": None},
+    "__EXTERNALLINKSTABLE__": {
+        "sparql": """
+            SELECT ?link ?baseUrl WHERE {
+              values ?qid { <http://www.wikidata.org/entity/__QID__> }
+              VALUES ?idprop {
+                wdt:P214 wdt:P3219 wdt:P347 wdt:P213 wdt:P268
+                wdt:P12212 wdt:P245 wdt:P8705 wdt:1711 wdt:4200
+                wdt:3219 wdt:10297 wdt:2268 wdt:7444 wdt:1795
+              }
+              OPTIONAL {
+                ?qid ?idprop ?lid.
+                ?propentity wikibase:directClaim ?idprop;
+                  wdt:P1630 ?baseUrl.
+                BIND(IRI(REPLACE(?baseUrl, "[$]1", ?lid)) AS ?link)
+              }
+            }
+        """,
+        "filtres": [{"filtre": "getExternalLinks", "key": "__EXTERNALLINKSTABLE__"}],
+        "urlquery": None},
     "__NOMCREATEUR__": {
         "sparql": """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }  
                     SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],__LANG__,en". } }

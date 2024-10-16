@@ -23,6 +23,8 @@ class WikidataObject:
     def getWObjFct(self, fctname):
         return getattr(WikidataObject, fctname, None)
 
+    def getQid(self, sparqlres, qid):
+        return qid
     def getUrlImage(self, sparqlres, qid):
         url = None
         if sparqlres and hasattr(sparqlres, "bindings"):
@@ -235,3 +237,25 @@ class WikidataObject:
     def getEntityType(self, sparqlres, qid):
         type= ""
         return type
+
+    def getExternalLinks(self, sparqlres, qid):
+        imageFromBaseUrl = {
+            "https://catalogue.bnf.fr/ark:/12148/cb$1": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonBnf.svg" ,
+            "https://www.universalis.fr/encyclopedie/$1/": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonUniversalis.svg" ,
+            "https://viaf.org/viaf/$1/": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonViaf.svg",
+            "https://isni.org/isni/$1": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonIsni.svg",
+            "http://arts-graphiques.louvre.fr/detail/artistes/1/$1": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonLouvre.svg",
+            "https://www.getty.edu/vow/ULANFullDisplay?find=&role=&nation=&subjectid=$1": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonGetty.svg",
+        }
+        linkTemplate = """<td><a href="__LINK__"><img class="wp-image-710" style="width: 50px;" src="__IMAGELINK__" alt="lien Scrutart"></a></td>"""
+        externalLinks = ""
+        if sparqlres and hasattr(sparqlres, "bindings"):
+            if len(sparqlres.bindings):
+                list = sparqlres.bindings
+                for elmt in list:
+                    if "link" in elmt:
+                        link = elmt["link"].value
+                        baseUrl = elmt["baseUrl"].value
+                        imagelink = imageFromBaseUrl.get(baseUrl, "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/05/boutonScrutart-1.svg")
+                        externalLinks += linkTemplate.replace("__LINK__", link).replace("__IMAGELINK__", imagelink)+"""\n"""
+        return externalLinks
