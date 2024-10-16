@@ -5,7 +5,7 @@ class WPTools():
         self.configPrivee = configPrivee
         self.api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
         self.api_url_get = f"{configPrivee.WORDPRESS_O2_API_URL}/posts"
-        self.auth = (configPrivee.WORDPRESS_O2_USERNAME, configPrivee.WORDPRESS_O2_PASSWORD_APP)
+        self.auth = (self.configPrivee.WORDPRESS_O2_USERNAME, self.configPrivee.WORDPRESS_O2_PASSWORD_APP)
         pass
 
     def getWPLink(self, title):
@@ -29,7 +29,7 @@ class WPTools():
             'search': page_title,
             'status': status,
             "search_columns": "post_title",
-            "Authorization": "Bearer" + str({configPrivee.WORDPRESS_O2_PASSWORD_APP})
+            "Authorization": "Bearer" + str({self.configPrivee.WORDPRESS_O2_PASSWORD_APP})
         }
 
         try:
