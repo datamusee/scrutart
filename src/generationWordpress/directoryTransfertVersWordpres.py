@@ -94,17 +94,18 @@ if __name__ == '__main__':
                 content = page.read()
                 skip = False
                 content = nettoyageContenu(content)
-                for filt in filters:
+                for filt in filters: # filtrage de pages avec un contenu à améliorer
                     if filt in content:
                         print(file)
                         skip = True
-                        break
+                        continue
                 if not skip:
                     # ici envoyer vers Wordpress
                     print("---> envoyer ", file)
                     data = {
                         "title": title,
                         "content": content,
+                        "categories": [8, 31, 29],
                         "status": "draft", # publish
                         # "slug": "article-test-automation",
                         "lang": "fr"
