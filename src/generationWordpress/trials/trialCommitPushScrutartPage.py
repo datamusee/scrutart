@@ -11,7 +11,7 @@ trial inspiré de https://thepythoncode.com/article/using-github-api-in-python
 mais a échoué sur create_file
 nouvelle inspiration
 https://devopslearning.medium.com/day-13-101-days-of-devops-github-api-using-python-and-pygithub-module-c1bcbaaeada7
-mais ça ne dit rien sur les commits, essentiellement des choses pour créer, détruire, parcourir les repositoties
+mais ça ne dit rien sur les commits, essentiellement des choses pour créer, détruire, parcourir les repositories
 
 utilisé
 https://stackoverflow.com/questions/71887432/how-to-append-to-a-file-using-pygithub
