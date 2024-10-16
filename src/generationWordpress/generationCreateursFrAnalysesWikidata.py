@@ -85,14 +85,14 @@ def nettoyageContenu(page):
     if "<p><strong>0 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>" in page:
         page = page.replace(
             "<p><strong>0 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>",
-            "Je n'ai trouvé aucune page dans Wikipedia associée à ces oeuvres")
+            "<p>Je n'ai trouvé aucune page dans Wikipedia associée à ces oeuvres</p>")
         page = page.replace("<p>Dont 0 dans le Wikipedia anglophone et 0 dans le Wikidata francophone.</p>",
-                     "Et bien sûr, il n'y a de page pour ces oeuvres ni dans le Wikipedia francophone, ni dans l'anglophone")
+                     "<p>Et bien sûr, il n'y a de page pour ces oeuvres ni dans le Wikipedia francophone, ni dans l'anglophone</p>")
         page = page.replace("<p>L'ensemble des <strong>pages</strong> concerne <strong>0 œuvres</strong>.</p>",
-                     "Et aussi, aucune de ces oeuvres n'est concernée par une page de Wikipedia.")
+                     "<p>Et aussi, aucune de ces oeuvres n'est concernée par une page de Wikipedia.</p>")
     if "<p>Il y a <strong>0 images</strong> dans Wikimedia Commons associées à ces œuvres.</p>" in page:
         page = page.replace("<p>Il y a <strong>0 images</strong> dans Wikimedia Commons associées à ces œuvres.</p>",
-                     "Il n'a aucune image dans Wikimedia Commons associée à ces oeuvres.")
+                     "<p>Il n'a aucune image dans Wikimedia Commons associée à ces oeuvres.</p>")
         pass
     return page
 
@@ -143,9 +143,16 @@ filterPainters = [
 "Q979534",
 ]
 filterPainters = [
-    "Q274901",
-    "Q920924", # munch
-    "Q706359" # Auguste Herbin
+    "Q9440", # Paul Véronèse
+    "Q274901", # Carolus-Duran,
+    "Q47842", # CIxi
+    #"Q920924", # munch
+    #"Q706359" # Auguste Herbin
+]
+filterPainters = [
+"Q10378200",
+"Q1074290",
+"Q1389068",
 ]
 filelist = os.listdir("./pages")
 for qid in filterPainters:
@@ -156,7 +163,9 @@ for qid in filterPainters:
 with open("data/wikidataSignificantPaintersTicket1527.json") as fListPainters:
     painters = json.load(fListPainters)
     # commentaire de version temporaire->
-    painters = [{"painter":"http://www.wikidata.org/entity/Q274901","painterLabel":"Carolus-Duran","c":"52"}    ]
+    # painters = [{"painter":"http://www.wikidata.org/entity/Q274901","painterLabel":"Carolus-Duran","c":"52"}    ]
+    # painters = [{"painter":"http://www.wikidata.org/entity/Q9440","painterLabel":"Paul Véronèse" }    ]
+    # painters = [{"painter":"http://www.wikidata.org/entity/Q47842","painterLabel":"Cixi" }    ]
     for p in painters:
         print(p["painter"], " ", p["painterLabel"])
         try:
