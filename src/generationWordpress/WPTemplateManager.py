@@ -24,6 +24,44 @@ class WPTemplate():
     def buildTitre(self, varstring="__NOMCREATEUR__"):
         return """Titre temporaire"""
 
+    def buildJsonProcessBlock(self, varcrea="__PROCESSPARAMS__"):
+        commentProcess = """
+        <!-- wp:html -->
+        <!-- processParams = { "qid": \""""+varcrea+"""\", "templateVersion": \""""+self.version+"""\" } -->
+        <!-- /wp:html -->        
+        """
+        return commentProcess
+
+    def buildJsonLdScript(self, varstring="__NOMCREATEUR__"):
+        scriptBlock = """
+        <!-- wp:html -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name":\""""+ varstring +"""\",
+            }
+            </script>
+        <!-- /wp:html -->
+        """
+        return scriptBlock
+
+    def buildExternalLinks(self, varstring="__EXTERNALLINKSTABLE__"):
+        linksBlock = """
+        <!-- wp:table {"style":{"border":{"width":"0px","style":"none"}}} -->
+        <p>Liens externes:</p>
+        <figure class="wp-block-table">
+        <table class="has-fixed-layout" style="border-style:none;border-width:0px">
+        <tbody>
+        <tr>
+        """+varstring+"""</tr>
+        </tbody>
+        </table>
+        </figure>
+        <!-- /wp:table -->
+        """
+        return linksBlock
+
     def buildImageView(self):
         return self.wpWrapImage(
             """<figure class="wp-block-image size-large"><img src="__URLIMAGE__" alt="" /></figure>""")
@@ -149,8 +187,12 @@ __TYPELIST__
         return link
 
     def buildPageTemplate(self):
-        pageTemplate = self.buildImageView() + \
-                       self.buildIntroView() + self.buildNombreOeuvresView() + \
+        pageTemplate = self.buildJsonProcessBlock() +\
+                       self.buildJsonLdScript() +\
+                       self.buildImageView() + \
+                       self.buildExternalLinks() +\
+                       self.buildIntroView() + \
+                       self.buildNombreOeuvresView() + \
                        self.buildQueryNbOeuvresView() + \
                        self.buildNbTypesOeuvresView() + self.buildQueryNbParTypesView() + \
                        self.buildNbPropView() + self.buildQueryNbproprietesView() + \
