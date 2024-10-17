@@ -6,10 +6,15 @@ vers un wordpress
 import os
 import logging
 import json
+import time
+
+import orjson
 import requests
 import configPrivee
 import SPARQLWrapper as sw
 from dataConfig import dataConfig
+import datetime
+
 
 #api_url = f"{configPrivee.WORDPRESS_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_PASSWORD_APP}"
 #auth = (configPrivee.WORDPRESS_USERNAME, configPrivee.WORDPRESS_PASSWORD_APP)
@@ -61,10 +66,13 @@ def getTitle(qid):
     endpoint = "https://query.wikidata.org/sparql"
     sparqlquery = """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }  
                     SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". } }""".replace("__QID__", qid)
+    time.sleep(5)
     res = sparqlQuery(endpoint, sparqlquery)
+    title = None
     name = getName(res, qid)
-    # title = "Où trouver __NOMCREATEUR__ dans Wikidata, suivez le guide".replace("__NOMCREATEUR__", name)
-    title = dataConfig["__TITRE_TEMPLATE__"]["template"].replace("__NOMCREATEUR__", name)
+    if name!="???":
+        # title = "Où trouver __NOMCREATEUR__ dans Wikidata, suivez le guide".replace("__NOMCREATEUR__", name)
+        title = dataConfig["__TITRE_TEMPLATE__"]["template"].replace("__NOMCREATEUR__", name)
     return title
 
 def getLogTransfert(path):
@@ -76,11 +84,17 @@ def getLogTransfert(path):
     return jsonlist
 
 if __name__ == '__main__':
-    filters = [
+    # contents prohibited
+    filtersBlackList = [
         "<strong>0 pages</strong>",
         " 0 dans",
         "<strong>0 œuvres</strong>",
-        "<strong>0 images</strong>"
+        "<strong>0 images</strong>",
+        """<figure class="wp-block-image size-large"><img src="None"""
+    ]
+    # contents necessary
+    filtersWhiteList = [
+        "processParams"
     ]
     srcdir = "./pages"
     listfiles = os.listdir(srcdir)
@@ -91,12 +105,19 @@ if __name__ == '__main__':
             with open(srcdir+"/"+file, "r", encoding="UTF-8") as page:
                 qid = file.replace(".wp", "")
                 title = getTitle(qid)
+                if not title:
+                    print(qid, " nom pas accessible")
+                    continue
                 content = page.read()
                 skip = False
                 content = nettoyageContenu(content)
-                for filt in filters: # filtrage de pages avec un contenu à améliorer
+                for filt in filtersBlackList: # filtrage de pages avec un contenu à améliorer
                     if filt in content:
                         print(file)
+                        skip = True
+                        continue
+                for filt in filtersWhiteList:
+                    if not filt in content:
                         skip = True
                         continue
                 if not skip:
@@ -111,11 +132,21 @@ if __name__ == '__main__':
                         "lang": "fr"
                     }
                     for log in logs:
-                        if qid in log["content"]["rendered"]:
-                            data["id"] = log["id"]
+                        if not type(log) == dict:
+                            continue
+                        if log["qid"]!=qid:
+                            continue
+                        statusOK = ["201", "200"]
+                        if "idwordpress" in log and log["status"] in statusOK:
+                            data["id"] = log["idwordpress"]
                     if "id" in data:
                         response = requests.post(api_url.replace("v2/posts", "v2/posts/{id}".format(id=data["id"])), json=data, auth=auth)
                     else:
                         response = requests.post(api_url, json=data, auth=auth)
                     with open(logsfile, "a+", encoding="UTF-8") as flog:
-                        json.dump(response.json()+"\n", flog, ensure_ascii=False)
+                        # il y a des \n dans le contenu => ça ne se prête pas à lire du json-line
+                        # json.dump({ "qid": qid, "content": response.content.decode("utf-8") }, flog, ensure_ascii=False)
+                        content = json.loads(response.content.decode("utf-8"))
+                        json.dump({ "qid": qid, "title": title, "idwordpress": content["id"],
+                                    "status": str(response.status_code), "date": str(datetime.datetime.now()) }, flog, ensure_ascii=False)
+                        flog.write("\n")
