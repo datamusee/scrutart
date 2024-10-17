@@ -142,18 +142,9 @@ filterPainters = [
 "Q93284",
 "Q979534",
 ]
-filterPainters = [
-    "Q9440", # Paul Véronèse
-    "Q274901", # Carolus-Duran,
-    "Q47842", # CIxi
-    #"Q920924", # munch
-    #"Q706359" # Auguste Herbin
-]
-filterPainters = [
-"Q10378200",
-"Q1074290",
-"Q1389068",
-]
+#filterPainters = [
+#    "Q9440", # Paul Véronèse    "Q274901", # Carolus-Duran,    "Q47842", # CIxi    #"Q920924", # munch    #"Q706359" # Auguste Herbin]
+#filterPainters = ["Q10378200","Q1074290","Q1389068",]
 filelist = os.listdir("./pages")
 for qid in filterPainters:
     if "{qid}.wp".format(qid=qid) in filelist:

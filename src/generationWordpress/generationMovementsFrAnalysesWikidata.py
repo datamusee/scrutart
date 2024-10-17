@@ -64,6 +64,15 @@ def getLink(sparqlres, qid):
             link = """<a href="{uri}">{name}</a>""".format(uri=uri, name=name)
     return link
 
+
+def getExternalLinksTable(sparqlres, qid):
+    linksTable = """ """
+    if sparqlres and hasattr(sparqlres, "bindings"):
+        if len(sparqlres.bindings):
+            list = sparqlres.bindings
+            pass
+    return linksTable
+
 def getCurrentDate(sparqlres, qid):
     return str(datetime.date.today())
 
