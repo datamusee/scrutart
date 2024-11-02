@@ -71,8 +71,8 @@ def getTitle(qid):
     title = None
     name = getName(res, qid)
     if name!="???":
-        # title = "Où trouver __NOMCREATEUR__ dans Wikidata, suivez le guide".replace("__NOMCREATEUR__", name)
-        title = dataConfig["__TITRE_TEMPLATE__"]["template"].replace("__NOMCREATEUR__", name)
+        # title = "Où trouver __ENTITYNAME__ dans Wikidata, suivez le guide".replace("__ENTITYNAME__", name)
+        title = dataConfig["__TITRE_TEMPLATE__"]["template"].replace("__ENTITYNAME__", name)
     return title
 
 def getLogTransfert(path):
