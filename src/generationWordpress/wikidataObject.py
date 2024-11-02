@@ -6,7 +6,9 @@ import time
 
 class WikidataObject:
     associatedEndpoint = "https://query.wikidata.org/sparql" # default is WDQS
-    sparqlWrapper = sw.SPARQLWrapper2(associatedEndpoint) # implicit JSON format
+    sparqlWrapper = sw.SPARQLWrapper2(associatedEndpoint)  # implicit JSON format
+    sparqlWrapper.agent = 'Scrutart-UA (https://scrutart.grains-de-culture.fr/; scrutart@grains-de-culture.fr)'
+
     def __init__(self, qid):
         self.qid = qid
         pass
@@ -17,7 +19,14 @@ class WikidataObject:
         # il faudra alors, dans certains cas, extérieurement, trouver son occupation 'artiste peintre' (Q1028181)
         # pour une peinture, comme Mona Lisa, on aura P31 peinture (Q3305213)
         # pour un genre (P136), on aura P31 'genre artistique' (Q1792379)
-        objectTypes = ["Q5"]
+        sparqlQuery = """select ?type where {{ wd:{qid} wdt:P31 ?type }}""".format(qid=qid)
+        sparqlres = self.sparqlQuery(sparqlQuery)
+        objectTypes = []
+        if sparqlres and hasattr(sparqlres, "bindings"):
+            if len(sparqlres.bindings):
+                list = sparqlres.bindings
+                for elmt in list:
+                    objectTypes.append(elmt["type"].value.replace('http://www.wikidata.org/entity/', ''))
         return objectTypes
 
     def getWObjFct(self, fctname):
@@ -120,8 +129,27 @@ class WikidataObject:
                 value += " et d'autres types d'oeuvres plus exceptionnels"
         return value
 
+    def getValueLimit(self, object_type):
+        limits = {
+            "Q5": 8,  # humain
+            "Q1792379": 5,  # genre artistique
+            "Q16743958": 5 # genre pictural
+        }
+        return limits.get(object_type, 5)
+
+    def getMainProp(selfself, object_type):
+        main_props = {
+            "Q5": "http://www.wikidata.org/prop/direct/P170",
+            "Q1792379": "http://www.wikidata.org/prop/direct/P136", # genre artistique -> genre
+            "Q16743958": "http://www.wikidata.org/prop/direct/P136" # genre pictural -> genre
+        }
+        return main_props.get(object_type, "http://www.wikidata.org/prop/direct/P136") # TODO attention, default douteux
+
     def getTable(self, sparqlres, qid, lang="fr"):
         value = ""
+        entity_type = self.getTypes(qid)[0]
+        limit = self.getValueLimit(entity_type)
+        main_propuri = self.getMainProp(entity_type)
         if sparqlres and hasattr(sparqlres, "bindings"):
             if len(sparqlres.bindings):
                 formatelmt = {
@@ -139,15 +167,16 @@ class WikidataObject:
                     sparqlquery = """SELECT DISTINCT ?v ?vLabel ?c WHERE {
                               {
                                 SELECT DISTINCT  ?v (COUNT(DISTINCT ?s) AS ?c) WHERE {
-                                  ?s wdt:P170 wd:__QID__;
-                                    <__PROPID__> ?v.
+                                  ?s <__MAINPROPID__> wd:__QID__;
+                                    <__PROPURI__> ?v.
                                 }
                                 GROUP BY ?v
-                                HAVING (?c > 8 )
+                                order by desc(?c)
+                                LIMIT __LIMIT__ 
                               }
-                              SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
+                              SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en". }
                             }
-                            order by desc(?c)""".replace("__QID__", qid).replace("__PROPID__", propuri)
+                            order by desc(?c)""".replace("__QID__", qid).replace("__PROPURI__", propuri).replace("__MAINPROPID__", main_propuri).replace("__LIMIT__", str(limit))
                     valuesList = ""
                     res = self.sparqlQuery(sparqlquery)
                     time.sleep(0.1)
@@ -240,14 +269,36 @@ class WikidataObject:
 
     def getExternalLinks(self, sparqlres, qid):
         imageFromBaseUrl = {
-            "https://catalogue.bnf.fr/ark:/12148/cb$1": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonBnf.svg" ,
-            "https://www.universalis.fr/encyclopedie/$1/": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonUniversalis.svg" ,
-            "https://viaf.org/viaf/$1/": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonViaf.svg",
-            "https://isni.org/isni/$1": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonIsni.svg",
-            "http://arts-graphiques.louvre.fr/detail/artistes/1/$1": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonLouvre.svg",
-            "https://www.getty.edu/vow/ULANFullDisplay?find=&role=&nation=&subjectid=$1": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonGetty.svg",
+            "https://catalogue.bnf.fr/ark:/12148/cb$1": {
+              "imageUrl":"https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonBnf.svg" ,
+              "alt": "link to BNF",
+            },
+            "https://www.universalis.fr/encyclopedie/$1/": {
+              "imageUrl":"https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonUniversalis.svg" ,
+              "alt": "link to Encyclopedia Universalis",
+            },
+            "https://viaf.org/viaf/$1/": {
+              "imageUrl":"https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonViaf.svg",
+              "alt": "link to VIAF",
+            },
+            "https://isni.org/isni/$1":{
+              "imageUrl":"https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonIsni.svg",
+              "alt": "BNF link",
+            },
+            "http://arts-graphiques.louvre.fr/detail/artistes/1/$1": {
+              "imageUrl":"https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonLouvre.svg",
+              "alt": "link to Louvre",
+            },
+            "https://www.getty.edu/vow/ULANFullDisplay?find=&role=&nation=&subjectid=$1": {
+              "imageUrl":"https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonGetty.svg",
+              "alt": "link to Getty",
+            },
+            "https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=$1": {
+              "imageUrl":"https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonGetty.svg",
+              "alt": "link to Getty",
+            },
         }
-        linkTemplate = """<td><a href="__LINK__"><img class="wp-image-710" style="width: 50px;" src="__IMAGELINK__" alt="lien Scrutart"></a></td>"""
+        linkTemplate = """<td><a href="__LINK__"><img class="wp-image-710" style="width: 50px;" src="__IMAGELINK__" alt="__ALTLINK__"></a></td>"""
         externalLinks = ""
         if sparqlres and hasattr(sparqlres, "bindings"):
             if len(sparqlres.bindings):
@@ -256,6 +307,11 @@ class WikidataObject:
                     if "link" in elmt:
                         link = elmt["link"].value
                         baseUrl = elmt["baseUrl"].value
-                        imagelink = imageFromBaseUrl.get(baseUrl, "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/05/boutonScrutart-1.svg")
-                        externalLinks += linkTemplate.replace("__LINK__", link).replace("__IMAGELINK__", imagelink)+"""\n"""
+                        imageDesc = imageFromBaseUrl.get(
+                            baseUrl,
+                            {"imageUrl":"https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/05/boutonScrutart-1.svg", "alt":"link"}
+                        )
+                        imageLink = imageDesc["imageUrl"]
+                        imageAlt = imageDesc["alt"]
+                        externalLinks += linkTemplate.replace("__LINK__", link).replace("__IMAGELINK__", imageLink).replace("__ALTLINK__",imageAlt)+"""\n"""
         return externalLinks
