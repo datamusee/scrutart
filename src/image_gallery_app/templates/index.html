@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- <pre>{{ images }}</pre> -->
+    <h1>Galerie d'images</h1>
+    <div class="gallery">
+        {% for name, img_url in images %}
+            <figure>
+                <img src="{{ img_url }}" alt="{{ name }}">
+                <figcaption>{{ name }}</figcaption>
+            </figure>
+        {% endfor %}
+    </div>
+    <div id="app">
+        <h1>Galerie d'Images</h1>
+        <input type="text" v-model="search" placeholder="Rechercher une image...">
+
+        <!-- Affiche un message si aucune image ne correspond à la recherche -->
+        <div v-if="filteredImages.length === 0">
+            <p>Aucune image ne correspond à votre recherche.</p>
+        </div>
+
+
+        <!-- Galerie d'images -->
+        <!-- Affiche le modal si une image est sélectionnée -->
+        <div class="gallery" v-else>
+            {% for image in images %}
+            <div class="image-card"  key="{{ image.name }}">
+                <img src="{{ image.url }}" alt="{{ image.name }}" @click="viewImage({ 'name': '{{ image.name }}', 'url': '{{ image.url }}' })">
+                <p>{{ image.name }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+         <!-- Div d'affichage de l'image sélectionnée géré uniquement par Vue -->
+         {% raw %}
+        <div v-if="selectedImage">
+            <img :src="selectedImage.url" :alt="selectedImage.name">
+            <p>{{ selectedImage.name }}</p>
+        </div>
+         {% endraw %}
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        function viewImage(image) {
+                    this.selectedImage = image;
+                    console.log("Image sélectionnée :", image);
+               }
+
+          function  filteredImages() {
+                console.log(this.images);
+                if (!this.images || !Array.isArray(this.images)) {
+                    alert("problème avec images")
+                    return [];
+                }
+
+                const searchLower = this.search ? this.search.toLowerCase() : "";
+
+                if (searchLower === "") {
+                    return this.images;
+                }
+
+                return this.images.filter(image => {
+                    return image && image.name && image.name.toLowerCase().includes(searchLower);
+                });
+            }
+        new Vue({
+            el: "#app",
+            data: {
+                images: {{ images | tojson | safe }},
+                search: {{ search | tojson | safe  }},
+                selectedImage: null,
+            },
+            created() {
+              console.log("Images après initialisation:", this.images);  // Vérifie que `images` est bien initialisé
+              console.log("Selected Image: ", this.selectedImage);
+              console.log("Search: ", search)
+            },
+            computed: {
+                  filteredImages
+            },
+            methods: {
+                viewImage
+            }
+        });
+    </script>
+</body>
+</html>
