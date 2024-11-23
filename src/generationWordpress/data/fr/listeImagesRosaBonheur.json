@@ -1,0 +1,103 @@
+{
+  "sparql": "SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {\n  VALUES ?createur {\n    wd:Q241732\n  }\n  ?uri wdt:P31 wd:Q3305213;\n    wdt:P170 ?createur;\n    wdt:P18 ?image.\n  ?createur rdfs:label ?createurLabel.\n  FILTER((LANG(?createurLabel)) = \"fr\")\n  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }\n  FILTER((LANG(?titre_fr)) = \"fr\")\n}",
+  "liste": [
+    {
+      "uri": "http://www.wikidata.org/entity/Q124335915",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rosa%20Bonheur%20-%20Royale%20%C3%A0%20la%20maison.jpg",
+      "titre_fr": "Royale  à la maison"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124330868",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tableau%20%22Cheval%22%20Rosa%20Bonheur%201883%20mus%C3%A9e%20de%20Chartres%20Eure-et-Loir%20France.jpg",
+      "titre_fr": "Cheval"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123693377",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2018%20NYR%2016391%200107%20rosa%20bonheur%20le%20sanglier%29.jpg",
+      "titre_fr": "Le sanglier"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123596563",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2016%20NYR%2012195%200046%20rosa%20bonheur%20charrette%20attelee%20de%20vaches%20et%20bouvier%20en%20auvergne%29.jpg",
+      "titre_fr": "Charrette Attelée de Vaches, et Bouvier, en Auvergne"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q23008971",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ch%C3%A2teau%20de%20Chantilly%2C%20Rosa%20Bonheur%2C%20sheeps%20in%20the%20Pyrenees.JPG",
+      "titre_fr": "Berger des Pyrénées"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q60474419",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rosa%20Bonheur%20-%20Wild%20Boars%20in%20the%20Snow%20-%201980.231%20-%20Cleveland%20Museum%20of%20Art.jpg",
+      "titre_fr": "Sangliers dans la neige"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18599580",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Wild%20Cat%20%28Rosa%20Bonheur%29%20-%20Nationalmuseum%20-%2019965.tif",
+      "titre_fr": "Chat sauvage"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17495927",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Trois%20ch%C3%A8vres%20au%20repos%20-%20Rosa%20Bonheur%20-%20MO%20RF%201303.jpg",
+      "titre_fr": "Trois chèvres au repos"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q40432",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rosa%20Bonheur%2C%20The%20Horse%20Fair%2C%201852%E2%80%9355.jpg",
+      "titre_fr": "La foire du cheval"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q60473635",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rosa%20Bonheur%20-%20The%20Farm%20at%20the%20Entrance%20of%20the%20Wood%20-%201978.73%20-%20Cleveland%20Museum%20of%20Art.jpg",
+      "titre_fr": "La ferme à l’entrée du bois"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q73295265",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rosa%20Bonheur%20-%20Sheep%20by%20the%20Sea%20%281865%29.jpg",
+      "titre_fr": "Moutons au bord de la Mer"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17491560",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Foulaison%20du%20bl%C3%A9%20en%20Camargue%20-%20Rosa%20Bonheur.jpg",
+      "titre_fr": "La Foulaison du blé en Camargue"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q105444738",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cheval%20blanc%20dans%20un%20pr%C3%A9%20-%20Rosa%20Bonheur%20MBAR%201900.2.jpg",
+      "titre_fr": "Cheval blanc dans un pré"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q84243174",
+      "createur": "http://www.wikidata.org/entity/Q241732",
+      "createurLabel": "Rosa Bonheur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rosa%20Bonheur%20-%20l%27%C3%A2ne.jpg",
+      "titre_fr": "l'âne"
+    }
+  ]
+}

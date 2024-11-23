@@ -1,0 +1,348 @@
+{
+  "sparql": "SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {\n  VALUES ?createur {\n    wd:Q46373\n  }\n  ?uri wdt:P31 wd:Q3305213;\n    wdt:P170 ?createur;\n    wdt:P18 ?image.\n  ?createur rdfs:label ?createurLabel.\n  FILTER((LANG(?createurLabel)) = \"fr\")\n  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }\n  FILTER((LANG(?titre_fr)) = \"fr\")\n}",
+  "liste": [
+    {
+      "uri": "http://www.wikidata.org/entity/Q67403854",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Deux%20danseuses.jpg",
+      "titre_fr": "Deux danseuses"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18574694",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Three%20dancers%20in%20Ukrainian%20dress%20%28Edgar%20Degas%29%20-%20Nationalmuseum%20-%2024322.tiff",
+      "titre_fr": "Trois danceurs russes"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18611118",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Degas%20danseuses-1500.jpg",
+      "titre_fr": "Danseuses sur la scène"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18684746",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20Two%20Dancers%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Deux Danseuses"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q26706505",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20%281834-1917%29%20-%20Head%20of%20a%20Woman%20%28T%C3%AAte%20de%20femme%29%20-%20L701%20-%20National%20Gallery.jpg",
+      "titre_fr": "Tête de femme"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q26706505",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20degas%2C%20testa%20di%20donna%2C%201873%20ca%2C.jpg",
+      "titre_fr": "Tête de femme"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q52216851",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Degas%20-%20Cafekonzert%20S%C3%A4ngerin%20mit%20Handschuh.jpg",
+      "titre_fr": "Chanteuse au gant"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q52216851",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Hilaire-Germain-Edgar%20Degas%20-%20Singer%20with%20a%20Glove%20-%201951.68%20-%20Fogg%20Museum.jpg",
+      "titre_fr": "Chanteuse au gant"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q28537273",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20%281834-1917%29%20-%20Head%20of%20a%20Woman%20%28T%C3%AAte%20de%20femme%29%20-%20N03833%20-%20National%20Gallery.jpg",
+      "titre_fr": "Tête de femme"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19859005",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn%20Museum%20-%20Mary%20Cassatt%20at%20the%20Louvre%20The%20Paintings%20Gallery%20%28Mary%20Cassatt%20au%20Louvre%20La%20Peinture%29%20-%20Edgar%20Degas.jpg",
+      "titre_fr": "Mary Cassatt au Louvre: La Peinture"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19911700",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sulking%20MET%20DT1918.jpg",
+      "titre_fr": "La bouderie"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19913086",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20At%20the%20Milliners%201881.jpg",
+      "titre_fr": "Chez le modiste"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18758802",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20The%20Dance%20Class.jpg",
+      "titre_fr": "La classe de danse"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q20808841",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Apr%C3%A8s%20le%20bain%20-%20Edgar%20Degas.jpg",
+      "titre_fr": "Après le bain"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q20179815",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20The%20Convalescent%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "La Convalescente"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17510059",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/After%20the%20Bath%2C%20Woman%20drying%20herself%20-%20Edgar%20Degas%20-%20National%20Gallery.jpg",
+      "titre_fr": "Après le bain, femme s'essuyant"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q7200240",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20Place%20de%20la%20Concorde.jpg",
+      "titre_fr": "La Place de la Concorde"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q7200240",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20Place%20de%20la%20Concorde.jpg",
+      "titre_fr": "Le Vicomte Lepic et ses filles traversant la place de la Concorde"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q7476471",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Dancing%20Class%20-%20MET%2029.100.184.jpg",
+      "titre_fr": "Classe de danse"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3937564",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Degas%20-%20Hilaire%20de%20Gas.jpg",
+      "titre_fr": "Hilaire de Gas"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3818176",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Germain%20Hilaire%20Degas%20008.jpg",
+      "titre_fr": "La Coiffure"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3614243",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ludovic%20Hal%C3%A9vy%20%26%20Albert%20Boulanger-Cav%C3%A9.jpg",
+      "titre_fr": "Ludovic Halevy et Albert Boulanger-Cavé dans les coulisses de l'Opéra"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3821820",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20The%20Ballet%20Class%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "La classe de danse"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3701088",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/At%20the%20Milliner%27s-Degas.jpg",
+      "titre_fr": "Chez la modiste"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3874376",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20The%20Millinery%20Shop%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Chez la modiste"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3794019",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20The%20Dance%20Foyer%20at%20the%20Opera%20on%20the%20rue%20Le%20Peletier.jpg",
+      "titre_fr": "Foyer de danse à l'Opéra de la rue Le Peletier"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q387377",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Young%20Spartans%20National%20Gallery%20NG3860.jpg",
+      "titre_fr": "Jeunes Spartiates s'exerçants à la lutte"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3819661",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20The%20Orchestra%20at%20the%20Opera%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "L'orchestre de l'Opéra"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3837030",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20Lorenzo%20Pagans%20and%20Auguste%20de%20Gas%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Lorenzo Pagans et Auguste de Gas"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1125919",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Germain%20Hilaire%20Degas%20045.jpg",
+      "titre_fr": "Après le bain, femme nue s'essuyant la nuque"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q2622172",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20The%20Bellelli%20Family%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "La Famille Bellelli"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3633416",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20Dancers%20at%20the%20Barre%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Danseuses à la barre"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q2912117",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Germain%20Hilaire%20Degas%20031.jpg",
+      "titre_fr": "Le Tub"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3713911",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Degas%2C%20Femme%20se%20coiffant.gif",
+      "titre_fr": "Femme se coiffant"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3633412",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fin%20d%27arabesque%2C%20Edgar%20Degas.jpg",
+      "titre_fr": "Fin d'arabesque"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17494281",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Albi%29%20Michel%20Manzi%20-%20Edgar%20Degas%20-%20Mus%C3%A9e%20d%27Orsay.jpg",
+      "titre_fr": "Michel Manzi"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1016012",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Germain%20Hilaire%20Degas%20053.jpg",
+      "titre_fr": "Ludovic Lepic et ses filles"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17491384",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Degas%20Evariste%20de%20Valernes%201868%20Musee%20dOrsay.JPG",
+      "titre_fr": "Evariste de Valernes"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3847862",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Albi%29%20Mademoiselle%20Dihau%20au%20Piano%20-%20Edgar%20Degas%20-%20Mus%C3%A9e%20d%27Orsay%2C%20Paris.jpg",
+      "titre_fr": "Mademoisele Dihau au piano"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q6046671",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20Interior%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Intérieur"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3713907",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%2C%20Femme%20dans%20son%20bain%20s%27%C3%A9pongeant%20la%20jambe.jpg",
+      "titre_fr": "Femme dans son bain s'épongeant la jambe"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3630723",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20self%20portrait%201855.jpeg",
+      "titre_fr": "Portrait de l'artiste"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q118218185",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Albi%29%20L%27Homme%20au%20gibus%20-%20Edgar%20Degas%20-%20Mus%C3%A9e%20Toulouse-Lautrec.jpg",
+      "titre_fr": "L'Homme au gibus"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124413323",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn%20Museum%20-%20Portrait%20of%20a%20Man%20%28Portrait%20d%27homme%29%20-%20Edgar%20Degas%20-%20overall.jpg",
+      "titre_fr": "Portrait d'homme"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124413237",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn%20Museum%20-%20Nude%20Woman%20Drying%20Herself%20%28Femme%20au%20Tub%29%20-%20Edgar%20Degas.jpg",
+      "titre_fr": "Femme au tub"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q105232222",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20Pagans%20%28l%27Homme%20au%20cigare%29.jpg",
+      "titre_fr": "Portrait de Lorenzo Pagans (l'Homme au cigare)"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q96748459",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20La%20r%C3%A9p%C3%A9tition%20de%20chant.jpg",
+      "titre_fr": "La Répétition de Chant"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q106877979",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Hilaire-Germain-Edgar%20Degas%20-%20Ballet%20Dancer%20-%201943.232%20-%20Harvard%20Art%20Museums.jpg",
+      "titre_fr": "Danseuse: jupe rouge"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q115607252",
+      "createur": "http://www.wikidata.org/entity/Q46373",
+      "createurLabel": "Edgar Degas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20Le%20g%C3%A9n%C3%A9ral%20Mellinet%20et%20le%20grand%20rabbin%20Astruc.jpg",
+      "titre_fr": "Le général Mellinet et le grand rabbin Astruc"
+    }
+  ]
+}

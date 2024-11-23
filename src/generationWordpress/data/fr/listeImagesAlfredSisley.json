@@ -1,0 +1,537 @@
+{
+  "sparql": "SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {\n  VALUES ?createur {\n    wd:Q175130\n  }\n  ?uri wdt:P31 wd:Q3305213;\n    wdt:P170 ?createur;\n    wdt:P18 ?image.\n  ?createur rdfs:label ?createurLabel.\n  FILTER((LANG(?createurLabel)) = \"fr\")\n  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }\n  FILTER((LANG(?titre_fr)) = \"fr\")\n}",
+  "liste": [
+    {
+      "uri": "http://www.wikidata.org/entity/Q29654785",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%20-%20the-route-to-mantes-1874.jpg",
+      "titre_fr": "La route de Mantes"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q122011709",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Douai%20%28Nord%29%20-%20Mus%C3%A9e%20de%20la%20Chartreuse%20-%20%22Meule%20au%20bord%20du%20Loing%22%20%28Alfred%20Sisley%2C%201839-1899%29.jpg",
+      "titre_fr": "Meule sur les bords du Loing"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124834020",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Saint-Mamm%C3%A8s%20sur%20le%20Loing.jpg",
+      "titre_fr": "Saint-Mammès sur le Loing"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124834082",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Moret-sur-Long%20-%20Temps%20gris.jpg",
+      "titre_fr": "Moret-sur-Loing - Temps gris"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124834100",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Les%20peupliers%20%C3%A0%20Moret-sur-Loing%2C%20apr%C3%A8s%20midi%20d%E2%80%99ao%C3%BBt.jpg",
+      "titre_fr": "Les peupliers à Moret-sur-Loing, après midi d’août"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124834108",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Le%20village%20des%20Sablons.jpg",
+      "titre_fr": "Le village des Sablons"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q118137093",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%27Vue%20de%20S%C3%A8vres%27%20by%20Alfred%20Sisley%2C%201879.jpg",
+      "titre_fr": "Vue de Sèvres"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q122835062",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Port-Marly%20sous%20la%20neige%20%28Sisley%29.jpg",
+      "titre_fr": "Port-Marly sous la neige"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q116538756",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Matin%20de%20f%C3%A9vrier%20%C3%A0%20Moret-sur-Loing.jpg",
+      "titre_fr": "Matin de février à Moret-sur-Loing"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124743939",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/ALFRED%20SISLEY%201839%20-%201899%20LA%20TAMISE%20AVEC%20HAMPTON%20CHURCH.jpg",
+      "titre_fr": "La Tamise avec Hampton Church"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124743953",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20sisley%20soleil%20dhiver%20a%20veneux-nadon.jpg",
+      "titre_fr": "Soleil d’hiver à Veneux-Nadon"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124743960",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20sisley%20paysage%20dete%20a%20veneux.jpg",
+      "titre_fr": "Paysage d'été à Veneux"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124743975",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20sisley%20apres-midi%20de%20mai%20a%20by%20pres%20de%20moret-sur-loing.jpg",
+      "titre_fr": "Après-midi de mai à By, près de Moret-sur-Loing"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124744099",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20sisley%2C%20le%20rive%20del%20canale%20del%20loing%20a%20saint-mamme%C3%A8s%2C%201888.jpg",
+      "titre_fr": "le rive del canale del loing a saint-mammeès"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q124834128",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Le%20Loing%20%C3%A0%20Moret%2C%201885.jpg",
+      "titre_fr": "Le Loing à Moret"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q115755198",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Rade%20de%20Cardiff.jpg",
+      "titre_fr": "La Rade de Cardiff"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q26492710",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20%281839-1899%29%20-%20The%20Bridge%20at%20S%C3%A8vres%20%28Le%20Pont%20de%20S%C3%A8vres%29%20-%20N04249%20-%20National%20Gallery.jpg",
+      "titre_fr": "Le Pont de Sèvres"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820386",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley-Route%20de%20Louveciennes.jpg",
+      "titre_fr": "Route de Louveciennes"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820381",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Aqueduct%20at%20Marly%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "L'Aqueduc de Marly"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820378",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Effet%20de%20neige%20%C3%A0%20Louveciennes%20-%20Alfred%20Sisley.jpg",
+      "titre_fr": "Effet de neige à Louveciennes"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820443",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%2C%20Notre-Dame%20de%20Moret%20im%20Morgenregen%2C%201893.jpg",
+      "titre_fr": "L'église de Moret-sur-Loing, temps de pluie le matin"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820442",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%2C%20Alfred-L%27%C3%A9glise%20%C3%A0%20Moret-Paris%2C%20Petit-Palais.jpg",
+      "titre_fr": "L'Église de Moret, le soir"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820465",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Le%20remorqueur%2C%20le%20Loing%20%C3%A0%20Saint-Mamm%C3%A8s%20-%20PPP739%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg",
+      "titre_fr": "Le Remorqueur sur le Loing, Saint-Mammès"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820465",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Le%20remorqueur%2C%20le%20Loing%20%C3%A0%20Saint-Mamm%C3%A8s%20-%20PPP739%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg",
+      "titre_fr": "Le remorqueur, le Loing à Saint-Mammès"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820412",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20007.jpg",
+      "titre_fr": "Pont et Moulin de Moret en été"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820384",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%20Orangerie%2002.jpg",
+      "titre_fr": "Le Chemin de Montbuisson à Louveciennes"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820414",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20011.jpg",
+      "titre_fr": "Pont de Moret dans le soleil du matin"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820433",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn%20Museum%20-%20Flood%20at%20Moret%20%28Inondation%20%C3%A0%20Moret%29%20-%20Alfred%20Sisley%20-%20overall.jpg",
+      "titre_fr": "Inondation à Moret"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820384",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Le%20Chemin%20de%20Montbuisson%20%C3%A0%20Louveciennes.jpg",
+      "titre_fr": "Le Chemin de Montbuisson à Louveciennes"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17492983",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley-H%C3%A9ron.JPG",
+      "titre_fr": "Le héron aux ailes déployées"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17495049",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20012.jpg",
+      "titre_fr": "Le Pont de Moret-sur-Loing ; effet d'orage"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17493594",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley-Bords%20de%20Seine%20ou%20du%20Loing.jpg",
+      "titre_fr": "Les Bords du Loing"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820344",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%27Barges%20at%20Billancourt%27%20by%20Alfred%20Sisley%2C%201877%2C%20Hermitage.JPG",
+      "titre_fr": "Les peniches à Billancourt"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820344",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Barges%20%C3%A0%20Billancourt.jpg",
+      "titre_fr": "Les peniches à Billancourt"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3558973",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20024.jpg",
+      "titre_fr": "Village de Voisins"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17492818",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Catalogue%20de%20tableaux%20modernes%20aquarelles%2C%20pastels%20%281901%29%20%2814804374053%29.jpg",
+      "titre_fr": "Le chemin des Petits-Près à By. Temps d'orage."
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3204212",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20inundaci%C3%B3n%20en%20Port%20Marly%2C%20por%20Alfred%20Sisley.jpg",
+      "titre_fr": "L'Inondation à Port-Marly"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17491924",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Cote%20du%20Coeur%20Volant%20a%20Marly.jpg",
+      "titre_fr": "La côte du Cœur-Volant à Marly sous la neige"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820312",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Seine%20%C3%A0%20Bougival%20by%20Alfred%20Sisley%201872.jpeg",
+      "titre_fr": "La Seine à Bougival"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820317",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20055.jpg",
+      "titre_fr": "Village au bord de la Seine"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17494892",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%2C%20Alfred%20-%20Les%20Coteaux%20de%20la%20Celle%2C%20vue%20de%20Saint-Mamm%C3%A8s%20-%20MAMCS.jpg",
+      "titre_fr": "Les Coteaux de la Celle, vue de Saint-Mammès"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17492296",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The-Seine-at-Bougival-1873-large.jpg",
+      "titre_fr": "La Seine à Bougival"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3563746",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%2C%20St%20Martin%20Canal%201870.jpg",
+      "titre_fr": "Vue du canal Saint-Martin"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3220784",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20035.jpg",
+      "titre_fr": "Le Canal Saint Martin"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820361",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Allee%20de%20chataigniers%20-%20Alfred%20Sisley.jpg",
+      "titre_fr": "Allée de châtaigniers à La Celle-Saint-Cloud"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820361",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Allee%20de%20chataigniers%20-%20Alfred%20Sisley.jpg",
+      "titre_fr": "Lisière de la forêt de Fontainebleau"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17491136",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cour%20de%20ferme%20%C3%A0%20Saint-Mamm%C3%A8s%20-%20Alfred%20Sisley.jpg",
+      "titre_fr": "Cour de ferme à Saint-Mammès"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q2838937",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/All%C3%A9e%20de%20peupliers%20aux%20environs%20de%20Moret-sur-Loing.jpg",
+      "titre_fr": "Allée de peupliers aux environs de Moret-sur-Loing"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q16038630",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louveciennes%2C%20hauteurs%20de%20Marly%2C%20Sisley.jpeg",
+      "titre_fr": "Hauteurs de Marly, ferme de mi-côte"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q16038630",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louveciennes%2C%20hauteurs%20de%20Marly%2C%20Sisley.jpeg",
+      "titre_fr": "Louveciennes, hauteurs de Marly"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q16038630",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louveciennes%2C%20hauteurs%20de%20Marly%2C%20Sisley.jpeg",
+      "titre_fr": "Louveciennes. Sentier de la Mi-côte"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18487290",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley-argenteuil-aixB.jpg",
+      "titre_fr": "La Seine à Argenteuil"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q6382435",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20008.jpg",
+      "titre_fr": "Le Pont de Villeneuve-la-Garenne"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3234637",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley-Small%20Meadows%20in%20Spring.jpg",
+      "titre_fr": "Les Petits Prés au printemps"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820330",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Saint-Mamm%C3%A8s%20-%20Le%20Matin.jpg",
+      "titre_fr": "Saint-Mammès: Le Matin"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820336",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Banks%20of%20the%20Seine%20at%20By%20-%201955.534%20-%20Clark%20Art%20Institute.tiff",
+      "titre_fr": "Le Chemin des Fontaines près de By"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19820336",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%2C%20Banks%20of%20the%20Seine%20at%20By.jpg",
+      "titre_fr": "Le Chemin des Fontaines près de By"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q110233853",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%27Lavandi%C3%A8res%20Pr%C3%A8s%20de%20Champagne%27%20by%20Alfred%20Sisley%2C%201879.jpg",
+      "titre_fr": "Lavandières Près de Champagne"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q110916695",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/L%27Abreuvoir%20de%20Marly-Neige.jpg",
+      "titre_fr": "L'Abreuvoir de Marly-Neige"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q106497099",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20le%20Barrage.jpg",
+      "titre_fr": "Le Barrage du Loing à Saint-Mammès"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q107539406",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/LA%20VIEILLE%20%C3%89GLISE%20DE%20MORET%2C%20LE%20MATIN%20AU%20SOLEIL.PNG",
+      "titre_fr": "La Vieille Église de Moret, le matin au soleil"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q107542786",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%20-%20Die%20Kirche%20von%20Moret%20im%20Morgengrauen.jpeg",
+      "titre_fr": "L'Église de Moret au soleil du matin"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q114497771",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Un%20coin%20du%20village%20d%27Andr%C3%A9sy.jpg",
+      "titre_fr": "Chemin montant. Un coin du village d'Andrésy"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q111439708",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%27Moret%20au%20Coucher%20du%20Soleil%2C%20Octobre%27%20by%20Alfred%20Sisley%2C%201888.jpg",
+      "titre_fr": "Moret au Coucher du Soleil, Octobre"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q111354101",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Vue%20de%20Marly-le-Roi%20Sisley.jpg",
+      "titre_fr": "Vue de Marly-le-Roi sous le soleil"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q72164911",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Apr%C3%A8s%20la%20d%C3%A9b%C3%A2cle%2C%20la%20Seine%20au%20pont%20de%20Suresnes.%20Alfred%20Sisley%2C%201880.%20%2820472006790%29.jpg",
+      "titre_fr": "Après la débâcle, la Seine au pont de Suresnes."
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q72164911",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lille%20PdBA%20sisley%20apres%20la%20debacle.JPG",
+      "titre_fr": "Après la débâcle, la Seine au pont de Suresnes."
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q67403850",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Paysage%20de%20neige%20%C3%A0%20Louveciennes.jpg",
+      "titre_fr": "Paysage d'hiver à Louveciennes"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q29654787",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%20-%20le-bois-des-roches-veneux-nadon-1880.jpg",
+      "titre_fr": "Le bois des Roches, Veneux-Nadon."
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q50735017",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Un%20sentier%20aux%20Sablons%20%28A%20path%20at%20Les%20Sablons%29%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Un sentier aux Sablons"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q29654789",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Saint%20Cloud.jpg",
+      "titre_fr": "Saint-Cloud"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q47510831",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%2C%20Paysage%20avec%20maisons%20%28%20Mus%C3%A9e%20d%27art%20moderne%20et%20contemporain%20de%20Strasbourg%20%29.JPG",
+      "titre_fr": "Paysage avec maisons"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q59507009",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%20-%20Washerwomen%2C-Near-Champagne.jpg",
+      "titre_fr": "Laveuses, près de Champagne"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q59506226",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%20-%20the-slopes-of-bougival-1875.jpg",
+      "titre_fr": "The Slopes of Bougival"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q81343504",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sisley%20-%20the-bridge-at-argenteuil-1872.jpg",
+      "titre_fr": "Le pont d'Argenteuil"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q66011812",
+      "createur": "http://www.wikidata.org/entity/Q175130",
+      "createurLabel": "Alfred Sisley",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20Les%20scieurs%20de%20long%20-%20PPP484%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg",
+      "titre_fr": "Les scieurs de long"
+    }
+  ]
+}
