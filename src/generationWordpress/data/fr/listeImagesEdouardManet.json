@@ -1,0 +1,628 @@
+{
+  "sparql": "SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {\n  VALUES ?createur {\n    wd:Q40599\n  }\n  ?uri wdt:P31 wd:Q3305213;\n    wdt:P170 ?createur;\n    wdt:P18 ?image.\n  ?createur rdfs:label ?createurLabel.\n  FILTER((LANG(?createurLabel)) = \"fr\")\n  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }\n  FILTER((LANG(?titre_fr)) = \"fr\")\n}",
+  "liste": [
+    {
+      "uri": "http://www.wikidata.org/entity/Q123347612",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Portrait%20de%20Mademoiselle%20Hecht%20en%20chapeau.jpg",
+      "titre_fr": "Portrait de Mademoiselle Hecht en chapeau"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123286344",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20Le%20Modele%20de%20la%20serveuse%20des%20Folies%20Bergeres.jpg",
+      "titre_fr": "Le Modèle de la serveuse des Folies Bergères"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123286362",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Manet%2017%20sep%2013.jpg",
+      "titre_fr": "Portrait d'Isabelle Lemonnier avec un manchon"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q111132820",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/LE%20BUVEUR%20D%E2%80%99ABSINTHE.PNG",
+      "titre_fr": "Buveur d'absinthe"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q130727571",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20%C3%89douard%20Manet%20-%20Les%20voiliers.jpg",
+      "titre_fr": "Les voiliers"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123286691",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Portrait%20de%20Mme%20Zola.jpg",
+      "titre_fr": "Portrait de Mme Zola"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123347550",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Portrait%20de%20Mademoiselle%20Hecht%20de%20profil.jpg",
+      "titre_fr": "Portrait de Mademoiselle Hecht de profil"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q104971916",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Minnay%20-%20Edouard%20Manet%20-%201879.jpg",
+      "titre_fr": "Minnay"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q109886997",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Bateaux%20en%20Mer%2C%20Golfe%20de%20Gascogne.jpg",
+      "titre_fr": "Bateaux en Mer, Golfe de Gascogne"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123358375",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Portrait%20Cabaner.jpg",
+      "titre_fr": "Portrait de Jean de Cabanes, dit Cabaner, musicien"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123326044",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Buste%20nu%20de%20Jeune%20Femme.jpg",
+      "titre_fr": "Buste nu de Jeune Femme"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123270687",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Cavalier%20%28Portrait%20%C3%A9questre%20de%20M.%20Arnaud%29.jpg",
+      "titre_fr": "Cavalier (Portrait équestre de M. Arnaud)"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q110127294",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Bateaux%20Abordant.jpg",
+      "titre_fr": "Bateaux abordant"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q110127682",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Bal%20masqu%C3%A9%20%C3%A0%20l%E2%80%99op%C3%A9ra%20%28RW%20214%29.jpg",
+      "titre_fr": "Bal masqué à l’opéra"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18223037",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20Bunch%20of%20Asparagus.jpg",
+      "titre_fr": "Botte d'asperges"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18413225",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Jeune%20fille%20dans%20les%20fleurs.jpg",
+      "titre_fr": "Jeunne Fille dans les Fleurs"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18599125",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Parisian%20Lady%20%28%C3%89douard%20Manet%29%20-%20Nationalmuseum%20-%2019127.tif",
+      "titre_fr": "La Parisienne"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18413043",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Jeune%20femme%20%C3%A0%20la%20p%C3%A9lerine.jpg",
+      "titre_fr": "Jeune femme à la pélerine"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q79160954",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Spanish%20Woman%20Wearing%20a%20Black%20Cross%20-%201987.R.1123%20-%20Dallas%20Museum%20of%20Art.jpg",
+      "titre_fr": "Espagnole à la Croix Noire"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q79868509",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%2C%20Le%20Grand%20Canal%20%C3%A0%20Venise.jpg",
+      "titre_fr": "Le Grand Canal à Venise"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q79868517",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20The%20Garden.jpg",
+      "titre_fr": "Au Jardin"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q79154156",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Vase%20of%20White%20Lilacs%20and%20Roses%20-%201985.R.34%20-%20Dallas%20Museum%20of%20Art.jpg",
+      "titre_fr": "Vase avec lilas blanc et rosés"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q97026360",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Th%C3%A9odore%20Duret%20%281868%29%20-%20Edouard%20Manet%20%28%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris%29.jpg",
+      "titre_fr": "Portrait de Théodore Duret"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q103929408",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Corbeille%20de%20poires%20%28RW%20354%29.jpg",
+      "titre_fr": "Corbeille de poires"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q96098653",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20La%20jet%C3%A9e%20de%20Boulogne.jpg",
+      "titre_fr": "La jetée de Boulogne"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q64541763",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Croquet%20at%20Boulogne.jpg",
+      "titre_fr": "Partie de Croquet à Boulogne–sur–Mer"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q28479786",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/MANET%20Le%20Christ%20Jardinier.jpg",
+      "titre_fr": "Le Christ jardinier"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q43325388",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Nature%20morte%2C%20brioche%2C%20fleurs%2C%20poires%20%28RW%20251%29.jpg",
+      "titre_fr": "Nature morte, brioche, fleurs, poires"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q43325394",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Une%20all%C3%A9e%20de%20jardin%20de%20Rueil%20%28RW%20402%29.jpg",
+      "titre_fr": "Une allée de jardin de Rueil"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q47004330",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Lapin.JPG",
+      "titre_fr": "Lapin"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q42310766",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Reclining%20Young%20Woman%20in%20Spanish%20Costume%20-%201961.18.33%20-%20Yale%20University%20Art%20Gallery.jpg",
+      "titre_fr": "Jeune femme couchée en costume espagnol"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q26756023",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20L%E2%80%98ex%C3%A9cution%20de%20l%E2%80%98empereur%20Maximilien%20%281868%29.jpg",
+      "titre_fr": "L‘exécution de l‘empereur Maximilien"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q28127954",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Young%20Girl%20on%20a%20Bench%20%28Fillette%20sur%20un%20banc%29%20-%20BF162%20-%20Barnes%20Foundation.jpg",
+      "titre_fr": "Filette sur un banc"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q45042508",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20La%20Vierge%20au%20lapin.jpg",
+      "titre_fr": "La Vierge au lapin"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q42319149",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Cavaliers%20espagnols%20%28RW%2026%29.jpg",
+      "titre_fr": "Cavaliers espagnols"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q29253942",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20La%20N%C3%A9gresse.jpg",
+      "titre_fr": "La Négresse"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q43081847",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Le%20repos.jpg",
+      "titre_fr": "Le repos"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q26493276",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20L%27execution%20de%20Maximilien%20%28London%29.jpg",
+      "titre_fr": "Exécution de l'Empereur Maximilien du Mexique"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q21050660",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Mery%20Laurent%20au%20Chapeau%20Noir.jpg",
+      "titre_fr": "Méry Laurent au chapeau noir"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19882748",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Manet-Frau-vor-dem-Spiegel.jpg",
+      "titre_fr": "Devant le miroir"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18684767",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Self-Portrait%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Autoportrait avec chapeau"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q20167143",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Copy%20after%20Delacroix%27s%20%22Bark%20of%20Dante%22%20MET%20DT2005.jpg",
+      "titre_fr": "A barca de Dante"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19947331",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Copie%20d%27apr%C3%A8s%20La%20Barque%20de%20Dante%20de%20Delacroix%20-%20Edouard%20Manet%20%28B%20830%29.jpg",
+      "titre_fr": "La Barque de Dante"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18620351",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Jeanne%20%28Spring%29.jpg",
+      "titre_fr": "Le Printemps (Jeanne Demarsy)"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q20746055",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Jeune%20homme%20%C3%A0%20barbe%20blonde.jpg",
+      "titre_fr": "Jeune homme à barbe blonde"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q20539185",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Manet%2C%20Edouard%20-%20The%20Execution%20of%20Emperor%20Maximilian%2C%201867.jpg",
+      "titre_fr": "Exécution de l'Empereur Maximilien du Mexique"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18684783",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Landhaus%20in%20Rueil%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Maison à Rueil"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q20198758",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%2CAt%20the%20Milliner%27s%20%28La%20modiste%29%2C%201881.%20Oil%20on%20Canvas.jpg",
+      "titre_fr": "La modiste"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q20267393",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20L%27ex%C3%A9cution%20de%20Maximilien%20%28Copenhagen%29.jpg",
+      "titre_fr": "Exécution de l'Empereur Maximilien du Mexique"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q19312209",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Etude%20d%27arbres.jpg",
+      "titre_fr": "Etude d'arbres"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q20423282",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20027.jpg",
+      "titre_fr": "Maison à Rueil"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q26492744",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Femme%20au%20chat%20%28Portrait%20de%20Madame%20Manet%29.jpg",
+      "titre_fr": "La Femme au chat"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q21050031",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20Place%20Clichy.jpg",
+      "titre_fr": "Vue Prise de la Place Clichy"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3220354",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Tarring%20the%20Boat%20%28Le%20Bateau%20goudronn%C3%A9%29%20-%20BF166%20-%20Barnes%20Foundation.jpg",
+      "titre_fr": "Le Bateau goudronné"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q7744027",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Le%20%E2%80%9EKearsarge%E2%80%9C%20%C3%A0%20Boulogne.jpg",
+      "titre_fr": "Le Kearsarge à Boulogne"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3206709",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Manet%2C%20Edouard%20-%20Blonde%20Woman%20with%20Bare%20Breasts.jpg",
+      "titre_fr": "La Blonde aux seins nus"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17490851",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20%27Bateaux%20en%20mer%2C%20soleil%20couchant.jpg",
+      "titre_fr": "Bateaux en mer ; soleil couchant"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17495098",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Portrait%20d%27Antonin%20Proust.jpg",
+      "titre_fr": "Portrait d'Antonin Proust (1832-1905), ministre des Beaux-Arts"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1810341",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Le%20petit%20Lange.jpg",
+      "titre_fr": "Le petit Lange"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1810341",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Kinderbildnis%20-%202482%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg",
+      "titre_fr": "Le petit Lange"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q39226",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stra%C3%9Fens%C3%A4ngerin%20%281862%29%20-%20Edouard%20Manet%20%28Museum%20of%20Fine%20Arts%2C%20Boston%29.jpg",
+      "titre_fr": "La Chanteuse de rue"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q15917726",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Manet%2C%20Edouard%20-%20La%20Serveuse%20de%20Bocks%20%28The%20Waitress%29%2C%201879.jpg",
+      "titre_fr": "La Serveuse de bocks"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q44124",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lola%20de%20Valence%20%281862%29%20-%20Edouard%20Manet%20%28Mus%C3%A9e%20d%27Orsay%2C%20Paris%29.jpg",
+      "titre_fr": "Lola de Valence"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1632817",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20031.jpg",
+      "titre_fr": "Chez le père Lathuille"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q72650",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mademoiselle%20V.%20.%20.%20in%20the%20Costume%20of%20an%20Espada%20MET%20DT859.jpg",
+      "titre_fr": "Mlle V. en costume d'espada - Victorine Meurent en costume d'espada"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3178376",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20005.jpg",
+      "titre_fr": "La lecture"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q152509",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Luncheon%20on%20the%20Grass%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Le déjeuner sur l'herbe"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q126467",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20M.%20and%20Mme.%20Auguste%20Manet%20%281860%29%20-%20Edouard%20Manet%20%28Mus%C3%A9e%20d%27Orsay%2C%20Paris%29.jpg",
+      "titre_fr": "Portrait de M. et Mme Auguste Manet"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q16709550",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Nina%20de%20Callais.jpg",
+      "titre_fr": "La dame aux éventails"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3505997",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Madame%20Manet%20ou%20Piano.jpg",
+      "titre_fr": "Madame Édouard Manet au Piano"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1212098",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Le%20Chemin%20de%20fer%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Le chemin de fer"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1245354",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Un%20bar%20aux%20Folies-Berg%C3%A8re%20d%27E.%20Manet%20%28Fondation%20Vuitton%2C%20Paris%29%20%2833539037428%29.jpg",
+      "titre_fr": "Un bar aux Folies Bergère"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q775407",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20The%20Balcony%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Le Balcon"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q16648934",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Rochefort%27s%20Escape%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "L'Évasion de Rochefort"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q15792724",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Jeune%20femme%20en%20rose%20%28Rosita%20Mauri%29.jpg",
+      "titre_fr": "Portrait de la danseuse Rosita Mauri"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q2529703",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20049.jpg",
+      "titre_fr": "Portrait d'Émile Zola"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3212521",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%2C%20The%20Rue%20Mosnier%20with%20Flags%2C%201878.jpg",
+      "titre_fr": "La Rue Mosnier aux drapeaux"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3231193",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Boy%20Blowing%20Bubbles%20Edouard%20Manet.jpg",
+      "titre_fr": "Les Bulles de savon"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q2481954",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20On%20the%20Beach%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Sur la Plage"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q2860945",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20003.jpg",
+      "titre_fr": "Argenteuil"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3227448",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Le%20Suicid%C3%A9.jpg",
+      "titre_fr": "Le Suicidé"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q1551926",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20St%C3%A9phane%20Mallarm%C3%A9%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Stéphane Mallarmé"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q2024709",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Spanish%20Singer%20MET%20dp130799.jpg",
+      "titre_fr": "Le Chanteur espagnol"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3224381",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Matador%20MET%20DT1933.jpg",
+      "titre_fr": "Le Matador saluant"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q17494570",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Oeillets%20et%20cl%C3%A9matite%20dans%20un%20vase%20de%20cristal%20%28ca.1882%29%20-%20Edouard%20Manet%20%28Mus%C3%A9e%20d%27Orsay%2C%20Paris%29.jpg",
+      "titre_fr": "Oeillets et clématite dans un vase de cristal"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3205630",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/L%27Evasion%20de%20Rochefort%20-%20Edouard%20Manet%20%28Kunsthaus%20Z%C3%BCrich%29.jpg",
+      "titre_fr": "L'Évasion de Rochefort"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q2974978",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ed.%20Manet.%20Clair%20de%20lune%20sur%20le%20port%20de%20Boulogne.jpg",
+      "titre_fr": "Clair de lune sur le port de Boulogne"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q2752079",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%20-%20Le%20Christ%20mort%20et%20les%20anges.jpg",
+      "titre_fr": "Le Christ mort et les anges / Le Christ aux anges"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q2899286",
+      "createur": "http://www.wikidata.org/entity/Q40599",
+      "createurLabel": "Édouard Manet",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Berthe%20Morisot%20With%20a%20Bouquet%20of%20Violets%20-%20Google%20Art%20Project.jpg",
+      "titre_fr": "Berthe Morisot au bouquet de violettes"
+    }
+  ]
+}
