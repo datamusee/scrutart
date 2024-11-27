@@ -66,11 +66,12 @@ def postImageToPiwigo(im, piwigoCategory=15, categoryName="portrait"):
             return None
 def convertFromV1To(data, versionTarget):
     targetData = data
-    if "version" in data and data["version"]!="1.0.0":
+    if "version" in data and data["version"]!="1.0.0"  and data["version"]!="1.0.1":
         return data
     if versionTarget=="2.0.0":
         listim = data["liste"]
-        targetData["dict"] = {}
+        if not "dict" in targetData:
+            targetData["dict"] = {}
         targetData["version"] = "2.0.0"
         for im in listim:
             imuri = im["uri"]
@@ -82,7 +83,6 @@ def convertFromV1To(data, versionTarget):
                 if "titre_fr" in im: targetData["dict"][imuri]["titre_fr"] = im["titre_fr"]
                 if "posted" in im: targetData["dict"][imuri]["posted"] = im["posted"]
                 if "image" in im: targetData["dict"][imuri]["images"] = [im["image"]]
-                pass
             else:
                 if "image" in im: targetData["dict"][imuri]["images"].append(im["image"])
         if "liste" in targetData: targetData["liste"] = []
@@ -94,42 +94,93 @@ def simpleCopy(data, versionTarget):
 def convertListImage(data, versionSrc, versionTarget):
     knowVersions = {
         "1.0.0": { "desc" : "version initiale composée d'une liste obtenue par téléchargement sur WDQS auquel on a ajouté un champ sparql pour garder trace de la requ^te qui a servi à générer ces données"},
+        "1.0.1": { "desc" : "v1 pour la clé liste, mais avec déjà des éléments renseignés dans la clé dict construite comme dans v2"},
         "2.0.0": { "desc": "évolution de version 1, pour éviter d'envoyer plusieurs images pour une même oeuvre; la liste est remplacée par un dictionnaire; c'est l'oeuvre qui est marquée comme postée, pas l'image" }
     }
     dataConverter = {
-        "1.0.0": convertFromV1To
+        "1.0.0": convertFromV1To,
+        "1.0.1": convertFromV1To
     }
     targetData = dataConverter.get(versionSrc, simpleCopy)(data,versionTarget)
     return targetData
 
 if __name__=="__main__":
-    categoryName = "Pissarro"
-    piwigoCategory = 40
-    listimagespath = "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesCamillePissarro.json"
-    dictim = {}
-    with open(listimagespath, "r", encoding="UTF-8") as fdata:
-        data = json.loads(fdata.read())
-        if not "version" in data:
-            data = convertListImage(data, "1.0.0", "2.0.0")
-        dictim = data["dict"]
-    if dictim:
-        print(datetime.datetime.now())
-        freqsav = 5
-        idxsav = 0
-        for uri, im in dictim.items():
-            if not "posted" in im:
-                res = postImageToPiwigo(im, piwigoCategory, categoryName)
-                if res:
-                    im["post_result"] = res.text
-                    im["posted"] = True
-                    dictim[uri] = im
-                    idxsav += 1
-                    time.sleep(50)
-                    if idxsav>=freqsav:
-                        idxsav = 0
-                        with open(listimagespath, "w", encoding="UTF-8") as fdata:
-                            data["dict"] = dictim
-                            json.dump(data, fdata, ensure_ascii=False)
+    creatorsToProcess = [
+        {
+            "categoryName": "Gauguin",
+            "piwigoCategory": 39,
+            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesPaulGauguin.json"
+        },
+        {
+            "categoryName" : "Pissarro",
+            "piwigoCategory" : 40,
+            "listimagespath" : "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesCamillePissarro.json"
+        },
+        {
+            "categoryName": "Degas",
+            "piwigoCategory": 41,
+            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesEdgarDegas.json"
+        },
+        {
+            "categoryName": "Manet",
+            "piwigoCategory": 42,
+            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesEdouardManet.json"
+        },
+        {
+            "categoryName": "Bonheur",
+            "piwigoCategory": 43,
+            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesRosaBonheur.json"
+        },
+        {
+            "categoryName": "Sisley",
+            "piwigoCategory": 44,
+            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesAlfredSisley.json"
+        },
+        {
+            "categoryName": "Dufy",
+            "piwigoCategory": 45,
+            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesRaoulDufy.json"
+        },
+        {
+            "categoryName": "Bonnat",
+            "piwigoCategory": 46,
+            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesLéonBonnat.json"
+        },
+    ]
+    for creator in creatorsToProcess:
+        categoryName = creator["categoryName"]
+        piwigoCategory = creator["piwigoCategory"]
+        listimagespath = creator["listimagespath"]
+        dictim = {}
+        with open(listimagespath, "r", encoding="UTF-8") as fdata:
+            data = json.loads(fdata.read())
+            if (not "version" in data) or (data["version"]=="1.0.1"):
+                data = convertListImage(data, "1.0.0", "2.0.0")
+            dictim = data["dict"]
+        if dictim:
+            print(datetime.datetime.now())
+            freqsav = 5
+            idxsav = 0
+            change = False
+            for uri, im in dictim.items():
+                if not "posted" in im:
+                    res = postImageToPiwigo(im, piwigoCategory, categoryName)
+                    if res:
+                        change = True
+                        im["post_result"] = res.text
+                        im["posted"] = True
+                        dictim[uri] = im
+                        idxsav += 1
+                        time.sleep(30)
+                        if idxsav>=freqsav:
+                            idxsav = 0
+                            with open(listimagespath, "w", encoding="UTF-8") as fdata:
+                                data["dict"] = dictim
+                                json.dump(data, fdata, ensure_ascii=False)
+            if change:
+                with open(listimagespath, "w", encoding="UTF-8") as fdata:
+                    data["dict"] = dictim
+                    json.dump(data, fdata, ensure_ascii=False)
 
 
 # La description peut contenir un lien vers l entité source, un lien vers l URL de l image, le copyright
