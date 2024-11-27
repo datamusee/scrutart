@@ -1,18 +1,18 @@
-from WPPainterTemplate import WPPainterTemplate
+from src.generationWordpress.WPPainterTemplate import WPPainterTemplate
 class WPPainterFrenchTemplate(WPPainterTemplate):
 
     def __init__(self):
-        self.version = "1.0.1"
+        self.version = "1.0.2"
         super().__init__("fr")
 
-    def buildTitre(self, varstring="__NOMCREATEUR__"):
+    def buildTitre(self, varstring="__ENTITYNAME__"):
         return """Où trouver """ + varstring + """ dans Wikidata, suivez le guide"""
 
     def buildIntroView(self):
-        intro = super().buildIntroView("""<p>Je vais faire dans ce billet une analyse de la présence des œuvres de __LINKCREATEUR__ dans Wikidata et de leur description.</p>""")
+        intro = super().buildIntroView("""<p>Je vais faire dans ce billet une analyse de la présence des œuvres de __ENTIYLINK__ dans Wikidata et de leur description.</p>""")
         return intro
 
-    def buildNombreOeuvresView(self, varnb="__NBOEUVRES__", varcrea="__LINKCREATEUR__"):
+    def buildNombreOeuvresView(self, varnb="__NBOEUVRES__", varcrea="__ENTIYLINK__"):
         return self.wpWrapPara(
             """<p>Il y a <strong>""" + varnb + """ œuvres de """ + varcrea + """</strong> dans Wikidata.</p>""")
 
@@ -42,7 +42,7 @@ class WPPainterFrenchTemplate(WPPainterTemplate):
     def buildTableView(self): return self.wpWrapPara("""<p>Ce qui s'illustre dans la table:</p>""") + """
     
         <!-- wp:table -->
-        <figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Les paires (propriété, valeur) utilisées plus de 8 fois.</strong></figcaption></figure>
+        <figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Des paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
         <!-- /wp:table -->
     
         """
@@ -51,7 +51,7 @@ class WPPainterFrenchTemplate(WPPainterTemplate):
         return """<!-- wp:wp-mermaid/block -->
 <div class="wp-block-wp-mermaid-block mermaid">
 mindmap
-  root((__NOMCREATEUR__))
+  root((__ENTITYNAME__))
 __GENRELIST__    
 __DEPICTLIST__
 __TYPELIST__
@@ -80,7 +80,7 @@ __TYPELIST__
             """<p>Il y a <strong>__NBIMAGES__ images</strong> dans Wikimedia Commons associées à ces œuvres.</p>""")
 
     def buildFinView(self): return self.wpWrapPara(
-        """<p>J'ai ainsi donné un aperçu de la visibilité des œuvres de __LINKCREATEUR__ dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenues avec <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a>.</p>""")
+        """<p>J'ai ainsi donné un aperçu de la visibilité des œuvres de __ENTIYLINK__ dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenus avec <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a>.</p>""")
 
     def buildScrutartLink(self, title):
         # ici chercher l'url d'une page avec ce titre
