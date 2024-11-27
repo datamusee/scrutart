@@ -1,8 +1,8 @@
-from WPTemplateManager import WPTemplate
+from src.generationWordpress.WPTemplateManager import WPTemplate
 
 dataConfig = {
     # "__TITRE_TEMPLATE__":
-    #    [ { "version": "1.0.2", "template": "Où trouver __NOMCREATEUR__ dans Wikidata, suivez le guide"} ],
+    #    [ { "version": "1.0.2", "template": "Où trouver __ENTITYNAME__ dans Wikidata, suivez le guide"} ],
     "__DATE__": {"sparql": None,
                  "filtres": [{"filtre": "getCurrentDate", "key": "__DATE__"}],
                  "urlquery": None},
@@ -17,6 +17,7 @@ dataConfig = {
                 wdt:P214 wdt:P3219 wdt:P347 wdt:P213 wdt:P268
                 wdt:P12212 wdt:P245 wdt:P8705 wdt:1711 wdt:4200
                 wdt:3219 wdt:10297 wdt:2268 wdt:7444 wdt:1795
+                wdt:1014
               }
               OPTIONAL {
                 ?qid ?idprop ?lid.
@@ -28,18 +29,18 @@ dataConfig = {
         """,
         "filtres": [{"filtre": "getExternalLinks", "key": "__EXTERNALLINKSTABLE__"}],
         "urlquery": None},
-    "__NOMCREATEUR__": {
+    "__ENTITYNAME__": {
         "sparql": """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }  
                     SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],__LANG__,en". } }
                     """,
-        "filtres": [{"filtre": "getName", "key": "__NOMCREATEUR__"},
-                    {"filtre": "getLink", "key": "__LINKCREATEUR__"}],
+        "filtres": [{"filtre": "getName", "key": "__ENTITYNAME__"},
+                    {"filtre": "getLink", "key": "__ENTIYLINK__"}],
         "urlquery": None},
-    # "__LINKCREATEUR__": {
+    # "__ENTIYLINK__": {
     #    "sparql": """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }
     #                SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],__LANG__,en". } }
     #                """,
-    #    "filtres": [{"filtre": "getLink", "key": "__LINKCREATEUR__"}],
+    #    "filtres": [{"filtre": "getLink", "key": "__ENTIYLINK__"}],
     #    "urlquery": ""},
     "__NBOEUVRES__": {"sparql": "select (count(?s) as ?c) where { ?s wdt:P170 wd:__QID__ }",
                       "filtres": [{"filtre": "getInt", "key": "__NBOEUVRES__"}],
