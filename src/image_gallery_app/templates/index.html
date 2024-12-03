@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./static/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie d'images</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+           crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,7 +19,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 20px auto;
         }
         .gallery img {
@@ -30,94 +33,196 @@
         .gallery img:hover {
             transform: scale(1.05);
         }
+        .search-bar {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
-    <!-- <pre>{{ images }}</pre> -->
-    <h1>Galerie d'images</h1>
-    <div class="gallery">
-        {% for name, img_url in images %}
-            <figure>
-                <img src="{{ img_url }}" alt="{{ name }}">
-                <figcaption>{{ name }}</figcaption>
-            </figure>
-        {% endfor %}
-    </div>
     <div id="app">
-        <h1>Galerie d'Images</h1>
-        <input type="text" v-model="search" placeholder="Rechercher une image...">
+        <h1>Galerie 'portrait'</h1>
+        <!-- <p><% message %></p>
+        <p><% searchQuery %></p>
+         -->
+        <div class="search-bar">
+            <input type="text" v-model="searchQuery" placeholder="Rechercher une image...">
+        </div>
 
         <!-- Affiche un message si aucune image ne correspond à la recherche -->
         <div v-if="filteredImages.length === 0">
             <p>Aucune image ne correspond à votre recherche.</p>
         </div>
 
-
         <!-- Galerie d'images -->
         <!-- Affiche le modal si une image est sélectionnée -->
-        <div class="gallery" v-else>
-            {% for image in images %}
-            <div class="image-card"  key="{{ image.name }}">
-                <img src="{{ image.url }}" alt="{{ image.name }}" @click="viewImage({ 'name': '{{ image.name }}', 'url': '{{ image.url }}' })">
-                <p>{{ image.name }}</p>
+        <div class="gallery" id="gallery" v-else>
+            <div class="image-card" v-for="image in filteredImages" :key="image.name">
+                <img :src="image.url" :alt="image.name" @click="viewImage(image)">
+                <p><% image.name %></p>
             </div>
-            {% endfor %}
         </div>
 
          <!-- Div d'affichage de l'image sélectionnée géré uniquement par Vue -->
-         {% raw %}
-        <div v-if="selectedImage">
-            <img :src="selectedImage.url" :alt="selectedImage.name">
-            <p>{{ selectedImage.name }}</p>
+        <div id="selectedImage">
+            <figure>
+                <img src="">
+                <figcaption></figcaption>
         </div>
-         {% endraw %}
 
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- App JavaScript -->
+    <!--<script src="{{ url_for('static', filename='js/app.js') }}"></script>-->
     <script>
-        function viewImage(image) {
-                    this.selectedImage = image;
-                    console.log("Image sélectionnée :", image);
-               }
+        const test = "toto";
+       function viewImage(image) {
+           selectedImage = document.querySelector('#selectedImage');
+           figure = selectedImage.querySelector("figure");
+           img = figure.querySelector("img");
+           img.setAttribute("src", image.path);
+           img.setAttribute("alt", image.name);
+           caption = figure.querySelector("figcaption");
+           caption.text = image.name;
+           console.log("Image sélectionnée :", image);
+       }
 
-          function  filteredImages() {
-                console.log(this.images);
-                if (!this.images || !Array.isArray(this.images)) {
-                    alert("problème avec images")
-                    return [];
-                }
-
-                const searchLower = this.search ? this.search.toLowerCase() : "";
-
-                if (searchLower === "") {
-                    return this.images;
-                }
-
-                return this.images.filter(image => {
-                    return image && image.name && image.name.toLowerCase().includes(searchLower);
-                });
+       async function fetchImages() {
+            const response = await fetch('/gallerylist');  // Remplace l'URL par celle de ton API
+            if (!response.ok) {
+                throw new Error("Erreur lors de la récupération des images");
             }
-        new Vue({
-            el: "#app",
+            return await response.json();
+        }
+
+        async function getGalleryList() {
+          try {
+            const path = '/gallerylist';
+            const response = await axios.get(path);
+            const galleryList = response.data;
+            console.log(`GET: Here's the list of images`, galleryList);
+            return galleryList;
+          } catch (errors) {
+            console.error(errors);
+          }
+        };
+
+        const createImageElement = item => {
+          const imageElement = document.createElement('figure');
+          imageElement.addEventListener("click", function(event) {
+              elmt = event.currentTarget;
+              image = elmt.querySelector("img");
+              path = image.getAttribute("src");
+              name = image.getAttribute("alt")
+              viewImage({ 'name': name, 'path': path, 'url': null }); console.log("click on ", name);
+          });
+          image = document.createElement('img');
+          image.setAttribute("src",item.path)
+          image.setAttribute("alt",item.name)
+          imageElement.appendChild(image);
+          figcaption = document.createElement('figcaption');
+          figcaption.innerText = item.name;
+          imageElement.appendChild(figcaption);
+          return imageElement;
+        };
+
+        const updateImageList = imageItems => {
+          const imageList = document.querySelector('#gallery');
+
+          if (Array.isArray(imageItems) && imageItems.length > 0) {
+            imageItems.map(imageItem => {
+              imageList.appendChild(createImageElement(imageItem));
+            });
+          } else if (imageItems) {
+            //imageList.appendChild(createImageElement(imageItems));
+          }
+        };
+
+        const main = async () => {
+          updateImageList(await getGalleryList());
+        };
+
+        // main();
+        function getGalleryList0() {
+                  const path = 'http://127.0.0.1:5000/gallerylist';
+                  const response =  axios.get(path);
+                  galleryList = response;
+           return galleryList;
+        }
+        configVue = {
+             el: '#app',
             data: {
-                images: {{ images | tojson | safe }},
-                search: {{ search | tojson | safe  }},
+                message: "Coucou, vue en marche",
+                images: [],
+                searchQuery: '',
                 selectedImage: null,
+            },
+            computed: {
+                filteredImages() {
+                    console.log("en vue filtrage : ", this.images);
+                    if (!this.images || !Array.isArray(this.images)) {
+                        alert("problème avec images")
+                        return [];
+                    }
+
+                    const searchLower = this.searchQuery ? this.searchQuery.toLowerCase() : "";
+
+                    if (searchLower === "") {
+                        return this.images;
+                    }
+
+                    return this.images.filter(image => {
+                        return image && image.name && image.name.toLowerCase().includes(searchLower);
+                    });
+                }
+            },
+            methods: {
+                viewImage,
+                getFilteredImages() {
+                    console.log("en vue affichage : ", this.images);
+                    if (!this.images || !Array.isArray(this.images)) {
+                        alert("problème avec images")
+                        return [];
+                    }
+
+                    const searchLower = this.search ? this.searchQuery.toLowerCase() : "";
+
+                    if (searchLower === "") {
+                        return this.images;
+                    }
+
+                    return this.images.filter(image => {
+                        return image && image.name && image.name.toLowerCase().includes(searchLower);
+                    });
+                }
+            },
+            async mounted() {
+                try {
+                    // Attendre que la Promise soit résolue et assigner la liste à `this.images`
+                    this.images = await fetchImages();  // Remplace `fetchImages` par ta fonction de récupération d'images
+                } catch (error) {
+                    console.error("Erreur lors du chargement des images :", error);
+                }
             },
             created() {
               console.log("Images après initialisation:", this.images);  // Vérifie que `images` est bien initialisé
               console.log("Selected Image: ", this.selectedImage);
-              console.log("Search: ", search)
+              console.log("Search: ", this.searchQuery)
             },
-            computed: {
-                  filteredImages
-            },
-            methods: {
-                viewImage
-            }
-        });
-    </script>
+            delimiters: ["<%","%>"]
+        };
+        // const app = Vue.createApp(configVue)
+        new Vue(configVue);
+        </script>
 </body>
 </html>

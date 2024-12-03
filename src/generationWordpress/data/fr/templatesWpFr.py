@@ -1,6 +1,6 @@
 templatesCreateur = {
     "lang": "en",
-    "titreTemplate": """__NOMCREATEUR__ dans Wikidata""",
+    "titreTemplate": """__ENTITYNAME__ dans Wikidata""",
 
     "imageTemplate": """<!-- wp:image {"sizeSlug":"large"} -->
 <figure class="wp-block-image size-large"><img src="__URLIMAGE__" alt="" /></figure>
@@ -12,14 +12,14 @@ templatesCreateur = {
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Je vais faire dans ce billet une analyse de la présence des œuvres de __LINKCREATEUR__ dans Wikidata et de leur description.</p>
+<p>Je vais faire dans ce billet une analyse de la présence des œuvres de __ENTIYLINK__ dans Wikidata et de leur description.</p>
 <p>Cette analyse s'appuie sur des requêtes sparql qui permettent d'interroger les données de Wikidata. Un lien est fourni pour exécuter la requête dans WDQS, l'outil d'interrogation SPARQL de Wikidata</p>
 <!-- /wp:paragraph -->
 
 """,
 
     "nombreOeuvresTemplate": """<!-- wp:paragraph -->
-<p>Il y a <strong>__NBOEUVRES__ œuvres de __LINKCREATEUR__</strong> dans Wikidata.</p>
+<p>Il y a <strong>__NBOEUVRES__ œuvres de __ENTIYLINK__</strong> dans Wikidata.</p>
 <!-- /wp:paragraph -->
 
 """,
@@ -95,7 +95,7 @@ templatesCreateur = {
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Les paires (propriété, valeur) utilisées plus de 8 fois.</strong></figcaption></figure>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Des paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
 <!-- /wp:table -->
 
 """,
@@ -109,7 +109,7 @@ templatesCreateur = {
     "mermaidTemplate": """<!-- wp:wp-mermaid/block -->
 <div class="wp-block-wp-mermaid-block mermaid">
 mindmap
-  root((__NOMCREATEUR__))
+  root((__ENTITYNAME__))
     Genre
 __GENRELIST__    
     Depicts
@@ -182,7 +182,7 @@ __TYPELIST__
 """,
 
     "finTemplate": """<!-- wp:paragraph -->
-<br>J'ai ainsi donné un aperçu de la visibilité des œuvres de __LINKCREATEUR__ dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/2023/12/04/the-joconde-dataset-and-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenues avec <a href="https://datamusee.wp.imt.fr/2023/12/04/the-joconde-dataset-and-lod/">SemJoconde</a>.
+<br>J'ai ainsi donné un aperçu de la visibilité des œuvres de __ENTIYLINK__ dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/2023/12/04/the-joconde-dataset-and-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenus avec <a href="https://datamusee.wp.imt.fr/2023/12/04/the-joconde-dataset-and-lod/">SemJoconde</a>.
 <!-- /wp:paragraph -->
 """
 
