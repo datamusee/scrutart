@@ -1,0 +1,8 @@
+# exemple; il faut changer le values pour changer le genre maître
+select  ?sousgenre ?sousgenreLabel
+where {
+  values ?genre { wd:Q2864737 }
+      ?sousgenre wdt:P279 ?genre
+      #filter not exists { ?sousgenre wdt:P279 ?genre}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+}

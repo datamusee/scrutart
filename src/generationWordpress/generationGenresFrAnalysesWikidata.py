@@ -19,25 +19,17 @@ import src.generationWordpress.PageBuilder as PageBuilder
 
 # ne traiter que ceux qui sont dans filterEntities en supprimant la page si elle existe déjà
 filterEntities = [
-    # "Q134307" # portrait
-    # "Q2864737", # art sacré
-    # "Q191163", # paysage
-    # "Q170571", # nature morte
-    # "Q158607", # marine
-    "Q1047337", # scène de genre
-    "Q192110", # autoportrait
-    "Q128115", # art abstrait
-    "Q40446" # nu
+    "Q134307" # portrait
 ]
 filelist = os.listdir("./pages/genre/fr")
 for qid in filterEntities:
     if "{qid}.wp".format(qid=qid) in filelist:
         os.remove("pages/genre/fr/{qid}.wp".format(qid=qid))
 
-pbGenreFr = PageBuilder.PageBuilder("Q1792379")  # genre, default lang fr
-with open("data/GenresWikidataPlusde10Peintures.json", encoding="UTF-8") as fListGenres:
-    genres = json.load(fListGenres)
-    for p in genres:
+pbTypeFr = PageBuilder.PageBuilder("Q1028181")  # type=genre, default lang fr
+with open("data/GenresWikidataPlusde10Peintures.json", encoding="UTF-8") as fListType:
+    types = json.load(fListType)
+    for p in types:
         print(p["entity"], " ", p["entityLabel"])
         try:
             qid = p["entity"].replace("http://www.wikidata.org/entity/", "")
@@ -45,11 +37,11 @@ with open("data/GenresWikidataPlusde10Peintures.json", encoding="UTF-8") as fLis
                 continue
             filename = "pages/genre/fr/{qid}.wp".format(qid=str(qid))
             with open(filename, "x", encoding="utf-8") as fpage:
-                page = pbGenreFr.build_scrutart_page(qid)  # portrait
-                page = pbGenreFr.nettoyageContenu(page)
+                page = pbTypeFr.build_scrutart_page(qid)
+                page = pbTypeFr.nettoyageContenu(page)
                 fpage.write(page)
                 time.sleep(3)
         except Exception as e: # file already exist or other error
             print(e)
-            print("possibly a file already exists for ", qid)
+            print("error; possibly a file already exists for ", qid)
         pass

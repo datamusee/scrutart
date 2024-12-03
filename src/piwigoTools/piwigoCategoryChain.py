@@ -53,7 +53,9 @@ def commentCategoryInPiwigo(catName, categoryId, catFreq):
             return None, "Erreur d'envoir de description (comment)"
 
 if __name__=="__main__":
-    seuil = 600
+    # EN COURS D ECRITURE
+    seuilMin = 50
+    seuilMax = 600
     listcategoriespath = "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeGenresPeintures.json"
     listcat = []
     with open(listcategoriespath, "r", encoding="UTF-8") as fdata:
@@ -67,8 +69,9 @@ if __name__=="__main__":
         # * créer si nécessaire une catégorie (album) dans Piwigo
 
         # * mettre à jour le commentaire des albums créés
+        # EN COURS D ECRITURE
         for cat in listcat:
-            if (int(cat["c"])>seuil):
+            if (int(cat["c"])>=seuilMin) and (int(cat["c"])<=seuilMax):
                 catid = json.loads(cat["galerie"])["result"]["id"]
                 res, comment = commentCategoryInPiwigo(cat["genreLabel"], catid, cat["c"])
                 if res:

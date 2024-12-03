@@ -44,7 +44,8 @@ def createCategoryInPiwigo(categoryName="portrait"):
             return None
 
 if __name__=="__main__":
-    seuil = 600
+    seuilMin = 50
+    seuilMax = 600
     listcategoriespath = "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeGenresPeintures.json"
     listcat = []
     with open(listcategoriespath, "r", encoding="UTF-8") as fdata:
@@ -55,7 +56,7 @@ if __name__=="__main__":
         freqsav = 1
         idxsav = 0
         for cat in listcat:
-            if (not "galerie" in cat) and (int(cat["c"])>seuil):
+            if (not "galerie" in cat) and (int(cat["c"])>=seuilMin)  and (int(cat["c"])<=seuilMax):
                 res = createCategoryInPiwigo(cat["genreLabel"])
                 if res:
                     cat["galerie"] = res.text

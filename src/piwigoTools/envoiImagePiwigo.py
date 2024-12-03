@@ -105,48 +105,10 @@ def convertListImage(data, versionSrc, versionTarget):
     return targetData
 
 if __name__=="__main__":
-    creatorsToProcess = [
-        {
-            "categoryName": "Gauguin",
-            "piwigoCategory": 39,
-            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesPaulGauguin.json"
-        },
-        {
-            "categoryName" : "Pissarro",
-            "piwigoCategory" : 40,
-            "listimagespath" : "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesCamillePissarro.json"
-        },
-        {
-            "categoryName": "Degas",
-            "piwigoCategory": 41,
-            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesEdgarDegas.json"
-        },
-        {
-            "categoryName": "Manet",
-            "piwigoCategory": 42,
-            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesEdouardManet.json"
-        },
-        {
-            "categoryName": "Bonheur",
-            "piwigoCategory": 43,
-            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesRosaBonheur.json"
-        },
-        {
-            "categoryName": "Sisley",
-            "piwigoCategory": 44,
-            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesAlfredSisley.json"
-        },
-        {
-            "categoryName": "Dufy",
-            "piwigoCategory": 45,
-            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesRaoulDufy.json"
-        },
-        {
-            "categoryName": "Bonnat",
-            "piwigoCategory": 46,
-            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesLéonBonnat.json"
-        },
-    ]
+    creatorsToProcess = []
+    with open("D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\listeAlbumsCreateurs.json",
+              encoding="UTF-8") as albumsCreatorsFile:
+        creatorsToProcess = json.load(albumsCreatorsFile)
     for creator in creatorsToProcess:
         categoryName = creator["categoryName"]
         piwigoCategory = creator["piwigoCategory"]
