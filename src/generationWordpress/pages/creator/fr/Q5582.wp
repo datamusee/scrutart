@@ -1,0 +1,243 @@
+
+        <!-- wp:html -->
+        <!-- processParams = { "qid": "Q5582", "templateVersion": "1.0.1" } -->
+        <!-- /wp:html -->        
+        
+        <!-- wp:html -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name":"Vincent van Gogh",
+            }
+            </script>
+        <!-- /wp:html -->
+        
+        <!-- wp:image -->
+        <figure class="wp-block-image size-large"><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Vase%20with%20Chinese%20asters%20and%20gladioli%20-%20Vincent%20van%20Gogh.jpg" alt="" /></figure>
+        <!-- /wp:image -->
+        <!-- wp:table {"style":{"border":{"width":"0px","style":"none"}}} -->
+        <p>Liens externes:</p>
+        <figure class="wp-block-table">
+        <table class="has-fixed-layout" style="border-style:none;border-width:0px">
+        <tbody>
+        <tr>
+        <td><a href="https://catalogue.bnf.fr/ark:/12148/cb11927591g"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonBnf.svg" alt="lien Scrutart"></a></td>
+<td><a href="https://www.universalis.fr/encyclopedie/vincent-van-gogh/"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonUniversalis.svg" alt="lien Scrutart"></a></td>
+<td><a href="https://www.universalis.fr/encyclopedie/vincent-van-gogh-d-arles-a-auvers-reperes-chronologiques/"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonUniversalis.svg" alt="lien Scrutart"></a></td>
+<td><a href="http://arts-graphiques.louvre.fr/detail/artistes/1/1143-GOGH-Vincent-van"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonLouvre.svg" alt="lien Scrutart"></a></td>
+<td><a href="https://viaf.org/viaf/9854560/"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonViaf.svg" alt="lien Scrutart"></a></td>
+<td><a href="https://isni.org/isni/0000000120955689"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonIsni.svg" alt="lien Scrutart"></a></td>
+<td><a href="https://www.getty.edu/vow/ULANFullDisplay?find=&role=&nation=&subjectid=500115588"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonGetty.svg" alt="lien Scrutart"></a></td>
+</tr>
+        </tbody>
+        </table>
+        </figure>
+        <!-- /wp:table -->
+        
+        <!-- wp:paragraph -->
+        <p><em>Note: les chiffres de ce billet correspondent à la situation du 2024-10-16</em></p>
+        <!-- /wp:paragraph -->
+        
+        
+        
+        
+        <!-- wp:paragraph -->
+        <p>Je vais faire dans ce billet une analyse de la présence des œuvres de <a href="http://www.wikidata.org/entity/Q5582">Vincent van Gogh</a> dans Wikidata et de leur description.</p><p>Cette analyse s'appuie sur des requêtes sparql qui permettent d'interroger les données de Wikidata. Un lien est fourni pour exécuter la requête dans WDQS, l'outil d'interrogation SPARQL de Wikidata</p>
+        
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>Il y a <strong>1133 œuvres de <a href="http://www.wikidata.org/entity/Q5582">Vincent van Gogh</a></strong> dans Wikidata.</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#select%20%28count%28%3Fs%29%20as%20%3Fc%29%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ5582%20%7D'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>Il s'agit de <strong>+888 peintures</strong>, 109 dessins, 68 aquarelles, 59 série de peinturess,  et d'autres types d'oeuvres plus exceptionnels.</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#select%20%3Ftype%20%3FtypeLabel%20%28count%28%3Fs%29%20as%20%3Fc%29%20where%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ5582%3B%20wdt%3AP31%20%3Ftype%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cfr%2Cen%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20group%20by%20%3Ftype%20%3FtypeLabel%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20order%20by%20desc%28%3Fc%29'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>Pour décrire ces œuvres, <strong>379 propriétés</strong> sont utilisées.</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#select%20%28count%28distinct%20%3Fp%29%20as%20%3Fc%29%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ5582%3B%20%3Fp%20%5B%5D%20%7D'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p><strong>17 propriétés</strong> sont utilisées sur plus de la <strong>moitié des œuvres</strong>.</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#select%20%28count%28%3Fp%29%20as%20%3Fc%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20where%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20select%20%20%28count%28distinct%20%3Fs%29%20as%20%3Fnboeuvres%29%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ5582%20%7D%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20select%20%3Fp%20%28count%28distinct%20%3Fs%29%20as%20%3Foeuvresparprop%29%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ5582%3B%20%3Fp%20%5B%5D%20%7D%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20group%20by%20%3Fp%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28%21contains%28str%28%3Fp%29%2C%20%22schema%3A%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28%21contains%28str%28%3Fp%29%2C%20%22wikiba.se%3A%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28contains%28str%28%3Fp%29%2C%20%22direct%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20bind%20%28%20%28xsd%3Afloat%28%3Fnboeuvres%29/2.0%29%20as%20%3Fdemi%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28%3Foeuvresparprop%3E%3Fdemi%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>Il y a <strong>306 paires (propriété, valeur)</strong> différentes utilisées sur au moins huit de ces œuvres.</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#select%20distinct%20%3Fp%20%3Fv%20%28count%28distinct%20%3Fs%29%20as%20%3Fc%29%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ5582%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28%3Fp%21%3Dschema%3Adescription%29%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20group%20by%20%3Fp%20%3Fv%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%3E8%29'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>Cela concerne <strong>23 propriétés</strong>.</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#SELECT%20DISTINCT%20%3Fp%20%3FpropLabel%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20DISTINCT%20%3Fp%20%3Fv%20%28COUNT%28DISTINCT%20%3Fs%29%20AS%20%3Fc%29%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ5582%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%21%3D%20schema%3Adescription%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20GROUP%20BY%20%3Fp%20%3Fv%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%20%3E%208%20%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fprop%20wikibase%3AdirectClaim%20%3Fp.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>Ce qui s'illustre dans la table:</p>
+        <!-- /wp:paragraph -->
+        
+        
+    
+        <!-- wp:table -->
+        <figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P195">P195</a></td><td>collection</td><td><a href="http://www.wikidata.org/entity/Q224124">musée Van-Gogh</a> (264), <a href="http://www.wikidata.org/entity/Q1051928">musée Kröller-Müller</a> (112), <a href="http://www.wikidata.org/entity/Q160236">Metropolitan Museum of Art</a> (25), <a href="http://www.wikidata.org/entity/Q23402">musée d'Orsay</a> (24), <a href="http://www.wikidata.org/entity/Q190804">Rijksmuseum</a> (17), <a href="http://www.wikidata.org/entity/Q239303">Art Institute of Chicago</a> (14), <a href="http://www.wikidata.org/entity/Q214867">National Gallery of Art</a> (13), <a href="http://www.wikidata.org/entity/Q12013217">musée du Brabant-Septentrional</a> (12), <a href="http://www.wikidata.org/entity/Q679527">musée Boijmans Van Beuningen</a> (11), <a href="http://www.wikidata.org/entity/Q15697027">Collection Stávros Niárchos</a> (10), <a href="http://www.wikidata.org/entity/Q924335">Stedelijk Museum Amsterdam</a> (9), <a href="http://www.wikidata.org/entity/Q180788">National Gallery</a> (9), <a href="http://www.wikidata.org/entity/Q132783">musée de l'Ermitage</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P276">P276</a></td><td>location</td><td><a href="http://www.wikidata.org/entity/Q224124">musée Van-Gogh</a> (234), <a href="http://www.wikidata.org/entity/Q1051928">musée Kröller-Müller</a> (102), <a href="http://www.wikidata.org/entity/Q23402">musée d'Orsay</a> (25), <a href="http://www.wikidata.org/entity/Q160236">Metropolitan Museum of Art</a> (23), <a href="http://www.wikidata.org/entity/Q190804">Rijksmuseum</a> (15), <a href="http://www.wikidata.org/entity/Q214867">National Gallery of Art</a> (13), <a href="http://www.wikidata.org/entity/Q679527">musée Boijmans Van Beuningen</a> (12), <a href="http://www.wikidata.org/entity/Q239303">Art Institute of Chicago</a> (11), <a href="http://www.wikidata.org/entity/Q15697027">Collection Stávros Niárchos</a> (10), <a href="http://www.wikidata.org/entity/Q12013217">musée du Brabant-Septentrional</a> (10), <a href="http://www.wikidata.org/entity/Q180788">National Gallery</a> (9), <a href="http://www.wikidata.org/entity/Q132783">musée de l'Ermitage</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P180">P180</a></td><td>depicts</td><td><a href="http://www.wikidata.org/entity/Q467">femme</a> (126), <a href="http://www.wikidata.org/entity/Q235155">blanc</a> (71), <a href="http://www.wikidata.org/entity/Q8441">homme</a> (70), <a href="http://www.wikidata.org/entity/Q838811">paysan</a> (64), <a href="http://www.wikidata.org/entity/Q10884">arbre</a> (63), <a href="http://www.wikidata.org/entity/Q5582">Vincent van Gogh</a> (38), <a href="http://www.wikidata.org/entity/Q506">fleur</a> (37), <a href="http://www.wikidata.org/entity/Q191851">vase</a> (36), <a href="http://www.wikidata.org/entity/Q188869">champ</a> (34), <a href="http://www.wikidata.org/entity/Q3947">maison</a> (25), <a href="http://www.wikidata.org/entity/Q5">être humain</a> (24), <a href="http://www.wikidata.org/entity/Q527">ciel</a> (22), <a href="http://www.wikidata.org/entity/Q14748">table</a> (18), <a href="http://www.wikidata.org/entity/Q1144593">position assise</a> (18), <a href="http://www.wikidata.org/entity/Q1107656">jardin</a> (17), <a href="http://www.wikidata.org/entity/Q80228">bouteille</a> (15), <a href="http://www.wikidata.org/entity/Q167633">sabot</a> (14), <a href="http://www.wikidata.org/entity/Q80151">chapeau</a> (14), <a href="http://www.wikidata.org/entity/Q5783996">cottage</a> (13), <a href="http://www.wikidata.org/entity/Q200539">robe</a> (13), <a href="http://www.wikidata.org/entity/Q12106">Triticum</a> (12), <a href="http://www.wikidata.org/entity/Q1187930">bouquet de fleurs</a> (12), <a href="http://www.wikidata.org/entity/Q48292">Arles</a> (11), <a href="http://www.wikidata.org/entity/Q16587531">pomme de terre</a> (11), <a href="http://www.wikidata.org/entity/Q104526">pipe</a> (11), <a href="http://www.wikidata.org/entity/Q38720">moulin à vent</a> (10), <a href="http://www.wikidata.org/entity/Q15026">chaise</a> (10), <a href="http://www.wikidata.org/entity/Q173056">métier à tisser</a> (10), <a href="http://www.wikidata.org/entity/Q166564">coucher de soleil</a> (10), <a href="http://www.wikidata.org/entity/Q130201">coquelicot</a> (10), <a href="http://www.wikidata.org/entity/Q42804">barbe</a> (9), <a href="http://www.wikidata.org/entity/Q8074">nuage</a> (9), <a href="http://www.wikidata.org/entity/Q571">livre</a> (9), <a href="http://www.wikidata.org/entity/Q6537379">marche</a> (9), <a href="http://www.wikidata.org/entity/Q212406">Auvers-sur-Oise</a> (9), <a href="http://www.wikidata.org/entity/Q201097">panier</a> (9), <a href="http://www.wikidata.org/entity/Q171497">tournesol</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P186">P186</a></td><td>made from material</td><td><a href="http://www.wikidata.org/entity/Q296955">peinture à l'huile</a> (898), <a href="http://www.wikidata.org/entity/Q12321255">toile</a> (827), <a href="http://www.wikidata.org/entity/Q106857709">panneau de bois</a> (76), <a href="http://www.wikidata.org/entity/Q18668582">carton</a> (32), <a href="http://www.wikidata.org/entity/Q11472">papier</a> (30), <a href="http://www.wikidata.org/entity/Q22915256">aquarelle</a> (26), <a href="http://www.wikidata.org/entity/Q4259259">toile</a> (14), <a href="http://www.wikidata.org/entity/Q14674">crayon</a> (11), <a href="http://www.wikidata.org/entity/Q127418">encre</a> (10), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P126">P126</a></td><td>maintained by</td><td><a href="http://www.wikidata.org/entity/Q67429134">Q67429134</a> (18), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P135">P135</a></td><td>movement</td><td><a href="http://www.wikidata.org/entity/Q10857409">réalisme</a> (54), <a href="http://www.wikidata.org/entity/Q2642826">réalisme</a> (41), <a href="http://www.wikidata.org/entity/Q166713">postimpressionnisme</a> (21), <a href="http://www.wikidata.org/entity/Q40415">impressionnisme</a> (19), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P170">P170</a></td><td>creator</td><td><a href="http://www.wikidata.org/entity/Q5582">Vincent van Gogh</a> (1133), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P136">P136</a></td><td>genre</td><td><a href="http://www.wikidata.org/entity/Q191163">paysage</a> (234), <a href="http://www.wikidata.org/entity/Q134307">portrait</a> (155), <a href="http://www.wikidata.org/entity/Q170571">nature morte</a> (130), <a href="http://www.wikidata.org/entity/Q1047337">scène de genre</a> (84), <a href="http://www.wikidata.org/entity/Q12303833">peinture de fleurs</a> (49), <a href="http://www.wikidata.org/entity/Q192110">autoportrait</a> (38), <a href="http://www.wikidata.org/entity/Q1935974">paysage urbain</a> (22), <a href="http://www.wikidata.org/entity/Q18353841">peinture d'architecture</a> (13), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P17">P17</a></td><td>country</td><td><a href="http://www.wikidata.org/entity/Q55">Pays-Bas</a> (11), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P127">P127</a></td><td>owned by</td><td><a href="http://www.wikidata.org/entity/Q17330279">Cornelis Hoogendijk</a> (11), <a href="http://www.wikidata.org/entity/Q2554450">Johanna van Gogh</a> (11), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P31">P31</a></td><td>instance of</td><td><a href="http://www.wikidata.org/entity/Q3305213">peinture</a> (888), <a href="http://www.wikidata.org/entity/Q93184">dessin</a> (109), <a href="http://www.wikidata.org/entity/Q18761202">aquarelle</a> (68), <a href="http://www.wikidata.org/entity/Q15727816">série de peintures</a> (59), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P571">P571</a></td><td>inception</td><td>1887 (142), 1886 (91), 1888 (91), 1889 (86), 1885 (69), 1890 (63), 1888 (26), 1888 (21), 1884 (20), 1890 (20), 1884 (20), 1890 (17), 1889 (16), 1885 (15), 1889 (15), 1888 (14), 1889 (13), 1888 (13), 1882 (12), 1882 (11), 1888 (11), 1889 (10), 1889 (10), 1889 (10), 1883 (10), 1888 (10), 1885 (9), 1889 (9), 1890 (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P495">P495</a></td><td>country of origin</td><td><a href="http://www.wikidata.org/entity/Q55">Pays-Bas</a> (33), <a href="http://www.wikidata.org/entity/Q142">France</a> (21), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P921">P921</a></td><td>main subject</td><td><a href="http://www.wikidata.org/entity/Q467">femme</a> (54), <a href="http://www.wikidata.org/entity/Q5582">Vincent van Gogh</a> (37), <a href="http://www.wikidata.org/entity/Q506">fleur</a> (34), <a href="http://www.wikidata.org/entity/Q41176">bâtiment</a> (18), <a href="http://www.wikidata.org/entity/Q2095">nourriture</a> (16), <a href="http://www.wikidata.org/entity/Q851782">vaisselle</a> (13), <a href="http://www.wikidata.org/entity/Q877729">artisanat</a> (12), <a href="http://www.wikidata.org/entity/Q11451">agriculture</a> (11), <a href="http://www.wikidata.org/entity/Q8441">homme</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1071">P1071</a></td><td>location of creation</td><td><a href="http://www.wikidata.org/entity/Q90">Paris</a> (226), <a href="http://www.wikidata.org/entity/Q153516">Nuenen</a> (193), <a href="http://www.wikidata.org/entity/Q48292">Arles</a> (180), <a href="http://www.wikidata.org/entity/Q221507">Saint-Rémy-de-Provence</a> (144), <a href="http://www.wikidata.org/entity/Q212406">Auvers-sur-Oise</a> (77), <a href="http://www.wikidata.org/entity/Q36600">La Haye</a> (28), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1257">P1257</a></td><td>depicts Iconclass notation</td><td><a href="25I">25I</a> (67), <a href="25H">25H</a> (29), <a href="31A24(+1)">31A24(+1)</a> (25), <a href="61B(+52)">61B(+52)</a> (25), <a href="25G3">25G3</a> (20), <a href="31D15">31D15</a> (20), <a href="48B3">48B3</a> (19), <a href="41D221(CAP)">41D221(CAP)</a> (17), <a href="31D14">31D14</a> (15), <a href="41A671">41A671</a> (14), <a href="31A2421">31A2421</a> (14), <a href="46C11">46C11</a> (13), <a href="41A1">41A1</a> (13), <a href="41A774">41A774</a> (12), <a href="31A2422">31A2422</a> (11), <a href="41A772">41A772</a> (11), <a href="31A221">31A221</a> (11), <a href="25H15">25H15</a> (10), <a href="48C24">48C24</a> (10), <a href="25H183">25H183</a> (10), <a href="41A2">41A2</a> (10), <a href="47I411">47I411</a> (10), <a href="46AA14">46AA14</a> (10), <a href="41A6">41A6</a> (10), <a href="25I1">25I1</a> (9), <a href="31A235">31A235</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1343">P1343</a></td><td>described by source</td><td><a href="http://www.wikidata.org/entity/Q28837176">Heilbrunn Timeline of Art History</a> (17), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2048">P2048</a></td><td>height</td><td>73 (39), 65 (23), 50 (22), 72 (21), 46 (21), 33 (21), 61 (20), 41 (19), 42 (18), 55 (16), 54 (16), 31.5 (14), 35 (14), 32 (14), 33.5 (13), 92 (13), 47 (13), 38 (13), 40 (13), 45 (12), 44 (12), 32.5 (11), 39 (11), 60 (11), 46.5 (10), 45.5 (9), 40.5 (9), 37.5 (9), 64 (9), 49 (9), 48 (9), 43 (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2049">P2049</a></td><td>width</td><td>92 (32), 65 (21), 46 (20), 50 (20), 47 (18), 41 (17), 38 (17), 54 (16), 73 (15), 33 (15), 60 (15), 32.5 (14), 61 (13), 55 (13), 35 (13), 27 (13), 93 (12), 81 (12), 40 (12), 45 (11), 30 (11), 40.5 (10), 34 (10), 32 (10), 64 (9), 24 (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2596">P2596</a></td><td>culture</td><td><a href="http://www.wikidata.org/entity/Q200569">Néerlandais</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P3893">P3893</a></td><td>public domain date</td><td><a href="1941-01-01T00:00:00Z">1941-01-01T00:00:00Z</a> (12), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P5008">P5008</a></td><td>on focus list of Wikimedia project</td><td><a href="http://www.wikidata.org/entity/Q116234000">Q116234000</a> (17), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P6216">P6216</a></td><td>copyright status</td><td><a href="http://www.wikidata.org/entity/Q19652">domaine public</a> (888), </td></tr></tbody></table><figcaption class="wp-element-caption"><strong>Table: Les paires (propriété, valeur) utilisées plus de 8 fois.</strong></figcaption></figure>
+        <!-- /wp:table -->
+    
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#SELECT%20DISTINCT%20%3Fp%20%3FpropLabel%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20DISTINCT%20%3Fp%20%3Fv%20%28COUNT%28DISTINCT%20%3Fs%29%20AS%20%3Fc%29%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ5582%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%21%3D%20schema%3Adescription%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20GROUP%20BY%20%3Fp%20%3Fv%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%20%3E%208%20%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fprop%20wikibase%3AdirectClaim%20%3Fp.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        <!-- wp:wp-mermaid/block -->
+<div class="wp-block-wp-mermaid-block mermaid">
+mindmap
+  root((Vincent van Gogh))
+    Genres
+      paysage
+      portrait
+      nature morte
+      scène de genre
+      peinture de fleurs
+      autoportrait
+      paysage urbain
+      peinture d'architecture
+    
+    Depicts
+      femme
+      blanc
+      homme
+      paysan
+      arbre
+      Vincent van Gogh
+      fleur
+      vase
+      champ
+      maison
+      être humain
+      ciel
+      table
+      position assise
+      jardin
+      bouteille
+      chapeau
+      sabot
+      robe
+      cottage
+      bouquet de fleurs
+      Triticum
+      Arles
+      pipe
+      pomme de terre
+      chaise
+      coucher de soleil
+      coquelicot
+      moulin à vent
+      métier à tisser
+      nuage
+      tournesol
+      livre
+      Auvers sur Oise
+      panier
+      barbe
+      marche
+
+    Types
+      peinture
+      dessin
+      aquarelle
+      série de peintures
+
+</div>
+<!-- /wp:wp-mermaid/block -->
+    
+        
+        <!-- wp:paragraph -->
+        <p>On peut accéder à une représentation graphique de la répartition par année des œuvres présentes sur Wikidata <a href="https://query.wikidata.org/embed.html#%23group%C3%A9s%20par%20niveau%20de%20distance%2C%20la%20couleur%20d%C3%A9pendant%20de%20la%20distance%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23defaultView%3ABarChart%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PREFIX%20var_muntype%3A%20%3Chttp%3A//www.wikidata.org/entity/Q15284%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PREFIX%20var_area%3A%20%3Chttp%3A//www.wikidata.org/entity/Q6308%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20%3Fyear%20%3Fc%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20DISTINCT%20%3Fp%20%3Fv%20%3FvLabel%20%28COUNT%28DISTINCT%20%3Fs%29%20AS%20%3Fc%29%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ5582%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%255BAUTO_LANGUAGE%255D%2Cen%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%21%3D%20schema%3Adescription%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28CONTAINS%28STR%28%3Fp%29%2C%20%22direct%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20GROUP%20BY%20%3Fp%20%3Fv%20%3FvLabel%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%20%3E%208%20%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%28%3Fp%20%3D%20wdt%3AP571%29%7C%7C%28%3Fp%20%3D%20wdt%3AP577%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20BIND%28REPLACE%28%3FvLabel%2C%20%22-01-01T00%3A00%3A00Z%22%2C%20%22%22%29%20AS%20%3Fyear%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ORDER%20BY%20%28%3Fyear%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20">ici</a> (remarque: si certaines années ne sont pas dans le graphe, c'est qu'il n'y a pas d'œuvres présentes dans Wikidata pour ces années).</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#%23group%C3%A9s%20par%20niveau%20de%20distance%2C%20la%20couleur%20d%C3%A9pendant%20de%20la%20distance%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23defaultView%3ABarChart%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PREFIX%20var_muntype%3A%20%3Chttp%3A//www.wikidata.org/entity/Q15284%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PREFIX%20var_area%3A%20%3Chttp%3A//www.wikidata.org/entity/Q6308%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20%3Fyear%20%3Fc%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20DISTINCT%20%3Fp%20%3Fv%20%3FvLabel%20%28COUNT%28DISTINCT%20%3Fs%29%20AS%20%3Fc%29%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ5582%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%255BAUTO_LANGUAGE%255D%2Cen%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%21%3D%20schema%3Adescription%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28CONTAINS%28STR%28%3Fp%29%2C%20%22direct%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20GROUP%20BY%20%3Fp%20%3Fv%20%3FvLabel%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%20%3E%208%20%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%28%3Fp%20%3D%20wdt%3AP571%29%7C%7C%28%3Fp%20%3D%20wdt%3AP577%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20BIND%28REPLACE%28%3FvLabel%2C%20%22-01-01T00%3A00%3A00Z%22%2C%20%22%22%29%20AS%20%3Fyear%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ORDER%20BY%20%28%3Fyear%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p><strong>2938 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#select%20%3Fwiki%20%23%20%28count%28%3Fwiki%29%20as%20%3Fc%29%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20where%20%7B%20%3Fs%20wdt%3AP170%20wd%3AQ5582%20.%20%3Fwiki%20schema%3Aabout%20%3Fs%20%7D'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>Dont 175 dans le Wikipedia anglophone et 122 dans le Wikidata francophone.</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#SELECT%20%3Flang%20%28count%28%3Fwiki%29%20as%20%3Fc%29%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ5582%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fwiki%20schema%3Aabout%20%3Fs.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter%28contains%28str%28%3Fwiki%29%2C%20%22wikipedia.org%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20bind%28substr%28str%28%3Fwiki%29%2C%209%2C%202%29%20as%20%3Flang%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20group%20by%20%3Flang%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20order%20by%20desc%28%3Fc%29'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>L'ensemble des <strong>pages</strong> concerne <strong>414 œuvres</strong>.</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#SELECT%20distinct%20%3Fs%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ5582.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fwiki%20schema%3Aabout%20%3Fs.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28CONTAINS%28STR%28%3Fwiki%29%2C%20%22wikipedia.org%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>Il y a <strong>1186 images</strong> dans Wikimedia Commons associées à ces œuvres.</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#SELECT%20distinct%20%3Fimage%20WHERE%20%7B%20%20%3Fs%20wdt%3AP170%20wd%3AQ5582%3B%20%28wdt%3AP7420%7C%20wdt%3AP18%29%20%3Fimage.%20%7D'>sur WDQS</a>)</p>
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:paragraph -->
+        <p>J'ai ainsi donné un aperçu de la visibilité des œuvres de <a href="http://www.wikidata.org/entity/Q5582">Vincent van Gogh</a> dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenues avec <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a>.</p>
+        <!-- /wp:paragraph -->
+        
+        
