@@ -1,13 +1,14 @@
 import requests
 import base64
-import src.generationWordpress.configPrivee as configPrivee
+import src.generationWordpress.configPrivee2 as configPrivee
 
 # Configuration de base
-site_url = configPrivee.WORDPRESS_O2_BASE_URL
+site_url = configPrivee.WORDPRESS_O2_API2_URL
 api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
-auth = (configPrivee.WORDPRESS_O2_USERNAME, configPrivee.WORDPRESS_O2_PASSWORD_APP)
-username = configPrivee.WORDPRESS_O2_USERNAME
-password = configPrivee.WORDPRESS_O2_PASSWORD_APP
+auth = (configPrivee.WORDPRESS_O2_API2USERNAME, configPrivee.WORDPRESS_O2_API2PASSWORD_APP)
+api_endpoint = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
+username = configPrivee.WORDPRESS_O2_API2USERNAME
+password = configPrivee.WORDPRESS_O2_API2PASSWORD_APP
 # Encode le nom d'utilisateur et le mot de passe en base64 pour l'authentification
 credentials = f"{username}:{password}"
 token = base64.b64encode(credentials.encode())
@@ -17,23 +18,25 @@ headers = {
 
 # Chemin du fichier média à uploader
 image_url = "https://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg"
+#image_url = "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg" # image issue de commons
 file_name = "Monet.jpg"
 
 # Étape 1 : Télécharger l'image depuis l'URL
 image_response = requests.get(image_url)
 
 if image_response.status_code == 200:
-    media_data = image_response.json()
-    image_size = media_data.get("media_details", {}).get("file", "")
+    # media_data = image_response.json()
+    # image_size = media_data.get("media_details", {}).get("file", "")
 
     # Vérification de la taille de l'image
-    if "filesize" in media_data and media_data["filesize"] < 512 * 1024 * 1024:  # Taille en octets (512 Mo)
+    if True:
+    #if "filesize" in media_data and media_data["filesize"] < 512 * 1024 * 1024:  # Taille en octets (512 Mo)
         # Préparer le fichier pour l'upload
         files = {
             "file": (file_name, image_response.content, "image/jpeg")  # Remplacez par le type MIME correct si nécessaire
         }
-        api_media_url = f"{site_url}/wp-json/wp/v2/media"
-        media_response = requests.post(api_media_url, headers=headers, files=files)
+        api_media_url = f"{configPrivee.WORDPRESS_O2_API_URL}/media"
+        media_response = requests.post(api_media_url, auth=auth, headers=headers, files=files)
 
         # Gestion de la réponse
         if media_response.status_code == 201:
@@ -44,7 +47,7 @@ if image_response.status_code == 200:
             print("Média ajouté avec succès ! ID du média :", media_id)
             # Étape 2 : Mettre à jour la page avec cet ID pour définir l'image "à la une"
             page_id = 770  # Remplacez par l'ID de la page ou de l'article
-            api_page_url = f"{site_url}/wp-json/wp/v2/posts/{page_id}"
+            api_page_url = f"{configPrivee.WORDPRESS_O2_BASE_URL}/wp-json/wp/v2/posts/{page_id}"
 
             # Chargement du média comme image "à la une"
             payload = {
