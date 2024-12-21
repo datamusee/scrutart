@@ -109,8 +109,9 @@ if __name__=="__main__":
     with open("D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\listeAlbumsCreateurs.json",
               encoding="UTF-8") as albumsCreatorsFile:
         creatorsToProcess = json.load(albumsCreatorsFile)
-    for creator in creatorsToProcess:
+    for creator in creatorsToProcess[0:1]:
         categoryName = creator["categoryName"]
+        print(categoryName)
         piwigoCategory = creator["piwigoCategory"]
         listimagespath = creator["listimagespath"]
         dictim = {}
