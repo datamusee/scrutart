@@ -94,7 +94,7 @@ class WPTemplate():
             <figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Les paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
             <!-- /wp:table -->
 
-        """,
+            """,
         }
         return models.get(lang, models[lang])
 
@@ -110,7 +110,7 @@ __TYPELIST__
 </div>
 <!-- /wp:wp-mermaid/block -->
 
-        """,
+            """,
         }
         return models.get(lang, models[lang])
 
@@ -250,7 +250,7 @@ __TYPELIST__
         return self.buildQueryView("__QUERYPROPPROPVAL8__")
 
     def buildTableView(self): return self.wpWrapPara("""<p>Ce qui s'illustre dans la table:</p>""") + """
-    
+        # au lieu de 15%, cela pourrait être 100px, puis 150px pour le deuxième colonne
         <!-- wp:table -->
         <figure class="wp-block-table"><table><tbody><tr><th style="width:15%"><strong>Propriété Wikidata</strong></th><th style="width:20%"><strong>Label</strong></th><th style="width:60%"><strong>Valeurs (nombre d'instances)</strong></th></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Les 5 paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
         <!-- /wp:table -->
@@ -259,19 +259,6 @@ __TYPELIST__
 
     def buildQueryTableView(self):
         return self.buildQueryView("__QUERYPROPPROPVAL8__")
-
-    def buildMermaidView(self):
-        return """<!-- wp:wp-mermaid/block -->
-<div class="wp-block-wp-mermaid-block mermaid">
-mindmap
-  root((__ENTITYNAME__))
-__GENRELIST__    
-__DEPICTLIST__
-__TYPELIST__
-</div>
-<!-- /wp:wp-mermaid/block -->
-    
-        """
 
     def buildBarresView(self):
         return self.wpWrapPara(
@@ -307,6 +294,27 @@ __TYPELIST__
     def buildQueryImagesView(self):
         return self.buildQueryView("__QUERYNBIMAGES__")
 
+
+    def buildPicturesTableView(self):
+        block = self.wpWrapPara("""<p></p """)+"""
+        <!-- wp:table {"style":{"border":{"width":"0px","style":"none"}}} -->
+        <figure class="wp-block-table">
+        <table class="has-fixed-layout" style="border-style:none;border-width:0px">
+        <tbody>
+        <tr>
+        __IMAGES_TABLE_BOXES__
+        </tr>
+        </tbody>
+        </table>
+        </figure>
+        <!-- /wp:table -->
+
+        """
+        return block
+
+    def buildGaleryLink(self):
+        return self.wpWrapPara("""<p>On peut voir une sélection de ces œuvres dans __GALLERY_LINK__. (vous avez plus de possibilités de réglages sur la galerie si vous vous inscrivez comme utilisateur).</p>""")
+
     def buildFinView(self): return self.wpWrapPara(
         """<br>J'ai ainsi donné un aperçu de la visibilité des œuvres de __ENTITYLINK__ dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenus avec <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a>.""")
 
@@ -337,5 +345,7 @@ __TYPELIST__
                        self.buildWikipediaParPaysView() + self.buildQueryWikipediaParLangueView() + \
                        self.buildOeuvresWikipediaView() + self.buildQueryOeuvreWikipediaView() + \
                        self.buildImagesView() + self.buildQueryImagesView() + \
-                       self.buildFinView()
+                       self.buildPicturesTableView() + \
+                       self.buildGaleryLink() + \
+                        self.buildFinView()
         return pageTemplate

@@ -1,7 +1,7 @@
 # voir fichier automateGenerationScrutart.py
 import ArtistPagesListBuilder
 
-def buildPagesListToGenerate(buildParams):
+def buildPageListToGenerate(buildParams):
     plb = ArtistPagesListBuilder.ArtistPagesListBuilder()
     pagesList = plb.build(buildParams)
     return pagesList
@@ -10,7 +10,7 @@ def isPageInWP(page, wpref):
     isInWP = True # default True to avoid injection of page
     return isInWP
 
-def checkPagesListState(checkParams):
+def checkPageState(checkParams):
     wpref = checkParams["wpref"] if "wpref"in checkParams else None
     pagesList = checkParams["pagesList"]
     for page in pagesList:
@@ -24,9 +24,9 @@ def generatePage(page, template):
     pageContent = ""
     return pageID, pageTitle, pageContent
 
-def generatePages(pagesParams, template):
-    wpref = pagesParams["wpref"] if "wpref"in pagesParams else None
-    pagesList = pagesParams["pagesList"]
+def generatePage(pageParams, template):
+    wpref = pageParams["wpref"] if "wpref"in pagesParams else None
+    pagesList = pageParams["pagesList"]
     for index, pageDescription in enumerate(pagesList):
         if (not "check" in pageDescription) or (not pageDescription["check"]):
             pagesList[index]["id"], pagesList[index]["title"], pagesList[index]["content"] = generatePage(pageDescription, template)
@@ -38,7 +38,7 @@ def getWPPageContent(pagedesc, wpref):
     pageContent = ""
     return pageID, pageTitle, pageContent
 
-def getPagesListContents(pagesParams):
+def getPageContent(pagesParams):
     wpref = pagesParams["wpref"] if "wpref" in pagesParams else None
     pagesList = pagesParams["pagesList"]
     for index, pageDescription in enumerate(pagesList):
@@ -46,25 +46,62 @@ def getPagesListContents(pagesParams):
             pagesList[index]["id"], pagesList[index]["title"], pagesList[index]["content"] = getWPPageContent(pageDescription, wpref)
     return { "wpref": wpref, "pagesList": pagesList }
 
-def putPagesInGit(pagesList, gitref):
-    pass
+def putPageInGit(gitref, pagesdesc):
+    return False
 
-def putPagesInWP(pagesList, wpref):
-    pass
+def putPageInWP(wpref, pagedesc):
+    return False
 
+def createMinimalPage(wpref, pagedesc):
+    wpPageId = None
+    return wpPageId
+
+def existingPage(wpref, pagedesc):
+    return True
+
+def hasFeaturedImage(wpref, pagedesc):
+    return True
+
+def injectFeaturedImage(wpref, wpageid, urlImage=""):
+    if urlImage:
+        pass
+
+def pageProcess(pagedesc, wpref, template):
+    checkParams = {"wpref": wpref, "pagedesc": pagedesc}
+    checkedPagesList = checkPageState(checkParams)
+
+    # récupération du contenu des pages qui existent déjà
+    existingPageContent = getPageContent(pagedesc)
+
+    # mettre dans git le contenu des pages qui existent déjà
+    putPageInGit(existingPageContent, gitref)
+
+    # générer les nouvelles versions des pages
+    pageContent = generatePage(pagedesc, frenchtemplate)
+
+    if not existingPage(wpref, pagedesc):
+        wpageid = createMinimalPage(wpref, pagedesc)
+    if not hasFeaturedImage(wpref, pagedesc):
+        injectFeaturedImage(wpref, wpageid)
+
+    # mettre les pages générées dans le wordpress
+    putPageInWP(pageContent, wpref)
+
+    # mettre les pages générées dans le git
+    putPageInGit(pageContent, gitref)
+    pass
 
 if __name__ == '__main__':
     import WPPainterFrenchTemplate as wpFrenchTemplate
+
+    # chargement de template de page à appliquer
     frenchtemplate = wpFrenchTemplate.WPPainterFrenchTemplate()
     gitref = None
     wpref = None
     jsonParams = {}
-    pagesList = buildPagesListToGenerate(jsonParams)
-    checkParams = { "wpref": wpref, "pagesList": pagesList }
-    checkedPagesList = checkPagesListState(checkParams)
-    existingPagesListContents = getPagesListContents(checkedPagesList)
-    putPagesInGit(existingPagesListContents, gitref)
-    pagesListContents = generatePages(existingPagesListContents, frenchtemplate)
-    putPagesInWP(pagesListContents, wpref)
-    putPagesInGit(pagesListContents, gitref)
-    pass
+
+    # construction d'une liste de pages à générer; par exemple, liste de créateurs avec + de x créations ds wikidata
+    pagesList = buildPageListToGenerate(jsonParams)
+
+    for pagedesc in pagesList:
+        pageProcess(pagedesc, wpref, frenchtemplate)

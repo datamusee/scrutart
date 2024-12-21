@@ -162,7 +162,9 @@ dataConfig = {
         "sparql": """SELECT distinct ?image WHERE {  ?s wdt:P170 wd:__QID__; (wdt:P7420| wdt:P18) ?image. }""",
         "filtres": [
             {"filtre": "getLen", "key": "__NBIMAGES__"},
-            {"filtre": "getUrlImage", "key": "__URLIMAGE__"}
+            {"filtre": "getUrlImage", "key": "__URLIMAGE__"},
+            {"filtre": "getTableBoxes", "key": "__IMAGES_TABLE_BOXES__"},
+            {"filtre": "getGalleryLink", "key": "__GALLERY_LINK__"}
         ],
         "urlquery": "__QUERYNBIMAGES__"},
     "__LIENSWIKIDATABARRES__": {"sparql": """#groupés par niveau de distance, la couleur dépendant de la distance
@@ -187,8 +189,9 @@ dataConfig = {
                                             ORDER BY (?year)
                                             """,
                                 "filtres": [{"filtre": None, "key": "__QUERYLIENSWIKIDATABARRES__"}],
-                                "urlquery": "__QUERYDONNEESPOURBARRES__",
-                                }
+                                "urlquery": "__QUERYDONNEESPOURBARRES__"
+
+    }
 }
 
 class WPPainterTemplate(WPTemplate):
