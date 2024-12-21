@@ -39,7 +39,8 @@ class WPPainterFrenchTemplate(WPPainterTemplate):
     def buildPropDePropvalView(self):
         return self.wpWrapPara("""<p>Cela concerne <strong>__NBPROPPROPVAL8__ propriétés</strong>.</p>""")
 
-    def buildTableView(self): return self.wpWrapPara("""<p>Ce qui s'illustre dans la table:</p>""") + """
+    def buildTableView(self):
+        return self.wpWrapPara("""<p>Ce qui s'illustre dans la table:</p>""") + """
     
         <!-- wp:table -->
         <figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Des paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>

@@ -13,7 +13,8 @@ import src.generationWordpress.PageBuilder as PageBuilder
 
 # ne traiter que ceux qui sont dans filterEntities en supprimant la page si elle existe déjà
 filterEntities = [
-    "Q295144" # Caillebotte
+    # "Q295144" # Caillebotte
+    "Q61064" # Kandinsky
 ]
 filelist = os.listdir("./pages/creator/fr")
 for qid in filterEntities:
