@@ -1,90 +1,131 @@
-import requests
-import base64
 import src.generationWordpress.configPrivee2 as configPrivee
-import mimetypes
+import base64
+import requests
+import tempfile
+import os
 
-# Configuration de base
-site_url = configPrivee.WORDPRESS_O2_API2_URL
+"""
+How the Code Works
+Upload the Image: The upload_image function:
+Downloads the image from the given URL.
+Uploads it to the WordPress Media Library using the REST API.
+Returns the attachment ID of the uploaded image if successful.
+Set the Featured Image: The set_featured_image function:
+
+Uses the attachment ID from the upload step to set the featured image for the specified post.
+Makes a POST request to update the post's featured_media field.
+Authentication: The script uses Basic Authentication with an Application Password. You can generate one from your WordPress profile under Users → Your Profile → Application Passwords.
+
+Important Notes
+Security: Avoid hardcoding your credentials in the script for production. Use environment variables or secure vaults instead.
+Permissions: Ensure your WordPress user has permissions to upload media and update posts.
+SSL: If your WordPress site uses HTTPS and there's a certificate error, you may need to set verify=False in the requests call, but this is not recommended for production due to security risks.
+This script helps automate image uploads and setting featured images via the WordPress REST API efficiently.
+"""
+
+# Replace with your WordPress site URL and credentials
+WP_SITE_URL = "https://scrutart.grains-de-culture.fr"
+USERNAME = configPrivee.WORDPRESS_O2_API2USERNAME
+APP_PASSWORD = configPrivee.WORDPRESS_O2_API2PASSWORD_APP  # Generated from WordPress user profile
+
+# Post and image details
+POST_ID = 770  # post test general
+IMAGE_URL = "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/12/The_Sacrifice_of_Isaac_MET_LC-71_28-11-scaled-e1733824766994-1024x738.jpg"  # URL of the image you want to use
+
 api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
 auth = (configPrivee.WORDPRESS_O2_API2USERNAME, configPrivee.WORDPRESS_O2_API2PASSWORD_APP)
+
+# WordPress site details
+wordpress_site_url = "https://scrutart.grains-de-culture.fr"
 api_endpoint = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
+# api_endpoint = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
+
 username = configPrivee.WORDPRESS_O2_API2USERNAME
 password = configPrivee.WORDPRESS_O2_API2PASSWORD_APP
-# Encode le nom d'utilisateur et le mot de passe en base64 pour l'authentification
-credentials = f"{username}:{password}"
-token = base64.b64encode(credentials.encode())
 
-# Chemin du fichier média à uploader
-image_url = "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/12/Monet.jpg"
-file_name = "Flower"
-#image_url = "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg" # image issue de commons
-#file_name = "Impression, soleil levant"
-#image_url = "https://upload.wikimedia.org/wikipedia/commons/1/1d/Dance_Dance_Revolution_Extreme_%28Katsucon_2005%29.tif"
-#file_name = "Dance.tif"
-hh = {'User-Agent': 'Scrutart-UA (https://scrutart.grains-de-culture.fr/; scrutart@grains-de-culture.fr)'}
 
-# Étape 1 : Télécharger l'image depuis l'URL
-image_response = requests.get(image_url, headers=hh)
+def download_image_to_tempfile(url):
+    try:
+        # Envoyer une requête GET à l'URL de l'image
+        response = requests.get(url, stream=True)
+        response.raise_for_status()  # Vérifier si la requête a réussi
 
-if image_response.status_code == 200:
-    # media_data = image_response.json()
-    # image_size = media_data.get("media_details", {}).get("file", "")
+        # Créer un fichier temporaire
+        temp_file = tempfile.NamedTemporaryFile(delete=False,
+                                                suffix=".jpg")  # Ajoutez une extension adaptée à l'image (ex: .jpg, .png)
 
-    # Vérification de la taille de l'image
-    if True:
-    #if "filesize" in media_data and media_data["filesize"] < 512 * 1024 * 1024:  # Taille en octets (512 Mo)
-        # Préparer le fichier pour l'upload
-        acceptedImageFormats = ['jpg','jpeg','png','gif','webp','tif','tiff', 'eps', 'svg', 'psd', 'ai']
-        filetype = mimetypes.guess_type(image_url)[0]
-        extension = mimetypes.guess_extension(filetype).replace(".", "")
-        if extension in acceptedImageFormats:
-            files = {
-                "file": (file_name, image_response.content)  # Remplacez par le type MIME correct si nécessaire
-            }
-            headers = {
-                "Content-Type": f"{filetype}",
-                # "Content-Type": "image/jpeg",
-                "Content-Disposition": f"attachment; filename={file_name}",
-            }
-            api_media_url = f"{configPrivee.WORDPRESS_O2_API_URL}/media"
-            media_response = requests.post(
-                api_media_url,
-                auth=(configPrivee.WORDPRESS_O2_API2USERNAME, configPrivee.WORDPRESS_O2_API2PASSWORD_APP),
-                headers=headers,
-                data=image_response.content
-            )
+        # Écrire le contenu de l'image dans le fichier temporaire
+        with open(temp_file.name, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
 
-            # Gestion de la réponse
-            if media_response.status_code == 201:
-                # L'injection a réussi
-                print("Média ajouté avec succès !")
-                print("URL du média :", media_response.json().get("source_url"))
-                media_id = media_response.json().get("id")
-                print("Média ajouté avec succès ! ID du média :", media_id)
-                # Étape 2 : Mettre à jour la page avec cet ID pour définir l'image "à la une"
-                page_id = 770  # Remplacez par l'ID de la page ou de l'article
-                api_page_url = f"{configPrivee.WORDPRESS_O2_BASE_URL}/wp-json/wp/v2/posts/{page_id}"
+        print(f"Image téléchargée avec succès dans : {temp_file.name}")
+        return temp_file.name  # Retourne le chemin du fichier temporaire
+    except requests.exceptions.RequestException as e:
+        print(f"Erreur lors du téléchargement de l'image : {e}")
+        return None
 
-                # Chargement du média comme image "à la une"
-                payload = {
-                    "featured_media": media_id
-                }
-                response = requests.patch(api_page_url, headers=headers, json=payload)
 
-                # Vérification de la réponse
-                if response.status_code == 200:
-                    print("Image associée à la page avec succès !")
+
+
+def upload_image(image_url, wp_site_url, username, app_password):
+    """Uploads an image to WordPress Media Library and returns the attachment ID."""
+    image_url = "https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/01/Rafael20-20Retrato20de20Pietro20Perugino1-scaled.jpg"
+    temp_image_path = download_image_to_tempfile(image_url)
+    if temp_image_path:
+        try:
+            # Ouvrir l'image temporaire pour l'envoi
+            with open(temp_image_path, 'rb') as image_file:
+                upload_url = f"{wp_site_url}/wp-json/wp/v2/media"
+                auth = (configPrivee.WORDPRESS_O2_API2USERNAME, configPrivee.WORDPRESS_O2_API2PASSWORD_APP)
+                # image_info = {'file': image_data_file}
+                image_info = {'file': ('image.jpg', image_file, 'image/jpeg')}
+                response = requests.post(upload_url, files=image_info, auth=auth)
+                # Vérifier si le POST a réussi
+                if (response.status_code == 200) or (response.status_code == 201):
+                    print("Image envoyée avec succès !")
+                    image_id = response.json()["id"]
+                    print(f"Image uploaded successfully! Attachment ID: {image_id}")
+                    return image_id
                 else:
-                    print("Erreur lors de la mise à jour de la page :", response.status_code)
-                    print("Détails de l'erreur :", response.json())
-            else:
-                # Erreur lors de l'injection du média
-                print("Erreur lors de l'ajout du média :", media_response.status_code)
-                print("Détails de l'erreur :", media_response.json())
-        else:
-            print("Format d'image pas accepté par Piwigo")
+                    print(f"Échec de l'envoi, code HTTP : {response.status_code}")
+                    print(f"Détails : {response.text}")
+                    return None
+            os.remove(temp_image_path)
+        except Exception as e:
+            print(f"Erreur lors de l'envoi de l'image : {e}")
     else:
-        print("Image trop lourde (plus de 512 Mo)")
-else:
-    print("Erreur lors du téléchargement de l'image :", image_response.status_code)
+        return None
 
+def set_featured_image(post_id, image_id, wp_site_url, username, app_password):
+    """Sets the uploaded image as the featured image of a post."""
+    site_url = configPrivee.WORDPRESS_O2_BASE_URL
+    api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts/{post_id}?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
+    username = configPrivee.WORDPRESS_O2_API2USERNAME
+    password = configPrivee.WORDPRESS_O2_PASSWORD_APP
+    # Encode le nom d'utilisateur et le mot de passe en base64 pour l'authentification
+    credentials = f"{username}:{password}"
+    token = base64.b64encode(credentials.encode())
+    headers = {
+        "Authorization": f"Basic {token.decode('utf-8')}"
+    }
+    data = {"featured_media": image_id}
+
+    auth = (configPrivee.WORDPRESS_O2_API2USERNAME, configPrivee.WORDPRESS_O2_API2PASSWORD_APP)
+
+    response = requests.post(api_url, json=data, auth=auth, headers=headers)
+    # response = requests.post(update_url, json=data, auth=HTTPBasicAuth(username, app_password))
+
+    if response.status_code == 200:
+        print(f"Featured image set successfully for post ID: {post_id}")
+    else:
+        print(f"Failed to set featured image: {response.text}")
+
+# Main logic
+def sendImageToScrutart(image_url, wp_site_url, user, pwd):
+    image_id = upload_image(image_url, wp_site_url, user, pwd)
+    return image_id
+
+if __name__ == "__main__":
+    image_id = sendImageToScrutart(IMAGE_URL, WP_SITE_URL, USERNAME, APP_PASSWORD)
+    print(f"send {IMAGE_URL} success, now known as {image_id} media in scrutart")
