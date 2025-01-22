@@ -9,6 +9,10 @@ import requests
 from urllib.parse import urlparse
 from functools import wraps
 
+"""
+voir https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
+pour wikimedia
+"""
 class APIRequestManager:
     _instances = {}
 
@@ -49,7 +53,9 @@ class APIRequestManager:
 
             request_id = request_data['request_id']
             url = request_data['url']
-            payload = request_data['payload']
+            httpcmd = request_data.get('httpcmd', "GET")
+            payload = request_data.get('payload', None)
+            headers = request_data.get('headers', None)
             cache_duration = request_data.get('cache_duration', 0)
 
             cache_key = (url, frozenset(payload.items()) if payload else None)
@@ -66,8 +72,10 @@ class APIRequestManager:
 
             try:
                 time.sleep(self.CALL_INTERVAL)
-
-                response = requests.post(url, json=payload)
+                if httpcmd=="GET":
+                    response = requests.get(url, json=payload, headers=headers)
+                else:
+                    response = requests.post(url, json=payload, headers=headers)
                 try:
                     api_response = response.json()
                 except ValueError:
@@ -89,7 +97,7 @@ class APIRequestManager:
     def start_worker(self):
         threading.Thread(target=self.process_queue, daemon=True).start()
 
-    def add_request(self, url, payload, cache_duration=0):
+    def add_request(self, url, httpcmd, payload, headers, cache_duration=0):
         parsed_url = urlparse(url)
         base_url = f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}"
 
@@ -101,7 +109,9 @@ class APIRequestManager:
         request_data = {
             'request_id': request_id,
             'url': url,
+            'httpcmd': httpcmd,
             'payload': payload,
+            "headers": headers,
             'cache_duration': cache_duration
         }
         self.request_queue.put(request_data)
@@ -154,7 +164,11 @@ def initialize_manager():
 @authenticate
 def set_rate_limit():
     manager_id = request.args.get("manager_id")
+    if not manager_id:
+        manager_id = request.json["manager_id"]
     limit = request.args.get("limit", type=float)
+    if not limit:
+        limit = request.json["limit"]
 
     if not manager_id or manager_id not in managers:
         return jsonify({"error": "Manager not found for the given ID."}), 404
@@ -170,7 +184,10 @@ def set_rate_limit():
 @app.route("/api/request", methods=["POST", "GET"])
 @authenticate
 def api_request():
-    manager_id = request.args.get("manager_id")
+    manager_id = request.args.get("manager_id", request.json["manager_id"])
+    httpcmd = request.args.get("httpcmd", request.json["httpcmd"])
+    headers =  request.args.get("headers", request.json["headers"])
+    cache_duration = request.args.get("cache_duration", request.json["cache_duration"])
 
     if not manager_id or manager_id not in managers:
         return jsonify({"error": "Manager not found for the given ID."}), 404
@@ -180,7 +197,7 @@ def api_request():
     if request.method == "POST":
         data = request.json
         url = data.get("url")
-        payload = data.get("payload")
+        payload = data.get("payload", { "dummy":"dummy" })
         cache_duration = data.get("cache_duration", 0)
 
         if not url or not payload:
@@ -194,7 +211,7 @@ def api_request():
         payload = {}  # Assume no payload for GET requests
 
     try:
-        request_id, estimated_delay = manager.add_request(url, payload, cache_duration)
+        request_id, estimated_delay = manager.add_request(url, httpcmd, payload, headers, cache_duration)
     except ValueError as e:
         return jsonify({"error": str(e)}), 400
 
@@ -217,9 +234,31 @@ def api_status(request_id):
                 return jsonify({"status": "complete", "response": response})
 
     if not found_request:
-        return jsonify({"error": "Request ID not found."}), 404
+        return jsonify({"error": f"Request ID not found: {request_id}"}), 404
 
     return jsonify({"status": "pending", "message": "Your request is still being processed."})
+
+@app.route("/api/delete_manager", methods=["DELETE"])
+@authenticate
+def delete_manager():
+    manager_id = request.args.get("manager_id")
+
+    if not manager_id or manager_id not in managers:
+        return jsonify({"error": "Manager not found for the given ID."}), 404
+
+    # Supprimer le manager de la liste
+    del managers[manager_id]
+
+    # Supprimer l'association des URL triées à cet ID
+    for key, value in list(manager_ids.items()):
+        if value == manager_id:
+            del manager_ids[key]
+
+    return jsonify({"message": f"Manager with ID {manager_id} deleted successfully."})
+
+@app.route("/", methods=["GET"])
+def home():
+    return "<html><body><h2>Salut, API privée pour gérer des limitations d'accès (nb.Req/mn, ...) sur des web api</h2></body></html>"
 
 if __name__=="__main__":
     app.run(debug=False)
