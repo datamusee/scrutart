@@ -8,6 +8,10 @@ from flask import Flask, request, jsonify
 import requests
 from urllib.parse import urlparse
 from functools import wraps
+import configPrivee
+from flask_socketio import SocketIO, emit, join_room, leave_room
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
 
 """
 voir https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
@@ -36,6 +40,8 @@ class APIRequestManager:
         self.lock = threading.Lock()
         self.worker_thread = threading.Thread(target=self.start_worker, daemon=True)
         self.worker_thread.start()
+        self.executor = ThreadPoolExecutor(max_workers=10)  # Pool de threads
+        self.loop = asyncio.get_event_loop()  # Boucle asynchrone
         self._initialized = True
 
     def set_rate_limit(self, calls_per_second):
@@ -45,20 +51,25 @@ class APIRequestManager:
     def get_cache_path(self, cache_key):
         return os.path.join(self.cache_dir, f"{hash(cache_key)}.json")
 
-    def process_queue(self):
+    async def process_queue(self):
+        """
+        Processus asynchrone qui consomme la file d'attente et effectue les appels HTTP.
+        """
         while True:
-            request_data = self.request_queue.get()
+            request_data = await asyncio.to_thread(self.request_queue.get)
             if request_data is None:
                 break
 
             request_id = request_data['request_id']
             url = request_data['url']
-            httpcmd = request_data.get('httpcmd', "GET")
             payload = request_data.get('payload', None)
-            headers = request_data.get('headers', None)
+            method = request_data.get('method', 'POST').upper()
             cache_duration = request_data.get('cache_duration', 0)
+            request_kwargs = request_data.get('request_kwargs', {})
+            client_id = request_data.get('client_id')
 
-            cache_key = (url, frozenset(payload.items()) if payload else None)
+            # Construct a cache key based on URL, payload, and request kwargs
+            cache_key = (url, frozenset(payload.items()) if payload else None, frozenset(request_kwargs.items())if request_kwargs else None)
             cache_path = self.get_cache_path(cache_key)
 
             if cache_duration > 0 and os.path.exists(cache_path):
@@ -67,37 +78,96 @@ class APIRequestManager:
                     if time.time() - cached_data['timestamp'] < cache_duration:
                         with self.lock:
                             self.response_store[request_id] = cached_data['response']
-                        self.request_queue.task_done()
+
+                        # Notifier le client si connecté
+                        if client_id in connected_clients:
+                            resurl = "http://localhost:5000/send_message"
+                            data = {
+                                "client_id": f"{client_id}", "message": {
+                                "request_id": request_id,
+                                "response": cached_data['response'],
+                                "message": "voir response"
+                            }}
+                            response = requests.post(resurl, json=data)
+                            print(response.json())
+                        await asyncio.to_thread(self.request_queue.task_done)
                         continue
 
-            try:
-                time.sleep(self.CALL_INTERVAL)
-                if httpcmd=="GET":
-                    response = requests.get(url, json=payload, headers=headers)
-                else:
-                    response = requests.post(url, json=payload, headers=headers)
+            # Effectue l'appel HTTP de manière asynchrone
+            async def perform_request():
                 try:
-                    api_response = response.json()
-                except ValueError:
-                    api_response = response.text
+                    await asyncio.sleep(self.CALL_INTERVAL)
 
-                if cache_duration > 0:
-                    with open(cache_path, 'w') as cache_file:
-                        json.dump({'response': api_response, 'timestamp': time.time()}, cache_file)
+                    # Dynamically call the appropriate HTTP method
+                    if method == "POST":
+                        response = await asyncio.to_thread(requests.post(url, json=payload, **request_kwargs))
+                    elif method == "GET":
+                        response = await asyncio.to_thread(requests.get(url, params=payload, **request_kwargs))
+                    elif method == "PUT":
+                        response = await asyncio.to_thread(requests.put(url, json=payload, **request_kwargs))
+                    elif method == "DELETE":
+                        response = await asyncio.to_thread(requests.delete(url, **request_kwargs))
+                    else:
+                        raise ValueError(f"Unsupported HTTP method: {method}")
 
-                with self.lock:
-                    self.response_store[request_id] = api_response
+                    # Handle response as JSON or raw text
+                    try:
+                        api_response = response.json()
+                    except ValueError:
+                        api_response = response.text
 
-            except Exception as e:
-                with self.lock:
-                    self.response_store[request_id] = {"error": str(e)}
+                    # Cache the response if caching is enabled
+                    if cache_duration > 0:
+                        with open(cache_path, 'w') as cache_file:
+                            json.dump({'response': api_response, 'timestamp': time.time()}, cache_file)
 
-            self.request_queue.task_done()
+                    # Store the response
+                    with self.lock:
+                        self.response_store[request_id] = api_response
+
+                    # Notifier le client si connecté
+                    if client_id in connected_clients:
+                        resurl = "http://localhost:5000/send_message"
+                        data = {"client_id": f"{client_id}", "message": {
+                            "request_id": request_id,
+                            "message": api_response
+                        }}
+                        response = requests.post(resurl, json=data)
+                        print(response.json())
+
+                except Exception as e:
+                    with self.lock:
+                        self.response_store[request_id] = {"error": str(e)}
+
+                    # Notifier le client en cas d'erreur
+                    if client_id in connected_clients:
+                        resurl = "http://localhost:5000/send_message"
+                        data = {"client_id": f"{client_id}", "message": {
+                            "request_id": request_id,
+                            "message": "error",
+                            "error": str(e)
+                        }}
+                        response = requests.post(resurl, json=data)
+                        print(response.json())
+                finally:
+                    await asyncio.to_thread(self.request_queue.task_done)
+
+            # Planifie la tâche dans la boucle
+            self.loop.create_task(perform_request())
+
+    @app.before_first_request
+    def start_background_tasks():
+        """
+        Démarre la tâche asynchrone pour traiter la file d'attente.
+        """
+        loop = asyncio.get_event_loop()
+        manager = APIRequestManager(["https://jsonplaceholder.typicode.com"])
+        loop.create_task(manager.process_queue())
 
     def start_worker(self):
         threading.Thread(target=self.process_queue, daemon=True).start()
 
-    def add_request(self, url, httpcmd, payload, headers, cache_duration=0):
+    def add_request(self, url, payload=None, cache_duration=0, method="POST", client_id=None, **request_kwargs):
         parsed_url = urlparse(url)
         base_url = f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}"
 
@@ -109,10 +179,11 @@ class APIRequestManager:
         request_data = {
             'request_id': request_id,
             'url': url,
-            'httpcmd': httpcmd,
             'payload': payload,
-            "headers": headers,
-            'cache_duration': cache_duration
+            'cache_duration': cache_duration,
+            'method': method.upper(),
+            'request_kwargs': request_kwargs or {},  # Additional parameters for requests
+            'client_id': client_id
         }
         self.request_queue.put(request_data)
 
@@ -131,12 +202,69 @@ def authenticate(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         auth_token = request.headers.get("Authorization")
-        if not auth_token or auth_token != "Bearer SECRET_TOKEN":
+        bearer = configPrivee.config['admin']['Bearer']
+        if not auth_token or auth_token != f"Bearer {bearer}":
             return jsonify({"error": "Unauthorized"}), 401
         return f(*args, **kwargs)
     return decorated_function
 
+# Initialise Flask-SocketIO
 app = Flask(__name__)
+socketio = SocketIO(app, cors_allowed_origins="*")
+
+# Gérer les connexions WebSocket (optionnel, pour garder une trace des clients connectés)
+connected_clients = {}
+
+
+@socketio.on('response_ready')
+def handle_resquest_response(client_id, response):
+    emit('response_ready', data=response)
+
+@socketio.on('connect')
+def handle_connect():
+    print("Client connected")
+    emit("connect", data={"message": "Connected successfully."})
+
+@socketio.on('register')
+def handle_register(data):
+    """
+    Enregistre un client avec un client_id donné.
+    """
+    client_id = data.get('client_id')
+    if client_id:
+        connected_clients[client_id] = request.sid  # Associe le client_id au socket ID
+        join_room(client_id)  # Ajoute le client à une "room" identifiée par client_id
+        print(f"Client registered with client_id: {client_id}")
+        emit('message', {'data': f'You are registered with client_id: {client_id}'}, room=client_id)
+
+@socketio.on('disconnect')
+def handle_disconnect():
+    """
+    Supprime le client_id lors de la déconnexion.
+    """
+    disconnected_client = None
+    for client_id, sid in list(connected_clients.items()):
+        if sid == request.sid:
+            disconnected_client = client_id
+            del connected_clients[client_id]
+            leave_room(client_id)
+            break
+    print(f"Client disconnected: {disconnected_client}")
+
+@app.route('/send_message', methods=['POST'])
+def send_message():
+    """
+    Envoie un message à un client spécifique identifié par son client_id.
+    """
+    data = request.json
+    client_id = data.get('client_id')
+    message = data.get('message')
+
+    if client_id in connected_clients:
+        emit('message', {'data': message}, room=client_id, namespace='/')
+        return {"status": "Message sent", "client_id": client_id}, 200
+    else:
+        return {"error": "Client not found"}, 404
 
 # Managing separate API request managers for different sets of URLs
 managers = {}
@@ -184,34 +312,42 @@ def set_rate_limit():
 @app.route("/api/request", methods=["POST", "GET"])
 @authenticate
 def api_request():
-    manager_id = request.args.get("manager_id", request.json["manager_id"])
-    httpcmd = request.args.get("httpcmd", request.json["httpcmd"])
-    headers =  request.args.get("headers", request.json["headers"])
-    cache_duration = request.args.get("cache_duration", request.json["cache_duration"])
-
+    manager_id = request.args.get("manager_id")
+    if not manager_id and "manager_id" in request.json:
+        manager_id = request.json["manager_id"]
     if not manager_id or manager_id not in managers:
         return jsonify({"error": "Manager not found for the given ID."}), 404
 
     manager = managers[manager_id]
-
+    client_id = request.args.get("client_id")
+    if not client_id and "client_id" in request.json:
+        client_id = request.json["client_id"]
     if request.method == "POST":
         data = request.json
         url = data.get("url")
-        payload = data.get("payload", { "dummy":"dummy" })
+        payload = data.get("payload", None)
         cache_duration = data.get("cache_duration", 0)
-
-        if not url or not payload:
-            return jsonify({"error": "URL and payload are required."}), 400
-
+        api_method = data.get("method", "POST").upper()  # Default to POST for Web API
+        request_kwargs = data.get("request_kwargs", {})
     elif request.method == "GET":
         url = request.args.get("url")
         cache_duration = request.args.get("cache_duration", type=int, default=0)
-        if not url:
-            return jsonify({"error": "URL is required."}), 400
-        payload = {}  # Assume no payload for GET requests
+        api_method = request.args.get("method", "GET").upper()  # Default to GET for Web API
+        request_kwargs = {}  # Assume no additional kwargs for GET requests
+        payload = None  # GET requests usually don't have a payload
+
+    if not url:
+        return jsonify({"error": "URL is required."}), 400
 
     try:
-        request_id, estimated_delay = manager.add_request(url, httpcmd, payload, headers, cache_duration)
+        request_id, estimated_delay = manager.add_request(
+            url=url,
+            payload=payload,
+            cache_duration=cache_duration,
+            method=api_method,
+            client_id=client_id,
+            **request_kwargs
+        )
     except ValueError as e:
         return jsonify({"error": str(e)}), 400
 
@@ -258,7 +394,10 @@ def delete_manager():
 
 @app.route("/", methods=["GET"])
 def home():
-    return "<html><body><h2>Salut, API privée pour gérer des limitations d'accès (nb.Req/mn, ...) sur des web api</h2></body></html>"
+    return "<html><body><h2>Salut, API privée pour gérer des limitations d'accès (nb.Req/mn, ...) sur des web api; avec Socket.IO server running with client_id support</h2></body></html>"
 
 if __name__=="__main__":
-    app.run(debug=False)
+    # app.run(debug=False)
+    # socketio.run(app, debug=False)
+    socketio.run(app, host='127.0.0.1', port=5000, debug=False)
+
