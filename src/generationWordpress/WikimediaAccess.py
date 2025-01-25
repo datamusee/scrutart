@@ -3,15 +3,51 @@ import SPARQLWrapper as sw
 from urllib.parse import quote
 import datetime
 import time
+from urllib.parse import urlparse
+import os
+import requests
+import json
+"""
+Tous les accès à des outils Wikimedia devraient passer par un objet de ce type unique
+afin de gérer les limites sur ces accès:
+- nécessité d'avoir un User-Agent bien défini
+- nombre de requêtes par minute
+...
+Idéalement, je devrais en faire une api et tous les programmes passeraient par cette API
+Avec dans l'API, un mécanisme de file d'attente et/ou un mécanisme de type 'ré-essayer plus tard"
+par exemple, une requête sparql wdqs est mise en file d'attente et la réponse est juste une url à interroger pour voir si
+la réponse est prête et l'obtenir si elle est prête
+cela permet aussi de faire au mieux et d'envoyer des requêtes en masse
 
-class WikidataObject:
-    associatedEndpoint = "https://query.wikidata.org/sparql" # default is WDQS
-    sparqlWrapper = sw.SPARQLWrapper2(associatedEndpoint)  # implicit JSON format
-    sparqlWrapper.agent = 'Scrutart-UA (https://scrutart.grains-de-culture.fr/; scrutart@grains-de-culture.fr)'
-
+"""
+class WikimediaAccess:
     def __init__(self, qid):
-        self.qid = qid
+        self.wdqsWrapper = sw.wdqsWrapper2() # ici mettre un manager de webpimanager
+        self.setWdqsFormat()
+        self.setWdqsEndpoint()
+        self.setWdqsAgent()
         pass
+
+    def setWdqsFormat(self, format="JSON"):
+        self.wdqsWrapper.returnFormat = format
+        return format
+
+    def getWdqsFormat(self):
+        return self.wdqsWrapper.returnFormat
+
+    def setWdqsEndpoint(self, endpoint="https://query.wikidata.org/sparql"):
+        self.wdqsWrapper.wdqsEndpoint = endpoint
+        return endpoint
+
+    def getWdqsEndpoint(self):
+        return self.wdqsWrapper.wdqsEndpoint
+
+    def setWdqsAgent(self, agent='Scrutart-UA (https://scrutart.grains-de-culture.fr/; scrutart@grains-de-culture.fr)'):
+        self.wdqsWrapper.agent = agent
+        return agent
+
+    def setWdqsAgent(self):
+        return self.wdqsWrapper.agent
 
     def getTypes(self, qid):
         # aller chercher une valeur de instance of (P31) pour le QID donné
@@ -30,18 +66,123 @@ class WikidataObject:
         return objectTypes
 
     def getWObjFct(self, fctname):
-        return getattr(WikidataObject, fctname, None)
+        return getattr(WikimediaAccess, fctname, None)
 
     def getQid(self, sparqlres, qid):
         return qid
+
+    def piwigoLinkFromUrlSrc(self, urlSrc):
+        # voir ticket 1800
+        endpointScrutartState = "http://127.0.0.1:3030/scrutartState/sparql"
+        sparqlFusekiWrapper = sw.wdqsWrapper2(endpointScrutartState)  # implicit JSON format
+        queryTemplate = """
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            prefix wdt: <http://www.wikidata.org/prop/direct/> 
+            prefix pgdc: <https://kg.grains-de-culture.fr/prop/> 
+            select ?piwigoId ?title ?urlImage
+            where {
+              ?s wdt:P18 "__URL_IMAGE_SRC__";
+                 rdfs:label ?title .
+                ?s pgdc:piwigo_image ?piwigoId 
+            }
+        """
+        query = queryTemplate.replace("__URL_IMAGE_SRC__", urlSrc)
+        sparqlFusekiWrapper.setQuery(query)
+        try:
+            res = sparqlFusekiWrapper.queryAndConvert()
+            if res and res.bindings:
+                piwigoId = res.bindings[0]["piwigoId"].value
+                piwigoUrl = f"https://galeries.grains-de-culture.fr/picture.php?/{piwigoId}"
+                title = res.bindings[0]["title"].value
+                return piwigoUrl, title
+            else:
+                None, None
+        except Exception as e:
+            logging.debug(e)
+        return None, None # à affiner
+
+
+    def get_file_extension_query_params(self, url):
+        path = urlparse(url).path
+        path_without_params, file_extension = os.path.splitext(path.split('?')[0])
+        # _, file_extension = os.path.splitext(path_without_params)
+        return file_extension
+
+    def getTableBoxes(self, sparqlres, qid):
+        # __IMAGES_TABLE_BOXES__
+        imageFormats = ['jpg','jpeg','png','gif','webp','tif','tiff', 'eps', 'svg', 'psd', 'ai']
+        boxes = ""
+        images = [elmt["image"].value for elmt in sparqlres.bindings]
+        count = 0
+        for image in images:
+            extension = self.get_file_extension_query_params(image).replace(".", "")
+            if extension in imageFormats:
+                piwigoLink, title = self.piwigoLinkFromUrlSrc(image)
+                srcLink = image
+                if piwigoLink:
+                    boxes += f"""<td><a href="{piwigoLink}"><img class="wp-image-710" style="width: 200px;" src="{srcLink}" alt="{title}"></a></td>"""
+                else:
+                    boxes += f"""<td><a href="{image}"><img class="wp-image-710" style="width: 200px;" src="{image}" alt=""></a></td>"""
+                count += 1
+                if count>=3: break
+        return boxes
+
+    def getGalleryLink(self, sparqlres, qid):
+        # __GALLERY_LINK__
+        queryTemplate = """
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            prefix wd: <http://www.wikidata.org/entity/> 
+            prefix wdt: <http://www.wikidata.org/prop/direct/> 
+            prefix pgdc: <https://kg.grains-de-culture.fr/prop/> 
+            select distinct ?galery
+            where {
+              ?s wdt:P18 ?urlImage;
+                 wdt:P170 wd:__QID__;
+                 pgdc:piwigo_gallery ?galery;
+                 rdfs:label ?title .
+                ?s pgdc:piwigo_image ?piwigoId .
+                  filter not exists { ?s pgdc:piwigo_gallery <https://kg.grains-de-culture.fr/entity/galNone> }
+            }        
+            """
+        TOKEN = '4444 5555 6666 7777'  # Remplacez par un Token valide
+        # En-têtes de la requête
+        headers = {
+            'Content-Type': 'application/json',
+            'Authorization': f'Bearer {TOKEN}'
+        }
+        query = queryTemplate.replace("__QID__", qid)
+        # Corps de la requête
+        data = {
+            'query': query
+        }
+        endpointScrutartState = "http://127.0.0.1:5000/query"
+        sparqlScrutartWrapper = sw.wdqsWrapper2(endpointScrutartState)  # implicit JSON format
+        sparqlScrutartWrapper.setQuery(query)
+        link = ""
+        try:
+            # Envoie la requête POST à l'API
+            res = requests.post(endpointScrutartState, headers=headers, json=data)
+            if res and res.status_code == 200 and res.text:
+                piwigoGaleryId = json.loads(res.text)["results"][0]["galery"].replace("https://kg.grains-de-culture.fr/entity/gal", "")
+                galleryName = "Galerie"
+                galleryLink = f"https://galeries.grains-de-culture.fr/index.php?/category/{piwigoGaleryId}"
+                link = f"""<a href="{galleryLink}">{galleryName}</a>"""
+            else:
+                None
+        except Exception as e:
+            logging.debug(e)
+        return link
+
     def getUrlImage(self, sparqlres, qid):
         url = None
         if sparqlres and hasattr(sparqlres, "bindings"):
             if len(sparqlres.bindings):
+                imageFormats = ['jpg','jpeg','png','gif','webp','tif','tiff', 'eps', 'svg', 'psd', 'ai']
                 list = sparqlres.bindings
                 for elmt in list:
                     url = elmt["image"].value
-                    if (".jpg" in url) or (".png" in url):
+                    extension = self.get_file_extension_query_params(url)
+                    if extension in imageFormats:
                         break
         return url
 
@@ -57,9 +198,9 @@ class WikidataObject:
 
     def sparqlQuery(self, query, format="json"):
         logging.debug("SPARQLQUERY " + query)
-        self.sparqlWrapper.setQuery(query)
+        self.wdqsWrapper.setQuery(query)
         try:
-            res = self.sparqlWrapper.queryAndConvert()
+            res = self.wdqsWrapper.queryAndConvert()
             return res
         except Exception as e:
             logging.debug(e)
@@ -297,6 +438,10 @@ class WikidataObject:
               "imageUrl":"https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonGetty.svg",
               "alt": "link to Getty",
             },
+            "https://vocab.getty.edu/page/ulan/$1": {
+                "imageUrl": "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonGetty.svg",
+                "alt": "link to Getty",
+            }
         }
         linkTemplate = """<td><a href="__LINK__"><img class="wp-image-710" style="width: 50px;" src="__IMAGELINK__" alt="__ALTLINK__"></a></td>"""
         externalLinks = ""
@@ -315,3 +460,6 @@ class WikidataObject:
                         imageAlt = imageDesc["alt"]
                         externalLinks += linkTemplate.replace("__LINK__", link).replace("__IMAGELINK__", imageLink).replace("__ALTLINK__",imageAlt)+"""\n"""
         return externalLinks
+
+
+    
