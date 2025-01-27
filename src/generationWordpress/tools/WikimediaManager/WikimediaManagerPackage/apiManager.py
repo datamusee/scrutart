@@ -7,13 +7,13 @@ import uuid
 from functools import wraps
 from queue import Queue
 from urllib.parse import urlparse
-
+import logging
 import requests
 from aiohttp import ClientSession
 from flask import Flask, request, jsonify
 from flask_socketio import SocketIO, emit, join_room, leave_room
 
-import configPrivee
+from configPrivee  import config
 
 """
 voir https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
@@ -217,7 +217,7 @@ def authenticate(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         auth_token = request.headers.get("Authorization")
-        bearer = configPrivee.config['admin']['Bearer']
+        bearer = config['admin']['Bearer']
         if not auth_token or auth_token != f"Bearer {bearer}":
             return jsonify({"error": "Unauthorized"}), 401
         return f(*args, **kwargs)
@@ -231,6 +231,11 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Gérer les connexions WebSocket (optionnel, pour garder une trace des clients connectés)
 connected_clients = {}
+
+
+@socketio.on('custom_event') # pour test avec trialSOcketIOInClass
+def handle_custom_event():
+    emit('custom_event', data={"message": "Custom event reçu."})
 
 
 @socketio.on('response_ready')
@@ -293,9 +298,10 @@ managers = {}
 manager_ids = {}
 
 
-@app.route("/api/initialize", methods=["POST"])
+@app.route("/api/initialize", methods=["GET", "POST"])
 @authenticate
 def initialize_manager():
+    logging.debug(f"debut de création d'un manager par {request.method}")
     if request.method == "GET":
         api_urls = request.args.getlist("api_urls")
     else:

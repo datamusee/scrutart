@@ -1,6 +1,6 @@
 import time
 from urllib.parse import urlencode, urlunsplit
-import configPrivee
+from WikimediaManagerPackage import configPrivee
 import requests
 import json
 import uuid
