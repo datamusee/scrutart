@@ -6,7 +6,7 @@ import json
 import time
 import SPARQLWrapper as sw
 import logging
-from src.generationWordpress.wikidataObject import WikidataObject
+from src.generationWordpress.WikimediaAccess import WikidataObject
 
 def sparqlQuery(endpoint, query, format="json"):
     sparql = sw.SPARQLWrapper2(endpoint)  # implicit JSON format
@@ -161,7 +161,7 @@ def getImageId(im):
     return imId
 
 if __name__=="__main__":
-    sleep = 2
+    sleep = 10
     creatorsToProcess = []
     genresDict = {}
     queryTags = """
@@ -173,18 +173,23 @@ if __name__=="__main__":
                 """
     with open("D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\listeAlbumsCreateurs.json",
               encoding="UTF-8") as albumsCreatorsFile:
+        # on récupère une liste de créateurs pour lesquels on veut envoyer les images
         creatorsToProcess = json.load(albumsCreatorsFile)
     with open("D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeGenresPeintures.json",
               encoding="UTF-8") as genresFile:
+        # on récupère une liste de genres
         listGenres = json.load(genresFile)
+        # on transforme la liste en dictionnaire avec l'uri wikidata du genre comme clé
         for genre in listGenres:
             genresDict[genre["genre"]] = genre
+    # ouverture d'une session d'échanges avec Piwigo
     session = openPiwigoApiSession()
+    # récupération de la liste des tags déjà utilisés dans Piwigo
     existingTags = getPiwigoTagsList(session)
-    for creator in creatorsToProcess:
-        categoryName = creator["categoryName"]
-        piwigoCategory = creator["piwigoCategory"]
-        listimagespath = creator["listimagespath"]
+    for creator in creatorsToProcess[0:1]:
+        categoryName = creator["categoryName"] # nom de la catégorie associée au créateur
+        piwigoCategory = creator["piwigoCategory"] # id de la catégorie associée au créateur
+        listimagespath = creator["listimagespath"] # chemin du fichier contenant la liste des descriptions d'œuvres associées au créateur
         dictim = {}
         with open(listimagespath, "r", encoding="UTF-8") as fdata:
             data = json.loads(fdata.read())
@@ -194,31 +199,42 @@ if __name__=="__main__":
         if dictim:
             freqsav = 5
             idxsav = 0
+            allTags = False # if False, send tags only when no tags are already set
             change = False
             for uri, im in dictim.items():
                 if ("posted" in im) and (im["posted"]):
                     # find genre(s) avec label in wikidata for the image
-                    print(uri)
-                    crtquery = queryTags.replace("__ARTWORKENTITY__", uri)
-                    qid = uri.replace("http://www.wikidata.org/entity/", "")
-                    wObj = WikidataObject(qid)
-                    res = wObj.sparqlQuery(crtquery)
-                    if not res: continue
-                    tagIds = []
-                    wtags = res.bindings
-                    for wtag in wtags:
-                        label = wtag["tagLabel"].value
-                        if not label in existingTags:
-                            res = addPiwigoTag(session, label)
-                            existingTags = getPiwigoTagsList(session)
-                        tagIds.append(existingTags[label]["id"])
-                    if tagIds:
+                    if (not allTags) and (not "tags" in im):
                         imId = getImageId(im)
                         if imId:
-                            if addTagsToPiwigoImage(session, tagIds, imId):
-                                if not "tags" in dictim[uri]: dictim[uri]["tags"]=[]
-                                dictim[uri]["tags"].extend(tagIds)
-                    time.sleep(sleep)
+                            print(uri)
+                            crtquery = queryTags.replace("__ARTWORKENTITY__", uri)
+                            qid = uri.replace("http://www.wikidata.org/entity/", "")
+                            wObj = WikidataObject(qid)
+                            res = wObj.sparqlQuery(crtquery)
+                            if not res: continue
+                            tagIds = []
+                            wtags = res.bindings
+                            if wtags:
+                                for wtag in wtags:
+                                    label = wtag["tagLabel"].value
+                                    if not label in existingTags:
+                                        res = addPiwigoTag(session, label)
+                                        existingTags = getPiwigoTagsList(session)
+                                    if label in existingTags:
+                                        tagIds.append(existingTags[label]["id"])
+                                if tagIds:
+                                    if addTagsToPiwigoImage(session, tagIds, imId):
+                                        if not "tags" in dictim[uri]: dictim[uri]["tags"]=[]
+                                        dictim[uri]["tags"].extend(tagIds)
+                                        idxsav += 1
+                                        change = True
+                            else:
+                                print(f"Pas de tags/depicts trouvés pour {uri}")
+                            time.sleep(sleep)
+                    else:
+                        imagesList = str(im["images"])
+                        print(f"Image de {uri} pas trouvée dans Piwigo ({imagesList})(cf ticket 1809")
                     if idxsav>=freqsav:
                         idxsav = 0
                         with open(listimagespath, "w", encoding="UTF-8") as fdata:

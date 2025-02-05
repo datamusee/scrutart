@@ -8,7 +8,7 @@ import json
 import time
 import SPARQLWrapper as sw
 import logging
-from src.generationWordpress.wikidataObject import WikidataObject
+from src.generationWordpress.WikimediaAccess import WikidataObject
 
 def sparqlQuery(endpoint, query, format="json"):
     sparql = sw.SPARQLWrapper2(endpoint)  # implicit JSON format

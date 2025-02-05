@@ -1,3 +1,6 @@
+# je pense que ce processus sert à associer des images aux galeries correspondant à leur genre
+# donc, ça prend des images déjà dans piwigo, par exemple parce qu'elles ont été associées à un artiste
+# et on cherche leur genre et on les associe à la galerie/categorie corres pondante dans piwigo
 import re
 import requests
 import configPiwigo as cp
@@ -6,7 +9,7 @@ import json
 import time
 import SPARQLWrapper as sw
 import logging
-from src.generationWordpress.wikidataObject import WikidataObject
+from src.generationWordpress.WikimediaAccess import WikidataObject
 
 def sparqlQuery(endpoint, query, format="json"):
     sparql = sw.SPARQLWrapper2(endpoint)  # implicit JSON format
