@@ -6,11 +6,11 @@
 # et modifié pour traiter des genres au lieu des créateurs
 # cela nécessite notamment de modifier le template
 # il parait souhaitable d'homogénéiser le code pour les différentes langues et les différents thèmes
-# dans le cas des créateurs, on a relativement peu d'instances d'oeuvres et pas rencontré de timeout
+# dans le cas des créateurs, on a relativement peu d'instances d'œuvres et pas rencontré de timeout
 # dans le cas des genre, il arrive qu'il y ait des timeout
 # il en résulte la nécessité d'adapter les requêtes sparql pour éviter les timeout
-# par exemple pour le genre portrait, en limitant à la recherche des propriétés sur 50000 oeuvres
-# on n'a pas de timeout, alors qu'avec le compte complet de plus de 100000 oeuvres, on a des timeout
+# par exemple pour le genre portrait, en limitant à la recherche des propriétés sur 50000 œuvres
+# on n'a pas de timeout, alors qu'avec le compte complet de plus de 100000 œuvres, on a des timeout
 import datetime
 import time
 import json
