@@ -465,7 +465,7 @@ tableTemplate = """<!-- wp:paragraph -->
 <p>Ce qui s'illustre dans la table:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
+<!-- wp:table {"hasFixedLayout":false} -->
 <figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Des paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
 <!-- /wp:table -->
 
@@ -483,7 +483,7 @@ mindmap
   root((__NOMCREATEUR__))
     Genre
 __GENRELIST__    
-    Depicts
+    Illustre
 __DEPICTLIST__
     Types
 __TYPELIST__
@@ -557,16 +557,15 @@ finTemplate = """<!-- wp:paragraph -->
 <!-- /wp:paragraph -->
 """
 
-pageTemplate = imageTemplate + \
-               introTemplate + nombreOeuvresTemplate + \
+pageTemplate = introTemplate + nombreOeuvresTemplate + \
                queryNbOeuvresTemplate + \
                nbTypesOeuvresTemplate + queryNbParTypesTemplate + \
+               mermaidTemplate + \
                nbPropTemplate + queryNbproprietesTemplate + \
                importantesPropTemplate + queryImportantesPropTemplate + \
                propvalTemplate + queryPropValTemplate + \
                propDePropvalTemplate + queryPropDePropValTemplate + \
                tableTemplate + queryTableTemplate + \
-               mermaidTemplate + \
                barresTemplate + queryDonneesPourBarres + \
                nbPagesWikipedia + queryNbPagesWikipedia + \
                wikipediaParPays + queryWikipediaParLangue + \
@@ -639,6 +638,7 @@ def nettoyageContenu(page):
 
 # ne traiter que ceux qui sont dans filterpainters en supprimant la page si elle existe déjà
 filterPainters = [
+"Q5597",
 "Q10378200",
 "Q1074290",
 "Q1389068",
@@ -682,12 +682,12 @@ for qid in filterPainters:
         os.remove("pages/{qid}.wp".format(qid=qid))
 
 #page = "test"
-with open("data/wikidataSignificantPaintersTicket1527.json") as fListPainters:
+with open("data/wikidataSignificantPaintersTicket1527.json", encoding="UTF-8") as fListPainters:
     painters = json.load(fListPainters)
-    for p in painters:
-        print(p["painter"], " ", p["painterLabel"])
+    for p in painters[0:1]:
+        print(p["entity"], " ", p["entityLabel"])
         try:
-            qid = p["painter"].replace("http://www.wikidata.org/entity/", "")
+            qid = p["entity"].replace("http://www.wikidata.org/entity/", "")
             if not qid in filterPainters:
                 continue
             filename = "pages/{qid}.wp".format(qid=str(qid))
