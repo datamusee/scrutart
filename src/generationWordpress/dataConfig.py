@@ -1,6 +1,6 @@
 dataConfig = {
     "__TITRE_TEMPLATE__":
-        { "version": "1.0", "template": "Où trouver __NOMCREATEUR__ dans Wikidata, suivez le guide"} ,
+        { "version": "1.0", "template": "Où trouver __ENTITYNAME__ dans Wikidata, suivez le guide"} ,
     "__DATE__": {"sparql": None,
                       "filtres": [{"filtre": "getCurrentDate", "key": "__DATE__"}],
                       "urlquery": None},
