@@ -95,7 +95,7 @@ def convertListImage(data, versionSrc, versionTarget):
     knowVersions = {
         "1.0.0": { "desc" : "version initiale composée d'une liste obtenue par téléchargement sur WDQS auquel on a ajouté un champ sparql pour garder trace de la requ^te qui a servi à générer ces données"},
         "1.0.1": { "desc" : "v1 pour la clé liste, mais avec déjà des éléments renseignés dans la clé dict construite comme dans v2"},
-        "2.0.0": { "desc": "évolution de version 1, pour éviter d'envoyer plusieurs images pour une même oeuvre; la liste est remplacée par un dictionnaire; c'est l'oeuvre qui est marquée comme postée, pas l'image" }
+        "2.0.0": { "desc": "évolution de version 1, pour éviter d'envoyer plusieurs images pour une même œuvre; la liste est remplacée par un dictionnaire; c'est l'oeuvre qui est marquée comme postée, pas l'image" }
     }
     dataConverter = {
         "1.0.0": convertFromV1To,
@@ -134,7 +134,7 @@ if __name__=="__main__":
                         im["posted"] = True
                         dictim[uri] = im
                         idxsav += 1
-                        time.sleep(30)
+                        time.sleep(10)
                         if idxsav>=freqsav:
                             idxsav = 0
                             with open(listimagespath, "w", encoding="UTF-8") as fdata:
