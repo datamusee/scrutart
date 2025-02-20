@@ -1,0 +1,3000 @@
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kgdc: <https://kg.grains-de-culture.fr/entity/> .
+@prefix pgdc: <https://kg.grains-de-culture.fr/prop/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wdt:P136 rdfs:label "genre"@fr .
+wdt:P31 rdfs:label "nature de l'élément"@fr .
+wdt:P170 rdfs:label "créateur"@fr .
+wdt:P18 rdfs:label "image"@fr .
+
+wd:Q110096971 rdfs:label """Self-portrait at the age of 17"""@fr.
+wd:Q110096971 wdt:P31 wd:Q838948 .
+wd:Q110096971 wdt:P170 wd:Q170259.
+wd:Q110096971 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20auto-portrait.jpg".
+wd:Q110096971 pgdc:piwigo_image "3608".
+wd:Q110096971 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110096971 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q108698630 rdfs:label """George Lee Schuyler (1811-1890)"""@fr.
+wd:Q108698630 wdt:P31 wd:Q838948 .
+wd:Q108698630 wdt:P170 wd:Q170259.
+wd:Q108698630 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/George%20Lee%20Schuyler%20%281811-1890%29%201925%2014.jpeg".
+wd:Q108698630 pgdc:piwigo_image "3609".
+wd:Q108698630 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q108698630 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q124305696 rdfs:label """Adolphe Thiers (1796-1877)."""@fr.
+wd:Q124305696 wdt:P31 wd:Q838948 .
+wd:Q124305696 wdt:P170 wd:Q170259.
+wd:Q124305696 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Adolphe%20Thiers%20par%20L%C3%A9on%20Bonnat.jpg".
+wd:Q124305696 pgdc:piwigo_image "3610".
+wd:Q124305696 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q124305696 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110734268 rdfs:label """Portrait de Monseigneur Félix-Arsène Billard"""@fr.
+wd:Q110734268 wdt:P31 wd:Q838948 .
+wd:Q110734268 wdt:P170 wd:Q170259.
+wd:Q110734268 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Carcassonne%20-%20Mus%C3%A9e-tr%C3%A9sor%20de%20Notre-Dame-de-l%27Abbaye%2078.jpg".
+wd:Q110734268 pgdc:piwigo_image "3611".
+wd:Q110734268 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110734268 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q107266149 rdfs:label """Le martyre de saint Denis"""@fr.
+wd:Q107266149 wdt:P31 wd:Q838948 .
+wd:Q107266149 wdt:P170 wd:Q170259.
+wd:Q107266149 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Martyre%20de%20saint%20Denis%20-%20L%C3%A9on%20Bonnat%20%281874-88%2C%20Pantheon%29.jpg".
+wd:Q107266149 pgdc:piwigo_image "3612".
+wd:Q107266149 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q107266149 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110097479 rdfs:label """Portrait de Marguerite Franchetti"""@fr.
+wd:Q110097479 wdt:P31 wd:Q838948 .
+wd:Q110097479 wdt:P170 wd:Q170259.
+wd:Q110097479 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Marguerite%20Franchetti%20%281875%29%20-%20L%C3%A9on%20Bonnat.jpg".
+wd:Q110097479 pgdc:piwigo_image "3613".
+wd:Q110097479 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110097479 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110067978 rdfs:label """Scène de mendicité"""@fr.
+wd:Q110067978 wdt:P31 wd:Q838948 .
+wd:Q110067978 wdt:P170 wd:Q170259.
+wd:Q110067978 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Sc%C3%A8ne%20de%20mendicit%C3%A9%20par%20L%C3%A9on%20Bonnat%2C%20vers%201865.jpg".
+wd:Q110067978 pgdc:piwigo_image "3614".
+wd:Q110067978 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110067978 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q117215458 rdfs:label """Self-Portrait"""@fr.
+wd:Q117215458 wdt:P31 wd:Q838948 .
+wd:Q117215458 wdt:P170 wd:Q170259.
+wd:Q117215458 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Self-Portrait%20-%20O%2011720%20-%20National%20Gallery%20Prague.jpg".
+wd:Q117215458 pgdc:piwigo_image "3615".
+wd:Q117215458 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q117215458 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110316807 rdfs:label """Non piangere (Ne pleure pas)"""@fr.
+wd:Q110316807 wdt:P31 wd:Q838948 .
+wd:Q110316807 wdt:P170 wd:Q170259.
+wd:Q110316807 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%2C%20Non%20piangere.jpg".
+wd:Q110316807 pgdc:piwigo_image "3616".
+wd:Q110316807 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110316807 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110561573 rdfs:label """Petite Italienne"""@fr.
+wd:Q110561573 wdt:P31 wd:Q838948 .
+wd:Q110561573 wdt:P170 wd:Q170259.
+wd:Q110561573 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20girl%20%281880%29%2C%20by%20L%C3%A9on%20Bonnat.jpg".
+wd:Q110561573 pgdc:piwigo_image "3617".
+wd:Q110561573 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110561573 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110097985 rdfs:label """Italienne"""@fr.
+wd:Q110097985 wdt:P31 wd:Q838948 .
+wd:Q110097985 wdt:P170 wd:Q170259.
+wd:Q110097985 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20woman%20%281872%29%20-%20L%C3%A9on%20Bonnat.jpg".
+wd:Q110097985 pgdc:piwigo_image "3618".
+wd:Q110097985 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110097985 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q121177490 rdfs:label """Portrait du comte Frédéric Alexis Louis Pillet-Will"""@fr.
+wd:Q121177490 wdt:P31 wd:Q838948 .
+wd:Q121177490 wdt:P170 wd:Q170259.
+wd:Q121177490 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Fr%C3%A9d%C3%A9ric%20Alexis%20Louis%20Pillet-Will%20%281837-1911%29.jpg".
+wd:Q121177490 pgdc:piwigo_image "3619".
+wd:Q121177490 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q121177490 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q106865145 rdfs:label """George Martin Lane (1823-1897)"""@fr.
+wd:Q106865145 wdt:P31 wd:Q838948 .
+wd:Q106865145 wdt:P170 wd:Q170259.
+wd:Q106865145 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20George%20Martin%20Lane%20%281823-1897%29%20-%20H101%20-%20Harvard%20Art%20Museums.jpg".
+wd:Q106865145 pgdc:piwigo_image "3620".
+wd:Q106865145 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q106865145 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q107291510 rdfs:label """Portrait de Jules Ferry"""@fr.
+wd:Q107291510 wdt:P31 wd:Q838948 .
+wd:Q107291510 wdt:P170 wd:Q170259.
+wd:Q107291510 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/JulesFerryBonnat.jpg".
+wd:Q107291510 pgdc:piwigo_image "3621".
+wd:Q107291510 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q107291510 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110068054 rdfs:label """Les pèlerins au pied de la statue de Saint Pierre dans l’église Saint-Pierre"""@fr.
+wd:Q110068054 wdt:P31 wd:Q838948 .
+wd:Q110068054 wdt:P170 wd:Q170259.
+wd:Q110068054 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pilgrims%20at%20the%20foot%20of%20the%20statue%20of%20Saint%20Peter%20in%20the%20Church%20of%20Saint%20Peter%20in%20Rome%20%281864%29%20-%20L%C3%A9on%20Bonnat.jpg".
+wd:Q110068054 pgdc:piwigo_image "3622".
+wd:Q110068054 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110068054 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110219690 rdfs:label """Portrait de Louis Bernier"""@fr.
+wd:Q110219690 wdt:P31 wd:Q838948 .
+wd:Q110219690 wdt:P170 wd:Q170259.
+wd:Q110219690 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Louis%20Bernier%20-%20L%C3%A9on%20Bonnat%20-%20Mus%C3%A9e%20Cond%C3%A9.jpeg".
+wd:Q110219690 pgdc:piwigo_image "3623".
+wd:Q110219690 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110219690 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q115299352 rdfs:label """Martyre de Saint André"""@fr.
+wd:Q115299352 wdt:P31 wd:Q838948 .
+wd:Q115299352 wdt:P170 wd:Q170259.
+wd:Q115299352 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Leon%20bonnat%20le%20martyre%20de%20st%20andre%201863.jpg".
+wd:Q115299352 pgdc:piwigo_image "3624".
+wd:Q115299352 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q115299352 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110056636 rdfs:label """Portrait de M. Delarue, architecte"""@fr.
+wd:Q110056636 wdt:P31 wd:Q838948 .
+wd:Q110056636 wdt:P170 wd:Q170259.
+wd:Q110056636 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20M.%20Delarue%2C%20architect%20%281887%29%20-%20L%C3%A9on%20Bonnat.jpg".
+wd:Q110056636 pgdc:piwigo_image "3625".
+wd:Q110056636 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110056636 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110057270 rdfs:label """A little accident"""@fr.
+wd:Q110057270 wdt:P31 wd:Q838948 .
+wd:Q110057270 wdt:P170 wd:Q170259.
+wd:Q110057270 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/A%20little%20accident%20%28unknown%20date%29%20-%20L%C3%A9on%20Bonnat.jpg".
+wd:Q110057270 pgdc:piwigo_image "3626".
+wd:Q110057270 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110057270 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q119351814 rdfs:label """Portrait d'Hugues Krafft"""@fr.
+wd:Q119351814 wdt:P31 wd:Q838948 .
+wd:Q119351814 wdt:P170 wd:Q170259.
+wd:Q119351814 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Hugues%20Krafft-by-L%C3%A9on%20Bonnat-1892.JPG".
+wd:Q119351814 pgdc:piwigo_image "3627".
+wd:Q119351814 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q119351814 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110085695 rdfs:label """Portrait de Charles Ephrussi"""@fr.
+wd:Q110085695 wdt:P31 wd:Q838948 .
+wd:Q110085695 wdt:P170 wd:Q170259.
+wd:Q110085695 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Ephrussi%20by%20Leon%20Joseph%20Florentin%20Bonnat%20%281833-1922%29.jpg".
+wd:Q110085695 pgdc:piwigo_image "3628".
+wd:Q110085695 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110085695 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q123315162 rdfs:label """Portrait de la comtesse Emanuella Pignatelli Potocka"""@fr.
+wd:Q123315162 wdt:P31 wd:Q838948 .
+wd:Q123315162 wdt:P170 wd:Q170259.
+wd:Q123315162 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat11.jpg".
+wd:Q123315162 pgdc:piwigo_image "3629".
+wd:Q123315162 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q123315162 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110096593 rdfs:label """The broken pitcher (version with ciocie)"""@fr.
+wd:Q110096593 wdt:P31 wd:Q838948 .
+wd:Q110096593 wdt:P170 wd:Q170259.
+wd:Q110096593 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Broken%20Pitcher%2C%20by%20L%C3%A9on%20Joseph%20Florentin%20Bonnat.jpg".
+wd:Q110096593 pgdc:piwigo_image "3630".
+wd:Q110096593 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110096593 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q123385281 rdfs:label """Portrait of Antoine François Marmontel (1816-1898), French pianist, composer and musicologist"""@fr.
+wd:Q123385281 wdt:P31 wd:Q838948 .
+wd:Q123385281 wdt:P170 wd:Q170259.
+wd:Q123385281 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Antoine%20Fran%C3%A7ois%20Marmontel%20by%20L%C3%A9on%20Bonnat.jpg".
+wd:Q123385281 pgdc:piwigo_image "3631".
+wd:Q123385281 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q123385281 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110096918 rdfs:label """Portrait of Marie Bonnat, the artist's sister"""@fr.
+wd:Q110096918 wdt:P31 wd:Q838948 .
+wd:Q110096918 wdt:P170 wd:Q170259.
+wd:Q110096918 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Marie%20Bonnat%2C%20the%20artist%27s%20sister%20%281851%29%20-%20L%C3%A9on%20Bonnat.jpg".
+wd:Q110096918 pgdc:piwigo_image "3632".
+wd:Q110096918 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110096918 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q130968797 rdfs:label """Jean Gigoux"""@fr.
+wd:Q130968797 wdt:P31 wd:Q838948 .
+wd:Q130968797 wdt:P170 wd:Q170259.
+wd:Q130968797 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Gigoux.jpg".
+wd:Q130968797 pgdc:piwigo_image "3633".
+wd:Q130968797 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q130968797 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q121890103 rdfs:label """Portrait de Henri Harpignies"""@fr.
+wd:Q121890103 wdt:P31 wd:Q838948 .
+wd:Q121890103 wdt:P170 wd:Q170259.
+wd:Q121890103 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%20-%20Henri%20Harpignies%20-%20avec%20cadre%20%28cropped%29.jpg".
+wd:Q121890103 pgdc:piwigo_image "3634".
+wd:Q121890103 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q121890103 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q110074128 rdfs:label """The broken pitcher (barefoot version)"""@fr.
+wd:Q110074128 wdt:P31 wd:Q838948 .
+wd:Q110074128 wdt:P170 wd:Q170259.
+wd:Q110074128 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Broken%20Pitcher%20%28unknown%20date%29%20-%20L%C3%A9on%20Bonnat.png".
+wd:Q110074128 pgdc:piwigo_image "3635".
+wd:Q110074128 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q110074128 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q130863322 rdfs:label """Portrait d'Auguste Caïn"""@fr.
+wd:Q130863322 wdt:P31 wd:Q838948 .
+wd:Q130863322 wdt:P170 wd:Q170259.
+wd:Q130863322 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Auguste%20Cain%20par%20Bonnat.jpg".
+wd:Q130863322 pgdc:piwigo_image "3636".
+wd:Q130863322 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q130863322 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q59821957 rdfs:label """Un salon de coiffure oriental"""@fr.
+wd:Q59821957 wdt:P31 wd:Q838948 .
+wd:Q59821957 wdt:P170 wd:Q170259.
+wd:Q59821957 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Un%20salon%20de%20coiffure%20oriental%20%281872%29.jpg".
+wd:Q59821957 pgdc:piwigo_image "3637".
+wd:Q59821957 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q59821957 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q18749211 rdfs:label """Portrait of the Artist"""@fr.
+wd:Q18749211 wdt:P31 wd:Q838948 .
+wd:Q18749211 wdt:P170 wd:Q170259.
+wd:Q18749211 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20of%20the%20Artist%20-%20Walters%203774.jpg".
+wd:Q18749211 pgdc:piwigo_image "3638".
+wd:Q18749211 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q18749211 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495357 rdfs:label """Portrait du comte de Montalivet"""@fr.
+wd:Q17495357 wdt:P31 wd:Q838948 .
+wd:Q17495357 wdt:P170 wd:Q170259.
+wd:Q17495357 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Camille%20Bachasson%2C%20comte%20de%20Montalivet%20%281801-1880%29.jpg".
+wd:Q17495357 pgdc:piwigo_image "3639".
+wd:Q17495357 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17495357 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q106065590 rdfs:label """Portrait of Joseph Reinach"""@fr.
+wd:Q106065590 wdt:P31 wd:Q838948 .
+wd:Q106065590 wdt:P170 wd:Q170259.
+wd:Q106065590 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%2C%20Portrait%20de%20Joseph%20Reinach.jpg".
+wd:Q106065590 pgdc:piwigo_image "3640".
+wd:Q106065590 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q106065590 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q21728148 rdfs:label """Cheikhs arabes dans les montagnes"""@fr.
+wd:Q21728148 wdt:P31 wd:Q838948 .
+wd:Q21728148 wdt:P170 wd:Q170259.
+wd:Q21728148 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Cheikhs%20arabes%20dans%20les%20montagnes.jpg".
+wd:Q21728148 pgdc:piwigo_image "3641".
+wd:Q21728148 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q21728148 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q18749494 rdfs:label """Portrait of William T. Walters"""@fr.
+wd:Q18749494 wdt:P31 wd:Q838948 .
+wd:Q18749494 wdt:P170 wd:Q170259.
+wd:Q18749494 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20of%20William%20T%20Walters%20-%20Walters%2037758.jpg".
+wd:Q18749494 pgdc:piwigo_image "3642".
+wd:Q18749494 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q18749494 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q21725594 rdfs:label """Portrait of Prince Vyacheslav Tenishev"""@fr.
+wd:Q21725594 wdt:P31 wd:Q838948 .
+wd:Q21725594 wdt:P170 wd:Q170259.
+wd:Q21725594 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Tenishev%20V%20N.jpg".
+wd:Q21725594 pgdc:piwigo_image "3643".
+wd:Q21725594 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q21725594 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495090 rdfs:label """Portrait d'Alexandre Dumas fils"""@fr.
+wd:Q17495090 wdt:P31 wd:Q838948 .
+wd:Q17495090 wdt:P170 wd:Q170259.
+wd:Q17495090 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%20-%20Alexandre%20Dumas%2C%20fils.jpg".
+wd:Q17495090 pgdc:piwigo_image "3644".
+wd:Q17495090 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17495090 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q64652140 rdfs:label """Portrait du général Henri d'Orléans, duc d'Aumale (1880)"""@fr.
+wd:Q64652140 wdt:P31 wd:Q838948 .
+wd:Q64652140 wdt:P170 wd:Q170259.
+wd:Q64652140 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/HenriEugenePhilippeEmmanueldOrleansBonnat1880.jpg".
+wd:Q64652140 pgdc:piwigo_image "3645".
+wd:Q64652140 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q64652140 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104502999 rdfs:label """Portrait de femme (P2688)"""@fr.
+wd:Q104502999 wdt:P31 wd:Q838948 .
+wd:Q104502999 wdt:P170 wd:Q170259.
+wd:Q104502999 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20de%20femme%20%28P2688%29%20-%20P2688%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104502999 pgdc:piwigo_image "3646".
+wd:Q104502999 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104502999 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q106475017 rdfs:label """Idylle"""@fr.
+wd:Q106475017 wdt:P31 wd:Q838948 .
+wd:Q106475017 wdt:P170 wd:Q170259.
+wd:Q106475017 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Idylle%20by%20L%C3%A9on%20Bonnat%20%281890%29.jpg".
+wd:Q106475017 pgdc:piwigo_image "3647".
+wd:Q106475017 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q106475017 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104443821 rdfs:label """Le Christ en croix, esquisse pour la salle d'audience de la Cour des Assises du Palais de Justice de Paris"""@fr.
+wd:Q104443821 wdt:P31 wd:Q838948 .
+wd:Q104443821 wdt:P170 wd:Q170259.
+wd:Q104443821 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Le%20Christ%20en%20croix%2C%20esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20-%20PPP3893%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104443821 pgdc:piwigo_image "3648".
+wd:Q104443821 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104443821 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q91018165 rdfs:label """Louisa Lee Schuyler"""@fr.
+wd:Q91018165 wdt:P31 wd:Q838948 .
+wd:Q91018165 wdt:P170 wd:Q170259.
+wd:Q91018165 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Louisa%20Lee%20Schuyler.jpg".
+wd:Q91018165 pgdc:piwigo_image "3649".
+wd:Q91018165 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q91018165 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q19911969 rdfs:label """Fille romaine à la fontaine"""@fr.
+wd:Q19911969 wdt:P31 wd:Q838948 .
+wd:Q19911969 wdt:P170 wd:Q170259.
+wd:Q19911969 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Fille%20romaine%20%C3%A0%20la%20fontaine.jpg".
+wd:Q19911969 pgdc:piwigo_image "3650".
+wd:Q19911969 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q19911969 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q59820864 rdfs:label """Femme italienne"""@fr.
+wd:Q59820864 wdt:P31 wd:Q838948 .
+wd:Q59820864 wdt:P170 wd:Q170259.
+wd:Q59820864 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Femme%20italienne.jpg".
+wd:Q59820864 pgdc:piwigo_image "3651".
+wd:Q59820864 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q59820864 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17327842 rdfs:label """Isaac Dignus Fransen van de Putte (1822-1902)"""@fr.
+wd:Q17327842 wdt:P31 wd:Q838948 .
+wd:Q17327842 wdt:P170 wd:Q170259.
+wd:Q17327842 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Isaac%20Dignus%20Fransen%20van%20de%20Putte%20by%20L%C3%A9on%20Bonnat%20Rijksdienst%20voor%20het%20Cultureel%20Erfgoed%20B298.jpg".
+wd:Q17327842 pgdc:piwigo_image "3652".
+wd:Q17327842 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17327842 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q59827371 rdfs:label """The painter Ceferino Araujo Sánchez"""@fr.
+wd:Q59827371 wdt:P31 wd:Q838948 .
+wd:Q59827371 wdt:P170 wd:Q170259.
+wd:Q59827371 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/1864%2C%20El%20pintor%20Ceferino%20Araujo%20S%C3%A1nchez%2C%20Le%C3%B3n%20Bonnat.jpg".
+wd:Q59827371 pgdc:piwigo_image "3653".
+wd:Q59827371 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q59827371 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104373374 rdfs:label """Portrait de Georges Cain (1853-1919), peintre et littérateur"""@fr.
+wd:Q104373374 wdt:P31 wd:Q838948 .
+wd:Q104373374 wdt:P170 wd:Q170259.
+wd:Q104373374 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20de%20Georges%20Cain%20%281853-1919%29%2C%20peintre%20et%20litt%C3%A9rateur%20-%20P1686%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104373374 pgdc:piwigo_image "3654".
+wd:Q104373374 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104373374 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104445375 rdfs:label """Le Christ en croix"""@fr.
+wd:Q104445375 wdt:P31 wd:Q838948 .
+wd:Q104445375 wdt:P170 wd:Q170259.
+wd:Q104445375 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Le%20Christ%20en%20croix%20-%20PPP411%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104445375 pgdc:piwigo_image "3655".
+wd:Q104445375 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104445375 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q50130421 rdfs:label """Jeune femme faisant la charité à l'entrée de la chapelle de l'hôpital San Sebastian à Cordoue"""@fr.
+wd:Q50130421 wdt:P31 wd:Q838948 .
+wd:Q50130421 wdt:P170 wd:Q170259.
+wd:Q50130421 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jeune%20femme%20faisant%20la%20charit%C3%A9%20%C3%A0%20l%27entr%C3%A9e%20de%20la%20chapelle%20de%20l%27h%C3%B4pital%20San%20Sebastian%20%C3%A0%20Cordoue%2C%20L%C3%A9on%20Bonnat%2C%20Mus%C3%A9e%20Goya.jpg".
+wd:Q50130421 pgdc:piwigo_image "3656".
+wd:Q50130421 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q50130421 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q47509343 rdfs:label """Levi Parsons Morton"""@fr.
+wd:Q47509343 wdt:P31 wd:Q838948 .
+wd:Q47509343 wdt:P170 wd:Q170259.
+wd:Q47509343 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Leon%20Joseph%20Florentin%20Bonnat%20-%20Levi%20Parsons%20Morton%20-%20NPG.66.45%20-%20National%20Portrait%20Gallery.jpg".
+wd:Q47509343 pgdc:piwigo_image "3657".
+wd:Q47509343 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q47509343 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104445733 rdfs:label """Portrait d'Henri Harpignies"""@fr.
+wd:Q104445733 wdt:P31 wd:Q838948 .
+wd:Q104445733 wdt:P170 wd:Q170259.
+wd:Q104445733 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20d%27Henri%20Harpignies%20-%20PPP4941%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104445733 pgdc:piwigo_image "3658".
+wd:Q104445733 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104445733 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q66107720 rdfs:label """Madame Maurice Pascal et son chien Tiny"""@fr.
+wd:Q66107720 wdt:P31 wd:Q838948 .
+wd:Q66107720 wdt:P170 wd:Q170259.
+wd:Q66107720 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Madame%20Maurice%20Pascal.jpg".
+wd:Q66107720 pgdc:piwigo_image "3659".
+wd:Q66107720 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q66107720 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q97914239 rdfs:label """Portrait de Monsieur Cernuschi"""@fr.
+wd:Q97914239 wdt:P31 wd:Q838948 .
+wd:Q97914239 wdt:P170 wd:Q170259.
+wd:Q97914239 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henri%20Cernuschi%20Bonnat.jpg".
+wd:Q97914239 pgdc:piwigo_image "3660".
+wd:Q97914239 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q97914239 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495209 rdfs:label """Portrait de l'artiste"""@fr.
+wd:Q17495209 wdt:P31 wd:Q838948 .
+wd:Q17495209 wdt:P170 wd:Q170259.
+wd:Q17495209 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/073%20L%C3%A9on%20Bonnat%20Portrait%20de%20l%27artiste.jpg".
+wd:Q17495209 pgdc:piwigo_image "3661".
+wd:Q17495209 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17495209 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q31187986 rdfs:label """Giotto gardant les chèvres"""@fr.
+wd:Q31187986 wdt:P31 wd:Q838948 .
+wd:Q31187986 wdt:P170 wd:Q170259.
+wd:Q31187986 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Giotto%20gardant%20les%20ch%C3%A8vres.JPG".
+wd:Q31187986 pgdc:piwigo_image "3662".
+wd:Q31187986 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q31187986 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q59857486 rdfs:label """Fruela II of Asturias (king of Asturias from 910 to 925)"""@fr.
+wd:Q59857486 wdt:P31 wd:Q838948 .
+wd:Q59857486 wdt:P170 wd:Q170259.
+wd:Q59857486 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Fruela%20II%20de%20Le%C3%B3n%20%28Museo%20del%20Prado%29.jpg".
+wd:Q59857486 pgdc:piwigo_image "3663".
+wd:Q59857486 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q59857486 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q67330830 rdfs:label """Precious Moments"""@fr.
+wd:Q67330830 wdt:P31 wd:Q838948 .
+wd:Q67330830 wdt:P170 wd:Q170259.
+wd:Q67330830 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Precious%20moments%20%281880%29%2C%20by%20L%C3%A9on%20Bonnat.jpg".
+wd:Q67330830 pgdc:piwigo_image "3664".
+wd:Q67330830 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q67330830 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q64652144 rdfs:label """Portrait de M. le duc d'Aumale (1890)"""@fr.
+wd:Q64652144 wdt:P31 wd:Q838948 .
+wd:Q64652144 wdt:P170 wd:Q170259.
+wd:Q64652144 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/HenriEugenePhilippeEmmanueldOrleansBonnat1890.jpg".
+wd:Q64652144 pgdc:piwigo_image "3665".
+wd:Q64652144 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q64652144 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q58696860 rdfs:label """Henry White"""@fr.
+wd:Q58696860 wdt:P31 wd:Q838948 .
+wd:Q58696860 wdt:P170 wd:Q170259.
+wd:Q58696860 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Henry%20White%20-%202018.111.1%20-%20National%20Gallery%20of%20Art.jpg".
+wd:Q58696860 pgdc:piwigo_image "3666".
+wd:Q58696860 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q58696860 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17490746 rdfs:label """Armand Fallières"""@fr.
+wd:Q17490746 wdt:P31 wd:Q838948 .
+wd:Q17490746 wdt:P170 wd:Q170259.
+wd:Q17490746 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Armand%20Falli%C3%A8res%20%28Bonnat%201907%29.JPG".
+wd:Q17490746 pgdc:piwigo_image "3667".
+wd:Q17490746 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17490746 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q20540887 rdfs:label """Henry Lillie Pierce"""@fr.
+wd:Q20540887 wdt:P31 wd:Q838948 .
+wd:Q20540887 wdt:P170 wd:Q170259.
+wd:Q20540887 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Florentin%20L%C3%A9on%20Bonnat%20-%20Henry%20Lillie%20Pierce%20-%2098.1005%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20540887 pgdc:piwigo_image "3668".
+wd:Q20540887 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q20540887 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104444774 rdfs:label """Esquisse pour la salle d'audience de la Cour des Assises du Palais de Justice de Paris : La Justice"""@fr.
+wd:Q104444774 wdt:P31 wd:Q838948 .
+wd:Q104444774 wdt:P170 wd:Q170259.
+wd:Q104444774 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Paix%20-%20PPP3892%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104444774 pgdc:piwigo_image "3669".
+wd:Q104444774 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104444774 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495355 rdfs:label """Portrait du Cardinal Lavigerie"""@fr.
+wd:Q17495355 wdt:P31 wd:Q838948 .
+wd:Q17495355 wdt:P170 wd:Q170259.
+wd:Q17495355 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%20-%20Le%20cardinal%20Charles%20Lavigerie%2C%20archev%C3%AAque%20d%27Alger%20%281825-1892%29.jpg".
+wd:Q17495355 pgdc:piwigo_image "3670".
+wd:Q17495355 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17495355 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q97606142 rdfs:label """Portrait de M. Victor Hugo"""@fr.
+wd:Q97606142 wdt:P31 wd:Q838948 .
+wd:Q97606142 wdt:P170 wd:Q170259.
+wd:Q97606142 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Victor%20Hugo%20par%20Daniel%20Saub%C3%A8s%20d%27apr%C3%A8s%20L%C3%A9on%20Bonnat.jpg".
+wd:Q97606142 pgdc:piwigo_image "3671".
+wd:Q97606142 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q97606142 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q18749215 rdfs:label """The Hand of Antoine-Louis Barye"""@fr.
+wd:Q18749215 wdt:P31 wd:Q838948 .
+wd:Q18749215 wdt:P170 wd:Q170259.
+wd:Q18749215 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20The%20Hand%20of%20Antoine-Louis%20Barye%20-%20Walters%2037595.jpg".
+wd:Q18749215 pgdc:piwigo_image "3672".
+wd:Q18749215 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q18749215 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495330 rdfs:label """Portrait de Victor Hugo"""@fr.
+wd:Q17495330 wdt:P31 wd:Q838948 .
+wd:Q17495330 wdt:P170 wd:Q170259.
+wd:Q17495330 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%20Hugo001z.jpg".
+wd:Q17495330 pgdc:piwigo_image "3673".
+wd:Q17495330 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17495330 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17494044 rdfs:label """Madame Pasca"""@fr.
+wd:Q17494044 wdt:P31 wd:Q838948 .
+wd:Q17494044 wdt:P170 wd:Q170259.
+wd:Q17494044 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Joseph%20Florentin%20Bonnat%20-%20Madame%20Pasca%20-%201874.png".
+wd:Q17494044 pgdc:piwigo_image "None".
+wd:Q17494044 pgdc:piwigo_gallery kgdc:galNone.
+wd:Q17494044 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495146 rdfs:label """Portrait de fillette"""@fr.
+wd:Q17495146 wdt:P31 wd:Q838948 .
+wd:Q17495146 wdt:P170 wd:Q170259.
+wd:Q17495146 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20little%20girl%20%281865%29%20-%20L%C3%A9on%20Bonnat.jpg".
+wd:Q17495146 pgdc:piwigo_image "3674".
+wd:Q17495146 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17495146 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104445598 rdfs:label """Portrait de Madame Dubernet"""@fr.
+wd:Q104445598 wdt:P31 wd:Q838948 .
+wd:Q104445598 wdt:P170 wd:Q170259.
+wd:Q104445598 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20de%20Madame%20Dubernet%20-%20PPP3609%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104445598 pgdc:piwigo_image "3675".
+wd:Q104445598 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104445598 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q18749203 rdfs:label """An Arab Sheik"""@fr.
+wd:Q18749203 wdt:P31 wd:Q838948 .
+wd:Q18749203 wdt:P170 wd:Q170259.
+wd:Q18749203 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20An%20Arab%20Sheik%20-%20Walters%2037173.jpg".
+wd:Q18749203 pgdc:piwigo_image "3676".
+wd:Q18749203 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q18749203 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17491814 rdfs:label """Job"""@fr.
+wd:Q17491814 wdt:P31 wd:Q838948 .
+wd:Q17491814 wdt:P170 wd:Q170259.
+wd:Q17491814 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Job.jpg".
+wd:Q17491814 pgdc:piwigo_image "3677".
+wd:Q17491814 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17491814 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104445775 rdfs:label """Portrait de Madame Georges Ehrler"""@fr.
+wd:Q104445775 wdt:P31 wd:Q838948 .
+wd:Q104445775 wdt:P170 wd:Q170259.
+wd:Q104445775 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20de%20Madame%20Georges%20Erhler%20-%20PPP472%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104445775 pgdc:piwigo_image "3678".
+wd:Q104445775 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104445775 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q71828425 rdfs:label """Ernest Renan"""@fr.
+wd:Q71828425 wdt:P31 wd:Q838948 .
+wd:Q71828425 wdt:P170 wd:Q170259.
+wd:Q71828425 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/19%20Tr%C3%A9guier%20Portrait%20d%27Ernest%20Renan%20-dans%20sa%20maison--2.jpg".
+wd:Q71828425 pgdc:piwigo_image "3679".
+wd:Q71828425 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q71828425 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q21716399 rdfs:label """Holy Water Font by St Peter's Basilica in Rome"""@fr.
+wd:Q21716399 wdt:P31 wd:Q838948 .
+wd:Q21716399 wdt:P170 wd:Q170259.
+wd:Q21716399 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Holy%20Water%20Font%20by%20St%20Peter%27s%20Basilica%20in%20Rome%20%281868%29%20-%20L%C3%A9on%20Bonnat.jpg".
+wd:Q21716399 pgdc:piwigo_image "3680".
+wd:Q21716399 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q21716399 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104443772 rdfs:label """Esquisse pour le salon des Arts à l'Hôtel de Ville de Paris : La glorification de l'Art"""@fr.
+wd:Q104443772 wdt:P31 wd:Q838948 .
+wd:Q104443772 wdt:P170 wd:Q170259.
+wd:Q104443772 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20le%20salon%20des%20Arts%20%C3%A0%20l%27H%C3%B4tel%20de%20Ville%20de%20Paris%20%2C%20La%20glorification%20de%20l%27Art%20-%20PPP3896%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104443772 pgdc:piwigo_image "3681".
+wd:Q104443772 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104443772 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q97606144 rdfs:label """Victor Hugo sur son lit de mort"""@fr.
+wd:Q97606144 wdt:P31 wd:Q838948 .
+wd:Q97606144 wdt:P170 wd:Q170259.
+wd:Q97606144 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%2C%20L%C3%A9on%20-%20Victor%20Hugo%20sur%20son%20lit%20de%20mort%20-%20219%20-%20Maison%20de%20Victor%20Hugo.jpg".
+wd:Q97606144 pgdc:piwigo_image "3682".
+wd:Q97606144 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q97606144 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q59920388 rdfs:label """Self-portrait (1918)"""@fr.
+wd:Q59920388 wdt:P31 wd:Q838948 .
+wd:Q59920388 wdt:P170 wd:Q170259.
+wd:Q59920388 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Self-portrait%20%281918%29%20-%20L%C3%A9on%20Bonnat.jpg".
+wd:Q59920388 pgdc:piwigo_image "3683".
+wd:Q59920388 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q59920388 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495222 rdfs:label """Portrait de l'artiste au chapeau"""@fr.
+wd:Q17495222 wdt:P31 wd:Q838948 .
+wd:Q17495222 wdt:P170 wd:Q170259.
+wd:Q17495222 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Albi%29%20Portrait%20de%20l%27artiste%20au%20chapeau%20-%20L%C3%A9on%20Bonnat%201916%20-%20Mus%C3%A9e%20d%27Orsay.jpg".
+wd:Q17495222 pgdc:piwigo_image "3684".
+wd:Q17495222 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17495222 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495217 rdfs:label """Portrait de l'artiste"""@fr.
+wd:Q17495217 wdt:P31 wd:Q838948 .
+wd:Q17495217 wdt:P170 wd:Q170259.
+wd:Q17495217 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Autoportrait.jpg".
+wd:Q17495217 pgdc:piwigo_image "3685".
+wd:Q17495217 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17495217 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104444772 rdfs:label """Esquisse pour le plafond de la salle d'audience de la Cour des Assises du Palais de Justice de Paris : Justice"""@fr.
+wd:Q104444772 wdt:P31 wd:Q838948 .
+wd:Q104444772 wdt:P170 wd:Q170259.
+wd:Q104444772 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Paix%20-%20PPP3892%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104444772 pgdc:piwigo_image "None".
+wd:Q104444772 pgdc:piwigo_gallery kgdc:galNone.
+wd:Q104444772 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q27975071 rdfs:label """Tête du cheval blanc"""@fr.
+wd:Q27975071 wdt:P31 wd:Q838948 .
+wd:Q27975071 wdt:P170 wd:Q170259.
+wd:Q27975071 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on-Joseph-Florentin%20Bonnat%20%281833-1922%29%20-%20T%C3%AAte%20du%20cheval%20blanc%20%28Head%20of%20a%20White%20Horse%29%20-%20NG%202754%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q27975071 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Joseph%20Florentin%20Bonnat%20-%20T%C3%AAte%20du%20cheval%20blanc%20%28Head%20of%20a%20white%20horse%29%20-%20NG%202754%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q27975071 pgdc:piwigo_image "3686".
+wd:Q27975071 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q27975071 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q20168339 rdfs:label """John Taylor Johnston (1820–1893)"""@fr.
+wd:Q20168339 wdt:P31 wd:Q838948 .
+wd:Q20168339 wdt:P170 wd:Q170259.
+wd:Q20168339 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Taylor%20Johnston%20%281820%E2%80%931893%29%20MET%20ep80.8.bw.R.jpg".
+wd:Q20168339 pgdc:piwigo_image "3687".
+wd:Q20168339 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q20168339 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495122 rdfs:label """Portrait de femme"""@fr.
+wd:Q17495122 wdt:P31 wd:Q838948 .
+wd:Q17495122 wdt:P170 wd:Q170259.
+wd:Q17495122 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20femme%20L%C3%A9on%20Bonnat.jpg".
+wd:Q17495122 pgdc:piwigo_image "3688".
+wd:Q17495122 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17495122 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q19905311 rdfs:label """Une paysanne égyptienne et son enfant"""@fr.
+wd:Q19905311 wdt:P31 wd:Q838948 .
+wd:Q19905311 wdt:P170 wd:Q170259.
+wd:Q19905311 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Une%20paysanne%20%C3%A9gyptienne%20et%20son%20enfant.jpg".
+wd:Q19905311 pgdc:piwigo_image "3689".
+wd:Q19905311 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q19905311 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104443823 rdfs:label """Esquisse pour le Palais de Justice de Paris : La Force"""@fr.
+wd:Q104443823 wdt:P31 wd:Q838948 .
+wd:Q104443823 wdt:P170 wd:Q170259.
+wd:Q104443823 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Justice%20prot%C3%A9geant%20le%20faible%20-%20PPP3888%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104443823 pgdc:piwigo_image "3690".
+wd:Q104443823 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104443823 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q64504361 rdfs:label """Femme nue, agenouillée"""@fr.
+wd:Q64504361 wdt:P31 wd:Q838948 .
+wd:Q64504361 wdt:P170 wd:Q170259.
+wd:Q64504361 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%20Donna%20nuda%20inginocchiata.jpg".
+wd:Q64504361 pgdc:piwigo_image "3691".
+wd:Q64504361 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q64504361 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104444773 rdfs:label """Esquisse pour le plafond de la salle d'audience de la Cour des Assises du Palais de Justice de Paris : Lex"""@fr.
+wd:Q104444773 wdt:P31 wd:Q838948 .
+wd:Q104444773 wdt:P170 wd:Q170259.
+wd:Q104444773 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Paix%20-%20PPP3892%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104444773 pgdc:piwigo_image "None".
+wd:Q104444773 pgdc:piwigo_gallery kgdc:galNone.
+wd:Q104444773 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17492088 rdfs:label """La Marquise Feydeau de Brou"""@fr.
+wd:Q17492088 wdt:P31 wd:Q838948 .
+wd:Q17492088 wdt:P170 wd:Q170259.
+wd:Q17492088 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20la%20marquise%20Feydeau%20de%20Brou.%2073x60cm.jpg".
+wd:Q17492088 pgdc:piwigo_image "3692".
+wd:Q17492088 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17492088 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104444775 rdfs:label """Esquisse pour la salle d'audience de la Cour des Assises du Palais de Justice de Paris : La Paix"""@fr.
+wd:Q104444775 wdt:P31 wd:Q838948 .
+wd:Q104444775 wdt:P170 wd:Q170259.
+wd:Q104444775 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Paix%20-%20PPP3892%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104444775 pgdc:piwigo_image "None".
+wd:Q104444775 pgdc:piwigo_gallery kgdc:galNone.
+wd:Q104444775 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q20540890 rdfs:label """Mary Sears (later Mrs. Francis Shaw)"""@fr.
+wd:Q20540890 wdt:P31 wd:Q838948 .
+wd:Q20540890 wdt:P170 wd:Q170259.
+wd:Q20540890 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20de%20Mary%20Sears.jpg".
+wd:Q20540890 pgdc:piwigo_image "3693".
+wd:Q20540890 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q20540890 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q18749207 rdfs:label """Portrait of Barye with a Wax Model of 'Seated Lion'"""@fr.
+wd:Q18749207 wdt:P31 wd:Q838948 .
+wd:Q18749207 wdt:P170 wd:Q170259.
+wd:Q18749207 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20of%20Barye%20with%20a%20Wax%20Model%20of%20%22Seated%20Lion%22%20-%20Walters%2037757.jpg".
+wd:Q18749207 pgdc:piwigo_image "3694".
+wd:Q18749207 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q18749207 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q20262344 rdfs:label """Portrait of Henry Field"""@fr.
+wd:Q20262344 wdt:P31 wd:Q838948 .
+wd:Q20262344 wdt:P170 wd:Q170259.
+wd:Q20262344 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Joseph%20Florentin%20Bonnat%20-%20Portrait%20of%20Henry%20Field%20-%201898.6%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20262344 pgdc:piwigo_image "3695".
+wd:Q20262344 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q20262344 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495113 rdfs:label """Portrait de dame âgée"""@fr.
+wd:Q17495113 wdt:P31 wd:Q838948 .
+wd:Q17495113 wdt:P170 wd:Q170259.
+wd:Q17495113 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Albi%29%20Portrait%20de%20dame%20%C3%A2g%C3%A9e%20%281898%29%20-%20L%C3%A9on%20Bonnat%20-%20Mus%C3%A9e%20d%27Orsay.jpg".
+wd:Q17495113 pgdc:piwigo_image "3696".
+wd:Q17495113 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17495113 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104443824 rdfs:label """Esquisse pour le Palais de Justice de Paris : la Justice"""@fr.
+wd:Q104443824 wdt:P31 wd:Q838948 .
+wd:Q104443824 wdt:P170 wd:Q170259.
+wd:Q104443824 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Justice%20prot%C3%A9geant%20le%20faible%20-%20PPP3888%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104443824 pgdc:piwigo_image "None".
+wd:Q104443824 pgdc:piwigo_gallery kgdc:galNone.
+wd:Q104443824 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q18749492 rdfs:label """Portrait of George Aloysius Lucas"""@fr.
+wd:Q18749492 wdt:P31 wd:Q838948 .
+wd:Q18749492 wdt:P170 wd:Q170259.
+wd:Q18749492 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20of%20George%20Aloysius%20Lucas%20-%20Walters%2037759.jpg".
+wd:Q18749492 pgdc:piwigo_image "3697".
+wd:Q18749492 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q18749492 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q29122672 rdfs:label """l'Assomption de Marie"""@fr.
+wd:Q29122672 wdt:P31 wd:Q838948 .
+wd:Q29122672 wdt:P170 wd:Q170259.
+wd:Q29122672 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Andr%C3%A9%20%28Bayonne%29%202022%2006%20cropped.jpg".
+wd:Q29122672 pgdc:piwigo_image "3698".
+wd:Q29122672 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q29122672 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q27950494 rdfs:label """La victime"""@fr.
+wd:Q27950494 wdt:P31 wd:Q838948 .
+wd:Q27950494 wdt:P170 wd:Q170259.
+wd:Q27950494 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20La%20v%C3%ADctima.jpg".
+wd:Q27950494 pgdc:piwigo_image "3699".
+wd:Q27950494 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q27950494 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q60474422 rdfs:label """Portrait d’homme"""@fr.
+wd:Q60474422 wdt:P31 wd:Q838948 .
+wd:Q60474422 wdt:P170 wd:Q170259.
+wd:Q60474422 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Clevelandart%201980.232.jpg".
+wd:Q60474422 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20of%20a%20Man%20-%201980.232%20-%20Cleveland%20Museum%20of%20Art.tif".
+wd:Q60474422 pgdc:piwigo_image "3700".
+wd:Q60474422 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q60474422 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104443822 rdfs:label """Esquisse pour la salle d'audience de la Cour des Assises du Palais de Justice de Paris : La Justice protégeant le faible"""@fr.
+wd:Q104443822 wdt:P31 wd:Q838948 .
+wd:Q104443822 wdt:P170 wd:Q170259.
+wd:Q104443822 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Justice%20prot%C3%A9geant%20le%20faible%20-%20PPP3888%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104443822 pgdc:piwigo_image "None".
+wd:Q104443822 pgdc:piwigo_gallery kgdc:galNone.
+wd:Q104443822 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q104445868 rdfs:label """Portrait d'Auguste Cain"""@fr.
+wd:Q104445868 wdt:P31 wd:Q838948 .
+wd:Q104445868 wdt:P170 wd:Q170259.
+wd:Q104445868 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20d%27Auguste%20Cain%20-%20PPP897%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104445868 pgdc:piwigo_image "3701".
+wd:Q104445868 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q104445868 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17495138 rdfs:label """Léon Gambetta (1838-1882)"""@fr.
+wd:Q17495138 wdt:P31 wd:Q838948 .
+wd:Q17495138 wdt:P170 wd:Q170259.
+wd:Q17495138 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9onGambetta.jpg".
+wd:Q17495138 pgdc:piwigo_image "None".
+wd:Q17495138 pgdc:piwigo_gallery kgdc:galNone.
+wd:Q17495138 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q47509504 rdfs:label """Anna L. R. S. Morton"""@fr.
+wd:Q47509504 wdt:P31 wd:Q838948 .
+wd:Q47509504 wdt:P170 wd:Q170259.
+wd:Q47509504 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Leon%20Joseph%20Florentin%20Bonnat%20-%20Anna%20L.%20R.%20S.%20Morton%20-%20S-NPG.67.128%20-%20National%20Portrait%20Gallery.jpg".
+wd:Q47509504 pgdc:piwigo_image "3702".
+wd:Q47509504 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q47509504 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
+
+wd:Q17491817 rdfs:label """Joseph Dreyfus"""@fr.
+wd:Q17491817 wdt:P31 wd:Q838948 .
+wd:Q17491817 wdt:P170 wd:Q170259.
+wd:Q17491817 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat18.jpg".
+wd:Q17491817 pgdc:piwigo_image "3703".
+wd:Q17491817 pgdc:piwigo_gallery kgdc:gal46.
+wd:Q17491817 pgdc:sparql kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 .
+
+kgdc:sparql3U1rB2Sum760mgKBGQyE2kVvSteRAWuvNOLmhr4Nyt2 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  {
+    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {
+      VALUES ?createur {
+        wd:Q170259 
+      }
+      ?uri wdt:P31 wd:Q3305213;
+        wdt:P170 ?createur;
+        wdt:P18 ?image.
+      ?createur rdfs:label ?createurLabel.
+      FILTER((LANG(?createurLabel)) = "fr")
+      BIND(?uri AS ?itemFr)
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
+    }
+  }
+  BIND(?itemFrLabel AS ?titre_fr)
+}""".
+
+wd:Q170259 rdfs:label """Léon Bonnat"""@fr.
+wd:Q170259 wdt:P31 wd:Q1028181 .
