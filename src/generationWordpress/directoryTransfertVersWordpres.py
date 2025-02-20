@@ -10,7 +10,7 @@ import time
 
 import orjson
 import requests
-import configPrivee
+import configPrivee2 as configPrivee
 import SPARQLWrapper as sw
 from dataConfig import dataConfig
 import datetime
@@ -20,14 +20,7 @@ import datetime
 #auth = (configPrivee.WORDPRESS_USERNAME, configPrivee.WORDPRESS_PASSWORD_APP)
 api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
 api_url_get = f"{configPrivee.WORDPRESS_O2_API_URL}/posts"
-auth = (configPrivee.WORDPRESS_O2_USERNAME, configPrivee.WORDPRESS_O2_PASSWORD_APP)
-data = {
-    "title": "Article de test d'automation 3",
-    "content": "Article 3 injecté avec injectWordpressPages.py",
-    "status": "draft",
-    "slug": "article-test-automation",
-    "lang":"fr"
-}
+auth = (configPrivee.WORDPRESS_O2_API2USERNAME, configPrivee.WORDPRESS_O2_API2PASSWORD_APP)
 
 def nettoyageContenu(page):
     if "<p><strong>0 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>" in page:
@@ -80,14 +73,18 @@ def getLogTransfert(path):
     with open(path, "r", encoding="utf-8") as logfile:
         txt = logfile.read()
         if len(txt):
-            jsonlist = [json.loads(jline) for jline in txt.splitlines()]
-    return jsonlist
+            jsonlist = []
+            for jline in txt.splitlines():
+                print(jline)
+                if jline:
+                    jsonlist.append(json.loads(jline)) # TODO à rétablir, mais bug jsonlist
+    return jsonlist # TODO à rétablir, mais bug jsonlist
 
 if __name__ == '__main__':
     # contents prohibited
     filtersBlackList = [
         "<strong>0 pages</strong>",
-        " 0 dans",
+        "Dont 0 dans le Wikipedia anglophone et 0 dans le Wikidata francophone.",
         "<strong>0 œuvres</strong>",
         "<strong>0 images</strong>",
         """<figure class="wp-block-image size-large"><img src="None"""
@@ -96,7 +93,7 @@ if __name__ == '__main__':
     filtersWhiteList = [
         "processParams"
     ]
-    srcdir = "./pages"
+    srcdir = "./pages/creator/fr/20250212"
     listfiles = os.listdir(srcdir)
     logsfile = "./logs/logTransfertScrutart.jsonl"
     logs = getLogTransfert(logsfile)
@@ -113,7 +110,7 @@ if __name__ == '__main__':
                 content = nettoyageContenu(content)
                 for filt in filtersBlackList: # filtrage de pages avec un contenu à améliorer
                     if filt in content:
-                        print(file)
+                        print(file, " filtré à cause de ", filt)
                         skip = True
                         continue
                 for filt in filtersWhiteList:
@@ -134,19 +131,22 @@ if __name__ == '__main__':
                     for log in logs:
                         if not type(log) == dict:
                             continue
-                        if log["qid"]!=qid:
+                        if (not "qid" in log) or (log["qid"]!=qid):
                             continue
-                        statusOK = ["201", "200"]
+                        statusOK = ["201", "200", "publish"]
                         if "idwordpress" in log and log["status"] in statusOK:
                             data["id"] = log["idwordpress"]
                     if "id" in data:
                         response = requests.post(api_url.replace("v2/posts", "v2/posts/{id}".format(id=data["id"])), json=data, auth=auth)
+                        pass
                     else:
                         response = requests.post(api_url, json=data, auth=auth)
+                        pass
                     with open(logsfile, "a+", encoding="UTF-8") as flog:
                         # il y a des \n dans le contenu => ça ne se prête pas à lire du json-line
                         # json.dump({ "qid": qid, "content": response.content.decode("utf-8") }, flog, ensure_ascii=False)
                         content = json.loads(response.content.decode("utf-8"))
-                        json.dump({ "qid": qid, "title": title, "idwordpress": content["id"],
+                        if "id" in content:
+                            json.dump({ "qid": qid, "title": title, "idwordpress": content["id"],
                                     "status": str(response.status_code), "date": str(datetime.datetime.now()) }, flog, ensure_ascii=False)
                         flog.write("\n")
