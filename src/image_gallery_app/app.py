@@ -6,7 +6,7 @@ from flask import Flask, render_template, url_for
 import os
 import requests
 import json
-import src.generationWordpress.wikidataObject as wikidataObject
+import src.generationWordpress.WikimediaAccess as wikidataObject
 
 app = Flask(__name__)
 # Monte le dossier `static` pour servir les fichiers statiques
