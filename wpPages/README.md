@@ -8,3 +8,5 @@ Au deuxième niveau, nous aurons le classement par langue donné par son code de
 
  Pour les depicts (dépeint), les valeurs n'ont pas de P31 homogène. Nous allons donc procéder par une liste de valeurs de la propriété depicts (P180). Nous classerons donc ces pages par la propriété qui les désignent.
  
+Il est surement judicieux d'utiliser le modèle de méthode factory pour ajouter facilement de nouvelles catégories: nouvelles occupations, nouveau genre...
+voir https://medium.com/@jdgb.projects/factory-method-pattern-in-python-94965735f497
