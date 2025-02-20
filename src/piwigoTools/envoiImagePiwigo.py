@@ -104,46 +104,57 @@ def convertListImage(data, versionSrc, versionTarget):
     targetData = dataConverter.get(versionSrc, simpleCopy)(data,versionTarget)
     return targetData
 
+def getFilesList(dirToProcess):
+    filesList = []
+    from os import listdir
+    from os.path import isfile, join
+    filesList = [join(dirToProcess, f) for f in listdir(dirToProcess) if isfile(join(dirToProcess, f))]
+    return filesList
+
 if __name__=="__main__":
-    creatorsToProcess = []
-    with open("D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\listeAlbumsCreateurs.json",
-              encoding="UTF-8") as albumsCreatorsFile:
-        creatorsToProcess = json.load(albumsCreatorsFile)
-    for creator in creatorsToProcess[0:1]:
-        categoryName = creator["categoryName"]
-        print(categoryName)
-        piwigoCategory = creator["piwigoCategory"]
-        listimagespath = creator["listimagespath"]
-        dictim = {}
-        with open(listimagespath, "r", encoding="UTF-8") as fdata:
-            data = json.loads(fdata.read())
-            if (not "version" in data) or (data["version"]=="1.0.1"):
-                data = convertListImage(data, "1.0.0", "2.0.0")
-            dictim = data["dict"]
-        if dictim:
-            print(datetime.datetime.now())
-            freqsav = 5
-            idxsav = 0
-            change = False
-            for uri, im in dictim.items():
-                if not "posted" in im:
-                    res = postImageToPiwigo(im, piwigoCategory, categoryName)
-                    if res:
-                        change = True
-                        im["post_result"] = res.text
-                        im["posted"] = True
-                        dictim[uri] = im
-                        idxsav += 1
-                        time.sleep(10)
-                        if idxsav>=freqsav:
-                            idxsav = 0
-                            with open(listimagespath, "w", encoding="UTF-8") as fdata:
-                                data["dict"] = dictim
-                                json.dump(data, fdata, ensure_ascii=False)
-            if change:
-                with open(listimagespath, "w", encoding="UTF-8") as fdata:
-                    data["dict"] = dictim
-                    json.dump(data, fdata, ensure_ascii=False)
+    dirToProcess = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\\fr\\20250219"
+    filesList = getFilesList(dirToProcess)
+    for filepath in filesList:
+        itemsToProcess = []
+        # with open("D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\listeAlbumsCreateurs.json",
+        with open(filepath, encoding="UTF-8") as albumsItemsFile:
+            itemsToProcess = json.load(albumsItemsFile)
+        for item in itemsToProcess:
+            #### remplacer ces lignes par création de catégorie si elle n'existe pas déjà
+            categoryName = item["categoryName"]
+            print(categoryName)
+            piwigoCategory = item["piwigoCategory"]
+            listimagespath = item["listimagespath"]
+            dictim = {}
+            with open(listimagespath, "r", encoding="UTF-8") as fdata:
+                data = json.loads(fdata.read())
+                if (not "version" in data) or (data["version"]=="1.0.1"):
+                    data = convertListImage(data, "1.0.0", "2.0.0")
+                dictim = data["dict"]
+            if dictim:
+                print(datetime.datetime.now())
+                freqsav = 5
+                idxsav = 0
+                change = False
+                for uri, im in dictim.items():
+                    if not "posted" in im:
+                        res = postImageToPiwigo(im, piwigoCategory, categoryName)
+                        if res:
+                            change = True
+                            im["post_result"] = res.text
+                            im["posted"] = True
+                            dictim[uri] = im
+                            idxsav += 1
+                            time.sleep(12)
+                            if idxsav>=freqsav:
+                                idxsav = 0
+                                with open(listimagespath, "w", encoding="UTF-8") as fdata:
+                                    data["dict"] = dictim
+                                    json.dump(data, fdata, ensure_ascii=False)
+                if change:
+                    with open(listimagespath, "w", encoding="UTF-8") as fdata:
+                        data["dict"] = dictim
+                        json.dump(data, fdata, ensure_ascii=False)
 
 
 # La description peut contenir un lien vers l entité source, un lien vers l URL de l image, le copyright
