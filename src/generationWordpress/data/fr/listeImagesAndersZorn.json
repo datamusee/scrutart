@@ -1,0 +1,3998 @@
+{
+  "sparql": "\n        SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {\n          VALUES ?createur {\n            wd:Q206820\n          }\n          ?uri wdt:P31 wd:Q3305213;\n            wdt:P170 ?createur;\n            wdt:P18 ?image\n               .\n          ?createur rdfs:label ?createurLabel.\n          FILTER((LANG(?createurLabel)) = \"fr\")\n          ?uri rdfs:label ?titre_fr .\n          FILTER(((LANG(?titre_fr)) = \"fr\")||((LANG(?titre_fr)) = \"en\"))\n        } \n    ",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q19962523": {
+      "uri": "http://www.wikidata.org/entity/Q19962523",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Bread baking",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Br%C3%B6dbaket.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Br%C3%B6dbaket.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4191,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4191\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "715",
+        "1442",
+        "108",
+        "1443",
+        "1444",
+        "1445",
+        "110",
+        "712",
+        "566",
+        "1446",
+        "291",
+        "131",
+        "876",
+        "34",
+        "40"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19962555": {
+      "uri": "http://www.wikidata.org/entity/Q19962555",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Emma Zorn, reading",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Emma%20Zorn%2C%20L%C3%A4sande.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Emma%20Zorn%2C%20L%C3%A4sande.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4192,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4192\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "544",
+        "1447",
+        "705",
+        "40",
+        "579",
+        "675"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q130612051": {
+      "uri": "http://www.wikidata.org/entity/Q130612051",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Pontus Fürstenberg",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Pontus%20F%C3%BCrstenberg%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20F%20162.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125553794": {
+      "uri": "http://www.wikidata.org/entity/Q125553794",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Fanny Thiel née Stiebel",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Fanny%20Thiel%20n%C3%A9e%20Stiebel%20Thielska%20406.tif"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q125554549": {
+      "uri": "http://www.wikidata.org/entity/Q125554549",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Jacques Thiel",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Jacques%20Thiel%20Thielska%20405.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125555469": {
+      "uri": "http://www.wikidata.org/entity/Q125555469",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Sleeping Child",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Sovande%20barn.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Sovande%20barn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4193,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4193\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125555458": {
+      "uri": "http://www.wikidata.org/entity/Q125555458",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Spanish Woman",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Spanjorska.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4194,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4194\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125554658": {
+      "uri": "http://www.wikidata.org/entity/Q125554658",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "On the Ice at Mora",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20On%20the%20Ice%20at%20Mora%20Thielska%20467.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q130611929": {
+      "uri": "http://www.wikidata.org/entity/Q130611929",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Large Brewery",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%2C%20Anders%20-%20The%20Large%20Brewery%20-%20Gothenburg%20Museum%20of%20Art%20-%20GKM%201839.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q126911613": {
+      "uri": "http://www.wikidata.org/entity/Q126911613",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "La Valse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20Anders%20Valsen.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20Anders%20Valsen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4195,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4195\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q130611997": {
+      "uri": "http://www.wikidata.org/entity/Q130611997",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Göthilda Fürstenberg",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%B6thilda%20F%C3%BCrstenberg%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20F%20163.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q130612099": {
+      "uri": "http://www.wikidata.org/entity/Q130612099",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mona and Karin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mona%20and%20Karin%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20F%20160.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q130612234": {
+      "uri": "http://www.wikidata.org/entity/Q130612234",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Bather with Parasol, Dalarö",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bather%20with%20Parasol%2C%20Dalar%C3%B6%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20F%20223.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q130612286": {
+      "uri": "http://www.wikidata.org/entity/Q130612286",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "On the Attic Stairs",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/On%20the%20Attic%20Stairs%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20GKM%200387.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q130612405": {
+      "uri": "http://www.wikidata.org/entity/Q130612405",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Gateway in Alhambra",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gateway%20in%20Alhambra%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20GKM%201844.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125555439": {
+      "uri": "http://www.wikidata.org/entity/Q125555439",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait of Miss Nyström",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Portrait%20of%20Miss%20Nystr%C3%B6m%20Thielska%20414.tif"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q130538360": {
+      "uri": "http://www.wikidata.org/entity/Q130538360",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Model at Shore",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Model%20at%20Shore%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20GKM%202013-5.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125554583": {
+      "uri": "http://www.wikidata.org/entity/Q125554583",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Head of a Woman",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Head%20of%20a%20Woman%20Thielska%20415.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125554605": {
+      "uri": "http://www.wikidata.org/entity/Q125554605",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mourning",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Mourning%20Thielska%20416.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125553758": {
+      "uri": "http://www.wikidata.org/entity/Q125553758",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait Antonin Proust",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Antonin%20Proust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4196,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4196\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q130612456": {
+      "uri": "http://www.wikidata.org/entity/Q130612456",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Garden in Algiers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Garden%20in%20Algiers%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20GKM%201843.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125554592": {
+      "uri": "http://www.wikidata.org/entity/Q125554592",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Doorway to the Palazzo Barbaro",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Doorway%20to%20the%20Palazzo%20Barbaro.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4197,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4197\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125577991": {
+      "uri": "http://www.wikidata.org/entity/Q125577991",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Dr. William Taussig",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20leonard%20zorn%2C%20dr.%20william%20taussig%2C%201897.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4198,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4198\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125553689": {
+      "uri": "http://www.wikidata.org/entity/Q125553689",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait of a boy",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Portrait%20of%20a%20boy%201881%20%28framed%29FXD.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4199,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4199\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125555451": {
+      "uri": "http://www.wikidata.org/entity/Q125555451",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Spanish woman 2",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Spanjorska2.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4200,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4200\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125553588": {
+      "uri": "http://www.wikidata.org/entity/Q125553588",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Calle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Calle%201886.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Calle%201886.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4201,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4201\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18599205": {
+      "uri": "http://www.wikidata.org/entity/Q18599205",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Home Tunes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Home%20Tunes%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2019274.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18587457": {
+      "uri": "http://www.wikidata.org/entity/Q18587457",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "En premiär",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Une%20premiere%20av%20Anders%20Zorn%201888.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Une%20premiere%20%28gouache%2C%20with%20frame%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Une%20premiere%20av%20Anders%20Zorn%201888.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Une%20premiere%20%28gouache%2C%20with%20frame%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Une%20premi%C3%A8re%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024314.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Une%20premi%C3%A8re%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024314.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4202,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4202\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1455",
+        "793",
+        "1456",
+        "168",
+        "175",
+        "657",
+        "565",
+        "566",
+        "795",
+        "1017",
+        "1018",
+        "1457",
+        "572",
+        "375",
+        "79",
+        "527",
+        "40",
+        "217",
+        "879",
+        "797"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18599439": {
+      "uri": "http://www.wikidata.org/entity/Q18599439",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mr Frans R. Heiss",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mr%20Frans%20R.%20Heiss%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2019727.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18719122": {
+      "uri": "http://www.wikidata.org/entity/Q18719122",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Idylle d'atelier",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Atelj%C3%A9idyll.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Atelj%C3%A9idyll.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4203,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4203\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1053",
+        "1458",
+        "165",
+        "285",
+        "214",
+        "191",
+        "1451",
+        "1459",
+        "1460",
+        "870",
+        "830",
+        "565",
+        "873",
+        "874",
+        "1461",
+        "1453",
+        "79",
+        "1462",
+        "845",
+        "1000",
+        "1463",
+        "40",
+        "217"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18601560": {
+      "uri": "http://www.wikidata.org/entity/Q18601560",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Omnibus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Omnibus.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Omnibus.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4204,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4204\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "712",
+        "62",
+        "1464"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18601366": {
+      "uri": "http://www.wikidata.org/entity/Q18601366",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Study of a Nude",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Study%20of%20a%20Nude%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2023725.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18714351": {
+      "uri": "http://www.wikidata.org/entity/Q18714351",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Bedouin Girl",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Beduinflicka.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Beduinflicka.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4205,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4205\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "831",
+        "1465",
+        "845",
+        "91",
+        "808",
+        "846",
+        "40",
+        "1466",
+        "1467"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18599074": {
+      "uri": "http://www.wikidata.org/entity/Q18599074",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "A Musical Family",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Musical%20Family%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018954.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Musical%20Family%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018954.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18599293": {
+      "uri": "http://www.wikidata.org/entity/Q18599293",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "A toast in Idun",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Toast%20in%20the%20Idun%20Society%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2020407.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Toast%20in%20the%20Idun%20Society%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2020407.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18599440": {
+      "uri": "http://www.wikidata.org/entity/Q18599440",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs Veronica Heiss",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mrs%20Veronica%20Heiss%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2019728.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mrs%20Veronica%20Heiss%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2019728.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18599299": {
+      "uri": "http://www.wikidata.org/entity/Q18599299",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Dalecarlian Girl Knitting. Cabbage Margit",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Dalecarlian%20Girl%20Knitting.%20Cabbage%20Margit%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2020427.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18587435": {
+      "uri": "http://www.wikidata.org/entity/Q18587435",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait de l'artiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Selfportrait%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024242.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Selfportrait%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024242.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18601454": {
+      "uri": "http://www.wikidata.org/entity/Q18601454",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Coquelin Cadet",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Coquelin%20Cadet%202.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Coquelin%20Cadet.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Cocquelin%20Cadet%20x%20Anders%20Zorn.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Coquelin%20cadet%20%28with%20frame%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Coquelin%20Cadet%202.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Coquelin%20Cadet.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Cocquelin%20Cadet%20x%20Anders%20Zorn.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Coquelin%20cadet%20%28with%20frame%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Coquelin%20Cadet%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2023815.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Coquelin%20Cadet%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2023815.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4206,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4206\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "168",
+        "36",
+        "846"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18601692": {
+      "uri": "http://www.wikidata.org/entity/Q18601692",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Little Brewery",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Little%20Brewery%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2023924.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18599269": {
+      "uri": "http://www.wikidata.org/entity/Q18599269",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Henry Clay Pierce",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mr%20Henry%20Clay%20Pierce%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2020344.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mr%20Henry%20Clay%20Pierce%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2020344.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18587481": {
+      "uri": "http://www.wikidata.org/entity/Q18587481",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Castles in the Air",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Castles%20in%20the%20Air%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024345.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18599075": {
+      "uri": "http://www.wikidata.org/entity/Q18599075",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Après le bain",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/After%20the%20Bath%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018956.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/After%20the%20Bath%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018956.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18719725": {
+      "uri": "http://www.wikidata.org/entity/Q18719725",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Potatiskitteln by Anders Zorn",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Potatiskitteln.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Potatiskitteln.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4207,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4207\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "793",
+        "1456",
+        "1479",
+        "780",
+        "657",
+        "564",
+        "1480",
+        "870",
+        "1481",
+        "668",
+        "795",
+        "873",
+        "693",
+        "127",
+        "874",
+        "1416",
+        "1469",
+        "1457",
+        "1482",
+        "1483",
+        "79",
+        "40",
+        "367",
+        "579",
+        "217",
+        "879",
+        "797"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18720058": {
+      "uri": "http://www.wikidata.org/entity/Q18720058",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "In the Bedroom",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/I%20S%C3%A4ngkammaren%20by%20Anders%20Zorn%2001.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/I%20S%C3%A4ngkammaren%20by%20Anders%20Zorn%2001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4208,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4208\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1456",
+        "662",
+        "213",
+        "168",
+        "214",
+        "689",
+        "1459",
+        "830",
+        "565",
+        "566",
+        "1020",
+        "88",
+        "1484",
+        "608",
+        "79",
+        "90",
+        "845",
+        "91",
+        "40",
+        "1485",
+        "217",
+        "879",
+        "536"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q125527995": {
+      "uri": "http://www.wikidata.org/entity/Q125527995",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Ernst Morris Bratt",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Ernst%20Morris%20Bratt%201885.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4209,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4209\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125528156": {
+      "uri": "http://www.wikidata.org/entity/Q125528156",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Eva Sofia Hæggström",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Eva%20Sofia%20H%C3%A6ggstr%C3%B6m%201879.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4210,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4210\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125528470": {
+      "uri": "http://www.wikidata.org/entity/Q125528470",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Fjord landscape",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Fjord%20landscape%201891.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4211,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4211\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125529252": {
+      "uri": "http://www.wikidata.org/entity/Q125529252",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Gustav V",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Gustav%20V.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4212,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4212\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125527458": {
+      "uri": "http://www.wikidata.org/entity/Q125527458",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Ernest Cassel",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Ernest%20Cassel.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4213,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4213\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516675": {
+      "uri": "http://www.wikidata.org/entity/Q125516675",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Axel Jacobsen",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Axel%20Jacobsen%201917.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4214,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4214\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125528643": {
+      "uri": "http://www.wikidata.org/entity/Q125528643",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Flirtation",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Flirtation%201885.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4215,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4215\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516681": {
+      "uri": "http://www.wikidata.org/entity/Q125516681",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "By the fireplace",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20By%20the%20fireplace%201897.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4216,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4216\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516702": {
+      "uri": "http://www.wikidata.org/entity/Q125516702",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Count Albert Magnus Stenbock",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Count%20Albert%20Magnus%20Stenbock%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4217,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4217\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516713": {
+      "uri": "http://www.wikidata.org/entity/Q125516713",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Countess Stenbock",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Countess%20Stenbock%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4218,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4218\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516720": {
+      "uri": "http://www.wikidata.org/entity/Q125516720",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Dr. Ira de Ver Warner",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Dr.%20Ira%20de%20Ver%20Warner%201901.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4219,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4219\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516761": {
+      "uri": "http://www.wikidata.org/entity/Q125516761",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Eric Frisell",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Eric%20Frisell%201917.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4220,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4220\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516796": {
+      "uri": "http://www.wikidata.org/entity/Q125516796",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Fishmarket in St Ives",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Fiskmarknad%20i%20St.%20Ives.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4221,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4221\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125530784": {
+      "uri": "http://www.wikidata.org/entity/Q125530784",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Lace-making in Venice",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Lace-making%20in%20Venice%201894.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4222,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4222\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125531097": {
+      "uri": "http://www.wikidata.org/entity/Q125531097",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Naked in a rocky forest",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Naked%20in%20a%20rocky%20forest%201908%2001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4223,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4223\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125531107": {
+      "uri": "http://www.wikidata.org/entity/Q125531107",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Old mirror",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Old%20Mirror%201915.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4224,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4224\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125530030": {
+      "uri": "http://www.wikidata.org/entity/Q125530030",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Lutenist",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Lutenist%201918.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4225,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4225\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516731": {
+      "uri": "http://www.wikidata.org/entity/Q125516731",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Emma Zorn",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Emma%20Zorn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4226,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4226\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125530565": {
+      "uri": "http://www.wikidata.org/entity/Q125530565",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Margit",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Margit.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4227,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4227\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516663": {
+      "uri": "http://www.wikidata.org/entity/Q125516663",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "A walk in the park",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20A%20walk%20in%20the%20park%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4228,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4228\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125530953": {
+      "uri": "http://www.wikidata.org/entity/Q125530953",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mother and daughter",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mor%20och%20dochter.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4229,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4229\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106369352": {
+      "uri": "http://www.wikidata.org/entity/Q106369352",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mefisto Consul Dahlander",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mefisto%20%28Konsul%20Dahlander%29%201884.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mefisto%20%28Konsul%20Dahlander%29%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%20174928.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4230,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4230\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q108157771": {
+      "uri": "http://www.wikidata.org/entity/Q108157771",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Impressions de Londres",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Impressions%20de%20Londres.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4231,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4231\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "293",
+        "504",
+        "40",
+        "325"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q106369367": {
+      "uri": "http://www.wikidata.org/entity/Q106369367",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Gunnlöd",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Gunnl%C3%B6d%20-%20NMB%202730%20-%20Nationalmuseum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4232,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4232\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106369362": {
+      "uri": "http://www.wikidata.org/entity/Q106369362",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Bedouin Girl",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bedouin%20Girl%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%20178161.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106879191": {
+      "uri": "http://www.wikidata.org/entity/Q106879191",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Joseph Randolph Coolidge (1828-1925)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20Joseph%20Randolph%20Coolidge%20%281828-1925%29%20-%20H663%20-%20Harvard%20Art%20Museums.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4233,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4233\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q108699659": {
+      "uri": "http://www.wikidata.org/entity/Q108699659",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Charles Tracy Barney (1850–1907)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Tracy%20Barney%20%281850%E2%80%931907%29%201947%20112.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4234,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4234\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1486"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q108699511": {
+      "uri": "http://www.wikidata.org/entity/Q108699511",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Samuel Untermyer (1858–1940)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Samuel%20Untermyer%20%281858%E2%80%931940%29%201949%2068.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4235,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4235\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546439": {
+      "uri": "http://www.wikidata.org/entity/Q125546439",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mora church",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mora%20Church%201890%20%28framed%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4236,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4236\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546452": {
+      "uri": "http://www.wikidata.org/entity/Q125546452",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Evening in June",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Junikv%C3%A4ll%20%28Evening%20in%20June%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4237,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4237\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546457": {
+      "uri": "http://www.wikidata.org/entity/Q125546457",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Italian with red hat",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Italian%20with%20red%20hat%201880.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4238,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4238\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546498": {
+      "uri": "http://www.wikidata.org/entity/Q125546498",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Landscape from Gopsmor",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Landscape%20from%20Gopsmor%201917.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4239,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4239\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546496": {
+      "uri": "http://www.wikidata.org/entity/Q125546496",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Madame Clara Rikoff - Madame Salomon's sister",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Madame%20Clara%20Rikoff.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4240,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4240\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546505": {
+      "uri": "http://www.wikidata.org/entity/Q125546505",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Matilda Klingspor",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Matilda%20Klingspor%201890.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4241,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4241\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546521": {
+      "uri": "http://www.wikidata.org/entity/Q125546521",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Mackenzie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Mackenzie%201884.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4242,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4242\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546542": {
+      "uri": "http://www.wikidata.org/entity/Q125546542",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Hulda Hæggström",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Hulda%20H%C3%A6ggstr%C3%B6m%201879.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4243,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4243\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546555": {
+      "uri": "http://www.wikidata.org/entity/Q125546555",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Emily Crane",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Emily%20Crane%201904.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4244,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4244\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546560": {
+      "uri": "http://www.wikidata.org/entity/Q125546560",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Dagny Pineus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Dagny%20Pineus%201913.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4245,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4245\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546573": {
+      "uri": "http://www.wikidata.org/entity/Q125546573",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mr. Thomas Weeler",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mr.%20Thomas%20Weeler.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4246,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4246\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546580": {
+      "uri": "http://www.wikidata.org/entity/Q125546580",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Motif from Skeppsholmen",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Motif%20from%20Skeppsholmen%201890.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4247,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4247\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546905": {
+      "uri": "http://www.wikidata.org/entity/Q125546905",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait of Mrs. Eben Richards",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Portrait%20of%20Mrs.%20Eben%20Richards.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4248,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4248\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546628": {
+      "uri": "http://www.wikidata.org/entity/Q125546628",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait to Ramón Subercaseaux Vicuña of his daughters",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Portr%C3%A4tt%20av%20d%C3%B6ttrarna%20till%20Ram%C3%B3n%20Subercaseaux%20Vicu%C3%B1a%201892.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4249,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4249\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546642": {
+      "uri": "http://www.wikidata.org/entity/Q125546642",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait of Robert Dunthorne II",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Portrait%20of%20Robert%20Dunthorne%20II%201885.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4250,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4250\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546649": {
+      "uri": "http://www.wikidata.org/entity/Q125546649",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait of older Lady",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Portrait%20of%20older%20Lady%201881.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4251,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4251\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546924": {
+      "uri": "http://www.wikidata.org/entity/Q125546924",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Peeling potatoes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Peeling%20potatoes%201920.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4252,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4252\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546930": {
+      "uri": "http://www.wikidata.org/entity/Q125546930",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Peeling potatoes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Peeling%20potatoes%20%281916%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4253,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4253\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546912": {
+      "uri": "http://www.wikidata.org/entity/Q125546912",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait of Edith Palgrave Edward in Her London Residence",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Portrait%20of%20Edith%20Palgrave%20Edward%20in%20Her%20London%20Residence.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4254,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4254\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546916": {
+      "uri": "http://www.wikidata.org/entity/Q125546916",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Porträt der Mme Ashley",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Portrait%20de%20Mme%20Ashley.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4255,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4255\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546952": {
+      "uri": "http://www.wikidata.org/entity/Q125546952",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Old Anne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Old%20Anne.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4256,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4256\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546973": {
+      "uri": "http://www.wikidata.org/entity/Q125546973",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Piltz",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Piltz%201913.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4257,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4257\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546979": {
+      "uri": "http://www.wikidata.org/entity/Q125546979",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Spanish Lady in Black Mantilla",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Spanish%20Lady%20in%20Black%20Mantilla%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4258,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4258\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547400": {
+      "uri": "http://www.wikidata.org/entity/Q125547400",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Sculptor Sven Andersson",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sculptor%20Sven%20Andersson%201881.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4259,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4259\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547419": {
+      "uri": "http://www.wikidata.org/entity/Q125547419",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Sir Ernest Cassel",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sir%20Ernest%20Cassel%201907.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4260,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4260\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547428": {
+      "uri": "http://www.wikidata.org/entity/Q125547428",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Sitting girl in travel clothes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sitting%20girl%20in%20travel%20clothes%201881.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4261,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4261\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547475": {
+      "uri": "http://www.wikidata.org/entity/Q125547475",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Spanish lady with black beret",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Spanish%20lady%20with%20black%20beret%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4262,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4262\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547483": {
+      "uri": "http://www.wikidata.org/entity/Q125547483",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Sun in the forest",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sun%20in%20the%20forest%201907.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4263,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4263\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547524": {
+      "uri": "http://www.wikidata.org/entity/Q125547524",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Water reflections at stone coffin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Water%20reflections%20at%20stone%20coffin%201887.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4264,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4264\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547503": {
+      "uri": "http://www.wikidata.org/entity/Q125547503",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Herding Maiden's Sunday",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Vallkullans%20s%C3%B6ndag%201912.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4265,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4265\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546443": {
+      "uri": "http://www.wikidata.org/entity/Q125546443",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Lady in Blue",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Lady%20in%20Blue%201887.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4266,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4266\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125548341": {
+      "uri": "http://www.wikidata.org/entity/Q125548341",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Man and boy in Algiers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20An%20Algerian%20man%20and%20boy%20looking%20across%20Bay%20of%20Algiers.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4267,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4267\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546462": {
+      "uri": "http://www.wikidata.org/entity/Q125546462",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mother's Joy",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mother%27s%20Joy%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4268,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4268\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547471": {
+      "uri": "http://www.wikidata.org/entity/Q125547471",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Spanish actor",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Spanish%20Actor%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4269,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4269\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547488": {
+      "uri": "http://www.wikidata.org/entity/Q125547488",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Letter",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20The%20Letter%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4270,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4270\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547394": {
+      "uri": "http://www.wikidata.org/entity/Q125547394",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Prince Eugén, Duke of Närke",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Prins%20Eugen%201910.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4271,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4271\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547495": {
+      "uri": "http://www.wikidata.org/entity/Q125547495",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Spanish Lady",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20The%20Spanish%20Lady%201887.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4272,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4272\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546967": {
+      "uri": "http://www.wikidata.org/entity/Q125546967",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Veronica Heiss",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Veronica%20Heiss%201883.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4273,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4273\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125531132": {
+      "uri": "http://www.wikidata.org/entity/Q125531132",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Sandhamn effect",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sandhamn%20effect%201914.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4274,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4274\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125531204": {
+      "uri": "http://www.wikidata.org/entity/Q125531204",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Étude Éclairage",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20%C3%89tude%20%C3%89clairage%201890.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4275,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4275\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125547414": {
+      "uri": "http://www.wikidata.org/entity/Q125547414",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Faun and Nymph",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Self%20Portrait%20with%20Faun%20and%20Nymph.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4276,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4276\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125531187": {
+      "uri": "http://www.wikidata.org/entity/Q125531187",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Twisted",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Twisted%201915.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4277,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4277\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125531196": {
+      "uri": "http://www.wikidata.org/entity/Q125531196",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Shadow",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Skuggan%201909.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4278,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4278\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546392": {
+      "uri": "http://www.wikidata.org/entity/Q125546392",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Island in Saxviken",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Island%20in%20Saxviken%201890%20%28framed%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4279,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4279\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546405": {
+      "uri": "http://www.wikidata.org/entity/Q125546405",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Gopsmor cottage in the snow",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Gopsmorstugan%20i%20sn%C3%B6.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4280,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4280\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125546412": {
+      "uri": "http://www.wikidata.org/entity/Q125546412",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Girl portrait",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Girl%20portrait%201881.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4281,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4281\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18574711": {
+      "uri": "http://www.wikidata.org/entity/Q18574711",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Port de Hamburg",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Port%20of%20Hamburg%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024409.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Port%20of%20Hamburg%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024409.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18582109": {
+      "uri": "http://www.wikidata.org/entity/Q18582109",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Agnes Branting (1862-1930), textile artist, textile researcher",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Agnes%20Branting%2C%201862-1930%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2040402.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Agnes%20Branting%2C%201862-1930%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2040402.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18547137": {
+      "uri": "http://www.wikidata.org/entity/Q18547137",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Bride",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Bride%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2025875.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Bride%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2025875.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18580448": {
+      "uri": "http://www.wikidata.org/entity/Q18580448",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Carl Fredrik Liljevalch, 1837-1909",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Fredrik%20Liljevalch%20d.y.%201906.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Fredrik%20Liljevalch%20d.y.%201906.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Fredrik%20Liljevalch%2C%201837-1909%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2019765.tiff",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Fredrik%20Liljevalch%2C%201837-1909%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2019765.tiff",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Fredrik%20Liljevalch%20by%20Anders%20Zorn%2C%201906.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Fredrik%20Liljevalch%20by%20Anders%20Zorn%2C%201906.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4282,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4282\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1492",
+        "567",
+        "705",
+        "808",
+        "641",
+        "334",
+        "582"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18574202": {
+      "uri": "http://www.wikidata.org/entity/Q18574202",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Self-portrait",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Self-portrait%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018513.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Self-portrait%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018513.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18574344": {
+      "uri": "http://www.wikidata.org/entity/Q18574344",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Bruno Liljefors",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Painter%20Bruno%20Liljefors%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018644.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Painter%20Bruno%20Liljefors%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018644.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18551892": {
+      "uri": "http://www.wikidata.org/entity/Q18551892",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Jean Burnay",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Burnay%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2026040.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18574377": {
+      "uri": "http://www.wikidata.org/entity/Q18574377",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "By Lake Siljan",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/By%20Lake%20Siljan%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018693.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18574698": {
+      "uri": "http://www.wikidata.org/entity/Q18574698",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "In Mourning",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/In%20Mourning%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024325.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18574664": {
+      "uri": "http://www.wikidata.org/entity/Q18574664",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Artist's Wife",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Artist%27s%20Wife%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024282.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19868729": {
+      "uri": "http://www.wikidata.org/entity/Q19868729",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "La Fille à la cigarette",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/La%20fille%20%C3%A0%20la%20cigarette%2C%20Anders%20Zorn%2C%201892%20%2817361208422%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4283,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4283\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "552",
+        "717",
+        "86",
+        "566",
+        "843",
+        "846",
+        "936",
+        "1498",
+        "1476",
+        "40",
+        "1467"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19868981": {
+      "uri": "http://www.wikidata.org/entity/Q19868981",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Daniel Catlin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Daniel%20Catlin.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Daniel%20Catlin.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4284,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4284\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "567",
+        "1499",
+        "36",
+        "644",
+        "582"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961755": {
+      "uri": "http://www.wikidata.org/entity/Q19961755",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Kaikroddare",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Kaikroddare.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4285,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4285\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "898",
+        "898",
+        "820",
+        "36",
+        "1500",
+        "334",
+        "582"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19912889": {
+      "uri": "http://www.wikidata.org/entity/Q19912889",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. John Crosby Brown (Mary Elizabeth Adams, 1842–1918)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mrs.%20John%20Crosby%20Brown%20%28Mary%20Elizabeth%20Adams%2C%201842%E2%80%931918%29%20MET%20ep60.85.R.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4286,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4286\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "4",
+        "40",
+        "1501"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961791": {
+      "uri": "http://www.wikidata.org/entity/Q19961791",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "In Gopsmor",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20In%20Gopsmor%201905.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20In%20Gopsmor%201905.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4287,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4287\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1456",
+        "175",
+        "508",
+        "1018",
+        "1457",
+        "79",
+        "42",
+        "40",
+        "1502",
+        "879"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961799": {
+      "uri": "http://www.wikidata.org/entity/Q19961799",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Summer bath",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Sommerabend%201894.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Sommerabend%201894.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4288,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4288\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1456",
+        "175",
+        "565",
+        "508",
+        "1018",
+        "79",
+        "490",
+        "69",
+        "40",
+        "58",
+        "879"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19868939": {
+      "uri": "http://www.wikidata.org/entity/Q19868939",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait of Mrs Bacon",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20P.%20Bacon%20by%20Anders%20Zorn%2C%201897.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20P.%20Bacon%20by%20Anders%20Zorn%2C%201897.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4289,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4289\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "106",
+        "4",
+        "673",
+        "808",
+        "92",
+        "40"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18720401": {
+      "uri": "http://www.wikidata.org/entity/Q18720401",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "In the Studio",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/I%20Ateljen%20by%20Anders%20Zorn%2001.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/I%20Ateljen%20by%20Anders%20Zorn%2001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4290,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4290\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "106",
+        "1456",
+        "108",
+        "1458",
+        "168",
+        "169",
+        "214",
+        "191",
+        "1451",
+        "743",
+        "571",
+        "1457",
+        "79",
+        "1462",
+        "845",
+        "91",
+        "578",
+        "92",
+        "40",
+        "579",
+        "879",
+        "1503",
+        "660"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961792": {
+      "uri": "http://www.wikidata.org/entity/Q19961792",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "In Santaham",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/ZORN%20p%C3%A5%20sandhamn.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/ZORN%20p%C3%A5%20sandhamn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4291,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4291\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "175",
+        "1504",
+        "214",
+        "1459",
+        "565",
+        "508",
+        "873",
+        "874",
+        "1018",
+        "1457",
+        "572",
+        "79",
+        "69",
+        "92",
+        "40",
+        "58",
+        "217",
+        "879"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19887347": {
+      "uri": "http://www.wikidata.org/entity/Q19887347",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Les Biches",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20The%20Hinds%201908.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20The%20Hinds%201908.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4292,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4292\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "793",
+        "1456",
+        "107",
+        "168",
+        "140",
+        "657",
+        "665",
+        "170",
+        "795",
+        "1020",
+        "1017",
+        "1457",
+        "609",
+        "79",
+        "42",
+        "193",
+        "808",
+        "188",
+        "40",
+        "579",
+        "217",
+        "879",
+        "797",
+        "660"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19960771": {
+      "uri": "http://www.wikidata.org/entity/Q19960771",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Pissenlits",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Dandelions.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Dandelions.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4293,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4293\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1505",
+        "363",
+        "46"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961798": {
+      "uri": "http://www.wikidata.org/entity/Q19961798",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Wet",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Wet.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Wet.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4294,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4294\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "175",
+        "214",
+        "508",
+        "1018",
+        "572",
+        "79",
+        "69",
+        "92",
+        "40",
+        "217",
+        "879"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18720246": {
+      "uri": "http://www.wikidata.org/entity/Q18720246",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Loft Bed",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Loft%20Bed%201919.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Lofts%C3%A4ngen.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Loft%20Bed%201919.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Lofts%C3%A4ngen.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lofts%C3%A4ngen%20by%20Anders%20Zorn%2001.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lofts%C3%A4ngen%20by%20Anders%20Zorn%2001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4295,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4295\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1456",
+        "1506",
+        "1053",
+        "214",
+        "1451",
+        "1459",
+        "870",
+        "830",
+        "565",
+        "873",
+        "88",
+        "874",
+        "1457",
+        "954",
+        "79",
+        "187",
+        "1462",
+        "90",
+        "845",
+        "92",
+        "40",
+        "1467",
+        "217",
+        "879",
+        "1503",
+        "660"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19887332": {
+      "uri": "http://www.wikidata.org/entity/Q19887332",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "By the fire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Eldsken.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Eldsken.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4296,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4296\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "715",
+        "212",
+        "1456",
+        "168",
+        "665",
+        "870",
+        "170",
+        "1507",
+        "565",
+        "743",
+        "873",
+        "693",
+        "874",
+        "1457",
+        "79",
+        "131",
+        "92",
+        "40",
+        "217",
+        "879",
+        "660"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19868925": {
+      "uri": "http://www.wikidata.org/entity/Q19868925",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Hugo Reisinger",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Hugo%20Reisinger.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Hugo%20Reisinger.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4297,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4297\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "164",
+        "213",
+        "36",
+        "808",
+        "641",
+        "334",
+        "582",
+        "1508",
+        "592"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19868875": {
+      "uri": "http://www.wikidata.org/entity/Q19868875",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait of Martha Dana",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Martha%20Dana.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Martha%20Dana.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4298,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4298\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1509",
+        "40"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18720335": {
+      "uri": "http://www.wikidata.org/entity/Q18720335",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Sunbathing Girl",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Solbadande%20flicka%20by%20Anders%20Zorn%2001.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Solbadande%20flicka%20by%20Anders%20Zorn%2001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4299,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4299\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1456",
+        "107",
+        "214",
+        "550",
+        "1451",
+        "1459",
+        "1477",
+        "830",
+        "508",
+        "873",
+        "874",
+        "1018",
+        "1457",
+        "572",
+        "79",
+        "257",
+        "42",
+        "1510",
+        "69",
+        "92",
+        "40",
+        "579",
+        "58",
+        "217",
+        "879",
+        "1511",
+        "660"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18720074": {
+      "uri": "http://www.wikidata.org/entity/Q18720074",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Tub",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Tub%20by%20Anders%20Zorn%2001.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Tub%20by%20Anders%20Zorn%2001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4300,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4300\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "715",
+        "793",
+        "212",
+        "1456",
+        "677",
+        "550",
+        "657",
+        "1512",
+        "830",
+        "566",
+        "795",
+        "1017",
+        "873",
+        "874",
+        "569",
+        "1018",
+        "1513",
+        "572",
+        "1514",
+        "79",
+        "575",
+        "681",
+        "120",
+        "40",
+        "1485",
+        "579",
+        "217",
+        "879",
+        "797",
+        "536"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19913099": {
+      "uri": "http://www.wikidata.org/entity/Q19913099",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Frieda Schiff (1876–1958), Later Mrs. Felix M. Warburg",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/FriedaSchiff.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/FriedaSchiff.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4301,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4301\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1515",
+        "40"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19913260": {
+      "uri": "http://www.wikidata.org/entity/Q19913260",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Edward R. Bacon (1846–1915)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Edward%20R.%20Bacon%20%281846%E2%80%931915%29%20MET%20DT239221.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4302,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4302\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1516",
+        "4",
+        "36"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961795": {
+      "uri": "http://www.wikidata.org/entity/Q19961795",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Freyja",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Freya%20%281901%29%20by%20Anders%20Zorn.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Freya%20%281901%29%20by%20Anders%20Zorn.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Freja%20%281901%29%20by%20Anders%20Zorn.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Freja%20%281901%29%20by%20Anders%20Zorn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4303,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4303\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1456",
+        "213",
+        "1517",
+        "214",
+        "689",
+        "1459",
+        "873",
+        "874",
+        "1457",
+        "79",
+        "578",
+        "92",
+        "40",
+        "217",
+        "879",
+        "660"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961793": {
+      "uri": "http://www.wikidata.org/entity/Q19961793",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Helga",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Helga%20%281917%29%2C%20oljem%C3%A5lning%20av%20Anders%20Zorn.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Helga%20%281917%29%2C%20oljem%C3%A5lning%20av%20Anders%20Zorn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4304,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4304\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "715",
+        "212",
+        "1456",
+        "168",
+        "214",
+        "1459",
+        "508",
+        "873",
+        "874",
+        "1018",
+        "572",
+        "79",
+        "808",
+        "69",
+        "40",
+        "217",
+        "879"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18720372": {
+      "uri": "http://www.wikidata.org/entity/Q18720372",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Love Nymph",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20Love%20nymph.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20Love%20nymph.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4305,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4305\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "994",
+        "715",
+        "212",
+        "1456",
+        "1016",
+        "1518",
+        "1178",
+        "175",
+        "1519",
+        "871",
+        "830",
+        "1507",
+        "565",
+        "195",
+        "873",
+        "1520",
+        "608",
+        "39",
+        "1521",
+        "79",
+        "1462",
+        "845",
+        "146",
+        "365",
+        "527",
+        "1000",
+        "1522",
+        "808",
+        "578",
+        "1463",
+        "846",
+        "188",
+        "1476",
+        "92",
+        "1467",
+        "1523",
+        "217",
+        "879",
+        "660"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18720575": {
+      "uri": "http://www.wikidata.org/entity/Q18720575",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Archipelago flower",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sk%C3%A4rg%C3%A5rdsblomster.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sk%C3%A4rg%C3%A5rdsblomster.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4306,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4306\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1456",
+        "168",
+        "214",
+        "1524",
+        "1451",
+        "1459",
+        "870",
+        "1163",
+        "830",
+        "566",
+        "1020",
+        "508",
+        "873",
+        "874",
+        "1018",
+        "1457",
+        "572",
+        "39",
+        "79",
+        "845",
+        "146",
+        "1525",
+        "69",
+        "40",
+        "579",
+        "58",
+        "217",
+        "879",
+        "50",
+        "660"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q11873948": {
+      "uri": "http://www.wikidata.org/entity/Q11873948",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Girls Bathing in the Open Air (Out of Doors) ; Bathing Girls, Outside ; Outdoors",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Girls%20Bathing%20in%20the%20Open%20Air%20%28Out%20of%20Doors%29%20%2C%20Bathing%20Girls%2C%20Outside%20%2C%20Outdoors%20-%20A%20I%20535%20-%20Finnish%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4307,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4307\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q10524271": {
+      "uri": "http://www.wikidata.org/entity/Q10524271",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Hins Anders",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Hins%20Anders%20%281904%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Hins%20Anders%20%281904%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4308,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4308\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "563",
+        "1029",
+        "567",
+        "1526",
+        "1527",
+        "571",
+        "589",
+        "51",
+        "36",
+        "92",
+        "334",
+        "582",
+        "583"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q10638575": {
+      "uri": "http://www.wikidata.org/entity/Q10638575",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Grover Cleveland",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20Grover%20Cleveland%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4309,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4309\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "743",
+        "1528",
+        "92",
+        "1529"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q10357231": {
+      "uri": "http://www.wikidata.org/entity/Q10357231",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Queen Sophie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Drottning%20Sophia%201909.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Drottning%20Sophia%201909.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4310,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4310\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1530",
+        "213",
+        "808",
+        "92"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q10651521": {
+      "uri": "http://www.wikidata.org/entity/Q10651521",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Réveil, boulevard de Clichy",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Reveil.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Reveil.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4311,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4311\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "457",
+        "83",
+        "1477",
+        "1163",
+        "565",
+        "566",
+        "1531",
+        "873",
+        "88",
+        "569",
+        "874",
+        "569",
+        "1478",
+        "90",
+        "1532",
+        "1000",
+        "40",
+        "1485",
+        "1503"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q10578694": {
+      "uri": "http://www.wikidata.org/entity/Q10578694",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Max Liebermann",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorns%20Portrait%20of%20Max%20Liebermann.jpeg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorns%20Portrait%20of%20Max%20Liebermann.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4312,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4312\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "560",
+        "36",
+        "1533",
+        "808",
+        "641",
+        "582"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18238863": {
+      "uri": "http://www.wikidata.org/entity/Q18238863",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Girl in the Loft",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20At%20the%20Door%20of%20the%20Loft%20%2C%20Girl%20in%20the%20Loft%20-%20A%20II%20817%20-%20Finnish%20National%20Gallery.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Flickan%20p%C3%A5%20loftet%20%28Girl%20in%20the%20Loft%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20At%20the%20Door%20of%20the%20Loft%20%2C%20Girl%20in%20the%20Loft%20-%20A%20II%20817%20-%20Finnish%20National%20Gallery.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Flickan%20p%C3%A5%20loftet%20%28Girl%20in%20the%20Loft%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4313,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4313\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1534",
+        "1456",
+        "168",
+        "1535",
+        "780",
+        "214",
+        "1319",
+        "1536",
+        "564",
+        "1459",
+        "870",
+        "830",
+        "873",
+        "874",
+        "1457",
+        "608",
+        "79",
+        "292",
+        "845",
+        "40",
+        "579",
+        "217",
+        "879",
+        "660"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q10585101": {
+      "uri": "http://www.wikidata.org/entity/Q10585101",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Midsummer Dance",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Midsummer%20Dance%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018607.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Midsummer%20Dance%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018607.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17334610": {
+      "uri": "http://www.wikidata.org/entity/Q17334610",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Girls from Dalarna in the sauna",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Girls%20from%20Dalarna%20Having%20a%20Bath%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018642.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Girls%20from%20Dalarna%20Having%20a%20Bath%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2018642.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q13384999": {
+      "uri": "http://www.wikidata.org/entity/Q13384999",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "In Wikströms studio",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/I%20Wikstr%C3%B6ms%20atelje%20by%20Anders%20Zorn%2001.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/I%20Wikstr%C3%B6ms%20atelje%20by%20Anders%20Zorn%2001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4314,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4314\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "106",
+        "1456",
+        "1366",
+        "1458",
+        "168",
+        "1542",
+        "191",
+        "625",
+        "170",
+        "291",
+        "131",
+        "578",
+        "120",
+        "40",
+        "217",
+        "1543",
+        "660"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18243477": {
+      "uri": "http://www.wikidata.org/entity/Q18243477",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Femme s'habillant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Kvinna%20som%20kl%C3%A4r%20sig%20%281893%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Kvinna%20som%20kl%C3%A4r%20sig%20%281893%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4315,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4315\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "867",
+        "107",
+        "1179",
+        "657",
+        "1477",
+        "683",
+        "565",
+        "566",
+        "87",
+        "1478",
+        "139",
+        "92",
+        "40"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18547075": {
+      "uri": "http://www.wikidata.org/entity/Q18547075",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Our Daily Bread",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Our%20Daily%20Bread%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024125.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Our%20Daily%20Bread.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Our%20Daily%20Bread%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024125.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Our%20Daily%20Bread.jpg"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1219751": {
+      "uri": "http://www.wikidata.org/entity/Q1219751",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Summer Fun",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Sommarn%C3%B6je%20%281886%29%2C%20akvarell%20av%20Anders%20Zorn.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Sommarn%C3%B6je%20%281886%29%2C%20akvarell%20av%20Anders%20Zorn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4316,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4316\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1548",
+        "727",
+        "898",
+        "820",
+        "257",
+        "36",
+        "40"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18546318": {
+      "uri": "http://www.wikidata.org/entity/Q18546318",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Turkish Boatman in the Constantinople Harbour",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Turkish%20Boatman%20in%20the%20Constantinople%20Harbour%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2024167.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17265834": {
+      "uri": "http://www.wikidata.org/entity/Q17265834",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Reflexer by Anders Zorn",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Reflexer%20by%20Anders%20Zorn%2001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4317,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4317\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "715",
+        "212",
+        "1456",
+        "107",
+        "175",
+        "214",
+        "1459",
+        "1477",
+        "830",
+        "566",
+        "508",
+        "1018",
+        "572",
+        "79",
+        "1478",
+        "257",
+        "146",
+        "40",
+        "217",
+        "879",
+        "1511"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q18245185": {
+      "uri": "http://www.wikidata.org/entity/Q18245185",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "William Howard Taft",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Portrait%20of%20William%20Howard%20Taft%20%281911%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4318,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4318\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "213",
+        "743",
+        "36",
+        "92",
+        "582",
+        "1550"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q10612959": {
+      "uri": "http://www.wikidata.org/entity/Q10612959",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Oscar II",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Oscar%20II%20of%20Sweden.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4319,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4319\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "213",
+        "36",
+        "92",
+        "334",
+        "582",
+        "1551",
+        "592"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q10585075": {
+      "uri": "http://www.wikidata.org/entity/Q10585075",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Midnight",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Midnatt%20av%20Anders%20Zorn%201891.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Midnatt%20av%20Anders%20Zorn%201891.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4320,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4320\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "715",
+        "108",
+        "1552",
+        "207",
+        "1553",
+        "566",
+        "898",
+        "743",
+        "508",
+        "898",
+        "820",
+        "572",
+        "42",
+        "92",
+        "40"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q10487617": {
+      "uri": "http://www.wikidata.org/entity/Q10487617",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Erik Axel Karlfeldt dans la salle à manger de Zorngårdens",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Erik%20Axel%20Karlfeldt%20i%20Zorng%C3%A5rdens%20matsal%20%281906%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4321,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4321\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1439",
+        "1554",
+        "1555",
+        "582",
+        "1556"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q125516562": {
+      "uri": "http://www.wikidata.org/entity/Q125516562",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Carl Jonsson",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20%27Carl%20Jonsson%27%201917.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4322,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4322\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111182804": {
+      "uri": "http://www.wikidata.org/entity/Q111182804",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Nude",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Nude%2C%20New%20York%2C%201894%20%28with%20frame%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4323,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4323\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110788714": {
+      "uri": "http://www.wikidata.org/entity/Q110788714",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Self Portrait in Red",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sj%C3%A4lvportr%C3%A4tt%20i%20r%C3%B6tt%20%281915%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sj%C3%A4lvportr%C3%A4tt%20i%20r%C3%B6tt%20%281915%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4324,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4324\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1474"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q111017622": {
+      "uri": "http://www.wikidata.org/entity/Q111017622",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "At the Bathtub",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20At%20the%20Bathtub%20Thielska%20413.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123152651": {
+      "uri": "http://www.wikidata.org/entity/Q123152651",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Herdsmaid",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Herdsmaid.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Vallkulla.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4325,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4325\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "352",
+        "1454",
+        "40",
+        "284"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q117462253": {
+      "uri": "http://www.wikidata.org/entity/Q117462253",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "En Route to Burano",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/En%20Route%20to%20Burano%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20GKM%201841.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q109942096": {
+      "uri": "http://www.wikidata.org/entity/Q109942096",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Dance in Gopsmor",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%22Dance%20in%20Gopsmor%22%20by%20Anders%20Zorn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4326,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4326\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110064351": {
+      "uri": "http://www.wikidata.org/entity/Q110064351",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Sunday morning",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20S%C3%B6ndagsmorgon.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4327,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4327\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123152940": {
+      "uri": "http://www.wikidata.org/entity/Q123152940",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Self-portrait 1889 by Anders Zorn",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20sj%C3%A4lvportr%C3%A4tt%20med%20hustruns%20byst.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Self-portrait%20of%20Anders%20Zorn%20in%20the%20Vasari%20Corridor%202016-05-06%20txt.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Self-portraits%20in%20Uffizi%20Gallery%20Unknown.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Self%20Portrait%20by%20Anders%20Zorn.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4328,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4328\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1474"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q110788669": {
+      "uri": "http://www.wikidata.org/entity/Q110788669",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Les Demoiselles Schwartz",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Les%20Demoiselles%20Schwartz%202.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4329,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4329\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111017611": {
+      "uri": "http://www.wikidata.org/entity/Q111017611",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The lumber moves",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Timret%20g%C3%A5r%201916.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4330,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4330\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111017632": {
+      "uri": "http://www.wikidata.org/entity/Q111017632",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Model Study",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Model%20Study%20Thielska%20411.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q113453628": {
+      "uri": "http://www.wikidata.org/entity/Q113453628",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Ingeborg",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Ingeborn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4331,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4331\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111017599": {
+      "uri": "http://www.wikidata.org/entity/Q111017599",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Flea",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Loppan%201918.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4332,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4332\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111669065": {
+      "uri": "http://www.wikidata.org/entity/Q111669065",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Viktor Rydberg",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Rydberg%20Viktor%201.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Rydberg%20Viktor%201.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4333,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4333\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123360305": {
+      "uri": "http://www.wikidata.org/entity/Q123360305",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Porträt der Lisen Lamm",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn-Portr%C3%A4tt%20av%20Lisen%20Lamm.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4334,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4334\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123177305": {
+      "uri": "http://www.wikidata.org/entity/Q123177305",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Night Effect",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Night%20Effect%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20F%20161.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20Night%20effect.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Natteffekt%2C%201895.jpg"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110788281": {
+      "uri": "http://www.wikidata.org/entity/Q110788281",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mona",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mona.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4335,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4335\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516522": {
+      "uri": "http://www.wikidata.org/entity/Q125516522",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Carl August Kjellberg",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20%27Carl%20August%20Kjellberg%27%201917.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4336,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4336\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516573": {
+      "uri": "http://www.wikidata.org/entity/Q125516573",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "En konfirmand",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20%27En%20konfirmand%27%201908.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4337,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4337\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516607": {
+      "uri": "http://www.wikidata.org/entity/Q125516607",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Interior of a cottage in Mora",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20%27Interi%C3%B6r%20av%20Morastuga%27%201878.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4338,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4338\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516622": {
+      "uri": "http://www.wikidata.org/entity/Q125516622",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "North Cape with the midnight sun",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20%27Nordkap%20i%20midnattssol%27%201890.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4339,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4339\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516640": {
+      "uri": "http://www.wikidata.org/entity/Q125516640",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "A Portrait of Christian De Falbe, with a Saint Bernard at Luton Hoo",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20A%20Portrait%20of%20Christian%20De%20Falbe%2C%20with%20a%20Saint%20Bernard%20at%20Luton%20Hoo.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4340,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4340\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111017628": {
+      "uri": "http://www.wikidata.org/entity/Q111017628",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "In the Loft",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20In%20the%20Loft%20Thielska%20409.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q116774313": {
+      "uri": "http://www.wikidata.org/entity/Q116774313",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Awakening",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/UPPVAKNANDE%20%28THE%20AWAKENING%29.PNG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4341,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4341\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110199374": {
+      "uri": "http://www.wikidata.org/entity/Q110199374",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Country festival",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%2C%20Country%20festival.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4342,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4342\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123503403": {
+      "uri": "http://www.wikidata.org/entity/Q123503403",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Emma Zorn and Mouche, the dog",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Emma%20Zorn%20och%20hunden%20Mouche.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4343,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4343\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123176887": {
+      "uri": "http://www.wikidata.org/entity/Q123176887",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs Abby Marion Deering Howe",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs%20Abby%20Marion%20Deering%20Howe%20-%20private%20collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4344,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4344\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123396853": {
+      "uri": "http://www.wikidata.org/entity/Q123396853",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mademoiselle Antoinette May",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mademoiselle%20Antoinette%20May.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4345,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4345\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125253069": {
+      "uri": "http://www.wikidata.org/entity/Q125253069",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Ambassador David Jayne Hill",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Ambassador%20David%20Jayne%20Hill%20by%20Anders%20Zorn%20%281860-1920%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4346,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4346\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111017636": {
+      "uri": "http://www.wikidata.org/entity/Q111017636",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "On the Rock",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20On%20the%20Rock%20Thielska%20412.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125516515": {
+      "uri": "http://www.wikidata.org/entity/Q125516515",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait of a Girl",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20%27Flickportr%C3%A4tt%27%201881.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4347,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4347\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123521067": {
+      "uri": "http://www.wikidata.org/entity/Q123521067",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Ols Maria",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Ols%20Maria.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4348,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4348\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111017620": {
+      "uri": "http://www.wikidata.org/entity/Q111017620",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Vid badkaret",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Vid%20badkaret%201915.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4349,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4349\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111182814": {
+      "uri": "http://www.wikidata.org/entity/Q111182814",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Summer Evening",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Summer%20Evening%20%28with%20frame%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4350,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4350\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110788291": {
+      "uri": "http://www.wikidata.org/entity/Q110788291",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Symons",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Symons.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4351,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4351\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123128446": {
+      "uri": "http://www.wikidata.org/entity/Q123128446",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Gods-Kari",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Gods-Kari%201916.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%2C%20Kvinde%20fra%20Mora%2C%201916.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4352,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4352\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "285",
+        "1451",
+        "808",
+        "1454",
+        "92",
+        "40"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q111182810": {
+      "uri": "http://www.wikidata.org/entity/Q111182810",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Woman of Paris",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20-%20Parisiska%2C%20studie%2C%201891.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4353,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4353\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19961800": {
+      "uri": "http://www.wikidata.org/entity/Q19961800",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "In Werner's Rowing Boat",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20I%20werners%20eka-1917.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20I%20werners%20eka-1917.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4354,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4354\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1456",
+        "214",
+        "550",
+        "1459",
+        "870",
+        "565",
+        "508",
+        "873",
+        "874",
+        "1018",
+        "1457",
+        "820",
+        "79",
+        "92",
+        "40",
+        "1485",
+        "58",
+        "217",
+        "879"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961803": {
+      "uri": "http://www.wikidata.org/entity/Q19961803",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "red stocking",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20R%C3%B6d%20strumpa.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20R%C3%B6d%20strumpa.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Red%20stockings%2C%20by%20Anders%20Zorn.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Red%20stockings%2C%20by%20Anders%20Zorn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4355,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4355\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1534",
+        "170",
+        "565",
+        "87",
+        "856",
+        "1018",
+        "1457",
+        "659",
+        "79",
+        "92",
+        "40",
+        "1485",
+        "217",
+        "697",
+        "536",
+        "1558"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961807": {
+      "uri": "http://www.wikidata.org/entity/Q19961807",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Nu sous un arbre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20A%20Bather.png",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Naken%20under%20en%20gran.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20A%20Bather.png",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Naken%20under%20en%20gran.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4356,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4356\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1456",
+        "870",
+        "873",
+        "874",
+        "1457",
+        "1559",
+        "79",
+        "42",
+        "40",
+        "217"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19962487": {
+      "uri": "http://www.wikidata.org/entity/Q19962487",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Self-portrait in a wolfskin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sj%C3%A4lvportr%C3%A4tt%20i%20vargskinnsp%C3%A4ls.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Sj%C3%A4lvportr%C3%A4tt%20i%20vargskinnsp%C3%A4ls.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4357,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4357\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "551",
+        "1053",
+        "164",
+        "1560",
+        "743",
+        "1474",
+        "36",
+        "808",
+        "582"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961804": {
+      "uri": "http://www.wikidata.org/entity/Q19961804",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Red Sand",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20R%C3%B6d%20sand.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20R%C3%B6d%20sand.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4358,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4358\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1456",
+        "873",
+        "874",
+        "1457",
+        "79",
+        "40",
+        "1561",
+        "217",
+        "879"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961810": {
+      "uri": "http://www.wikidata.org/entity/Q19961810",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Bathers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Les%20baigneuses..jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Les%20baigneuses..jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1003\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1003\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19961814": {
+      "uri": "http://www.wikidata.org/entity/Q19961814",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "In the Skerries",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20In%20the%20Skerries%20-%20NG.M.00462%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20In%20the%20Skerries%20-%20NG.M.00462%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20In%20the%20Skerries%20-%20Google%20Art%20Project.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20In%20the%20Skerries%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4359,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4359\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "715",
+        "212",
+        "1456",
+        "168",
+        "175",
+        "870",
+        "508",
+        "873",
+        "874",
+        "1018",
+        "1559",
+        "316",
+        "79",
+        "42",
+        "1525",
+        "69",
+        "40",
+        "58",
+        "217",
+        "879"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961811": {
+      "uri": "http://www.wikidata.org/entity/Q19961811",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "La Barque",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Jollen.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Jollen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4360,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4360\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1456",
+        "168",
+        "214",
+        "1459",
+        "565",
+        "508",
+        "1018",
+        "820",
+        "1559",
+        "79",
+        "42",
+        "808",
+        "40",
+        "58",
+        "217",
+        "879"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961801": {
+      "uri": "http://www.wikidata.org/entity/Q19961801",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Outdoors",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Outdoors%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20GKM%200256.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Outdoors%20%28Anders%20Zorn%29%20-%20Gothenburg%20Museum%20of%20Art%20-%20GKM%200256.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19961805": {
+      "uri": "http://www.wikidata.org/entity/Q19961805",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Nude in Fire Light",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Naket%20i%20eldsken.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Naket%20i%20eldsken.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4361,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4361\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "212",
+        "1456",
+        "170",
+        "693",
+        "79",
+        "92",
+        "40",
+        "1485",
+        "217",
+        "879"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q19961815": {
+      "uri": "http://www.wikidata.org/entity/Q19961815",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Frileuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Frileuse.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Frileuse.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4362,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4362\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "715",
+        "212",
+        "175",
+        "214",
+        "1459",
+        "508",
+        "1018",
+        "1457",
+        "572",
+        "79",
+        "40",
+        "217"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q20537327": {
+      "uri": "http://www.wikidata.org/entity/Q20537327",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait of Richard Teller Crane",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20Richard%20Teller%20Crane%20-%202013.667%20-%20Museum%20of%20Fine%20Arts.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4363,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4363\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q78682482": {
+      "uri": "http://www.wikidata.org/entity/Q78682482",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Lucy Turner Joy",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20Lucy%20Turner%20Joy%20-%2097-1917%20-%20Saint%20Louis%20Art%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4364,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4364\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106356886": {
+      "uri": "http://www.wikidata.org/entity/Q106356886",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs Abby Marion Deering Howe",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs%20Abby%20Marion%20Deering%20Howe%20-%20private%20collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4344\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4344\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q47510648": {
+      "uri": "http://www.wikidata.org/entity/Q47510648",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Frances Folsom Cleveland",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20Frances%20Folsom%20Cleveland%20-%20S-NPG.77.124%20-%20National%20Portrait%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4365,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4365\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1563"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q20771318": {
+      "uri": "http://www.wikidata.org/entity/Q20771318",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Morewood",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Morewood%20-%20A-1995-33%20-%20Finnish%20National%20Gallery.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Morewood%20-%20A-1995-33%20-%20Finnish%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4366,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4366\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20064548": {
+      "uri": "http://www.wikidata.org/entity/Q20064548",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait de William B. Ogden",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William%20B.%20Ogden%20by%20Anders%20Zorn%2C%201895.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William%20B.%20Ogden%20by%20Anders%20Zorn%2C%201895.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4367,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4367\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "552",
+        "1564",
+        "565",
+        "36",
+        "936",
+        "92",
+        "644",
+        "582"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q20267961": {
+      "uri": "http://www.wikidata.org/entity/Q20267961",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Potter Palmer",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Potter%20Palmer%20-%201922.450%20-%20Art%20Institute%20of%20Chicago.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%20Anders%20Mrs%20Potter%20Palmer.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4368,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4368\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q43222183": {
+      "uri": "http://www.wikidata.org/entity/Q43222183",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Love nymph",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%96verf%C3%B6rd%20till%20Riksdagen%2C%20K%C3%A4rleksnymf%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2085528.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q103838798": {
+      "uri": "http://www.wikidata.org/entity/Q103838798",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Morning Toilet",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Morning%20Toilet%20-%20P25e13%20-%20Isabella%20Stewart%20Gardner%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4369,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4369\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q72911627": {
+      "uri": "http://www.wikidata.org/entity/Q72911627",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Gondola in Front of the Palazzo Barbaro",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Gondola%2C%20Venice%20-%20GKM%201842%20-%20Nationalmuseum.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Gondola%20in%20Front%20of%20the%20Palazzo%20Barbaro.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4370,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4370\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1062"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q20263998": {
+      "uri": "http://www.wikidata.org/entity/Q20263998",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Maria Sheldon Scammon",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Maria%20Sheldon%20Scammon%20-%201902.39%20-%20Art%20Institute%20of%20Chicago.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4371,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4371\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106356868": {
+      "uri": "http://www.wikidata.org/entity/Q106356868",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "King Gustav V",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20King%20Gustav%20V%20-%20private%20collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4372,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4372\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q24258899": {
+      "uri": "http://www.wikidata.org/entity/Q24258899",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Dagmar",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%2C%20Dagmar.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Zorn%2C%20Dagmar.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4373,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4373\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20776065": {
+      "uri": "http://www.wikidata.org/entity/Q20776065",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Shy Model",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20The%20Shy%20Model%20-%20A-2002-639%20-%20Finnish%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4374,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4374\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q47511581": {
+      "uri": "http://www.wikidata.org/entity/Q47511581",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Charles Nagel",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20Charles%20Nagel%20-%20NPG.69.1%20-%20National%20Portrait%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4375,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4375\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1566"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q20890808": {
+      "uri": "http://www.wikidata.org/entity/Q20890808",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Girl from lvdalen",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20The%20Girl%20from%20%C3%84lvdalen%20-%2054.17%20-%20Minneapolis%20Institute%20of%20Arts.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4376,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4376\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q38232836": {
+      "uri": "http://www.wikidata.org/entity/Q38232836",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Opal",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Opal%2C%201891%2C%20by%20Anders%20Zorn%20%281860-1920%29%20-%20IMG%207159.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4377,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4377\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "40"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q47508955": {
+      "uri": "http://www.wikidata.org/entity/Q47508955",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Nelson Wilmarth Aldrich",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20Nelson%20Wilmarth%20Aldrich%20-%20NPG.69.85%20-%20National%20Portrait%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4378,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4378\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1567"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q20537316": {
+      "uri": "http://www.wikidata.org/entity/Q20537316",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "George Peabody Gardner",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20George%20Peabody%20Gardner%20-%2059.66%20-%20Museum%20of%20Fine%20Arts.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4379,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4379\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q103832702": {
+      "uri": "http://www.wikidata.org/entity/Q103832702",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Abram Piatt Andrew, Jr.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Abram%20Piatt%20Andrew%2C%20Jr.%20-%20P3s18%20-%20Isabella%20Stewart%20Gardner%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4380,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4380\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1568"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q22329812": {
+      "uri": "http://www.wikidata.org/entity/Q22329812",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "A Portrait of the Daughters of Ramón Subercaseaux",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20A%20Portrait%20of%20the%20Daughters%20of%20Ramon%20Subercasseaux.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20A%20Portrait%20of%20the%20Daughters%20of%20Ramon%20Subercasseaux.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4381,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4381\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q103837770": {
+      "uri": "http://www.wikidata.org/entity/Q103837770",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Omnibus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20The%20Omnibus%20-%20P3e1%20-%20Isabella%20Stewart%20Gardner%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4382,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4382\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q72260182": {
+      "uri": "http://www.wikidata.org/entity/Q72260182",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Landscape Study from Mora",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Landschaftsstudie%20aus%20Mora%201886.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4383,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4383\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1569"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q72793670": {
+      "uri": "http://www.wikidata.org/entity/Q72793670",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The Battleship Baltimore in Stockholm Harbor",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20The%20Battleship%20Baltimore%20in%20Stockholm%20Harbor.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4384,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4384\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "115",
+        "1570",
+        "1571",
+        "1572",
+        "306"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q27955240": {
+      "uri": "http://www.wikidata.org/entity/Q27955240",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Gopsmor",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gops%20Mor%20-%20Anders%20Zorn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4385,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4385\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q103838740": {
+      "uri": "http://www.wikidata.org/entity/Q103838740",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Isabella Stewart Gardner in Venice",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Isabella%20Stewart%20Gardner%20in%20Venice%20-%20P17e10%20-%20Isabella%20Stewart%20Gardner%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4386,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4386\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1573"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q103832672": {
+      "uri": "http://www.wikidata.org/entity/Q103832672",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs. Grover Cleveland",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs.%20Grover%20Cleveland%20-%20P3w12%20-%20Isabella%20Stewart%20Gardner%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4387,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4387\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1563"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q28776167": {
+      "uri": "http://www.wikidata.org/entity/Q28776167",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Autoportrait",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Self-Portrait%20-%20Google%20Art%20Project.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Self-Portrait%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4388,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4388\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "1474"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q21674245": {
+      "uri": "http://www.wikidata.org/entity/Q21674245",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "With Mother",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20With%20Mother%20-%201895-G%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20With%20Mother%20-%201895-G%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4389,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4389\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q78673166": {
+      "uri": "http://www.wikidata.org/entity/Q78673166",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Halsey Cooley Ives",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Leonard%20Zorn%20-%20Halsey%20Cooley%20Ives%20-%201828-1981%20-%20Saint%20Louis%20Art%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4390,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4390\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q72670291": {
+      "uri": "http://www.wikidata.org/entity/Q72670291",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "View from Skeppsholm quay",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Utsikt%20fr%C3%A5n%20Skeppsholmskajen.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Utsikt%20fr%C3%A5n%20Skeppsholmskajen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4391,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4391\\/category\\/77\"}}",
+      "posted": true,
+      "tags": [
+        "422",
+        "1574",
+        "508",
+        "40"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q43257692": {
+      "uri": "http://www.wikidata.org/entity/Q43257692",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mrs Henriette Lamm",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Mrs%20Henriette%20Lamm%20-%20NMB%201498%20-%20Nationalmuseum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4392,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4392\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20264880": {
+      "uri": "http://www.wikidata.org/entity/Q20264880",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Portrait Study of a Man",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Portrait%20Study%20of%20a%20Man%20-%201951.316%20-%20Art%20Institute%20of%20Chicago.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4393,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4393\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20783111": {
+      "uri": "http://www.wikidata.org/entity/Q20783111",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "The First Time",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20The%20First%20Time%20-%20A%20II%201516%20-%20Finnish%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4394,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4394\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q105443620": {
+      "uri": "http://www.wikidata.org/entity/Q105443620",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Girl from Mora Skiing",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Girl%20from%20Mora%20Skiing%20%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4395,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4395\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20266892": {
+      "uri": "http://www.wikidata.org/entity/Q20266892",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Nude Girl in Doorway",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Nude%20Girl%20in%20Doorway%20-%201945.176%20-%20Art%20Institute%20of%20Chicago.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4396,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4396\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50911759": {
+      "uri": "http://www.wikidata.org/entity/Q50911759",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Mother and Child",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mother%20and%20her%20child%20Anders%20Zorn.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4397,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4397\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q43252159": {
+      "uri": "http://www.wikidata.org/entity/Q43252159",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "A Young Farm Girl",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Young%20Farm%20Girl%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2025411.tif",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Young%20Farm%20Girl%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2025411.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q43227010": {
+      "uri": "http://www.wikidata.org/entity/Q43227010",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Transferred to the Riksdag: Dance in Gopsmor",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%96verf%C3%B6rd%20till%20Riksdagen%2C%20Dans%20i%20Gopsmor%20%28Anders%20Zorn%29%20-%20Nationalmuseum%20-%2085527.tif"
+      ],
+      "post_result": "forbidden file type",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q60971026": {
+      "uri": "http://www.wikidata.org/entity/Q60971026",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Dance in the Gopsmorkate",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20Tanz%20in%20der%20Gopsmorkate%201914.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4398,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4398\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106369274": {
+      "uri": "http://www.wikidata.org/entity/Q106369274",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "A Fan With the Salomon Sisters",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20A%20Fan%20With%20the%20Salomon%20Sisters%20-%20NMB%201954%20-%20Nationalmuseum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4399,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4399\\/category\\/77\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q82310054": {
+      "uri": "http://www.wikidata.org/entity/Q82310054",
+      "createur": "http://www.wikidata.org/entity/Q206820",
+      "createurLabel": "Anders Zorn",
+      "titre_fr": "Maja",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Anders%20Zorn%20-%20Maja%20%28Painting%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":4400,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4400\\/category\\/77\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}
