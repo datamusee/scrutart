@@ -24,8 +24,7 @@ for post in posts:
                 qid = f"IDWP_{post['id']}"
 
         posts_dict[qid] = post
-
-    print(f"QID: {qid}, ID: {post['id']}, Title: {post['title']['rendered']}, Status: {post['status']}")
+        print(f"""{{"qid": "{qid}", "title": "{post['title']['rendered']}", "idwordpress": "{post['id']}", "status": "{post['status']}", "date": "{post['modified']}" }}""")
 
 dumpfile = "dumps/dumpDictAPIScrutartPosts20250202.json"
 with open(dumpfile, "w", encoding="UTF-8") as fdump:
