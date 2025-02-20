@@ -6,8 +6,8 @@ import requests
 from ..WikimediaManagerPackage.configPrivee import config
 
 def main():
-    # baseurl = "http://127.0.0.1:5000"
-    baseurl = "https://webapimanager.grains-de-culture.fr"
+    baseurl = "http://127.0.0.1:5000"
+    #baseurl = "https://webapimanager.grains-de-culture.fr"
 
     data = {
         "api_urls": ["https://randomuser.me/api/"]
