@@ -120,7 +120,7 @@ def getOtherTypes(sparqlres, qid, lang="fr"):
                     name += "s"
                 if (count >= 10):
                     value += "{count} {type}, ".format(count=str(count), type=name)
-            value += " et d'autres types d'oeuvres plus exceptionnels"
+            value += " et d'autres types d'œuvres plus exceptionnels"
     return value
 
 
@@ -477,8 +477,8 @@ tableTemplate = """<!-- wp:paragraph -->
 <p>Ce qui s'illustre dans la table:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Des paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
+<!-- wp:table {"hasFixedLayout":false} -->
+<figure class="wp-block-table"><table><tbody><tr><td width="100px"><strong>Propriété Wikidata</strong></td><td width="150px"><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Des paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
 <!-- /wp:table -->
 
 """
@@ -495,7 +495,7 @@ mindmap
   root((__NOMCREATEUR__))
     Genre
 __GENRELIST__    
-    Depicts
+    Illustre
 __DEPICTLIST__
     Types
 __TYPELIST__
@@ -638,14 +638,14 @@ def nettoyageContenu(page):
     if "<p><strong>0 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>" in page:
         page = page.replace(
             "<p><strong>0 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>",
-            "Je n'ai trouvé aucune page dans Wikipedia associée à ces oeuvres")
+            "Je n'ai trouvé aucune page dans Wikipedia associée à ces œuvres")
         page = page.replace("<p>Dont 0 dans le Wikipedia anglophone et 0 dans le Wikidata francophone.</p>",
-                     "Et bien sûr, il n'y a de page pour ces oeuvres ni dans le Wikipedia francophone, ni dans l'anglophone")
+                     "Et bien sûr, il n'y a de page pour ces œuvres ni dans le Wikipedia francophone, ni dans l'anglophone")
         page = page.replace("<p>L'ensemble des <strong>pages</strong> concerne <strong>0 œuvres</strong>.</p>",
-                     "Et aussi, aucune de ces oeuvres n'est concernée par une page de Wikipedia.")
+                     "Et aussi, aucune de ces œuvres n'est concernée par une page de Wikipedia.")
     if "<p>Il y a <strong>0 images</strong> dans Wikimedia Commons associées à ces œuvres.</p>" in page:
         page = page.replace("<p>Il y a <strong>0 images</strong> dans Wikimedia Commons associées à ces œuvres.</p>",
-                     "Il n'a aucune image dans Wikimedia Commons associée à ces oeuvres.")
+                     "Il n'a aucune image dans Wikimedia Commons associée à ces œuvres.")
         pass
     return page
 
