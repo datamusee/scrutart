@@ -1,9 +1,9 @@
 import datetime
 import time
-
+import json
 from src.generationWordpress.WPGenreTemplate import WPGenreTemplate as WPGenreTemplate
 from src.generationWordpress.WPPainterFrenchTemplate import WPPainterFrenchTemplate as WPFrPainterTemplate
-from src.generationWordpress.wikidataObject import WikidataObject
+from src.generationWordpress.WikimediaAccess import WikimediaAccess
 
 
 class PageBuilder:
@@ -36,7 +36,7 @@ class PageBuilder:
 
     # fonction destinée à généraliser et remplacer la fonction ci-dessous buildScrutartArtistPage
     def build_scrutart_page(self, qid, lang="fr"):
-        w_obj = WikidataObject(qid)
+        w_obj = WikimediaAccess(qid)
         check = self.check_object_type(w_obj)
         page = None
         page = self.template
@@ -77,15 +77,17 @@ class PageBuilder:
         if "<p><strong>0 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>" in page:
             page = page.replace(
                 "<p><strong>0 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>",
-                "<p>Je n'ai trouvé aucune page dans Wikipedia associée à ces oeuvres</p>")
+                "<p>Je n'ai trouvé aucune page dans Wikipedia associée à ces œuvres</p>")
             page = page.replace("<p>Dont 0 dans le Wikipedia anglophone et 0 dans le Wikidata francophone.</p>",
-                         "<p>Et bien sûr, il n'y a de page pour ces oeuvres ni dans le Wikipedia francophone, ni dans l'anglophone</p>")
+                         "<p>Et bien sûr, il n'y a de page pour ces œuvres ni dans le Wikipedia francophone, ni dans l'anglophone</p>")
             page = page.replace("<p>L'ensemble des <strong>pages</strong> concerne <strong>0 œuvres</strong>.</p>",
-                         "<p>Et aussi, aucune de ces oeuvres n'est concernée par une page de Wikipedia.</p>")
+                         "<p>Et aussi, aucune de ces œuvres n'est concernée par une page de Wikipedia.</p>")
         if "<p>Il y a <strong>0 images</strong> dans Wikimedia Commons associées à ces œuvres.</p>" in page:
             page = page.replace("<p>Il y a <strong>0 images</strong> dans Wikimedia Commons associées à ces œuvres.</p>",
-                         "<p>Il n'a aucune image dans Wikimedia Commons associée à ces oeuvres.</p>")
+                         "<p>Il n'a aucune image dans Wikimedia Commons associée à ces œuvres.</p>")
             pass
+        if "On peut voir une sélection de ces œuvres dans . (vous avez plus de possibilités de réglages sur la galerie si vous vous inscrivez comme utilisateur)." in page:
+            page = page.replace("On peut voir une sélection de ces œuvres dans . (vous avez plus de possibilités de réglages sur la galerie si vous vous inscrivez comme utilisateur).", "")
         # gestion de pluriels spécifiques
         page = page.replace("série de peinturess", "séries de peintures")
         page = page.replace("œuvre d'arts", "œuvres d'art")
