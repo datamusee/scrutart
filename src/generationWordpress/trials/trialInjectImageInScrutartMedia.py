@@ -99,7 +99,6 @@ def upload_image(image_url, wp_site_url, username, app_password):
 
 def set_featured_image(post_id, image_id, wp_site_url, username, app_password):
     """Sets the uploaded image as the featured image of a post."""
-    site_url = configPrivee.WORDPRESS_O2_BASE_URL
     api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts/{post_id}?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
     username = configPrivee.WORDPRESS_O2_API2USERNAME
     password = configPrivee.WORDPRESS_O2_PASSWORD_APP
