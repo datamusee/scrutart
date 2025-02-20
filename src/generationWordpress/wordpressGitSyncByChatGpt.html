@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Synchronize API</title>
+</head>
+<body>
+    <h1>Synchronize API Tester</h1>
+    <button onclick="callAPI()">Call Synchronize API</button>
+    <div id="response"></div>
+    <script>
+        async function callAPI() {
+            const responseElement = document.getElementById('response');
+            try {
+                const response = await fetch('http://localhost:5000/synchronize', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Basic ' + btoa('admin:securepassword'),
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ page_id: 123 })
+                });
+                const data = await response.json();
+                responseElement.innerText = JSON.stringify(data, null, 2);
+            } catch (error) {
+                responseElement.innerText = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
