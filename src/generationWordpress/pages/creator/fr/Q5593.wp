@@ -1,6 +1,6 @@
 
         <!-- wp:html -->
-        <!-- processParams = { "qid": "Q5593", "templateVersion": "1.0.1" } -->
+        <!-- processParams = { "qid": "Q5593", "templateVersion": "1.0.2" } -->
         <!-- /wp:html -->        
         
         <!-- wp:html -->
@@ -13,22 +13,19 @@
             </script>
         <!-- /wp:html -->
         
-        <!-- wp:image -->
-        <figure class="wp-block-image size-large"><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Kristinehamn%20Picasso%20statue%2006.jpg" alt="" /></figure>
-        <!-- /wp:image -->
         <!-- wp:table {"style":{"border":{"width":"0px","style":"none"}}} -->
         <p>Liens externes:</p>
         <figure class="wp-block-table">
         <table class="has-fixed-layout" style="border-style:none;border-width:0px">
         <tbody>
         <tr>
-        <td><a href="https://catalogue.bnf.fr/ark:/12148/cb11919660r"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonBnf.svg" alt="lien Scrutart"></a></td>
-<td><a href="https://www.universalis.fr/encyclopedie/pablo-picasso/"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonUniversalis.svg" alt="lien Scrutart"></a></td>
-<td><a href="https://www.universalis.fr/encyclopedie/picasso-erotique/"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonUniversalis.svg" alt="lien Scrutart"></a></td>
-<td><a href="http://arts-graphiques.louvre.fr/detail/artistes/1/3771-PICASSO-Pablo"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonLouvre.svg" alt="lien Scrutart"></a></td>
-<td><a href="https://viaf.org/viaf/15873/"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonViaf.svg" alt="lien Scrutart"></a></td>
-<td><a href="https://isni.org/isni/0000000122755381"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonIsni.svg" alt="lien Scrutart"></a></td>
-<td><a href="https://www.getty.edu/vow/ULANFullDisplay?find=&role=&nation=&subjectid=500009666"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonGetty.svg" alt="lien Scrutart"></a></td>
+        <td><a href="https://catalogue.bnf.fr/ark:/12148/cb11919660r"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonBnf.svg" alt="link to BNF"></a></td>
+<td><a href="https://www.universalis.fr/encyclopedie/pablo-picasso/"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonUniversalis.svg" alt="link to Encyclopedia Universalis"></a></td>
+<td><a href="https://www.universalis.fr/encyclopedie/picasso-erotique/"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonUniversalis.svg" alt="link to Encyclopedia Universalis"></a></td>
+<td><a href="http://arts-graphiques.louvre.fr/detail/artistes/1/3771-PICASSO-Pablo"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonLouvre.svg" alt="link to Louvre"></a></td>
+<td><a href="https://viaf.org/viaf/15873"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/05/boutonScrutart-1.svg" alt="lien interne scrutart"></a></td>
+<td><a href="https://isni.org/isni/0000000122755381"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonIsni.svg" alt="BNF link"></a></td>
+<td><a href="https://vocab.getty.edu/page/ulan/500009666"><img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/10/boutonGetty.svg" alt="link to Getty"></a></td>
 </tr>
         </tbody>
         </table>
@@ -36,20 +33,20 @@
         <!-- /wp:table -->
         
         <!-- wp:paragraph -->
-        <p><em>Note: les chiffres de ce billet correspondent à la situation du 2024-10-16</em></p>
+        <p><em>Note: les chiffres de ce billet correspondent à la situation du 2025-02-13</em></p>
         <!-- /wp:paragraph -->
         
         
         
         
         <!-- wp:paragraph -->
-        <p>Je vais faire dans ce billet une analyse de la présence des œuvres de <a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a> dans Wikidata et de leur description.</p><p>Cette analyse s'appuie sur des requêtes sparql qui permettent d'interroger les données de Wikidata. Un lien est fourni pour exécuter la requête dans WDQS, l'outil d'interrogation SPARQL de Wikidata</p>
+        <p><p>Je vais faire dans ce billet une analyse de la présence des œuvres de <a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a> dans Wikidata et de leur description.</p></p><p>Cette analyse s'appuie sur des requêtes sparql qui permettent d'interroger les données de Wikidata. Un lien est fourni pour exécuter la requête dans WDQS, l'outil d'interrogation SPARQL de Wikidata</p>
         
         <!-- /wp:paragraph -->
         
         
         <!-- wp:paragraph -->
-        <p>Il y a <strong>1287 œuvres de <a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a></strong> dans Wikidata.</p>
+        <p>Il y a <strong>1312 œuvres de <a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a></strong> dans Wikidata.</p>
         <!-- /wp:paragraph -->
         
         
@@ -59,7 +56,45 @@
         
         
         <!-- wp:paragraph -->
-        <p>Il s'agit de <strong>+822 peintures</strong>, 299 estampes, 39 gravures, 38 dessins, 22 sculptures, 17 œuvre d’arts, 11 série de peinturess,  et d'autres types d'oeuvres plus exceptionnels.</p>
+        <p>Pour ceux qui sont pressés de voir des œuvres, on peut en voir une sélection d'images dans . (vous avez plus de possibilités de réglages sur la galerie si vous vous inscrivez comme utilisateur).</p>
+        <!-- /wp:paragraph -->
+        
+        <!-- wp:wp-mermaid/block -->
+<div class="wp-block-wp-mermaid-block mermaid">
+mindmap
+  root((Pablo Picasso))
+    Genres
+      portrait
+      nature morte
+      nu
+      autoportrait
+      art abstrait
+      scène de genre
+    
+    Illustre
+      femme
+      homme
+      nu
+      portrait
+      fruit comestible
+      Pablo Picasso
+      abstraction
+
+    Types
+      peinture
+      estampe
+      gravure
+      dessin
+      sculpture
+      œuvre d’art
+      série de peintures
+
+</div>
+<!-- /wp:wp-mermaid/block -->
+    
+        
+        <!-- wp:paragraph -->
+        <p>Il s'agit de <strong>+844 peintures</strong>, 299 estampes, 39 gravures, 38 dessins, 24 sculptures, 17 œuvre d’arts, 11 séries de peintures,  et d'autres types d'œuvres plus exceptionnels.</p>
         <!-- /wp:paragraph -->
         
         
@@ -69,7 +104,7 @@
         
         
         <!-- wp:paragraph -->
-        <p>Pour décrire ces œuvres, <strong>385 propriétés</strong> sont utilisées.</p>
+        <p>Pour décrire ces œuvres, <strong>408 propriétés</strong> sont utilisées.</p>
         <!-- /wp:paragraph -->
         
         
@@ -89,7 +124,7 @@
         
         
         <!-- wp:paragraph -->
-        <p>Il y a <strong>204 paires (propriété, valeur)</strong> différentes utilisées sur au moins huit de ces œuvres.</p>
+        <p>Il y a <strong>205 paires (propriété, valeur)</strong> différentes utilisées sur au moins huit de ces œuvres.</p>
         <!-- /wp:paragraph -->
         
         
@@ -114,8 +149,8 @@
         
         
     
-        <!-- wp:table -->
-        <figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P126">P126</a></td><td>maintained by</td><td><a href="http://www.wikidata.org/entity/Q67429142">Q67429142</a> (78), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P135">P135</a></td><td>movement</td><td><a href="http://www.wikidata.org/entity/Q42934">cubisme</a> (34), <a href="http://www.wikidata.org/entity/Q3006706">cubisme analytique</a> (20), <a href="http://www.wikidata.org/entity/Q61444300">cubisme cézannien</a> (10), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P170">P170</a></td><td>creator</td><td><a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a> (1287), <a href="http://www.wikidata.org/entity/Q9711">Honoré de Balzac</a> (13), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P136">P136</a></td><td>genre</td><td><a href="http://www.wikidata.org/entity/Q134307">portrait</a> (150), <a href="http://www.wikidata.org/entity/Q170571">nature morte</a> (73), <a href="http://www.wikidata.org/entity/Q40446">nu</a> (21), <a href="http://www.wikidata.org/entity/Q1047337">scène de genre</a> (9), <a href="http://www.wikidata.org/entity/Q192110">autoportrait</a> (9), <a href="http://www.wikidata.org/entity/Q128115">art abstrait</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P17">P17</a></td><td>country</td><td><a href="http://www.wikidata.org/entity/Q399">Arménie</a> (39), <a href="http://www.wikidata.org/entity/Q29">Espagne</a> (17), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P127">P127</a></td><td>owned by</td><td><a href="http://www.wikidata.org/entity/Q2087788">Galerie nationale d'Arménie</a> (39), <a href="http://www.wikidata.org/entity/Q560643">Paul Rosenberg</a> (16), <a href="http://www.wikidata.org/entity/Q66992">Heinz Berggruen</a> (16), <a href="http://www.wikidata.org/entity/Q17421944">Justin Thannhauser</a> (9), <a href="http://www.wikidata.org/entity/Q538112">Jacques Gelman</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P31">P31</a></td><td>instance of</td><td><a href="http://www.wikidata.org/entity/Q3305213">peinture</a> (822), <a href="http://www.wikidata.org/entity/Q11060274">estampe</a> (299), <a href="http://www.wikidata.org/entity/Q11835431">gravure</a> (39), <a href="http://www.wikidata.org/entity/Q93184">dessin</a> (38), <a href="http://www.wikidata.org/entity/Q860861">sculpture</a> (22), <a href="http://www.wikidata.org/entity/Q838948">œuvre d’art</a> (17), <a href="http://www.wikidata.org/entity/Q15727816">série de peintures</a> (11), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P195">P195</a></td><td>collection</td><td><a href="http://www.wikidata.org/entity/Q214867">National Gallery of Art</a> (303), <a href="http://www.wikidata.org/entity/Q64946756">Estampes de la National Gallery of Art</a> (263), <a href="http://www.wikidata.org/entity/Q62274660">Collection Rosenwald</a> (152), <a href="http://www.wikidata.org/entity/Q160236">Metropolitan Museum of Art</a> (81), <a href="http://www.wikidata.org/entity/Q188740">Museum of Modern Art</a> (70), <a href="http://www.wikidata.org/entity/Q1050032">musée Picasso</a> (58), <a href="http://www.wikidata.org/entity/Q743206">Musée national Picasso - Paris</a> (45), <a href="http://www.wikidata.org/entity/Q679527">musée Boijmans Van Beuningen</a> (43), <a href="http://www.wikidata.org/entity/Q2087788">Galerie nationale d'Arménie</a> (39), <a href="http://www.wikidata.org/entity/Q641630">musée Berggruen</a> (31), <a href="http://www.wikidata.org/entity/Q460889">musée national centre d'art Reina Sofía</a> (30), <a href="http://www.wikidata.org/entity/Q132783">musée de l'Ermitage</a> (30), <a href="http://www.wikidata.org/entity/Q808462">Fondation Barnes</a> (27), <a href="http://www.wikidata.org/entity/Q510324">Philadelphia Museum of Art</a> (24), <a href="http://www.wikidata.org/entity/Q201469">musée Solomon-R.-Guggenheim</a> (22), <a href="http://www.wikidata.org/entity/Q64532898">Q64532898</a> (21), <a href="http://www.wikidata.org/entity/Q46815">musée d'Israël</a> (19), <a href="http://www.wikidata.org/entity/Q239303">Art Institute of Chicago</a> (19), <a href="http://www.wikidata.org/entity/Q1419555">Galerie nationale de Prague</a> (18), <a href="http://www.wikidata.org/entity/Q1641836">musée d'Art du comté de Los Angeles</a> (17), <a href="http://www.wikidata.org/entity/Q1895953">Musée national d'Art moderne</a> (14), <a href="http://www.wikidata.org/entity/Q430682">Tate</a> (13), <a href="http://www.wikidata.org/entity/Q657415">Cleveland Museum of Art</a> (12), <a href="http://www.wikidata.org/entity/Q812285">Collection de peintures de l'État de Bavière</a> (11), <a href="http://www.wikidata.org/entity/Q3783572">musées d'art de Harvard</a> (10), <a href="http://www.wikidata.org/entity/Q1568434">Yale University Art Gallery</a> (10), <a href="http://www.wikidata.org/entity/Q809600">Fogg Art Museum</a> (10), <a href="http://www.wikidata.org/entity/Q4872">musée des Beaux-Arts Pouchkine</a> (9), <a href="http://www.wikidata.org/entity/Q1201549">Detroit Institute of Arts</a> (9), <a href="http://www.wikidata.org/entity/Q176251">musée Thyssen-Bornemisza</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P276">P276</a></td><td>location</td><td><a href="http://www.wikidata.org/entity/Q214867">National Gallery of Art</a> (292), <a href="http://www.wikidata.org/entity/Q160236">Metropolitan Museum of Art</a> (80), <a href="http://www.wikidata.org/entity/Q188740">Museum of Modern Art</a> (66), <a href="http://www.wikidata.org/entity/Q679527">musée Boijmans Van Beuningen</a> (43), <a href="http://www.wikidata.org/entity/Q1050032">musée Picasso</a> (41), <a href="http://www.wikidata.org/entity/Q2087788">Galerie nationale d'Arménie</a> (39), <a href="http://www.wikidata.org/entity/Q743206">Musée national Picasso - Paris</a> (37), <a href="http://www.wikidata.org/entity/Q641630">musée Berggruen</a> (30), <a href="http://www.wikidata.org/entity/Q460889">musée national centre d'art Reina Sofía</a> (30), <a href="http://www.wikidata.org/entity/Q132783">musée de l'Ermitage</a> (30), <a href="http://www.wikidata.org/entity/Q808462">Fondation Barnes</a> (27), <a href="http://www.wikidata.org/entity/Q510324">Philadelphia Museum of Art</a> (24), <a href="http://www.wikidata.org/entity/Q201469">musée Solomon-R.-Guggenheim</a> (21), <a href="http://www.wikidata.org/entity/Q239303">Art Institute of Chicago</a> (19), <a href="http://www.wikidata.org/entity/Q46815">musée d'Israël</a> (18), <a href="http://www.wikidata.org/entity/Q1641836">musée d'Art du comté de Los Angeles</a> (17), <a href="http://www.wikidata.org/entity/Q657415">Cleveland Museum of Art</a> (12), <a href="http://www.wikidata.org/entity/Q1419555">Galerie nationale de Prague</a> (11), <a href="http://www.wikidata.org/entity/Q430682">Tate</a> (11), <a href="http://www.wikidata.org/entity/Q1568434">Yale University Art Gallery</a> (10), <a href="http://www.wikidata.org/entity/Q4872">musée des Beaux-Arts Pouchkine</a> (9), <a href="http://www.wikidata.org/entity/Q3783572">musées d'art de Harvard</a> (9), <a href="http://www.wikidata.org/entity/Q1201549">Detroit Institute of Arts</a> (9), <a href="http://www.wikidata.org/entity/Q812285">Collection de peintures de l'État de Bavière</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P180">P180</a></td><td>depicts</td><td><a href="http://www.wikidata.org/entity/Q467">femme</a> (67), <a href="http://www.wikidata.org/entity/Q8441">homme</a> (40), <a href="http://www.wikidata.org/entity/Q40446">nu</a> (17), <a href="http://www.wikidata.org/entity/Q134307">portrait</a> (13), <a href="http://www.wikidata.org/entity/Q3314483">fruit comestible</a> (10), <a href="http://www.wikidata.org/entity/Q162150">abstraction</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P186">P186</a></td><td>made from material</td><td><a href="http://www.wikidata.org/entity/Q296955">peinture à l'huile</a> (465), <a href="http://www.wikidata.org/entity/Q12321255">toile</a> (432), <a href="http://www.wikidata.org/entity/Q11472">papier</a> (63), <a href="http://www.wikidata.org/entity/Q1513685">papier vergé</a> (56), <a href="http://www.wikidata.org/entity/Q752633">linogravure</a> (38), <a href="http://www.wikidata.org/entity/Q21279007">papier vélin</a> (31), <a href="http://www.wikidata.org/entity/Q204330">gouache</a> (12), <a href="http://www.wikidata.org/entity/Q1424515">fusain</a> (11), <a href="http://www.wikidata.org/entity/Q106857709">panneau de bois</a> (10), <a href="http://www.wikidata.org/entity/Q18668582">carton</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P571">P571</a></td><td>inception</td><td>1933 (71), 1901 (58), 1959 (55), 1905 (49), 1906 (46), 1934 (45), 1909 (35), 1908 (32), 1914 (28), 1903 (26), 1931 (26), 1911 (25), 1912 (25), 1937 (25), 1921 (21), 1900 (20), 1910 (19), 1907 (18), 1947 (16), 1913 (16), 1939 (15), 1904 (15), 1923 (15), 1924 (13), 1955 (13), 1938 (13), 1917 (13), 1922 (13), 1945 (13), 1932 (13), 1954 (13), 1902 (11), 1919 (11), 1941 (11), 1962 (10), 1927 (10), 1915 (10), 1920 (9), 1970 (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P495">P495</a></td><td>country of origin</td><td><a href="http://www.wikidata.org/entity/Q29">Espagne</a> (10), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P608">P608</a></td><td>exhibition history</td><td><a href="http://www.wikidata.org/entity/Q59545875">Le Cubisme</a> (41), <a href="http://www.wikidata.org/entity/Q59544945">Apollinaire, le regard du poète</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P793">P793</a></td><td>significant event</td><td><a href="http://www.wikidata.org/entity/Q107614552">demande de restitution d'œuvres d'art</a> (10), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P921">P921</a></td><td>main subject</td><td><a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a> (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1071">P1071</a></td><td>location of creation</td><td><a href="http://www.wikidata.org/entity/Q142">France</a> (32), <a href="http://www.wikidata.org/entity/Q29">Espagne</a> (27), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1343">P1343</a></td><td>described by source</td><td><a href="http://www.wikidata.org/entity/Q28837176">Heilbrunn Timeline of Art History</a> (17), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1476">P1476</a></td><td>title</td><td><a href="Head of a Woman">Head of a Woman</a> (12), <a href="The Bull (Le taureau)">The Bull (Le taureau)</a> (11), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2048">P2048</a></td><td>height</td><td>130 (24), 100 (18), 81 (15), 92 (14), 33.4 (13), 65 (13), 73 (12), 61 (12), 60 (10), 62.2 (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2079">P2079</a></td><td>fabrication method</td><td><a href="http://www.wikidata.org/entity/Q186986">eau-forte</a> (152), <a href="http://www.wikidata.org/entity/Q133036">lithographie</a> (45), <a href="http://www.wikidata.org/entity/Q542340">pointe sèche</a> (43), <a href="http://www.wikidata.org/entity/Q473236">aquatinte</a> (27), <a href="http://www.wikidata.org/entity/Q752633">linogravure</a> (16), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2049">P2049</a></td><td>width</td><td>26.2 (13), 81 (12), 73 (12), 46 (12), 97 (10), 54 (9), 60 (9), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P3931">P3931</a></td><td>copyright holder</td><td><a href="http://www.wikidata.org/entity/Q60029313">Picasso Administration</a> (66), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P3893">P3893</a></td><td>public domain date</td><td><a href="2044-01-01T00:00:00Z">2044-01-01T00:00:00Z</a> (34), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P5008">P5008</a></td><td>on focus list of Wikimedia project</td><td><a href="http://www.wikidata.org/entity/Q116234000">Q116234000</a> (12), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P6216">P6216</a></td><td>copyright status</td><td><a href="http://www.wikidata.org/entity/Q50423863">sous droit d'auteur</a> (171), </td></tr></tbody></table><figcaption class="wp-element-caption"><strong>Table: Les paires (propriété, valeur) utilisées plus de 8 fois.</strong></figcaption></figure>
+	    <!-- wp:table {"hasFixedLayout":false} -->
+	    <figure class="wp-block-table"><table><tbody><tr><td width="100px"><strong>Propriété Wikidata</strong></td><td width="150px"><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P126">P126</a></td><td>maintained by</td><td><a href="http://www.wikidata.org/entity/Q67429142">Modern and Contemporary Art</a> (78), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P135">P135</a></td><td>movement</td><td><a href="http://www.wikidata.org/entity/Q42934">cubisme</a> (34), <a href="http://www.wikidata.org/entity/Q3006706">cubisme analytique</a> (20), <a href="http://www.wikidata.org/entity/Q61444300">cubisme cézannien</a> (11), <a href="http://www.wikidata.org/entity/Q39427">surréalisme</a> (7), <a href="http://www.wikidata.org/entity/Q3006708">Cubisme synthétique</a> (6), <a href="http://www.wikidata.org/entity/Q1205085">période bleue</a> (6), <a href="http://www.wikidata.org/entity/Q34636">Art nouveau</a> (5), <a href="http://www.wikidata.org/entity/Q3408836">précubisme</a> (4), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P170">P170</a></td><td>creator</td><td><a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a> (1312), <a href="http://www.wikidata.org/entity/Q9711">Honoré de Balzac</a> (13), <a href="http://www.wikidata.org/entity/Q11963168">Carl Nesjar</a> (4), <a href="http://www.wikidata.org/entity/Q159409">Louise Bourgeois</a> (1), <a href="http://www.wikidata.org/entity/Q154340">Francis Bacon</a> (1), <a href="http://www.wikidata.org/entity/Q65990">Rosemarie Trockel</a> (1), <a href="http://www.wikidata.org/entity/Q61064">Vassily Kandinsky</a> (1), <a href="http://www.wikidata.org/entity/Q44054">Franz Marc</a> (1), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P136">P136</a></td><td>genre</td><td><a href="http://www.wikidata.org/entity/Q134307">portrait</a> (152), <a href="http://www.wikidata.org/entity/Q170571">nature morte</a> (73), <a href="http://www.wikidata.org/entity/Q40446">nu</a> (23), <a href="http://www.wikidata.org/entity/Q192110">autoportrait</a> (16), <a href="http://www.wikidata.org/entity/Q128115">art abstrait</a> (10), <a href="http://www.wikidata.org/entity/Q1047337">scène de genre</a> (9), <a href="http://www.wikidata.org/entity/Q191163">paysage</a> (6), <a href="http://www.wikidata.org/entity/Q557141">art public</a> (5), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P17">P17</a></td><td>country</td><td><a href="http://www.wikidata.org/entity/Q399">Arménie</a> (39), <a href="http://www.wikidata.org/entity/Q29">Espagne</a> (17), <a href="http://www.wikidata.org/entity/Q142">France</a> (7), <a href="http://www.wikidata.org/entity/Q55">Pays-Bas</a> (3), <a href="http://www.wikidata.org/entity/Q30">États-Unis</a> (3), <a href="http://www.wikidata.org/entity/Q155">Brésil</a> (2), <a href="http://www.wikidata.org/entity/Q34">Suède</a> (2), <a href="http://www.wikidata.org/entity/Q20">Norvège</a> (2), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P127">P127</a></td><td>owned by</td><td><a href="http://www.wikidata.org/entity/Q2087788">Galerie nationale d'Arménie</a> (39), <a href="http://www.wikidata.org/entity/Q66992">Heinz Berggruen</a> (17), <a href="http://www.wikidata.org/entity/Q560643">Paul Rosenberg</a> (17), <a href="http://www.wikidata.org/entity/Q17421944">Justin Thannhauser</a> (9), <a href="http://www.wikidata.org/entity/Q538112">Jacques Gelman</a> (9), <a href="http://www.wikidata.org/entity/Q17277888">Gottlieb Friedrich Reber</a> (8), <a href="http://www.wikidata.org/entity/Q188740">Museum of Modern Art</a> (8), <a href="http://www.wikidata.org/entity/Q74128">Alfred Flechtheim</a> (7), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P31">P31</a></td><td>instance of</td><td><a href="http://www.wikidata.org/entity/Q3305213">peinture</a> (844), <a href="http://www.wikidata.org/entity/Q11060274">estampe</a> (299), <a href="http://www.wikidata.org/entity/Q11835431">gravure</a> (39), <a href="http://www.wikidata.org/entity/Q93184">dessin</a> (38), <a href="http://www.wikidata.org/entity/Q860861">sculpture</a> (24), <a href="http://www.wikidata.org/entity/Q838948">œuvre d’art</a> (17), <a href="http://www.wikidata.org/entity/Q15727816">série de peintures</a> (11), <a href="http://www.wikidata.org/entity/Q18218093">eau-forte</a> (6), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P195">P195</a></td><td>collection</td><td><a href="http://www.wikidata.org/entity/Q214867">National Gallery of Art</a> (303), <a href="http://www.wikidata.org/entity/Q64946756">Estampes de la National Gallery of Art</a> (263), <a href="http://www.wikidata.org/entity/Q62274660">collection Rosenwald</a> (152), <a href="http://www.wikidata.org/entity/Q160236">Metropolitan Museum of Art</a> (81), <a href="http://www.wikidata.org/entity/Q188740">Museum of Modern Art</a> (70), <a href="http://www.wikidata.org/entity/Q1050032">musée Picasso</a> (58), <a href="http://www.wikidata.org/entity/Q743206">musée national Picasso - Paris</a> (46), <a href="http://www.wikidata.org/entity/Q679527">musée Boijmans Van Beuningen</a> (43), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P276">P276</a></td><td>location</td><td><a href="http://www.wikidata.org/entity/Q214867">National Gallery of Art</a> (292), <a href="http://www.wikidata.org/entity/Q160236">Metropolitan Museum of Art</a> (80), <a href="http://www.wikidata.org/entity/Q188740">Museum of Modern Art</a> (66), <a href="http://www.wikidata.org/entity/Q679527">musée Boijmans Van Beuningen</a> (43), <a href="http://www.wikidata.org/entity/Q1050032">musée Picasso</a> (40), <a href="http://www.wikidata.org/entity/Q2087788">Galerie nationale d'Arménie</a> (39), <a href="http://www.wikidata.org/entity/Q743206">musée national Picasso - Paris</a> (37), <a href="http://www.wikidata.org/entity/Q132783">musée de l'Ermitage</a> (30), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P180">P180</a></td><td>depicts</td><td><a href="http://www.wikidata.org/entity/Q467">femme</a> (68), <a href="http://www.wikidata.org/entity/Q8441">homme</a> (40), <a href="http://www.wikidata.org/entity/Q40446">nu</a> (17), <a href="http://www.wikidata.org/entity/Q134307">portrait</a> (13), <a href="http://www.wikidata.org/entity/Q3314483">fruit comestible</a> (10), <a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a> (10), <a href="http://www.wikidata.org/entity/Q162150">abstraction</a> (9), <a href="http://www.wikidata.org/entity/Q14748">table</a> (8), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P186">P186</a></td><td>made from material</td><td><a href="http://www.wikidata.org/entity/Q296955">peinture à l'huile</a> (484), <a href="http://www.wikidata.org/entity/Q12321255">toile</a> (448), <a href="http://www.wikidata.org/entity/Q11472">papier</a> (63), <a href="http://www.wikidata.org/entity/Q1513685">papier vergé</a> (56), <a href="http://www.wikidata.org/entity/Q752633">linogravure</a> (38), <a href="http://www.wikidata.org/entity/Q21279007">papier vélin</a> (31), <a href="http://www.wikidata.org/entity/Q106857709">panneau de bois</a> (13), <a href="http://www.wikidata.org/entity/Q204330">gouache</a> (12), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P571">P571</a></td><td>inception</td><td>1933 (71), 1901 (59), 1959 (55), 1905 (51), 1906 (46), 1934 (45), 1909 (35), 1908 (32), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P495">P495</a></td><td>country of origin</td><td><a href="http://www.wikidata.org/entity/Q29">Espagne</a> (10), <a href="http://www.wikidata.org/entity/Q30">États-Unis</a> (1), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P608">P608</a></td><td>exhibition history</td><td><a href="http://www.wikidata.org/entity/Q59545875">Le Cubisme</a> (41), <a href="http://www.wikidata.org/entity/Q59544945">Apollinaire, le regard du poète</a> (9), <a href="http://www.wikidata.org/entity/Q115039274">Twentieth-Century Modern Masters: The Jacques and Natasha Gelman Collection</a> (8), <a href="http://www.wikidata.org/entity/Q60332815">Cubism and Abstract Art</a> (2), <a href="http://www.wikidata.org/entity/Q60308976">Le Cubisme, 1907-1914</a> (1), <a href="http://www.wikidata.org/entity/Q193375">Tate Modern</a> (1), <a href="http://www.wikidata.org/entity/Q265378">documenta</a> (1), <a href="http://www.wikidata.org/entity/Q15623104">Picasso et les maîtres</a> (1), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P793">P793</a></td><td>significant event</td><td><a href="http://www.wikidata.org/entity/Q107614552">demande de restitution d'œuvres d'art</a> (10), <a href="http://www.wikidata.org/entity/Q1756454">vol d'œuvre d'art</a> (5), <a href="http://www.wikidata.org/entity/Q167412">transaction juridique</a> (4), <a href="http://www.wikidata.org/entity/Q194189">vente</a> (3), <a href="http://www.wikidata.org/entity/Q211557">legs</a> (3), <a href="http://www.wikidata.org/entity/Q177923">enchère</a> (3), <a href="http://www.wikidata.org/entity/Q25339601">désaccession</a> (2), <a href="http://www.wikidata.org/entity/Q105334701">prêt</a> (1), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P921">P921</a></td><td>main subject</td><td><a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a> (10), <a href="http://www.wikidata.org/entity/Q467">femme</a> (4), <a href="http://www.wikidata.org/entity/Q2640883">corrida</a> (3), <a href="http://www.wikidata.org/entity/Q453775">Fernande Olivier</a> (2), <a href="http://www.wikidata.org/entity/Q236161">Dora Maar</a> (2), <a href="http://www.wikidata.org/entity/Q459041">Ambroise Vollard</a> (2), <a href="http://www.wikidata.org/entity/Q1048568">enlèvement des Sabines</a> (1), <a href="http://www.wikidata.org/entity/Q22132792">Lydia Corbett</a> (1), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1071">P1071</a></td><td>location of creation</td><td><a href="http://www.wikidata.org/entity/Q142">France</a> (32), <a href="http://www.wikidata.org/entity/Q29">Espagne</a> (27), <a href="http://www.wikidata.org/entity/Q90">Paris</a> (8), <a href="http://www.wikidata.org/entity/Q6643">Céret</a> (5), <a href="http://www.wikidata.org/entity/Q3220483">Le Boisgeloup</a> (4), <a href="http://www.wikidata.org/entity/Q1492">Barcelone</a> (3), <a href="http://www.wikidata.org/entity/Q426974">Bateau-Lavoir</a> (2), <a href="http://www.wikidata.org/entity/Q220673">Mougins</a> (2), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1343">P1343</a></td><td>described by source</td><td><a href="http://www.wikidata.org/entity/Q28837176">Heilbrunn Timeline of Art History</a> (17), <a href="http://www.wikidata.org/entity/Q109870350">Spoliation reports from UK museums</a> (4), <a href="http://www.wikidata.org/entity/Q120491321">Biografien der Bilder:Provenienzen Im Museum Berggruen</a> (3), <a href="http://www.wikidata.org/entity/Q66362718">1001 Schilderijen Die je gezien moet hebben</a> (3), <a href="http://www.wikidata.org/entity/Q112608236">The Kreeger Collection</a> (2), <a href="http://www.wikidata.org/entity/Q29167435">The Metropolitan Museum of Art Guide (2012 edition)</a> (2), <a href="http://www.wikidata.org/entity/Q97010562">Exile's Heirs Claim a Picasso at the Modern</a> (1), <a href="http://www.wikidata.org/entity/Q119576556">"LA CELESTINE" AU MUSEE PICASSO L'art du troc</a> (1), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P1476">P1476</a></td><td>title</td><td><a href="Head of a Woman">Head of a Woman</a> (12), <a href="The Bull (Le taureau)">The Bull (Le taureau)</a> (11), <a href="Le Déjeuner sur l'herbe, d'après Manet II">Le Déjeuner sur l'herbe, d'après Manet II</a> (7), <a href="Pique I">Pique I</a> (5), <a href="Man with a Dog (L'homme au chien)">Man with a Dog (L'homme au chien)</a> (4), <a href="Blind Minotaur Led by Marie-Thérèse with a Dove in a Starry Night (Minotaure aveugle guidé par Marie-Thérèse au pigeon dans une nuit étoilée)">Blind Minotaur Led by Marie-Thérèse with a Dove in a Starry Night (Minotaure aveugle guidé par Marie-Thérèse au pigeon dans une nuit étoilée)</a> (4), <a href="Self-Portrait">Self-Portrait</a> (4), <a href="Woman in an Armchair">Woman in an Armchair</a> (3), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2048">P2048</a></td><td>height</td><td>130 (26), 100 (19), 81 (15), 92 (14), 33.4 (13), 65 (13), 73 (12), 61 (12), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2079">P2079</a></td><td>fabrication method</td><td><a href="http://www.wikidata.org/entity/Q186986">eau-forte</a> (152), <a href="http://www.wikidata.org/entity/Q133036">lithographie</a> (45), <a href="http://www.wikidata.org/entity/Q542340">pointe sèche</a> (43), <a href="http://www.wikidata.org/entity/Q473236">aquatinte</a> (27), <a href="http://www.wikidata.org/entity/Q752633">linogravure</a> (16), <a href="http://www.wikidata.org/entity/Q139106">gravure</a> (8), <a href="http://www.wikidata.org/entity/Q174705">peinture à l'huile</a> (4), <a href="http://www.wikidata.org/entity/Q9268371">fonderie</a> (3), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P2049">P2049</a></td><td>width</td><td>26.2 (13), 73 (13), 81 (13), 46 (12), 97 (11), 60 (9), 54 (9), 100 (8), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P3931">P3931</a></td><td>copyright holder</td><td><a href="http://www.wikidata.org/entity/Q60029313">Picasso Administration</a> (66), <a href="http://www.wikidata.org/entity/Q4801318">Artists Rights Society</a> (1), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P3893">P3893</a></td><td>public domain date</td><td><a href="2044-01-01T00:00:00Z">2044-01-01T00:00:00Z</a> (34), <a href="2054-01-01T00:00:00Z">2054-01-01T00:00:00Z</a> (1), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P5008">P5008</a></td><td>on focus list of Wikimedia project</td><td><a href="http://www.wikidata.org/entity/Q116234000">Met Museum artworks on display</a> (12), <a href="http://www.wikidata.org/entity/Q60729883">Cleveland Museum of Art Open Access project</a> (3), <a href="http://www.wikidata.org/entity/Q60687720">comblement de l'inégalité de genre dans la Wikipédia en néerlandais</a> (1), <a href="http://www.wikidata.org/entity/Q6173448">Wikipédia:Articles vitaux/Niveau 4</a> (1), </td></tr><tr><td><a href="http://www.wikidata.org/prop/direct/P6216">P6216</a></td><td>copyright status</td><td><a href="http://www.wikidata.org/entity/Q50423863">sous droit d'auteur</a> (172), <a href="http://www.wikidata.org/entity/Q19652">domaine public</a> (4), </td></tr></tbody></table><figcaption class="wp-element-caption"><strong>Table: Des paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
         <!-- /wp:table -->
     
         
@@ -123,38 +158,6 @@
         <p>(obtenu avec la requête sparql accessible <a href='https://query.wikidata.org/index.html#SELECT%20DISTINCT%20%3Fp%20%3FpropLabel%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20DISTINCT%20%3Fp%20%3Fv%20%28COUNT%28DISTINCT%20%3Fs%29%20AS%20%3Fc%29%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ5593%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%21%3D%20schema%3Adescription%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20GROUP%20BY%20%3Fp%20%3Fv%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%20%3E%208%20%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fprop%20wikibase%3AdirectClaim%20%3Fp.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D'>sur WDQS</a>)</p>
         <!-- /wp:paragraph -->
         
-        <!-- wp:wp-mermaid/block -->
-<div class="wp-block-wp-mermaid-block mermaid">
-mindmap
-  root((Pablo Picasso))
-    Genres
-      portrait
-      nature morte
-      nu
-      scène de genre
-      art abstrait
-      autoportrait
-    
-    Depicts
-      femme
-      homme
-      nu
-      portrait
-      fruit comestible
-      abstraction
-
-    Types
-      peinture
-      estampe
-      gravure
-      dessin
-      sculpture
-      œuvre d’art
-      série de peintures
-
-</div>
-<!-- /wp:wp-mermaid/block -->
-    
         
         <!-- wp:paragraph -->
         <p>On peut accéder à une représentation graphique de la répartition par année des œuvres présentes sur Wikidata <a href="https://query.wikidata.org/embed.html#%23group%C3%A9s%20par%20niveau%20de%20distance%2C%20la%20couleur%20d%C3%A9pendant%20de%20la%20distance%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23defaultView%3ABarChart%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PREFIX%20var_muntype%3A%20%3Chttp%3A//www.wikidata.org/entity/Q15284%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PREFIX%20var_area%3A%20%3Chttp%3A//www.wikidata.org/entity/Q6308%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20%3Fyear%20%3Fc%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SELECT%20DISTINCT%20%3Fp%20%3Fv%20%3FvLabel%20%28COUNT%28DISTINCT%20%3Fs%29%20AS%20%3Fc%29%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fs%20wdt%3AP170%20wd%3AQ5593%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fp%20%3Fv.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%255BAUTO_LANGUAGE%255D%2Cen%22.%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%3Fp%20%21%3D%20schema%3Adescription%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28CONTAINS%28STR%28%3Fp%29%2C%20%22direct%22%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20GROUP%20BY%20%3Fp%20%3Fv%20%3FvLabel%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20HAVING%20%28%3Fc%20%3E%208%20%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20FILTER%28%28%3Fp%20%3D%20wdt%3AP571%29%7C%7C%28%3Fp%20%3D%20wdt%3AP577%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20BIND%28REPLACE%28%3FvLabel%2C%20%22-01-01T00%3A00%3A00Z%22%2C%20%22%22%29%20AS%20%3Fyear%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ORDER%20BY%20%28%3Fyear%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20">ici</a> (remarque: si certaines années ne sont pas dans le graphe, c'est qu'il n'y a pas d'œuvres présentes dans Wikidata pour ces années).</p>
@@ -167,7 +170,7 @@ mindmap
         
         
         <!-- wp:paragraph -->
-        <p><strong>917 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>
+        <p><strong>924 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>
         <!-- /wp:paragraph -->
         
         
@@ -177,7 +180,7 @@ mindmap
         
         
         <!-- wp:paragraph -->
-        <p>Dont 95 dans le Wikipedia anglophone et 122 dans le Wikidata francophone.</p>
+        <p>Dont 96 dans le Wikipedia anglophone et 125 dans le Wikidata francophone.</p>
         <!-- /wp:paragraph -->
         
         
@@ -187,7 +190,7 @@ mindmap
         
         
         <!-- wp:paragraph -->
-        <p>L'ensemble des <strong>pages</strong> concerne <strong>324 œuvres</strong>.</p>
+        <p>L'ensemble des <strong>pages</strong> concerne <strong>325 œuvres</strong>.</p>
         <!-- /wp:paragraph -->
         
         
@@ -197,7 +200,7 @@ mindmap
         
         
         <!-- wp:paragraph -->
-        <p>Il y a <strong>16 images</strong> dans Wikimedia Commons associées à ces œuvres.</p>
+        <p>Il y a <strong>15 images</strong> dans Wikimedia Commons associées à ces œuvres.</p>
         <!-- /wp:paragraph -->
         
         
@@ -207,7 +210,25 @@ mindmap
         
         
         <!-- wp:paragraph -->
-        <p>J'ai ainsi donné un aperçu de la visibilité des œuvres de <a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a> dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenues avec <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a>.</p>
+        <p></p 
+        <!-- /wp:paragraph -->
+        
+        
+        <!-- wp:table {"style":{"border":{"width":"0px","style":"none"}}} -->
+        <figure class="wp-block-table">
+        <table class="has-fixed-layout" style="border-style:none;border-width:0px">
+        <tbody>
+        <tr>
+        <td><a href="http://commons.wikimedia.org/wiki/Special:FilePath/Stamp%20of%20Albania%20-%202000%20-%20Colnect%20186687%20-%20Pablo%20Picasso%201881-1973%20Spanish%20painter%20and%20sculptor.jpeg"><img class="wp-image-710" style="width: 200px;" src="http://commons.wikimedia.org/wiki/Special:FilePath/Stamp%20of%20Albania%20-%202000%20-%20Colnect%20186687%20-%20Pablo%20Picasso%201881-1973%20Spanish%20painter%20and%20sculptor.jpeg" alt=""></a></td><td><a href="http://commons.wikimedia.org/wiki/Special:FilePath/Head%20of%20a%20Woman.jpg"><img class="wp-image-710" style="width: 200px;" src="http://commons.wikimedia.org/wiki/Special:FilePath/Head%20of%20a%20Woman.jpg" alt=""></a></td><td><a href="http://commons.wikimedia.org/wiki/Special:FilePath/Standing%20Figure.jpg"><img class="wp-image-710" style="width: 200px;" src="http://commons.wikimedia.org/wiki/Special:FilePath/Standing%20Figure.jpg" alt=""></a></td>
+        </tr>
+        </tbody>
+        </table>
+        </figure>
+        <!-- /wp:table -->
+
+        
+        <!-- wp:paragraph -->
+        <p>J'ai ainsi donné un aperçu de la visibilité des œuvres de <a href="http://www.wikidata.org/entity/Q5593">Pablo Picasso</a> dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenus avec <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a>.</p>
         <!-- /wp:paragraph -->
         
         
