@@ -1,7 +1,7 @@
 # voir fichier automateGenerationScrutart.py
 import ArtistPagesListBuilder
 
-def buildPageListToGenerate(buildParams):
+def buildPageListToBuild(buildParams):
     plb = ArtistPagesListBuilder.ArtistPagesListBuilder()
     pagesList = plb.build(buildParams)
     return pagesList
@@ -25,25 +25,26 @@ def generatePage(page, template):
     return pageID, pageTitle, pageContent
 
 def generatePage(pageParams, template):
-    wpref = pageParams["wpref"] if "wpref"in pagesParams else None
+    wpref = pageParams["wpref"] if "wpref" in pageParams else None
     pagesList = pageParams["pagesList"]
     for index, pageDescription in enumerate(pagesList):
         if (not "check" in pageDescription) or (not pageDescription["check"]):
             pagesList[index]["id"], pagesList[index]["title"], pagesList[index]["content"] = generatePage(pageDescription, template)
     return { "wpref": wpref, "pagesList": pagesList }
 
-def getWPPageContent(pagedesc, wpref):
+def getWPPageDescription(pagedesc, wpref):
     pageID = ""
     pageTitle = ""
     pageContent = ""
-    return pageID, pageTitle, pageContent
+    pageGalery = ""
+    return  { "id": pageID, "title": pageTitle, "content": pageContent, "galery": pageGalery }
 
 def getPageContent(pagesParams):
     wpref = pagesParams["wpref"] if "wpref" in pagesParams else None
     pagesList = pagesParams["pagesList"]
     for index, pageDescription in enumerate(pagesList):
         if ("check" in pageDescription) and (pageDescription["check"]):
-            pagesList[index]["id"], pagesList[index]["title"], pagesList[index]["content"] = getWPPageContent(pageDescription, wpref)
+            pagesList[index] = getWPPageDescription(pageDescription, wpref)
     return { "wpref": wpref, "pagesList": pagesList }
 
 def putPageInGit(gitref, pagesdesc):
@@ -101,7 +102,7 @@ if __name__ == '__main__':
     jsonParams = {}
 
     # construction d'une liste de pages à générer; par exemple, liste de créateurs avec + de x créations ds wikidata
-    pagesList = buildPageListToGenerate(jsonParams)
+    pagesList = buildPageListToBuild(jsonParams)
 
     for pagedesc in pagesList:
         pageProcess(pagedesc, wpref, frenchtemplate)
