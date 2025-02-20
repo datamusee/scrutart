@@ -1,0 +1,1142 @@
+{
+  "sparql": "SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {\n  {\n    SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?itemFrLabel WHERE {\n      VALUES ?createur {\n        wd:Q170259 \n      }\n      ?uri wdt:P31 wd:Q3305213;\n        wdt:P170 ?createur;\n        wdt:P18 ?image.\n      ?createur rdfs:label ?createurLabel.\n      FILTER((LANG(?createurLabel)) = \"fr\")\n      BIND(?uri AS ?itemFr)\n      SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],fr,en\". }\n    }\n  }\n  BIND(?itemFrLabel AS ?titre_fr)\n}",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q110096971": {
+      "uri": "http://www.wikidata.org/entity/Q110096971",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Self-portrait at the age of 17",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20auto-portrait.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3608,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3608\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q108698630": {
+      "uri": "http://www.wikidata.org/entity/Q108698630",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "George Lee Schuyler (1811-1890)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/George%20Lee%20Schuyler%20%281811-1890%29%201925%2014.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3609,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3609\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q124305696": {
+      "uri": "http://www.wikidata.org/entity/Q124305696",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Adolphe Thiers (1796-1877).",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adolphe%20Thiers%20par%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3610,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3610\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110734268": {
+      "uri": "http://www.wikidata.org/entity/Q110734268",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Monseigneur Félix-Arsène Billard",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carcassonne%20-%20Mus%C3%A9e-tr%C3%A9sor%20de%20Notre-Dame-de-l%27Abbaye%2078.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3611,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3611\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q107266149": {
+      "uri": "http://www.wikidata.org/entity/Q107266149",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Le martyre de saint Denis",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Martyre%20de%20saint%20Denis%20-%20L%C3%A9on%20Bonnat%20%281874-88%2C%20Pantheon%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3612,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3612\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110097479": {
+      "uri": "http://www.wikidata.org/entity/Q110097479",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Marguerite Franchetti",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Marguerite%20Franchetti%20%281875%29%20-%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3613,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3613\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110067978": {
+      "uri": "http://www.wikidata.org/entity/Q110067978",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Scène de mendicité",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Sc%C3%A8ne%20de%20mendicit%C3%A9%20par%20L%C3%A9on%20Bonnat%2C%20vers%201865.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3614,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3614\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q117215458": {
+      "uri": "http://www.wikidata.org/entity/Q117215458",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Self-Portrait",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Self-Portrait%20-%20O%2011720%20-%20National%20Gallery%20Prague.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3615,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3615\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110316807": {
+      "uri": "http://www.wikidata.org/entity/Q110316807",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Non piangere (Ne pleure pas)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%2C%20Non%20piangere.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3616,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3616\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110561573": {
+      "uri": "http://www.wikidata.org/entity/Q110561573",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Petite Italienne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20girl%20%281880%29%2C%20by%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3617,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3617\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110097985": {
+      "uri": "http://www.wikidata.org/entity/Q110097985",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Italienne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20woman%20%281872%29%20-%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3618,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3618\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q121177490": {
+      "uri": "http://www.wikidata.org/entity/Q121177490",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait du comte Frédéric Alexis Louis Pillet-Will",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Fr%C3%A9d%C3%A9ric%20Alexis%20Louis%20Pillet-Will%20%281837-1911%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3619,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3619\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106865145": {
+      "uri": "http://www.wikidata.org/entity/Q106865145",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "George Martin Lane (1823-1897)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20George%20Martin%20Lane%20%281823-1897%29%20-%20H101%20-%20Harvard%20Art%20Museums.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3620,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3620\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q107291510": {
+      "uri": "http://www.wikidata.org/entity/Q107291510",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Jules Ferry",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/JulesFerryBonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3621,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3621\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110068054": {
+      "uri": "http://www.wikidata.org/entity/Q110068054",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Les pèlerins au pied de la statue de Saint Pierre dans l’église Saint-Pierre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Pilgrims%20at%20the%20foot%20of%20the%20statue%20of%20Saint%20Peter%20in%20the%20Church%20of%20Saint%20Peter%20in%20Rome%20%281864%29%20-%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3622,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3622\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110219690": {
+      "uri": "http://www.wikidata.org/entity/Q110219690",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Louis Bernier",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Louis%20Bernier%20-%20L%C3%A9on%20Bonnat%20-%20Mus%C3%A9e%20Cond%C3%A9.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3623,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3623\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q115299352": {
+      "uri": "http://www.wikidata.org/entity/Q115299352",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Martyre de Saint André",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Leon%20bonnat%20le%20martyre%20de%20st%20andre%201863.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3624,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3624\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110056636": {
+      "uri": "http://www.wikidata.org/entity/Q110056636",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de M. Delarue, architecte",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20M.%20Delarue%2C%20architect%20%281887%29%20-%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3625,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3625\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110057270": {
+      "uri": "http://www.wikidata.org/entity/Q110057270",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "A little accident",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20little%20accident%20%28unknown%20date%29%20-%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3626,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3626\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q119351814": {
+      "uri": "http://www.wikidata.org/entity/Q119351814",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait d'Hugues Krafft",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Hugues%20Krafft-by-L%C3%A9on%20Bonnat-1892.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3627,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3627\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110085695": {
+      "uri": "http://www.wikidata.org/entity/Q110085695",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Charles Ephrussi",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Ephrussi%20by%20Leon%20Joseph%20Florentin%20Bonnat%20%281833-1922%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3628,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3628\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123315162": {
+      "uri": "http://www.wikidata.org/entity/Q123315162",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de la comtesse Emanuella Pignatelli Potocka",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat11.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3629,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3629\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110096593": {
+      "uri": "http://www.wikidata.org/entity/Q110096593",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "The broken pitcher (version with ciocie)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Broken%20Pitcher%2C%20by%20L%C3%A9on%20Joseph%20Florentin%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3630,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3630\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123385281": {
+      "uri": "http://www.wikidata.org/entity/Q123385281",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait of Antoine François Marmontel (1816-1898), French pianist, composer and musicologist",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Antoine%20Fran%C3%A7ois%20Marmontel%20by%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3631,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3631\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110096918": {
+      "uri": "http://www.wikidata.org/entity/Q110096918",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait of Marie Bonnat, the artist's sister",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Marie%20Bonnat%2C%20the%20artist%27s%20sister%20%281851%29%20-%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3632,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3632\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q130968797": {
+      "uri": "http://www.wikidata.org/entity/Q130968797",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Jean Gigoux",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Gigoux.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3633,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3633\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q121890103": {
+      "uri": "http://www.wikidata.org/entity/Q121890103",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Henri Harpignies",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%20-%20Henri%20Harpignies%20-%20avec%20cadre%20%28cropped%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3634,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3634\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110074128": {
+      "uri": "http://www.wikidata.org/entity/Q110074128",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "The broken pitcher (barefoot version)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Broken%20Pitcher%20%28unknown%20date%29%20-%20L%C3%A9on%20Bonnat.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3635,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3635\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q130863322": {
+      "uri": "http://www.wikidata.org/entity/Q130863322",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait d'Auguste Caïn",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Auguste%20Cain%20par%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3636,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3636\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59821957": {
+      "uri": "http://www.wikidata.org/entity/Q59821957",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Un salon de coiffure oriental",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Un%20salon%20de%20coiffure%20oriental%20%281872%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3637,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3637\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18749211": {
+      "uri": "http://www.wikidata.org/entity/Q18749211",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait of the Artist",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20of%20the%20Artist%20-%20Walters%203774.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3638,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3638\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495357": {
+      "uri": "http://www.wikidata.org/entity/Q17495357",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait du comte de Montalivet",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Camille%20Bachasson%2C%20comte%20de%20Montalivet%20%281801-1880%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3639,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3639\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106065590": {
+      "uri": "http://www.wikidata.org/entity/Q106065590",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait of Joseph Reinach",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%2C%20Portrait%20de%20Joseph%20Reinach.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3640,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3640\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21728148": {
+      "uri": "http://www.wikidata.org/entity/Q21728148",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Cheikhs arabes dans les montagnes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Cheikhs%20arabes%20dans%20les%20montagnes.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3641,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3641\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18749494": {
+      "uri": "http://www.wikidata.org/entity/Q18749494",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait of William T. Walters",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20of%20William%20T%20Walters%20-%20Walters%2037758.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3642,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3642\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21725594": {
+      "uri": "http://www.wikidata.org/entity/Q21725594",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait of Prince Vyacheslav Tenishev",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Tenishev%20V%20N.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3643,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3643\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495090": {
+      "uri": "http://www.wikidata.org/entity/Q17495090",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait d'Alexandre Dumas fils",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%20-%20Alexandre%20Dumas%2C%20fils.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3644,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3644\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64652140": {
+      "uri": "http://www.wikidata.org/entity/Q64652140",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait du général Henri d'Orléans, duc d'Aumale (1880)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/HenriEugenePhilippeEmmanueldOrleansBonnat1880.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3645,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3645\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104502999": {
+      "uri": "http://www.wikidata.org/entity/Q104502999",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de femme (P2688)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20de%20femme%20%28P2688%29%20-%20P2688%20-%20Mus%C3%A9e%20Carnavalet.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3646,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3646\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106475017": {
+      "uri": "http://www.wikidata.org/entity/Q106475017",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Idylle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Idylle%20by%20L%C3%A9on%20Bonnat%20%281890%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3647,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3647\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104443821": {
+      "uri": "http://www.wikidata.org/entity/Q104443821",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Le Christ en croix, esquisse pour la salle d'audience de la Cour des Assises du Palais de Justice de Paris",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Le%20Christ%20en%20croix%2C%20esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20-%20PPP3893%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3648,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3648\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q91018165": {
+      "uri": "http://www.wikidata.org/entity/Q91018165",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Louisa Lee Schuyler",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Louisa%20Lee%20Schuyler.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3649,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3649\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19911969": {
+      "uri": "http://www.wikidata.org/entity/Q19911969",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Fille romaine à la fontaine",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Fille%20romaine%20%C3%A0%20la%20fontaine.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3650,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3650\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59820864": {
+      "uri": "http://www.wikidata.org/entity/Q59820864",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Femme italienne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Femme%20italienne.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3651,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3651\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17327842": {
+      "uri": "http://www.wikidata.org/entity/Q17327842",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Isaac Dignus Fransen van de Putte (1822-1902)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Isaac%20Dignus%20Fransen%20van%20de%20Putte%20by%20L%C3%A9on%20Bonnat%20Rijksdienst%20voor%20het%20Cultureel%20Erfgoed%20B298.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3652,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3652\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59827371": {
+      "uri": "http://www.wikidata.org/entity/Q59827371",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "The painter Ceferino Araujo Sánchez",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1864%2C%20El%20pintor%20Ceferino%20Araujo%20S%C3%A1nchez%2C%20Le%C3%B3n%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3653,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3653\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104373374": {
+      "uri": "http://www.wikidata.org/entity/Q104373374",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Georges Cain (1853-1919), peintre et littérateur",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20de%20Georges%20Cain%20%281853-1919%29%2C%20peintre%20et%20litt%C3%A9rateur%20-%20P1686%20-%20Mus%C3%A9e%20Carnavalet.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3654,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3654\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104445375": {
+      "uri": "http://www.wikidata.org/entity/Q104445375",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Le Christ en croix",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Le%20Christ%20en%20croix%20-%20PPP411%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3655,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3655\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50130421": {
+      "uri": "http://www.wikidata.org/entity/Q50130421",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Jeune femme faisant la charité à l'entrée de la chapelle de l'hôpital San Sebastian à Cordoue",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Jeune%20femme%20faisant%20la%20charit%C3%A9%20%C3%A0%20l%27entr%C3%A9e%20de%20la%20chapelle%20de%20l%27h%C3%B4pital%20San%20Sebastian%20%C3%A0%20Cordoue%2C%20L%C3%A9on%20Bonnat%2C%20Mus%C3%A9e%20Goya.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3656,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3656\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q47509343": {
+      "uri": "http://www.wikidata.org/entity/Q47509343",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Levi Parsons Morton",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Leon%20Joseph%20Florentin%20Bonnat%20-%20Levi%20Parsons%20Morton%20-%20NPG.66.45%20-%20National%20Portrait%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3657,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3657\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104445733": {
+      "uri": "http://www.wikidata.org/entity/Q104445733",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait d'Henri Harpignies",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20d%27Henri%20Harpignies%20-%20PPP4941%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3658,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3658\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q66107720": {
+      "uri": "http://www.wikidata.org/entity/Q66107720",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Madame Maurice Pascal et son chien Tiny",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Madame%20Maurice%20Pascal.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3659,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3659\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97914239": {
+      "uri": "http://www.wikidata.org/entity/Q97914239",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Monsieur Cernuschi",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Henri%20Cernuschi%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3660,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3660\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495209": {
+      "uri": "http://www.wikidata.org/entity/Q17495209",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de l'artiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/073%20L%C3%A9on%20Bonnat%20Portrait%20de%20l%27artiste.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3661,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3661\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q31187986": {
+      "uri": "http://www.wikidata.org/entity/Q31187986",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Giotto gardant les chèvres",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Giotto%20gardant%20les%20ch%C3%A8vres.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3662,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3662\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59857486": {
+      "uri": "http://www.wikidata.org/entity/Q59857486",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Fruela II of Asturias (king of Asturias from 910 to 925)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Fruela%20II%20de%20Le%C3%B3n%20%28Museo%20del%20Prado%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3663,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3663\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q67330830": {
+      "uri": "http://www.wikidata.org/entity/Q67330830",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Precious Moments",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Precious%20moments%20%281880%29%2C%20by%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3664,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3664\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64652144": {
+      "uri": "http://www.wikidata.org/entity/Q64652144",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de M. le duc d'Aumale (1890)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/HenriEugenePhilippeEmmanueldOrleansBonnat1890.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3665,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3665\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q58696860": {
+      "uri": "http://www.wikidata.org/entity/Q58696860",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Henry White",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Henry%20White%20-%202018.111.1%20-%20National%20Gallery%20of%20Art.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3666,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3666\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17490746": {
+      "uri": "http://www.wikidata.org/entity/Q17490746",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Armand Fallières",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Armand%20Falli%C3%A8res%20%28Bonnat%201907%29.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3667,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3667\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20540887": {
+      "uri": "http://www.wikidata.org/entity/Q20540887",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Henry Lillie Pierce",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Florentin%20L%C3%A9on%20Bonnat%20-%20Henry%20Lillie%20Pierce%20-%2098.1005%20-%20Museum%20of%20Fine%20Arts.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3668,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3668\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104444774": {
+      "uri": "http://www.wikidata.org/entity/Q104444774",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Esquisse pour la salle d'audience de la Cour des Assises du Palais de Justice de Paris : La Justice",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Paix%20-%20PPP3892%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3669,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3669\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495355": {
+      "uri": "http://www.wikidata.org/entity/Q17495355",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait du Cardinal Lavigerie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%20-%20Le%20cardinal%20Charles%20Lavigerie%2C%20archev%C3%AAque%20d%27Alger%20%281825-1892%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3670,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3670\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97606142": {
+      "uri": "http://www.wikidata.org/entity/Q97606142",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de M. Victor Hugo",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Victor%20Hugo%20par%20Daniel%20Saub%C3%A8s%20d%27apr%C3%A8s%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3671,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3671\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18749215": {
+      "uri": "http://www.wikidata.org/entity/Q18749215",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "The Hand of Antoine-Louis Barye",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20The%20Hand%20of%20Antoine-Louis%20Barye%20-%20Walters%2037595.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3672,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3672\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495330": {
+      "uri": "http://www.wikidata.org/entity/Q17495330",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Victor Hugo",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%20Hugo001z.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3673,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3673\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17494044": {
+      "uri": "http://www.wikidata.org/entity/Q17494044",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Madame Pasca",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Joseph%20Florentin%20Bonnat%20-%20Madame%20Pasca%20-%201874.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"258\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/258\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495146": {
+      "uri": "http://www.wikidata.org/entity/Q17495146",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de fillette",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20little%20girl%20%281865%29%20-%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3674,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3674\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104445598": {
+      "uri": "http://www.wikidata.org/entity/Q104445598",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Madame Dubernet",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20de%20Madame%20Dubernet%20-%20PPP3609%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3675,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3675\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18749203": {
+      "uri": "http://www.wikidata.org/entity/Q18749203",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "An Arab Sheik",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20An%20Arab%20Sheik%20-%20Walters%2037173.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3676,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3676\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17491814": {
+      "uri": "http://www.wikidata.org/entity/Q17491814",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Job",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Job.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3677,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3677\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104445775": {
+      "uri": "http://www.wikidata.org/entity/Q104445775",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de Madame Georges Ehrler",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20de%20Madame%20Georges%20Erhler%20-%20PPP472%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3678,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3678\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q71828425": {
+      "uri": "http://www.wikidata.org/entity/Q71828425",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Ernest Renan",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/19%20Tr%C3%A9guier%20Portrait%20d%27Ernest%20Renan%20-dans%20sa%20maison--2.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3679,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3679\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21716399": {
+      "uri": "http://www.wikidata.org/entity/Q21716399",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Holy Water Font by St Peter's Basilica in Rome",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Holy%20Water%20Font%20by%20St%20Peter%27s%20Basilica%20in%20Rome%20%281868%29%20-%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3680,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3680\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104443772": {
+      "uri": "http://www.wikidata.org/entity/Q104443772",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Esquisse pour le salon des Arts à l'Hôtel de Ville de Paris : La glorification de l'Art",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20le%20salon%20des%20Arts%20%C3%A0%20l%27H%C3%B4tel%20de%20Ville%20de%20Paris%20%2C%20La%20glorification%20de%20l%27Art%20-%20PPP3896%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3681,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3681\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97606144": {
+      "uri": "http://www.wikidata.org/entity/Q97606144",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Victor Hugo sur son lit de mort",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%2C%20L%C3%A9on%20-%20Victor%20Hugo%20sur%20son%20lit%20de%20mort%20-%20219%20-%20Maison%20de%20Victor%20Hugo.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3682,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3682\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59920388": {
+      "uri": "http://www.wikidata.org/entity/Q59920388",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Self-portrait (1918)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Self-portrait%20%281918%29%20-%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3683,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3683\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495222": {
+      "uri": "http://www.wikidata.org/entity/Q17495222",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de l'artiste au chapeau",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%28Albi%29%20Portrait%20de%20l%27artiste%20au%20chapeau%20-%20L%C3%A9on%20Bonnat%201916%20-%20Mus%C3%A9e%20d%27Orsay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3684,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3684\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495217": {
+      "uri": "http://www.wikidata.org/entity/Q17495217",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de l'artiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Autoportrait.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3685,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3685\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104444772": {
+      "uri": "http://www.wikidata.org/entity/Q104444772",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Esquisse pour le plafond de la salle d'audience de la Cour des Assises du Palais de Justice de Paris : Justice",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Paix%20-%20PPP3892%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"3669\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3669\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27975071": {
+      "uri": "http://www.wikidata.org/entity/Q27975071",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Tête du cheval blanc",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on-Joseph-Florentin%20Bonnat%20%281833-1922%29%20-%20T%C3%AAte%20du%20cheval%20blanc%20%28Head%20of%20a%20White%20Horse%29%20-%20NG%202754%20-%20National%20Galleries%20of%20Scotland.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Joseph%20Florentin%20Bonnat%20-%20T%C3%AAte%20du%20cheval%20blanc%20%28Head%20of%20a%20white%20horse%29%20-%20NG%202754%20-%20National%20Galleries%20of%20Scotland.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3686,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3686\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20168339": {
+      "uri": "http://www.wikidata.org/entity/Q20168339",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "John Taylor Johnston (1820–1893)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Taylor%20Johnston%20%281820%E2%80%931893%29%20MET%20ep80.8.bw.R.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3687,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3687\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495122": {
+      "uri": "http://www.wikidata.org/entity/Q17495122",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de femme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20femme%20L%C3%A9on%20Bonnat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3688,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3688\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19905311": {
+      "uri": "http://www.wikidata.org/entity/Q19905311",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Une paysanne égyptienne et son enfant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Une%20paysanne%20%C3%A9gyptienne%20et%20son%20enfant.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3689,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3689\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104443823": {
+      "uri": "http://www.wikidata.org/entity/Q104443823",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Esquisse pour le Palais de Justice de Paris : La Force",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Justice%20prot%C3%A9geant%20le%20faible%20-%20PPP3888%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3690,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3690\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64504361": {
+      "uri": "http://www.wikidata.org/entity/Q64504361",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Femme nue, agenouillée",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat%20Donna%20nuda%20inginocchiata.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3691,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3691\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104444773": {
+      "uri": "http://www.wikidata.org/entity/Q104444773",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Esquisse pour le plafond de la salle d'audience de la Cour des Assises du Palais de Justice de Paris : Lex",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Paix%20-%20PPP3892%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"3669\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3669\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17492088": {
+      "uri": "http://www.wikidata.org/entity/Q17492088",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "La Marquise Feydeau de Brou",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20la%20marquise%20Feydeau%20de%20Brou.%2073x60cm.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3692,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3692\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104444775": {
+      "uri": "http://www.wikidata.org/entity/Q104444775",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Esquisse pour la salle d'audience de la Cour des Assises du Palais de Justice de Paris : La Paix",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Paix%20-%20PPP3892%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"3669\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3669\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20540890": {
+      "uri": "http://www.wikidata.org/entity/Q20540890",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Mary Sears (later Mrs. Francis Shaw)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20de%20Mary%20Sears.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3693,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3693\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18749207": {
+      "uri": "http://www.wikidata.org/entity/Q18749207",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait of Barye with a Wax Model of \"Seated Lion\"",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20of%20Barye%20with%20a%20Wax%20Model%20of%20%22Seated%20Lion%22%20-%20Walters%2037757.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3694,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3694\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20262344": {
+      "uri": "http://www.wikidata.org/entity/Q20262344",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait of Henry Field",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Joseph%20Florentin%20Bonnat%20-%20Portrait%20of%20Henry%20Field%20-%201898.6%20-%20Art%20Institute%20of%20Chicago.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3695,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3695\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495113": {
+      "uri": "http://www.wikidata.org/entity/Q17495113",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait de dame âgée",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%28Albi%29%20Portrait%20de%20dame%20%C3%A2g%C3%A9e%20%281898%29%20-%20L%C3%A9on%20Bonnat%20-%20Mus%C3%A9e%20d%27Orsay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3696,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3696\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104443824": {
+      "uri": "http://www.wikidata.org/entity/Q104443824",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Esquisse pour le Palais de Justice de Paris : la Justice",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Justice%20prot%C3%A9geant%20le%20faible%20-%20PPP3888%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"3690\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3690\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18749492": {
+      "uri": "http://www.wikidata.org/entity/Q18749492",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait of George Aloysius Lucas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20of%20George%20Aloysius%20Lucas%20-%20Walters%2037759.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3697,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3697\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29122672": {
+      "uri": "http://www.wikidata.org/entity/Q29122672",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "l'Assomption de Marie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Andr%C3%A9%20%28Bayonne%29%202022%2006%20cropped.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3698,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3698\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27950494": {
+      "uri": "http://www.wikidata.org/entity/Q27950494",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "La victime",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20La%20v%C3%ADctima.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3699,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3699\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q60474422": {
+      "uri": "http://www.wikidata.org/entity/Q60474422",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait d’homme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Clevelandart%201980.232.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20of%20a%20Man%20-%201980.232%20-%20Cleveland%20Museum%20of%20Art.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3700,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3700\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104443822": {
+      "uri": "http://www.wikidata.org/entity/Q104443822",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Esquisse pour la salle d'audience de la Cour des Assises du Palais de Justice de Paris : La Justice protégeant le faible",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Esquisse%20pour%20la%20salle%20d%27audience%20de%20la%20Cour%20des%20Assises%20du%20Palais%20de%20Justice%20de%20Paris%20%2C%20La%20Justice%20prot%C3%A9geant%20le%20faible%20-%20PPP3888%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"3690\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3690\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104445868": {
+      "uri": "http://www.wikidata.org/entity/Q104445868",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Portrait d'Auguste Cain",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on%20Bonnat%20-%20Portrait%20d%27Auguste%20Cain%20-%20PPP897%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3701,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3701\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495138": {
+      "uri": "http://www.wikidata.org/entity/Q17495138",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Léon Gambetta (1838-1882)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9onGambetta.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"261\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/261\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q47509504": {
+      "uri": "http://www.wikidata.org/entity/Q47509504",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Anna L. R. S. Morton",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Leon%20Joseph%20Florentin%20Bonnat%20-%20Anna%20L.%20R.%20S.%20Morton%20-%20S-NPG.67.128%20-%20National%20Portrait%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3702,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3702\\/category\\/46\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17491817": {
+      "uri": "http://www.wikidata.org/entity/Q17491817",
+      "createur": "http://www.wikidata.org/entity/Q170259",
+      "createurLabel": "Léon Bonnat",
+      "titre_fr": "Joseph Dreyfus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bonnat18.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":3703,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/3703\\/category\\/46\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}
