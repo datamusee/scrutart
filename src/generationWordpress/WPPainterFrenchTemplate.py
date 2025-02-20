@@ -9,7 +9,7 @@ class WPPainterFrenchTemplate(WPPainterTemplate):
         return """Où trouver """ + varstring + """ dans Wikidata, suivez le guide"""
 
     def buildIntroView(self):
-        intro = super().buildIntroView("""<p>Je vais faire dans ce billet une analyse de la présence des œuvres de __ENTIYLINK__ dans Wikidata et de leur description.</p>""")
+        intro = super().buildIntroView("""<p><p>Je vais faire dans ce billet une analyse de la présence des œuvres de __ENTIYLINK__ dans Wikidata et de leur description.</p></p>""")
         return intro
 
     def buildNombreOeuvresView(self, varnb="__NBOEUVRES__", varcrea="__ENTIYLINK__"):
@@ -42,8 +42,8 @@ class WPPainterFrenchTemplate(WPPainterTemplate):
     def buildTableView(self):
         return self.wpWrapPara("""<p>Ce qui s'illustre dans la table:</p>""") + """
     
-        <!-- wp:table -->
-        <figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Des paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
+	    <!-- wp:table {"hasFixedLayout":false} -->
+	    <figure class="wp-block-table"><table><tbody><tr><td width="100px"><strong>Propriété Wikidata</strong></td><td width="150px"><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Des paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
         <!-- /wp:table -->
     
         """

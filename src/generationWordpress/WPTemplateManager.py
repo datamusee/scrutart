@@ -90,8 +90,8 @@ class WPTemplate():
         models = {
             "fr": """<p>Ce qui s'illustre dans la table:</p>""" + """
 
-            <!-- wp:table -->
-            <figure class="wp-block-table"><table><tbody><tr><td><strong>Propriété Wikidata</strong></td><td><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Les paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
+	        <!-- wp:table {"hasFixedLayout":false} -->
+	        <figure class="wp-block-table"><table><tbody><tr><td width="100px"><strong>Propriété Wikidata</strong></td><td width="150px"><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Les paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
             <!-- /wp:table -->
 
             """,
@@ -251,7 +251,7 @@ __TYPELIST__
 
     def buildTableView(self): return self.wpWrapPara("""<p>Ce qui s'illustre dans la table:</p>""") + """
         # au lieu de 15%, cela pourrait être 100px, puis 150px pour le deuxième colonne
-        <!-- wp:table -->
+        <!-- wp:table {"hasFixedLayout":false} -->
         <figure class="wp-block-table"><table><tbody><tr><th style="width:15%"><strong>Propriété Wikidata</strong></th><th style="width:20%"><strong>Label</strong></th><th style="width:60%"><strong>Valeurs (nombre d'instances)</strong></th></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Les 5 paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
         <!-- /wp:table -->
     
@@ -312,8 +312,8 @@ __TYPELIST__
         """
         return block
 
-    def buildGaleryLink(self):
-        return self.wpWrapPara("""<p>On peut voir une sélection de ces œuvres dans __GALLERY_LINK__. (vous avez plus de possibilités de réglages sur la galerie si vous vous inscrivez comme utilisateur).</p>""")
+    def buildGalleryLink(self):
+        return self.wpWrapPara("""<p>Pour ceux qui sont pressés de voir des œuvres, on peut en voir une sélection d'images dans __GALLERY_LINK__. (vous avez plus de possibilités de réglages sur la galerie si vous vous inscrivez comme utilisateur).</p>""")
 
     def buildFinView(self): return self.wpWrapPara(
         """<br>J'ai ainsi donné un aperçu de la visibilité des œuvres de __ENTITYLINK__ dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenus avec <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a>.""")
@@ -328,24 +328,23 @@ __TYPELIST__
     def buildPageTemplate(self):
         pageTemplate = self.buildJsonProcessBlock() +\
                        self.buildJsonLdScript() +\
-                       self.buildImageView() + \
                        self.buildExternalLinks() +\
                        self.buildIntroView() + \
                        self.buildNombreOeuvresView() + \
                        self.buildQueryNbOeuvresView() + \
+                       self.buildGalleryLink() + \
+                       self.buildMermaidView() + \
                        self.buildNbTypesOeuvresView() + self.buildQueryNbParTypesView() + \
                        self.buildNbPropView() + self.buildQueryNbproprietesView() + \
                        self.buildImportantesPropView() + self.buildQueryImportantesPropView() + \
                        self.buildPropvalView() + self.buildQueryPropValView() + \
                        self.buildPropDePropvalView() + self.buildQueryPropDePropValView() + \
                        self.buildTableView() + self.buildQueryTableView() + \
-                       self.buildMermaidView() + \
                        self.buildBarresView() + self.buildQueryDonneesPourBarresView() + \
                        self.buildNbPagesWikipediaView() + self.buildQueryNbPagesWikipediaView() + \
                        self.buildWikipediaParPaysView() + self.buildQueryWikipediaParLangueView() + \
                        self.buildOeuvresWikipediaView() + self.buildQueryOeuvreWikipediaView() + \
                        self.buildImagesView() + self.buildQueryImagesView() + \
                        self.buildPicturesTableView() + \
-                       self.buildGaleryLink() + \
-                        self.buildFinView()
+                       self.buildFinView()
         return pageTemplate
