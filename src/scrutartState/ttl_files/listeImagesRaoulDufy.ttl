@@ -1,0 +1,1715 @@
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kgdc: <https://kg.grains-de-culture.fr/entity/> .
+@prefix pgdc: <https://kg.grains-de-culture.fr/prop/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wdt:P136 rdfs:label "genre"@fr .
+wdt:P31 rdfs:label "nature de l'élément"@fr .
+wdt:P170 rdfs:label "créateur"@fr .
+wdt:P18 rdfs:label "image"@fr .
+
+wd:Q104424148 rdfs:label """Henley, régates aux drapeaux"""@fr.
+wd:Q104424148 wdt:P31 wd:Q838948 .
+wd:Q104424148 wdt:P170 wd:Q45205.
+wd:Q104424148 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20henley%2C%20regate%20a%20vela%2C%201935-52%2C%2001.jpg".
+wd:Q104424148 pgdc:piwigo_image "3540".
+wd:Q104424148 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q104424148 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q105346974 rdfs:label """La statue aux deux vases rouges"""@fr.
+wd:Q105346974 wdt:P31 wd:Q838948 .
+wd:Q105346974 wdt:P170 wd:Q45205.
+wd:Q105346974 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Statue%20aux%20deux%20vases%20rouges.jpg".
+wd:Q105346974 pgdc:piwigo_image "3541".
+wd:Q105346974 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q105346974 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q110892569 rdfs:label """L'orchestre"""@fr.
+wd:Q110892569 wdt:P31 wd:Q838948 .
+wd:Q110892569 wdt:P170 wd:Q45205.
+wd:Q110892569 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20L%27orchestre.jpg".
+wd:Q110892569 pgdc:piwigo_image "3542".
+wd:Q110892569 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q110892569 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q110892580 rdfs:label """Musiciens à la campagne"""@fr.
+wd:Q110892580 wdt:P31 wd:Q838948 .
+wd:Q110892580 wdt:P170 wd:Q45205.
+wd:Q110892580 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20Musiciens%20%C3%A0%20la%20campagne.jpg".
+wd:Q110892580 pgdc:piwigo_image "3543".
+wd:Q110892580 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q110892580 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q23940195 rdfs:label """The Artist's Studio"""@fr.
+wd:Q23940195 wdt:P31 wd:Q838948 .
+wd:Q23940195 wdt:P170 wd:Q45205.
+wd:Q23940195 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20the%20artist%27s%20studio%2C%201942%20circa.jpg".
+wd:Q23940195 pgdc:piwigo_image "3544".
+wd:Q23940195 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q23940195 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q73825152 rdfs:label """Le concert rouge"""@fr.
+wd:Q73825152 wdt:P31 wd:Q838948 .
+wd:Q73825152 wdt:P170 wd:Q45205.
+wd:Q73825152 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20orchestra%20rossa%2C%201946-49.jpg".
+wd:Q73825152 pgdc:piwigo_image "3545".
+wd:Q73825152 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q73825152 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q20468885 rdfs:label """Opstilling"""@fr.
+wd:Q20468885 wdt:P31 wd:Q838948 .
+wd:Q20468885 wdt:P170 wd:Q45205.
+wd:Q20468885 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%2C%20Opstilling%2C%20%2C%20KMSr140%2C%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20468885 pgdc:piwigo_image "3546".
+wd:Q20468885 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q20468885 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q114627866 rdfs:label """Le dépiquage des moissons"""@fr.
+wd:Q114627866 wdt:P31 wd:Q838948 .
+wd:Q114627866 wdt:P170 wd:Q45205.
+wd:Q114627866 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/MAMC%20Saint-%C3%89tienne%20%28d%C3%A9p%C3%B4t%20MNAM%29%2C%20Dufy%2C%20Le%20d%C3%A9piquage%20des%20moissons.jpg".
+wd:Q114627866 pgdc:piwigo_image "3547".
+wd:Q114627866 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q114627866 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q104424112 rdfs:label """L'apéritif"""@fr.
+wd:Q104424112 wdt:P31 wd:Q838948 .
+wd:Q104424112 wdt:P170 wd:Q45205.
+wd:Q104424112 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20l%27aperitivo%2C%201908.jpg".
+wd:Q104424112 pgdc:piwigo_image "3548".
+wd:Q104424112 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q104424112 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q104424115 rdfs:label """Les régates"""@fr.
+wd:Q104424115 wdt:P31 wd:Q838948 .
+wd:Q104424115 wdt:P170 wd:Q45205.
+wd:Q104424115 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20le%20regate%2C%201907-08%2C%2001.jpg".
+wd:Q104424115 pgdc:piwigo_image "3549".
+wd:Q104424115 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q104424115 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q129262450 rdfs:label """La Mer et les Bateaux"""@fr.
+wd:Q129262450 wdt:P31 wd:Q838948 .
+wd:Q129262450 wdt:P170 wd:Q45205.
+wd:Q129262450 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20La%20Mer%20et%20les%20Bateaux%2002.jpg".
+wd:Q129262450 pgdc:piwigo_image "3550".
+wd:Q129262450 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q129262450 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q110892973 rdfs:label """La Redécouverte de la Croix, d'après Tintoret"""@fr.
+wd:Q110892973 wdt:P31 wd:Q838948 .
+wd:Q110892973 wdt:P170 wd:Q45205.
+wd:Q110892973 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20Composition%20d%27apr%C3%A8s%20Tintoret.jpg".
+wd:Q110892973 pgdc:piwigo_image "3551".
+wd:Q110892973 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q110892973 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q77472052 rdfs:label """Le Panthéon et Saint-Étienne-du-Mont"""@fr.
+wd:Q77472052 wdt:P31 wd:Q838948 .
+wd:Q77472052 wdt:P170 wd:Q45205.
+wd:Q77472052 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20il%20pantheon%20e%20saint-%C3%A9tienne-du-mont%2C%201903-06%20ca.%2001.jpg".
+wd:Q77472052 pgdc:piwigo_image "3552".
+wd:Q77472052 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q77472052 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q60538814 rdfs:label """Le Yacht pavoisé au Havre"""@fr.
+wd:Q60538814 wdt:P31 wd:Q838948 .
+wd:Q60538814 wdt:P170 wd:Q45205.
+wd:Q60538814 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Yacht%20pavois%C3%A9%20au%20Havre.jpg".
+wd:Q60538814 pgdc:piwigo_image "3553".
+wd:Q60538814 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q60538814 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q104419048 rdfs:label """Courses à Epsom"""@fr.
+wd:Q104419048 wdt:P31 wd:Q838948 .
+wd:Q104419048 wdt:P170 wd:Q45205.
+wd:Q104419048 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20corse%20a%20epsom%2C%201934%20ca.jpg".
+wd:Q104419048 pgdc:piwigo_image "3554".
+wd:Q104419048 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q104419048 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q104424135 rdfs:label """Maison et jardin"""@fr.
+wd:Q104424135 wdt:P31 wd:Q838948 .
+wd:Q104424135 wdt:P170 wd:Q45205.
+wd:Q104424135 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20casa%20e%20giardino%2C%201915.jpg".
+wd:Q104424135 pgdc:piwigo_image "3555".
+wd:Q104424135 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q104424135 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130300719 rdfs:label """Paysage de l'Estaque"""@fr.
+wd:Q130300719 wdt:P31 wd:Q838948 .
+wd:Q130300719 wdt:P170 wd:Q45205.
+wd:Q130300719 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Paysage%20de%20l%27Estaque.jpg".
+wd:Q130300719 pgdc:piwigo_image "3556".
+wd:Q130300719 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130300719 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q110892554 rdfs:label """Le jardin abandonné [AM 4214 P (45)]"""@fr.
+wd:Q110892554 wdt:P31 wd:Q838948 .
+wd:Q110892554 wdt:P170 wd:Q45205.
+wd:Q110892554 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20Le%20jardin%20abandonn%C3%A9.jpg".
+wd:Q110892554 pgdc:piwigo_image "3557".
+wd:Q110892554 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q110892554 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q20355716 rdfs:label """Les bananes""""@fr.
+wd:Q20355716 wdt:P31 wd:Q838948 .
+wd:Q20355716 wdt:P170 wd:Q45205.
+wd:Q20355716 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%2C%20Les%20bananes%2C%201909%2C%20KMSr41%2C%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20355716 pgdc:piwigo_image "3558".
+wd:Q20355716 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q20355716 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q120682290 rdfs:label """Le Cours de la Seine"""@fr.
+wd:Q120682290 wdt:P31 wd:Q838948 .
+wd:Q120682290 wdt:P170 wd:Q45205.
+wd:Q120682290 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Cours%20de%20la%20Seine%20par%20Raoul%20Dufy.jpg".
+wd:Q120682290 pgdc:piwigo_image "3559".
+wd:Q120682290 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q120682290 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130304479 rdfs:label """La dame en rose"""@fr.
+wd:Q130304479 wdt:P31 wd:Q838948 .
+wd:Q130304479 wdt:P170 wd:Q45205.
+wd:Q130304479 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20La%20dame%20en%20rose.jpg".
+wd:Q130304479 pgdc:piwigo_image "3560".
+wd:Q130304479 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130304479 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q64537308 rdfs:label """L'Estaque"""@fr.
+wd:Q64537308 wdt:P31 wd:Q838948 .
+wd:Q64537308 wdt:P170 wd:Q45205.
+wd:Q64537308 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20L%27Estaque%20-%201992.123%20-%20Rhode%20Island%20School%20of%20Design%20Museum.jpg".
+wd:Q64537308 pgdc:piwigo_image "3561".
+wd:Q64537308 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q64537308 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q104424134 rdfs:label """Fête nautique au Havre"""@fr.
+wd:Q104424134 wdt:P31 wd:Q838948 .
+wd:Q104424134 wdt:P170 wd:Q45205.
+wd:Q104424134 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20festa%20nautica%20alle%20havre%2C%201925.jpg".
+wd:Q104424134 pgdc:piwigo_image "3562".
+wd:Q104424134 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q104424134 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q108479151 rdfs:label """Wheatfield in Normandy"""@fr.
+wd:Q108479151 wdt:P31 wd:Q838948 .
+wd:Q108479151 wdt:P170 wd:Q45205.
+wd:Q108479151 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Barberini%20August%202023-Raoul%20Dufy%20-%20Weizenfeld%20in%20der%20Normandie%2C%201935%20-%20Sammlung%20Hasso%20Plattner.jpg".
+wd:Q108479151 pgdc:piwigo_image "3563".
+wd:Q108479151 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q108479151 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q20271148 rdfs:label """Interiør med indisk kvinde"""@fr.
+wd:Q20271148 wdt:P31 wd:Q838948 .
+wd:Q20271148 wdt:P170 wd:Q45205.
+wd:Q20271148 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%2C%20Interi%C3%B8r%20med%20indisk%20kvinde%2C%201930%2C%20KMSr146%2C%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20271148 pgdc:piwigo_image "3564".
+wd:Q20271148 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q20271148 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q104424120 rdfs:label """Le jardin abandonné"""@fr.
+wd:Q104424120 wdt:P31 wd:Q838948 .
+wd:Q104424120 wdt:P170 wd:Q45205.
+wd:Q104424120 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20il%20giardino%20abbandonato%2C%201913.jpg".
+wd:Q104424120 pgdc:piwigo_image "3565".
+wd:Q104424120 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q104424120 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q110892452 rdfs:label """Etude pour "Le Dimanche""""@fr.
+wd:Q110892452 wdt:P31 wd:Q838948 .
+wd:Q110892452 wdt:P170 wd:Q45205.
+wd:Q110892452 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20Etude%20pour%20le%20Dimanche.jpg".
+wd:Q110892452 pgdc:piwigo_image "3566".
+wd:Q110892452 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q110892452 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q114627865 rdfs:label """Amphitrite"""@fr.
+wd:Q114627865 wdt:P31 wd:Q838948 .
+wd:Q114627865 wdt:P170 wd:Q45205.
+wd:Q114627865 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/MAMC%20Saint-%C3%89tienne%20%28d%C3%A9p%C3%B4t%20MNAM%29%2C%20Dufy%2C%20Amphitrite.jpg".
+wd:Q114627865 pgdc:piwigo_image "None".
+wd:Q114627865 pgdc:piwigo_gallery kgdc:galNone.
+wd:Q114627865 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q110894283 rdfs:label """La Console"""@fr.
+wd:Q110894283 wdt:P31 wd:Q838948 .
+wd:Q110894283 wdt:P170 wd:Q45205.
+wd:Q110894283 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20La%20console.jpg".
+wd:Q110894283 pgdc:piwigo_image "3567".
+wd:Q110894283 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q110894283 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q110894285 rdfs:label """Arlequin vert et blanc au violon"""@fr.
+wd:Q110894285 wdt:P31 wd:Q838948 .
+wd:Q110894285 wdt:P170 wd:Q45205.
+wd:Q110894285 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20Arlequin%20vert%20et%20blanc.jpg".
+wd:Q110894285 pgdc:piwigo_image "3568".
+wd:Q110894285 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q110894285 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q16038466 rdfs:label """Corrida course de taureaux"""@fr.
+wd:Q16038466 wdt:P31 wd:Q838948 .
+wd:Q16038466 wdt:P170 wd:Q45205.
+wd:Q16038466 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Course%20de%20taureaux.jpg".
+wd:Q16038466 pgdc:piwigo_image "3569".
+wd:Q16038466 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q16038466 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q104424138 rdfs:label """30 ans ou la vie en rose"""@fr.
+wd:Q104424138 wdt:P31 wd:Q838948 .
+wd:Q104424138 wdt:P170 wd:Q45205.
+wd:Q104424138 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20trent%27anni%2C%20o%20la%20vita%20in%20rosa%2C%201931%2C%2001.jpg".
+wd:Q104424138 pgdc:piwigo_image "3570".
+wd:Q104424138 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q104424138 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q60061788 rdfs:label """La Rue pavoisée"""@fr.
+wd:Q60061788 wdt:P31 wd:Q838948 .
+wd:Q60061788 wdt:P170 wd:Q45205.
+wd:Q60061788 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Rue%20pavois%C3%A9e.jpg".
+wd:Q60061788 pgdc:piwigo_image "3571".
+wd:Q60061788 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q60061788 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q83507988 rdfs:label """Régates à Deauville"""@fr.
+wd:Q83507988 wdt:P31 wd:Q838948 .
+wd:Q83507988 wdt:P170 wd:Q45205.
+wd:Q83507988 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/R%C3%A9gates%20%C3%A0%20Deauville.jpg".
+wd:Q83507988 pgdc:piwigo_image "3572".
+wd:Q83507988 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q83507988 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q124327406 rdfs:label """Étude d'atelier"""@fr.
+wd:Q124327406 wdt:P31 wd:Q838948 .
+wd:Q124327406 wdt:P170 wd:Q45205.
+wd:Q124327406 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Troyes%20%28Aube%29%20-%20Mus%C3%A9e%20d%27Art%20Moderne%20-%20%22Etude%20d%27atelier%22%20%28Raoul%20Dufy%2C%201900%29.jpg".
+wd:Q124327406 pgdc:piwigo_image "3573".
+wd:Q124327406 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q124327406 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q124327405 rdfs:label """Ascot (Champ de courses)"""@fr.
+wd:Q124327405 wdt:P31 wd:Q838948 .
+wd:Q124327405 wdt:P170 wd:Q45205.
+wd:Q124327405 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Troyes%20%28Aube%29%20-%20Mus%C3%A9e%20d%27Art%20Moderne%20-%20%22Ascot%22%20%28Raoul%20Dufy%2C%20vers%201930%29.jpg".
+wd:Q124327405 pgdc:piwigo_image "3574".
+wd:Q124327405 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q124327405 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130300714 rdfs:label """Arcades à l'Estaque"""@fr.
+wd:Q130300714 wdt:P31 wd:Q838948 .
+wd:Q130300714 wdt:P170 wd:Q45205.
+wd:Q130300714 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Arcades%20%C3%A0%20l%27Estaque.jpg".
+wd:Q130300714 pgdc:piwigo_image "3575".
+wd:Q130300714 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130300714 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130300715 rdfs:label """L'Hôtel Sube à Saint-Tropez"""@fr.
+wd:Q130300715 wdt:P31 wd:Q838948 .
+wd:Q130300715 wdt:P170 wd:Q45205.
+wd:Q130300715 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20L%27H%C3%B4tel%20Sube%20%C3%A0%20Saint-Tropez.jpg".
+wd:Q130300715 pgdc:piwigo_image "3576".
+wd:Q130300715 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130300715 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130300718 rdfs:label """Le Port de Martigues"""@fr.
+wd:Q130300718 wdt:P31 wd:Q838948 .
+wd:Q130300718 wdt:P170 wd:Q45205.
+wd:Q130300718 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Le%20Port%20de%20Martigues.jpg".
+wd:Q130300718 pgdc:piwigo_image "3704".
+wd:Q130300718 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130300718 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130300716 rdfs:label """La Terrasse à l'Estaque"""@fr.
+wd:Q130300716 wdt:P31 wd:Q838948 .
+wd:Q130300716 wdt:P170 wd:Q45205.
+wd:Q130300716 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20La%20Terrasse%20%C3%A0%20l%27Estaque.jpg".
+wd:Q130300716 pgdc:piwigo_image "3577".
+wd:Q130300716 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130300716 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130300717 rdfs:label """La Tuilerie Saint-Henri"""@fr.
+wd:Q130300717 wdt:P31 wd:Q838948 .
+wd:Q130300717 wdt:P170 wd:Q45205.
+wd:Q130300717 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20La%20Tuilerie%20Saint-Henri.jpg".
+wd:Q130300717 pgdc:piwigo_image "3578".
+wd:Q130300717 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130300717 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130300722 rdfs:label """Usine à l'Estaque"""@fr.
+wd:Q130300722 wdt:P31 wd:Q838948 .
+wd:Q130300722 wdt:P170 wd:Q45205.
+wd:Q130300722 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Usine%20%C3%A0%20l%27Estaque.jpg".
+wd:Q130300722 pgdc:piwigo_image "3579".
+wd:Q130300722 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130300722 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130304477 rdfs:label """Nu assis"""@fr.
+wd:Q130304477 wdt:P31 wd:Q838948 .
+wd:Q130304477 wdt:P170 wd:Q45205.
+wd:Q130304477 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Nu%20assis.jpg".
+wd:Q130304477 pgdc:piwigo_image "3580".
+wd:Q130304477 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130304477 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q124175035 rdfs:label """Fête Nautique"""@fr.
+wd:Q124175035 wdt:P31 wd:Q838948 .
+wd:Q124175035 wdt:P170 wd:Q45205.
+wd:Q124175035 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%AAte%20Nautique%20-%20Raoul%20Dufy%20-%20Google%20Arts%20%26%20Culture.jpg".
+wd:Q124175035 pgdc:piwigo_image "3581".
+wd:Q124175035 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q124175035 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q23948061 rdfs:label """Mozart"""@fr.
+wd:Q23948061 wdt:P31 wd:Q838948 .
+wd:Q23948061 wdt:P170 wd:Q45205.
+wd:Q23948061 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20mozart%2C%201943.jpg".
+wd:Q23948061 pgdc:piwigo_image "3582".
+wd:Q23948061 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q23948061 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q104424137 rdfs:label """Le cavalier"""@fr.
+wd:Q104424137 wdt:P31 wd:Q838948 .
+wd:Q104424137 wdt:P170 wd:Q45205.
+wd:Q104424137 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%2C%201914%2C%20Le%20Cavalier%20arabe%20%28Le%20Cavalier%20blanc%29%2C%20oil%20on%20canvas%2C%2066%20x%2081%20cm%2C%20Mus%C3%A9e%20d%27Art%20Moderne%20de%20la%20Ville%20de%20Paris...jpg".
+wd:Q104424137 pgdc:piwigo_image "3583".
+wd:Q104424137 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q104424137 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q116948403 rdfs:label """La Mosquée rouge"""@fr.
+wd:Q116948403 wdt:P31 wd:Q838948 .
+wd:Q116948403 wdt:P170 wd:Q45205.
+wd:Q116948403 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20La%20mosqu%C3%A9e%20rouge.jpg".
+wd:Q116948403 pgdc:piwigo_image "3584".
+wd:Q116948403 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q116948403 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q116948411 rdfs:label """Paysage aux trois meules de paille"""@fr.
+wd:Q116948411 wdt:P31 wd:Q838948 .
+wd:Q116948411 wdt:P170 wd:Q45205.
+wd:Q116948411 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Paysage%20aux%20trois%20meules%20de%20paille.jpg".
+wd:Q116948411 pgdc:piwigo_image "3585".
+wd:Q116948411 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q116948411 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q99899791 rdfs:label """Nu rose"""@fr.
+wd:Q99899791 wdt:P31 wd:Q838948 .
+wd:Q99899791 wdt:P170 wd:Q45205.
+wd:Q99899791 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Colmar%20-%20Unterlinden%20Museum%20-%20Nu%20rose%20%28Pink%20nude%29%201930%20by%20Raoul%20Dufy%20%281877-1953%29%20-%20Paper%20%28gouache%29%2C%20canvas%20%28smoothed%29%2002.jpg".
+wd:Q99899791 pgdc:piwigo_image "None".
+wd:Q99899791 pgdc:piwigo_gallery kgdc:galNone.
+wd:Q99899791 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q27897814 rdfs:label """Yachts dans le Port de Deauville"""@fr.
+wd:Q27897814 wdt:P31 wd:Q838948 .
+wd:Q27897814 wdt:P170 wd:Q45205.
+wd:Q27897814 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20yacht%20nel%20porto%20di%20deauville%2C%201938%20ca.jpg".
+wd:Q27897814 pgdc:piwigo_image "3586".
+wd:Q27897814 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q27897814 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q60492101 rdfs:label """Arbres à L'Estaque"""@fr.
+wd:Q60492101 wdt:P31 wd:Q838948 .
+wd:Q60492101 wdt:P170 wd:Q45205.
+wd:Q60492101 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Arbres%20%C3%A0%20l%27Estaque.jpg".
+wd:Q60492101 pgdc:piwigo_image "3587".
+wd:Q60492101 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q60492101 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q110893917 rdfs:label """Arlequin rouge et blanc au violon"""@fr.
+wd:Q110893917 wdt:P31 wd:Q838948 .
+wd:Q110893917 wdt:P170 wd:Q45205.
+wd:Q110893917 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20Arlequin%20rouge%20et%20blanc.jpg".
+wd:Q110893917 pgdc:piwigo_image "3588".
+wd:Q110893917 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q110893917 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q110893329 rdfs:label """Le cargo noir"""@fr.
+wd:Q110893329 wdt:P31 wd:Q838948 .
+wd:Q110893329 wdt:P170 wd:Q45205.
+wd:Q110893329 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20Le%20Cargo%20noir.jpg".
+wd:Q110893329 pgdc:piwigo_image "3589".
+wd:Q110893329 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q110893329 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q27897002 rdfs:label """The Studio"""@fr.
+wd:Q27897002 wdt:P31 wd:Q838948 .
+wd:Q27897002 wdt:P170 wd:Q45205.
+wd:Q27897002 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20lo%20studio%2C%201942%20ca.jpg".
+wd:Q27897002 pgdc:piwigo_image "3590".
+wd:Q27897002 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q27897002 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q76896282 rdfs:label """L'Atelier"""@fr.
+wd:Q76896282 wdt:P31 wd:Q838948 .
+wd:Q76896282 wdt:P170 wd:Q45205.
+wd:Q76896282 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20l%27atelier%2C%201907.jpg".
+wd:Q76896282 pgdc:piwigo_image "3591".
+wd:Q76896282 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q76896282 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130599094 rdfs:label """L'Estacade et la Plage du Havre"""@fr.
+wd:Q130599094 wdt:P31 wd:Q838948 .
+wd:Q130599094 wdt:P170 wd:Q45205.
+wd:Q130599094 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Havre%20Mus%C3%A9e%20d%27art%20moderne%20Dufy.jpg".
+wd:Q130599094 pgdc:piwigo_image "3592".
+wd:Q130599094 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130599094 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130599095 rdfs:label """Le vieux port de Marseille et Notre Dame de la Garde"""@fr.
+wd:Q130599095 wdt:P31 wd:Q838948 .
+wd:Q130599095 wdt:P170 wd:Q45205.
+wd:Q130599095 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Havre%20Mus%C3%A9e%20d%27art%20moderne%20Raoul%20Dufy.jpg".
+wd:Q130599095 pgdc:piwigo_image "3593".
+wd:Q130599095 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130599095 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q122680975 rdfs:label """Coquillages au bord de la mer"""@fr.
+wd:Q122680975 wdt:P31 wd:Q838948 .
+wd:Q122680975 wdt:P170 wd:Q45205.
+wd:Q122680975 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Coquillages%20au%20bord%20de%20la%20mer.jpg".
+wd:Q122680975 pgdc:piwigo_image "3594".
+wd:Q122680975 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q122680975 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q122680973 rdfs:label """Cargo noir, baigneuses et tentes de plage"""@fr.
+wd:Q122680973 wdt:P31 wd:Q838948 .
+wd:Q122680973 wdt:P170 wd:Q45205.
+wd:Q122680973 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Cargo%20noir%2C%20baigneuses%20et%20tentes%20de%20plage.jpg".
+wd:Q122680973 pgdc:piwigo_image "3595".
+wd:Q122680973 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q122680973 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q122680977 rdfs:label """Savants autour d'une table"""@fr.
+wd:Q122680977 wdt:P31 wd:Q838948 .
+wd:Q122680977 wdt:P170 wd:Q45205.
+wd:Q122680977 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Savants%20autour%20d%27une%20table.jpg".
+wd:Q122680977 pgdc:piwigo_image "3596".
+wd:Q122680977 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q122680977 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q124327409 rdfs:label """Nu couché"""@fr.
+wd:Q124327409 wdt:P31 wd:Q838948 .
+wd:Q124327409 wdt:P170 wd:Q45205.
+wd:Q124327409 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Troyes%20%28Aube%29%20-%20Mus%C3%A9e%20d%27Art%20Moderne%20-%20%22Nu%20f%C3%A9minin%22%20%28Raoul%20Dufy%2C%201930%29.jpg".
+wd:Q124327409 pgdc:piwigo_image "3597".
+wd:Q124327409 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q124327409 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q61387866 rdfs:label """Les Affiches à Trouville"""@fr.
+wd:Q61387866 wdt:P31 wd:Q838948 .
+wd:Q61387866 wdt:P170 wd:Q45205.
+wd:Q61387866 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Les%20Affiches%20%C3%A0%20Trouville.jpg".
+wd:Q61387866 pgdc:piwigo_image "3598".
+wd:Q61387866 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q61387866 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130304478 rdfs:label """Le Parc de Saint-Cloud"""@fr.
+wd:Q130304478 wdt:P31 wd:Q838948 .
+wd:Q130304478 wdt:P170 wd:Q45205.
+wd:Q130304478 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Le%20Parc%20de%20Saint-Cloud.jpg".
+wd:Q130304478 pgdc:piwigo_image "3599".
+wd:Q130304478 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130304478 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q20354678 rdfs:label """Landscape near Vence in Provence"""@fr.
+wd:Q20354678 wdt:P31 wd:Q838948 .
+wd:Q20354678 wdt:P170 wd:Q45205.
+wd:Q20354678 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%2C%20Landskab%20ved%20Vence%20i%20Provence%2C%20%2C%20KMSr42%2C%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20354678 pgdc:piwigo_image "3600".
+wd:Q20354678 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q20354678 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q110893658 rdfs:label """Nature morte à la tour blanche"""@fr.
+wd:Q110893658 wdt:P31 wd:Q838948 .
+wd:Q110893658 wdt:P170 wd:Q45205.
+wd:Q110893658 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20Nature%20morte%20au%20cantir.jpg".
+wd:Q110893658 pgdc:piwigo_image "3601".
+wd:Q110893658 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q110893658 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q108479149 rdfs:label """The White Sail"""@fr.
+wd:Q108479149 wdt:P31 wd:Q838948 .
+wd:Q108479149 wdt:P170 wd:Q45205.
+wd:Q108479149 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Barberini%20August%202023-Raoul%20Dufy%20-%20Das%20wei%C3%9Fe%20Segel%2C%201906%20-%20Sammlung%20Hasso%20Plattner.jpg".
+wd:Q108479149 pgdc:piwigo_image "3602".
+wd:Q108479149 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q108479149 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q129263000 rdfs:label """Paysage de l'Estaque"""@fr.
+wd:Q129263000 wdt:P31 wd:Q838948 .
+wd:Q129263000 wdt:P170 wd:Q45205.
+wd:Q129263000 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Dufy%20-%20Paysage%20de%20l%27Estaque%2002.jpg".
+wd:Q129263000 pgdc:piwigo_image "3603".
+wd:Q129263000 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q129263000 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q3209311 rdfs:label """La Fée Électricité"""@fr.
+wd:Q3209311 wdt:P31 wd:Q838948 .
+wd:Q3209311 wdt:P170 wd:Q45205.
+wd:Q3209311 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20dufy%2C%20la%20fata%20elettricit%C3%A0%2C%201937%2C%2003.jpg".
+wd:Q3209311 pgdc:piwigo_image "3604".
+wd:Q3209311 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q3209311 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q108479441 rdfs:label """The Beach of Sainte-Adresse"""@fr.
+wd:Q108479441 wdt:P31 wd:Q838948 .
+wd:Q108479441 wdt:P170 wd:Q45205.
+wd:Q108479441 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Barberini%20August%202023-Raoul%20Dufy%20-%20Der%20Strand%20von%20Sainte-Adresse%2C%201906%20-%20Sammlung%20Hasso%20Plattner.jpg".
+wd:Q108479441 pgdc:piwigo_image "3605".
+wd:Q108479441 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q108479441 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q122680976 rdfs:label """Le port du Havre"""@fr.
+wd:Q122680976 wdt:P31 wd:Q838948 .
+wd:Q122680976 wdt:P170 wd:Q45205.
+wd:Q122680976 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dufy%2C%20Le%20port%20du%20Havre.jpg".
+wd:Q122680976 pgdc:piwigo_image "3606".
+wd:Q122680976 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q122680976 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
+
+wd:Q130297851 rdfs:label """Portrait of Fernand Fleuret"""@fr.
+wd:Q130297851 wdt:P31 wd:Q838948 .
+wd:Q130297851 wdt:P170 wd:Q45205.
+wd:Q130297851 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27Portrait%20of%20Fernand%20Fleuret%27%20%28ca%201938%29%20by%20Raoul%20Dufy%20-%20Museo%20Soumaya%20-%20Mexico%202024.jpg".
+wd:Q130297851 pgdc:piwigo_image "3607".
+wd:Q130297851 pgdc:piwigo_gallery kgdc:gal45.
+wd:Q130297851 pgdc:sparql kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 .
+
+kgdc:sparqlCLeX7ycEF2kQAzL6Y9VHDH99sNzslkLcqlXq920XGI0 pgdc:sparql_src """SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
+  VALUES ?createur {
+    wd:Q45205
+  }
+  ?uri wdt:P31 wd:Q3305213;
+    wdt:P170 ?createur;
+    wdt:P18 ?image.
+  ?createur rdfs:label ?createurLabel.
+  FILTER((LANG(?createurLabel)) = "fr")
+  OPTIONAL { ?uri wdt:P1476 ?titre_fr. }
+  FILTER((LANG(?titre_fr)) = "fr")
+}""".
+
+wd:Q45205 rdfs:label """Raoul Dufy"""@fr.
+wd:Q45205 wdt:P31 wd:Q1028181 .
