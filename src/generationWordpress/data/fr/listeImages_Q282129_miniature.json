@@ -1,0 +1,293 @@
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?qid { wd:Q282129 }\n                                values ?classRel { wdt:P31 }\n                                values ?class { wd:Q16743958 wd:Q16743958 }\n                                values ?rel { wdt:P136 }\n                                ?uri ?rel ?qid; ?classRel  wd:Q3305213 ;\n                                    wdt:P170 ?createur ;\n                                    wdt:P18 ?image .\n                                ?qid ?classRel ?class .\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?qid ?classRel ?class .\n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q97643416": {
+      "uri": "http://www.wikidata.org/entity/Q97643416",
+      "createur": "http://www.wikidata.org/entity/Q551132",
+      "createurLabel": "Jean-Baptiste Isabey",
+      "titre_fr": "Napoléon 1er en uniforme de la Garde nationale",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Isabey%2C%20Jean-Baptiste%20-%20Napol%C3%A9on%201er%20en%20uniforme%20de%20la%20Garde%20nationale%20-%20J%20742%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5160,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5160\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97642919": {
+      "uri": "http://www.wikidata.org/entity/Q97642919",
+      "createur": "http://www.wikidata.org/entity/Q358195",
+      "createurLabel": "George Engleheart",
+      "titre_fr": "Portrait d'une jeune femme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Engleheart%2C%20George%20-%20Portrait%20d%27une%20jeune%20femme%20-%20J%20726%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5161,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5161\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97651302": {
+      "uri": "http://www.wikidata.org/entity/Q97651302",
+      "createur": "http://www.wikidata.org/entity/Q1523362",
+      "createurLabel": "Jean-Laurent Mosnier",
+      "titre_fr": "Portrait présumé de la comtesse d'Artois",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mosnier%2C%20Jean-Laurent%20-%20Portrait%20pr%C3%A9sum%C3%A9%20de%20la%20comtesse%20d%27Artois%20-%20J%20735%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5162,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5162\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97642889": {
+      "uri": "http://www.wikidata.org/entity/Q97642889",
+      "createur": "http://www.wikidata.org/entity/Q1064648",
+      "createurLabel": "Charles Guillaume Alexandre Bourgeois",
+      "titre_fr": "Portrait d'un jeune homme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bourgeois%2C%20Charles-Guillaume-Alexandre%20-%20Portrait%20d%27un%20jeune%20homme%20-%20J%20700%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5163,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5163\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97651307": {
+      "uri": "http://www.wikidata.org/entity/Q97651307",
+      "createur": "http://www.wikidata.org/entity/Q6969811",
+      "createurLabel": "Nathaniel Plimer",
+      "titre_fr": "Portrait de Miss Bradley",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Plimer%2C%20Nathaniel%20-%20Portrait%20de%20Miss%20Bradley%20-%20J%20722%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5164,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5164\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97651308": {
+      "uri": "http://www.wikidata.org/entity/Q97651308",
+      "createur": "http://www.wikidata.org/entity/Q5444884",
+      "createurLabel": "Ferdinando Quaglia",
+      "titre_fr": "Portrait d'une jeune femme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Quaglia%2C%20Paolo-Ferdinando%20-%20Portrait%20d%27une%20jeune%20femme%20-%20J%20718%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5165,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5165\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97643469": {
+      "uri": "http://www.wikidata.org/entity/Q97643469",
+      "createur": "http://www.wikidata.org/entity/Q13537178",
+      "createurLabel": "Nathaniel, I Hone",
+      "titre_fr": "Portrait de jeune femme au fichu bleu",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Hone%2C%20Nathaniel%20-%20Portrait%20de%20jeune%20femme%20au%20fichu%20bleu%20-%20J789%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5166,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5166\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97642917": {
+      "uri": "http://www.wikidata.org/entity/Q97642917",
+      "createur": "http://www.wikidata.org/entity/Q715909",
+      "createurLabel": "Louis-Léopold Boilly",
+      "titre_fr": "Portrait présumé de Lucile Desmoulins",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Boilly%2C%20Louis%20L%C3%A9opold%20-%20Portrait%20pr%C3%A9sum%C3%A9%20de%20Lucile%20Desmoulins%20-%20J%20725%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5167,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5167\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97642928": {
+      "uri": "http://www.wikidata.org/entity/Q97642928",
+      "createur": "http://www.wikidata.org/entity/Q43180611",
+      "createurLabel": "Jean-Baptiste Weyler",
+      "titre_fr": "Portrait d'un fermier général",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Weyler%2C%20Jean-Baptiste%20-%20Portrait%20d%27un%20fermier%20g%C3%A9n%C3%A9ral%20-%20J%20733%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5168,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5168\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97653562": {
+      "uri": "http://www.wikidata.org/entity/Q97653562",
+      "createur": "http://www.wikidata.org/entity/Q66762602",
+      "createurLabel": "Louise Weyler-Kugler",
+      "titre_fr": "Portrait d'un jeune garçon vêtu de jaune",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Weyler-Kugler%2C%20Louise%20-%20Portrait%20d%27un%20jeune%20gar%C3%A7on%20v%C3%AAtu%20de%20jaune%20-%20J792%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5169,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5169\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97642930": {
+      "uri": "http://www.wikidata.org/entity/Q97642930",
+      "createur": "http://www.wikidata.org/entity/Q21460118",
+      "createurLabel": "François Ferrière",
+      "titre_fr": "Portrait d'une jeune femme en perruque bouclée",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Ferri%C3%A8re%2C%20Fran%C3%A7ois%20-%20Portrait%20d%27une%20jeune%20femme%20en%20perruque%20boucl%C3%A9e%20-%201993.5%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5170,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5170\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97643418": {
+      "uri": "http://www.wikidata.org/entity/Q97643418",
+      "createur": "http://www.wikidata.org/entity/Q18508479",
+      "createurLabel": "Louis Marie Sicard",
+      "titre_fr": "Portrait d'une jeune femme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Sicard%2C%20Louis-Marie%20%28dit%20Sicardi%29%20-%20Portrait%20d%27une%20jeune%20femme%20-%20J%20755%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5171,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5171\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97642920": {
+      "uri": "http://www.wikidata.org/entity/Q97642920",
+      "createur": "http://www.wikidata.org/entity/Q18671476",
+      "createurLabel": "Horace Hone",
+      "titre_fr": "Portrait d'une jeune femme appuyée sur ses bras croisés",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Hone%2C%20Horace%20-%20Portrait%20d%27une%20jeune%20femme%20appuy%C3%A9e%20sur%20ses%20bras%20crois%C3%A9s%20-%20J%20777%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5172,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5172\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q96616189": {
+      "uri": "http://www.wikidata.org/entity/Q96616189",
+      "createur": "http://www.wikidata.org/entity/Q3163712",
+      "createurLabel": "Jean-Antoine Laurent",
+      "titre_fr": "Les Demoiselles de Tourzel, assises près d'un ruisseau",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Les%20demoiselles%20de%20Tourzel.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5173,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5173\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97044355": {
+      "uri": "http://www.wikidata.org/entity/Q97044355",
+      "createur": "http://www.wikidata.org/entity/Q3257395",
+      "createurLabel": "Lié Louis Périn",
+      "titre_fr": "Portrait de Mme Pinson, debout, de face, tenant une palette et des pinceaux",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Isabelle%20Pinson%2C%20by%20Li%C3%A9%20Louis%20P%C3%A9rin.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5174,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5174\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q99518190": {
+      "uri": "http://www.wikidata.org/entity/Q99518190",
+      "createur": "http://www.wikidata.org/entity/Q1851224",
+      "createurLabel": "Paolo De Matteis",
+      "titre_fr": "Vierge de l’Annonciation",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Donation%20Ballabio%20de%20Matteis.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5175,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5175\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q100695032": {
+      "uri": "http://www.wikidata.org/entity/Q100695032",
+      "createur": "http://www.wikidata.org/entity/Q1472208",
+      "createurLabel": "Jean-Baptiste Jacques Augustin",
+      "titre_fr": "Portrait de Mademoiselle Fanny Charrin, élève du miniaturiste, désignant un temple de l'Amitié",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Fanny%20Charrin%20by%20Jean-Baptiste%20Jacques%20Augustin.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5176,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5176\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106303487": {
+      "uri": "http://www.wikidata.org/entity/Q106303487",
+      "createur": "http://www.wikidata.org/entity/Q1451014",
+      "createurLabel": "François Dumont",
+      "titre_fr": "Portrait de la reine Marie-Antoinette, de sa fille et de son second fils",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Fran%C3%A7ois%20Dumont%20-%20Marie%20Antoinette%20et%20ses%20enfants.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5177,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5177\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104521653": {
+      "uri": "http://www.wikidata.org/entity/Q104521653",
+      "createur": "http://www.wikidata.org/entity/Q3165637",
+      "createurLabel": "Jean-François Gérard",
+      "titre_fr": "Portrait d'Henri-Gérard Fontallard jouant de la flûte traversière",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Fontallard%2C%20Jean-Fran%C3%A7ois%20-%20Portrait%20d%27Henri-G%C3%A9rard%20Fontallard%20jouant%20de%20la%20fl%C3%BBte%20traversi%C3%A8re%20%28J727%29%20-%20J727%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5178,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5178\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106723999": {
+      "uri": "http://www.wikidata.org/entity/Q106723999",
+      "createur": "http://www.wikidata.org/entity/Q104197260",
+      "createurLabel": "Marie-Adélaïde Duvieux",
+      "titre_fr": "Portrait d'homme assis",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Marie-Adelaide%20Duvieux%20-%20Portrait%20of%20a%20Sitting%20Man%20%28Louvre%20RF%2030758%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5179,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5179\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97654649": {
+      "uri": "http://www.wikidata.org/entity/Q97654649",
+      "createur": "http://www.wikidata.org/entity/Q52154282",
+      "createurLabel": "Ignazio Giovanni Vittoriano Campana",
+      "titre_fr": "Portrait d'une jeune femme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Campana%2C%20Pio-Ignazio-Vittoriano%20-%20Portrait%20d%27une%20jeune%20femme%20-%20J%20764%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5180,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5180\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28065717": {
+      "uri": "http://www.wikidata.org/entity/Q28065717",
+      "createur": "http://www.wikidata.org/entity/Q335022",
+      "createurLabel": "David Teniers le Jeune",
+      "titre_fr": "La Vierge, l'Enfant Jésus et sainte Dorothée",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Teniers%20after%20Titian%20-%20Madonna%20and%20Child%20with%20St%20Dorothy.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5181,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5181\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28074941": {
+      "uri": "http://www.wikidata.org/entity/Q28074941",
+      "createur": "http://www.wikidata.org/entity/Q335022",
+      "createurLabel": "David Teniers le Jeune",
+      "titre_fr": "Héro et Léandre : Léandre noyé retrouvé par les Néréides, d'après Fetti",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Teniers%20after%20Domenico%20Fetti%20-%20Leander%20Found%20by%20the%20Nereids.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5182,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5182\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104510967": {
+      "uri": "http://www.wikidata.org/entity/Q104510967",
+      "createur": "http://www.wikidata.org/entity/Q104513751",
+      "createurLabel": "François-Antoine Romany",
+      "titre_fr": "Portrait en buste d'une jeune femme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Fran%C3%A7ois-Antoine%20Romany%20-%20Portrait%20en%20buste%20d%27une%20jeune%20femme%20-%20J%20734%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5183,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5183\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104510971": {
+      "uri": "http://www.wikidata.org/entity/Q104510971",
+      "createur": "http://www.wikidata.org/entity/Q104518399",
+      "createurLabel": "Thomas Prieur",
+      "titre_fr": "Portrait du Président de Lamoignon",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Prieur%20-%20Portrait%20du%20Pr%C3%A9sident%20de%20Lamoignon%20-%20J796%20-%20Mus%C3%A9e%20Cognacq-Jay%20-%201.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5184,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5184\\/category\\/35\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q107642836": {
+      "uri": "http://www.wikidata.org/entity/Q107642836",
+      "createur": "http://www.wikidata.org/entity/Q104197260",
+      "createurLabel": "Marie-Adélaïde Duvieux",
+      "titre_fr": "Portrait d'homme en redingote à rayures grises et gilet rouge",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Marie-Adelaide%20Duvieux%20-%20Portrait%20of%20a%20man%20in%20a%20grey-striped%20frock%20coat%20and%20a%20red%20waistcoat%20%28Albertina%20-%2029257%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":5185,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5185\\/category\\/35\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

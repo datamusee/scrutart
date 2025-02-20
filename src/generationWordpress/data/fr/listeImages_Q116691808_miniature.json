@@ -1,0 +1,4 @@
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?qid { wd:Q116691808 }\n                                values ?classRel { wdt:P31 }\n                                values ?class { wd:Q16743958 wd:Q16743958 }\n                                values ?rel { wdt:P136 }\n                                ?uri ?rel ?qid; ?classRel  wd:Q3305213 ;\n                                    wdt:P170 ?createur ;\n                                    wdt:P18 ?image .\n                                ?qid ?classRel ?class .\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?qid ?classRel ?class .\n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": []
+}
