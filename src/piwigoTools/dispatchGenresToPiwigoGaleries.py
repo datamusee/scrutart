@@ -1,6 +1,7 @@
-# je pense que ce processus sert à associer des images aux galeries correspondant à leur genre
+# ce processus sert à associer des images aux galeries correspondant à leur genre
 # donc, ça prend des images déjà dans piwigo, par exemple parce qu'elles ont été associées à un artiste
-# et on cherche leur genre et on les associe à la galerie/categorie corres pondante dans piwigo
+# et on cherche leur genre dans wikidata (on crée la catégorie si elle n'existe pas)
+# et on les associe à la galerie/categorie correspondante dans piwigo
 import re
 import requests
 import configPiwigo as cp
@@ -9,7 +10,7 @@ import json
 import time
 import SPARQLWrapper as sw
 import logging
-from src.generationWordpress.WikimediaAccess import WikidataObject
+from src.generationWordpress.WikimediaAccess import WikimediaAccess
 
 def sparqlQuery(endpoint, query, format="json"):
     sparql = sw.SPARQLWrapper2(endpoint)  # implicit JSON format
@@ -92,6 +93,32 @@ def getImageId(im):
                 imId = match.group(1)
     return imId
 
+def getArtworkWikidataGenres(uri): # uri de l'artwork
+    crtquery = queryGenres.replace("__ARTWORKENTITY__", uri)
+    qid = uri.replace("http://www.wikidata.org/entity/", "")
+    wObj = WikimediaAccess(qid)
+    res = wObj.sparqlQuery(crtquery)
+    genres = [gr["genre"].value for gr in res.bindings] if res else None
+    return genres
+
+def assertGenresAssociatedToImageExistsInPiwigo(im, genres, genresDict, dictim, genreThreshold=50):
+    change = False
+    for genre in genres:
+        if genre in genresDict:
+            if int(genresDict[genre]["c"]) >= genreThreshold:
+                #     créer la catégorie si elle n'existe pas et qu'elle est significative? (>=genreThreshold)
+                # ou seulement l'utiliser si elle existe déjà et plutot utiliser categoriesCreations.py pour la créer
+                if "idpiwigo" in genresDict[genre]:
+                    category_id = genresDict[genre]["idpiwigo"]
+                    imId = getImageId(im) # id piwigo de l'image si elle est déjà dans piwigo
+                    if imId: # si image déjà dans piwigo
+                        if (not "genres" in im) or (not genre in im["genres"]): # si le genre n'est pas déjà associé à l'image
+                            if addCategoryToPiwigoImage(category_id, imId): # ajouter  à l'image la catégorie associée au genre
+                                if not "genres" in dictim[uri]: dictim[uri]["genres"] = []
+                                dictim[uri]["genres"].append(genre)
+                                change = True
+    return dictim, change
+
 if __name__=="__main__":
     sleep = 2
     creatorsToProcess = []
@@ -107,10 +134,21 @@ if __name__=="__main__":
         for genre in listGenres:
             genresDict[genre["genre"]] = genre
     for creator in creatorsToProcess:
+        #### les créateurs récupérés sont décrits dans des dictionnaires json structurés comme dans cet exemple:
+        #### {
+        ####    "categoryName": "Sisley",
+        ####    "piwigoCategory": 44,
+        ####    "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/listeImagesAlfredSisley.json"
+        #### },
+        #### ce qui suppose d'avoir choisi un nom pour la catégorie, obtenu le numéro de la catégorie dans Piwigo
+        #### et d'avoir un fichier qui fournit une liste d'images pour ce créateur
+        #### le but est donc d'associer des genres comme tags aux images existantes pour ces créateurs
         categoryName = creator["categoryName"]
         piwigoCategory = creator["piwigoCategory"]
         listimagespath = creator["listimagespath"]
         dictim = {}
+        # on arrête le traitement pour un créateur si sa liste d'images n'est pas en version >1.0.1 (cad dict)
+        # devrait jouer sur des mises à jour de scrutart state
         with open(listimagespath, "r", encoding="UTF-8") as fdata:
             data = json.loads(fdata.read())
             if (not "version" in data) or (data["version"]=="1.0.1"):
@@ -120,36 +158,25 @@ if __name__=="__main__":
             freqsav = 5
             idxsav = 0
             change = False
-            for uri, im in dictim.items():
-                if ("posted" in im) and (im["posted"]):
+            for uri, im in dictim.items():    # pour toutes les images associées à ce créateur
+                if ("posted" in im) and (im["posted"]):  # si l'image a déjà été envoyée à Piwigo
                     # find genre(s) avec label in wikidata for the image
-                    print(uri)
-                    crtquery = queryGenres.replace("__ARTWORKENTITY__", uri)
-                    qid = uri.replace("http://www.wikidata.org/entity/", "")
-                    wObj = WikidataObject(qid)
-                    res = wObj.sparqlQuery(crtquery)
-                    if not res: continue
-                    genres = [ gr["genre"].value for gr in res.bindings]
-                    for genre in genres:
-                        if genre in genresDict:
-                            if int(genresDict[genre]["c"])>=genreThreshold:
-                                #     créer la catégorie si elle n'existe pas et qu'elle est significative? (>=genreThreshold)
-                                # ou seulement l'utiliser si elle existe déjà et plutot utiliser categoriesCreations.py pour la créer
-                                if "idpiwigo" in  genresDict[genre]:
-                                    category_id = genresDict[genre]["idpiwigo"]
-                                    imId = getImageId(im)
-                                    if imId:
-                                        if (not "genres" in im) or (not genre in im["genres"]):
-                                            if addCategoryToPiwigoImage(category_id, imId):
-                                                if not "genres" in dictim[uri]: dictim[uri]["genres"]=[]
-                                                dictim[uri]["genres"].append(genre)
-                    time.sleep(sleep)
+                    # print(uri)
+                    genres = getArtworkWikidataGenres(uri)
+                    if not genres: continue
+                    dictim, change = assertGenresAssociatedToImageExistsInPiwigo(im, genres, genresDict)
+                    time.sleep(sleep)  # pour pas surcharger wdqs!!!
                     if idxsav>=freqsav:
+                        # sauvegarde à une certaine fréquence l'état de dictim
+                        # devrait jouer sur des mises à jour de scrutart state
                         idxsav = 0
                         with open(listimagespath, "w", encoding="UTF-8") as fdata:
                             data["dict"] = dictim
                             json.dump(data, fdata, ensure_ascii=False)
+                        change = False
             if change:
+                # sauvegarde finale de l'état de dictim
+                # devrait jouer sur des mises à jour de scrutart state
                 with open(listimagespath, "w", encoding="UTF-8") as fdata:
                     change = False
                     data["dict"] = dictim
