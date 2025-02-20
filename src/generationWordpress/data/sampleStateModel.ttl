@@ -1,0 +1,38 @@
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kgdc: <https://kg.grains-de-culture.fr/entity/> .
+@prefix pgdc: <https://kg.grains-de-culture.fr/prop/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wdt:P136 rdfs:label "genre"@fr .
+wdt:P31 rdfs:label "nature de l'élément"@fr .
+wdt:P170 rdfs:label "créateur"@fr .
+wdt:P18 rdfs:label "image"@fr .
+
+
+kgdc:sparql_uuid1 # uuid1 à remplacer par un uuid calculé avec la requête sparql
+    kgdc:sparql "ici requête sparql utilisée pour générer des choses" .
+
+kgdc:Q17491676
+    pgdc:sparql_gen kgdc:sparql_uuid1;
+    pgdc:uri wd:Q17491676;
+    wdt:P170 wd:Q665818;
+    rdfs:label "Idylle"@fr;
+    wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Idylle-Jean-Jacques%20Henner-Orsay.jpg";
+    pgdc:piwigo_image "https://galeries.grains-de-culture.fr/picture.php?/829/category/17" .
+
+wd:Q665818 rdfs:label "Jean-Jacques Henner"@fr .
+wd:Q1047337
+    rdfs:label "scène de genre"@fr;
+    wdt:P31 wdt:P136;
+    pgdc:instance_count kgdc:Q1047337_icount_reif .
+
+kgdc:Q1047337_icount_reif
+    pgdc:value 16045 ;
+    pgdc:date "2024-12-03"^^xsd:date .
+
+kgdc:gal24
+    rdfs:label "Galerie de scènes de genre"@fr;
+    pgdc:id_piwigo 24;
+    pgdc:comment "Cette galerie présente des peintures du genre 'scène de genre'. Ces images, libres de droit, ont été sélectionnées à partir de données de Wikidata et d'images de Wikimedia Commons. Une analyse de la présence du genre 'scène de genre' dans Wikidata se trouve dans <a href='https://scrutart.grains-de-culture.fr/'>ScrutArt</a>. Au 22/11/2024, Wikidata contenait 16045 peintures de ce genre."@fr .
