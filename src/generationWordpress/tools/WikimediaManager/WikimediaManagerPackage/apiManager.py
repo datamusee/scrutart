@@ -15,12 +15,11 @@ from flask_socketio import SocketIO, emit, join_room, leave_room
 
 from configPrivee  import config
 
+
 """
 voir https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
 pour wikimedia
 """
-
-
 class APIRequestManager:
     _instances = {}
 
@@ -232,7 +231,6 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 # Gérer les connexions WebSocket (optionnel, pour garder une trace des clients connectés)
 connected_clients = {}
 
-
 @socketio.on('custom_event') # pour test avec trialSOcketIOInClass
 def handle_custom_event():
     emit('custom_event', data={"message": "Custom event reçu."})
@@ -357,16 +355,17 @@ def api_request():
     client_id = request.args.get("client_id")
     if not client_id and "client_id" in request.json:
         client_id = request.json["client_id"]
+    url = request.args.get("url", None)
+    if not url and "url" in request.json:
+        url = request.json["url"]
     if request.method == "POST":
         data = request.json
-        url = data.get("url")
         headers = data.get("headers", {})
         payload = data.get("payload", None)
         cache_duration = data.get("cache_duration", 0)
         api_method = data.get("method", "POST").upper()  # Default to POST for Web API
         request_kwargs = data.get("request_kwargs", {})
     elif request.method == "GET":
-        url = request.args.get("url")
         headers = request.args.get("headers")
         cache_duration = request.args.get("cache_duration", type=int, default=0)
         api_method = request.args.get("method", "GET").upper()  # Default to GET for Web API
@@ -441,4 +440,4 @@ def home():
 if __name__ == "__main__":
     # app.run(debug=False)
     # socketio.run(app, debug=False)
-    socketio.run(app, host='127.0.0.1', port=5000, debug=False)
+    socketio.run(app, host='127.0.0.1', port=6000, debug=False)
