@@ -1,11 +1,11 @@
 import requests
 import requests
 #import generationDocuments.generationWordpress.configPrivee as configPrivee
-import src.generationWordpress.configPrivee as configPrivee
+import src.generationWordpress.configPrivee2 as configPrivee
 
 #api_url = f"{configPrivee.WORDPRESS_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_PASSWORD_APP}"
 #auth = (configPrivee.WORDPRESS_USERNAME, configPrivee.WORDPRESS_PASSWORD_APP)
-auth = (configPrivee.WORDPRESS_O2_USERNAME, configPrivee.WORDPRESS_O2_PASSWORD_APP)
+auth = (configPrivee.WORDPRESS_O2_API2USERNAME, configPrivee.WORDPRESS_O2_API2PASSWORD_APP)
 
 def createPageWP(titre, contenu, statut="draft"):
     data = {
@@ -14,7 +14,8 @@ def createPageWP(titre, contenu, statut="draft"):
         "status": statut,
         "lang":"fr"
     }
-    api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
+    # api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
+    api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts"
     response = requests.post(api_url, json=data, auth=auth)
     #response = requests.get(configPrivee.WORDPRESS_API_URL)
     return response.json()
@@ -41,8 +42,8 @@ if __name__=="__main__":
     r1 = createPageWP(titre1, contenuSansLien1)
     r2 = createPageWP(titre2, contenuSansLien2)
     # préparer le contenu de chacune des pages chaque page référençant l'autre
-    link1 = f"{configPrivee.WORDPRESS_O2_BASE_URL}?p="+str(r1["id"])
-    link2 = f"{configPrivee.WORDPRESS_O2_BASE_URL}?p="+str(r2["id"])
+    link1 = f"{configPrivee.WORDPRESS_O2_BASE_URL}?p="+str(r1["id"]) # peut-être ajouter / avant le ?
+    link2 = f"{configPrivee.WORDPRESS_O2_BASE_URL}?p="+str(r2["id"]) # peut-être ajouter / avant le ?
     contenuAvecLienVersPage2 = """
     <!-- wp:paragraph -->
     <p>Lien vers <a href="{lienpage}" title="">page 2</a></p>

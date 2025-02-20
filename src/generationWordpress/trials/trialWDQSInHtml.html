@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouvements associés aux peintures</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mouvements artistiques associés aux peintures</h1>
+  <p>Voici une liste des mouvements artistiques associés aux peintures, triée par le nombre de peintures associées :</p>
+  <table id="resultsTable">
+    <thead>
+      <tr>
+        <th>Mouvement artistique</th>
+        <th>Nombre de peintures</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="2">Chargement des données...</td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    // Requête SPARQL
+    const query = `
+      SELECT ?movement ?movementLabel (COUNT(?painting) AS ?paintingCount)
+      WHERE {
+        ?painting wdt:P31 wd:Q3305213.
+        ?painting wdt:P135 ?movement.
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+      }
+      GROUP BY ?movement ?movementLabel
+      ORDER BY DESC(?paintingCount)
+      LIMIT 50
+    `;
+
+    // Point d'accès SPARQL de Wikidata
+    const endpointUrl = "https://query.wikidata.org/sparql";
+
+    // Fonction pour exécuter la requête SPARQL et afficher les résultats
+    function fetchData() {
+      const queryUrl = endpointUrl + "?query=" + encodeURIComponent(query) + "&format=json";
+
+      $.getJSON(queryUrl, function(data) {
+        const results = data.results.bindings;
+        const tbody = $("#resultsTable tbody");
+        tbody.empty(); // Vider la table avant d'ajouter les nouvelles données
+
+        results.forEach(row => {
+          const movementLabel = row.movementLabel.value;
+          const paintingCount = row.paintingCount.value;
+
+          const movementLink = row.movement.value; // URL de l'élément Wikidata
+          const movementCell = `<a href="${movementLink}" target="_blank">${movementLabel}</a>`;
+
+          tbody.append(`
+            <tr>
+              <td>${movementCell}</td>
+              <td>${paintingCount}</td>
+            </tr>
+          `);
+        });
+      }).fail(function() {
+        $("#resultsTable tbody").html("<tr><td colspan='2'>Erreur lors du chargement des données.</td></tr>");
+      });
+    }
+
+    // Charger les données au démarrage
+    $(document).ready(fetchData);
+  </script>
+</body>
+</html>
