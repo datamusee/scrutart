@@ -10,18 +10,26 @@ import time
 import json
 import os
 import src.generationWordpress.PageBuilder as PageBuilder
+import SPARQLWrapper as sw
+from entitiesList import entitiesList
+
+filterEntities = entitiesList
+def checkIfSparqlScrutartStateEndpointIsAvailable(urlendpoint):
+    query = """select distinct ?s            where {              ?s ?p ?o            } LIMIT 1        """
+    sparqlScrutartWrapper = sw.SPARQLWrapper2(urlendpoint)  # implicit JSON format
+    sparqlScrutartWrapper.setQuery(query)
+    try:
+        res = sparqlScrutartWrapper.queryAndConvert()
+        return True if res and res.bindings else False
+    except Exception as e:
+        return False
 
 # ne traiter que ceux qui sont dans filterEntities en supprimant la page si elle existe déjà
-filterEntities = [
-    # "Q206820", # Anders Zorn
-    # "Q297838", # José de Ribera
-    # "Q730008", # Bruno Liljefors
-    "Q45205", # Dufy
-    # "Q5597", # Raphaël
-    # "Q187310", # Carl Larsson
-    # "Q295144" # Caillebotte
-    # "Q61064" # Kandinsky
-]
+sparqlScrutartStateEndpoint = "http://127.0.0.1:3030/scrutartState/query"
+if not checkIfSparqlScrutartStateEndpointIsAvailable(sparqlScrutartStateEndpoint):
+    print(
+        f"le serveur scrutart state (au 12/2/2025, {sparqlScrutartStateEndpoint} (D:\Outils\Semantic/apache-jena-fuseki-4.8.0/fuseki-server) doit avoir été lancé avant de lancer cette application")
+    exit(7777)
 filelist = os.listdir("./pages/creator/fr")
 for qid in filterEntities:
     if "{qid}.wp".format(qid=qid) in filelist:
