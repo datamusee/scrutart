@@ -1,3 +1,5 @@
+# fichier de données avec une liste de QID
+# cette liste peut servir en entrée comme liste de QID à traiter: générer une page WP, créer une galerie...
 entitiesList = [
     "Q5597", # Raphaël
     "Q34618", # courbet
