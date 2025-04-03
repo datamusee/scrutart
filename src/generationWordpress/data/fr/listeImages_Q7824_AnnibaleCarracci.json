@@ -1,0 +1,195 @@
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q7824 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q106498504": {
+      "uri": "http://www.wikidata.org/entity/Q106498504",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "Prédication de Saint Jean-Baptiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibal%20Carrache%20-%20Pr%C3%A9dication%20de%20Saint%20Jean-Baptiste.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13651,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13651\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572451": {
+      "uri": "http://www.wikidata.org/entity/Q18572451",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "La Nativité",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibale%20Carracci%2C%20Adorazione%20dei%20pastori%2C%20Louvre.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13652,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13652\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572400": {
+      "uri": "http://www.wikidata.org/entity/Q18572400",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "La Naissance de la Vierge",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibale%20Carracci%2C%20Nativit%C3%A0%20della%20Vergine%2C%20Louvre.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13653,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13653\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572443": {
+      "uri": "http://www.wikidata.org/entity/Q18572443",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "Hercule enfant étouffant les serpents",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibale%20Carracci%20Ercole%20fanciullo%20strozza%20i%20serpenti.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13654,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13654\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572292": {
+      "uri": "http://www.wikidata.org/entity/Q18572292",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "L'Apparition de la Vierge à saint Luc et à sainte Catherine",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibale%20Carracci%20-%20The%20Virgin%20Appears%20to%20Sts%20Luke%20and%20Catherine%20-%20WGA4431.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13655,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13655\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572402": {
+      "uri": "http://www.wikidata.org/entity/Q18572402",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "La Vierge aux cerises",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carracci%20-%20La%20Vierge%20aux%20cerises%2C%20INV%20194%20%3B%20MR%20132.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13656,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13656\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18573487": {
+      "uri": "http://www.wikidata.org/entity/Q18573487",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "La Lapidation de saint Étienne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibale%20Carracci%20-%20The%20Martyrdom%20of%20St%20Stephen%20-%20WGA4450.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carracci%20-%20La%20Lapidation%20de%20saint%20%C3%89tienne%2C%201600%20-%201605%2C%20INV%20203%20%3B%20MR%20121.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13657,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13657\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q935815": {
+      "uri": "http://www.wikidata.org/entity/Q935815",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "La Résurrection du Christ",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibale%20carracci%2C%20resurrezione%20di%20cristo%2C%201593.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13658,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13658\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572441": {
+      "uri": "http://www.wikidata.org/entity/Q18572441",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "Le Sacrifice d'Abraham",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Isacco.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13659,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13659\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572448": {
+      "uri": "http://www.wikidata.org/entity/Q18572448",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "La Lapidation de saint Étienne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carracci%2C%20Annibale%20-%20The%20Stoning%20of%20St%20Stephen%20-%201603-04.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13660,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13660\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18224327": {
+      "uri": "http://www.wikidata.org/entity/Q18224327",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "Pietà avec saint François et sainte Marie-Madeleine",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibale%20Carracci%20-%20Piet%C3%A0%20with%20Sts%20Francis%20and%20Mary%20Magdalen%20-%20WGA4443.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13661,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13661\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q12060616": {
+      "uri": "http://www.wikidata.org/entity/Q12060616",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "La Chasse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Chasse%20-%20Annibale%20Carracci%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20210%20%3B%20MR%20127.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13662,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13662\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64651951": {
+      "uri": "http://www.wikidata.org/entity/Q64651951",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "L'Aurore parsemant des fleurs et tenant une torche",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibale%20Carracci%20Aurora%20Museo%20Cond%C3%A9%20Chantilly.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4790\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4790\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64651948": {
+      "uri": "http://www.wikidata.org/entity/Q64651948",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "La Nuit portant le Sommeil et la Mort",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibale%20Carracci%20La%20Notte%20Museo%20Cond%C3%A9%20Chantilly.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4791\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4791\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59543920": {
+      "uri": "http://www.wikidata.org/entity/Q59543920",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "L'apparition de la Vierge et de l'Enfant Jésus à saint François",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Carracci%20-%20The%20Vision%20of%20St.%20Francis.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13663,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13663\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64651945": {
+      "uri": "http://www.wikidata.org/entity/Q64651945",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "L'Ange Gabriel dans une gloire d'anges musiciens et de chérubins",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Annibale%20Carracci%2C%20Arcangelo%20Gabriele%2C%20Museo%20Cond%C3%A9.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13664,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13664\\/category\\/436\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64826829": {
+      "uri": "http://www.wikidata.org/entity/Q64826829",
+      "createur": "http://www.wikidata.org/entity/Q7824",
+      "createurLabel": "Annibale Carracci",
+      "titre_fr": "Amour répandant des fleurs",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/CARRACCI%20Annibale%20%28atelier%29%20-%20Amour%20r%C3%A9pendant%20des%20fleurs%2C%2000000104667.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13665,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13665\\/category\\/436\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

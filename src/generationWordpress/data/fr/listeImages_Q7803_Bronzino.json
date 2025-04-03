@@ -1,0 +1,62 @@
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q7803 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q18572239": {
+      "uri": "http://www.wikidata.org/entity/Q18572239",
+      "createur": "http://www.wikidata.org/entity/Q7803",
+      "createurLabel": "Bronzino",
+      "titre_fr": "Le Christ en jardinier apparaît aux trois Marie ou Noli me tangere",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Christ%20en%20jardinier%20appara%C3%AEt%20aux%20trois%20Marie%20ou%20Noli%20Me%20tangere%20-%20Il%20Bronzino%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20130%20%3B%20MR%2079.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12549,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12549\\/category\\/758\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q74810157": {
+      "uri": "http://www.wikidata.org/entity/Q74810157",
+      "createur": "http://www.wikidata.org/entity/Q7803",
+      "createurLabel": "Bronzino",
+      "titre_fr": "Christ en croix",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino-Christ-Nice.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12550,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12550\\/category\\/758\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572243": {
+      "uri": "http://www.wikidata.org/entity/Q18572243",
+      "createur": "http://www.wikidata.org/entity/Q7803",
+      "createurLabel": "Bronzino",
+      "titre_fr": "La Sainte Famille avec sainte Élisabeth et le petit saint Jean Baptiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20La%20Sainte%20Famille%20avec%20sainte%20Anne%20et%20le%20petit%20saint%20Jean-Baptiste%2002.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12551,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12551\\/category\\/758\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18609058": {
+      "uri": "http://www.wikidata.org/entity/Q18609058",
+      "createur": "http://www.wikidata.org/entity/Q7803",
+      "createurLabel": "Bronzino",
+      "titre_fr": "Portrait de jeune homme tenant une statuette, dit autrefois Portrait de Baccio Bandinelli (1493-1560)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Portrait%20d%27homme%20tenant%20une%20statuette%2002.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"425\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/425\\/category\\/758\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59501432": {
+      "uri": "http://www.wikidata.org/entity/Q59501432",
+      "createur": "http://www.wikidata.org/entity/Q7803",
+      "createurLabel": "Bronzino",
+      "titre_fr": "Pierantonio Bandini",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Pierantonio%20Bandini%20-%20c.%201550-55.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7393\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7393\\/category\\/758\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}
