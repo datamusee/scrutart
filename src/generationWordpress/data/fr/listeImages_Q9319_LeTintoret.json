@@ -1,0 +1,152 @@
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q9319 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [
+    {
+      "uri": "http://www.wikidata.org/entity/Q115673962",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Portrait d'homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tintoretto%20-%20Portrait%20d%27homme%2C%20MI%201218%20%3B%20D%20848%2C%20Mus%C3%A9e%20Barrois%2C%20Bar-le-Duc.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q121752844",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Renaud et Armide",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Agen%29%20Renaud%20et%20Armide%20-%20Domenico%20Tintoretto%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20d%27Agen.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123557150",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "L'enlèvement du corps de saint Marc par les chrétiens",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tintoretto%20-%20L%27enl%C3%A8vement%20du%20corps%20de%20saint%20Marc%20par%20les%20chr%C3%A9tiens.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q123585683",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Portrait d'un membre de la famille Foscari",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/1954%201097%20IN1.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q107695009",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Vierge dans la gloire",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Narbonne%29%20Vierge%20dans%20la%20Gloire%20-%20Tintoretto%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20Narbonne.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q115676508",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "La Déploration du Christ",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nancy%20%28Meurthe-et-Moselle%29%20-%20Mus%C3%A9e%20des%20beaux-arts%20-%20%22D%C3%A9ploration%20du%20Christ%22%20%28Tintoret%2C%20vers%201580%29%20%2846891141801%29.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q115674476",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "La Piscine probatique",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tintoretto%20-%20La%20Piscine%20probatique%2C%20MI%201182%20%3B%20D%20874%208%2C%20Mus%C3%A9e%20des%20Beaux-Arts%2C%20Rouen.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q107690121",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "L'Amiral Tommaso Contarini",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Narbonne%29%20L%27amiral%20Tommaso%20Contarini%20-%20Le%20Tintoret%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20Narbonne.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18573261",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Homme âgé tenant un mouchoir de la main gauche",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20d%27homme%20%C3%A2g%C3%A9%20tenant%20un%20mouchoir%20-%20Le%20Tintoret%20-%20Q18573261.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18573260",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Suzanne au bain",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tintoretto%20-%20Suzanne%20au%20bain%2C%20INV%20568%20%3B%20MR%20498.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18573258",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Autoportrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tintoretto-selfport.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18573200",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Portrait de gentilhomme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20d%27un%20gentilhomme%2C%20la%20main%20sur%20l%27%C3%A9p%C3%A9e%20-%20Le%20Tintoret%20-%20Q18573200.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18573257",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Le Couronnement de la Vierge, dit Le Paradis",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Tintoretto%20026.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q18917830",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Portrait d'un jeune gentilhomme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20d%27un%20Jeune%20Gentilhomme%20%28Le%20Tintoret%29.JPG"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q3978277",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Suzanne au bain",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Robusti%2C%20called%20Tintoretto%20-%20Susanna%20and%20the%20Elders%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q28952743",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "La Vierge et l'Enfant avec sainte Catherine, saint Augustin, saint Marc et saint Jean Baptiste",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Virgin%20with%20Child%20with%20Saint%20Catherine%20Augustin%20Marc%20and%20John%20the%20Baptist-Tintoretto-MBA%20Lyon%20A122-IMG%200309.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q29650504",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Portrait d'homme barbu",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tintoretto%20-%20Atelier%20de%20-%20Portrait%20d%27homme%20barbu%2C%20MI%20881.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q21675723",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Portrait de Giovanni Paolo Cornaro",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tintoretto%20-%20Portrait%20of%20Giovanni%20Paolo%20Cornaro%20-%201914-CL%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q60577281",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Portrait d'homme, dit de Soranzo",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tintoretto%20-%20Portrait%20d%27homme%2C%20dit%20de%20Soranzo.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q38516028",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "La Descente de Croix",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Descente%20de%20croix-Tintoret%20mg%209995.jpg"
+    },
+    {
+      "uri": "http://www.wikidata.org/entity/Q56678943",
+      "createur": "http://www.wikidata.org/entity/Q9319",
+      "createurLabel": "Le Tintoret",
+      "titre_fr": "Portrait d'homme en buste",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20man%20mg%200130.jpg"
+    }
+  ]
+}

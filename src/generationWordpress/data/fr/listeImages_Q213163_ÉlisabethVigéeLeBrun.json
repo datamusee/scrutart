@@ -1,0 +1,448 @@
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q213163 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q119983291": {
+      "uri": "http://www.wikidata.org/entity/Q119983291",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "La duchesse de Polignac coiffée d'un chapeau de paille",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisabeth%20Vig%C3%A9e%20Le%20Brun%20-%20La%20duchesse%20de%20Polignac%20coiff%C3%A9e%20d%27un%20chapeau%20de%20paille%20%281782%29%20-%20Wadsworth%20Atheneum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12355,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12355\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q122529272": {
+      "uri": "http://www.wikidata.org/entity/Q122529272",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Marquis de Choiseul",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Greuze%20-%20Renaud%20C%C3%A9sar%20de%20Choiseul%20Praslin%20-%201775.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12356,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12356\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q114744029": {
+      "uri": "http://www.wikidata.org/entity/Q114744029",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait de Madame du Cluzel",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Chartres%20%28Eure-et-Loir%29%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20-%20Portrait%20de%20la%20comtesse%20Marie-Th%C3%A9r%C3%A8se%20Antoinette%20de%20Cluzel%20%28Louise%20Elisabeth%20Vig%C3%A9e%20le%20Brun%2C%201755-1842%29%20%2848017636227%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12357,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12357\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q126915291": {
+      "uri": "http://www.wikidata.org/entity/Q126915291",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait d'Antoinette Saint-Huberty (1756-1812), actrice française.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vigee-Lebrun%20Saint-Huberty.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12358,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12358\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123170900": {
+      "uri": "http://www.wikidata.org/entity/Q123170900",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Duchesse de Guiche",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Duchesse%20de%20Guiche.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12359,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12359\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q130384609": {
+      "uri": "http://www.wikidata.org/entity/Q130384609",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Lady Hamilton en sibylle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Elisabeth%20Vig%C3%A9e%20Le%20Brun%20-%20Emma%20Hart%2C%20later%20Lady%20Hamilton%2C%20as%20the%20Cumaen%20Sibyl.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12360,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12360\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q115672413": {
+      "uri": "http://www.wikidata.org/entity/Q115672413",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Giovanni Paisiello (1741-1816), compositeur",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/PaiselloVigeeLeBrun.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12361,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12361\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q117264447": {
+      "uri": "http://www.wikidata.org/entity/Q117264447",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Grande-duchesse Élisabeth Alexeïevna",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Empress%20Elisabeth%20Alexeievna%20by%20Vigee-Le%20Brun%20%281795%2C%20Mus%C3%A9e%20Fabre%20-%20Montpellier%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12362,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12362\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q62268681": {
+      "uri": "http://www.wikidata.org/entity/Q62268681",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait de Madame de Moreton, La Comtesse de Moreton de Chabrillan",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Elisabeth%20Louise%20Vig%C3%A9e-LeBrun%20-%20Portrait%20de%20Madame%20de%20Moreton%2C%20La%20Comtesse%20de%20Moreton%20de%20Chabrillan.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7530\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7530\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q15723876": {
+      "uri": "http://www.wikidata.org/entity/Q15723876",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait de la Baronne de Crussol",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vig%C3%A9e%20Le%20Brun%20Baronne%20de%20Crussol%20%28RO%20307%29%202.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"227\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/227\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19273465": {
+      "uri": "http://www.wikidata.org/entity/Q19273465",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Joseph Vernet (1714-1789), peintre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisabeth-Louise%20Vig%C3%A9e-Le%20Brun%20-%20Joseph%20Vernet%20%281778%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"406\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/406\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19273424": {
+      "uri": "http://www.wikidata.org/entity/Q19273424",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Madame Vigée-Le Brun et sa fille, Jeanne-Lucie-Louise, dite Julie (1780-1819)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Self-portrait%20with%20Her%20Daughter%20by%20Elisabeth-Louise%20Vig%C3%A9e%20Le%20Brun.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5794\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5794\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q23037773": {
+      "uri": "http://www.wikidata.org/entity/Q23037773",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait de l'artiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vig%C3%A9e-Lebrun.%20Autoportrait.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5754\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5754\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q23653935": {
+      "uri": "http://www.wikidata.org/entity/Q23653935",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait de la duchesse d'Orléans.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Louise%20Marie%20Ad%C3%A9la%C3%AFde%20de%20Bourbon%20by%20Vig%C3%A9e%20Lebrun.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"792\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/792\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19005132": {
+      "uri": "http://www.wikidata.org/entity/Q19005132",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Madame Molé-Reymond, de la Comédie italienne (1759-1833)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisabeth-Louise%20Vig%C3%A9e-Le%20Brun%20-%20Madame%20Mol%C3%A9-Reymond%20%281786%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"380\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/380\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19005202": {
+      "uri": "http://www.wikidata.org/entity/Q19005202",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "La comtesse Skavronskaia",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisabeth-Louise%20Vig%C3%A9e-Le%20Brun%20-%20La%20comtesse%20Skavronskaia%20%281796%29.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"381\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/381\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3937618": {
+      "uri": "http://www.wikidata.org/entity/Q3937618",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Marie-Antoinette dit « à la Rose »",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Elisabeth%20Vig%C3%A9e-Lebrun%20-%20Marie-Antoinette%20dit%20%C2%AB%20%C3%A0%20la%20Rose%20%C2%BB%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"209\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/209\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3937621": {
+      "uri": "http://www.wikidata.org/entity/Q3937621",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Marie-Antoinette de Lorraine-Habsbourg, reine de France et ses enfants",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Elisabeth%20Vig%C3%A9e-Lebrun%20-%20Marie-Antoinette%20de%20Lorraine-Habsbourg%2C%20reine%20de%20France%20et%20ses%20enfants%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"208\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/208\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21679331": {
+      "uri": "http://www.wikidata.org/entity/Q21679331",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait d'une jeune femme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Elisabeth%20Vig%C3%A9e-Le%20Brun%20-%20Portrait%20of%20a%20Young%20Woman%20-%201943-U%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"681\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/681\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21001124": {
+      "uri": "http://www.wikidata.org/entity/Q21001124",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Yolande-Martine-Gabrielle de Polastron, duchesse de Polignac",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Duchess%20de%20Polignac.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"577\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/577\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19005175": {
+      "uri": "http://www.wikidata.org/entity/Q19005175",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Madame Vigée-Le Brun et sa fille",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisabeth-Louise%20Vig%C3%A9e-Le%20Brun%20-%20Madame%20Vig%C3%A9e-Le%20Brun%20et%20sa%20fille%20%281786%29.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5098\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5098\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19005301": {
+      "uri": "http://www.wikidata.org/entity/Q19005301",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Madame Rousseau, femme de l'architecte Pierre Rousseau, et sa fille",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisabeth-Louise%20Vig%C3%A9e-Le%20Brun%20-%20Madame%20Rousseau%20et%20sa%20fille%20%281789%29.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5099\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5099\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q55619837": {
+      "uri": "http://www.wikidata.org/entity/Q55619837",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "La duchesse de Berry en robe de velours bleu",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Louise-Elisabeth%20Vig%C3%A9e-Lebrun%20-%20La%20duchesse%20de%20Berry%20en%20robe%20de%20velours%20bleu.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7437\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7437\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19006513": {
+      "uri": "http://www.wikidata.org/entity/Q19006513",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "La Paix ramenant l'Abondance",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisabeth%20Vig%C3%A9e%20Le%20Brun.%20La%20paix%20ramenant%20l%27abondance.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5050\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5050\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18689474": {
+      "uri": "http://www.wikidata.org/entity/Q18689474",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Madame Grassini dans le rôle de Zaire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Giuseppina%20Grassini%20par%20Elisabeth%20Vig%C3%A9e-Lebrun.%201803.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"484\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/484\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q23037900": {
+      "uri": "http://www.wikidata.org/entity/Q23037900",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Autoportrait",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Autoportrait-%C3%89lisabeth%20Vig%C3%A9e%20Le%20Brun-1808.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5755\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5755\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52241959": {
+      "uri": "http://www.wikidata.org/entity/Q52241959",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Stanislas-Auguste Poniatowski, roi de Pologne (1732-1798)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vigee%20Stanislaw%20Augustus.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7366\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7366\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q62571116": {
+      "uri": "http://www.wikidata.org/entity/Q62571116",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait de Germaine de Staël en Corinne au Cap Misène",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Louise%20Elisabeth%20Vig%C3%A9e-Lebrun%20001.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Elisabeth%20Vig%C3%A9e-Lebrun%20-%20Portrait%20of%20Madame%20de%20Sta%C3%ABl%20as%20Corinne%20on%20Cape%20Misenum%20-%20WGA25074.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7563\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7563\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q62284657": {
+      "uri": "http://www.wikidata.org/entity/Q62284657",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait d'une petite fille dite Sophie de Bourbon, mademoiselle d'Artois",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vig%C3%A9e-Lebrun%20-%20Portrait%20of%20a%20girl%2C%20possibly%20Sophie%20de%20Bourbon%2C%20Mademoiselle%20d%27Arthois.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7529\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7529\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q83507891": {
+      "uri": "http://www.wikidata.org/entity/Q83507891",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait de la comtesse Kagenek en Flore",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bemberg%20Fondation%20Toulouse%20-%20Portrait%20de%20la%20comtesse%20Kagenek%20en%20Flore%20-%20Elisabeth%20Vig%C3%A9e-Lebrun%201783%2075x62%20HT%20Inv.1128.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7601\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7601\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q65178165": {
+      "uri": "http://www.wikidata.org/entity/Q65178165",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Caroline Murat, reine de Naples avec sa fille Letizia",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/CarolinaBonaparte.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7655\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7655\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q105731234": {
+      "uri": "http://www.wikidata.org/entity/Q105731234",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Junon demandant à Vénus de lui prêter sa ceinture magique",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Elisabeth%20Louise%20Vig%C3%A9e-Le%20Brun%20-%20Juno%20Borrowing%20the%20Belt%20of%20Venus%2C%201781.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12363,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12363\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97653529": {
+      "uri": "http://www.wikidata.org/entity/Q97653529",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait de jeune femme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vig%C3%A9e-Lebrun%2C%20Marie-Louise-Elisabeth%20-%20Portrait%20de%20jeune%20femme%20-%20J%2025%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7750\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7750\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97651331": {
+      "uri": "http://www.wikidata.org/entity/Q97651331",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait d'une danseuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vig%C3%A9e-Lebrun%2C%20Marie-Louise-Elisabeth%20-%20Portrait%20d%27une%20danseuse%20-%20J%20106%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7751\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7751\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97653557": {
+      "uri": "http://www.wikidata.org/entity/Q97653557",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait de Marie-Louise-Adélaïde-Jacquette de Robien, vicomtesse de Mirabeau",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vig%C3%A9e-Lebrun%2C%20Marie-Louise-Elisabeth%20-%20Portrait%20de%20Marie-Louise-Ad%C3%A9la%C3%AFde-Jacquette%20de%20Robien%2C%20vicomtesse%20de%20Mirabeau%20-%20J%20105%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12364,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12364\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q63175329": {
+      "uri": "http://www.wikidata.org/entity/Q63175329",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Elisabeth-Philippe-Marie-Hélène de France, dite Madame Elisabeth",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vig%C3%A9e%20Le%20Brun%20-%20%C3%89lisabeth%20of%20France%2C%20Versailles.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7569\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7569\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q112134725": {
+      "uri": "http://www.wikidata.org/entity/Q112134725",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait de madame Lesould",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisabeth%20Vig%C3%A9e-Lebrun%20-%20Portrait%20de%20Madame%20Lesould.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12365,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12365\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q112149515": {
+      "uri": "http://www.wikidata.org/entity/Q112149515",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait \"en sultane\" de Marie Louise Joséphine Delphine de Rosières de Sorans (1766-1832)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vig%C3%A9e%20Lebrun%20-%20Marie%20Louise%20Jos%C3%A9phine%20Delphine%20de%20Rosi%C3%A8res%20de%20Sorans%20%281766-1832%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12366,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12366\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q97651636": {
+      "uri": "http://www.wikidata.org/entity/Q97651636",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Portrait présumé de Charlotte-Françoise Bergeret de Norinval",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vig%C3%A9e-Lebrun%20-%20Portrait%20pr%C3%A9sum%C3%A9%20de%20Charlotte-Fran%C3%A7oise%20Bergeret%20de%20Norinval%2C%20Entre%201780%20et%201783.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7752\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7752\\/category\\/471\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110763721": {
+      "uri": "http://www.wikidata.org/entity/Q110763721",
+      "createur": "http://www.wikidata.org/entity/Q213163",
+      "createurLabel": "Élisabeth Vigée Le Brun",
+      "titre_fr": "Marie-Antoinette dit « à la Rose »",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisabeth%20Vig%C3%A9e%20Le%20Brun-%20Marie-Antoinette%20%C3%A0%20la%20Rose%20-%20collection%20Resnick.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12367,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12367\\/category\\/471\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

@@ -1,0 +1,293 @@
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q214074 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q123000550": {
+      "uri": "http://www.wikidata.org/entity/Q123000550",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec personnages chargeant du bois sur un bateau",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Lorrain%20-%20Paysage%20avec%20personnages%20chargeant%20du%20bois%20sur%20un%20bateau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13925,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13925\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q92998856": {
+      "uri": "http://www.wikidata.org/entity/Q92998856",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec la fuite en Égypte",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lorrain%20-%20Fuite%20en%20Egypte.%20Flight%20into%20Egypt.%20vers%201640.%20Strasbourg.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10199\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10199\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104443853": {
+      "uri": "http://www.wikidata.org/entity/Q104443853",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec le port de Santa Marinella",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20%28dit%20le%20Lorrain%29%20Gell%C3%A9e%20-%20Paysage%20avec%20le%20port%20de%20Santa%20Marinella%20-%20PDUT872%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10260\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10260\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q115670477": {
+      "uri": "http://www.wikidata.org/entity/Q115670477",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "L'Embarquement de sainte Paule à Ostie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20lorrain%20a%20mediterranean%20port%20at%20sunrise.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13926,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13926\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50325265": {
+      "uri": "http://www.wikidata.org/entity/Q50325265",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec le repos en vol vers l'Egypte",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Lorrain%20018.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13927,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13927\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29855770": {
+      "uri": "http://www.wikidata.org/entity/Q29855770",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec Pâris et Oenone, dit Le Gué",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Lorrain%20-%20Landscape%20with%20Paris%20and%20Oenone%20-%20WGA05003.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8483\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8483\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29855763": {
+      "uri": "http://www.wikidata.org/entity/Q29855763",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Le Pas de Suse forcé par Louis XIII",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Pas%20de%20Suse%20forc%C3%A9%20par%20Louis%20XIII.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13928,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13928\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59508520": {
+      "uri": "http://www.wikidata.org/entity/Q59508520",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec un temple de Bacchus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claud%20Lorrain%20-%20Landscape%20with%20a%20Temple%20of%20Bacchus.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10015\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10015\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29855773": {
+      "uri": "http://www.wikidata.org/entity/Q29855773",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage au soleil couchant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lorrain%20-%20PAYSAGE%20AU%20SOLEIL%20COUCHANT%2C%20INV%204723.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9910\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9910\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29855769": {
+      "uri": "http://www.wikidata.org/entity/Q29855769",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Le Port de Gênes, vu de la mer",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20port%20de%20G%C3%AAnes%20vu%20de%20la%20mer%20%28Louvre%2C%20INV%204725%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13929,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13929\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q51078137": {
+      "uri": "http://www.wikidata.org/entity/Q51078137",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Port de mer avec la villa Médicis",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lorrain.seaport.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13930,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13930\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q81182065": {
+      "uri": "http://www.wikidata.org/entity/Q81182065",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage pastoral",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Gell%C3%A9e%20-%20paysage%20pastoral.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10167\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10167\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21716886": {
+      "uri": "http://www.wikidata.org/entity/Q21716886",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec le repos pendant la fuite en Egypte (midi)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Lorrain%20-%20Landscape%20with%20the%20Rest%20on%20the%20Flight%20into%20Egypt%20-%20WGA05010.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8250\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8250\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q6057328": {
+      "uri": "http://www.wikidata.org/entity/Q6057328",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec l'Enterrement de Saint Serapia",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lorrain%20Santa%20Serapia.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13931,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13931\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29855760": {
+      "uri": "http://www.wikidata.org/entity/Q29855760",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Siège de la Rochelle par Louis XIII",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Lorrain%20-%20Si%C3%A8ge%20de%20La%20Rochelle%20par%20Louis%20XIII.%201628.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13932,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13932\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20177092": {
+      "uri": "http://www.wikidata.org/entity/Q20177092",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec les commerçants",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Lorrain%20-%20Paysage%20avec%20les%20commer%C3%A7ants.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8193\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8193\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19820182": {
+      "uri": "http://www.wikidata.org/entity/Q19820182",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "vue du Campo Vacciono, à Rome",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vue%20du%20Campo%20Vaccino%20-%20Claude%20Gell%C3%A9e%20dit%20le%20Lorrain%20-%20Louvre%20-%20INV%204713%20%3B%20MR%201741.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13933,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13933\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19820185": {
+      "uri": "http://www.wikidata.org/entity/Q19820185",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Port de mer, effet de brume (L'embarquement d'Ulysse ?)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20lorrain%2C%20porto%20di%20mare%2C%20effetto%20di%20nebbia%2C%201646.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5049\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5049\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29855757": {
+      "uri": "http://www.wikidata.org/entity/Q29855757",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "David sacré roi par Samuel",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20sacr%C3%A9%20roi%20par%20le%20proph%C3%A8te%20Samuel%20-%20Claude%20Le%20Lorrain%20-%20Mus%C3%A9e%20du%20Louvre%20INV%204717.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13934,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13934\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28796873": {
+      "uri": "http://www.wikidata.org/entity/Q28796873",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage côtier avec Acis et Galatée",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Lorrain%20-%20Landscape%20with%20Acis%20and%20Galatea%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9951\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9951\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18683352": {
+      "uri": "http://www.wikidata.org/entity/Q18683352",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec Apollon et les Muses",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Lorrain%20%28Claude%20Gell%C3%A9e%29%20-%20Landscape%20with%20Apollo%20and%20the%20Muses%20-%20NG%202240%20-%20National%20Galleries%20of%20Scotland.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8203\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8203\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20274952": {
+      "uri": "http://www.wikidata.org/entity/Q20274952",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Vue de Delphes avec une procession",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Lorrain%20-%20View%20of%20Delphi%20with%20a%20Procession%20-%201941.1020%20-%20Art%20Institute%20of%20Chicago.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13935,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13935\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27974926": {
+      "uri": "http://www.wikidata.org/entity/Q27974926",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Paysage avec Tobie et l'Ange (Soirée)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Lorrain%20-%20Paysage%20avec%20Tobie%20et%20l%27Ange%20%281663%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8470\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8470\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q24939883": {
+      "uri": "http://www.wikidata.org/entity/Q24939883",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Port de mer au soleil couchant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Port%20de%20mer%20au%20soleil%20couchant%20-%20Claude%20Gell%C3%A9e%20dit%20Le%20Lorrain%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%204715%20%3B%20MR%201740.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8330\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8330\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q24066": {
+      "uri": "http://www.wikidata.org/entity/Q24066",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "La Fête villageoise",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/La%20F%C3%AAte%20villageoise%20-%20Claude%20Gell%C3%A9e%20dit%20Le%20Lorrain%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%204714%20%3B%20MR%201739.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7930\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7930\\/category\\/415\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18762387": {
+      "uri": "http://www.wikidata.org/entity/Q18762387",
+      "createur": "http://www.wikidata.org/entity/Q214074",
+      "createurLabel": "Claude Gellée",
+      "titre_fr": "Ulysse remet Chryséis à son père non",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Ulysse%20remet%20Chrys%C3%A9is%20%C3%A0%20son%20p%C3%A8re%20-%201644%20-%20Claude%20Gell%C3%A9e%20dit%20le%20Lorrain%20-%20Louvre%20-%20INV%204718%20%3B%20MR%201747.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13936,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13936\\/category\\/415\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

@@ -1,0 +1,117 @@
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q5664 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q3698209": {
+      "uri": "http://www.wikidata.org/entity/Q3698209",
+      "createur": "http://www.wikidata.org/entity/Q5664",
+      "createurLabel": "Fra Angelico",
+      "titre_fr": "Le Calvaire avec saint Dominique en prière",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Fra%20Angelico%20-%20Le%20Calvaire%20avec%20saint%20Dominique%20en%20pri%C3%A8re%2C%20RF%20265.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12184,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12184\\/category\\/469\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572514": {
+      "uri": "http://www.wikidata.org/entity/Q18572514",
+      "createur": "http://www.wikidata.org/entity/Q5664",
+      "createurLabel": "Fra Angelico",
+      "titre_fr": "Le Christ bénissant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Christ%20b%C3%A9nissant%20-%20Fra%20Angelico%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20DL%201973%2022%20-%20photo%202.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12185,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12185\\/category\\/469\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572512": {
+      "uri": "http://www.wikidata.org/entity/Q18572512",
+      "createur": "http://www.wikidata.org/entity/Q5664",
+      "createurLabel": "Fra Angelico",
+      "titre_fr": "Ange en adoration, tourné vers la gauche",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Ange%20en%20adoration%20-%20Fra%20Angelico%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%202002%203%20-%20photo%202.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12186,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12186\\/category\\/469\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3704465": {
+      "uri": "http://www.wikidata.org/entity/Q3704465",
+      "createur": "http://www.wikidata.org/entity/Q5664",
+      "createurLabel": "Fra Angelico",
+      "titre_fr": "Le Martyre des saints Cosme et Damien",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Martyre%20des%20saints%20Cosme%20et%20Damien%20-%20Fra%20Angelico%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%20340%20-%20photo%202.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12187,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12187\\/category\\/469\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572515": {
+      "uri": "http://www.wikidata.org/entity/Q18572515",
+      "createur": "http://www.wikidata.org/entity/Q5664",
+      "createurLabel": "Fra Angelico",
+      "titre_fr": "La Décollation de saint Jean Baptiste et le Banquet d'Hérode",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Louvre-Lens%20-%20Renaissance%20-%20002%20-%20RF%20196.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12188,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12188\\/category\\/469\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18572511": {
+      "uri": "http://www.wikidata.org/entity/Q18572511",
+      "createur": "http://www.wikidata.org/entity/Q5664",
+      "createurLabel": "Fra Angelico",
+      "titre_fr": "Ange en adoration, tourné vers la droite",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Ange%20en%20adoration%20-%20Fra%20Angelico%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%201731%20-%20photo%202.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12189,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12189\\/category\\/469\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64826812": {
+      "uri": "http://www.wikidata.org/entity/Q64826812",
+      "createur": "http://www.wikidata.org/entity/Q5664",
+      "createurLabel": "Fra Angelico",
+      "titre_fr": "Saint Matthieu",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Fra%20Angelico%20-%20St%20Matthew%20-%20WGA0452.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12190,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12190\\/category\\/469\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q86858941": {
+      "uri": "http://www.wikidata.org/entity/Q86858941",
+      "createur": "http://www.wikidata.org/entity/Q5664",
+      "createurLabel": "Fra Angelico",
+      "titre_fr": "La Conversion de saint Augustin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Angelico%20-%20Conversion%20St.%20Augustine%20-%20Mus%C3%A9e%20Thomas%20Henry%20-%20from%20Thebaid%20dismembered.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12191,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12191\\/category\\/469\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64651916": {
+      "uri": "http://www.wikidata.org/entity/Q64651916",
+      "createur": "http://www.wikidata.org/entity/Q5664",
+      "createurLabel": "Fra Angelico",
+      "titre_fr": "L'Extase de saint Benoît",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Benoit%20%C3%A0%20Subiaco%20-%20Fra%20Angelico%20-%20Mus%C3%A9e%20Cond%C3%A9.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12192,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12192\\/category\\/469\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64826811": {
+      "uri": "http://www.wikidata.org/entity/Q64826811",
+      "createur": "http://www.wikidata.org/entity/Q5664",
+      "createurLabel": "Fra Angelico",
+      "titre_fr": "Saint Marc",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Fra%20Angelico%20-%20St%20Mark%20-%20WGA0451.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":12193,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12193\\/category\\/469\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

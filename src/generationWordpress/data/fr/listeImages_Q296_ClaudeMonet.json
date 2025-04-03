@@ -1,0 +1,1547 @@
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q296 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q18683944": {
+      "uri": "http://www.wikidata.org/entity/Q18683944",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "St. Germain l'Auxerrois à Paris",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20St.%20Germain%20l%27Auxerrois%20%C3%A0%20Paris%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11569,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11569\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q10336177": {
+      "uri": "http://www.wikidata.org/entity/Q10336177",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Nymphéas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Nen%C3%BAfares.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11570,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11570\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q10326430": {
+      "uri": "http://www.wikidata.org/entity/Q10326430",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Falaises à l'est de Pourville",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20monet%20-%20marina%20%28MCM-RJ%29%2001.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5283\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5283\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q10322900": {
+      "uri": "http://www.wikidata.org/entity/Q10322900",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Madame Monet en costume japonais",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet-Madame%20Monet%20en%20costume%20japonais.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet-Madame%20Monet%20en%20costume%20japonais.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"190\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/190\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q10392679": {
+      "uri": "http://www.wikidata.org/entity/Q10392679",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Vétheuil dans le brouillard",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A9theuil%20dans%20le%20brouillard.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11571,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11571\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q10333082": {
+      "uri": "http://www.wikidata.org/entity/Q10333082",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Femme assise sur un banc",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20w343.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9014\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9014\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q22205287": {
+      "uri": "http://www.wikidata.org/entity/Q22205287",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "L'Aiguille vue à travers la Porte d'Aval",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%2C%20Claude%20-%20L%27Aiguille%20vue%20%C3%A0%20travers%20la%20Porte%20d%27Aval%20%281885-1886%29%20W%201049.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5289\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5289\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18683374": {
+      "uri": "http://www.wikidata.org/entity/Q18683374",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Marine, effet de nuit",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20A%20Seascape%2C%20Shipping%20by%20Moonlight%20-%20Google%20Art%20Project.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20A%20Seascape%2C%20Shipping%20by%20Moonlight%20-%20NG%202399%20-%20National%20Galleries%20of%20Scotland.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5413\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5413\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18683906": {
+      "uri": "http://www.wikidata.org/entity/Q18683906",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Les Peupliers, trois arbres roses, automne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%2C%20French%20-%20Poplars%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11572,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11572\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17492316": {
+      "uri": "http://www.wikidata.org/entity/Q17492316",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Seine à Vétheuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20La%20Seine%20%C3%A0%20V%C3%A9theuil%2C%201879.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8020\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8020\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17436689": {
+      "uri": "http://www.wikidata.org/entity/Q17436689",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Cathédrale de Rouen, portail plein midi",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20La%20cath%C3%A9drale%20de%20Rouen%2C%20le%20portail.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11573,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11573\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17494482": {
+      "uri": "http://www.wikidata.org/entity/Q17494482",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Route, effet de neige, soleil couchant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Route%2C%20effet%20de%20neige%2C%20soleil%20couchant%20%28Monet%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7990\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7990\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17494428": {
+      "uri": "http://www.wikidata.org/entity/Q17494428",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Nature morte au faisan",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet-faisan-mus%C3%A9e%20de%20rouen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8640\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8640\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17496153": {
+      "uri": "http://www.wikidata.org/entity/Q17496153",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Vue de plaine à Argenteuil ; coteaux de Sannois",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Blick%20auf%20die%20Ebene%20von%20Argenteuil.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8088\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8088\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17627520": {
+      "uri": "http://www.wikidata.org/entity/Q17627520",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Les Nymphéas à Giverny",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Les%20Nymph%C3%A9as%20%C3%A0%20Giverny%2C%20par%20Claude%20Monet.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8041\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8041\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17491016": {
+      "uri": "http://www.wikidata.org/entity/Q17491016",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Chasse-marée à l'ancre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Chasse-mar%C3%A9e%20%C3%A0%20l%27ancre%20-%20Claude%20Monet.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8066\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8066\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17495944": {
+      "uri": "http://www.wikidata.org/entity/Q17495944",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Trophée de chasse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Trophies-of-the-hunt-Monet.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8575\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8575\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17491280": {
+      "uri": "http://www.wikidata.org/entity/Q17491280",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Effet de neige à Vétheuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Effet%20de%20neige%20%C3%A0%20V%C3%A9theul.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8064\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8064\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17491735": {
+      "uri": "http://www.wikidata.org/entity/Q17491735",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Jardin en fleurs, à Sainte-Adresse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20007.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8007\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8007\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17492954": {
+      "uri": "http://www.wikidata.org/entity/Q17492954",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Givre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%2C%20Le%20Givre%20%281880%2C%20from%20C2RMF%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7989\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7989\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11826533": {
+      "uri": "http://www.wikidata.org/entity/Q11826533",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Coin d'atelier",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Coint%20d%27atelier.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8589\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8589\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17491401": {
+      "uri": "http://www.wikidata.org/entity/Q17491401",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Falaise de Fécamp",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%201%20-%20Roqueton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8008\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8008\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17490992": {
+      "uri": "http://www.wikidata.org/entity/Q17490992",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Champs de tulipes en Hollande",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Champs%20de%20Tulipes%20de%20Claude%20Monet.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8067\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8067\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q15951345": {
+      "uri": "http://www.wikidata.org/entity/Q15951345",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Étretat, la Porte d'Aval: bateaux de pêche sortant du port",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet-Etretat%20the%20Aval%20door%20fishing%20boats%20leaving%20the%20harbour%20mg%201819.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5284\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5284\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17436682": {
+      "uri": "http://www.wikidata.org/entity/Q17436682",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Cathédrale de Rouen, le Portail, Effet du matin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20The%20Portal%20of%20Rouen%20Cathedral%20in%20Morning%20Light%20%281894%29%20-%20Getty%20Center%202001.33.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11574,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11574\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17490991": {
+      "uri": "http://www.wikidata.org/entity/Q17490991",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Champ de coquelicots ; environs de Giverny",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Champ%20de%20coquelicots%20%3B%20environs%20de%20Giverny%2C%201885.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8068\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8068\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q47510174": {
+      "uri": "http://www.wikidata.org/entity/Q47510174",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Champ d'avoine aux coquelicots",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%2C%20Champ%20d%27avoine%20aux%20coquelicots%20%28%20Mus%C3%A9e%20d%27art%20moderne%20et%20contemporain%2C%20Strasbourg%20%29.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9955\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9955\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20538935": {
+      "uri": "http://www.wikidata.org/entity/Q20538935",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Bras de Seine près de Giverny.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Morning%20on%20the%20Seine%2C%20near%20Giverny%2C%201897.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8216\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8216\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20881698": {
+      "uri": "http://www.wikidata.org/entity/Q20881698",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Vue de Vétheuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20View%20of%20V%C3%A9theuil%20-%20Google%20Art%20Project.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%2C%20Claude%20-%20View%20of%20V%C3%A9theuil%20-%20LACMA.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11575,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11575\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20272169": {
+      "uri": "http://www.wikidata.org/entity/Q20272169",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Arrivée du train de Normandie, gare Saint-Lazare",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Arrival%20of%20the%20Normandy%20Train%2C%20Gare%20Saint-Lazare%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11576,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11576\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20809483": {
+      "uri": "http://www.wikidata.org/entity/Q20809483",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Zuiderkerk à Amsterdam",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Zuiderkerk%2C%20Amsterdam%20by%20Claude%20Monet%2C%201874.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5839\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5839\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q43083231": {
+      "uri": "http://www.wikidata.org/entity/Q43083231",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Falaises près de Pourville",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/WLANL%20-%20adagio808%20-%20Cloude%20Monet%2C%20Falaises%20pr%C3%A8s%20de%20Pourville%20%281882%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11577,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11577\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3827992": {
+      "uri": "http://www.wikidata.org/entity/Q3827992",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Lavacourt sous la neige",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%2C%20Lavacourt-Sunshine-and-Snow.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7937\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7937\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1167912": {
+      "uri": "http://www.wikidata.org/entity/Q1167912",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Déjeuner sur l'herbe",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20dejeunersurlherbe.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Le%20dejeurner%20sur%20l%27herbe%20%28left%20panel%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"50\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/50\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q432253": {
+      "uri": "http://www.wikidata.org/entity/Q432253",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Terrasse à Sainte-Adresse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Jardin%20%C3%A0%20Sainte-Adresse.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8917\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8917\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2734892": {
+      "uri": "http://www.wikidata.org/entity/Q2734892",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Femmes au jardin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20024.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"27\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/27\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3877090": {
+      "uri": "http://www.wikidata.org/entity/Q3877090",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Bassin aux nymphéas, reflets de nuages",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/WLA%20moma%20Monet%20Reflections%20of%20Clouds%20on%20the%20Water-Lily%20Pond.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7938\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7938\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q7620298": {
+      "uri": "http://www.wikidata.org/entity/Q7620298",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Étretat, mer agitée",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet-Mer%20agit%C3%A9e%20%C3%A0%20Etretat-MBA-Lyon.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5282\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5282\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3795191": {
+      "uri": "http://www.wikidata.org/entity/Q3795191",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Pont du chemin de fer à Argenteuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20The%20Railroad%20bridge%20in%20Argenteuil%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7939\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7939\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1114220": {
+      "uri": "http://www.wikidata.org/entity/Q1114220",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Les Coquelicots près de Vétheuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Champ%20de%20coquelicots%20pr%C3%A8s%20de%20V%C3%A9theuil%20-%2071%20-%20Foundation%20E.G.%20B%C3%BChrle%20Collection.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Champ%20de%20coquelicots%20pr%C3%A8s%20de%20V%C3%A9theuil.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7931\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7931\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2070487": {
+      "uri": "http://www.wikidata.org/entity/Q2070487",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Plage de Pourville",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20Claude%2C%20The%20Beach%20at%20Pourville%2C%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5280\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5280\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3821388": {
+      "uri": "http://www.wikidata.org/entity/Q3821388",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "En norvégienne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20In%20der%20Barke.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11578,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11578\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3220338": {
+      "uri": "http://www.wikidata.org/entity/Q3220338",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Bassin aux nymphéas, harmonie verte",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Water%20Lilies%20and%20Japanese%20Bridge.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7941\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7941\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3820705": {
+      "uri": "http://www.wikidata.org/entity/Q3820705",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Cathédrale de Rouen, Le Portail et la Tour Saint-Romain, Plein soleil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Cath%C3%A9drale%20de%20Rouen.%20Harmonie%20bleue%20et%20or.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11579,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11579\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q829572": {
+      "uri": "http://www.wikidata.org/entity/Q829572",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Camille, ou La Femme à la robe verte",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Camille.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11580,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11580\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3231771": {
+      "uri": "http://www.wikidata.org/entity/Q3231771",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Les Coquelicots",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Poppy%20Field%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8002\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8002\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q4949676": {
+      "uri": "http://www.wikidata.org/entity/Q4949676",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Boulevard des Capucines",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Boulevard%20des%20Capucines%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5823\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5823\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3832426": {
+      "uri": "http://www.wikidata.org/entity/Q3832426",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Lilas au soleil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lilacs%20in%20the%20Sun%2C%201872.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11581,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11581\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3235752": {
+      "uri": "http://www.wikidata.org/entity/Q3235752",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Les Tilleuls à Poissy",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Les%20Tilleuls%20%C3%A0%20Poissy.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8003\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8003\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q328523": {
+      "uri": "http://www.wikidata.org/entity/Q328523",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Impression, soleil levant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Impression%2C%20Sunrise.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5285\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5285\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3212522": {
+      "uri": "http://www.wikidata.org/entity/Q3212522",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Rue Montorgueil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20The%20Rue%20Montorgueil%20in%20Paris.%20Celebration%20of%20June%2030%2C%201878%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5822\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5822\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q4429116": {
+      "uri": "http://www.wikidata.org/entity/Q4429116",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Pie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20The%20Magpie%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7991\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7991\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3820704": {
+      "uri": "http://www.wikidata.org/entity/Q3820704",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Cathédrale de Rouen, le Portail, Soleil matinal",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Cath%C3%A9drale%20de%20Rouen.%20Harmonie%20bleue.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11582,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11582\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1451508": {
+      "uri": "http://www.wikidata.org/entity/Q1451508",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Essai de figure en plein air",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Femme%20%C3%A0%20l%27ombrelle%20tourn%C3%A9e%20vers%20la%20gauche%20-%20Claude%20Monnet%20-%20Mus%C3%A9e%20d%27Orsay%20RF%202621.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"99\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/99\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3234987": {
+      "uri": "http://www.wikidata.org/entity/Q3234987",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Pêcheurs sur la Seine à Poissy",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Angler%20auf%20der%20Seine%20bei%20Poissy%20-%201288%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20021.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8918\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8918\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3337113": {
+      "uri": "http://www.wikidata.org/entity/Q3337113",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Nature morte aux œufs",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Still%20Life%20with%20Eggs.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8535\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8535\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2891152": {
+      "uri": "http://www.wikidata.org/entity/Q2891152",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Havre, bateaux de pêche sortant du port",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%27Le%20Havre%2C%20B%C3%A2teaux%20de%20Peche%20Sortant%20du%20Port%27%20by%20Claude%20Monet%2C%201874.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5281\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5281\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2381272": {
+      "uri": "http://www.wikidata.org/entity/Q2381272",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Camille sur son lit de mort",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Camille%20Monet%20sur%20son%20lit%20de%20mort.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11583,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11583\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3794124": {
+      "uri": "http://www.wikidata.org/entity/Q3794124",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Jardin de l'artiste à Giverny",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Monets%20Garten%20in%20Giverny.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11584,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11584\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2385427": {
+      "uri": "http://www.wikidata.org/entity/Q2385427",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "I  like cheese",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Femme%20%C3%A0%20l%27ombrelle%20tourn%C3%A9e%20vers%20la%20droite%20-%20Claude%20Monnet%20-%20Mus%C3%A9e%20d%27Orsay%20RF%202620.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"43\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/43\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19906244": {
+      "uri": "http://www.wikidata.org/entity/Q19906244",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Vista de Vétheuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20View%20of%20V%C3%A9theuil.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20View%20of%20V%C3%A9theuil.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8157\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8157\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20188770": {
+      "uri": "http://www.wikidata.org/entity/Q20188770",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Pont routier, Argenteuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20The%20Bridge%20at%20Argenteuil%20%281874%29%20-%20NGA%201983.1.24.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5363\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5363\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20180920": {
+      "uri": "http://www.wikidata.org/entity/Q20180920",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Maisons sur l'Achterzaan",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Houses%20on%20the%20Achterzaan%20MET%20DT719.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8130\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8130\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19868618": {
+      "uri": "http://www.wikidata.org/entity/Q19868618",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Bateaux sur la Seine à Gennevilliers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Boats%20Moored%20at%20Le%20Petit-Gennevilliers%2C%201874.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11585,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11585\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18918056": {
+      "uri": "http://www.wikidata.org/entity/Q18918056",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Les Nymphéas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet-Nymph%C3%A9as-Le-Havre.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8205\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8205\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18683955": {
+      "uri": "http://www.wikidata.org/entity/Q18683955",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "L'Été",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1874%20Monet%20Sommer%20anagoria.JPG",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20L%27%C3%89t%C3%A9%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11586,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11586\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19857354": {
+      "uri": "http://www.wikidata.org/entity/Q19857354",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Vétheuil en hiver",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20V%C3%A9theuil%20en%20hiver.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8122\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8122\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50537321": {
+      "uri": "http://www.wikidata.org/entity/Q50537321",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Vernon, soleil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vernon%2C%20soleil.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn%20Museum%20-%20Church%20at%20Vernon%20-%20Claude%20Monet%20-%20overall.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11587,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11587\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50697752": {
+      "uri": "http://www.wikidata.org/entity/Q50697752",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Sous les citronniers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Unter%20Zitronenb%C3%A4umen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9971\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9971\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28828034": {
+      "uri": "http://www.wikidata.org/entity/Q28828034",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Jardin de l'Infante",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Garten%20der%20Infantin.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"6385\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/6385\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29654799": {
+      "uri": "http://www.wikidata.org/entity/Q29654799",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Environs de Honfleur. Neige.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1867%20The%20Road%20in%20front%20of%20Saint-Simeon%20Farm%20in%20Winter.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9972\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9972\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q24953848": {
+      "uri": "http://www.wikidata.org/entity/Q24953848",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Seine à Port-Villez",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20The%20Seine%20at%20Port-Villez.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11588,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11588\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27665416": {
+      "uri": "http://www.wikidata.org/entity/Q27665416",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Chef Père Paul",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Der%20Koch%20%28Le%20P%C3%A8re%20Paul%29%20-%20540%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"816\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/816\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q24021212": {
+      "uri": "http://www.wikidata.org/entity/Q24021212",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Portrait de Guurtje Van de Stadt",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Guurtje%20after%20conservation.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"799\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/799\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26708368": {
+      "uri": "http://www.wikidata.org/entity/Q26708368",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Bassin aux nymphéas, harmonie verte",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%2C%20The%20Water-Lily%20Pond%20%28National%20Gallery%2C%20London%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11589,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11589\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29654798": {
+      "uri": "http://www.wikidata.org/entity/Q29654798",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La débâcle près de Vétheuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20monet%2C%20il%20disgelo%20verso%20v%C3%A9theuil.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11590,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11590\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27975121": {
+      "uri": "http://www.wikidata.org/entity/Q27975121",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Seine à Rouen",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%27The%20Seine%20at%20Rouen%27%20by%20Claude%20Monet%2C%201872%2C%20Hermitage.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8454\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8454\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29654797": {
+      "uri": "http://www.wikidata.org/entity/Q29654797",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Glaçons à Bougival",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20ice-floes-on-the-seine-at-bougival-1868.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9973\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9973\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28796932": {
+      "uri": "http://www.wikidata.org/entity/Q28796932",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Palais ducal",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20The%20Doges%20Palace%20%28Le%20Palais%20ducal%29%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"6386\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/6386\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q25452449": {
+      "uri": "http://www.wikidata.org/entity/Q25452449",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Parlement de Londres, ciel orageux",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Le%20Parlement%20de%20Londres%2C%20ciel%20orageux.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8395\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8395\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50415949": {
+      "uri": "http://www.wikidata.org/entity/Q50415949",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Nymphéas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20Nympheas%20Marmottan.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9995\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9995\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50006171": {
+      "uri": "http://www.wikidata.org/entity/Q50006171",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Extérieur de la gare Saint-Lazare, effet de soleil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20Ext%C3%A9rieur%20de%20la%20gare%20Saint-Lazare%2C%20effet%20de%20soleil.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11591,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11591\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q48609824": {
+      "uri": "http://www.wikidata.org/entity/Q48609824",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Parlement, soleil couchant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20Houses%20of%20Parliament%2C%20Sunset.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11592,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11592\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q49221913": {
+      "uri": "http://www.wikidata.org/entity/Q49221913",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Camille en la playa de Trouville",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet-Camille%20en%20la%20playa%20de%20Trouville.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Camille%20on%20the%20Beach%20in%20Trouville%20-%201998.46.1%20-%20Yale%20University%20Art%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11593,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11593\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q49445583": {
+      "uri": "http://www.wikidata.org/entity/Q49445583",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Parlement, coucher de soleil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Le%20Parlement%2C%20coucher%20de%20soleil%20-%20Kunsthaus%20Z%C3%BCrich.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Le%20Parlement%2C%20coucher%20de%20soleil%20-%201995-0003%20-%20Kunsthaus%20Z%C3%BCrich.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5964\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5964\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50115235": {
+      "uri": "http://www.wikidata.org/entity/Q50115235",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Vue de Vétheuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20Ansicht%20von%20Vetheuil.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11594,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11594\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50121187": {
+      "uri": "http://www.wikidata.org/entity/Q50121187",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Maisons d’Argenteuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1873%20Monet%20Houses%20at%20Argenteuil%20anagoria.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9967\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9967\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50434651": {
+      "uri": "http://www.wikidata.org/entity/Q50434651",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Déjeuner sur l'herbe",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20D%C3%A9jeuner%20sur%20l%27herbe%20-%20Monet%20%28Pushkin%20Museum%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9842\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9842\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50435471": {
+      "uri": "http://www.wikidata.org/entity/Q50435471",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Effet d'automne à Argenteuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Herbst%20in%20Argentueil.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11595,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11595\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q48610629": {
+      "uri": "http://www.wikidata.org/entity/Q48610629",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Meules, milieu du jour",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Meules%2C%20milieu%20du%20jour%20%28Haystacks%2C%20midday%29%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11596,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11596\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50432908": {
+      "uri": "http://www.wikidata.org/entity/Q50432908",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Vétheuil dans la matinée",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lille%20PdBA%20monet%20vetheuil%20matin.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9996\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9996\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50415952": {
+      "uri": "http://www.wikidata.org/entity/Q50415952",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Saule pleureur",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20Saule%20pleureur.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11597,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11597\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q49864671": {
+      "uri": "http://www.wikidata.org/entity/Q49864671",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Pont japonais",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Ponte%20Japonesa.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11598,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11598\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q56259961": {
+      "uri": "http://www.wikidata.org/entity/Q56259961",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Effet de vent, série des peupliers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Poplars%20%28Wind%20effect%29.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11599,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11599\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50766796": {
+      "uri": "http://www.wikidata.org/entity/Q50766796",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Automne sur la Seine Argenteuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Automne%20sur%20la%20Seine%20Argenteuil%20%281873%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11600,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11600\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50771158": {
+      "uri": "http://www.wikidata.org/entity/Q50771158",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Bassin d'Argenteuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20016.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11601,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11601\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q60389924": {
+      "uri": "http://www.wikidata.org/entity/Q60389924",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Leicester Square",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Leicester%20Square.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11602,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11602\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50818698": {
+      "uri": "http://www.wikidata.org/entity/Q50818698",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Bouquet de mauves",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vase%20of%20Flowers%20Claude%20Monet.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11603,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11603\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50818932": {
+      "uri": "http://www.wikidata.org/entity/Q50818932",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Varengeville, marée basse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Varengeville%2C%20Ebbe.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11604,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11604\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59530379": {
+      "uri": "http://www.wikidata.org/entity/Q59530379",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Waterloo Bridge: le soleil dans le brouillard",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Waterloobr%C3%BCcke%20-%20Sonne%20hinter%20Dunstschleier.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11605,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11605\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q56794103": {
+      "uri": "http://www.wikidata.org/entity/Q56794103",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Bassin aux nymphéas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet-Water-lily-pond-Chichu-museum.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10000\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10000\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50818701": {
+      "uri": "http://www.wikidata.org/entity/Q50818701",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Vue de Vétheuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Blick%20auf%20V%C3%A9theuil%20-%201881.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11606,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11606\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50769770": {
+      "uri": "http://www.wikidata.org/entity/Q50769770",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Pont de Bois",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Le%20Pont%20de%20Bois.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11607,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11607\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q56809235": {
+      "uri": "http://www.wikidata.org/entity/Q56809235",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Bassin aux nymphéas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet-Water-lily-pond-Chichu-museum-2.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10001\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10001\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59526641": {
+      "uri": "http://www.wikidata.org/entity/Q59526641",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Jean-Pierre Hoschedé et Michel Monet au bord de l'Epte",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Jean-Pierre%20Hosched%C3%A9%20and%20Michel%20Monet%20on%20the%20Bank%20of%20the%20Epte.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11608,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11608\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50775657": {
+      "uri": "http://www.wikidata.org/entity/Q50775657",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Parc Monceau",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Parc%20Monceau%20by%20Monet%20%28Senoku%20Hakukokan%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11609,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11609\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50819562": {
+      "uri": "http://www.wikidata.org/entity/Q50819562",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Champ de blé",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/MB-Mon-09%20Monet%20Weizenfeld%201.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11610,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11610\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50818703": {
+      "uri": "http://www.wikidata.org/entity/Q50818703",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Soleil couchant sur la Seine à Lavacourt, effet d'hiver",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Soleil%20couchant%20sur%20la%20Seine%20%C3%A0%20Lavacourt%2C%20effet%20d%27hiver%20-%20PPP439%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9968\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9968\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50807793": {
+      "uri": "http://www.wikidata.org/entity/Q50807793",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Chevaux à la pointe de la Hève",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Chevaux%20%C3%A0%20la%20pointe%20de%20la%20H%C3%A8ve.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11611,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11611\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q61227583": {
+      "uri": "http://www.wikidata.org/entity/Q61227583",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Étude de Glycines",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Dreux%20%C3%A9tude%20de%20glycine%201919-1920%20Claude%20Monet%20Eure-et-Loir%20France.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10030\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10030\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q67184553": {
+      "uri": "http://www.wikidata.org/entity/Q67184553",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "L'église de Varengeville à contre-jour",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20The%20Church%20at%20Varengeville%2C%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11612,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11612\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q67158045": {
+      "uri": "http://www.wikidata.org/entity/Q67158045",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Bassin aux nymphéas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20w1883.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10081\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10081\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q72691311": {
+      "uri": "http://www.wikidata.org/entity/Q72691311",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Bateaux sur la plage à Étretat",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bemberg%20Fondation%20Toulouse%20-%20Bateaux%20sur%20la%20plage%20%C3%A0%20Etretat%20-%20Claude%20Monet%20-%201883%2065x81%20Inv.2077.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10154\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10154\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64597083": {
+      "uri": "http://www.wikidata.org/entity/Q64597083",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Débâcle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%27La%20D%C3%A9b%C3%A2cle%27%2C%20oil%20on%20canvas%20painting%20by%20Monet%2C%201880%2C%20Dunedin%20Public%20Art%20Gallery.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11613,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11613\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q91095552": {
+      "uri": "http://www.wikidata.org/entity/Q91095552",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Champ d’avoine",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Champ%20d%27avoine%20%281890%29%20-%20Harn%20Museum%20of%20Art.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10182\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10182\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q79889775": {
+      "uri": "http://www.wikidata.org/entity/Q79889775",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Nymphéas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Nymph%C3%A9as%20%281908%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11614,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11614\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q84554666": {
+      "uri": "http://www.wikidata.org/entity/Q84554666",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Vallée de la Creuse, soleil couchant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Colmar%20-%20Unterlinden%20Museum%20-%20La%20Vall%C3%A9e%20de%20la%20Creuse%2C%20soleil%20couchant%20%28The%20Creuse%20Valley%2C%20setting%20sun%29%201889%20by%20Claude%20Monet%20%281840-1926%29%20-%20Oil%20on%20Canvas%2002.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"10064\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/10064\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q79889777": {
+      "uri": "http://www.wikidata.org/entity/Q79889777",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Bateau couché à marée basse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Bateau%20couch%C3%A9%20%C3%A0%20mar%C3%A9e%20basse%20%281881%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11615,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11615\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q79868506": {
+      "uri": "http://www.wikidata.org/entity/Q79868506",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Les Glaçons",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Les%20Glacons.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11616,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11616\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q79889776": {
+      "uri": "http://www.wikidata.org/entity/Q79889776",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Bord de mer et falaises de Pourville le matin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Bord%20de%20mer%20et%20falaises%20de%20Pourville%20le%20matin%20%281882%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11617,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11617\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104696638": {
+      "uri": "http://www.wikidata.org/entity/Q104696638",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Soleil couchant, temps brumeux, Pourville",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%27Soleil%20couchant%2C%20temp%20brumeux%2C%20Pourville%27%20by%20Claude%20Monet%2C%201882.%20Oil%20on%20canvas.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11618,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11618\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q105099568": {
+      "uri": "http://www.wikidata.org/entity/Q105099568",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La plage à Pourville, soleil couchant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/La%20plage%20%C3%A0%20Pourville%2C%20soleil%20couchant.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11619,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11619\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q94178398": {
+      "uri": "http://www.wikidata.org/entity/Q94178398",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Poires et Raisins",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Birnen%20und%20Trauben%2C%201880.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9883\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9883\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104772156": {
+      "uri": "http://www.wikidata.org/entity/Q104772156",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Marée montante à Pourville",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Rising%20Tide%20at%20Pourville%20%28Mar%C3%A9e%20montante%20%C3%A0%20Pourville%29%2C%201882.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5497\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5497\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q92787520": {
+      "uri": "http://www.wikidata.org/entity/Q92787520",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "La Seine près d'Argenteuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20La%20Seine%20pr%C3%A8s%20d%E2%80%99Argenteuil.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11620,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11620\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q109550022": {
+      "uri": "http://www.wikidata.org/entity/Q109550022",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Bassin d'Argenteuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20monet%20le%20bassin%20dargenteuil114147%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11621,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11621\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q114627846": {
+      "uri": "http://www.wikidata.org/entity/Q114627846",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Nymphéas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/MAMC%20Saint-%C3%89tienne%2C%20Monet.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5134\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5134\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q105099622": {
+      "uri": "http://www.wikidata.org/entity/Q105099622",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le voilier, effet du soir",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20voilier%2C%20effet%20du%20soir.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11622,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11622\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q105534732": {
+      "uri": "http://www.wikidata.org/entity/Q105534732",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Nymphéas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Wildenstein%201996%2C%201667.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11623,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11623\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106729777": {
+      "uri": "http://www.wikidata.org/entity/Q106729777",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Bassin aux nymphéas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Water-Lily%20Pond%20Monet.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11624,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11624\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q131630313": {
+      "uri": "http://www.wikidata.org/entity/Q131630313",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Les bords de la Seine près de Vétheuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Les%20bords%20de%20la%20Seine%20pr%C3%A8s%20de%20V%C3%A9theuil%20%28W%20675%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11625,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11625\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q124051911": {
+      "uri": "http://www.wikidata.org/entity/Q124051911",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "A travers les arbres, Île de la Grande Jatte",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20travers%20les%20arbres%2C%20%C3%8Ele%20de%20la%20Grande%20Jatte%20.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11626,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11626\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q133253891": {
+      "uri": "http://www.wikidata.org/entity/Q133253891",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Mont Kolsaas, Norvège (Tempête de neige)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Le%20Mont%20Kolsaas%2C%20Norv%C3%A8ge%2002.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11627,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11627\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q115801348": {
+      "uri": "http://www.wikidata.org/entity/Q115801348",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Nympheas en fleur",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Nympheas%20en%20fleur.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11628,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11628\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q117712263": {
+      "uri": "http://www.wikidata.org/entity/Q117712263",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "L'Église de Varengeville, soleil couchant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20L%27%C3%89glise%20de%20Varengeville%2C%20soleil%20couchant%20%281882%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11629,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11629\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q115739210": {
+      "uri": "http://www.wikidata.org/entity/Q115739210",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Les rochers de Belle-Île",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/MONET%20Claude%20Les%20Rochers%20de%20Belle-Ile%20Huile%20sur%20toile.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11630,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11630\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q129167125": {
+      "uri": "http://www.wikidata.org/entity/Q129167125",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Bords de la falaise à Pourville",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%22Rand%20der%20Steilk%C3%BCste%20bei%20Pourville%22%20%281882%29%20von%20Claude%20Monet%20-%20Staatsgalerie%20Stuttgart.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11631,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11631\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123985174": {
+      "uri": "http://www.wikidata.org/entity/Q123985174",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Sur la falaise de Dieppe",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Sur%20la%20falaise%20de%20Dieppe.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11632,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11632\\/category\\/309\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123414068": {
+      "uri": "http://www.wikidata.org/entity/Q123414068",
+      "createur": "http://www.wikidata.org/entity/Q296",
+      "createurLabel": "Claude Monet",
+      "titre_fr": "Le Moulin de Limetz",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Le%20Moulin%20de%20Limetz%20%28W%201210a%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11633,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11633\\/category\\/309\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

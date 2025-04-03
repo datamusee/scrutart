@@ -1,0 +1,616 @@
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q5582 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q9372585": {
+      "uri": "http://www.wikidata.org/entity/Q9372585",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Les Vessenots à Auvers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Les%20Vessenots%20%C3%A0%20Auvers%20%281890%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7975\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7975\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q9145110": {
+      "uri": "http://www.wikidata.org/entity/Q9145110",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Voie à Jardin du Luxembourg",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Allee%20im%20Jardin%20du%20Luxembourg.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7977\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7977\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q9209559": {
+      "uri": "http://www.wikidata.org/entity/Q9209559",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Le Lupanar",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20The%20Brothel%20%28Le%20Lupanar%29%20-%20BF104%20-%20Barnes%20Foundation.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9020\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9020\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q9371667": {
+      "uri": "http://www.wikidata.org/entity/Q9371667",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Zinnias et géraniums dans un vase",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Vase%20mit%20Feldblumen.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5124\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5124\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q9248356": {
+      "uri": "http://www.wikidata.org/entity/Q9248356",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "L'Enfant à l'orange",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20Kind%20mit%20Orange.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"188\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/188\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q7232350": {
+      "uri": "http://www.wikidata.org/entity/Q7232350",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Portrait de la mère de l'artiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Bildnis%20der%20Mutter%20des%20K%C3%BCnstlers.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"156\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/156\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18713070": {
+      "uri": "http://www.wikidata.org/entity/Q18713070",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "La Chambre à Coucher",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20De%20slaapkamer%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11860,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11860\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18713076": {
+      "uri": "http://www.wikidata.org/entity/Q18713076",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "La Chambre à Coucher",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20The%20Bedroom%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11861,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11861\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17023940": {
+      "uri": "http://www.wikidata.org/entity/Q17023940",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Portrait du docteur Gachet",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Bildnis%20Doktor%20Gachet.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"251\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/251\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11815443": {
+      "uri": "http://www.wikidata.org/entity/Q11815443",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Auvers sous la pluie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Landschaft%20bei%20Auvers%20im%20Regen.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7976\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7976\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18689641": {
+      "uri": "http://www.wikidata.org/entity/Q18689641",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Rue d'Auvers-sur-Oise",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Street%20in%20Auvers-sur-Oise%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8129\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8129\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11802956": {
+      "uri": "http://www.wikidata.org/entity/Q11802956",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Eglogue en Provence - un couple d'amoureux",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%201888-03%2C%20Arles%20-%20Two%20Lovers%20%28Fragment%29%20F%20544%20JH%201369.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9021\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9021\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11826275": {
+      "uri": "http://www.wikidata.org/entity/Q11826275",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "La Sieste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20The%20siesta%20%28after%20Millet%29%20-%20Google%20Art%20Project.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20The%20siesta%20%28after%20Millet%29%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9022\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9022\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18689459": {
+      "uri": "http://www.wikidata.org/entity/Q18689459",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Portrait de Joseph Roulin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Portrait%20de%20Joseph%20Roulin%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"485\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/485\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11714093": {
+      "uri": "http://www.wikidata.org/entity/Q11714093",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Iris",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Iris.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7978\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7978\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17493783": {
+      "uri": "http://www.wikidata.org/entity/Q17493783",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Les roulottes, campement de bohémiens",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Les%20roulottes%2C%20campement%20de%20boh%C3%A9miens.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8027\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8027\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11789005": {
+      "uri": "http://www.wikidata.org/entity/Q11789005",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Femme nue étendue sur un lit",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Reclining%20Nude%20%28Femme%20nue%20%C3%A9tendue%20sur%20un%20lit%29%20-%20BF720%20-%20Barnes%20Foundation.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"936\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/936\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20270893": {
+      "uri": "http://www.wikidata.org/entity/Q20270893",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Le poète jardin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20The%20Poet%27s%20Garden%20-%201933.433%20-%20Art%20Institute%20of%20Chicago.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11862,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11862\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20275618": {
+      "uri": "http://www.wikidata.org/entity/Q20275618",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Une paysanne creuser devant son chalet",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20A%20Peasant%20Woman%20Digging%20in%20Front%20of%20Her%20Cottage%20-%201968.92%20-%20Art%20Institute%20of%20Chicago.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9224\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9224\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20890801": {
+      "uri": "http://www.wikidata.org/entity/Q20890801",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Oliviers avec ciel jaune et soleil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Olive%20Trees%20-%20Google%20Art%20Project%20%28Minneapolis%20Institute%20of%20Arts%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20Olive%20Trees%20MIA%20517.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8263\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8263\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21693144": {
+      "uri": "http://www.wikidata.org/entity/Q21693144",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "La moisson",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Wheat%20Field%20Behind%20Saint-Paul%20Hospital%20with%20a%20Reaper%20-%20Google%20Art%20%26%20Culture.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8314\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8314\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19911684": {
+      "uri": "http://www.wikidata.org/entity/Q19911684",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Autoportrait au chapeau de paille (avers : L'éplucheur de pommes de terre)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20Self-Portrait%20with%20Straw%20Hat%201887-Metropolitan.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"480\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/480\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q4658180": {
+      "uri": "http://www.wikidata.org/entity/Q4658180",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Champs de blé dans un paysage montagneux",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Meadow%20in%20the%20Mountains%20-%20Le%20Mas%20de%20Saint-Paul.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7994\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7994\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q674846": {
+      "uri": "http://www.wikidata.org/entity/Q674846",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Le café de nuit",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20Willem%20van%20Gogh%20076.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8921\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8921\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3661863": {
+      "uri": "http://www.wikidata.org/entity/Q3661863",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Chaumes de Cordeville à Auvers-sur-Oise",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Thatched%20Cottages%20at%20Cordeville%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7935\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7935\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1194578": {
+      "uri": "http://www.wikidata.org/entity/Q1194578",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Le parc de l'hôpital, à Saint-Rémy",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Garten%20des%20Hospitals%20Saint-Paul3.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7933\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7933\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q4660742": {
+      "uri": "http://www.wikidata.org/entity/Q4660742",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Femme dans un Jardin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vangogh%20femme-dans-un-jardin.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7995\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7995\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q948894": {
+      "uri": "http://www.wikidata.org/entity/Q948894",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "La Mousmé",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vangogh%20mousme.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7028\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7028\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3753366": {
+      "uri": "http://www.wikidata.org/entity/Q3753366",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Fritillaires couronne impériale dans un vase de cuivre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Imperial%20Fritillaries%20in%20a%20Copper%20Vase%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5123\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5123\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1025704": {
+      "uri": "http://www.wikidata.org/entity/Q1025704",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Terrasse du café le soir",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20%281853-1890%29%20Caf%C3%A9terras%20bij%20nacht%20%28place%20du%20Forum%29%20Kr%C3%B6ller-M%C3%BCller%20Museum%20Otterlo%2023-8-2016%2013-35-40.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5824\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5824\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1464531": {
+      "uri": "http://www.wikidata.org/entity/Q1464531",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "La Nuit étoilée",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7964\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7964\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q4924524": {
+      "uri": "http://www.wikidata.org/entity/Q4924524",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Les Alyscamps",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Les%20Alyscamps%2C%20Allee%20in%20Arles1.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7996\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7996\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3794118": {
+      "uri": "http://www.wikidata.org/entity/Q3794118",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Le jardinier",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Il%20giardiniere%20%28Vincent%20Van%20Gogh%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"143\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/143\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1213917": {
+      "uri": "http://www.wikidata.org/entity/Q1213917",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "L'église d'Auvers-sur-Oise, vue du chevet",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20The%20Church%20in%20Auvers-sur-Oise%2C%20View%20from%20the%20Chevet%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7934\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7934\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q24820835": {
+      "uri": "http://www.wikidata.org/entity/Q24820835",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Statuette de plâtre: Torse de femme, vue de face",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20Van%20Gogh%20-%20Plaster%20Statuette%20of%20a%20Female%20Torso%20%281887%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8533\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8533\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26220154": {
+      "uri": "http://www.wikidata.org/entity/Q26220154",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Paysanne au châle vert",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20B%C3%A4uerin%20mit%20gr%C3%BCnem%20Schal.jpeg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Paysanne%20au%20ch%C3%A2le%20vert.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"709\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/709\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26221240": {
+      "uri": "http://www.wikidata.org/entity/Q26221240",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Champ aux meules de blé",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Feld%20mit%20Korngarben.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11863,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11863\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26221239": {
+      "uri": "http://www.wikidata.org/entity/Q26221239",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Champ de blé aux bleuets",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20Van%20Gogh%20-%20Wheatfield%20With%20Cornflowers%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11864,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11864\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26221243": {
+      "uri": "http://www.wikidata.org/entity/Q26221243",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Jardín de Auvers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Garten%20in%20Auvers.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11865,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11865\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26221231": {
+      "uri": "http://www.wikidata.org/entity/Q26221231",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Jeune homme au bleuet",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Bildnis%20eines%20jungen%20Mannes%20mit%20Kornblume.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"710\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/710\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26221170": {
+      "uri": "http://www.wikidata.org/entity/Q26221170",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Cabanes de bois parmi les oliviers et cyprès",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Cabanes%20de%20bois%20parmi%20les%20oliviers%20et%20cypr%C3%A9s%20%28F%20623%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11866,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11866\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26221197": {
+      "uri": "http://www.wikidata.org/entity/Q26221197",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Deux Paysannes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Deux%20Paysannes%20%281889%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11867,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11867\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26221125": {
+      "uri": "http://www.wikidata.org/entity/Q26221125",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Portrait d'Armand Roulin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Bildnis%20Armand%20Roulin%20im%20Alter%20von%2017%20Jahren.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7081\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7081\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26220189": {
+      "uri": "http://www.wikidata.org/entity/Q26220189",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Zinnias et géraniums dans un vase",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Vase%20mit%20Zinnien%20und%20Geranien.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5138\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5138\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26220250": {
+      "uri": "http://www.wikidata.org/entity/Q26220250",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Femme dans un champ de blé",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Frau%2C%20im%20Gras%20sitzend.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11868,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11868\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26220263": {
+      "uri": "http://www.wikidata.org/entity/Q26220263",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Cabanes blanches aux Saintes-Maries",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Cabanes%20blanches%20aux%20Saintes-Maries%20-%201995-0006%20-%20Kunsthaus%20Z%C3%BCrich.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Drei%20wei%C3%9Fe%20H%C3%BCtten%20in%20Saintes-Maries.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8404\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8404\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26220197": {
+      "uri": "http://www.wikidata.org/entity/Q26220197",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Nature Morte: Vase aux Glaïeuls",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Vase%20mit%20roten%20Gladiolen.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5139\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5139\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26220186": {
+      "uri": "http://www.wikidata.org/entity/Q26220186",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Le Moulin de la Galette",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Le%20Moulin%20de%20la%20Galette%20%281886%29%20-%20Berlin.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"6264\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/6264\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26220257": {
+      "uri": "http://www.wikidata.org/entity/Q26220257",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Le Train Bleu",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Das%20Viadukt%20in%20Arles%20oder%20Der%20blaue%20Zug.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11869,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11869\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26220244": {
+      "uri": "http://www.wikidata.org/entity/Q26220244",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Le restaurant Rispal à Asnières",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Das%20Restaurant%20Rispal%20in%20Asni%C3%A9res.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11870,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11870\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26220278": {
+      "uri": "http://www.wikidata.org/entity/Q26220278",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Les bateaux amarrés",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Rhonebarken.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11871,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11871\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28146941": {
+      "uri": "http://www.wikidata.org/entity/Q28146941",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Bouquet de fleurs",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Granet%20II%2001%20Van%20Gogh.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11872,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11872\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28146933": {
+      "uri": "http://www.wikidata.org/entity/Q28146933",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Scène de rue à Montmartre (Impasse des Deux Frères et le Moulin à Poivre)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Sc%C3%A8ne%20de%20rue%20%C3%A0%20Montmartre%20%281887%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9940\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9940\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28146907": {
+      "uri": "http://www.wikidata.org/entity/Q28146907",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Maisons à Auvers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Houses%20at%20Auvers%20by%20Vincent%20Van%20Gogh.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9941\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9941\\/category\\/330\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27048502": {
+      "uri": "http://www.wikidata.org/entity/Q27048502",
+      "createur": "http://www.wikidata.org/entity/Q5582",
+      "createurLabel": "Vincent van Gogh",
+      "titre_fr": "Le Bébé Marcelle Roulin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Portrait%20of%20Marcelle%20Roulin%20-%20F441a%20JH1640.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"809\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/809\\/category\\/330\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}
