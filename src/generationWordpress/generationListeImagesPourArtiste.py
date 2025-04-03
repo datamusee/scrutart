@@ -45,19 +45,32 @@ if __name__=="__main__":
                                  "listimagespath": item["listimagespath"]} )
 
     sparqlTemplate = """
-        SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {
-          VALUES ?createur {
-            wd:__QID__
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q334200 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q334200 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
           }
-          ?uri wdt:P31 wd:Q3305213;
-            wdt:P170 ?createur;
-            wdt:P18 ?image
-               .
-          ?createur rdfs:label ?createurLabel.
-          FILTER((LANG(?createurLabel)) = "fr")
-          ?uri rdfs:label ?titre_fr .
-          FILTER(((LANG(?titre_fr)) = "fr")||((LANG(?titre_fr)) = "en"))
-        } 
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
     """
 
     # for creator in qidArtistes:
