@@ -1,0 +1,2371 @@
+{
+  "sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q380704 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q380704 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ",
+  "liste": [
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17275756",
+      "titre_fr": "Portrait de Paulus Potter",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Paulus%20Potter%20%281625-1654%29%20-%2054%20-%20Mauritshuis.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30252450",
+      "titre_fr": "Portrait d’homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20-%20KMSKB.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30252296",
+      "titre_fr": "Portrait d'une dame",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Lady%20-%20KMSKB.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17319844",
+      "titre_fr": "Portrait of Aert van Nes (1626-93), Vice admiral",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Aert%20van%20Nes%20%281626-93%29.%20Luitenant-admiraal%20Rijksmuseum%20SK-A-140.jpeg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30252651",
+      "titre_fr": "Portrait d'un couple inconnu.",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Junges%20Patrizierpaar%20-%20235%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30252651",
+      "titre_fr": "Portrait d'un couple inconnu.",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20an%20unknown%20couple.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30253055",
+      "titre_fr": "Portrait of a boy playing golf by the shore",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20boy%20playing%20golf%20by%20the%20shore.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17319845",
+      "titre_fr": "Portrait de Geertruida den Dubbelde (1647-84), femme de Aert van Nes",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Geertruida%20den%20Dubbelde%2C%20de%20echtgenote%20van%20luitenant-admiraal%20Aert%20van%20Nes%2C%20by%20Bartholomeus%20van%20der%20Helst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17319846",
+      "titre_fr": "Mary Stuart, Princess of Orange, as Widow of William II",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Stuart%20als%20weduwe%20van%20Willem%20II%20Rijksmuseum%20SK-A-142.jpeg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30258660",
+      "titre_fr": "Portrait of a Lady with a Sunflower",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Lady%20with%20a%20Sunflower.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17319848",
+      "titre_fr": "Samuel van Lansbergen (d 1669). Remonstrant minister in Rotterdam",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Samuel%20van%20Lansbergen%2C%20remonstrants%20predikant%20te%20Rotterdam%20Rijksmuseum%20SK-A-143.jpeg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30275973",
+      "titre_fr": "Family portrait of Rijcklof van Goens and Jacomine Bartolomeusdr. Rosegaard, their children Rijcklof and Volckert, and a servant",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Johan%20Philip%20Koelman%20after%20Bartholomeus%20van%20der%20Helst%20-%20Family%20portrait%20of%20Rijcklof%20van%20Goens%20and%20Jacomine%20Bartolomeusdr.%20Rosegaard%2C%20their%20children%20Rijcklof%20and%20Volckert%2C%20and%20a%20servant.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30266292",
+      "titre_fr": "Portrait of a Woman (Städel)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Woman%200704.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30276196",
+      "titre_fr": "Portrait d'un homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%2069911.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30276208",
+      "titre_fr": "Portrait d'une femme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Woman%2060.009.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17319850",
+      "titre_fr": "Maria Pietersdr de Leest (d 1652). Wife of Samuel van Lansbergen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Pietersdr%20de%20Leest%2C%20echtgenote%20van%20Samuel%20van%20Lansbergen%20Rijksmuseum%20SK-A-144.jpeg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30301656",
+      "titre_fr": "Portrait of a Young Woman with a Small Book",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Young%20Woman%20-%201969.62%20-%20Fogg%20Museum.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30301656",
+      "titre_fr": "Portrait of a Young Woman with a Small Book",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Young%20Woman%20by%20Bartholomeus%20van%20der%20Helst%2C%20c.%201640%20-%20Fogg%20Art%20Museum%20-%20DSC02334.JPG",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17319851",
+      "titre_fr": "Egbert Meeuwsz Cortenaer (1605-65). Vice admiral, admiralty of the Maas, Rotterdam",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egbert%20Meeuwsz%20Cortenaer%2C%20by%20Bartholomeus%20van%20der%20Helst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30301681",
+      "titre_fr": "Venus punishing Cupid",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Venus%20punishing%20Cupid.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17319852",
+      "titre_fr": "Portrait d' Andries Bicker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portret%20van%20Andries%20Bicker%20Rijksmuseum%20SK-A-146.jpeg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30302574",
+      "titre_fr": "Woman in the window",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Old%20lady%20at%20the%20window.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30302911",
+      "titre_fr": "Portrait of a gentleman holding a feathered had in his right hand",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20gentleman%2C%20half%20length.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30302994",
+      "titre_fr": "Portrait of Sophia Trip, wife of Joan Coymans",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20sophia%20trip%20wife%20of%20joan%20coymans.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17319853",
+      "titre_fr": "Portrait of Gerard Andriesz Bicker, son of Andries Bicker and lord of Muiden",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Gerard%20Andriesz%20Bicker.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30303358",
+      "titre_fr": "Portrait of a gentleman with white hair",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/A%20gentleman%2C%20by%20Bartholomeus%20Van%20Der%20Helst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30303034",
+      "titre_fr": "Lady in Black",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Helst%20-%20Daam%20mustas.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30303374",
+      "titre_fr": "Portrait of a young boy with a falcon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20young%20boy.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17323334",
+      "titre_fr": "Johan de Liefde (c 1619-73), Vice admiral",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Johan%20de%20Liefde.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30303403",
+      "titre_fr": "Portrait of a young man at half length",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20young%20man%20at%20half%20length.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17323920",
+      "titre_fr": "Armaments dealer of Amsterdam and Dordrecht",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jacobus%20Trip%20%281627-70%29.%20Wapenhandelaar%20te%20Amsterdam%20en%20Dordrecht%20Rijksmuseum%20SK-A-1255.jpeg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30303498",
+      "titre_fr": "Portrait of a young shepherd with sheep and goats",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Baptist%20Weenix%20-%20Bartholomeus%20van%20der%20Helst%20-%20Shepherds%20boy%20with%20sheep%20and%20goats.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30307614",
+      "titre_fr": "Portrait d’homme.",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20CAM%20CCF%200149.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30308105",
+      "titre_fr": "Portrait d'un homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20PBA-Lille.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17341692",
+      "titre_fr": "Banquet à la Guilde des Arbalétriers de Célébration du traité de Münster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schuttersmaaltijd%20ter%20viering%20van%20de%20Vrede%20van%20Munster%20Rijksmuseum%20SK-C-2.jpeg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17341692",
+      "titre_fr": "Banquet à la Guilde des Arbalétriers de Célébration du traité de Münster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20De%20schuttersmaaltijd%20in%20de%20Voetboogdoelen%20ter%20viering%20van%20het%20sluiten%20van%20de%20Vrede%20van%20Munster%20-%20SK-C-2%20-%20Rijksmuseum.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30308773",
+      "titre_fr": "Homo Bulla: A Boy Blowing Bubbles in a Landscape",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Boy%20%28blowing%20Bubbles%29.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30319085",
+      "titre_fr": "Portrait of a Man of the Hinlopen family, possibly Jacob Fransz Hinlopen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20of%20the%20Hinlopen%20family%2C%20possibly%20Jacob%20Fransz%20Hinlopen.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30320816",
+      "titre_fr": "Portrait of a Boy holding a Silver Drinking Cup",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Boy%20holding%20a%20Silver%20Drinking%20Cup.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17342554",
+      "titre_fr": "Militia Company of District VIII under the Command of Captain Roelof Bicker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Officieren%20en%20andere%20schutters%20van%20wijk%20VIII%20in%20Amsterdam%20onder%20leiding%20van%20kapitein%20Roelof%20Bicker%20en%20luitenant%20Jan%20Michielsz%20Blaeuw%20Rijksmuseum%20SK-C-375.jpeg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30321592",
+      "titre_fr": "Portrait of an Officer",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20an%20Officer%20BBO%20CHQ%20264.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30321257",
+      "titre_fr": "Portrait de Roelof Bicker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Roelof%20Bicker.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17541317",
+      "titre_fr": "Portrait of Joan Huydecoper (1599-1661) (copy)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/SA%205091-Joan%20Huydecoper%20%281599-1661%29.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17541894",
+      "titre_fr": "Portrait of an officier",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207509-Portret%20van%20een%20officier-Portret%20van%20een%20krijgsman.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30322418",
+      "titre_fr": "Portrait of Joan Coymans",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Joan%20Coymans%2032412.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30322493",
+      "titre_fr": "Portrait of a Lady",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Lady%20-%20Gem%C3%A4ldegalerie%20Berlin%20t0931.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17740448",
+      "titre_fr": "Daniel Bernard",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/402-Daniel%20Bernard%20%281626-1714%29.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30327530",
+      "titre_fr": "Portrait of Margaretha Trip, wife of Samuel de Marez",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Margaretha%20Trip%2C%20wife%20of%20Samuel%20de%20Marez.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30327552",
+      "titre_fr": "Portrait of Samuel de Marez",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Samuel%20de%20Marez.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17812647",
+      "titre_fr": "Les Syndics des arbalétriers de saint Sébastien à Amsterdam",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207329-De%20overlieden%20van%20de%20Handboogdoelen-De%20vier%20overlieden%20van%20de%20Handboog-%20%28St%20Sebastiaan%29%20doelen%20te%20Amsterdam.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30327676",
+      "titre_fr": "Portrait of a Woman, possibly Elisabeth, sister of Samuel de Marez",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Woman%2C%20possibly%20Elisabeth%20de%20Marez.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30328044",
+      "titre_fr": "Portrait d'un homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20Selbstportrait.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30328971",
+      "titre_fr": "Portrait of a Girl with a Bunch of Grapes",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portait%20of%20a%20Girl%20with%20a%20Bunch%20of%20Grapes%20H0027-L00442677.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30337140",
+      "titre_fr": "Portrait of Jacob Jacobsz. van Couwenhoven",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Jacob%20Jacobsz.%20van%20Couwenhoven.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q17813602",
+      "titre_fr": "Two regents and two regentesses of the Spinhuis",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/SA%204367-Twee%20regenten%20en%20twee%20regentessen%20van%20het%20Spinhuis.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30337213",
+      "titre_fr": "Portrait of Willem van der Zaan",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Willem%20van%20der%20Zaan%20GL%20GM%20725.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q18575494",
+      "titre_fr": "Portrait of Louis De Geer the Younger 1622-1695, ironworks owner",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louis%20de%20Geer%20%281622-1695%29%2C%20by%20Bartholomeus%20van%20der%20Helst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30339436",
+      "titre_fr": "Portrait of a Man with his Dogs",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20with%20his%20Dogs.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30337265",
+      "titre_fr": "Portrait of Cornelis Jansz. Witsen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Cornelis%20Jansz.%20Witsen.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q18575496",
+      "titre_fr": "Portrait of Jeanne Parmentier, 1634-1710, wife of Louis de Geer",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Johanna%20Parmentier%20%281634-1710%29%2C%20by%20Bartholomeus%20van%20der%20Helst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30347506",
+      "titre_fr": "Portrait of a Flute Player",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Flute%20Player.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30348121",
+      "titre_fr": "Portrait of a Man (Poznan)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20-%20Poznan.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q18575497",
+      "titre_fr": "Portrait of Emanuel De Geer, 1624-1692, brother of Louis de Geer, Jr.",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Emanuel%20de%20Geer.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30349277",
+      "titre_fr": "Portrait of Maria Smit, wife of Gideon de Wildt",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Maria%20Smit%2C%20wife%20of%20Gideon%20de%20Wildt.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30348217",
+      "titre_fr": "Portrait d'un homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20-%20Schloss%20Wilhelmsh%C3%B6he.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30349361",
+      "titre_fr": "Portrait of Wilhelmina van Bronckhorst",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Wilhelmina%20van%20Bronckhorst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q19912036",
+      "titre_fr": "The Musician",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Musician%20MET%20ep73.2.R.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q19912623",
+      "titre_fr": "Portrait d'homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%20MET%20DP143191.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30349674",
+      "titre_fr": "Portrait of David Rijckaert",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20David%20Rijckaert.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q19926203",
+      "titre_fr": "Portrait d'un homme inconnu, probablement un prédicateur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20004.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30350552",
+      "titre_fr": "Portrait of Aechte Cornelisdr. Briel gezegd Welhouck",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Aechte%20Cornelisdr.%20Briel%20gezegd%20Welhouck.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q19928809",
+      "titre_fr": "Abraham del Court and His Wife Maria de Kaersgieter",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Abraham%20del%20Court%20and%20his%20wife%20Maria%20de%20Kaersgieter%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30350556",
+      "titre_fr": "Portrait of a Woman and Child",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Woman%20and%20Child.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q20178914",
+      "titre_fr": "Portrait of a Young Man in Military Costume",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Young%20Man%20in%20Military%20Costume%20-%2070.PA.12%20-%20J.%20Paul%20Getty%20Museum.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30354607",
+      "titre_fr": "Portrait d'homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%208102.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30353083",
+      "titre_fr": "Portrait of a Seated Woman with a Fan",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Seated%20Woman%20with%20a%20Fan%20GG%20L%204.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30356519",
+      "titre_fr": "Portrait of a Lady, 1648",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Lady%201648.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30436595",
+      "titre_fr": "Portrait d’homme.",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20-%201013.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q20354762",
+      "titre_fr": "Portrait of a Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20man%20leaning%20over%20the%20back%20of%20a%20chair%20KMSsp443.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q20268577",
+      "titre_fr": "Venus and Cupid",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20van%20Loo%20-%20Venus%20and%20Cupid%20-%20KMS3213%20-%20Statens%20Museum%20for%20Kunst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30441638",
+      "titre_fr": "Portrait of Sophia Coymans",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Sophia%20Coymans%202023%20CKS%2020683%200012%20063151.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30456286",
+      "titre_fr": "Portrait of a Young Woman with Ringlets",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Young%20Woman%20with%20Ringlets.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30460269",
+      "titre_fr": "Portrait of a Lady with a Fan",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Lady%20with%20a%20Fan.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q20422353",
+      "titre_fr": "Portrait of a Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20KMSsp444.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q20642756",
+      "titre_fr": "Les directeurs de la Garde civique de Saint George à Amsterdam",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207330-De%20overlieden%20van%20de%20Voetboogdoelen-De%20vier%20overlieden%20van%20het%20Sint%20Jorisgilde.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30461803",
+      "titre_fr": "Portrait of a Man with a Walking Stick",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Gentleman%20with%20a%20Walking%20Stick.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30501660",
+      "titre_fr": "Portrait of a man leaning his arm on a ledge",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20man%20leaning%20his%20arm%20on%20a%20ledge.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q20809136",
+      "titre_fr": "Portrait of Michiel Heusch",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Michiel%20Heusch%20Cat495.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q20890733",
+      "titre_fr": "Portrait of a Burgomaster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20and%20Studio%3B%20Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Burgomaster%20-%2035.7.106%20-%20Minneapolis%20Institute%20of%20Arts.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q21675786",
+      "titre_fr": "Portrait d'un armateur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Anonieme%20meester%20-%20Portrait%20of%20a%20Ship-owner%20-%201914-CR%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30503923",
+      "titre_fr": "Portrait of a Lady, possibly Ermgaard Emerantia Hoefslager",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Lady%2C%20possibly%20Ermgaard%20Emerantia%20Hoefslager.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q21711654",
+      "titre_fr": "Portrait of a Man with Documents",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20man%20with%20documents.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30510232",
+      "titre_fr": "Portrait of a Lady with a Feather",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Lady%20with%20a%20Feather.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q44444035",
+      "titre_fr": "Q44444035",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portret%20van%20een%20man%20-%201515%20-%20Amsterdam%20Museum.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q55385065",
+      "titre_fr": "Portrait of two men by a table with books and writing tools",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Carel%20de%20Moor%20-%20Two%20Gentlemen%20Seated%20at%20a%20Table.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q49196341",
+      "titre_fr": "Portrait of a Woman",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Woman%20-%201988.15.4%20-%20Yale%20University%20Art%20Gallery.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q21726168",
+      "titre_fr": "Portrait de famille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20Lucaszn%20van%20de%20Venne%20with%20Anna%20de%20Carpentier%201652%20van%20der%20Helst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q21727572",
+      "titre_fr": "Portrait d'homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20-%20Hermitage.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q55432072",
+      "titre_fr": "Man holding a Glass of Wine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Man%20holding%20a%20Glass%20of%20Wine%20-%20NG.M.00088%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q21741434",
+      "titre_fr": "Portrait de famille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Family%20-%20WGA11343.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q56026636",
+      "titre_fr": "Portrait of a woman with a falcon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20woman%20with%20a%20falcon.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q77973826",
+      "titre_fr": "Portrait of a Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%20Bartholomeus%20van%20der%20Helst%20.PNG",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q22342728",
+      "titre_fr": "Autoportrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Helst%20Self-portrait.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q22342728",
+      "titre_fr": "Autoportrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Self-portrait%20-%20M.Ob.491%20-%20Hermitage%20Museum.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q79711886",
+      "titre_fr": "Q79711886",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portret%20van%20een%20kind%20op%20zijn%20doodsbed%20-%203994%20-%20Amsterdam%20Museum.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q97941155",
+      "titre_fr": "The Standard Bearer",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20The%20Standard-Bearer.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q24060610",
+      "titre_fr": "The Holy Family with John the Baptist",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20The%20Holy%20Family%20with%20the%20Holy%20Infants%20Kissing.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q24406052",
+      "titre_fr": "Boy with a Spoon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Boy%20with%20a%20Spoon.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q106398341",
+      "titre_fr": "Portrait de dame",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20dame%20%28c.%201650%29%2C%20de%20Bartholomeus%20Van%20der%20Helst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q107463457",
+      "titre_fr": "Portrait of Joan Huydecoper van Maarsseveen the Elder",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Joan%20Huydecoper%20van%20Maarsseveen%20the%20Elder.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q109649511",
+      "titre_fr": "Portrait of Willem Vincent van Wittenhorst (1613-1674)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Helst%2C%20Bartholomeus%20van%20der%20-%20Portrait%20of%20Wilhelm%20Vincent%20van%20Wyttenhorst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q115464080",
+      "titre_fr": "Q115464080",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Jongetje%20op%20zijn%20doodsbed.%20-%2055322%20-%20Museum%20Gouda.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q114801455",
+      "titre_fr": "The regents of the Walenweeshuis, Amsterdam, c. 1641/1642",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/De%20regenten%20van%20het%20Walenweeshuis%2C%20164142%2C%20objectnr%204940.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q123502161",
+      "titre_fr": "Portrait d'un gentilhomme et de sa femme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Couple%201104-53.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q131400020",
+      "titre_fr": "Portrait of Maritge Jansdr Pesser",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20helst%2C%20ritratto%20di%20maritge%20jansdr%20pesser%2C%201647.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q24410141",
+      "titre_fr": "A child's deathbed portrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B.%20van%20der%20Helst%20-%20Doodsbed%20van%20een%20kind%20-%20AB21482%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q24406253",
+      "titre_fr": "A Boy as Cupid - 1644",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20A%20Boy%20as%20Cupid%20-%201644.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q117214939",
+      "titre_fr": "Portrait of a Man with en Empty Wineglass",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20man%20with%20a%20wine%20glass%20CZE%20NG.O%2010730.jpeg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q26706275",
+      "titre_fr": "Portrait of a Lady in Black Satin with a Fan",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20lady%20in%20black%20satin%20with%20a%20fan.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q25802852",
+      "titre_fr": "Portrait of Jan Jacobsz. Hinlopen (1626-1666) and Lucia Wijbrants (1638-1719) with to the left a vista showing a wet nurse and child",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/BartholomeusVanderHelst%20Hinlopen.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q26693055",
+      "titre_fr": "Portrait of a Man in Black holding a Glove",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20in%20Black%20holding%20a%20Glove.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q26706402",
+      "titre_fr": "Portrait of a Girl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Retrato%20de%20jovem%20rapariga%20vestida%20de%20azul%20com%20uma%20pena%20de%20avestruz.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q27006717",
+      "titre_fr": "Portrait of Aert Jansz. Van Nes (1626-1693), copy in brunaille, probably preparatory sketch for print by Lambert Visscher",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Origineel%2C%20Bartholomeus%20van%20der%20Helst%20%28Haarlem%201613%20-%20Amsterdam%201670%29%20-%20Portret%20van%20Aert%20Jansz.%20Van%20Nes%20%281626-1693%29%2C%20kopie%20in%20brunaille%2C%20waarschijnlijk%20als%20voorbereiding%20vo%20-%2063079-A-B%20-%20Museum%20Rotterdam.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q27014007",
+      "titre_fr": "Portrait of Maritge Jansdr. Pesser",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Maritge%20Jansdr.%20Pesser%201647.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q27014000",
+      "titre_fr": "Portrait of Maritge Jansdr. Pesser",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Maritge%20Jansdr.%20Pesser%201647%2010515-A-B%201.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q27014029",
+      "titre_fr": "Portrait of Jacob Jacobsz. Van Couwenhoven",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Rotterdam%20Brewer%20Jacob%20Jacobsz.%20van%20Couwenhoven%2010513-A-B%201.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q27316179",
+      "titre_fr": "Portrait de Petrus Scriverius",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Petrus%20Scriverius.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q27966574",
+      "titre_fr": "Nieuwmarkt in Amsterdam",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20The%20Nieuwmarkt%20in%20Amsterdam.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q27971776",
+      "titre_fr": "Portrait de femme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Woman.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q27982114",
+      "titre_fr": "Portrait of a Lady",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Lady%20GG%206388.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q28060542",
+      "titre_fr": "Portrait of an Ensign",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B.%20van%20der%20Helst%20-%20Portret%20van%20een%20vaandrig%20-%20NK1767%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q28060542",
+      "titre_fr": "Portrait of an Ensign",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholom%C3%A4us%20van%20der%20Helst%20%281613-1670%29%20-%20Fahnentr%C3%A4ger%20-%201036%20-%20F%C3%BChrermuseum.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q28060542",
+      "titre_fr": "Portrait of an Ensign",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20an%20Ensign%20NK1767.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q27982117",
+      "titre_fr": "Portrait de femme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Bildnis%20einer%20Dame%20GG%20594.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q28113807",
+      "titre_fr": "Portrait d'homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%200568.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q28087942",
+      "titre_fr": "Portrait of a Young Lady",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Lady%20B483.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q28113807",
+      "titre_fr": "Portrait d'homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20-%20568%20-%20Mauritshuis.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q28113812",
+      "titre_fr": "Portrait de femme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Lady%200569.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q28113812",
+      "titre_fr": "Portrait de femme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Woman%20-%20569%20-%20Mauritshuis.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q28775643",
+      "titre_fr": "Portrait of Captain Gideon de Wildt",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Captain%20Gideon%20de%20Wildt%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q28796177",
+      "titre_fr": "Autoportrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Self-Portrait%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q29644473",
+      "titre_fr": "Jeune femme dévoilée, soulevant une draperie",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Een%20naakte%20vrouw%20met%20draperie%201658.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q29656286",
+      "titre_fr": "Les Syndics des arbalétriers de saint Sébastien à Amsterdam",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20De%20bestuursleden%20van%20de%20schutterscompagnie%20van%20St-Sebastiaan%20te%20Amsterdam.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q29656289",
+      "titre_fr": "La Famille Reepmaker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20The%20Reepmaker%20Family%20of%20Amsterdam%20-%20WGA11344.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q29656293",
+      "titre_fr": "Portrait de femme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20woman.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q29656295",
+      "titre_fr": "Portrait d'homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20-%20INV%201333.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q29856277",
+      "titre_fr": "Portrait d'homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20-%20Boijmans.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q29856286",
+      "titre_fr": "Portrait de femme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Woman%20-%20Boijmans.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q29958845",
+      "titre_fr": "Portrait of a Young Man with a Lemon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Monogrammist-B.v.H.-wohl-Bartholomeus-van-der-Helst-Bildnis-eines-jungen-Mannes-mit-Zitrone.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q29958845",
+      "titre_fr": "Portrait of a Young Man with a Lemon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Monogrammist%20B.v.H.%20-%20Bildnis%20eines%20jungen%20Manne%20mit%20Zitrone%20-%2012213%20-%20Bavarian%20State%20Painting%20Collections.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30006634",
+      "titre_fr": "Femme en robe noire",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Frau%20in%20schwarzer%20Atlasrobe.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30057552",
+      "titre_fr": "Portrait of a Man in Black",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20in%20Black%20%28holding%20gloves%29%208475.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30222055",
+      "titre_fr": "Autoportrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20self%20portrait%201667%20cropped.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30223887",
+      "titre_fr": "Vénus tenant la pomme de Pâris",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Venus%20met%20de%20appel%201664.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30224021",
+      "titre_fr": "Portrait de femme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lille%20PdBA%20van%20der%20Helst%20portrait%20de%20femme.JPG",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30224223",
+      "titre_fr": "La Femme au livre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20femme%20au%20livre.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30224331",
+      "titre_fr": "Portrait of Anna du Pire as Granida",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30224370",
+      "titre_fr": "Self Portrait as Daifilo",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portret%20van%20een%20onbekende%20man%20als%20Daifilo%20-%20O-9324%20-%20National%20Gallery%20Prague.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30227271",
+      "titre_fr": "Portrait of a Girl with a Bread-bun and a Dog",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Girl%20with%20a%20Bread-bun%20and%20a%20Dog.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30227670",
+      "titre_fr": "Les Régents de l'Hospice Wallon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Regents%20of%20the%20Walloon%20Orphanage%20-%20WGA11346.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30227670",
+      "titre_fr": "Les Régents de l'Hospice Wallon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20De%20regenten%20van%20het%20Walenweeshuis%2C%201637%20-%201425%20-%20Amsterdam%20Museum.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30228328",
+      "titre_fr": "Portrait d'une jeune dame",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Young%20Lady%20SW%20GV%20GV1974%2063.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30228444",
+      "titre_fr": "Portrait of Catharina Jansdr. Tengnagel, wife of Andries Bicker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Catharina%20Jansdr.%20Tengnagel%2C%20wife%20of%20Andries%20Bicker.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30228730",
+      "titre_fr": "Portrait of a man, possibly Joan Hulft (1610-1677), with a dog, seated at a table with a clock",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%201918%20186%20IN1.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30229090",
+      "titre_fr": "Portrait of Wilhelm Vincent van Wyttenhorst",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Wilhelm%20Vincent%20van%20Wyttenhorst%20%281613-1674%29%2C%20by%20Bartholomeus%20van%20der%20Helst%2C%20Cornelis%20van%20Poelenburch%2C%20Jan%20Both%20and%20Jacob%20Duck.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30235200",
+      "titre_fr": "Portrait of a Lady in White",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Woman%20in%20White.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30239360",
+      "titre_fr": "Portrait of a Man, perhaps Dammas Jansz. Pesser",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%2C%20perhaps%20Dammas%20Jansz.%20Pesser.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30235879",
+      "titre_fr": "Portrait of the Burgomeister's Wife",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20the%20Burgomeister%27s%20Wife%20SS%20TMTR%20BW.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30240327",
+      "titre_fr": "Portrait of a woman, perhaps Dorothea Adriaensdr. Keijser, wife of Dammas Jansz. Pesser",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20woman%2C%20perhaps%20Dorothea%20Adriaensdr.%20Keijser%2C%20wife%20of%20Dammas%20Jansz.%20Pesser.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30240713",
+      "titre_fr": "Portrait d'un magistrat",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20AM1051-72-lr-1.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30242648",
+      "titre_fr": "Portrait of a Woman with a Curtain",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gem%C3%A4ldegalerie%20Alte%20Meister%20%28Dresden%29%20Galeriewerk%20Braun%201276.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30243041",
+      "titre_fr": "Portrait d'un gentilhomme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Gentleman.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30243493",
+      "titre_fr": "Family Portrait of Jochem van Aras with His Wife and Daughter",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Family%20Portrait%20of%20Jochem%20van%20Aras%20with%20His%20Wife%20and%20Daughter%20WLC%20WLC%20P110.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30243635",
+      "titre_fr": "Portrait of a Gentleman (hand on hip)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%2025.216.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30244237",
+      "titre_fr": "Four directors of the arquebusier's guild, Amsterdam, 1655",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Four%20aldermen%20of%20the%20Kloveniersdoelen%20in%20Amsterdam%20eating%20oysters.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30245286",
+      "titre_fr": "Portrait of a gentleman, three-quarter-length, seated, before a balustrade",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20gentleman%2C%20three-quarter-length%2C%20seated%2C%20before%20a%20balustrade.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30249956",
+      "titre_fr": "Portrait of Lieutenant-Admiral Egbert Meussen Cortenaer (c.1605–1665)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Helst%2C%20Egbert%20Kortenaer.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30245439",
+      "titre_fr": "Portrait of a lady, probably Hester du Pire, seated before a balustrade, holding a fan, with a view out to the sea beyond",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20lady%2C%20three-quarter-length%2C%20seated%2C%20before%20a%20balustrade.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30251075",
+      "titre_fr": "Portrait of a seated young man holding gloves in his left hand",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20a%20Man%20-%20on%20loan%20in%20Amsterdam%20Museum.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30251323",
+      "titre_fr": "Portrait of the Burgermeester's Wife, Weyntgen van Bronckhorst",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20the%20Burgermeester%27s%20Wife%2C%20Weyntgen%20van%20Bronckhorst.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30251233",
+      "titre_fr": "Portrait of Dirck de Vlaming van Oudtshoorn",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dirck%20de%20Vlaming%20van%20Oudtshoorn.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q380704",
+      "createurLabel": "Bartholomeus van der Helst",
+      "uri": "http://www.wikidata.org/entity/Q30251409",
+      "titre_fr": "Portrait of Catharina Claesdr. Gaeff alias Lambertsdr. Opsy (1619-1698)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartholomeus%20van%20der%20Helst%20-%20Portrait%20of%20Catharina%20Claesdr.%20Gaeff%20alias%20Lambertsdr.%20Opsy%20%281619-1698%29.jpg",
+      "categories": [
+        {
+          "catId": 532,
+          "catName": "Galerie Bartholomeus van der Helst"
+        }
+      ]
+    }
+  ]
+}
