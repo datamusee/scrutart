@@ -1,1 +1,62 @@
-{"sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q301 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }", "liste": [], "dict": {"http://www.wikidata.org/entity/Q16621950": {"uri": "http://www.wikidata.org/entity/Q16621950", "createur": "http://www.wikidata.org/entity/Q301", "createurLabel": "Le Greco", "titre_fr": "Saint François recevant les stigmates", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/El%20Greco%20-%20St%20Fran%C3%A7ois.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11634,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11634\\/category\\/310\"}}", "posted": true}, "http://www.wikidata.org/entity/Q11838643": {"uri": "http://www.wikidata.org/entity/Q11838643", "createur": "http://www.wikidata.org/entity/Q301", "createurLabel": "Le Greco", "titre_fr": "Saint François et le frère Léon méditant sur la mort", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/El%20Greco%20-%20St%20Francis%20holds%20a%20skull%20with%20brother%20Leo.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11635,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11635\\/category\\/310\"}}", "posted": true}, "http://www.wikidata.org/entity/Q6034865": {"uri": "http://www.wikidata.org/entity/Q6034865", "createur": "http://www.wikidata.org/entity/Q301", "createurLabel": "Le Greco", "titre_fr": "Saint Louis, roi de France, et un page", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Louis%2C%20roi%20de%20France%2C%20et%20un%20page.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"199\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/199\\/category\\/310\"}}", "posted": true}, "http://www.wikidata.org/entity/Q63436638": {"uri": "http://www.wikidata.org/entity/Q63436638", "createur": "http://www.wikidata.org/entity/Q301", "createurLabel": "Le Greco", "titre_fr": "Le partage de la tunique du Christ (dit aussi L'Espolio)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Greco-Espolio-Lyon.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11636,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11636\\/category\\/310\"}}", "posted": true}, "http://www.wikidata.org/entity/Q29654455": {"uri": "http://www.wikidata.org/entity/Q29654455", "createur": "http://www.wikidata.org/entity/Q301", "createurLabel": "Le Greco", "titre_fr": "Saint François d'Assise et frère Léon méditant sur la mort", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/%28Castres%29%20Saint%20Fran%C3%A7ois%20d%27Assise%20et%20fr%C3%A8re%20L%C3%A9on%20-%20El%20Greco%2C%20Mus%C3%A9e%20Goya.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11637,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11637\\/category\\/310\"}}", "posted": true}}, "version": "2.0.0"}
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q301 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q16621950": {
+      "uri": "http://www.wikidata.org/entity/Q16621950",
+      "createur": "http://www.wikidata.org/entity/Q301",
+      "createurLabel": "Le Greco",
+      "titre_fr": "Saint François recevant les stigmates",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/El%20Greco%20-%20St%20Fran%C3%A7ois.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11634,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11634\\/category\\/310\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11838643": {
+      "uri": "http://www.wikidata.org/entity/Q11838643",
+      "createur": "http://www.wikidata.org/entity/Q301",
+      "createurLabel": "Le Greco",
+      "titre_fr": "Saint François et le frère Léon méditant sur la mort",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/El%20Greco%20-%20St%20Francis%20holds%20a%20skull%20with%20brother%20Leo.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11635,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11635\\/category\\/310\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q6034865": {
+      "uri": "http://www.wikidata.org/entity/Q6034865",
+      "createur": "http://www.wikidata.org/entity/Q301",
+      "createurLabel": "Le Greco",
+      "titre_fr": "Saint Louis, roi de France, et un page",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Louis%2C%20roi%20de%20France%2C%20et%20un%20page.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"199\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/199\\/category\\/310\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q63436638": {
+      "uri": "http://www.wikidata.org/entity/Q63436638",
+      "createur": "http://www.wikidata.org/entity/Q301",
+      "createurLabel": "Le Greco",
+      "titre_fr": "Le partage de la tunique du Christ (dit aussi L'Espolio)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Greco-Espolio-Lyon.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11636,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11636\\/category\\/310\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29654455": {
+      "uri": "http://www.wikidata.org/entity/Q29654455",
+      "createur": "http://www.wikidata.org/entity/Q301",
+      "createurLabel": "Le Greco",
+      "titre_fr": "Saint François d'Assise et frère Léon méditant sur la mort",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%28Castres%29%20Saint%20Fran%C3%A7ois%20d%27Assise%20et%20fr%C3%A8re%20L%C3%A9on%20-%20El%20Greco%2C%20Mus%C3%A9e%20Goya.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":11637,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/11637\\/category\\/310\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}
