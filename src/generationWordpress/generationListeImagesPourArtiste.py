@@ -5,6 +5,7 @@ generer une liste d'images pour des artistes donnés par leur QID
 import json
 import WikimediaAccess
 import argparse
+from pathlib import Path
 
 def genereListeImages(creator, sparqltemplate):
     qid = creator["qid"]
@@ -41,19 +42,20 @@ if __name__=="__main__":
         for item in listeAlbumsCreateurs:
             qidArtistes.append({ "name": item["categoryName"], "qid":  item["qid"],
                                  "piwigoCategory": item["piwigoCategory"],
-                                 "type": item["type"],
+                                 # "type": item["type"],
+                                 "type": "painter",
                                  "listimagespath": item["listimagespath"]} )
 
     sparqlTemplate = """
         select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
         where {
-          values ?createur { wd:Q334200 }
+          values ?createur { wd:__QID__ }
           values ?classRel { wdt:P31 wdt:P106 }
           values ?class { wd:Q1028181 }
           values ?rel { wdt:P170 }
           {
             SELECT ?createur ?createurLabel WHERE {
-            values ?createur { wd:Q334200 }
+            values ?createur { wd:__QID__ }
             SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
             }
           }
@@ -74,10 +76,17 @@ if __name__=="__main__":
     """
 
     # for creator in qidArtistes:
-    for creator in qidArtistes[0:1]:
-        listImages = genereListeImages(creator, sparqlTemplate)
-        # compactName = creator["name"].replace(" ", "")
-        #listFilePath = f"D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data/fr\listeImages{compactName}.json"
-        listFilePath = creator["listimagespath"]
-        with open(listFilePath, "w", encoding="utf-8") as flist:
-            json.dump(listImages, flist, ensure_ascii=False)
+    for creator in qidArtistes:
+        listFilePath = Path(creator["listimagespath"])
+        if listFilePath.exists():
+            print(f"File {creator['listimagespath']} already exists.")
+        else:
+            listImages = genereListeImages(creator, sparqlTemplate)
+            # compactName = creator["name"].replace(" ", "")
+            #listFilePath = f"D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data/fr\listeImages{compactName}.json"
+            # si le fichier n'existe pas, le créer; TODO s'il existe, prévoir de le compléter
+            try:
+                with open(listFilePath, "x", encoding="utf-8") as flist:
+                    json.dump(listImages, flist, ensure_ascii=False)
+            except FileExistsError:
+                print(f"File {listFilePath} already exists.")
