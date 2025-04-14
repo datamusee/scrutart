@@ -121,7 +121,12 @@ def getOtherTypes(sparqlres, qid, lang="fr"):
                     name += "s"
                 if (count >= 10):
                     value += "{count} {type}, ".format(count=str(count), type=name)
-            value += " et d'autres types d'oeuvres plus exceptionnels"
+            otherTypes = {
+                "fr": " et d'autres types d'oeuvres plus exceptionnels",
+                "en": " and other more exceptional types of work.",
+                "es": " y otros tipos de trabajo más excepcionales.",
+            }
+            value += otherTypes[lang]
     return value
 
 
