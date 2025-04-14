@@ -1,0 +1,959 @@
+{
+  "sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q349377 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q349377 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q17334830": {
+      "uri": "http://www.wikidata.org/entity/Q17334830",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV Crossing into the Netherlands at Lobith",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lodewijk%20XIV%20trekt%20bij%20Lobith%20Nederland%20binnen%20Rijksmuseum%20SK-A-3753.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15303,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15303\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17335662": {
+      "uri": "http://www.wikidata.org/entity/Q17335662",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "L'Armée française à Naarden, 20 juillet 1672",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/De%20troepen%20van%20Lodewijk%20XIV%20voor%20Naarden%2C%2020%20juli%201672%20Rijksmuseum%20SK-A-3960.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15304,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15304\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18599111": {
+      "uri": "http://www.wikidata.org/entity/Q18599111",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Soldiers Attacking a Caleche",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Soldiers%20Attacking%20a%20Caleche%20%28Adam%20Frans%20van%20der%20Meulen%29%20-%20Nationalmuseum%20-%2019032.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15305,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15305\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18600858": {
+      "uri": "http://www.wikidata.org/entity/Q18600858",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Riders attacked at a Ford",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Riders%20attacked%20at%20a%20Ford%20%28Adam%20Frans%20van%20der%20Meulen%29%20-%20Nationalmuseum%20-%2017516.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15306,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15306\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19913275": {
+      "uri": "http://www.wikidata.org/entity/Q19913275",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "A Cavalry Engagement",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Cavalry%20Engagement%20MET%20ep71.96.R.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15307,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15307\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18600860": {
+      "uri": "http://www.wikidata.org/entity/Q18600860",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Cavalry Skirmish",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Cavalry%20Skirmish%20%28Adam%20Frans%20van%20der%20Meulen%29%20-%20Nationalmuseum%20-%2017517.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15308,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15308\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20354486": {
+      "uri": "http://www.wikidata.org/entity/Q20354486",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Cavalry Skirmish",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Cavalry%20Skirmish%20-%20KMSst511%20-%20Statens%20Museum%20for%20Kunst.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15309,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15309\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20809447": {
+      "uri": "http://www.wikidata.org/entity/Q20809447",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "The Passage of the Rhine on June 12, 1672",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20The%20passage%20of%20the%20Rhine%20on%2012%20June%201672.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15310,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15310\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21723103": {
+      "uri": "http://www.wikidata.org/entity/Q21723103",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV at the Taking of Besancon",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Louis%20XIV%20at%20the%20taking%20of%20Besan%C3%A7on%20%281674%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15311,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15311\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21729792": {
+      "uri": "http://www.wikidata.org/entity/Q21729792",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Battle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Battle%20%281657%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15312,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15312\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q25174343": {
+      "uri": "http://www.wikidata.org/entity/Q25174343",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Arrivée de Louis XIV au camp devant Maastricht",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Arrival%20of%20Louis%20XIV%20at%20the%20camp%20in%20front%20of%20Maastricht%20%28June%201673%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"6504\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/6504\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21738200": {
+      "uri": "http://www.wikidata.org/entity/Q21738200",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV Travelling",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Louis%20XIV%20travelling%20%281664%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15313,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15313\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26522140": {
+      "uri": "http://www.wikidata.org/entity/Q26522140",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Philippe François d'Arenberg meeting Troops",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Philippe%20Francois%20D%27Arenberg%20auf%20Truppenbesuch.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15314,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15314\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28034910": {
+      "uri": "http://www.wikidata.org/entity/Q28034910",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV and his Suite Halting at an Inn Door",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam-Fran%C3%A7ois%20van%20der%20Meulen%20%281632-90%29%20-%20Louis%20XIV%20and%20his%20Suite%20Halting%20at%20an%20Inn%20Door%20-%20RCIN%20405056%20-%20Royal%20Collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15315,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15315\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28016912": {
+      "uri": "http://www.wikidata.org/entity/Q28016912",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "The Funeral of Marie Therese, Queen of France, 10 August 1683",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam-Fran%C3%A7ois%20van%20der%20Meulen%20%281632-90%29%20-%20The%20Funeral%20of%20Marie%20Therese%2C%20Queen%20of%20France%2C%2010%20August%201683%20-%20RCIN%20404781%20-%20Royal%20Collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15316,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15316\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28025117": {
+      "uri": "http://www.wikidata.org/entity/Q28025117",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "The French Army Encamped before Tournai, 1667",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam-Fran%C3%A7ois%20van%20der%20Meulen%20%281632-90%29%20-%20The%20French%20Army%20Encamped%20before%20Tournai%2C%201667%20-%20RCIN%20403937%20-%20Royal%20Collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15317,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15317\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27982733": {
+      "uri": "http://www.wikidata.org/entity/Q27982733",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Q27982733",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Reitergefecht%20-%20GG%20609%20-%20Kunsthistorisches%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15318,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15318\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27970588": {
+      "uri": "http://www.wikidata.org/entity/Q27970588",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Cavalery in the Battle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Cavalery%20in%20the%20Battle%20%281657%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15319,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15319\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28041883": {
+      "uri": "http://www.wikidata.org/entity/Q28041883",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "A Cavalier on Horseback",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam-Fran%C3%A7ois%20van%20der%20Meulen%20%281632-90%29%20-%20A%20Cavalier%20on%20Horseback%20-%20RCIN%20403007%20-%20Royal%20Collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15320,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15320\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29643906": {
+      "uri": "http://www.wikidata.org/entity/Q29643906",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Bataille à l'entrée d'une forêt",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Battle%20at%20the%20entrance%20to%20a%20forest.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12392\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12392\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29654861": {
+      "uri": "http://www.wikidata.org/entity/Q29654861",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Bataille",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Cavalry%20clash.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12383\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12383\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29654863": {
+      "uri": "http://www.wikidata.org/entity/Q29654863",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Attaque d'un convoi",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Attack%20on%20a%20convoy.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12386\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12386\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29837833": {
+      "uri": "http://www.wikidata.org/entity/Q29837833",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Cheval blanc",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Study%20of%20a%20white%20horse.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12391\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12391\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29837880": {
+      "uri": "http://www.wikidata.org/entity/Q29837880",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Combat de cavalerie au passage d'un pont",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Battle%20near%20the%20entrance%20to%20a%20forest.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12390\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12390\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29908878": {
+      "uri": "http://www.wikidata.org/entity/Q29908878",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Q29908878",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%28und%20Werkstatt%29%20-%20Der%20Aufmarsch%20vor%20Dinant%2C%201675%20-%201747%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15321,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15321\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29837876": {
+      "uri": "http://www.wikidata.org/entity/Q29837876",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Vue du château de Vincennes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20The%20Arrival%20of%20King%20Louis%20XIV%20at%20the%20Ch%C3%A2teau%20de%20Vincennes.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12381\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12381\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29837841": {
+      "uri": "http://www.wikidata.org/entity/Q29837841",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Défaite de l'armée espagnole près du canal de Bruges",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/D%C3%A9faite%20de%20l%27arm%C3%A9e%20espagnole%20pr%C3%A8s%20du%20canal%20de%20Bruges%20%28Louvre%2C%20INV%201483%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12389\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12389\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29837870": {
+      "uri": "http://www.wikidata.org/entity/Q29837870",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Convoi militaire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Military%20convoy.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12394\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12394\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29837865": {
+      "uri": "http://www.wikidata.org/entity/Q29837865",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Bataille près d'un pont",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Battle%20near%20a%20bridge.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12395\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12395\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30098147": {
+      "uri": "http://www.wikidata.org/entity/Q30098147",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Le siège de Lille en 1667",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%28und%20Werkstatt%29%20-%20Die%20Eroberung%20von%20Lille%2C%20August%201667%20-%201006%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15322,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15322\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30098140": {
+      "uri": "http://www.wikidata.org/entity/Q30098140",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Siege of Maastricht in 1673",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%28und%20Werkstatt%29%20-%20Die%20Beschie%C3%9Fung%20von%20Maastricht%2C%201673%20-%20783%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15323,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15323\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29837859": {
+      "uri": "http://www.wikidata.org/entity/Q29837859",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Le Passage du Rhin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20The%20crossing%20of%20the%20Rhine%20%2812%20June%201672%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12385\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12385\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29837855": {
+      "uri": "http://www.wikidata.org/entity/Q29837855",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Vue de la ville de Luxembourg du côté des bains de Mansfeld",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20View%20of%20the%20City%20of%20Luxemburg%20from%20the%20baths%20of%20Mansfeld%20%28taken%20on%203%20June%201684%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12393\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12393\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29837852": {
+      "uri": "http://www.wikidata.org/entity/Q29837852",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Halte de cavaliers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Rest%20of%20riders.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12388\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12388\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30097720": {
+      "uri": "http://www.wikidata.org/entity/Q30097720",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Q30097720",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Reitergefecht%20-%2012935%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":15324,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/15324\\/category\\/825\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30094152": {
+      "uri": "http://www.wikidata.org/entity/Q30094152",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Q30094152",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Soldaten%20ziehen%20durch%20ein%20Dorf%20-%205156%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q30093654": {
+      "uri": "http://www.wikidata.org/entity/Q30093654",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "The Army of Louis XIV in front of Tournai in 1667",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%28und%20Werkstatt%29%20-%20Das%20Lager%20vor%20Tournai%2C%201667%20-%20780%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q30093605": {
+      "uri": "http://www.wikidata.org/entity/Q30093605",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Q30093605",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%28und%20Werkstatt%29%20-%20Die%20Eroberung%20von%20D%C3%B4le%2C%201668%20-%20118%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q52252863": {
+      "uri": "http://www.wikidata.org/entity/Q52252863",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "King Louis XIV, King of France (1638–1715) at Maastricht",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%281631-1632-1690%29%20-%20Louis%20XIV%20%281638%E2%80%931715%29%2C%20King%20of%20France%2C%20at%20Maastricht%20-%20486216%20-%20National%20Trust.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q52250101": {
+      "uri": "http://www.wikidata.org/entity/Q52250101",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV crossing the Rhine, 12th June 1672",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%281631-1632-1690%29%20-%20Louis%20XIV%20Crossing%20the%20Rhine%2C%2012%20June%201672%20-%201422020%20-%20National%20Trust.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q52252246": {
+      "uri": "http://www.wikidata.org/entity/Q52252246",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Bandits holding up Travellers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%281631-1632-1690%29%20-%20Bandits%20Holding%20up%20Travellers%20-%20486165%20-%20National%20Trust.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q30097863": {
+      "uri": "http://www.wikidata.org/entity/Q30097863",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Le siège de Cambrai",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%28und%20Werkstatt%29%20-%20Das%20Lager%20vor%20Cambrai%2C%201677%20-%204944%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q63413733": {
+      "uri": "http://www.wikidata.org/entity/Q63413733",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "King Louis XIV at the taking of Maastricht, 30 June 1673",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/King%20Louis%20XIV%20at%20the%20taking%20of%20Maastricht%2C%2030%20June%201673%20by%20Adam%20Frans%20van%20der%20Meulen%20Limburgs%20Museum%20L24496.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q59718654": {
+      "uri": "http://www.wikidata.org/entity/Q59718654",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Clash of cavalry",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Clash%20of%20cavalry.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q59817614": {
+      "uri": "http://www.wikidata.org/entity/Q59817614",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Le siège de la ville et du château de Dinant sur la Meuse en mai 1675",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam-francois-van-der-meulen-beleg-dinant.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q52253387": {
+      "uri": "http://www.wikidata.org/entity/Q52253387",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "King Louis XIV, King of France (1638–1715) at Charleroi",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%281631-1632-1690%29%20-%20Louis%20XIV%20%281638%E2%80%931715%29%2C%20King%20of%20France%2C%20at%20Charleroi%20-%20486260%20-%20National%20Trust.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q59713762": {
+      "uri": "http://www.wikidata.org/entity/Q59713762",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV near Vincennes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Louis%20XIV%20setting%20out%20on%20a%20campaign.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q43687276": {
+      "uri": "http://www.wikidata.org/entity/Q43687276",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV devant Strasbourg",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Louis%20XIV%20before%20Strasbourg-Adam%20van%20der%20Meulen-f3822529.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q59661514": {
+      "uri": "http://www.wikidata.org/entity/Q59661514",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Arrivée de Louis XIV à Chambord",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Arriv%C3%A9e%20de%20Louis%20XIV%20%C3%A0%20Chambord%20-%20Chambord.png"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q57631852": {
+      "uri": "http://www.wikidata.org/entity/Q57631852",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Halte de cavaliers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/PeinturesMus%C3%A9eFabre012.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q89221329": {
+      "uri": "http://www.wikidata.org/entity/Q89221329",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Le siège de Valenciennes en 1677",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vue%20de%20Valenciennes.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q89220624": {
+      "uri": "http://www.wikidata.org/entity/Q89220624",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "La prise de Louvain en 1678",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vue%20de%20Louvain.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q89219851": {
+      "uri": "http://www.wikidata.org/entity/Q89219851",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Entrée du roi dans Dunkerque",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Entree%20du%20Roy%20dans%20Dunkerque.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q80931576": {
+      "uri": "http://www.wikidata.org/entity/Q80931576",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV traversant le Pont-Neuf",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Louis%20XIV%20traversant%20le%20Pont-Neuf.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q57447638": {
+      "uri": "http://www.wikidata.org/entity/Q57447638",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Vue de la marche de l'armée du roi sur Courtray, qui fut prise le 18 juillet 1667",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Belagerung%20von%20Courtrai%201667.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q55429077": {
+      "uri": "http://www.wikidata.org/entity/Q55429077",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Battle Scene",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Battle%20Scene%20-%20NG.M.02160%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q77594722": {
+      "uri": "http://www.wikidata.org/entity/Q77594722",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "A Cavalcade",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%281631-1632-1690%29%20-%20A%20Cavalcade%20-%20EU0725%20-%20The%20Torrie%20Collection.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q52260808": {
+      "uri": "http://www.wikidata.org/entity/Q52260808",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "The Siege of Maastricht, 1673",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%281631-1632-1690%29%20-%20The%20Siege%20of%20Maastricht%2C%201673%20-%20872156%20-%20National%20Trust.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q89223925": {
+      "uri": "http://www.wikidata.org/entity/Q89223925",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Vue de Courtrai du côté du vieux château avec la marche de l'armée",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vue%20de%20Courtrai.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q89287196": {
+      "uri": "http://www.wikidata.org/entity/Q89287196",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV et Marie Thérèse devant Arras",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20The%20entry%20of%20King%20Louis%20XIV%20and%20Queen%20Maria-Theresa%20in%20Arras%20on%2030%20July%201667.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q89222049": {
+      "uri": "http://www.wikidata.org/entity/Q89222049",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Arrivée du roi devant Douai qu'il fait investir par sa cavalerie en 1667",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Arrival%20of%20Louis%20XIV%20at%20Douai%20which%20he%20orders%20his%20cavalry%20to%20encircle.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q89222872": {
+      "uri": "http://www.wikidata.org/entity/Q89222872",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Vue de l'armée du roi campée devant Douai, du côté de la porte de Notre-Dame",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Vue%20de%20Douai.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q98149153": {
+      "uri": "http://www.wikidata.org/entity/Q98149153",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "View Of Versailles With Louis XIV And Huntsmen",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%281631-1632-1690%29%20%28attributed%20to%29%20-%20View%20of%20Versailles%20with%20Louis%20XIV%20and%20Huntsmen%20-%201966P27%20-%20Birmingham%20Museums%20Trust.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q95966043": {
+      "uri": "http://www.wikidata.org/entity/Q95966043",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "La reddition de Cambrai",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Surrender%20cambrai1677.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q89376991": {
+      "uri": "http://www.wikidata.org/entity/Q89376991",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "La reddition de Cambrai",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Louis%20XIV%20recevant%20la%20reddition%20de%20la%20citadelle%20de%20Cambrai%2C%2018%20avril%201677.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q91018213": {
+      "uri": "http://www.wikidata.org/entity/Q91018213",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Portrait équestre de Louis XIV",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Louis%20XIV%20Equestrian%20Portrait.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q104445132": {
+      "uri": "http://www.wikidata.org/entity/Q104445132",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Choc de cavalerie ou Combat de cavalerie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Franz%20Van%20Der%20Meulen%20-%20Choc%20de%20cavalerie%20ou%20Combat%20de%20cavalerie%20-%20PDUT948%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q107185191": {
+      "uri": "http://www.wikidata.org/entity/Q107185191",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Le Passage du Rhin",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20The%20crossing%20of%20the%20Rhine%20at%20Lobith%2C%2012%20June%201672.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q104533527": {
+      "uri": "http://www.wikidata.org/entity/Q104533527",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "A battle scene",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20A%20battle%20scene%20-%20M.Ob.1489%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q104535495": {
+      "uri": "http://www.wikidata.org/entity/Q104535495",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "After the battle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20After%20the%20battle%20-%20127925%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q104445133": {
+      "uri": "http://www.wikidata.org/entity/Q104445133",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Choc de cavalerie ou Combat de cavalerie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Franz%20Van%20Der%20Meulen%20-%20Choc%20de%20cavalerie%20ou%20Combat%20de%20cavalerie%20-%20PDUT949%20-%20Petit%20Palais.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q104530733": {
+      "uri": "http://www.wikidata.org/entity/Q104530733",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Le Château Neuf de Saint-Germain-en-Laye et les jardins, vus de la rive droite de la Seine ; lors de la reconstruction de la grande terrasse et du grand parterre, entre le 1er mars 1664 et le 17 mars 1665.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Fran%C3%A7ois%20van%20der%20Meulen%20-%20Le%20Ch%C3%A2teau%20Neuf%20de%20Saint-Germain-en-Laye%20et%20les%20jardins%2C%20vus%20de%20la%20rive%20droite%20de%20la%20Seine%20-%20P1522%20-%20Mus%C3%A9e%20Carnavalet.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q109902710": {
+      "uri": "http://www.wikidata.org/entity/Q109902710",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Siège de Valenciennes, 16 mars 1677",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Siege%20of%20Valenciennes%20of%2016%20March%201677.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q109902715": {
+      "uri": "http://www.wikidata.org/entity/Q109902715",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Entry of King Louis XIV and Empress Maria Theresa in Douai on 4 August 1667",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Entry%20of%20King%20Louis%20XIV%20and%20Empress%20Maria%20Theresa%20in%20Douai%20on%204%20August%201667.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q111649124": {
+      "uri": "http://www.wikidata.org/entity/Q111649124",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Cortège royal, avec vue sur les châteaux de Clagny et de Versailles",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20%281631-1690%29%20-%20Ausfahrt%20Ludwigs%20des%20XIV.%20-%203588%20-%20F%C3%BChrermuseum.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q109859186": {
+      "uri": "http://www.wikidata.org/entity/Q109859186",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Battle Scene",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%22Battle%20Scene%22%20-%20Adam%20Frans%20van%20der%20Meulen%20%281632-1690%29.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q104532743": {
+      "uri": "http://www.wikidata.org/entity/Q104532743",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "A battle scene",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20A%20battle%20scene%20-%20187272%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q115676148": {
+      "uri": "http://www.wikidata.org/entity/Q115676148",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV au siège de Lille, devant le prieuré de Fives, août 1667",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Arriv%C3%A9e%20de%20Louis%20XIV%20au%20si%C3%A8ge%20de%20Lille.jpeg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q115676147": {
+      "uri": "http://www.wikidata.org/entity/Q115676147",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Entrée de Louis XIV et de Marie-Thérèse à Douai, 4 août 1667",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Solemn%20entry%20of%20King%20Louis%20XIV%20and%20Queen%20Maria-Theresa%20in%20Douai%20on%2023%20August%201667.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q115672554": {
+      "uri": "http://www.wikidata.org/entity/Q115672554",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Vue du château de Versailles prise des hauteurs de Satory en 1664",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20View%20of%20the%20Ch%C3%A2teau%20de%20Versailles%20taken%20from%20the%20heights%20of%20Satory%20in%201664.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q113976925": {
+      "uri": "http://www.wikidata.org/entity/Q113976925",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "A princess embarks on a journey",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20A%20princess%20embarks%20on%20a%20journey.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q115674873": {
+      "uri": "http://www.wikidata.org/entity/Q115674873",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Reddition de la citadelle de Cambrai, 18 avril 1677",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Louis%20XIV%20recevant%20la%20reddition%20de%20la%20citadelle%20de%20Cambrai%20le%2018%20avril%201677%20%28par%20Adam%20Frans%20van%20der%20Meulen%29%20-%20Ch%C3%A2teau%20de%20Versailles.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q120373579": {
+      "uri": "http://www.wikidata.org/entity/Q120373579",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "le siege de courtrai",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20The%20Siege%20of%20Courtrai%20in%201667.jpeg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q120500930": {
+      "uri": "http://www.wikidata.org/entity/Q120500930",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "The Arrival of King Louis XIV at the Château de Vincennes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Arrival%20of%20King%20Louis%20XIV%20at%20the%20Ch%C3%A2teau%20de%20Vincennes.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q124219117": {
+      "uri": "http://www.wikidata.org/entity/Q124219117",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "A convoy attacked by brigands",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20A%20convoy%20attacked%20by%20brigands.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q124219124": {
+      "uri": "http://www.wikidata.org/entity/Q124219124",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "A wooded landscape with a coach being ambushed in a clearing",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20A%20wooded%20landscape%20with%20a%20coach%20being%20ambushed%20in%20a%20clearing.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q123604026": {
+      "uri": "http://www.wikidata.org/entity/Q123604026",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "L'armée de Louis XIV devant Tournai en 1667",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Siege%20tournai.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q122242470": {
+      "uri": "http://www.wikidata.org/entity/Q122242470",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Vue du château de Versailles",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Arrival%20of%20Louis%20XIV%20with%20his%20guards%20in%20front%20in%20view%20of%20he%20old%20Castle%20of%20Versailles.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q124219302": {
+      "uri": "http://www.wikidata.org/entity/Q124219302",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV et la cour chassant près du château de Meudon entre 1695 et 1705.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Louis%20XIV%20and%20his%20Court%20hunting%20in%20view%20of%20the%20castle%20of%20Meudon.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q133076577": {
+      "uri": "http://www.wikidata.org/entity/Q133076577",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Le siège de Besançon 1674",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Besancon%201678%20Louis%20XIV.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q124219227": {
+      "uri": "http://www.wikidata.org/entity/Q124219227",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Q124219227",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20Reitertreffen.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q120983546": {
+      "uri": "http://www.wikidata.org/entity/Q120983546",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Le Siège de Lille en 1667",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Siege%20Lille.JPG"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q121031443": {
+      "uri": "http://www.wikidata.org/entity/Q121031443",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Le cortège royal à la campagne.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Meulen%20Royal%20retinue.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q121130023": {
+      "uri": "http://www.wikidata.org/entity/Q121130023",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "La Bataille de Vienne (1683).",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Meulen%20Battle%20of%20Vienna.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q124219132": {
+      "uri": "http://www.wikidata.org/entity/Q124219132",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Cavalry engagement",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Cavalry%20engagement.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q124219134": {
+      "uri": "http://www.wikidata.org/entity/Q124219134",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Construction of the Château de Versailles",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Construction%20of%20the%20Ch%C3%A2teau%20de%20Versailles%20-%20WGA15115.jpg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q124219199": {
+      "uri": "http://www.wikidata.org/entity/Q124219199",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Q124219199",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Frans%20van%20der%20Meulen%20-%20Louis%20XIV%20with%20his%20Army%20at%20the%20Siege%20of%20Courtrai%20in%201667.jpeg"
+      ]
+    },
+    "http://www.wikidata.org/entity/Q121367524": {
+      "uri": "http://www.wikidata.org/entity/Q121367524",
+      "createur": "http://www.wikidata.org/entity/Q349377",
+      "createurLabel": "Adam François van der Meulen",
+      "titre_fr": "Louis XIV, roi de France, franchit le Rhin à Lobith le 12 Juin 1672",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1680%20van%20der%20Meulen%20Louis%20XIV%20bei%20Lobith%20anagoria.JPG"
+      ]
+    }
+  },
+  "version": "2.0.0"
+}
