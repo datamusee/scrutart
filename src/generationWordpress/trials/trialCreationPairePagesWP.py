@@ -1,6 +1,4 @@
 import requests
-import requests
-#import generationDocuments.generationWordpress.configPrivee as configPrivee
 import src.generationWordpress.configPrivee2 as configPrivee
 
 #api_url = f"{configPrivee.WORDPRESS_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_PASSWORD_APP}"
