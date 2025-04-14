@@ -31,23 +31,23 @@ dataConfig = {
         "urlquery": None},
     "__ENTITYNAME__": {
         "sparql": """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }  
-                    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],__LANG__,en". } }
+                    SERVICE wikibase:label { bd:serviceParam wikibase:language "__LANG__,en". } }
                     """,
         "filtres": [{"filtre": "getName", "key": "__ENTITYNAME__"},
-                    {"filtre": "getLink", "key": "__ENTIYLINK__"}],
+                    {"filtre": "getLink", "key": "__ENTITYLINK__"}],
         "urlquery": None},
-    # "__ENTIYLINK__": {
+    # "__ENTITYLINK__": {
     #    "sparql": """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }
-    #                SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],__LANG__,en". } }
+    #                SERVICE wikibase:label { bd:serviceParam wikibase:language "__LANG__,en". } }
     #                """,
-    #    "filtres": [{"filtre": "getLink", "key": "__ENTIYLINK__"}],
+    #    "filtres": [{"filtre": "getLink", "key": "__ENTITYLINK__"}],
     #    "urlquery": ""},
     "__NBOEUVRES__": {"sparql": "select (count(?s) as ?c) where { ?s wdt:P170 wd:__QID__ }",
                       "filtres": [{"filtre": "getInt", "key": "__NBOEUVRES__"}],
                       "urlquery": "__QUERYNBOEUVRES__"},
     "__NBTYPES__": {"sparql": """select ?type ?typeLabel (count(?s) as ?c) where {
                           ?s wdt:P170 wd:__QID__; wdt:P31 ?type
-                            SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],__LANG__,en". }
+                            SERVICE wikibase:label { bd:serviceParam wikibase:language "__LANG__,en". }
                             } group by ?type ?typeLabel
                             order by desc(?c)""",
                     "filtres": [
@@ -105,7 +105,7 @@ dataConfig = {
     "__GENRELIST__": {"sparql": """SELECT DISTINCT ?v ?vLabel (COUNT(DISTINCT ?s) AS ?c) WHERE {
                                   ?s wdt:P170 wd:__QID__;
                                     wdt:P136 ?v.
-                                  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],__LANG__,en". }
+                                  SERVICE wikibase:label { bd:serviceParam wikibase:language "__LANG__,en". }
                                 }
                                 GROUP BY ?v ?vLabel
                                 HAVING (?c > 8 )
@@ -115,7 +115,7 @@ dataConfig = {
     "__DEPICTLIST__": {"sparql": """SELECT DISTINCT ?v ?vLabel (COUNT(DISTINCT ?s) AS ?c) WHERE {
                                   ?s wdt:P170 wd:__QID__;
                                     wdt:P180 ?v.
-                                  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],__LANG__,en". }
+                                  SERVICE wikibase:label { bd:serviceParam wikibase:language "__LANG__,en". }
                                 }
                                 GROUP BY ?v ?vLabel
                                 HAVING (?c > 8 )
@@ -125,7 +125,7 @@ dataConfig = {
     "__TYPELIST__": {"sparql": """SELECT DISTINCT ?v ?vLabel (COUNT(DISTINCT ?s) AS ?c) WHERE {
                                   ?s wdt:P170 wd:__QID__;
                                     wdt:P31 ?v.
-                                  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],__LANG__,en". }
+                                  SERVICE wikibase:label { bd:serviceParam wikibase:language "__LANG__,en". }
                                 }
                                 GROUP BY ?v ?vLabel
                                 HAVING (?c > 8 )
@@ -196,5 +196,23 @@ dataConfig = {
 
 class WPPainterTemplate(WPTemplate):
     def __init__(self, lang="fr"):
-        super().__init__("fr")
+        super().__init__(lang)
+        self.version = "1.0.2"
         self.dataConfig = dataConfig
+
+    def buildIntroView(self):
+        intro = {
+            "fr": super().buildIntroView(insert="""<p><p>Je vais faire dans ce billet une analyse de la présence des œuvres de __ENTITYLINK__ dans Wikidata et de leur description.</p></p>"""),
+            "en": super().buildIntroView(insert="""<p><p>In this post I'm going to analyze the presence of __ENTITYLINK__'s works in Wikidata and their description.</p></p>"""),
+            "es": super().buildIntroView(
+                insert="""<p><p>En este post voy a analizar la presencia de obras de __ENTITYLINK__ en Wikidata y su descripción.</p></p>"""),
+        }
+        return intro[self.lang]
+
+    def buildTitre(self, varstring="__ENTITYNAME__", lang="fr"):
+        title = {
+            "fr": f"""Où trouver {varstring} dans Wikidata, suivez le guide""", # titre pour créateur
+            "en": f"""Where to find {varstring} in Wikidata, follow the guide""", # titre pour créateur
+            "es": """Dónde encontrar {varstring} en Wikidata, siga la guía""",
+        }
+        return title[lang]
