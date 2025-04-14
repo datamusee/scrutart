@@ -366,9 +366,10 @@ def api_request():
         api_method = data.get("method", "POST").upper()  # Default to POST for Web API
         request_kwargs = data.get("request_kwargs", {})
     elif request.method == "GET":
-        headers = request.args.get("headers")
-        cache_duration = request.args.get("cache_duration", type=int, default=0)
-        api_method = request.args.get("method", "GET").upper()  # Default to GET for Web API
+        headers = request.args.get("headers", None) if request.args.get("headers", None) else request.json.get("headers", None)
+        cache_duration = max(request.args.get("cache_duration", type=int, default=0), request.json["cache_duration"])
+        api_method = request.args.get("method", "GET")  # Default to GET for Web API
+        api_method = api_method.upper() if api_method else request.json("method", "GET").upper()
         request_kwargs = {}  # Assume no additional kwargs for GET requests
         payload = None  # GET requests usually don't have a payload
 
