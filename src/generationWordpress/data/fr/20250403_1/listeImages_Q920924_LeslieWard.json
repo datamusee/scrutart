@@ -1,1 +1,44 @@
-{"sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q920924 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q920924 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ", "liste": [{"createur": "http://www.wikidata.org/entity/Q920924", "createurLabel": "Leslie Ward", "uri": "http://www.wikidata.org/entity/Q119831688", "titre_fr": "Alice Clifton (1856–1915), Wife of the 11th Earl of Loudoun", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alice%20Clifton%20%281856%E2%80%931915%29%2C%20Wife%20of%20the%2011th%20Earl%20of%20Loudoun.jpg", "categories": [{"catId": 316, "catName": "Galerie Leslie Ward"}]}, {"createur": "http://www.wikidata.org/entity/Q920924", "createurLabel": "Leslie Ward", "uri": "http://www.wikidata.org/entity/Q55020920", "titre_fr": "Mr.Osborne Morgan, M.P", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Mr.Osborne%20Morgan%2C%20M.P%20%284674533%29.jpg", "categories": [{"catId": 316, "catName": "Galerie Leslie Ward"}]}, {"createur": "http://www.wikidata.org/entity/Q920924", "createurLabel": "Leslie Ward", "uri": "http://www.wikidata.org/entity/Q111658035", "titre_fr": "Babble and Bluster", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Babble%20and%20Bluster%20Vanity%20Fair%203%20December%201892.jpg", "categories": [{"catId": 316, "catName": "Galerie Leslie Ward"}]}]}
+{
+  "sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q920924 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q920924 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ",
+  "liste": [
+    {
+      "createur": "http://www.wikidata.org/entity/Q920924",
+      "createurLabel": "Leslie Ward",
+      "uri": "http://www.wikidata.org/entity/Q119831688",
+      "titre_fr": "Alice Clifton (1856–1915), Wife of the 11th Earl of Loudoun",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alice%20Clifton%20%281856%E2%80%931915%29%2C%20Wife%20of%20the%2011th%20Earl%20of%20Loudoun.jpg",
+      "categories": [
+        {
+          "catId": 316,
+          "catName": "Galerie Leslie Ward"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q920924",
+      "createurLabel": "Leslie Ward",
+      "uri": "http://www.wikidata.org/entity/Q55020920",
+      "titre_fr": "Mr.Osborne Morgan, M.P",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Mr.Osborne%20Morgan%2C%20M.P%20%284674533%29.jpg",
+      "categories": [
+        {
+          "catId": 316,
+          "catName": "Galerie Leslie Ward"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q920924",
+      "createurLabel": "Leslie Ward",
+      "uri": "http://www.wikidata.org/entity/Q111658035",
+      "titre_fr": "Babble and Bluster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Babble%20and%20Bluster%20Vanity%20Fair%203%20December%201892.jpg",
+      "categories": [
+        {
+          "catId": 316,
+          "catName": "Galerie Leslie Ward"
+        }
+      ]
+    }
+  ]
+}
