@@ -75,4 +75,8 @@ if __name__=="__main__":
                     catFile.write(f"""kgdc:gal{cat["id"]} pgdc:comment "{cat["comment"]}"@fr .\n""")
                 catFile.write(f"""kgdc:gal{cat["id"]} a  kgdc:GALLERY .\n""")
                 pass
+        listcatJsonFile = "listCategories.json"
+        with open(listcatJsonFile, "w", encoding="UTF-8") as catFile:
+            catFile.write(json.dumps(res, ensure_ascii=False))
+            pass
 
