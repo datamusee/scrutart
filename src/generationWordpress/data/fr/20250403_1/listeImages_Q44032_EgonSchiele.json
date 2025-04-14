@@ -1,1 +1,1448 @@
-{"sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q44032 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q44032 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ", "liste": [{"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115541214", "titre_fr": "Dead City", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20work-p211.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q121841261", "titre_fr": "Stein sur le Danube, vu du sud", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20088.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q123518546", "titre_fr": "Portrait of a woman with orange hat", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20Bildnis%20einer%20Dame%20mit%20orangefarbenen%20Hut%20-%201910.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q1555137", "titre_fr": "Portrait de Walburga Neuzil", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Portrait%20of%20Wally%20Neuzil%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q124655368", "titre_fr": "Russian War Prisoner", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20Russischer%20Kriegsgefangener-%20Grigori%20Kladjischuili%20-%201916.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q126007852", "titre_fr": "Houses With Colorful Washing", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20H%C3%A4user%20mit%20bunter%20W%C3%A4sche%20%281914%29.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q125151061", "titre_fr": "Girl with Black Hair", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20Girl%20with%20Black%20Hair%2C%201958.41%2C%201911.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q132147104", "titre_fr": "Jardin fleuri", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bemberg%20Fondation%20Toulouse%20-%20Jardin%20fleuri%20-%20Egon%20Schiele.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q131586030", "titre_fr": "Q131586030", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Tote%20Stadt%20VI.%20Die%20kleine%20Stadt%20I%20-%201964-0001%20-%20Kunsthaus%20Z%C3%BCrich.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q126007918", "titre_fr": "Mère avec deux enfants II", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mother%20with%20two%20children%20II%20Egon%20Schiele%201915.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q2438357", "titre_fr": "La Mort et la jeune fille", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Tod%20und%20M%C3%A4dchen%20-%203171%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q12096061", "titre_fr": "Still life with crockery", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20089.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q2445555", "titre_fr": "Ville morte III", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele-tote-stadt.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q12096465", "titre_fr": "Calvary", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20work-p30.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q18684909", "titre_fr": "Female Lovers", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Female%20Lovers%2C%201915%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q18684899", "titre_fr": "Self-Portrait in Yellow Vest", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Portrait%20in%20Yellow%20Vest%2C%201914%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q18684918", "titre_fr": "Autoportrait nu à la grimace", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Nude%20Self-Portrait%2C%20Grimacing%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q18684943", "titre_fr": "I Will Gladly Endure for Art and My Loved Ones", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20I%20Will%20Gladly%20Endure%20for%20Art%20and%20My%20Loved%20Ones%2C%201912%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q18684934", "titre_fr": "Couple assis", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Seated%20Couple%2C%201915%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q18684952", "titre_fr": "Self-Portrait with Eyelid Pulled Down", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Portrait%20with%20Eyelid%20Pulled%20Down%2C%201910%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q19883551", "titre_fr": "Portrait of Gerti Schiele", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Gerti%20Schiele%201909%20Egon%20Schiele.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q19883002", "titre_fr": "Portrait of Johann Harms", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20066.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q19922303", "titre_fr": "Street Cart", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Marktstand%20-%201914.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q19922234", "titre_fr": "Two Women Embracing", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Two%20Women%20Embracing%20MET%20DT6691.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q19973869", "titre_fr": "Le Port de Trieste", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20Hafen-triest.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q19967004", "titre_fr": "L'Étreinte", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Die%20Umarmung%20-%204438%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q19920799", "titre_fr": "Femme assise, vue de dos", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20R%C3%BCckenansicht%20einer%20sitzenden%20Frau%20-%201917.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q20189436", "titre_fr": "Autoportrait", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Selbstildnis%20-1911.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q20199773", "titre_fr": "Standing Nude with Orange Drapery", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Standing%20Nude%20with%20Orange%20Drapery%20MET%20DP-13960-001.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q20200090", "titre_fr": "Standing Girl, Back View", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Standing%20Girl%2C%20Back%20View%20MET%20DT7919.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q20200092", "titre_fr": "Crouching Nude in Shoes and Black Stockings, Back View", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crouching%20Nude%20in%20Shoes%20and%20Black%20Stockings%2C%20Back%20View%20MET%20DP-13958-001.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q21712313", "titre_fr": "Nude Girl with Arms Outstretched", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Nacktes%20M%C3%A4dchen%20mit%20ausgestreckten%20Armen.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q20891412", "titre_fr": "Paris von Gütersloh", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Portrait%20of%20Paris%20von%20G%C3%BCtersloh%20%281887-1973%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q21712315", "titre_fr": "Autoportrait", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Selbstportr%C3%A4t%20%281910%29.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q21712898", "titre_fr": "Houses on the River (The Old Town)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20H%C3%A4user%20am%20Fluss.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q21712317", "titre_fr": "Seated Girl (Poldi Lodzinsky])", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sitzendes%20M%C3%A4dchen%20%28Poldi%20Lodzinsky%29.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28001378", "titre_fr": "Portrait of Victor Ritter von Bauer", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Victor%20Ritter%20von%20Bauer%20-%203158%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q24050831", "titre_fr": "Portrait of Edith (the artist's wife)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Portrait%20of%20Edith%20%28the%20artist%27s%20wife%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q27999457", "titre_fr": "Portrait of the artist's wife, Edith Schiele", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Bildnis%20der%20Frau%20des%20K%C3%BCnstlers%2C%20Edith%20Schiele%20-%201991%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28002609", "titre_fr": "La Famille", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Kauerndes%20Menschenpaar%20%28Die%20Familie%29%20-%204277%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28002611", "titre_fr": "House wall (window wall)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Hauswand%20%28Fensterwand%29%20-%204278%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28002638", "titre_fr": "Dr. Hugo Koller", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Dr.%20Hugo%20Koller%20-%204296%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28002878", "titre_fr": "Mère avec deux enfants III", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Mutter%20mit%20zwei%20Kindern%20III%20-%204473%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28003303", "titre_fr": "Portrait de l'éditeur Eduard Kosmack", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Eduard%20Kosmack%20-%204702%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28003343", "titre_fr": "Portrait of Herbert Reiner", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Reinerbub%20%28Bildnis%20Herbert%20Reiner%29%20-%204766%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28004505", "titre_fr": "Houses in winter (view from the studio)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20H%C3%A4user%20im%20Winter%20%28Blick%20aus%20dem%20Atelier%29%20-%205493%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28005898", "titre_fr": "Interior", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Interieur%20-%206621%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28009541", "titre_fr": "Portrait of Dr. Franz Martin Haberditzl", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Bildnis%20Dr.%20Franz%20Martin%20Haberditzl%20-%209638%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28497832", "titre_fr": "Couple lesbien amoureux", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Lesbisches%20Liebespaar%20-%201914.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28497837", "titre_fr": "Deux femmes s'embrassant", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Zwei%20sich%20umarmende%20Frauen%20-%201911.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28008418", "titre_fr": "Sunflowers I", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sonnenblumen%20I%20-%202494%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28497838", "titre_fr": "Couple de femmes amoureuses", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Weibliches%20Liebespaar%20-%201915.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28668192", "titre_fr": "Reclining Woman", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Reclining%20Woman%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28780356", "titre_fr": "Setting Sun", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Setting%20Sun%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28780361", "titre_fr": "Crescent of Houses (The small City V)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Krumau%20-%20Crescent%20of%20Houses%20%28The%20small%20City%20V%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28780371", "titre_fr": "Landscape with Ravens", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Landscape%20with%20Ravens%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797681", "titre_fr": "Autumn Tree in Stirred Air (Winter Tree)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Autumn%20Tree%20in%20Stirred%20Air%20%28Winter%20Tree%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797683", "titre_fr": "Crescent of Houses II (Island Town)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Der%20H%C3%A4userbogen%20II%20%281915%29.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797682", "titre_fr": "Cardinal and Nun (Caress)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Cardinal%20and%20Nun%20%28Caress%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797683", "titre_fr": "Crescent of Houses II (Island Town)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Crescent%20of%20Houses%20II%20%28Island%20Town%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797684", "titre_fr": "Dead City III (City on the Blue River III)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Dead%20City%20III%20%28City%20on%20the%20Blue%20River%20III%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797686", "titre_fr": "House Wall on the River", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20House%20Wall%20on%20the%20River%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797685", "titre_fr": "Dead Mother I", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Dead%20Mother%20I%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797687", "titre_fr": "Levitation (The Blind II)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Levitation%20%28The%20Blind%20II%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797688", "titre_fr": "Mourning Woman", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Mourning%20Woman%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797692", "titre_fr": "Self-Portrait with Lowered Head", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Portrait%20with%20Lowered%20Head%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797691", "titre_fr": "Seated Male Nude (Self-Portrait)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Seated%20Male%20Nude%20%28Self-Portrait%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797694", "titre_fr": "Self-Seer II (Death and Man)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Seer%20II%20%28Death%20and%20Man%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797695", "titre_fr": "Small Tree in Late Autumn", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Small%20Tree%20in%20Late%20Autumn%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797693", "titre_fr": "Self-Portrait with Physalis", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Portrait%20with%20Physalis%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797697", "titre_fr": "The Lyricist", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20The%20Lyricist%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q28797696", "titre_fr": "The Hermits", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20The%20Hermits%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q30071686", "titre_fr": "Sitting girl (Sitzendes Mädchen)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sitzendes%20M%C3%A4dchen%20-%2013575%20-%20Bavarian%20State%20Painting%20Collections.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q29906358", "titre_fr": "Sitting boy (Sitzender Knabe)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sitzender%20Knabe%20-%2013576%20-%20Bavarian%20State%20Painting%20Collections.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q30074348", "titre_fr": "Agony (The Death Struggle)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20001.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q54917629", "titre_fr": "Maison avec toit de bardeaux", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20House%20with%20Shingle%20Roof%20%28Old%20House%20II%29%20-%20Google%20Art%20Project.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q30076803", "titre_fr": "Standing Girl", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Stehendes%20M%C3%A4dchen%20-%2013574%20-%20Bavarian%20State%20Painting%20Collections.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q58371583", "titre_fr": "Four trees", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Vier%20B%C3%A4ume%20-%203917%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q58371583", "titre_fr": "Four trees", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20094.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q71005591", "titre_fr": "Portrait of Edith Schiele with striped dress", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20Edith%20Schiele%20in%20gestreiftem%20Kleid%20sitzend%20-%201915.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q61740236", "titre_fr": "Mort et Jeune fille", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schwangere%20und%20Tod.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q73880529", "titre_fr": "Black-haired Girl with raised Skirt", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20071.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q71035820", "titre_fr": "Wally Neuzil in Black Stockings", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%2C%20Wally%20Neuzil%20in%20Black%20Stockings%2C%201912.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q112706999", "titre_fr": "Q112706999", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Kniende%20mit%20hinunter%20gebeugtem%20Kopf%20-%201915.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q112708873", "titre_fr": "Lovers", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Liebespaar%20-%201913.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q111822091", "titre_fr": "Prophets (Double Self-Portrait)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stuttgart%20-%20Neue%20Staatsgalerie%20%2835906628715%29.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q110406293", "titre_fr": "Femme assise à la jambe repliée", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sed%C3%ADc%C3%AD%20%C5%BEena%20s%20pokr%C4%8Den%C3%BDmi%20koleny%20CZE%20NG.K%2017864.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q107645899", "titre_fr": "Self-Portrait with Bare Shoulder", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20Selbstbildnis%20mit%20hochgezogener%20nackter%20Schulter%20-%201912.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q114339980", "titre_fr": "Fleurs stylisées devant un fond décoratif", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20090.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q114801075", "titre_fr": "Composition by Portrait of Three Men (Self-Portrait)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/ESchiele%20Composition%20by%20Portrait%20of%20Three%20Men%28Self-Portrait%29.png", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115385425", "titre_fr": "Q115385425", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Liebespaar%2C%201913.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115385488", "titre_fr": "Lovers (Self-portrait with Wally)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Liebespaar%20%28Selbstdarstellung%20mit%20Wally%29.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115385582", "titre_fr": "Q115385582", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Kniender%20Frauenakt%20mit%20vorgestreckten%20Armen%20-%201914.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115385524", "titre_fr": "Q115385524", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Komposition%20mit%20zwei%20Gestalten%20-%20ca1909.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115385550", "titre_fr": "Q115385550", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Kniendes%20M%C3%A4dchen%20-%201917.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115385871", "titre_fr": "Q115385871", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Liegendes%2C%20halbbekleidetes%20M%C3%A4dchen%20-%201911.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115385685", "titre_fr": "Female Nude", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Female%20Nude.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115385620", "titre_fr": "Woman with black Hair", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Frau%20mit%20schwarzem%20Haar%20-%201914.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115407502", "titre_fr": "Q115407502", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Weiblicher%20Akt%20mit%20gelbem%20Handtuch%20-%201917.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115407574", "titre_fr": "Q115407574", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Stehender%20weiblicher%20Akt%20mit%20Str%C3%BCmpfen%20-%201914.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115407544", "titre_fr": "Q115407544", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Weiblicher%20R%C3%BCckenakt%20-1917.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115407536", "titre_fr": "Q115407536", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Weiblicher%20Akt%20-%201917.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115407609", "titre_fr": "Q115407609", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20R%C3%BCckenansicht%20eines%20M%C3%A4dchens%20im%20blauen%20Rock%20-%201913.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115407649", "titre_fr": "Q115407649", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Selbstbildnis%20als%20Halbakt%20in%20schwarzer%20Jacke%20-%201911.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115412608", "titre_fr": "Standing female nude with crossed arms", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20M%C3%A4dchenakt%20mit%20verschr%C3%A4nkten%20Armen%20-%201910.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115412536", "titre_fr": "Q115412536", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Mann%20und%20Frau%2C%20Umarmung%20%281917%29.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115412819", "titre_fr": "Q115412819", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sitzendes%20M%C3%A4dchen%20mit%20Pferdeschwanz%20-%201910.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115412847", "titre_fr": "Sailing boat with reflections", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Segelschiff%20mit%20Spiegelungen%20-%20JK%20166.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115539264", "titre_fr": "Still Life with Flowers", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20work-p219.jpg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115412811", "titre_fr": "Q115412811", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sitzender%20M%C3%A4dchenakt%20mit%20Hemd%20%C3%BCber%20dem%20Kopf%20-%201910.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}, {"createur": "http://www.wikidata.org/entity/Q44032", "createurLabel": "Egon Schiele", "uri": "http://www.wikidata.org/entity/Q115412715", "titre_fr": "Reclining female nude", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Liegender%20weiblicher%20Akt%20-%201917.jpeg", "categories": [{"catId": 681, "catName": "Galerie Egon Schiele"}]}]}
+{
+  "sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q44032 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q44032 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ",
+  "liste": [
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115541214",
+      "titre_fr": "Dead City",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20work-p211.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q121841261",
+      "titre_fr": "Stein sur le Danube, vu du sud",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20088.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q123518546",
+      "titre_fr": "Portrait of a woman with orange hat",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20Bildnis%20einer%20Dame%20mit%20orangefarbenen%20Hut%20-%201910.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q1555137",
+      "titre_fr": "Portrait de Walburga Neuzil",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Portrait%20of%20Wally%20Neuzil%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q124655368",
+      "titre_fr": "Russian War Prisoner",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20Russischer%20Kriegsgefangener-%20Grigori%20Kladjischuili%20-%201916.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q126007852",
+      "titre_fr": "Houses With Colorful Washing",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20H%C3%A4user%20mit%20bunter%20W%C3%A4sche%20%281914%29.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q125151061",
+      "titre_fr": "Girl with Black Hair",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20Girl%20with%20Black%20Hair%2C%201958.41%2C%201911.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q132147104",
+      "titre_fr": "Jardin fleuri",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bemberg%20Fondation%20Toulouse%20-%20Jardin%20fleuri%20-%20Egon%20Schiele.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q131586030",
+      "titre_fr": "Q131586030",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Tote%20Stadt%20VI.%20Die%20kleine%20Stadt%20I%20-%201964-0001%20-%20Kunsthaus%20Z%C3%BCrich.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q126007918",
+      "titre_fr": "Mère avec deux enfants II",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mother%20with%20two%20children%20II%20Egon%20Schiele%201915.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q2438357",
+      "titre_fr": "La Mort et la jeune fille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Tod%20und%20M%C3%A4dchen%20-%203171%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q12096061",
+      "titre_fr": "Still life with crockery",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20089.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q2445555",
+      "titre_fr": "Ville morte III",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele-tote-stadt.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q12096465",
+      "titre_fr": "Calvary",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20work-p30.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q18684909",
+      "titre_fr": "Female Lovers",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Female%20Lovers%2C%201915%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q18684899",
+      "titre_fr": "Self-Portrait in Yellow Vest",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Portrait%20in%20Yellow%20Vest%2C%201914%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q18684918",
+      "titre_fr": "Autoportrait nu à la grimace",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Nude%20Self-Portrait%2C%20Grimacing%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q18684943",
+      "titre_fr": "I Will Gladly Endure for Art and My Loved Ones",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20I%20Will%20Gladly%20Endure%20for%20Art%20and%20My%20Loved%20Ones%2C%201912%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q18684934",
+      "titre_fr": "Couple assis",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Seated%20Couple%2C%201915%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q18684952",
+      "titre_fr": "Self-Portrait with Eyelid Pulled Down",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Portrait%20with%20Eyelid%20Pulled%20Down%2C%201910%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q19883551",
+      "titre_fr": "Portrait of Gerti Schiele",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Gerti%20Schiele%201909%20Egon%20Schiele.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q19883002",
+      "titre_fr": "Portrait of Johann Harms",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20066.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q19922303",
+      "titre_fr": "Street Cart",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Marktstand%20-%201914.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q19922234",
+      "titre_fr": "Two Women Embracing",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Two%20Women%20Embracing%20MET%20DT6691.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q19973869",
+      "titre_fr": "Le Port de Trieste",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20Hafen-triest.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q19967004",
+      "titre_fr": "L'Étreinte",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Die%20Umarmung%20-%204438%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q19920799",
+      "titre_fr": "Femme assise, vue de dos",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20R%C3%BCckenansicht%20einer%20sitzenden%20Frau%20-%201917.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q20189436",
+      "titre_fr": "Autoportrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Selbstildnis%20-1911.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q20199773",
+      "titre_fr": "Standing Nude with Orange Drapery",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Standing%20Nude%20with%20Orange%20Drapery%20MET%20DP-13960-001.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q20200090",
+      "titre_fr": "Standing Girl, Back View",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Standing%20Girl%2C%20Back%20View%20MET%20DT7919.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q20200092",
+      "titre_fr": "Crouching Nude in Shoes and Black Stockings, Back View",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crouching%20Nude%20in%20Shoes%20and%20Black%20Stockings%2C%20Back%20View%20MET%20DP-13958-001.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q21712313",
+      "titre_fr": "Nude Girl with Arms Outstretched",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Nacktes%20M%C3%A4dchen%20mit%20ausgestreckten%20Armen.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q20891412",
+      "titre_fr": "Paris von Gütersloh",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Portrait%20of%20Paris%20von%20G%C3%BCtersloh%20%281887-1973%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q21712315",
+      "titre_fr": "Autoportrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Selbstportr%C3%A4t%20%281910%29.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q21712898",
+      "titre_fr": "Houses on the River (The Old Town)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20H%C3%A4user%20am%20Fluss.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q21712317",
+      "titre_fr": "Seated Girl (Poldi Lodzinsky])",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sitzendes%20M%C3%A4dchen%20%28Poldi%20Lodzinsky%29.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28001378",
+      "titre_fr": "Portrait of Victor Ritter von Bauer",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Victor%20Ritter%20von%20Bauer%20-%203158%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q24050831",
+      "titre_fr": "Portrait of Edith (the artist's wife)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Portrait%20of%20Edith%20%28the%20artist%27s%20wife%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q27999457",
+      "titre_fr": "Portrait of the artist's wife, Edith Schiele",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Bildnis%20der%20Frau%20des%20K%C3%BCnstlers%2C%20Edith%20Schiele%20-%201991%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28002609",
+      "titre_fr": "La Famille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Kauerndes%20Menschenpaar%20%28Die%20Familie%29%20-%204277%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28002611",
+      "titre_fr": "House wall (window wall)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Hauswand%20%28Fensterwand%29%20-%204278%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28002638",
+      "titre_fr": "Dr. Hugo Koller",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Dr.%20Hugo%20Koller%20-%204296%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28002878",
+      "titre_fr": "Mère avec deux enfants III",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Mutter%20mit%20zwei%20Kindern%20III%20-%204473%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28003303",
+      "titre_fr": "Portrait de l'éditeur Eduard Kosmack",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Eduard%20Kosmack%20-%204702%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28003343",
+      "titre_fr": "Portrait of Herbert Reiner",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Reinerbub%20%28Bildnis%20Herbert%20Reiner%29%20-%204766%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28004505",
+      "titre_fr": "Houses in winter (view from the studio)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20H%C3%A4user%20im%20Winter%20%28Blick%20aus%20dem%20Atelier%29%20-%205493%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28005898",
+      "titre_fr": "Interior",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Interieur%20-%206621%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28009541",
+      "titre_fr": "Portrait of Dr. Franz Martin Haberditzl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Bildnis%20Dr.%20Franz%20Martin%20Haberditzl%20-%209638%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28497832",
+      "titre_fr": "Couple lesbien amoureux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Lesbisches%20Liebespaar%20-%201914.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28497837",
+      "titre_fr": "Deux femmes s'embrassant",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Zwei%20sich%20umarmende%20Frauen%20-%201911.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28008418",
+      "titre_fr": "Sunflowers I",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sonnenblumen%20I%20-%202494%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28497838",
+      "titre_fr": "Couple de femmes amoureuses",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Weibliches%20Liebespaar%20-%201915.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28668192",
+      "titre_fr": "Reclining Woman",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Reclining%20Woman%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28780356",
+      "titre_fr": "Setting Sun",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Setting%20Sun%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28780361",
+      "titre_fr": "Crescent of Houses (The small City V)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Krumau%20-%20Crescent%20of%20Houses%20%28The%20small%20City%20V%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28780371",
+      "titre_fr": "Landscape with Ravens",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Landscape%20with%20Ravens%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797681",
+      "titre_fr": "Autumn Tree in Stirred Air (Winter Tree)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Autumn%20Tree%20in%20Stirred%20Air%20%28Winter%20Tree%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797683",
+      "titre_fr": "Crescent of Houses II (Island Town)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Der%20H%C3%A4userbogen%20II%20%281915%29.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797682",
+      "titre_fr": "Cardinal and Nun (Caress)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Cardinal%20and%20Nun%20%28Caress%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797683",
+      "titre_fr": "Crescent of Houses II (Island Town)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Crescent%20of%20Houses%20II%20%28Island%20Town%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797684",
+      "titre_fr": "Dead City III (City on the Blue River III)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Dead%20City%20III%20%28City%20on%20the%20Blue%20River%20III%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797686",
+      "titre_fr": "House Wall on the River",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20House%20Wall%20on%20the%20River%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797685",
+      "titre_fr": "Dead Mother I",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Dead%20Mother%20I%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797687",
+      "titre_fr": "Levitation (The Blind II)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Levitation%20%28The%20Blind%20II%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797688",
+      "titre_fr": "Mourning Woman",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Mourning%20Woman%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797692",
+      "titre_fr": "Self-Portrait with Lowered Head",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Portrait%20with%20Lowered%20Head%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797691",
+      "titre_fr": "Seated Male Nude (Self-Portrait)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Seated%20Male%20Nude%20%28Self-Portrait%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797694",
+      "titre_fr": "Self-Seer II (Death and Man)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Seer%20II%20%28Death%20and%20Man%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797695",
+      "titre_fr": "Small Tree in Late Autumn",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Small%20Tree%20in%20Late%20Autumn%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797693",
+      "titre_fr": "Self-Portrait with Physalis",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Portrait%20with%20Physalis%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797697",
+      "titre_fr": "The Lyricist",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20The%20Lyricist%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q28797696",
+      "titre_fr": "The Hermits",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20The%20Hermits%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q30071686",
+      "titre_fr": "Sitting girl (Sitzendes Mädchen)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sitzendes%20M%C3%A4dchen%20-%2013575%20-%20Bavarian%20State%20Painting%20Collections.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q29906358",
+      "titre_fr": "Sitting boy (Sitzender Knabe)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sitzender%20Knabe%20-%2013576%20-%20Bavarian%20State%20Painting%20Collections.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q30074348",
+      "titre_fr": "Agony (The Death Struggle)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20001.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q54917629",
+      "titre_fr": "Maison avec toit de bardeaux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20House%20with%20Shingle%20Roof%20%28Old%20House%20II%29%20-%20Google%20Art%20Project.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q30076803",
+      "titre_fr": "Standing Girl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Stehendes%20M%C3%A4dchen%20-%2013574%20-%20Bavarian%20State%20Painting%20Collections.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q58371583",
+      "titre_fr": "Four trees",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Vier%20B%C3%A4ume%20-%203917%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q58371583",
+      "titre_fr": "Four trees",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20094.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q71005591",
+      "titre_fr": "Portrait of Edith Schiele with striped dress",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20Edith%20Schiele%20in%20gestreiftem%20Kleid%20sitzend%20-%201915.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q61740236",
+      "titre_fr": "Mort et Jeune fille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schwangere%20und%20Tod.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q73880529",
+      "titre_fr": "Black-haired Girl with raised Skirt",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20071.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q71035820",
+      "titre_fr": "Wally Neuzil in Black Stockings",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%2C%20Wally%20Neuzil%20in%20Black%20Stockings%2C%201912.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q112706999",
+      "titre_fr": "Q112706999",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Kniende%20mit%20hinunter%20gebeugtem%20Kopf%20-%201915.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q112708873",
+      "titre_fr": "Lovers",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Liebespaar%20-%201913.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q111822091",
+      "titre_fr": "Prophets (Double Self-Portrait)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stuttgart%20-%20Neue%20Staatsgalerie%20%2835906628715%29.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q110406293",
+      "titre_fr": "Femme assise à la jambe repliée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sed%C3%ADc%C3%AD%20%C5%BEena%20s%20pokr%C4%8Den%C3%BDmi%20koleny%20CZE%20NG.K%2017864.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q107645899",
+      "titre_fr": "Self-Portrait with Bare Shoulder",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20Selbstbildnis%20mit%20hochgezogener%20nackter%20Schulter%20-%201912.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q114339980",
+      "titre_fr": "Fleurs stylisées devant un fond décoratif",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20090.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q114801075",
+      "titre_fr": "Composition by Portrait of Three Men (Self-Portrait)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/ESchiele%20Composition%20by%20Portrait%20of%20Three%20Men%28Self-Portrait%29.png",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115385425",
+      "titre_fr": "Q115385425",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Liebespaar%2C%201913.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115385488",
+      "titre_fr": "Lovers (Self-portrait with Wally)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Liebespaar%20%28Selbstdarstellung%20mit%20Wally%29.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115385582",
+      "titre_fr": "Q115385582",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Kniender%20Frauenakt%20mit%20vorgestreckten%20Armen%20-%201914.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115385524",
+      "titre_fr": "Q115385524",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Komposition%20mit%20zwei%20Gestalten%20-%20ca1909.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115385550",
+      "titre_fr": "Q115385550",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Kniendes%20M%C3%A4dchen%20-%201917.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115385871",
+      "titre_fr": "Q115385871",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Liegendes%2C%20halbbekleidetes%20M%C3%A4dchen%20-%201911.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115385685",
+      "titre_fr": "Female Nude",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Female%20Nude.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115385620",
+      "titre_fr": "Woman with black Hair",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Frau%20mit%20schwarzem%20Haar%20-%201914.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115407502",
+      "titre_fr": "Q115407502",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Weiblicher%20Akt%20mit%20gelbem%20Handtuch%20-%201917.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115407574",
+      "titre_fr": "Q115407574",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Stehender%20weiblicher%20Akt%20mit%20Str%C3%BCmpfen%20-%201914.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115407544",
+      "titre_fr": "Q115407544",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Weiblicher%20R%C3%BCckenakt%20-1917.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115407536",
+      "titre_fr": "Q115407536",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Weiblicher%20Akt%20-%201917.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115407609",
+      "titre_fr": "Q115407609",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20R%C3%BCckenansicht%20eines%20M%C3%A4dchens%20im%20blauen%20Rock%20-%201913.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115407649",
+      "titre_fr": "Q115407649",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Selbstbildnis%20als%20Halbakt%20in%20schwarzer%20Jacke%20-%201911.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115412608",
+      "titre_fr": "Standing female nude with crossed arms",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20M%C3%A4dchenakt%20mit%20verschr%C3%A4nkten%20Armen%20-%201910.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115412536",
+      "titre_fr": "Q115412536",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Mann%20und%20Frau%2C%20Umarmung%20%281917%29.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115412819",
+      "titre_fr": "Q115412819",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sitzendes%20M%C3%A4dchen%20mit%20Pferdeschwanz%20-%201910.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115412847",
+      "titre_fr": "Sailing boat with reflections",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Segelschiff%20mit%20Spiegelungen%20-%20JK%20166.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115539264",
+      "titre_fr": "Still Life with Flowers",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Schiele%20-%20work-p219.jpg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115412811",
+      "titre_fr": "Q115412811",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Sitzender%20M%C3%A4dchenakt%20mit%20Hemd%20%C3%BCber%20dem%20Kopf%20-%201910.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q44032",
+      "createurLabel": "Egon Schiele",
+      "uri": "http://www.wikidata.org/entity/Q115412715",
+      "titre_fr": "Reclining female nude",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Liegender%20weiblicher%20Akt%20-%201917.jpeg",
+      "categories": [
+        {
+          "catId": 681,
+          "catName": "Galerie Egon Schiele"
+        }
+      ]
+    }
+  ]
+}
