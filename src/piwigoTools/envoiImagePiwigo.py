@@ -4,9 +4,10 @@ import datetime
 import json
 import time
 
-def postImageToPiwigo(im, piwigoCategory=15, categoryName="portrait"):
+def postImageToPiwigo(im, piwigoCategory=15, categoryName="portrait", cp=None):
     # dans la version 2, il peut y avoir plusieurs images, je prend la première
     # il faudrait prendre la meilleure, de préférence sans le cadre
+    if not cp: return None
     image_path = im["images"][0]
     hh = { 'User-Agent': 'Scrutart-UA (https://scrutart.grains-de-culture.fr/; scrutart@grains-de-culture.fr)'}
     image_response = requests.get(image_path, headers=hh)
@@ -43,6 +44,7 @@ def postImageToPiwigo(im, piwigoCategory=15, categoryName="portrait"):
         payload = {
             "image": image_path,
             "method": "pwg.images.addSimple",
+            "category_id": categorie_id,
             "category": categorie_id,
             "name": titre,
             "comment": description,
@@ -50,7 +52,7 @@ def postImageToPiwigo(im, piwigoCategory=15, categoryName="portrait"):
         }
         # Construire les données de la requête avec la pièce jointe
         files = {'image': (image_path, image_data, 'image/jpeg')}
-        print(f"L'image '{titre}' va être envoyée !")
+        print(f"L'image '{titre}' va être envoyée ! ({datetime.datetime.now()})")
         response = session.post(
             piwigo_base_url + "?format=json&method=pwg.images.addSimple",
             data=payload,
@@ -58,8 +60,8 @@ def postImageToPiwigo(im, piwigoCategory=15, categoryName="portrait"):
         )
         # todo ajouter des logs
         if response.status_code == 200:
-            print(f"L'image '{titre}' a été téléchargée avec succès et les métadonnées ont été ajoutées !")
-            print(datetime.datetime.now())
+            print(f"L'image '{titre}' a été téléchargée avec succès et les métadonnées ont été ajoutées ! ({datetime.datetime.now()})")
+            # print(datetime.datetime.now())
             return response
         else:
             print("Erreur :", response.status_code, response.text)
@@ -112,9 +114,10 @@ def getFilesList(dirToProcess):
     return filesList
 
 if __name__=="__main__":
-    dirToProcess = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\\fr\\20250219"
+    dirToProcess = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\\fr\\fusion"
     filesList = getFilesList(dirToProcess)
     for filepath in filesList:
+        if not "listeAlbums" in filepath: continue
         itemsToProcess = []
         # with open("D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\listeAlbumsCreateurs.json",
         with open(filepath, encoding="UTF-8") as albumsItemsFile:
@@ -122,7 +125,7 @@ if __name__=="__main__":
         for item in itemsToProcess:
             #### remplacer ces lignes par création de catégorie si elle n'existe pas déjà
             categoryName = item["categoryName"]
-            print(categoryName)
+            print(f"""Galerie {categoryName} ({item["qid"]})""")
             piwigoCategory = item["piwigoCategory"]
             listimagespath = item["listimagespath"]
             dictim = {}
@@ -138,7 +141,7 @@ if __name__=="__main__":
                 change = False
                 for uri, im in dictim.items():
                     if not "posted" in im:
-                        res = postImageToPiwigo(im, piwigoCategory, categoryName)
+                        res = postImageToPiwigo(im, piwigoCategory, categoryName, cp)
                         if res:
                             change = True
                             im["post_result"] = res.text
