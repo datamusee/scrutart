@@ -120,8 +120,9 @@ if __name__ == "__main__":
     client.disconnect()
 
 class WikimediaAccess:
-    def __init__(self, qid):
+    def __init__(self, qid, lang="fr"):
         self.qid = qid
+        self.lang = lang
         # code serveur generationWordpress\tools\WikimediaManager\WikimediaManagerPackage\apiManager.py
         self.baseurl = "http://127.0.0.1:6000" # ça si local, https://webapimanager.grains-de-culture.fr si o2
         self.bearer = config["admin"]["Bearer"]
@@ -474,7 +475,7 @@ class WikimediaAccess:
             value = len(sparqlres.bindings) if hasattr(sparqlres, "bindings") else len(sparqlres["results"]["bindings"])
         return int(value)
 
-    def getMainType(self, sparqlres, qid, lang="fr"):
+    def getMainType(self, sparqlres, qid):
         value = ""
         if sparqlres:
             if type(sparqlres)==dict:
@@ -484,7 +485,7 @@ class WikimediaAccess:
                         name = list[0]["typeLabel"]["value"]
                         uri = list[0]["type"]["value"]
                         count = int(list[0]["c"]["value"])
-                        if (count > 1) and (lang == "fr"):
+                        if (count > 1) and (self.lang == "fr"):
                             name += "s"
                         value = "{count} {type}".format(count=str(count), type=name)
             else:
@@ -493,12 +494,12 @@ class WikimediaAccess:
                     name = list[0]["typeLabel"].value
                     uri = list[0]["type"].value
                     count = int(list[0]["c"].value)
-                    if (count > 1) and (lang == "fr"):
+                    if (count > 1) and (self.lang == "fr"):
                         name += "s"
                     value = "{count} {type}".format(count=str(count), type=name)
         return value
 
-    def getOtherTypes(self, sparqlres, qid, lang="fr"):
+    def getOtherTypes(self, sparqlres, qid):
         value = ""
         list = []
         if sparqlres and "results" in sparqlres and "bindings" in sparqlres["results"]:
@@ -512,11 +513,16 @@ class WikimediaAccess:
             name = type["typeLabel"].value  if hasattr(type["typeLabel"], "value") else type["typeLabel"]["value"]
             uri = type["type"].value  if hasattr(type["type"], "value") else type["type"]["value"]
             count = int(type["c"].value  if hasattr(type["c"], "value") else type["c"]["value"])
-            if (count > 1) and (lang == "fr"):
+            if (count > 1) and (self.lang == "fr"):
                 name += "s"
             if (count >= 10):
                 value += "{count} {type}, ".format(count=str(count), type=name)
-        value += " et d'autres types d'œuvres plus exceptionnels"
+        otherTypes = {
+            "fr":" et d'autres types d'oeuvres plus exceptionnels.",
+            "en": " and other more exceptional types of work.",
+            "es": " y otros tipos de trabajo más excepcionales.",
+        }
+        value += otherTypes[self.lang]
         return value
 
     def getValueLimit(self, object_type):
@@ -535,7 +541,7 @@ class WikimediaAccess:
         }
         return main_props.get(object_type, "http://www.wikidata.org/prop/direct/P136") # TODO attention, default douteux
 
-    def getTable(self, sparqlres, qid, lang="fr"):
+    def getTable(self, sparqlres, qid):
         value = ""
         entity_type = self.getTypes(qid)[0]
         limit = self.getValueLimit(entity_type)
@@ -560,18 +566,18 @@ class WikimediaAccess:
             propuri = prop["p"].value if hasattr(prop["p"], "value") else prop["p"]["value"]
             propid = propuri.replace("http://www.wikidata.org/prop/direct/", "")
             valuesList = ""
-            sparqlquery = """SELECT DISTINCT ?v ?vLabel ?c WHERE {
-                      {
-                        SELECT DISTINCT  ?v (COUNT(DISTINCT ?s) AS ?c) WHERE {
+            sparqlquery = f"""SELECT DISTINCT ?v ?vLabel ?c WHERE {{
+                      {{
+                        SELECT DISTINCT  ?v (COUNT(DISTINCT ?s) AS ?c) WHERE {{
                           ?s <__MAINPROPID__> wd:__QID__;
                             <__PROPURI__> ?v.
-                        }
+                        }}
                         GROUP BY ?v
                         order by desc(?c)
                         LIMIT __LIMIT__ 
-                      }
-                      SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en". }
-                    }
+                      }}
+                      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{self.lang}, en". }}
+                    }}
                     order by desc(?c)""".replace("__QID__", qid).replace("__PROPURI__", propuri).replace("__MAINPROPID__", main_propuri).replace("__LIMIT__", str(limit))
             valuesList = ""
             res = self.sparqlQuery(sparqlquery)
@@ -638,18 +644,34 @@ class WikimediaAccess:
     def getGenreList(self, sparqlres, qid):
         value = self.getItemListSansMinus(sparqlres, qid)
         if value!="":
-            value = "    Genres\n"+value
+            branch = {
+                "fr": "    Genres\n",
+                "en": "    Genres\n",
+                "es": "    Genres\n",
+            }
+            value = branch[self.lang] + value
         return value
 
     def getDepictList(self, sparqlres, qid):
         value = self.getItemListSansMinus(sparqlres, qid)
         if value!="":
-            value = "    Illustre\n"+value
+            branch = {
+                "fr": "    Illustre\n",
+                "en": "    Depicts\n",
+                "es": "    Representa\n",
+            }
+            value = branch[self.lang]+value
         return value
 
     def getTypeList(self, sparqlres, qid):
         value = self.getItemListSansMinus(sparqlres, qid)
-        value = "    Types\n"+value
+        if value!="":
+            branch = {
+                "fr": "    Types\n",
+                "en": "    Types\n",
+                "es": "    Tipos\n",
+            }
+            value = branch[self.lang] + value
         return value
 
     def getCountByLang(self, sparqlres, qid, lang):
