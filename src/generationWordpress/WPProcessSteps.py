@@ -93,10 +93,10 @@ def pageProcess(pagedesc, wpref, template):
     pass
 
 if __name__ == '__main__':
-    import WPPainterFrenchTemplate as wpFrenchTemplate
+    import WPPainterTemplate as wpTemplate
 
     # chargement de template de page à appliquer
-    frenchtemplate = wpFrenchTemplate.WPPainterFrenchTemplate()
+    frenchtemplate = wpTemplate.WPPainterTemplate("fr")
     gitref = None
     wpref = None
     jsonParams = {}
