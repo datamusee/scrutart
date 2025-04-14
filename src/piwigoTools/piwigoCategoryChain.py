@@ -1,6 +1,7 @@
 '''
 objet: chaine de production d'un ensemble d'éléments à partir d'une liste de genres ou d'artistes
 portion de la liste complète définie avec 2 seuils (min et max)
+objectif d'implémentation, pas encore complètement atteint au 2/4/2025
 * en entrée, prendre une liste d'entités wikidata avec éventuellement leur type
 * par celles qui n'ont pas de type interroger wikidata pour obtenir le type
 * créer si nécessaire une catégorie (album) dans Piwigo en tenant compte du type d'entité, et la mettre en tant que sous-catégorie de la bonne super-catégorie
@@ -8,15 +9,16 @@ portion de la liste complète définie avec 2 seuils (min et max)
 * créer la liste des images pour chaque catégorie
 * envoyer des images dans les albums créés
 * créer ou mettre à jour une page scrutart pour chaque album de genre créé, avec référence à l'album
-* ajouter l'album dans une pae de liste d'albums
+* ajouter l'album dans une page de liste d'albums
 '''
 import requests
 import configPiwigo as cp
 import datetime
 import json
 from src.generationWordpress.WikimediaAccess import WikimediaAccess
-
+import os
 import time
+import argparse
 
 def commentCategoryInPiwigo(catName, categoryId, catFreq):
     strCatFreq = str(catFreq)
@@ -58,8 +60,12 @@ def commentCategoryInPiwigo(catName, categoryId, catFreq):
             print("Erreur :", response.status_code, response.text)
             return None, "Erreur d'envoir de description (comment)"
 
-def createCategory():
-    pass
+
+def existCategoryForEntity(qid):
+    return True
+
+def createCategoryForEntity(qid):
+    return None
 
 def getEntityOccupations(wObj, qid):
     occupations = wObj.getOccupations(qid)
@@ -160,26 +166,59 @@ def getListOfPaintings(wobj, query):
 
 if __name__=="__main__":
     # EN COURS D ECRITURE
+    parserCmd = argparse.ArgumentParser(description='Process some entities, to build a list of Piwigo gategories associated with path of images lists.')
+    parserCmd.add_argument("-t", "--entityType", type=str, help='CREATORS or GENRES')
+    parserCmd.add_argument("-lc", "--listeAlbumsPath", type=str, help='Json path, list of creators, fields {"qid", "categoryName", "piwigoCategory", "listimagespath"')
+    args = parserCmd.parse_args()
+    listeAlbumsPath = args.listeAlbumsPath
+    # exemple: "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data/fr/20250312/listeAlbumsGenres.json"
+    # exemple: "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data/fr/20250312/listeAlbumsCreateurs.json"
+    # entityTypeTarget = "CREATORS"
+    entityTypeTarget = args.entityType
     entitySample = {
         # "Q187506": { "label": "Honoré Daumier"},
         # "Q301": { "label": "Le Greco"},
         # "Q40415": { "label":"impressionisme" },
-        "Q7046534": {"label": "nocturne"},
+        #"Q7046534": {"label": "nocturne"},
     }
-    with open("D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\listeAlbumsGenres.json",encoding="UTF-8") as genreFile:
-        genreList = json.loads(genreFile.read())
-        for genre in genreList:
-            entitySample[genre["qid"]] = { "label": genre["categoryName"]}
+    if entityTypeTarget=="GENRES":
+        with open(listeAlbumsPath,encoding="UTF-8") as genresFile:
+            genreList = json.loads(genresFile.read())
+            for genre in genreList:
+                entitySample[genre["qid"]] = { "label": genre["categoryName"]}
+    elif entityTypeTarget=="CREATORS":
+        """
+        prend une liste de créateurs, décrits par des dictionnaires avec au mois les champs qid et categoryName
+        sur le modèle
+          {
+            "type": "painter",
+            "qid": "Q212600",
+            "categoryName": "Eugène Boudin",
+            "piwigoCategory": 360,
+            "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/20250312/listeImages_Q212600_EugèneBoudin.json"
+          },
+          en fait un dictionnaire entitySample avec le qid comme clé
+        """
+        with open(listeAlbumsPath,encoding="UTF-8") as creatorFile:
+            creatorList = json.loads(creatorFile.read())
+            for entity in creatorList:
+                entitySample[entity["qid"]] = entity # { "label": entity["categoryName"]}
     for item, value in entitySample.items():
-        wObj = WikimediaAccess(item)
-        entityType = getEntityType(wObj, item)
-        imagesQuery = getImagesQuery(item, entityType)
-        # print(entityType, usefulRelation)
-        listOfPaintings = getListOfPaintings(wObj, imagesQuery)
-        compactName = value["label"].replace(" ", "")
-        filePath = f"D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data/fr\listeImages_{item}_{compactName}.json"
-        with open(filePath, "w", encoding="UTF-8") as imagesListFile:
-            imagesListFile.write(json.dumps(listOfPaintings, ensure_ascii=False))
+        if not os.path.isfile( value["listimagespath"]):
+            print(value)
+            wObj = WikimediaAccess(item)
+            entityType = getEntityType(wObj, item)
+            imagesQuery = getImagesQuery(item, entityType)
+            # print(entityType, usefulRelation)
+            listOfPaintings = getListOfPaintings(wObj, imagesQuery)
+            if "label" in value:
+                compactName = value["label"].replace(" ", "")
+                filePath = f"D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data/fr\listeImages_{item}_{compactName}.json"
+                # filePath = f"D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data/fr/20250312/listeImages_{compactName}.json"
+            else:
+                filePath = value["listimagespath"]
+            with open(filePath, "w", encoding="UTF-8") as imagesListFile:
+                imagesListFile.write(json.dumps(listOfPaintings, ensure_ascii=False))
 
     seuilMin = 50
     seuilMax = 600
@@ -194,13 +233,14 @@ if __name__=="__main__":
         idxsav = 0
 
         # * créer si nécessaire une catégorie (album) dans Piwigo
-
+        if not existCategoryForEntity(qid):
+            catnum = createCategoryForEntity(qid)
         # * mettre à jour le commentaire des albums créés
         # EN COURS D ECRITURE
         for cat in listcat:
             if (int(cat["c"])>=seuilMin) and (int(cat["c"])<=seuilMax):
                 catid = json.loads(cat["galerie"])["result"]["id"]
-                res, comment = commentCategoryInPiwigo(cat["genreLabel"], catid, cat["c"])
+                res, comment = commentCategoryInPiwigo(cat["entityLabel"], catid, cat["c"])
                 if res:
                     cat["idpiwigo"] = catid
                     cat["comment"] = comment
