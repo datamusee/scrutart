@@ -5,6 +5,7 @@ import tempfile
 import os
 
 """
+code testé avec succès le 23/04/2025
 How the Code Works
 Upload the Image: The upload_image function:
 Downloads the image from the given URL.
@@ -33,15 +34,15 @@ POST_ID = 770  # post test general
 IMAGE_URL = "https://scrutart.grains-de-culture.fr/wp-content/uploads/2024/12/The_Sacrifice_of_Isaac_MET_LC-71_28-11-scaled-e1733824766994-1024x738.jpg"  # URL of the image you want to use
 
 api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
-auth = (configPrivee.WORDPRESS_O2_API2USERNAME, configPrivee.WORDPRESS_O2_API2PASSWORD_APP)
+auth = (USERNAME, APP_PASSWORD)
 
 # WordPress site details
 wordpress_site_url = "https://scrutart.grains-de-culture.fr"
 api_endpoint = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
 # api_endpoint = f"{configPrivee.WORDPRESS_O2_API_URL}/posts?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
 
-username = configPrivee.WORDPRESS_O2_API2USERNAME
-password = configPrivee.WORDPRESS_O2_API2PASSWORD_APP
+username = USERNAME
+password = APP_PASSWORD
 
 
 def download_image_to_tempfile(url):
@@ -77,7 +78,7 @@ def upload_image(image_url, wp_site_url, username, app_password):
             # Ouvrir l'image temporaire pour l'envoi
             with open(temp_image_path, 'rb') as image_file:
                 upload_url = f"{wp_site_url}/wp-json/wp/v2/media"
-                auth = (configPrivee.WORDPRESS_O2_API2USERNAME, configPrivee.WORDPRESS_O2_API2PASSWORD_APP)
+                auth = (USERNAME, APP_PASSWORD)
                 # image_info = {'file': image_data_file}
                 image_info = {'file': ('image.jpg', image_file, 'image/jpeg')}
                 response = requests.post(upload_url, files=image_info, auth=auth)
@@ -100,7 +101,7 @@ def upload_image(image_url, wp_site_url, username, app_password):
 def set_featured_image(post_id, image_id, wp_site_url, username, app_password):
     """Sets the uploaded image as the featured image of a post."""
     api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts/{post_id}?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
-    username = configPrivee.WORDPRESS_O2_API2USERNAME
+    username = USERNAME
     password = configPrivee.WORDPRESS_O2_PASSWORD_APP
     # Encode le nom d'utilisateur et le mot de passe en base64 pour l'authentification
     credentials = f"{username}:{password}"
@@ -110,7 +111,7 @@ def set_featured_image(post_id, image_id, wp_site_url, username, app_password):
     }
     data = {"featured_media": image_id}
 
-    auth = (configPrivee.WORDPRESS_O2_API2USERNAME, configPrivee.WORDPRESS_O2_API2PASSWORD_APP)
+    auth = (USERNAME, APP_PASSWORD)
 
     response = requests.post(api_url, json=data, auth=auth, headers=headers)
     # response = requests.post(update_url, json=data, auth=HTTPBasicAuth(username, app_password))
