@@ -5,6 +5,7 @@ import re
 """
 TODO
 par défaut, getWPPages doit récupérer toutes les pages en utilisant les spécifications ci-dessous
+et donc intégrer une partie du code ci-dessous en faisant mieux grâce aux spécifications ci-dessous
 Pagination Parameters
 Any API response which contains multiple resources supports several common query parameters to handle paging through the response data:
 
@@ -28,6 +29,7 @@ if __name__ == '__main__':
     # Exemple d'utilisation
     pagesByQID = {}
     creatorPagesByQID = {}
+    notCreatorPageByQID = {}
     wpt = WPTools(configPrivee)
     pages = []
     indexpage = 1
@@ -51,6 +53,8 @@ if __name__ == '__main__':
                 pagesByQID[qid] = page
                 if "Où trouver" in page["title"]["rendered"]:
                     creatorPagesByQID[qid] = page
+                else:
+                    notCreatorPageByQID[qid]= page
     publishedCreatorsCount = 0
     for qid, page in creatorPagesByQID.items():
         publishedCreatorsCount +=1 if page["status"]=="publish" else 0
