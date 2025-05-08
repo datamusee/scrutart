@@ -1,8 +1,10 @@
+import time
+
 from piwigoConfigPrivee import configPiwigo
 import datetime
 import logging
 import requests
-import configPiwigo as cp  # Assure-toi que ce module est bien défini
+import configPiwigo as cp
 
 class CPiwigoManager():
     def __init__(self, url="https://galeries.grains-de-culture.fr"):
@@ -72,9 +74,10 @@ class CPiwigoManager():
             self.logger.error(f"Erreur de connexion à Piwigo : {e}")
             return False
 
-    def ensure_category_exists(self, session, category_name):
+    def piwigo_ensure_category_exists(self, category_name):
         try:
-            response = session.get(f"{self.PIWIGO_API_URL}?format=json&method=pwg.categories.getList")
+            self.piwigo_open_session()
+            response = self.session.get(f"{self.PIWIGO_API_URL}?format=json&method=pwg.categories.getList")
             response.raise_for_status()
             categories = response.json().get("result", {}).get("categories", [])
 
@@ -88,7 +91,7 @@ class CPiwigoManager():
                 "name": category_name,
                 "format": "json"
             }
-            response = session.post(self.PIWIGO_API_URL, data=payload)
+            response = self.session.post(self.PIWIGO_API_URL, data=payload)
             response.raise_for_status()
             new_id = response.json()["result"]["id"]
             self.logger.info(f"Catégorie '{category_name}' créée avec l'ID {new_id}")
@@ -97,7 +100,7 @@ class CPiwigoManager():
             self.logger.error(f"Erreur lors de la gestion des catégories : {e}")
             raise Exception(f"Erreur lors de la gestion de la catégorie {category_name} : {e}")
 
-    def openSession(self):
+    def piwigo_open_session(self):
         if not self.session:
             self.session = requests.Session()
             if not self.piwigo_login(self.session):
@@ -131,13 +134,13 @@ class CPiwigoManager():
         image_data = image_response.content
         return best_image_url, image_data
 
-    def post_image_to_piwigo(self, artwork_description, category_name="Galerie de tests", lang="fr"):
+    def piwigo_post_image(self, artwork_description, category_name="Galerie de tests", lang="fr"):
         try:
             best_image_url, image_data = self.select_image_to_post(artwork_description)
-            self.openSession()
+            self.piwigo_open_session()
 
             # Création ou récupération de la catégorie
-            category_id = self.ensure_category_exists(self.session, category_name)
+            category_id = self.piwigo_ensure_category_exists(self.session, category_name)
 
             titre = artwork_description.get("titre_" + lang, artwork_description.get("titre_fr", "Sans titre"))
             uri = artwork_description.get("uri", "")
@@ -170,10 +173,10 @@ class CPiwigoManager():
             self.logger.exception(f"Erreur inattendue lors de l'envoi de l'image : {e}")
             return None
 
-    def imageSetCategory(self, image_id, category_id):
+    def piwigo_image_set_category(self, image_id, category_id):
         # limited wrapper to the setCategory method of the Piwigo API
         try:
-            self.openSession()
+            self.piwigo_open_session()
             payload = {
                 "method": "pwg.images.setCategory",
                 "category_id": category_id,
@@ -183,22 +186,22 @@ class CPiwigoManager():
             }
             response = self.session.post(self.PIWIGO_API_URL + "?format=json&method=pwg.images.setCategory", data=payload)
             if response.status_code == 200:
-                print(f"L'image '{image_id}' a été associée à la catégorie {category_id} avec succès! ({datetime.datetime.now()})")
+                # print(f"L'image '{image_id}' a été associée à la catégorie {category_id} avec succès! ({datetime.datetime.now()})")
                 return response
             else:
-                print("Erreur :", response.status_code, response.text)
+                # print("Erreur :", response.status_code, response.text)
                 return None
         except Exception as e:
             self.logger.exception(f"Erreur inattendue lors de l'envoi de l'image : {e}")
             return None
 
-    def imageGetCategories(self, image_id):
+    def piwigo_image_get_categories(self, image_id):
         # limited wrapper to the setCategory method of the Piwigo API
         if not image_id:
             self.logger.exception(f"Erreur d'image désignée par un id=None")
             return None
         try:
-            self.openSession()
+            self.piwigo_open_session()
             payload = {
                 "method": "pwg.images.getInfo",
                 "image_id": image_id,
@@ -216,5 +219,117 @@ class CPiwigoManager():
                 print("Erreur :", response.status_code, response.text)
                 return None
         except Exception as e:
-            self.logger.exception(f"Erreur inattendue lors de l'envoi de l'image : {e}")
+            self.logger.exception(f"Erreur inattendue lors de la demande des catégories de l'image {image_id}: {e}")
+            time.sleep(1)
             return None
+
+    def piwigo_get_categories(self):
+        # Authentification et récupération de la liste des catégories
+        try:
+            self.piwigo_open_session()
+            payload = {
+                "format": "json",
+                "fullname": "true",
+                "tree_output": "true",
+                "recursive": "true",
+                "method": "pwg.categories.getList",
+            }
+            # Construire les données de la requête avec la pièce jointe
+            response = self.session.get(
+                self.PIWIGO_API_URL + "?format=json&method=pwg.categories.getList&recursive=true",
+                data=payload
+            )
+            # todo ajouter des logs
+            if response.status_code == 200:
+                return response.json()
+            else:
+                print("Erreur :", response.status_code, response.text)
+                return None
+        except Exception as e:
+            self.logger.exception(f"Erreur inattendue lors de la demande de la liste des catégories: {e}")
+            time.sleep(1)
+            return None
+
+    def piwigo_create_category(self, categoryName="portrait", categoryType="GENRES"):
+        username = cp.configPiwigo["login"]
+        password = cp.configPiwigo["pass"]
+        auth_data = {
+            "format": "application/json",
+            "method": "pwg.session.login",
+            "username": username,
+            "password": password,
+        }
+        # Ouvrir une session avec l'API pour se connecter
+        session = requests.Session()  # Crée une session persistante
+
+        # Envoyer la requête de connexion
+        piwigo_base_url = "https://galleries.grains-de-culture.fr/ws.php"
+        response = session.post(piwigo_base_url, data=auth_data)
+        if response.ok:  # and response.json().get("stat") == "ok":
+            galeryNaming = {
+                "GENRES": f"Galerie de {categoryName}s",
+                "CREATORS": f"Galerie {categoryName}",
+                "MOVEMENTS": f"{categoryName}",
+                "INSTITUTIONS": f" {categoryName}"
+            }
+            galeryParent = {
+                "GENRES": 81,
+                "CREATORS": 80,
+                "MOVEMENTS": 853,
+                "INSTITUTIONS": 854
+            }
+            # print("Connexion réussie!")
+            # todo gérer description multilingue
+            # Authentification et envoi de l'image avec des métadonnées
+            # nameFormat = "GENRES"
+            payload = {
+                "status": "private",
+                "name": galeryNaming.get(categoryType, f"Galerie - {categoryName}"),
+                "parent": galeryParent.get(categoryType, 856),  # 856=En attente
+                "method": "pwg.categories.add",
+            }
+            # Construire les données de la requête avec la pièce jointe
+            print(f"La catégorie '{categoryName}' va être envoyée !")
+            response = session.post(
+                piwigo_base_url + "?format=json&method=pwg.categories.add",
+                data=payload,
+            )
+            # todo ajouter des logs
+            if response.status_code == 200:
+                print(f"La catégorie '{categoryName}'  a été créée avec succès !")
+                print(datetime.datetime.now())
+                return response
+            else:
+                print("Erreur :", response.status_code, response.text)
+                return None
+
+    def piwigo_comment_category(self, catName, categoryId, catFreq):
+        try:
+            self.piwigo_open_session()
+            strCatFreq = str(catFreq)
+            payload = {
+                "method": "pwg.categories.setInfo",
+                "comment": f"Cette galerie présente des peintures du genre '{catName}'. Ces images, libres de droit, ont été sélectionnées à partir de données de Wikidata et d'images de Wikimedia Commons. Une analyse de la présence du genre '{catName}' dans Wikidata se trouve dans <a href='https://scrutart.grains-de-culture.fr/'>ScrutArt</a>. Au 22/11/2024, Wikidata contenait {strCatFreq} peintures de ce genre.",
+                "category_id": categoryId,
+                "pwg_token": self.token
+            }
+            # todo gérer description multilingue
+            # Construire les données de la requête avec la pièce jointe
+            # print(f"La catégorie '{categoryId}' va être envoyée !")
+            response = self.session.post(
+                self.PIWIGO_API_URL + "?format=json&method=pwg.categories.setInfo",
+                data=payload
+            )
+            # todo ajouter des logs
+            if response.status_code == 200:
+                # print(f"La catégorie '{categoryId}'  a été commentée avec succès !")
+                # print(datetime.datetime.now())
+                return response, payload["comment"]
+            else:
+                # print("==========>> Erreur :", response.status_code, response.text)
+                return None, "Erreur d'envoi de description (comment)"
+        except Exception as e:
+            self.logger.exception(f"Erreur inattendue lors de l'envoi de commentaire sur la catégorie {categoryId}: {e}")
+            time.sleep(1)
+            return None
+
