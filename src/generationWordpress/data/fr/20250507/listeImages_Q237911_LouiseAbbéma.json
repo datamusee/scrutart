@@ -1,0 +1,265 @@
+{
+  "sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q237911 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q237911 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ",
+  "liste": [
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q17495322",
+      "titre_fr": "Portrait de Sarah Bernhardt",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Abb%C3%A9ma%20-%20Portrait%20of%20Sarah%20Bernhardt%20%281921%29.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q23009017",
+      "titre_fr": "Winter",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Abb%C3%A9ma%20Winterspaziergang%20in%20Paris.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q66107739",
+      "titre_fr": "Le Déjeuner dans la serre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Abb%C3%A9ma%20-%20D%C3%A9jeuner%20dans%20la%20serre%2001.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q66473960",
+      "titre_fr": "L'Élégante, place de la Concorde à Paris",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Abb%C3%A9ma%20-%20El%C3%A9gante%20place%20de%20la%20Concorde%20-%20P2679%20-%20Mus%C3%A9e%20Carnavalet%2001.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q97060914",
+      "titre_fr": "Portrait de Jeanne Samary (1857-1890), sociétaire de la Comédie-Française",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jeanne%20Samary%20portrait%20by%20Louise%20Abb%C3%A9ma.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q97578519",
+      "titre_fr": "Le Tréport",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Abb%C3%A9ma%2C%20Louise%20-%20Le%20Tr%C3%A9port%20-%20JC%2095.33%20-%20Mus%C3%A9e%20de%20la%20Vie%20romantique.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q97579160",
+      "titre_fr": "Paysage de plage, Fécamp",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Abb%C3%A9ma%20-%20Paysage%20de%20plage%2C%20F%C3%A9camp%20-%20JC%2095.35%20-%20mus%C3%A9e%20de%20la%20Vie%20romantique.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q104061893",
+      "titre_fr": "Sarah Bernhardt à table",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Abb%C3%A9ma%20-%20Sarah%20Bernhardt%20%C3%A0%20table.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q104370940",
+      "titre_fr": "Allégorie de la Ville de Paris",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Abb%C3%A9ma%20-%20All%C3%A9gorie%20de%20la%20Ville%20de%20Paris%20-%20P2827%20-%20mus%C3%A9e%20Carnavalet.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q104370973",
+      "titre_fr": "Portrait de Sarah Bernhardt (1844-1923), dans le rôle d'Adrienne Lecouvreur",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Abb%C3%A9ma%20-%20Portrait%20de%20Sarah%20Bernhardt%20%281844-1923%29%2C%20dans%20le%20r%C3%B4le%20d%27Adrienne%20Lecouvreur%20-%20P2737%20-%20Mus%C3%A9e%20Carnavalet.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q104370981",
+      "titre_fr": "Portrait de Blanche Baretta (1855-1939), sociétaire de la Comédie-Française",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Abb%C3%A9ma%20-%20Portrait%20de%20Blanche%20Baretta%20%281855-1939%29%2C%20soci%C3%A9taire%20de%20la%20Com%C3%A9die-Fran%C3%A7aise%20-%20P1116%20-%20Mus%C3%A9e%20Carnavalet.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q104371815",
+      "titre_fr": "Portrait de Madeleine Brohant (1833-1900), sociétaire de la Comédie-Française",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Abb%C3%A9ma%20-%20Portrait%20de%20Madeleine%20Brohant%20%281833-1900%29%2C%20soci%C3%A9taire%20de%20la%20Com%C3%A9die-Fran%C3%A7aise%20-%20P1109%20-%20Mus%C3%A9e%20Carnavalet.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q104370982",
+      "titre_fr": "Portrait de Pauline Granger (1833-1913), sociétaire de la Comédie-Française",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Abb%C3%A9ma%20-%20Portrait%20de%20Pauline%20Granger%20%281833-1913%29%2C%20soci%C3%A9taire%20de%20la%20Com%C3%A9die-Fran%C3%A7aise%20-%20P1124%20-%20Mus%C3%A9e%20Carnavalet.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q104371817",
+      "titre_fr": "Portrait de Sarah Bernhardt (1844-1923), sociétaire de la Comédie-Française, dans le rôle de Marie de Neubourg (Ruy Blas)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhardt%2C%20Sarah%20%281844-1923%29%20-%201875%20-%20ritratta%20da%20Abbema%2C%20Louise%20%281858-1927%29.jpeg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q124631052",
+      "titre_fr": "Renée Delmas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ren%C3%A9e%20Delmas%2C%20L%27Hiver.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q113956141",
+      "titre_fr": "Autoportrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Abb%C3%A9ma%20autoportrait.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q124631817",
+      "titre_fr": "Renée Delmas de Pont-Jest",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/ABBEMA%20Renee%20Delmas%20de%20Pont-Jest%20-%201875.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q124631233",
+      "titre_fr": "Renée de Pont-Jest",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Renee%20de%20Pont-Jest%2C%20by%20Louise%20Abbema.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q130642573",
+      "titre_fr": "Jeune femme dans un jardin",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jeune%20femme%20dans%20un%20jardin%20-%20Louise%20Abbema%20-%20MBA%20Dijon%202597.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q237911",
+      "createurLabel": "Louise Abbéma",
+      "uri": "http://www.wikidata.org/entity/Q130206451",
+      "titre_fr": "Sarah Bernhardt Chasse à courre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sarah%20Bernhardt%20Hunting%20with%20Hounds%20by%20Louise%20Abbema.jpg",
+      "categories": [
+        {
+          "catId": 927,
+          "catName": "Galerie Louise Abbéma"
+        }
+      ]
+    }
+  ]
+}
