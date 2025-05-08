@@ -272,7 +272,7 @@ def handle_disconnect():
             del connected_clients[client_id]
             leave_room(client_id)
             break
-    print(f"Client disconnected: {disconnected_client}")
+        print(f"Client disconnected: {disconnected_client}")
 
 
 @app.route('/send_message', methods=['POST'])
@@ -401,18 +401,21 @@ def api_request():
 @authenticate
 def api_status(request_id):
     found_request = False
-    for manager in managers.values():
-        if manager.has_request(request_id):
-            found_request = True
-            response = manager.get_response(request_id)
-            if response:
-                return jsonify({"status": "complete", "response": response})
+    try:
+        for manager in managers.values():
+            if manager.has_request(request_id):
+                found_request = True
+                response = manager.get_response(request_id)
+                if response:
+                    return jsonify({"status": "complete", "response": response})
 
-    if not found_request:
-        return jsonify({"error": f"Request ID not found: {request_id}"}), 404
+        if not found_request:
+            return jsonify({"error": f"Request ID not found: {request_id}"}), 404
 
-    return jsonify({"status": "pending", "message": "Your request is still being processed."})
-
+        return jsonify({"status": "pending", "message": "Your request is still being processed."})
+    except Exception as e:
+        print(f"Erreur dans l'interrogation du status:\n {e}")
+        return None
 
 @app.route("/api/delete_manager", methods=["DELETE"])
 @authenticate
