@@ -1,53 +1,14 @@
 """
-but: établir un état des catégories exsitantes, de leur titre et de leur id
-? par catégorie entend-on la liste des albums et/ou la liste des tags
+but: établir un état des catégories existantes, de leur titre et de leur id
+la liste des albums est la liste des catégories piwigo
 """
-import requests
-import configPiwigo as cp
-import datetime
 import json
-import time
-
-def getCategoriesInPiwigo():
-    username = cp.configPiwigo["login"]
-    password = cp.configPiwigo["pass"]
-    auth_data = {
-        "format": "application/json",
-        "method": "pwg.session.login",
-        "username": username,
-        "password": password,
-    }
-    # Ouvrir une session avec l'API pour se connecter
-    session = requests.Session()  # Crée une session persistante
-
-    # Envoyer la requête de connexion
-    piwigo_base_url = "https://galleries.grains-de-culture.fr/ws.php"
-    response = session.post(piwigo_base_url, data=auth_data)
-    if response.ok:  # and response.json().get("stat") == "ok":
-        # print("Connexion réussie!")
-        # Authentification et envoi de l'image avec des métadonnées
-        payload = {
-            "format":"json",
-            "fullname": "true",
-            "tree_output": "true",
-            "recursive": "true",
-            "method": "pwg.categories.getList",
-        }
-        # Construire les données de la requête avec la pièce jointe
-        response = session.get(
-            piwigo_base_url + "?format=json&method=pwg.categories.getList&recursive=true",
-            data=payload,
-        )
-        # todo ajouter des logs
-        if response.status_code == 200:
-            return response.json()
-        else:
-            print("Erreur :", response.status_code, response.text)
-            return None
+import CPiwigoManager
 
 if __name__=="__main__":
     listcat = []
-    res = getCategoriesInPiwigo()
+    pwg = CPiwigoManager.CPiwigoManager()
+    res = pwg.piwigo_get_categories() # getCategoriesInPiwigo()
     if res:
         print(res)
         # save categories as TTL for scrutart state
