@@ -26,7 +26,7 @@ wp_auth = (WORDPRESS_USERNAME, WORDPRESS_PASSWORD)
 
 # Flask and authentication setup
 app = Flask(__name__)
-app.secret_key = 'random_secret_key'
+app.secret_key = 'tructractric'
 app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
 auth = HTTPBasicAuth()
