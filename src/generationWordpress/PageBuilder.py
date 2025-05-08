@@ -2,10 +2,11 @@ import datetime
 import time
 import json
 from src.generationWordpress.WPGenreTemplate import WPGenreTemplate as WPGenreTemplate
-from src.generationWordpress.WPPainterFrenchTemplate import WPPainterFrenchTemplate as WPFrPainterTemplate
+from src.generationWordpress.WPPainterTemplate import WPPainterTemplate as WPPainterTemplate
 from src.generationWordpress.WikimediaAccess import WikimediaAccess
 
-
+# il parait souhaitable d'homogénéiser ici le code pour les différentes langues et les différents thèmes
+# dans le cas des créateurs, on a relativement peu d'instances d'œuvres et pas rencontré de timeout
 class PageBuilder:
     def __init__(self, o_type, lang="fr"):
         self.objectType = o_type
@@ -13,16 +14,12 @@ class PageBuilder:
         self.template_builder = None
         if self.objectType:
             templates = {
-                "fr": {
-                    "Q1028181": WPFrPainterTemplate,  # template pour page de peintre
-                    "Q1792379": WPGenreTemplate,  # template pour page de genre
-                },
-                "en": {},
+                "Q1028181": WPPainterTemplate(lang),  # template pour page de peintre
+                "Q1792379": WPGenreTemplate,  # template pour page de genre
             }
-            if templates[self.lang]:
-                self.template_builder = templates[self.lang].get(self.objectType, None)
+            self.template_builder = templates.get(self.objectType, None)
             if self.template_builder:
-                self.template_manager = self.template_builder()
+                self.template_manager = self.template_builder
             if self.template_manager:
                 self.template = self.template_manager.buildPageTemplate()
         pass
@@ -35,8 +32,8 @@ class PageBuilder:
         return res
 
     # fonction destinée à généraliser et remplacer la fonction ci-dessous buildScrutartArtistPage
-    def build_scrutart_page(self, qid, lang="fr"):
-        w_obj = WikimediaAccess(qid)
+    def build_scrutart_page(self, qid):
+        w_obj = WikimediaAccess(qid, lang=self.lang)
         check = self.check_object_type(w_obj)
         page = None
         page = self.template
@@ -48,7 +45,7 @@ class PageBuilder:
                 filtres = elmt["filtres"]
                 urlqueryref = elmt["urlquery"]
                 # recuperation d'une query pour avoir les données du QID liées à l'item 'name'
-                crtquery = elmt["sparql"].replace("__QID__", qid).replace("__LANG__", lang) if elmt["sparql"] else None
+                crtquery = elmt["sparql"].replace("__QID__", qid).replace("__LANG__", self.lang) if elmt["sparql"] else None
                 if crtquery:
                     res = w_obj.sparqlQuery(crtquery)
                     print(crtquery, datetime.datetime.now())
@@ -72,6 +69,23 @@ class PageBuilder:
                     page = page.replace(urlqueryref, wdqsquery)
                 time.sleep(0.2)
         return page
+
+    def generatePage(self, qid, targetDir):
+        # en faire un log print(p["entity"], " ", p["entityLabel"])
+        try:
+            page = self.build_scrutart_page(qid)
+            page = self.nettoyageContenu(page)
+            if targetDir:
+                filename = f"""{targetDir}/{qid}.wp"""
+                with open(filename, "x", encoding="utf-8") as fpage:
+                    fpage.write(page)
+                    # time.sleep(3)
+            else:
+                return page
+        except Exception as e:  # file already exist or other error
+            print(e)
+            print("possibly a file already exists for ", qid)
+        pass
 
     def nettoyageContenu(self, page):
         if "<p><strong>0 pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>" in page:
