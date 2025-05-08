@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Générateur de page JSON-LD</title>
+  <style>
+    #loading { display: none; font-style: italic; color: #555; }
+    #result { margin-top: 20px; white-space: pre-wrap; }
+    body { font-family: sans-serif; margin: 2em; }
+    select, input[type="text"] { font-size: 1em; padding: 5px; margin: 0.5em 0; }
+    textarea { width: 100%; height: 300px; font-family: monospace; background: #f0f0f0; }
+    .preview { border: 1px solid #ccc; padding: 1em; margin-top: 1em; background: #fff; }
+  </style>
+</head>
+<body>
+  <title>Wikidata → WordPress Page</title>
+  <h1>Générateur de page WordPress basé sur Wikidata</h1>
+  <form method="post">
+    <label for="qid">QID :</label><br>
+    <input type="text" name="qid" id="qid" required value="{{ qid or '' }}"><br>
+
+    <label for="type">Type :</label><br>
+    <select name="type" id="type" required>
+      {% for key, label in types.items() %}
+        <option value="{{ key }}" {% if key == type_ %}selected{% endif %}>{{ label }}</option>
+      {% endfor %}
+    </select><br>
+
+    <label for="lang">Langue :</label><br>
+    <select name="lang" id="lang" required>
+      {% for l in languages %}
+        <option value="{{ l }}" {% if l == lang %}selected{% endif %}>{{ l }}</option>
+      {% endfor %}
+    </select><br>
+
+    <input type="submit" value="Générer">
+  </form>
+  <form id="jsonld-form">
+    <label for="type">Type :</label>
+    <select name="type" id="type">
+      <option value="creator">Peintre</option>
+      <option value="painting">Œuvre</option>
+      <option value="museum">Musée</option>
+      <option value="movement">Mouvement</option>
+    </select><br>
+
+    <label for="lang">Langue :</label>
+    <select name="lang" id="lang">
+      <option value="fr">Français</option>
+      <option value="en">Anglais</option>
+    </select><br>
+
+    <label for="qid">QID Wikidata :</label>
+    <input type="text" name="qid" id="qid2" placeholder="Ex: Q5582" required><br><br>
+
+    <button type="submit">Générer</button>
+  </form>
+
+  <div id="loading">⏳ Traitement en cours… Merci de patienter.</div>
+  <div id="result"></div>
+  {% if raw %}
+    <h2>Contenu brut :</h2>
+    <textarea readonly>{{ raw }}</textarea>
+
+    <h2>Aperçu du rendu :</h2>
+    <div class="preview">
+      {{ rendered | safe }}
+    </div>
+  {% endif %}
+
+  <script>
+    document.getElementById("jsonld-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const type = document.getElementById("type").value;
+      const lang = document.getElementById("lang").value;
+      const qid = document.getElementById("qid2").value;
+
+      const loading = document.getElementById("loading");
+      const result = document.getElementById("result");
+      loading.style.display = "block";
+      result.innerHTML = "";
+
+      fetch(`/pageBuilder.html?type=${type}&lang=${lang}&qid=${qid}`)
+        .then(response => response.text())
+        .then(html => {
+          loading.style.display = "none";
+          result.innerHTML = html;
+        })
+        .catch(error => {
+          loading.style.display = "none";
+          result.innerHTML = `<p style="color:red;">Erreur : ${error.message}</p>`;
+        });
+    });
+  </script>
+</body>
+</html>
+
