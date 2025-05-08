@@ -37,6 +37,7 @@ class WPTemplate():
 
     def __init__(self, lang="fr"):
         self.lang = lang
+        self.version = "1.5"
         self.dataConfig = WPTemplate.dataConfig
 
     def getDataConfig(self):
@@ -56,65 +57,26 @@ class WPTemplate():
         """ + str + """
         <!-- /wp:image -->"""
 
-    def buildQueryView(self, varstring=""):
-        models = {
-            "fr": """<p>(obtenu avec la requête sparql accessible <a href='""" + varstring + """'>sur WDQS</a>)</p>""",
-            "en": """<p>(obtained with the sparql query accessible <a href='""" + varstring + """'>on WDQS</a>)</p>""",
-            "es": """<p>(obtenido con la consulta sparql accesible <a href='""" + varstring + """'>en WDQS</a>)</p>""",
-        }
-        return self.wpWrapPara(models.get(self.lang, models["en"]))
-
-    def buildNbTypesOeuvresView(self, varnbmain="__NBMAINTYPE__", varnbother="__NBOTHERTYPES__"):
-        models = {
-            "fr": """<p>Il s'agit de <strong>+""" + varnbmain + """</strong>, """ + varnbother + """.</p>""",
-            "en": """<p>It's all about <strong>+""" + varnbmain + """</strong>, """ + varnbother + """.</p>""",
-            "es": """<p>Se trata de <strong>+""" + varnbmain + """</strong>, """ + varnbother + """.</p>""",
-        }
-        return self.wpWrapPara(models.get(self.lang, models["en"]))
-
-    def buildNbPropView(self, varnb="__NBPPROP__"):
-        models = {
-            "fr": f"""<p>Pour décrire ces œuvres, <strong>{varnb} propriétés</strong> sont utilisées.</p>""",
-            "en": f"""<p>To describe these works, <strong>{varnb} properties</strong> are used.</p>""",
-            "es": f"""<p>Para describir estas obras se utilizan <strong>{varnb} propiedades</strong>.</p>""",
-        }
-        return self.wpWrapPara(models.get(self.lang, models["en"]))
-
-    def buildImportantesPropView(self):
-        models = {
-            "fr": """<p><strong>__NBPROP50PLUS__ propriétés</strong> sont utilisées sur plus de la <strong>moitié des œuvres</strong>.</p>""",
-            "en": """<p><strong>__NBPROP50PLUS__ propriétés</strong> sont utilisées sur plus de la <strong>moitié des œuvres</strong>.</p>""",
-            "es": """<p><strong>__NBPROP50PLUS__ propriétés</strong> sont utilisées sur plus de la <strong>moitié des œuvres</strong>.</p>""",
-        }
-        return self.wpWrapPara(models.get(self.lang, models["en"]))
-
-    def buildPropDePropvalView(self):
-        models = {
-            "fr": """<p>Cela concerne <strong>__NBPROPPROPVAL8__ propriétés</strong>.</p>""",
-            "en": """<p>Cela concerne <strong>__NBPROPPROPVAL8__ propriétés</strong>.</p>""",
-            "es": """<p>Cela concerne <strong>__NBPROPPROPVAL8__ propriétés</strong>.</p>""",
-        }
-        return self.wpWrapPara(models.get(self.lang, models["en"]))
-
     def buildTableView(self):
         # TODO vérifier si wp:table peut être imbriqué dans le wp-para
         # au lieu de 15%, cela pourrait être 100px, puis 150px pour le deuxième colonne
+        queryview = self.buildQueryTableView()
         models = {
-            "fr": self.wpWrapPara("""<p>Ce qui s'illustre dans la table:</p>""") + """
+            "fr": self.wpWrapPara(f"""<p>Ce qui s'illustre dans la table: {queryview}</p>""") + """
 
 	        <!-- wp:table {"hasFixedLayout":false} -->
 	        <figure class="wp-block-table"><table><tbody><tr><td width="100px"><strong>Propriété Wikidata</strong></td><td width="150px"><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Les paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
             <!-- /wp:table -->
 
             """,
-            "en": self.wpWrapPara("""<p>This is illustrated in the table:</p>""") + """
+            "en": self.wpWrapPara("""<p>This is illustrated in the table: {queryview}</p>""") + """
 
         	        <!-- wp:table {"hasFixedLayout":false} -->
             	    <figure class="wp-block-table"><table><tbody><tr><td width="100px"><strong>Wikidata Property</strong></td><td width="150px"><strong>Label</strong></td><td><strong>Values (number of instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Most frequently used (property, value) pairs.</strong></figcaption></figure>
                     <!-- /wp:table -->
 
                     """,
-            "es": self.wpWrapPara("""<p>Ce qui s'illustre dans la table:</p>""") + """
+            "es": self.wpWrapPara("""<p>Ce qui s'illustre dans la table: {queryview}</p>""") + """
 
         	        <!-- wp:table {"hasFixedLayout":false} -->
         	        <figure class="wp-block-table"><table><tbody><tr><td width="100px"><strong>Propriété Wikidata</strong></td><td width="150px"><strong>Label</strong></td><td><strong>Valeurs (nombre d'instances)</strong></td></tr>__TABLEPROPVAL8__</tbody></table><figcaption class="wp-element-caption"><strong>Table: Les paires (propriété, valeur) les plus utilisées.</strong></figcaption></figure>
@@ -142,46 +104,6 @@ __TYPELIST__
             "es": mermaidblock,
         }
         return models.get(self.lang, models["en"])
-
-    def buildBarresView(self):
-        models = {
-            "fr": """<p>On peut accéder à une représentation graphique de la répartition par année des œuvres présentes sur Wikidata <a href="__QUERYLIENSWIKIDATABARRES__">ici</a> (remarque: si certaines années ne sont pas dans le graphe, c'est qu'il n'y a pas d'œuvres présentes dans Wikidata pour ces années).</p>""",
-            "en": """<p>On peut accéder à une représentation graphique de la répartition par année des œuvres présentes sur Wikidata <a href="__QUERYLIENSWIKIDATABARRES__">ici</a> (remarque: si certaines années ne sont pas dans le graphe, c'est qu'il n'y a pas d'œuvres présentes dans Wikidata pour ces années).</p>""",
-            "es": """<p>On peut accéder à une représentation graphique de la répartition par année des œuvres présentes sur Wikidata <a href="__QUERYLIENSWIKIDATABARRES__">ici</a> (remarque: si certaines années ne sont pas dans le graphe, c'est qu'il n'y a pas d'œuvres présentes dans Wikidata pour ces années).</p>""",
-        }
-        return self.wpWrapPara(models.get(self.lang, models["en"]))
-
-    def buildNbPagesWikipediaView(self):
-        models = {
-            "fr": """<p><strong>__NBPAGESWIKIPEDIA__ pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>""",
-            "en": """<p><strong>__NBPAGESWIKIPEDIA__ pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>""",
-            "es": """<p><strong>__NBPAGESWIKIPEDIA__ pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>""",
-        }
-        return self.wpWrapPara(models.get(self.lang, models["en"]))
-
-    def buildWikipediaParPaysView(self):
-        models = {
-            "fr": """<p>Dont __NBPAGESANGLO__ dans le Wikipedia anglophone et __NBPAGESFRANCO__ dans le Wikidata francophone.</p>""",
-            "en": """<p>Dont __NBPAGESANGLO__ dans le Wikipedia anglophone et __NBPAGESFRANCO__ dans le Wikidata francophone.</p>""",
-            "es": """<p>Dont __NBPAGESANGLO__ dans le Wikipedia anglophone et __NBPAGESFRANCO__ dans le Wikidata francophone.</p>""",
-        }
-        return self.wpWrapPara(models.get(self.lang, models["en"]))
-
-    def buildOeuvresWikipediaView(self):
-        models = {
-            "fr": """<p>L'ensemble des <strong>pages</strong> concerne <strong>__NBOEUVRESAVECWIKIPEDIA__ œuvres</strong>.</p>""",
-            "en": """<p>L'ensemble des <strong>pages</strong> concerne <strong>__NBOEUVRESAVECWIKIPEDIA__ œuvres</strong>.</p>""",
-            "es": """<p>L'ensemble des <strong>pages</strong> concerne <strong>__NBOEUVRESAVECWIKIPEDIA__ œuvres</strong>.</p>""",
-        }
-        return self.wpWrapPara(models.get(self.lang, models["en"]))
-
-    def buildImagesView(self):
-        models = {
-            "fr": """<p>Il y a <strong>__NBIMAGES__ images</strong> dans Wikimedia Commons associées à ces œuvres.</p>""",
-            "fr": """<p>Il y a <strong>__NBIMAGES__ images</strong> dans Wikimedia Commons associées à ces œuvres.</p>""",
-            "fr": """<p>Il y a <strong>__NBIMAGES__ images</strong> dans Wikimedia Commons associées à ces œuvres.</p>""",
-        }
-        return self.wpWrapPara(models.get(self.lang, models["en"]))
 
     def buildScrutartLink(self, title):
         # ici chercher l'url d'une page avec ce titre
@@ -250,40 +172,67 @@ __TYPELIST__
             "en": """<p><em>Note: Note: the figures in this post correspond to the situation at __DATE__</em></p>""",
             "es": """<p><em>Nota: las cifras de este post corresponden a la situación en __DATE__</em></p>""",
         }
-        para = {
-            "fr": f"""{insert}<p>Cette analyse s'appuie sur des requêtes sparql qui permettent d'interroger les données de Wikidata. Un lien est fourni pour exécuter la requête dans WDQS, l'outil d'interrogation SPARQL de Wikidata.</p>""",
-            "en": f"""{insert}<p>This analysis is based on sparql queries that interrogate Wikidata data. A link is provided to run the query in WDQS, Wikidata's SPARQL query tool.</p>""",
-            "es": f"""{insert}<p>Este análisis utiliza consultas sparql para interrogar los datos de Wikidata. Se proporciona un enlace para ejecutar la consulta en WDQS, la herramienta de consulta SPARQL de Wikidata.</p>""",
+        wdqsnote = {
+            "fr": """<p><em>L'icône <img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="lien WDQS"> fournit un lien vers une requête à WDQS, l'outil qui permet d'interroger Wikidata par programme.</em></p>""",
+            "en": """<p><em>The <img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="WDQS link"> icon provides a link to a query to WDQS, the tool that allows Wikidata to be queried programmatically.</em></p>""",
+            "es": """<p><em>El icono <img class="wp-image-710" style="width: 50px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="WDQS link"> proporciona un enlace a una solicitud a WDQS, la herramienta que permite consultar Wikidata de forma programática.</em></p>"""
         }
-        intro = self.wpWrapPara(note[self.lang]) + """
-        
-        """ + self.wpWrapPara(para[self.lang])
+        para = {
+            "fr": f"""{insert}<p>Cette analyse s'appuie sur des requêtes sparql qui permettent d'interroger les données de Wikidata.</p>""",
+            "en": f"""{insert}<p>This analysis is based on sparql queries that interrogate Wikidata data.</p>""",
+            "es": f"""{insert}<p>Este análisis utiliza consultas sparql para interrogar los datos de Wikidata.</p>""",
+        }
+        intro = self.wpWrapPara(note[self.lang]) + self.wpWrapPara(wdqsnote[self.lang]) + self.wpWrapPara(para[self.lang])
         return intro
 
     def buildNombreOeuvresView(self, varnb="__NBOEUVRES__", varcrea="__ENTITYLINK__"):
+        queryview = self.buildQueryNbOeuvresView()
         models = {
-            "fr": f"""<p>Il y a <strong>{varnb} œuvres de {varcrea}</strong> dans Wikidata.</p>""",
-            "en": f"""<p>There are <strong>{varnb} works by {varcrea}</strong> in Wikidata.</p>""",
-            "es": f"""<p>Hay <strong>{varnb} obras de {varcrea}</strong> en Wikidata.</p>""",
+            "fr": f"""<p>Il y a <strong>{varnb} œuvres de {varcrea}</strong> dans Wikidata. {queryview}</p>""",
+            "en": f"""<p>There are <strong>{varnb} works by {varcrea}</strong> in Wikidata. {queryview}</p>""",
+            "es": f"""<p>Hay <strong>{varnb} obras de {varcrea}</strong> en Wikidata. {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
-    def buildQueryView(self, varstring=""):
+    def buildQueryView_1_0(self, varstring=""):
         models = {
-            "fr": f"""<p>(obtenu avec la requête sparql accessible <a href='{varstring}'>sur WDQS</a>)</p>""",
-            "en": f"""<p>(obtained with the sparql query accessible <a href='{varstring}'>on WDQS</a>)</p>""",
-            "es": f"""<p>(obtenu avec la requête sparql accessible <a href='{varstring}'>sur WDQS</a>)</p>""",
+            "fr": """<p>(obtenu avec la requête sparql accessible <a href='""" + varstring + """'>sur WDQS</a>)</p>""",
+            "en": """<p>(obtained with the sparql query accessible <a href='""" + varstring + """'>on WDQS</a>)</p>""",
+            "es": """<p>(obtenido con la consulta sparql accesible <a href='""" + varstring + """'>en WDQS</a>)</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
+
+    def buildQueryView_2_0(self, varstring=""):
+        models = {
+            "fr": """<a href='""" + varstring + """'><img class="wp-image-710" style="width: 30px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="lien WDQS"></a>""",
+            "en": """<a href='""" + varstring + """'><img class="wp-image-710" style="width: 30px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="WDQS link"></a>""",
+            "es": """<a href='""" + varstring + """'><img class="wp-image-710" style="width: 30px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="en WDQS"></a>""",
+        }
+        return models.get(self.lang, models["en"]) # self.wpWrapPara(models.get(self.lang, models["en"]))
+
+    def buildQueryView(self, varstring="", version="2.0"):
+        versionstr = version.replace(".", "_")
+        fctName = f"""buildQueryView_{versionstr}"""
+        fct = getattr(WPTemplate, fctName)
+        res = fct(self, varstring)
+        return res
 
     def buildQueryNbOeuvresView(self):
         return self.buildQueryView("__QUERYNBOEUVRES__")
 
     def buildNbTypesOeuvresView(self, varnbmain="__NBMAINTYPE__", varnbother="__NBOTHERTYPES__"):
         models = {
-            "fr": f"""<p>Il s'agit de <strong>{varnbmain}</strong>, {varnbother}.</p>""",
-            "en": f"""<p>They are <strong>{varnbmain}</strong>, {varnbother}.</p>""",
-            "es": f"""<p>Il s'agit de <strong>{varnbmain}</strong>, {varnbother}.</p>""",
+            "fr": """<p>Il s'agit de <strong>+""" + varnbmain + """</strong>, """ + varnbother + """.</p>""",
+            "en": """<p>It's all about <strong>+""" + varnbmain + """</strong>, """ + varnbother + """.</p>""",
+        }
+        return self.wpWrapPara(models.get(self.lang, models["en"]))
+
+    def buildNbTypesOeuvresView(self, varnbmain="__NBMAINTYPE__", varnbother="__NBOTHERTYPES__"):
+        queryview = self.buildQueryNbParTypesView()
+        models = {
+            "fr": f"""<p>Il s'agit de <strong>{varnbmain}</strong>, {varnbother}. {queryview}</p>""",
+            "en": f"""<p>They are <strong>{varnbmain}</strong>, {varnbother}. {queryview}</p>""",
+            "es": f"""<p>Se trata de <strong>{varnbmain}</strong>, {varnbother}. {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
@@ -291,21 +240,24 @@ __TYPELIST__
         return self.buildQueryView("__QUERYNBPARTYPES__")
 
     def buildNbPropView(self, varnb="__NBPPROP__"):
+        queryview = self.buildQueryNbproprietesView()
         models = {
-            "fr": f"""<p>Pour décrire ces œuvres, <strong>{varnb} propriétés</strong> sont utilisées.</p>""",
-            "en": f"""<p>To describe these works, <strong>{varnb} properties</strong> are used.</p>""",
-            "es": f"""<p>Pour décrire ces œuvres, <strong>{varnb} propriétés</strong> sont utilisées.</p>""",
+            "fr": f"""<p>Pour décrire ces œuvres, <strong>{varnb} propriétés</strong> sont utilisées. {queryview}</p>""",
+            "en": f"""<p>To describe these works, <strong>{varnb} properties</strong> are used.</p> {queryview}""",
+            "es": f"""<p>Para describir estas obras se utilizan <strong>{varnb} propiedades</strong>. {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
     def buildQueryNbproprietesView(self):
         return self.buildQueryView("__QUERYNBPROPRIETES__")
 
+
     def buildImportantesPropView(self):
+        queryview = self.buildQueryImportantesPropView()
         models = {
-            "fr": """<p><strong>__NBPROP50PLUS__ propriétés</strong> sont utilisées sur plus de la <strong>moitié des œuvres</strong>.</p>""",
-            "en": """<p><strong>__NBPROP50PLUS__ properties</strong> are used on more than <strong>half</strong> of the works.</strong>.</p>""",
-            "es": """<p><strong>__NBPROP50PLUS__ propriétés</strong> sont utilisées sur plus de la <strong>moitié des œuvres</strong>.</p>""",
+            "fr": f"""<p><strong>__NBPROP50PLUS__ propriétés</strong> sont utilisées sur plus de la <strong>moitié des œuvres</strong>. {queryview}</p>""",
+            "en": f"""<p><strong>__NBPROP50PLUS__ propriétés</strong> sont utilisées sur plus de la <strong>moitié des œuvres</strong>. {queryview}</p>""",
+            "es": f"""<p><strong>__NBPROP50PLUS__ propriétés</strong> sont utilisées sur plus de la <strong>moitié des œuvres</strong>. {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
@@ -314,10 +266,11 @@ __TYPELIST__
 
     def buildPropvalView(self):
         # TODO remplacer 8 par un autre seuil? par un seuil relatif?(ex: la moitié)
+        queryview = self.buildQueryPropValView()
         models = {
-            "fr": """<p>Il y a <strong>__NBPAIRESPROPVAL8__ paires (propriété, valeur)</strong> différentes utilisées sur au moins huit de ces œuvres.</p>""",
-            "en": """<p>There are <strong>__NBPAIRESPROPVAL8__ (property, value)</strong> different pairs used on at least eight of these works.</p>""",
-            "es": """<p>Il y a <strong>__NBPAIRESPROPVAL8__ paires (propriété, valeur)</strong> différentes utilisées sur au moins huit de ces œuvres.</p>""",
+            "fr": f"""<p>Il y a <strong>__NBPAIRESPROPVAL8__ paires (propriété, valeur)</strong> différentes utilisées sur au moins huit de ces œuvres. {queryview}</p>""",
+            "en": f"""<p>There are <strong>__NBPAIRESPROPVAL8__ (property, value)</strong> different pairs used on at least eight of these works. {queryview}</p>""",
+            "es": f"""<p>Il y a <strong>__NBPAIRESPROPVAL8__ paires (propriété, valeur)</strong> différentes utilisées sur au moins huit de ces œuvres. {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
@@ -325,36 +278,39 @@ __TYPELIST__
         return self.buildQueryView("__QUERYPAIRESPROPVAL8__")
 
     def buildPropDePropvalView(self):
+        queryview = self.buildQueryPropDePropValView()
         models = {
-            "fr": """<p>Cela concerne <strong>__NBPROPPROPVAL8__ propriétés</strong>.</p>""",
-            "en": """<p>This concerns <strong>__NBPROPPROPVAL8__ properties</strong>.</p>""",
-            "es": """<p>Il y a <strong>__NBPAIRESPROPVAL8__ paires (propriété, valeur)</strong> différentes utilisées sur au moins huit de ces œuvres.</p>""",
+            "fr": f"""<p>Cela concerne <strong>__NBPROPPROPVAL8__ propriétés</strong>. {queryview}</p>""",
+            "en": f"""<p>It as about <strong>__NBPROPPROPVAL8__ properties</strong>. {queryview}</p>""",
+            "es": f"""<p>Cela concerne <strong>__NBPROPPROPVAL8__ propriétés</strong>. {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
     def buildQueryPropDePropValView(self):
         return self.buildQueryView("__QUERYPROPPROPVAL8__")
 
-
     def buildQueryTableView(self):
         return self.buildQueryView("__QUERYPROPPROPVAL8__")
 
     def buildBarresView(self):
+        queryview = self.buildQueryDonneesPourBarresView()
         models = {
-            "fr": """<p>On peut accéder à une représentation graphique de la répartition par année des œuvres présentes sur Wikidata <a href="__QUERYLIENSWIKIDATABARRES__">ici</a> (remarque: si certaines années ne sont pas dans le graphe, c'est qu'il n'y a pas d'œuvres présentes dans Wikidata pour ces années).</p>""",
-            "en": """<p>You can access a graphical representation of the distribution by year of the works present on Wikidata <a href=“__QUERYLIENSWIKIDATABARRES__”>here</a> (note: if certain years are not in the graph, it's because there are no works present in Wikidata for those years).</p>""",
-            "es": """<p>On peut accéder à une représentation graphique de la répartition par année des œuvres présentes sur Wikidata <a href="__QUERYLIENSWIKIDATABARRES__">ici</a> (remarque: si certaines années ne sont pas dans le graphe, c'est qu'il n'y a pas d'œuvres présentes dans Wikidata pour ces années).</p>""",
+            "fr": f"""<p>On peut accéder à une représentation graphique de la répartition par année des œuvres présentes sur Wikidata <a href="__QUERYLIENSWIKIDATABARRES__">ici</a> (remarque: si certaines années ne sont pas dans le graphe, c'est qu'il n'y a pas d'œuvres présentes dans Wikidata pour ces années). {queryview}</p>""",
+            "en": f"""<p>You can access a graphical representation of the distribution by year of the works present on Wikidata <a href=“__QUERYLIENSWIKIDATABARRES__”>here</a> (note: if certain years are not in the graph, it's because there are no works present in Wikidata for those years). {queryview}</p>""",
+            "es": f"""<p>On peut accéder à une représentation graphique de la répartition par année des œuvres présentes sur Wikidata <a href="__QUERYLIENSWIKIDATABARRES__">ici</a> (remarque: si certaines années ne sont pas dans le graphe, c'est qu'il n'y a pas d'œuvres présentes dans Wikidata pour ces années). {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
     def buildQueryDonneesPourBarresView(self):
         return self.buildQueryView("__QUERYDONNEESPOURBARRES__")
 
+
     def buildNbPagesWikipediaView(self):
+        queryview = self.buildQueryNbPagesWikipediaView()
         models = {
-            "fr": """<p><strong>__NBPAGESWIKIPEDIA__ pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>""",
-            "en": """<p><strong>__NBPAGESWIKIPEDIA__ Wikipedia pages</strong> in at least one language are associated with these works.</p>""",
-            "es": """<p><strong>__NBPAGESWIKIPEDIA__ pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres.</p>""",
+            "fr": f"""<p><strong>__NBPAGESWIKIPEDIA__ pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres. {queryview}</p>""",
+            "en": f"""<p><strong>__NBPAGESWIKIPEDIA__ Wikipedia pages</strong> in at least one language are associated with these works. {queryview}</p>""",
+            "es": f"""<p><strong>__NBPAGESWIKIPEDIA__ pages</strong> d'un <strong>Wikipedia</strong> dans au moins une langue sont associées à ces œuvres. {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
@@ -362,10 +318,11 @@ __TYPELIST__
         return self.buildQueryView("__QUERYNBPAGESWIKIPEDIA__")
 
     def buildWikipediaParPaysView(self):
+        queryview= self.buildQueryWikipediaParLangueView()
         models = {
-            "fr": """<p>Dont __NBPAGESANGLO__ dans le Wikipedia anglophone et __NBPAGESFRANCO__ dans le Wikipedia francophone.</p>""",
-            "en": """<p>Including __NBPAGESANGLO__ in English Wikipedia and __NBPAGESFRANCO__ in French Wikipedia.</p>""",
-            "es": """<p>Incluyendo __NBPAGESANGLO__ en Wikipedia en inglés y __NBPAGESFRANCO__ en Wikidata en francés.</p>""",
+            "fr": f"""<p>Dont __NBPAGESANGLO__ dans le Wikipedia anglophone et __NBPAGESFRANCO__ dans le Wikidata francophone. {queryview}</p>""",
+            "en": f"""<p>Including __NBPAGESANGLO__ in English Wikipedia and __NBPAGESFRANCO__ in French Wikipedia. {queryview}</p>""",
+            "es": f"""<p>Incluyendo __NBPAGESANGLO__ en Wikipedia en inglés y __NBPAGESFRANCO__ en Wikidata en francés. {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
@@ -373,10 +330,11 @@ __TYPELIST__
         return self.buildQueryView("__QUERYNBWIKIPEDIAPARLANGUE__")
 
     def buildOeuvresWikipediaView(self):
+        queryview = self.buildQueryOeuvreWikipediaView()
         models = {
-            "fr": """<p>L'ensemble des pages concerne <strong>__NBOEUVRESAVECWIKIPEDIA__ œuvres</strong>.</p>""",
-            "en": """<p>All <strong>pages</strong> relate to <strong>__NBOEUVRESAVECWIKIPEDIA__ works</strong>.</p>""",
-            "es": """<p>Todas las páginas se refieren a las obras de <strong>__NBOEUVRESAVECWIKIPEDIA__.</p>""",
+            "fr": f"""<p>L'ensemble des pages concerne <strong>__NBOEUVRESAVECWIKIPEDIA__ œuvres</strong>. {queryview}</p>""",
+            "en": f"""<p>All <strong>pages</strong> relate to <strong>__NBOEUVRESAVECWIKIPEDIA__ works</strong>. {queryview}</p>""",
+            "es": f"""<p>Todas las páginas se refieren a las obras de <strong>__NBOEUVRESAVECWIKIPEDIA__. {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
@@ -384,10 +342,11 @@ __TYPELIST__
         return self.buildQueryView("__QUERYNBOEUVRESAVECWIKIPEDIA__")
 
     def buildImagesView(self):
+        queryview = self.buildQueryImagesView()
         models = {
-            "fr": """<p>Il y a <strong>__NBIMAGES__ images</strong> dans Wikimedia Commons associées à ces œuvres.</p>""",
-            "en": """<p>There are <strong>__NBIMAGES__ images</strong> in Wikimedia Commons associated with these works.</p>""",
-            "es": """<p>Existen <strong>__Imágenes NBIMAGES__</strong> en Wikimedia Commons asociadas a estas obras.</p>""",
+            "fr": f"""<p>Il y a <strong>__NBIMAGES__ images</strong> dans Wikimedia Commons associées à ces œuvres. {queryview}</p>""",
+            "en": f"""<p>There are <strong>__NBIMAGES__ images</strong> in Wikimedia Commons associated with these works. {queryview}</p>""",
+            "es": f"""<p>Existen <strong>__Imágenes NBIMAGES__</strong> en Wikimedia Commons asociadas a estas obras. {queryview}</p>""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
@@ -422,9 +381,9 @@ __TYPELIST__
 
     def buildFinView(self):
         models = {
-            "fr": """"<br>J'ai ainsi donné un aperçu de la visibilité des œuvres de __ENTITYLINK__ dans Wikidata et des propriétés qui les décrivent. Je vais maintenant voir si des œuvres sont présentes dans <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a> et absentes de Wikidata pour compléter Wikidata si nécessaire ou si des compléments d'informations sur les œuvres peuvent être obtenus avec <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a>.""",
-            "en": """<br>In this post, I've provided an overview of the visibility of __ENTITYLINK__ works in Wikidata and the properties that describe them. I will now see if works are present in <a href=“https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/”>SemJoconde</a> and absent from Wikidata to complete Wikidata if necessary or if additional information about the works can be obtained with <a href=“https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/”>SemJoconde</a>.</p>""",
-            "es": """"<br>He dado una visión general de la visibilidad de las obras __ENTITYLINK__ en Wikidata y de las propiedades que las describen. Ahora veré si las obras están presentes en <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a> y ausentes de Wikidata para completar Wikidata si es necesario o si se puede obtener información adicional sobre las obras con <a href="https://datamusee.wp.imt.fr/fr/2023/12/04/le-jeu-de-donnees-joconde-et-le-lod/">SemJoconde</a>.""",
+            "fr": """<br>Nous avons ainsi donné un aperçu de la visibilité des œuvres de __ENTITYLINK__ dans Wikidata et des propriétés qui les décrivent. Nous allons maintenant étudier les informations absentes de Wikidata et que nous pouvons trouver par ailleurs. Si vous appréciez les efforts de notre association, <a href="https://grains-de-culture.fr/">'Grains de Culture'</a>, vous pouvez nous soutenir soit en vous inscrivant à l'association ou en faisant un don grâce à <a href="https://www.helloasso.com/associations/grains-de-culture">HelloAsso</a>. Vous pouvez aussi parcourir les nombreuses <a href="https://galeries.grains-de-culture.fr">galeries</a> que nous avons mis en ligne.""",
+            "en": """<br>This has given us an overview of the visibility of __ENTITYLINK__ works in Wikidata and the properties that describe them. We're now going to look at the information that isn't available in Wikidata and that we can find elsewhere. If you appreciate the efforts of our association, <a href="https://grains-de-culture.fr/">'Grains de Culture'</a>, you can support us either by joining the association or by making a donation through <a href="https://www.helloasso.com/associations/grains-de-culture">HelloAsso</a>. You can also browse the many <a href="https://galleries.grains-de-culture.fr">galleries</a> we've put online.""",
+            "es": """<br>Hemos dado así una visión general de la visibilidad de las obras __ENTITYLINK__ en Wikidata y de las propiedades que las describen. Ahora examinaremos la información que no está disponible en Wikidata y que podemos encontrar en otros sitios. Si aprecias los esfuerzos de nuestra asociación, <a href="https://grains-de-culture.fr/">'Grains de Culture'</a>, puedes apoyarnos uniéndote a la asociación o haciendo una donación a través de <a href="https://www.helloasso.com/associations/grains-de-culture">HelloAsso</a>. También puede consultar las numerosas <a href="https://galeries.grains-de-culture.fr">galerías</a> que tenemos en línea.""",
         }
         return self.wpWrapPara(models.get(self.lang, models["en"]))
 
@@ -442,20 +401,19 @@ __TYPELIST__
                        self.buildExternalLinks() +\
                        self.buildIntroView() + \
                        self.buildNombreOeuvresView() + \
-                       self.buildQueryNbOeuvresView() + \
                        self.buildGalleryLink() + \
                        self.buildMermaidView() + \
-                       self.buildNbTypesOeuvresView() + self.buildQueryNbParTypesView() + \
-                       self.buildNbPropView() + self.buildQueryNbproprietesView() + \
-                       self.buildImportantesPropView() + self.buildQueryImportantesPropView() + \
-                       self.buildPropvalView() + self.buildQueryPropValView() + \
-                       self.buildPropDePropvalView() + self.buildQueryPropDePropValView() + \
-                       self.buildTableView() + self.buildQueryTableView() + \
-                       self.buildBarresView() + self.buildQueryDonneesPourBarresView() + \
-                       self.buildNbPagesWikipediaView() + self.buildQueryNbPagesWikipediaView() + \
-                       self.buildWikipediaParPaysView() + self.buildQueryWikipediaParLangueView() + \
-                       self.buildOeuvresWikipediaView() + self.buildQueryOeuvreWikipediaView() + \
-                       self.buildImagesView() + self.buildQueryImagesView() + \
+                       self.buildNbTypesOeuvresView() + \
+                       self.buildNbPropView() + \
+                       self.buildImportantesPropView() + \
+                       self.buildPropvalView() + \
+                       self.buildPropDePropvalView() + \
+                       self.buildTableView() + \
+                       self.buildBarresView() + \
+                       self.buildNbPagesWikipediaView() + \
+                       self.buildWikipediaParPaysView() + \
+                       self.buildOeuvresWikipediaView() + \
+                       self.buildImagesView() + \
                        self.buildPicturesTableView() + \
                        self.buildFinView()
         return pageTemplate
