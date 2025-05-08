@@ -1,0 +1,2 @@
+class PiwigoAPIException(Exception):
+    pass
