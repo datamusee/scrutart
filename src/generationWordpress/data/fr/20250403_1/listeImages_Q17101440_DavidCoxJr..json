@@ -1,1 +1,1162 @@
-{"sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q17101440 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q17101440 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ", "liste": [], "dict": {"http://www.wikidata.org/entity/Q20854651": {"uri": "http://www.wikidata.org/entity/Q20854651", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Going to the Hayfield", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Going%20to%20the%20Hayfield%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17426,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17426\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q27882421": {"uri": "http://www.wikidata.org/entity/Q27882421", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Coming From Church", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20Younger%20-%20Coming%20From%20Church%20-%201956-12-1%20-%20Auckland%20Art%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17427,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17427\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q119684781": {"uri": "http://www.wikidata.org/entity/Q119684781", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Landscape, Harlech Castle", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28II%29%20-%20Landscape%2C%20Harlech%20Castle.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17428,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17428\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98152646": {"uri": "http://www.wikidata.org/entity/Q98152646", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Greenfield House, Harborne", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20Jr%20-%20Greenfield%20House%2C%20Harborne.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17429,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17429\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28533140": {"uri": "http://www.wikidata.org/entity/Q28533140", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "A Windy Day", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20A%20Windy%20Day%20-%20N02666%20-%20Tate.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17430,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17430\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28533118": {"uri": "http://www.wikidata.org/entity/Q28533118", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "River Scene with Boys Fishing", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20River%20Scene%20with%20Boys%20Fishing%20-%20N02668%20-%20Tate.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17431,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17431\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98152626": {"uri": "http://www.wikidata.org/entity/Q98152626", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Windermere", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Windermere%20-%201885P2497%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17432,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17432\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98152628": {"uri": "http://www.wikidata.org/entity/Q98152628", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Peat Gatherers", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Peat%20Gatherers%20-%201885P2504%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17433,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17433\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28533155": {"uri": "http://www.wikidata.org/entity/Q28533155", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Road across the Common", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Road%20across%20the%20Common%20-%20N02667%20-%20National%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17434,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17434\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98152629": {"uri": "http://www.wikidata.org/entity/Q98152629", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Shrimpers", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Shrimpers%20-%201885P2511%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17435,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17435\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98143393": {"uri": "http://www.wikidata.org/entity/Q98143393", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Bolsover Castle, Derbyshire", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Bolsover%20Castle%2C%20Derbyshire%20-%201907P334%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17436,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17436\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28533166": {"uri": "http://www.wikidata.org/entity/Q28533166", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Moorland Road", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Moorland%20Road%20-%20N02665%20-%20National%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17437,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17437\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98143626": {"uri": "http://www.wikidata.org/entity/Q98143626", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Bardon Tower", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Bardon%20Tower%20-%201919P89%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17438,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17438\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98144305": {"uri": "http://www.wikidata.org/entity/Q98144305", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Sun, Wind and Rain", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Sun%2C%20Wind%20and%20Rain%20-%201925P269%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17439,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17439\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98144358": {"uri": "http://www.wikidata.org/entity/Q98144358", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Fishing, A Risky Position", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20Jnr%20-%20Fishing%2C%20A%20Risky%20Position%20-%201925P331%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17440,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17440\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98144318": {"uri": "http://www.wikidata.org/entity/Q98144318", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Peace and War, Lympne Church and Castle", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Peace%20and%20War%2C%20Lympne%20Church%20and%20Castle%20-%201925P272%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17441,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17441\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98144340": {"uri": "http://www.wikidata.org/entity/Q98144340", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Dudley", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Dudley%20-%201925P297%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17442,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17442\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98144423": {"uri": "http://www.wikidata.org/entity/Q98144423", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "A Herefordshire Lane", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20A%20Herefordshire%20Lane%20-%201925P68%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17443,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17443\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98144494": {"uri": "http://www.wikidata.org/entity/Q98144494", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Indian Landscape  - Singham Mahal, Torway, Bejapore", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Indian%20Landscape%20-%20Singham%20Mahal%2C%20Torway%2C%20Bejapore%20-%201927P667%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17444,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17444\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98144618": {"uri": "http://www.wikidata.org/entity/Q98144618", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Still Life with Basket, Foxgloves, Clothes etc", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Still%20Life%20with%20Basket%2C%20Foxgloves%2C%20Clothes%20etc%20-%201931P36%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17445,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17445\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98144496": {"uri": "http://www.wikidata.org/entity/Q98144496", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Study of Foliage", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Study%20of%20Foliage%20-%201927P682%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17446,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17446\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98145079": {"uri": "http://www.wikidata.org/entity/Q98145079", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Sketch of the Terrace in Garden of Powis Castle", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Sketch%20of%20the%20Terrace%20in%20Garden%20of%20Powis%20Castle%20-%201941P240%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17447,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17447\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98145517": {"uri": "http://www.wikidata.org/entity/Q98145517", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Path By The Lake/ Ben Voirlich", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20Jnr%20-%20The%20Path%20By%20The%20Lake-%20Ben%20Voirlich%20-%201948P4%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17448,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17448\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148378": {"uri": "http://www.wikidata.org/entity/Q98148378", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Powis Castle", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Powis%20Castle%20-%201907P325%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17449,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17449\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98147643": {"uri": "http://www.wikidata.org/entity/Q98147643", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Evening", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Evening%20-%201885P2503%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17450,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17450\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148381": {"uri": "http://www.wikidata.org/entity/Q98148381", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Old Houses and Wye Bridge, Hereford", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Old%20Houses%20and%20Wye%20Bridge%2C%20Hereford%20-%201907P331%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17451,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17451\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98146152": {"uri": "http://www.wikidata.org/entity/Q98146152", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Ulverston Sands", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Ulverston%20Sands%20-%201956P13%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17452,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17452\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98147598": {"uri": "http://www.wikidata.org/entity/Q98147598", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Church, Bettws-y-Coed", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Church%2C%20Betws-y-Coed%20-%201885P2496%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17453,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17453\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98147622": {"uri": "http://www.wikidata.org/entity/Q98147622", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Going to the Hayfield", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Going%20to%20the%20Hayfield%20-%201885P2501%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17454,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17454\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148405": {"uri": "http://www.wikidata.org/entity/Q98148405", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Birmingham Horse Fair", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Birmingham%20Horse%20Fair%20-%201909P55%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17455,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17455\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148386": {"uri": "http://www.wikidata.org/entity/Q98148386", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Study of a Donkey", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Study%20of%20a%20Donkey%20-%201907P349%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17456,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17456\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148598": {"uri": "http://www.wikidata.org/entity/Q98148598", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Skate and Cod", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Study%20of%20Fish%2C%20Skate%20and%20Cod%20-%201927P666%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17457,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17457\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148575": {"uri": "http://www.wikidata.org/entity/Q98148575", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Night Train", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28artist%29%20-%20The%20Night%20Train%20-%20WGA05574.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17458,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17458\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148604": {"uri": "http://www.wikidata.org/entity/Q98148604", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Study of Foliage", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Study%20of%20Foliage%20-%201927P681%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17459,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17459\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148759": {"uri": "http://www.wikidata.org/entity/Q98148759", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Goree Docks, Liverpool", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Goree%20Docks%2C%20Liverpool%20-%201948P29%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17460,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17460\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149204": {"uri": "http://www.wikidata.org/entity/Q98149204", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Guy's Cliff", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Guy%27s%20Cliff%20-%201978P30%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17461,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17461\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149251": {"uri": "http://www.wikidata.org/entity/Q98149251", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Powys Castle, Wales", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28II%29%20-%20Powys%20Castle%2C%20Wales.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17462,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17462\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148418": {"uri": "http://www.wikidata.org/entity/Q98148418", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Wyndcliffe, River Wye", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Wyndcliffe%2C%20River%20Wye%20-%201912P3%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17463,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17463\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148444": {"uri": "http://www.wikidata.org/entity/Q98148444", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "A Farm at Bettws-y-Coed", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20A%20Farm%20at%20Betws-y-Coed%20-%201919P84%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"17464\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17464\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148542": {"uri": "http://www.wikidata.org/entity/Q98148542", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "View On The Canal, The Crescent , Birmingham", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20View%20On%20The%20Canal%2C%20The%20Crescent%20%2C%20Birmingham%20-%201924P21%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17465,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17465\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148556": {"uri": "http://www.wikidata.org/entity/Q98148556", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Junction of the Llugwy and Conway", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28II%29%20-%20Junction%20of%20the%20Llugwy%20and%20Conway.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17466,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17466\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148638": {"uri": "http://www.wikidata.org/entity/Q98148638", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "A Gipsy Encampment", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20A%20Gipsy%20Encampment%20-%201931P35%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17467,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17467\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148566": {"uri": "http://www.wikidata.org/entity/Q98148566", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Market Place , Faringdon", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Market%20Place%20%2C%20Faringdon%20-%201925P330%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17468,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17468\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148563": {"uri": "http://www.wikidata.org/entity/Q98148563", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Haddon Hall - The Terrace", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Haddon%20Hall%20-%20The%20Terrace%20-%201925P291%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17469,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17469\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98148560": {"uri": "http://www.wikidata.org/entity/Q98148560", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Bridge on the Common", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Bridge%20on%20the%20Common%20-%201925P271%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17470,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17470\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149359": {"uri": "http://www.wikidata.org/entity/Q98149359", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Waiting For The Ferry - Morning", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Waiting%20for%20the%20Ferry%2C%20Morning%20-%201885P2500%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17471,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17471\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149368": {"uri": "http://www.wikidata.org/entity/Q98149368", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Sheep Shearing", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Sheep%20Shearing%20-%201885P2508%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17472,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17472\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149365": {"uri": "http://www.wikidata.org/entity/Q98149365", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Cross Roads", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Crossroads%20-%201885P2502%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17473,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17473\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149371": {"uri": "http://www.wikidata.org/entity/Q98149371", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Penmaen Bach", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Penmaen%20Bach%20-%201885P2519%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17474,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17474\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149524": {"uri": "http://www.wikidata.org/entity/Q98149524", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Place de Brabant, Brussels", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Place%20de%20Brabant%2C%20Brussels%20-%201907P330%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17475,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17475\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149731": {"uri": "http://www.wikidata.org/entity/Q98149731", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Keep the Left Road", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Keep%20the%20Left%20Road%20-%201925P266%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17476,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17476\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149722": {"uri": "http://www.wikidata.org/entity/Q98149722", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "King Edward's School, Birmingham", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28Previously%20attributed%20to%29%20-%20King%20Edward%27s%20School%2C%20Birmingham%20-%201923P1%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17477,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17477\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149530": {"uri": "http://www.wikidata.org/entity/Q98149530", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "View near Bettws-y-Coed", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20View%20near%20Bettws-y-Coed.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17478,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17478\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149294": {"uri": "http://www.wikidata.org/entity/Q98149294", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The River Bed", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28II%29%20-%20The%20River%20Bed.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17479,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17479\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149256": {"uri": "http://www.wikidata.org/entity/Q98149256", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Carthage: Aeneas and Achates", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Carthage%2C%20Aeneas%20and%20Achates%20-%201985P31%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17480,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17480\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149733": {"uri": "http://www.wikidata.org/entity/Q98149733", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Carting Home the Plough", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Carting%20Home%20the%20Plough%20-%201925P282%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17481,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17481\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149736": {"uri": "http://www.wikidata.org/entity/Q98149736", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "An Impression, Study of a Mountain Crest", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20An%20Impression%2C%20Study%20of%20a%20Mountain%20Crest%20-%201925P329%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17482,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17482\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149734": {"uri": "http://www.wikidata.org/entity/Q98149734", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Drawing Room, Haddon Hall", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Drawing%20Room%2C%20Haddon%20Hall%20-%201925P317%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17483,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17483\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150026": {"uri": "http://www.wikidata.org/entity/Q98150026", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Christening", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Christening%20-%201970P55%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17484,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17484\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150058": {"uri": "http://www.wikidata.org/entity/Q98150058", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "St Mary's Church and County Hall, Warwick", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20St%20Mary%27s%20Church%20and%20County%20Hall%2C%20Warwick%20-%201978P28%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17485,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17485\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149923": {"uri": "http://www.wikidata.org/entity/Q98149923", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "An Old Woman Asleep", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20An%20Old%20Woman%20Asleep%20-%201958P32%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17486,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17486\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150134": {"uri": "http://www.wikidata.org/entity/Q98150134", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Cottage Interior, Trossavon near Bettws-y-Coed", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Cottage%20Interior%2C%20Trossavon%20near%20Betws-y-Coed%20-%201885P2494%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17487,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17487\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150135": {"uri": "http://www.wikidata.org/entity/Q98150135", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Tending Sheep, Bettws-y-Coed", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Tending%20Sheep%2C%20Betws-y-Coed%20-%201885P2499%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17488,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17488\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149353": {"uri": "http://www.wikidata.org/entity/Q98149353", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Changing Pasture", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Changing%20Pasture%20-%201885P2495%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17489,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17489\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149345": {"uri": "http://www.wikidata.org/entity/Q98149345", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Skirts of the Forest", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Skirts%20of%20the%20Forest%20-%201885P2484%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17490,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17490\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149529": {"uri": "http://www.wikidata.org/entity/Q98149529", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Haddon Hall from the Park", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Haddon%20Hall%20from%20the%20Park%20-%201908P30%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17491,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17491\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149738": {"uri": "http://www.wikidata.org/entity/Q98149738", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Bolton Abbey, Yorkshire", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Bolton%20Abbey%2C%20Yorkshire%20-%201925P58%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17492,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17492\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149746": {"uri": "http://www.wikidata.org/entity/Q98149746", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Landscape with a Bridge, Hay-on-Wye", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Landscape%20with%20a%20Bridge%2C%20Hay-on-Wye%20-%201927P678%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17493,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17493\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150305": {"uri": "http://www.wikidata.org/entity/Q98150305", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "A Welsh Mountain Road", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20A%20Welsh%20Mountain%20Road%20-%201912P35%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17494,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17494\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150278": {"uri": "http://www.wikidata.org/entity/Q98150278", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Buckingham House from the Green Park", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Buckingham%20House%20from%20the%20Green%20Park%20-%201911P68%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17495,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17495\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150341": {"uri": "http://www.wikidata.org/entity/Q98150341", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Haddon Hall, the River Steps", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Haddon%20Hall%2C%20the%20River%20Steps%20-%201919P103%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17496,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17496\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150476": {"uri": "http://www.wikidata.org/entity/Q98150476", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Blackpool Beach", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Blackpool%20Beach%20-%201925P274%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17497,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17497\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150480": {"uri": "http://www.wikidata.org/entity/Q98150480", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Great Hall, Haddon Hall", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Great%20Hall%2C%20Haddon%20Hall%20-%201925P316%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17498,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17498\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150163": {"uri": "http://www.wikidata.org/entity/Q98150163", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Missing Lamb", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Missing%20Lamb%20-%201885P2517%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17499,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17499\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150161": {"uri": "http://www.wikidata.org/entity/Q98150161", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "On the Sands", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20On%20the%20Sands%20-%201885P2514%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17500,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17500\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150261": {"uri": "http://www.wikidata.org/entity/Q98150261", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Welsh Crags", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Welsh%20Crags%20-%201907P326%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17501,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17501\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98149748": {"uri": "http://www.wikidata.org/entity/Q98149748", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "A Quay in Northern France", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28Previously%20attributed%20to%29%20-%20A%20Quay%20in%20Northern%20France%20-%201927P743%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17502,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17502\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150159": {"uri": "http://www.wikidata.org/entity/Q98150159", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Farmstead", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Farmstead%20-%201885P2507%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17503,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17503\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150263": {"uri": "http://www.wikidata.org/entity/Q98150263", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Charlecote Manor, Warwickshire", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Charlecote%20Manor%2C%20Warwickshire%20-%201907P339%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17504,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17504\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150643": {"uri": "http://www.wikidata.org/entity/Q98150643", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Skylark", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Skylark%20-%201947P77%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17505,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17505\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150658": {"uri": "http://www.wikidata.org/entity/Q98150658", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Terrace, Haddon Hall", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Terrace%2C%20Haddon%20Hall%20-%201953P138%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17506,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17506\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150647": {"uri": "http://www.wikidata.org/entity/Q98150647", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Bolton Abbey", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Bolton%20Abbey%20-%201948P32%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17507,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17507\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150497": {"uri": "http://www.wikidata.org/entity/Q98150497", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Dover from the Sea", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Dover%20from%20the%20Sea%20-%201927P676%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17508,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17508\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150500": {"uri": "http://www.wikidata.org/entity/Q98150500", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Four Seasons  - Spring", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Four%20Seasons%20-%20Spring%20-%201927P730%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17509,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17509\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150483": {"uri": "http://www.wikidata.org/entity/Q98150483", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Harborne Vicarage And Church", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Harborne%20Vicarage%20And%20Church%20-%201925P328%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17510,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17510\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150986": {"uri": "http://www.wikidata.org/entity/Q98150986", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Driving Cattle", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Driving%20Cattle%20-%201885P2515%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17511,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17511\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98151037": {"uri": "http://www.wikidata.org/entity/Q98151037", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Porch of St Philip's Cathedral, Birmingham", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Porch%20of%20St%20Philip%27s%20Cathedral%2C%20Birmingham%20-%201904P557%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17512,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17512\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150965": {"uri": "http://www.wikidata.org/entity/Q98150965", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Welsh Shepherds", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Welsh%20Shepherds%20-%201885P2513%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17513,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17513\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98151114": {"uri": "http://www.wikidata.org/entity/Q98151114", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "River Scene", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20River%20Scene%20-%201919P109%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17514,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17514\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98151070": {"uri": "http://www.wikidata.org/entity/Q98151070", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Stone Bridge, Wales", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Stone%20Bridge%2C%20Wales%20-%201907P337%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17515,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17515\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98151121": {"uri": "http://www.wikidata.org/entity/Q98151121", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Calais Pier", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Calais%20Pier%20-%201919P95%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17516,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17516\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98151594": {"uri": "http://www.wikidata.org/entity/Q98151594", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Greenwich Hospital", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Greenwich%20Hospital%20-%201925P299%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17517,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17517\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98151569": {"uri": "http://www.wikidata.org/entity/Q98151569", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Crossing The Bridge  - A Windy Day", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Crossing%20The%20Bridge%20-%20A%20Windy%20Day%20-%201925P273%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17518,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17518\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150961": {"uri": "http://www.wikidata.org/entity/Q98150961", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Waiting for the Ferry", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Waiting%20for%20the%20Ferry%20-%201885P2493%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17519,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17519\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150963": {"uri": "http://www.wikidata.org/entity/Q98150963", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Kilgerran Castle, Pembrokeshire", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Kilgerran%20Castle%2C%20Pembrokeshire%20-%201885P2498%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17520,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17520\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150964": {"uri": "http://www.wikidata.org/entity/Q98150964", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Market Gardeners", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Market%20Gardeners%20-%201885P2505%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17521,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17521\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98150939": {"uri": "http://www.wikidata.org/entity/Q98150939", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Crossing the Sands", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Crossing%20the%20Sands%20-%201885P2487%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17522,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17522\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98151915": {"uri": "http://www.wikidata.org/entity/Q98151915", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Kenilworth Castle", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Kenilworth%20Castle%20-%201927P683%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17523,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17523\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98151947": {"uri": "http://www.wikidata.org/entity/Q98151947", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Study of a Dog", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Study%20of%20a%20Dog%20-%201927P755%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17524,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17524\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98151868": {"uri": "http://www.wikidata.org/entity/Q98151868", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Interior of the Long Gallery, Hardwick Hall, Derbyshire", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Interior%20of%20the%20Long%20Gallery%2C%20Hardwick%20Hall%2C%20Derbyshire.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17525,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17525\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98151680": {"uri": "http://www.wikidata.org/entity/Q98151680", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Lynmouth Harbour", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Lynmouth%20Harbour%20-%201925P70%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17526,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17526\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98152393": {"uri": "http://www.wikidata.org/entity/Q98152393", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "The Skylark", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Skylark%20-%201947P76%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17527,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17527\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98152251": {"uri": "http://www.wikidata.org/entity/Q98152251", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "Laugharne Castle, Carmarthenshire", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Laugharne%20Castle%2C%20Carmarthenshire%20-%201931P39%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17528,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17528\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98152432": {"uri": "http://www.wikidata.org/entity/Q98152432", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "On the Llugwy", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20On%20the%20Llugwy%20-%201953P137%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17529,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17529\\/category\\/799\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98152401": {"uri": "http://www.wikidata.org/entity/Q98152401", "createur": "http://www.wikidata.org/entity/Q17101440", "createurLabel": "David Cox Jr.", "titre_fr": "A Street in Paris (Place du Palais Royal, Paris)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20A%20Street%20in%20Paris%20%28Place%20du%20Palais%20Royal%2C%20Paris%29%20-%201948P30%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17530,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17530\\/category\\/799\"}}", "posted": true}}, "version": "2.0.0"}
+{
+  "sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q17101440 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q17101440 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q20854651": {
+      "uri": "http://www.wikidata.org/entity/Q20854651",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Going to the Hayfield",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Going%20to%20the%20Hayfield%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17426,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17426\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27882421": {
+      "uri": "http://www.wikidata.org/entity/Q27882421",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Coming From Church",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20Younger%20-%20Coming%20From%20Church%20-%201956-12-1%20-%20Auckland%20Art%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17427,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17427\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q119684781": {
+      "uri": "http://www.wikidata.org/entity/Q119684781",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Landscape, Harlech Castle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28II%29%20-%20Landscape%2C%20Harlech%20Castle.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17428,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17428\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98152646": {
+      "uri": "http://www.wikidata.org/entity/Q98152646",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Greenfield House, Harborne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20Jr%20-%20Greenfield%20House%2C%20Harborne.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17429,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17429\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28533140": {
+      "uri": "http://www.wikidata.org/entity/Q28533140",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "A Windy Day",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20A%20Windy%20Day%20-%20N02666%20-%20Tate.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17430,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17430\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28533118": {
+      "uri": "http://www.wikidata.org/entity/Q28533118",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "River Scene with Boys Fishing",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20River%20Scene%20with%20Boys%20Fishing%20-%20N02668%20-%20Tate.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17431,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17431\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98152626": {
+      "uri": "http://www.wikidata.org/entity/Q98152626",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Windermere",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Windermere%20-%201885P2497%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17432,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17432\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98152628": {
+      "uri": "http://www.wikidata.org/entity/Q98152628",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Peat Gatherers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Peat%20Gatherers%20-%201885P2504%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17433,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17433\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28533155": {
+      "uri": "http://www.wikidata.org/entity/Q28533155",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Road across the Common",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Road%20across%20the%20Common%20-%20N02667%20-%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17434,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17434\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98152629": {
+      "uri": "http://www.wikidata.org/entity/Q98152629",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Shrimpers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Shrimpers%20-%201885P2511%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17435,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17435\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98143393": {
+      "uri": "http://www.wikidata.org/entity/Q98143393",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Bolsover Castle, Derbyshire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Bolsover%20Castle%2C%20Derbyshire%20-%201907P334%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17436,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17436\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28533166": {
+      "uri": "http://www.wikidata.org/entity/Q28533166",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Moorland Road",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Moorland%20Road%20-%20N02665%20-%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17437,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17437\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98143626": {
+      "uri": "http://www.wikidata.org/entity/Q98143626",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Bardon Tower",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Bardon%20Tower%20-%201919P89%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17438,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17438\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98144305": {
+      "uri": "http://www.wikidata.org/entity/Q98144305",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Sun, Wind and Rain",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Sun%2C%20Wind%20and%20Rain%20-%201925P269%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17439,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17439\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98144358": {
+      "uri": "http://www.wikidata.org/entity/Q98144358",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Fishing, A Risky Position",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20Jnr%20-%20Fishing%2C%20A%20Risky%20Position%20-%201925P331%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17440,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17440\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98144318": {
+      "uri": "http://www.wikidata.org/entity/Q98144318",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Peace and War, Lympne Church and Castle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Peace%20and%20War%2C%20Lympne%20Church%20and%20Castle%20-%201925P272%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17441,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17441\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98144340": {
+      "uri": "http://www.wikidata.org/entity/Q98144340",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Dudley",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Dudley%20-%201925P297%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17442,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17442\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98144423": {
+      "uri": "http://www.wikidata.org/entity/Q98144423",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "A Herefordshire Lane",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20A%20Herefordshire%20Lane%20-%201925P68%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17443,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17443\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98144494": {
+      "uri": "http://www.wikidata.org/entity/Q98144494",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Indian Landscape  - Singham Mahal, Torway, Bejapore",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Indian%20Landscape%20-%20Singham%20Mahal%2C%20Torway%2C%20Bejapore%20-%201927P667%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17444,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17444\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98144618": {
+      "uri": "http://www.wikidata.org/entity/Q98144618",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Still Life with Basket, Foxgloves, Clothes etc",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Still%20Life%20with%20Basket%2C%20Foxgloves%2C%20Clothes%20etc%20-%201931P36%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17445,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17445\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98144496": {
+      "uri": "http://www.wikidata.org/entity/Q98144496",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Study of Foliage",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Study%20of%20Foliage%20-%201927P682%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17446,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17446\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98145079": {
+      "uri": "http://www.wikidata.org/entity/Q98145079",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Sketch of the Terrace in Garden of Powis Castle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Sketch%20of%20the%20Terrace%20in%20Garden%20of%20Powis%20Castle%20-%201941P240%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17447,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17447\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98145517": {
+      "uri": "http://www.wikidata.org/entity/Q98145517",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Path By The Lake/ Ben Voirlich",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20Jnr%20-%20The%20Path%20By%20The%20Lake-%20Ben%20Voirlich%20-%201948P4%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17448,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17448\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148378": {
+      "uri": "http://www.wikidata.org/entity/Q98148378",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Powis Castle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Powis%20Castle%20-%201907P325%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17449,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17449\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98147643": {
+      "uri": "http://www.wikidata.org/entity/Q98147643",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Evening",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Evening%20-%201885P2503%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17450,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17450\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148381": {
+      "uri": "http://www.wikidata.org/entity/Q98148381",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Old Houses and Wye Bridge, Hereford",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Old%20Houses%20and%20Wye%20Bridge%2C%20Hereford%20-%201907P331%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17451,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17451\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98146152": {
+      "uri": "http://www.wikidata.org/entity/Q98146152",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Ulverston Sands",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Ulverston%20Sands%20-%201956P13%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17452,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17452\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98147598": {
+      "uri": "http://www.wikidata.org/entity/Q98147598",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Church, Bettws-y-Coed",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Church%2C%20Betws-y-Coed%20-%201885P2496%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17453,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17453\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98147622": {
+      "uri": "http://www.wikidata.org/entity/Q98147622",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Going to the Hayfield",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Going%20to%20the%20Hayfield%20-%201885P2501%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17454,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17454\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148405": {
+      "uri": "http://www.wikidata.org/entity/Q98148405",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Birmingham Horse Fair",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Birmingham%20Horse%20Fair%20-%201909P55%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17455,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17455\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148386": {
+      "uri": "http://www.wikidata.org/entity/Q98148386",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Study of a Donkey",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Study%20of%20a%20Donkey%20-%201907P349%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17456,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17456\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148598": {
+      "uri": "http://www.wikidata.org/entity/Q98148598",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Skate and Cod",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Study%20of%20Fish%2C%20Skate%20and%20Cod%20-%201927P666%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17457,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17457\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148575": {
+      "uri": "http://www.wikidata.org/entity/Q98148575",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Night Train",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28artist%29%20-%20The%20Night%20Train%20-%20WGA05574.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17458,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17458\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148604": {
+      "uri": "http://www.wikidata.org/entity/Q98148604",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Study of Foliage",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Study%20of%20Foliage%20-%201927P681%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17459,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17459\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148759": {
+      "uri": "http://www.wikidata.org/entity/Q98148759",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Goree Docks, Liverpool",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Goree%20Docks%2C%20Liverpool%20-%201948P29%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17460,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17460\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149204": {
+      "uri": "http://www.wikidata.org/entity/Q98149204",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Guy's Cliff",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Guy%27s%20Cliff%20-%201978P30%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17461,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17461\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149251": {
+      "uri": "http://www.wikidata.org/entity/Q98149251",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Powys Castle, Wales",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28II%29%20-%20Powys%20Castle%2C%20Wales.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17462,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17462\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148418": {
+      "uri": "http://www.wikidata.org/entity/Q98148418",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Wyndcliffe, River Wye",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Wyndcliffe%2C%20River%20Wye%20-%201912P3%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17463,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17463\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148444": {
+      "uri": "http://www.wikidata.org/entity/Q98148444",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "A Farm at Bettws-y-Coed",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20A%20Farm%20at%20Betws-y-Coed%20-%201919P84%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"17464\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17464\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148542": {
+      "uri": "http://www.wikidata.org/entity/Q98148542",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "View On The Canal, The Crescent , Birmingham",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20View%20On%20The%20Canal%2C%20The%20Crescent%20%2C%20Birmingham%20-%201924P21%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17465,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17465\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148556": {
+      "uri": "http://www.wikidata.org/entity/Q98148556",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Junction of the Llugwy and Conway",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28II%29%20-%20Junction%20of%20the%20Llugwy%20and%20Conway.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17466,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17466\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148638": {
+      "uri": "http://www.wikidata.org/entity/Q98148638",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "A Gipsy Encampment",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20A%20Gipsy%20Encampment%20-%201931P35%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17467,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17467\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148566": {
+      "uri": "http://www.wikidata.org/entity/Q98148566",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Market Place , Faringdon",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Market%20Place%20%2C%20Faringdon%20-%201925P330%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17468,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17468\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148563": {
+      "uri": "http://www.wikidata.org/entity/Q98148563",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Haddon Hall - The Terrace",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Haddon%20Hall%20-%20The%20Terrace%20-%201925P291%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17469,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17469\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98148560": {
+      "uri": "http://www.wikidata.org/entity/Q98148560",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Bridge on the Common",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Bridge%20on%20the%20Common%20-%201925P271%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17470,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17470\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149359": {
+      "uri": "http://www.wikidata.org/entity/Q98149359",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Waiting For The Ferry - Morning",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Waiting%20for%20the%20Ferry%2C%20Morning%20-%201885P2500%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17471,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17471\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149368": {
+      "uri": "http://www.wikidata.org/entity/Q98149368",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Sheep Shearing",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Sheep%20Shearing%20-%201885P2508%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17472,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17472\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149365": {
+      "uri": "http://www.wikidata.org/entity/Q98149365",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Cross Roads",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Crossroads%20-%201885P2502%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17473,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17473\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149371": {
+      "uri": "http://www.wikidata.org/entity/Q98149371",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Penmaen Bach",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Penmaen%20Bach%20-%201885P2519%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17474,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17474\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149524": {
+      "uri": "http://www.wikidata.org/entity/Q98149524",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Place de Brabant, Brussels",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Place%20de%20Brabant%2C%20Brussels%20-%201907P330%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17475,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17475\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149731": {
+      "uri": "http://www.wikidata.org/entity/Q98149731",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Keep the Left Road",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Keep%20the%20Left%20Road%20-%201925P266%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17476,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17476\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149722": {
+      "uri": "http://www.wikidata.org/entity/Q98149722",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "King Edward's School, Birmingham",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28Previously%20attributed%20to%29%20-%20King%20Edward%27s%20School%2C%20Birmingham%20-%201923P1%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17477,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17477\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149530": {
+      "uri": "http://www.wikidata.org/entity/Q98149530",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "View near Bettws-y-Coed",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20View%20near%20Bettws-y-Coed.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17478,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17478\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149294": {
+      "uri": "http://www.wikidata.org/entity/Q98149294",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The River Bed",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28II%29%20-%20The%20River%20Bed.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17479,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17479\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149256": {
+      "uri": "http://www.wikidata.org/entity/Q98149256",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Carthage: Aeneas and Achates",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Carthage%2C%20Aeneas%20and%20Achates%20-%201985P31%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17480,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17480\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149733": {
+      "uri": "http://www.wikidata.org/entity/Q98149733",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Carting Home the Plough",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Carting%20Home%20the%20Plough%20-%201925P282%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17481,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17481\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149736": {
+      "uri": "http://www.wikidata.org/entity/Q98149736",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "An Impression, Study of a Mountain Crest",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20An%20Impression%2C%20Study%20of%20a%20Mountain%20Crest%20-%201925P329%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17482,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17482\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149734": {
+      "uri": "http://www.wikidata.org/entity/Q98149734",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Drawing Room, Haddon Hall",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Drawing%20Room%2C%20Haddon%20Hall%20-%201925P317%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17483,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17483\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150026": {
+      "uri": "http://www.wikidata.org/entity/Q98150026",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Christening",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Christening%20-%201970P55%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17484,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17484\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150058": {
+      "uri": "http://www.wikidata.org/entity/Q98150058",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "St Mary's Church and County Hall, Warwick",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20St%20Mary%27s%20Church%20and%20County%20Hall%2C%20Warwick%20-%201978P28%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17485,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17485\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149923": {
+      "uri": "http://www.wikidata.org/entity/Q98149923",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "An Old Woman Asleep",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20An%20Old%20Woman%20Asleep%20-%201958P32%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17486,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17486\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150134": {
+      "uri": "http://www.wikidata.org/entity/Q98150134",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Cottage Interior, Trossavon near Bettws-y-Coed",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Cottage%20Interior%2C%20Trossavon%20near%20Betws-y-Coed%20-%201885P2494%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17487,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17487\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150135": {
+      "uri": "http://www.wikidata.org/entity/Q98150135",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Tending Sheep, Bettws-y-Coed",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Tending%20Sheep%2C%20Betws-y-Coed%20-%201885P2499%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17488,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17488\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149353": {
+      "uri": "http://www.wikidata.org/entity/Q98149353",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Changing Pasture",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Changing%20Pasture%20-%201885P2495%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17489,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17489\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149345": {
+      "uri": "http://www.wikidata.org/entity/Q98149345",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Skirts of the Forest",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Skirts%20of%20the%20Forest%20-%201885P2484%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17490,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17490\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149529": {
+      "uri": "http://www.wikidata.org/entity/Q98149529",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Haddon Hall from the Park",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Haddon%20Hall%20from%20the%20Park%20-%201908P30%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17491,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17491\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149738": {
+      "uri": "http://www.wikidata.org/entity/Q98149738",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Bolton Abbey, Yorkshire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Bolton%20Abbey%2C%20Yorkshire%20-%201925P58%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17492,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17492\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149746": {
+      "uri": "http://www.wikidata.org/entity/Q98149746",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Landscape with a Bridge, Hay-on-Wye",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Landscape%20with%20a%20Bridge%2C%20Hay-on-Wye%20-%201927P678%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17493,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17493\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150305": {
+      "uri": "http://www.wikidata.org/entity/Q98150305",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "A Welsh Mountain Road",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20A%20Welsh%20Mountain%20Road%20-%201912P35%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17494,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17494\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150278": {
+      "uri": "http://www.wikidata.org/entity/Q98150278",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Buckingham House from the Green Park",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Buckingham%20House%20from%20the%20Green%20Park%20-%201911P68%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17495,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17495\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150341": {
+      "uri": "http://www.wikidata.org/entity/Q98150341",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Haddon Hall, the River Steps",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Haddon%20Hall%2C%20the%20River%20Steps%20-%201919P103%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17496,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17496\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150476": {
+      "uri": "http://www.wikidata.org/entity/Q98150476",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Blackpool Beach",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Blackpool%20Beach%20-%201925P274%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17497,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17497\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150480": {
+      "uri": "http://www.wikidata.org/entity/Q98150480",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Great Hall, Haddon Hall",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Great%20Hall%2C%20Haddon%20Hall%20-%201925P316%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17498,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17498\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150163": {
+      "uri": "http://www.wikidata.org/entity/Q98150163",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Missing Lamb",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Missing%20Lamb%20-%201885P2517%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17499,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17499\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150161": {
+      "uri": "http://www.wikidata.org/entity/Q98150161",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "On the Sands",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20On%20the%20Sands%20-%201885P2514%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17500,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17500\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150261": {
+      "uri": "http://www.wikidata.org/entity/Q98150261",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Welsh Crags",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Welsh%20Crags%20-%201907P326%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17501,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17501\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98149748": {
+      "uri": "http://www.wikidata.org/entity/Q98149748",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "A Quay in Northern France",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20%28Previously%20attributed%20to%29%20-%20A%20Quay%20in%20Northern%20France%20-%201927P743%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17502,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17502\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150159": {
+      "uri": "http://www.wikidata.org/entity/Q98150159",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Farmstead",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Farmstead%20-%201885P2507%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17503,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17503\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150263": {
+      "uri": "http://www.wikidata.org/entity/Q98150263",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Charlecote Manor, Warwickshire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Charlecote%20Manor%2C%20Warwickshire%20-%201907P339%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17504,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17504\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150643": {
+      "uri": "http://www.wikidata.org/entity/Q98150643",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Skylark",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Skylark%20-%201947P77%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17505,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17505\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150658": {
+      "uri": "http://www.wikidata.org/entity/Q98150658",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Terrace, Haddon Hall",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Terrace%2C%20Haddon%20Hall%20-%201953P138%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17506,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17506\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150647": {
+      "uri": "http://www.wikidata.org/entity/Q98150647",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Bolton Abbey",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Bolton%20Abbey%20-%201948P32%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17507,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17507\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150497": {
+      "uri": "http://www.wikidata.org/entity/Q98150497",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Dover from the Sea",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Dover%20from%20the%20Sea%20-%201927P676%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17508,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17508\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150500": {
+      "uri": "http://www.wikidata.org/entity/Q98150500",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Four Seasons  - Spring",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20The%20Four%20Seasons%20-%20Spring%20-%201927P730%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17509,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17509\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150483": {
+      "uri": "http://www.wikidata.org/entity/Q98150483",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Harborne Vicarage And Church",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Harborne%20Vicarage%20And%20Church%20-%201925P328%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17510,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17510\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150986": {
+      "uri": "http://www.wikidata.org/entity/Q98150986",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Driving Cattle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Driving%20Cattle%20-%201885P2515%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17511,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17511\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98151037": {
+      "uri": "http://www.wikidata.org/entity/Q98151037",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Porch of St Philip's Cathedral, Birmingham",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Porch%20of%20St%20Philip%27s%20Cathedral%2C%20Birmingham%20-%201904P557%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17512,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17512\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150965": {
+      "uri": "http://www.wikidata.org/entity/Q98150965",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Welsh Shepherds",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Welsh%20Shepherds%20-%201885P2513%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17513,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17513\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98151114": {
+      "uri": "http://www.wikidata.org/entity/Q98151114",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "River Scene",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20River%20Scene%20-%201919P109%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17514,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17514\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98151070": {
+      "uri": "http://www.wikidata.org/entity/Q98151070",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Stone Bridge, Wales",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Stone%20Bridge%2C%20Wales%20-%201907P337%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17515,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17515\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98151121": {
+      "uri": "http://www.wikidata.org/entity/Q98151121",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Calais Pier",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Calais%20Pier%20-%201919P95%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17516,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17516\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98151594": {
+      "uri": "http://www.wikidata.org/entity/Q98151594",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Greenwich Hospital",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Greenwich%20Hospital%20-%201925P299%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17517,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17517\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98151569": {
+      "uri": "http://www.wikidata.org/entity/Q98151569",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Crossing The Bridge  - A Windy Day",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Crossing%20The%20Bridge%20-%20A%20Windy%20Day%20-%201925P273%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17518,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17518\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150961": {
+      "uri": "http://www.wikidata.org/entity/Q98150961",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Waiting for the Ferry",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Waiting%20for%20the%20Ferry%20-%201885P2493%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17519,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17519\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150963": {
+      "uri": "http://www.wikidata.org/entity/Q98150963",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Kilgerran Castle, Pembrokeshire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Kilgerran%20Castle%2C%20Pembrokeshire%20-%201885P2498%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17520,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17520\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150964": {
+      "uri": "http://www.wikidata.org/entity/Q98150964",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Market Gardeners",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Market%20Gardeners%20-%201885P2505%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17521,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17521\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98150939": {
+      "uri": "http://www.wikidata.org/entity/Q98150939",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Crossing the Sands",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20Crossing%20the%20Sands%20-%201885P2487%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17522,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17522\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98151915": {
+      "uri": "http://www.wikidata.org/entity/Q98151915",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Kenilworth Castle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Kenilworth%20Castle%20-%201927P683%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17523,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17523\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98151947": {
+      "uri": "http://www.wikidata.org/entity/Q98151947",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Study of a Dog",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Study%20of%20a%20Dog%20-%201927P755%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17524,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17524\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98151868": {
+      "uri": "http://www.wikidata.org/entity/Q98151868",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Interior of the Long Gallery, Hardwick Hall, Derbyshire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Interior%20of%20the%20Long%20Gallery%2C%20Hardwick%20Hall%2C%20Derbyshire.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17525,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17525\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98151680": {
+      "uri": "http://www.wikidata.org/entity/Q98151680",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Lynmouth Harbour",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Lynmouth%20Harbour%20-%201925P70%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17526,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17526\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98152393": {
+      "uri": "http://www.wikidata.org/entity/Q98152393",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "The Skylark",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20the%20elder%20%281783-1859%29%20-%20The%20Skylark%20-%201947P76%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17527,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17527\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98152251": {
+      "uri": "http://www.wikidata.org/entity/Q98152251",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "Laugharne Castle, Carmarthenshire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20Laugharne%20Castle%2C%20Carmarthenshire%20-%201931P39%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17528,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17528\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98152432": {
+      "uri": "http://www.wikidata.org/entity/Q98152432",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "On the Llugwy",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20On%20the%20Llugwy%20-%201953P137%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17529,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17529\\/category\\/799\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98152401": {
+      "uri": "http://www.wikidata.org/entity/Q98152401",
+      "createur": "http://www.wikidata.org/entity/Q17101440",
+      "createurLabel": "David Cox Jr.",
+      "titre_fr": "A Street in Paris (Place du Palais Royal, Paris)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Cox%20-%20A%20Street%20in%20Paris%20%28Place%20du%20Palais%20Royal%2C%20Paris%29%20-%201948P30%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17530,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17530\\/category\\/799\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

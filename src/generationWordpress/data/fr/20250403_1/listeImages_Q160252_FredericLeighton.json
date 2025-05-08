@@ -1,1 +1,1044 @@
-{"sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q160252 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q160252 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ", "liste": [], "dict": {"http://www.wikidata.org/entity/Q846213": {"uri": "http://www.wikidata.org/entity/Q846213", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "June flamboyante", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Flaming%20June%2C%20by%20Frederic%20Lord%20Leighton%20%281830-1896%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17133,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17133\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1230842": {"uri": "http://www.wikidata.org/entity/Q1230842", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "La Madone de Cimabue portée en procession à Florence", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Cimabue%27s%20Madonna%20Carried%20in%20Procession%20-%20Google%20Art%20Project%202.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17134,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17134\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q4012247": {"uri": "http://www.wikidata.org/entity/Q4012247", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "La Villa Malte à Rome", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Villa%20Malta%20a%20Roma.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17135,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17135\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q18685541": {"uri": "http://www.wikidata.org/entity/Q18685541", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Chansons sans paroles", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Lord%2C%20Leighton%20-%20Lieder%20ohne%20Worte%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17136,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17136\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q18685545": {"uri": "http://www.wikidata.org/entity/Q18685545", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Et la mer rendit les morts qui étaient en elle", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Leighton%20Frederic%20-%20And%20the%20Sea%20Gave%20Up%20the%20Dead%20Which%20Were%20in%20It%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17137,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17137\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q18685536": {"uri": "http://www.wikidata.org/entity/Q18685536", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Le Bain de Psyché", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Lord%2C%20Leighton%20-%20The%20Bath%20of%20Psyche%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17138,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17138\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q12065125": {"uri": "http://www.wikidata.org/entity/Q12065125", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "La Lune de miel du peintre", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Leighton%20The%20Painter-s%20Honeymoon%201864.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17139,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17139\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q5826402": {"uri": "http://www.wikidata.org/entity/Q5826402", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "The Return of Persephone", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20The%20Return%20of%20Persephone%20%281891%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17140,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17140\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q18685555": {"uri": "http://www.wikidata.org/entity/Q18685555", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Persée et Andromède", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Perseus%20and%20Andromeda%20-%20Google%20Art%20Project%202.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17141,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17141\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q18208719": {"uri": "http://www.wikidata.org/entity/Q18208719", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Cimon et Iphigenie", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Frederic%20Leighton%20-%20Cymon%20and%20Iphigenia%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17142,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17142\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19905166": {"uri": "http://www.wikidata.org/entity/Q19905166", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Lachrymae", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lachrimae%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17143,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17143\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20443671": {"uri": "http://www.wikidata.org/entity/Q20443671", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Winding the skein", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Frederic%20Leighton%20-%20Winding%20the%20skein%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17144,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17144\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20809265": {"uri": "http://www.wikidata.org/entity/Q20809265", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Portrait of a Roman Lady (La Nanna)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/La%20Nanna%20Philadelphia.JPG"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17145,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17145\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20443669": {"uri": "http://www.wikidata.org/entity/Q20443669", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Wedded", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Frederic%20Leighton%20-%20Wedded%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17146,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17146\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19912147": {"uri": "http://www.wikidata.org/entity/Q19912147", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Lucia", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lucia%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17147,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17147\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20443664": {"uri": "http://www.wikidata.org/entity/Q20443664", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Colour study for 'Cymon and Iphigenia'", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Frederic%20Leighton%20-%20Colour%20study%20for%20%27Cymon%20and%20Iphigenia%27%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17148,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17148\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20891204": {"uri": "http://www.wikidata.org/entity/Q20891204", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Jonathan's Token to David", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%2C%201st%20Baron%20Leighton%20of%20Stretton%20-%20Jonathan%E2%80%99s%20Token%20to%20David%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17149,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17149\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21707352": {"uri": "http://www.wikidata.org/entity/Q21707352", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Bianca", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-96%29%20-%20Bianca%20-%20RCIN%20404569%20-%20Royal%20Collection.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Frederick%20Leighton-Bianca%201862.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17150,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17150\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21707844": {"uri": "http://www.wikidata.org/entity/Q21707844", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Bianca", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederick%20leighton-bianca%20c1881%200876.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17151,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17151\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21718910": {"uri": "http://www.wikidata.org/entity/Q21718910", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Mrs. James Guthrie", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Mrs.%20James%20Guthrie%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17152,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17152\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21733321": {"uri": "http://www.wikidata.org/entity/Q21733321", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "The feigned death of Juliet", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20The%20feigned%20death%20of%20Juliet%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17153,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17153\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21718911": {"uri": "http://www.wikidata.org/entity/Q21718911", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Portrait of May Sartoris", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Portrait%20of%20May%20Sartoris%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17154,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17154\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21733323": {"uri": "http://www.wikidata.org/entity/Q21733323", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Elijah in the Wilderness", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%2C%20Lord%20Leighton%20-%20Elijah%20in%20the%20Wilderness%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17155,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17155\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21733325": {"uri": "http://www.wikidata.org/entity/Q21733325", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "A Condottiere", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/A%20Condottiere%201885P246.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17156,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17156\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21733328": {"uri": "http://www.wikidata.org/entity/Q21733328", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Catarina", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/%27Catarina%27%20by%20Frederic%2C%20Lord%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17157,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17157\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21733324": {"uri": "http://www.wikidata.org/entity/Q21733324", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Jardin dans une auberge, Capri", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Garden%20of%20an%20Inn%2C%20Capri%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17158,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17158\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21749057": {"uri": "http://www.wikidata.org/entity/Q21749057", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Icare et Dédale", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Frederick%20Leighton%20FLL006.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17159,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17159\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21749838": {"uri": "http://www.wikidata.org/entity/Q21749838", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "May Sartoris, Mrs Henry Evans Gordon", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/May%20Sartoris%2C%20Mrs%20Henry%20Evans%20Gordon%20by%20Frederic%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17160,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17160\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21749837": {"uri": "http://www.wikidata.org/entity/Q21749837", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Électre sur la tombe d'Agamemnon", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1869%20Frederic%20Leighton%20-%20Electra%20at%20the%20Tomb%20of%20Agamemnon.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17161,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17161\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21761529": {"uri": "http://www.wikidata.org/entity/Q21761529", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Crenaia, the Nymph of the Dargle", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Ferederic%20Leighton%20-%20Crenaia%2C%20the%20nymph%20of%20the%20Dargle%3B%201880.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17162,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17162\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21761540": {"uri": "http://www.wikidata.org/entity/Q21761540", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Daphnephoria", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1876%20Frederic%20Leighton%20-%20Daphnephoria.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17163,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17163\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21749056": {"uri": "http://www.wikidata.org/entity/Q21749056", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Actée, nymphe du rivage", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1868%20Frederic%20Leighton%20-%20Actaea.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12460\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12460\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21761840": {"uri": "http://www.wikidata.org/entity/Q21761840", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Twixt hope and fear", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Twixt%20hope%20and%20fear%2C%20by%20Frederic%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17164,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17164\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21772610": {"uri": "http://www.wikidata.org/entity/Q21772610", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "The antique juggling girl", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20leighton%2082%20the%20antique%20juggling%20girl.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17165,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17165\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21772609": {"uri": "http://www.wikidata.org/entity/Q21772609", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Clytie", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Leighton%2C%20Frederic%20-%20Clytie%20-%201895%E2%80%931896.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17166,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17166\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21772611": {"uri": "http://www.wikidata.org/entity/Q21772611", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "The Garden of the Hesperides", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20The%20Garden%20of%20the%20Hesperides%2C%201892.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17167,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17167\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21772612": {"uri": "http://www.wikidata.org/entity/Q21772612", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "A Boy Defending a Baby from an Eagle", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20A%20Boy%20Defending%20a%20Baby%20from%20an%20Eagle.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17168,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17168\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21733329": {"uri": "http://www.wikidata.org/entity/Q21733329", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Odalisque", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1862%20Frederick%20Leighton%20-%20Odalisque.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12461\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12461\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21761955": {"uri": "http://www.wikidata.org/entity/Q21761955", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Antigone", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Antigoneleigh.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17169,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17169\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21761954": {"uri": "http://www.wikidata.org/entity/Q21761954", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Hercules Fighting Death to Save Alcestis", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/AlcestisHerculesLeighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17170,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17170\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q22329814": {"uri": "http://www.wikidata.org/entity/Q22329814", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Andromaque captive", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Leighton%20Captive%20Andromache.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17171,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17171\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q27876692": {"uri": "http://www.wikidata.org/entity/Q27876692", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "A Dream", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20A%20Dream%20-%20M1925-2%20-%20Auckland%20Art%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17172,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17172\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21772624": {"uri": "http://www.wikidata.org/entity/Q21772624", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Amarilla", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Amarilla%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17173,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17173\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21761856": {"uri": "http://www.wikidata.org/entity/Q21761856", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Acme and Septimius", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Leighton%2C%20Frederic%20-%20Acme%20and%20Septimius%20-%20c.%201868.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17174,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17174\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q27883318": {"uri": "http://www.wikidata.org/entity/Q27883318", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "The Spirit of the Summit", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20The%20Spirit%20of%20the%20Summit%20-%201926-4%20-%20Auckland%20Art%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17175,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17175\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28023226": {"uri": "http://www.wikidata.org/entity/Q28023226", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Nanna (Pavonia)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-96%29%20-%20Nanna%20%28Pavonia%29%20-%20RCIN%20404570%20-%20Royal%20Collection.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17176,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17176\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q27882552": {"uri": "http://www.wikidata.org/entity/Q27882552", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Melittion", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Melittion%20-%201927-2-1%20-%20Auckland%20Art%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17177,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17177\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28024928": {"uri": "http://www.wikidata.org/entity/Q28024928", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Duett: John Hanson Walker (1844-1933)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-96%29%20-%20Duett%2C%20John%20Hanson%20Walker%20%281844-1933%29%20-%20RCIN%20406953%20-%20Royal%20Collection.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17178,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17178\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28023849": {"uri": "http://www.wikidata.org/entity/Q28023849", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Head of an Italian Girl", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-96%29%20-%20Head%20of%20an%20Italian%20Girl%20-%20RCIN%20405834%20-%20Royal%20Collection.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17179,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17179\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28037838": {"uri": "http://www.wikidata.org/entity/Q28037838", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Head of an Italian Girl", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-96%29%20-%20Head%20of%20an%20Italian%20Girl%20-%20RCIN%20405835%20-%20Royal%20Collection.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17180,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17180\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28050278": {"uri": "http://www.wikidata.org/entity/Q28050278", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Sir Richard Francis Burton", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/RichardFrancisBurton.jpeg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17181,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17181\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28532671": {"uri": "http://www.wikidata.org/entity/Q28532671", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Study for ‘The Discovery of Juliet Apparently Lifeless’", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Study%20for%20%27The%20Discovery%20of%20Juliet%20Apparently%20Lifeless%27%20-%20N01806%20-%20National%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17182,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17182\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28537448": {"uri": "http://www.wikidata.org/entity/Q28537448", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Helios and Rhodes", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Helios%20and%20Rhodes%20-%20N03015%20-%20National%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17183,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17183\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30005166": {"uri": "http://www.wikidata.org/entity/Q30005166", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Orpheus and Eurydice", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton-Orfeo%20ed%20Euridice-1864.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17184,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17184\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28538068": {"uri": "http://www.wikidata.org/entity/Q28538068", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Mrs John Hanson Walker", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Mrs%20John%20Hanson%20Walker%20-%20N04731%20-%20National%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17185,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17185\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28540479": {"uri": "http://www.wikidata.org/entity/Q28540479", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Puerta de los Vientos, near Ronda, Spain", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Puerta%20de%20los%20Vientos%2C%20near%20Ronda%2C%20Spain%20-%20N04006%20-%20National%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17186,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17186\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q50821515": {"uri": "http://www.wikidata.org/entity/Q50821515", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Clytie", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Clytie%20%28c%201890-1892%29%20Frederick%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17187,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17187\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q50820192": {"uri": "http://www.wikidata.org/entity/Q50820192", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Miss Laing", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Miss%20Laing%20-%201501%20-%20Fitzwilliam%20Museum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17188,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17188\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q50813303": {"uri": "http://www.wikidata.org/entity/Q50813303", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "On the Nile, 1868", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20On%20the%20Nile%20-%20PD.5-1979%20-%20Fitzwilliam%20Museum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17189,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17189\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q52154241": {"uri": "http://www.wikidata.org/entity/Q52154241", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Autoportrait", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1880%20Frederic%20Leighton%20-%20Self%20portrait.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17190,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17190\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q52146419": {"uri": "http://www.wikidata.org/entity/Q52146419", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Lady Adelaide Chetwynd-Talbot, Countess Brownlow (1844-1917)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Lady%20Adelaide%20Chetwynd-Talbot%20%281844%E2%80%931917%29%2C%20Countess%20Brownlow%20-%20436073%20-%20National%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17191,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17191\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q52131940": {"uri": "http://www.wikidata.org/entity/Q52131940", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "River Landscape, probably in Italy", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20River%20Landscape%20%28probably%20in%20Italy%29%20-%20515559%20-%20National%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17192,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17192\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q52210137": {"uri": "http://www.wikidata.org/entity/Q52210137", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "View of a Bay, Spain", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20View%20of%20a%20Bay%20-%20642003%20-%20National%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17193,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17193\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q52210020": {"uri": "http://www.wikidata.org/entity/Q52210020", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Bamburgh Castle, Northumberland", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Holy%20Island%2C%20Northumberland%20-%20641993%20-%20National%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17194,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17194\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q52210227": {"uri": "http://www.wikidata.org/entity/Q52210227", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Malin Head (Malinmore), Donegal, Ireland", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Malin%20Head%2C%20Donegal%20-%20642011%20-%20National%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17195,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17195\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q52210146": {"uri": "http://www.wikidata.org/entity/Q52210146", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Houses on a Cliff Top in the Mediterranean (possibly on Capri)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Houses%20on%20a%20Cliff%20Top%20in%20the%20Mediterranean%20%28on%20Capri%5E%29%20-%20642004%20-%20National%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17196,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17196\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q52281678": {"uri": "http://www.wikidata.org/entity/Q52281678", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Augusta Frances East, Lady Hoare (d.1903)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Augusta%20Frances%20East%20%28d.1903%29%2C%20Lady%20Hoare%20-%20732209%20-%20National%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17197,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17197\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q52283005": {"uri": "http://www.wikidata.org/entity/Q52283005", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Augusta Frances Anne Hoare (1845-1922)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Augusta%20Frances%20Anne%20Hoare%20%281845%E2%80%931922%29%2C%20Mrs%20William%20Angerstein%20-%20732280%20-%20National%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17198,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17198\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q60475912": {"uri": "http://www.wikidata.org/entity/Q60475912", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "David:  \"Oh, that I had wings like a Dove!  For then would I fly away, and be at rest.\" Psalm 55:6", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Clevelandart%201986.74.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Frederick%20Leighton%20-%20David.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20David%2C%20%22Oh%2C%20that%20I%20had%20wings%20like%20a%20Dove%5E%20For%20then%20would%20I%20fly%20away%2C%20and%20be%20at%20rest.%22%20Psalm%2055-6%20-%201986.74%20-%20Cleveland%20Museum%20of%20Art.tiff"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17199,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17199\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q52302738": {"uri": "http://www.wikidata.org/entity/Q52302738", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "A Wooded Hill with the Sea beyond", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20A%20Wooded%20Hill%20with%20the%20Sea%20beyond%20-%20584345%20-%20National%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17200,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17200\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q105443639": {"uri": "http://www.wikidata.org/entity/Q105443639", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Mnémosyne, mère des Muses", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Mnemosyne%2C%20Mother%20of%20the%20Muses%20.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12462\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12462\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q106767919": {"uri": "http://www.wikidata.org/entity/Q106767919", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "After Vespers", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%2C%20Lord%20Leighton%20-%20After%20Vespers%20-%20y1961-17%20-%20Princeton%20University%20Art%20Museum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17201,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17201\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q105396734": {"uri": "http://www.wikidata.org/entity/Q105396734", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "A Nile Woman", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/A%20NILE%20WOMAN%20.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17202,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17202\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q105576341": {"uri": "http://www.wikidata.org/entity/Q105576341", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Erato", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Erato%20%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17203,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17203\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q98152765": {"uri": "http://www.wikidata.org/entity/Q98152765", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "And the Sea Gave Up the Dead Which Were In It", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20%27And%20the%20sea%20gave%20up%20the%20dead%20which%20were%20in%20it%27%20-%201894P1%20-%20Birmingham%20Museums%20Trust.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17204,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17204\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q111362052": {"uri": "http://www.wikidata.org/entity/Q111362052", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Greek Girls Playing Ball", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Greek-girls-playing-at-ball.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17205,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17205\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q111361996": {"uri": "http://www.wikidata.org/entity/Q111361996", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Weaving the Wreath", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Weaving%20the%20Wreath.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17206,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17206\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q111674540": {"uri": "http://www.wikidata.org/entity/Q111674540", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Le Pêcheur et la Sirène.", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Leighton-The%20Fisherman%20and%20the%20Syren-c.%201856-1858.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17207,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17207\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q110683299": {"uri": "http://www.wikidata.org/entity/Q110683299", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Self Portrait", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Self%20Portrait%20-%20Lord%20Frederic%20Leighton%20-%20ABDAG002510.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17208,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17208\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q111729960": {"uri": "http://www.wikidata.org/entity/Q111729960", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Study for the Ceiling of the Marquand Music Room", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Study%20for%20the%20Ceiling%20of%20the%20Marquand%20Music%20Room%20-%20MET%20DP-21914-007.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17209,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17209\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q111730093": {"uri": "http://www.wikidata.org/entity/Q111730093", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "The Return of Persephone", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Return%20of%20Persephone%20-%20MET%20DP-21913-001.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17210,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17210\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q106867039": {"uri": "http://www.wikidata.org/entity/Q106867039", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Portrait of a Young Woman in Profile", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Portrait%20of%20a%20Young%20Woman%20in%20Profile%20-%201943.198%20-%20Fogg%20Museum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17211,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17211\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q110437524": {"uri": "http://www.wikidata.org/entity/Q110437524", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "At a Reading Desk", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/At%20A%20Reading%20Desk%20by%20Frederic%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17212,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17212\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q106769429": {"uri": "http://www.wikidata.org/entity/Q106769429", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Dramatic Scene in a Court", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%2C%20Lord%20Leighton%20-%20Dramatic%20Scene%20in%20a%20Court%20-%20y1966-105%20-%20Princeton%20University%20Art%20Museum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17213,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17213\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q112858514": {"uri": "http://www.wikidata.org/entity/Q112858514", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Leçon de musique", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Music%20Lesson%2C%201877%20by%20Frederic%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17214,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17214\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q112857352": {"uri": "http://www.wikidata.org/entity/Q112857352", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Nausicaa", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1878%20Frederick%20Leighton%20-%20Nausicaa.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17215,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17215\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q112254056": {"uri": "http://www.wikidata.org/entity/Q112254056", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Venus Disrobing for the Bath", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Venus%20Disrobing%20for%20the%20Bath.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17216,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17216\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q112961889": {"uri": "http://www.wikidata.org/entity/Q112961889", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "The Syracusan Bride leading Wild Animals in Procession to the Temple of Diana.", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Syracusan%20Bride%20leading%20Wild%20Animals%20in%20Procession%20to%20the%20Temple%20of%20Diana%20by%20Lord%20Frederick%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17217,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17217\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q113415821": {"uri": "http://www.wikidata.org/entity/Q113415821", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Psamathe", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Psamathe%2C%201880.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17218,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17218\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q119123459": {"uri": "http://www.wikidata.org/entity/Q119123459", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "The Vestal", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/%22Vestal%20Virgin%22%20Sir%20Frederic%20Leighton.webp"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17219,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17219\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q125375551": {"uri": "http://www.wikidata.org/entity/Q125375551", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Light of the Harem", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Leighton-Light%20of%20the%20Harem-c.%201880.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17220,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17220\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q119860858": {"uri": "http://www.wikidata.org/entity/Q119860858", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Faith", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Faith%20by%20Frederic%20Leighton.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17221,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17221\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q119146095": {"uri": "http://www.wikidata.org/entity/Q119146095", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Corinna of Tanagra", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Leighton%20corinna.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17222,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17222\\/category\\/802\"}}", "posted": true}, "http://www.wikidata.org/entity/Q119146242": {"uri": "http://www.wikidata.org/entity/Q119146242", "createur": "http://www.wikidata.org/entity/Q160252", "createurLabel": "Frederic Leighton", "titre_fr": "Farewell!", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton.%20Farewell.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17223,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17223\\/category\\/802\"}}", "posted": true}}, "version": "2.0.0"}
+{
+  "sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q160252 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q160252 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q846213": {
+      "uri": "http://www.wikidata.org/entity/Q846213",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "June flamboyante",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Flaming%20June%2C%20by%20Frederic%20Lord%20Leighton%20%281830-1896%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17133,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17133\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1230842": {
+      "uri": "http://www.wikidata.org/entity/Q1230842",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "La Madone de Cimabue portée en procession à Florence",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Cimabue%27s%20Madonna%20Carried%20in%20Procession%20-%20Google%20Art%20Project%202.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17134,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17134\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q4012247": {
+      "uri": "http://www.wikidata.org/entity/Q4012247",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "La Villa Malte à Rome",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Villa%20Malta%20a%20Roma.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17135,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17135\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18685541": {
+      "uri": "http://www.wikidata.org/entity/Q18685541",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Chansons sans paroles",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Lord%2C%20Leighton%20-%20Lieder%20ohne%20Worte%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17136,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17136\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18685545": {
+      "uri": "http://www.wikidata.org/entity/Q18685545",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Et la mer rendit les morts qui étaient en elle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Leighton%20Frederic%20-%20And%20the%20Sea%20Gave%20Up%20the%20Dead%20Which%20Were%20in%20It%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17137,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17137\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18685536": {
+      "uri": "http://www.wikidata.org/entity/Q18685536",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Le Bain de Psyché",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Lord%2C%20Leighton%20-%20The%20Bath%20of%20Psyche%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17138,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17138\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q12065125": {
+      "uri": "http://www.wikidata.org/entity/Q12065125",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "La Lune de miel du peintre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Leighton%20The%20Painter-s%20Honeymoon%201864.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17139,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17139\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q5826402": {
+      "uri": "http://www.wikidata.org/entity/Q5826402",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "The Return of Persephone",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20The%20Return%20of%20Persephone%20%281891%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17140,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17140\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18685555": {
+      "uri": "http://www.wikidata.org/entity/Q18685555",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Persée et Andromède",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Perseus%20and%20Andromeda%20-%20Google%20Art%20Project%202.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17141,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17141\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18208719": {
+      "uri": "http://www.wikidata.org/entity/Q18208719",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Cimon et Iphigenie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Frederic%20Leighton%20-%20Cymon%20and%20Iphigenia%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17142,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17142\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19905166": {
+      "uri": "http://www.wikidata.org/entity/Q19905166",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Lachrymae",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lachrimae%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17143,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17143\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20443671": {
+      "uri": "http://www.wikidata.org/entity/Q20443671",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Winding the skein",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Frederic%20Leighton%20-%20Winding%20the%20skein%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17144,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17144\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20809265": {
+      "uri": "http://www.wikidata.org/entity/Q20809265",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Portrait of a Roman Lady (La Nanna)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Nanna%20Philadelphia.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17145,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17145\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20443669": {
+      "uri": "http://www.wikidata.org/entity/Q20443669",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Wedded",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Frederic%20Leighton%20-%20Wedded%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17146,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17146\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19912147": {
+      "uri": "http://www.wikidata.org/entity/Q19912147",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Lucia",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lucia%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17147,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17147\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20443664": {
+      "uri": "http://www.wikidata.org/entity/Q20443664",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Colour study for 'Cymon and Iphigenia'",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Frederic%20Leighton%20-%20Colour%20study%20for%20%27Cymon%20and%20Iphigenia%27%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17148,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17148\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20891204": {
+      "uri": "http://www.wikidata.org/entity/Q20891204",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Jonathan's Token to David",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%2C%201st%20Baron%20Leighton%20of%20Stretton%20-%20Jonathan%E2%80%99s%20Token%20to%20David%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17149,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17149\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21707352": {
+      "uri": "http://www.wikidata.org/entity/Q21707352",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Bianca",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-96%29%20-%20Bianca%20-%20RCIN%20404569%20-%20Royal%20Collection.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederick%20Leighton-Bianca%201862.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17150,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17150\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21707844": {
+      "uri": "http://www.wikidata.org/entity/Q21707844",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Bianca",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederick%20leighton-bianca%20c1881%200876.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17151,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17151\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21718910": {
+      "uri": "http://www.wikidata.org/entity/Q21718910",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Mrs. James Guthrie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Mrs.%20James%20Guthrie%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17152,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17152\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21733321": {
+      "uri": "http://www.wikidata.org/entity/Q21733321",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "The feigned death of Juliet",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20The%20feigned%20death%20of%20Juliet%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17153,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17153\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21718911": {
+      "uri": "http://www.wikidata.org/entity/Q21718911",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Portrait of May Sartoris",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Portrait%20of%20May%20Sartoris%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17154,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17154\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21733323": {
+      "uri": "http://www.wikidata.org/entity/Q21733323",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Elijah in the Wilderness",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%2C%20Lord%20Leighton%20-%20Elijah%20in%20the%20Wilderness%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17155,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17155\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21733325": {
+      "uri": "http://www.wikidata.org/entity/Q21733325",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "A Condottiere",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Condottiere%201885P246.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17156,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17156\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21733328": {
+      "uri": "http://www.wikidata.org/entity/Q21733328",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Catarina",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%27Catarina%27%20by%20Frederic%2C%20Lord%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17157,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17157\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21733324": {
+      "uri": "http://www.wikidata.org/entity/Q21733324",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Jardin dans une auberge, Capri",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Garden%20of%20an%20Inn%2C%20Capri%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17158,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17158\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21749057": {
+      "uri": "http://www.wikidata.org/entity/Q21749057",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Icare et Dédale",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lord%20Frederick%20Leighton%20FLL006.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17159,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17159\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21749838": {
+      "uri": "http://www.wikidata.org/entity/Q21749838",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "May Sartoris, Mrs Henry Evans Gordon",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/May%20Sartoris%2C%20Mrs%20Henry%20Evans%20Gordon%20by%20Frederic%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17160,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17160\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21749837": {
+      "uri": "http://www.wikidata.org/entity/Q21749837",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Électre sur la tombe d'Agamemnon",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1869%20Frederic%20Leighton%20-%20Electra%20at%20the%20Tomb%20of%20Agamemnon.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17161,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17161\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21761529": {
+      "uri": "http://www.wikidata.org/entity/Q21761529",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Crenaia, the Nymph of the Dargle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Ferederic%20Leighton%20-%20Crenaia%2C%20the%20nymph%20of%20the%20Dargle%3B%201880.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17162,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17162\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21761540": {
+      "uri": "http://www.wikidata.org/entity/Q21761540",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Daphnephoria",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1876%20Frederic%20Leighton%20-%20Daphnephoria.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17163,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17163\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21749056": {
+      "uri": "http://www.wikidata.org/entity/Q21749056",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Actée, nymphe du rivage",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1868%20Frederic%20Leighton%20-%20Actaea.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12460\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12460\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21761840": {
+      "uri": "http://www.wikidata.org/entity/Q21761840",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Twixt hope and fear",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Twixt%20hope%20and%20fear%2C%20by%20Frederic%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17164,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17164\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21772610": {
+      "uri": "http://www.wikidata.org/entity/Q21772610",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "The antique juggling girl",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20leighton%2082%20the%20antique%20juggling%20girl.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17165,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17165\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21772609": {
+      "uri": "http://www.wikidata.org/entity/Q21772609",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Clytie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Leighton%2C%20Frederic%20-%20Clytie%20-%201895%E2%80%931896.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17166,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17166\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21772611": {
+      "uri": "http://www.wikidata.org/entity/Q21772611",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "The Garden of the Hesperides",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20The%20Garden%20of%20the%20Hesperides%2C%201892.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17167,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17167\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21772612": {
+      "uri": "http://www.wikidata.org/entity/Q21772612",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "A Boy Defending a Baby from an Eagle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20A%20Boy%20Defending%20a%20Baby%20from%20an%20Eagle.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17168,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17168\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21733329": {
+      "uri": "http://www.wikidata.org/entity/Q21733329",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Odalisque",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1862%20Frederick%20Leighton%20-%20Odalisque.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12461\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12461\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21761955": {
+      "uri": "http://www.wikidata.org/entity/Q21761955",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Antigone",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Antigoneleigh.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17169,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17169\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21761954": {
+      "uri": "http://www.wikidata.org/entity/Q21761954",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Hercules Fighting Death to Save Alcestis",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/AlcestisHerculesLeighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17170,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17170\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q22329814": {
+      "uri": "http://www.wikidata.org/entity/Q22329814",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Andromaque captive",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Leighton%20Captive%20Andromache.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17171,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17171\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27876692": {
+      "uri": "http://www.wikidata.org/entity/Q27876692",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "A Dream",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20A%20Dream%20-%20M1925-2%20-%20Auckland%20Art%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17172,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17172\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21772624": {
+      "uri": "http://www.wikidata.org/entity/Q21772624",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Amarilla",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Amarilla%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17173,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17173\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21761856": {
+      "uri": "http://www.wikidata.org/entity/Q21761856",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Acme and Septimius",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Leighton%2C%20Frederic%20-%20Acme%20and%20Septimius%20-%20c.%201868.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17174,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17174\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27883318": {
+      "uri": "http://www.wikidata.org/entity/Q27883318",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "The Spirit of the Summit",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20The%20Spirit%20of%20the%20Summit%20-%201926-4%20-%20Auckland%20Art%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17175,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17175\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28023226": {
+      "uri": "http://www.wikidata.org/entity/Q28023226",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Nanna (Pavonia)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-96%29%20-%20Nanna%20%28Pavonia%29%20-%20RCIN%20404570%20-%20Royal%20Collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17176,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17176\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27882552": {
+      "uri": "http://www.wikidata.org/entity/Q27882552",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Melittion",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Melittion%20-%201927-2-1%20-%20Auckland%20Art%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17177,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17177\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28024928": {
+      "uri": "http://www.wikidata.org/entity/Q28024928",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Duett: John Hanson Walker (1844-1933)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-96%29%20-%20Duett%2C%20John%20Hanson%20Walker%20%281844-1933%29%20-%20RCIN%20406953%20-%20Royal%20Collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17178,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17178\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28023849": {
+      "uri": "http://www.wikidata.org/entity/Q28023849",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Head of an Italian Girl",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-96%29%20-%20Head%20of%20an%20Italian%20Girl%20-%20RCIN%20405834%20-%20Royal%20Collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17179,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17179\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28037838": {
+      "uri": "http://www.wikidata.org/entity/Q28037838",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Head of an Italian Girl",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-96%29%20-%20Head%20of%20an%20Italian%20Girl%20-%20RCIN%20405835%20-%20Royal%20Collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17180,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17180\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28050278": {
+      "uri": "http://www.wikidata.org/entity/Q28050278",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Sir Richard Francis Burton",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/RichardFrancisBurton.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17181,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17181\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28532671": {
+      "uri": "http://www.wikidata.org/entity/Q28532671",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Study for ‘The Discovery of Juliet Apparently Lifeless’",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Study%20for%20%27The%20Discovery%20of%20Juliet%20Apparently%20Lifeless%27%20-%20N01806%20-%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17182,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17182\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28537448": {
+      "uri": "http://www.wikidata.org/entity/Q28537448",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Helios and Rhodes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Helios%20and%20Rhodes%20-%20N03015%20-%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17183,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17183\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30005166": {
+      "uri": "http://www.wikidata.org/entity/Q30005166",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Orpheus and Eurydice",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton-Orfeo%20ed%20Euridice-1864.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17184,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17184\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28538068": {
+      "uri": "http://www.wikidata.org/entity/Q28538068",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Mrs John Hanson Walker",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Mrs%20John%20Hanson%20Walker%20-%20N04731%20-%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17185,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17185\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28540479": {
+      "uri": "http://www.wikidata.org/entity/Q28540479",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Puerta de los Vientos, near Ronda, Spain",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Puerta%20de%20los%20Vientos%2C%20near%20Ronda%2C%20Spain%20-%20N04006%20-%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17186,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17186\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50821515": {
+      "uri": "http://www.wikidata.org/entity/Q50821515",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Clytie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Clytie%20%28c%201890-1892%29%20Frederick%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17187,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17187\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50820192": {
+      "uri": "http://www.wikidata.org/entity/Q50820192",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Miss Laing",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Miss%20Laing%20-%201501%20-%20Fitzwilliam%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17188,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17188\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50813303": {
+      "uri": "http://www.wikidata.org/entity/Q50813303",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "On the Nile, 1868",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20On%20the%20Nile%20-%20PD.5-1979%20-%20Fitzwilliam%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17189,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17189\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52154241": {
+      "uri": "http://www.wikidata.org/entity/Q52154241",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Autoportrait",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1880%20Frederic%20Leighton%20-%20Self%20portrait.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17190,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17190\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52146419": {
+      "uri": "http://www.wikidata.org/entity/Q52146419",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Lady Adelaide Chetwynd-Talbot, Countess Brownlow (1844-1917)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Lady%20Adelaide%20Chetwynd-Talbot%20%281844%E2%80%931917%29%2C%20Countess%20Brownlow%20-%20436073%20-%20National%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17191,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17191\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52131940": {
+      "uri": "http://www.wikidata.org/entity/Q52131940",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "River Landscape, probably in Italy",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20River%20Landscape%20%28probably%20in%20Italy%29%20-%20515559%20-%20National%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17192,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17192\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52210137": {
+      "uri": "http://www.wikidata.org/entity/Q52210137",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "View of a Bay, Spain",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20View%20of%20a%20Bay%20-%20642003%20-%20National%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17193,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17193\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52210020": {
+      "uri": "http://www.wikidata.org/entity/Q52210020",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Bamburgh Castle, Northumberland",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Holy%20Island%2C%20Northumberland%20-%20641993%20-%20National%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17194,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17194\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52210227": {
+      "uri": "http://www.wikidata.org/entity/Q52210227",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Malin Head (Malinmore), Donegal, Ireland",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Malin%20Head%2C%20Donegal%20-%20642011%20-%20National%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17195,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17195\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52210146": {
+      "uri": "http://www.wikidata.org/entity/Q52210146",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Houses on a Cliff Top in the Mediterranean (possibly on Capri)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Houses%20on%20a%20Cliff%20Top%20in%20the%20Mediterranean%20%28on%20Capri%5E%29%20-%20642004%20-%20National%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17196,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17196\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52281678": {
+      "uri": "http://www.wikidata.org/entity/Q52281678",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Augusta Frances East, Lady Hoare (d.1903)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Augusta%20Frances%20East%20%28d.1903%29%2C%20Lady%20Hoare%20-%20732209%20-%20National%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17197,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17197\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52283005": {
+      "uri": "http://www.wikidata.org/entity/Q52283005",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Augusta Frances Anne Hoare (1845-1922)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20Augusta%20Frances%20Anne%20Hoare%20%281845%E2%80%931922%29%2C%20Mrs%20William%20Angerstein%20-%20732280%20-%20National%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17198,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17198\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q60475912": {
+      "uri": "http://www.wikidata.org/entity/Q60475912",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "David:  \"Oh, that I had wings like a Dove!  For then would I fly away, and be at rest.\" Psalm 55:6",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Clevelandart%201986.74.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederick%20Leighton%20-%20David.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20David%2C%20%22Oh%2C%20that%20I%20had%20wings%20like%20a%20Dove%5E%20For%20then%20would%20I%20fly%20away%2C%20and%20be%20at%20rest.%22%20Psalm%2055-6%20-%201986.74%20-%20Cleveland%20Museum%20of%20Art.tiff"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17199,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17199\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q52302738": {
+      "uri": "http://www.wikidata.org/entity/Q52302738",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "A Wooded Hill with the Sea beyond",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20A%20Wooded%20Hill%20with%20the%20Sea%20beyond%20-%20584345%20-%20National%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17200,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17200\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q105443639": {
+      "uri": "http://www.wikidata.org/entity/Q105443639",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Mnémosyne, mère des Muses",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mnemosyne%2C%20Mother%20of%20the%20Muses%20.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12462\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12462\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106767919": {
+      "uri": "http://www.wikidata.org/entity/Q106767919",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "After Vespers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%2C%20Lord%20Leighton%20-%20After%20Vespers%20-%20y1961-17%20-%20Princeton%20University%20Art%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17201,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17201\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q105396734": {
+      "uri": "http://www.wikidata.org/entity/Q105396734",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "A Nile Woman",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20NILE%20WOMAN%20.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17202,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17202\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q105576341": {
+      "uri": "http://www.wikidata.org/entity/Q105576341",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Erato",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Erato%20%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17203,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17203\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q98152765": {
+      "uri": "http://www.wikidata.org/entity/Q98152765",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "And the Sea Gave Up the Dead Which Were In It",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20%281830-1896%29%20-%20%27And%20the%20sea%20gave%20up%20the%20dead%20which%20were%20in%20it%27%20-%201894P1%20-%20Birmingham%20Museums%20Trust.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17204,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17204\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111362052": {
+      "uri": "http://www.wikidata.org/entity/Q111362052",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Greek Girls Playing Ball",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Greek-girls-playing-at-ball.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17205,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17205\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111361996": {
+      "uri": "http://www.wikidata.org/entity/Q111361996",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Weaving the Wreath",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Weaving%20the%20Wreath.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17206,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17206\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111674540": {
+      "uri": "http://www.wikidata.org/entity/Q111674540",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Le Pêcheur et la Sirène.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Leighton-The%20Fisherman%20and%20the%20Syren-c.%201856-1858.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17207,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17207\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110683299": {
+      "uri": "http://www.wikidata.org/entity/Q110683299",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Self Portrait",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Self%20Portrait%20-%20Lord%20Frederic%20Leighton%20-%20ABDAG002510.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17208,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17208\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111729960": {
+      "uri": "http://www.wikidata.org/entity/Q111729960",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Study for the Ceiling of the Marquand Music Room",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Study%20for%20the%20Ceiling%20of%20the%20Marquand%20Music%20Room%20-%20MET%20DP-21914-007.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17209,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17209\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111730093": {
+      "uri": "http://www.wikidata.org/entity/Q111730093",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "The Return of Persephone",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Return%20of%20Persephone%20-%20MET%20DP-21913-001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17210,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17210\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106867039": {
+      "uri": "http://www.wikidata.org/entity/Q106867039",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Portrait of a Young Woman in Profile",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Portrait%20of%20a%20Young%20Woman%20in%20Profile%20-%201943.198%20-%20Fogg%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17211,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17211\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110437524": {
+      "uri": "http://www.wikidata.org/entity/Q110437524",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "At a Reading Desk",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/At%20A%20Reading%20Desk%20by%20Frederic%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17212,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17212\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q106769429": {
+      "uri": "http://www.wikidata.org/entity/Q106769429",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Dramatic Scene in a Court",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%2C%20Lord%20Leighton%20-%20Dramatic%20Scene%20in%20a%20Court%20-%20y1966-105%20-%20Princeton%20University%20Art%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17213,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17213\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q112858514": {
+      "uri": "http://www.wikidata.org/entity/Q112858514",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Leçon de musique",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Music%20Lesson%2C%201877%20by%20Frederic%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17214,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17214\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q112857352": {
+      "uri": "http://www.wikidata.org/entity/Q112857352",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Nausicaa",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1878%20Frederick%20Leighton%20-%20Nausicaa.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17215,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17215\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q112254056": {
+      "uri": "http://www.wikidata.org/entity/Q112254056",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Venus Disrobing for the Bath",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Venus%20Disrobing%20for%20the%20Bath.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17216,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17216\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q112961889": {
+      "uri": "http://www.wikidata.org/entity/Q112961889",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "The Syracusan Bride leading Wild Animals in Procession to the Temple of Diana.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Syracusan%20Bride%20leading%20Wild%20Animals%20in%20Procession%20to%20the%20Temple%20of%20Diana%20by%20Lord%20Frederick%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17217,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17217\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q113415821": {
+      "uri": "http://www.wikidata.org/entity/Q113415821",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Psamathe",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton%20-%20Psamathe%2C%201880.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17218,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17218\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q119123459": {
+      "uri": "http://www.wikidata.org/entity/Q119123459",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "The Vestal",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%22Vestal%20Virgin%22%20Sir%20Frederic%20Leighton.webp"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17219,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17219\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125375551": {
+      "uri": "http://www.wikidata.org/entity/Q125375551",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Light of the Harem",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Leighton-Light%20of%20the%20Harem-c.%201880.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17220,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17220\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q119860858": {
+      "uri": "http://www.wikidata.org/entity/Q119860858",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Faith",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Faith%20by%20Frederic%20Leighton.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17221,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17221\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q119146095": {
+      "uri": "http://www.wikidata.org/entity/Q119146095",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Corinna of Tanagra",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Leighton%20corinna.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17222,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17222\\/category\\/802\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q119146242": {
+      "uri": "http://www.wikidata.org/entity/Q119146242",
+      "createur": "http://www.wikidata.org/entity/Q160252",
+      "createurLabel": "Frederic Leighton",
+      "titre_fr": "Farewell!",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Leighton.%20Farewell.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17223,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17223\\/category\\/802\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}
