@@ -26,7 +26,7 @@ if __name__ == "__main__":
     with open(srcPath, encoding="UTF-8") as fsrc:
         genreList = json.load(fsrc)
         for genre in genreList:
-            if "http://www.wikidata.org/.well-known" in genre["genre"]: continue
+            if "http://www.wikidata.org/.well-known" in genre["entity"]: continue
             idpiwigo = None
             if "idpiwigo" in genre:
                 idpiwigo = genre["idpiwigo"]
@@ -36,12 +36,12 @@ if __name__ == "__main__":
                 if match:
                     idpiwigo = match.group(1)
 
-            ttl += converter.genreTtlDesc(genre["genre"], genre["genreLabel"], galleryId=idpiwigo, genreCount=genre["c"],
+            ttl += converter.genreTtlDesc(genre["entity"], genre["entityLabel"], galleryId=idpiwigo, genreCount=genre["c"],
                                           genreDate="2024-12-03", lang="fr")
             # introduction de descriptiond e la galerie s'il y en a une
             if idpiwigo:
                 ttl += "\n"+converter.galeryTtlDesc(idpiwigo,
-                                        title=f"""Galerie de {genre["genreLabel"]}s""",
+                                        title=f"""Galerie de {genre["entityLabel"]}s""",
                                         comment=genre["comment"] if "comment" in genre else None,
                                         lang="fr")
 
