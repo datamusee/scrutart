@@ -2,8 +2,6 @@
 import json
 
 import src.generationWordpress.WikimediaAccess as WikimediaAccess
-from piwigoCategoriesState import getCategoriesInPiwigo
-from piwigoCategoriesCreations import createCategoryInPiwigo
 import os
 import time
 from repairCategoryImagePiwigo import getCategoryId, getImageId
@@ -34,7 +32,8 @@ def getImageMuseums(uri, lang="fr"):
 def createOrFindCategoriesInPiwigo(selectedCategories):
     existingCategories = {}
     scat = selectedCategories.copy()
-    res = getCategoriesInPiwigo()
+    pwg = CPiwigoManager()
+    res = pwg.piwigo_image_get_categories()
     if res and ("stat" in res) and (res["stat"]=="ok") and ("result" in res) and ("categories" in res["result"]):
         for cat in res["result"]["categories"]:
             label = cat["name"]
@@ -47,7 +46,7 @@ def createOrFindCategoriesInPiwigo(selectedCategories):
             print("----------> ", catlabel, selectedCategories[catlabel])
         else:
             print(f"""Création de la catégorie {catlabel}""")
-            rep = createCategoryInPiwigo(catlabel, "INSTITUTIONS")
+            rep = pwg.piwigo_create_category(catlabel, "INSTITUTIONS")
             if (rep.status_code==200):
                 newcat = rep.json()
                 selectedCategories[catlabel]["catid"] = catdesc["id"]
@@ -148,9 +147,9 @@ if __name__ == "__main__":
                         print(f"""Introduction dans le musee {museum}""")
                         time.sleep(0.1)
                         category_id = selectedTargetCategories[museum]["catid"]
-                        crt_cats = pwg.imageGetCategories(image_id)
+                        crt_cats = pwg.piwigo_image_get_categories(image_id)
                         if image_id and (not crt_cats or (not str(category_id) in crt_cats)):
-                            cat = pwg.imageSetCategory(image_id, category_id)
+                            cat = pwg.piwigo_image_set_category(image_id, category_id)
                             print(f"""catégorie {category_id} pour l'image {image_id}""")
                     else:
                         print(f"""Musée {museum} à vérifier""")
