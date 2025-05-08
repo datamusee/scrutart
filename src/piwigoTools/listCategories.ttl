@@ -4,6 +4,38 @@
 @prefix pgdc: <https://kg.grains-de-culture.fr/prop/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+kgdc:gal889 pgdc:id_piwigo 889 .
+kgdc:gal889 rdfs:label "Galeries de personnes illustres"@fr .
+kgdc:gal889 pgdc:comment ""@fr .
+kgdc:gal889 a  kgdc:GALLERY .
+kgdc:gal856 pgdc:id_piwigo 856 .
+kgdc:gal856 rdfs:label "En attente"@fr .
+kgdc:gal856 pgdc:comment ""@fr .
+kgdc:gal856 a  kgdc:GALLERY .
+kgdc:gal759 pgdc:id_piwigo 759 .
+kgdc:gal759 rdfs:label "Galerie Robert Brandard"@fr .
+kgdc:gal759 pgdc:comment ""@fr .
+kgdc:gal759 a  kgdc:GALLERY .
+kgdc:gal750 pgdc:id_piwigo 750 .
+kgdc:gal750 rdfs:label "Galerie John Faber"@fr .
+kgdc:gal750 pgdc:comment ""@fr .
+kgdc:gal750 a  kgdc:GALLERY .
+kgdc:gal751 pgdc:id_piwigo 751 .
+kgdc:gal751 rdfs:label "Galerie Dante Gabriel Rossetti"@fr .
+kgdc:gal751 pgdc:comment ""@fr .
+kgdc:gal751 a  kgdc:GALLERY .
+kgdc:gal842 pgdc:id_piwigo 842 .
+kgdc:gal842 rdfs:label "Galerie Joris Hoefnagel"@fr .
+kgdc:gal842 pgdc:comment ""@fr .
+kgdc:gal842 a  kgdc:GALLERY .
+kgdc:gal844 pgdc:id_piwigo 844 .
+kgdc:gal844 rdfs:label "Galerie Ramón Casas"@fr .
+kgdc:gal844 pgdc:comment ""@fr .
+kgdc:gal844 a  kgdc:GALLERY .
+kgdc:gal845 pgdc:id_piwigo 845 .
+kgdc:gal845 rdfs:label "Galerie Joris Hoefnagel"@fr .
+kgdc:gal845 pgdc:comment ""@fr .
+kgdc:gal845 a  kgdc:GALLERY .
 kgdc:gal850 pgdc:id_piwigo 850 .
 kgdc:gal850 rdfs:label "Galerie Ramón Casas"@fr .
 kgdc:gal850 pgdc:comment ""@fr .
@@ -12,38 +44,10 @@ kgdc:gal849 pgdc:id_piwigo 849 .
 kgdc:gal849 rdfs:label "Galerie Anders Andersen-Lundby"@fr .
 kgdc:gal849 pgdc:comment ""@fr .
 kgdc:gal849 a  kgdc:GALLERY .
-kgdc:gal848 pgdc:id_piwigo 848 .
-kgdc:gal848 rdfs:label "Galerie Joris Hoefnagel"@fr .
-kgdc:gal848 pgdc:comment ""@fr .
-kgdc:gal848 a  kgdc:GALLERY .
-kgdc:gal846 pgdc:id_piwigo 846 .
-kgdc:gal846 rdfs:label "Galerie Anders Andersen-Lundby"@fr .
-kgdc:gal846 pgdc:comment ""@fr .
-kgdc:gal846 a  kgdc:GALLERY .
-kgdc:gal845 pgdc:id_piwigo 845 .
-kgdc:gal845 rdfs:label "Galerie Joris Hoefnagel"@fr .
-kgdc:gal845 pgdc:comment ""@fr .
-kgdc:gal845 a  kgdc:GALLERY .
-kgdc:gal844 pgdc:id_piwigo 844 .
-kgdc:gal844 rdfs:label "Galerie Ramón Casas"@fr .
-kgdc:gal844 pgdc:comment ""@fr .
-kgdc:gal844 a  kgdc:GALLERY .
 kgdc:gal843 pgdc:id_piwigo 843 .
 kgdc:gal843 rdfs:label "Galerie Anders Andersen-Lundby"@fr .
 kgdc:gal843 pgdc:comment ""@fr .
 kgdc:gal843 a  kgdc:GALLERY .
-kgdc:gal842 pgdc:id_piwigo 842 .
-kgdc:gal842 rdfs:label "Galerie Joris Hoefnagel"@fr .
-kgdc:gal842 pgdc:comment ""@fr .
-kgdc:gal842 a  kgdc:GALLERY .
-kgdc:gal841 pgdc:id_piwigo 841 .
-kgdc:gal841 rdfs:label "Galerie Joris Hoefnagel"@fr .
-kgdc:gal841 pgdc:comment ""@fr .
-kgdc:gal841 a  kgdc:GALLERY .
-kgdc:gal827 pgdc:id_piwigo 827 .
-kgdc:gal827 rdfs:label "Galerie Gottlieb Theodor Hase"@fr .
-kgdc:gal827 pgdc:comment ""@fr .
-kgdc:gal827 a  kgdc:GALLERY .
 kgdc:gal814 pgdc:id_piwigo 814 .
 kgdc:gal814 rdfs:label "Galerie George Cooke"@fr .
 kgdc:gal814 pgdc:comment ""@fr .
@@ -52,126 +56,350 @@ kgdc:gal798 pgdc:id_piwigo 798 .
 kgdc:gal798 rdfs:label "Galerie John Bluck"@fr .
 kgdc:gal798 pgdc:comment ""@fr .
 kgdc:gal798 a  kgdc:GALLERY .
-kgdc:gal793 pgdc:id_piwigo 793 .
-kgdc:gal793 rdfs:label "Galerie Johannes Flintoe"@fr .
-kgdc:gal793 pgdc:comment ""@fr .
-kgdc:gal793 a  kgdc:GALLERY .
-kgdc:gal792 pgdc:id_piwigo 792 .
-kgdc:gal792 rdfs:label "Galerie Gérard de Lairesse"@fr .
-kgdc:gal792 pgdc:comment ""@fr .
-kgdc:gal792 a  kgdc:GALLERY .
-kgdc:gal791 pgdc:id_piwigo 791 .
-kgdc:gal791 rdfs:label "Galerie Ľudovít Čordák"@fr .
-kgdc:gal791 pgdc:comment ""@fr .
-kgdc:gal791 a  kgdc:GALLERY .
-kgdc:gal790 pgdc:id_piwigo 790 .
-kgdc:gal790 rdfs:label "Galerie Abraham van Beijeren"@fr .
-kgdc:gal790 pgdc:comment ""@fr .
-kgdc:gal790 a  kgdc:GALLERY .
-kgdc:gal786 pgdc:id_piwigo 786 .
-kgdc:gal786 rdfs:label "Galerie Jan Brueghel le Jeune"@fr .
-kgdc:gal786 pgdc:comment ""@fr .
-kgdc:gal786 a  kgdc:GALLERY .
-kgdc:gal785 pgdc:id_piwigo 785 .
-kgdc:gal785 rdfs:label "Galerie Antoine Pesne"@fr .
-kgdc:gal785 pgdc:comment ""@fr .
-kgdc:gal785 a  kgdc:GALLERY .
-kgdc:gal783 pgdc:id_piwigo 783 .
-kgdc:gal783 rdfs:label "Galerie Parmigianino"@fr .
-kgdc:gal783 pgdc:comment ""@fr .
-kgdc:gal783 a  kgdc:GALLERY .
-kgdc:gal782 pgdc:id_piwigo 782 .
-kgdc:gal782 rdfs:label "Galerie David Allan"@fr .
-kgdc:gal782 pgdc:comment ""@fr .
-kgdc:gal782 a  kgdc:GALLERY .
-kgdc:gal779 pgdc:id_piwigo 779 .
-kgdc:gal779 rdfs:label "Galerie William Strang"@fr .
-kgdc:gal779 pgdc:comment ""@fr .
-kgdc:gal779 a  kgdc:GALLERY .
-kgdc:gal778 pgdc:id_piwigo 778 .
-kgdc:gal778 rdfs:label "Galerie Gustave Cariot"@fr .
-kgdc:gal778 pgdc:comment ""@fr .
-kgdc:gal778 a  kgdc:GALLERY .
-kgdc:gal777 pgdc:id_piwigo 777 .
-kgdc:gal777 rdfs:label "Galerie Anselm Feuerbach"@fr .
-kgdc:gal777 pgdc:comment ""@fr .
-kgdc:gal777 a  kgdc:GALLERY .
-kgdc:gal776 pgdc:id_piwigo 776 .
-kgdc:gal776 rdfs:label "Galerie Olga Rozanova"@fr .
-kgdc:gal776 pgdc:comment ""@fr .
-kgdc:gal776 a  kgdc:GALLERY .
-kgdc:gal775 pgdc:id_piwigo 775 .
-kgdc:gal775 rdfs:label "Galerie George Hayter"@fr .
-kgdc:gal775 pgdc:comment ""@fr .
-kgdc:gal775 a  kgdc:GALLERY .
+kgdc:gal848 pgdc:id_piwigo 848 .
+kgdc:gal848 rdfs:label "Galerie Joris Hoefnagel"@fr .
+kgdc:gal848 pgdc:comment ""@fr .
+kgdc:gal848 a  kgdc:GALLERY .
+kgdc:gal827 pgdc:id_piwigo 827 .
+kgdc:gal827 rdfs:label "Galerie Gottlieb Theodor Hase"@fr .
+kgdc:gal827 pgdc:comment ""@fr .
+kgdc:gal827 a  kgdc:GALLERY .
+kgdc:gal846 pgdc:id_piwigo 846 .
+kgdc:gal846 rdfs:label "Galerie Anders Andersen-Lundby"@fr .
+kgdc:gal846 pgdc:comment ""@fr .
+kgdc:gal846 a  kgdc:GALLERY .
+kgdc:gal730 pgdc:id_piwigo 730 .
+kgdc:gal730 rdfs:label "Galerie Coppo di Marcovaldo"@fr .
+kgdc:gal730 pgdc:comment ""@fr .
+kgdc:gal730 a  kgdc:GALLERY .
+kgdc:gal702 pgdc:id_piwigo 702 .
+kgdc:gal702 rdfs:label "Galerie Hans Holbein l'Ancien"@fr .
+kgdc:gal702 pgdc:comment ""@fr .
+kgdc:gal702 a  kgdc:GALLERY .
+kgdc:gal608 pgdc:id_piwigo 608 .
+kgdc:gal608 rdfs:label "Galerie Edwin Landseer"@fr .
+kgdc:gal608 pgdc:comment ""@fr .
+kgdc:gal608 a  kgdc:GALLERY .
+kgdc:gal609 pgdc:id_piwigo 609 .
+kgdc:gal609 rdfs:label "Galerie John Varley"@fr .
+kgdc:gal609 pgdc:comment ""@fr .
+kgdc:gal609 a  kgdc:GALLERY .
+kgdc:gal605 pgdc:id_piwigo 605 .
+kgdc:gal605 rdfs:label "Galerie Moustafa Farroukh"@fr .
+kgdc:gal605 pgdc:comment ""@fr .
+kgdc:gal605 a  kgdc:GALLERY .
+kgdc:gal508 pgdc:id_piwigo 508 .
+kgdc:gal508 rdfs:label "Galerie Wang Hui"@fr .
+kgdc:gal508 pgdc:comment ""@fr .
+kgdc:gal508 a  kgdc:GALLERY .
+kgdc:gal502 pgdc:id_piwigo 502 .
+kgdc:gal502 rdfs:label "Galerie Benjamin Haydon"@fr .
+kgdc:gal502 pgdc:comment ""@fr .
+kgdc:gal502 a  kgdc:GALLERY .
+kgdc:gal711 pgdc:id_piwigo 711 .
+kgdc:gal711 rdfs:label "Galerie Marianne North"@fr .
+kgdc:gal711 pgdc:comment ""@fr .
+kgdc:gal711 a  kgdc:GALLERY .
+kgdc:gal528 pgdc:id_piwigo 528 .
+kgdc:gal528 rdfs:label "Galerie Anna Ancher"@fr .
+kgdc:gal528 pgdc:comment ""@fr .
+kgdc:gal528 a  kgdc:GALLERY .
+kgdc:gal854 pgdc:id_piwigo 854 .
+kgdc:gal854 rdfs:label "Galeries par institutions"@fr .
+kgdc:gal854 pgdc:comment ""@fr .
+kgdc:gal854 a  kgdc:GALLERY .
+kgdc:gal853 pgdc:id_piwigo 853 .
+kgdc:gal853 rdfs:label "Galeries par mouvements"@fr .
+kgdc:gal853 pgdc:comment ""@fr .
+kgdc:gal853 a  kgdc:GALLERY .
+kgdc:gal925 pgdc:id_piwigo 925 .
+kgdc:gal925 rdfs:label "Néo-impressionnisme"@fr .
+kgdc:gal925 pgdc:comment ""@fr .
+kgdc:gal925 a  kgdc:GALLERY .
+kgdc:gal924 pgdc:id_piwigo 924 .
+kgdc:gal924 rdfs:label "École de peinture de bologne"@fr .
+kgdc:gal924 pgdc:comment ""@fr .
+kgdc:gal924 a  kgdc:GALLERY .
+kgdc:gal923 pgdc:id_piwigo 923 .
+kgdc:gal923 rdfs:label "Surréalisme"@fr .
+kgdc:gal923 pgdc:comment ""@fr .
+kgdc:gal923 a  kgdc:GALLERY .
+kgdc:gal922 pgdc:id_piwigo 922 .
+kgdc:gal922 rdfs:label "Futurisme"@fr .
+kgdc:gal922 pgdc:comment ""@fr .
+kgdc:gal922 a  kgdc:GALLERY .
+kgdc:gal921 pgdc:id_piwigo 921 .
+kgdc:gal921 rdfs:label "American barbizon school"@fr .
+kgdc:gal921 pgdc:comment ""@fr .
+kgdc:gal921 a  kgdc:GALLERY .
+kgdc:gal920 pgdc:id_piwigo 920 .
+kgdc:gal920 rdfs:label "Luminisme"@fr .
+kgdc:gal920 pgdc:comment ""@fr .
+kgdc:gal920 a  kgdc:GALLERY .
+kgdc:gal919 pgdc:id_piwigo 919 .
+kgdc:gal919 rdfs:label "De stijl"@fr .
+kgdc:gal919 pgdc:comment ""@fr .
+kgdc:gal919 a  kgdc:GALLERY .
+kgdc:gal918 pgdc:id_piwigo 918 .
+kgdc:gal918 rdfs:label "Impressionnisme d'amsterdam"@fr .
+kgdc:gal918 pgdc:comment ""@fr .
+kgdc:gal918 a  kgdc:GALLERY .
+kgdc:gal917 pgdc:id_piwigo 917 .
+kgdc:gal917 rdfs:label "Macchiaioli"@fr .
+kgdc:gal917 pgdc:comment ""@fr .
+kgdc:gal917 a  kgdc:GALLERY .
+kgdc:gal916 pgdc:id_piwigo 916 .
+kgdc:gal916 rdfs:label "Modernisme"@fr .
+kgdc:gal916 pgdc:comment ""@fr .
+kgdc:gal916 a  kgdc:GALLERY .
+kgdc:gal915 pgdc:id_piwigo 915 .
+kgdc:gal915 rdfs:label "Gothique international"@fr .
+kgdc:gal915 pgdc:comment ""@fr .
+kgdc:gal915 a  kgdc:GALLERY .
+kgdc:gal914 pgdc:id_piwigo 914 .
+kgdc:gal914 rdfs:label "Peinture rococo"@fr .
+kgdc:gal914 pgdc:comment ""@fr .
+kgdc:gal914 a  kgdc:GALLERY .
+kgdc:gal913 pgdc:id_piwigo 913 .
+kgdc:gal913 rdfs:label "Peinture orientaliste"@fr .
+kgdc:gal913 pgdc:comment ""@fr .
+kgdc:gal913 a  kgdc:GALLERY .
+kgdc:gal912 pgdc:id_piwigo 912 .
+kgdc:gal912 rdfs:label "Renaissance flamande"@fr .
+kgdc:gal912 pgdc:comment ""@fr .
+kgdc:gal912 a  kgdc:GALLERY .
+kgdc:gal911 pgdc:id_piwigo 911 .
+kgdc:gal911 rdfs:label "Cubisme de salon"@fr .
+kgdc:gal911 pgdc:comment ""@fr .
+kgdc:gal911 a  kgdc:GALLERY .
+kgdc:gal910 pgdc:id_piwigo 910 .
+kgdc:gal910 rdfs:label "Art gothique"@fr .
+kgdc:gal910 pgdc:comment ""@fr .
+kgdc:gal910 a  kgdc:GALLERY .
+kgdc:gal909 pgdc:id_piwigo 909 .
+kgdc:gal909 rdfs:label "Cubo-futurisme"@fr .
+kgdc:gal909 pgdc:comment ""@fr .
+kgdc:gal909 a  kgdc:GALLERY .
+kgdc:gal908 pgdc:id_piwigo 908 .
+kgdc:gal908 rdfs:label "Volcano school"@fr .
+kgdc:gal908 pgdc:comment ""@fr .
+kgdc:gal908 a  kgdc:GALLERY .
+kgdc:gal907 pgdc:id_piwigo 907 .
+kgdc:gal907 rdfs:label "Art abstrait"@fr .
+kgdc:gal907 pgdc:comment ""@fr .
+kgdc:gal907 a  kgdc:GALLERY .
+kgdc:gal906 pgdc:id_piwigo 906 .
+kgdc:gal906 rdfs:label "Costumbrismo"@fr .
+kgdc:gal906 pgdc:comment ""@fr .
+kgdc:gal906 a  kgdc:GALLERY .
+kgdc:gal905 pgdc:id_piwigo 905 .
+kgdc:gal905 rdfs:label "Mouvement néo-pompéien"@fr .
+kgdc:gal905 pgdc:comment ""@fr .
+kgdc:gal905 a  kgdc:GALLERY .
+kgdc:gal904 pgdc:id_piwigo 904 .
+kgdc:gal904 rdfs:label "Naturalisme"@fr .
+kgdc:gal904 pgdc:comment ""@fr .
+kgdc:gal904 a  kgdc:GALLERY .
+kgdc:gal903 pgdc:id_piwigo 903 .
+kgdc:gal903 rdfs:label "Renaissance nordique"@fr .
+kgdc:gal903 pgdc:comment ""@fr .
+kgdc:gal903 a  kgdc:GALLERY .
+kgdc:gal902 pgdc:id_piwigo 902 .
+kgdc:gal902 rdfs:label "Suprématisme"@fr .
+kgdc:gal902 pgdc:comment ""@fr .
+kgdc:gal902 a  kgdc:GALLERY .
+kgdc:gal901 pgdc:id_piwigo 901 .
+kgdc:gal901 rdfs:label "Modernisme catalan"@fr .
+kgdc:gal901 pgdc:comment ""@fr .
+kgdc:gal901 a  kgdc:GALLERY .
+kgdc:gal900 pgdc:id_piwigo 900 .
+kgdc:gal900 rdfs:label "Pré-renaissance"@fr .
+kgdc:gal900 pgdc:comment ""@fr .
+kgdc:gal900 a  kgdc:GALLERY .
+kgdc:gal899 pgdc:id_piwigo 899 .
+kgdc:gal899 rdfs:label "Peinture néo-classique"@fr .
+kgdc:gal899 pgdc:comment ""@fr .
+kgdc:gal899 a  kgdc:GALLERY .
+kgdc:gal898 pgdc:id_piwigo 898 .
+kgdc:gal898 rdfs:label "Style troubadour"@fr .
+kgdc:gal898 pgdc:comment ""@fr .
+kgdc:gal898 a  kgdc:GALLERY .
+kgdc:gal897 pgdc:id_piwigo 897 .
+kgdc:gal897 rdfs:label "Q99816831"@fr .
+kgdc:gal897 pgdc:comment ""@fr .
+kgdc:gal897 a  kgdc:GALLERY .
+kgdc:gal896 pgdc:id_piwigo 896 .
+kgdc:gal896 rdfs:label "Peinture baroque italienne"@fr .
+kgdc:gal896 pgdc:comment ""@fr .
+kgdc:gal896 a  kgdc:GALLERY .
+kgdc:gal895 pgdc:id_piwigo 895 .
+kgdc:gal895 rdfs:label "Pointillisme"@fr .
+kgdc:gal895 pgdc:comment ""@fr .
+kgdc:gal895 a  kgdc:GALLERY .
+kgdc:gal894 pgdc:id_piwigo 894 .
+kgdc:gal894 rdfs:label "École de l'heptanèse"@fr .
+kgdc:gal894 pgdc:comment ""@fr .
+kgdc:gal894 a  kgdc:GALLERY .
+kgdc:gal893 pgdc:id_piwigo 893 .
+kgdc:gal893 rdfs:label "École de barbizon"@fr .
+kgdc:gal893 pgdc:comment ""@fr .
+kgdc:gal893 a  kgdc:GALLERY .
+kgdc:gal892 pgdc:id_piwigo 892 .
+kgdc:gal892 rdfs:label "Âge d'or danois"@fr .
+kgdc:gal892 pgdc:comment ""@fr .
+kgdc:gal892 a  kgdc:GALLERY .
+kgdc:gal891 pgdc:id_piwigo 891 .
+kgdc:gal891 rdfs:label "Cubisme"@fr .
+kgdc:gal891 pgdc:comment ""@fr .
+kgdc:gal891 a  kgdc:GALLERY .
+kgdc:gal890 pgdc:id_piwigo 890 .
+kgdc:gal890 rdfs:label "Nabi"@fr .
+kgdc:gal890 pgdc:comment ""@fr .
+kgdc:gal890 a  kgdc:GALLERY .
+kgdc:gal888 pgdc:id_piwigo 888 .
+kgdc:gal888 rdfs:label "Fauvisme"@fr .
+kgdc:gal888 pgdc:comment ""@fr .
+kgdc:gal888 a  kgdc:GALLERY .
+kgdc:gal887 pgdc:id_piwigo 887 .
+kgdc:gal887 rdfs:label "Peinture gothique"@fr .
+kgdc:gal887 pgdc:comment ""@fr .
+kgdc:gal887 a  kgdc:GALLERY .
+kgdc:gal886 pgdc:id_piwigo 886 .
+kgdc:gal886 rdfs:label "Impressionnisme américain"@fr .
+kgdc:gal886 pgdc:comment ""@fr .
+kgdc:gal886 a  kgdc:GALLERY .
+kgdc:gal885 pgdc:id_piwigo 885 .
+kgdc:gal885 rdfs:label "Peinture romantique"@fr .
+kgdc:gal885 pgdc:comment ""@fr .
+kgdc:gal885 a  kgdc:GALLERY .
+kgdc:gal884 pgdc:id_piwigo 884 .
+kgdc:gal884 rdfs:label "Classicisme"@fr .
+kgdc:gal884 pgdc:comment ""@fr .
+kgdc:gal884 a  kgdc:GALLERY .
+kgdc:gal883 pgdc:id_piwigo 883 .
+kgdc:gal883 rdfs:label "Peinture de la renaissance italienne"@fr .
+kgdc:gal883 pgdc:comment ""@fr .
+kgdc:gal883 a  kgdc:GALLERY .
+kgdc:gal882 pgdc:id_piwigo 882 .
+kgdc:gal882 rdfs:label "Hudson river school"@fr .
+kgdc:gal882 pgdc:comment ""@fr .
+kgdc:gal882 a  kgdc:GALLERY .
+kgdc:gal881 pgdc:id_piwigo 881 .
+kgdc:gal881 rdfs:label "Renaissance"@fr .
+kgdc:gal881 pgdc:comment ""@fr .
+kgdc:gal881 a  kgdc:GALLERY .
+kgdc:gal880 pgdc:id_piwigo 880 .
+kgdc:gal880 rdfs:label "Symbolisme"@fr .
+kgdc:gal880 pgdc:comment ""@fr .
+kgdc:gal880 a  kgdc:GALLERY .
+kgdc:gal879 pgdc:id_piwigo 879 .
+kgdc:gal879 rdfs:label "Renaissance allemande"@fr .
+kgdc:gal879 pgdc:comment ""@fr .
+kgdc:gal879 a  kgdc:GALLERY .
+kgdc:gal878 pgdc:id_piwigo 878 .
+kgdc:gal878 rdfs:label "Expressionnisme"@fr .
+kgdc:gal878 pgdc:comment ""@fr .
+kgdc:gal878 a  kgdc:GALLERY .
+kgdc:gal877 pgdc:id_piwigo 877 .
+kgdc:gal877 rdfs:label "Peinture baroque flamande"@fr .
+kgdc:gal877 pgdc:comment ""@fr .
+kgdc:gal877 a  kgdc:GALLERY .
+kgdc:gal876 pgdc:id_piwigo 876 .
+kgdc:gal876 rdfs:label "Peinture baroque"@fr .
+kgdc:gal876 pgdc:comment ""@fr .
+kgdc:gal876 a  kgdc:GALLERY .
+kgdc:gal875 pgdc:id_piwigo 875 .
+kgdc:gal875 rdfs:label "Postimpressionnisme"@fr .
+kgdc:gal875 pgdc:comment ""@fr .
+kgdc:gal875 a  kgdc:GALLERY .
+kgdc:gal874 pgdc:id_piwigo 874 .
+kgdc:gal874 rdfs:label "École crétoise"@fr .
+kgdc:gal874 pgdc:comment ""@fr .
+kgdc:gal874 a  kgdc:GALLERY .
+kgdc:gal873 pgdc:id_piwigo 873 .
+kgdc:gal873 rdfs:label "Art naïf"@fr .
+kgdc:gal873 pgdc:comment ""@fr .
+kgdc:gal873 a  kgdc:GALLERY .
+kgdc:gal872 pgdc:id_piwigo 872 .
+kgdc:gal872 rdfs:label "Première renaissance"@fr .
+kgdc:gal872 pgdc:comment ""@fr .
+kgdc:gal872 a  kgdc:GALLERY .
+kgdc:gal871 pgdc:id_piwigo 871 .
+kgdc:gal871 rdfs:label "Réalisme"@fr .
+kgdc:gal871 pgdc:comment ""@fr .
+kgdc:gal871 a  kgdc:GALLERY .
+kgdc:gal870 pgdc:id_piwigo 870 .
+kgdc:gal870 rdfs:label "Néo-classicisme"@fr .
+kgdc:gal870 pgdc:comment ""@fr .
+kgdc:gal870 a  kgdc:GALLERY .
+kgdc:gal869 pgdc:id_piwigo 869 .
+kgdc:gal869 rdfs:label "Renaissance italienne"@fr .
+kgdc:gal869 pgdc:comment ""@fr .
+kgdc:gal869 a  kgdc:GALLERY .
+kgdc:gal868 pgdc:id_piwigo 868 .
+kgdc:gal868 rdfs:label "Rococo"@fr .
+kgdc:gal868 pgdc:comment ""@fr .
+kgdc:gal868 a  kgdc:GALLERY .
+kgdc:gal867 pgdc:id_piwigo 867 .
+kgdc:gal867 rdfs:label "Préraphaélisme"@fr .
+kgdc:gal867 pgdc:comment ""@fr .
+kgdc:gal867 a  kgdc:GALLERY .
+kgdc:gal866 pgdc:id_piwigo 866 .
+kgdc:gal866 rdfs:label "Art nouveau"@fr .
+kgdc:gal866 pgdc:comment ""@fr .
+kgdc:gal866 a  kgdc:GALLERY .
+kgdc:gal865 pgdc:id_piwigo 865 .
+kgdc:gal865 rdfs:label "Orientalisme"@fr .
+kgdc:gal865 pgdc:comment ""@fr .
+kgdc:gal865 a  kgdc:GALLERY .
+kgdc:gal864 pgdc:id_piwigo 864 .
+kgdc:gal864 rdfs:label "Maniérisme"@fr .
+kgdc:gal864 pgdc:comment ""@fr .
+kgdc:gal864 a  kgdc:GALLERY .
+kgdc:gal863 pgdc:id_piwigo 863 .
+kgdc:gal863 rdfs:label "Baroque"@fr .
+kgdc:gal863 pgdc:comment ""@fr .
+kgdc:gal863 a  kgdc:GALLERY .
+kgdc:gal862 pgdc:id_piwigo 862 .
+kgdc:gal862 rdfs:label "École vénitienne"@fr .
+kgdc:gal862 pgdc:comment ""@fr .
+kgdc:gal862 a  kgdc:GALLERY .
+kgdc:gal861 pgdc:id_piwigo 861 .
+kgdc:gal861 rdfs:label "Romantisme"@fr .
+kgdc:gal861 pgdc:comment ""@fr .
+kgdc:gal861 a  kgdc:GALLERY .
+kgdc:gal860 pgdc:id_piwigo 860 .
+kgdc:gal860 rdfs:label "Haute renaissance"@fr .
+kgdc:gal860 pgdc:comment ""@fr .
+kgdc:gal860 a  kgdc:GALLERY .
+kgdc:gal859 pgdc:id_piwigo 859 .
+kgdc:gal859 rdfs:label "Âge d'or de la peinture néerlandaise"@fr .
+kgdc:gal859 pgdc:comment ""@fr .
+kgdc:gal859 a  kgdc:GALLERY .
+kgdc:gal858 pgdc:id_piwigo 858 .
+kgdc:gal858 rdfs:label "Académisme"@fr .
+kgdc:gal858 pgdc:comment ""@fr .
+kgdc:gal858 a  kgdc:GALLERY .
+kgdc:gal857 pgdc:id_piwigo 857 .
+kgdc:gal857 rdfs:label "Primitif flamand"@fr .
+kgdc:gal857 pgdc:comment ""@fr .
+kgdc:gal857 a  kgdc:GALLERY .
+kgdc:gal855 pgdc:id_piwigo 855 .
+kgdc:gal855 rdfs:label "Impressionnisme"@fr .
+kgdc:gal855 pgdc:comment ""@fr .
+kgdc:gal855 a  kgdc:GALLERY .
+kgdc:gal852 pgdc:id_piwigo 852 .
+kgdc:gal852 rdfs:label "Galerie de tests"@fr .
+kgdc:gal852 pgdc:comment " .banniere-analyse {   display: flex;   align-items: center;   gap: 1em;   background: #f0f8ff;   border-left: 5px solid #007acc;   padding: 1em;   margin: 1.5em 0;   border-radius: 10px;   font-family: sans-serif;   flex-wrap: wrap; } .banniere-analyse-icon {   font-size: 2em;   color: #007acc; } .banniere-analyse-text {   flex: 1;   min-width: 200px; } .banniere-analyse-text a {   color: #007acc;   text-decoration: underline; } @media (max-width: 600px) {   .banniere-analyse {     flex-direction: column;     align-items: flex-start;   } }     Texte de test avec lien  "@fr .
+kgdc:gal852 a  kgdc:GALLERY .
+kgdc:gal841 pgdc:id_piwigo 841 .
+kgdc:gal841 rdfs:label "Galerie Joris Hoefnagel"@fr .
+kgdc:gal841 pgdc:comment ""@fr .
+kgdc:gal841 a  kgdc:GALLERY .
 kgdc:gal774 pgdc:id_piwigo 774 .
 kgdc:gal774 rdfs:label "Galerie Edward L. Loper"@fr .
 kgdc:gal774 pgdc:comment ""@fr .
 kgdc:gal774 a  kgdc:GALLERY .
-kgdc:gal773 pgdc:id_piwigo 773 .
-kgdc:gal773 rdfs:label "Galerie Karel Albert Schmidt"@fr .
-kgdc:gal773 pgdc:comment ""@fr .
-kgdc:gal773 a  kgdc:GALLERY .
-kgdc:gal770 pgdc:id_piwigo 770 .
-kgdc:gal770 rdfs:label "Galerie Vilhelm Hammershøi"@fr .
-kgdc:gal770 pgdc:comment ""@fr .
-kgdc:gal770 a  kgdc:GALLERY .
-kgdc:gal769 pgdc:id_piwigo 769 .
-kgdc:gal769 rdfs:label "Galerie Nicolai Abraham Abildgaard"@fr .
-kgdc:gal769 pgdc:comment ""@fr .
-kgdc:gal769 a  kgdc:GALLERY .
-kgdc:gal767 pgdc:id_piwigo 767 .
-kgdc:gal767 rdfs:label "Galerie Antonio Jacobsen"@fr .
-kgdc:gal767 pgdc:comment ""@fr .
-kgdc:gal767 a  kgdc:GALLERY .
-kgdc:gal766 pgdc:id_piwigo 766 .
-kgdc:gal766 rdfs:label "Galerie Fritz von Uhde"@fr .
-kgdc:gal766 pgdc:comment ""@fr .
-kgdc:gal766 a  kgdc:GALLERY .
-kgdc:gal765 pgdc:id_piwigo 765 .
-kgdc:gal765 rdfs:label "Galerie Jérôme Bosch"@fr .
-kgdc:gal765 pgdc:comment ""@fr .
-kgdc:gal765 a  kgdc:GALLERY .
-kgdc:gal764 pgdc:id_piwigo 764 .
-kgdc:gal764 rdfs:label "Galerie Dong Qichang"@fr .
-kgdc:gal764 pgdc:comment ""@fr .
-kgdc:gal764 a  kgdc:GALLERY .
-kgdc:gal760 pgdc:id_piwigo 760 .
-kgdc:gal760 rdfs:label "Galerie Thomas Stothard"@fr .
-kgdc:gal760 pgdc:comment ""@fr .
-kgdc:gal760 a  kgdc:GALLERY .
-kgdc:gal759 pgdc:id_piwigo 759 .
-kgdc:gal759 rdfs:label "Galerie Robert Brandard"@fr .
-kgdc:gal759 pgdc:comment ""@fr .
-kgdc:gal759 a  kgdc:GALLERY .
-kgdc:gal757 pgdc:id_piwigo 757 .
-kgdc:gal757 rdfs:label "Galerie Andrea del Sarto"@fr .
-kgdc:gal757 pgdc:comment ""@fr .
-kgdc:gal757 a  kgdc:GALLERY .
-kgdc:gal756 pgdc:id_piwigo 756 .
-kgdc:gal756 rdfs:label "Galerie Jan van Huysum"@fr .
-kgdc:gal756 pgdc:comment ""@fr .
-kgdc:gal756 a  kgdc:GALLERY .
-kgdc:gal755 pgdc:id_piwigo 755 .
-kgdc:gal755 rdfs:label "Galerie Daniel Seghers"@fr .
-kgdc:gal755 pgdc:comment ""@fr .
-kgdc:gal755 a  kgdc:GALLERY .
-kgdc:gal754 pgdc:id_piwigo 754 .
-kgdc:gal754 rdfs:label "Galerie Helene Schjerfbeck"@fr .
-kgdc:gal754 pgdc:comment ""@fr .
-kgdc:gal754 a  kgdc:GALLERY .
-kgdc:gal753 pgdc:id_piwigo 753 .
-kgdc:gal753 rdfs:label "Galerie Vilmos Aba-Novák"@fr .
-kgdc:gal753 pgdc:comment ""@fr .
-kgdc:gal753 a  kgdc:GALLERY .
-kgdc:gal751 pgdc:id_piwigo 751 .
-kgdc:gal751 rdfs:label "Galerie Dante Gabriel Rossetti"@fr .
-kgdc:gal751 pgdc:comment ""@fr .
-kgdc:gal751 a  kgdc:GALLERY .
-kgdc:gal750 pgdc:id_piwigo 750 .
-kgdc:gal750 rdfs:label "Galerie John Faber"@fr .
-kgdc:gal750 pgdc:comment ""@fr .
-kgdc:gal750 a  kgdc:GALLERY .
 kgdc:gal749 pgdc:id_piwigo 749 .
 kgdc:gal749 rdfs:label "Galerie William Trost Richards"@fr .
 kgdc:gal749 pgdc:comment ""@fr .
@@ -220,10 +448,6 @@ kgdc:gal731 pgdc:id_piwigo 731 .
 kgdc:gal731 rdfs:label "Galerie Bernard van Orley"@fr .
 kgdc:gal731 pgdc:comment ""@fr .
 kgdc:gal731 a  kgdc:GALLERY .
-kgdc:gal730 pgdc:id_piwigo 730 .
-kgdc:gal730 rdfs:label "Galerie Coppo di Marcovaldo"@fr .
-kgdc:gal730 pgdc:comment ""@fr .
-kgdc:gal730 a  kgdc:GALLERY .
 kgdc:gal728 pgdc:id_piwigo 728 .
 kgdc:gal728 rdfs:label "Galerie James William Giles"@fr .
 kgdc:gal728 pgdc:comment ""@fr .
@@ -276,14 +500,6 @@ kgdc:gal713 pgdc:id_piwigo 713 .
 kgdc:gal713 rdfs:label "Galerie Johannes Hubertus Leonardus de Haas"@fr .
 kgdc:gal713 pgdc:comment ""@fr .
 kgdc:gal713 a  kgdc:GALLERY .
-kgdc:gal711 pgdc:id_piwigo 711 .
-kgdc:gal711 rdfs:label "Galerie Marianne North"@fr .
-kgdc:gal711 pgdc:comment ""@fr .
-kgdc:gal711 a  kgdc:GALLERY .
-kgdc:gal709 pgdc:id_piwigo 709 .
-kgdc:gal709 rdfs:label "Galerie Ramon Casas"@fr .
-kgdc:gal709 pgdc:comment ""@fr .
-kgdc:gal709 a  kgdc:GALLERY .
 kgdc:gal707 pgdc:id_piwigo 707 .
 kgdc:gal707 rdfs:label "Galerie Richard Wilson"@fr .
 kgdc:gal707 pgdc:comment ""@fr .
@@ -304,10 +520,6 @@ kgdc:gal703 pgdc:id_piwigo 703 .
 kgdc:gal703 rdfs:label "Galerie John Thomas Smith"@fr .
 kgdc:gal703 pgdc:comment ""@fr .
 kgdc:gal703 a  kgdc:GALLERY .
-kgdc:gal702 pgdc:id_piwigo 702 .
-kgdc:gal702 rdfs:label "Galerie Hans Holbein l'Ancien"@fr .
-kgdc:gal702 pgdc:comment ""@fr .
-kgdc:gal702 a  kgdc:GALLERY .
 kgdc:gal699 pgdc:id_piwigo 699 .
 kgdc:gal699 rdfs:label "Galerie Quentin Metsys"@fr .
 kgdc:gal699 pgdc:comment ""@fr .
@@ -448,10 +660,6 @@ kgdc:gal649 pgdc:id_piwigo 649 .
 kgdc:gal649 rdfs:label "Galerie John Hoppner"@fr .
 kgdc:gal649 pgdc:comment ""@fr .
 kgdc:gal649 a  kgdc:GALLERY .
-kgdc:gal647 pgdc:id_piwigo 647 .
-kgdc:gal647 rdfs:label "Galerie Jan Miense Molenaer"@fr .
-kgdc:gal647 pgdc:comment ""@fr .
-kgdc:gal647 a  kgdc:GALLERY .
 kgdc:gal646 pgdc:id_piwigo 646 .
 kgdc:gal646 rdfs:label "Galerie Willem Witsen"@fr .
 kgdc:gal646 pgdc:comment ""@fr .
@@ -476,10 +684,6 @@ kgdc:gal640 pgdc:id_piwigo 640 .
 kgdc:gal640 rdfs:label "Galerie Jens Juel"@fr .
 kgdc:gal640 pgdc:comment ""@fr .
 kgdc:gal640 a  kgdc:GALLERY .
-kgdc:gal639 pgdc:id_piwigo 639 .
-kgdc:gal639 rdfs:label "Galerie Jan van Ravesteyn"@fr .
-kgdc:gal639 pgdc:comment ""@fr .
-kgdc:gal639 a  kgdc:GALLERY .
 kgdc:gal638 pgdc:id_piwigo 638 .
 kgdc:gal638 rdfs:label "Galerie Paul Raud"@fr .
 kgdc:gal638 pgdc:comment ""@fr .
@@ -580,14 +784,6 @@ kgdc:gal610 pgdc:id_piwigo 610 .
 kgdc:gal610 rdfs:label "Galerie Jan Fyt"@fr .
 kgdc:gal610 pgdc:comment ""@fr .
 kgdc:gal610 a  kgdc:GALLERY .
-kgdc:gal609 pgdc:id_piwigo 609 .
-kgdc:gal609 rdfs:label "Galerie John Varley"@fr .
-kgdc:gal609 pgdc:comment ""@fr .
-kgdc:gal609 a  kgdc:GALLERY .
-kgdc:gal608 pgdc:id_piwigo 608 .
-kgdc:gal608 rdfs:label "Galerie Edwin Landseer"@fr .
-kgdc:gal608 pgdc:comment ""@fr .
-kgdc:gal608 a  kgdc:GALLERY .
 kgdc:gal607 pgdc:id_piwigo 607 .
 kgdc:gal607 rdfs:label "Galerie Max Liebermann"@fr .
 kgdc:gal607 pgdc:comment ""@fr .
@@ -596,10 +792,6 @@ kgdc:gal606 pgdc:id_piwigo 606 .
 kgdc:gal606 rdfs:label "Galerie Adolph von Menzel"@fr .
 kgdc:gal606 pgdc:comment ""@fr .
 kgdc:gal606 a  kgdc:GALLERY .
-kgdc:gal605 pgdc:id_piwigo 605 .
-kgdc:gal605 rdfs:label "Galerie Moustafa Farroukh"@fr .
-kgdc:gal605 pgdc:comment ""@fr .
-kgdc:gal605 a  kgdc:GALLERY .
 kgdc:gal604 pgdc:id_piwigo 604 .
 kgdc:gal604 rdfs:label "Galerie Jan van der Heyden"@fr .
 kgdc:gal604 pgdc:comment ""@fr .
@@ -740,10 +932,6 @@ kgdc:gal529 pgdc:id_piwigo 529 .
 kgdc:gal529 rdfs:label "Galerie Arnold Böcklin"@fr .
 kgdc:gal529 pgdc:comment ""@fr .
 kgdc:gal529 a  kgdc:GALLERY .
-kgdc:gal528 pgdc:id_piwigo 528 .
-kgdc:gal528 rdfs:label "Galerie Anna Ancher"@fr .
-kgdc:gal528 pgdc:comment ""@fr .
-kgdc:gal528 a  kgdc:GALLERY .
 kgdc:gal527 pgdc:id_piwigo 527 .
 kgdc:gal527 rdfs:label "Galerie Hans Baldung"@fr .
 kgdc:gal527 pgdc:comment ""@fr .
@@ -800,10 +988,6 @@ kgdc:gal509 pgdc:id_piwigo 509 .
 kgdc:gal509 rdfs:label "Galerie Pieter Claesz"@fr .
 kgdc:gal509 pgdc:comment ""@fr .
 kgdc:gal509 a  kgdc:GALLERY .
-kgdc:gal508 pgdc:id_piwigo 508 .
-kgdc:gal508 rdfs:label "Galerie Wang Hui"@fr .
-kgdc:gal508 pgdc:comment ""@fr .
-kgdc:gal508 a  kgdc:GALLERY .
 kgdc:gal507 pgdc:id_piwigo 507 .
 kgdc:gal507 rdfs:label "Galerie Robert Wallis"@fr .
 kgdc:gal507 pgdc:comment ""@fr .
@@ -824,10 +1008,6 @@ kgdc:gal503 pgdc:id_piwigo 503 .
 kgdc:gal503 rdfs:label "Galerie David Young Cameron"@fr .
 kgdc:gal503 pgdc:comment ""@fr .
 kgdc:gal503 a  kgdc:GALLERY .
-kgdc:gal502 pgdc:id_piwigo 502 .
-kgdc:gal502 rdfs:label "Galerie Benjamin Haydon"@fr .
-kgdc:gal502 pgdc:comment ""@fr .
-kgdc:gal502 a  kgdc:GALLERY .
 kgdc:gal501 pgdc:id_piwigo 501 .
 kgdc:gal501 rdfs:label "Galerie Caspar Netscher"@fr .
 kgdc:gal501 pgdc:comment ""@fr .
@@ -1176,10 +1356,6 @@ kgdc:gal332 pgdc:id_piwigo 332 .
 kgdc:gal332 rdfs:label "Galerie James Abbott McNeill Whistler"@fr .
 kgdc:gal332 pgdc:comment ""@fr .
 kgdc:gal332 a  kgdc:GALLERY .
-kgdc:gal83 pgdc:id_piwigo 83 .
-kgdc:gal83 rdfs:label "Galerie par mouvement"@fr .
-kgdc:gal83 pgdc:comment ""@fr .
-kgdc:gal83 a  kgdc:GALLERY .
 kgdc:gal81 pgdc:id_piwigo 81 .
 kgdc:gal81 rdfs:label "Galeries par genres"@fr .
 kgdc:gal81 pgdc:comment ""@fr .
@@ -1424,10 +1600,118 @@ kgdc:gal834 pgdc:id_piwigo 834 .
 kgdc:gal834 rdfs:label "Galerie James Seymour"@fr .
 kgdc:gal834 pgdc:comment ""@fr .
 kgdc:gal834 a  kgdc:GALLERY .
+kgdc:gal790 pgdc:id_piwigo 790 .
+kgdc:gal790 rdfs:label "Galerie Abraham van Beijeren"@fr .
+kgdc:gal790 pgdc:comment ""@fr .
+kgdc:gal790 a  kgdc:GALLERY .
+kgdc:gal782 pgdc:id_piwigo 782 .
+kgdc:gal782 rdfs:label "Galerie David Allan"@fr .
+kgdc:gal782 pgdc:comment ""@fr .
+kgdc:gal782 a  kgdc:GALLERY .
+kgdc:gal777 pgdc:id_piwigo 777 .
+kgdc:gal777 rdfs:label "Galerie Anselm Feuerbach"@fr .
+kgdc:gal777 pgdc:comment ""@fr .
+kgdc:gal777 a  kgdc:GALLERY .
+kgdc:gal767 pgdc:id_piwigo 767 .
+kgdc:gal767 rdfs:label "Galerie Antonio Jacobsen"@fr .
+kgdc:gal767 pgdc:comment ""@fr .
+kgdc:gal767 a  kgdc:GALLERY .
+kgdc:gal754 pgdc:id_piwigo 754 .
+kgdc:gal754 rdfs:label "Galerie Helene Schjerfbeck"@fr .
+kgdc:gal754 pgdc:comment ""@fr .
+kgdc:gal754 a  kgdc:GALLERY .
+kgdc:gal753 pgdc:id_piwigo 753 .
+kgdc:gal753 rdfs:label "Galerie Vilmos Aba-Novák"@fr .
+kgdc:gal753 pgdc:comment ""@fr .
+kgdc:gal753 a  kgdc:GALLERY .
+kgdc:gal760 pgdc:id_piwigo 760 .
+kgdc:gal760 rdfs:label "Galerie Thomas Stothard"@fr .
+kgdc:gal760 pgdc:comment ""@fr .
+kgdc:gal760 a  kgdc:GALLERY .
+kgdc:gal764 pgdc:id_piwigo 764 .
+kgdc:gal764 rdfs:label "Galerie Dong Qichang"@fr .
+kgdc:gal764 pgdc:comment ""@fr .
+kgdc:gal764 a  kgdc:GALLERY .
+kgdc:gal757 pgdc:id_piwigo 757 .
+kgdc:gal757 rdfs:label "Galerie Andrea del Sarto"@fr .
+kgdc:gal757 pgdc:comment ""@fr .
+kgdc:gal757 a  kgdc:GALLERY .
+kgdc:gal755 pgdc:id_piwigo 755 .
+kgdc:gal755 rdfs:label "Galerie Daniel Seghers"@fr .
+kgdc:gal755 pgdc:comment ""@fr .
+kgdc:gal755 a  kgdc:GALLERY .
+kgdc:gal756 pgdc:id_piwigo 756 .
+kgdc:gal756 rdfs:label "Galerie Jan van Huysum"@fr .
+kgdc:gal756 pgdc:comment ""@fr .
+kgdc:gal756 a  kgdc:GALLERY .
+kgdc:gal765 pgdc:id_piwigo 765 .
+kgdc:gal765 rdfs:label "Galerie Jérôme Bosch"@fr .
+kgdc:gal765 pgdc:comment ""@fr .
+kgdc:gal765 a  kgdc:GALLERY .
+kgdc:gal766 pgdc:id_piwigo 766 .
+kgdc:gal766 rdfs:label "Galerie Fritz von Uhde"@fr .
+kgdc:gal766 pgdc:comment ""@fr .
+kgdc:gal766 a  kgdc:GALLERY .
+kgdc:gal775 pgdc:id_piwigo 775 .
+kgdc:gal775 rdfs:label "Galerie George Hayter"@fr .
+kgdc:gal775 pgdc:comment ""@fr .
+kgdc:gal775 a  kgdc:GALLERY .
+kgdc:gal769 pgdc:id_piwigo 769 .
+kgdc:gal769 rdfs:label "Galerie Nicolai Abraham Abildgaard"@fr .
+kgdc:gal769 pgdc:comment ""@fr .
+kgdc:gal769 a  kgdc:GALLERY .
+kgdc:gal770 pgdc:id_piwigo 770 .
+kgdc:gal770 rdfs:label "Galerie Vilhelm Hammershøi"@fr .
+kgdc:gal770 pgdc:comment ""@fr .
+kgdc:gal770 a  kgdc:GALLERY .
+kgdc:gal773 pgdc:id_piwigo 773 .
+kgdc:gal773 rdfs:label "Galerie Karel Albert Schmidt"@fr .
+kgdc:gal773 pgdc:comment ""@fr .
+kgdc:gal773 a  kgdc:GALLERY .
+kgdc:gal776 pgdc:id_piwigo 776 .
+kgdc:gal776 rdfs:label "Galerie Olga Rozanova"@fr .
+kgdc:gal776 pgdc:comment ""@fr .
+kgdc:gal776 a  kgdc:GALLERY .
+kgdc:gal778 pgdc:id_piwigo 778 .
+kgdc:gal778 rdfs:label "Galerie Gustave Cariot"@fr .
+kgdc:gal778 pgdc:comment ""@fr .
+kgdc:gal778 a  kgdc:GALLERY .
+kgdc:gal783 pgdc:id_piwigo 783 .
+kgdc:gal783 rdfs:label "Galerie Parmigianino"@fr .
+kgdc:gal783 pgdc:comment ""@fr .
+kgdc:gal783 a  kgdc:GALLERY .
+kgdc:gal709 pgdc:id_piwigo 709 .
+kgdc:gal709 rdfs:label "Galerie Ramon Casas"@fr .
+kgdc:gal709 pgdc:comment ""@fr .
+kgdc:gal709 a  kgdc:GALLERY .
+kgdc:gal779 pgdc:id_piwigo 779 .
+kgdc:gal779 rdfs:label "Galerie William Strang"@fr .
+kgdc:gal779 pgdc:comment ""@fr .
+kgdc:gal779 a  kgdc:GALLERY .
+kgdc:gal785 pgdc:id_piwigo 785 .
+kgdc:gal785 rdfs:label "Galerie Antoine Pesne"@fr .
+kgdc:gal785 pgdc:comment ""@fr .
+kgdc:gal785 a  kgdc:GALLERY .
+kgdc:gal786 pgdc:id_piwigo 786 .
+kgdc:gal786 rdfs:label "Galerie Jan Brueghel le Jeune"@fr .
+kgdc:gal786 pgdc:comment ""@fr .
+kgdc:gal786 a  kgdc:GALLERY .
 kgdc:gal832 pgdc:id_piwigo 832 .
 kgdc:gal832 rdfs:label "Galerie Artemisia Gentileschi"@fr .
 kgdc:gal832 pgdc:comment ""@fr .
 kgdc:gal832 a  kgdc:GALLERY .
+kgdc:gal791 pgdc:id_piwigo 791 .
+kgdc:gal791 rdfs:label "Galerie Ľudovít Čordák"@fr .
+kgdc:gal791 pgdc:comment ""@fr .
+kgdc:gal791 a  kgdc:GALLERY .
+kgdc:gal792 pgdc:id_piwigo 792 .
+kgdc:gal792 rdfs:label "Galerie Gérard de Lairesse"@fr .
+kgdc:gal792 pgdc:comment ""@fr .
+kgdc:gal792 a  kgdc:GALLERY .
+kgdc:gal793 pgdc:id_piwigo 793 .
+kgdc:gal793 rdfs:label "Galerie Johannes Flintoe"@fr .
+kgdc:gal793 pgdc:comment ""@fr .
+kgdc:gal793 a  kgdc:GALLERY .
 kgdc:gal802 pgdc:id_piwigo 802 .
 kgdc:gal802 rdfs:label "Galerie Frederic Leighton"@fr .
 kgdc:gal802 pgdc:comment ""@fr .
@@ -1556,6 +1840,10 @@ kgdc:gal816 pgdc:id_piwigo 816 .
 kgdc:gal816 rdfs:label "Galerie Charles André van Loo"@fr .
 kgdc:gal816 pgdc:comment ""@fr .
 kgdc:gal816 a  kgdc:GALLERY .
+kgdc:gal647 pgdc:id_piwigo 647 .
+kgdc:gal647 rdfs:label "Galerie Jan Miense Molenaer"@fr .
+kgdc:gal647 pgdc:comment ""@fr .
+kgdc:gal647 a  kgdc:GALLERY .
 kgdc:gal822 pgdc:id_piwigo 822 .
 kgdc:gal822 rdfs:label "Galerie Alessandro Allori"@fr .
 kgdc:gal822 pgdc:comment ""@fr .
@@ -1572,6 +1860,10 @@ kgdc:gal581 pgdc:id_piwigo 581 .
 kgdc:gal581 rdfs:label "Galerie Ants Laikmaa"@fr .
 kgdc:gal581 pgdc:comment ""@fr .
 kgdc:gal581 a  kgdc:GALLERY .
+kgdc:gal639 pgdc:id_piwigo 639 .
+kgdc:gal639 rdfs:label "Galerie Jan van Ravesteyn"@fr .
+kgdc:gal639 pgdc:comment ""@fr .
+kgdc:gal639 a  kgdc:GALLERY .
 kgdc:gal576 pgdc:id_piwigo 576 .
 kgdc:gal576 rdfs:label "Galerie John Raphael Smith"@fr .
 kgdc:gal576 pgdc:comment ""@fr .
