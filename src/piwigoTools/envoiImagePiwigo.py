@@ -5,7 +5,7 @@ import json
 import time
 
 def postImageToPiwigo(im, piwigoCategory=15, categoryName="portrait", cp=None):
-    # dans la version 2, il peut y avoir plusieurs images, je prend la première
+    # dans la version 2, il peut y avoir plusieurs images, je prends la première
     # il faudrait prendre la meilleure, de préférence sans le cadre
     if not cp: return None
     image_path = im["images"][0]
@@ -114,7 +114,7 @@ def getFilesList(dirToProcess):
     return filesList
 
 if __name__=="__main__":
-    dirToProcess = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\\fr\\fusion"
+    dirToProcess = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\\fr\\20250507"
     filesList = getFilesList(dirToProcess)
     for filepath in filesList:
         if not "listeAlbums" in filepath: continue
