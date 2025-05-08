@@ -4,6 +4,27 @@ import requests
 import tempfile
 import os
 
+def download_image_to_tempfile(url):
+    try:
+        # Envoyer une requête GET à l'URL de l'image
+        response = requests.get(url, stream=True)
+        response.raise_for_status()  # Vérifier si la requête a réussi
+
+        # Créer un fichier temporaire
+        temp_file = tempfile.NamedTemporaryFile(delete=False,
+                                                suffix=".jpg")  # Ajoutez une extension adaptée à l'image (ex: .jpg, .png)
+
+        # Écrire le contenu de l'image dans le fichier temporaire
+        with open(temp_file.name, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+
+        print(f"Image téléchargée avec succès dans : {temp_file.name}")
+        return temp_file.name  # Retourne le chemin du fichier temporaire
+    except requests.exceptions.RequestException as e:
+        print(f"Erreur lors du téléchargement de l'image : {e}")
+        return None
+
 class WPTools():
     def __init__(self, configPrivee):
         self.configPrivee = configPrivee
@@ -26,6 +47,31 @@ class WPTools():
             link = response[0]["link"]
         return link
 
+    def getWPPages(self, page_title=None, status="publish, draft, future", perPage=10, page=0):
+        api_url = f"{self.configPrivee.WORDPRESS_O2_API_URL}/pages"
+
+        # Paramètres de requête pour filtrer par titre de la page
+        params = {
+            # 'search': page_title,
+            'page': page,
+            'per_page': perPage,
+            'status': status,
+            "search_columns": "post_title",
+            "Authorization": "Bearer" + str({self.configPrivee.WORDPRESS_O2_PASSWORD_APP})
+        }
+        if page_title:
+            params["search"] = page_title
+        try:
+            # Effectuer la requête GET à l'API REST de WordPress
+            response = requests.get(self.api_url_get, params=params, auth=self.auth)
+            response.raise_for_status()  # Vérifie si la requête a réussi
+
+            pages = response.json()
+            return pages
+
+        except requests.exceptions.RequestException as e:
+            print(f"Erreur lors de la requête: {e}")
+            return None
 
     def getWPPageUrl(self, page_title, status="publish"):
         api_url = f"{self.configPrivee.WORDPRESS_O2_API_URL}/pages"
@@ -77,7 +123,7 @@ class WPTools():
             print(f"Erreur lors du téléchargement de l'image : {e}")
             return None
 
-    def upload_image(self, image_url, titre=None):
+    def upload_image_in_wp_media(self, image_url, titre=None):
         """Uploads an image to WordPress Media Library and returns the attachment ID."""
         temp_image_path = self.download_image_to_tempfile(image_url)
         if temp_image_path:
@@ -94,58 +140,49 @@ class WPTools():
                         image_id = response.json()["id"]
                         return image_id
                     else:
-                        print(f"Échec de l'envoi, code HTTP : {response.status_code}")
-                        print(f"Détails : {response.text}")
+                        # print(f"Échec de l'envoi, code HTTP : {response.status_code}")
+                        # print(f"Détails : {response.text}")
                         return None
                 os.remove(temp_image_path)
             except Exception as e:
-                print(f"Erreur lors de l'envoi de l'image : {e}")
+                # print(f"Erreur lors de l'envoi de l'image : {e}")
+                return None
         else:
             return None
 
+
     def set_featured_image(self, post_id, image_id):
         """Sets the uploaded image as the featured image of a post."""
-        api_url = f"{configPrivee.WORDPRESS_O2_API_URL}/posts/{post_id}?Authorization=Bearer{configPrivee.WORDPRESS_O2_PASSWORD_APP}"
+        api_url = f"{self.api_url_get}/{post_id}?Authorization=Bearer{self.api_password}"
+        username = self.api_username
+        password = self.api_password
         # Encode le nom d'utilisateur et le mot de passe en base64 pour l'authentification
-        credentials = f"{self.api_username}:{self.api_password}"
+        credentials = f"{username}:{password}"
         token = base64.b64encode(credentials.encode())
         headers = {
             "Authorization": f"Basic {token.decode('utf-8')}"
         }
         data = {"featured_media": image_id}
-        response = requests.post(api_url, json=data, auth=self.auth, headers=headers)
+        auth = (self.api_username, self.api_password)
+        response = requests.post(api_url, json=data, auth=auth, headers=headers)
         if response.status_code == 200:
-            return True
+            # print(f"Featured image set successfully for post ID: {post_id}")
+            pass
         else:
-            print(f"Failed to set featured image: {response.text}")
-        return False
+            # print(f"Failed to set featured image: {response.text}")
+            pass
 
     def sendImageAndSetItAsFeaturedImage(self, post_id, image_url):
-        """
-        This script helps automate image uploads and setting featured images via the WordPress REST API efficiently.
-        How the Code Works
-        Upload the Image: The upload_image function:
-        Downloads the image from the given URL.
-        Uploads it to the WordPress Media Library using the REST API.
-        Returns the attachment ID of the uploaded image if successful.
-        Set the Featured Image: The set_featured_image function:
-
-        Uses the attachment ID from the upload step to set the featured image for the specified post.
-        Makes a POST request to update the post's featured_media field.
-        Authentication: The script uses Basic Authentication with an Application Password. You can generate one from your WordPress profile under Users → Your Profile → Application Passwords.
-
-        Important Notes
-        SSL: If your WordPress site uses HTTPS and there's a certificate error, you may need to set verify=False in the requests call, but this is not recommended for production due to security risks.
-        """
-        image_id = self.upload_image(image_url)
+        image_id = self.upload_image_in_wp_media(image_url)
         if image_id:
             self.set_featured_image(post_id, image_id)
         return image_id
 
 if __name__ == '__main__':
     # Exemple d'utilisation
-    import configPrivee
     wpt = WPTools(configPrivee)
+    pages = wpt.getWPPages()
+
     page_titles = [ "Test SVG", "Test bidon", "Où trouver Carolus-Duran dans Wikidata, suivez le guide", "Carolus"]
     # page_titles = [ "Où trouver Carolus-Duran dans Wikidata, suivez le guide" ]
 
