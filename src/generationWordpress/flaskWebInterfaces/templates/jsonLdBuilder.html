@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wikidata → JSON-LD</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    textarea { width: 100%; height: 400px; font-family: monospace; background: #f0f0f0; }
+    input[type="text"] { padding: 5px; font-size: 1em; width: 300px; }
+    input[type="submit"] { padding: 5px 10px; font-size: 1em; }
+  </style>
+</head>
+<body>
+  <h1>Convertisseur Wikidata → JSON-LD</h1>
+  <form method="post">
+    <label for="qid">Entrez un QID Wikidata (ex: Q296, Q23413...)</label><br>
+    <input type="text" name="qid" id="qid" value="{{ qid }}" required>
+    <input type="submit" value="Générer">
+  </form>
+
+  {% if result %}
+    <h2>Résultat JSON-LD :</h2>
+    <textarea readonly>{{ result | tojson(indent=2) }}</textarea>
+  {% endif %}
+</body>
+</html>
