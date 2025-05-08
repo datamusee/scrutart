@@ -4,8 +4,8 @@ from memorize import Memorize
 from src.generationWordpress.WikimediaAccess import WikimediaAccess
 from src.generationWordpress.entitiesList import entitiesList
 from src.generationWordpress.tools.scrutartJsonToTtl import ScrutartJsonToTtl
-from piwigoCategoriesCreations import createCategoryInPiwigo
-
+# from piwigoCategoriesCreations import createCategoryInPiwigo
+import CPiwigoManager
 
 @Memorize
 def getCreatorName(qid, query):
@@ -24,6 +24,10 @@ with open(entityFilePath, encoding="UTF-8") as fListTypes:
     filterEntities = [elmt["entity"].replace("http://www.wikidata.org/entity/", "") for elmt in
                       types]  # ligne à enlever si je ne veux pas tout traiter et tenir compte du filtre
 
+filterEntities = [
+    "Q237911" #  Louise Abbéma
+]
+
 if __name__ == "__main__":
     entityClassTargets = [ "CREATORS", "GENRES", "MOVEMENTS"]
     parserCmd = argparse.ArgumentParser(description='Process some entities, to build a list of Piwigo gategories associated with path of images lists.')
@@ -35,7 +39,7 @@ if __name__ == "__main__":
     # exemple: "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data/fr/20250312/listeAlbumsCreateurs.json"
     # entityTypeTarget = "CREATORS"
     entityClassTarget = args.entityType
-    # entityClassTarget = "CREATORS"
+    entityClassTarget = "CREATORS"
     if not entityClassTarget in entityClassTargets:
         print("Choisir la classe cible dans les classes possibles définies dans entityClassTargets")
         exit(0)
@@ -130,10 +134,11 @@ if __name__ == "__main__":
                             # print("---->PB: ", gLabel, galeriePossibleName, cat["id"])
                             pass
                 pass
+    pwg = CPiwigoManager.CPiwigoManager()
     if entityClassTarget=="CREATORS":
         for crea, creaVal in creators.items():
             if not "piwigoCategory" in creaVal: # si le créateur n'a pas de catégorie piwigo associée, la créer
-                res = createCategoryInPiwigo(crea, entityClassTarget)
+                res = pwg.piwigo_create_category(crea, entityClassTarget)
                 if res:
                     compactedName = crea.replace(" ", "")
                     qid = creaval["qid"],
