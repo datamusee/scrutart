@@ -2,8 +2,6 @@
 import json
 
 import src.generationWordpress.WikimediaAccess as WikimediaAccess
-from piwigoCategoriesState import getCategoriesInPiwigo
-from piwigoCategoriesCreations import createCategoryInPiwigo
 import os
 import time
 from repairCategoryImagePiwigo import getCategoryId, getImageId
@@ -49,7 +47,8 @@ def getImageMovements(uri, lang="fr"):
 def createOrFindCategoriesInPiwigo(selectedCategories):
     existingCategories = {}
     scat = selectedCategories.copy()
-    res = getCategoriesInPiwigo()
+    pwg = CPiwigoManager()
+    res = pwg.piwigo_image_get_categories()
     if res and ("stat" in res) and (res["stat"]=="ok") and ("result" in res) and ("categories" in res["result"]):
         for cat in res["result"]["categories"]:
             label = cat["name"]
@@ -62,7 +61,7 @@ def createOrFindCategoriesInPiwigo(selectedCategories):
             print("----------> ", catlabel, selectedCategories[catlabel])
         else:
             print(f"""Création de la catégorie {catlabel}""")
-            rep = createCategoryInPiwigo(catlabel, "MOVEMENTS")
+            rep = pwg.piwigo_create_category(catlabel, "MOVEMENTS")
             if (rep.status_code==200):
                 newcat = rep.json()
                 selectedCategories[catlabel]["catid"] = catdesc["id"]
@@ -85,7 +84,7 @@ def selectTargetCategories():
               ?s wdt:P135 ?movement
             }
             group by ?movement
-            having (?c>50)
+            having (?c>10)
             limit 1000
           }
           SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, [AUTO_LANGUAGE],en". }
@@ -147,8 +146,9 @@ if __name__ == "__main__":
     postedImagesList = buildAlreadyPostedImagesList()
     # affecter les catégories à chacune de ces images
     pwg = CPiwigoManager()
-    trigger = "15953" # permet de sauter toutes les images dont l'id est donné ici
-    active = False
+    trigger = "4837" # 14577 # permet de sauter toutes les images dont l'id est donné ici, sinon False
+    active = True if not trigger else False
+    nb=0
     for image, imageDesc in postedImagesList.items():
         image_id = imageDesc["imageId"]
         if str(image_id)==str(trigger):
@@ -156,15 +156,17 @@ if __name__ == "__main__":
         else:
             if active:
                 imageCats = getImageMovements(image)
+                nb=nb+1
+                print(f"{nb} {image_id} ", end="")
                 for cat, catDesc in imageCats.items():
                     mvt = catDesc["movementLabel"]["value"].capitalize()
                     if mvt in selectedTargetCategories:
                         print(f"""Introduction dans le mouvement {mvt}""")
                         time.sleep(0.1)
                         category_id = selectedTargetCategories[mvt]["catid"]
-                        crt_cats = pwg.imageGetCategories(image_id)
+                        crt_cats = pwg.piwigo_image_get_categories(image_id)
                         if image_id and (not crt_cats or (not str(category_id) in crt_cats)):
-                            cat = pwg.imageSetCategory(image_id, category_id)
+                            cat = pwg.piwigo_image_set_category(image_id, category_id)
                             print(f"""catégorie {category_id} pour l'image {image_id}""")
                     else:
                         print(f"""Mouvement {mvt} à vérifier""")
