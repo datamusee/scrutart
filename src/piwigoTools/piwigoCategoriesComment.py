@@ -18,7 +18,7 @@ if __name__ == "__main__":
         for cat in listcat:
             if (int(cat["c"]) > seuil):
                 catid = json.loads(cat["galerie"])["result"]["id"]
-                res, comment = pwg.piwigo_comment_category(cat["entityLabel"], catid, cat["c"])
+                res, comment = pwg.piwigo_comment_category(cat["entityLabel"], catid)
                 if res:
                     cat["idpiwigo"] = catid
                     cat["comment"] = comment
