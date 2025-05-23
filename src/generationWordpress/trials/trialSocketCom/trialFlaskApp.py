@@ -39,7 +39,7 @@ def handle_disconnect():
             del clients[client_id]
             leave_room(client_id)
             break
-    print(f"Client disconnected: {disconnected_client}")
+        print(f"Client disconnected: {disconnected_client}")
 
 @app.route('/send_message', methods=['POST'])
 def send_message():

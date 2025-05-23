@@ -1,11 +1,12 @@
+import logging
 import hashlib
 import string
 from dataclasses import dataclass, field
 from typing import Optional
 import datetime
 import requests
-from src.generationWordpress.tools.scrutartJsonToTtl import ScrutartJsonToTtl
 from src.piwigoTools.CPiwigoManager import CPiwigoManager
+import SPARQLWrapper as sw
 
 
 @dataclass
@@ -46,7 +47,7 @@ class DCWikidataEntity:
             lang = langlabel.lang if langlabel.lang else "fr"
             ttl += f'{mainEntity} rdfs:label """{label}"""@{lang}.\n'
         for wtype in self.wtypes:
-            ttl += f"{mainEntity} wdt:P31 wd:{wtype} .\n"
+            ttl += f"{mainEntity} wdt:P31 {wtype} .\n"
         for count in self.counts:
             countId = f"{self.qid}_icount_reif" # reification compte avec date du compte
             ttl += f"{mainEntity} pgdc:instance_count kgdc:{countId} .\n\n"
@@ -62,7 +63,7 @@ class DCWikidataCreator(DCWikidataEntity):
     def __post_init__(self):
         if self.wtypes is None:
             self.wtypes = []
-        self.wtypes.append("Q3391743") # artiste visuel ou artiste visuelle
+        self.wtypes.append("wd:Q3391743") # artiste visuel ou artiste visuelle
         if self.qid is None:
             self.qid = DCWikidataEntity.qidSimple(self.uri)
 
@@ -134,12 +135,17 @@ class DCPiwigoArtwork(DCWikidataArtwork):
     galery_ids: Optional[list[str]] = field(default_factory=list)
     image_id: Optional[str] = None
 
-    def toTTL(self):
+    def __post_init__(self):
+        super().__post_init__()
+        if self.galery_ids is None:
+            self.galery_ids = []
+
+    def toTtl(self):
         ttl = super().toTtl()
         if self.image_id:
             ttl += f"""wd:{self.qid} pgdc:piwigo_image "{self.image_id}".\n"""
         for gal in self.galery_ids:
-            galUri = self.buildGalleryUri(gal)
+            galUri =  f"kgdc:gal{gal}"
             ttl += f"""wd:{self.qid} pgdc:piwigo_gallery {galUri}.\n"""
         return ttl
 
@@ -150,7 +156,8 @@ class CScrutartState():
     # https://www.wikidata.org/wiki/Q1028181 artiste peintre -> 1319
     # https://www.wikidata.org/wiki/Q838948 oeuvre d'art -> 6556
     # prévoir: au moins un type et un label pour chaque entité
-    def __init__(self, urlread="http://127.0.0.1:3030/scrutartState/query", urlwrite=None):
+    def __init__(self, urlread="http://127.0.0.1:3030/scrutartStateTrial/query",
+                    urlwrite="http://127.0.0.1:3030/scrutartStateTrial/update"):
         self.prefixes = {
             "wdt": "http://www.wikidata.org/prop/direct/",
             "wd": "http://www.wikidata.org/entity/",
@@ -165,12 +172,39 @@ class CScrutartState():
             "wdt:P170": {"fr": "créateur", "en": "creator"},
             "wdt:P18": {"fr": "image", "en": "image"}
         }
-        self.sparqlEndpointUpdate = "http://127.0.0.1:3030/scrutartStateTrial/update"
+        self.sparqlEndpointUpdate = urlwrite
+        self.sparqlEndpointQuery = urlread
+        check = self.checkIfSparqlScrutartStateEndpointIsAvailable(urlread)
         pass
+
+    def checkIfSparqlScrutartStateEndpointIsAvailable(self, urlendpoint=None):
+        if urlendpoint==None:
+            urlendpoint=self.sparqlEndpointQuery
+        query = """select distinct ?s            where {              ?s ?p ?o            } LIMIT 1        """
+        sparqlScrutartWrapper = sw.SPARQLWrapper2(urlendpoint)  # implicit JSON format
+        sparqlScrutartWrapper.setQuery(query)
+        try:
+            res = sparqlScrutartWrapper.queryAndConvert()
+            return True if res and res.bindings else False
+        except Exception as e:
+            print(
+                    f"le serveur scrutart state (au 12/2/2025, {urlendpoint} (D:\Outils\Semantic/apache-jena-fuseki-4.8.0/fuseki-server) doit avoir été lancé avant de lancer cette application")
+            exit(7777)
+            return False
+
+    def sparqlQuery(self, query):
+        sparqlFusekiWrapper = sw.SPARQLWrapper2(self.sparqlEndpointQuery)  # implicit JSON format
+        sparqlFusekiWrapper.setQuery(query)
+        try:
+            res = sparqlFusekiWrapper.queryAndConvert()
+            return res
+        except Exception as e:
+            logging.debug(e)
+        return None # à affiner
 
     def sendTtlToSparqlEndpoint(self, ttl, sparqlEndpointUpdate=None):
         updateEndpoint = sparqlEndpointUpdate if sparqlEndpointUpdate else self.sparqlEndpointUpdate
-        # TODO intégrer le code proposé par chatgpt pour l'envoi de ttl à un endpoint
+        # TODO intégrer le code proposé par chatgpt pour sécuriser l'endpoint
         access_token = "TOTOTATATUTU"
         sparql_update = ""
         sparql_update += "".join([f"""\nprefix {pref}: <{value}>""" for pref, value in self.prefixes.items()])
@@ -189,28 +223,34 @@ class CScrutartState():
             # "Authorization": f"Bearer {access_token}",
             # "Content-Type": "application/sparql-update"
         }
-        response = requests.post(self.sparqlEndpointUpdate, data=sparql_update)#, headers=headers)
-
+        response = requests.post(updateEndpoint, data=sparql_update.encode(encoding="utf-8"))#, headers=headers)
         if response.status_code in (200, 204):
-            print("✅ Données RDF envoyées avec token d’accès.")
+            print(f"✅ Données RDF envoyées : {ttl} .")
         else:
             print(f"❌ Erreur {response.status_code} : {response.text}")
-
         return response
 
-    def getGraphs(self):  # devrait être dans une classe parent
+    def getGraphs(self):  # devrait être dans une classe parrent
+        query = """select distinct ?graph { graph ?graph { ?s ?p [] }}"""
+        res = self.sparqlQuery(query)
         return {}
 
     def getArtworks(self, limit=10, offset=0):
-        # type P31 http://www.wikidata.org/prop/direct/P31
         # https://www.wikidata.org/wiki/Q838948 oeuvre d'art
         # prévoir d'autres types
+        query = """select distinct ?graph {  
+                ?artwork <http://www.wikidata.org/prop/direct/P31>  <https://www.wikidata.org/wiki/Q838948> 
+            } """ + f"""limit {limit}""" if limit>0 else "" + f""" offset {offset}"""
+        res = self.sparqlQuery(query)
         return {}
 
     def getCreators(self, limit=10, offset=0):
-        # type P31 http://www.wikidata.org/prop/direct/P31
         # https://www.wikidata.org/wiki/Q1028181 artiste peintre
         # prévoir d'autres types
+        query = """select distinct ?graph {  
+                ?creator <http://www.wikidata.org/prop/direct/P31>  <https://www.wikidata.org/wiki/Q1028181> 
+            } """ + f"""limit {limit}""" if limit>0 else "" + f""" offset {offset}"""
+        res = self.sparqlQuery(query)
         return {}
 
     def getInstitutions(self, limit=10, offset=0):
@@ -220,9 +260,12 @@ class CScrutartState():
         return {}
 
     def getGenres(self, limit=10, offset=0):
-        # type P31 http://www.wikidata.org/prop/direct/P31
         # https://www.wikidata.org/wiki/Q1792379 genre artistique
         # prévoir d'autres types
+        query = """select distinct ?graph {  
+                ?creator <http://www.wikidata.org/prop/direct/P31>  <https://www.wikidata.org/wiki/Q1792379> 
+            } """ + f"""limit {limit}""" if limit>0 else "" + f""" offset {offset}"""
+        res = self.sparqlQuery(query)
         return {}
 
     def getGalleries(self, limit=10, offset=0):
@@ -239,21 +282,29 @@ class CScrutartState():
                     gal_ids = [
                         CPiwigoManager.getCategoryId(jsonArtworkDescription["post_result"])
                     ]
+                if ("image" in jsonArtworkDescription) and (type(jsonArtworkDescription["image"]) is list):
+                    images = [DCImage(url=im) for im in jsonArtworkDescription.get("image", None)]
+                else:  # supposed string
+                    images = [DCImage(url=jsonArtworkDescription.get("image", None))]
+                if ("images" in jsonArtworkDescription) and (type(jsonArtworkDescription["images"]) is list):
+                    images = [DCImage(url=im) for im in jsonArtworkDescription.get("images", None)]
+                sparql= src.get("sparql", None) if src else None
                 artwork = DCPiwigoArtwork(
-                    uriWork=jsonArtworkDescription["uri"],
+                    uri=jsonArtworkDescription["uri"],
                     posted=jsonArtworkDescription.get("posted", False),
-                    creators=[DCWikidataCreator(creatorQid=jsonArtworkDescription.get("createur", None),
-                                                creatorLabels=[
+                    creators=[DCWikidataCreator(uri=jsonArtworkDescription.get("createur", None),
+                                                labels=[
                                                     DCLangLabel(lang="fr",
                                                                 label=jsonArtworkDescription.get("createurLabel", None))])
                               ],
-                    titres=DCLangLabel(lang="fr", label=jsonArtworkDescription.get("titre_fr", None)),
-                    images=[DCImage(url=im) for im in jsonArtworkDescription.get("images", None)],
-                    sparqlSrc=src.get("sparql", None),
+                    labels=[DCLangLabel(lang="fr", label=jsonArtworkDescription.get("titre_fr", None))],
+                    images= images,
                     image_id=im_id,
                     galery_ids=gal_ids,
-                    artworkType=artworkType
+                    sparqlSrc=sparql,
+                    wtypes=[ artworkType ]
                 )
+                pass
         except Exception as e:
             # remplacer le print par un logging
             print(f"""{jsonArtworkDescription} probably doesn't contain necessary field""")
@@ -261,7 +312,7 @@ class CScrutartState():
         return artwork
 
     def putArtwork(self, artwork):
-        ttl = artwork.toTTL()
+        ttl = artwork.toTtl()
         response = self.sendTtlToSparqlEndpoint(ttl)
         return response
 
@@ -289,3 +340,29 @@ class CScrutartState():
     def getScrutartAssociatedImages(self, qid=None):
         # liste de: { source, url image source, id piwigo, id media wp, titre }
         return {}
+
+    #####################
+    ########
+    # methods to inforce quality of the graph
+    ########
+    #####################
+    def forceGalleriesType(self):
+        # object of the property https://kg.grains-de-culture.fr/prop/piwigo_gallery must be a gallery
+        # and a gallery must have the type (P31) Q1007870 (galerie d'art)
+        updatequery = """insert { ?gal <http://www.wikidata.org/prop/direct/P31> <https://www.wikidata.org/entity/Q1007870> }
+                        where {  [] <https://kg.grains-de-culture.fr/prop/piwigo_gallery> ?gal } 
+            """
+        response = requests.post(self.sparqlEndpointUpdate, data=updatequery.encode(encoding="utf-8"))#, headers=headers)
+        if response.status_code in (200, 204):
+            print(f"Garantie que les objets galerie sont typés")
+        else:
+            print(f"❌ Erreur {response.status_code} : {response.text}")
+
+    def applyQualityRules(self):
+        rules = [
+            { "method": self.forceGalleriesType() }
+        ]
+        for r in rules:
+            r["method"]()
+
+

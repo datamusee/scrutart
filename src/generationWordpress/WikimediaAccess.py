@@ -18,7 +18,6 @@ sio = None
 baseurl = "http://127.0.0.1:6000"
 #baseurl = "https://webapimanager.grains-de-culture.fr"
 
-
 def createManager(targetUrls, bearer=None):
     data = {"api_urls": targetUrls }
     headers = {"Authorization": f"Bearer {bearer}", "Content-Type": "application/json"} if bearer else {}
@@ -63,7 +62,10 @@ class SocketClient:
         # Set up event handlers
         @self.sio.event
         def connect():
-            print("Connected to server.")
+            try:
+                print("Connected to server.")
+            except Exception as e:
+                print(f"Failed to connect in _setup_event_handlers")
 
         @self.sio.event
         def disconnect():
@@ -278,11 +280,11 @@ class WikimediaAccess:
             prefix wd: <http://www.wikidata.org/entity/> 
             prefix wdt: <http://www.wikidata.org/prop/direct/> 
             prefix pgdc: <https://kg.grains-de-culture.fr/prop/> 
-            select distinct ?galery
+            select distinct ?gallery
             where {
               ?s wdt:P18 ?urlImage;
                  wdt:P170 wd:__QID__;
-                 pgdc:piwigo_gallery ?galery;
+                 pgdc:piwigo_gallery ?gallery;
                  rdfs:label ?title .
                 ?s pgdc:piwigo_image ?piwigoId .
                   filter not exists { ?s pgdc:piwigo_gallery <https://kg.grains-de-culture.fr/entity/galNone> }
@@ -309,9 +311,9 @@ class WikimediaAccess:
             # res = requests.get(endpointScrutartState, headers=headers, json=data)
             res = sparqlScrutartWrapper.queryAndConvert()
             if res and res.bindings:
-                piwigoGaleryId = res.bindings[0]["galery"].value.replace("https://kg.grains-de-culture.fr/entity/gal", "")
+                piwigoGalleryId = res.bindings[0]["gallery"].value.replace("https://kg.grains-de-culture.fr/entity/gal", "")
                 galleryName = "Galerie"
-                galleryLink = f"https://galeries.grains-de-culture.fr/index.php?/category/{piwigoGaleryId}"
+                galleryLink = f"https://galeries.grains-de-culture.fr/index.php?/category/{piwigoGalleryId}"
                 link = f"""<a href="{galleryLink}">{galleryName}</a>"""
             else:
                 None

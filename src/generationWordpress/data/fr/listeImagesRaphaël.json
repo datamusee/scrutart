@@ -1,1 +1,2028 @@
-{"sparql": "\n        SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {\n          VALUES ?createur {\n            wd:Q5597\n          }\n          ?uri wdt:P31 wd:Q3305213;\n            wdt:P170 ?createur;\n            wdt:P18 ?image\n               .\n          ?createur rdfs:label ?createurLabel.\n          FILTER((LANG(?createurLabel)) = \"fr\")\n          ?uri rdfs:label ?titre_fr .\n          FILTER(((LANG(?titre_fr)) = \"fr\")||((LANG(?titre_fr)) = \"en\"))\n        } \n    ", "liste": [{"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q131690612", "titre_fr": "Monteluce Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Giulio%20Romano%20-%20Coronation%20of%20the%20Virgin%20%28Madonna%20of%20Monteluce%29%20-%20WGA09613.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q125544380", "titre_fr": "Mary Magdalene", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Madeleine%20par%20Rapha%C3%ABl.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q125544380", "titre_fr": "Marie Madeleine", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Madeleine%20par%20Rapha%C3%ABl.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q131433288", "titre_fr": "dead Christ", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Anonimo%20umbro%20sec.%20XV%20XVI%20-%20Cristo%20in%20piet%C3%A0.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q125936872", "titre_fr": "Angel from Baronci Altarpiece", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Angel%20from%20Baronci%20Altarpiece%20by%20Raphael%20%281501%2C%20Brescia%29%20in%20Pushkin%20museum%20%282016%29%20by%20shakko%2001.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q121689728", "titre_fr": "Cupid and The Three Graces", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%2C%20Loggia%20di%20Psiche%2C%20Villa%20Farnesina%2C%20Rome%2009.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q121689728", "titre_fr": "Les trois Grâces", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%2C%20Loggia%20di%20Psiche%2C%20Villa%20Farnesina%2C%20Rome%2009.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q560057", "titre_fr": "Terranuova Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Madonna%20Terranuova%20%28Berlin%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q560057", "titre_fr": "La Madone Terranuova", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Madonna%20Terranuova%20%28Berlin%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q555821", "titre_fr": "Self-portrait", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q555821", "titre_fr": "Autoportrait", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q552040", "titre_fr": "Vision of a Knight", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/RAFAEL%20-%20Sue%C3%B1o%20del%20Caballero%20%28National%20Gallery%20de%20Londres%2C%201504.%20%C3%93leo%20sobre%20tabla%2C%2017%20x%2017%20cm%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q552040", "titre_fr": "Le Songe du chevalier", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/RAFAEL%20-%20Sue%C3%B1o%20del%20Caballero%20%28National%20Gallery%20de%20Londres%2C%201504.%20%C3%93leo%20sobre%20tabla%2C%2017%20x%2017%20cm%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q323188", "titre_fr": "La Madone Diotallevi", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20Diotalevi%20by%20Raffael%20%28Gem%C3%A4ldegalerie%2C%20Berlin%29%209465.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q153441", "titre_fr": "La fornarina", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20La%20Fornarina%20%28ca.%201519-1520%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q153441", "titre_fr": "La Fornarina", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20La%20Fornarina%20%28ca.%201519-1520%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q327780", "titre_fr": "Colonna Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Madonna%20Colonna%20-Gem%C3%A4ldegalerie%20Berlin.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q327780", "titre_fr": "La Madone Colonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Madonna%20Colonna%20-Gem%C3%A4ldegalerie%20Berlin.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q323188", "titre_fr": "Madonna Diotallevi", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20Diotalevi%20by%20Raffael%20%28Gem%C3%A4ldegalerie%2C%20Berlin%29%209465.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q328079", "titre_fr": "Sistine Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Sistine%20Madonna%20-%20Google%20Arts%20%26%20Culture.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q254923", "titre_fr": "Alba Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/RaphaelAlba.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q254923", "titre_fr": "La Madone d'Alba", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/RaphaelAlba.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q546977", "titre_fr": "Portrait of Baldassare Castiglione", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baldassare%20Castiglione%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q427390", "titre_fr": "La Sainte Famille", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20La%20Perla.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q427390", "titre_fr": "The Holy Family", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20La%20Perla.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q521680", "titre_fr": "Perla di Modena", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Ritratto%20di%20donna.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q521680", "titre_fr": "Perle de Modène", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Ritratto%20di%20donna.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q328079", "titre_fr": "La Madone Sixtine", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Sistine%20Madonna%20-%20Google%20Arts%20%26%20Culture.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q546977", "titre_fr": "Portrait de Baldassare Castiglione", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baldassare%20Castiglione%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q428274", "titre_fr": "Portrait of Tommaso Inghirami, called Fedra", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Tommaso%20Inghirami%20%28by%20Raphael%29%20-%20type%202.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q428274", "titre_fr": "Portrait de Tommaso Inghirami, dit Fedra", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Tommaso%20Inghirami%20%28by%20Raphael%29%20-%20type%202.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q538243", "titre_fr": "Holy Family with Saint Elizabeth and the infant St. John", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Petite%20Sainte%20Famille%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20605.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q538243", "titre_fr": "La Petite Sainte Famille", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Petite%20Sainte%20Famille%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20605.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q594470", "titre_fr": "St. Michael Vanquishing Satan", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Grand%20Saint%20Michel%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q677682", "titre_fr": "Resurrection of Christ", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20ressureicaocristo01.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q677682", "titre_fr": "La Résurrection du Christ", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20ressureicaocristo01.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q602813", "titre_fr": "Solly Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/1502%20Raffael%20Madonna%20Solly%20anagoria.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q602813", "titre_fr": "La Madone Solly", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/1502%20Raffael%20Madonna%20Solly%20anagoria.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q919294", "titre_fr": "Madonna and Child (The Conestabile Madonna)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Madonna%20Connestabile.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q919294", "titre_fr": "La Madone Connestabile", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Madonna%20Connestabile.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q919861", "titre_fr": "Portrait of a Young Woman", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20043.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q598913", "titre_fr": "Mond Crucifixion", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/CrocefissioneRaffaello.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q598913", "titre_fr": "La Crucifixion Mond", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/CrocefissioneRaffaello.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q594470", "titre_fr": "Saint Michel terrassant le démon", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Grand%20Saint%20Michel%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3223805", "titre_fr": "Le Jugement de Pâris", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marcantonio%20Raimondi%20-%20Giudizio%20di%20Paride.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3223805", "titre_fr": "The Judgement of Paris", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marcantonio%20Raimondi%20-%20Giudizio%20di%20Paride.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3013751", "titre_fr": "Portrait of Guidobaldo da Montefeltro", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Guidobaldo%20da%20Montefeltro%20-%20WGA18653.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3013751", "titre_fr": "Portrait de Guidobaldo Ier de Montefeltro", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Guidobaldo%20da%20Montefeltro%20-%20WGA18653.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3212679", "titre_fr": "The Holy Family With a Palm Tree", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20The%20Holy%20Family%20with%20a%20Palm%20Tree.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3212679", "titre_fr": "La Sainte Famille au palmier", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20The%20Holy%20Family%20with%20a%20Palm%20Tree.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3212684", "titre_fr": "The Holy Family", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Holy%20Family%20below%20the%20Oak.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3027582", "titre_fr": "God the Father Blessing among the Angels", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dieu%20le%20P%C3%A8re%20b%C3%A9nissant%20parmi%20les%20anges%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%2048.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3027582", "titre_fr": "Dieu le Père bénissant parmi les anges", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dieu%20le%20P%C3%A8re%20b%C3%A9nissant%20parmi%20les%20anges%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%2048.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3210258", "titre_fr": "The Madonna and Child (The Mackintosh Madonna)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Mackintosh%20Madonna.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3210258", "titre_fr": "La Madone Mackintosh", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Mackintosh%20Madonna.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3210272", "titre_fr": "Madonna del Passeggio", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20del%20Passeggio.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3210272", "titre_fr": "La Madonna del Passeggio", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20del%20Passeggio.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399384", "titre_fr": "Portrait of Emilia Pia da Montefeltro", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20ritratto%20di%20maria%20pia%20da%20montefeltro.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399384", "titre_fr": "Portrait d'Emilia Pia de Montefeltro", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20ritratto%20di%20maria%20pia%20da%20montefeltro.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399388", "titre_fr": "Portrait of Dona Isabel de Requesens", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Jeanne%20d%27Aragon%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399400", "titre_fr": "Portrait of a Man", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Portrait%20of%20a%20Man%20%28L.M.%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399400", "titre_fr": "Portrait d'un homme", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Portrait%20of%20a%20Man%20%28L.M.%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3213759", "titre_fr": "La Madonna de Bogota", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20La%20Madona%20de%20Bogota.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3213759", "titre_fr": "La Vierge de Bogota", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20La%20Madona%20de%20Bogota.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399388", "titre_fr": "Portrait d'Isabelle de Requesens, vice-reine de Naples", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Jeanne%20d%27Aragon%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3212684", "titre_fr": "La Sainte Famille sous un chêne", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Holy%20Family%20below%20the%20Oak.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3010339", "titre_fr": "Ceres", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A9r%C3%A8s%2C%20dite%20aussi%20L%27Abondance%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20657.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3010339", "titre_fr": "Cérès", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A9r%C3%A8s%2C%20dite%20aussi%20L%27Abondance%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20657.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3212681", "titre_fr": "The Holy Family with Saint John the Baptist", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20100.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3212681", "titre_fr": "La Sainte Famille avec saint Jean-Baptiste", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20100.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1634134", "titre_fr": "Madonna of the Candelabra", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Workshop%20of%20Raphael%20-%20Madonna%20of%20the%20Candelabra%20-%20Walters%2037484.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1634134", "titre_fr": "La Vierge aux candélabres", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Workshop%20of%20Raphael%20-%20Madonna%20of%20the%20Candelabra%20-%20Walters%2037484.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1986584", "titre_fr": "The Holy Family with a Lamb", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20015.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1245388", "titre_fr": "La Madone aux œillets", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20of%20the%20Pinks.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1778000", "titre_fr": "Baronci Altarpiece", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20%28da%29%2C%20copia%20settecentesca%20della%20pala%20baronci%2C%20pinacoteca%20di%20citt%C3%A0%20di%20castello.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1778000", "titre_fr": "retable Baronci", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20%28da%29%2C%20copia%20settecentesca%20della%20pala%20baronci%2C%20pinacoteca%20di%20citt%C3%A0%20di%20castello.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1986584", "titre_fr": "La Sainte Famille à l'agneau", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20015.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1986597", "titre_fr": "Madonna d'Orleans", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20La%20Madone%20de%20la%20maison%20d%27Orl%C3%A9ans%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1986597", "titre_fr": "La Madone d'Orléans", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20La%20Madone%20de%20la%20maison%20d%27Orl%C3%A9ans%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2030685", "titre_fr": "The Marriage of the Virgin", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20-%20Spozalizio%20-%20Web%20Gallery%20of%20Art.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2030685", "titre_fr": "Le Mariage de la Vierge", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20-%20Spozalizio%20-%20Web%20Gallery%20of%20Art.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q103838699", "titre_fr": "Portrait of Tommaso Inghirami", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Tommaso%20Inghirami%2C%20Boston.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q77897131", "titre_fr": "The Holy Family with Saint John", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Holy%20Family%20with%20Saint%20John%20.PNG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q63110871", "titre_fr": "St. Eusebius Resurrecting Three People", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20miracolo%20di%20sant%27eusebio%20da%20cremona%2C%201502-03%2C%2002.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q63110871", "titre_fr": "Le miracle de saint Eusèbe de Crémone", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20miracolo%20di%20sant%27eusebio%20da%20cremona%2C%201502-03%2C%2002.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q103838699", "titre_fr": "Tommaso Inghirami", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Tommaso%20Inghirami%2C%20Boston.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q107436442", "titre_fr": "John the Baptist in the wilderness", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20%28Nachfolger%29%20-%20Johannes%20der%20T%C3%A4ufer%20in%20der%20W%C3%BCste%20-%20242%20-%20Gem%C3%A4ldegalerie.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q77926299", "titre_fr": "The Healing of the Lame Man", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Healing%20of%20the%20Lame%20Man%20P1804.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q111645124", "titre_fr": "Baptism of St. Augustinus", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20Raffael%20%28Perugino-Schule%29%20%281483-1520%29%20-%20Ambrosius%20tauft%20den%20Heiligen%20Augustin%20%28Die%20Taufe%20des%20Heiligen%20Augustinus%20durch%20den%20Heiligen%20Ambrosius%29%20-%201960%20-%20F%C3%BChrermuseum.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q27883548", "titre_fr": "Madonna della Seggiola (Madonna of the Armchair)", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20della%20Seggiola%20%28Madonna%20of%20the%20Armchair%29%20-%201895-1-2%20-%20Auckland%20Art%20Gallery.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q110831269", "titre_fr": "Venus and Jupiter", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%2C%20Loggia%20di%20Psiche%2C%20Villa%20Farnesina%2C%20Rome%2011.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q110831269", "titre_fr": "Vénus et Jupiter", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%2C%20Loggia%20di%20Psiche%2C%20Villa%20Farnesina%2C%20Rome%2011.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q116286717", "titre_fr": "The Annunciation", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Annunciation%20%28Oddi%20altar%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q116286717", "titre_fr": "L'Annonciation", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Annunciation%20%28Oddi%20altar%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q77927440", "titre_fr": "The Blinding of Elymas", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Blinding%20of%20Elymas%20P1805.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q64788403", "titre_fr": "Portrait of Pope Julius II", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20and%20Workshop%20-%20Portrait%20of%20Pope%20Julius%20II%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q103823905", "titre_fr": "Saint Catherine of Alexandria", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%2C%20Santa%20Caterina%2001.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q103823905", "titre_fr": "Saint Catherine of Alexandria", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%2C%20Specchiatura%20marmorizzata%20e%20scritta.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q103823905", "titre_fr": "Sainte Catherine d'Alexandrie", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%2C%20Santa%20Caterina%2001.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q103823905", "titre_fr": "Sainte Catherine d'Alexandrie", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%2C%20Specchiatura%20marmorizzata%20e%20scritta.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q111645125", "titre_fr": "Hall: St. Augustinus as pater speaking to twelve men", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20Raffael%20%28Perugino-Schule%29%20%281483-1520%29%20-%20Disputation%20des%20Heiligen%20Augustin%20-%201961%20-%20F%C3%BChrermuseum.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q107329307", "titre_fr": "Raffaello Sanzio - Le martyre de Sainte-Cécile", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Narbonne%29%20Le%20martyre%20de%20Sainte-C%C3%A9cile%20-%20Raffaello%20Sanzio%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20Narbonne.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q107329307", "titre_fr": "Le martyre de Sainte-Cécile", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Narbonne%29%20Le%20martyre%20de%20Sainte-C%C3%A9cile%20-%20Raffaello%20Sanzio%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20Narbonne.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q79774208", "titre_fr": "Portrait of a Young Man", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Young%20Man%2C%20attributed%20to%20Raphael%20Sanzio%2C%20c.%201510%2C%20oil%20on%20canvas%20transferred%20from%20panel%20-%20Hyde%20Collection%20-%20Glens%20Falls%2C%20NY%20-%2020180224%20122528.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q79774208", "titre_fr": "Portrait d'un jeune homme", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Young%20Man%2C%20attributed%20to%20Raphael%20Sanzio%2C%20c.%201510%2C%20oil%20on%20canvas%20transferred%20from%20panel%20-%20Hyde%20Collection%20-%20Glens%20Falls%2C%20NY%20-%2020180224%20122528.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q74089447", "titre_fr": "St. Jerome Punishing the Heretic Sabinian", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20St.%20Jerome%20Punishing%20the%20Heretic%20Sabinian.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q64788403", "titre_fr": "Portrait du pape Jules II", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20and%20Workshop%20-%20Portrait%20of%20Pope%20Julius%20II%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2283808", "titre_fr": "Esterhazy Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Madonna%20and%20Child%20with%20the%20Infant%20Saint%20John%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2283808", "titre_fr": "La Madone Esterházy", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Madonna%20and%20Child%20with%20the%20Infant%20Saint%20John%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2165279", "titre_fr": "Saint Catherine of Alexandria", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20020.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2165279", "titre_fr": "Sainte Catherine d'Alexandrie", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20020.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2052275", "titre_fr": "Madonna dell'Impannata", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20dell%E2%80%99Impannata%2C%20by%20Raphael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2052275", "titre_fr": "La Vierge de l'Impannata", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20dell%E2%80%99Impannata%2C%20by%20Raphael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2275653", "titre_fr": "Self-portrait with a friend", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Self-portrait%20with%20a%20friend%20-%20Google%20Art%20project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2275653", "titre_fr": "Portrait de l'artiste avec un ami", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Self-portrait%20with%20a%20friend%20-%20Google%20Art%20project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2276546", "titre_fr": "La donna gravida", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael-LaDonnaGravida%281505-1506%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2276546", "titre_fr": "La donna gravida", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael-LaDonnaGravida%281505-1506%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2035209", "titre_fr": "Madonna del Granduca", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madona%20del%20gran%20duque%2C%20por%20Rafael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2035209", "titre_fr": "La Madone du Grand-Duc", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madona%20del%20gran%20duque%2C%20por%20Rafael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2269330", "titre_fr": "Madonna della tenda", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20-%20Madonna%20della%20Tenda%20%28Alte%20Pinakothek%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2269330", "titre_fr": "La Vierge au rideau", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20-%20Madonna%20della%20Tenda%20%28Alte%20Pinakothek%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q948034", "titre_fr": "La velata", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20velada%2C%20por%20Rafael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q948034", "titre_fr": "La donna velata", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20velada%2C%20por%20Rafael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1103801", "titre_fr": "The Ecstasy of Saint Cecilia", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bologna%20Pinacoteca%20Nazionale%20-%20Rafa%C3%ABl%20Santi%20%281483-1520%29%20-%20Heilige%20Cecilia%20in%20extase%20met%20Paulus%2C%20Johannes%20%28evangelist%29%2C%20Augustinus%20en%20Maria%20Magdalena%20-%2026-04-2012%209-13-18.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q966681", "titre_fr": "La Vierge à la chaise", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20della%20seggiola.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q966681", "titre_fr": "Madonna della Seggiola", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20della%20seggiola.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1134281", "titre_fr": "Ezekiel's Vision", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20-%20Visione%20di%20Ezechiele.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1134281", "titre_fr": "La Vision d'Ézéchiel", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20-%20Visione%20di%20Ezechiele.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1131153", "titre_fr": "Christ Blessing", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/CristoRaffaello.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1131153", "titre_fr": "Le Christ bénissant", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/CristoRaffaello.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1245388", "titre_fr": "Madonna of the Pinks", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20of%20the%20Pinks.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q919861", "titre_fr": "La Muta", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20043.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q1103801", "titre_fr": "L'Extase de sainte Cécile", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bologna%20Pinacoteca%20Nazionale%20-%20Rafa%C3%ABl%20Santi%20%281483-1520%29%20-%20Heilige%20Cecilia%20in%20extase%20met%20Paulus%2C%20Johannes%20%28evangelist%29%2C%20Augustinus%20en%20Maria%20Magdalena%20-%2026-04-2012%209-13-18.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2420918", "titre_fr": "Madonna of the Rose", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Madonna%20della%20Rosa%20%28Prado%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2420918", "titre_fr": "La Vierge à la rose", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Madonna%20della%20Rosa%20%28Prado%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2422889", "titre_fr": "Portrait of a Young Man", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20missing.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2422889", "titre_fr": "Portrait de jeune homme", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20missing.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2467082", "titre_fr": "Visitation", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Visitaci%C3%B3n%20de%20Rafael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2467082", "titre_fr": "La Visitation", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Visitaci%C3%B3n%20de%20Rafael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2427320", "titre_fr": "La Vierge de Lorette", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20La%20Madone%20de%20Lorette%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2444277", "titre_fr": "Portrait de jeune homme", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Portrait%20of%20Pietro%20Bembo%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2444277", "titre_fr": "Portrait of Pietro Bembo", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Portrait%20of%20Pietro%20Bembo%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2427320", "titre_fr": "Madonna of Loreto", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20La%20Madone%20de%20Lorette%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2452858", "titre_fr": "Madonna del Prato", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20in%20the%20Meadow%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2452858", "titre_fr": "La Madone à la prairie", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20in%20the%20Meadow%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3842585", "titre_fr": "Von der Ropp Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Von%20der%20Ropp%20Madonna.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3842585", "titre_fr": "Vierge et l'Enfant avec saints Jérôme et François", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Von%20der%20Ropp%20Madonna.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3863236", "titre_fr": "The Death of Ananias", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Arazzi%20di%20raffaello%2C%20cartone%2004.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3941955", "titre_fr": "Burning bush", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanza%20di%20eliodoro%2C%20volta%2003%20roveto%20ardente.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3863236", "titre_fr": "La Mort d'Ananie", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Arazzi%20di%20raffaello%2C%20cartone%2004.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3769195", "titre_fr": "Judgement of Solomon", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2008%20giudizio%20di%20salomone.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3842605", "titre_fr": "Madonna of Divine Love", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20del%20Divino%20Amore%2C%20Raffaello%20Sanzio.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3687196", "titre_fr": "Christ's Charge to Peter", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%26A%20-%20Raphael%2C%20Christ%27s%20Charge%20to%20Peter%20%281515%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3733689", "titre_fr": "God the Father and the Virgin Mary", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20God%20the%20Father%20and%20the%20Virgin%20Mary.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3921896", "titre_fr": "Astronomy", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2006%20primo%20motore.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3842391", "titre_fr": "Bridgewater Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20Bridgewater.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3842391", "titre_fr": "La Madone Bridgewater", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20Bridgewater.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3925594", "titre_fr": "The Conversion of the Proconsul", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%26A%20-%20Raphael%2C%20The%20Conversion%20of%20the%20Proconsul%20%281515%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3906946", "titre_fr": "Poetry", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2003%20poesia.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3910086", "titre_fr": "Saint John the Baptist Preaching", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Saint%20John%20the%20Baptist%20Preaching.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3658723", "titre_fr": "Charity", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20pala%20baglioni%2C%20carit%C3%A0.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3842604", "titre_fr": "Madonna of the Baldacchino", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20del%20Baldacchino.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3842604", "titre_fr": "La Madone au baldaquin", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20del%20Baldacchino.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3842605", "titre_fr": "La Madone de l'Amour divin", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20del%20Divino%20Amore%2C%20Raffaello%20Sanzio.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3733771", "titre_fr": "Philosophy", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2002%2C%20filosofia.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3910088", "titre_fr": "St Paul Preaching at Athens", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20St%20Paul%20Preaching%20at%20Athens%20c.1515-6.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3740794", "titre_fr": "Faith", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20pala%20baglioni%2C%20fede.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3778388", "titre_fr": "The Healing of the Lame Man", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20guarigione%20dello%20storpio.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3771745", "titre_fr": "Justice", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2005%20giustizia.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2467141", "titre_fr": "Holy Family of Francis I", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Sainte%20Famille%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20604.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2467141", "titre_fr": "La Sainte Famille, dit La Grande Sainte Famille de François Ier", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Sainte%20Famille%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20604.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2500226", "titre_fr": "The Deposition", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20pala%20baglioni%2C%20deposizione.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2500226", "titre_fr": "Déposition Borghèse", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20pala%20baglioni%2C%20deposizione.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2528106", "titre_fr": "Portrait of Bindo Altoviti", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Ritratto%20di%20Bindo%20Altoviti.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2503581", "titre_fr": "Garvagh Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Aldobrandini%20Madonna.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2503581", "titre_fr": "La Madone Aldobrandini", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Aldobrandini%20Madonna.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2515309", "titre_fr": "Portrait of Agnolo Doni", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Doni%27s%20portrait%20paintings%20by%20Raffaello%20Sanzio.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2515309", "titre_fr": "Portrait d'Agnolo Doni", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Doni%27s%20portrait%20paintings%20by%20Raffaello%20Sanzio.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2528106", "titre_fr": "Portrait de Bindo Altoviti", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Ritratto%20di%20Bindo%20Altoviti.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2607050", "titre_fr": "Small Cowper Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Madonna%20Cowper.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2607050", "titre_fr": "La Petite Madone Cowper", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Madonna%20Cowper.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2535482", "titre_fr": "Portrait of Andrea Navagero and Agostino Beazzano", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Double%20Raphael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2535482", "titre_fr": "Double Portrait d'Andrea Navagero et Agostino Beazzano", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Double%20Raphael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2535486", "titre_fr": "Tempi Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tempi%20Madonna%20-%20Raphael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2535486", "titre_fr": "La Vierge Tempi", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tempi%20Madonna%20-%20Raphael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2535563", "titre_fr": "Portrait of a Cardinal", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Retrato%20de%20um%20Cardeal.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2529918", "titre_fr": "Saint George and the Dragon", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/P1080746%20Louvre%20Rap%C4%A5ael%20St%20Georges%20luttant%20avec%20le%20dragon%20INV%20609%20rwk.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2529918", "titre_fr": "Saint Georges et le Dragon", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/P1080746%20Louvre%20Rap%C4%A5ael%20St%20Georges%20luttant%20avec%20le%20dragon%20INV%20609%20rwk.JPG"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2535563", "titre_fr": "Portrait d'un cardinal", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Retrato%20de%20um%20Cardeal.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2607055", "titre_fr": "Portrait of Maddalena Doni", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ritratto%20di%20maddalena%20strozzi.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2607055", "titre_fr": "Portrait de Maddalena Doni", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ritratto%20di%20maddalena%20strozzi.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2343778", "titre_fr": "La Belle Jardinière", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Vierge%20%C3%A0%20l%27Enfant%20avec%20le%20petit%20saint%20Jean%20Baptiste%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20602%20%3B%20MR%20433.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2343778", "titre_fr": "La Belle Jardinière", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Vierge%20%C3%A0%20l%27Enfant%20avec%20le%20petit%20saint%20Jean%20Baptiste%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20602%20%3B%20MR%20433.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2344396", "titre_fr": "La Dame à la licorne", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lady%20with%20unicorn%20by%20Rafael%20Santi.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2344357", "titre_fr": "Oddi Altarpiece", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/PalaOddiRaffaello.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2344357", "titre_fr": "Retable Oddi", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/PalaOddiRaffaello.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2343939", "titre_fr": "Saint Sebastian", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20021.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2343939", "titre_fr": "Saint Sébastien", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20021.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2344396", "titre_fr": "Young Woman with Unicorn", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lady%20with%20unicorn%20by%20Rafael%20Santi.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2310025", "titre_fr": "Sainte Marguerite", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sainte%20Marguerite%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2310025", "titre_fr": "Saint Margaret", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sainte%20Marguerite%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2629419", "titre_fr": "La Vierge à l'Enfant et saint Joseph", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20with%20Beardless%20St.%20Joseph.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2627028", "titre_fr": "Portrait of Elisabetta Gonzaga", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Elisabetta%20Gonzaga%2C%20Duchess%20of%20Urbino%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence%20FXD.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2627028", "titre_fr": "Portrait d'Elisabetta Gonzaga", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Elisabetta%20Gonzaga%2C%20Duchess%20of%20Urbino%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence%20FXD.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2629419", "titre_fr": "Madonna with Beardless Saint Joseph", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20with%20Beardless%20St.%20Joseph.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2629134", "titre_fr": "Madonna and Child with the Book", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20Pasadena.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2629134", "titre_fr": "La Madone Pasadena", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20Pasadena.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2629715", "titre_fr": "Portrait of a Man", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Portrait%20of%20a%20man%20cat14.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2629715", "titre_fr": "Portrait d'homme", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Portrait%20of%20a%20man%20cat14.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2610729", "titre_fr": "Portrait du pape Léon X", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Pope%20Leo%20X%20and%20his%20cousins%2C%20cardinals%20Giulio%20de%27%20Medici%20and%20Luigi%20de%27%20Rossi%20%28by%20Raphael%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2610709", "titre_fr": "Madonna of Foligno", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20di%20Foligno%20%28Raphael%29%20September%202015-1a.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2610709", "titre_fr": "La Vierge de Foligno", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20di%20Foligno%20%28Raphael%29%20September%202015-1a.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2607072", "titre_fr": "Portrait of Perugino", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Retrato%20de%20Pietro%20Perugino.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2607072", "titre_fr": "Portrait du Pérugin", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Retrato%20de%20Pietro%20Perugino.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2610729", "titre_fr": "Portrait of Leo X", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Pope%20Leo%20X%20and%20his%20cousins%2C%20cardinals%20Giulio%20de%27%20Medici%20and%20Luigi%20de%27%20Rossi%20%28by%20Raphael%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2622161", "titre_fr": "Saint George and the Dragon", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Saint%20George%20and%20the%20Dragon%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2622161", "titre_fr": "Saint Georges et le Dragon", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Saint%20George%20and%20the%20Dragon%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2607065", "titre_fr": "Niccolini-Cowper Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Grande%20madonna%20cowper.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2607065", "titre_fr": "La Grande Madone Cowper", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Grande%20madonna%20cowper.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399492", "titre_fr": "Portrait of Cardinal Bibbiena", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20%28Urbino%201483%20%E2%80%93%20Roma%201520%29%20-%20Ritratto%20del%20Cardinale%20Bibbiena%20-%20158%20-%20Galleria%20Palatina.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399492", "titre_fr": "Portrait du cardinal Bibbiena", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20%28Urbino%201483%20%E2%80%93%20Roma%201520%29%20-%20Ritratto%20del%20Cardinale%20Bibbiena%20-%20158%20-%20Galleria%20Palatina.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3463871", "titre_fr": "Saint Jean-Baptiste", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20the%20Baptist%20in%20the%20wilderness%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Tribuna%20degli%20Uffizi%2C%20Florence.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3616854", "titre_fr": "Angel Holding a Phylactery", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Angelo%202%20%28frammento%20pala%20Baronci%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3463874", "titre_fr": "Saint Jean-Baptiste dans le désert désignant la croix de la Passion", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sainte%20Jean-Baptiste%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3428030", "titre_fr": "Retable Baglioni", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rekonstruktion%20%27Pala%20Baglioni%27.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3428030", "titre_fr": "Pala Baglioni", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rekonstruktion%20%27Pala%20Baglioni%27.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399403", "titre_fr": "Portrait of a Young Man", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Ritratto%20di%20un%20giovane%20uomo%20%281518-19%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399403", "titre_fr": "Portrait d'un jeune homme", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Ritratto%20di%20un%20giovane%20uomo%20%281518-19%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3464523", "titre_fr": "Sainte Marguerite", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20gen.%20Raffael%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Hl.%20Margarete%20-%20GG%20171%20-%20Kunsthistorisches%20Museum.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3463871", "titre_fr": "Saint John the Baptist as a Boy", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20the%20Baptist%20in%20the%20wilderness%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Tribuna%20degli%20Uffizi%2C%20Florence.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3464523", "titre_fr": "Saint Margaret and the Dragon", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20gen.%20Raffael%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Hl.%20Margarete%20-%20GG%20171%20-%20Kunsthistorisches%20Museum.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399434", "titre_fr": "Portrait of Lorenzo di Medici, Duke of Urbino", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Lorenzo%20di%20Medici.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3399434", "titre_fr": "Portrait de Laurent de Médicis, duc d'Urbino", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Lorenzo%20di%20Medici.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3620832", "titre_fr": "Apparition of God to Noah", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanza%20di%20eliodoro%2C%20volta%2005%20apparizione%20di%20dio%20a%20no%C3%A8.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3498200", "titre_fr": "Standard of the Holy Trinity", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/BandieraRV.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3498200", "titre_fr": "Stendardo della Santissima Trinità", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/BandieraRV.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3463874", "titre_fr": "Saint John the Baptist in the Wilderness", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sainte%20Jean-Baptiste%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3616854", "titre_fr": "Ange tenant un phylactère", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Angelo%202%20%28frammento%20pala%20Baronci%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3620697", "titre_fr": "Apollo and Marsyas", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsyas%20in%20chains.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3616853", "titre_fr": "Angel", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Angelo%201%20%28frammento%20pala%20Baronci%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3616853", "titre_fr": "Ange", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Angelo%201%20%28frammento%20pala%20Baronci%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2713823", "titre_fr": "Portrait of a Young Man with an Apple", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20%28Urbino%201483%20-%20Roma%201520%29%20-%20Ritratto%20di%20giovane%20con%20pomo%20-%208760%20-%20Uffizi%20Gallery.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2713823", "titre_fr": "Le Jeune Homme à la pomme", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20%28Urbino%201483%20-%20Roma%201520%29%20-%20Ritratto%20di%20giovane%20con%20pomo%20-%208760%20-%20Uffizi%20Gallery.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2664637", "titre_fr": "Christ Falling on the Way to Calvary", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Christ%20Falling%20on%20the%20Way%20to%20Calvary%20-%20Raphael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2713671", "titre_fr": "Canigiani Holy Family", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Sacra%20Famiglia%20Canigiani%20%28Alte%20Pinakothek%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2713671", "titre_fr": "La Sainte Famille Canigiani", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Sacra%20Famiglia%20Canigiani%20%28Alte%20Pinakothek%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2713620", "titre_fr": "Ansidei Madonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/PalaAnsidei.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2713620", "titre_fr": "Retable Ansidei", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/PalaAnsidei.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2631335", "titre_fr": "Madonna with the Fish", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Sacra%20Famiglia%20con%20Rafael%2C%20Tobia%20e%20San%20Girolamo%2C%20o%20Vergine%20del%20pesce.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2631335", "titre_fr": "La Sainte Famille avec Raphaël, Tobias et saint Jérôme", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Sacra%20Famiglia%20con%20Rafael%2C%20Tobia%20e%20San%20Girolamo%2C%20o%20Vergine%20del%20pesce.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2635552", "titre_fr": "Portrait of Cardinal Alessandro Farnese", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Alessandro%20Farnese.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2635552", "titre_fr": "Portrait du cardinal Alessandro Farnese", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Alessandro%20Farnese.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2664637", "titre_fr": "Le Portement de Croix", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Christ%20Falling%20on%20the%20Way%20to%20Calvary%20-%20Raphael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q27034683", "titre_fr": "Lamentation over the Dead Christ", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafaello%20Sanzio%20-%20Piet%C3%A0%2C%20c.%201503-5.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q27033728", "titre_fr": "Madonna and Child Enthroned with Saints", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20and%20Child%20Enthroned%20with%20Saints.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q27033728", "titre_fr": "Retable Colonna", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20and%20Child%20Enthroned%20with%20Saints.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q23929146", "titre_fr": "Saint Anthony of Padua", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Saint%20Anthony%20of%20Padua%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q20557290", "titre_fr": "Virgin and Child with Young Saint John the Baptist", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%28Raffaello%20Sanzio%20or%20Santi%29%20-%20Virgin%20and%20Child%20with%20Young%20Saint%20John%20the%20Baptist%20-%2076.422%20-%20Museum%20of%20Fine%20Arts.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3966501", "titre_fr": "Hope", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20pala%20baglioni%2C%20speranza.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q26705837", "titre_fr": "The Procession to Calvary", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20The%20Procession%20to%20Calvary.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q20557479", "titre_fr": "Saint Sebastian", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%28Raffaello%20Sanzio%20or%20Santi%29%20-%20Saint%20Sebastian%20-%2006.120%20-%20Museum%20of%20Fine%20Arts.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q11918714", "titre_fr": "Portrait of Pope Julius II", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pope%20Julius%20II.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q20557413", "titre_fr": "The Transfiguration of Christ", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%28Raffaello%20Sanzio%20or%20Santi%29%20-%20The%20Transfiguration%20of%20Christ%20-%2090.74%20-%20Museum%20of%20Fine%20Arts.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q26693039", "titre_fr": "Portrait of a Young Man", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%281483-1520%29%20%28imitator%20of%29%20-%20Portrait%20of%20a%20Young%20Man%20-%20NG2510%20-%20National%20Gallery.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q26693039", "titre_fr": "Portrait de jeune homme", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%281483-1520%29%20%28imitator%20of%29%20-%20Portrait%20of%20a%20Young%20Man%20-%20NG2510%20-%20National%20Gallery.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q20355399", "titre_fr": "St Cecilia", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20St%20Cecilia%20-%20KMSst457%20-%20Statens%20Museum%20for%20Kunst.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q20268553", "titre_fr": "Virgin and Child with the Infant St John", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Virgin%20and%20Child%20with%20the%20Infant%20St%20John%20-%20KMSst193%20-%20Statens%20Museum%20for%20Kunst.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3944652", "titre_fr": "Sacrifice of Isaac", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanza%20di%20eliodoro%2C%20volta%2002%20sacrificio%20di%20isacco.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3944652", "titre_fr": "Le Sacrifice d'Isaac", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanza%20di%20eliodoro%2C%20volta%2002%20sacrificio%20di%20isacco.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q11918714", "titre_fr": "Portrait du pape Jules II", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pope%20Julius%20II.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3944654", "titre_fr": "The Sacrifice at Lystra", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%26A%20-%20Raphael%2C%20The%20Sacrifice%20at%20Lystra%20%281515%29.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q19516146", "titre_fr": "Portrait of Pope Julius II", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Pope%20Julius%20II%20della%20Rovere%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q19516146", "titre_fr": "Pape Jules II", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Pope%20Julius%20II%20della%20Rovere%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3983944", "titre_fr": "Theology", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2004%20teologia.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q23929176", "titre_fr": "Saint Francis of Assisi", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Saint%20Francis%20of%20Assisi%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q19911609", "titre_fr": "Le Christ au jardin des Oliviers", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Agony%20in%20the%20Garden%20MET%20DP136373.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q19911609", "titre_fr": "The Agony in the Garden", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Agony%20in%20the%20Garden%20MET%20DP136373.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q9561272", "titre_fr": "Abraham and the three men", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Loggia%20di%20raffaello%2C%2004%2C%2003.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q20425450", "titre_fr": "The Adoration of the Kings", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Adoration%20of%20the%20Kings%20-%20KMSsp3%20-%20Statens%20Museum%20for%20Kunst.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q3951391", "titre_fr": "Jacob's dream of the ladder to heaven", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanza%20di%20eliodoro%2C%20volta%2004%20scala%20di%20giacobbe.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q20557352", "titre_fr": "The Three Graces", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%28Raffaello%20Sanzio%20or%20Santi%29%20-%20The%20Three%20Graces%20-%2084.561%20-%20Museum%20of%20Fine%20Arts.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2344505", "titre_fr": "Madonna of the Goldfinch", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20of%20the%20Goldfinch%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2344505", "titre_fr": "La Vierge au chardonneret", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20of%20the%20Goldfinch%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2415259", "titre_fr": "Saint Michael Vanquishing Satan", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/St%20Michael%20Raphael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2415259", "titre_fr": "Saint Michel et le Dragon", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/St%20Michael%20Raphael.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2344437", "titre_fr": "Transfiguration", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Transfigurazione%20%28Raffaello%29%20September%202015-1a.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2344437", "titre_fr": "La Transfiguration", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Transfigurazione%20%28Raffaello%29%20September%202015-1a.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2360329", "titre_fr": "Les Trois Grâces", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20Les%20Trois%20Gr%C3%A2ces%20-%20Google%20Art%20Project.jpg"}, {"createur": "http://www.wikidata.org/entity/Q5597", "createurLabel": "Raphaël", "uri": "http://www.wikidata.org/entity/Q2360329", "titre_fr": "Three Graces", "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20Les%20Trois%20Gr%C3%A2ces%20-%20Google%20Art%20Project.jpg"}]}
+{
+  "sparql": "\n        SELECT DISTINCT ?uri ?createur ?createurLabel ?image ?titre_fr WHERE {\n          VALUES ?createur {\n            wd:Q5597\n          }\n          ?uri wdt:P31 wd:Q3305213;\n            wdt:P170 ?createur;\n            wdt:P18 ?image\n               .\n          ?createur rdfs:label ?createurLabel.\n          FILTER((LANG(?createurLabel)) = \"fr\")\n          ?uri rdfs:label ?titre_fr .\n          FILTER(((LANG(?titre_fr)) = \"fr\")||((LANG(?titre_fr)) = \"en\"))\n        } \n    ",
+  "liste": [
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q131690612",
+      "titre_fr": "Monteluce Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Giulio%20Romano%20-%20Coronation%20of%20the%20Virgin%20%28Madonna%20of%20Monteluce%29%20-%20WGA09613.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q125544380",
+      "titre_fr": "Mary Magdalene",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Madeleine%20par%20Rapha%C3%ABl.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q125544380",
+      "titre_fr": "Marie Madeleine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Madeleine%20par%20Rapha%C3%ABl.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q131433288",
+      "titre_fr": "dead Christ",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Anonimo%20umbro%20sec.%20XV%20XVI%20-%20Cristo%20in%20piet%C3%A0.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q125936872",
+      "titre_fr": "Angel from Baronci Altarpiece",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Angel%20from%20Baronci%20Altarpiece%20by%20Raphael%20%281501%2C%20Brescia%29%20in%20Pushkin%20museum%20%282016%29%20by%20shakko%2001.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q121689728",
+      "titre_fr": "Cupid and The Three Graces",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%2C%20Loggia%20di%20Psiche%2C%20Villa%20Farnesina%2C%20Rome%2009.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q121689728",
+      "titre_fr": "Les trois Grâces",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%2C%20Loggia%20di%20Psiche%2C%20Villa%20Farnesina%2C%20Rome%2009.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q560057",
+      "titre_fr": "Terranuova Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Madonna%20Terranuova%20%28Berlin%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q560057",
+      "titre_fr": "La Madone Terranuova",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Madonna%20Terranuova%20%28Berlin%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q555821",
+      "titre_fr": "Self-portrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q555821",
+      "titre_fr": "Autoportrait",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q552040",
+      "titre_fr": "Vision of a Knight",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/RAFAEL%20-%20Sue%C3%B1o%20del%20Caballero%20%28National%20Gallery%20de%20Londres%2C%201504.%20%C3%93leo%20sobre%20tabla%2C%2017%20x%2017%20cm%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q552040",
+      "titre_fr": "Le Songe du chevalier",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/RAFAEL%20-%20Sue%C3%B1o%20del%20Caballero%20%28National%20Gallery%20de%20Londres%2C%201504.%20%C3%93leo%20sobre%20tabla%2C%2017%20x%2017%20cm%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q323188",
+      "titre_fr": "La Madone Diotallevi",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20Diotalevi%20by%20Raffael%20%28Gem%C3%A4ldegalerie%2C%20Berlin%29%209465.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q153441",
+      "titre_fr": "La fornarina",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20La%20Fornarina%20%28ca.%201519-1520%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q153441",
+      "titre_fr": "La Fornarina",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20La%20Fornarina%20%28ca.%201519-1520%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q327780",
+      "titre_fr": "Colonna Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Madonna%20Colonna%20-Gem%C3%A4ldegalerie%20Berlin.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q327780",
+      "titre_fr": "La Madone Colonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Madonna%20Colonna%20-Gem%C3%A4ldegalerie%20Berlin.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q323188",
+      "titre_fr": "Madonna Diotallevi",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20Diotalevi%20by%20Raffael%20%28Gem%C3%A4ldegalerie%2C%20Berlin%29%209465.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q328079",
+      "titre_fr": "Sistine Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Sistine%20Madonna%20-%20Google%20Arts%20%26%20Culture.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q254923",
+      "titre_fr": "Alba Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/RaphaelAlba.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q254923",
+      "titre_fr": "La Madone d'Alba",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/RaphaelAlba.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q546977",
+      "titre_fr": "Portrait of Baldassare Castiglione",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baldassare%20Castiglione%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q427390",
+      "titre_fr": "La Sainte Famille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20La%20Perla.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q427390",
+      "titre_fr": "The Holy Family",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20La%20Perla.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q521680",
+      "titre_fr": "Perla di Modena",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Ritratto%20di%20donna.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q521680",
+      "titre_fr": "Perle de Modène",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Ritratto%20di%20donna.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q328079",
+      "titre_fr": "La Madone Sixtine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Sistine%20Madonna%20-%20Google%20Arts%20%26%20Culture.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q546977",
+      "titre_fr": "Portrait de Baldassare Castiglione",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baldassare%20Castiglione%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q428274",
+      "titre_fr": "Portrait of Tommaso Inghirami, called Fedra",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Tommaso%20Inghirami%20%28by%20Raphael%29%20-%20type%202.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q428274",
+      "titre_fr": "Portrait de Tommaso Inghirami, dit Fedra",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Tommaso%20Inghirami%20%28by%20Raphael%29%20-%20type%202.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q538243",
+      "titre_fr": "Holy Family with Saint Elizabeth and the infant St. John",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Petite%20Sainte%20Famille%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20605.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q538243",
+      "titre_fr": "La Petite Sainte Famille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Petite%20Sainte%20Famille%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20605.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q594470",
+      "titre_fr": "St. Michael Vanquishing Satan",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Grand%20Saint%20Michel%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q677682",
+      "titre_fr": "Resurrection of Christ",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20ressureicaocristo01.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q677682",
+      "titre_fr": "La Résurrection du Christ",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20ressureicaocristo01.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q602813",
+      "titre_fr": "Solly Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/1502%20Raffael%20Madonna%20Solly%20anagoria.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q602813",
+      "titre_fr": "La Madone Solly",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/1502%20Raffael%20Madonna%20Solly%20anagoria.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q919294",
+      "titre_fr": "Madonna and Child (The Conestabile Madonna)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Madonna%20Connestabile.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q919294",
+      "titre_fr": "La Madone Connestabile",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Madonna%20Connestabile.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q919861",
+      "titre_fr": "Portrait of a Young Woman",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20043.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q598913",
+      "titre_fr": "Mond Crucifixion",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/CrocefissioneRaffaello.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q598913",
+      "titre_fr": "La Crucifixion Mond",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/CrocefissioneRaffaello.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q594470",
+      "titre_fr": "Saint Michel terrassant le démon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Grand%20Saint%20Michel%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3223805",
+      "titre_fr": "Le Jugement de Pâris",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marcantonio%20Raimondi%20-%20Giudizio%20di%20Paride.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3223805",
+      "titre_fr": "The Judgement of Paris",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marcantonio%20Raimondi%20-%20Giudizio%20di%20Paride.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3013751",
+      "titre_fr": "Portrait of Guidobaldo da Montefeltro",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Guidobaldo%20da%20Montefeltro%20-%20WGA18653.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3013751",
+      "titre_fr": "Portrait de Guidobaldo Ier de Montefeltro",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Guidobaldo%20da%20Montefeltro%20-%20WGA18653.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3212679",
+      "titre_fr": "The Holy Family With a Palm Tree",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20The%20Holy%20Family%20with%20a%20Palm%20Tree.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3212679",
+      "titre_fr": "La Sainte Famille au palmier",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20The%20Holy%20Family%20with%20a%20Palm%20Tree.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3212684",
+      "titre_fr": "The Holy Family",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Holy%20Family%20below%20the%20Oak.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3027582",
+      "titre_fr": "God the Father Blessing among the Angels",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dieu%20le%20P%C3%A8re%20b%C3%A9nissant%20parmi%20les%20anges%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%2048.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3027582",
+      "titre_fr": "Dieu le Père bénissant parmi les anges",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dieu%20le%20P%C3%A8re%20b%C3%A9nissant%20parmi%20les%20anges%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%2048.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3210258",
+      "titre_fr": "The Madonna and Child (The Mackintosh Madonna)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Mackintosh%20Madonna.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3210258",
+      "titre_fr": "La Madone Mackintosh",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Mackintosh%20Madonna.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3210272",
+      "titre_fr": "Madonna del Passeggio",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20del%20Passeggio.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3210272",
+      "titre_fr": "La Madonna del Passeggio",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20del%20Passeggio.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399384",
+      "titre_fr": "Portrait of Emilia Pia da Montefeltro",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20ritratto%20di%20maria%20pia%20da%20montefeltro.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399384",
+      "titre_fr": "Portrait d'Emilia Pia de Montefeltro",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20ritratto%20di%20maria%20pia%20da%20montefeltro.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399388",
+      "titre_fr": "Portrait of Dona Isabel de Requesens",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Jeanne%20d%27Aragon%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399400",
+      "titre_fr": "Portrait of a Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Portrait%20of%20a%20Man%20%28L.M.%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399400",
+      "titre_fr": "Portrait d'un homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Portrait%20of%20a%20Man%20%28L.M.%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3213759",
+      "titre_fr": "La Madonna de Bogota",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20La%20Madona%20de%20Bogota.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3213759",
+      "titre_fr": "La Vierge de Bogota",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20La%20Madona%20de%20Bogota.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399388",
+      "titre_fr": "Portrait d'Isabelle de Requesens, vice-reine de Naples",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Jeanne%20d%27Aragon%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3212684",
+      "titre_fr": "La Sainte Famille sous un chêne",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Holy%20Family%20below%20the%20Oak.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3010339",
+      "titre_fr": "Ceres",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A9r%C3%A8s%2C%20dite%20aussi%20L%27Abondance%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20657.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3010339",
+      "titre_fr": "Cérès",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A9r%C3%A8s%2C%20dite%20aussi%20L%27Abondance%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20657.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3212681",
+      "titre_fr": "The Holy Family with Saint John the Baptist",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20100.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3212681",
+      "titre_fr": "La Sainte Famille avec saint Jean-Baptiste",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20100.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1634134",
+      "titre_fr": "Madonna of the Candelabra",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Workshop%20of%20Raphael%20-%20Madonna%20of%20the%20Candelabra%20-%20Walters%2037484.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1634134",
+      "titre_fr": "La Vierge aux candélabres",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Workshop%20of%20Raphael%20-%20Madonna%20of%20the%20Candelabra%20-%20Walters%2037484.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1986584",
+      "titre_fr": "The Holy Family with a Lamb",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20015.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1245388",
+      "titre_fr": "La Madone aux œillets",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20of%20the%20Pinks.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1778000",
+      "titre_fr": "Baronci Altarpiece",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20%28da%29%2C%20copia%20settecentesca%20della%20pala%20baronci%2C%20pinacoteca%20di%20citt%C3%A0%20di%20castello.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1778000",
+      "titre_fr": "retable Baronci",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20%28da%29%2C%20copia%20settecentesca%20della%20pala%20baronci%2C%20pinacoteca%20di%20citt%C3%A0%20di%20castello.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1986584",
+      "titre_fr": "La Sainte Famille à l'agneau",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20015.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1986597",
+      "titre_fr": "Madonna d'Orleans",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20La%20Madone%20de%20la%20maison%20d%27Orl%C3%A9ans%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1986597",
+      "titre_fr": "La Madone d'Orléans",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20La%20Madone%20de%20la%20maison%20d%27Orl%C3%A9ans%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2030685",
+      "titre_fr": "The Marriage of the Virgin",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20-%20Spozalizio%20-%20Web%20Gallery%20of%20Art.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2030685",
+      "titre_fr": "Le Mariage de la Vierge",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20-%20Spozalizio%20-%20Web%20Gallery%20of%20Art.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q103838699",
+      "titre_fr": "Portrait of Tommaso Inghirami",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Tommaso%20Inghirami%2C%20Boston.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q77897131",
+      "titre_fr": "The Holy Family with Saint John",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Holy%20Family%20with%20Saint%20John%20.PNG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q63110871",
+      "titre_fr": "St. Eusebius Resurrecting Three People",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20miracolo%20di%20sant%27eusebio%20da%20cremona%2C%201502-03%2C%2002.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q63110871",
+      "titre_fr": "Le miracle de saint Eusèbe de Crémone",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20miracolo%20di%20sant%27eusebio%20da%20cremona%2C%201502-03%2C%2002.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q103838699",
+      "titre_fr": "Tommaso Inghirami",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Tommaso%20Inghirami%2C%20Boston.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q107436442",
+      "titre_fr": "John the Baptist in the wilderness",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20%28Nachfolger%29%20-%20Johannes%20der%20T%C3%A4ufer%20in%20der%20W%C3%BCste%20-%20242%20-%20Gem%C3%A4ldegalerie.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q77926299",
+      "titre_fr": "The Healing of the Lame Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Healing%20of%20the%20Lame%20Man%20P1804.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q111645124",
+      "titre_fr": "Baptism of St. Augustinus",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20Raffael%20%28Perugino-Schule%29%20%281483-1520%29%20-%20Ambrosius%20tauft%20den%20Heiligen%20Augustin%20%28Die%20Taufe%20des%20Heiligen%20Augustinus%20durch%20den%20Heiligen%20Ambrosius%29%20-%201960%20-%20F%C3%BChrermuseum.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q27883548",
+      "titre_fr": "Madonna della Seggiola (Madonna of the Armchair)",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20della%20Seggiola%20%28Madonna%20of%20the%20Armchair%29%20-%201895-1-2%20-%20Auckland%20Art%20Gallery.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q110831269",
+      "titre_fr": "Venus and Jupiter",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%2C%20Loggia%20di%20Psiche%2C%20Villa%20Farnesina%2C%20Rome%2011.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q110831269",
+      "titre_fr": "Vénus et Jupiter",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%2C%20Loggia%20di%20Psiche%2C%20Villa%20Farnesina%2C%20Rome%2011.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q116286717",
+      "titre_fr": "The Annunciation",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Annunciation%20%28Oddi%20altar%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q116286717",
+      "titre_fr": "L'Annonciation",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Annunciation%20%28Oddi%20altar%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q77927440",
+      "titre_fr": "The Blinding of Elymas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Blinding%20of%20Elymas%20P1805.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q64788403",
+      "titre_fr": "Portrait of Pope Julius II",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20and%20Workshop%20-%20Portrait%20of%20Pope%20Julius%20II%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q103823905",
+      "titre_fr": "Saint Catherine of Alexandria",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%2C%20Santa%20Caterina%2001.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q103823905",
+      "titre_fr": "Saint Catherine of Alexandria",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%2C%20Specchiatura%20marmorizzata%20e%20scritta.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q103823905",
+      "titre_fr": "Sainte Catherine d'Alexandrie",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%2C%20Santa%20Caterina%2001.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q103823905",
+      "titre_fr": "Sainte Catherine d'Alexandrie",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%2C%20Specchiatura%20marmorizzata%20e%20scritta.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q111645125",
+      "titre_fr": "Hall: St. Augustinus as pater speaking to twelve men",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20Raffael%20%28Perugino-Schule%29%20%281483-1520%29%20-%20Disputation%20des%20Heiligen%20Augustin%20-%201961%20-%20F%C3%BChrermuseum.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q107329307",
+      "titre_fr": "Raffaello Sanzio - Le martyre de Sainte-Cécile",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Narbonne%29%20Le%20martyre%20de%20Sainte-C%C3%A9cile%20-%20Raffaello%20Sanzio%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20Narbonne.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q107329307",
+      "titre_fr": "Le martyre de Sainte-Cécile",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Narbonne%29%20Le%20martyre%20de%20Sainte-C%C3%A9cile%20-%20Raffaello%20Sanzio%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20Narbonne.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q79774208",
+      "titre_fr": "Portrait of a Young Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Young%20Man%2C%20attributed%20to%20Raphael%20Sanzio%2C%20c.%201510%2C%20oil%20on%20canvas%20transferred%20from%20panel%20-%20Hyde%20Collection%20-%20Glens%20Falls%2C%20NY%20-%2020180224%20122528.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q79774208",
+      "titre_fr": "Portrait d'un jeune homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Young%20Man%2C%20attributed%20to%20Raphael%20Sanzio%2C%20c.%201510%2C%20oil%20on%20canvas%20transferred%20from%20panel%20-%20Hyde%20Collection%20-%20Glens%20Falls%2C%20NY%20-%2020180224%20122528.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q74089447",
+      "titre_fr": "St. Jerome Punishing the Heretic Sabinian",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20St.%20Jerome%20Punishing%20the%20Heretic%20Sabinian.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q64788403",
+      "titre_fr": "Portrait du pape Jules II",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20and%20Workshop%20-%20Portrait%20of%20Pope%20Julius%20II%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2283808",
+      "titre_fr": "Esterhazy Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Madonna%20and%20Child%20with%20the%20Infant%20Saint%20John%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2283808",
+      "titre_fr": "La Madone Esterházy",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Madonna%20and%20Child%20with%20the%20Infant%20Saint%20John%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2165279",
+      "titre_fr": "Saint Catherine of Alexandria",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20020.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2165279",
+      "titre_fr": "Sainte Catherine d'Alexandrie",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20020.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2052275",
+      "titre_fr": "Madonna dell'Impannata",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20dell%E2%80%99Impannata%2C%20by%20Raphael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2052275",
+      "titre_fr": "La Vierge de l'Impannata",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20dell%E2%80%99Impannata%2C%20by%20Raphael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2275653",
+      "titre_fr": "Self-portrait with a friend",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Self-portrait%20with%20a%20friend%20-%20Google%20Art%20project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2275653",
+      "titre_fr": "Portrait de l'artiste avec un ami",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Self-portrait%20with%20a%20friend%20-%20Google%20Art%20project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2276546",
+      "titre_fr": "La donna gravida",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael-LaDonnaGravida%281505-1506%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2276546",
+      "titre_fr": "La donna gravida",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael-LaDonnaGravida%281505-1506%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2035209",
+      "titre_fr": "Madonna del Granduca",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madona%20del%20gran%20duque%2C%20por%20Rafael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2035209",
+      "titre_fr": "La Madone du Grand-Duc",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madona%20del%20gran%20duque%2C%20por%20Rafael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2269330",
+      "titre_fr": "Madonna della tenda",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20-%20Madonna%20della%20Tenda%20%28Alte%20Pinakothek%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2269330",
+      "titre_fr": "La Vierge au rideau",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20-%20Madonna%20della%20Tenda%20%28Alte%20Pinakothek%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q948034",
+      "titre_fr": "La velata",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20velada%2C%20por%20Rafael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q948034",
+      "titre_fr": "La donna velata",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20velada%2C%20por%20Rafael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1103801",
+      "titre_fr": "The Ecstasy of Saint Cecilia",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bologna%20Pinacoteca%20Nazionale%20-%20Rafa%C3%ABl%20Santi%20%281483-1520%29%20-%20Heilige%20Cecilia%20in%20extase%20met%20Paulus%2C%20Johannes%20%28evangelist%29%2C%20Augustinus%20en%20Maria%20Magdalena%20-%2026-04-2012%209-13-18.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q966681",
+      "titre_fr": "La Vierge à la chaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20della%20seggiola.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q966681",
+      "titre_fr": "Madonna della Seggiola",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20della%20seggiola.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1134281",
+      "titre_fr": "Ezekiel's Vision",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20-%20Visione%20di%20Ezechiele.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1134281",
+      "titre_fr": "La Vision d'Ézéchiel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20-%20Visione%20di%20Ezechiele.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1131153",
+      "titre_fr": "Christ Blessing",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/CristoRaffaello.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1131153",
+      "titre_fr": "Le Christ bénissant",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/CristoRaffaello.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1245388",
+      "titre_fr": "Madonna of the Pinks",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20of%20the%20Pinks.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q919861",
+      "titre_fr": "La Muta",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20043.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q1103801",
+      "titre_fr": "L'Extase de sainte Cécile",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bologna%20Pinacoteca%20Nazionale%20-%20Rafa%C3%ABl%20Santi%20%281483-1520%29%20-%20Heilige%20Cecilia%20in%20extase%20met%20Paulus%2C%20Johannes%20%28evangelist%29%2C%20Augustinus%20en%20Maria%20Magdalena%20-%2026-04-2012%209-13-18.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2420918",
+      "titre_fr": "Madonna of the Rose",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Madonna%20della%20Rosa%20%28Prado%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2420918",
+      "titre_fr": "La Vierge à la rose",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Madonna%20della%20Rosa%20%28Prado%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2422889",
+      "titre_fr": "Portrait of a Young Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20missing.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2422889",
+      "titre_fr": "Portrait de jeune homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20missing.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2467082",
+      "titre_fr": "Visitation",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Visitaci%C3%B3n%20de%20Rafael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2467082",
+      "titre_fr": "La Visitation",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Visitaci%C3%B3n%20de%20Rafael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2427320",
+      "titre_fr": "La Vierge de Lorette",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20La%20Madone%20de%20Lorette%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2444277",
+      "titre_fr": "Portrait de jeune homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Portrait%20of%20Pietro%20Bembo%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2444277",
+      "titre_fr": "Portrait of Pietro Bembo",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Portrait%20of%20Pietro%20Bembo%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2427320",
+      "titre_fr": "Madonna of Loreto",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20La%20Madone%20de%20Lorette%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2452858",
+      "titre_fr": "Madonna del Prato",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20in%20the%20Meadow%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2452858",
+      "titre_fr": "La Madone à la prairie",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20in%20the%20Meadow%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3842585",
+      "titre_fr": "Von der Ropp Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Von%20der%20Ropp%20Madonna.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3842585",
+      "titre_fr": "Vierge et l'Enfant avec saints Jérôme et François",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Von%20der%20Ropp%20Madonna.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3863236",
+      "titre_fr": "The Death of Ananias",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Arazzi%20di%20raffaello%2C%20cartone%2004.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3941955",
+      "titre_fr": "Burning bush",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanza%20di%20eliodoro%2C%20volta%2003%20roveto%20ardente.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3863236",
+      "titre_fr": "La Mort d'Ananie",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Arazzi%20di%20raffaello%2C%20cartone%2004.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3769195",
+      "titre_fr": "Judgement of Solomon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2008%20giudizio%20di%20salomone.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3842605",
+      "titre_fr": "Madonna of Divine Love",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20del%20Divino%20Amore%2C%20Raffaello%20Sanzio.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3687196",
+      "titre_fr": "Christ's Charge to Peter",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%26A%20-%20Raphael%2C%20Christ%27s%20Charge%20to%20Peter%20%281515%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3733689",
+      "titre_fr": "God the Father and the Virgin Mary",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20God%20the%20Father%20and%20the%20Virgin%20Mary.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3921896",
+      "titre_fr": "Astronomy",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2006%20primo%20motore.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3842391",
+      "titre_fr": "Bridgewater Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20Bridgewater.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3842391",
+      "titre_fr": "La Madone Bridgewater",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Madonna%20Bridgewater.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3925594",
+      "titre_fr": "The Conversion of the Proconsul",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%26A%20-%20Raphael%2C%20The%20Conversion%20of%20the%20Proconsul%20%281515%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3906946",
+      "titre_fr": "Poetry",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2003%20poesia.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3910086",
+      "titre_fr": "Saint John the Baptist Preaching",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Saint%20John%20the%20Baptist%20Preaching.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3658723",
+      "titre_fr": "Charity",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20pala%20baglioni%2C%20carit%C3%A0.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3842604",
+      "titre_fr": "Madonna of the Baldacchino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20del%20Baldacchino.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3842604",
+      "titre_fr": "La Madone au baldaquin",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20del%20Baldacchino.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3842605",
+      "titre_fr": "La Madone de l'Amour divin",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20del%20Divino%20Amore%2C%20Raffaello%20Sanzio.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3733771",
+      "titre_fr": "Philosophy",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2002%2C%20filosofia.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3910088",
+      "titre_fr": "St Paul Preaching at Athens",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20St%20Paul%20Preaching%20at%20Athens%20c.1515-6.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3740794",
+      "titre_fr": "Faith",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20pala%20baglioni%2C%20fede.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3778388",
+      "titre_fr": "The Healing of the Lame Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20guarigione%20dello%20storpio.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3771745",
+      "titre_fr": "Justice",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2005%20giustizia.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2467141",
+      "titre_fr": "Holy Family of Francis I",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Sainte%20Famille%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20604.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2467141",
+      "titre_fr": "La Sainte Famille, dit La Grande Sainte Famille de François Ier",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Sainte%20Famille%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20604.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2500226",
+      "titre_fr": "The Deposition",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20pala%20baglioni%2C%20deposizione.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2500226",
+      "titre_fr": "Déposition Borghèse",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20pala%20baglioni%2C%20deposizione.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2528106",
+      "titre_fr": "Portrait of Bindo Altoviti",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Ritratto%20di%20Bindo%20Altoviti.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2503581",
+      "titre_fr": "Garvagh Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Aldobrandini%20Madonna.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2503581",
+      "titre_fr": "La Madone Aldobrandini",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Aldobrandini%20Madonna.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2515309",
+      "titre_fr": "Portrait of Agnolo Doni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Doni%27s%20portrait%20paintings%20by%20Raffaello%20Sanzio.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2515309",
+      "titre_fr": "Portrait d'Agnolo Doni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Doni%27s%20portrait%20paintings%20by%20Raffaello%20Sanzio.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2528106",
+      "titre_fr": "Portrait de Bindo Altoviti",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Ritratto%20di%20Bindo%20Altoviti.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2607050",
+      "titre_fr": "Small Cowper Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Madonna%20Cowper.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2607050",
+      "titre_fr": "La Petite Madone Cowper",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Madonna%20Cowper.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2535482",
+      "titre_fr": "Portrait of Andrea Navagero and Agostino Beazzano",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Double%20Raphael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2535482",
+      "titre_fr": "Double Portrait d'Andrea Navagero et Agostino Beazzano",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Double%20Raphael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2535486",
+      "titre_fr": "Tempi Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tempi%20Madonna%20-%20Raphael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2535486",
+      "titre_fr": "La Vierge Tempi",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tempi%20Madonna%20-%20Raphael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2535563",
+      "titre_fr": "Portrait of a Cardinal",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Retrato%20de%20um%20Cardeal.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2529918",
+      "titre_fr": "Saint George and the Dragon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/P1080746%20Louvre%20Rap%C4%A5ael%20St%20Georges%20luttant%20avec%20le%20dragon%20INV%20609%20rwk.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2529918",
+      "titre_fr": "Saint Georges et le Dragon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/P1080746%20Louvre%20Rap%C4%A5ael%20St%20Georges%20luttant%20avec%20le%20dragon%20INV%20609%20rwk.JPG"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2535563",
+      "titre_fr": "Portrait d'un cardinal",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Retrato%20de%20um%20Cardeal.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2607055",
+      "titre_fr": "Portrait of Maddalena Doni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ritratto%20di%20maddalena%20strozzi.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2607055",
+      "titre_fr": "Portrait de Maddalena Doni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ritratto%20di%20maddalena%20strozzi.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2343778",
+      "titre_fr": "La Belle Jardinière",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Vierge%20%C3%A0%20l%27Enfant%20avec%20le%20petit%20saint%20Jean%20Baptiste%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20602%20%3B%20MR%20433.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2343778",
+      "titre_fr": "La Belle Jardinière",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Vierge%20%C3%A0%20l%27Enfant%20avec%20le%20petit%20saint%20Jean%20Baptiste%20-%20Rapha%C3%ABl%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20602%20%3B%20MR%20433.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2344396",
+      "titre_fr": "La Dame à la licorne",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lady%20with%20unicorn%20by%20Rafael%20Santi.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2344357",
+      "titre_fr": "Oddi Altarpiece",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/PalaOddiRaffaello.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2344357",
+      "titre_fr": "Retable Oddi",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/PalaOddiRaffaello.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2343939",
+      "titre_fr": "Saint Sebastian",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20021.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2343939",
+      "titre_fr": "Saint Sébastien",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffael%20021.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2344396",
+      "titre_fr": "Young Woman with Unicorn",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lady%20with%20unicorn%20by%20Rafael%20Santi.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2310025",
+      "titre_fr": "Sainte Marguerite",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sainte%20Marguerite%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2310025",
+      "titre_fr": "Saint Margaret",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sainte%20Marguerite%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2629419",
+      "titre_fr": "La Vierge à l'Enfant et saint Joseph",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20with%20Beardless%20St.%20Joseph.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2627028",
+      "titre_fr": "Portrait of Elisabetta Gonzaga",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Elisabetta%20Gonzaga%2C%20Duchess%20of%20Urbino%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence%20FXD.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2627028",
+      "titre_fr": "Portrait d'Elisabetta Gonzaga",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Elisabetta%20Gonzaga%2C%20Duchess%20of%20Urbino%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence%20FXD.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2629419",
+      "titre_fr": "Madonna with Beardless Saint Joseph",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20with%20Beardless%20St.%20Joseph.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2629134",
+      "titre_fr": "Madonna and Child with the Book",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20Pasadena.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2629134",
+      "titre_fr": "La Madone Pasadena",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Madonna%20Pasadena.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2629715",
+      "titre_fr": "Portrait of a Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Portrait%20of%20a%20man%20cat14.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2629715",
+      "titre_fr": "Portrait d'homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Portrait%20of%20a%20man%20cat14.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2610729",
+      "titre_fr": "Portrait du pape Léon X",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Pope%20Leo%20X%20and%20his%20cousins%2C%20cardinals%20Giulio%20de%27%20Medici%20and%20Luigi%20de%27%20Rossi%20%28by%20Raphael%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2610709",
+      "titre_fr": "Madonna of Foligno",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20di%20Foligno%20%28Raphael%29%20September%202015-1a.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2610709",
+      "titre_fr": "La Vierge de Foligno",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20di%20Foligno%20%28Raphael%29%20September%202015-1a.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2607072",
+      "titre_fr": "Portrait of Perugino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Retrato%20de%20Pietro%20Perugino.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2607072",
+      "titre_fr": "Portrait du Pérugin",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Retrato%20de%20Pietro%20Perugino.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2610729",
+      "titre_fr": "Portrait of Leo X",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Pope%20Leo%20X%20and%20his%20cousins%2C%20cardinals%20Giulio%20de%27%20Medici%20and%20Luigi%20de%27%20Rossi%20%28by%20Raphael%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2622161",
+      "titre_fr": "Saint George and the Dragon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Saint%20George%20and%20the%20Dragon%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2622161",
+      "titre_fr": "Saint Georges et le Dragon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Saint%20George%20and%20the%20Dragon%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2607065",
+      "titre_fr": "Niccolini-Cowper Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Grande%20madonna%20cowper.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2607065",
+      "titre_fr": "La Grande Madone Cowper",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Grande%20madonna%20cowper.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399492",
+      "titre_fr": "Portrait of Cardinal Bibbiena",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20%28Urbino%201483%20%E2%80%93%20Roma%201520%29%20-%20Ritratto%20del%20Cardinale%20Bibbiena%20-%20158%20-%20Galleria%20Palatina.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399492",
+      "titre_fr": "Portrait du cardinal Bibbiena",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20%28Urbino%201483%20%E2%80%93%20Roma%201520%29%20-%20Ritratto%20del%20Cardinale%20Bibbiena%20-%20158%20-%20Galleria%20Palatina.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3463871",
+      "titre_fr": "Saint Jean-Baptiste",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20the%20Baptist%20in%20the%20wilderness%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Tribuna%20degli%20Uffizi%2C%20Florence.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3616854",
+      "titre_fr": "Angel Holding a Phylactery",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Angelo%202%20%28frammento%20pala%20Baronci%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3463874",
+      "titre_fr": "Saint Jean-Baptiste dans le désert désignant la croix de la Passion",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sainte%20Jean-Baptiste%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3428030",
+      "titre_fr": "Retable Baglioni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rekonstruktion%20%27Pala%20Baglioni%27.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3428030",
+      "titre_fr": "Pala Baglioni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rekonstruktion%20%27Pala%20Baglioni%27.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399403",
+      "titre_fr": "Portrait of a Young Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Ritratto%20di%20un%20giovane%20uomo%20%281518-19%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399403",
+      "titre_fr": "Portrait d'un jeune homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Ritratto%20di%20un%20giovane%20uomo%20%281518-19%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3464523",
+      "titre_fr": "Sainte Marguerite",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20gen.%20Raffael%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Hl.%20Margarete%20-%20GG%20171%20-%20Kunsthistorisches%20Museum.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3463871",
+      "titre_fr": "Saint John the Baptist as a Boy",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20the%20Baptist%20in%20the%20wilderness%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Tribuna%20degli%20Uffizi%2C%20Florence.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3464523",
+      "titre_fr": "Saint Margaret and the Dragon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20gen.%20Raffael%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Hl.%20Margarete%20-%20GG%20171%20-%20Kunsthistorisches%20Museum.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399434",
+      "titre_fr": "Portrait of Lorenzo di Medici, Duke of Urbino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Lorenzo%20di%20Medici.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3399434",
+      "titre_fr": "Portrait de Laurent de Médicis, duc d'Urbino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Lorenzo%20di%20Medici.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3620832",
+      "titre_fr": "Apparition of God to Noah",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanza%20di%20eliodoro%2C%20volta%2005%20apparizione%20di%20dio%20a%20no%C3%A8.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3498200",
+      "titre_fr": "Standard of the Holy Trinity",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/BandieraRV.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3498200",
+      "titre_fr": "Stendardo della Santissima Trinità",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/BandieraRV.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3463874",
+      "titre_fr": "Saint John the Baptist in the Wilderness",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sainte%20Jean-Baptiste%2C%20by%20Raffaello%20Sanzio%2C%20from%20C2RMF%20retouched.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3616854",
+      "titre_fr": "Ange tenant un phylactère",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Angelo%202%20%28frammento%20pala%20Baronci%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3620697",
+      "titre_fr": "Apollo and Marsyas",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsyas%20in%20chains.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3616853",
+      "titre_fr": "Angel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Angelo%201%20%28frammento%20pala%20Baronci%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3616853",
+      "titre_fr": "Ange",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Angelo%201%20%28frammento%20pala%20Baronci%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2713823",
+      "titre_fr": "Portrait of a Young Man with an Apple",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20%28Urbino%201483%20-%20Roma%201520%29%20-%20Ritratto%20di%20giovane%20con%20pomo%20-%208760%20-%20Uffizi%20Gallery.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2713823",
+      "titre_fr": "Le Jeune Homme à la pomme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20%28Urbino%201483%20-%20Roma%201520%29%20-%20Ritratto%20di%20giovane%20con%20pomo%20-%208760%20-%20Uffizi%20Gallery.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2664637",
+      "titre_fr": "Christ Falling on the Way to Calvary",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Christ%20Falling%20on%20the%20Way%20to%20Calvary%20-%20Raphael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2713671",
+      "titre_fr": "Canigiani Holy Family",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Sacra%20Famiglia%20Canigiani%20%28Alte%20Pinakothek%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2713671",
+      "titre_fr": "La Sainte Famille Canigiani",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Santi%20-%20Sacra%20Famiglia%20Canigiani%20%28Alte%20Pinakothek%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2713620",
+      "titre_fr": "Ansidei Madonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/PalaAnsidei.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2713620",
+      "titre_fr": "Retable Ansidei",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/PalaAnsidei.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2631335",
+      "titre_fr": "Madonna with the Fish",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Sacra%20Famiglia%20con%20Rafael%2C%20Tobia%20e%20San%20Girolamo%2C%20o%20Vergine%20del%20pesce.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2631335",
+      "titre_fr": "La Sainte Famille avec Raphaël, Tobias et saint Jérôme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20Sacra%20Famiglia%20con%20Rafael%2C%20Tobia%20e%20San%20Girolamo%2C%20o%20Vergine%20del%20pesce.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2635552",
+      "titre_fr": "Portrait of Cardinal Alessandro Farnese",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Alessandro%20Farnese.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2635552",
+      "titre_fr": "Portrait du cardinal Alessandro Farnese",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafael%20-%20Alessandro%20Farnese.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2664637",
+      "titre_fr": "Le Portement de Croix",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Christ%20Falling%20on%20the%20Way%20to%20Calvary%20-%20Raphael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q27034683",
+      "titre_fr": "Lamentation over the Dead Christ",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rafaello%20Sanzio%20-%20Piet%C3%A0%2C%20c.%201503-5.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q27033728",
+      "titre_fr": "Madonna and Child Enthroned with Saints",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20and%20Child%20Enthroned%20with%20Saints.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q27033728",
+      "titre_fr": "Retable Colonna",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20and%20Child%20Enthroned%20with%20Saints.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q23929146",
+      "titre_fr": "Saint Anthony of Padua",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Saint%20Anthony%20of%20Padua%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q20557290",
+      "titre_fr": "Virgin and Child with Young Saint John the Baptist",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%28Raffaello%20Sanzio%20or%20Santi%29%20-%20Virgin%20and%20Child%20with%20Young%20Saint%20John%20the%20Baptist%20-%2076.422%20-%20Museum%20of%20Fine%20Arts.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3966501",
+      "titre_fr": "Hope",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%2C%20pala%20baglioni%2C%20speranza.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q26705837",
+      "titre_fr": "The Procession to Calvary",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio%20-%20The%20Procession%20to%20Calvary.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q20557479",
+      "titre_fr": "Saint Sebastian",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%28Raffaello%20Sanzio%20or%20Santi%29%20-%20Saint%20Sebastian%20-%2006.120%20-%20Museum%20of%20Fine%20Arts.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q11918714",
+      "titre_fr": "Portrait of Pope Julius II",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pope%20Julius%20II.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q20557413",
+      "titre_fr": "The Transfiguration of Christ",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%28Raffaello%20Sanzio%20or%20Santi%29%20-%20The%20Transfiguration%20of%20Christ%20-%2090.74%20-%20Museum%20of%20Fine%20Arts.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q26693039",
+      "titre_fr": "Portrait of a Young Man",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%281483-1520%29%20%28imitator%20of%29%20-%20Portrait%20of%20a%20Young%20Man%20-%20NG2510%20-%20National%20Gallery.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q26693039",
+      "titre_fr": "Portrait de jeune homme",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%281483-1520%29%20%28imitator%20of%29%20-%20Portrait%20of%20a%20Young%20Man%20-%20NG2510%20-%20National%20Gallery.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q20355399",
+      "titre_fr": "St Cecilia",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20St%20Cecilia%20-%20KMSst457%20-%20Statens%20Museum%20for%20Kunst.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q20268553",
+      "titre_fr": "Virgin and Child with the Infant St John",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Virgin%20and%20Child%20with%20the%20Infant%20St%20John%20-%20KMSst193%20-%20Statens%20Museum%20for%20Kunst.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3944652",
+      "titre_fr": "Sacrifice of Isaac",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanza%20di%20eliodoro%2C%20volta%2002%20sacrificio%20di%20isacco.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3944652",
+      "titre_fr": "Le Sacrifice d'Isaac",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanza%20di%20eliodoro%2C%20volta%2002%20sacrificio%20di%20isacco.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q11918714",
+      "titre_fr": "Portrait du pape Jules II",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pope%20Julius%20II.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3944654",
+      "titre_fr": "The Sacrifice at Lystra",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%26A%20-%20Raphael%2C%20The%20Sacrifice%20at%20Lystra%20%281515%29.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q19516146",
+      "titre_fr": "Portrait of Pope Julius II",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Pope%20Julius%20II%20della%20Rovere%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q19516146",
+      "titre_fr": "Pape Jules II",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Pope%20Julius%20II%20della%20Rovere%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3983944",
+      "titre_fr": "Theology",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Volta%20della%20stanza%20della%20segnatura%2004%20teologia.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q23929176",
+      "titre_fr": "Saint Francis of Assisi",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20Saint%20Francis%20of%20Assisi%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q19911609",
+      "titre_fr": "Le Christ au jardin des Oliviers",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Agony%20in%20the%20Garden%20MET%20DP136373.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q19911609",
+      "titre_fr": "The Agony in the Garden",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Agony%20in%20the%20Garden%20MET%20DP136373.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q9561272",
+      "titre_fr": "Abraham and the three men",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Loggia%20di%20raffaello%2C%2004%2C%2003.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q20425450",
+      "titre_fr": "The Adoration of the Kings",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Adoration%20of%20the%20Kings%20-%20KMSsp3%20-%20Statens%20Museum%20for%20Kunst.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q3951391",
+      "titre_fr": "Jacob's dream of the ladder to heaven",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanza%20di%20eliodoro%2C%20volta%2004%20scala%20di%20giacobbe.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q20557352",
+      "titre_fr": "The Three Graces",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20%28Raffaello%20Sanzio%20or%20Santi%29%20-%20The%20Three%20Graces%20-%2084.561%20-%20Museum%20of%20Fine%20Arts.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2344505",
+      "titre_fr": "Madonna of the Goldfinch",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20of%20the%20Goldfinch%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2344505",
+      "titre_fr": "La Vierge au chardonneret",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20of%20the%20Goldfinch%20%28by%20Raffaello%20Sanzio%29%20%E2%80%93%20Galleria%20degli%20Uffizi%2C%20Florence.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2415259",
+      "titre_fr": "Saint Michael Vanquishing Satan",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/St%20Michael%20Raphael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2415259",
+      "titre_fr": "Saint Michel et le Dragon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/St%20Michael%20Raphael.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2344437",
+      "titre_fr": "Transfiguration",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Transfigurazione%20%28Raffaello%29%20September%202015-1a.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2344437",
+      "titre_fr": "La Transfiguration",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Transfigurazione%20%28Raffaello%29%20September%202015-1a.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2360329",
+      "titre_fr": "Les Trois Grâces",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20Les%20Trois%20Gr%C3%A2ces%20-%20Google%20Art%20Project.jpg"
+    },
+    {
+      "createur": "http://www.wikidata.org/entity/Q5597",
+      "createurLabel": "Raphaël",
+      "uri": "http://www.wikidata.org/entity/Q2360329",
+      "titre_fr": "Three Graces",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl%20-%20Les%20Trois%20Gr%C3%A2ces%20-%20Google%20Art%20Project.jpg"
+    }
+  ]
+}

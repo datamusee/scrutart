@@ -25,7 +25,7 @@ templatesCreateur = {
 """,
 
     "queryNbOeuvresTemplate": """<!-- wp:paragraph -->
-<p>(obtenu avec la requête sparql accessible <a href="__QUERYNBOEUVRES__">sur WDQS</a>)</p>
+<p>!!!!(obtenu avec la requête sparql accessible <a href="__QUERYNBOEUVRES__">sur WDQS</a>)</p>
 <!-- /wp:paragraph -->
 
 """,
