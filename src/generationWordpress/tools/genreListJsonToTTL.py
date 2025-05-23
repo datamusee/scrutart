@@ -40,7 +40,7 @@ if __name__ == "__main__":
                                           genreDate="2024-12-03", lang="fr")
             # introduction de descriptiond e la galerie s'il y en a une
             if idpiwigo:
-                ttl += "\n"+converter.galeryTtlDesc(idpiwigo,
+                ttl += "\n"+converter.galleryTtlDesc(idpiwigo,
                                         title=f"""Galerie de {genre["entityLabel"]}s""",
                                         comment=genre["comment"] if "comment" in genre else None,
                                         lang="fr")

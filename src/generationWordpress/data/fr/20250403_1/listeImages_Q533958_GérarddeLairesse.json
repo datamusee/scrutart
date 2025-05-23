@@ -1,1 +1,1108 @@
-{"sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q533958 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q533958 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ", "liste": [], "dict": {"http://www.wikidata.org/entity/Q12898754": {"uri": "http://www.wikidata.org/entity/Q12898754", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Antiochus et Stratonice", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20Antiochus%20en%20Stratonice.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17917,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17917\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q16741676": {"uri": "http://www.wikidata.org/entity/Q16741676", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Le Banquet de Cléopâtre", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Het%20feestmaal%20van%20Cleopatra%20Rijksmuseum%20SK-A-2115.jpeg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17918,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17918\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17275778": {"uri": "http://www.wikidata.org/entity/Q17275778", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Achille reconnu parmi les filles de Lycomède", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Achilles%20Discovered%20among%20the%20Daughters%20of%20Lycomedes%20-%2082%20-%20Mauritshuis.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17919,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17919\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17275953": {"uri": "http://www.wikidata.org/entity/Q17275953", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "The Glorification of Stadholder-King William III (1650-1702)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Glorification%20of%20Stadholder-King%20William%20III%20by%20Gerard%20de%20Lairesse%20Het%20Loo%20palace.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17920,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17920\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17319932": {"uri": "http://www.wikidata.org/entity/Q17319932", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Ulysse et Calypso", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Odysseus%20bij%20Calypso%20Rijksmuseum%20SK-A-211.jpeg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17921,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17921\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17319933": {"uri": "http://www.wikidata.org/entity/Q17319933", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Mercure ordonne à Calypso de laisser partir Ulysse.", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20Mercurius%20gelast%20Calypso%20om%20Odysseus%20te%20laten%20vertrekken.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17922,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17922\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17321544": {"uri": "http://www.wikidata.org/entity/Q17321544", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Granida and Daiphilo", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20Granida%20en%20Daiphilo.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17923,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17923\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17323897": {"uri": "http://www.wikidata.org/entity/Q17323897", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Five-part ceiling decoration for the great hall of Soestdijk Palace, with Diana and her companions as the principal representation", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Plafondschildering%20in%20vijf%20delen%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%2C%20geschilderd%20voor%20de%20%27grote%20zaal%27%20van%20Paleis%20Soestdijk%20Rijksmuseum%20SK-A-1233.jpeg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17924,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17924\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17324864": {"uri": "http://www.wikidata.org/entity/Q17324864", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "La Cène", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20Het%20laatste%20avondmaal.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17925,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17925\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17338473": {"uri": "http://www.wikidata.org/entity/Q17338473", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Allegory of riches", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20003.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17926,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17926\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17338479": {"uri": "http://www.wikidata.org/entity/Q17338479", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Allegory of charity", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20004.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17927,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17927\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17338491": {"uri": "http://www.wikidata.org/entity/Q17338491", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Allegory of the arts", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20005.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17928,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17928\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17338501": {"uri": "http://www.wikidata.org/entity/Q17338501", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Allegory of the sciences", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Allegorie%20op%20de%20Wetenschappen%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17929,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17929\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17338673": {"uri": "http://www.wikidata.org/entity/Q17338673", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Séléné et Endymion", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1677%20G%C3%A9rard%20de%20Lairesse%20-%20Diana.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17930,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17930\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17338507": {"uri": "http://www.wikidata.org/entity/Q17338507", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Allegory of fame", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20006.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17931,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17931\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17338699": {"uri": "http://www.wikidata.org/entity/Q17338699", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Italian landscape with shepherd and shepherdess", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Italiaans%20landschap%20met%20herderspaar%20Rijksmuseum%20SK-A-4213.jpeg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17932,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17932\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17338708": {"uri": "http://www.wikidata.org/entity/Q17338708", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Italian landscape with three women making music", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Italiaans%20landschap%20met%20drie%20musicerende%20vrouwen%20Rijksmuseum%20SK-A-4214.jpeg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17933,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17933\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17338714": {"uri": "http://www.wikidata.org/entity/Q17338714", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Italian landscape with two Roman soldiers", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Italiaans%20landschap%20met%20twee%20Romeinse%20soldaten%20Rijksmuseum%20SK-A-4215.jpeg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17934,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17934\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17338723": {"uri": "http://www.wikidata.org/entity/Q17338723", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Italian landscape with three women in the foreground", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Italiaans%20landschap%20met%20drie%20vrouwen%20op%20de%20voorgrond%20Rijksmuseum%20SK-A-4216.jpeg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17935,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17935\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17339377": {"uri": "http://www.wikidata.org/entity/Q17339377", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Allegory of dawn", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Allegory%20of%20Dawn%20by%20Gerard%20de%20Lairesse%20Rijksmuseum%20Amsterdam%20SK-A-4259.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17936,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17936\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17347652": {"uri": "http://www.wikidata.org/entity/Q17347652", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Bacchus et Ariane", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Bacchus%20and%20Ariadne%20-%2083%20-%20Rijksmuseum.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Bacchus%20en%20Ariadne%2C%20SK-C-1706.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17937,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17937\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17525960": {"uri": "http://www.wikidata.org/entity/Q17525960", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q17525960", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%2034496-De%20Stedenmaagd%20van%20Amsterdam-De%20Stedenmaagd%20van%20Amsterdam%2C%20de%20hulde%20ontvangend%20van%20verschillende%20volken-Allegorie%20op%20de%20welvaart%20van%20Amsterdam.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17938,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17938\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17740896": {"uri": "http://www.wikidata.org/entity/Q17740896", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q17740896", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.1-Caritas%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17939,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17939\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17741003": {"uri": "http://www.wikidata.org/entity/Q17741003", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q17741003", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.5-Fortitudo%20breidelt%20de%20zotheid%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen-Sterckheyt%20breidelt%20de%20zotheid.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17940,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17940\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17740932": {"uri": "http://www.wikidata.org/entity/Q17740932", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q17740932", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%207359-De%20tuchtiging%20leidt%20een%20behoeftige-Hercules%20op%20de%20tweesprong%20%28%3F%29-Allegorie%20op%20de%20deugd.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17941,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17941\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17741027": {"uri": "http://www.wikidata.org/entity/Q17741027", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q17741027", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.8-Bescherming%20of%20Sterkheyt%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17942,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17942\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17741054": {"uri": "http://www.wikidata.org/entity/Q17741054", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q17741054", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.6-Justitia%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17943,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17943\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17888507": {"uri": "http://www.wikidata.org/entity/Q17888507", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q17888507", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.4-Religio%20begunstigt%20Abondantia%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17944,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17944\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17888580": {"uri": "http://www.wikidata.org/entity/Q17888580", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Eight allegorical scenes from the ceiling of the Leper's Asylum, Amsterdam", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Acht%20allegorische%20voorstellingen%20afkomstig%20van%20het%20plafond%20in%20het%20Leprozenhuis%20-%20SA%207360.1-8%20-%20Amsterdam%20Museum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17945,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17945\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17888734": {"uri": "http://www.wikidata.org/entity/Q17888734", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q17888734", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.2-Saturnus%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17946,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17946\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17888639": {"uri": "http://www.wikidata.org/entity/Q17888639", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q17888639", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.3-Plutus%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17947,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17947\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17888818": {"uri": "http://www.wikidata.org/entity/Q17888818", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q17888818", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.7-De%20Heilige%20Anthonius%20de%20Heremiet%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen-St.%20Antonius%20abt.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17948,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17948\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q18600310": {"uri": "http://www.wikidata.org/entity/Q18600310", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Achille découvert parmi les filles de Lycomède", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Achilles%20recognized%20by%20Ulysses%20at%20the%20Court%20of%20Lycomedes%20%28Gerard%20de%20Lairesse%29%20-%20Nationalmuseum%20-%2017497.tif"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17949,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17949\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17893266": {"uri": "http://www.wikidata.org/entity/Q17893266", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Allegory on the city of Amsterdam (design for the Burgerzaal of the new Town Hall)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/SA%208214-Allegorie%20op%20de%20roem%20van%20Amsterdam.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17950,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17950\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q18600313": {"uri": "http://www.wikidata.org/entity/Q18600313", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Achilles Playing the Lyre at the Arrival of the Envoys of Agamemnon", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Achilles%20Playing%20the%20Lyre%20before%20Patrocles%20%28Gerard%20de%20Lairesse%29%20-%20Nationalmuseum%20-%2017498.tif"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17951,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17951\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19912285": {"uri": "http://www.wikidata.org/entity/Q19912285", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Apollo and Aurora", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1671%20G%C3%A9rard%20de%20Lairesse%20-%20Apollo%20and%20Aurora.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17952,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17952\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20268436": {"uri": "http://www.wikidata.org/entity/Q20268436", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Nymphs Surprised by Satyrs", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Nymphs%20Surprised%20by%20Satyrs%20-%20KMS1870%20-%20Statens%20Museum%20for%20Kunst.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17953,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17953\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20269394": {"uri": "http://www.wikidata.org/entity/Q20269394", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Le mariage d'Alexandre et Roxane", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20-%20Wedding%20of%20Alexander%20the%20Great%20-%201664.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17954,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17954\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20276029": {"uri": "http://www.wikidata.org/entity/Q20276029", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Glaucus and Scylla", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Glaucus%20and%20Scylla%20-%20KMSsp307%20-%20Statens%20Museum%20for%20Kunst.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17955,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17955\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20278272": {"uri": "http://www.wikidata.org/entity/Q20278272", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "King Jeroboam Making Sacrifice to the Golden Calf (Jeroboam's Sin)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20King%20Jeroboam%20Making%20Sacrifice%20to%20the%20Golden%20Calf%20%28Jeroboam%27s%20Sin%29%20-%20KMSsp308%20-%20Statens%20Museum%20for%20Kunst.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17956,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17956\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20536546": {"uri": "http://www.wikidata.org/entity/Q20536546", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Semele and Juno", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Semele%20and%20Juno%20-%20KMSst191%20-%20Statens%20Museum%20for%20Kunst.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17957,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17957\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q26997900": {"uri": "http://www.wikidata.org/entity/Q26997900", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Onderdeel (rechtsonder) van een plafondschildering met als hoofdvoorstelling Diana en haar gezellinnen", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Onderdeel%20%28rechtsonder%29%20van%20een%20plafondschildering%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%20-%20SK-A-1233-2%20-%20Rijksmuseum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17958,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17958\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21733223": {"uri": "http://www.wikidata.org/entity/Q21733223", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Hagar in the Desert", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20Hagar%20in%20the%20Desert%20-%20WGA12392.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17959,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17959\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q26998437": {"uri": "http://www.wikidata.org/entity/Q26998437", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Onderdeel (rechtsboven) van een plafondschildering met als hoofdvoorstelling Diana en haar gezellinnen", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Onderdeel%20%28rechtsboven%29%20van%20een%20plafondschildering%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%20-%20SK-A-1233-4%20-%20Rijksmuseum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17960,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17960\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q26998928": {"uri": "http://www.wikidata.org/entity/Q26998928", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Onderdeel (middendeel) van een plafondschildering met als hoofdvoorstelling Diana en haar gezellinnen", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Onderdeel%20%28middendeel%29%20van%20een%20plafondschildering%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%20-%20SK-A-1233-5%20-%20Rijksmuseum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17961,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17961\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q26999909": {"uri": "http://www.wikidata.org/entity/Q26999909", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Onderdeel (linksonder) van een plafondschildering met als hoofdvoorstelling Diana en haar gezellinnen", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Onderdeel%20%28linksonder%29%20van%20een%20plafondschildering%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%20-%20SK-A-1233-1%20-%20Rijksmuseum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17962,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17962\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q27001662": {"uri": "http://www.wikidata.org/entity/Q27001662", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Onderdeel (linksboven) van een plafondschildering met als hoofdvoorstelling Diana en haar gezellinnen", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Onderdeel%20%28linksboven%29%20van%20een%20plafondschildering%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%20-%20SK-A-1233-3%20-%20Rijksmuseum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17963,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17963\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q27951203": {"uri": "http://www.wikidata.org/entity/Q27951203", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q27951203", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Combate%20de%20centauros%20y%20lapitas.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17964,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17964\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q29656176": {"uri": "http://www.wikidata.org/entity/Q29656176", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Abraham et les Trois Anges", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Mus%C3%A9e%20du%20Louvre%20-%20G%C3%A9rard%20de%20Lairesse%20-%20Abraham%20et%20les%20trois%20anges%20-%20RF%201964-8.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17965,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17965\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q29656178": {"uri": "http://www.wikidata.org/entity/Q29656178", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Hercule entre le vice et la vertu", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Hercule%20entre%20le%20Vice%20et%20le%20Vertu.JPG"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4865\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4865\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q29656185": {"uri": "http://www.wikidata.org/entity/Q29656185", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "L'Institution de l'eucharistie", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20The%20Institution%20of%20the%20Eucharist%20-%20WGA12391.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12493\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12493\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q29856320": {"uri": "http://www.wikidata.org/entity/Q29856320", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Rome Wearing the Crown", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Rome%20op%20den%20Throon%20-%203144%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17966,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17966\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q29856321": {"uri": "http://www.wikidata.org/entity/Q29856321", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Rome from the Throne", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Rome%20van%20den%20Throon%20-%203145%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17967,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17967\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q29897846": {"uri": "http://www.wikidata.org/entity/Q29897846", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q29897846", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20%E2%80%94%20Der%20Tempel%20der%20Tugend.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17968,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17968\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q29951955": {"uri": "http://www.wikidata.org/entity/Q29951955", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q29951955", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20%E2%80%94%20Der%20Tempel%20der%20Ehre.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17969,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17969\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q29965481": {"uri": "http://www.wikidata.org/entity/Q29965481", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q29965481", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/AB%20StGal%20Lairesse%20Stilleben%20V%C3%B6gel.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17970,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17970\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30057128": {"uri": "http://www.wikidata.org/entity/Q30057128", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30057128", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20-%20Aeneas%20beim%20Festmahl%20der%20Dido.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17971,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17971\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30068097": {"uri": "http://www.wikidata.org/entity/Q30068097", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Autoportrait", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Self-Portrait%20Uffizi.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17972,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17972\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30058973": {"uri": "http://www.wikidata.org/entity/Q30058973", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30058973", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Schm%C3%BCckung%20der%20Roxane%20-%20L%201588%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17973,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17973\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30093500": {"uri": "http://www.wikidata.org/entity/Q30093500", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30093500", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Alexander%20der%20Gro%C3%9Fe%20als%20Triumphator%20%28Folge%2012-12%29%20-%204622%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17974,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17974\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30094279": {"uri": "http://www.wikidata.org/entity/Q30094279", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Ulysses and the Sirens", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20-%20Odysseus%20und%20die%20Sirenen.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17975,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17975\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30093502": {"uri": "http://www.wikidata.org/entity/Q30093502", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30093502", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Einzug%20durch%20das%20Stadtor%20%28Folge%201-12%29%20-%204615%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17976,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17976\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30094317": {"uri": "http://www.wikidata.org/entity/Q30094317", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30094317", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Auff%C3%BChrung%20des%20Beutegutes%20%28Folge%202-12%29%20-%204618%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17977,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17977\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30095007": {"uri": "http://www.wikidata.org/entity/Q30095007", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30095007", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Beutegut%20%28Folge%205-12%29%20-%204616%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17978,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17978\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30094356": {"uri": "http://www.wikidata.org/entity/Q30094356", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30094356", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Zug%20der%20Tubenbl%C3%A4ser%20%28Folge%203-12%29%20-%204621%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17979,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17979\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30094354": {"uri": "http://www.wikidata.org/entity/Q30094354", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30094354", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Zug%20der%20Gefangenen%20%28Folge%207-12%29%20-%204955%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17980,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17980\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30094353": {"uri": "http://www.wikidata.org/entity/Q30094353", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30094353", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Zug%20der%20Gefangenen%20%28Folge%206-12%29%20-%204623%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17981,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17981\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30095008": {"uri": "http://www.wikidata.org/entity/Q30095008", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30095008", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Gefangene%20und%20Streitwagen%20%28Folge%208-12%29%20-%204619%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17982,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17982\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30095010": {"uri": "http://www.wikidata.org/entity/Q30095010", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30095010", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Kriegstroph%C3%A4en%20und%20Feldzeichen%20%28Folge%204-12%29%20-%204620%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17983,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17983\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30095315": {"uri": "http://www.wikidata.org/entity/Q30095315", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30095315", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Streitr%C3%B6sser%20und%20Feldherrn%20des%20Alexander%20%28Folge%209-12%29%20-%204956%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17984,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17984\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30095317": {"uri": "http://www.wikidata.org/entity/Q30095317", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30095317", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Zug%20der%20Opfergef%C3%A4%C3%9Fe%20%28Folge%2011-12%29%20-%204617%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17985,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17985\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30095918": {"uri": "http://www.wikidata.org/entity/Q30095918", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30095918", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20%28%5E%29%20-%20Anbetung%20der%20Hirten%20-%205000%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17986,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17986\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30095766": {"uri": "http://www.wikidata.org/entity/Q30095766", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30095766", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20%28zugeschrieben%29%20-%20Ein%20bacchantisches%20Fest%20-%204989%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17987,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17987\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30095675": {"uri": "http://www.wikidata.org/entity/Q30095675", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Le retour d'Ulysse à Ithaque", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20-%20Die%20R%C3%BCckkehr%20des%20Odysseus%20nach%20Ithaka.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17988,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17988\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30099529": {"uri": "http://www.wikidata.org/entity/Q30099529", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q30099529", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Zug%20der%20Opferstiere%20%28Folge%2010-12%29%20-%204614%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17989,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17989\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30099566": {"uri": "http://www.wikidata.org/entity/Q30099566", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Offering to Venus", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Venusopfer%20-%201855%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17990,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17990\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q50325577": {"uri": "http://www.wikidata.org/entity/Q50325577", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q50325577", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20De%20Parnassus%20-%20Gal.-Nr.%201233%20-%20Staatliche%20Kunstsammlungen%20Dresden.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17991,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17991\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q55428705": {"uri": "http://www.wikidata.org/entity/Q55428705", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "The Daughters of Cecrops Opening the Secret Basket", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20The%20Daughters%20of%20Cecrops%20find%20Erichthonius%20in%20the%20basket%20-%20NG.M.00012%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17992,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17992\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q50689571": {"uri": "http://www.wikidata.org/entity/Q50689571", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Old Testament Scene (Solomon and King David)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Franc%C3%BAzsky%20maliar%20-%20Old%20Testament%20Scene%20%28Solomon%20and%20King%20David%29%20-%20O%20253%20-%20Slovak%20National%20Gallery.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17993,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17993\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q55815978": {"uri": "http://www.wikidata.org/entity/Q55815978", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "The Feast of Bacchus", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Het%20feest%20van%20Bacchus%201680.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17994,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17994\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q56676855": {"uri": "http://www.wikidata.org/entity/Q56676855", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Venus hands over the armour made by Vulcan to Aeneas (Aeneid 7)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Venus%20schenkt%20wapens%20aan%20Aeneas%20-%20MMB.0097%20-%20Museum%20Mayer%20van%20den%20Bergh.tiff", "http://commons.wikimedia.org/wiki/Special:FilePath/Venus%20schenkt%20wapens%20aan%20Aeneas%20-%20Lairesse.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17995,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17995\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q59589772": {"uri": "http://www.wikidata.org/entity/Q59589772", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Antiochos, Seleukos & Stratonike", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/16xx%20G%C3%A9rard%20de%20Lairesse%20-%20Antiochos%2C%20Seleukos%20%26%20Stratonike.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Antiochos%20und%20Stratonike%20-%20241%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17996,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17996\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q60476809": {"uri": "http://www.wikidata.org/entity/Q60476809", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Hermes Ordering Calypso to Release Odysseus", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Hermes%20Ordering%20Calypso%20to%20Release%20Odysseus%20-%201992.2%20-%20Cleveland%20Museum%20of%20Art.tiff"], "post_result": "<br />\n<b>Fatal error</b>:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php:132\nStack trace:\n#0 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(132): mysqli-&gt;query('\\nINSERT  INTO `...')\n#1 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(601): pwg_query('\\nINSERT  INTO `...')\n#2 /home6/sc1moissina/galleries.grains-de-culture.fr/admin/include/functions_upload.inc.php(380): single_insert('piwi3o_images', Array)\n#3 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_functions/pwg.images.php(1583): add_uploaded_file('/tmp/phpRVHwjG', 'Gerard%20de%20L...', Array, 8, NULL)\n#4 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_core.inc.php(600): ws_images_addSimple(Array, Object(PwgServer))\n#5 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_protocols/rest_handler.php(41): PwgServer-&gt;invoke('pwg.images.addS...', Array)\n#6 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_core.inc.php(281): PwgRestRequestHandler-&gt;handleRequest(Object(PwgServer))\n#7 /home6/sc1moissina/galleries.grains-de-culture.fr/ws.php(22): PwgServer-&gt;run()\n#8 {main}\n  thrown in <b>/home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php</b> on line <b>132</b><br />\n<br />\n<b>Fatal error</b>:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php:132\nStack trace:\n#0 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(132): mysqli-&gt;query('\\nREPLACE INTO p...')\n#1 /home6/sc1moissina/galleries.grains-de-culture.fr/include/functions_session.inc.php(161): pwg_query('\\nREPLACE INTO p...')\n#2 /home6/sc1moissina/galleries.grains-de-culture.fr/include/pwgsession.class.php(21): pwg_session_write('8716d50ff0476de...', 'pwg_device|s:7:...')\n#3 [internal function]: PwgSession-&gt;write('8716d50ff0476de...', 'pwg_device|s:7:...')\n#4 [internal function]: session_write_close()\n#5 {main}\n  thrown in <b>/home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php</b> on line <b>132</b><br />\n", "posted": true}, "http://www.wikidata.org/entity/Q64541701": {"uri": "http://www.wikidata.org/entity/Q64541701", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Four Continents", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Four%20Continents%20-%2058.280%20-%20Detroit%20Institute%20of%20Arts.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17997,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17997\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q104535809": {"uri": "http://www.wikidata.org/entity/Q104535809", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Offerings", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Offerings%20-%20M.Ob.82%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17998,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17998\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q104535954": {"uri": "http://www.wikidata.org/entity/Q104535954", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Mécène soutenant les arts.", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Gaius%20Maecenas%20%2870%20BC%E2%80%938%20BC%29%20supports%20declining%20fine%20arts%20-%20M.Ob.850%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17999,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17999\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q107493348": {"uri": "http://www.wikidata.org/entity/Q107493348", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Orphée aux Enfers", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%2C%20Descente%20d%27Orph%C3%A9e%20aux%20enfers%20%281662%29%2C%20BAL%2C%20Li%C3%A8ge.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18000,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18000\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q111646256": {"uri": "http://www.wikidata.org/entity/Q111646256", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q111646256", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20%281641-1711%29%20-%20Anbetung%20der%20K%C3%B6nige%20-%202587%20-%20F%C3%BChrermuseum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18001,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18001\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q111649136": {"uri": "http://www.wikidata.org/entity/Q111649136", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q111649136", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20%281641-1711%29%20-%20Allegorische%20Verlobungsszene%20-%203597%20-%20F%C3%BChrermuseum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18002,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18002\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q114354073": {"uri": "http://www.wikidata.org/entity/Q114354073", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Springtime of life", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20La%20primavera%20de%20la%20vida.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18003,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18003\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q115314592": {"uri": "http://www.wikidata.org/entity/Q115314592", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Q115314592", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Acoetes%20vindt%20Bacchus%20op%20het%20eiland%20Chios%20-%201001363%20-%20Bonnefanten%20Museum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18004,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18004\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q115428478": {"uri": "http://www.wikidata.org/entity/Q115428478", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "The Death of Cleopatra", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Death%20of%20Cleopatra%20G%C3%A9rard%20de%20Lairesse.png"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18005,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18005\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q120969455": {"uri": "http://www.wikidata.org/entity/Q120969455", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Drunken Silenus with nymphs.", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%20Drunken%20Silenus.JPG"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18006,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18006\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q116296047": {"uri": "http://www.wikidata.org/entity/Q116296047", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "The Annunciation", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%2C%20Annunciation%2C%20ca.%201668%E2%80%9370%2C%20canvas%2C%20133%20x%20168%20cm.%20Brussels%2C%20Mus%C3%A9e%20Royal%20des%20Beaux%20Arts%2C%20inv.%2012161.png"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18007,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18007\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q121008162": {"uri": "http://www.wikidata.org/entity/Q121008162", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Allegory of the Five Senses", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1668%20G%C3%A9rard%20de%20Lairesse%20-%20Allegory%20of%20the%20Five%20Senses.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18008,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18008\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q121069170": {"uri": "http://www.wikidata.org/entity/Q121069170", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Allégorie de la liberté du Commerce", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1672%20G%C3%A9rard%20de%20Lairesse%20-%20Allegory%20of%20the%20Freedom%20of%20Trade.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18009,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18009\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q123822055": {"uri": "http://www.wikidata.org/entity/Q123822055", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "A Bacchant, a Meanad and a little Faun", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/A%20Bacchant%2C%20a%20Meanad%20and%20a%20little%20Faun%2C%20by%20Gerard%20de%20Lairesse.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18010,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18010\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q121503467": {"uri": "http://www.wikidata.org/entity/Q121503467", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Bacchante endormie", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/16xx%20G%C3%A9rard%20de%20Lairesse%20-%20Sleeping%20Bacchante.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18011,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18011\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q124763421": {"uri": "http://www.wikidata.org/entity/Q124763421", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Thetis dips Achilles in the water of the Styx", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Thetis%20taucht%20den%20kleinen%20Achill%20in%20das%20Wasser%20des%20Styx%20fm64062.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18012,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18012\\/category\\/792\"}}", "posted": true}, "http://www.wikidata.org/entity/Q124760545": {"uri": "http://www.wikidata.org/entity/Q124760545", "createur": "http://www.wikidata.org/entity/Q533958", "createurLabel": "Gérard de Lairesse", "titre_fr": "Prometheus", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Prometheus%20fm75767.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18013,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18013\\/category\\/792\"}}", "posted": true}}, "version": "2.0.0"}
+{
+  "sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q533958 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q533958 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q12898754": {
+      "uri": "http://www.wikidata.org/entity/Q12898754",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Antiochus et Stratonice",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20Antiochus%20en%20Stratonice.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17917,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17917\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q16741676": {
+      "uri": "http://www.wikidata.org/entity/Q16741676",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Le Banquet de Cléopâtre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Het%20feestmaal%20van%20Cleopatra%20Rijksmuseum%20SK-A-2115.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17918,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17918\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17275778": {
+      "uri": "http://www.wikidata.org/entity/Q17275778",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Achille reconnu parmi les filles de Lycomède",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Achilles%20Discovered%20among%20the%20Daughters%20of%20Lycomedes%20-%2082%20-%20Mauritshuis.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17919,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17919\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17275953": {
+      "uri": "http://www.wikidata.org/entity/Q17275953",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "The Glorification of Stadholder-King William III (1650-1702)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Glorification%20of%20Stadholder-King%20William%20III%20by%20Gerard%20de%20Lairesse%20Het%20Loo%20palace.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17920,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17920\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17319932": {
+      "uri": "http://www.wikidata.org/entity/Q17319932",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Ulysse et Calypso",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Odysseus%20bij%20Calypso%20Rijksmuseum%20SK-A-211.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17921,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17921\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17319933": {
+      "uri": "http://www.wikidata.org/entity/Q17319933",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Mercure ordonne à Calypso de laisser partir Ulysse.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20Mercurius%20gelast%20Calypso%20om%20Odysseus%20te%20laten%20vertrekken.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17922,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17922\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17321544": {
+      "uri": "http://www.wikidata.org/entity/Q17321544",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Granida and Daiphilo",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20Granida%20en%20Daiphilo.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17923,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17923\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17323897": {
+      "uri": "http://www.wikidata.org/entity/Q17323897",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Five-part ceiling decoration for the great hall of Soestdijk Palace, with Diana and her companions as the principal representation",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Plafondschildering%20in%20vijf%20delen%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%2C%20geschilderd%20voor%20de%20%27grote%20zaal%27%20van%20Paleis%20Soestdijk%20Rijksmuseum%20SK-A-1233.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17924,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17924\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17324864": {
+      "uri": "http://www.wikidata.org/entity/Q17324864",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "La Cène",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20Het%20laatste%20avondmaal.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17925,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17925\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17338473": {
+      "uri": "http://www.wikidata.org/entity/Q17338473",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Allegory of riches",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20003.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17926,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17926\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17338479": {
+      "uri": "http://www.wikidata.org/entity/Q17338479",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Allegory of charity",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20004.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17927,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17927\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17338491": {
+      "uri": "http://www.wikidata.org/entity/Q17338491",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Allegory of the arts",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20005.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17928,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17928\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17338501": {
+      "uri": "http://www.wikidata.org/entity/Q17338501",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Allegory of the sciences",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Allegorie%20op%20de%20Wetenschappen%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17929,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17929\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17338673": {
+      "uri": "http://www.wikidata.org/entity/Q17338673",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Séléné et Endymion",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1677%20G%C3%A9rard%20de%20Lairesse%20-%20Diana.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17930,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17930\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17338507": {
+      "uri": "http://www.wikidata.org/entity/Q17338507",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Allegory of fame",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20006.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17931,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17931\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17338699": {
+      "uri": "http://www.wikidata.org/entity/Q17338699",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Italian landscape with shepherd and shepherdess",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Italiaans%20landschap%20met%20herderspaar%20Rijksmuseum%20SK-A-4213.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17932,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17932\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17338708": {
+      "uri": "http://www.wikidata.org/entity/Q17338708",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Italian landscape with three women making music",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Italiaans%20landschap%20met%20drie%20musicerende%20vrouwen%20Rijksmuseum%20SK-A-4214.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17933,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17933\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17338714": {
+      "uri": "http://www.wikidata.org/entity/Q17338714",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Italian landscape with two Roman soldiers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Italiaans%20landschap%20met%20twee%20Romeinse%20soldaten%20Rijksmuseum%20SK-A-4215.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17934,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17934\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17338723": {
+      "uri": "http://www.wikidata.org/entity/Q17338723",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Italian landscape with three women in the foreground",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Italiaans%20landschap%20met%20drie%20vrouwen%20op%20de%20voorgrond%20Rijksmuseum%20SK-A-4216.jpeg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17935,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17935\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17339377": {
+      "uri": "http://www.wikidata.org/entity/Q17339377",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Allegory of dawn",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Allegory%20of%20Dawn%20by%20Gerard%20de%20Lairesse%20Rijksmuseum%20Amsterdam%20SK-A-4259.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17936,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17936\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17347652": {
+      "uri": "http://www.wikidata.org/entity/Q17347652",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Bacchus et Ariane",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Bacchus%20and%20Ariadne%20-%2083%20-%20Rijksmuseum.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bacchus%20en%20Ariadne%2C%20SK-C-1706.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17937,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17937\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17525960": {
+      "uri": "http://www.wikidata.org/entity/Q17525960",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q17525960",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%2034496-De%20Stedenmaagd%20van%20Amsterdam-De%20Stedenmaagd%20van%20Amsterdam%2C%20de%20hulde%20ontvangend%20van%20verschillende%20volken-Allegorie%20op%20de%20welvaart%20van%20Amsterdam.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17938,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17938\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17740896": {
+      "uri": "http://www.wikidata.org/entity/Q17740896",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q17740896",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.1-Caritas%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17939,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17939\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17741003": {
+      "uri": "http://www.wikidata.org/entity/Q17741003",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q17741003",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.5-Fortitudo%20breidelt%20de%20zotheid%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen-Sterckheyt%20breidelt%20de%20zotheid.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17940,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17940\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17740932": {
+      "uri": "http://www.wikidata.org/entity/Q17740932",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q17740932",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207359-De%20tuchtiging%20leidt%20een%20behoeftige-Hercules%20op%20de%20tweesprong%20%28%3F%29-Allegorie%20op%20de%20deugd.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17941,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17941\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17741027": {
+      "uri": "http://www.wikidata.org/entity/Q17741027",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q17741027",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.8-Bescherming%20of%20Sterkheyt%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17942,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17942\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17741054": {
+      "uri": "http://www.wikidata.org/entity/Q17741054",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q17741054",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.6-Justitia%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17943,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17943\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17888507": {
+      "uri": "http://www.wikidata.org/entity/Q17888507",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q17888507",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.4-Religio%20begunstigt%20Abondantia%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17944,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17944\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17888580": {
+      "uri": "http://www.wikidata.org/entity/Q17888580",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Eight allegorical scenes from the ceiling of the Leper's Asylum, Amsterdam",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Acht%20allegorische%20voorstellingen%20afkomstig%20van%20het%20plafond%20in%20het%20Leprozenhuis%20-%20SA%207360.1-8%20-%20Amsterdam%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17945,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17945\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17888734": {
+      "uri": "http://www.wikidata.org/entity/Q17888734",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q17888734",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.2-Saturnus%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17946,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17946\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17888639": {
+      "uri": "http://www.wikidata.org/entity/Q17888639",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q17888639",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.3-Plutus%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17947,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17947\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17888818": {
+      "uri": "http://www.wikidata.org/entity/Q17888818",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q17888818",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207360.7-De%20Heilige%20Anthonius%20de%20Heremiet%20-%20Allegorische%20voorstelling%20van%20de%20verzorging%20van%20leprozen%20en%20onnozelen-St.%20Antonius%20abt.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17948,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17948\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18600310": {
+      "uri": "http://www.wikidata.org/entity/Q18600310",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Achille découvert parmi les filles de Lycomède",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Achilles%20recognized%20by%20Ulysses%20at%20the%20Court%20of%20Lycomedes%20%28Gerard%20de%20Lairesse%29%20-%20Nationalmuseum%20-%2017497.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17949,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17949\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17893266": {
+      "uri": "http://www.wikidata.org/entity/Q17893266",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Allegory on the city of Amsterdam (design for the Burgerzaal of the new Town Hall)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/SA%208214-Allegorie%20op%20de%20roem%20van%20Amsterdam.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17950,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17950\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18600313": {
+      "uri": "http://www.wikidata.org/entity/Q18600313",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Achilles Playing the Lyre at the Arrival of the Envoys of Agamemnon",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Achilles%20Playing%20the%20Lyre%20before%20Patrocles%20%28Gerard%20de%20Lairesse%29%20-%20Nationalmuseum%20-%2017498.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17951,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17951\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19912285": {
+      "uri": "http://www.wikidata.org/entity/Q19912285",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Apollo and Aurora",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1671%20G%C3%A9rard%20de%20Lairesse%20-%20Apollo%20and%20Aurora.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17952,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17952\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20268436": {
+      "uri": "http://www.wikidata.org/entity/Q20268436",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Nymphs Surprised by Satyrs",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Nymphs%20Surprised%20by%20Satyrs%20-%20KMS1870%20-%20Statens%20Museum%20for%20Kunst.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17953,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17953\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20269394": {
+      "uri": "http://www.wikidata.org/entity/Q20269394",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Le mariage d'Alexandre et Roxane",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20-%20Wedding%20of%20Alexander%20the%20Great%20-%201664.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17954,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17954\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20276029": {
+      "uri": "http://www.wikidata.org/entity/Q20276029",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Glaucus and Scylla",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Glaucus%20and%20Scylla%20-%20KMSsp307%20-%20Statens%20Museum%20for%20Kunst.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17955,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17955\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20278272": {
+      "uri": "http://www.wikidata.org/entity/Q20278272",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "King Jeroboam Making Sacrifice to the Golden Calf (Jeroboam's Sin)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20King%20Jeroboam%20Making%20Sacrifice%20to%20the%20Golden%20Calf%20%28Jeroboam%27s%20Sin%29%20-%20KMSsp308%20-%20Statens%20Museum%20for%20Kunst.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17956,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17956\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20536546": {
+      "uri": "http://www.wikidata.org/entity/Q20536546",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Semele and Juno",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Semele%20and%20Juno%20-%20KMSst191%20-%20Statens%20Museum%20for%20Kunst.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17957,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17957\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26997900": {
+      "uri": "http://www.wikidata.org/entity/Q26997900",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Onderdeel (rechtsonder) van een plafondschildering met als hoofdvoorstelling Diana en haar gezellinnen",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Onderdeel%20%28rechtsonder%29%20van%20een%20plafondschildering%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%20-%20SK-A-1233-2%20-%20Rijksmuseum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17958,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17958\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21733223": {
+      "uri": "http://www.wikidata.org/entity/Q21733223",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Hagar in the Desert",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20Hagar%20in%20the%20Desert%20-%20WGA12392.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17959,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17959\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26998437": {
+      "uri": "http://www.wikidata.org/entity/Q26998437",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Onderdeel (rechtsboven) van een plafondschildering met als hoofdvoorstelling Diana en haar gezellinnen",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Onderdeel%20%28rechtsboven%29%20van%20een%20plafondschildering%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%20-%20SK-A-1233-4%20-%20Rijksmuseum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17960,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17960\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26998928": {
+      "uri": "http://www.wikidata.org/entity/Q26998928",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Onderdeel (middendeel) van een plafondschildering met als hoofdvoorstelling Diana en haar gezellinnen",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Onderdeel%20%28middendeel%29%20van%20een%20plafondschildering%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%20-%20SK-A-1233-5%20-%20Rijksmuseum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17961,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17961\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q26999909": {
+      "uri": "http://www.wikidata.org/entity/Q26999909",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Onderdeel (linksonder) van een plafondschildering met als hoofdvoorstelling Diana en haar gezellinnen",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Onderdeel%20%28linksonder%29%20van%20een%20plafondschildering%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%20-%20SK-A-1233-1%20-%20Rijksmuseum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17962,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17962\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27001662": {
+      "uri": "http://www.wikidata.org/entity/Q27001662",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Onderdeel (linksboven) van een plafondschildering met als hoofdvoorstelling Diana en haar gezellinnen",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Onderdeel%20%28linksboven%29%20van%20een%20plafondschildering%20met%20als%20hoofdvoorstelling%20Diana%20en%20haar%20gezellinnen%20-%20SK-A-1233-3%20-%20Rijksmuseum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17963,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17963\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27951203": {
+      "uri": "http://www.wikidata.org/entity/Q27951203",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q27951203",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Combate%20de%20centauros%20y%20lapitas.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17964,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17964\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29656176": {
+      "uri": "http://www.wikidata.org/entity/Q29656176",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Abraham et les Trois Anges",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Mus%C3%A9e%20du%20Louvre%20-%20G%C3%A9rard%20de%20Lairesse%20-%20Abraham%20et%20les%20trois%20anges%20-%20RF%201964-8.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17965,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17965\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29656178": {
+      "uri": "http://www.wikidata.org/entity/Q29656178",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Hercule entre le vice et la vertu",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Hercule%20entre%20le%20Vice%20et%20le%20Vertu.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4865\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4865\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29656185": {
+      "uri": "http://www.wikidata.org/entity/Q29656185",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "L'Institution de l'eucharistie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20The%20Institution%20of%20the%20Eucharist%20-%20WGA12391.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"12493\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/12493\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29856320": {
+      "uri": "http://www.wikidata.org/entity/Q29856320",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Rome Wearing the Crown",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Rome%20op%20den%20Throon%20-%203144%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17966,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17966\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29856321": {
+      "uri": "http://www.wikidata.org/entity/Q29856321",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Rome from the Throne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Rome%20van%20den%20Throon%20-%203145%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17967,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17967\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29897846": {
+      "uri": "http://www.wikidata.org/entity/Q29897846",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q29897846",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20%E2%80%94%20Der%20Tempel%20der%20Tugend.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17968,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17968\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29951955": {
+      "uri": "http://www.wikidata.org/entity/Q29951955",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q29951955",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20%E2%80%94%20Der%20Tempel%20der%20Ehre.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17969,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17969\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29965481": {
+      "uri": "http://www.wikidata.org/entity/Q29965481",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q29965481",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/AB%20StGal%20Lairesse%20Stilleben%20V%C3%B6gel.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17970,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17970\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30057128": {
+      "uri": "http://www.wikidata.org/entity/Q30057128",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30057128",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20-%20Aeneas%20beim%20Festmahl%20der%20Dido.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17971,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17971\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30068097": {
+      "uri": "http://www.wikidata.org/entity/Q30068097",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Autoportrait",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Self-Portrait%20Uffizi.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17972,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17972\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30058973": {
+      "uri": "http://www.wikidata.org/entity/Q30058973",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30058973",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Schm%C3%BCckung%20der%20Roxane%20-%20L%201588%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17973,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17973\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30093500": {
+      "uri": "http://www.wikidata.org/entity/Q30093500",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30093500",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Alexander%20der%20Gro%C3%9Fe%20als%20Triumphator%20%28Folge%2012-12%29%20-%204622%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17974,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17974\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30094279": {
+      "uri": "http://www.wikidata.org/entity/Q30094279",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Ulysses and the Sirens",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20-%20Odysseus%20und%20die%20Sirenen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17975,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17975\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30093502": {
+      "uri": "http://www.wikidata.org/entity/Q30093502",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30093502",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Einzug%20durch%20das%20Stadtor%20%28Folge%201-12%29%20-%204615%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17976,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17976\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30094317": {
+      "uri": "http://www.wikidata.org/entity/Q30094317",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30094317",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Auff%C3%BChrung%20des%20Beutegutes%20%28Folge%202-12%29%20-%204618%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17977,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17977\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30095007": {
+      "uri": "http://www.wikidata.org/entity/Q30095007",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30095007",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Beutegut%20%28Folge%205-12%29%20-%204616%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17978,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17978\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30094356": {
+      "uri": "http://www.wikidata.org/entity/Q30094356",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30094356",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Zug%20der%20Tubenbl%C3%A4ser%20%28Folge%203-12%29%20-%204621%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17979,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17979\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30094354": {
+      "uri": "http://www.wikidata.org/entity/Q30094354",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30094354",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Zug%20der%20Gefangenen%20%28Folge%207-12%29%20-%204955%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17980,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17980\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30094353": {
+      "uri": "http://www.wikidata.org/entity/Q30094353",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30094353",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Zug%20der%20Gefangenen%20%28Folge%206-12%29%20-%204623%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17981,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17981\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30095008": {
+      "uri": "http://www.wikidata.org/entity/Q30095008",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30095008",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Gefangene%20und%20Streitwagen%20%28Folge%208-12%29%20-%204619%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17982,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17982\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30095010": {
+      "uri": "http://www.wikidata.org/entity/Q30095010",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30095010",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Kriegstroph%C3%A4en%20und%20Feldzeichen%20%28Folge%204-12%29%20-%204620%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17983,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17983\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30095315": {
+      "uri": "http://www.wikidata.org/entity/Q30095315",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30095315",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Streitr%C3%B6sser%20und%20Feldherrn%20des%20Alexander%20%28Folge%209-12%29%20-%204956%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17984,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17984\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30095317": {
+      "uri": "http://www.wikidata.org/entity/Q30095317",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30095317",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Zug%20der%20Opfergef%C3%A4%C3%9Fe%20%28Folge%2011-12%29%20-%204617%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17985,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17985\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30095918": {
+      "uri": "http://www.wikidata.org/entity/Q30095918",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30095918",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20%28%5E%29%20-%20Anbetung%20der%20Hirten%20-%205000%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17986,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17986\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30095766": {
+      "uri": "http://www.wikidata.org/entity/Q30095766",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30095766",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20%28zugeschrieben%29%20-%20Ein%20bacchantisches%20Fest%20-%204989%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17987,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17987\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30095675": {
+      "uri": "http://www.wikidata.org/entity/Q30095675",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Le retour d'Ulysse à Ithaque",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%2C%20G%C3%A9rard%20de%20-%20Die%20R%C3%BCckkehr%20des%20Odysseus%20nach%20Ithaka.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17988,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17988\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30099529": {
+      "uri": "http://www.wikidata.org/entity/Q30099529",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q30099529",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Triumphzug%20Alexanders%20des%20Gro%C3%9Fen%2C%20Zug%20der%20Opferstiere%20%28Folge%2010-12%29%20-%204614%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17989,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17989\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30099566": {
+      "uri": "http://www.wikidata.org/entity/Q30099566",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Offering to Venus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Venusopfer%20-%201855%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17990,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17990\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50325577": {
+      "uri": "http://www.wikidata.org/entity/Q50325577",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q50325577",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20De%20Parnassus%20-%20Gal.-Nr.%201233%20-%20Staatliche%20Kunstsammlungen%20Dresden.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17991,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17991\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q55428705": {
+      "uri": "http://www.wikidata.org/entity/Q55428705",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "The Daughters of Cecrops Opening the Secret Basket",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20The%20Daughters%20of%20Cecrops%20find%20Erichthonius%20in%20the%20basket%20-%20NG.M.00012%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17992,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17992\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q50689571": {
+      "uri": "http://www.wikidata.org/entity/Q50689571",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Old Testament Scene (Solomon and King David)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Franc%C3%BAzsky%20maliar%20-%20Old%20Testament%20Scene%20%28Solomon%20and%20King%20David%29%20-%20O%20253%20-%20Slovak%20National%20Gallery.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17993,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17993\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q55815978": {
+      "uri": "http://www.wikidata.org/entity/Q55815978",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "The Feast of Bacchus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Het%20feest%20van%20Bacchus%201680.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17994,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17994\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q56676855": {
+      "uri": "http://www.wikidata.org/entity/Q56676855",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Venus hands over the armour made by Vulcan to Aeneas (Aeneid 7)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Venus%20schenkt%20wapens%20aan%20Aeneas%20-%20MMB.0097%20-%20Museum%20Mayer%20van%20den%20Bergh.tiff",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Venus%20schenkt%20wapens%20aan%20Aeneas%20-%20Lairesse.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17995,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17995\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q59589772": {
+      "uri": "http://www.wikidata.org/entity/Q59589772",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Antiochos, Seleukos & Stratonike",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/16xx%20G%C3%A9rard%20de%20Lairesse%20-%20Antiochos%2C%20Seleukos%20%26%20Stratonike.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Antiochos%20und%20Stratonike%20-%20241%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17996,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17996\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q60476809": {
+      "uri": "http://www.wikidata.org/entity/Q60476809",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Hermes Ordering Calypso to Release Odysseus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Hermes%20Ordering%20Calypso%20to%20Release%20Odysseus%20-%201992.2%20-%20Cleveland%20Museum%20of%20Art.tiff"
+      ],
+    },
+    "http://www.wikidata.org/entity/Q64541701": {
+      "uri": "http://www.wikidata.org/entity/Q64541701",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Four Continents",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Four%20Continents%20-%2058.280%20-%20Detroit%20Institute%20of%20Arts.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17997,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17997\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104535809": {
+      "uri": "http://www.wikidata.org/entity/Q104535809",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Offerings",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Offerings%20-%20M.Ob.82%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17998,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17998\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104535954": {
+      "uri": "http://www.wikidata.org/entity/Q104535954",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Mécène soutenant les arts.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Gaius%20Maecenas%20%2870%20BC%E2%80%938%20BC%29%20supports%20declining%20fine%20arts%20-%20M.Ob.850%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":17999,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/17999\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q107493348": {
+      "uri": "http://www.wikidata.org/entity/Q107493348",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Orphée aux Enfers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%2C%20Descente%20d%27Orph%C3%A9e%20aux%20enfers%20%281662%29%2C%20BAL%2C%20Li%C3%A8ge.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18000,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18000\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111646256": {
+      "uri": "http://www.wikidata.org/entity/Q111646256",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q111646256",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20%281641-1711%29%20-%20Anbetung%20der%20K%C3%B6nige%20-%202587%20-%20F%C3%BChrermuseum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18001,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18001\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q111649136": {
+      "uri": "http://www.wikidata.org/entity/Q111649136",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q111649136",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20%281641-1711%29%20-%20Allegorische%20Verlobungsszene%20-%203597%20-%20F%C3%BChrermuseum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18002,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18002\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q114354073": {
+      "uri": "http://www.wikidata.org/entity/Q114354073",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Springtime of life",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rard%20de%20Lairesse%20-%20La%20primavera%20de%20la%20vida.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18003,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18003\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q115314592": {
+      "uri": "http://www.wikidata.org/entity/Q115314592",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Q115314592",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Acoetes%20vindt%20Bacchus%20op%20het%20eiland%20Chios%20-%201001363%20-%20Bonnefanten%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18004,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18004\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q115428478": {
+      "uri": "http://www.wikidata.org/entity/Q115428478",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "The Death of Cleopatra",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Death%20of%20Cleopatra%20G%C3%A9rard%20de%20Lairesse.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18005,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18005\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q120969455": {
+      "uri": "http://www.wikidata.org/entity/Q120969455",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Drunken Silenus with nymphs.",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Lairesse%20Drunken%20Silenus.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18006,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18006\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q116296047": {
+      "uri": "http://www.wikidata.org/entity/Q116296047",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "The Annunciation",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%2C%20Annunciation%2C%20ca.%201668%E2%80%9370%2C%20canvas%2C%20133%20x%20168%20cm.%20Brussels%2C%20Mus%C3%A9e%20Royal%20des%20Beaux%20Arts%2C%20inv.%2012161.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18007,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18007\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q121008162": {
+      "uri": "http://www.wikidata.org/entity/Q121008162",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Allegory of the Five Senses",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1668%20G%C3%A9rard%20de%20Lairesse%20-%20Allegory%20of%20the%20Five%20Senses.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18008,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18008\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q121069170": {
+      "uri": "http://www.wikidata.org/entity/Q121069170",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Allégorie de la liberté du Commerce",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1672%20G%C3%A9rard%20de%20Lairesse%20-%20Allegory%20of%20the%20Freedom%20of%20Trade.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18009,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18009\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123822055": {
+      "uri": "http://www.wikidata.org/entity/Q123822055",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "A Bacchant, a Meanad and a little Faun",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Bacchant%2C%20a%20Meanad%20and%20a%20little%20Faun%2C%20by%20Gerard%20de%20Lairesse.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18010,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18010\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q121503467": {
+      "uri": "http://www.wikidata.org/entity/Q121503467",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Bacchante endormie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/16xx%20G%C3%A9rard%20de%20Lairesse%20-%20Sleeping%20Bacchante.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18011,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18011\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q124763421": {
+      "uri": "http://www.wikidata.org/entity/Q124763421",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Thetis dips Achilles in the water of the Styx",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Thetis%20taucht%20den%20kleinen%20Achill%20in%20das%20Wasser%20des%20Styx%20fm64062.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18012,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18012\\/category\\/792\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q124760545": {
+      "uri": "http://www.wikidata.org/entity/Q124760545",
+      "createur": "http://www.wikidata.org/entity/Q533958",
+      "createurLabel": "Gérard de Lairesse",
+      "titre_fr": "Prometheus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20de%20Lairesse%20-%20Prometheus%20fm75767.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18013,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18013\\/category\\/792\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

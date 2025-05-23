@@ -7,7 +7,7 @@ from src.generationWordpress.CScrutartState import CScrutartState
 
 # but: mettre des images dans le graphe d'état scrutartStateTrial (plus tard scrutartState local et TPT)
 if __name__ == "__main__":
-    baseDir = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data/fr/fusion/"
+    baseDir = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data/fr/20250507/"
     listFileToConvert =[f for f in listdir(baseDir) if isfile(join(baseDir, f)) and ("listeImages_Q" in f) and (not ".ttl" in f)]
     # fichier texte avec une simple liste de path vers des fichiers de liste d'images
     for fileName in listFileToConvert:

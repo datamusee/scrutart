@@ -1,1 +1,1068 @@
-{"sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q483992 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }", "liste": [], "dict": {"http://www.wikidata.org/entity/Q19925243": {"uri": "http://www.wikidata.org/entity/Q19925243", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Petites Mendiantes", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20Petites%20mendiantes%2C%201890%20%285589766955%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8979\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8979\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19925238": {"uri": "http://www.wikidata.org/entity/Q19925238", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Premières caresses", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20Premi%C3%A8res%20caresses%2C%201866%20%285590356440%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8980\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8980\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q94927033": {"uri": "http://www.wikidata.org/entity/Q94927033", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "L'Océanide", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Ocean%20Nymph%20%28L%27oc%C3%A9anide%29%281904%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1154\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1154\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q108577029": {"uri": "http://www.wikidata.org/entity/Q108577029", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Le crabe", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/%22Le%20Crabe%22%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13666,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13666\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q132167885": {"uri": "http://www.wikidata.org/entity/Q132167885", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La tasse de lait", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/La%20tasse%20de%20lait%2C%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9628\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9628\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q123985319": {"uri": "http://www.wikidata.org/entity/Q123985319", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Le Vœu de Sainte-Anne d'Auray", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Le%20V%C5%93u%20de%20Sainte-Anne%20d%27Auray.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13667,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13667\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q110915108": {"uri": "http://www.wikidata.org/entity/Q110915108", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Portrait de Mademoiselle Elizabeth Gardner", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Portrait%20de%20Mademoiselle%20Elizabeth%20Gardner%20%281879%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13668,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13668\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q117476696": {"uri": "http://www.wikidata.org/entity/Q117476696", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Tête d'Italienne avec une couronne de laurier", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Head%20of%20an%20Italian%20girl%20with%20a%20laurel%20wreath%20%281872%29%2C%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13669,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13669\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q123255165": {"uri": "http://www.wikidata.org/entity/Q123255165", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La tricoteuse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20La%20tricoteuse%2C%201869%20%285590356746%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13670,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13670\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q125566563": {"uri": "http://www.wikidata.org/entity/Q125566563", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Amour à l'affut", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Amour%20A%20L%27affut%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13671,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13671\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q110930300": {"uri": "http://www.wikidata.org/entity/Q110930300", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Idylle", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Idylle%20W-A%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13672,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13672\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q122195190": {"uri": "http://www.wikidata.org/entity/Q122195190", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Autoportrait", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Self-portrait%20%281853%29%20-%20Private%20collection.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5658\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5658\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q105576340": {"uri": "http://www.wikidata.org/entity/Q105576340", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Au bord du ruisseau", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Au%20bord%20du%20ruisseau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13673,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13673\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q105377458": {"uri": "http://www.wikidata.org/entity/Q105377458", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La grappe de raisin (première réduction)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20grape%20cluster%20%28first%20reduction%29%20%281868%29%2C%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9227\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9227\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q132643256": {"uri": "http://www.wikidata.org/entity/Q132643256", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Berceuse (Le coucher)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Berceuse%20%28Le%20coucher%29%2C%20by%20William%20Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13674,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13674\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q104881799": {"uri": "http://www.wikidata.org/entity/Q104881799", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Blessures d'amour", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Blessures%20d%27Amour%2C%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13675,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13675\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q110770288": {"uri": "http://www.wikidata.org/entity/Q110770288", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Première discorde", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Premi%C3%A8re%20discorde.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13676,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13676\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q110916850": {"uri": "http://www.wikidata.org/entity/Q110916850", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "L'Aurore", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/L%27Aurore%20-%20William-Adolphe%20Bouguereau%20-%201881.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13677,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13677\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q127961106": {"uri": "http://www.wikidata.org/entity/Q127961106", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Petite Mendiante", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Little%20Beggar%20%281880%29%2C%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13678,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13678\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q108872820": {"uri": "http://www.wikidata.org/entity/Q108872820", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Le livre de prix", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Livre%20De%20Prix%20%28The%20Price%20Book%29%20by%20William%20Bouguereau%2C%201901.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13679,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13679\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q101030675": {"uri": "http://www.wikidata.org/entity/Q101030675", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Au bord de la mer", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Au%20bord%20de%20la%20mer%20%281903%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13680,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13680\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q117476801": {"uri": "http://www.wikidata.org/entity/Q117476801", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La frileuse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20chilly%20woman%20%281879%29%2C%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13681,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13681\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q132173749": {"uri": "http://www.wikidata.org/entity/Q132173749", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Tête d'enfant", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William%20Bouguereau%20-%20Study%20for%20La%20tasse%20de%20lait.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9693\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9693\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q117235296": {"uri": "http://www.wikidata.org/entity/Q117235296", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Tricoteuse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Tricoteuse%2C%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13682,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13682\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q124257264": {"uri": "http://www.wikidata.org/entity/Q124257264", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Admiration maternelle - le bain", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Admiration%20maternelle%20-%20le%20bain%2C%20by%20William%20Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13683,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13683\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q122975902": {"uri": "http://www.wikidata.org/entity/Q122975902", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La petite écolière", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20La%20petite%20%C3%A9coli%C3%A8re%201879.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13684,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13684\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q118274608": {"uri": "http://www.wikidata.org/entity/Q118274608", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Portrait d'un enfant de Madame Porter", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20Portrait%20of%20a%20Child%20of%20Madame%20Porter.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13685,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13685\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q117233881": {"uri": "http://www.wikidata.org/entity/Q117233881", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Tricoteuse Bretonne", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Tricoteuse%20Bretonne%2C%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13686,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13686\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q125055798": {"uri": "http://www.wikidata.org/entity/Q125055798", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La tricoteuse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Little%20Knitter%20%281884%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13687,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13687\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q42877149": {"uri": "http://www.wikidata.org/entity/Q42877149", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Faneuse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Haymaker%20%281869%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9566\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9566\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19925251": {"uri": "http://www.wikidata.org/entity/Q19925251", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La Cruche Cassée", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Le%20pichet%20cass%C3%A9%20%281891%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8978\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8978\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q86089529": {"uri": "http://www.wikidata.org/entity/Q86089529", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "L'Amour s'envole", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%201901%20L%20Amour%20s%20envole.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13688,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13688\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q78689846": {"uri": "http://www.wikidata.org/entity/Q78689846", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Le Captif", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau-le%20Captif.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13689,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13689\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q20891205": {"uri": "http://www.wikidata.org/entity/Q20891205", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Tentation", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Temptation%20%281880%29.png"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13690,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13690\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q86089523": {"uri": "http://www.wikidata.org/entity/Q86089523", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Gardeuse de moutons", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Gardeuse%20de%20moutons%20%281881%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13691,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13691\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q60477291": {"uri": "http://www.wikidata.org/entity/Q60477291", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Une vocation", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20A%20Calling%20%281896%29.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Adolphe%20Bouguereau%20-%20A%20Calling%20-%201996.272%20-%20Cleveland%20Museum%20of%20Art.tif"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13692,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13692\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q87718952": {"uri": "http://www.wikidata.org/entity/Q87718952", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La famille indigente (réduction)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Indigent%20Family%20%28Charity%29%20%281865%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13693,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13693\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q61053361": {"uri": "http://www.wikidata.org/entity/Q61053361", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Torse ou demi-figure peinte", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20Demi%20figure%20peinte.JPG"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13694,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13694\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q87062107": {"uri": "http://www.wikidata.org/entity/Q87062107", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "L'amour à l'épine", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Amourepine%20W-A%20Bouguereau.png"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9394\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9394\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21673243": {"uri": "http://www.wikidata.org/entity/Q21673243", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Baigneuse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Baadster%2C%20William-Adolphe%20Bouguereau%2C%201864%2C%20Koninklijk%20Museum%20voor%20Schone%20Kunsten%20Gent%2C%201865-C.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20Baigneuse.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Bouguereau%20-%20Bathing%20Woman%20-%201865-C%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13695,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13695\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q86706446": {"uri": "http://www.wikidata.org/entity/Q86706446", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Loin du pays", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Loin%20du%20pays%20%281867%29%20-%20Museo%20de%20Arte%20de%20Ponce.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13696,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13696\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21290851": {"uri": "http://www.wikidata.org/entity/Q21290851", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Admiration", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Admiration%2C%201897%20%28San%20Antonio%20Museum%20of%20Art%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1016\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1016\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19966499": {"uri": "http://www.wikidata.org/entity/Q19966499", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Douleur d'amour", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Elegy%20%281899%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1007\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1007\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q85839383": {"uri": "http://www.wikidata.org/entity/Q85839383", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Retour de la Moisson", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Return%20from%20the%20Harvest%20%281878%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13697,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13697\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q63964544": {"uri": "http://www.wikidata.org/entity/Q63964544", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Câlinerie", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20A%20Little%20Coaxing%20%281890%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13698,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13698\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21716841": {"uri": "http://www.wikidata.org/entity/Q21716841", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Les adieux de Tobias avec son père", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Tobias%20Saying%20Farewell%20to%20his%20Father%20-%20WGA2929.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13699,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13699\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q87350941": {"uri": "http://www.wikidata.org/entity/Q87350941", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Idylle: famille antique", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20Idyll%20Ancient%20Family.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13700,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13700\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q46040924": {"uri": "http://www.wikidata.org/entity/Q46040924", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La couturière", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Sewing%20%281898%29%20Edit%202.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7267\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7267\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q87065122": {"uri": "http://www.wikidata.org/entity/Q87065122", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Portrait de Thérésa", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Teresa%20W-A%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7682\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7682\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q87016098": {"uri": "http://www.wikidata.org/entity/Q87016098", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Tricoteuse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Tricoteuse%20%281879%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13701,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13701\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q86089525": {"uri": "http://www.wikidata.org/entity/Q86089525", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Dans le Bois", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Dans%20le%20Bois%20%281905%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13702,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13702\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q87137561": {"uri": "http://www.wikidata.org/entity/Q87137561", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Psyche et L'Amour", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Psyche%20et%20LAmour.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13703,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13703\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q4191448": {"uri": "http://www.wikidata.org/entity/Q4191448", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Zénobie retrouvée par les bergers sur les bords de l'Araxe", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20Z%C3%A9nobia%20retrouv%C3%A9e%20par%20les%20bergers%20sur%20les%20bords%20de%20l%20Araxe%2C%201850%20%285650292484%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13704,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13704\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q4247460": {"uri": "http://www.wikidata.org/entity/Q4247460", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "L'Amour au Papillon", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Cupid%20with%20a%20Butterfly-LAmour%20au%20papillon.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1059\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1059\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q4375073": {"uri": "http://www.wikidata.org/entity/Q4375073", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Le Ravissement de Psyché", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Psycheabduct.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13705,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13705\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q18818947": {"uri": "http://www.wikidata.org/entity/Q18818947", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Bacchante lutinant une chèvre", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20Bacchante%20lutinant%20une%20chevre%2C%201862.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"874\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/874\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q12849302": {"uri": "http://www.wikidata.org/entity/Q12849302", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "L'Étoile perdue", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Lost%20Pleiad%20%281884%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"922\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/922\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19816847": {"uri": "http://www.wikidata.org/entity/Q19816847", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Enfant au bain", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20Enfant%20au%20bain%2C%201886%20%285589767581%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"956\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/956\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3555076": {"uri": "http://www.wikidata.org/entity/Q3555076", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Nymphes et satyre", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Nymphs%20and%20Satyr%20-%201955.658%20-%20Clark%20Art%20Institute.tiff", "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Nymphs%20and%20Satyr%20%281873%29%20HQ.jpg"], "post_result": "<br />\n<b>Fatal error</b>:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php:132\nStack trace:\n#0 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(132): mysqli-&gt;query('\\nINSERT  INTO `...')\n#1 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(601): pwg_query('\\nINSERT  INTO `...')\n#2 /home6/sc1moissina/galleries.grains-de-culture.fr/admin/include/functions_upload.inc.php(380): single_insert('piwi3o_images', Array)\n#3 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_functions/pwg.images.php(1583): add_uploaded_file('/tmp/php6m7k3V', 'William-Adolphe...', Array, 8, NULL)\n#4 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_core.inc.php(600): ws_images_addSimple(Array, Object(PwgServer))\n#5 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_protocols/rest_handler.php(41): PwgServer-&gt;invoke('pwg.images.addS...', Array)\n#6 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_core.inc.php(281): PwgRestRequestHandler-&gt;handleRequest(Object(PwgServer))\n#7 /home6/sc1moissina/galleries.grains-de-culture.fr/ws.php(22): PwgServer-&gt;run()\n#8 {main}\n  thrown in <b>/home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php</b> on line <b>132</b><br />\n<br />\n<b>Fatal error</b>:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php:132\nStack trace:\n#0 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(132): mysqli-&gt;query('\\nREPLACE INTO p...')\n#1 /home6/sc1moissina/galleries.grains-de-culture.fr/include/functions_session.inc.php(161): pwg_query('\\nREPLACE INTO p...')\n#2 /home6/sc1moissina/galleries.grains-de-culture.fr/include/pwgsession.class.php(21): pwg_session_write('8aeaf0415194a65...', 'pwg_device|s:7:...')\n#3 [internal function]: PwgSession-&gt;write('8aeaf0415194a65...', 'pwg_device|s:7:...')\n#4 [internal function]: session_write_close()\n#5 {main}\n  thrown in <b>/home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php</b> on line <b>132</b><br />\n", "posted": true}, "http://www.wikidata.org/entity/Q17494993": {"uri": "http://www.wikidata.org/entity/Q17494993", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Philomèle et Progné", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20Philom%C3%A8le%20et%20Progn%C3%A9%2C%201861.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13706,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13706\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1000128": {"uri": "http://www.wikidata.org/entity/Q1000128", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La Bohémienne", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Bohemian%20%281890%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8967\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8967\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17492628": {"uri": "http://www.wikidata.org/entity/Q17492628", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "L'Assaut", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/L%27Assaut%201898%20William%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4778\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4778\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q12843760": {"uri": "http://www.wikidata.org/entity/Q12843760", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Amour A L'affut", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Love%20on%20the%20Look%20Out%20%281890%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13707,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13707\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17566327": {"uri": "http://www.wikidata.org/entity/Q17566327", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La Toilette de Vénus", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20La%20toilette%20de%20Venus%2C%201873.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1052\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1052\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2665048": {"uri": "http://www.wikidata.org/entity/Q2665048", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Dante et Virgile", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William%20Bouguereau%20-%20Dante%20and%20Virgile%20-%20Google%20Art%20Project%202.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5231\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5231\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q11125879": {"uri": "http://www.wikidata.org/entity/Q11125879", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "L'âme parentale", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Motherland%20%281883%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4825\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4825\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q10943167": {"uri": "http://www.wikidata.org/entity/Q10943167", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Petites Maraudeuses", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20les%20petites%20maraudes%2C%201872%20%285590354872%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9063\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9063\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q11076793": {"uri": "http://www.wikidata.org/entity/Q11076793", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Jeune fille se défendant contre Éros", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/A%20Girl%20Defending%20Herself%20against%20Eros%2C%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4826\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4826\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q12839552": {"uri": "http://www.wikidata.org/entity/Q12839552", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Flore et Zéphire", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Flora%20And%20Zephyr%20%281875%29%20transparency.png"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5237\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5237\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1283024": {"uri": "http://www.wikidata.org/entity/Q1283024", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La Naissance de Vénus", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Birth%20of%20Venus%20%281879%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"883\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/883\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19912836": {"uri": "http://www.wikidata.org/entity/Q19912836", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Jeune Mère contemplant son enfant", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Young%20Mother%20Gazing%20At%20Her%20Child%20%281871%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13708,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13708\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q10959599": {"uri": "http://www.wikidata.org/entity/Q10959599", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Au bord du ruisseau", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20At%20the%20Edge%20of%20the%20Brook%20%281875%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"131\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/131\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17093267": {"uri": "http://www.wikidata.org/entity/Q17093267", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Parure des champs", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Crown%20of%20Flowers%20%28William-Adolphe%20Bouguereau%2C%201884%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9039\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9039\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17059033": {"uri": "http://www.wikidata.org/entity/Q17059033", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Le Travail interrompu", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Work%20Interrupted%20%281891%29.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Travailinterrompu%20W-A%20Bouguereau.JPG"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13709,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13709\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q12837243": {"uri": "http://www.wikidata.org/entity/Q12837243", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La Vierge aux anges", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20The%20Virgin%20With%20Angels.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13710,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13710\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17492021": {"uri": "http://www.wikidata.org/entity/Q17492021", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La Jeunesse et l'Amour", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20La%20Jeunesse%20et%20l%27Amour%2C%201877%20%28crop%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"840\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/840\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q11088732": {"uri": "http://www.wikidata.org/entity/Q11088732", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Rêve de printemps", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20A%20Dream%20of%20Spring%20%281901%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4827\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4827\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2568551": {"uri": "http://www.wikidata.org/entity/Q2568551", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La Danse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Dance%20%281856%29.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Dance%20%281856%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4819\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4819\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q12958201": {"uri": "http://www.wikidata.org/entity/Q12958201", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Les Murmures de l'Amour", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Whisperings%20of%20Love%20%281889%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9064\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9064\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q12838427": {"uri": "http://www.wikidata.org/entity/Q12838427", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La Vague", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Wave%20%281896%29-2.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"933\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/933\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17491105": {"uri": "http://www.wikidata.org/entity/Q17491105", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Compassion !", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Compassion%20%281897%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13711,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13711\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q431571": {"uri": "http://www.wikidata.org/entity/Q431571", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Le Printemps", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Return%20of%20Spring%20%281886%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"894\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/894\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q369810": {"uri": "http://www.wikidata.org/entity/Q369810", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Premier Deuil", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William%20Bouguereau%20-%20El%20primer%20duelo.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"881\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/881\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q5962062": {"uri": "http://www.wikidata.org/entity/Q5962062", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "L'Aurore", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/L%27Aurore%20by%20William-Adolphe%20Bouguereau%20-%20BMA.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"927\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/927\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19924707": {"uri": "http://www.wikidata.org/entity/Q19924707", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Repos dans les récoltes", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau-Rest%20at%20harvest%281865%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13712,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13712\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17496102": {"uri": "http://www.wikidata.org/entity/Q17496102", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La Vierge consolatrice", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20Virgin%20of%20Consolation.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13713,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13713\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19925230": {"uri": "http://www.wikidata.org/entity/Q19925230", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Jeune Prêtresse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20Jeune%20pretresse%2C%201902%20%285589770795%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13714,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13714\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q7744868": {"uri": "http://www.wikidata.org/entity/Q7744868", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Tricoteuse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Knitting%20Woman%20painting%20by%20William-Adolphe%20Bouguereau.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13715,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13715\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q19912679": {"uri": "http://www.wikidata.org/entity/Q19912679", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "La Proposition", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Proposal%20%281872%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13716,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13716\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q16372213": {"uri": "http://www.wikidata.org/entity/Q16372213", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Les Oréades", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Les%20Or%C3%A9ades.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"902\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/902\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q10339967": {"uri": "http://www.wikidata.org/entity/Q10339967", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Les Remords", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Orestes%20Pursued%20by%20the%20Furies%20by%20William-Adolphe%20Bouguereau%20%281862%29%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13717,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13717\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q10928591": {"uri": "http://www.wikidata.org/entity/Q10928591", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Nu assis", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Seated%20Nude%20-%201955.659%20-%20Clark%20Art%20Institute.tiff", "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Seated%20Nude%20%281884%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5238\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5238\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q12837566": {"uri": "http://www.wikidata.org/entity/Q12837566", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Byblis", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Biblis%20%281884%29%20-%20Salar%20Jung%20Museum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"929\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/929\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q11149485": {"uri": "http://www.wikidata.org/entity/Q11149485", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Baigneuse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20After%20the%20Bath%20%281875%29.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20After%20the%20Bath%20%281875%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13718,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13718\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q5971282": {"uri": "http://www.wikidata.org/entity/Q5971282", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Les Noisettes", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Nut%20Gatherers%20%281882%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9004\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9004\\/category\\/435\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3099894": {"uri": "http://www.wikidata.org/entity/Q3099894", "createur": "http://www.wikidata.org/entity/Q483992", "createurLabel": "William Bouguereau", "titre_fr": "Seule au monde", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20Seule-au-monde.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13719,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13719\\/category\\/435\"}}", "posted": true}}, "version": "2.0.0"}
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q483992 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q19925243": {
+      "uri": "http://www.wikidata.org/entity/Q19925243",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Petites Mendiantes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20Petites%20mendiantes%2C%201890%20%285589766955%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8979\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8979\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19925238": {
+      "uri": "http://www.wikidata.org/entity/Q19925238",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Premières caresses",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20Premi%C3%A8res%20caresses%2C%201866%20%285590356440%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8980\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8980\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q94927033": {
+      "uri": "http://www.wikidata.org/entity/Q94927033",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "L'Océanide",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Ocean%20Nymph%20%28L%27oc%C3%A9anide%29%281904%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1154\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1154\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q108577029": {
+      "uri": "http://www.wikidata.org/entity/Q108577029",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Le crabe",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%22Le%20Crabe%22%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13666,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13666\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q132167885": {
+      "uri": "http://www.wikidata.org/entity/Q132167885",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La tasse de lait",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/La%20tasse%20de%20lait%2C%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9628\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9628\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123985319": {
+      "uri": "http://www.wikidata.org/entity/Q123985319",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Le Vœu de Sainte-Anne d'Auray",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20V%C5%93u%20de%20Sainte-Anne%20d%27Auray.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13667,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13667\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110915108": {
+      "uri": "http://www.wikidata.org/entity/Q110915108",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Portrait de Mademoiselle Elizabeth Gardner",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Portrait%20de%20Mademoiselle%20Elizabeth%20Gardner%20%281879%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13668,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13668\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q117476696": {
+      "uri": "http://www.wikidata.org/entity/Q117476696",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Tête d'Italienne avec une couronne de laurier",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Head%20of%20an%20Italian%20girl%20with%20a%20laurel%20wreath%20%281872%29%2C%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13669,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13669\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q123255165": {
+      "uri": "http://www.wikidata.org/entity/Q123255165",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La tricoteuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20La%20tricoteuse%2C%201869%20%285590356746%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13670,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13670\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125566563": {
+      "uri": "http://www.wikidata.org/entity/Q125566563",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Amour à l'affut",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Amour%20A%20L%27affut%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13671,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13671\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110930300": {
+      "uri": "http://www.wikidata.org/entity/Q110930300",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Idylle",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Idylle%20W-A%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13672,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13672\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q122195190": {
+      "uri": "http://www.wikidata.org/entity/Q122195190",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Autoportrait",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Self-portrait%20%281853%29%20-%20Private%20collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5658\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5658\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q105576340": {
+      "uri": "http://www.wikidata.org/entity/Q105576340",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Au bord du ruisseau",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Au%20bord%20du%20ruisseau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13673,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13673\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q105377458": {
+      "uri": "http://www.wikidata.org/entity/Q105377458",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La grappe de raisin (première réduction)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20grape%20cluster%20%28first%20reduction%29%20%281868%29%2C%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9227\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9227\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q132643256": {
+      "uri": "http://www.wikidata.org/entity/Q132643256",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Berceuse (Le coucher)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Berceuse%20%28Le%20coucher%29%2C%20by%20William%20Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13674,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13674\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104881799": {
+      "uri": "http://www.wikidata.org/entity/Q104881799",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Blessures d'amour",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Blessures%20d%27Amour%2C%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13675,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13675\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110770288": {
+      "uri": "http://www.wikidata.org/entity/Q110770288",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Première discorde",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Premi%C3%A8re%20discorde.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13676,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13676\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q110916850": {
+      "uri": "http://www.wikidata.org/entity/Q110916850",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "L'Aurore",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%27Aurore%20-%20William-Adolphe%20Bouguereau%20-%201881.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13677,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13677\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q127961106": {
+      "uri": "http://www.wikidata.org/entity/Q127961106",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Petite Mendiante",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Little%20Beggar%20%281880%29%2C%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13678,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13678\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q108872820": {
+      "uri": "http://www.wikidata.org/entity/Q108872820",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Le livre de prix",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Livre%20De%20Prix%20%28The%20Price%20Book%29%20by%20William%20Bouguereau%2C%201901.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13679,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13679\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q101030675": {
+      "uri": "http://www.wikidata.org/entity/Q101030675",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Au bord de la mer",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Au%20bord%20de%20la%20mer%20%281903%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13680,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13680\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q117476801": {
+      "uri": "http://www.wikidata.org/entity/Q117476801",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La frileuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20chilly%20woman%20%281879%29%2C%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13681,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13681\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q132173749": {
+      "uri": "http://www.wikidata.org/entity/Q132173749",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Tête d'enfant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Bouguereau%20-%20Study%20for%20La%20tasse%20de%20lait.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9693\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9693\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q117235296": {
+      "uri": "http://www.wikidata.org/entity/Q117235296",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Tricoteuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Tricoteuse%2C%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13682,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13682\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q124257264": {
+      "uri": "http://www.wikidata.org/entity/Q124257264",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Admiration maternelle - le bain",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Admiration%20maternelle%20-%20le%20bain%2C%20by%20William%20Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13683,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13683\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q122975902": {
+      "uri": "http://www.wikidata.org/entity/Q122975902",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La petite écolière",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20La%20petite%20%C3%A9coli%C3%A8re%201879.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13684,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13684\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q118274608": {
+      "uri": "http://www.wikidata.org/entity/Q118274608",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Portrait d'un enfant de Madame Porter",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20Portrait%20of%20a%20Child%20of%20Madame%20Porter.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13685,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13685\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q117233881": {
+      "uri": "http://www.wikidata.org/entity/Q117233881",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Tricoteuse Bretonne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Tricoteuse%20Bretonne%2C%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13686,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13686\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125055798": {
+      "uri": "http://www.wikidata.org/entity/Q125055798",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La tricoteuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Little%20Knitter%20%281884%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13687,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13687\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q42877149": {
+      "uri": "http://www.wikidata.org/entity/Q42877149",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Faneuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Haymaker%20%281869%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9566\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9566\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19925251": {
+      "uri": "http://www.wikidata.org/entity/Q19925251",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La Cruche Cassée",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Le%20pichet%20cass%C3%A9%20%281891%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8978\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8978\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q86089529": {
+      "uri": "http://www.wikidata.org/entity/Q86089529",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "L'Amour s'envole",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%201901%20L%20Amour%20s%20envole.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13688,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13688\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q78689846": {
+      "uri": "http://www.wikidata.org/entity/Q78689846",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Le Captif",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau-le%20Captif.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13689,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13689\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q20891205": {
+      "uri": "http://www.wikidata.org/entity/Q20891205",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Tentation",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Temptation%20%281880%29.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13690,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13690\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q86089523": {
+      "uri": "http://www.wikidata.org/entity/Q86089523",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Gardeuse de moutons",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Gardeuse%20de%20moutons%20%281881%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13691,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13691\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q60477291": {
+      "uri": "http://www.wikidata.org/entity/Q60477291",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Une vocation",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20A%20Calling%20%281896%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Adolphe%20Bouguereau%20-%20A%20Calling%20-%201996.272%20-%20Cleveland%20Museum%20of%20Art.tif"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13692,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13692\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q87718952": {
+      "uri": "http://www.wikidata.org/entity/Q87718952",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La famille indigente (réduction)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Indigent%20Family%20%28Charity%29%20%281865%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13693,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13693\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q61053361": {
+      "uri": "http://www.wikidata.org/entity/Q61053361",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Torse ou demi-figure peinte",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20Demi%20figure%20peinte.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13694,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13694\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q87062107": {
+      "uri": "http://www.wikidata.org/entity/Q87062107",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "L'amour à l'épine",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Amourepine%20W-A%20Bouguereau.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9394\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9394\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21673243": {
+      "uri": "http://www.wikidata.org/entity/Q21673243",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Baigneuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Baadster%2C%20William-Adolphe%20Bouguereau%2C%201864%2C%20Koninklijk%20Museum%20voor%20Schone%20Kunsten%20Gent%2C%201865-C.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20Baigneuse.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Bouguereau%20-%20Bathing%20Woman%20-%201865-C%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13695,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13695\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q86706446": {
+      "uri": "http://www.wikidata.org/entity/Q86706446",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Loin du pays",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Loin%20du%20pays%20%281867%29%20-%20Museo%20de%20Arte%20de%20Ponce.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13696,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13696\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21290851": {
+      "uri": "http://www.wikidata.org/entity/Q21290851",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Admiration",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Admiration%2C%201897%20%28San%20Antonio%20Museum%20of%20Art%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1016\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1016\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19966499": {
+      "uri": "http://www.wikidata.org/entity/Q19966499",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Douleur d'amour",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Elegy%20%281899%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1007\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1007\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q85839383": {
+      "uri": "http://www.wikidata.org/entity/Q85839383",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Retour de la Moisson",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Return%20from%20the%20Harvest%20%281878%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13697,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13697\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q63964544": {
+      "uri": "http://www.wikidata.org/entity/Q63964544",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Câlinerie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20A%20Little%20Coaxing%20%281890%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13698,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13698\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21716841": {
+      "uri": "http://www.wikidata.org/entity/Q21716841",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Les adieux de Tobias avec son père",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Tobias%20Saying%20Farewell%20to%20his%20Father%20-%20WGA2929.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13699,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13699\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q87350941": {
+      "uri": "http://www.wikidata.org/entity/Q87350941",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Idylle: famille antique",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20Idyll%20Ancient%20Family.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13700,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13700\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q46040924": {
+      "uri": "http://www.wikidata.org/entity/Q46040924",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La couturière",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Sewing%20%281898%29%20Edit%202.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7267\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7267\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q87065122": {
+      "uri": "http://www.wikidata.org/entity/Q87065122",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Portrait de Thérésa",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Teresa%20W-A%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7682\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7682\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q87016098": {
+      "uri": "http://www.wikidata.org/entity/Q87016098",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Tricoteuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Tricoteuse%20%281879%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13701,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13701\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q86089525": {
+      "uri": "http://www.wikidata.org/entity/Q86089525",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Dans le Bois",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Dans%20le%20Bois%20%281905%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13702,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13702\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q87137561": {
+      "uri": "http://www.wikidata.org/entity/Q87137561",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Psyche et L'Amour",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Psyche%20et%20LAmour.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13703,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13703\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q4191448": {
+      "uri": "http://www.wikidata.org/entity/Q4191448",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Zénobie retrouvée par les bergers sur les bords de l'Araxe",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20Z%C3%A9nobia%20retrouv%C3%A9e%20par%20les%20bergers%20sur%20les%20bords%20de%20l%20Araxe%2C%201850%20%285650292484%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13704,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13704\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q4247460": {
+      "uri": "http://www.wikidata.org/entity/Q4247460",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "L'Amour au Papillon",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Cupid%20with%20a%20Butterfly-LAmour%20au%20papillon.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1059\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1059\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q4375073": {
+      "uri": "http://www.wikidata.org/entity/Q4375073",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Le Ravissement de Psyché",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Psycheabduct.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13705,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13705\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q18818947": {
+      "uri": "http://www.wikidata.org/entity/Q18818947",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Bacchante lutinant une chèvre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20Bacchante%20lutinant%20une%20chevre%2C%201862.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"874\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/874\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q12849302": {
+      "uri": "http://www.wikidata.org/entity/Q12849302",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "L'Étoile perdue",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Lost%20Pleiad%20%281884%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"922\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/922\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19816847": {
+      "uri": "http://www.wikidata.org/entity/Q19816847",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Enfant au bain",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20Enfant%20au%20bain%2C%201886%20%285589767581%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"956\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/956\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3555076": {
+      "uri": "http://www.wikidata.org/entity/Q3555076",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Nymphes et satyre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Nymphs%20and%20Satyr%20%281873%29%20HQ.jpg"
+      ],
+    },
+    "http://www.wikidata.org/entity/Q17494993": {
+      "uri": "http://www.wikidata.org/entity/Q17494993",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Philomèle et Progné",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20Philom%C3%A8le%20et%20Progn%C3%A9%2C%201861.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13706,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13706\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1000128": {
+      "uri": "http://www.wikidata.org/entity/Q1000128",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La Bohémienne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Bohemian%20%281890%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8967\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8967\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17492628": {
+      "uri": "http://www.wikidata.org/entity/Q17492628",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "L'Assaut",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%27Assaut%201898%20William%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4778\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4778\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q12843760": {
+      "uri": "http://www.wikidata.org/entity/Q12843760",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Amour A L'affut",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Love%20on%20the%20Look%20Out%20%281890%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13707,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13707\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17566327": {
+      "uri": "http://www.wikidata.org/entity/Q17566327",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La Toilette de Vénus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20La%20toilette%20de%20Venus%2C%201873.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"1052\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/1052\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2665048": {
+      "uri": "http://www.wikidata.org/entity/Q2665048",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Dante et Virgile",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Bouguereau%20-%20Dante%20and%20Virgile%20-%20Google%20Art%20Project%202.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5231\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5231\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11125879": {
+      "uri": "http://www.wikidata.org/entity/Q11125879",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "L'âme parentale",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Motherland%20%281883%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4825\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4825\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q10943167": {
+      "uri": "http://www.wikidata.org/entity/Q10943167",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Petites Maraudeuses",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20les%20petites%20maraudes%2C%201872%20%285590354872%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9063\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9063\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11076793": {
+      "uri": "http://www.wikidata.org/entity/Q11076793",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Jeune fille se défendant contre Éros",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Girl%20Defending%20Herself%20against%20Eros%2C%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4826\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4826\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q12839552": {
+      "uri": "http://www.wikidata.org/entity/Q12839552",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Flore et Zéphire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Flora%20And%20Zephyr%20%281875%29%20transparency.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5237\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5237\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1283024": {
+      "uri": "http://www.wikidata.org/entity/Q1283024",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La Naissance de Vénus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Birth%20of%20Venus%20%281879%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"883\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/883\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19912836": {
+      "uri": "http://www.wikidata.org/entity/Q19912836",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Jeune Mère contemplant son enfant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Young%20Mother%20Gazing%20At%20Her%20Child%20%281871%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13708,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13708\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q10959599": {
+      "uri": "http://www.wikidata.org/entity/Q10959599",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Au bord du ruisseau",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20At%20the%20Edge%20of%20the%20Brook%20%281875%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"131\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/131\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17093267": {
+      "uri": "http://www.wikidata.org/entity/Q17093267",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Parure des champs",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Crown%20of%20Flowers%20%28William-Adolphe%20Bouguereau%2C%201884%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9039\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9039\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17059033": {
+      "uri": "http://www.wikidata.org/entity/Q17059033",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Le Travail interrompu",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Work%20Interrupted%20%281891%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Travailinterrompu%20W-A%20Bouguereau.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13709,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13709\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q12837243": {
+      "uri": "http://www.wikidata.org/entity/Q12837243",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La Vierge aux anges",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20The%20Virgin%20With%20Angels.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13710,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13710\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17492021": {
+      "uri": "http://www.wikidata.org/entity/Q17492021",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La Jeunesse et l'Amour",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%2C%20La%20Jeunesse%20et%20l%27Amour%2C%201877%20%28crop%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"840\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/840\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11088732": {
+      "uri": "http://www.wikidata.org/entity/Q11088732",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Rêve de printemps",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20A%20Dream%20of%20Spring%20%281901%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4827\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4827\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2568551": {
+      "uri": "http://www.wikidata.org/entity/Q2568551",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La Danse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Dance%20%281856%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Dance%20%281856%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"4819\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/4819\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q12958201": {
+      "uri": "http://www.wikidata.org/entity/Q12958201",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Les Murmures de l'Amour",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Whisperings%20of%20Love%20%281889%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9064\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9064\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q12838427": {
+      "uri": "http://www.wikidata.org/entity/Q12838427",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La Vague",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Wave%20%281896%29-2.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"933\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/933\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17491105": {
+      "uri": "http://www.wikidata.org/entity/Q17491105",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Compassion !",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Compassion%20%281897%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13711,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13711\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q431571": {
+      "uri": "http://www.wikidata.org/entity/Q431571",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Le Printemps",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Return%20of%20Spring%20%281886%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"894\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/894\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q369810": {
+      "uri": "http://www.wikidata.org/entity/Q369810",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Premier Deuil",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Bouguereau%20-%20El%20primer%20duelo.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"881\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/881\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q5962062": {
+      "uri": "http://www.wikidata.org/entity/Q5962062",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "L'Aurore",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/L%27Aurore%20by%20William-Adolphe%20Bouguereau%20-%20BMA.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"927\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/927\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19924707": {
+      "uri": "http://www.wikidata.org/entity/Q19924707",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Repos dans les récoltes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau-Rest%20at%20harvest%281865%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13712,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13712\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17496102": {
+      "uri": "http://www.wikidata.org/entity/Q17496102",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La Vierge consolatrice",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20-%20Virgin%20of%20Consolation.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13713,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13713\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19925230": {
+      "uri": "http://www.wikidata.org/entity/Q19925230",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Jeune Prêtresse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20Jeune%20pretresse%2C%201902%20%285589770795%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13714,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13714\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q7744868": {
+      "uri": "http://www.wikidata.org/entity/Q7744868",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Tricoteuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Knitting%20Woman%20painting%20by%20William-Adolphe%20Bouguereau.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13715,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13715\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q19912679": {
+      "uri": "http://www.wikidata.org/entity/Q19912679",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "La Proposition",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Proposal%20%281872%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13716,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13716\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q16372213": {
+      "uri": "http://www.wikidata.org/entity/Q16372213",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Les Oréades",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Les%20Or%C3%A9ades.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"902\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/902\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q10339967": {
+      "uri": "http://www.wikidata.org/entity/Q10339967",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Les Remords",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Orestes%20Pursued%20by%20the%20Furies%20by%20William-Adolphe%20Bouguereau%20%281862%29%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13717,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13717\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q10928591": {
+      "uri": "http://www.wikidata.org/entity/Q10928591",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Nu assis",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Seated%20Nude%20-%201955.659%20-%20Clark%20Art%20Institute.tiff",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Seated%20Nude%20%281884%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"5238\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/5238\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q12837566": {
+      "uri": "http://www.wikidata.org/entity/Q12837566",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Byblis",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Biblis%20%281884%29%20-%20Salar%20Jung%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"929\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/929\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q11149485": {
+      "uri": "http://www.wikidata.org/entity/Q11149485",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Baigneuse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20After%20the%20Bath%20%281875%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20After%20the%20Bath%20%281875%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13718,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13718\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q5971282": {
+      "uri": "http://www.wikidata.org/entity/Q5971282",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Les Noisettes",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20The%20Nut%20Gatherers%20%281882%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"9004\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/9004\\/category\\/435\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3099894": {
+      "uri": "http://www.wikidata.org/entity/Q3099894",
+      "createur": "http://www.wikidata.org/entity/Q483992",
+      "createurLabel": "William Bouguereau",
+      "titre_fr": "Seule au monde",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Bouguereau%20Seule-au-monde.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13719,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13719\\/category\\/435\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

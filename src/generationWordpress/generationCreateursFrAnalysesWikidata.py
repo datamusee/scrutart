@@ -18,7 +18,8 @@ def cleanTargetDirectory(targetDir, entityList):
 if __name__=="__main__":
     scrutartState = scrutartStateManager("http://127.0.0.1:3030/scrutartState/query")
     # ne traiter que les entités qui sont dans filterEntities en supprimant la page si elle existe déjà
-    filterEntities =  [   "Q5597" ] # Raphaël entitiesList
+    # filterEntities =  [   "Q5597" ] # Raphaël entitiesList
+    filterEntities =  [   "Q334200" ] # Christian  Krohg  entitiesList
     pageType = "Q1028181"
     labelType = {
         "Q1028181": "painter",
@@ -30,11 +31,16 @@ if __name__=="__main__":
 
     crtPageBuilder = PageBuilder(pageType, lang=pageLang)  # type=peintre, default lang fr
     types = []
-    with open("data/wikidataSignificantPaintersTicket1527.json", encoding="UTF-8") as fListTypes:
-        types = json.load(fListTypes)
-        filterEntities = [ elmt["entity"].replace("http://www.wikidata.org/entity/", "") for elmt in types ]# ligne à enlever si je ne veux pas tout traiter et tenir compte du filtre
-    for p in types:
-        qid = p["entity"].replace("http://www.wikidata.org/entity/", "")
-        if not qid in filterEntities:
-            continue
-        crtPageBuilder.generatePage(qid, targetDir)
+    if not filterEntities:
+        with open("data/wikidataSignificantPaintersTicket1527.json", encoding="UTF-8") as fListTypes:
+            types = json.load(fListTypes)
+            filterEntities = [ elmt["entity"].replace("http://www.wikidata.org/entity/", "") for elmt in types ]# ligne à enlever si je ne veux pas tout traiter et tenir compte du filtre
+        for p in types:
+            qid = p["entity"].replace("http://www.wikidata.org/entity/", "")
+            if not qid in filterEntities:
+                continue
+            crtPageBuilder.generatePage(qid, targetDir)
+    else:
+        for qid in filterEntities:
+            crtPageBuilder.generatePage(qid, targetDir)
+
