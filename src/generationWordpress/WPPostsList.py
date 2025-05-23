@@ -1,6 +1,8 @@
 from WPTools import WPTools
 import configPrivee2 as configPrivee
 import re
+import json
+from datetime import datetime
 
 """
 TODO
@@ -55,7 +57,12 @@ if __name__ == '__main__':
                     creatorPagesByQID[qid] = page
                 else:
                     notCreatorPageByQID[qid]= page
+    with open(f"dumps/creatorsPostsDict{datetime.now().strftime('%Y-%m-%d')}.json", "w", encoding="UTF-8") as df:
+        json.dump(creatorPagesByQID, df, ensure_ascii=False)
+    with open(f"dumps/somePostsDict{datetime.now().strftime('%Y-%m-%d')}.json", "w", encoding="UTF-8") as df:
+        json.dump(notCreatorPageByQID, df, ensure_ascii=False)
     publishedCreatorsCount = 0
     for qid, page in creatorPagesByQID.items():
         publishedCreatorsCount +=1 if page["status"]=="publish" else 0
+    print(publishedCreatorsCount)
     pass

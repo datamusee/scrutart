@@ -1,5 +1,3 @@
-import requests
-import configPiwigo as cp
 import datetime
 import json
 import time
@@ -14,25 +12,9 @@ def getFilesList(dirToProcess):
     filesList = [join(dirToProcess, f) for f in listdir(dirToProcess) if isfile(join(dirToProcess, f))]
     return filesList
 
-def getImageId(res):
-    imId = None
-    regex = r"image_id[\\]?\":[\"]?(\d+)"
-    match = re.search(regex, res)
-    if match:
-        imId = match.group(1)
-    return imId
-
-def getCategoryId(res):
-    catId = None
-    regex = r"category\\\/(\d+)"
-    match = re.search(regex, res)
-    if match:
-        catId = match.group(1)
-    return catId
-
 def getImageCategory(res):
-    image_id = getImageId(res)
-    cat_id = getCategoryId(res)
+    image_id = CPiwigoManager.getImageId(res)
+    cat_id = CPiwigoManager.getCategoryId(res)
     return cat_id, image_id
 
 if __name__=="__main__":
@@ -64,10 +46,10 @@ if __name__=="__main__":
                             cat_id, image_id = getImageCategory(res)
                             crt_cats = []
                             if image_id:
-                                crt_cats = pwg.imageGetCategories(image_id)
+                                crt_cats = pwg.piwigo_image_get_categories(image_id)
                             time.sleep(0.01)
                             if image_id and (not crt_cats or (not cat_id in crt_cats)):
-                                cat = pwg.imageSetCategory(image_id, cat_id)
+                                cat = pwg.piwigo_image_set_category(image_id, cat_id)
                                 print(f"""catégorie {cat_id} pour l'image {image_id}""")
                             pass
 

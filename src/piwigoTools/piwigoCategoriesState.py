@@ -5,10 +5,15 @@ la liste des albums est la liste des catégories piwigo
 import json
 import CPiwigoManager
 
+def getCategories():
+    pwg = CPiwigoManager.CPiwigoManager()
+    res = pwg.piwigo_get_categories() # getCategoriesInPiwigo()
+    return res
+
 if __name__=="__main__":
     listcat = []
     pwg = CPiwigoManager.CPiwigoManager()
-    res = pwg.piwigo_get_categories() # getCategoriesInPiwigo()
+    res = getCategories() # getCategoriesInPiwigo()
     if res:
         print(res)
         # save categories as TTL for scrutart state

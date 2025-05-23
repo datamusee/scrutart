@@ -87,7 +87,7 @@ class ScrutartJsonToTtl:
         ttl += "\n"+self.entityTtlDesc(qid, label=genreLabel, wtype="Q1792379",
                                   count=genreCount, date=genreDate, lang=lang)
         if galleryId:
-            galUri = self.buildGaleryUri(galleryId)
+            galUri = self.buildGalleryUri(galleryId)
             ttl += f"""wd:{qid} pgdc:piwigo_gallery {galUri}.\n"""
         return ttl
 
@@ -119,34 +119,68 @@ class ScrutartJsonToTtl:
         ttl += f'{sparqluri} pgdc:sparql_src """{sparql}""".\n'
         return ttl
 
+    def artworkTtlDescription(self, uriWork, images, piwigoImageId, piwigoCategoryIds=None, creators=None, titlesArtwork=None, sparqlSrc=None, artworkType="Q838948",lang="fr"):
+        ttl = ""
+        qid = uriWork.replace("http://www.wikidata.org/entity/", "")
+        qid = self.qidSimple(qid)
+        for title in titlesArtwork:
+            ttl += self.entityTtlDesc(qid, wtype=artworkType, label=title.label, lang=title.lang)
+        if creators:
+            for creator in creators:
+                ttl += f"""wd:{qid} wdt:P170 wd:{self.qidSimple(creator.creatorQid)}.\n"""
+                for name in creator.creatorLabels:
+                    ttl += "\n"+self.entityTtlDesc(creator.creatorQid, wtype="Q1028181", label=name.label, lang=name.lang if name.lang else lang)
+        imagesUrl = [image.url for image in images ]
+        imagesUrl = list(set(imagesUrl)) # pour éliminer les doublons
+        for imageUrl in imagesUrl:
+            ttl += f"""wd:{qid} wdt:P18 "{imageUrl}".\n"""
+        if piwigoImageId:
+            ttl += f"""wd:{qid} pgdc:piwigo_image "{piwigoImageId}".\n"""
+        if piwigoCategoryIds:
+            for gal in piwigoCategoryIds:
+                galUri = self.buildGalleryUri(gal)
+                ttl += f"""wd:{qid} pgdc:piwigo_gallery {galUri}.\n"""
+        # for title in titlesArtwork:
+        #    ttl += f"""wd:{qid} rdfs:label {title["label"]}@{title["lang"]}"""
+        if sparqlSrc:
+            sparqlUuid = self.generer_chaine_courte(sparqlSrc)
+            sparqlUri = self.buildSparqlUri(sparqlUuid)
+            ttl += f"""wd:{qid} pgdc:sparql {sparqlUri} .\n"""
+            ttl += "\n"+self.sparqlTtlDesc(sparqlUri, sparqlSrc)
+        return ttl
+
     def imageTtlDesc(self, qid, images, piwigoImageId, piwigoCategoryId, createur, createurLabel, titreImage, lang="fr",
                      sparql=None):
         ttl = ""
         qid = self.qidSimple(qid)
         ttl += self.entityTtlDesc(qid, wtype="Q838948", label=titreImage, lang=lang)
-        ttl += f"""wd:{qid} wdt:P170 wd:{self.qidSimple(createur)}.\n"""
+        if createur:
+            ttl += f"""wd:{qid} wdt:P170 wd:{self.qidSimple(createur)}.\n"""
+            if createurLabel:
+                ttl += "\n"+self.entityTtlDesc(createur, wtype="Q1028181", label=createurLabel, lang=lang)
         images = list(set(images))
         for imageUrl in images:
             ttl += f"""wd:{qid} wdt:P18 "{imageUrl}".\n"""
-        ttl += f"""wd:{qid} pgdc:piwigo_image "{piwigoImageId}".\n"""
-        galUri = self.buildGaleryUri(piwigoCategoryId)
-        ttl += f"""wd:{qid} pgdc:piwigo_gallery {galUri}.\n"""
+        if piwigoImageId:
+            ttl += f"""wd:{qid} pgdc:piwigo_image "{piwigoImageId}".\n"""
+        if piwigoCategoryId:
+            galUri = self.buildGalleryUri(piwigoCategoryId)
+            ttl += f"""wd:{qid} pgdc:piwigo_gallery {galUri}.\n"""
         if sparql:
             sparqlUuid = self.generer_chaine_courte(sparql)
             sparqlUri = self.buildSparqlUri(sparqlUuid)
             ttl += f"""wd:{qid} pgdc:sparql {sparqlUri} .\n"""
             ttl += "\n"+self.sparqlTtlDesc(sparqlUri, sparql)
-        ttl += "\n"+self.entityTtlDesc(createur, wtype="Q1028181", label=createurLabel, lang=lang)
         return ttl
 
-    def buildGaleryUri(self, idpiwigo):
+    def buildGalleryUri(self, idpiwigo):
         return f"kgdc:gal{idpiwigo}"
 
-    def galeryTtlDesc(self, idpiwigo, title=None, comment=None, lang="fr"):
+    def galleryTtlDesc(self, idpiwigo, title=None, comment=None, lang="fr"):
         # description ttl d'une galerie
         ttl = ""
         if idpiwigo:
-            entity = self.buildGaleryUri(idpiwigo)
+            entity = self.buildGalleryUri(idpiwigo)
             if title:
                 correctedTitle = self.stringCorrector.get(title, title)
                 ttl += f'{entity} rdfs:label """{correctedTitle}"""@{lang} .\n'
