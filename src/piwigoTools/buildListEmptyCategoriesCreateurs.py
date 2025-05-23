@@ -40,3 +40,15 @@ if __name__ == "__main__":
             pass
     with open("listeAlbumsEntities.json", "w", encoding="UTF-8") as albumsFile:
         json.dump(emptycats, albumsFile, ensure_ascii=False)
+
+    # ouverture d'une liste de liens scrutart/createur créée avec WPPostsList
+    with open("D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\dumps\creatorsPostsDict2025-05-20.json", encoding="UTF-8") as postsCreatorFile:
+        scCreators = json.load(postsCreatorFile)
+        pass
+
+    # ici, j'ai une liste de galeries d'artiste et une liste de posts scrutart associés à une partie de ces artistes
+    # je peux:
+    # * m'assurer que chaque post référence la bonne galerie
+    # * créer les articles scrutart qui n'existent pas pour une galerie existante
+    # * m'assurer que chaque galerie référence l'article scrutart correspondant et donc renvoyer les descriptions de galeries
+    # avec une référence à l'article scrutart ad-hoc

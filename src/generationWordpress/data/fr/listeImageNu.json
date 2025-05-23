@@ -1403,7 +1403,6 @@
       "createurLabel": "William Bouguereau",
       "titre_fr": "Nu assis",
       "images": [
-        "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20-%20Seated%20Nude%20-%201955.659%20-%20Clark%20Art%20Institute.tiff",
         "http://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe%20Bouguereau%20%281825-1905%29%20-%20Seated%20Nude%20%281884%29.jpg"
       ],
       "post_result": "forbidden file type",
@@ -4079,8 +4078,6 @@
       "images": [
         "http://commons.wikimedia.org/wiki/Special:FilePath/Cinq%20baigneuses%2C%20par%20Paul%20C%C3%A9zanne%2C%201885%2C%20Kunstmuseum%2C%20FWN%20945.jpg"
       ],
-      "post_result": "<br />\n<b>Fatal error</b>:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php:132\nStack trace:\n#0 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(132): mysqli-&gt;query('\\nINSERT  INTO `...')\n#1 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(601): pwg_query('\\nINSERT  INTO `...')\n#2 /home6/sc1moissina/galleries.grains-de-culture.fr/admin/include/functions_upload.inc.php(380): single_insert('piwi3o_images', Array)\n#3 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_functions/pwg.images.php(1583): add_uploaded_file('/tmp/phpKn4cM6', 'Cinq%20baigneus...', Array, 8, NULL)\n#4 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_core.inc.php(600): ws_images_addSimple(Array, Object(PwgServer))\n#5 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_protocols/rest_handler.php(41): PwgServer-&gt;invoke('pwg.images.addS...', Array)\n#6 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_core.inc.php(281): PwgRestRequestHandler-&gt;handleRequest(Object(PwgServer))\n#7 /home6/sc1moissina/galleries.grains-de-culture.fr/ws.php(22): PwgServer-&gt;run()\n#8 {main}\n  thrown in <b>/home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php</b> on line <b>132</b><br />\n<br />\n<b>Fatal error</b>:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php:132\nStack trace:\n#0 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(132): mysqli-&gt;query('\\nREPLACE INTO p...')\n#1 /home6/sc1moissina/galleries.grains-de-culture.fr/include/functions_session.inc.php(154): pwg_query('\\nREPLACE INTO p...')\n#2 [internal function]: pwg_session_write('32e409bfec2d893...', 'pwg_device|s:7:...')\n#3 [internal function]: session_write_close()\n#4 {main}\n  thrown in <b>/home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php</b> on line <b>132</b><br />\n",
-      "posted": true
     },
     "http://www.wikidata.org/entity/Q63676105": {
       "uri": "http://www.wikidata.org/entity/Q63676105",

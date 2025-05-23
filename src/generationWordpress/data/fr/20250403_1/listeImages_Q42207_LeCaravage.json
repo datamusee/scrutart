@@ -1,1 +1,1126 @@
-{"sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q42207 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q42207 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ", "liste": [], "dict": {"http://www.wikidata.org/entity/Q318947": {"uri": "http://www.wikidata.org/entity/Q318947", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Souper à Emmaüs", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Supper%20at%20Emmaus-Caravaggio%20%281601%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18280,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18280\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q474024": {"uri": "http://www.wikidata.org/entity/Q474024", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "L'Amour victorieux", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Cupid%20as%20Victor%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18281,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18281\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q510799": {"uri": "http://www.wikidata.org/entity/Q510799", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Jérôme écrivant", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Saint%20Jerome%20in%20his%20study%20-%20Oratory%20of%20St%20John%20the%20Baptist%2C%20St%20John%E2%80%99s%20Co-Cathedral%2C%20Valletta.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18282,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18282\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q541376": {"uri": "http://www.wikidata.org/entity/Q541376", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "L'Arrestation du Christ", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Taking%20of%20Christ-Caravaggio%20%28c.1602%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18283,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18283\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q577248": {"uri": "http://www.wikidata.org/entity/Q577248", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Matthieu et l'Ange", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20MatthewAngel.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18284,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18284\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q585437": {"uri": "http://www.wikidata.org/entity/Q585437", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Garçon mordu par un lézard", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Boy%20Bitten%20by%20a%20Lizard.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18285,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18285\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q597114": {"uri": "http://www.wikidata.org/entity/Q597114", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Mort de la Vierge", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Death%20of%20the%20Virgin-Caravaggio%20%281606%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18286,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18286\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q626791": {"uri": "http://www.wikidata.org/entity/Q626791", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Jérôme en méditation", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Saint%20Jerome%20-%20Montserrat.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18287,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18287\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q655705": {"uri": "http://www.wikidata.org/entity/Q655705", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Les Musiciens", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Musicians%20MET%20DP-687-001.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18288,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18288\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q663133": {"uri": "http://www.wikidata.org/entity/Q663133", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Les Tricheurs", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20%28Michelangelo%20Merisi%29%20-%20The%20Cardsharps%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18289,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18289\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q685916": {"uri": "http://www.wikidata.org/entity/Q685916", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Crucifiement de saint Pierre", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Crucifixion%20of%20Saint%20Peter-Caravaggio%20%28c.1600%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18290,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18290\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q698228": {"uri": "http://www.wikidata.org/entity/Q698228", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Madone du rosaire", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%2C%20called%20Caravaggio%20-%20Madonna%20of%20the%20Rosary%20-%20Google%20Art%20Project.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%2C%20gen.%20Caravaggio%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Rosenkranzmadonna%20-%20GG%20147%20-%20Kunsthistorisches%20Museum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18291,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18291\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q745098": {"uri": "http://www.wikidata.org/entity/Q745098", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Repos pendant la fuite en Égypte", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Rest%20on%20the%20Flight%20into%20Egypt-Caravaggio%20%28c.1597%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18292,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18292\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q746716": {"uri": "http://www.wikidata.org/entity/Q746716", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Narcisse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20065.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18293,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18293\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q931837": {"uri": "http://www.wikidata.org/entity/Q931837", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Christ à la colonne", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20flagellation.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18294,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18294\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q945164": {"uri": "http://www.wikidata.org/entity/Q945164", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Portrait d'Alof de Wignacourt", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Alof%20de%20Wignacourt%20and%20his%20Page-Caravaggio%20%281607-1608%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7036\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7036\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q969377": {"uri": "http://www.wikidata.org/entity/Q969377", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Vocation de saint Matthieu", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Calling%20of%20Saint%20Matthew-Caravaggo%20%281599-1600%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18295,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18295\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q976354": {"uri": "http://www.wikidata.org/entity/Q976354", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Christ au mont des Oliviers", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20-%20Christ%20in%20the%20Garden%20-%20WGA04153.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18296,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18296\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1113749": {"uri": "http://www.wikidata.org/entity/Q1113749", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Portrait d'Antonio Martelli", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Fra%20Antonio%20Martelli-Caravaggio%20%281610%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18297,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18297\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1117094": {"uri": "http://www.wikidata.org/entity/Q1117094", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Couronnement d'épines", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Crowning%20with%20Thorns-Caravaggio%20%281602%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18298,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18298\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1132479": {"uri": "http://www.wikidata.org/entity/Q1132479", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "L'Enterrement de sainte Lucie", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Burial%20of%20Saint%20Lucy-Caravaggio%20%281608%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18299,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18299\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1122537": {"uri": "http://www.wikidata.org/entity/Q1122537", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Jupiter, Neptune et Pluton", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Jupiter%20Neptune%20Pluto.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18300,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18300\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1213151": {"uri": "http://www.wikidata.org/entity/Q1213151", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Mise au tombeau", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Entombment%20of%20Christ-Caravaggio%20%28c.1602-3%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18301,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18301\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1132486": {"uri": "http://www.wikidata.org/entity/Q1132486", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Martyre de sainte Ursule", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Martyrdom%20of%20Saint%20Ursula-Caravaggio%20%281610%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18302,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18302\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1433194": {"uri": "http://www.wikidata.org/entity/Q1433194", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Nativité avec saint François et saint Laurent", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio-Nativity%281600%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18303,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18303\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1448203": {"uri": "http://www.wikidata.org/entity/Q1448203", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Conversion de saint Paul", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Conversion%20of%20Saint%20Paul-Caravaggio%20%28c.%201600-1%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18304,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18304\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1448701": {"uri": "http://www.wikidata.org/entity/Q1448701", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Couronnement d'épines", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/CaravaggioCrowning01.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18305,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18305\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1448728": {"uri": "http://www.wikidata.org/entity/Q1448728", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "L'Annonciation", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20The%20Annunciation.JPG"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18306,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18306\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1460179": {"uri": "http://www.wikidata.org/entity/Q1460179", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Vocation de saint Pierre et saint André", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Uqueen3.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20%28Milan%201571-Port%27%20Ercole%201610%29%20-%20The%20Calling%20of%20Saints%20Peter%20and%20Andrew%20-%20RCIN%20402824%20-%20Hampton%20Court%20Palace.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18307,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18307\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q1460271": {"uri": "http://www.wikidata.org/entity/Q1460271", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Portrait du pape Paul V", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Pope%20Paul%20V.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18308,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18308\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2007260": {"uri": "http://www.wikidata.org/entity/Q2007260", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Medusa Murtola", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Medusa-Murtola.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18309,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18309\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2011510": {"uri": "http://www.wikidata.org/entity/Q2011510", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Bacchus", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Baco%2C%20por%20Caravaggio.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18310,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18310\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2097931": {"uri": "http://www.wikidata.org/entity/Q2097931", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Souper à Emmaüs", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Supper%20at%20Emmaus-Caravaggio%20%281606%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18311,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18311\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2264942": {"uri": "http://www.wikidata.org/entity/Q2264942", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Flagellation du Christ", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Flagellation%20of%20Christ-Caravaggio%20%281607%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18312,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18312\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2270291": {"uri": "http://www.wikidata.org/entity/Q2270291", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Corbeille de fruits", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Natura%20morta%20con%20frutta%20%28collezione%20dell%E2%80%99Ambrosiana%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18313,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18313\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2270778": {"uri": "http://www.wikidata.org/entity/Q2270778", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Reniement de saint Pierre", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Denial%20of%20Saint%20Peter-Caravaggio%20%281610%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18314,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18314\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2270955": {"uri": "http://www.wikidata.org/entity/Q2270955", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "David et Goliath", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20and%20Goliath%20by%20Caravaggio.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18315,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18315\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2273517": {"uri": "http://www.wikidata.org/entity/Q2273517", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Conversion de saint Paul sur le chemin de Damas", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Conversion%20on%20the%20Way%20to%20Damascus-Caravaggio%20%28c.1600-1%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18316,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18316\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2275353": {"uri": "http://www.wikidata.org/entity/Q2275353", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint François en méditation", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20San%20Francesco%20in%20meditazione%20%281606-1607%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18317,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18317\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2275371": {"uri": "http://www.wikidata.org/entity/Q2275371", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint François en méditation sur le crucifix", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Francis%20in%20Meditation-Caravaggio%20%28Cremona%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18318,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18318\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2277635": {"uri": "http://www.wikidata.org/entity/Q2277635", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Résurrection de Lazare", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20006.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18319,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18319\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2284829": {"uri": "http://www.wikidata.org/entity/Q2284829", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Sacrifice d'Isaac", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Sacrifice%20of%20Isaac-Caravaggio%20%28Uffizi%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18320,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18320\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2293905": {"uri": "http://www.wikidata.org/entity/Q2293905", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Méduse", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Medusa%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18321,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18321\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2293936": {"uri": "http://www.wikidata.org/entity/Q2293936", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Petit Bacchus malade", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Young%20Sick%20Bacchus-Caravaggio%20%281593%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18322,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18322\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2318325": {"uri": "http://www.wikidata.org/entity/Q2318325", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Salomé avec la tête de saint Jean-Baptiste", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Salome%20with%20the%20Head%20of%20John%20the%20Baptist-Caravaggio%20%281610%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18323,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18323\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2318957": {"uri": "http://www.wikidata.org/entity/Q2318957", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Salomé avec la tête de saint Jean-Baptiste", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/CaravaggioSalomeMadrid.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18324,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18324\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2325834": {"uri": "http://www.wikidata.org/entity/Q2325834", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Ecce Homo", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20%28Michelangelo%20Merisi%29%20-%20Ecce%20Homo%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18325,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18325\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2327715": {"uri": "http://www.wikidata.org/entity/Q2327715", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "L'Adoration des bergers", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Adoration%20of%20the%20Shepherds-Caravaggio%20%281609%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18326,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18326\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2337873": {"uri": "http://www.wikidata.org/entity/Q2337873", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Matthieu et l'Ange", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Inspiration%20of%20Saint%20Matthew-Caravaggio%20%281602%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18327,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18327\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2338417": {"uri": "http://www.wikidata.org/entity/Q2338417", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Martyre de saint Matthieu", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Martyrdom%20of%20Saint%20Matthew-Caravaggio%20%28c.%201599-1600%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18328,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18328\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2395137": {"uri": "http://www.wikidata.org/entity/Q2395137", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Portrait d'une courtisane", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20356.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18329,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18329\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2419166": {"uri": "http://www.wikidata.org/entity/Q2419166", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "L'Incrédulité de saint Thomas", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Der%20ungl%C3%A4ubige%20Thomas%20-%20Michelangelo%20Merisi%2C%20named%20Caravaggio.jpg"], "post_result": "<br />\n<b>Fatal error</b>:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php:132\nStack trace:\n#0 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(132): mysqli-&gt;query('\\nUPDATE `piwi3o...')\n#1 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(478): pwg_query('\\nUPDATE `piwi3o...')\n#2 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_functions/pwg.images.php(1606): single_update('piwi3o_images', Array, Array)\n#3 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_core.inc.php(600): ws_images_addSimple(Array, Object(PwgServer))\n#4 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_protocols/rest_handler.php(41): PwgServer-&gt;invoke('pwg.images.addS...', Array)\n#5 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_core.inc.php(281): PwgRestRequestHandler-&gt;handleRequest(Object(PwgServer))\n#6 /home6/sc1moissina/galleries.grains-de-culture.fr/ws.php(22): PwgServer-&gt;run()\n#7 {main}\n  thrown in <b>/home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php</b> on line <b>132</b><br />\n<br />\n<b>Fatal error</b>:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php:132\nStack trace:\n#0 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(132): mysqli-&gt;query('\\nREPLACE INTO p...')\n#1 /home6/sc1moissina/galleries.grains-de-culture.fr/include/functions_session.inc.php(161): pwg_query('\\nREPLACE INTO p...')\n#2 /home6/sc1moissina/galleries.grains-de-culture.fr/include/pwgsession.class.php(21): pwg_session_write('696c590ecc078f6...', 'pwg_device|s:7:...')\n#3 [internal function]: PwgSession-&gt;write('696c590ecc078f6...', 'pwg_device|s:7:...')\n#4 [internal function]: session_write_close()\n#5 {main}\n  thrown in <b>/home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php</b> on line <b>132</b><br />\n", "posted": true}, "http://www.wikidata.org/entity/Q2429754": {"uri": "http://www.wikidata.org/entity/Q2429754", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Amour endormi", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Sleeping%20Cupid-Caravaggio%20%281608%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18331,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18331\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2470123": {"uri": "http://www.wikidata.org/entity/Q2470123", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Judith décapitant Holopherne", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Giuditta%20e%20Oloferne%20%28ca.%201599%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18332,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18332\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2574120": {"uri": "http://www.wikidata.org/entity/Q2574120", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Garçon pelant un fruit", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20%28Milan%201571-Port%27%20Ercole%201610%29%20-%20Boy%20Peeling%20Fruit%20-%20RCIN%20402612%20-%20Royal%20Collection.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18333,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18333\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2609235": {"uri": "http://www.wikidata.org/entity/Q2609235", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "L'Extase de saint François", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Caravage%20-%20L%27extase%20de%20Saint%20Fran%C3%A7ois.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18334,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18334\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2610675": {"uri": "http://www.wikidata.org/entity/Q2610675", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Diseuse de bonne aventure", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Fortune%20Teller-Caravaggio%20%28Louvre%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8939\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8939\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2610936": {"uri": "http://www.wikidata.org/entity/Q2610936", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Garçon avec un panier de fruits", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Boy%20with%20a%20Basket%20of%20Fruit-Caravaggio%20%281593%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18335,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18335\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2626595": {"uri": "http://www.wikidata.org/entity/Q2626595", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Les Sept Œuvres de miséricorde", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Seven%20Works%20of%20Mercy-Caravaggio%20%281607%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18336,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18336\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2627034": {"uri": "http://www.wikidata.org/entity/Q2627034", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Sainte Catherine d'Alexandrie", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Catherine%20of%20Alexandria%20%28Caravaggio%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18337,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18337\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2627056": {"uri": "http://www.wikidata.org/entity/Q2627056", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "David avec la tête de Goliath", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20with%20the%20Head%20of%20Goliath-Caravaggio%20%281610%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18338,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18338\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2713203": {"uri": "http://www.wikidata.org/entity/Q2713203", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Madone des pèlerins", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20001.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18339,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18339\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2715177": {"uri": "http://www.wikidata.org/entity/Q2715177", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Jérôme", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Jerome%20Writing-Caravaggio%20%281605-6%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18340,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18340\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2715302": {"uri": "http://www.wikidata.org/entity/Q2715302", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Madone des palefreniers", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20and%20Child%20with%20St.%20Anne-Caravaggio%20%28c.%201605-6%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18341,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18341\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2721037": {"uri": "http://www.wikidata.org/entity/Q2721037", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "David avec la tête de Goliath", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/David%20with%20the%20Head%20of%20Goliath-Caravaggio%20%28c.1606-7%29.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%2C%20gen.%20Caravaggio%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20David%20mit%20dem%20Haupt%20des%20Goliath%20-%20GG%20125%20-%20Kunsthistorisches%20Museum.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18342,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18342\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2727560": {"uri": "http://www.wikidata.org/entity/Q2727560", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Décollation de saint Jean-Baptiste", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/La%20decapitaci%C3%B3n%20de%20San%20Juan%20Bautista%2C%20por%20Caravaggio.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18343,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18343\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2732274": {"uri": "http://www.wikidata.org/entity/Q2732274", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Madeleine repentante", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20063.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18344,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18344\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2734111": {"uri": "http://www.wikidata.org/entity/Q2734111", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Portrait de Maffeo Barberini", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Maffeo%20Barberini.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18345,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18345\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q2734679": {"uri": "http://www.wikidata.org/entity/Q2734679", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Marthe et Marie-Madeleine", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20-%20Martha%20and%20Mary%20Magdalene%20-%2073.268%20-%20Detroit%20Institute%20of%20Arts.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18346,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18346\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3202347": {"uri": "http://www.wikidata.org/entity/Q3202347", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "L'Arracheur de dents", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Toothpuller.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18347,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18347\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3212682": {"uri": "http://www.wikidata.org/entity/Q3212682", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Sainte Famille avec saint Jean-Baptiste", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1604%20Caravaggio%20Heilige%20Familie%20mit%20Johannes%20dem%20Taeufer%20anagoria.JPG"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18348,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18348\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3221991": {"uri": "http://www.wikidata.org/entity/Q3221991", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Crucifiement de saint André", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20The%20Crucifixion%20of%20Saint%20Andrew%20-%201976.2%20-%20Cleveland%20Museum%20of%20Art.tiff"], "post_result": "<br />\n<b>Fatal error</b>:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php:132\nStack trace:\n#0 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(132): mysqli-&gt;query('\\nINSERT  INTO `...')\n#1 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(601): pwg_query('\\nINSERT  INTO `...')\n#2 /home6/sc1moissina/galleries.grains-de-culture.fr/admin/include/functions_upload.inc.php(380): single_insert('piwi3o_images', Array)\n#3 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_functions/pwg.images.php(1583): add_uploaded_file('/tmp/phpvOUkCv', 'Caravaggio%20-%...', Array, 8, NULL)\n#4 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_core.inc.php(600): ws_images_addSimple(Array, Object(PwgServer))\n#5 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_protocols/rest_handler.php(41): PwgServer-&gt;invoke('pwg.images.addS...', Array)\n#6 /home6/sc1moissina/galleries.grains-de-culture.fr/include/ws_core.inc.php(281): PwgRestRequestHandler-&gt;handleRequest(Object(PwgServer))\n#7 /home6/sc1moissina/galleries.grains-de-culture.fr/ws.php(22): PwgServer-&gt;run()\n#8 {main}\n  thrown in <b>/home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php</b> on line <b>132</b><br />\n<br />\n<b>Fatal error</b>:  Uncaught mysqli_sql_exception: MySQL server has gone away in /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php:132\nStack trace:\n#0 /home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php(132): mysqli-&gt;query('\\nREPLACE INTO p...')\n#1 /home6/sc1moissina/galleries.grains-de-culture.fr/include/functions_session.inc.php(161): pwg_query('\\nREPLACE INTO p...')\n#2 /home6/sc1moissina/galleries.grains-de-culture.fr/include/pwgsession.class.php(21): pwg_session_write('1be86905cf61171...', 'pwg_device|s:7:...')\n#3 [internal function]: PwgSession-&gt;write('1be86905cf61171...', 'pwg_device|s:7:...')\n#4 [internal function]: session_write_close()\n#5 {main}\n  thrown in <b>/home6/sc1moissina/galleries.grains-de-culture.fr/include/dblayer/functions_mysqli.inc.php</b> on line <b>132</b><br />\n", "posted": true}, "http://www.wikidata.org/entity/Q3223625": {"uri": "http://www.wikidata.org/entity/Q3223625", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Jeune Saint Jean-Baptiste au bélier", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%2C%20Saint%20John%20the%20Baptist%20%28Youth%20with%20a%20Ram%29%20%28c.%201602%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18349,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18349\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3226847": {"uri": "http://www.wikidata.org/entity/Q3226847", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Sacrifice d'Isaac", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Sacrifice%20of%20Isaac-Caravaggio%20%28c.%201603%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18350,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18350\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3292135": {"uri": "http://www.wikidata.org/entity/Q3292135", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Marie-Madeleine en extase", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Mary%20magdalene%20caravaggio.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18351,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18351\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3337119": {"uri": "http://www.wikidata.org/entity/Q3337119", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Nature morte aux fruits", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Still%20Life%20with%20Fruit%20%28circa%201603%29.png"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18352,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18352\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3463868": {"uri": "http://www.wikidata.org/entity/Q3463868", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Jean-Baptiste", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio-Baptist-Toledo.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18353,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18353\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3463869": {"uri": "http://www.wikidata.org/entity/Q3463869", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Jean-Baptiste", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/John%20the%20Baptist-Caravaggio%20%28Galleria%20Nazionale%20d%27Arte%20Antica%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18354,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18354\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3463877": {"uri": "http://www.wikidata.org/entity/Q3463877", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Jean-Baptiste dans le désert", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%2C%20called%20Caravaggio%20-%20Saint%20John%20the%20Baptist%20in%20the%20Wilderness%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18355,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18355\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3463878": {"uri": "http://www.wikidata.org/entity/Q3463878", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Jean-Baptiste à la fontaine", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Baptist%20Collezione%20Bonello%2C%20Malta.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18356,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18356\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q3697589": {"uri": "http://www.wikidata.org/entity/Q3697589", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Le Christ à la colonne", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20001.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18357,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18357\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q9015206": {"uri": "http://www.wikidata.org/entity/Q9015206", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Jean-Baptiste", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/John%20the%20Baptist%20%28Galleria%20Borghese%29-Caravaggio%20%281610%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18358,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18358\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q16534183": {"uri": "http://www.wikidata.org/entity/Q16534183", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "La Diseuse de bonne aventure", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Fortune%20Teller-Caravaggio%20%28Rome%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18359,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18359\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q9015209": {"uri": "http://www.wikidata.org/entity/Q9015209", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Saint Jean-Baptiste allongé", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio-Baptist-reclining.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18360,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18360\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q16596970": {"uri": "http://www.wikidata.org/entity/Q16596970", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Portrait of Maffeo Barberini (Pope Urban VIII)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Pope%20Urban%20VIII-Caravaggio%20%28Maffeo%20Barberini%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18361,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18361\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q17992160": {"uri": "http://www.wikidata.org/entity/Q17992160", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Les Tricheurs", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20I%20bari%20%28Mahon%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18362,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18362\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q25796776": {"uri": "http://www.wikidata.org/entity/Q25796776", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "L'Arrestation du Christ", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Taking%20of%20Christ%20-%20Odessa.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18363,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18363\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q29338617": {"uri": "http://www.wikidata.org/entity/Q29338617", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Descente de Croix", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/1%20Annecy%2Ccathedral22.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18364,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18364\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q28108359": {"uri": "http://www.wikidata.org/entity/Q28108359", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Salome with the head of John the Baptist", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/M.%20Merisi%20-%20Salome%20met%20het%20hoofd%20van%20Johannes%20de%20Doper%20-%20R5253%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18365,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18365\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q55647084": {"uri": "http://www.wikidata.org/entity/Q55647084", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Joueur de luth", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%2C%20Michelangelo%20Merisi%20da%20-%20The%20Lute-Player.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/71-2681%20Leningrad%201971%20%2851481077286%29.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20detail.png", "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Lute%20player%20face.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20020.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9B%D1%8E%D1%82%D0%BD%D0%B8%D1%81%D1%82%20-%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0%20%D0%9A%D0%B0%D1%80%D0%B0%D0%B2%D0%B0%D0%B4%D0%B6%D0%BE.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20020FXD.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20-%20Lute%20Player%20%28detail%29%20-%20WGA04087.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20-%20Lute%20Player%20-%20WGA04086.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Lute%20Player-Caravaggio%20%28Hermitage%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18366,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18366\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q30095295": {"uri": "http://www.wikidata.org/entity/Q30095295", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Lute Player", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20%28Michelangelo%20Merisi%29%20%28%5E%29%20-%20Lautenspieler%20-%204868%20-%20Bavarian%20State%20Painting%20Collections.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18367,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18367\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q64869205": {"uri": "http://www.wikidata.org/entity/Q64869205", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Judith décapitant Holopherne", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Giuditta%20e%20Oloferne%20-%20Tolosa.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18368,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18368\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q55647114": {"uri": "http://www.wikidata.org/entity/Q55647114", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "The Lute Player", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/The%20Lute%20Player-Caravaggio%20%28Metropolitan%20Museum%20of%20Art%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18369,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18369\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q67204634": {"uri": "http://www.wikidata.org/entity/Q67204634", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Portrait of a gentleman (Scipione Borghese?)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20known%20as%20Caravaggio%20-%20Portrait%20of%20a%20gentleman%20%28Scipione%20Borghese%3F%29%20-%20Google%20Art%20Project.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18370,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18370\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q79035845": {"uri": "http://www.wikidata.org/entity/Q79035845", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "The Vision of Saint Jerome", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Follower%20of%20Michelangelo%20Merisi%20da%20Caravaggio%20-%20The%20Vision%20of%20Saint%20Jerome%2C%201960.13.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18371,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18371\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q102641148": {"uri": "http://www.wikidata.org/entity/Q102641148", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Boy Peeling Pears", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/CARAVAGGIO%2C%20A%20boy%20peeling%20fruit%20%281593%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18372,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18372\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q104528133": {"uri": "http://www.wikidata.org/entity/Q104528133", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Prophet with book", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20%28Nachfolger%29%20-%20Prophet%20mit%20Buch%20-%20467%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18373,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18373\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q107443198": {"uri": "http://www.wikidata.org/entity/Q107443198", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "The Holy Family with Child Saint John", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20055.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18374,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18374\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q125869859": {"uri": "http://www.wikidata.org/entity/Q125869859", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Ecce homo", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Ecce%20homo%28Caravaggio%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18375,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18375\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q124001433": {"uri": "http://www.wikidata.org/entity/Q124001433", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Q124001433", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Baptist%20Galleria%20Nazionale%20d%27Arte%20Antica%2C%20Rome.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18376,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18376\\/category\\/788\"}}", "posted": true}, "http://www.wikidata.org/entity/Q131543672": {"uri": "http://www.wikidata.org/entity/Q131543672", "createur": "http://www.wikidata.org/entity/Q42207", "createurLabel": "Le Caravage", "titre_fr": "Garçon mordu par un lézard", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Boy%20Bitten%20by%20a%20Lizard-Caravaggio%20%28Longhi%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18377,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18377\\/category\\/788\"}}", "posted": true}}, "version": "2.0.0"}
+{
+  "sparql": "\n        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr \n        where {\n          values ?createur { wd:Q42207 }\n          values ?classRel { wdt:P31 wdt:P106 }\n          values ?class { wd:Q1028181 }\n          values ?rel { wdt:P170 }\n          {\n            SELECT ?createur ?createurLabel WHERE {\n            values ?createur { wd:Q42207 }\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          ?uri wdt:P31 wd:Q3305213;    \n               ?rel ?createur;    \n               wdt:P18 ?image.\n          ?createur ?classRel ?class   \n          {\n            SELECT ?uri ?uriLabel WHERE {\n              ?uri wdt:P31 wd:Q3305213;    \n                 ?rel ?createur;    \n                 wdt:P18 ?image.\n            SERVICE wikibase:label { bd:serviceParam wikibase:language \"fr, en, [AUTO_LANGUAGE],mul\". }\n            }\n          }\n          bind( ?uriLabel as ?titre_fr)\n        }\n    ",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q318947": {
+      "uri": "http://www.wikidata.org/entity/Q318947",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Souper à Emmaüs",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Supper%20at%20Emmaus-Caravaggio%20%281601%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18280,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18280\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q474024": {
+      "uri": "http://www.wikidata.org/entity/Q474024",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "L'Amour victorieux",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Cupid%20as%20Victor%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18281,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18281\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q510799": {
+      "uri": "http://www.wikidata.org/entity/Q510799",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Jérôme écrivant",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Saint%20Jerome%20in%20his%20study%20-%20Oratory%20of%20St%20John%20the%20Baptist%2C%20St%20John%E2%80%99s%20Co-Cathedral%2C%20Valletta.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18282,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18282\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q541376": {
+      "uri": "http://www.wikidata.org/entity/Q541376",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "L'Arrestation du Christ",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Taking%20of%20Christ-Caravaggio%20%28c.1602%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18283,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18283\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q577248": {
+      "uri": "http://www.wikidata.org/entity/Q577248",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Matthieu et l'Ange",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20MatthewAngel.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18284,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18284\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q585437": {
+      "uri": "http://www.wikidata.org/entity/Q585437",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Garçon mordu par un lézard",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Boy%20Bitten%20by%20a%20Lizard.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18285,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18285\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q597114": {
+      "uri": "http://www.wikidata.org/entity/Q597114",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Mort de la Vierge",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Death%20of%20the%20Virgin-Caravaggio%20%281606%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18286,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18286\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q626791": {
+      "uri": "http://www.wikidata.org/entity/Q626791",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Jérôme en méditation",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Saint%20Jerome%20-%20Montserrat.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18287,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18287\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q655705": {
+      "uri": "http://www.wikidata.org/entity/Q655705",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Les Musiciens",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Musicians%20MET%20DP-687-001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18288,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18288\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q663133": {
+      "uri": "http://www.wikidata.org/entity/Q663133",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Les Tricheurs",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20%28Michelangelo%20Merisi%29%20-%20The%20Cardsharps%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18289,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18289\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q685916": {
+      "uri": "http://www.wikidata.org/entity/Q685916",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Crucifiement de saint Pierre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Crucifixion%20of%20Saint%20Peter-Caravaggio%20%28c.1600%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18290,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18290\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q698228": {
+      "uri": "http://www.wikidata.org/entity/Q698228",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Madone du rosaire",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%2C%20called%20Caravaggio%20-%20Madonna%20of%20the%20Rosary%20-%20Google%20Art%20Project.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%2C%20gen.%20Caravaggio%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Rosenkranzmadonna%20-%20GG%20147%20-%20Kunsthistorisches%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18291,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18291\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q745098": {
+      "uri": "http://www.wikidata.org/entity/Q745098",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Repos pendant la fuite en Égypte",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Rest%20on%20the%20Flight%20into%20Egypt-Caravaggio%20%28c.1597%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18292,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18292\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q746716": {
+      "uri": "http://www.wikidata.org/entity/Q746716",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Narcisse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20065.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18293,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18293\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q931837": {
+      "uri": "http://www.wikidata.org/entity/Q931837",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Christ à la colonne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20flagellation.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18294,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18294\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q945164": {
+      "uri": "http://www.wikidata.org/entity/Q945164",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Portrait d'Alof de Wignacourt",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Alof%20de%20Wignacourt%20and%20his%20Page-Caravaggio%20%281607-1608%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"7036\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/7036\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q969377": {
+      "uri": "http://www.wikidata.org/entity/Q969377",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Vocation de saint Matthieu",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Calling%20of%20Saint%20Matthew-Caravaggo%20%281599-1600%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18295,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18295\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q976354": {
+      "uri": "http://www.wikidata.org/entity/Q976354",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Christ au mont des Oliviers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20-%20Christ%20in%20the%20Garden%20-%20WGA04153.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18296,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18296\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1113749": {
+      "uri": "http://www.wikidata.org/entity/Q1113749",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Portrait d'Antonio Martelli",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Fra%20Antonio%20Martelli-Caravaggio%20%281610%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18297,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18297\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1117094": {
+      "uri": "http://www.wikidata.org/entity/Q1117094",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Couronnement d'épines",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Crowning%20with%20Thorns-Caravaggio%20%281602%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18298,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18298\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1132479": {
+      "uri": "http://www.wikidata.org/entity/Q1132479",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "L'Enterrement de sainte Lucie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Burial%20of%20Saint%20Lucy-Caravaggio%20%281608%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18299,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18299\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1122537": {
+      "uri": "http://www.wikidata.org/entity/Q1122537",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Jupiter, Neptune et Pluton",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Jupiter%20Neptune%20Pluto.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18300,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18300\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1213151": {
+      "uri": "http://www.wikidata.org/entity/Q1213151",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Mise au tombeau",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Entombment%20of%20Christ-Caravaggio%20%28c.1602-3%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18301,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18301\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1132486": {
+      "uri": "http://www.wikidata.org/entity/Q1132486",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Martyre de sainte Ursule",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Martyrdom%20of%20Saint%20Ursula-Caravaggio%20%281610%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18302,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18302\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1433194": {
+      "uri": "http://www.wikidata.org/entity/Q1433194",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Nativité avec saint François et saint Laurent",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio-Nativity%281600%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18303,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18303\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1448203": {
+      "uri": "http://www.wikidata.org/entity/Q1448203",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Conversion de saint Paul",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Conversion%20of%20Saint%20Paul-Caravaggio%20%28c.%201600-1%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18304,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18304\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1448701": {
+      "uri": "http://www.wikidata.org/entity/Q1448701",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Couronnement d'épines",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/CaravaggioCrowning01.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18305,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18305\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1448728": {
+      "uri": "http://www.wikidata.org/entity/Q1448728",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "L'Annonciation",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20The%20Annunciation.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18306,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18306\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1460179": {
+      "uri": "http://www.wikidata.org/entity/Q1460179",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Vocation de saint Pierre et saint André",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Uqueen3.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20%28Milan%201571-Port%27%20Ercole%201610%29%20-%20The%20Calling%20of%20Saints%20Peter%20and%20Andrew%20-%20RCIN%20402824%20-%20Hampton%20Court%20Palace.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18307,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18307\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q1460271": {
+      "uri": "http://www.wikidata.org/entity/Q1460271",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Portrait du pape Paul V",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Pope%20Paul%20V.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18308,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18308\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2007260": {
+      "uri": "http://www.wikidata.org/entity/Q2007260",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Medusa Murtola",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Medusa-Murtola.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18309,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18309\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2011510": {
+      "uri": "http://www.wikidata.org/entity/Q2011510",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Bacchus",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Baco%2C%20por%20Caravaggio.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18310,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18310\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2097931": {
+      "uri": "http://www.wikidata.org/entity/Q2097931",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Souper à Emmaüs",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Supper%20at%20Emmaus-Caravaggio%20%281606%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18311,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18311\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2264942": {
+      "uri": "http://www.wikidata.org/entity/Q2264942",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Flagellation du Christ",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Flagellation%20of%20Christ-Caravaggio%20%281607%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18312,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18312\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2270291": {
+      "uri": "http://www.wikidata.org/entity/Q2270291",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Corbeille de fruits",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Natura%20morta%20con%20frutta%20%28collezione%20dell%E2%80%99Ambrosiana%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18313,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18313\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2270778": {
+      "uri": "http://www.wikidata.org/entity/Q2270778",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Reniement de saint Pierre",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Denial%20of%20Saint%20Peter-Caravaggio%20%281610%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18314,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18314\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2270955": {
+      "uri": "http://www.wikidata.org/entity/Q2270955",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "David et Goliath",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20and%20Goliath%20by%20Caravaggio.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18315,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18315\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2273517": {
+      "uri": "http://www.wikidata.org/entity/Q2273517",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Conversion de saint Paul sur le chemin de Damas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Conversion%20on%20the%20Way%20to%20Damascus-Caravaggio%20%28c.1600-1%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18316,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18316\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2275353": {
+      "uri": "http://www.wikidata.org/entity/Q2275353",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint François en méditation",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20San%20Francesco%20in%20meditazione%20%281606-1607%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18317,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18317\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2275371": {
+      "uri": "http://www.wikidata.org/entity/Q2275371",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint François en méditation sur le crucifix",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Francis%20in%20Meditation-Caravaggio%20%28Cremona%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18318,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18318\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2277635": {
+      "uri": "http://www.wikidata.org/entity/Q2277635",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Résurrection de Lazare",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20006.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18319,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18319\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2284829": {
+      "uri": "http://www.wikidata.org/entity/Q2284829",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Sacrifice d'Isaac",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Sacrifice%20of%20Isaac-Caravaggio%20%28Uffizi%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18320,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18320\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2293905": {
+      "uri": "http://www.wikidata.org/entity/Q2293905",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Méduse",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Medusa%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18321,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18321\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2293936": {
+      "uri": "http://www.wikidata.org/entity/Q2293936",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Petit Bacchus malade",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Young%20Sick%20Bacchus-Caravaggio%20%281593%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18322,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18322\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2318325": {
+      "uri": "http://www.wikidata.org/entity/Q2318325",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Salomé avec la tête de saint Jean-Baptiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Salome%20with%20the%20Head%20of%20John%20the%20Baptist-Caravaggio%20%281610%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18323,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18323\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2318957": {
+      "uri": "http://www.wikidata.org/entity/Q2318957",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Salomé avec la tête de saint Jean-Baptiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/CaravaggioSalomeMadrid.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18324,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18324\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2325834": {
+      "uri": "http://www.wikidata.org/entity/Q2325834",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Ecce Homo",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20%28Michelangelo%20Merisi%29%20-%20Ecce%20Homo%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18325,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18325\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2327715": {
+      "uri": "http://www.wikidata.org/entity/Q2327715",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "L'Adoration des bergers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Adoration%20of%20the%20Shepherds-Caravaggio%20%281609%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18326,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18326\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2337873": {
+      "uri": "http://www.wikidata.org/entity/Q2337873",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Matthieu et l'Ange",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Inspiration%20of%20Saint%20Matthew-Caravaggio%20%281602%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18327,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18327\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2338417": {
+      "uri": "http://www.wikidata.org/entity/Q2338417",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Martyre de saint Matthieu",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Martyrdom%20of%20Saint%20Matthew-Caravaggio%20%28c.%201599-1600%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18328,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18328\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2395137": {
+      "uri": "http://www.wikidata.org/entity/Q2395137",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Portrait d'une courtisane",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20356.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18329,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18329\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2419166": {
+      "uri": "http://www.wikidata.org/entity/Q2419166",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "L'Incrédulité de saint Thomas",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Der%20ungl%C3%A4ubige%20Thomas%20-%20Michelangelo%20Merisi%2C%20named%20Caravaggio.jpg"
+      ],
+    },
+    "http://www.wikidata.org/entity/Q2429754": {
+      "uri": "http://www.wikidata.org/entity/Q2429754",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Amour endormi",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Sleeping%20Cupid-Caravaggio%20%281608%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18331,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18331\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2470123": {
+      "uri": "http://www.wikidata.org/entity/Q2470123",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Judith décapitant Holopherne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Giuditta%20e%20Oloferne%20%28ca.%201599%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18332,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18332\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2574120": {
+      "uri": "http://www.wikidata.org/entity/Q2574120",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Garçon pelant un fruit",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20%28Milan%201571-Port%27%20Ercole%201610%29%20-%20Boy%20Peeling%20Fruit%20-%20RCIN%20402612%20-%20Royal%20Collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18333,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18333\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2609235": {
+      "uri": "http://www.wikidata.org/entity/Q2609235",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "L'Extase de saint François",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Caravage%20-%20L%27extase%20de%20Saint%20Fran%C3%A7ois.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18334,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18334\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2610675": {
+      "uri": "http://www.wikidata.org/entity/Q2610675",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Diseuse de bonne aventure",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Fortune%20Teller-Caravaggio%20%28Louvre%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8939\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8939\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2610936": {
+      "uri": "http://www.wikidata.org/entity/Q2610936",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Garçon avec un panier de fruits",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Boy%20with%20a%20Basket%20of%20Fruit-Caravaggio%20%281593%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18335,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18335\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2626595": {
+      "uri": "http://www.wikidata.org/entity/Q2626595",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Les Sept Œuvres de miséricorde",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Seven%20Works%20of%20Mercy-Caravaggio%20%281607%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18336,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18336\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2627034": {
+      "uri": "http://www.wikidata.org/entity/Q2627034",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Sainte Catherine d'Alexandrie",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Catherine%20of%20Alexandria%20%28Caravaggio%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18337,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18337\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2627056": {
+      "uri": "http://www.wikidata.org/entity/Q2627056",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "David avec la tête de Goliath",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20with%20the%20Head%20of%20Goliath-Caravaggio%20%281610%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18338,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18338\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2713203": {
+      "uri": "http://www.wikidata.org/entity/Q2713203",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Madone des pèlerins",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18339,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18339\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2715177": {
+      "uri": "http://www.wikidata.org/entity/Q2715177",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Jérôme",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Jerome%20Writing-Caravaggio%20%281605-6%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18340,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18340\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2715302": {
+      "uri": "http://www.wikidata.org/entity/Q2715302",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Madone des palefreniers",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20and%20Child%20with%20St.%20Anne-Caravaggio%20%28c.%201605-6%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18341,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18341\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2721037": {
+      "uri": "http://www.wikidata.org/entity/Q2721037",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "David avec la tête de Goliath",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/David%20with%20the%20Head%20of%20Goliath-Caravaggio%20%28c.1606-7%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%2C%20gen.%20Caravaggio%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20David%20mit%20dem%20Haupt%20des%20Goliath%20-%20GG%20125%20-%20Kunsthistorisches%20Museum.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18342,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18342\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2727560": {
+      "uri": "http://www.wikidata.org/entity/Q2727560",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Décollation de saint Jean-Baptiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/La%20decapitaci%C3%B3n%20de%20San%20Juan%20Bautista%2C%20por%20Caravaggio.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18343,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18343\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2732274": {
+      "uri": "http://www.wikidata.org/entity/Q2732274",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Madeleine repentante",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20063.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18344,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18344\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2734111": {
+      "uri": "http://www.wikidata.org/entity/Q2734111",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Portrait de Maffeo Barberini",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Maffeo%20Barberini.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18345,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18345\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q2734679": {
+      "uri": "http://www.wikidata.org/entity/Q2734679",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Marthe et Marie-Madeleine",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20-%20Martha%20and%20Mary%20Magdalene%20-%2073.268%20-%20Detroit%20Institute%20of%20Arts.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18346,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18346\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3202347": {
+      "uri": "http://www.wikidata.org/entity/Q3202347",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "L'Arracheur de dents",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Toothpuller.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18347,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18347\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3212682": {
+      "uri": "http://www.wikidata.org/entity/Q3212682",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Sainte Famille avec saint Jean-Baptiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1604%20Caravaggio%20Heilige%20Familie%20mit%20Johannes%20dem%20Taeufer%20anagoria.JPG"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18348,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18348\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3221991": {
+      "uri": "http://www.wikidata.org/entity/Q3221991",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Crucifiement de saint André",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20The%20Crucifixion%20of%20Saint%20Andrew%20-%201976.2%20-%20Cleveland%20Museum%20of%20Art.tiff"
+      ],
+    },
+    "http://www.wikidata.org/entity/Q3223625": {
+      "uri": "http://www.wikidata.org/entity/Q3223625",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Jeune Saint Jean-Baptiste au bélier",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%2C%20Saint%20John%20the%20Baptist%20%28Youth%20with%20a%20Ram%29%20%28c.%201602%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18349,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18349\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3226847": {
+      "uri": "http://www.wikidata.org/entity/Q3226847",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Sacrifice d'Isaac",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Sacrifice%20of%20Isaac-Caravaggio%20%28c.%201603%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18350,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18350\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3292135": {
+      "uri": "http://www.wikidata.org/entity/Q3292135",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Marie-Madeleine en extase",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mary%20magdalene%20caravaggio.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18351,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18351\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3337119": {
+      "uri": "http://www.wikidata.org/entity/Q3337119",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Nature morte aux fruits",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Still%20Life%20with%20Fruit%20%28circa%201603%29.png"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18352,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18352\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3463868": {
+      "uri": "http://www.wikidata.org/entity/Q3463868",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Jean-Baptiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio-Baptist-Toledo.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18353,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18353\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3463869": {
+      "uri": "http://www.wikidata.org/entity/Q3463869",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Jean-Baptiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/John%20the%20Baptist-Caravaggio%20%28Galleria%20Nazionale%20d%27Arte%20Antica%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18354,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18354\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3463877": {
+      "uri": "http://www.wikidata.org/entity/Q3463877",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Jean-Baptiste dans le désert",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%2C%20called%20Caravaggio%20-%20Saint%20John%20the%20Baptist%20in%20the%20Wilderness%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18355,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18355\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3463878": {
+      "uri": "http://www.wikidata.org/entity/Q3463878",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Jean-Baptiste à la fontaine",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Baptist%20Collezione%20Bonello%2C%20Malta.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18356,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18356\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q3697589": {
+      "uri": "http://www.wikidata.org/entity/Q3697589",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Le Christ à la colonne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20001.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18357,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18357\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q9015206": {
+      "uri": "http://www.wikidata.org/entity/Q9015206",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Jean-Baptiste",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/John%20the%20Baptist%20%28Galleria%20Borghese%29-Caravaggio%20%281610%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18358,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18358\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q16534183": {
+      "uri": "http://www.wikidata.org/entity/Q16534183",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "La Diseuse de bonne aventure",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Fortune%20Teller-Caravaggio%20%28Rome%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18359,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18359\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q9015209": {
+      "uri": "http://www.wikidata.org/entity/Q9015209",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Saint Jean-Baptiste allongé",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio-Baptist-reclining.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18360,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18360\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q16596970": {
+      "uri": "http://www.wikidata.org/entity/Q16596970",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Portrait of Maffeo Barberini (Pope Urban VIII)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Pope%20Urban%20VIII-Caravaggio%20%28Maffeo%20Barberini%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18361,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18361\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q17992160": {
+      "uri": "http://www.wikidata.org/entity/Q17992160",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Les Tricheurs",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20I%20bari%20%28Mahon%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18362,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18362\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q25796776": {
+      "uri": "http://www.wikidata.org/entity/Q25796776",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "L'Arrestation du Christ",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20-%20Taking%20of%20Christ%20-%20Odessa.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18363,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18363\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q29338617": {
+      "uri": "http://www.wikidata.org/entity/Q29338617",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Descente de Croix",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/1%20Annecy%2Ccathedral22.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18364,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18364\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q28108359": {
+      "uri": "http://www.wikidata.org/entity/Q28108359",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Salome with the head of John the Baptist",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/M.%20Merisi%20-%20Salome%20met%20het%20hoofd%20van%20Johannes%20de%20Doper%20-%20R5253%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18365,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18365\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q55647084": {
+      "uri": "http://www.wikidata.org/entity/Q55647084",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Joueur de luth",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%2C%20Michelangelo%20Merisi%20da%20-%20The%20Lute-Player.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/71-2681%20Leningrad%201971%20%2851481077286%29.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20detail.png",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Lute%20player%20face.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20020.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9B%D1%8E%D1%82%D0%BD%D0%B8%D1%81%D1%82%20-%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0%20%D0%9A%D0%B0%D1%80%D0%B0%D0%B2%D0%B0%D0%B4%D0%B6%D0%BE.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20020FXD.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20-%20Lute%20Player%20%28detail%29%20-%20WGA04087.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20da%20Caravaggio%20-%20Lute%20Player%20-%20WGA04086.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Lute%20Player-Caravaggio%20%28Hermitage%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18366,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18366\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q30095295": {
+      "uri": "http://www.wikidata.org/entity/Q30095295",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Lute Player",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20%28Michelangelo%20Merisi%29%20%28%5E%29%20-%20Lautenspieler%20-%204868%20-%20Bavarian%20State%20Painting%20Collections.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18367,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18367\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q64869205": {
+      "uri": "http://www.wikidata.org/entity/Q64869205",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Judith décapitant Holopherne",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Giuditta%20e%20Oloferne%20-%20Tolosa.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18368,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18368\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q55647114": {
+      "uri": "http://www.wikidata.org/entity/Q55647114",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "The Lute Player",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Lute%20Player-Caravaggio%20%28Metropolitan%20Museum%20of%20Art%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18369,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18369\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q67204634": {
+      "uri": "http://www.wikidata.org/entity/Q67204634",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Portrait of a gentleman (Scipione Borghese?)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Merisi%20known%20as%20Caravaggio%20-%20Portrait%20of%20a%20gentleman%20%28Scipione%20Borghese%3F%29%20-%20Google%20Art%20Project.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18370,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18370\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q79035845": {
+      "uri": "http://www.wikidata.org/entity/Q79035845",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "The Vision of Saint Jerome",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Follower%20of%20Michelangelo%20Merisi%20da%20Caravaggio%20-%20The%20Vision%20of%20Saint%20Jerome%2C%201960.13.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18371,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18371\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q102641148": {
+      "uri": "http://www.wikidata.org/entity/Q102641148",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Boy Peeling Pears",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/CARAVAGGIO%2C%20A%20boy%20peeling%20fruit%20%281593%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18372,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18372\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q104528133": {
+      "uri": "http://www.wikidata.org/entity/Q104528133",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Prophet with book",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20%28Nachfolger%29%20-%20Prophet%20mit%20Buch%20-%20467%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18373,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18373\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q107443198": {
+      "uri": "http://www.wikidata.org/entity/Q107443198",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "The Holy Family with Child Saint John",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20Caravaggio%20055.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18374,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18374\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q125869859": {
+      "uri": "http://www.wikidata.org/entity/Q125869859",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Ecce homo",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Ecce%20homo%28Caravaggio%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18375,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18375\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q124001433": {
+      "uri": "http://www.wikidata.org/entity/Q124001433",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Q124001433",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%20Baptist%20Galleria%20Nazionale%20d%27Arte%20Antica%2C%20Rome.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18376,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18376\\/category\\/788\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q131543672": {
+      "uri": "http://www.wikidata.org/entity/Q131543672",
+      "createur": "http://www.wikidata.org/entity/Q42207",
+      "createurLabel": "Le Caravage",
+      "titre_fr": "Garçon mordu par un lézard",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Boy%20Bitten%20by%20a%20Lizard-Caravaggio%20%28Longhi%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":18377,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/18377\\/category\\/788\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

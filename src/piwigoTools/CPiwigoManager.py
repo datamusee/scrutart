@@ -1,10 +1,9 @@
 import time
-
-from piwigoConfigPrivee import configPiwigo
+import re
+from src.piwigoTools.piwigoConfigPrivee import configPiwigo as cp
 import datetime
 import logging
 import requests
-import configPiwigo as cp
 
 class CPiwigoManager():
     def __init__(self, url="https://galeries.grains-de-culture.fr"):
@@ -63,8 +62,8 @@ class CPiwigoManager():
         payload = {
             "format": "json",
             "method": "pwg.session.login",
-            "username": cp.configPiwigo["login"],
-            "password": cp.configPiwigo["pass"],
+            "username": cp["login"],
+            "password": cp["pass"],
         }
         try:
             response = session.post(self.PIWIGO_API_URL, data=payload)
@@ -303,13 +302,61 @@ class CPiwigoManager():
                 print("Erreur :", response.status_code, response.text)
                 return None
 
-    def piwigo_comment_category(self, catName, categoryId, catFreq):
+    def buildImageComment(self):
+        templates = {
+            "IMAGE": {
+                "fr": f"{name}",
+                "en": f"",
+            }
+        }
+
+    def buildGaleryComment(self, pwgType, name, scrutartpage="https://scrutart.grains-de-culture.fr/"):
+        txtTemplates = {
+            "GALERY_GENRE": {
+                "fr": #f"""<p>Cette galerie présente des peintures du genre '{name}'. Ces images, libres de droit, ont été sélectionnées à partir de données de Wikidata et d'images de Wikimedia Commons.</p>"""+
+                      f"""<p>Une analyse de la présence du genre '{name}' dans Wikidata se trouve dans <a href='{scrutartpage}'>ScrutArt</a>.</p>""" if scrutartpage else "",
+                "en": #f"""<p>This gallery shows paintings of the genre '{name}'. These royalty-free images have been selected from Wikidata data and images from Wikimedia Commons.</p>"""+
+                        f"""<p>An analysis of genre presence '{name}' in Wikidata can be found in <a href='{scrutartpage}'>ScrutArt</a>.</p>""" if scrutartpage else "",
+            },
+            "GALERY_MOVEMENT": {
+                "fr": f"""Cette galerie présente des peintures du mouvement '{name}'. Ces images, libres de droit, ont été sélectionnées à partir de données de Wikidata et d'images de Wikimedia Commons. Une analyse de la présence du genre '{name}' dans Wikidata se trouve dans <a href='https://scrutart.grains-de-culture.fr/'>ScrutArt</a>.""",
+                "en": f"""""",
+            },
+            "GALERY_CREATOR": {
+                "fr": #f"""<p>Cette galerie présente des peintures créées par '{name}'. Ces images, libres de droit, ont été sélectionnées à partir de données de Wikidata et d'images de Wikimedia Commons.</p>"""+
+                      f"""<p>Une analyse de la présence des oeuvres de '{name}' dans Wikidata se trouve dans <a href='{scrutartpage}'>ScrutArt</a>.</p>""" if scrutartpage else "",
+                "en": #f"""<p>This gallery presents paintings created by '{name}'. These royalty-free images have been selected from Wikidata data and images from Wikimedia Commons.</p>"""+
+                      f"""<p>An analysis of the presence of works created by '{name}' in Wikidata can be found in <a href='{scrutartpage}'>ScrutArt</a>.</p>""" if scrutartpage else "",
+            }
+        }
+        msg = f"""
+         [lang=all]
+             <style> .banniere-analyse {{   display: flex;   align-items: center;   gap: 0.5em;   background: #f8f8f8;   border-left: 3px solid #cccccc;   
+                            padding: 1em;   margin: 0em 0;   border-radius: 10px;   font-family: sans-serif;   flex-wrap: wrap; }} 
+                    .banniere-analyse-icon {{   font-size: 4em;   color: #007acc; }} 
+                    .banniere-analyse-text {{   flex: 1;   min-width: 200px; }} 
+                    .banniere-analyse-text a {{   color: #007acc;   text-decoration: underline; }} 
+                    @media (max-width: 600px) {{   
+                        .banniere-analyse {{     flex-direction: column;     align-items: flex-start;   }} 
+                    }}
+            </style>
+            <div class='banniere-analyse'>   
+            <div class='banniere-analyse-text'>
+        [/lang]
+        """
+        template = txtTemplates[pwgType]
+        for lang, txt in template.items():
+            msg += f"""[lang={lang}]{txt}[/lang]"""
+        closingtxt = "[lang=all]</div></div>[/lang]"
+        msg += closingtxt
+        return msg
+
+    def piwigo_comment_category(self, categoryId, comment):
         try:
             self.piwigo_open_session()
-            strCatFreq = str(catFreq)
             payload = {
                 "method": "pwg.categories.setInfo",
-                "comment": f"Cette galerie présente des peintures du genre '{catName}'. Ces images, libres de droit, ont été sélectionnées à partir de données de Wikidata et d'images de Wikimedia Commons. Une analyse de la présence du genre '{catName}' dans Wikidata se trouve dans <a href='https://scrutart.grains-de-culture.fr/'>ScrutArt</a>. Au 22/11/2024, Wikidata contenait {strCatFreq} peintures de ce genre.",
+                "comment": comment,
                 "category_id": categoryId,
                 "pwg_token": self.token
             }
@@ -333,3 +380,26 @@ class CPiwigoManager():
             time.sleep(1)
             return None
 
+    def getImageId(res):
+        imId = None
+        regex = r"image_id[\\]?\":[\"]?(\d+)"
+        match = re.search(regex, res)
+        if match:
+            imId = match.group(1)
+        return imId
+
+    def getCategoryId(res):
+        catId = None
+        regex = r"category\\\/(\d+)"
+        match = re.search(regex, res)
+        if match:
+            catId = match.group(1)
+        return catId
+
+
+if __name__=="__main__":
+    # micro test temporatire
+    pwg = CPiwigoManager()
+    comment = pwg.buildGaleryComment("GALERY_CREATOR", "Test")
+    test = pwg.piwigo_comment_category(852, comment)
+    pass
