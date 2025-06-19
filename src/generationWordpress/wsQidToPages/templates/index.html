@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Traitement QID</title>
+    <script>
+        async function lancerTraitement(event) {
+            event.preventDefault();
+            const qid = document.getElementById("qid").value;
+            const response = await fetch("/start", {
+                method: "POST",
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({qid})
+            });
+            const data = await response.json();
+            if (response.ok) {
+                document.getElementById("pipestatus").innerText = data.message;
+                suivreEtatPipeline(qid);
+            } else {
+                document.getElementById("pipestatus").innerText = data.error;
+            }
+        }
+
+        async function suivreEtat(qid) {
+            const container = document.getElementById("files");
+            container.innerHTML = "";
+            const interval = setInterval(async () => {
+                const res = await fetch(`/status/${qid}`);
+                const data = await res.json();
+                container.innerHTML = "";
+                data.files.forEach(msg => {
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.textContent = url;
+                    a.target = "_blank";
+                    container.appendChild(document.createElement("br"));
+                    container.appendChild(a);
+                });
+                if (data.files.length >= 5) {
+                    clearInterval(interval);
+                }
+            }, 2000);
+        }
+        async function suivreEtatPipeline(qid) {
+            const container = document.getElementById("etapes");
+            container.innerHTML = "";
+            const interval = setInterval(async () => {
+                const res = await fetch(`/pipestatus/${qid}`);
+                const data = await res.json();
+                container.innerHTML = "";
+                data.msgs.forEach(msg => {
+                    if (msg=="END_PIPELINE") {
+                        clearInterval(interval);
+                    } else {
+                        const h2 = document.createElement('h4');
+                        h2.textContent = msg;
+                        h2.target = "_blank";
+                        container.appendChild(h2);
+                    }
+                });
+            }, 3000);
+        }
+    </script>
+</head>
+<body>
+    <h1>Générer des pages pour un peintre:</h1>
+    <form onsubmit="lancerTraitement(event)">
+        <label for="qid">Identifiant Wikidata (ex: Q12345) :</label>
+        <input type="text" id="qid" name="qid" required>
+        <button type="submit">Lancer</button>
+    </form>
+    <p id="pipestatus"></p>
+    <div id="etapes"></div>
+</body>
+</html>
