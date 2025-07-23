@@ -350,23 +350,24 @@ def set_rate_limit():
 
     return jsonify({"message": "Rate limit updated."})
 
+def getRequestParam(request, paramName):
+    param = None
+    param = request.args.get(paramName, None)
+    if not param and paramName in request.json:
+        param = request.json[paramName]
+    return param
 
 @app.route("/api/request", methods=["POST", "GET"])
 @authenticate
 def api_request():
-    scheduler_id = request.args.get("scheduler_id")
-    if not scheduler_id and "scheduler_id" in request.json:
-        scheduler_id = request.json["scheduler_id"]
+
+    scheduler_id = getRequestParam(request, "scheduler_id")
     if not scheduler_id or scheduler_id not in schedulers:
         return jsonify({"error": "Scheduler not found for the given ID."}), 404
 
     scheduler = schedulers[scheduler_id]
-    client_id = request.args.get("client_id")
-    if not client_id and "client_id" in request.json:
-        client_id = request.json["client_id"]
-    url = request.args.get("url", None)
-    if not url and "url" in request.json:
-        url = request.json["url"]
+    client_id = getRequestParam(request, "client_id")
+    url = getRequestParam(request, "url")
     if request.method == "POST":
         data = request.json
         headers = data.get("headers", {})
@@ -455,7 +456,7 @@ def delete_scheduler():
     # Supprimer le scheduler de la liste
     del schedulers[scheduler_id]
 
-    # Supprimer l'association des URL triées à cet ID
+    # Supprimer l'association des URL associées à cet ID
     for key, value in list(scheduler_ids.items()):
         if value == scheduler_id:
             del scheduler_ids[key]
