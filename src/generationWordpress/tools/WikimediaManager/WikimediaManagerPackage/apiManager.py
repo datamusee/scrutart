@@ -1,7 +1,11 @@
+import threading
+#print("Threads at start:", threading.enumerate())
+import sys
+#print("First imports:", list(sys.modules.keys())[:30])
+#print("Threads after monkey_patch:", threading.enumerate())
 import asyncio
 import json
 import os
-import threading
 import time
 import uuid
 from functools import wraps
@@ -15,18 +19,20 @@ from flask_socketio import SocketIO, emit, join_room, leave_room
 
 from configPrivee  import config
 
+API_IP_ADDRESS = "127.0.0.1"
+API_PORT = 6000
 
 """
 voir https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
 pour wikimedia
 """
-class APIRequestManager:
+class APIRequestScheduler:
     _instances = {}
 
     def __new__(cls, api_urls, *args, **kwargs):
         key = tuple(sorted(api_urls))
         if key not in cls._instances:
-            cls._instances[key] = super(APIRequestManager, cls).__new__(cls)
+            cls._instances[key] = super(APIRequestScheduler, cls).__new__(cls)
         return cls._instances[key]
 
     def __init__(self, api_urls):
@@ -38,6 +44,7 @@ class APIRequestManager:
         self.CALL_INTERVAL = 1 / self.CALLS_PER_SECOND
         self.request_queue = Queue()
         self.response_store = {}
+        self.request_dict = {} # ghost of the queue, for debug
         self.cache_dir = os.path.join(os.getcwd(), 'cache')
         os.makedirs(self.cache_dir, exist_ok=True)
         self.lock = threading.Lock()
@@ -98,7 +105,7 @@ class APIRequestManager:
 
                     # Notifier le client si connecté
                     if client_id in connected_clients:
-                        resurl = "http://localhost:5000/send_message"
+                        resurl = f"http://{API_IP_ADDRESS}:{API_PORT}/send_message"
                         data = {
                             "client_id": f"{client_id}", "message": {
                                 "request_id": request_id,
@@ -148,7 +155,7 @@ class APIRequestManager:
 
             # Notifier le client si connecté
             if client_id in connected_clients:
-                resurl = "http://localhost:5000/send_message"
+                resurl = f"http://{API_IP_ADDRESS}:{API_PORT}/send_message"
                 data = {"client_id": f"{client_id}", "message": {
                     "request_id": request_id,
                     "message": api_response
@@ -162,7 +169,7 @@ class APIRequestManager:
 
             # Notifier le client en cas d'erreur
             if client_id in connected_clients:
-                resurl = "http://localhost:5000/send_message"
+                resurl = f"http://{API_IP_ADDRESS}:{API_PORT}/send_message"
                 data = {"client_id": f"{client_id}", "message": {
                     "request_id": request_id,
                     "message": "error",
@@ -199,6 +206,7 @@ class APIRequestManager:
             'client_id': client_id
         }
         self.request_queue.put(request_data)
+        self.request_dict[request_id] = request_data # il faudra vider ce dict quand une requête est enlevée de request_queue
 
         estimated_delay = self.request_queue.qsize() * self.CALL_INTERVAL
         return request_id, estimated_delay
@@ -209,7 +217,8 @@ class APIRequestManager:
 
     def has_request(self, request_id):
         with self.lock:
-            return request_id in self.response_store
+            #return request_id in self.response_store
+            return request_id in self.request_dict
 
 
 def authenticate(f):
@@ -226,7 +235,7 @@ def authenticate(f):
 
 # Initialise Flask-SocketIO
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins="*")
+socketio = SocketIO(app, async_mode='eventlet', cors_allowed_origins="*")
 
 # Gérer les connexions WebSocket (optionnel, pour garder une trace des clients connectés)
 connected_clients = {}
@@ -291,15 +300,15 @@ def send_message():
         return {"error": "Client not found"}, 404
 
 
-# Managing separate API request managers for different sets of URLs
-managers = {}
-manager_ids = {}
+# Managing separate API request schedulers for different sets of URLs
+schedulers = {}
+scheduler_ids = {}
 
 
 @app.route("/api/initialize", methods=["GET", "POST"])
 @authenticate
-def initialize_manager():
-    logging.debug(f"debut de création d'un manager par {request.method}")
+def initialize_scheduler():
+    #logging.debug(f"debut de création d'un manager par {request.method}")
     if request.method == "GET":
         api_urls = request.args.getlist("api_urls")
     else:
@@ -309,35 +318,35 @@ def initialize_manager():
     if not api_urls:
         return jsonify({"error": "api_urls are required"}), 400
 
-    manager = APIRequestManager(api_urls)
-    manager_id = str(uuid.uuid4())
-    managers[manager_id] = manager
-    manager_ids[tuple(sorted(api_urls))] = manager_id
+    scheduler_id = str(uuid.uuid4())
+    scheduler = APIRequestScheduler(api_urls)
+    schedulers[scheduler_id] = scheduler
+    scheduler_ids[tuple(sorted(api_urls))] = scheduler_id
 
     # Start a thread for the manager's queue
-    threading.Thread(target=lambda: asyncio.run(manager.process_queue()), daemon=True).start()
+    threading.Thread(target=lambda: asyncio.run(scheduler.process_queue()), daemon=True).start()
 
-    return jsonify({"message": "Manager initialized for the given API URLs.", "manager_id": manager_id})
+    return jsonify({"message": "Manager initialized for the given API URLs.", "scheduler_id": scheduler_id})
 
 
 @app.route("/api/set_rate_limit", methods=["POST"])
 @authenticate
 def set_rate_limit():
-    manager_id = request.args.get("manager_id")
-    if not manager_id:
-        manager_id = request.json["manager_id"]
+    scheduler_id = request.args.get("scheduler_id")
+    if not scheduler_id:
+        scheduler_id = request.json["scheduler_id"]
     limit = request.args.get("limit", type=float)
     if not limit:
         limit = request.json["limit"]
 
-    if not manager_id or manager_id not in managers:
+    if not scheduler_id or scheduler_id not in schedulers:
         return jsonify({"error": "Manager not found for the given ID."}), 404
 
     if not limit or limit <= 0:
         return jsonify({"error": "A valid limit is required."}), 400
 
-    manager = managers[manager_id]
-    manager.set_rate_limit(limit)
+    scheduler = schedulers[scheduler_id]
+    scheduler.set_rate_limit(limit)
 
     return jsonify({"message": "Rate limit updated."})
 
@@ -345,13 +354,13 @@ def set_rate_limit():
 @app.route("/api/request", methods=["POST", "GET"])
 @authenticate
 def api_request():
-    manager_id = request.args.get("manager_id")
-    if not manager_id and "manager_id" in request.json:
-        manager_id = request.json["manager_id"]
-    if not manager_id or manager_id not in managers:
-        return jsonify({"error": "Manager not found for the given ID."}), 404
+    scheduler_id = request.args.get("scheduler_id")
+    if not scheduler_id and "scheduler_id" in request.json:
+        scheduler_id = request.json["scheduler_id"]
+    if not scheduler_id or scheduler_id not in schedulers:
+        return jsonify({"error": "Scheduler not found for the given ID."}), 404
 
-    manager = managers[manager_id]
+    scheduler = schedulers[scheduler_id]
     client_id = request.args.get("client_id")
     if not client_id and "client_id" in request.json:
         client_id = request.json["client_id"]
@@ -377,7 +386,7 @@ def api_request():
         return jsonify({"error": "URL is required."}), 400
 
     try:
-        request_id, estimated_delay = manager.add_request(
+        request_id, estimated_delay = scheduler.add_request(
             url=url,
             payload=payload,
             cache_duration=cache_duration,
@@ -397,16 +406,32 @@ def api_request():
     })
 
 
+
+@app.route("/api/openstatus", methods=["GET"])
+# status sans authentification pour debug; fournit la liste des requêtes en cours
+def api_openstatus():
+    try:
+        #stat = {"status": "request ids", "schedulerids": str(len(scheduler_ids)), "requestIds": []}
+        stat = {"status": "request ids", "schedulerids": str(len(schedulers)), "requestIds": []}
+        for scheduler in schedulers.values():
+            reqids = scheduler.request_dict
+            stat["requestIds"].append(reqids)
+        return jsonify(stat)
+    except Exception as e:
+        print(f"Erreur dans l'interrogation du status:\n {e}")
+        return None
+
 @app.route("/api/status/<request_id>", methods=["GET"])
 @authenticate
 def api_status(request_id):
     found_request = False
     try:
-        for manager in managers.values():
-            if manager.has_request(request_id):
+        for scheduler in schedulers.values():
+            if scheduler.has_request(request_id):
                 found_request = True
-                response = manager.get_response(request_id)
+                response = scheduler.get_response(request_id)
                 if response:
+                    # scheduler.request_dict.pop(request_id) # remove from the ghost dict
                     return jsonify({"status": "complete", "response": response})
 
         if not found_request:
@@ -417,23 +442,25 @@ def api_status(request_id):
         print(f"Erreur dans l'interrogation du status:\n {e}")
         return None
 
-@app.route("/api/delete_manager", methods=["DELETE"])
+@app.route("/api/delete_scheduler", methods=["DELETE"])
 @authenticate
-def delete_manager():
-    manager_id = request.args.get("manager_id")
+def delete_scheduler():
+    scheduler_id = request.args.get("scheduler_id")
 
-    if not manager_id or manager_id not in managers:
-        return jsonify({"error": "Manager not found for the given ID."}), 404
+    if not scheduler_id or scheduler_id not in schedulers:
+        return jsonify({"error": "scheduler not found for the given ID."}), 404
 
-    # Supprimer le manager de la liste
-    del managers[manager_id]
+    scheduler = schedulers[scheduler_id]
+
+    # Supprimer le scheduler de la liste
+    del schedulers[scheduler_id]
 
     # Supprimer l'association des URL triées à cet ID
-    for key, value in list(manager_ids.items()):
-        if value == manager_id:
-            del manager_ids[key]
+    for key, value in list(scheduler_ids.items()):
+        if value == scheduler_id:
+            del scheduler_ids[key]
 
-    return jsonify({"message": f"Manager with ID {manager_id} deleted successfully."})
+    return jsonify({"message": f"scheduler with ID {scheduler_id} deleted successfully."})
 
 
 @app.route("/", methods=["GET"])
@@ -444,4 +471,4 @@ def home():
 if __name__ == "__main__":
     # app.run(debug=False)
     # socketio.run(app, debug=False)
-    socketio.run(app, host='127.0.0.1', port=6000, debug=False)
+    socketio.run(app, host=API_IP_ADDRESS, port=API_PORT, debug=False)
