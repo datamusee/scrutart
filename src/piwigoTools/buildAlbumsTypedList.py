@@ -8,7 +8,7 @@ from src.generationWordpress.tools.scrutartJsonToTtl import ScrutartJsonToTtl
 import CPiwigoManager
 
 @Memorize
-def getCreatorName(qid, query):
+def getEntityLabel(qid, query):
     wObj = WikimediaAccess(qid)
     res = wObj.sparqlQuery(query)  # interrogation de WDQS
     if res:
@@ -16,8 +16,6 @@ def getCreatorName(qid, query):
         return name
     return None
 
-# filterEntities = entitiesList
-# filterEntities = [  "Q239394" ]
 entityFilePath = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\wikidataSignificantPaintersTicket1527.json"
 with open(entityFilePath, encoding="UTF-8") as fListTypes:
     types = json.load(fListTypes)
@@ -27,6 +25,10 @@ with open(entityFilePath, encoding="UTF-8") as fListTypes:
 filterEntities = [
     "Q237911" #  Louise Abbéma
 ]
+
+def findPiwigoGaleryForQid(qid, create=False): # find galery id, create it if it doesn't exist and create==True
+    galid = None
+    return galid
 
 if __name__ == "__main__":
     entityClassTargets = [ "CREATORS", "GENRES", "MOVEMENTS"]
@@ -49,17 +51,14 @@ if __name__ == "__main__":
           values ?creator {wd:__QID__}
           SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en". }
           }"""
-    # dictionnaire de créateurs en cours de création
+    # dictionnaire -qui associe un nom et un QID- de créateurs en cours de création
     creators = {}
     for qid in filterEntities: # [275:276]: # pour chaque qid pris dans la liste filterEntities (ou une sous-partie)
         query = queryTemplate.replace("__QID__", qid) # query sparql pour l'entité qid
         res = None
         print(f"access to {qid}")
-        # wObj = WikimediaAccess(qid)
-        name = getCreatorName(qid, query)
-        # res = wObj.sparqlQuery(query) # interrogation de WDQS
-        if name: # res:
-            # name = res["results"]["bindings"][0]["creatorLabel"]["value"] # recupération du label associé au qid
+        name = getEntityLabel(qid, query)
+        if name:
             creators[name] = {"name": name, "qid": qid} # injection dans le dictionnaire avec pour clé le label
             print(f"---> {creators[name]}")
 
