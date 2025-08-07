@@ -113,6 +113,37 @@ def getFilesList(dirToProcess):
     filesList = [join(dirToProcess, f) for f in listdir(dirToProcess) if isfile(join(dirToProcess, f))]
     return filesList
 
+class ImageTracker():
+    def __init__(self, listimagespath, data, freqsav=5):
+        self.idxsav = 0
+        self.freqsav = freqsav
+        self.listimagespath = listimagespath
+        self.change = False
+        self.data = data
+        self.dictim = data["dict"]
+        pass
+
+    def trackPushedImage(self, imageDesc, pushedres):
+        # TODO traces dans le graphe scrutartState
+        # en attendant, écriture dans un fichier toutes les N images + quand on quitte l'appli
+        self.change = True
+        imageDesc["post_result"] = pushedres.text
+        imageDesc["posted"] = True
+        self.dictim[uri] = imageDesc
+        self.idxsav += 1
+        if self.idxsav >= self.freqsav:
+            self.idxsav = 0
+            with open(self.listimagespath, "w", encoding="UTF-8") as fdata:
+                self.data["dict"] = self.dictim
+                json.dump(data, fdata, ensure_ascii=False)
+
+    def __del__(self):
+        if self.change:
+            with open(self.listimagespath, "w", encoding="UTF-8") as fdata:
+                self.data["dict"] = dictim
+                json.dump(self.data, fdata, ensure_ascii=False)
+        pass
+
 if __name__=="__main__":
     # choix d'un dossier dans lequel il y a des fichiers qui constituent des listes d'images
     dirToProcess = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\\fr\\20250507"
@@ -135,31 +166,15 @@ if __name__=="__main__":
                 if (not "version" in data) or (data["version"]=="1.0.1"):
                     data = convertListImage(data, "1.0.0", "2.0.0")
                 dictim = data["dict"]
+            imageTracker = ImageTracker(listimagespath, data, 5)
             if dictim:
                 print(datetime.datetime.now())
-                freqsav = 5
-                idxsav = 0
-                change = False
                 for uri, im in dictim.items():
                     if not "posted" in im:
                         res = postImageToPiwigo(im, piwigoCategory, categoryName, cp)
                         if res:
-                            change = True
-                            im["post_result"] = res.text
-                            im["posted"] = True
-                            dictim[uri] = im
-                            idxsav += 1
-                            time.sleep(12)
-                            if idxsav>=freqsav:
-                                idxsav = 0
-                                with open(listimagespath, "w", encoding="UTF-8") as fdata:
-                                    data["dict"] = dictim
-                                    json.dump(data, fdata, ensure_ascii=False)
-                if change:
-                    with open(listimagespath, "w", encoding="UTF-8") as fdata:
-                        data["dict"] = dictim
-                        json.dump(data, fdata, ensure_ascii=False)
+                            imageTracker.trackPushedImage(im, res)
+                            time.sleep(12) # délai pour pas saturer l'interface Piwigo; on devrait plutot passer par l'APIManager
 
-
-# La description peut contenir un lien vers l entité source, un lien vers l URL de l image, le copyright
-# Il faut limiter l api a n'accepter que certains emetteurs
+# La description peut contenir un lien vers l'entité source, un lien vers l URL de l'image, le copyright
+# il faut limiter l'api à n'accepter que certains émetteurs
