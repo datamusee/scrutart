@@ -4,17 +4,17 @@ import datetime
 import json
 import time
 
-def postImageToPiwigo(im, piwigoCategory=15, categoryName="portrait", cp=None):
+def postImageToPiwigo(im, piwigoCategory=15, categoryName="portrait", configPiwigo=None, track=None):
     # dans la version 2, il peut y avoir plusieurs images, je prends la première
     # il faudrait prendre la meilleure, de préférence sans le cadre
-    if not cp: return None
+    if not configPiwigo: return None
     image_path = im["images"][0]
     hh = { 'User-Agent': 'Scrutart-UA (https://scrutart.grains-de-culture.fr/; scrutart@grains-de-culture.fr)'}
     image_response = requests.get(image_path, headers=hh)
     image_data = image_response.content
 
-    username = cp.configPiwigo["login"]
-    password = cp.configPiwigo["pass"]
+    username = configPiwigo.configPiwigo["login"]
+    password = configPiwigo.configPiwigo["pass"]
     auth_data = {
         "format": "application/json",
         "method": "pwg.session.login",
@@ -59,13 +59,17 @@ def postImageToPiwigo(im, piwigoCategory=15, categoryName="portrait", cp=None):
             files=files
         )
         # todo ajouter des logs
-        if response.status_code == 200:
+        if response and response.status_code == 200:
             print(f"L'image '{titre}' a été téléchargée avec succès et les métadonnées ont été ajoutées ! ({datetime.datetime.now()})")
-            # print(datetime.datetime.now())
+            if track:
+                imageTracker.trackPushedImage(im, res)
+                time.sleep(12)  # délai pour pas saturer l'interface Piwigo;
+                # TODO on devrait plutot passer par l'APIManager pour gérer le délai
             return response
         else:
             print("Erreur :", response.status_code, response.text)
             return None
+
 def convertFromV1To(data, versionTarget):
     targetData = data
     if "version" in data and data["version"]!="1.0.0"  and data["version"]!="1.0.1":
@@ -171,10 +175,7 @@ if __name__=="__main__":
                 print(datetime.datetime.now())
                 for uri, im in dictim.items():
                     if not "posted" in im:
-                        res = postImageToPiwigo(im, piwigoCategory, categoryName, cp)
-                        if res:
-                            imageTracker.trackPushedImage(im, res)
-                            time.sleep(12) # délai pour pas saturer l'interface Piwigo; on devrait plutot passer par l'APIManager
+                        res = postImageToPiwigo(im, piwigoCategory, categoryName, cp, track=True)
 
 # La description peut contenir un lien vers l'entité source, un lien vers l URL de l'image, le copyright
 # il faut limiter l'api à n'accepter que certains émetteurs
