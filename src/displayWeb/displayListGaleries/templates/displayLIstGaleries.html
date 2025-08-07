@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste Artistes & Styles</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input { margin-bottom: 10px; width: 300px; padding: 5px; }
+    .section { margin-top: 30px; }
+    .pagination { margin-top: 10px; }
+    .pagination button { margin: 2px; padding: 5px 10px; }
+    .item { margin-left: 10px; }
+  </style>
+</head>
+<body>
+
+<h2>Recherche</h2>
+<input type="text" id="search" placeholder="Rechercher...">
+
+<div class="section">
+  <h3>Artistes</h3>
+  <div id="artist-list"></div>
+  <div class="pagination" id="artist-pages"></div>
+</div>
+
+<div class="section">
+  <h3>Styles artistiques</h3>
+  <div id="style-list"></div>
+  <div class="pagination" id="style-pages"></div>
+</div>
+
+<script>
+  // Exemple de données JSON
+  const artists = [
+    "Monet", "Degas", "Picasso", "Van Gogh", "Da Vinci", "Matisse", "Delacroix", "Botticelli", "Rembrandt", "Cézanne"
+  ];
+
+  const styles = [
+    "Impressionnisme", "Cubisme", "Expressionnisme", "Renaissance", "Baroque", "Réalisme", "Romantisme", "Surréalisme"
+  ];
+
+  const MAX_ITEMS_PER_PAGE = 4; // nombre max d'éléments par page
+
+  function groupByLetterRange(items, maxPerPage) {
+    const sorted = [...items].sort((a, b) => a.localeCompare(b));
+    const pages = [];
+    let currentPage = [];
+    let firstLetter = '';
+    let lastLetter = '';
+
+    for (const item of sorted) {
+      const first = item[0].toUpperCase();
+      if (currentPage.length === 0) {
+        firstLetter = first;
+        lastLetter = first;
+      }
+
+      if (currentPage.length < maxPerPage) {
+        currentPage.push(item);
+        if (first > lastLetter) lastLetter = first;
+      } else {
+        pages.push({ label: `${firstLetter} - ${lastLetter}`, items: currentPage });
+        currentPage = [item];
+        firstLetter = first;
+        lastLetter = first;
+      }
+    }
+    if (currentPage.length > 0) {
+      pages.push({ label: `${firstLetter} - ${lastLetter}`, items: currentPage });
+    }
+    return pages;
+  }
+
+  function renderSection(data, searchTerm, containerId, paginationId) {
+    const filtered = data.filter(item => item.toLowerCase().includes(searchTerm.toLowerCase()));
+    const pages = groupByLetterRange(filtered, MAX_ITEMS_PER_PAGE);
+    const container = document.getElementById(containerId);
+    const pagination = document.getElementById(paginationId);
+    let currentPage = 0;
+
+    function renderPage(index) {
+      container.innerHTML = '';
+      for (const item of pages[index].items) {
+        const div = document.createElement('div');
+        div.className = 'item';
+        div.textContent = item;
+        container.appendChild(div);
+      }
+
+      pagination.innerHTML = '';
+      pages.forEach((p, i) => {
+        const btn = document.createElement('button');
+        btn.textContent = p.label;
+        btn.disabled = i === index;
+        btn.onclick = () => renderPage(i);
+        pagination.appendChild(btn);
+      });
+    }
+
+    if (pages.length > 0) {
+      renderPage(currentPage);
+    } else {
+      container.innerHTML = '<em>Aucun résultat</em>';
+      pagination.innerHTML = '';
+    }
+  }
+
+  function renderAll() {
+    const term = document.getElementById('search').value;
+    renderSection(artists, term, 'artist-list', 'artist-pages');
+    renderSection(styles, term, 'style-list', 'style-pages');
+  }
+
+  document.getElementById('search').addEventListener('input', renderAll);
+
+  // Initial render
+  renderAll();
+</script>
+
+</body>
+</html>
