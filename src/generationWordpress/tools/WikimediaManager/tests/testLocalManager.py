@@ -15,40 +15,40 @@ def createManager(targetUrls, bearer=None):
     # create manager
     resp = requests.post(f"{baseurl}/api/initialize", json=data, headers=headers)
     jsonrep = json.loads(resp.text)
-    manager_id = jsonrep["manager_id"] if "manager_id" in jsonrep else None
-    return manager_id
+    scheduler_id = jsonrep["scheduler_id"] if "scheduler_id" in jsonrep else None
+    return scheduler_id
 
-def deleteManager(manager_id, bearer=None):
+def deleteManager(scheduler_id, bearer=None):
     headers = {"Authorization": f"Bearer {bearer}"} if bearer else {}
     url = f"{baseurl}/api/delete_manager"
-    response = requests.delete(f"{url}?manager_id={manager_id}", headers=headers)
+    response = requests.delete(f"{url}?scheduler_id={scheduler_id}", headers=headers)
     ok = (response.status_code == 200)
     return ok
 
 class MyTestCase(unittest.TestCase):
     def test_creation_destruction_manager_sans_token(self):
         query = "https://randomuser.me/api/"
-        manager_id= createManager([query])
-        self.assertEqual(manager_id, None, "échec de Manager créé" )
+        scheduler_id= createManager([query])
+        self.assertEqual(scheduler_id, None, "échec de Manager créé" )
 
     def test_creation_destruction_manager(self):
         bearer = config['admin']["Bearer"]
         query = "https://randomuser.me/api/"
-        manager_id= createManager([query], bearer)
-        ok = deleteManager(manager_id, bearer)
+        scheduler_id= createManager([query], bearer)
+        ok = deleteManager(scheduler_id, bearer)
         self.assertEqual(ok, True, "échec de Manager créé, manager détruit")
 
     def test_un_appel_synchrone(self):
         bearer = config['admin']["Bearer"]
         headers = {f"Authorization": f"Bearer {bearer}"} if bearer else {}
         query = "https://randomuser.me/api/"
-        manager_id = createManager([query], bearer=bearer)
+        scheduler_id = createManager([query], bearer=bearer)
         # limit est le nombre d'appels par seconde pour ce manager
-        data = { "manager_id": manager_id, "limit": 1 }
+        data = { "scheduler_id": scheduler_id, "limit": 1 }
         lim = requests.post(f"{baseurl}/api/set_rate_limit", json=data, headers=headers)
         cachedur = 60  # 0;  en secondes
         data = {
-            "manager_id": manager_id,
+            "scheduler_id": scheduler_id,
             "url": query,
             "method": "GET",
             "cache_duration": cachedur,
@@ -70,7 +70,7 @@ class MyTestCase(unittest.TestCase):
                 pass
         print(rep)
         ok = (stat.status_code == 200) and ("response" in jstat) and ("info" in jstat["response"])
-        deleteManager(manager_id, bearer=bearer)
+        deleteManager(scheduler_id, bearer=bearer)
         self.assertEqual(ok, True, "Manager créé, requête envoyée, manager détruit")
 
 
@@ -78,15 +78,15 @@ class MyTestCase(unittest.TestCase):
         bearer = config['admin']["Bearer"]
         headers = {f"Authorization": f"Bearer {bearer}"} if bearer else {}
         query = "https://query.wikidata.org/sparql"
-        manager_id = createManager([query], bearer=bearer)
+        scheduler_id = createManager([query], bearer=bearer)
         # limit est le nombre d'appels par seconde pour ce manager
-        data = { "manager_id": manager_id, "limit": 1 }
+        data = { "scheduler_id": scheduler_id, "limit": 1 }
         lim = requests.post(f"{baseurl}/api/set_rate_limit", json=data, headers=headers)
         cachedur = 60  # 0;  en secondes
         parameters = {"query": "select * where { ?s ?p ?o } limit 10", "format": "JSON"}
         encodedquery = urlencode(query=parameters, doseq=True)
         data = {
-            "manager_id": manager_id,
+            "scheduler_id": scheduler_id,
             "url": urlunsplit(("https", "query.wikidata.org", "/sparql", encodedquery, "")),
             "method": "GET",
             "cache_duration": cachedur,
@@ -111,7 +111,7 @@ class MyTestCase(unittest.TestCase):
                 pass
         print(rep)
         ok = (stat.status_code == 200) and ("response" in jstat) and ("results" in jstat["response"])
-        deleteManager(manager_id, bearer=bearer)
+        deleteManager(scheduler_id, bearer=bearer)
         self.assertEqual(ok, True, "Manager créé, requête envoyée, manager détruit")
 
 if __name__ == '__main__':

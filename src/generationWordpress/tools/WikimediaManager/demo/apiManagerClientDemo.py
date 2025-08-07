@@ -19,9 +19,9 @@ headers = {
 }
 resp = requests.post(f"{baseurl}/api/initialize", json=data, headers=headers)
 print(resp.text)
-manager_id = json.loads(resp.text)["manager_id"]
+scheduler_id = json.loads(resp.text)["scheduler_id"]
 data = {
-    "manager_id": manager_id,
+    "scheduler_id": scheduler_id,
     "limit": 1
 }
 # limit est le nombre d'appels par seconde pour ce manager
@@ -33,7 +33,7 @@ query = "https://randomuser.me/api/"
 
 cachedur = 0 # 0;  en secondes
 data = {
-    "manager_id": manager_id,
+    "scheduler_id": scheduler_id,
     "url": query, # urlunsplit(("https", "query.wikidata.org", "/sparql", query, "")),
     "method": "GET",
     "cache_duration": cachedur,
@@ -60,7 +60,7 @@ while True:
     time.sleep(1)
 
 response = requests.post(
-    f"http://localhost:5000/api/request?manager_id={manager_id}",
+    f"http://localhost:5000/api/request?scheduler_id={scheduler_id}",
     json={
         "url": query, # urlunsplit(("https", "query.wikidata.org", "/sparql", query, "")),
         "method": "GET",
@@ -80,7 +80,7 @@ print("Set Web Api Get with POST Call:", response.json())
 response = requests.get(
     "http://localhost:5000/api/request",
     params={
-        "manager_id": f"{manager_id}",
+        "scheduler_id": f"{scheduler_id}",
         "url": query, # urlunsplit(("https", "query.wikidata.org", "/sparql", query, "")),
         "method": "POST",
         "cache_duration": 30,
@@ -116,7 +116,7 @@ bearer = config['Bearer']
 headers = {
     f"Authorization": f"Bearer {bearer}"
 }
-response = requests.delete(f"{url}?manager_id={manager_id}", headers=headers)
+response = requests.delete(f"{url}?scheduler_id={scheduler_id}", headers=headers)
 
 if response.status_code == 200:
     print("Manager deleted successfully:", response.json())

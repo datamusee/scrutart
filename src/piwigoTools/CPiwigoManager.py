@@ -12,7 +12,8 @@ class CPiwigoManager():
         # --- Configuration ---
         self.PIWIGO_API_URL = "https://galleries.grains-de-culture.fr/ws.php"
         self.USER_AGENT = 'Scrutart-UA (https://scrutart.grains-de-culture.fr/; scrutart@grains-de-culture.fr)'
-
+        self.login = cp.get("login", None)
+        self.password = cp.get("pass", None)
         # --- Logging ---
         logging.basicConfig(
             level=logging.INFO,
@@ -250,8 +251,8 @@ class CPiwigoManager():
             return None
 
     def piwigo_create_category(self, categoryName="portrait", categoryType="GENRES"):
-        username = cp.configPiwigo["login"]
-        password = cp.configPiwigo["pass"]
+        username = self.login
+        password = self.password
         auth_data = {
             "format": "application/json",
             "method": "pwg.session.login",

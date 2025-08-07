@@ -114,6 +114,7 @@ def getFilesList(dirToProcess):
     return filesList
 
 if __name__=="__main__":
+    # choix d'un dossier dans lequel il y a des fichiers qui constituent des listes d'images
     dirToProcess = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\\fr\\20250507"
     filesList = getFilesList(dirToProcess)
     for filepath in filesList:
