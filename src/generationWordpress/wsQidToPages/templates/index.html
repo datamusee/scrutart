@@ -18,6 +18,8 @@
                 suivreEtatPipeline(qid);
             } else {
                 document.getElementById("pipestatus").innerText = data.error;
+                const container = document.getElementById("etapes");
+                container.innerHTML = "";
             }
         }
 
@@ -53,12 +55,13 @@
                         clearInterval(interval);
                     } else {
                         const h2 = document.createElement('h4');
-                        h2.textContent = msg;
+                        // h2.textContent = msg;
+                        h2.innerHTML = msg;
                         h2.target = "_blank";
                         container.appendChild(h2);
                     }
                 });
-            }, 3000);
+            }, 1000);
         }
     </script>
 </head>

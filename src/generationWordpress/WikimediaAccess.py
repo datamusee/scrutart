@@ -15,22 +15,23 @@ import socketio
 
 sio = None
 
-baseurl = "http://127.0.0.1:6000"
-#baseurl = "https://webapimanager.grains-de-culture.fr"
+#baseurl = "http://127.0.0.1:6000" # utilisation locale
+#baseurl = "https://webapimanager.grains-de-culture.fr" # sur o2, mais pb d'hébergement partagé
+baseurl = "https://datamusee.r2.enst.fr/apimanager" # sur TPT
 
-def createManager(targetUrls, bearer=None):
+def createScheduler(targetUrls, bearer=None):
     data = {"api_urls": targetUrls }
     headers = {"Authorization": f"Bearer {bearer}", "Content-Type": "application/json"} if bearer else {}
     # create manager
     resp = requests.post(f"{baseurl}/api/initialize", json=data, headers=headers)
     jsonrep = json.loads(resp.text)
-    manager_id = jsonrep["manager_id"] if "manager_id" in jsonrep else None
-    return manager_id
+    scheduler_id = jsonrep["scheduler_id"] if "scheduler_id" in jsonrep else None
+    return scheduler_id
 
-def deleteManager(manager_id, bearer=None):
+def deleteScheduler(scheduler_id, bearer=None):
     headers = {"Authorization": f"Bearer {bearer}"} if bearer else {}
-    url = f"{baseurl}/api/delete_manager"
-    response = requests.delete(f"{url}?manager_id={manager_id}", headers=headers)
+    url = f"{baseurl}/api/delete_scheduler"
+    response = requests.delete(f"{url}?scheduler_id={scheduler_id}", headers=headers)
     ok = (response.status_code == 200)
     return ok
 
@@ -48,8 +49,6 @@ la réponse est prête et l'obtenir si elle est prête
 cela permet aussi de faire au mieux et d'envoyer des requêtes en masse
 
 """
-
-import socketio
 
 class SocketClient:
     def __init__(self, server_url):
@@ -126,28 +125,36 @@ class WikimediaAccess:
         self.qid = qid
         self.lang = lang
         # code serveur generationWordpress\tools\WikimediaManager\WikimediaManagerPackage\apiManager.py
-        self.baseurl = "http://127.0.0.1:6000" # ça si local, https://webapimanager.grains-de-culture.fr si o2
+        self.baseurl = baseurl #"https://datamusee.r2.enst.fr/apimanager" # si TPT
         self.bearer = config["admin"]["Bearer"]
         wdqsEndpoint = "https://query.wikidata.org/sparql"
         targetUrls=[ wdqsEndpoint]
         data = {"api_urls": targetUrls}
         self.headers = {"Authorization": f"Bearer {self.bearer}", "Content-Type": "application/json"} if self.bearer else {}
-        # create manager
-        resp = requests.post(f"{self.baseurl}/api/initialize", json=data, headers=self.headers)
-        self.manager_id = json.loads(resp.text)["manager_id"]
         self.setFormat()
         self.setWdqsEndpoint()
         self.setWdqsAgent()
+        #sio = socketio.Client()
+        #sio.connect(self.baseurl)
+        #self.sio = sio
+        # Créer une instance du client Socket.IO
+        pass
+
+    def __enter__(self):
+        # création du scheduler qui sera détruit dans __exit__(...)
+        self.scheduler_id = createScheduler(["https://query.wikidata.org/sparql"], bearer=self.bearer)
         data = {
-            "manager_id": self.manager_id,
+            "scheduler_id": self.scheduler_id,
             "limit": 1.0/10.0 # un appel toutes les 10 secondes
         }
         # limit est le nombre d'appels par seconde pour ce manager
         lim = requests.post(f"{self.baseurl}/api/set_rate_limit", json=data, headers=self.headers)
-        sio = socketio.Client()
-        sio.connect(self.baseurl)
-        self.sio = sio
-        # Créer une instance du client Socket.IO
+        return self
+
+    def __exit__(self, exception_type, exception_value, exception_traceback):
+        # TODO Exception handling here
+        deleteScheduler(self.scheduler_id, self.bearer)
+        return True
 
     def setFormat(self, format="JSON"):
         self.returnFormat = format
@@ -357,15 +364,15 @@ class WikimediaAccess:
     def sparqlQuery(self, query, format=None):
         bearer = config['admin']["Bearer"]
         headers = {f"Authorization": f"Bearer {bearer}"} if bearer else {}
-        manager_id = createManager(["https://query.wikidata.org/sparql"], bearer=bearer)
+        scheduler_id = self.scheduler_id # createScheduler(["https://query.wikidata.org/sparql"], bearer=bearer)
         # limit est le nombre d'appels par seconde pour ce manager
-        data = { "manager_id": manager_id, "limit": 0.5 }
+        data = { "scheduler_id": scheduler_id, "limit": 0.5 }
         lim = requests.post(f"{baseurl}/api/set_rate_limit", json=data, headers=headers)
         cachedur = 600  # 0;  en secondes
         parameters = {"query": query, "format": format if format else "JSON"}
         encodedquery = urlencode(query=parameters, doseq=True)
         data = {
-            "manager_id": manager_id,
+            "scheduler_id": scheduler_id,
             "url": urlunsplit(("https", "query.wikidata.org", "/sparql", encodedquery, "")),
             "method": "GET",
             "cache_duration": cachedur,
@@ -387,9 +394,17 @@ class WikimediaAccess:
                 time.sleep(0.3)
             else:
                 # print(jstat)
+                if "error" in jstat and "Request ID not found:" in jstat["error"]:
+                    print(jstat)
+                    rep = None
+                    break
                 pass
-        deleteManager(manager_id, bearer=bearer)
-        # TODO gérer correctement d'autres formats de sortie que JSON
+
+        # un scheduler pourrait être créé pour une série de requêtes au lieu de le faire requête par requête
+        # en fait, c'est fait au niveau de la création, un nouvel objet n'est créé que s'il s'agit d'un
+        # scheduler pour un nouvel ensemble d'urls
+        # deleteScheduler(scheduler_id, bearer=bearer)
+        # TODO gérer correctement d'autres formats de sortie que JSON pour d'autres API
         #if format==None or format== "JSON":
         #    rep = json.loads(rep)
         return rep
@@ -406,7 +421,7 @@ class WikimediaAccess:
         # Soumettre une requête via /api/request
         cachedur = 600  # 0;  en secondes
         data = {
-            "manager_id": self.manager_id,
+            "scheduler_id": self.scheduler_id,
             "url": urlunsplit(("https", "query.wikidata.org", "/sparql", encodedquery, "")),
             "method": "GET",
             "cache_duration": cachedur,

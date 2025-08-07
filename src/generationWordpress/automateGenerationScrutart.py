@@ -1,4 +1,5 @@
 """
+but: tache de fond qui automatise des constrauctions et mises à jour de pages
 lire un fichier de config de generation dans le dossier d'étape à générer
 pour la page principale de l'étape,
 pour chaque langue,

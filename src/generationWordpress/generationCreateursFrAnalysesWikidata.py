@@ -16,7 +16,8 @@ def cleanTargetDirectory(targetDir, entityList):
 
 
 if __name__=="__main__":
-    scrutartState = scrutartStateManager("http://127.0.0.1:3030/scrutartState/query")
+    # scrutartState = scrutartStateManager("http://127.0.0.1:3030/scrutartState/query") # si local
+    scrutartState = scrutartStateManager("https://datamusee.r2.enst.fr/scrutartState/query") # si TPT
     # ne traiter que les entités qui sont dans filterEntities en supprimant la page si elle existe déjà
     # filterEntities =  [   "Q5597" ] # Raphaël entitiesList
     filterEntities =  [   "Q334200" ] # Christian  Krohg  entitiesList

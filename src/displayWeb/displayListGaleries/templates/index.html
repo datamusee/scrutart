@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Explorateur des galeries de Grains de Culture</title>
+  <script src="{{ url_for('static', filename='js/frontend.js') }}" defer></script>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .tabs button { margin-right: 10px; }
+    .hidden { display: none; }
+    .pagination button { margin: 2px; }
+  </style>
+</head>
+<body>
+
+<div style="margin: 10px 0;">
+  <label for="lang">Langue :</label>
+  <select id="lang" onchange="filterData()">
+    <option value="fr">Français</option>
+    <option value="en">English</option>
+  </select>
+
+  <button onclick="forceReload()">🔄 Forcer mise à jour</button>
+</div>
+
+<h1>Explorateur des galeries de Grains de Culture</h1>
+<div class="tabs">
+  <button onclick="showTab('artistes')">Artistes</button>
+  <button onclick="showTab('styles')">Styles</button>
+  <button onclick="showTab('mouvements')">Mouvements</button>
+  <button onclick="showTab('themes')">Thèmes</button>
+</div>
+
+<div id="content">
+  <input type="text" id="search" placeholder="Rechercher..." oninput="filterData()">
+  <div id="list"></div>
+  <div class="pagination" id="pagination"></div>
+</div>
+
+<script>
+  const tabs = ["artistes", "styles", "mouvements", "themes"];
+  let currentTab = "artistes";
+  let allData = [];
+  let filteredData = [];
+
+  function showTab(tab) {
+    currentTab = tab;
+    document.getElementById("search").value = "";
+    fetchData(tab);
+  }
+
+  async function fetchData(tab, force = false) {
+    const url = `/api/data?type=${tab}${force ? '&force=1' : ''}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    allData = data;
+    filterData();
+  }
+
+function forceReload() {
+  fetchData(currentTab, true);
+}
+
+function filterData() {
+  const lang = document.getElementById("lang").value;
+  const query = document.getElementById("search").value.toLowerCase();
+
+  filteredData = allData
+    .map(item => typeof item === "string" ? item : item[lang] || item.fr || Object.values(item)[0])
+    .filter(name => name.toLowerCase().includes(query));
+
+  renderPagination();
+}
+
+  function groupByAlphabet(items, maxPerPage = 10) {
+    const sorted = [...items].sort((a, b) => a.localeCompare(b));
+    const pages = [];
+    let page = [];
+    let first = '', last = '';
+
+    for (const item of sorted) {
+      const letter = item[0].toUpperCase();
+      if (page.length === 0) {
+        first = letter;
+        last = letter;
+      }
+
+      if (page.length < maxPerPage) {
+        page.push(item);
+        if (letter > last) last = letter;
+      } else {
+        pages.push({ label: `${first} - ${last}`, items: page });
+        page = [item];
+        first = letter;
+        last = letter;
+      }
+    }
+
+    if (page.length > 0) {
+      pages.push({ label: `${first} - ${last}`, items: page });
+    }
+    return pages;
+  }
+
+  function renderPagination() {
+    const listDiv = document.getElementById("list");
+    const paginationDiv = document.getElementById("pagination");
+    const pages = groupByAlphabet(filteredData, 10);
+
+    let currentPage = 0;
+
+    function renderPage(index) {
+      listDiv.innerHTML = "";
+      for (const item of pages[index].items) {
+        const div = document.createElement("div");
+        div.textContent = item;
+        listDiv.appendChild(div);
+      }
+
+      paginationDiv.innerHTML = "";
+      pages.forEach((p, i) => {
+        const btn = document.createElement("button");
+        btn.textContent = p.label;
+        btn.disabled = i === index;
+        btn.onclick = () => renderPage(i);
+        paginationDiv.appendChild(btn);
+      });
+    }
+
+    if (pages.length > 0) {
+      renderPage(0);
+    } else {
+      listDiv.innerHTML = "<em>Aucun résultat</em>";
+      paginationDiv.innerHTML = "";
+    }
+  }
+
+  // Initial load
+  showTab(currentTab);
+</script>
+
+</body>
+</html>

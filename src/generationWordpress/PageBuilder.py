@@ -28,46 +28,49 @@ class PageBuilder:
         object_types = w_obj.getTypes(w_obj.qid)
         if object_types and object_types[0] == "Q5":
             object_types[0] = "Q1028181"  # artiste peintre # il faudrait aller chercher son occupation P106
-        res = object_types[0] == self.objectType
+        res = False
+        if len(object_types):
+            res = object_types[0] == self.objectType
         return res
 
     # fonction destinée à généraliser et remplacer la fonction ci-dessous buildScrutartArtistPage
     def build_scrutart_page(self, qid):
-        w_obj = WikimediaAccess(qid, lang=self.lang)
-        check = self.check_object_type(w_obj)
         page = None
-        page = self.template
-        if page:
-            # liste de requêtes sparql utiles pour construire une page
-            sparql_list = self.template_manager.getDataConfig()
-            for name, elmt in sparql_list.items():
-                print(name, elmt)
-                filtres = elmt["filtres"]
-                urlqueryref = elmt["urlquery"]
-                # recuperation d'une query pour avoir les données du QID liées à l'item 'name'
-                crtquery = elmt["sparql"].replace("__QID__", qid).replace("__LANG__", self.lang) if elmt["sparql"] else None
-                if crtquery:
-                    res = w_obj.sparqlQuery(crtquery)
-                    print(crtquery, datetime.datetime.now())
-                    # recuperation d'un lien vers WDQS pour la query courante
-                    wdqsquery = w_obj.getWDQSQuery(crtquery)
-                    # recuperation d'un lien d'affichage de bargraph pour la query courante
-                    embedquery = w_obj.getWikidataBarGraph(crtquery, qid)
-                else:
-                    res = None
-                    wdqsquery = None
-                    embedquery = None
-                for filtrage in filtres:
-                    if filtrage["filtre"]:
-                        fct = w_obj.getWObjFct(filtrage["filtre"])
-                        if fct:
-                            output = fct(w_obj, res, qid)
-                            page = page.replace(filtrage["key"], str(output))
+        wAccess = WikimediaAccess(qid, lang=self.lang)
+        with  wAccess as w_obj:
+            check = self.check_object_type(w_obj)
+            page = self.template
+            if page:
+                # liste de requêtes sparql utiles pour construire une page
+                sparql_list = self.template_manager.getDataConfig()
+                for name, elmt in sparql_list.items():
+                    print(name, elmt)
+                    filtres = elmt["filtres"]
+                    urlqueryref = elmt["urlquery"]
+                    # recuperation d'une query pour avoir les données du QID liées à l'item 'name'
+                    crtquery = elmt["sparql"].replace("__QID__", qid).replace("__LANG__", self.lang) if elmt["sparql"] else None
+                    if crtquery:
+                        res = w_obj.sparqlQuery(crtquery)
+                        print(crtquery, datetime.datetime.now())
+                        # recuperation d'un lien vers WDQS pour la query courante
+                        wdqsquery = w_obj.getWDQSQuery(crtquery)
+                        # recuperation d'un lien d'affichage de bargraph pour la query courante
+                        embedquery = w_obj.getWikidataBarGraph(crtquery, qid)
                     else:
-                        page = page.replace(filtrage["key"], embedquery)  # hack
-                if wdqsquery and urlqueryref:
-                    page = page.replace(urlqueryref, wdqsquery)
-                time.sleep(0.2)
+                        res = None
+                        wdqsquery = None
+                        embedquery = None
+                    for filtrage in filtres:
+                        if filtrage["filtre"]:
+                            fct = w_obj.getWObjFct(filtrage["filtre"])
+                            if fct:
+                                output = fct(w_obj, res, qid)
+                                page = page.replace(filtrage["key"], str(output))
+                        else:
+                            page = page.replace(filtrage["key"], embedquery)  # hack
+                    if wdqsquery and urlqueryref:
+                        page = page.replace(urlqueryref, wdqsquery)
+                    time.sleep(0.2)
         return page
 
     def generatePage(self, qid, targetDir):

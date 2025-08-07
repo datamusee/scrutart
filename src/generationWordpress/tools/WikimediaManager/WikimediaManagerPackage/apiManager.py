@@ -178,7 +178,8 @@ class APIRequestScheduler:
                 response = requests.post(resurl, json=data)
                 print(response.json())
         finally:
-            await asyncio.to_thread(self.request_queue.task_done)
+            #await asyncio.to_thread(self.request_queue.task_done)
+            pass
 
     def start_worker(self):
         threading.Thread(target=self.process_queue, daemon=True).start()
