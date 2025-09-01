@@ -458,8 +458,8 @@ if __name__ == "__main__":
     print(f"Démarrage du serveur de test sur {{TEST_API_HOST}}:{{TEST_API_PORT}}")
     socketio.run(app, host=TEST_API_HOST, port=TEST_API_PORT, debug=False)
 '''
-        #with open("apiManagerClaude.py", encoding="utf-8") as fs:
-        #    script_content = fs.read()
+        with open("apiManagerClaude.py", encoding="utf-8") as fs:
+            script_content = fs.read()
         with open(test_script_path, 'w', encoding="UTF-8") as f:
             f.write(script_content)
         
