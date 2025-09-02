@@ -101,363 +101,6 @@ config = {{
         """Crée une version du script adaptée aux tests"""
         test_script_path = os.path.join(self.temp_dir, "test_api_manager.py")
         
-        # Contenu du script de test (version modifiée)
-        script_content = f'''
-import sys
-sys.path.insert(0, "{self.temp_dir}")
-
-# Configuration des tests d'intégration
-TEST_API_HOST = "127.0.0.1"
-TEST_API_PORT = 6000  # Port différent pour éviter les conflits
-TEST_BEARER_TOKEN = "test-integration-bearer-token"
-
-# Redéfinir les constantes pour le test
-API_IP_ADDRESS = "{TEST_API_HOST}"
-API_PORT = {TEST_API_PORT}
-
-# Copier tout le code de l'API Manager ici (version simplifiée pour test)
-import threading
-import asyncio
-import json
-import os
-import time
-import uuid
-from functools import wraps
-from queue import Queue, Empty
-from urllib.parse import urlparse
-import logging
-from logging.handlers import RotatingFileHandler
-from typing import Dict, Any, Optional, Tuple, List
-import requests
-from aiohttp import ClientSession, ClientTimeout, ClientError
-from flask import Flask, request, jsonify
-from flask_socketio import SocketIO, emit, join_room, leave_room
-from dataclasses import dataclass, asdict
-from contextlib import asynccontextmanager
-import signal
-import atexit
-from datetime import datetime, timedelta
-
-from configPrivee import config
-
-# Configuration simplifiee pour les tests
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-@dataclass
-class RequestData:
-    request_id: str
-    url: str
-    payload: Optional[Dict] = None
-    method: str = 'POST'
-    headers: Optional[Dict] = None
-    cache_duration: int = 0
-    request_kwargs: Optional[Dict] = None
-    client_id: Optional[str] = None
-    timestamp: float = None
-    retry_count: int = 0
-    
-    def __post_init__(self):
-        if self.timestamp is None:
-            self.timestamp = time.time()
-        if self.headers is None:
-            self.headers = {{}}
-        if self.request_kwargs is None:
-            self.request_kwargs = {{}}
-
-class APIError(Exception):
-    def __init__(self, message: str, status_code: int = None, request_id: str = None):
-        super().__init__(message)
-        self.status_code = status_code
-        self.request_id = request_id
-
-class RateLimitExceeded(APIError):
-    pass
-
-# Version simplifiée du scheduler pour tests d'intégration
-class APIRequestScheduler:
-    _instances = {{}}
-
-    def __new__(cls, api_patterns, *args, **kwargs):
-        key = tuple(sorted(api_patterns))
-        if key not in cls._instances:
-            cls._instances[key] = super(APIRequestScheduler, cls).__new__(cls)
-        return cls._instances[key]
-
-    def __init__(self, api_patterns):
-        if hasattr(self, '_initialized') and self._initialized:
-            return
-
-        self.api_patterns = api_patterns
-        self.scheduler_id = str(uuid.uuid4())
-        self.CALLS_PER_SECOND = 1
-        self.CALL_INTERVAL = 1 / self.CALLS_PER_SECOND
-        
-        self.request_queue = Queue()
-        self.response_store = {{}}
-        self.request_dict = {{}}
-        
-        self.cache_dir = os.path.join(os.getcwd(), 'cache')
-        os.makedirs(self.cache_dir, exist_ok=True)
-        
-        self.lock = threading.Lock()
-        self.shutdown_event = threading.Event()
-        
-        # Démarrer le worker
-        self.worker_thread = threading.Thread(target=self._worker, daemon=True)
-        self.worker_thread.start()
-        
-        self._initialized = True
-
-    def _worker(self):
-        """Worker thread pour traiter les requetes"""
-        while not self.shutdown_event.is_set():
-            try:
-                request_data = self.request_queue.get(timeout=1.0)
-                if request_data is None:
-                    break
-                
-                # Simulation du traitement
-                time.sleep(self.CALL_INTERVAL)
-                
-                try:
-                    # Faire la requête HTTP réelle
-                    response = requests.get(request_data.url, timeout=10)
-                    result = response.json() if response.headers.get('content-type', '').startswith('application/json') else response.text
-                    
-                    with self.lock:
-                        self.response_store[request_data.request_id] = result
-                        self.request_dict.pop(request_data.request_id, None)
-                        
-                except Exception as e:
-                    with self.lock:
-                        self.response_store[request_data.request_id] = {{"error": str(e)}}
-                        self.request_dict.pop(request_data.request_id, None)
-                
-                self.request_queue.task_done()
-                
-            except Exception:
-                continue
-
-    def set_rate_limit(self, calls_per_second):
-        if calls_per_second <= 0:
-            raise ValueError("Le taux doit être positif")
-        self.CALLS_PER_SECOND = calls_per_second
-        self.CALL_INTERVAL = 1 / calls_per_second
-
-    def add_request(self, url, payload=None, cache_duration=0, method="GET", 
-                   client_id=None, headers=None, **kwargs):
-        parsed_url = urlparse(url)
-        base_url = f"{{parsed_url.scheme}}://{{parsed_url.netloc}}"
-        
-        if not any(base_url.startswith(api_url) for api_url in self.api_patterns):
-            raise ValueError(f"URL non gérée: {{base_url}}")
-        
-        request_id = str(uuid.uuid4())
-        request_data = RequestData(
-            request_id=request_id,
-            url=url,
-            payload=payload,
-            method=method,
-            headers=headers or {{}},
-            cache_duration=cache_duration,
-            client_id=client_id
-        )
-        
-        self.request_queue.put(request_data)
-        with self.lock:
-            self.request_dict[request_id] = request_data
-        
-        estimated_delay = self.request_queue.qsize() * self.CALL_INTERVAL
-        return request_id, estimated_delay
-
-    def get_response(self, request_id):
-        with self.lock:
-            return self.response_store.pop(request_id, None)
-            
-    def has_request(self, request_id: str) -> bool:
-        """Vérifier si une requête existe (en cours OU terminée)"""
-        with self.lock:
-            return (request_id in self.request_dict or 
-                    request_id in self.response_store)
-
-    def get_stats(self):
-        with self.lock:
-            return {{
-                "scheduler_id": self.scheduler_id,
-                "queue_size": self.request_queue.qsize(),
-                "pending_requests": len(self.request_dict),
-                "pending_responses": len(self.response_store),
-                "calls_per_second": self.CALLS_PER_SECOND,
-                "managed_urls": len(self.api_patterns)
-            }}
-
-    def cleanup(self):
-        self.shutdown_event.set()
-        if hasattr(self, 'worker_thread'):
-            self.worker_thread.join(timeout=5)
-
-# Décorateur d'authentification
-def authenticate(f):
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        auth_token = request.headers.get("Authorization")
-        bearer = config.get('admin', {{}}).get('Bearer')
-        
-        if not auth_token or auth_token != f"Bearer {{bearer}}":
-            return jsonify({{"error": "Unauthorized"}}), 401
-        return f(*args, **kwargs)
-    return decorated_function
-
-# Application Flask
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'test-secret'
-socketio = SocketIO(app, cors_allowed_origins="*")
-
-# Variables globales
-schedulers = {{}}
-scheduler_ids = {{}}
-connected_clients = {{}}
-
-def get_request_param(request_obj, param_name):
-    param = request_obj.args.get(param_name)
-    if param is None and request_obj.method == "POST":
-        data = request_obj.get_json()
-        if data:
-            param = data.get(param_name)
-    return param
-
-# Routes principales
-@app.route("/api/initialize", methods=["GET", "POST"])
-@authenticate
-def initialize_scheduler():
-    try:
-        if request.method == "GET":
-            api_patterns = request.args.getlist("api_patterns")
-        else:
-            data = request.get_json()
-            if not data:
-                return jsonify({{"error": "Données JSON requises"}}), 400
-            api_patterns = data.get("api_patterns", [])
-
-        if not api_patterns:
-            return jsonify({{"error": "api_patterns requis"}}), 400
-
-        scheduler = APIRequestScheduler(api_patterns)
-        scheduler_id = scheduler.scheduler_id
-        
-        schedulers[scheduler_id] = scheduler
-        scheduler_ids[tuple(sorted(api_patterns))] = scheduler_id
-
-        return jsonify({{
-            "message": "Scheduler initialisé",
-            "scheduler_id": scheduler_id
-        }})
-    except Exception as e:
-        return jsonify({{"error": str(e)}}), 500
-
-@app.route("/api/request", methods=["POST", "GET"])
-@authenticate
-def api_request():
-    try:
-        scheduler_id = get_request_param(request, "scheduler_id")
-        url = get_request_param(request, "url")
-        
-        if not scheduler_id or scheduler_id not in schedulers:
-            return jsonify({{"error": "Scheduler non trouvé"}}), 404
-        
-        if not url:
-            return jsonify({{"error": "URL requise"}}), 400
-
-        scheduler = schedulers[scheduler_id]
-        
-        if request.method == "POST":
-            data = request.get_json() or {{}}
-            payload = data.get("payload")
-            method = data.get("method", "GET")
-            headers = data.get("headers", {{}})
-            cache_duration = data.get("cache_duration", 0)
-            client_id = data.get("client_id")
-        else:
-            payload = None
-            method = "GET"
-            headers = {{}}
-            cache_duration = 0
-            client_id = get_request_param(request, "client_id")
-
-        request_id, estimated_delay = scheduler.add_request(
-            url=url,
-            payload=payload,
-            method=method,
-            headers=headers,
-            cache_duration=cache_duration,
-            client_id=client_id
-        )
-
-        return jsonify({{
-            "uuid": request_id,
-            "status_url": f"/api/status/{{request_id}}",
-            "estimated_delay": estimated_delay
-        }})
-        
-    except Exception as e:
-        return jsonify({{"error": str(e)}}), 500
-
-@app.route("/api/status/<request_id>", methods=["GET"])
-@authenticate
-def api_status(request_id):
-    try:
-        for scheduler in schedulers.values():
-            if scheduler.has_request(request_id):
-                response = scheduler.get_response(request_id)
-                if response:
-                    return jsonify({{"status": "complete", "response": response}})
-                return jsonify({{"status": "pending"}})
-        
-        return jsonify({{"error": "Requete non trouvee"}}), 404
-    except Exception as e:
-        return jsonify({{"error": str(e)}}), 500
-
-@app.route("/api/health", methods=["GET"])
-def health_check():
-    return jsonify({{"status": "healthy", "schedulers": len(schedulers)}})
-
-@app.route("/api/set_rate_limit", methods=["POST", "GET"])
-def api_set_rate_limit():
-    scheduler_id = get_request_param(request, "scheduler_id")    
-    if not scheduler_id or scheduler_id not in schedulers:
-        return jsonify({{"error": "Scheduler non trouvé"}}), 404
-    scheduler = schedulers[scheduler_id]
-    if request.method == "POST":
-        data = request.get_json() or {{}}
-        rate_limit = data.get("limit")
-    else:
-        rate_limit = get_request_param(request, "limit")  
-    scheduler.set_rate_limit(float(rate_limit))
-    return jsonify({{"status": "set_rate_limit ok", "limit": rate_limit, "schedulers": len(schedulers)}})
-
-@app.route("/", methods=["GET"])
-def home():
-    return "<h1>API Manager Test Server</h1>"
-
-# WebSocket handlers
-@socketio.on('connect')
-def handle_connect():
-    print(f"Client connecté: {{request.sid}}")
-    emit("connect", {{"message": "Connecté au serveur de test"}})
-
-@socketio.on('register')
-def handle_register(data):
-    client_id = data.get('client_id')
-    if client_id:
-        connected_clients[client_id] = request.sid
-        join_room(client_id)
-        emit('message', {{'data': f'Enregistré avec client_id: {{client_id}}'}}, room=client_id)
-
-if __name__ == "__main__":
-    print(f"Démarrage du serveur de test sur {{TEST_API_HOST}}:{{TEST_API_PORT}}")
-    socketio.run(app, host=TEST_API_HOST, port=TEST_API_PORT, debug=False)
-'''
         with open("apiManagerClaude.py", encoding="utf-8") as fs:
             script_content = fs.read()
         with open(test_script_path, 'w', encoding="UTF-8") as f:
@@ -559,7 +202,7 @@ class RealAPIManagerIntegrationTests(unittest.TestCase):
             headers=self.headers
         )
         
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(200, response.status_code)
         data = response.json()
         
         self.assertIn("scheduler_id", data)
@@ -702,24 +345,27 @@ class RealAPIManagerIntegrationTests(unittest.TestCase):
     def test_rate_limiting_functionality(self):
         """Test de la fonctionnalité de limitation de taux"""
         # Initialiser scheduler avec limite de taux très basse
-        init_data = {"api_patterns": ["http://127.0.0.1:5000"]}
+        init_data = {"api_patterns": ["http://127.0.0.1:5000", "http://127.0.0.1:5000/mockapi/unicode"]}
         init_response = requests.post(
             f"{self.base_url}/api/initialize",
             json=init_data,
             headers=self.headers
         )
-        
+
         scheduler_id = init_response.json()["scheduler_id"]
         
         # Configurer une limite très basse (0.5 requête/seconde)
-        rate_data = {"scheduler_id": scheduler_id, "limit": "0.5"}
+        # """ suppression provisoire pour tester sans rate_limit
+        # soupçon que ce soit lié à ça
+        rate_data = {"scheduler_id": scheduler_id, "limit": 0.1}
         rate_response = requests.post(
             f"{self.base_url}/api/set_rate_limit",
             json=rate_data,
             headers=self.headers
         )
-        
+
         self.assertEqual(200, rate_response.status_code)
+        # """
 
         # Faire plusieurs requêtes rapidement
         request_ids = []
@@ -728,7 +374,7 @@ class RealAPIManagerIntegrationTests(unittest.TestCase):
         for i in range(3):
             request_data = {
                 "scheduler_id": scheduler_id,
-                "url": f"http://127.0.0.1:5000/mockapi/test?request={i}",
+                "url": "http://127.0.0.1:5000/mockapi/unicode",
                 "method": "GET"
             }
             
