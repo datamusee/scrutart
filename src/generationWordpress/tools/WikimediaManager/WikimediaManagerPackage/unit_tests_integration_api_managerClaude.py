@@ -46,7 +46,7 @@ class APIManagerTestServer:
         """Configure l'environnement de test"""
         # Créer un répertoire temporaire
         self.temp_dir = os.path.join(os.getcwd(), "temp") #tempfile.mkdtemp()
-        os.makedirs(self.temp_dir)
+        os.makedirs(self.temp_dir, exist_ok=True)
         # Créer un fichier de configuration de test
         self.config_file = os.path.join(self.temp_dir, "configPrivee.py")
         config_content = f"""
@@ -460,7 +460,7 @@ class RealAPIManagerIntegrationTests(unittest.TestCase):
             headers=self.headers
         )
         
-        self.assertEqual(500, response.status_code)
+        self.assertEqual(400, response.status_code)
         error_data = response.json()
         self.assertIn("error", error_data)
 
