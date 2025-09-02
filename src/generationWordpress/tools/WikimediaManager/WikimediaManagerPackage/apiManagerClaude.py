@@ -12,7 +12,6 @@ from urllib.parse import urlparse
 import logging
 from logging.handlers import RotatingFileHandler
 from typing import Dict, Any, Optional, Tuple, List
-import requests
 from aiohttp import ClientSession, ClientTimeout, ClientError
 from flask import Flask, request, jsonify
 from flask_socketio import SocketIO, emit, join_room, leave_room
@@ -109,6 +108,59 @@ class APIRequestScheduler:
             if key not in cls._instances:
                 cls._instances[key] = super(APIRequestScheduler, cls).__new__(cls)
         return cls._instances[key]
+
+    def __init__(self, api_urls: List[str]):
+        if hasattr(self, '_initialized') and self._initialized:
+            return
+
+        self.api_patterns = api_patterns
+        self.scheduler_id = str(uuid.uuid4())
+        self.CALLS_PER_SECOND = 1
+        self.CALL_INTERVAL = 1 / self.CALLS_PER_SECOND
+
+        # Queues et stockage
+        self.request_queue = Queue(maxsize=MAX_QUEUE_SIZE)
+        self.response_store: Dict[str, Any] = {}
+        self.request_dict: Dict[str, RequestData] = {}
+
+        # Configuration du cache
+        self.cache_dir = os.path.join(os.getcwd(), 'cache')
+        self._ensure_cache_directory()
+
+        # Threading et async
+        self.lock = threading.Lock()
+        self.shutdown_event = threading.Event()
+
+        # Initialisation des threads
+        # ✅ AJOUT - Thread de nettoyage périodique
+        self.cleanup_thread = threading.Thread(
+            target=self._periodic_cleanup,
+            name=f"Cleanup-{self.scheduler_id[:8]}",
+            daemon=True
+        )
+        self.cleanup_thread.start()
+        self._start_worker_threads()
+        self._start_cache_cleanup_thread()
+
+        # Enregistrement des handlers de fermeture
+        atexit.register(self.cleanup)
+        signal.signal(signal.SIGTERM, self._signal_handler)
+        signal.signal(signal.SIGINT, self._signal_handler)
+
+
+        self._initialized = True
+        logger.info(f"APIRequestScheduler initialisé pour {len(api_patterns)} URLs - ID: {self.scheduler_id}")
+
+
+    def _periodic_cleanup(self):
+        """Thread de nettoyage périodique"""
+        while not self.shutdown_event.is_set():
+            try:
+                self._cleanup_old_requests()
+                # Attendre 60 secondes avant le prochain nettoyage
+                self.shutdown_event.wait(60)
+            except Exception as e:
+                logger.error(f"Erreur dans le nettoyage périodique: {e}")
 
     def __init__(self, api_patterns: List[str]):
         if hasattr(self, '_initialized') and self._initialized:
@@ -281,35 +333,80 @@ class APIRequestScheduler:
     async def _perform_request(self, request_data: RequestData):
         """Effectue une requête HTTP avec gestion d'erreurs et retry"""
         request_id = request_data.request_id
+        client_id = request_data.client_id
         logger.info(f"Traitement de la requête {request_id[:8]}... - URL: {request_data.url}")
-        
+
         try:
+            # ... code existant pour vérification cache et requête HTTP ...
             # Vérification du cache
             if request_data.cache_duration > 0:
                 cached_response = await self._check_cache(request_data)
                 if cached_response:
-                    await self._store_response(request_id, cached_response, request_data.client_id)
+                    await self._store_response(request_id, cached_response, client_id)
                     return
 
             # Respect de la limite de taux
             await asyncio.sleep(self.CALL_INTERVAL)
-            
+
             # Effectuer la requête HTTP
-            response = await self._make_http_request(request_data)
-            
+            api_response = await self._make_http_request(request_data)
+
             # Cache et stockage de la réponse
             if request_data.cache_duration > 0:
-                await self._cache_response(request_data, response)
-            
-            await self._store_response(request_id, response, request_data.client_id)
-            logger.info(f"Requête {request_id[:8]}... traitée avec succès")
-            
-        except Exception as e:
-            await self._handle_request_error(request_data, e)
-        finally:
-            # Nettoyer la requête du dictionnaire
+                await self._cache_response(request_data, api_response)
+
+            #await self._store_response(request_id, api_response, client_id)
+            #logger.info(f"Requête {request_id[:8]}... traitée avec succès")
+
+            # ✅ SECTION MODIFIÉE - Stockage de la réponse
             with self.lock:
-                self.request_dict.pop(request_id, None)
+                # Stocker la réponse
+                self.response_store[request_id] = api_response
+
+                # ⚠️ NE PAS supprimer immédiatement du request_dict
+                # On le laisse pour que has_request() fonctionne correctement
+                # Il sera supprimé lors de get_response() ou par un cleanup périodique
+
+            logger.info(f"Requête {request_id[:8]}... traitée avec succès")
+
+            # Notifier le client si connecté
+            if client_id and client_id in connected_clients:
+                await self._notify_client(client_id, {
+                    "request_id": request_id,
+                    "response": api_response,
+                    "message": "Requête terminée avec succès"
+                })
+
+        except Exception as e:
+            # ✅ SECTION MODIFIÉE - Gestion des erreurs
+            error_response = {
+                "error": str(e),
+                "request_id": request_id,
+                "timestamp": time.time(),
+                "url": request_data.url
+            }
+
+            with self.lock:
+                # Stocker l'erreur comme réponse
+                self.response_store[request_id] = error_response
+
+                # ⚠️ NE PAS supprimer du request_dict ici non plus
+
+            logger.error(f"Erreur lors du traitement de la requête {request_id[:8]}...: {str(e)}")
+
+            # Notifier le client de l'erreur
+            if request_data.client_id and request_data.client_id in connected_clients:
+                await self._notify_client(request_data.client_id, {
+                    "request_id": request_id,
+                    "error": str(e),
+                    "message": "Erreur lors du traitement de la requête"
+                })
+
+        # ✅ SECTION MODIFIÉE - Nettoyage différé
+        # Au lieu de supprimer immédiatement, programmer un nettoyage différé
+        # Cela laisse le temps aux clients de vérifier le statut
+        if hasattr(self, 'cleanup_scheduler'):
+            self.cleanup_scheduler.schedule_cleanup(request_id, delay=60)  # 60s de délai
 
     async def _check_cache(self, request_data: RequestData) -> Optional[Any]:
         """Vérifie si une réponse en cache est disponible"""
@@ -487,9 +584,10 @@ class APIRequestScheduler:
 
     def validate_url(self, base_url):
         for pattern in self.api_patterns:
-            if not any(char in pattern.pattern for char in r'.*+?^${}[]|()\\'):
+            if not hasattr(pattern, "pattern"):
+            #if not any(char in pattern.pattern for char in r'.*+^$?{}[]|()\\'):
                 # URL exacte
-                if base_url == pattern:
+                if base_url.startswith(pattern):
                     return True
             else:
                 # Pattern regex
@@ -542,12 +640,43 @@ class APIRequestScheduler:
             logger.error(f"Erreur lors de l'ajout de la requête: {e}")
             raise
 
-    def get_response(self, request_id: str) -> Optional[Any]:
-        """Récupère la réponse d'une requête"""
+    def _cleanup_old_requests(self):
+        """Nettoie les anciennes requêtes (fallback safety)"""
+        current_time = time.time()
+        cleanup_delay = 300  # 5 minutes
+
         with self.lock:
+            # Identifier les requêtes anciennes qui n'ont pas été récupérées
+            old_requests = []
+
+            for request_id, request_data in list(self.request_dict.items()):
+                # Si la requête date de plus de cleanup_delay secondes
+                if current_time - request_data.timestamp > cleanup_delay:
+                    # Et qu'elle a une réponse prête (donc traitée)
+                    if request_id in self.response_store:
+                        old_requests.append(request_id)
+
+            # Nettoyer les anciennes requêtes
+            for request_id in old_requests:
+                self.request_dict.pop(request_id, None)
+                self.response_store.pop(request_id, None)
+                logger.warning(f"Nettoyage automatique de la requête ancienne {request_id[:8]}...")
+
+            if old_requests:
+                logger.info(f"Nettoyage automatique: {len(old_requests)} requêtes supprimées")
+
+    def get_response(self, request_id: str) -> Optional[Any]:
+        """Récupère la réponse d'une requête et nettoie les références"""
+        with self.lock:
+            # Récupérer la réponse
             response = self.response_store.pop(request_id, None)
-            if response:
-                logger.debug(f"Réponse récupérée pour {request_id[:8]}...")
+
+            if response is not None:
+                # ✅ MAINTENANT on peut supprimer du request_dict
+                # puisque le client a récupéré sa réponse
+                self.request_dict.pop(request_id, None)
+                logger.debug(f"Réponse récupérée et nettoyée pour {request_id[:8]}...")
+
             return response
 
     def has_request(self, request_id: str) -> bool:
@@ -941,34 +1070,27 @@ def api_request():
         logger.error(f"Erreur lors de l'ajout de la requête: {e}")
         return jsonify({"error": "Erreur interne du serveur"}), 500
 
-
 @app.route("/api/status/<request_id>", methods=["GET"])
 @authenticate
 def api_status(request_id: str):
-    """Vérifie le statut d'une requête"""
+    """Vérifie le statut d'une requête avec logging amélioré"""
     try:
         if not request_id:
             return jsonify({"error": "request_id requis"}), 400
 
+        # ✅ AMÉLIORATION - Logging de debug
+        logger.debug(f"Vérification statut pour {request_id[:8]}...")
+
         # Rechercher la requête dans tous les schedulers
         found_scheduler = None
-        for scheduler in schedulers.values():
+        for scheduler_id, scheduler in schedulers.items():
             if scheduler.has_request(request_id):
                 found_scheduler = scheduler
+                logger.debug(f"Requête {request_id[:8]}... trouvée dans scheduler {scheduler_id[:8]}...")
                 break
 
         if not found_scheduler:
-            # Vérifier si une réponse existe
-            for scheduler in schedulers.values():
-                response = scheduler.get_response(request_id)
-                if response is not None:
-                    logger.info(f"Réponse trouvée pour {request_id[:8]}...")
-                    return jsonify({
-                        "status": "complete",
-                        "response": response,
-                        "request_id": request_id
-                    })
-            
+            logger.warning(f"Requête {request_id[:8]}... non trouvée dans aucun scheduler")
             return jsonify({"error": f"Requête non trouvée: {request_id}"}), 404
 
         # Vérifier si la réponse est prête
@@ -992,13 +1114,13 @@ def api_status(request_id: str):
         })
 
     except Exception as e:
-        logger.error(f"Erreur lors de la vérification du statut: {e}")
+        logger.error(f"Erreur lors de la vérification du statut de {request_id[:8]}...: {e}")
         return jsonify({"error": "Erreur interne du serveur"}), 500
 
 
 @app.route("/api/openstatus", methods=["GET"])
 def api_openstatus():
-    """Statut ouvert pour debug - liste des requêtes en cours"""
+    """Statut ouvert pour debug avec informations détaillées"""
     try:
         status_data = {
             "status": "API Manager Status",
@@ -1010,15 +1132,33 @@ def api_openstatus():
 
         for scheduler_id, scheduler in schedulers.items():
             stats = scheduler.get_stats()
+
+            # ✅ AMÉLIORATION - Plus de détails de debug
+            with scheduler.lock:
+                pending_request_details = []
+                for req_id, req_data in list(scheduler.request_dict.items())[:10]:  # Limiter à 10
+                    pending_request_details.append({
+                        "id": req_id[:8] + "...",
+                        "url": req_data.url,
+                        "timestamp": req_data.timestamp,
+                        "age_seconds": time.time() - req_data.timestamp,
+                        "has_response": req_id in scheduler.response_store
+                    })
+
+                response_ids = [resp_id[:8] + "..." for resp_id in list(scheduler.response_store.keys())[:10]]
+
             scheduler_info = {
-                "scheduler_id": scheduler_id,
+                "scheduler_id": scheduler_id, #[:12] + "...",
                 "stats": stats,
-                "pending_requests": list(scheduler.request_dict.keys())[:10]  # Limite pour éviter les réponses trop grandes
+                "pending_request_details": pending_request_details,
+                "ready_response_ids": response_ids,
+                "worker_thread_alive": scheduler.worker_thread.is_alive() if hasattr(scheduler,
+                                                                                     'worker_thread') else False
             }
             status_data["schedulers"].append(scheduler_info)
 
         return jsonify(status_data)
-    
+
     except Exception as e:
         logger.error(f"Erreur dans l'interrogation du statut: {e}")
         return jsonify({"error": "Erreur lors de la récupération du statut"}), 500
