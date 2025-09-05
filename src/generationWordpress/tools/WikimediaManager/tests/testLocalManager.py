@@ -2,7 +2,7 @@ import unittest
 import json
 import time
 import requests
-from ..WikimediaManagerPackage.configPrivee import config
+from src.generationWordpress.tools.WikimediaManager.WikimediaManagerPackage.configPrivee import config
 from urllib.parse import urlencode, urlunsplit
 
 baseurl = "http://127.0.0.1:6000"
@@ -10,7 +10,7 @@ baseurl = "http://127.0.0.1:6000"
 
 
 def createManager(targetUrls, bearer=None):
-    data = {"api_urls": targetUrls }
+    data = {"api_patterns": targetUrls }
     headers = {"Authorization": f"Bearer {bearer}", "Content-Type": "application/json"} if bearer else {}
     # create manager
     resp = requests.post(f"{baseurl}/api/initialize", json=data, headers=headers)
@@ -20,7 +20,7 @@ def createManager(targetUrls, bearer=None):
 
 def deleteManager(scheduler_id, bearer=None):
     headers = {"Authorization": f"Bearer {bearer}"} if bearer else {}
-    url = f"{baseurl}/api/delete_manager"
+    url = f"{baseurl}/api/delete_scheduler"
     response = requests.delete(f"{url}?scheduler_id={scheduler_id}", headers=headers)
     ok = (response.status_code == 200)
     return ok
