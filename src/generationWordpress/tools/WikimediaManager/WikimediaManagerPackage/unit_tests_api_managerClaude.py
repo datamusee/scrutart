@@ -89,18 +89,18 @@ class APIRequestScheduler:
     _instances: Dict[Tuple, 'APIRequestScheduler'] = {}
     _lock = threading.Lock()
 
-    def __new__(cls, api_urls: List[str], *args, **kwargs):
-        key = tuple(sorted(api_urls))
+    def __new__(cls, api_patterns: List[str], *args, **kwargs):
+        key = tuple(sorted(api_patterns))
         with cls._lock:
             if key not in cls._instances:
                 cls._instances[key] = super(APIRequestScheduler, cls).__new__(cls)
         return cls._instances[key]
 
-    def __init__(self, api_urls: List[str]):
+    def __init__(self, api_patterns: List[str]):
         if hasattr(self, '_initialized') and self._initialized:
             return
 
-        self.api_urls = api_urls
+        self.api_patterns = api_patterns
         self.scheduler_id = str(uuid.uuid4())
         self.CALLS_PER_SECOND = 1
         self.CALL_INTERVAL = 1 / self.CALLS_PER_SECOND
@@ -246,7 +246,7 @@ class APIRequestScheduler:
                 "pending_requests": len(self.request_dict),
                 "pending_responses": len(self.response_store),
                 "calls_per_second": self.CALLS_PER_SECOND,
-                "managed_urls": len(self.api_urls)
+                "managed_urls": len(self.api_patterns)
             }
 
     def cleanup(self):
@@ -378,7 +378,7 @@ class TestAPIRequestScheduler(unittest.TestCase):
         
         scheduler = APIRequestScheduler(self.test_urls)
         
-        self.assertEqual(scheduler.api_urls, self.test_urls)
+        self.assertEqual(scheduler.api_patterns, self.test_urls)
         self.assertEqual(scheduler.CALLS_PER_SECOND, 1)
         self.assertIsNotNone(scheduler.scheduler_id)
         self.assertTrue(hasattr(scheduler, 'request_queue'))
@@ -431,27 +431,36 @@ class TestAPIRequestScheduler(unittest.TestCase):
         self.assertEqual(cache_path, expected_path)
 
     @patch('os.getcwd')
-    @patch('queue.Queue')
+    #@patch('queue.Queue')
     def test_add_request_success(self, mock_queue, mock_getcwd):
         """Test l'ajout réussi d'une requête"""
         mock_getcwd.return_value = self.temp_dir
+
+        # Configurez le mock AVANT de créer l'instance de APIRequestScheduler
         mock_queue_instance = Mock()
         mock_queue.return_value = mock_queue_instance
         mock_queue_instance.qsize.return_value = 5
-        
+
+        # Maintenant créez le scheduler (qui utilisera le mock configuré)
         scheduler = APIRequestScheduler(self.test_urls)
-        
+
+        # Exécutez votre test
         request_id, estimated_delay = scheduler.add_request(
-            url=mockurl, 
+            url="mockurl",  # J'ai ajouté les guillemets manquants
             payload={"test": "data"}
         )
-        
+
+        # Vos assertions
         self.assertIsInstance(request_id, str)
         self.assertGreater(len(request_id), 0)
         self.assertIsInstance(estimated_delay, float)
+
+        # Debug
         print(f"put appelé ? {mock_queue_instance.put.called}")
         print(f"Nombre d'appels : {mock_queue_instance.put.call_count}")
         print(f"Historique des appels : {mock_queue_instance.put.call_args_list}")
+
+        # Assertion qui devrait maintenant fonctionner
         mock_queue_instance.put.assert_called_once()
 
     @patch('os.getcwd')
@@ -961,7 +970,7 @@ class TestIntegration(unittest.TestCase):
     @patch('os.getcwd')
     @patch('threading.Thread')
     @patch('signal.signal')
-    @patch('queue.Queue')
+    #@patch('queue.Queue')
     def test_full_request_lifecycle(self, mock_queue, mock_signal, mock_thread, mock_getcwd):
         """Test du cycle de vie complet d'une requête"""
         mock_getcwd.return_value = self.temp_dir
@@ -1352,16 +1361,24 @@ class TestMockIntegration(unittest.TestCase):
         @authenticate
         def initialize_scheduler():
             data = request.get_json()
-            api_urls = data.get("api_urls", [])
+            api_patterns = data.get("api_patterns", [])
 
-            if not api_urls:
-                return jsonify({"error": "api_urls required"}), 400
+            if not api_patterns:
+                return jsonify({"error": "api_patterns required"}), 400
 
-            scheduler = APIRequestScheduler(api_urls)
+            # retablir les regex patterns qui ont été sérialisées
+            # test naif si * dans la string on suppose regex
+            rebuild_patterns = []
+            for pattern in api_patterns:
+                if "*" in pattern:
+                    rebuild_patterns.append(re.compile(pattern))
+                else:
+                    rebuild_patterns.append(pattern)
+            scheduler = APIRequestScheduler(rebuild_patterns)
             scheduler_id = scheduler.scheduler_id
 
             self.schedulers[scheduler_id] = scheduler
-            self.scheduler_ids[tuple(sorted(api_urls))] = scheduler_id
+            self.scheduler_ids[tuple(sorted(api_patterns))] = scheduler_id
 
             return jsonify({
                 "message": "Scheduler initialized",
@@ -1403,14 +1420,21 @@ class TestMockIntegration(unittest.TestCase):
     def test_full_api_workflow(self):
         """Test du workflow API complet"""
         headers = {"Authorization": "Bearer test-bearer-token"}
+        # Si test_urls contient des regex compilées, convertissez-les en strings
+        test_urls_serializable = []
+        for url in test_urls:
+            if hasattr(url, 'pattern'):  # C'est une regex compilée
+                test_urls_serializable.append(url.pattern)
+            else:
+                test_urls_serializable.append(url)
 
         # 1. Initialiser un scheduler
-        init_data = {"api_urls": test_urls}
+        init_data = {"api_patterns": test_urls_serializable}
         response = self.client.post('/api/initialize',
                                     json=init_data,
                                     headers=headers)
 
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(200, response.status_code)
         init_result = json.loads(response.data)
         scheduler_id = init_result["scheduler_id"]
 
@@ -1426,7 +1450,7 @@ class TestMockIntegration(unittest.TestCase):
                                     json=request_data,
                                     headers=headers)
 
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(200, response.status_code)
         request_result = json.loads(response.data)
 
         self.assertIn("uuid", request_result)
@@ -1440,7 +1464,7 @@ class TestMockIntegration(unittest.TestCase):
         """Test de gestion d'erreurs dans l'API"""
         headers = {"Authorization": "Bearer test-bearer-token"}
 
-        # Test sans api_urls
+        # Test sans api_patterns
         response = self.client.post('/api/initialize',
                                     json={},
                                     headers=headers)
@@ -1460,20 +1484,27 @@ class TestMockIntegration(unittest.TestCase):
     def test_authentication_workflow(self):
         """Test du workflow d'authentification"""
         # Test sans token
-        response = self.client.post('/api/initialize', json={"api_urls": test_urls})
+        # Si test_urls contient des regex compilées, convertissez-les en strings
+        test_urls_serializable = []
+        for url in test_urls:
+            if hasattr(url, 'pattern'):  # C'est une regex compilée
+                test_urls_serializable.append(url.pattern)
+            else:
+                test_urls_serializable.append(url)
+        response = self.client.post('/api/initialize', json={"api_patterns": test_urls_serializable})
         self.assertEqual(response.status_code, 401)
 
         # Test avec token invalide
         bad_headers = {"Authorization": "Bearer wrong-token"}
         response = self.client.post('/api/initialize',
-                                    json={"api_urls": test_urls},
+                                    json={"api_patterns": test_urls_serializable},
                                     headers=bad_headers)
         self.assertEqual(response.status_code, 401)
 
         # Test avec token valide
         good_headers = {"Authorization": "Bearer test-bearer-token"}
         response = self.client.post('/api/initialize',
-                                    json={"api_urls": test_urls},
+                                    json={"api_patterns": test_urls_serializable},
                                     headers=good_headers)
         self.assertEqual(response.status_code, 200)
 
@@ -1962,8 +1993,8 @@ class APIRequestScheduler:
     _instances: Dict[Tuple, 'APIRequestScheduler'] = {}
     _lock = threading.Lock()
 
-    def __new__(cls, api_urls: List[str], *args, **kwargs):
-        key = tuple(sorted(api_urls))
+    def __new__(cls, api_patterns: List[str], *args, **kwargs):
+        key = tuple(sorted(api_patterns))
         with cls._lock:
             if key not in cls._instances:
                 cls._instances[key] = super(APIRequestScheduler, cls).__new__(cls)
@@ -2119,7 +2150,7 @@ class APIRequestScheduler:
                 "pending_requests": len(self.request_dict),
                 "pending_responses": len(self.response_store),
                 "calls_per_second": self.CALLS_PER_SECOND,
-                "managed_urls": len(self.api_urls)
+                "managed_urls": len(self.api_patterns)
             }
 
     def cleanup(self):
@@ -2252,7 +2283,7 @@ class TestAPIRequestScheduler(unittest.TestCase):
 
         scheduler = APIRequestScheduler(self.test_urls)
 
-        self.assertEqual(scheduler.api_urls, self.test_urls)
+        self.assertEqual(scheduler.api_patterns, self.test_urls)
         self.assertEqual(scheduler.CALLS_PER_SECOND, 1)
         self.assertIsNotNone(scheduler.scheduler_id)
         self.assertTrue(hasattr(scheduler, 'request_queue'))
@@ -2305,27 +2336,34 @@ class TestAPIRequestScheduler(unittest.TestCase):
         self.assertEqual(cache_path, expected_path)
 
     @patch('os.getcwd')
-    @patch('queue.Queue')
-    def test_add_request_success(self, mock_queue, mock_getcwd):
+    # @patch('queue.Queue')
+    def test_add_request_success(self, mock_getcwd): # mock_queue, mock_getcwd):
         """Test l'ajout réussi d'une requête"""
         mock_getcwd.return_value = self.temp_dir
-        mock_queue_instance = Mock()
-        mock_queue.return_value = mock_queue_instance
-        mock_queue_instance.qsize.return_value = 5
-
         scheduler = APIRequestScheduler(self.test_urls)
 
+        # Configurez le mock AVANT de créer l'instance de APIRequestScheduler
+        mock_queue_instance = Mock()
+        mock_queue_instance.qsize.return_value = 5
+        scheduler.request_queue = mock_queue_instance
+
+        # Exécutez votre test
         request_id, estimated_delay = scheduler.add_request(
-            url=mockurl, 
+            url=mockurl,
             payload={"test": "data"}
         )
 
+        # Vos assertions
         self.assertIsInstance(request_id, str)
         self.assertGreater(len(request_id), 0)
         self.assertIsInstance(estimated_delay, float)
+
+        # Debug
         print(f"put appelé ? {mock_queue_instance.put.called}")
         print(f"Nombre d'appels : {mock_queue_instance.put.call_count}")
         print(f"Historique des appels : {mock_queue_instance.put.call_args_list}")
+
+        # Assertion qui devrait maintenant fonctionner
         mock_queue_instance.put.assert_called_once()
 
     @patch('os.getcwd')
@@ -2379,31 +2417,39 @@ class TestAPIRequestScheduler(unittest.TestCase):
         """Test la récupération des statistiques"""
         mock_getcwd.return_value = self.temp_dir
 
-        with patch('queue.Queue') as mock_queue:
-            mock_queue_instance = Mock()
-            mock_queue.return_value = mock_queue_instance
-            mock_queue_instance.qsize.return_value = 3
+        # Créez le scheduler normalement
+        scheduler = APIRequestScheduler(self.test_urls)
 
-            scheduler = APIRequestScheduler(self.test_urls)
-            scheduler.request_dict = {"req1": Mock(), "req2": Mock()}
-            scheduler.response_store = {"resp1": Mock()}
+        # Mockez uniquement les attributs nécessaires pour les stats
+        mock_queue_instance = Mock()
+        mock_queue_instance.qsize.return_value = 3
+        scheduler.request_queue = mock_queue_instance
 
-            stats = scheduler.get_stats()
+        # Configurez les données de test
+        scheduler.request_dict = {"req1": Mock(), "req2": Mock()}
+        scheduler.response_store = {"resp1": Mock()}
 
-            expected_keys = [
-                "scheduler_id", "queue_size", "pending_requests",
-                "pending_responses", "calls_per_second", "managed_urls"
-            ]
+        # Exécutez le test
+        stats = scheduler.get_stats()
 
-            for key in expected_keys:
-                self.assertIn(key, stats)
+        # Vos assertions
+        expected_keys = [
+            "scheduler_id",
+            "queue_size",
+            "pending_requests",
+            "pending_responses",
+            "calls_per_second",
+            "managed_urls"
+        ]
 
-            self.assertEqual(stats["queue_size"], 3)
-            self.assertEqual(stats["pending_requests"], 2)
-            self.assertEqual(stats["pending_responses"], 1)
-            self.assertEqual(stats["calls_per_second"], 1)
-            self.assertEqual(stats["managed_urls"], 1)
+        for key in expected_keys:
+            self.assertIn(key, stats)
 
+        self.assertEqual(stats["queue_size"], 3)
+        self.assertEqual(stats["pending_requests"], 2)
+        self.assertEqual(stats["pending_responses"], 1)
+        self.assertEqual(stats["calls_per_second"], 1)
+        self.assertEqual(stats["managed_urls"], 1)
 
 class TestAPIRequestSchedulerAsync(unittest.IsolatedAsyncioTestCase):
     """Tests asynchrones pour APIRequestScheduler"""
@@ -2518,12 +2564,9 @@ class TestAPIRequestSchedulerAsync(unittest.IsolatedAsyncioTestCase):
 
     @patch('aiohttp.ClientSession.request')
     @patch('os.getcwd')
-    @patch('threading.Thread')
-    @patch('signal.signal')
-    async def test_make_http_request_success(self, mock_signal, mock_thread, mock_getcwd, mock_request):
+    async def test_make_http_request_success(self, mock_getcwd, mock_request):
         """Test une requête HTTP réussie"""
         mock_getcwd.return_value = self.temp_dir
-        mock_thread.return_value.start = Mock()
 
         # Mock de la réponse HTTP
         mock_response = AsyncMock()
@@ -2535,9 +2578,16 @@ class TestAPIRequestSchedulerAsync(unittest.IsolatedAsyncioTestCase):
 
         scheduler = APIRequestScheduler(self.test_urls)
 
+        # Mock spécifique pour éviter les threads si nécessaire
+        #with patch.object(scheduler, '_start_processing_thread', Mock()):
+            # Ou mockez directement les attributs de thread si votre scheduler en a
+        #    if hasattr(scheduler, 'processing_thread'):
+        #        scheduler.processing_thread = Mock()
+        #        scheduler.processing_thread.start = Mock()
+
         request_data = RequestData(
             request_id="test-id",
-            url=mockurl, 
+            url=mockurl,
             method="GET"
         )
 
@@ -2833,42 +2883,43 @@ class TestIntegration(unittest.TestCase):
         APIRequestScheduler._instances.clear()
 
     @patch('os.getcwd')
-    @patch('threading.Thread')
-    @patch('signal.signal')
-    @patch('queue.Queue')
-    def test_full_request_lifecycle(self, mock_queue, mock_signal, mock_thread, mock_getcwd):
+    def test_full_request_lifecycle(self, mock_getcwd):
         """Test du cycle de vie complet d'une requête"""
         mock_getcwd.return_value = self.temp_dir
-        mock_thread.return_value.start = Mock()
 
-        # Mock de la queue
+        # Créez le scheduler normalement
+        scheduler = APIRequestScheduler(test_urls)  # Utilisez self.test_urls
+
+        # Mockez seulement les attributs nécessaires APRÈS création
         mock_queue_instance = Mock()
-        mock_queue.return_value = mock_queue_instance
         mock_queue_instance.qsize.return_value = 1
+        scheduler.request_queue = mock_queue_instance
 
-        # 1. Créer un scheduler
-        scheduler = APIRequestScheduler(test_urls)
+        # Mockez le thread si nécessaire (après création)
+        if hasattr(scheduler, 'processing_thread'):
+            scheduler.processing_thread = Mock()
+            scheduler.processing_thread.start = Mock()
 
-        # 2. Ajouter une requête
+        # 1. Ajouter une requête
         request_id, delay = scheduler.add_request(
-            url=mockurl, 
+            url=mockurl,
             payload={"test": "data"},
             method="POST"
         )
 
-        # 3. Vérifier que la requête a été ajoutée
+        # 2. Vérifier que la requête a été ajoutée
         self.assertTrue(scheduler.has_request(request_id))
         mock_queue_instance.put.assert_called_once()
 
-        # 4. Simuler une réponse
+        # 3. Simuler une réponse
         test_response = {"result": "success"}
         scheduler.response_store[request_id] = test_response
 
-        # 5. Récupérer la réponse
+        # 4. Récupérer la réponse
         response = scheduler.get_response(request_id)
         self.assertEqual(response, test_response)
 
-        # 6. Vérifier que la réponse a été supprimée du store
+        # 5. Vérifier que la réponse a été supprimée du store
         self.assertNotIn(request_id, scheduler.response_store)
 
     @patch('os.getcwd')
