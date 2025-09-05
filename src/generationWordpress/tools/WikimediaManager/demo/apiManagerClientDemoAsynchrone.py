@@ -9,7 +9,7 @@ import socketio
 baseurl = "http://127.0.0.1:5000"
 
 data = {
-    "api_urls": ["https://randomuser.me/api/", "https://query.wikidata.org/sparql"]
+    "api_patterns": ["https://randomuser.me/api/", "https://query.wikidata.org/sparql"]
 }
 headers = {
     "Authorization": f"Bearer {configPrivee.config['admin']['Bearer']}",
