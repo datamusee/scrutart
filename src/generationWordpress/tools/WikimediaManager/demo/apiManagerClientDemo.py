@@ -3,14 +3,14 @@ import time
 
 import requests
 from urllib.parse import urlencode, urlunsplit, quote_plus
-import configPrivee
+from src.generationWordpress.tools.WikimediaManager.WikimediaManagerPackage import configPrivee
 import socketio
 
 
-baseurl = "http://127.0.0.1:5000"
+baseurl = "http://127.0.0.1:6000"
 
 data = {
-    "api_urls": ["https://randomuser.me/api/"] #, "https://query.wikidata.org/sparql"]
+    "api_patterns": ["https://randomuser.me/api/"] #, "https://query.wikidata.org/sparql"]
 }
 bearer = configPrivee.config['admin']['Bearer']
 headers = {

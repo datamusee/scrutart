@@ -10,7 +10,7 @@ def main():
     #baseurl = "https://webapimanager.grains-de-culture.fr"
 
     data = {
-        "api_urls": ["https://randomuser.me/api/"]
+        "api_patterns": ["https://randomuser.me/api/"]
     }
     headers = {
         "Authorization": f"Bearer {config['admin']['Bearer']}",
