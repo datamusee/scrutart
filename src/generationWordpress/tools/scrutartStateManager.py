@@ -1,5 +1,25 @@
 import SPARQLWrapper as sw
 
+@dataclass
+class Artist:
+    pass
+
+@dataclass
+class Work:
+    pass
+
+@dataclass
+class Museum:
+    pass
+
+@dataclass
+class Gallery:
+    pass
+
+@dataclass
+class Exhibition:
+    pass
+
 class scrutartStateManager():
     def __init__(self, urlendpoint):
         self.urlendpoint = urlendpoint
