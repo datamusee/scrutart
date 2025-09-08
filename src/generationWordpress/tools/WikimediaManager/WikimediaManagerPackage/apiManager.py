@@ -669,6 +669,7 @@ def delete_scheduler():
         {"scheduler_id": f"{scheduler_id}", "message": f"scheduler with ID {scheduler_id} deleted successfully."})
 
 
+
 @app.route("/", methods=["GET"])
 def home():
     return "<html><body><h2>Salut, API privée pour gérer des limitations d'accès (nb.Req/mn, ...) sur des web api; avec Socket.IO server running with client_id support</h2></body></html>"
