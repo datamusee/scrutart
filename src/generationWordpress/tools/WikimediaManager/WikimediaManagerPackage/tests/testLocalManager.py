@@ -41,7 +41,7 @@ class MyTestCase(unittest.TestCase):
     def test_un_appel_synchrone(self):
         bearer = config['admin']["Bearer"]
         headers = {f"Authorization": f"Bearer {bearer}"} if bearer else {}
-        query = "https://randomuser.me/api/"
+        query = "http://127.0.0.1:5000/mockapi"
         scheduler_id = createManager([query], bearer=bearer)
         # limit est le nombre d'appels par seconde pour ce manager
         data = { "scheduler_id": scheduler_id, "limit": 1 }
@@ -69,9 +69,9 @@ class MyTestCase(unittest.TestCase):
                 # print(jstat)
                 pass
         print(rep)
-        ok = (stat.status_code == 200) and ("response" in jstat) and ("info" in jstat["response"])
+        is_ok = (stat.status_code == 200) and ("response" in jstat) and ("args" in jstat["response"])
         deleteManager(scheduler_id, bearer=bearer)
-        self.assertEqual(ok, True, "Manager créé, requête envoyée, manager détruit")
+        self.assertEqual(is_ok, True, "Manager créé, requête envoyée, manager détruit")
 
 
     def test_un_appel_synchrone_wikidata(self):
@@ -95,7 +95,7 @@ class MyTestCase(unittest.TestCase):
             }
         }
         # mise de la requête dans la file d'attente
-        req = requests.get(f"{baseurl}/api/request", json=data, headers=headers)
+        req = requests.post(f"{baseurl}/api/request", json=data, headers=headers)
         uuidreq = json.loads(req.text)["uuid"]
         statusUrl = f"{baseurl}{json.loads(req.text)['status_url']}"
         while True:
