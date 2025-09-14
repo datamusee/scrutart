@@ -47,14 +47,6 @@ for col in df.columns:
     if col not in ["filename", "artist"]:
         df[col] = df[col].apply(lambda x: x if isinstance(x, list) else [])
 
-# appel de BLIP si nécessiare
-for col in df.columns:
-    if col not in ["filename", "ref_tags", "artist"]:
-        tags = row[col]
-        # Si BLIP n’a rien, on tente de remplir automatiquement
-        if col == "BLIP" and (not tags or len(tags) == 0):
-            tags = blip_generate_tags(row["filename"])
-        models[col] = [(tag, relation_type(tag, row["ref_tags"])) for tag in tags]
 
 # === Annotation store ===
 if not os.path.exists(ANNOTATIONS_FILE):
