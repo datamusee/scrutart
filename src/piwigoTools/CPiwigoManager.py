@@ -224,7 +224,7 @@ class CPiwigoManager():
             return None
 
     def piwigo_get_categories(self):
-        # Authentification et récupération de la liste des catégories
+        # Authentification puis récupération de la liste des catégories
         try:
             self.piwigo_open_session()
             payload = {
@@ -270,11 +270,13 @@ class CPiwigoManager():
                 "GENRES": f"Galerie de {categoryName}s",
                 "CREATORS": f"Galerie {categoryName}",
                 "MOVEMENTS": f"{categoryName}",
+                "EXHIBITIONS": f"{categoryName}",
                 "INSTITUTIONS": f" {categoryName}"
             }
             galeryParent = {
                 "GENRES": 81,
                 "CREATORS": 80,
+                "EXHIBITIONS": 956,
                 "MOVEMENTS": 853,
                 "INSTITUTIONS": 854
             }
