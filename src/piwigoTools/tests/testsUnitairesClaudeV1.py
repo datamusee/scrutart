@@ -1,22 +1,29 @@
-import unittest
 import tempfile
 import os
 import json
-import sys
 import time
 import logging
-from unittest.mock import patch, MagicMock
+import sys
+import unittest
+from unittest.mock import patch, MagicMock, Mock
 from typing import Dict, Any, List
 import requests
 
+
 # Import du module à tester (ajustez le chemin selon votre structure)
-from src.piwigoTools.CPiwigoManager import CPiwigoManager, PiwigoError, CategoryType, PiwigoConfig
-from src.piwigoTools.configPiwigo import configPiwigo
+# Gestion flexible de l'import pour éviter les erreurs de configuration
+try:
+    from src.piwigoTools.CPiwigoManager import CPiwigoManager, PiwigoError, CategoryType, PiwigoConfig
+    from src.piwigoTools.configPiwigoTest import configPiwigo
+except ImportError as e:
+    print(f"Erreur d'import CPiwigoManager: {e}")
+    print("Vérifiez que le fichier CPiwigoManager.py est dans le même répertoire")
+    sys.exit(1)
 
 class TestConfig:
     """Configuration de test - À personnaliser avec vos accès Piwigo"""
 
-    # CONFIGURATION À MODIFIER AVEC VOS ACCÈS PIWIGO
+    # CONFIGURATION PAR DÉFAUT - À MODIFIER AVEC VOS ACCÈS PIWIGO
     PIWIGO_URL = configPiwigo["url"]
     PIWIGO_API_URL = configPiwigo["url"]+"/ws.php"  # URL de l'API
     PIWIGO_LOGIN = configPiwigo["login"]
@@ -32,22 +39,118 @@ class TestConfig:
     # Images de test (URLs publiques Wikimedia Commons)
     TEST_IMAGES = [
         {
-            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Test_image.jpg/800px-Test_image.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/800px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
             "titre_fr": "Image de Test 1",
             "titre_en": "Test Image 1",
-            "uri": "http://www.wikidata.org/entity/Q123456",
-            "createur": "http://www.wikidata.org/entity/Q7890",
-            "createurLabel": "Test Creator"
+            "uri": "http://www.wikidata.org/entity/Q45585",
+            "createur": "http://www.wikidata.org/entity/Q5582",
+            "createurLabel": "Vincent van Gogh"
         },
         {
-            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Square_200x200.png/200px-Square_200x200.png",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/480px-President_Barack_Obama.jpg",
             "titre_fr": "Image de Test 2",
             "titre_en": "Test Image 2",
-            "uri": "http://www.wikidata.org/entity/Q654321",
-            "createur": "http://www.wikidata.org/entity/Q9876",
-            "createurLabel": "Another Test Creator"
+            "uri": "http://www.wikidata.org/entity/Q76",
+            "createur": "http://www.wikidata.org/entity/Q12345",
+            "createurLabel": "Photographe officiel"
         }
     ]
+
+    @classmethod
+    def load_from_file(cls, config_file="test_config.json"):
+        """Charge la configuration depuis un fichier JSON"""
+        try:
+            if os.path.exists(config_file):
+                with open(config_file, 'r', encoding='utf-8') as f:
+                    config = json.load(f)
+
+                # Mise à jour de la configuration
+                piwigo_config = config.get('piwigo', {})
+                cls.PIWIGO_URL = piwigo_config.get('url', cls.PIWIGO_URL)
+                cls.PIWIGO_API_URL = piwigo_config.get('api_url', cls.PIWIGO_API_URL)
+                cls.PIWIGO_LOGIN = piwigo_config.get('login', cls.PIWIGO_LOGIN)
+                cls.PIWIGO_PASSWORD = piwigo_config.get('password', cls.PIWIGO_PASSWORD)
+
+                # Données de test optionnelles
+                test_data = config.get('test_data', {})
+                if 'categories' in test_data:
+                    cls.TEST_CATEGORIES = test_data['categories']
+                if 'test_images' in test_data:
+                    cls.TEST_IMAGES = test_data['test_images']
+
+                print(f"✅ Configuration chargée depuis {config_file}")
+                return True
+            else:
+                print(f"ℹ️  Fichier {config_file} non trouvé, utilisation de la configuration par défaut")
+                return False
+
+        except Exception as e:
+            print(f"❌ Erreur lors du chargement de {config_file}: {e}")
+            return False
+
+    @classmethod
+    def load_from_env(cls):
+        """Charge la configuration depuis les variables d'environnement"""
+        cls.PIWIGO_URL = os.getenv('PIWIGO_TEST_URL', cls.PIWIGO_URL)
+        cls.PIWIGO_API_URL = os.getenv('PIWIGO_TEST_API_URL', cls.PIWIGO_API_URL)
+        cls.PIWIGO_LOGIN = os.getenv('PIWIGO_TEST_LOGIN', cls.PIWIGO_LOGIN)
+        cls.PIWIGO_PASSWORD = os.getenv('PIWIGO_TEST_PASSWORD', cls.PIWIGO_PASSWORD)
+
+        env_vars_found = any([
+            os.getenv('PIWIGO_TEST_URL'),
+            os.getenv('PIWIGO_TEST_LOGIN'),
+            os.getenv('PIWIGO_TEST_PASSWORD')
+        ])
+
+        if env_vars_found:
+            print("✅ Configuration chargée depuis les variables d'environnement")
+            return True
+
+        return False
+
+    @classmethod
+    def validate_config(cls):
+        """Valide la configuration de test"""
+        errors = []
+
+        if cls.PIWIGO_URL == "https://votre-piwigo-test.com":
+            errors.append("PIWIGO_URL doit être configurée avec votre vraie URL")
+
+        if cls.PIWIGO_LOGIN == "test_user":
+            errors.append("PIWIGO_LOGIN doit être configuré avec vos vrais identifiants")
+
+        if cls.PIWIGO_PASSWORD == "test_password":
+            errors.append("PIWIGO_PASSWORD doit être configuré avec votre vrai mot de passe")
+
+        return errors
+
+
+class TestConfigManager:
+    """Gestionnaire de configuration pour les tests"""
+
+    @staticmethod
+    def create_mock_config():
+        """Crée un mock de configuration"""
+        return {
+            "login": TestConfig.PIWIGO_LOGIN,
+            "pass": TestConfig.PIWIGO_PASSWORD,
+            "get": lambda key, default=None: {
+                "login": TestConfig.PIWIGO_LOGIN,
+                "pass": TestConfig.PIWIGO_PASSWORD
+            }.get(key, default)
+        }
+
+    @staticmethod
+    def setup_piwigo_instance(url=None):
+        """Crée une instance CPiwigoManager configurée pour les tests"""
+        pwg = CPiwigoManager(url or TestConfig.PIWIGO_URL)
+        pwg.config.api_url = TestConfig.PIWIGO_API_URL
+
+        # Injection directe des identifiants
+        pwg.login = TestConfig.PIWIGO_LOGIN
+        pwg.password = TestConfig.PIWIGO_PASSWORD
+
+        return pwg
 
 
 class PiwigoTestCase(unittest.TestCase):
@@ -68,24 +171,51 @@ class PiwigoTestCase(unittest.TestCase):
         cls.logger = logging.getLogger(cls.__name__)
         cls.logger.info("=== DÉBUT DES TESTS PIWIGO ===")
 
-        # Création d'un fichier de config temporaire pour les tests
+        # Configuration des identifiants de test
         cls.config_data = {
             "login": TestConfig.PIWIGO_LOGIN,
             "pass": TestConfig.PIWIGO_PASSWORD
         }
 
-        # Mock de la configuration
-        cls.config_patcher = patch('CPiwigoManager.cp', cls.config_data)
-        cls.config_patcher.start()
-
         # Stockage des IDs créés pour nettoyage
         cls.created_category_ids = []
         cls.created_image_ids = []
 
+        # Mock de la configuration - gestion multi-path
+        cls.config_patches = []
+
+        # Tentative de mock sur différents chemins possibles
+        possible_paths = [
+            'CPiwigoManager.cp',
+            '__main__.CPiwigoManager.cp',  # Si run depuis ce module
+            'src.piwigoTools.piwigoConfigPrivee.configPiwigo'
+        ]
+
+        for path in possible_paths:
+            try:
+                patcher = patch(path, cls.config_data)
+                patcher.start()
+                cls.config_patches.append(patcher)
+                cls.logger.info(f"Mock configuré sur {path}")
+                break
+            except Exception as e:
+                cls.logger.debug(f"Impossible de mocker {path}: {e}")
+                continue
+
+        # Si aucun mock n'a fonctionné, on va injecter directement
+        if not cls.config_patches:
+            cls.logger.warning("Aucun mock de configuration réussi, injection directe")
+
     @classmethod
     def tearDownClass(cls):
         """Nettoyage global après tous les tests"""
-        cls.config_patcher.stop()
+        # Arrêt de tous les patches
+        for patcher in cls.config_patches:
+            try:
+                patcher.stop()
+            except Exception as e:
+                cls.logger.warning(f"Erreur lors de l'arrêt du patch: {e}")
+
         cls.logger.info("=== FIN DES TESTS PIWIGO ===")
 
         # Nettoyage des éléments créés
@@ -118,8 +248,14 @@ class PiwigoTestCase(unittest.TestCase):
 
     def setUp(self):
         """Configuration pour chaque test"""
-        self.pwg = CPiwigoManager(TestConfig.PIWIGO_URL)
-        self.pwg.config.api_url = TestConfig.PIWIGO_API_URL
+        # Utilisation du gestionnaire de configuration
+        self.pwg = TestConfigManager.setup_piwigo_instance()
+
+        # Vérification que les identifiants sont bien configurés
+        if not self.pwg.login or not self.pwg.password:
+            self.skipTest("Identifiants Piwigo non configurés")
+
+        self.logger.debug(f"Instance créée avec login: {self.pwg.login[:3]}...")
 
     def tearDown(self):
         """Nettoyage après chaque test"""
@@ -250,7 +386,7 @@ class TestPiwigoCategories(PiwigoTestCase):
         """Test de création d'une catégorie typée"""
         self.logger.info("Test: Création catégorie typée")
 
-        response = self.pwg.piwigo_create_category("Test Creator", CategoryType.CREATORS)
+        response = self.pwg.piwigo_create_category("Test Creator", CategoryType.TEST) #
 
         self.assertIsNotNone(response, "La réponse de création doit exister")
 
@@ -472,7 +608,7 @@ class TestPiwigoErrorHandling(PiwigoTestCase):
         """Test avec URL invalide"""
         self.logger.info("Test: URL invalide")
 
-        pwg_invalid = CPiwigoManager("https://invalid-piwigo-url-that-does-not-exist.com")
+        pwg_invalid = CPiwigoManager(url="https://invalid-piwigo-url-that-does-not-exist.com")
 
         with self.assertRaises(PiwigoError):
             pwg_invalid.piwigo_open_session()
@@ -591,9 +727,52 @@ def run_tests_with_report():
 
 if __name__ == "__main__":
     print("=== TESTS UNITAIRES PIWIGO ===")
-    print("\n⚠️  IMPORTANT: Configurez TestConfig avec vos accès Piwigo avant de lancer!")
-    print(f"URL configurée: {TestConfig.PIWIGO_URL}")
-    print(f"Login configuré: {TestConfig.PIWIGO_LOGIN}")
+
+    # Validation de la configuration
+    config_errors = TestConfig.validate_config()
+    if config_errors:
+        print("\n❌ ERREURS DE CONFIGURATION:")
+        for error in config_errors:
+            print(f"  - {error}")
+        print("\nVeuillez modifier la classe TestConfig avec vos vrais accès Piwigo.")
+        sys.exit(1)
+
+    print(f"\n✅ Configuration validée:")
+    print(f"  URL: {TestConfig.PIWIGO_URL}")
+    print(f"  API: {TestConfig.PIWIGO_API_URL}")
+    print(f"  Login: {TestConfig.PIWIGO_LOGIN}")
+
+    # Test de connectivité basique
+    print("\n🔍 Test de connectivité...")
+    try:
+        test_pwg = TestConfigManager.setup_piwigo_instance()
+        health = test_pwg.health_check()
+
+        if health.get('api_accessible'):
+            print("  ✅ API accessible")
+        else:
+            print("  ❌ API non accessible")
+
+        if health.get('authentication'):
+            print("  ✅ Authentification réussie")
+        else:
+            print("  ❌ Authentification échouée")
+
+        test_pwg.close_session()
+
+    except Exception as e:
+        print(f"  ❌ Erreur de connectivité: {e}")
+        print("\nVérifiez votre configuration et votre connexion réseau.")
+
+        response = input("\nVoulez-vous continuer malgré l'erreur? (y/N): ")
+        if response.lower() != 'y':
+            sys.exit(1)
+
+    print(f"\n⚠️  IMPORTANT:")
+    print(f"  - Ces tests vont créer des données sur votre instance Piwigo")
+    print(f"  - Utilisez UNIQUEMENT une instance de TEST")
+    print(f"  - Les catégories créées: {', '.join(TestConfig.TEST_CATEGORIES)}")
+    print(f"  - {len(TestConfig.TEST_IMAGES)} images de test seront uploadées")
 
     response = input("\nVoulez-vous continuer? (y/N): ")
 
