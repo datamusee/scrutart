@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}URI traitée{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="text-success mb-3 text-center">
+                    <i class="display-4">✅</i>
+                </div>
+                <h2 class="card-title text-center text-success">URI traitée avec succès</h2>
+
+                <div class="mt-4">
+                    <h5>Détails de l'entité traitée :</h5>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item">
+                            <strong>Label :</strong> {{ result.label }}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>QID :</strong> <span class="qid-badge">{{ result.qid }}</span>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>URI :</strong>
+                            <a href="{{ result.uri }}" target="_blank">{{ result.uri }}</a>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Statut :</strong>
+                            <span class="badge bg-success">{{ result.status.title() }}</span>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Traitement terminé :</strong>
+                            {{ result.completed_at }}
+                        </li>
+                    </ul>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">📄 Contenu de la page générée</h5>
+                        </div>
+                        <div class="card-body">
+                            <textarea class="form-control"
+                                      rows="15"
+                                      readonly
+                                      style="font-family: monospace; font-size: 0.9em;">{{ result.page_content }}</textarea>
+                            <div class="mt-2">
+                                <button class="btn btn-outline-secondary btn-sm"
+                                        onclick="copyToClipboard()">
+                                    📋 Copier le contenu
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 text-center">
+                    <a href="{{ url_for('index') }}" class="btn btn-primary">
+                        🔍 Nouvelle recherche
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function copyToClipboard() {
+    const textarea = document.querySelector('textarea');
+    textarea.select();
+    textarea.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(textarea.value);
+
+    const button = document.querySelector('button[onclick="copyToClipboard()"]');
+    const originalText = button.innerHTML;
+    button.innerHTML = '✅ Copié !';
+    button.classList.add('btn-success');
+    button.classList.remove('btn-outline-secondary');
+
+    setTimeout(() => {
+        button.innerHTML = originalText;
+        button.classList.remove('btn-success');
+        button.classList.add('btn-outline-secondary');
+    }, 2000);
+}
+</script>
+{% endblock %}
