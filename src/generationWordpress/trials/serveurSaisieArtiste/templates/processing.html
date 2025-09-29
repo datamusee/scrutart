@@ -1,0 +1,148 @@
+<!-- templates/processing.html -->
+{% extends "base.html" %}
+
+{% block title %}Traitement en cours...{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <div class="text-primary mb-3">
+                    <div class="spinner-border" role="status" style="width: 4rem; height: 4rem;">
+                        <span class="visually-hidden">Chargement...</span>
+                    </div>
+                </div>
+                
+                <h2 class="card-title text-primary">Traitement en cours...</h2>
+                
+                <div class="mt-4">
+                    <p><strong>Entité :</strong> {{ label }}</p>
+                    <p><strong>QID :</strong> <span class="qid-badge">{{ qid }}</span></p>
+                    <p><strong>Task ID :</strong> <code>{{ task_id }}</code></p>
+                </div>
+
+                <div class="mt-4">
+                    <div class="progress mb-3" style="height: 25px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                             role="progressbar"
+                             id="progressBar"
+                             style="width: 0%">
+                            <span id="progressText">0%</span>
+                        </div>
+                    </div>
+
+                    <div id="statusMessage" class="alert alert-info">
+                        Initialisation du traitement...
+                    </div>
+
+                    <!-- Zone de debug -->
+                    <div id="debugInfo" class="mt-3" style="font-family: monospace; font-size: 0.85em; text-align: left; background: #f5f5f5; padding: 10px; border-radius: 5px; max-height: 200px; overflow-y: auto;">
+                        <strong>Debug Log:</strong><br>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
+                        ← Retour à l'accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const taskId = '{{ task_id }}';
+let pollInterval;
+let pollCount = 0;
+
+function addDebugLog(message) {
+    const debugDiv = document.getElementById('debugInfo');
+    const timestamp = new Date().toLocaleTimeString();
+    debugDiv.innerHTML += `[${timestamp}] ${message}<br>`;
+    debugDiv.scrollTop = debugDiv.scrollHeight;
+    console.log(`[${timestamp}] ${message}`);
+}
+
+function updateProgress(progress, status) {
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const statusMessage = document.getElementById('statusMessage');
+
+    progressBar.style.width = progress + '%';
+    progressText.textContent = progress + '%';
+
+    let message = '';
+    switch(status) {
+        case 'pending':
+            message = 'En attente de traitement...';
+            break;
+        case 'processing':
+            message = 'Génération de la page en cours...';
+            break;
+        case 'completed':
+            message = 'Traitement terminé ! Redirection...';
+            statusMessage.className = 'alert alert-success';
+            break;
+        case 'error':
+            message = 'Erreur lors du traitement';
+            statusMessage.className = 'alert alert-danger';
+            break;
+    }
+    statusMessage.textContent = message;
+}
+
+function pollTaskStatus() {
+    pollCount++;
+    const apiUrl = `/api/task/${taskId}`;
+
+    addDebugLog(`Poll #${pollCount}: Appel à ${apiUrl}`);
+
+    fetch(apiUrl)
+        .then(response => {
+            addDebugLog(`Poll #${pollCount}: Status HTTP ${response.status}`);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            addDebugLog(`Poll #${pollCount}: Données reçues - Status: ${data.status}, Progress: ${data.progress}%`);
+            updateProgress(data.progress || 0, data.status);
+
+            if (data.status === 'completed') {
+                addDebugLog('✅ Traitement terminé, redirection dans 1.5s...');
+                clearInterval(pollInterval);
+                setTimeout(() => {
+                    window.location.href = `/result/${taskId}`;
+                }, 1500);
+            } else if (data.status === 'error') {
+                addDebugLog(`❌ Erreur: ${data.error}`);
+                clearInterval(pollInterval);
+                document.getElementById('statusMessage').innerHTML =
+                    `<strong>Erreur :</strong> ${data.error}`;
+            }
+        })
+        .catch(error => {
+            addDebugLog(`❌ Erreur lors du poll: ${error.message}`);
+            console.error('Erreur lors de la vérification du statut:', error);
+        });
+}
+
+// Démarrer le polling
+addDebugLog(`Démarrage du polling pour task_id: ${taskId}`);
+pollInterval = setInterval(pollTaskStatus, 1000);
+
+// Vérification initiale
+pollTaskStatus();
+
+// Nettoyage lors du déchargement de la page
+window.addEventListener('beforeunload', () => {
+    if (pollInterval) {
+        clearInterval(pollInterval);
+        addDebugLog('Arrêt du polling (page fermée)');
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,113 @@
+<!-- templates/processing_images.html -->
+{% extends "base.html" %}
+
+{% block title %}Génération d'images en cours...{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <div class="text-info mb-3">
+                    <div class="spinner-border text-info" role="status" style="width: 4rem; height: 4rem;">
+                        <span class="visually-hidden">Chargement...</span>
+                    </div>
+                </div>
+                
+                <h2 class="card-title text-info">🖼️ Génération de la liste d'images...</h2>
+                
+                <div class="mt-4">
+                    <p><strong>Entité :</strong> {{ label }}</p>
+                    <p><strong>QID :</strong> <span class="qid-badge">{{ qid }}</span></p>
+                </div>
+
+                <div class="mt-4">
+                    <div class="progress mb-3" style="height: 25px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" 
+                             role="progressbar" 
+                             id="progressBar"
+                             style="width: 0%">
+                            <span id="progressText">0%</span>
+                        </div>
+                    </div>
+                    
+                    <div id="statusMessage" class="alert alert-info">
+                        Recherche d'images en cours...
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
+                        ← Retour à l'accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const taskId = '{{ task_id }}';
+let pollInterval;
+
+function updateProgress(progress, status) {
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const statusMessage = document.getElementById('statusMessage');
+    
+    progressBar.style.width = progress + '%';
+    progressText.textContent = progress + '%';
+    
+    let message = '';
+    switch(status) {
+        case 'pending':
+            message = 'En attente de traitement...';
+            break;
+        case 'processing':
+            message = 'Recherche et analyse des images en cours...';
+            break;
+        case 'completed':
+            message = 'Liste d\'images générée ! Redirection...';
+            statusMessage.className = 'alert alert-success';
+            break;
+        case 'error':
+            message = 'Erreur lors de la génération';
+            statusMessage.className = 'alert alert-danger';
+            break;
+    }
+    statusMessage.textContent = message;
+}
+
+function pollTaskStatus() {
+    fetch(`/api/task/${taskId}`)
+        .then(response => response.json())
+        .then(data => {
+            updateProgress(data.progress || 0, data.status);
+            
+            if (data.status === 'completed') {
+                clearInterval(pollInterval);
+                setTimeout(() => {
+                    window.location.href = `/images-result/${taskId}`;
+                }, 1500);
+            } else if (data.status === 'error') {
+                clearInterval(pollInterval);
+                document.getElementById('statusMessage').innerHTML = 
+                    `<strong>Erreur :</strong> ${data.error}`;
+            }
+        })
+        .catch(error => {
+            console.error('Erreur lors de la vérification du statut:', error);
+        });
+}
+
+// Démarrer le polling
+pollInterval = setInterval(pollTaskStatus, 1000);
+pollTaskStatus();
+
+window.addEventListener('beforeunload', () => {
+    if (pollInterval) {
+        clearInterval(pollInterval);
+    }
+});
+</script>
+{% endblock %}
