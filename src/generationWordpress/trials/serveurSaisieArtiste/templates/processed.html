@@ -36,8 +36,16 @@
                     </ul>
 
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header d-flex justify-content-between align-items-center">
                             <h5 class="mb-0">📄 Contenu de la page générée</h5>
+                            <form method="POST" action="{{ url_for('build_images') }}" class="d-inline">
+                                <input type="hidden" name="page_content" value="{{ result.page_content }}">
+                                <input type="hidden" name="qid" value="{{ result.qid }}">
+                                <input type="hidden" name="label" value="{{ result.label }}">
+                                <button type="submit" class="btn btn-primary btn-sm">
+                                    🖼️ Générer liste d'images
+                                </button>
+                            </form>
                         </div>
                         <div class="card-body">
                             <textarea class="form-control"
