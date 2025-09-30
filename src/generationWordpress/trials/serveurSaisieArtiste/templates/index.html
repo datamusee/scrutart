@@ -2,10 +2,6 @@
 
 {% block content %}
 <!-- DIAGNOSTIC TEMPLATE -->
-<div class="alert alert-info">
-    <strong>DEBUG:</strong>
-    session.user = {{ session.user if session.user else "NON DÉFINI" }}
-</div>
 {% if not session.user %}
 <div class="row justify-content-center">
     <div class="col-md-8 col-lg-6">
