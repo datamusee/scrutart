@@ -1,3 +1,4 @@
+import re
 from flask import Flask, render_template, request, jsonify, redirect, url_for, session, flash
 import requests
 import threading
@@ -8,6 +9,8 @@ import json
 from functools import wraps
 import os
 from dotenv import load_dotenv
+from src.piwigoTools.CPiwigoManager import CPiwigoManager, CategoryType
+from src.generationWordpress.generationListeImagesPourArtiste import genereListeImages
 
 # DIAGNOSTIC - Ajoutez ce code temporairement
 print("🔍 DIAGNOSTIC DES VARIABLES D'ENVIRONNEMENT")
@@ -82,6 +85,21 @@ api_tokens[default_token] = {
 }
 print(f"Token API par défaut: {default_token}")
 
+def getCategoriesDict(pwg):
+    existingCategories = {}
+    res = pwg.piwigo_get_categories()
+    if res and ("stat" in res) and (res["stat"] == "ok") and (
+            "result" in res):
+        for cat in res["result"]:
+            label = cat[
+                "name"].strip().lower()  # strip ' ' de début et de fin, et minuscules pour variations écriture noms propres
+            existingCategories[label] = cat
+            if "sub_categories" in cat:
+                for subcat in cat["sub_categories"]:
+                    label = subcat[
+                        "name"].strip().lower()  # strip ' ' de début et de fin, et minuscules pour variations écriture noms propres
+                    existingCategories[label] = subcat
+    return existingCategories
 
 def buildPage(qid, label, uri, task_id):
     """
@@ -90,25 +108,51 @@ def buildPage(qid, label, uri, task_id):
     """
     try:
         print(f"\n🔨 Début buildPage pour task_id: {task_id}")
+        pwg = CPiwigoManager()
 
         # Mise à jour du statut
         tasks[task_id]['status'] = 'processing'
         tasks[task_id]['progress'] = 10
         print(f"📊 Progress: 10% - task_id: {task_id}")
 
-        # Simulation d'un traitement long
-        time.sleep(2)
+        # trouver ou créer la galerie correspondante
+        existingCategories = getCategoriesDict(pwg)
+        galeryName = f"""Galerie {label}"""
+        if "galeries d'artistes / "+galeryName.strip().lower() in existingCategories:
+            catdesc = existingCategories["galeries d'artistes / "+galeryName.strip().lower()]
+            catid = catdesc["id"]
+            print("----------> ", galeryName, catid)
+        else:
+            print(f"""Création de la catégorie {galeryName}""")
+            rep = pwg.piwigo_create_category(galeryName, CategoryType.CREATORS)
+            if rep and (rep.status_code==200):
+                newcat = rep.json()
+                catid = newcat["result"]["id"] if "result" in newcat else None
+
         tasks[task_id]['progress'] = 50
         print(f"📊 Progress: 50% - task_id: {task_id}")
 
+        to_process = f"""
+                {{
+                    "categoryName": "{label}",
+                    "qid": "{qid}",
+                    "piwigoCategory": "{catid}",
+                    "listimagespath": "D:/wamp64/www/givingsense.eu/datamusee/scrutart/src/generationWordpress/data/fr/{catid}/listeImages_{qid}_{label.replace(" ", "").replace("-", "")}.json"
+                }}
+        """
+        # Simulation d'un traitement long
+        tasks[task_id]['progress'] = 80
+
         # Exemple de logique - remplacez par votre propre implémentation
-        page_content = f"""
+        page_content = to_process + f"""
+
+########################
 # Page générée pour {label}
 
 **Identifiant Wikidata :** {qid}
 **URI :** {uri}
 **Date de génération :** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-
+**Catégorie trouvée ou créée pour l'artiste :** {catid}
 ## Informations sur l'entité
 
 Cette page a été générée automatiquement pour l'entité Wikidata {qid}.
@@ -170,10 +214,27 @@ def test():
     <h1>Test de session</h1>
     <p>Session: {dict(session)}</p>
     <p>'user' dans session: {'user' in session}</p>
-    <p><a href="/force-logout">Forcer déconnexion</a></p>
+    <p><a href="/force_logout">Forcer déconnexion</a></p>
     <p><a href="/login">Aller vers login</a></p>
     <p><a href="/">Retour accueil</a></p>
     """
+
+@app.route('/logout')
+def logout():
+    print(f"\n🚪 DÉCONNEXION")
+    print(f"Utilisateur avant déconnexion: {session.get('user', {}).get('name', 'N/A')}")
+
+    # Méthode 1 : Supprimer les clés spécifiques
+    session.pop('user', None)
+    session.pop('oauth_state', None)
+
+    # Méthode 2 (plus radical) : Tout vider
+    # session.clear()
+
+    print(f"Session après déconnexion: {dict(session)}")
+
+    flash('Déconnexion réussie !', 'info')
+    return redirect(url_for('login'))  # Rediriger vers login a
 
 def api_token_required(f):
     @wraps(f)
@@ -262,35 +323,85 @@ def build_image_list(page_content, qid, label, task_id):
     """
     Fonction qui génère une liste d'images basée sur le contenu de la page
     """
+    sparqlTemplate = """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:__QID__ } # QID du créateur
+          values ?classRel { wdt:P31 wdt:P106 } # type ou occupation
+          values ?class { wd:Q1028181 } # artiste peintre
+          values ?rel { wdt:P170 } # créateur
+          {
+            # récupération du label associé au QID
+            SELECT ?createur ?createurLabel 
+            WHERE {
+              values ?createur { wd:__QID__ }
+              SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    # peinture
+               ?rel ?createur;    # créé par le créateur indiqué par le QID
+               wdt:P18 ?image. # a une image
+           ?createur ?classRel ?class   # créateur est ou a pour occupation artiste peintre
+          {
+            SELECT ?uri ?uriLabel WHERE { # on récupère le label (titre)  associé à la peinture
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+              SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """
+
     try:
         tasks[task_id]['status'] = 'processing'
         tasks[task_id]['progress'] = 10
 
         time.sleep(1)  # Simulation
         tasks[task_id]['progress'] = 30
-
+        pattern = r"\{[\s\S]*?\}"
+        match = re.search(pattern, page_content)
+        creator = json.loads(match.group(0)) if match else {}
+        res = genereListeImages(creator, sparqlTemplate)
+        images_data = {}
+        images_data["sparql"] = res["sparql"]
+        images_data["images"] = []
+        for imdesc in res["liste"]:
+            images_data["images"].append(
+                {
+                    'uri': imdesc["uri"],
+                    'createur': imdesc["createur"],
+                    'createurLabel': imdesc["createurLabel"],
+                    'url': imdesc["image"],
+                    'image': imdesc["image"],
+                    'categories': imdesc["categories"],
+                    'titre_fr': imdesc["titre_fr"],
+                    'description': imdesc["titre_fr"],
+                    'source': 'Wikimedia Commons',
+                    'license': ""
+            }
+            )
         # Simulation d'une recherche d'images via l'API Wikidata
         # En réalité, vous feriez une vraie requête SPARQL ou API
-        images_data = {
-            'qid': qid,
-            'label': label,
-            'images': [
-                {
-                    'url': f'https://commons.wikimedia.org/wiki/File:Example_{qid}_1.jpg',
-                    'description': f'Portrait de {label}',
-                    'source': 'Wikimedia Commons',
-                    'license': 'CC BY-SA 4.0'
-                },
-                {
-                    'url': f'https://commons.wikimedia.org/wiki/File:Example_{qid}_2.jpg',
-                    'description': f'Œuvre de {label}',
-                    'source': 'Wikimedia Commons',
-                    'license': 'Public Domain'
-                }
-            ],
-            'total_found': 2,
-            'search_timestamp': datetime.now().isoformat()
-        }
+        #images_data = {
+        #    'qid': qid,
+        #    'label': label,
+        #    'images': [
+        #        {
+        #            'url': f'https://commons.wikimedia.org/wiki/File:Example_{qid}_1.jpg',
+        #            'description': f'Portrait de {label}',
+        #            'source': 'Wikimedia Commons',
+        #            'license': 'CC BY-SA 4.0'
+        #        },...
+        #    ],
+        #    'total_found': 2,
+        #    'search_timestamp': datetime.now().isoformat()
+        #}
+        images_data["qid"] = qid
+        images_data["label"] = label
+        images_data["total_found"] = len(res["liste"])
+        images_data["search_timestamp"] = datetime.now().isoformat()
 
         time.sleep(2)  # Simulation de traitement
         tasks[task_id]['progress'] = 80
@@ -610,12 +721,20 @@ def index():
 
     return render_template('index.html')
 
-@app.route('/force-logout')
+@app.route('/force_logout')
 def force_logout():
-    """Force la déconnexion et vide la session"""
+    """Force la déconnexion complète et vide toute la session"""
+    print(f"\n🚪 DÉCONNEXION FORCÉE")
+    print(f"Session avant: {dict(session)}")
+
+    # Vider complètement la session
     session.clear()
-    flash('Session vidée - vous êtes maintenant déconnecté', 'info')
-    return redirect(url_for('index'))
+
+    print(f"Session après: {dict(session)}")
+
+    flash('Vous avez été déconnecté', 'info')
+    return redirect(url_for('login'))
+    # return redirect(url_for('index'))
 
 @app.route('/debug/tasks')
 @login_required
