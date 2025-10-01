@@ -1,0 +1,204 @@
+<!-- /templates/images_result.html -->
+{% extends "base.html" %}
+
+{% block title %}Liste d'images générée{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="text-info mb-3 text-center">
+                    <i class="display-4">🖼️</i>
+                </div>
+                <h2 class="card-title text-center text-info">Liste d'images générée</h2>
+                
+                <div class="mt-4">
+                    <h5>Détails de la génération :</h5>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item">
+                            <strong>Entité :</strong> {{ result.label }}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>QID :</strong> <span class="qid-badge">{{ result.qid }}</span>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Images trouvées :</strong> 
+                            <span class="badge bg-info">{{ result.json_result.total_found }}</span>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Génération terminée :</strong> 
+                            {{ result.completed_at }}
+                        </li>
+                    </ul>
+
+                    <div class="row">
+                        <!-- Résultat texte -->
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">📄 Résultat texte</h5>
+                                </div>
+                                <div class="card-body">
+                                    <textarea class="form-control" 
+                                              rows="15" 
+                                              readonly 
+                                              id="textResult"
+                                              style="font-family: monospace; font-size: 0.85em;">{{ result.text_result }}</textarea>
+                                    <div class="mt-2">
+                                        <button class="btn btn-outline-secondary btn-sm" 
+                                                onclick="copyText()">
+                                            📋 Copier le texte
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Résultat JSON -->
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h5 class="mb-0">🔧 Résultat JSON</h5>
+                                    <a href="/api/images/{{ task_id }}/json?token={{ api_token if api_token else 'YOUR_TOKEN' }}" 
+                                       target="_blank" 
+                                       class="btn btn-outline-primary btn-sm">
+                                        🌐 API JSON
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <textarea class="form-control" 
+                                              rows="15" 
+                                              readonly 
+                                              id="jsonResult"
+                                              style="font-family: monospace; font-size: 0.85em;">{{ result.json_result | tojson(indent=2) }}</textarea>
+                                    <div class="mt-2">
+                                        <button class="btn btn-outline-secondary btn-sm" 
+                                                onclick="copyJson()">
+                                            📋 Copier le JSON
+                                        </button>
+                                        <button class="btn btn-outline-info btn-sm" 
+                                                onclick="formatJson()">
+                                            ✨ Reformater
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aperçu des images -->
+                    <div class="mt-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">👁️ Aperçu des images trouvées</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    {% for image in result.json_result.images %}
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="card-title">{{ image.description }}</h6>
+                                                <p class="card-text">
+                                                    <small class="text-muted">
+                                                        <strong>Source :</strong> {{ image.source }}<br>
+                                                        <strong>Licence :</strong> {{ image.license }}
+                                                    </small>
+                                                </p>
+                                                <a href="{{ image.url }}" 
+                                                   target="_blank" 
+                                                   class="btn btn-outline-primary btn-sm">
+                                                    🔗 Voir l'image
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 text-center">
+                    <a href="{{ url_for('index') }}" class="btn btn-primary">
+                        🔍 Nouvelle recherche
+                    </a>
+                    <button class="btn btn-success" onclick="downloadResults()">
+                        💾 Télécharger les résultats
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function copyText() {
+    const textarea = document.getElementById('textResult');
+    textarea.select();
+    navigator.clipboard.writeText(textarea.value);
+    showCopyFeedback(event.target);
+}
+
+function copyJson() {
+    const textarea = document.getElementById('jsonResult');
+    textarea.select();
+    navigator.clipboard.writeText(textarea.value);
+    showCopyFeedback(event.target);
+}
+
+function showCopyFeedback(button) {
+    const originalText = button.innerHTML;
+    button.innerHTML = '✅ Copié !';
+    button.classList.add('btn-success');
+    button.classList.remove('btn-outline-secondary');
+    
+    setTimeout(() => {
+        button.innerHTML = originalText;
+        button.classList.remove('btn-success');
+        button.classList.add('btn-outline-secondary');
+    }, 2000);
+}
+
+function formatJson() {
+    const textarea = document.getElementById('jsonResult');
+    try {
+        const parsed = JSON.parse(textarea.value);
+        textarea.value = JSON.stringify(parsed, null, 2);
+    } catch (e) {
+        alert('Erreur lors du formatage JSON');
+    }
+}
+
+function downloadResults() {
+    const textResult = document.getElementById('textResult').value;
+    const jsonResult = document.getElementById('jsonResult').value;
+    
+    const results = {
+        text: textResult,
+        json: JSON.parse(jsonResult),
+        metadata: {
+            qid: '{{ result.qid }}',
+            label: '{{ result.label }}',
+            generated_at: '{{ result.completed_at }}',
+            task_id: '{{ task_id }}'
+        }
+    };
+    
+    const blob = new Blob([JSON.stringify(results, null, 2)], {
+        type: 'application/json'
+    });
+    
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `images_{{ result.qid }}_{{ task_id }}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+</script>
+{% endblock %}

@@ -100,3 +100,74 @@
 [2025-09-30 20:45:31] INFO - werkzeug - 127.0.0.1 - - [30/Sep/2025 20:45:31] "GET /api/task/images_Q347139_1759257911 HTTP/1.1" 200 -
 [2025-09-30 20:45:32] INFO - werkzeug - 127.0.0.1 - - [30/Sep/2025 20:45:32] "GET /api/task/images_Q347139_1759257911 HTTP/1.1" 200 -
 [2025-09-30 20:45:34] INFO - werkzeug - 127.0.0.1 - - [30/Sep/2025 20:45:34] "GET /images-result/images_Q347139_1759257911 HTTP/1.1" 200 -
+[2025-10-01 19:08:35] INFO - CPiwigoManager - Tentative de connexion à Piwigo...
+[2025-10-01 19:08:35] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:35] "POST /traiterUri HTTP/1.1" 200 -
+[2025-10-01 19:08:35] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:35] "GET /api/task/Q347139_1759338515 HTTP/1.1" 200 -
+[2025-10-01 19:08:35] INFO - CPiwigoManager - Connexion à Piwigo réussie
+[2025-10-01 19:08:35] INFO - CPiwigoManager - Session Piwigo ouverte, token obtenu: 64909d003b...
+[2025-10-01 19:08:36] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:36] "GET /api/task/Q347139_1759338515 HTTP/1.1" 200 -
+[2025-10-01 19:08:36] INFO - CPiwigoManager - Liste des catégories récupérée avec succès
+[2025-10-01 19:08:37] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:37] "GET /api/task/Q347139_1759338515 HTTP/1.1" 200 -
+[2025-10-01 19:08:38] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:38] "GET /api/task/Q347139_1759338515 HTTP/1.1" 200 -
+[2025-10-01 19:08:39] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:39] "GET /api/task/Q347139_1759338515 HTTP/1.1" 200 -
+[2025-10-01 19:08:41] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:41] "GET /result/Q347139_1759338515 HTTP/1.1" 200 -
+[2025-10-01 19:08:45] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:45] "POST /build-images HTTP/1.1" 200 -
+[2025-10-01 19:08:45] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:45] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:46] INFO - WikimediaAccess - Instance WikimediaAccess créée - ID: 88d9fa49
+[2025-10-01 19:08:46] INFO - WikimediaAccess - Début opération: WikimediaAccess.__init__ (ID: f5c1d3c6)
+[2025-10-01 19:08:46] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:46] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:46] INFO - WikimediaAccess - Scheduler initialisé: 7091343372838473903
+[2025-10-01 19:08:46] INFO - WikimediaAccess - WikimediaAccess initialisé pour QID: Q347139
+[2025-10-01 19:08:46] INFO - WikimediaAccess - Opération réussie: WikimediaAccess.__init__ (ID: f5c1d3c6, durée: 0.14s)
+[2025-10-01 19:08:46] INFO - WikimediaAccess - Début opération: sparql_query (ID: 26cff740)
+[2025-10-01 19:08:47] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:47] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:48] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:48] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:49] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:49] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:50] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:50] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:51] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:51] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:52] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:52] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:53] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:53] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:54] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:54] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:55] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:55] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:56] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:56] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:57] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:57] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:58] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:58] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:59] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:08:59] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:08:59] INFO - WikimediaAccess - Requête SPARQL exécutée avec succès
+[2025-10-01 19:08:59] INFO - WikimediaAccess - Opération réussie: sparql_query (ID: 26cff740, durée: 13.26s)
+[2025-10-01 19:09:00] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:00] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:09:01] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:01] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:09:02] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:02] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:09:03] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:03] "GET /api/task/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:09:05] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:05] "GET /images-result/images_Q347139_1759338525 HTTP/1.1" 200 -
+[2025-10-01 19:09:26] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:26] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2025-10-01 19:09:26] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:26] "[32mGET /login HTTP/1.1[0m" 302 -
+[2025-10-01 19:09:30] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:30] "[32mGET /auth?state=edI2hx-Ex3iNEthIMfPvTS-Lvr1pxVIJoMxZX4w5aMg&code=4/0AVGzR1DevxeidRXvbPt43ZuvqQSzXyJ5lEfBerRwp4jYwD_mbvQg18ion-CuIX_fK9IGDw&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+[2025-10-01 19:09:30] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:30] "GET / HTTP/1.1" 200 -
+[2025-10-01 19:09:48] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:48] "POST /search HTTP/1.1" 200 -
+[2025-10-01 19:09:50] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:50] "POST /traiterUri HTTP/1.1" 200 -
+[2025-10-01 19:09:50] INFO - CPiwigoManager - Tentative de connexion à Piwigo...
+[2025-10-01 19:09:51] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:51] "GET /api/task/Q347139_1759338590 HTTP/1.1" 200 -
+[2025-10-01 19:09:51] INFO - CPiwigoManager - Connexion à Piwigo réussie
+[2025-10-01 19:09:51] INFO - CPiwigoManager - Session Piwigo ouverte, token obtenu: c23f1221ef...
+[2025-10-01 19:09:51] INFO - CPiwigoManager - Liste des catégories récupérée avec succès
+[2025-10-01 19:09:52] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:52] "GET /api/task/Q347139_1759338590 HTTP/1.1" 200 -
+[2025-10-01 19:09:53] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:53] "GET /api/task/Q347139_1759338590 HTTP/1.1" 200 -
+[2025-10-01 19:09:54] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:54] "GET /api/task/Q347139_1759338590 HTTP/1.1" 200 -
+[2025-10-01 19:09:55] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:55] "GET /result/Q347139_1759338590 HTTP/1.1" 200 -
+[2025-10-01 19:09:57] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:57] "POST /build-images HTTP/1.1" 200 -
+[2025-10-01 19:09:57] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:57] "GET /api/task/images_Q347139_1759338597 HTTP/1.1" 200 -
+[2025-10-01 19:09:58] INFO - WikimediaAccess - Instance WikimediaAccess créée - ID: fefcee57
+[2025-10-01 19:09:58] INFO - WikimediaAccess - Début opération: WikimediaAccess.__init__ (ID: b6fa9e39)
+[2025-10-01 19:09:58] INFO - WikimediaAccess - Scheduler initialisé: 7091343372838473903
+[2025-10-01 19:09:58] INFO - WikimediaAccess - WikimediaAccess initialisé pour QID: Q347139
+[2025-10-01 19:09:58] INFO - WikimediaAccess - Opération réussie: WikimediaAccess.__init__ (ID: b6fa9e39, durée: 0.04s)
+[2025-10-01 19:09:58] INFO - WikimediaAccess - Début opération: sparql_query (ID: 3a2d0a4d)
+[2025-10-01 19:09:58] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:58] "GET /api/task/images_Q347139_1759338597 HTTP/1.1" 200 -
+[2025-10-01 19:09:58] INFO - WikimediaAccess - Requête SPARQL exécutée avec succès
+[2025-10-01 19:09:58] INFO - WikimediaAccess - Opération réussie: sparql_query (ID: 3a2d0a4d, durée: 0.08s)
+[2025-10-01 19:09:59] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:09:59] "GET /api/task/images_Q347139_1759338597 HTTP/1.1" 200 -
+[2025-10-01 19:10:00] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:10:00] "GET /api/task/images_Q347139_1759338597 HTTP/1.1" 200 -
+[2025-10-01 19:10:01] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:10:01] "GET /api/task/images_Q347139_1759338597 HTTP/1.1" 200 -
+[2025-10-01 19:10:02] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:10:02] "GET /api/task/images_Q347139_1759338597 HTTP/1.1" 200 -
+[2025-10-01 19:10:04] INFO - werkzeug - 127.0.0.1 - - [01/Oct/2025 19:10:04] "GET /images-result/images_Q347139_1759338597 HTTP/1.1" 200 -

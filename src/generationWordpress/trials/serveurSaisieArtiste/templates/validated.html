@@ -1,0 +1,42 @@
+<!-- templates/validated.html -->
+{% extends "base.html" %}
+
+{% block title %}Entité validée{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <div class="text-success mb-3">
+                    <i class="display-4">✅</i>
+                </div>
+                <h2 class="card-title text-success">Entité validée !</h2>
+
+                <div class="mt-4">
+                    <p><strong>Label :</strong> {{ label }}</p>
+                    <p><strong>QID :</strong> <span class="qid-badge">{{ qid }}</span></p>
+                    <p><strong>URI :</strong>
+                        <a href="{{ uri }}" target="_blank">{{ uri }}</a>
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <a href="{{ url_for('index') }}" class="btn btn-primary me-2">
+                        🔍 Nouvelle recherche
+                    </a>
+                    <form method="POST" action="{{ url_for('traiter_uri') }}" class="d-inline">
+                        <input type="hidden" name="qid" value="{{ qid }}">
+                        <input type="hidden" name="label" value="{{ label }}">
+                        <input type="hidden" name="uri" value="{{ uri }}">
+                        <button type="submit" class="btn btn-outline-primary">
+                            ⚙️ Traiter cette URI
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
