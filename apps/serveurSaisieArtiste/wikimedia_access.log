@@ -1,0 +1,320 @@
+2025-09-30 12:32:13,150 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: d1ff3153 | Extra: {}
+2025-09-30 12:32:13,152 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 82bb9753) | Extra: {}
+2025-09-30 12:32:15,236 | WikimediaAccess | WARNING | wrapper:132 | _create_scheduler échec (tentative 1), retry dans 1.0s: Erreur réseau lors de la création du scheduler: HTTPConnectionPool(host='127.0.0.1', port=6000): Max retries exceeded with url: /api/initialize (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000012B777E7690>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')) | Extra: {}
+2025-09-30 12:32:18,296 | WikimediaAccess | WARNING | wrapper:132 | _create_scheduler échec (tentative 2), retry dans 1.5s: Erreur réseau lors de la création du scheduler: HTTPConnectionPool(host='127.0.0.1', port=6000): Max retries exceeded with url: /api/initialize (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000012B7760A3D0>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')) | Extra: {}
+2025-09-30 12:32:21,833 | WikimediaAccess | WARNING | wrapper:132 | _create_scheduler échec (tentative 3), retry dans 2.2s: Erreur réseau lors de la création du scheduler: HTTPConnectionPool(host='127.0.0.1', port=6000): Max retries exceeded with url: /api/initialize (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000012B775B6210>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')) | Extra: {}
+2025-09-30 12:32:26,138 | WikimediaAccess | ERROR | wrapper:128 | _create_scheduler échec après 4 tentatives: Erreur réseau lors de la création du scheduler: HTTPConnectionPool(host='127.0.0.1', port=6000): Max retries exceeded with url: /api/initialize (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000012B775E4C10>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')) | Extra: {}
+2025-09-30 12:32:26,141 | WikimediaAccess | ERROR | api_operation_context:160 | Opération échouée: WikimediaAccess.__init__ (ID: 82bb9753, durée: 12.99s): Impossible d'initialiser le scheduler: Erreur réseau lors de la création du scheduler: HTTPConnectionPool(host='127.0.0.1', port=6000): Max retries exceeded with url: /api/initialize (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000012B775E4C10>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')) | Extra: {}
+2025-09-30 12:32:26,145 | WikimediaAccess | ERROR | __init__:258 | Erreur lors de l'initialisation: Impossible d'initialiser le scheduler: Erreur réseau lors de la création du scheduler: HTTPConnectionPool(host='127.0.0.1', port=6000): Max retries exceeded with url: /api/initialize (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000012B775E4C10>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')) | Extra: {}
+2025-09-30 12:34:39,729 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 6293eaa0 | Extra: {}
+2025-09-30 12:34:39,729 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 6293eaa0 | Extra: {}
+2025-09-30 12:34:39,733 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 8098d3e9) | Extra: {}
+2025-09-30 12:34:39,733 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 8098d3e9) | Extra: {}
+2025-09-30 12:34:39,818 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:34:39,818 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:34:39,820 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:34:39,820 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:34:39,822 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 8098d3e9, durée: 0.09s) | Extra: {}
+2025-09-30 12:34:39,822 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 8098d3e9, durée: 0.09s) | Extra: {}
+2025-09-30 12:34:42,365 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: de5110e9) | Extra: {}
+2025-09-30 12:34:42,365 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: de5110e9) | Extra: {}
+2025-09-30 12:34:57,861 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:34:57,861 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:34:57,863 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: de5110e9, durée: 15.50s) | Extra: {}
+2025-09-30 12:34:57,863 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: de5110e9, durée: 15.50s) | Extra: {}
+2025-09-30 12:36:24,365 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 2dfd7719 | Extra: {}
+2025-09-30 12:36:24,365 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 2dfd7719 | Extra: {}
+2025-09-30 12:36:24,365 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 2dfd7719 | Extra: {}
+2025-09-30 12:36:24,368 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 7c00fbfe) | Extra: {}
+2025-09-30 12:36:24,368 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 7c00fbfe) | Extra: {}
+2025-09-30 12:36:24,368 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 7c00fbfe) | Extra: {}
+2025-09-30 12:36:24,452 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:36:24,452 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:36:24,452 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:36:24,455 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:36:24,455 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:36:24,455 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:36:24,458 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 7c00fbfe, durée: 0.09s) | Extra: {}
+2025-09-30 12:36:24,458 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 7c00fbfe, durée: 0.09s) | Extra: {}
+2025-09-30 12:36:24,458 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 7c00fbfe, durée: 0.09s) | Extra: {}
+2025-09-30 12:36:24,461 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 05e9d238) | Extra: {}
+2025-09-30 12:36:24,461 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 05e9d238) | Extra: {}
+2025-09-30 12:36:24,461 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 05e9d238) | Extra: {}
+2025-09-30 12:36:24,513 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:36:24,513 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:36:24,513 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:36:24,521 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 05e9d238, durée: 0.06s) | Extra: {}
+2025-09-30 12:36:24,521 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 05e9d238, durée: 0.06s) | Extra: {}
+2025-09-30 12:36:24,521 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 05e9d238, durée: 0.06s) | Extra: {}
+2025-09-30 12:37:13,807 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 24cbd0e1 | Extra: {}
+2025-09-30 12:37:13,807 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 24cbd0e1 | Extra: {}
+2025-09-30 12:37:13,807 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 24cbd0e1 | Extra: {}
+2025-09-30 12:37:13,807 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 24cbd0e1 | Extra: {}
+2025-09-30 12:37:13,814 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 6f1a123a) | Extra: {}
+2025-09-30 12:37:13,814 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 6f1a123a) | Extra: {}
+2025-09-30 12:37:13,814 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 6f1a123a) | Extra: {}
+2025-09-30 12:37:13,814 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 6f1a123a) | Extra: {}
+2025-09-30 12:37:13,862 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:37:13,862 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:37:13,862 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:37:13,862 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:37:13,865 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:37:13,865 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:37:13,865 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:37:13,865 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:37:13,868 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 6f1a123a, durée: 0.06s) | Extra: {}
+2025-09-30 12:37:13,868 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 6f1a123a, durée: 0.06s) | Extra: {}
+2025-09-30 12:37:13,868 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 6f1a123a, durée: 0.06s) | Extra: {}
+2025-09-30 12:37:13,868 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 6f1a123a, durée: 0.06s) | Extra: {}
+2025-09-30 12:37:14,684 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 2d62d95b) | Extra: {}
+2025-09-30 12:37:14,684 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 2d62d95b) | Extra: {}
+2025-09-30 12:37:14,684 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 2d62d95b) | Extra: {}
+2025-09-30 12:37:14,684 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 2d62d95b) | Extra: {}
+2025-09-30 12:37:14,752 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:37:14,752 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:37:14,752 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:37:14,752 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:37:14,764 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 2d62d95b, durée: 0.08s) | Extra: {}
+2025-09-30 12:37:14,764 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 2d62d95b, durée: 0.08s) | Extra: {}
+2025-09-30 12:37:14,764 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 2d62d95b, durée: 0.08s) | Extra: {}
+2025-09-30 12:37:14,764 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 2d62d95b, durée: 0.08s) | Extra: {}
+2025-09-30 12:38:54,232 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 7434ca03 | Extra: {}
+2025-09-30 12:38:54,233 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: b1d0ba97) | Extra: {}
+2025-09-30 12:38:54,305 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:38:54,306 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:38:54,307 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: b1d0ba97, durée: 0.07s) | Extra: {}
+2025-09-30 12:38:54,309 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 0633731f) | Extra: {}
+2025-09-30 12:38:54,367 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:38:54,369 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 0633731f, durée: 0.06s) | Extra: {}
+2025-09-30 12:41:14,966 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 72f7180b | Extra: {}
+2025-09-30 12:41:14,969 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 22a0095a) | Extra: {}
+2025-09-30 12:41:15,083 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:41:15,084 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:41:15,085 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 22a0095a, durée: 0.12s) | Extra: {}
+2025-09-30 12:41:15,086 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: eef9a2e0) | Extra: {}
+2025-09-30 12:41:15,167 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:41:15,168 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: eef9a2e0, durée: 0.08s) | Extra: {}
+2025-09-30 12:46:30,801 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 159dda64 | Extra: {}
+2025-09-30 12:46:30,801 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 159dda64 | Extra: {}
+2025-09-30 12:46:30,807 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: dcc38e3e) | Extra: {}
+2025-09-30 12:46:30,807 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: dcc38e3e) | Extra: {}
+2025-09-30 12:46:30,892 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:46:30,892 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:46:30,894 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:46:30,894 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:46:30,896 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: dcc38e3e, durée: 0.09s) | Extra: {}
+2025-09-30 12:46:30,896 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: dcc38e3e, durée: 0.09s) | Extra: {}
+2025-09-30 12:46:30,898 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: cf5c163b) | Extra: {}
+2025-09-30 12:46:30,898 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: cf5c163b) | Extra: {}
+2025-09-30 12:46:45,959 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:46:45,959 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:46:45,964 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: cf5c163b, durée: 15.07s) | Extra: {}
+2025-09-30 12:46:45,964 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: cf5c163b, durée: 15.07s) | Extra: {}
+2025-09-30 12:48:47,214 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 8558c027 | Extra: {}
+2025-09-30 12:48:47,218 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 22d82e2a) | Extra: {}
+2025-09-30 12:48:47,318 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:48:47,321 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:48:47,325 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 22d82e2a, durée: 0.11s) | Extra: {}
+2025-09-30 12:48:47,327 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 96f2f945) | Extra: {}
+2025-09-30 12:48:47,406 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:48:47,407 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 96f2f945, durée: 0.08s) | Extra: {}
+2025-09-30 12:53:09,238 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: bacd20e1 | Extra: {}
+2025-09-30 12:53:09,247 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 1d61bedd) | Extra: {}
+2025-09-30 12:53:09,339 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:53:09,340 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:53:09,341 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 1d61bedd, durée: 0.09s) | Extra: {}
+2025-09-30 12:53:09,346 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 0aa41ab4) | Extra: {}
+2025-09-30 12:53:09,425 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:53:09,427 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 0aa41ab4, durée: 0.08s) | Extra: {}
+2025-09-30 12:54:39,554 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 0a4a7260 | Extra: {}
+2025-09-30 12:54:39,557 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: a076de7d) | Extra: {}
+2025-09-30 12:54:39,623 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:54:39,625 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:54:39,625 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: a076de7d, durée: 0.07s) | Extra: {}
+2025-09-30 12:54:39,626 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: d4488013) | Extra: {}
+2025-09-30 12:54:39,685 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:54:39,687 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: d4488013, durée: 0.06s) | Extra: {}
+2025-09-30 12:58:45,705 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 69098128 | Extra: {}
+2025-09-30 12:58:45,709 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: d2528d2b) | Extra: {}
+2025-09-30 12:58:45,761 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 12:58:45,764 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 12:58:45,765 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: d2528d2b, durée: 0.06s) | Extra: {}
+2025-09-30 12:58:45,767 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 8c1e81c8) | Extra: {}
+2025-09-30 12:58:59,427 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 12:58:59,428 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 8c1e81c8, durée: 13.66s) | Extra: {}
+2025-09-30 13:01:45,536 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: b70c55cc | Extra: {}
+2025-09-30 13:01:45,536 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: b70c55cc | Extra: {}
+2025-09-30 13:01:45,544 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: bf52d1b3) | Extra: {}
+2025-09-30 13:01:45,544 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: bf52d1b3) | Extra: {}
+2025-09-30 13:01:45,593 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 13:01:45,593 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 13:01:45,596 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 13:01:45,596 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 13:01:45,597 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: bf52d1b3, durée: 0.05s) | Extra: {}
+2025-09-30 13:01:45,597 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: bf52d1b3, durée: 0.05s) | Extra: {}
+2025-09-30 13:01:45,598 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 12437933) | Extra: {}
+2025-09-30 13:01:45,598 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 12437933) | Extra: {}
+2025-09-30 13:01:45,662 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 13:01:45,662 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 13:01:45,665 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 12437933, durée: 0.07s) | Extra: {}
+2025-09-30 13:01:45,665 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 12437933, durée: 0.07s) | Extra: {}
+2025-09-30 13:03:52,084 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 4d4cc665 | Extra: {}
+2025-09-30 13:03:52,084 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 754f4652) | Extra: {}
+2025-09-30 13:03:52,188 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 13:03:52,189 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 13:03:52,190 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 754f4652, durée: 0.11s) | Extra: {}
+2025-09-30 13:03:52,194 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 4f15889d) | Extra: {}
+2025-09-30 13:03:52,273 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 13:03:52,275 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 4f15889d, durée: 0.08s) | Extra: {}
+2025-09-30 13:05:51,501 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: a67f1a37 | Extra: {}
+2025-09-30 13:05:51,504 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: cf3fadba) | Extra: {}
+2025-09-30 13:05:51,597 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 13:05:51,598 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 13:05:51,600 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: cf3fadba, durée: 0.10s) | Extra: {}
+2025-09-30 13:05:51,604 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 75c5fa9d) | Extra: {}
+2025-09-30 13:05:51,668 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 13:05:51,669 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 75c5fa9d, durée: 0.06s) | Extra: {}
+2025-09-30 13:08:17,375 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: ea68731f | Extra: {}
+2025-09-30 13:08:17,379 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 17f4a926) | Extra: {}
+2025-09-30 13:08:17,503 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 13:08:17,506 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q347139 | Extra: {}
+2025-09-30 13:08:17,507 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 17f4a926, durée: 0.13s) | Extra: {}
+2025-09-30 13:08:17,508 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 70f3d694) | Extra: {}
+2025-09-30 13:08:18,092 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 13:08:18,094 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 70f3d694, durée: 0.59s) | Extra: {}
+2025-09-30 14:23:22,079 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 53c944b6 | Extra: {}
+2025-09-30 14:23:22,079 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 53c944b6 | Extra: {}
+2025-09-30 14:23:22,084 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 9fbba9ef) | Extra: {}
+2025-09-30 14:23:22,084 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 9fbba9ef) | Extra: {}
+2025-09-30 14:23:22,181 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 14:23:22,181 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 14:23:22,186 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q61064 | Extra: {}
+2025-09-30 14:23:22,186 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q61064 | Extra: {}
+2025-09-30 14:23:22,191 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 9fbba9ef, durée: 0.11s) | Extra: {}
+2025-09-30 14:23:22,191 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 9fbba9ef, durée: 0.11s) | Extra: {}
+2025-09-30 14:23:22,195 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 47af79dc) | Extra: {}
+2025-09-30 14:23:22,195 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 47af79dc) | Extra: {}
+2025-09-30 14:23:39,984 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 14:23:39,984 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 14:23:39,989 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 47af79dc, durée: 17.79s) | Extra: {}
+2025-09-30 14:23:39,989 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 47af79dc, durée: 17.79s) | Extra: {}
+2025-09-30 14:43:23,068 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: b79a0b4f | Extra: {}
+2025-09-30 14:43:23,073 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: e39a75ce) | Extra: {}
+2025-09-30 14:43:23,186 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 14:43:23,190 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q61064 | Extra: {}
+2025-09-30 14:43:23,192 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: e39a75ce, durée: 0.12s) | Extra: {}
+2025-09-30 14:43:23,198 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: baddc88b) | Extra: {}
+2025-09-30 14:43:37,282 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 14:43:37,292 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: baddc88b, durée: 14.09s) | Extra: {}
+2025-09-30 14:51:55,103 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 5f51b9be | Extra: {}
+2025-09-30 14:51:55,103 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 5f51b9be | Extra: {}
+2025-09-30 14:51:55,112 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: de1da12a) | Extra: {}
+2025-09-30 14:51:55,112 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: de1da12a) | Extra: {}
+2025-09-30 14:51:55,219 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 14:51:55,219 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 14:51:55,222 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q61064 | Extra: {}
+2025-09-30 14:51:55,222 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q61064 | Extra: {}
+2025-09-30 14:51:55,224 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: de1da12a, durée: 0.11s) | Extra: {}
+2025-09-30 14:51:55,224 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: de1da12a, durée: 0.11s) | Extra: {}
+2025-09-30 14:51:55,226 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: a6668218) | Extra: {}
+2025-09-30 14:51:55,226 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: a6668218) | Extra: {}
+2025-09-30 14:51:55,336 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 14:51:55,336 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 14:51:55,340 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: a6668218, durée: 0.11s) | Extra: {}
+2025-09-30 14:51:55,340 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: a6668218, durée: 0.11s) | Extra: {}
+2025-09-30 14:58:12,627 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 42108375 | Extra: {}
+2025-09-30 14:58:12,627 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 42108375 | Extra: {}
+2025-09-30 14:58:12,627 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 42108375 | Extra: {}
+2025-09-30 14:58:12,639 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 75b2df90) | Extra: {}
+2025-09-30 14:58:12,639 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 75b2df90) | Extra: {}
+2025-09-30 14:58:12,639 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 75b2df90) | Extra: {}
+2025-09-30 14:58:12,698 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 14:58:12,698 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 14:58:12,698 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 14:58:12,702 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q203371 | Extra: {}
+2025-09-30 14:58:12,702 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q203371 | Extra: {}
+2025-09-30 14:58:12,702 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q203371 | Extra: {}
+2025-09-30 14:58:12,704 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 75b2df90, durée: 0.07s) | Extra: {}
+2025-09-30 14:58:12,704 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 75b2df90, durée: 0.07s) | Extra: {}
+2025-09-30 14:58:12,704 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 75b2df90, durée: 0.07s) | Extra: {}
+2025-09-30 14:58:12,706 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 88ae8267) | Extra: {}
+2025-09-30 14:58:12,706 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 88ae8267) | Extra: {}
+2025-09-30 14:58:12,706 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 88ae8267) | Extra: {}
+2025-09-30 14:58:24,602 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 14:58:24,602 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 14:58:24,602 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 14:58:24,605 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 88ae8267, durée: 11.90s) | Extra: {}
+2025-09-30 14:58:24,605 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 88ae8267, durée: 11.90s) | Extra: {}
+2025-09-30 14:58:24,605 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 88ae8267, durée: 11.90s) | Extra: {}
+2025-09-30 15:03:31,873 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: a25734f6 | Extra: {}
+2025-09-30 15:03:31,873 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: a25734f6 | Extra: {}
+2025-09-30 15:03:31,873 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: a25734f6 | Extra: {}
+2025-09-30 15:03:31,873 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: a25734f6 | Extra: {}
+2025-09-30 15:03:31,881 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 51071af5) | Extra: {}
+2025-09-30 15:03:31,881 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 51071af5) | Extra: {}
+2025-09-30 15:03:31,881 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 51071af5) | Extra: {}
+2025-09-30 15:03:31,881 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 51071af5) | Extra: {}
+2025-09-30 15:03:31,986 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 15:03:31,986 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 15:03:31,986 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 15:03:31,986 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 15:03:31,989 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q155626 | Extra: {}
+2025-09-30 15:03:31,989 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q155626 | Extra: {}
+2025-09-30 15:03:31,989 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q155626 | Extra: {}
+2025-09-30 15:03:31,989 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q155626 | Extra: {}
+2025-09-30 15:03:31,995 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 51071af5, durée: 0.11s) | Extra: {}
+2025-09-30 15:03:31,995 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 51071af5, durée: 0.11s) | Extra: {}
+2025-09-30 15:03:31,995 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 51071af5, durée: 0.11s) | Extra: {}
+2025-09-30 15:03:31,995 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 51071af5, durée: 0.11s) | Extra: {}
+2025-09-30 15:03:31,998 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 853e0340) | Extra: {}
+2025-09-30 15:03:31,998 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 853e0340) | Extra: {}
+2025-09-30 15:03:31,998 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 853e0340) | Extra: {}
+2025-09-30 15:03:31,998 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: 853e0340) | Extra: {}
+2025-09-30 15:03:52,749 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 15:03:52,749 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 15:03:52,749 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 15:03:52,749 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 15:03:52,752 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 853e0340, durée: 20.75s) | Extra: {}
+2025-09-30 15:03:52,752 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 853e0340, durée: 20.75s) | Extra: {}
+2025-09-30 15:03:52,752 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 853e0340, durée: 20.75s) | Extra: {}
+2025-09-30 15:03:52,752 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: 853e0340, durée: 20.75s) | Extra: {}
+2025-09-30 15:40:20,481 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 6dc826b2 | Extra: {}
+2025-09-30 15:40:20,481 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 6dc826b2 | Extra: {}
+2025-09-30 15:40:20,481 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 6dc826b2 | Extra: {}
+2025-09-30 15:40:20,481 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 6dc826b2 | Extra: {}
+2025-09-30 15:40:20,481 | WikimediaAccess | INFO | __init__:242 | Instance WikimediaAccess créée - ID: 6dc826b2 | Extra: {}
+2025-09-30 15:40:20,489 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 86101455) | Extra: {}
+2025-09-30 15:40:20,489 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 86101455) | Extra: {}
+2025-09-30 15:40:20,489 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 86101455) | Extra: {}
+2025-09-30 15:40:20,489 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 86101455) | Extra: {}
+2025-09-30 15:40:20,489 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: WikimediaAccess.__init__ (ID: 86101455) | Extra: {}
+2025-09-30 15:40:20,580 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 15:40:20,580 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 15:40:20,580 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 15:40:20,580 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 15:40:20,580 | WikimediaAccess | INFO | _initialize_scheduler:808 | Scheduler initialisé: 7091343372838473903 | Extra: {}
+2025-09-30 15:40:20,586 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q1192814 | Extra: {}
+2025-09-30 15:40:20,586 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q1192814 | Extra: {}
+2025-09-30 15:40:20,586 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q1192814 | Extra: {}
+2025-09-30 15:40:20,586 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q1192814 | Extra: {}
+2025-09-30 15:40:20,586 | WikimediaAccess | INFO | __init__:255 | WikimediaAccess initialisé pour QID: Q1192814 | Extra: {}
+2025-09-30 15:40:20,589 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 86101455, durée: 0.10s) | Extra: {}
+2025-09-30 15:40:20,589 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 86101455, durée: 0.10s) | Extra: {}
+2025-09-30 15:40:20,589 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 86101455, durée: 0.10s) | Extra: {}
+2025-09-30 15:40:20,589 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 86101455, durée: 0.10s) | Extra: {}
+2025-09-30 15:40:20,589 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: WikimediaAccess.__init__ (ID: 86101455, durée: 0.10s) | Extra: {}
+2025-09-30 15:40:20,593 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: ad1e2729) | Extra: {}
+2025-09-30 15:40:20,593 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: ad1e2729) | Extra: {}
+2025-09-30 15:40:20,593 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: ad1e2729) | Extra: {}
+2025-09-30 15:40:20,593 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: ad1e2729) | Extra: {}
+2025-09-30 15:40:20,593 | WikimediaAccess | INFO | api_operation_context:150 | Début opération: sparql_query (ID: ad1e2729) | Extra: {}
+2025-09-30 15:40:33,168 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 15:40:33,168 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 15:40:33,168 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 15:40:33,168 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 15:40:33,168 | WikimediaAccess | INFO | sparqlQuery:1012 | Requête SPARQL exécutée avec succès | Extra: {}
+2025-09-30 15:40:33,174 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: ad1e2729, durée: 12.58s) | Extra: {}
+2025-09-30 15:40:33,174 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: ad1e2729, durée: 12.58s) | Extra: {}
+2025-09-30 15:40:33,174 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: ad1e2729, durée: 12.58s) | Extra: {}
+2025-09-30 15:40:33,174 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: ad1e2729, durée: 12.58s) | Extra: {}
+2025-09-30 15:40:33,174 | WikimediaAccess | INFO | api_operation_context:156 | Opération réussie: sparql_query (ID: ad1e2729, durée: 12.58s) | Extra: {}
