@@ -1,7 +1,7 @@
 import json
 import argparse
 from memorize import Memorize
-from src.generationWordpress.WikimediaAccess import WikimediaAccess
+from src.generationWordpress.tools.WikimediaManager.WikimediaManagerPackage.WikimediaAccess import WikimediaAccess
 from src.generationWordpress.entitiesList import entitiesList
 from src.generationWordpress.tools.scrutartJsonToTtl import ScrutartJsonToTtl
 # from piwigoCategoriesCreations import createCategoryInPiwigo
@@ -113,7 +113,8 @@ if __name__ == "__main__":
                           types]  # ligne à enlever si je ne veux pas tout traiter et tenir compte du filtre
 
     filterEntities = [
-        "Q15997394", # Paule Gobillard
+        "Q347139", # Jean-Baptiste Greuze
+        # "Q15997394", # Paule Gobillard
         #"Q237911"  # Louise Abbéma
     ]
     entityClassTargets = [ "CREATORS", "GENRES", "MOVEMENTS"]

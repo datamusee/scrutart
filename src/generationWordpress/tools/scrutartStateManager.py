@@ -1,4 +1,5 @@
 import SPARQLWrapper as sw
+from dataclasses import dataclass
 
 @dataclass
 class Artist:

@@ -11,7 +11,7 @@ import datetime
 from urllib.parse import quote
 import os
 
-def getUrlImage(sparqlres, qid):
+def get_url_image(sparqlres, qid):
     url = None
     if sparqlres and hasattr(sparqlres, "bindings"):
         if len(sparqlres.bindings):
@@ -22,12 +22,12 @@ def getUrlImage(sparqlres, qid):
                     break
     return url
 
-def getWikidataBarGraph(sparqlres, qid):
+def get_wikidata_bar_graph(sparqlres, qid):
     url = "https://query.wikidata.org/embed.html#"
     url = url+quote(sparqlres)
     return url
 
-def getWDQSQuery(sparql):
+def get_wdqs_query(sparql):
     url = "https://query.wikidata.org/index.html#"
     url = url+quote(sparql)
     return url
@@ -43,7 +43,7 @@ def sparqlQuery(endpoint, query, format="json"):
         logging.debug(e)
 
 
-def getName(sparqlres, qid):
+def get_name(sparqlres, qid):
     name = "???"
     if sparqlres and hasattr(sparqlres, "bindings"):
         if len(sparqlres.bindings):
@@ -51,7 +51,7 @@ def getName(sparqlres, qid):
             name = list[0]["qidLabel"].value
     return name
 
-def getLink(sparqlres, qid):
+def get_link(sparqlres, qid):
     link = """<a href="">???</a>"""
     if sparqlres and hasattr(sparqlres, "bindings"):
         if len(sparqlres.bindings):
@@ -61,10 +61,10 @@ def getLink(sparqlres, qid):
             link = """<a href="{uri}">{name}</a>""".format(uri=uri, name=name)
     return link
 
-def getCurrentDate(sparqlres, qid):
+def get_current_date(sparqlres, qid):
     return str(datetime.date.today())
 
-def getInt(sparqlres, qid):
+def get_int(sparqlres, qid):
     value = 0
     if sparqlres and hasattr(sparqlres, "bindings"):
         if len(sparqlres.bindings):
@@ -73,7 +73,7 @@ def getInt(sparqlres, qid):
     return int(value)
 
 
-def getLen(sparqlres, qid):
+def get_len(sparqlres, qid):
     value = 0
     if sparqlres and hasattr(sparqlres, "bindings"):
         if len(sparqlres.bindings):
@@ -81,7 +81,7 @@ def getLen(sparqlres, qid):
     return int(value)
 
 
-def getMainType(sparqlres, qid, lang="en"):
+def get_main_type(sparqlres, qid, lang="en"):
     value = ""
     if sparqlres and hasattr(sparqlres, "bindings"):
         if len(sparqlres.bindings):
@@ -95,7 +95,7 @@ def getMainType(sparqlres, qid, lang="en"):
     return value
 
 
-def getOtherTypes(sparqlres, qid, lang="en"):
+def get_other_types(sparqlres, qid, lang="en"):
     value = ""
     if sparqlres and hasattr(sparqlres, "bindings"):
         if len(sparqlres.bindings):
@@ -117,7 +117,7 @@ def getOtherTypes(sparqlres, qid, lang="en"):
     return value
 
 
-def getTable(sparqlres, qid, lang="en"):
+def get_table(sparqlres, qid, lang="en"):
     value = ""
     if sparqlres and hasattr(sparqlres, "bindings"):
         if len(sparqlres.bindings):
@@ -174,7 +174,7 @@ def getTable(sparqlres, qid, lang="en"):
         value = ""
     return value
 
-def getItemList(sparqlres, qid):
+def get_item_list(sparqlres, qid):
     value = ""
     if sparqlres and hasattr(sparqlres, "bindings"):
         if len(sparqlres.bindings):
@@ -187,12 +187,12 @@ def getItemList(sparqlres, qid):
                 # value += """      <a href="{uri}">{name}</a>\n""".format(name=name, uri=uri)
     return value
 
-def getItemListSansMinus(sparqlres, qid): # pas de - pour mermaid
-    value = getItemList(sparqlres, qid)
+def get_item_list_sans_minus(sparqlres, qid): # pas de - pour mermaid
+    value = get_item_list(sparqlres, qid)
     value = value.replace("-", " ")
     return value
 
-def getCountByLang(sparqlres, qid, lang):
+def get_count_by_lang(sparqlres, qid, lang):
     value = 0
     if sparqlres and hasattr(sparqlres, "bindings"):
         if len(sparqlres.bindings):
@@ -202,34 +202,34 @@ def getCountByLang(sparqlres, qid, lang):
                     value = elmt["c"].value
     return int(value)
 
-def getCountFr(sparqlres, qid):
-    value = getCountByLang(sparqlres, qid, "fr")
+def get_count_fr(sparqlres, qid):
+    value = get_count_by_lang(sparqlres, qid, "fr")
     return value
 
-def getCountEn(sparqlres, qid):
-    value = getCountByLang(sparqlres, qid, "en")
+def get_count_en(sparqlres, qid):
+    value = get_count_by_lang(sparqlres, qid, "en")
     return value
 
 
 # liste de requêtes sparql utiles pour construire une page
 sparqlList = {
     "__DATE__": {"sparql": None,
-                      "filtres": [{"filtre": getCurrentDate, "key": "__DATE__"}],
+                      "filtres": [{"filtre": get_current_date, "key": "__DATE__"}],
                       "urlquery": None},
     "__NOMCREATEUR__": {
         "sparql": """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }  
                     SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,fr". } }
                     """,
-        "filtres": [{"filtre": getName, "key": "__NOMCREATEUR__"}],
+        "filtres": [{"filtre": get_name, "key": "__NOMCREATEUR__"}],
         "urlquery": "__QUERYLABELEDLINK__"},
     "__LINKCREATEUR__": {
         "sparql": """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }  
                     SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,fr". } }
                     """,
-        "filtres": [{"filtre": getLink, "key": "__LINKCREATEUR__"}],
+        "filtres": [{"filtre": get_link, "key": "__LINKCREATEUR__"}],
         "urlquery": ""},
     "__NBOEUVRES__": {"sparql": "select (count(?s) as ?c) where { ?s wdt:P170 wd:__QID__ }",
-                      "filtres": [{"filtre": getInt, "key": "__NBOEUVRES__"}],
+                      "filtres": [{"filtre": get_int, "key": "__NBOEUVRES__"}],
                       "urlquery": "__QUERYNBOEUVRES__"},
     "__NBTYPES__": {"sparql": """select ?type ?typeLabel (count(?s) as ?c) where {
                           ?s wdt:P170 wd:__QID__; wdt:P31 ?type
@@ -237,12 +237,12 @@ sparqlList = {
                             } group by ?type ?typeLabel
                             order by desc(?c)""",
                     "filtres": [
-                        {"filtre": getMainType, "key": "__NBMAINTYPE__"},
-                        {"filtre": getOtherTypes, "key": "__NBOTHERTYPES__"},
+                        {"filtre": get_main_type, "key": "__NBMAINTYPE__"},
+                        {"filtre": get_other_types, "key": "__NBOTHERTYPES__"},
                     ],
                     "urlquery": "__QUERYNBPARTYPES__"},
     "__NBPPROP__": {"sparql": "select (count(distinct ?p) as ?c) where { ?s wdt:P170 wd:__QID__; ?p [] }",
-                    "filtres": [{"filtre": getInt, "key": "__NBPPROP__"}],
+                    "filtres": [{"filtre": get_int, "key": "__NBPPROP__"}],
                     "urlquery": "__QUERYNBPROPRIETES__"},
     "__NBPROP50PLUS__": {"sparql": """select (count(?p) as ?c)
                                     where {
@@ -261,14 +261,14 @@ sparqlList = {
                                       filter(?oeuvresparprop>?demi)
                                     }
                                     """,
-                         "filtres": [{"filtre": getInt, "key": "__NBPROP50PLUS__"}],
+                         "filtres": [{"filtre": get_int, "key": "__NBPROP50PLUS__"}],
                          "urlquery": "__QUERYNBPROP50PLUS__"},
     "__NBPAIRESPROPVAL8__": {"sparql": """select distinct ?p ?v (count(distinct ?s) as ?c) where { ?s wdt:P170 wd:__QID__;
                                              ?p ?v 
                                              filter(?p!=schema:description)           
                                         } group by ?p ?v
                                         HAVING (?c>8)""",
-                             "filtres": [{"filtre": getLen, "key": "__NBPAIRESPROPVAL8__"}],
+                             "filtres": [{"filtre": get_len, "key": "__NBPAIRESPROPVAL8__"}],
                              "urlquery": "__QUERYPAIRESPROPVAL8__"},
     "__NBPROPPROPVAL8__": {"sparql": """SELECT DISTINCT ?p ?propLabel WHERE {
                                           {
@@ -284,8 +284,8 @@ sparqlList = {
                                           ?prop wikibase:directClaim ?p.
                                         }""",
                            "filtres": [
-                               {"filtre": getLen, "key": "__NBPROPPROPVAL8__"},
-                               {"filtre": getTable, "key": "__TABLEPROPVAL8__"}
+                               {"filtre": get_len, "key": "__NBPROPPROPVAL8__"},
+                               {"filtre": get_table, "key": "__TABLEPROPVAL8__"}
                            ],
                            "urlquery": "__QUERYPROPPROPVAL8__"},
     "__GENRELIST__": {"sparql": """SELECT DISTINCT ?v ?vLabel (COUNT(DISTINCT ?s) AS ?c) WHERE {
@@ -296,7 +296,7 @@ sparqlList = {
                                 GROUP BY ?v ?vLabel
                                 HAVING (?c > 8 )
                                 ORDER BY DESC (?c)""",
-                        "filtres": [{"filtre": getItemListSansMinus, "key": "__GENRELIST__"}],
+                        "filtres": [{"filtre": get_item_list_sans_minus, "key": "__GENRELIST__"}],
                         "urlquery": ""},
     "__DEPICTLIST__": {"sparql": """SELECT DISTINCT ?v ?vLabel (COUNT(DISTINCT ?s) AS ?c) WHERE {
                                   ?s wdt:P170 wd:__QID__;
@@ -306,7 +306,7 @@ sparqlList = {
                                 GROUP BY ?v ?vLabel
                                 HAVING (?c > 8 )
                                 ORDER BY DESC (?c)""",
-                       "filtres": [{"filtre": getItemListSansMinus, "key": "__DEPICTLIST__"}],
+                       "filtres": [{"filtre": get_item_list_sans_minus, "key": "__DEPICTLIST__"}],
                            "urlquery": ""},
     "__TYPELIST__": {"sparql": """SELECT DISTINCT ?v ?vLabel (COUNT(DISTINCT ?s) AS ?c) WHERE {
                                   ?s wdt:P170 wd:__QID__;
@@ -316,11 +316,11 @@ sparqlList = {
                                 GROUP BY ?v ?vLabel
                                 HAVING (?c > 8 )
                                 ORDER BY DESC (?c)""",
-                       "filtres": [{"filtre": getItemListSansMinus, "key": "__TYPELIST__"}],
+                       "filtres": [{"filtre": get_item_list_sans_minus, "key": "__TYPELIST__"}],
                            "urlquery": ""},
     "__NBPAGESWIKIPEDIA__": {"sparql": """select ?wiki # (count(?wiki) as ?c) 
                                     where { ?s wdt:P170 wd:__QID__ . ?wiki schema:about ?s }""",
-                             "filtres": [{"filtre": getLen, "key": "__NBPAGESWIKIPEDIA__"}],
+                             "filtres": [{"filtre": get_len, "key": "__NBPAGESWIKIPEDIA__"}],
                              "urlquery": "__QUERYNBPAGESWIKIPEDIA__"},
     "__NBPAGESPARLANGUE__": {"sparql": """SELECT ?lang (count(?wiki) as ?c) 
                                 WHERE {
@@ -332,8 +332,8 @@ sparqlList = {
                                 group by ?lang
                                 order by desc(?c)""",
                          "filtres": [
-                             {"filtre": getCountEn, "key": "__NBPAGESANGLO__"},
-                             {"filtre": getCountFr, "key": "__NBPAGESFRANCO__"},
+                             {"filtre": get_count_en, "key": "__NBPAGESANGLO__"},
+                             {"filtre": get_count_fr, "key": "__NBPAGESFRANCO__"},
                         ],
                         "urlquery": "__QUERYNBWIKIPEDIAPARLANGUE__"},
     "__NBOEUVRESAVECWIKIPEDIA__": {"sparql": """SELECT distinct ?s WHERE {
@@ -342,12 +342,12 @@ sparqlList = {
                                       FILTER(CONTAINS(STR(?wiki), "wikipedia.org"))
                                     }
                                     """,
-                                   "filtres": [{"filtre": getLen, "key": "__NBOEUVRESAVECWIKIPEDIA__"}],
+                                   "filtres": [{"filtre": get_len, "key": "__NBOEUVRESAVECWIKIPEDIA__"}],
                                    "urlquery": "__QUERYNBOEUVRESAVECWIKIPEDIA__"},
     "__NBIMAGES__": {"sparql": """SELECT distinct ?image WHERE {  ?s wdt:P170 wd:__QID__; (wdt:P7420| wdt:P18) ?image. }""",
                      "filtres": [
-                         {"filtre": getLen, "key": "__NBIMAGES__"},
-                         {"filtre": getUrlImage, "key": "__URLIMAGE__"}
+                         {"filtre": get_len, "key": "__NBIMAGES__"},
+                         {"filtre": get_url_image, "key": "__URLIMAGE__"}
                      ],
                      "urlquery": "__QUERYNBIMAGES__"},
     "__LIENSWIKIDATABARRES__": {"sparql": """#groupés par niveau de distance, la couleur dépendant de la distance
@@ -593,8 +593,8 @@ def getWordPressPage(qid):
         sparqlquery = elmt["sparql"].replace("__QID__", qid) if elmt["sparql"] else None
         if sparqlquery:
             res = sparqlQuery(endpoint, sparqlquery)
-            wdqsquery = getWDQSQuery(sparqlquery)
-            embedquery = getWikidataBarGraph(sparqlquery, qid)
+            wdqsquery = get_wdqs_query(sparqlquery)
+            embedquery = get_wikidata_bar_graph(sparqlquery, qid)
         else:
             res = None
             wdqsquery = None

@@ -3,7 +3,7 @@ import time
 import json
 from src.generationWordpress.WPGenreTemplate import WPGenreTemplate as WPGenreTemplate
 from src.generationWordpress.WPPainterTemplate import WPPainterTemplate as WPPainterTemplate
-from src.generationWordpress.WikimediaAccess import WikimediaAccess
+from src.generationWordpress.tools.WikimediaManager.WikimediaManagerPackage.WikimediaAccess import WikimediaAccess
 
 # il parait souhaitable d'homogénéiser ici le code pour les différentes langues et les différents thèmes
 # dans le cas des créateurs, on a relativement peu d'instances d'œuvres et pas rencontré de timeout
@@ -53,16 +53,16 @@ class PageBuilder:
                         res = w_obj.sparqlQuery(crtquery)
                         print(crtquery, datetime.datetime.now())
                         # recuperation d'un lien vers WDQS pour la query courante
-                        wdqsquery = w_obj.getWDQSQuery(crtquery)
+                        wdqsquery = w_obj.get_wdqs_query(crtquery)
                         # recuperation d'un lien d'affichage de bargraph pour la query courante
-                        embedquery = w_obj.getWikidataBarGraph(crtquery, qid)
+                        embedquery = w_obj.get_wikidata_bar_graph(crtquery, qid)
                     else:
                         res = None
                         wdqsquery = None
                         embedquery = None
                     for filtrage in filtres:
                         if filtrage["filtre"]:
-                            fct = w_obj.getWObjFct(filtrage["filtre"])
+                            fct = w_obj.get_wkd_fct(filtrage["filtre"])
                             if fct:
                                 output = fct(w_obj, res, qid)
                                 page = page.replace(filtrage["key"], str(output))

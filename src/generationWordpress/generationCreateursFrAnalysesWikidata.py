@@ -20,7 +20,8 @@ if __name__=="__main__":
     scrutartState = scrutartStateManager("https://datamusee.r2.enst.fr/scrutartState/query") # si TPT
     # ne traiter que les entités qui sont dans filterEntities en supprimant la page si elle existe déjà
     # filterEntities =  [   "Q5597" ] # Raphaël entitiesList
-    filterEntities =  [   "Q334200" ] # Christian  Krohg  entitiesList
+    # filterEntities =  [   "Q334200" ] # Christian  Krohg  entitiesList
+    filterEntities =  [   "Q347139" ] # JB Greuze  entitiesList
     pageType = "Q1028181"
     labelType = {
         "Q1028181": "painter",

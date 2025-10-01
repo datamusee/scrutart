@@ -1,98 +1,163 @@
-# generate_tags.py
 import os
-
-# Par exemple : Dossier dans lequel tu as les droits
-os.environ["TRANSFORMERS_CACHE"] = "D:/cache/huggingface_cache"
-os.environ["HF_HOME"] = "D:/cache/huggingface_cache"
+import io
 import json
-from transformers import BlipProcessor, BlipForConditionalGeneration, CLIPProcessor, CLIPModel
-from PIL import Image
+from pathlib import Path
+from urllib.parse import unquote
+
 import requests
+from PIL import Image, UnidentifiedImageError
+import unicodedata
+
 import torch
-from deep_translator import GoogleTranslator
+from transformers import (
+    BlipProcessor, BlipForConditionalGeneration,
+    CLIPProcessor, CLIPModel
+)
+
+# -------------------------------------------------------------------
+# Configuration
+# -------------------------------------------------------------------
+JSON_FILE = "data/peintures_tags_reference.json"
+LOCAL_IMAGES_DIR = Path(__file__).resolve().parent / "static" / "images"
+CACHE_DIR = "D:/cache/huggingface_cache"   # change ici si tu veux un autre chemin
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-# load models
-blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
-blip_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base").to(device)
-
-clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
-clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32").to(device)
+# -------------------------------------------------------------------
+# Fetch image (robuste)
+# -------------------------------------------------------------------
+def _same_basename_ignore_case_and_accents(name_a, name_b):
+    na = unicodedata.normalize("NFKD", name_a).encode("ascii", "ignore").decode("ascii").lower()
+    nb = unicodedata.normalize("NFKD", name_b).encode("ascii", "ignore").decode("ascii").lower()
+    return na == nb
 
 def fetch_image(url_or_local):
-    if str(url_or_local).startswith("http"):
-        r = requests.get(url_or_local, stream=True, timeout=15)
-        r.raise_for_status()
-        return Image.open(r.raw).convert("RGB")
-    else:
-        imagepath = os.path.join("static/images/", url_or_local)
-        return Image.open(imagepath).convert("RGB")
+    """
+    Renvoie un PIL.Image (RGB) depuis une URL http(s) ou un fichier local.
+    Gère les noms encodés (%XX), accents et casse.
+    """
+    s = str(url_or_local)
 
-def blip_generate_tags(image_input, max_tags=6):
-    inputs = blip_processor(images=image_input, return_tensors="pt").to(device)
-    out = blip_model.generate(**inputs, max_new_tokens=30)
-    caption = blip_processor.decode(out[0], skip_special_tokens=True).lower()
-    toks = [t.strip() for t in caption.replace(",", " ").replace(".", " ").split() if len(t) > 3]
-    seen = set(); tags = []
-    for t in toks:
-        if t not in seen:
-            seen.add(t); tags.append(t)
-        if len(tags) >= max_tags: break
-    return tags
+    # Cas URL distante
+    if s.startswith("http://") or s.startswith("https://"):
+        try:
+            headers = {
+                "User-Agent": "Scrutart 1.1.1"
+            }
+            r = requests.get(s, headers=headers, timeout=20)
+            r.raise_for_status()
+            img = Image.open(io.BytesIO(r.content))
+            return img.convert("RGB")
+        except Exception as e:
+            raise RuntimeError(f"Erreur ouverture image URL {s}: {e}")
 
-def clip_generate_tags(image_input, candidate_tags, top_k=6):
-    inputs = clip_processor(text=candidate_tags, images=image_input, return_tensors="pt", padding=True)
-    inputs = {k:v.to(device) for k,v in inputs.items()}
-    with torch.no_grad():
-        outputs = clip_model(**inputs)
-        logits_per_image = outputs.logits_per_image
-        probs = logits_per_image.softmax(dim=1).cpu().numpy()[0]
-    sorted_idx = probs.argsort()[::-1]
-    ranked = [candidate_tags[i] for i in sorted_idx[:top_k]]
-    return [t.lower() for t in ranked]
+    # Cas chemin local (direct ou relatif)
+    p = Path(s)
+    if not p.is_absolute():
+        p = LOCAL_IMAGES_DIR / s
 
-def translate_to_en(word):
-    try:
-        return GoogleTranslator(source='auto', target='en').translate(word).lower()
-    except Exception:
-        return str(word).lower()
+    if p.exists():
+        return Image.open(p).convert("RGB")
 
-def process(json_path="data/peintures_tags_reference.json"):
-    with open(json_path, "r", encoding="utf-8") as f:
+    # Tentative avec nom décodé
+    decoded = unquote(os.path.basename(s))
+    p2 = LOCAL_IMAGES_DIR / decoded
+    if p2.exists():
+        return Image.open(p2).convert("RGB")
+
+    # Recherche approximative (ignorer accents et casse)
+    for cand in LOCAL_IMAGES_DIR.iterdir():
+        if _same_basename_ignore_case_and_accents(cand.name, decoded):
+            return Image.open(cand).convert("RGB")
+
+    raise FileNotFoundError(f"Image introuvable: {s}")
+
+# -------------------------------------------------------------------
+# Modèles
+# -------------------------------------------------------------------
+print("Chargement BLIP...")
+blip_processor = BlipProcessor.from_pretrained(
+    "Salesforce/blip-image-captioning-base",
+    cache_dir=CACHE_DIR
+)
+blip_model = BlipForConditionalGeneration.from_pretrained(
+    "Salesforce/blip-image-captioning-base",
+    cache_dir=CACHE_DIR
+).to(device)
+
+print("Chargement CLIP...")
+clip_processor = CLIPProcessor.from_pretrained(
+    "openai/clip-vit-base-patch32",
+    cache_dir=CACHE_DIR
+)
+clip_model = CLIPModel.from_pretrained(
+    "openai/clip-vit-base-patch32",
+    cache_dir=CACHE_DIR
+).to(device)
+
+# -------------------------------------------------------------------
+# Fonctions de tagging
+# -------------------------------------------------------------------
+def blip_generate_tags_from_pil(image, max_tags=6):
+    inputs = blip_processor(images=image, return_tensors="pt").to(device)
+    out = blip_model.generate(**inputs)
+    caption = blip_processor.decode(out[0], skip_special_tokens=True)
+    # Découper le caption en pseudo-tags
+    return caption.lower().replace(".", "").split()[:max_tags]
+
+def clip_generate_tags_from_pil(image, candidate_tags=None, top_k=5):
+    if candidate_tags is None:
+        candidate_tags = ["boat", "river", "flowers", "water", "sky", "portrait", "landscape"]
+
+    inputs = clip_processor(
+        text=candidate_tags,
+        images=image,
+        return_tensors="pt",
+        padding=True
+    ).to(device)
+
+    outputs = clip_model(**inputs)
+    logits_per_image = outputs.logits_per_image
+    probs = logits_per_image.softmax(dim=1).cpu().detach().numpy()[0]
+
+    scored = list(zip(candidate_tags, probs))
+    scored.sort(key=lambda x: -x[1])
+    return [t for t, p in scored[:top_k]]
+
+# -------------------------------------------------------------------
+# Boucle principale
+# -------------------------------------------------------------------
+def main():
+    with open(JSON_FILE, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # build candidate tags from all ref_tags translated
-    all_ref = set()
-    for e in data:
-        for t in e.get("ref_tags", []):
-            all_ref.add(translate_to_en(t))
-    # add some generics
-    candidates = list(all_ref) + ["boat","river","water","tree","flower","portrait","landscape","person","dog","cat"]
-    candidates = list(dict.fromkeys(candidates))
-
     for entry in data:
-        fn = entry.get("filename")
+        fname = entry["filename"]
         try:
-            img = fetch_image(fn)
+            img = fetch_image(fname)
         except Exception as e:
-            print("Erreur chargement image", fn, e)
+            print("❌ Impossible d’ouvrir:", fname, "|", e)
             continue
 
-        if not entry.get("BLIP"):
-            print("BLIP:", fn)
-            entry["BLIP"] = blip_generate_tags(img, max_tags=6)
-        if not entry.get("CLIP"):
-            print("CLIP:", fn)
-            entry["CLIP"] = clip_generate_tags(img, candidates, top_k=6)
-        # If you want, call a style classifier here
-        if not entry.get("StyleClassifier"):
-            # naive placeholder
-            entry["StyleClassifier"] = entry.get("StyleClassifier") or ["Unknown"]
+        print("▶ Traitement:", fname)
 
-    with open(json_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    print("Terminé — JSON mis à jour :", json_path)
+        try:
+            entry["BLIP"] = blip_generate_tags_from_pil(img)
+            print("  BLIP:", entry["BLIP"])
+        except Exception as e:
+            print("  ⚠ Erreur BLIP:", e)
+
+        try:
+            entry["CLIP"] = clip_generate_tags_from_pil(img)
+            print("  CLIP:", entry["CLIP"])
+        except Exception as e:
+            print("  ⚠ Erreur CLIP:", e)
+
+    # Sauvegarde
+    with open(JSON_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    print("✅ Mise à jour de", JSON_FILE, "terminée.")
 
 if __name__ == "__main__":
-    process()
+    main()

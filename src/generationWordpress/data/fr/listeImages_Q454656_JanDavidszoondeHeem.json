@@ -1,1 +1,63 @@
-{"sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q454656 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }", "liste": [], "dict": {"http://www.wikidata.org/entity/Q23990103": {"uri": "http://www.wikidata.org/entity/Q23990103", "createur": "http://www.wikidata.org/entity/Q454656", "createurLabel": "Jan Davidszoon de Heem", "titre_fr": "Guirlande de fleurs et de fruits avec le portrait de Guillaume III d'Orange (1650-1702)", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Davidsz.%20de%20Heem%20-%20Portrait%20of%20Willem%20III%20van%20Nassau%20in%20a%20cartouche%20of%20flowers%20and%20fruit.jpg", "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Davidsz.%20de%20Heem%20-%20Portrait%20of%20Willem%20III%20van%20Nassau%20in%20a%20cartouche%20of%20flowers%20and%20fruit.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"794\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/794\\/category\\/612\"}}", "posted": true}, "http://www.wikidata.org/entity/Q27539635": {"uri": "http://www.wikidata.org/entity/Q27539635", "createur": "http://www.wikidata.org/entity/Q454656", "createurLabel": "Jan Davidszoon de Heem", "titre_fr": "Nature morte au citron pelé", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Davidsz.%20de%20Heem%20-%20Still-Life%20with%20a%20Peeled%20Lemon%20-%20WGA11270.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8693\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8693\\/category\\/612\"}}", "posted": true}, "http://www.wikidata.org/entity/Q27058635": {"uri": "http://www.wikidata.org/entity/Q27058635", "createur": "http://www.wikidata.org/entity/Q454656", "createurLabel": "Jan Davidszoon de Heem", "titre_fr": "Fruits et riche vaisselle sur une table", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Davidsz.%20de%20Heem%20-%20Still%20life%20of%20fruit%20and%20sumptuous%20tableware.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8629\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8629\\/category\\/612\"}}", "posted": true}, "http://www.wikidata.org/entity/Q21674442": {"uri": "http://www.wikidata.org/entity/Q21674442", "createur": "http://www.wikidata.org/entity/Q454656", "createurLabel": "Jan Davidszoon de Heem", "titre_fr": "Nature morte au hareng et aux fruits", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Davidsz.%20de%20Heem%20-%20Still%20Life%20with%20Herring%20and%20Fruits%20-%201902-G%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13145,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13145\\/category\\/612\"}}", "posted": true}, "http://www.wikidata.org/entity/Q61756668": {"uri": "http://www.wikidata.org/entity/Q61756668", "createur": "http://www.wikidata.org/entity/Q454656", "createurLabel": "Jan Davidszoon de Heem", "titre_fr": "Fruits ou Grappe de fruits", "images": ["http://commons.wikimedia.org/wiki/Special:FilePath/De-heem-fruits-rouen.jpg"], "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13146,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13146\\/category\\/612\"}}", "posted": true}}, "version": "2.0.0"}
+{
+  "sparql": "select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { \n                                values ?createur { wd:Q454656 }\n                                values ?classRel { wdt:P31 wdt:P106 }\n                                values ?class { wd:Q1028181 }\n                                values ?rel { wdt:P170 }\n                                ?uri wdt:P31 wd:Q3305213;    \n                                     ?rel ?createur;    \n                                     wdt:P18 ?image.\n                                ?createur rdfs:label ?createurLabel .\n                                filter(lang(?createurLabel)=\"fr\")\n                                ?createur ?classRel ?class    \n                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  \n                                FILTER((LANG(?titre_fr)) = \"fr\")\n                    }",
+  "liste": [],
+  "dict": {
+    "http://www.wikidata.org/entity/Q23990103": {
+      "uri": "http://www.wikidata.org/entity/Q23990103",
+      "createur": "http://www.wikidata.org/entity/Q454656",
+      "createurLabel": "Jan Davidszoon de Heem",
+      "titre_fr": "Guirlande de fleurs et de fruits avec le portrait de Guillaume III d'Orange (1650-1702)",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Davidsz.%20de%20Heem%20-%20Portrait%20of%20Willem%20III%20van%20Nassau%20in%20a%20cartouche%20of%20flowers%20and%20fruit.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Davidsz.%20de%20Heem%20-%20Portrait%20of%20Willem%20III%20van%20Nassau%20in%20a%20cartouche%20of%20flowers%20and%20fruit.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"794\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/794\\/category\\/612\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27539635": {
+      "uri": "http://www.wikidata.org/entity/Q27539635",
+      "createur": "http://www.wikidata.org/entity/Q454656",
+      "createurLabel": "Jan Davidszoon de Heem",
+      "titre_fr": "Nature morte au citron pelé",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Davidsz.%20de%20Heem%20-%20Still-Life%20with%20a%20Peeled%20Lemon%20-%20WGA11270.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8693\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8693\\/category\\/612\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q27058635": {
+      "uri": "http://www.wikidata.org/entity/Q27058635",
+      "createur": "http://www.wikidata.org/entity/Q454656",
+      "createurLabel": "Jan Davidszoon de Heem",
+      "titre_fr": "Fruits et riche vaisselle sur une table",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Davidsz.%20de%20Heem%20-%20Still%20life%20of%20fruit%20and%20sumptuous%20tableware.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":\"8629\",\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/8629\\/category\\/612\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q21674442": {
+      "uri": "http://www.wikidata.org/entity/Q21674442",
+      "createur": "http://www.wikidata.org/entity/Q454656",
+      "createurLabel": "Jan Davidszoon de Heem",
+      "titre_fr": "Nature morte au hareng et aux fruits",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Davidsz.%20de%20Heem%20-%20Still%20Life%20with%20Herring%20and%20Fruits%20-%201902-G%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13145,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13145\\/category\\/612\"}}",
+      "posted": true
+    },
+    "http://www.wikidata.org/entity/Q61756668": {
+      "uri": "http://www.wikidata.org/entity/Q61756668",
+      "createur": "http://www.wikidata.org/entity/Q454656",
+      "createurLabel": "Jan Davidszoon de Heem",
+      "titre_fr": "Fruits ou Grappe de fruits",
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/De-heem-fruits-rouen.jpg"
+      ],
+      "post_result": "{\"stat\":\"ok\",\"result\":{\"image_id\":13146,\"url\":\"https:\\/\\/galleries.grains-de-culture.fr\\/picture.php?\\/13146\\/category\\/612\"}}",
+      "posted": true
+    }
+  },
+  "version": "2.0.0"
+}

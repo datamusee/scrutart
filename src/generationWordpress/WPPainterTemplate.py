@@ -4,10 +4,10 @@ dataConfig = {
     # "__TITRE_TEMPLATE__":
     #    [ { "version": "1.0.2", "template": "Où trouver __ENTITYNAME__ dans Wikidata, suivez le guide"} ],
     "__DATE__": {"sparql": None,
-                 "filtres": [{"filtre": "getCurrentDate", "key": "__DATE__"}],
+                 "filtres": [{"filtre": "get_current_date", "key": "__DATE__"}],
                  "urlquery": None},
     "__PROCESSPARAMS__": {"sparql": None,
-                 "filtres": [{"filtre": "getQid", "key": "__PROCESSPARAMS__"}],
+                 "filtres": [{"filtre": "get_qid", "key": "__PROCESSPARAMS__"}],
                  "urlquery": None},
     "__EXTERNALLINKSTABLE__": {
         "sparql": """
@@ -27,14 +27,14 @@ dataConfig = {
               }
             }
         """,
-        "filtres": [{"filtre": "getExternalLinks", "key": "__EXTERNALLINKSTABLE__"}],
+        "filtres": [{"filtre": "get_external_links", "key": "__EXTERNALLINKSTABLE__"}],
         "urlquery": None},
     "__ENTITYNAME__": {
         "sparql": """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }  
                     SERVICE wikibase:label { bd:serviceParam wikibase:language "__LANG__,en". } }
                     """,
-        "filtres": [{"filtre": "getName", "key": "__ENTITYNAME__"},
-                    {"filtre": "getLink", "key": "__ENTITYLINK__"}],
+        "filtres": [{"filtre": "get_name", "key": "__ENTITYNAME__"},
+                    {"filtre": "get_link", "key": "__ENTITYLINK__"}],
         "urlquery": None},
     # "__ENTITYLINK__": {
     #    "sparql": """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }
@@ -43,7 +43,7 @@ dataConfig = {
     #    "filtres": [{"filtre": "getLink", "key": "__ENTITYLINK__"}],
     #    "urlquery": ""},
     "__NBOEUVRES__": {"sparql": "select (count(?s) as ?c) where { ?s wdt:P170 wd:__QID__ }",
-                      "filtres": [{"filtre": "getInt", "key": "__NBOEUVRES__"}],
+                      "filtres": [{"filtre": "get_int", "key": "__NBOEUVRES__"}],
                       "urlquery": "__QUERYNBOEUVRES__"},
     "__NBTYPES__": {"sparql": """select ?type ?typeLabel (count(?s) as ?c) where {
                           ?s wdt:P170 wd:__QID__; wdt:P31 ?type
@@ -51,12 +51,12 @@ dataConfig = {
                             } group by ?type ?typeLabel
                             order by desc(?c)""",
                     "filtres": [
-                        {"filtre": "getMainType", "key": "__NBMAINTYPE__"},
-                        {"filtre": "getOtherTypes", "key": "__NBOTHERTYPES__"},
+                        {"filtre": "get_main_type", "key": "__NBMAINTYPE__"},
+                        {"filtre": "get_other_types", "key": "__NBOTHERTYPES__"},
                     ],
                     "urlquery": "__QUERYNBPARTYPES__"},
     "__NBPPROP__": {"sparql": "select (count(distinct ?p) as ?c) where { ?s wdt:P170 wd:__QID__; ?p [] }",
-                    "filtres": [{"filtre": "getInt", "key": "__NBPPROP__"}],
+                    "filtres": [{"filtre": "get_int", "key": "__NBPPROP__"}],
                     "urlquery": "__QUERYNBPROPRIETES__"},
     "__NBPROP50PLUS__": {"sparql": """select (count(?p) as ?c)
                                     where {
@@ -75,14 +75,14 @@ dataConfig = {
                                       filter(?oeuvresparprop>?demi)
                                     }
                                     """,
-                         "filtres": [{"filtre": "getInt", "key": "__NBPROP50PLUS__"}],
+                         "filtres": [{"filtre": "get_int", "key": "__NBPROP50PLUS__"}],
                          "urlquery": "__QUERYNBPROP50PLUS__"},
     "__NBPAIRESPROPVAL8__": {"sparql": """select distinct ?p ?v (count(distinct ?s) as ?c) where { ?s wdt:P170 wd:__QID__;
                                              ?p ?v 
                                              filter(?p!=schema:description)           
                                         } group by ?p ?v
                                         HAVING (?c>8)""",
-                             "filtres": [{"filtre": "getLen", "key": "__NBPAIRESPROPVAL8__"}],
+                             "filtres": [{"filtre": "get_len", "key": "__NBPAIRESPROPVAL8__"}],
                              "urlquery": "__QUERYPAIRESPROPVAL8__"},
     "__NBPROPPROPVAL8__": {"sparql": """SELECT DISTINCT ?p ?propLabel WHERE {
                                           {
@@ -98,8 +98,8 @@ dataConfig = {
                                           ?prop wikibase:directClaim ?p.
                                         }""",
                            "filtres": [
-                               {"filtre": "getLen", "key": "__NBPROPPROPVAL8__"},
-                               {"filtre": "getTable", "key": "__TABLEPROPVAL8__"}
+                               {"filtre": "get_len", "key": "__NBPROPPROPVAL8__"},
+                               {"filtre": "get_table", "key": "__TABLEPROPVAL8__"}
                            ],
                            "urlquery": "__QUERYPROPPROPVAL8__"},
     "__GENRELIST__": {"sparql": """SELECT DISTINCT ?v ?vLabel (COUNT(DISTINCT ?s) AS ?c) WHERE {
@@ -110,7 +110,7 @@ dataConfig = {
                                 GROUP BY ?v ?vLabel
                                 HAVING (?c > 8 )
                                 ORDER BY DESC (?c)""",
-                      "filtres": [{"filtre": "getGenreList", "key": "__GENRELIST__"}],
+                      "filtres": [{"filtre": "get_genre_list", "key": "__GENRELIST__"}],
                       "urlquery": ""},
     "__DEPICTLIST__": {"sparql": """SELECT DISTINCT ?v ?vLabel (COUNT(DISTINCT ?s) AS ?c) WHERE {
                                   ?s wdt:P170 wd:__QID__;
@@ -120,7 +120,7 @@ dataConfig = {
                                 GROUP BY ?v ?vLabel
                                 HAVING (?c > 8 )
                                 ORDER BY DESC (?c)""",
-                       "filtres": [{"filtre": "getDepictList", "key": "__DEPICTLIST__"}],
+                       "filtres": [{"filtre": "get_depict_list", "key": "__DEPICTLIST__"}],
                        "urlquery": ""},
     "__TYPELIST__": {"sparql": """SELECT DISTINCT ?v ?vLabel (COUNT(DISTINCT ?s) AS ?c) WHERE {
                                   ?s wdt:P170 wd:__QID__;
@@ -130,11 +130,11 @@ dataConfig = {
                                 GROUP BY ?v ?vLabel
                                 HAVING (?c > 8 )
                                 ORDER BY DESC (?c)""",
-                     "filtres": [{"filtre": "getTypeList", "key": "__TYPELIST__"}],
+                     "filtres": [{"filtre": "get_type_list", "key": "__TYPELIST__"}],
                      "urlquery": ""},
     "__NBPAGESWIKIPEDIA__": {"sparql": """select ?wiki # (count(?wiki) as ?c) 
                                     where { ?s wdt:P170 wd:__QID__ . ?wiki schema:about ?s }""",
-                             "filtres": [{"filtre": "getLen", "key": "__NBPAGESWIKIPEDIA__"}],
+                             "filtres": [{"filtre": "get_len", "key": "__NBPAGESWIKIPEDIA__"}],
                              "urlquery": "__QUERYNBPAGESWIKIPEDIA__"},
     "__NBPAGESPARLANGUE__": {"sparql": """SELECT ?lang (count(?wiki) as ?c) 
                                 WHERE {
@@ -146,8 +146,8 @@ dataConfig = {
                                 group by ?lang
                                 order by desc(?c)""",
                              "filtres": [
-                                 {"filtre": "getCountFr", "key": "__NBPAGESFRANCO__"},
-                                 {"filtre": "getCountEn", "key": "__NBPAGESANGLO__"}
+                                 {"filtre": "get_count_fr", "key": "__NBPAGESFRANCO__"},
+                                 {"filtre": "get_count_en", "key": "__NBPAGESANGLO__"}
                              ],
                              "urlquery": "__QUERYNBWIKIPEDIAPARLANGUE__"},
     "__NBOEUVRESAVECWIKIPEDIA__": {"sparql": """SELECT distinct ?s WHERE {
@@ -156,15 +156,15 @@ dataConfig = {
                                       FILTER(CONTAINS(STR(?wiki), "wikipedia.org"))
                                     }
                                     """,
-                                   "filtres": [{"filtre": "getLen", "key": "__NBOEUVRESAVECWIKIPEDIA__"}],
+                                   "filtres": [{"filtre": "get_len", "key": "__NBOEUVRESAVECWIKIPEDIA__"}],
                                    "urlquery": "__QUERYNBOEUVRESAVECWIKIPEDIA__"},
     "__NBIMAGES__": {
         "sparql": """SELECT distinct ?image WHERE {  ?s wdt:P170 wd:__QID__; (wdt:P7420| wdt:P18) ?image. }""",
         "filtres": [
-            {"filtre": "getLen", "key": "__NBIMAGES__"},
-            {"filtre": "getUrlImage", "key": "__URLIMAGE__"},
-            {"filtre": "getTableBoxes", "key": "__IMAGES_TABLE_BOXES__"},
-            {"filtre": "getGalleryLink", "key": "__GALLERY_LINK__"}
+            {"filtre": "get_len", "key": "__NBIMAGES__"},
+            {"filtre": "get_url_image", "key": "__URLIMAGE__"},
+            {"filtre": "get_table_boxes", "key": "__IMAGES_TABLE_BOXES__"},
+            {"filtre": "get_gallery_link", "key": "__GALLERY_LINK__"}
         ],
         "urlquery": "__QUERYNBIMAGES__"},
     "__LIENSWIKIDATABARRES__": {"sparql": """#groupés par niveau de distance, la couleur dépendant de la distance

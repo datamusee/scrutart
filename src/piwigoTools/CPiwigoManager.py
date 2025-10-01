@@ -8,6 +8,41 @@ from contextlib import contextmanager
 from dataclasses import dataclass
 from enum import Enum
 
+def setup_advanced_logging(log_level: str = "INFO", log_file: str = "logs/piwigo_manager.log"):
+    """Configuration avancée du logging avec rotation et formatage structuré"""
+    from logging.handlers import RotatingFileHandler
+    import sys
+
+    logger = logging.getLogger('CPiwigoManager')
+    logger.setLevel(getattr(logging, log_level.upper()))
+
+    # Formateur structuré avec métadonnées
+    formatter = logging.Formatter(
+        '%(asctime)s | %(name)s | %(levelname)s | %(funcName)s:%(lineno)d | %(message)s | Extra: %(extra)s',
+        defaults={'extra': '{}'}
+    )
+
+    # Handler console avec couleurs
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(formatter)
+    console_handler.setLevel(logging.INFO)
+
+    # Handler fichier avec rotation
+    file_handler = RotatingFileHandler(
+        log_file,
+        maxBytes=10 * 1024 * 1024,  # 10MB
+        backupCount=5,
+        encoding='utf-8'
+    )
+    file_handler.setFormatter(formatter)
+    file_handler.setLevel(logging.DEBUG)
+
+    logger.addHandler(console_handler)
+    logger.addHandler(file_handler)
+
+    return logger
+
+
 try:
     from src.piwigoTools.piwigoConfigPrivee import configPiwigo as cp
 except ImportError as e:
@@ -22,6 +57,7 @@ class CategoryType(Enum):
     MOVEMENTS = "MOVEMENTS"
     EXHIBITIONS = "EXHIBITIONS"
     INSTITUTIONS = "INSTITUTIONS"
+    TEST = "TEST"
 
 
 @dataclass
@@ -43,15 +79,19 @@ class PiwigoError(Exception):
 class CPiwigoManager:
     """Gestionnaire pour l'API Piwigo avec gestion d'erreurs robuste et logging amélioré"""
 
-    def __init__(self, url: str = "https://galeries.grains-de-culture.fr"):
+    def __init__(self, url: str = "https://galeries.grains-de-culture.fr", login: str = None,
+                 password: str = None, log_level: str = "INFO"):
         self.config = PiwigoConfig()
         self.config.base_url = url
+        self.config.api_url = url+"/ws.php"
         self.session: Optional[requests.Session] = None
         self.token: Optional[str] = None
 
+        self.logger = setup_advanced_logging(log_level)
+
         # Récupération sécurisée des credentials
-        self.login = cp.get("login") if cp else None
-        self.password = cp.get("pass") if cp else None
+        self.login = login if login else cp.get("login", None)
+        self.password = password if password else cp.get("pass", None)
 
         if not self.login or not self.password:
             logging.warning("Identifiants Piwigo non configurés ou manquants")
@@ -82,7 +122,8 @@ class CPiwigoManager:
             CategoryType.CREATORS: lambda name: f"Galerie {name}",
             CategoryType.MOVEMENTS: lambda name: f"{name}",
             CategoryType.EXHIBITIONS: lambda name: f"{name}",
-            CategoryType.INSTITUTIONS: lambda name: f" {name}"
+            CategoryType.INSTITUTIONS: lambda name: f"{name}",
+            CategoryType.TEST: lambda name: f"{name}"
         }
 
         self.gallery_parents = {
@@ -90,7 +131,8 @@ class CPiwigoManager:
             CategoryType.CREATORS: 80,
             CategoryType.EXHIBITIONS: 956,
             CategoryType.MOVEMENTS: 853,
-            CategoryType.INSTITUTIONS: 854
+            CategoryType.INSTITUTIONS: 854,
+            CategoryType.TEST: 7
         }
 
     @contextmanager
@@ -232,16 +274,13 @@ class CPiwigoManager:
         try:
             self.logger.info("Tentative de connexion à Piwigo...")
             response = self._make_request_with_retry('POST', self.config.api_url, data=payload)
-
-            result = response.json()
-            if result.get("stat") == "ok":
+            response.raise_for_status()
+            if "stat" in response.text and "ok" in response.text:
                 self.logger.info("Connexion à Piwigo réussie")
                 return True
             else:
-                error_msg = result.get("message", "Erreur inconnue")
-                self.logger.error(f"Échec de connexion à Piwigo: {error_msg}")
+                self.logger.error(f"Erreur lors de la connexion à Piwigo (login/password?)")
                 return False
-
         except Exception as e:
             self.logger.error(f"Erreur lors de la connexion à Piwigo: {e}")
             raise PiwigoError(f"Impossible de se connecter à Piwigo: {e}")
@@ -494,8 +533,7 @@ class CPiwigoManager:
         try:
             self.piwigo_open_session()
 
-            url = (f"{self.config.api_url}?format=json&method=pwg.categories.getList"
-                   "&recursive=true&fullname=true&tree_output=true")
+            url = (f"{self.config.api_url}?format=json&method=pwg.categories.getList&recursive=true&fullname=true&tree_output=true")
 
             response = self._make_request_with_retry('GET', url)
             result = response.json()

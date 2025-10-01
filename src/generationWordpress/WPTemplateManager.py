@@ -1,17 +1,17 @@
 class WPTemplate():
     dataConfig = {
         "__DATE__": {"sparql": None,
-                     "filtres": [{"filtre": "getCurrentDate", "key": "__DATE__"}],
+                     "filtres": [{"filtre": "get_current_date", "key": "__DATE__"}],
                      "urlquery": None},
         "__PROCESSPARAMS__": {"sparql": None,
-                              "filtres": [{"filtre": "getQid", "key": "__PROCESSPARAMS__"}],
+                              "filtres": [{"filtre": "get_qid", "key": "__PROCESSPARAMS__"}],
                               "urlquery": None},
         "__ENTITYNAME__": {
             "sparql": """select distinct ?qid ?qidLabel where { values ?qid { <http://www.wikidata.org/entity/__QID__> }  
                         SERVICE wikibase:label { bd:serviceParam wikibase:language "__LANG__,en". } }
                         """,
-            "filtres": [{"filtre": "getName", "key": "__ENTITYNAME__"},
-                        {"filtre": "getLink", "key": "__ENTITYLINK__"}],
+            "filtres": [{"filtre": "get_name", "key": "__ENTITYNAME__"},
+                        {"filtre": "get_link", "key": "__ENTITYLINK__"}],
             "urlquery": None},
         "__EXTERNALLINKSTABLE__": {
             "sparql": """
@@ -31,7 +31,7 @@ class WPTemplate():
               }
             }
         """,
-            "filtres": [{"filtre": "getExternalLinks", "key": "__EXTERNALLINKSTABLE__"}],
+            "filtres": [{"filtre": "get_external_links", "key": "__EXTERNALLINKSTABLE__"}],
             "urlquery": None},
     }
 

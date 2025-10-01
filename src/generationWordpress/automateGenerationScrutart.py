@@ -1,4 +1,8 @@
 """
+voir code WPProcessSteps.py
+voir dossier D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\ClaudeIAEdition\artistPublisher
+voir dossier D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\orchestrateurPrefect
+
 but: tache de fond qui automatise des constrauctions et mises à jour de pages
 lire un fichier de config de generation dans le dossier d'étape à générer
 pour la page principale de l'étape,

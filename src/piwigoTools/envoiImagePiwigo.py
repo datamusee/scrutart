@@ -75,7 +75,7 @@ def convertFromV1To(data, versionTarget):
     if "version" in data and data["version"]!="1.0.0"  and data["version"]!="1.0.1":
         return data
     if versionTarget=="2.0.0":
-        listim = data["liste"]
+        listim = data["liste"] if "liste" in data else data["images"]
         if not "dict" in targetData:
             targetData["dict"] = {}
         targetData["version"] = "2.0.0"
@@ -92,6 +92,7 @@ def convertFromV1To(data, versionTarget):
             else:
                 if "image" in im: targetData["dict"][imuri]["images"].append(im["image"])
         if "liste" in targetData: targetData["liste"] = []
+        if "images" in targetData: targetData["images"] = []
     return targetData
 
 def simpleCopy(data, versionTarget):
@@ -150,7 +151,7 @@ class ImageTracker():
 
 if __name__=="__main__":
     # choix d'un dossier dans lequel il y a des fichiers qui constituent des listes d'images
-    dirToProcess = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\\fr\\20250507"
+    dirToProcess = "D:\wamp64\www\givingsense.eu\datamusee\scrutart\src\generationWordpress\data\\fr\\20250930"
     filesList = getFilesList(dirToProcess)
     for filepath in filesList:
         if not "listeAlbums" in filepath: continue
@@ -175,7 +176,7 @@ if __name__=="__main__":
                 print(datetime.datetime.now())
                 for uri, im in dictim.items():
                     if not "posted" in im:
-                        res = postImageToPiwigo(im, piwigoCategory, categoryName, cp, track=True)
+                        res = postImageToPiwigo(im, piwigoCategory, categoryName, cp, track=False)
 
 # La description peut contenir un lien vers l'entité source, un lien vers l URL de l'image, le copyright
 # il faut limiter l'api à n'accepter que certains émetteurs
