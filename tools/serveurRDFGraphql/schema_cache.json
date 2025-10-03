@@ -1,0 +1,160 @@
+{
+  "auto_generated": {
+    "https://kg.grains-de-culture.fr/entity/GALLERY": {
+      "uri": "https://kg.grains-de-culture.fr/entity/GALLERY",
+      "label": "GALLERY",
+      "graphs": [
+        null
+      ],
+      "properties": {
+        "http://www.w3.org/2000/01/rdf-schema#label": {
+          "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+          "label": "label",
+          "type": "string"
+        },
+        "https://kg.grains-de-culture.fr/prop/comment": {
+          "uri": "https://kg.grains-de-culture.fr/prop/comment",
+          "label": "comment",
+          "type": "string"
+        },
+        "https://kg.grains-de-culture.fr/prop/id_piwigo": {
+          "uri": "https://kg.grains-de-culture.fr/prop/id_piwigo",
+          "label": "id_piwigo",
+          "type": "string"
+        },
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "label": "type",
+          "type": "reference"
+        }
+      }
+    },
+    "https://kg.grains-de-culture.fr/entity//GALLERY": {
+      "uri": "https://kg.grains-de-culture.fr/entity//GALLERY",
+      "label": "GALLERY",
+      "graphs": [
+        null
+      ],
+      "properties": {
+        "http://www.w3.org/2000/01/rdf-schema#label": {
+          "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+          "label": "label",
+          "type": "string"
+        },
+        "https://kg.grains-de-culture.fr/prop/comment": {
+          "uri": "https://kg.grains-de-culture.fr/prop/comment",
+          "label": "comment",
+          "type": "string"
+        },
+        "https://kg.grains-de-culture.fr/prop/id_piwigo": {
+          "uri": "https://kg.grains-de-culture.fr/prop/id_piwigo",
+          "label": "id_piwigo",
+          "type": "string"
+        },
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "label": "type",
+          "type": "reference"
+        }
+      }
+    },
+    "http://www.wikidata.org/entity/Q838948": {
+      "uri": "http://www.wikidata.org/entity/Q838948",
+      "label": "Q838948",
+      "graphs": [
+        null
+      ],
+      "properties": {
+        "http://www.w3.org/2000/01/rdf-schema#label": {
+          "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+          "label": "label",
+          "type": "string"
+        },
+        "http://www.wikidata.org/prop/direct/P31": {
+          "uri": "http://www.wikidata.org/prop/direct/P31",
+          "label": "nature de l'\u00e9l\u00e9ment",
+          "type": "reference"
+        },
+        "http://www.wikidata.org/prop/direct/P170": {
+          "uri": "http://www.wikidata.org/prop/direct/P170",
+          "label": "cr\u00e9ateur",
+          "type": "reference"
+        },
+        "http://www.wikidata.org/prop/direct/P18": {
+          "uri": "http://www.wikidata.org/prop/direct/P18",
+          "label": "image",
+          "type": "string"
+        },
+        "https://kg.grains-de-culture.fr/prop/piwigo_image": {
+          "uri": "https://kg.grains-de-culture.fr/prop/piwigo_image",
+          "label": "piwigo_image",
+          "type": "string"
+        },
+        "https://kg.grains-de-culture.fr/prop/piwigo_gallery": {
+          "uri": "https://kg.grains-de-culture.fr/prop/piwigo_gallery",
+          "label": "piwigo_gallery",
+          "type": "reference"
+        },
+        "https://kg.grains-de-culture.fr/prop/sparql": {
+          "uri": "https://kg.grains-de-culture.fr/prop/sparql",
+          "label": "sparql",
+          "type": "reference"
+        }
+      }
+    },
+    "http://www.wikidata.org/entity/Q1028181": {
+      "uri": "http://www.wikidata.org/entity/Q1028181",
+      "label": "Q1028181",
+      "graphs": [
+        null
+      ],
+      "properties": {
+        "http://www.w3.org/2000/01/rdf-schema#label": {
+          "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+          "label": "label",
+          "type": "string"
+        },
+        "http://www.wikidata.org/prop/direct/P31": {
+          "uri": "http://www.wikidata.org/prop/direct/P31",
+          "label": "nature de l'\u00e9l\u00e9ment",
+          "type": "reference"
+        },
+        "https://kg.grains-de-culture.fr/prop/instance_count": {
+          "uri": "https://kg.grains-de-culture.fr/prop/instance_count",
+          "label": "instance_count",
+          "type": "reference"
+        }
+      }
+    },
+    "http://www.wikidata.org/entity/Q1792379": {
+      "uri": "http://www.wikidata.org/entity/Q1792379",
+      "label": "genre artistique",
+      "graphs": [
+        null
+      ],
+      "properties": {
+        "http://www.w3.org/2000/01/rdf-schema#label": {
+          "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+          "label": "label",
+          "type": "string"
+        },
+        "http://www.wikidata.org/prop/direct/P31": {
+          "uri": "http://www.wikidata.org/prop/direct/P31",
+          "label": "nature de l'\u00e9l\u00e9ment",
+          "type": "reference"
+        },
+        "https://kg.grains-de-culture.fr/prop/piwigo_gallery": {
+          "uri": "https://kg.grains-de-culture.fr/prop/piwigo_gallery",
+          "label": "piwigo_gallery",
+          "type": "reference"
+        },
+        "https://kg.grains-de-culture.fr/prop/instance_count": {
+          "uri": "https://kg.grains-de-culture.fr/prop/instance_count",
+          "label": "instance_count",
+          "type": "reference"
+        }
+      }
+    }
+  },
+  "manual": {}
+}
