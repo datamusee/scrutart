@@ -2844,9 +2844,11 @@ def schema_info_improved():
   }}
 }}"""
 
-            # Préparer les versions pour les attributs data-query
-            example_query_escaped = example_query.replace('\n', '\\n').replace('"', '&quot;')
-            example_list_query_escaped = example_list_query.replace('\n', '\\n').replace('"', '&quot;')
+            # Échapper pour affichage HTML mais pas pour data-query
+            # On utilise base64 pour éviter les problèmes d'échappement
+            import base64
+            example_query_b64 = base64.b64encode(example_query.encode()).decode()
+            example_list_query_b64 = base64.b64encode(example_list_query.encode()).decode()
 
             types_html += f"""
             <div class="type-box">
@@ -2868,13 +2870,13 @@ def schema_info_improved():
                     <div class="example-section">
                         <h5>Récupérer un objet spécifique:</h5>
                         <pre class="query-example">{example_query}</pre>
-                        <button onclick="copyToClipboard(this)" data-query="{example_query_escaped}">📋 Copier</button>
+                        <button onclick="copyToClipboard(this)" data-query-b64="{example_query_b64}">📋 Copier</button>
                     </div>
 
                     <div class="example-section">
                         <h5>Liste des objets:</h5>
                         <pre class="query-example">{example_list_query}</pre>
-                        <button onclick="copyToClipboard(this)" data-query="{example_list_query_escaped}">📋 Copier</button>
+                        <button onclick="copyToClipboard(this)" data-query-b64="{example_list_query_b64}">📋 Copier</button>
                     </div>
 
                     <div class="example-section">
@@ -3199,7 +3201,10 @@ def schema_info_improved():
                 }}
 
                 function copyToClipboard(button) {{
-                    const query = button.getAttribute('data-query').replace(/\\\\n/g, '\n');
+                    // Décoder le base64 pour obtenir la vraie requête avec retours à la ligne
+                    const queryB64 = button.getAttribute('data-query-b64');
+                    const query = atob(queryB64);
+
                     navigator.clipboard.writeText(query).then(() => {{
                         const originalText = button.textContent;
                         button.textContent = '✓ Copié!';
@@ -3233,7 +3238,6 @@ def schema_info_improved():
         </body>
         </html>
         ''', 500
-
 def detect_type_to_graph_mapping() -> Dict[str, str]:
     """
     Détecte automatiquement le mapping type -> graphe nommé
