@@ -3199,7 +3199,7 @@ def schema_info_improved():
                 }}
 
                 function copyToClipboard(button) {{
-                    const query = button.getAttribute('data-query').replace(/\\n/g, '\\n');
+                    const query = button.getAttribute('data-query').replace(/\\\\n/g, '\n');
                     navigator.clipboard.writeText(query).then(() => {{
                         const originalText = button.textContent;
                         button.textContent = '✓ Copié!';
