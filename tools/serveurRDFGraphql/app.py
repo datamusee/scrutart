@@ -3,25 +3,23 @@ API GraphQL pour interroger et modifier des données RDF via SPARQL
 Serveur Flask avec authentification OAuth/JWT et cache persistant
 """
 
-import os
-import json
 import hashlib
-import asyncio
-from datetime import datetime, timedelta
-from typing import Dict, List, Any, Optional
-from functools import wraps
+import json
+import os
 import threading
+from datetime import datetime, timedelta
+from functools import wraps
+from typing import Dict, List, Any, Optional
 
+import graphene
+import jwt
+import unidecode
+from SPARQLWrapper import SPARQLWrapper, JSON, POST
+from authlib.integrations.flask_client import OAuth
 from flask import Flask, request, jsonify, redirect, session
 from flask_cors import CORS
-import graphene
 from graphene import ObjectType, String, Int, Float, DateTime, Field, List as GList, Mutation, Schema
 from graphql import GraphQLError
-import requests
-from SPARQLWrapper import SPARQLWrapper, JSON, POST
-import jwt
-from authlib.integrations.flask_client import OAuth
-import unidecode
 
 # ============================================================================
 # CONFIGURATION
@@ -39,9 +37,9 @@ CONFIG = {
     'GOOGLE_CLIENT_SECRET': 'your-google-client-secret',
     'TYPE_TO_GRAPH': {
         # Configuration statique type -> graphe nommé
-        'Painting': 'http://example.org/graphs/artworks',
-        'Artist': 'http://example.org/graphs/persons',
-        'Museum': 'http://example.org/graphs/places',
+        #'Painting': 'http://example.org/graphs/artworks',
+        #'Artist': 'http://example.org/graphs/persons',
+        #"'Museum': 'http://example.org/graphs/places',
     }
 }
 
@@ -57,7 +55,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '❌ NON DÉFINI')
 # ============================================================================
 
 app = Flask(__name__)
-app.secret_key = SECRET_KEY # 'flask-secret-key-change-in-production'
+app.secret_key = SECRET_KEY  # 'flask-secret-key-change-in-production'
 CORS(app)
 
 oauth = OAuth(app)
@@ -78,6 +76,7 @@ google = oauth.register(
 os.makedirs(CONFIG['QUERY_CACHE_DIR'], exist_ok=True)
 os.makedirs(CONFIG['ASYNC_RESULTS_DIR'], exist_ok=True)
 
+
 # ============================================================================
 # AUTHENTIFICATION
 # ============================================================================
@@ -90,6 +89,7 @@ def generate_jwt(user_info: Dict) -> str:
     }
     return jwt.encode(payload, CONFIG['JWT_SECRET'], algorithm='HS256')
 
+
 def verify_jwt(token: str) -> Optional[Dict]:
     """Vérifie et décode un token JWT"""
     try:
@@ -99,8 +99,10 @@ def verify_jwt(token: str) -> Optional[Dict]:
     except jwt.InvalidTokenError:
         return None
 
+
 def require_auth(f):
     """Décorateur pour protéger les routes"""
+
     @wraps(f)
     def decorated_function(*args, **kwargs):
         auth_header = request.headers.get('Authorization')
@@ -114,7 +116,9 @@ def require_auth(f):
 
         request.user = payload['user']
         return f(*args, **kwargs)
+
     return decorated_function
+
 
 # ============================================================================
 # CACHE
@@ -123,6 +127,7 @@ def require_auth(f):
 def get_cache_key(query: str) -> str:
     """Génère une clé de cache à partir d'une requête"""
     return hashlib.sha256(query.encode()).hexdigest()
+
 
 def get_cached_result(query: str, cache_type: str = 'sparql') -> Optional[Any]:
     """Récupère un résultat du cache"""
@@ -134,6 +139,7 @@ def get_cached_result(query: str, cache_type: str = 'sparql') -> Optional[Any]:
             return json.load(f)
     return None
 
+
 def save_to_cache(query: str, result: Any, cache_type: str = 'sparql'):
     """Sauvegarde un résultat dans le cache"""
     cache_key = get_cache_key(query)
@@ -141,6 +147,7 @@ def save_to_cache(query: str, result: Any, cache_type: str = 'sparql'):
 
     with open(cache_file, 'w') as f:
         json.dump(result, f, indent=2)
+
 
 # ============================================================================
 # SPARQL
@@ -193,7 +200,9 @@ class SPARQLClient:
         results = self.query(query)
         return [r['g'] for r in results]
 
+
 sparql_client = SPARQLClient(CONFIG['SPARQL_ENDPOINT'], CONFIG['SPARQL_UPDATE_ENDPOINT'])
+
 
 # ============================================================================
 # DÉTECTION DES TYPES RDF
@@ -207,7 +216,7 @@ def detect_rdf_types() -> Dict[str, Any]:
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-
+    
     SELECT DISTINCT ?type ?label ?graph WHERE {
   {
                 ?instance rdf:type ?type .
@@ -256,6 +265,7 @@ def detect_rdf_types() -> Dict[str, Any]:
 
     return types_info
 
+
 def detect_properties_for_type(type_uri: str) -> Dict[str, Any]:
     """Détecte les propriétés utilisées pour un type donné"""
 
@@ -263,7 +273,7 @@ def detect_properties_for_type(type_uri: str) -> Dict[str, Any]:
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX wdt: <http://www.wikidata.org/prop/direct/>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
+    
     SELECT DISTINCT ?property ?propertyLabel ?valueType WHERE {{
         {{
             ?instance wdt:P31 <{type_uri}> .
@@ -272,9 +282,9 @@ def detect_properties_for_type(type_uri: str) -> Dict[str, Any]:
             ?instance rdf:type <{type_uri}> .
             ?instance ?property ?value .
         }}
-
+        
         OPTIONAL {{ ?property rdfs:label ?propertyLabel }}
-
+        
         BIND(
             IF(isLiteral(?value),
                 IF(datatype(?value) = <http://www.w3.org/2001/XMLSchema#integer>, "int",
@@ -307,6 +317,7 @@ def detect_properties_for_type(type_uri: str) -> Dict[str, Any]:
 
     return properties
 
+
 # ============================================================================
 # GÉNÉRATION DU SCHÉMA GRAPHQL
 # ============================================================================
@@ -331,6 +342,7 @@ def generate_graphql_schema() -> Dict[str, Any]:
 
     return schema
 
+
 def load_schema_cache() -> Dict[str, Any]:
     """Charge le schéma depuis le cache"""
     if os.path.exists(CONFIG['SCHEMA_CACHE_FILE']):
@@ -338,10 +350,12 @@ def load_schema_cache() -> Dict[str, Any]:
             return json.load(f)
     return {'auto_generated': {}, 'manual': {}}
 
+
 def save_schema_cache(schema: Dict[str, Any]):
     """Sauvegarde le schéma dans le cache"""
     with open(CONFIG['SCHEMA_CACHE_FILE'], 'w') as f:
         json.dump(schema, f, indent=2)
+
 
 def merge_schema_definitions(auto: Dict, manual: Dict) -> Dict:
     """Fusionne les définitions auto et manuelles avec priorité au manuel"""
@@ -360,9 +374,349 @@ def merge_schema_definitions(auto: Dict, manual: Dict) -> Dict:
 
     return merged
 
+
 # ============================================================================
-# CONSTRUCTION DYNAMIQUE DES TYPES GRAPHQL
+# GESTION AUTOMATIQUE DES GRAPHES NOMMÉS
 # ============================================================================
+
+def detect_type_to_graph_mapping() -> Dict[str, str]:
+    """
+    Détecte automatiquement le mapping type -> graphe nommé
+    Hypothèse: chaque type n'est défini (sujet) que dans un seul graphe
+    """
+
+    query = """
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+    SELECT DISTINCT ?type ?graph (COUNT(DISTINCT ?instance) as ?count) WHERE {
+        GRAPH ?graph {
+            {
+                ?instance rdf:type ?type .
+            } UNION {
+                ?instance wdt:P31 ?type .
+            }
+        }
+        FILTER(?type != rdf:Property && ?type != <http://www.w3.org/2000/01/rdf-schema#Class>)
+    }
+    GROUP BY ?type ?graph
+    ORDER BY ?type ?graph
+    """
+
+    results = sparql_client.query(query)
+
+    type_to_graphs = {}
+    graph_to_types = {}
+    violations = []
+
+    for result in results:
+        type_uri = result['type']
+        graph_uri = result['graph']
+        count = int(result['count'])
+
+        if type_uri not in type_to_graphs:
+            type_to_graphs[type_uri] = []
+
+        type_to_graphs[type_uri].append({
+            'graph': graph_uri,
+            'instance_count': count
+        })
+
+        if graph_uri not in graph_to_types:
+            graph_to_types[graph_uri] = []
+        graph_to_types[graph_uri].append(type_uri)
+
+    # Détecter les violations (type dans plusieurs graphes)
+    final_mapping = {}
+    for type_uri, graphs_info in type_to_graphs.items():
+        if len(graphs_info) > 1:
+            # Violation: le type est dans plusieurs graphes
+            violations.append({
+                'type': type_uri,
+                'graphs': [g['graph'] for g in graphs_info],
+                'counts': {g['graph']: g['instance_count'] for g in graphs_info}
+            })
+            # Prendre le graphe avec le plus d'instances
+            main_graph = max(graphs_info, key=lambda x: x['instance_count'])
+            final_mapping[type_uri] = main_graph['graph']
+        else:
+            final_mapping[type_uri] = graphs_info[0]['graph']
+
+    return {
+        'type_to_graph': final_mapping,
+        'graph_to_types': graph_to_types,
+        'violations': violations
+    }
+
+
+def save_graph_mapping_cache(mapping: Dict[str, Any]):
+    """Sauvegarde le mapping type->graph dans un fichier"""
+    cache_file = 'graph_mapping_cache.json'
+    with open(cache_file, 'w') as f:
+        # Convertir les sets en listes pour JSON
+        serializable = {
+            'type_to_graph': mapping['type_to_graph'],
+            'graph_to_types': {k: list(v) if isinstance(v, set) else v
+                               for k, v in mapping['graph_to_types'].items()},
+            'violations': mapping['violations'],
+            'manual_overrides': {}
+        }
+        json.dump(serializable, f, indent=2)
+
+
+def load_graph_mapping_cache() -> Dict[str, Any]:
+    """Charge le mapping depuis le cache"""
+    cache_file = 'graph_mapping_cache.json'
+    if os.path.exists(cache_file):
+        with open(cache_file, 'r') as f:
+            return json.load(f)
+    return {
+        'type_to_graph': {},
+        'graph_to_types': {},
+        'violations': [],
+        'manual_overrides': {}
+    }
+
+
+def merge_graph_mappings(auto: Dict, manual: Dict) -> Dict:
+    """Fusionne les mappings auto et manuels avec priorité au manuel"""
+    merged_type_to_graph = auto.get('type_to_graph', {}).copy()
+    merged_type_to_graph.update(manual.get('manual_overrides', {}))
+
+    return {
+        'type_to_graph': merged_type_to_graph,
+        'graph_to_types': auto.get('graph_to_types', {}),
+        'violations': auto.get('violations', []),
+        'manual_overrides': manual.get('manual_overrides', {})
+    }
+
+
+def get_graph_for_type_improved(type_name: str, type_uri: str) -> str:
+    """
+    Détermine le graphe nommé pour un type
+    Ordre de priorité:
+    1. Config statique TYPE_TO_GRAPH
+    2. Manual overrides dans le cache
+    3. Mapping automatique
+    4. Graphe par défaut
+    """
+    # 1. Config statique
+    if type_name in CONFIG.get('TYPE_TO_GRAPH', {}):
+        return CONFIG['TYPE_TO_GRAPH'][type_name]
+
+    # 2. Charger les mappings
+    graph_mapping = load_graph_mapping_cache()
+    merged = merge_graph_mappings(graph_mapping, graph_mapping)
+
+    # 3. Mapping automatique ou manuel
+    if type_uri in merged['type_to_graph']:
+        return merged['type_to_graph'][type_uri]
+
+    # 4. Fallback sur le schéma
+    schema = load_schema_cache()
+    merged_schema = merge_schema_definitions(schema['auto_generated'], schema['manual'])
+
+    if type_uri in merged_schema:
+        graphs = merged_schema[type_uri].get('graphs', [])
+        if graphs and graphs[0]:
+            return graphs[0]
+
+    # 5. Par défaut
+    return 'http://example.org/graphs/default'
+
+
+# ============================================================================
+# CORRECTION DU PROBLÈME idPiwigo
+# ============================================================================
+
+def create_advanced_resolver_fixed(type_name: str, type_uri: str, single: bool = True):
+    """
+    Résolveur corrigé avec mapping cohérent des propriétés
+    """
+
+    def resolver(root, info, id=None, use_cache=False):
+        """Résolveur avec support des sous-objets et mapping correct"""
+
+        try:
+            # Charger le schéma pour avoir le mapping URI -> nom GraphQL
+            schema_cache = load_schema_cache()
+            merged = merge_schema_definitions(
+                schema_cache.get('auto_generated', {}),
+                schema_cache.get('manual', {})
+            )
+
+            # Créer un mapping bidirectionnel prop_uri <-> graphql_name
+            prop_uri_to_name = {}
+            prop_name_to_uri = {}
+
+            if type_uri in merged:
+                for prop_uri, prop_info in merged[type_uri].get('properties', {}).items():
+                    graphql_name = sanitize_name(prop_info['label'])
+                    prop_uri_to_name[prop_uri] = graphql_name
+                    prop_name_to_uri[graphql_name] = prop_uri
+
+            # Analyser les champs demandés
+            selection_set = info.field_nodes[0].selection_set
+            requested_fields = {}
+
+            if selection_set:
+                for selection in selection_set.selections:
+                    field_name = selection.name.value
+                    if selection.selection_set:
+                        subfields = [s.name.value for s in selection.selection_set.selections]
+                        requested_fields[field_name] = subfields
+                    else:
+                        requested_fields[field_name] = None
+
+            print(f"  → Résolveur {type_name}: champs demandés = {list(requested_fields.keys())}")
+            print(f"  → Mapping disponible: {list(prop_uri_to_name.values())}")
+
+            if single and id:
+                # REQUÊTE POUR UN OBJET SPÉCIFIQUE
+                query = f"""
+                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+                SELECT ?property ?value WHERE {{
+                    {{
+                        <{id}> wdt:P31 <{type_uri}> .
+                        <{id}> ?property ?value .
+                    }} UNION {{
+                        <{id}> rdf:type <{type_uri}> .
+                        <{id}> ?property ?value .
+                    }}
+                }}
+                """
+
+                results = sparql_client.query(query, use_cache=use_cache)
+                obj = {'id': id}
+
+                for result in results:
+                    prop_uri = result['property']
+                    value = result['value']
+
+                    # UTILISER LE MAPPING
+                    prop_name = prop_uri_to_name.get(prop_uri)
+
+                    if not prop_name:
+                        continue  # Ignorer les propriétés non dans le schéma
+
+                    # Gérer les références
+                    if isinstance(value, str) and value.startswith('http'):
+                        if prop_name in requested_fields and requested_fields[prop_name]:
+                            obj[prop_name] = resolve_subobject(value, requested_fields[prop_name])
+                        else:
+                            obj[prop_name] = value
+                    else:
+                        obj[prop_name] = value
+
+                print(f"  ✓ Objet single résolu: {obj}")
+                return obj
+
+            else:
+                # REQUÊTE POUR TOUS LES OBJETS (LISTE)
+                # Étape 1: Récupérer tous les IDs
+                instances_query = f"""
+                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+                SELECT DISTINCT ?instance WHERE {{
+                    {{
+                        ?instance wdt:P31 <{type_uri}> .
+                    }} UNION {{
+                        ?instance rdf:type <{type_uri}> .
+                    }}
+                }}
+                LIMIT 100
+                """
+
+                instances_results = sparql_client.query(instances_query, use_cache=use_cache)
+                print(f"  → {len(instances_results)} instances trouvées")
+
+                objects = []
+
+                # Si seulement 'id' est demandé, retourner directement
+                if requested_fields == {'id': None} or not requested_fields:
+                    return [{'id': r['instance']} for r in instances_results]
+
+                # Étape 2: Pour chaque instance, récupérer les propriétés demandées
+                requested_uris = []
+                for field_name in requested_fields.keys():
+                    if field_name != 'id':
+                        prop_uri = prop_name_to_uri.get(field_name)
+                        if prop_uri:
+                            requested_uris.append(f"<{prop_uri}>")
+
+                if not requested_uris:
+                    # Aucune propriété connue demandée
+                    return [{'id': r['instance']} for r in instances_results]
+
+                # Étape 3: Requête optimisée pour TOUTES les instances
+                # Utiliser VALUES pour récupérer toutes les données en une seule requête
+                instances_values = ' '.join([f"<{r['instance']}>" for r in instances_results])
+
+                batch_query = f"""
+                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+                SELECT ?instance ?property ?value WHERE {{
+                    VALUES ?instance {{ {instances_values} }}
+                    ?instance ?property ?value .
+                    FILTER(?property IN ({', '.join(requested_uris)}))
+                }}
+                """
+
+                print(f"  → Requête batch pour propriétés: {requested_uris}")
+                batch_results = sparql_client.query(batch_query, use_cache=use_cache)
+                print(f"  → {len(batch_results)} triplets récupérés")
+
+                # Étape 4: Organiser les résultats par instance
+                instances_data = {}
+                for r in instances_results:
+                    instances_data[r['instance']] = {'id': r['instance']}
+
+                for result in batch_results:
+                    instance_id = result['instance']
+                    prop_uri = result['property']
+                    value = result['value']
+
+                    # MAPPING URI -> nom GraphQL
+                    prop_name = prop_uri_to_name.get(prop_uri)
+
+                    if prop_name and prop_name in requested_fields:
+                        if isinstance(value, str) and value.startswith('http'):
+                            if requested_fields[prop_name]:
+                                instances_data[instance_id][prop_name] = resolve_subobject(
+                                    value, requested_fields[prop_name]
+                                )
+                            else:
+                                instances_data[instance_id][prop_name] = value
+                        else:
+                            instances_data[instance_id][prop_name] = value
+
+                objects = list(instances_data.values())
+                print(f"  ✓ {len(objects)} objets liste résolus")
+
+                return objects
+
+        except Exception as e:
+            import traceback
+            error_detail = traceback.format_exc()
+            print(f"❌ Erreur dans le résolveur {type_name}: {error_detail}")
+            raise GraphQLError(f"Resolver error for {type_name}: {str(e)}")
+
+    return resolver
+
+
+
+# ============================================================================
+# INTÉGRATION DANS LE SCHÉMA
+# ============================================================================
+
+# REMPLACER create_advanced_resolver par create_advanced_resolver_fixed
+# dans build_complete_graphql_schema()
+
+# REMPLACER get_graph_for_type par get_graph_for_type_improved
+# dans create_advanced_mutation() et create_delete_mutation()
 
 def graphql_type_from_rdf_type(rdf_type: str) -> type:
     """Convertit un type RDF en type GraphQL"""
@@ -378,14 +732,25 @@ def graphql_type_from_rdf_type(rdf_type: str) -> type:
 
 
 def sanitize_name(name: str) -> str:
-    """Nettoie un nom pour qu'il soit valide en GraphQL"""
-    # Remplacer les caractères non alphanumériques
-    name = ''.join(c if c.isalnum() else '_' for c in name)
+    """Nettoie un nom pour qu'il soit valide en GraphQL avec camelCase"""
+    # Séparer par underscore
     name = unidecode.unidecode(name)
-    # S'assurer que ça commence par une lettre
-    if name and not name[0].isalpha():
-        name = 'T_' + name
-    return name or 'Unknown'
+    parts = name.replace('-', '_').split('_')
+
+    # Première partie en minuscule, le reste capitalisé (camelCase)
+    if len(parts) > 1:
+        result = parts[0].lower() + ''.join(p.capitalize() for p in parts[1:] if p)
+    else:
+        result = parts[0]
+
+    # Remplacer les caractères non alphanumériques
+    result = ''.join(c if c.isalnum() else '' for c in result)
+
+    # S'assurer que ça commence par une lettre minuscule
+    if result and not result[0].isalpha():
+        result = 'field' + result
+
+    return result or 'unknown'
 
 
 def build_graphql_types(schema_def: Dict) -> Dict[str, type]:
@@ -424,6 +789,7 @@ class DynamicQuery(ObjectType):
     """Classe de requête GraphQL construite dynamiquement"""
     pass
 
+
 def create_resolver(type_name: str, type_uri: str):
     """Crée un résolveur pour un type donné"""
 
@@ -436,7 +802,7 @@ def create_resolver(type_name: str, type_uri: str):
             query = f"""
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-
+            
             SELECT ?property ?value WHERE {{
                 {{
                     <{id}> wdt:P31 <{type_uri}> .
@@ -452,7 +818,7 @@ def create_resolver(type_name: str, type_uri: str):
             query = f"""
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-
+            
             SELECT DISTINCT ?instance WHERE {{
                 {{
                     ?instance wdt:P31 <{type_uri}> .
@@ -477,6 +843,7 @@ def create_resolver(type_name: str, type_uri: str):
 
     return resolver
 
+
 # ============================================================================
 # MUTATIONS GRAPHQL
 # ============================================================================
@@ -498,6 +865,7 @@ def get_graph_for_type(type_name: str, type_uri: str) -> str:
 
     # Par défaut
     return 'http://example.org/graphs/default'
+
 
 def create_mutation(type_name: str, type_uri: str):
     """Crée une mutation pour un type donné"""
@@ -531,7 +899,7 @@ def create_mutation(type_name: str, type_uri: str):
 
                 update_query = f"""
                 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
+                
                 INSERT DATA {{
                     GRAPH <{graph}> {{
                         {' '.join(triples)}
@@ -550,11 +918,13 @@ def create_mutation(type_name: str, type_uri: str):
 
     return TypeMutation
 
+
 # ============================================================================
 # REQUÊTES ASYNCHRONES
 # ============================================================================
 
 async_jobs = {}
+
 
 def execute_async_query(job_id: str, query: str, variables: Dict):
     """Exécute une requête GraphQL de manière asynchrone"""
@@ -571,6 +941,7 @@ def execute_async_query(job_id: str, query: str, variables: Dict):
     except Exception as e:
         async_jobs[job_id] = {'status': 'failed', 'error': str(e)}
 
+
 # ============================================================================
 # ROUTES FLASK
 # ============================================================================
@@ -585,6 +956,7 @@ def login():
     print(f"Redirect URI: {redirect_uri}")
 
     return google.authorize_redirect(redirect_uri)
+
 
 @app.route('/auth/callback')
 def auth_callback():
@@ -673,7 +1045,7 @@ def auth_callback():
                     <summary>Détails techniques (cliquer pour voir)</summary>
                     <pre>{error_detail}</pre>
                 </details>
-
+                
                 <h3>Vérifications à faire :</h3>
                 <ul>
                     <li>Votre <strong>GOOGLE_CLIENT_ID</strong> est-il correct dans la config ?</li>
@@ -681,7 +1053,7 @@ def auth_callback():
                     <li>L'URI de redirection <code>{request.url_root.rstrip('/')}/auth/callback</code> est-elle autorisée dans la console Google Cloud ?</li>
                     <li>Avez-vous activé l'API Google+ dans votre projet Google Cloud ?</li>
                 </ul>
-
+                
                 <a href="/login" class="btn">🔄 Réessayer</a>
                 <a href="/" class="btn">🏠 Retour à l'accueil</a>
             </div>
@@ -689,11 +1061,13 @@ def auth_callback():
         </html>
         ''', 400
 
+
 @app.route('/logout')
 def logout():
     """Déconnexion"""
     session.clear()
     return redirect('/')
+
 
 @app.route('/graphql_ex', methods=['POST'])
 @require_auth
@@ -780,6 +1154,7 @@ def graphql_async_endpoint():
         'result_url': f'/graphql/async/result/{job_id}'
     })
 
+
 @app.route('/graphql/async/status/<job_id>')
 def async_status(job_id):
     """Vérifie le statut d'une requête asynchrone"""
@@ -798,6 +1173,7 @@ def async_status(job_id):
         return jsonify({'error': 'Job not found'}), 404
 
     return jsonify(async_jobs[job_id])
+
 
 @app.route('/graphql/async/result/<job_id>')
 def async_result(job_id):
@@ -825,6 +1201,7 @@ def async_result(job_id):
 
     return jsonify(result)
 
+
 @app.route('/schema/refresh', methods=['POST'])
 def refresh_schema():
     """Régénère le schéma GraphQL"""
@@ -840,9 +1217,9 @@ def refresh_schema():
         return jsonify({'error': 'Missing or invalid authorization'}), 401
 
     try:
-        print("\n" + "="*60)
+        print("\n" + "=" * 60)
         print("RÉGÉNÉRATION DU SCHÉMA")
-        print("="*60)
+        print("=" * 60)
 
         schema = generate_graphql_schema()
         save_schema_cache(schema)
@@ -855,7 +1232,7 @@ def refresh_schema():
         num_types = len(schema['auto_generated'])
 
         print(f"✓ Schéma régénéré avec {num_types} types")
-        print("="*60 + "\n")
+        print("=" * 60 + "\n")
 
         return jsonify({
             'message': 'Schema refreshed successfully',
@@ -872,8 +1249,9 @@ def refresh_schema():
             'detail': error_detail
         }), 500
 
-@app.route('/schema/info')
-def schema_info():
+
+@app.route('/schema/inf_ex')
+def schema_info_ex():
     """Affiche les informations sur le schéma actuel"""
 
     try:
@@ -894,10 +1272,10 @@ def schema_info():
             <div class="type-box">
                 <h3>{type_name}</h3>
                 <p><small>URI: {type_uri}</small></p>
-                <p><strong>Graphes:</strong> {', '.join(type_info.get('graphs', []) if type_info["graphs"]!=[None] else "")}</p>
+                <p><strong>Graphes:</strong> {', '.join(type_info.get('graphs', []) if type_info["graphs"] != [None] else "")}</p>
                 <p><strong>Propriétés:</strong></p>
                 <ul>{props_html if props_html else '<li>Aucune propriété détectée</li>'}</ul>
-
+                
                 <div class="queries">
                     <strong>Requêtes disponibles:</strong>
                     <ul>
@@ -905,7 +1283,7 @@ def schema_info():
                         <li><code>all{type_name}s</code></li>
                     </ul>
                 </div>
-
+                
                 <div class="mutations">
                     <strong>Mutations disponibles:</strong>
                     <ul>
@@ -1012,11 +1390,11 @@ def schema_info():
                     <button onclick="refreshSchema()" class="btn btn-refresh">🔄 Régénérer le schéma</button>
                 </div>
             </div>
-
+            
             {'<div class="info">ℹ️ Pour régénérer le schéma, vous devez être authentifié. Cliquez sur le bouton ci-dessus.</div>' if len(merged) == 0 else ''}
-
+            
             {types_html if types_html else '<div class="warning">⚠️ Aucun type RDF détecté. Cliquez sur "Régénérer le schéma" pour scanner votre endpoint SPARQL.</div>'}
-
+            
             <script>
                 function refreshSchema() {{
                     if (confirm('Régénérer le schéma depuis l\\'endpoint SPARQL ?')) {{
@@ -1074,6 +1452,7 @@ def schema_info():
     shutil.rmtree(CONFIG['QUERY_CACHE_DIR'])
     os.makedirs(CONFIG['QUERY_CACHE_DIR'])
     return jsonify({'message': 'Cache cleared successfully'})
+
 
 @app.route('/graphiql')
 def graphiql():
@@ -1142,14 +1521,14 @@ def graphiql():
             </div>
         </div>
         <div id="graphiql">Chargement de GraphiQL...</div>
-
+        
         <script crossorigin src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
         <script crossorigin src="https://unpkg.com/graphiql@2.4.7/graphiql.min.js"></script>
         <script>
             // Stocker le token pour les requêtes
             const jwtToken = '{jwt_token}';
-
+            
             // Fonction fetcher personnalisée
             function graphQLFetcher(graphQLParams) {{
                 return fetch('/graphql', {{
@@ -1166,10 +1545,10 @@ def graphiql():
                     return {{ errors: [{{ message: error.toString() }}] }};
                 }});
             }}
-
+            
             // Rendre GraphiQL avec React 17
             ReactDOM.render(
-                React.createElement(GraphiQL, {{
+                React.createElement(GraphiQL, {{ 
                     fetcher: graphQLFetcher,
                     defaultQuery: `# Bienvenue dans GraphiQL!
 # Voici quelques exemples de requêtes:
@@ -1204,7 +1583,7 @@ def graphiql():
                 }}),
                 document.getElementById('graphiql')
             );
-
+            
             function logout() {{
                 if (confirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {{
                     window.location.href = '/logout';
@@ -1214,6 +1593,7 @@ def graphiql():
     </body>
     </html>
     '''
+
 
 @app.route('/')
 def home():
@@ -1283,9 +1663,9 @@ def home():
         <div class="container">
             <h1>🚀 API GraphQL-SPARQL</h1>
             <p>Interrogez et modifiez vos données RDF via GraphQL</p>
-
+            
             {"<div class='user-badge'>👤 Connecté en tant que <strong>" + user_info.get('name', '') + "</strong></div>" if is_authenticated else ""}
-
+            
             <div>
                 {"<a href='/graphiql' class='btn'>🎨 Ouvrir GraphiQL</a>" if is_authenticated else "<a href='/login' class='btn'>🔐 Se connecter avec Google</a>"}
                 <a href='/docs' class='btn'>📚 Documentation</a>
@@ -1293,12 +1673,13 @@ def home():
                 <a href='/config' class='btn'>⚙️ Configuration</a>
                 {"<a href='/logout' class='btn'>🚪 Déconnexion</a>" if is_authenticated else ""}
             </div>
-
+            
             {"<p style='margin-top: 30px; font-size: 0.9em;'>Token JWT disponible pour les appels d'API</p>" if is_authenticated else ""}
         </div>
     </body>
     </html>
     '''
+
 
 @app.route('/token')
 def get_token():
@@ -1310,6 +1691,7 @@ def get_token():
         'token': session['jwt_token'],
         'user': session.get('user_info', {})
     })
+
 
 # ============================================================================
 # EXEMPLES D'UTILISATION
@@ -1371,6 +1753,7 @@ def example_synchronous():
 
     print("Résultat mutation:", response.json())
 
+
 def example_asynchronous():
     """Exemple d'utilisation asynchrone"""
     import requests
@@ -1424,6 +1807,7 @@ def example_asynchronous():
     result = result_response.json()
     print("Résultat asynchrone:", result)
 
+
 # ============================================================================
 # CONSTRUCTION COMPLÈTE DU SCHÉMA GRAPHQL
 # ============================================================================
@@ -1440,6 +1824,7 @@ def build_complete_graphql_schema():
 
     if not merged_schema:
         print("⚠️  Aucun type détecté dans le schéma. Création d'un schéma minimal.")
+
         # Créer un schéma minimal si aucun type n'est détecté
         class MinimalQuery(ObjectType):
             hello = String()
@@ -1488,7 +1873,7 @@ def build_complete_graphql_schema():
             graphql_type,
             id=String(required=True),
             use_cache=graphene.Boolean(default_value=False),
-            resolver=create_advanced_resolver(type_name, type_uri, single=True)
+            resolver=create_advanced_resolver_fixed(type_name, type_uri, single=True)
         )
 
         # 2. Requête pour tous les objets du type
@@ -1496,7 +1881,7 @@ def build_complete_graphql_schema():
         query_fields[list_field_name] = Field(
             GList(graphql_type),
             use_cache=graphene.Boolean(default_value=False),
-            resolver=create_advanced_resolver(type_name, type_uri, single=False)
+            resolver=create_advanced_resolver_fixed(type_name, type_uri, single=False)
         )
 
         # Ajouter les mutations
@@ -1526,8 +1911,10 @@ def build_complete_graphql_schema():
 
     return schema
 
+
 # Variable globale pour le schéma GraphQL
 graphql_schema = None
+
 
 def get_graphql_schema():
     """Récupère ou construit le schéma GraphQL"""
@@ -1536,6 +1923,7 @@ def get_graphql_schema():
         print("Construction du schéma GraphQL...")
         graphql_schema = build_complete_graphql_schema()
     return graphql_schema
+
 
 # ============================================================================
 # RÉSOLVEURS AMÉLIORÉS AVEC SOUS-OBJETS
@@ -1548,7 +1936,7 @@ def resolve_subobject(uri: str, requested_fields: List[str]) -> Dict[str, Any]:
     type_query = f"""
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-
+    
     SELECT ?type WHERE {{
         {{
             <{uri}> wdt:P31 ?type .
@@ -1575,7 +1963,7 @@ def resolve_subobject(uri: str, requested_fields: List[str]) -> Dict[str, Any]:
     data_query = f"""
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
+    
     SELECT ?property ?value ?label WHERE {{
         <{uri}> ?property ?value .
         OPTIONAL {{ ?property rdfs:label ?label }}
@@ -1593,6 +1981,7 @@ def resolve_subobject(uri: str, requested_fields: List[str]) -> Dict[str, Any]:
 
     return obj
 
+
 def create_advanced_resolver(type_name: str, type_uri: str, single: bool = True):
     """Crée un résolveur avancé qui gère les sous-objets"""
 
@@ -1600,6 +1989,22 @@ def create_advanced_resolver(type_name: str, type_uri: str, single: bool = True)
         """Résolveur avec support des sous-objets"""
 
         try:
+            # Charger le schéma pour avoir le mapping URI -> nom GraphQL
+            schema_cache = load_schema_cache()
+            merged = merge_schema_definitions(
+                schema_cache.get('auto_generated', {}),
+                schema_cache.get('manual', {})
+            )
+
+            # Créer un mapping prop_uri -> graphql_name pour ce type
+            prop_uri_to_name = {}
+            prop_name_to_uri = {}
+            if type_uri in merged:
+                for prop_uri, prop_info in merged[type_uri].get('properties', {}).items():
+                    graphql_name = sanitize_name(prop_info['label'])
+                    prop_uri_to_name[prop_uri] = graphql_name
+                    prop_name_to_uri[graphql_name] = prop_uri
+
             # Analyser les champs demandés dans la requête GraphQL
             selection_set = info.field_nodes[0].selection_set
             requested_fields = {}
@@ -1623,7 +2028,7 @@ def create_advanced_resolver(type_name: str, type_uri: str, single: bool = True)
                 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
                 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-                
+
                 SELECT ?property ?value ?propertyLabel WHERE {{
                     {{
                         <{id}> wdt:P31 <{type_uri}> .
@@ -1641,9 +2046,16 @@ def create_advanced_resolver(type_name: str, type_uri: str, single: bool = True)
 
                 obj = {'id': id}
                 for result in results:
-                    prop_label = result.get('propertyLabel', result['property'].split('/')[-1].split('#')[-1])
-                    prop_name = sanitize_name(prop_label)
+                    prop_uri = result['property']
                     value = result['value']
+
+                    # Utiliser le mapping URI -> nom GraphQL
+                    prop_name = prop_uri_to_name.get(prop_uri)
+
+                    if not prop_name:
+                        # Fallback si la propriété n'est pas dans le schéma
+                        prop_label = result.get('propertyLabel', prop_uri.split('/')[-1].split('#')[-1])
+                        prop_name = sanitize_name(prop_label)
 
                     # Si c'est une URI et que des sous-champs sont demandés, résoudre le sous-objet
                     if value.startswith('http') and prop_name in requested_fields and requested_fields[prop_name]:
@@ -1660,58 +2072,77 @@ def create_advanced_resolver(type_name: str, type_uri: str, single: bool = True)
                 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
                 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-                
+
                 SELECT DISTINCT ?instance 
-                       (SAMPLE(?label) AS ?instanceLabel)
                 WHERE {{
                     {{
                         ?instance wdt:P31 <{type_uri}> .
                     }} UNION {{
                         ?instance rdf:type <{type_uri}> .
                     }}
-                    OPTIONAL {{ ?instance rdfs:label ?label }}
-                    OPTIONAL {{ ?instance skos:prefLabel ?label }}
                 }}
-                GROUP BY ?instance
                 LIMIT 100
                 """
 
-                print(f"  Requête SPARQL: {query}")
+                print(f"  Requête SPARQL liste: {query}")
                 results = sparql_client.query(query, use_cache=use_cache)
-                print(f"  → {len(results)} résultats trouvés")
+                print(f"  → {len(results)} instances trouvées")
 
                 objects = []
                 for result in results:
                     instance_id = result['instance']
                     obj = {'id': instance_id}
 
-                    # Ajouter le label si disponible et demandé
-                    if 'label' in requested_fields and 'instanceLabel' in result:
-                        obj['label'] = result['instanceLabel']
+                    # Si des champs sont demandés (autres que 'id'), récupérer les propriétés
+                    if requested_fields and not (len(requested_fields) == 1 and 'id' in requested_fields):
+                        # Construire une requête optimisée pour récupérer uniquement les propriétés demandées
+                        # Convertir les noms GraphQL en URIs
+                        requested_uris = []
+                        for field_name in requested_fields.keys():
+                            if field_name != 'id':
+                                prop_uri = prop_name_to_uri.get(field_name)
+                                if prop_uri:
+                                    requested_uris.append(f"<{prop_uri}>")
 
-                    # Si d'autres champs sont demandés, récupérer les données complètes
-                    if len(requested_fields) > 1 or ('label' not in requested_fields and requested_fields):
-                        # Récupérer toutes les propriétés
-                        detail_query = f"""
-                        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-                        
-                        SELECT ?property ?value ?propertyLabel WHERE {{
-                            <{instance_id}> ?property ?value .
-                            OPTIONAL {{ ?property rdfs:label ?propertyLabel }}
-                            OPTIONAL {{ ?property skos:prefLabel ?propertyLabel }}
-                        }}
-                        """
+                        if requested_uris:
+                            # Requête filtrée sur les propriétés demandées
+                            detail_query = f"""
+                            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+                            SELECT ?property ?value WHERE {{
+                                <{instance_id}> ?property ?value .
+                                FILTER(?property IN ({', '.join(requested_uris)}))
+                            }}
+                            """
+                        else:
+                            # Si aucune URI trouvée, récupérer toutes les propriétés
+                            detail_query = f"""
+                            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+                            SELECT ?property ?value WHERE {{
+                                <{instance_id}> ?property ?value .
+                                FILTER(?property != rdf:type && ?property != <http://www.wikidata.org/prop/direct/P31>)
+                            }}
+                            """
+
                         detail_results = sparql_client.query(detail_query, use_cache=use_cache)
 
                         for detail in detail_results:
-                            prop_label = detail.get('propertyLabel', detail['property'].split('/')[-1].split('#')[-1])
-                            prop_name = sanitize_name(prop_label)
+                            prop_uri = detail['property']
+                            value = detail['value']
+
+                            # Utiliser le mapping URI -> nom GraphQL
+                            prop_name = prop_uri_to_name.get(prop_uri)
 
                             # Seulement ajouter si le champ est demandé
-                            if prop_name in requested_fields:
-                                obj[prop_name] = detail['value']
+                            if prop_name and prop_name in requested_fields:
+                                # Si c'est une référence avec sous-champs demandés
+                                if value.startswith('http') and requested_fields[prop_name]:
+                                    obj[prop_name] = resolve_subobject(value, requested_fields[prop_name])
+                                else:
+                                    obj[prop_name] = value
 
                     objects.append(obj)
 
@@ -1747,13 +2178,13 @@ def create_advanced_mutation(type_name: str, type_uri: str):
             """Effectue la mutation avec gestion des relations"""
             try:
                 data_dict = json.loads(data)
-                graph = get_graph_for_type(type_name, type_uri)
+                graph = get_graph_for_type_improved(type_name, type_uri)
 
                 # Vérifier si l'entité existe déjà
                 check_query = f"""
                 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-
+                
                 ASK WHERE {{
                     {{
                         <{id}> wdt:P31 <{type_uri}> .
@@ -1772,7 +2203,7 @@ def create_advanced_mutation(type_name: str, type_uri: str):
                 if replace and exists:
                     delete_query = f"""
                     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
+                    
                     DELETE WHERE {{
                         GRAPH <{graph}> {{
                             <{id}> ?p ?o .
@@ -1826,7 +2257,7 @@ def create_advanced_mutation(type_name: str, type_uri: str):
                 # Insérer les données
                 insert_query = f"""
                 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
+                
                 INSERT DATA {{
                     GRAPH <{graph}> {{
                         {' '.join(triples)}
@@ -1846,6 +2277,7 @@ def create_advanced_mutation(type_name: str, type_uri: str):
 
     return AdvancedMutation
 
+
 # ============================================================================
 # MUTATION DE SUPPRESSION
 # ============================================================================
@@ -1863,7 +2295,7 @@ def create_delete_mutation(type_name: str, type_uri: str):
         def mutate(root, info, id):
             """Supprime une entité du graphe"""
             try:
-                graph = get_graph_for_type(type_name, type_uri)
+                graph = get_graph_for_type_improved(type_name, type_uri)
 
                 # Supprimer tous les triples où l'entité est sujet
                 delete_query = f"""
@@ -1884,6 +2316,7 @@ def create_delete_mutation(type_name: str, type_uri: str):
                 raise GraphQLError(f"Delete failed: {str(e)}")
 
     return DeleteMutation
+
 
 # ============================================================================
 # ENDPOINTS FLASK AMÉLIORÉS
@@ -1944,11 +2377,10 @@ def graphql_endpoint():
         if not query:
             return jsonify({'error': 'No query provided'}), 400
 
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"GraphQL Query: {query}")
         print(f"Variables: {variables}")
-        print(f"Operation: {operation_name}")
-        print(f"{'='*60}\n")
+        print(f"{'=' * 60}\n")
 
         # Exécuter la requête avec le schéma Graphene
         result = graphql_schema.execute(
@@ -1968,7 +2400,8 @@ def graphql_endpoint():
             response_data['errors'] = [
                 {
                     'message': str(e),
-                    'locations': [{'line': loc.line, 'column': loc.column} for loc in e.locations] if hasattr(e, 'locations') and e.locations else None,
+                    'locations': [{'line': loc.line, 'column': loc.column} for loc in e.locations] if hasattr(e,
+                                                                                                              'locations') and e.locations else None,
                     'path': list(e.path) if hasattr(e, 'path') and e.path else None
                 }
                 for e in result.errors
@@ -2093,7 +2526,7 @@ def manage_config():
         <body>
             <div class="config-box">
                 <h1>⚙️ Configuration du serveur</h1>
-
+                
                 <h2>🔐 Configuration OAuth Google</h2>
                 <div class="config-item">
                     <span class="config-label">Client ID:</span>
@@ -2102,7 +2535,7 @@ def manage_config():
                         {'✓ Configuré' if CONFIG.get('GOOGLE_CLIENT_ID') and 'your-google' not in CONFIG.get('GOOGLE_CLIENT_ID', '') else '✗ À configurer'}
                     </span>
                 </div>
-
+                
                 <div class="config-item">
                     <span class="config-label">Client Secret:</span>
                     <span class="config-value">{'*' * 20 if CONFIG.get('GOOGLE_CLIENT_SECRET') and 'your-google' not in CONFIG.get('GOOGLE_CLIENT_SECRET', '') else 'Non configuré'}</span>
@@ -2110,27 +2543,27 @@ def manage_config():
                         {'✓ Configuré' if CONFIG.get('GOOGLE_CLIENT_SECRET') and 'your-google' not in CONFIG.get('GOOGLE_CLIENT_SECRET', '') else '✗ À configurer'}
                     </span>
                 </div>
-
+                
                 <div class="config-item">
                     <span class="config-label">URL de callback autorisée:</span>
                     <span class="config-value">{request.url_root.rstrip('/')}/auth/callback</span>
                     <p style="margin-top: 10px; font-size: 14px; color: #7f8c8d;">
-                        ⚠️ Assurez-vous que cette URL est ajoutée dans les "URI de redirection autorisés"
+                        ⚠️ Assurez-vous que cette URL est ajoutée dans les "URI de redirection autorisés" 
                         de votre projet Google Cloud Console.
                     </p>
                 </div>
-
+                
                 <h2>🗄️ Configuration SPARQL</h2>
                 <div class="config-item">
                     <span class="config-label">Endpoint SPARQL:</span>
                     <span class="config-value">{CONFIG.get('SPARQL_ENDPOINT', 'Non configuré')}</span>
                 </div>
-
+                
                 <div class="config-item">
                     <span class="config-label">Endpoint UPDATE:</span>
                     <span class="config-value">{CONFIG.get('SPARQL_UPDATE_ENDPOINT', 'Non configuré')}</span>
                 </div>
-
+                
                 <h2>📊 État du système</h2>
                 <div class="config-item">
                     <span class="config-label">Cache du schéma:</span>
@@ -2138,21 +2571,21 @@ def manage_config():
                         {'✓ Fichier présent' if os.path.exists(CONFIG['SCHEMA_CACHE_FILE']) else '✗ Pas encore généré'}
                     </span>
                 </div>
-
+                
                 <div class="config-item">
                     <span class="config-label">Répertoire cache requêtes:</span>
                     <span class="config-value">
                         {len([f for f in os.listdir(CONFIG['QUERY_CACHE_DIR']) if f.endswith('.json')])} fichiers
                     </span>
                 </div>
-
+                
                 <h2>🔗 Actions</h2>
                 <a href="/" class="btn">🏠 Accueil</a>
                 <a href="/docs" class="btn">📚 Documentation</a>
                 <a href="/graphiql" class="btn">🎨 GraphiQL</a>
                 <a href="/schema/info" class="btn">📊 Schéma</a>
             </div>
-
+            
             <div class="config-box">
                 <h2>📝 Comment configurer Google OAuth</h2>
                 <ol>
@@ -2173,12 +2606,23 @@ def manage_config():
         error_detail = traceback.format_exc()
         print(f"Erreur dans /config: {error_detail}")
         return f"""<h1>Erreur</h1><pre>{error_detail}</pre>
-                <li>Copiez le Client ID et le Client Secret dans votre configuration</li>
-            </ol>
-        </div>
-    </body>
-    </html>
-    """
+                                                            < li > Copiez
+        le
+        Client
+        ID
+        et
+        le
+        Client
+        Secret
+        dans
+        votre
+        configuration </li>
+                          </ol>
+                              </div>
+                                  </body>
+                                      </html>
+                                          """
+
 
 @app.route('/cache/clear', methods=['POST'])
 def clear_cache():
@@ -2199,6 +2643,7 @@ def clear_cache():
     os.makedirs(CONFIG['QUERY_CACHE_DIR'])
     return jsonify({'message': 'Cache cleared successfully'})
 
+
 @app.route('/docs')
 def documentation():
     """Documentation de l'API"""
@@ -2206,126 +2651,1109 @@ def documentation():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>API GraphQL-SPARQL Documentation</title>
-        <style>
-            body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-            h1, h2, h3 { color: #333; }
-            code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
-            pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
-            .endpoint { background: #e8f5e9; padding: 10px; margin: 10px 0; border-left: 4px solid #4caf50; }
-        </style>
+      <title>API GraphQL-SPARQL Documentation</title>
+      <style>
+          body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+          h1, h2, h3 { color: #333; }
+          code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+          pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+          .endpoint { background: #e8f5e9; padding: 10px; margin: 10px 0; border-left: 4px solid #4caf50; }
+      </style>
     </head>
     <body>
-        <h1>API GraphQL-SPARQL - Documentation</h1>
-
-        <h2>Vue d'ensemble</h2>
-        <p>Cette API permet d'interroger et de modifier des données RDF via GraphQL.</p>
-
-        <h2>Authentification</h2>
-        <p>Toutes les requêtes nécessitent un token JWT dans le header Authorization:</p>
-        <pre>Authorization: Bearer &lt;your-jwt-token&gt;</pre>
-
-        <h3>Obtenir un token</h3>
-        <div class="endpoint">
-            <strong>GET</strong> /login<br>
-            Initie le flux OAuth Google
-        </div>
-
-        <h2>Endpoints</h2>
-
-        <div class="endpoint">
-            <strong>POST</strong> /graphql<br>
-            Endpoint GraphQL principal (mode synchrone)<br>
-            Body: <code>{"query": "...", "variables": {...}, "use_cache": false}</code>
-        </div>
-
-        <div class="endpoint">
-            <strong>POST</strong> /graphql/async<br>
-            Endpoint GraphQL asynchrone<br>
-            Retourne un job_id pour suivre l'exécution
-        </div>
-
-        <div class="endpoint">
-            <strong>GET</strong> /graphql/async/status/&lt;job_id&gt;<br>
-            Vérifie le statut d'une requête asynchrone
-        </div>
-
-        <div class="endpoint">
-            <strong>GET</strong> /graphql/async/result/&lt;job_id&gt;<br>
-            Récupère le résultat d'une requête asynchrone terminée
-        </div>
-
-        <div class="endpoint">
-            <strong>POST</strong> /schema/refresh<br>
-            Régénère le schéma GraphQL à partir du graphe RDF
-        </div>
-
-        <div class="endpoint">
-            <strong>POST</strong> /cache/clear<br>
-            Vide le cache des requêtes
-        </div>
-
-        <h2>Exemples de requêtes GraphQL</h2>
-
-        <h3>Lecture simple</h3>
-        <pre>
-query {
-  getPainting(id: "http://example.org/painting/1") {
+      <h1>API GraphQL-SPARQL - Documentation</h1>
+      
+      <h2>Vue d'ensemble</h2>
+      <p>Cette API permet d'interroger et de modifier des données RDF via GraphQL.</p>
+      
+      <h2>Authentification</h2>
+      <p>Toutes les requêtes nécessitent un token JWT dans le header Authorization:</p>
+      <pre>Authorization: Bearer &lt;your-jwt-token&gt;</pre>
+      
+      <h3>Obtenir un token</h3>
+      <div class="endpoint">
+          <strong>GET</strong> /login<br>
+          Initie le flux OAuth Google
+      </div>
+      
+      <h2>Endpoints</h2>
+      
+      <div class="endpoint">
+          <strong>POST</strong> /graphql<br>
+          Endpoint GraphQL principal (mode synchrone)<br>
+          Body: <code>{"query": "...", "variables": {...}, "use_cache": false}</code>
+      </div>
+      
+      <div class="endpoint">
+          <strong>POST</strong> /graphql/async<br>
+          Endpoint GraphQL asynchrone<br>
+          Retourne un job_id pour suivre l'exécution
+      </div>
+      
+      <div class="endpoint">
+          <strong>GET</strong> /graphql/async/status/&lt;job_id&gt;<br>
+          Vérifie le statut d'une requête asynchrone
+      </div>
+      
+      <div class="endpoint">
+          <strong>GET</strong> /graphql/async/result/&lt;job_id&gt;<br>
+          Récupère le résultat d'une requête asynchrone terminée
+      </div>
+      
+      <div class="endpoint">
+          <strong>POST</strong> /schema/refresh<br>
+          Régénère le schéma GraphQL à partir du graphe RDF
+      </div>
+      
+      <div class="endpoint">
+          <strong>POST</strong> /cache/clear<br>
+          Vide le cache des requêtes
+      </div>
+      
+      <h2>Exemples de requêtes GraphQL</h2>
+      
+      <h3>Lecture simple</h3>
+      <pre>
+    query {
+    getPainting(id: "http://example.org/painting/1") {
     id
     title
     creationDate
-  }
-}
-        </pre>
-
-        <h3>Lecture avec sous-objets</h3>
-        <pre>
-query {
-  getPainting(id: "http://example.org/painting/1") {
+    }
+    }
+      </pre>
+      
+      <h3>Lecture avec sous-objets</h3>
+      <pre>
+    query {
+    getPainting(id: "http://example.org/painting/1") {
     id
     title
     artist {
-      id
-      name
-      birthDate
+    id
+    name
+    birthDate
     }
-  }
-}
-        </pre>
-
-        <h3>Mutation (création/modification)</h3>
-        <pre>
-mutation {
-  createPainting(
+    }
+    }
+      </pre>
+      
+      <h3>Mutation (création/modification)</h3>
+      <pre>
+    mutation {
+    createPainting(
     id: "http://example.org/painting/new"
     data: "{\\"title\\": \\"Mona Lisa\\", \\"artist\\": \\"http://example.org/artist/davinci\\"}"
-  ) {
+    ) {
     success
     entity
     created
-  }
-}
-        </pre>
-
-        <h3>Suppression</h3>
-        <pre>
-mutation {
-  deletePainting(id: "http://example.org/painting/old") {
+    }
+    }
+      </pre>
+      
+      <h3>Suppression</h3>
+      <pre>
+    mutation {
+    deletePainting(id: "http://example.org/painting/old") {
     success
     deleted_id
-  }
-}
-        </pre>
-
-        <h2>Cache</h2>
-        <p>Le cache peut être activé par requête avec le paramètre <code>use_cache: true</code></p>
-
-        <h2>Mode asynchrone</h2>
-        <p>Pour les requêtes longues, utilisez l'endpoint /graphql/async qui retourne immédiatement un job_id.</p>
+    }
+    }
+      </pre>
+      
+      <h2>Cache</h2>
+      <p>Le cache peut être activé par requête avec le paramètre <code>use_cache: true</code></p>
+      
+      <h2>Mode asynchrone</h2>
+      <p>Pour les requêtes longues, utilisez l'endpoint /graphql/async qui retourne immédiatement un job_id.</p>
     </body>
     </html>
     """
     return docs
+
+
+# ============================================================================
+# ROUTE /schema/info AMÉLIORÉE AVEC CORRESPONDANCES
+# ============================================================================
+
+@app.route('/schema/info')
+def schema_info_improved():
+    """Affiche les informations sur le schéma avec correspondances URI ↔ GraphQL"""
+
+    try:
+        schema_cache = load_schema_cache()
+        merged = merge_schema_definitions(
+            schema_cache.get('auto_generated', {}),
+            schema_cache.get('manual', {})
+        )
+
+        types_html = ""
+        for type_uri, type_info in merged.items():
+            type_name = sanitize_name(type_info['label'])
+
+            # Construire le tableau des propriétés avec correspondances
+            props_table = """
+            <table class="props-table">
+                <tr>
+                    <th>Propriété RDF (URI)</th>
+                    <th>Nom GraphQL</th>
+                    <th>Type</th>
+                    <th>Exemple</th>
+                </tr>
+            """
+
+            for prop_uri, prop_info in type_info.get('properties', {}).items():
+                graphql_name = sanitize_name(prop_info['label'])
+                rdf_label = prop_info['label']
+                prop_type = prop_info['type']
+
+                # Générer un exemple de requête
+                if prop_type == 'reference':
+                    example = f'{graphql_name} {{ id }}'
+                else:
+                    example = graphql_name
+
+                # Afficher l'URI complète et le label RDF
+                props_table += f"""
+                <tr>
+                    <td>
+                        <code class="uri-code">{prop_uri}</code><br>
+                        <small style="color: #666;">Label: {rdf_label}</small>
+                    </td>
+                    <td><strong class="graphql-name">{graphql_name}</strong></td>
+                    <td><span class="type-badge">{prop_type}</span></td>
+                    <td><code class="example-code">{example}</code></td>
+                </tr>
+                """
+
+            props_table += "</table>"
+
+            # Exemple de requête complète
+            example_query = f"""query {{
+  get{type_name}(id: "URI_DE_L_INSTANCE") {{
+    id
+    {chr(10).join(['    ' + sanitize_name(p['label']) for p in list(type_info.get('properties', {}).values())[:5]])}
+  }}
+}}"""
+
+            example_list_query = f"""query {{
+  all{type_name}s {{
+    id
+    {chr(10).join(['    ' + sanitize_name(p['label']) for p in list(type_info.get('properties', {}).values())[:3]])}
+  }}
+}}"""
+
+            # Préparer les versions pour les attributs data-query
+            example_query_escaped = example_query.replace('\n', '\\n').replace('"', '&quot;')
+            example_list_query_escaped = example_list_query.replace('\n', '\\n').replace('"', '&quot;')
+
+            types_html += f"""
+            <div class="type-box">
+                <h3>
+                    {type_name}
+                    <span class="type-uri-badge">Type RDF</span>
+                </h3>
+                <div class="type-info">
+                    <p><strong>URI RDF:</strong> <code class="uri-code">{type_uri}</code></p>
+                    <p><strong>Graphes:</strong> {', '.join([f'<code class="graph-code">{g}</code>' for g in type_info.get('graphs', []) if g])}</p>
+                </div>
+
+                <h4>📋 Propriétés ({len(type_info.get('properties', {}))})</h4>
+                {props_table if type_info.get('properties') else '<p class="no-props">Aucune propriété détectée</p>'}
+
+                <details class="query-examples">
+                    <summary><strong>📝 Exemples de requêtes GraphQL</strong></summary>
+
+                    <div class="example-section">
+                        <h5>Récupérer un objet spécifique:</h5>
+                        <pre class="query-example">{example_query}</pre>
+                        <button onclick="copyToClipboard(this)" data-query="{example_query_escaped}">📋 Copier</button>
+                    </div>
+
+                    <div class="example-section">
+                        <h5>Liste des objets:</h5>
+                        <pre class="query-example">{example_list_query}</pre>
+                        <button onclick="copyToClipboard(this)" data-query="{example_list_query_escaped}">📋 Copier</button>
+                    </div>
+
+                    <div class="example-section">
+                        <h5>Mutations disponibles:</h5>
+                        <ul>
+                            <li><code>create{type_name}(id: String!, data: String!)</code></li>
+                            <li><code>delete{type_name}(id: String!)</code></li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+            """
+
+        return f'''
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Schéma GraphQL - Documentation</title>
+            <style>
+                body {{
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+                    max-width: 1400px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background: #f5f5f5;
+                    line-height: 1.6;
+                }}
+                h1, h2, h3, h4 {{ color: #2c3e50; }}
+
+                .header {{
+                    background: white;
+                    padding: 25px;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }}
+
+                .type-box {{
+                    background: white;
+                    padding: 25px;
+                    margin: 20px 0;
+                    border-radius: 8px;
+                    border-left: 4px solid #3498db;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }}
+
+                .type-uri-badge {{
+                    font-size: 12px;
+                    background: #e8f5e9;
+                    color: #2e7d32;
+                    padding: 4px 12px;
+                    border-radius: 12px;
+                    font-weight: normal;
+                    margin-left: 10px;
+                }}
+
+                .type-info {{
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 4px;
+                    margin: 15px 0;
+                }}
+
+                .props-table {{
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 15px 0;
+                    background: white;
+                }}
+
+                .props-table th {{
+                    background: #34495e;
+                    color: white;
+                    padding: 12px;
+                    text-align: left;
+                    font-weight: 600;
+                }}
+
+                .props-table td {{
+                    padding: 12px;
+                    border-bottom: 1px solid #ecf0f1;
+                    vertical-align: top;
+                }}
+
+                .props-table tr:hover {{
+                    background: #f8f9fa;
+                }}
+
+                .uri-code {{
+                    background: #e8f5e9;
+                    color: #2e7d32;
+                    padding: 2px 8px;
+                    border-radius: 3px;
+                    font-family: "Courier New", monospace;
+                    font-size: 12px;
+                    word-break: break-all;
+                }}
+
+                .graphql-name {{
+                    color: #e91e63;
+                    font-family: "Courier New", monospace;
+                    font-size: 14px;
+                }}
+
+                .graph-code {{
+                    background: #fff3cd;
+                    color: #856404;
+                    padding: 2px 8px;
+                    border-radius: 3px;
+                    font-family: "Courier New", monospace;
+                    font-size: 11px;
+                }}
+
+                .type-badge {{
+                    display: inline-block;
+                    background: #3498db;
+                    color: white;
+                    padding: 4px 10px;
+                    border-radius: 12px;
+                    font-size: 11px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }}
+
+                .example-code {{
+                    background: #f0f4f8;
+                    color: #1976d2;
+                    padding: 4px 8px;
+                    border-radius: 3px;
+                    font-family: "Courier New", monospace;
+                    font-size: 13px;
+                }}
+
+                .query-examples {{
+                    margin-top: 20px;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 4px;
+                    padding: 15px;
+                    background: #fafafa;
+                }}
+
+                .query-examples summary {{
+                    cursor: pointer;
+                    font-weight: 600;
+                    color: #1976d2;
+                    padding: 5px;
+                }}
+
+                .query-examples summary:hover {{
+                    color: #1565c0;
+                }}
+
+                .example-section {{
+                    margin: 20px 0;
+                }}
+
+                .query-example {{
+                    background: #263238;
+                    color: #aed581;
+                    padding: 15px;
+                    border-radius: 4px;
+                    overflow-x: auto;
+                    font-family: "Courier New", monospace;
+                    font-size: 13px;
+                    line-height: 1.5;
+                }}
+
+                .no-props {{
+                    color: #999;
+                    font-style: italic;
+                    padding: 20px;
+                    text-align: center;
+                    background: #f8f9fa;
+                    border-radius: 4px;
+                }}
+
+                .btn {{
+                    display: inline-block;
+                    padding: 10px 20px;
+                    margin: 5px;
+                    background: #3498db;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    border: none;
+                    font-size: 14px;
+                    transition: background 0.3s;
+                }}
+
+                .btn:hover {{
+                    background: #2980b9;
+                }}
+
+                .btn-refresh {{
+                    background: #27ae60;
+                }}
+
+                .btn-refresh:hover {{
+                    background: #229954;
+                }}
+
+                button[onclick^="copyToClipboard"] {{
+                    background: #9c27b0;
+                    color: white;
+                    border: none;
+                    padding: 8px 16px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 12px;
+                    margin-top: 10px;
+                }}
+
+                button[onclick^="copyToClipboard"]:hover {{
+                    background: #7b1fa2;
+                }}
+
+                .warning {{
+                    background: #fff3cd;
+                    border-left: 4px solid #ffc107;
+                    padding: 15px;
+                    margin: 15px 0;
+                    border-radius: 4px;
+                }}
+
+                .info {{
+                    background: #d1ecf1;
+                    border-left: 4px solid #0c5460;
+                    padding: 15px;
+                    margin: 15px 0;
+                    border-radius: 4px;
+                }}
+
+                .stats {{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 15px;
+                    margin: 20px 0;
+                }}
+
+                .stat-box {{
+                    background: #f8f9fa;
+                    padding: 20px;
+                    border-radius: 8px;
+                    text-align: center;
+                    border: 2px solid #e0e0e0;
+                }}
+
+                .stat-number {{
+                    font-size: 36px;
+                    font-weight: bold;
+                    color: #3498db;
+                }}
+
+                .stat-label {{
+                    color: #666;
+                    font-size: 14px;
+                    margin-top: 5px;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>📊 Schéma GraphQL - Documentation complète</h1>
+
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-number">{len(merged)}</div>
+                        <div class="stat-label">Types détectés</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">{sum(len(t.get('properties', {})) for t in merged.values())}</div>
+                        <div class="stat-label">Propriétés totales</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">{'✓' if os.path.exists(CONFIG['SCHEMA_CACHE_FILE']) else '✗'}</div>
+                        <div class="stat-label">Cache</div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="/" class="btn">🏠 Accueil</a>
+                    <a href="/graphiql" class="btn">🎨 GraphiQL</a>
+                    <button onclick="refreshSchema()" class="btn btn-refresh">🔄 Régénérer le schéma</button>
+                    <a href="/graphs/mapping" class="btn">🔗 Graphes</a>
+                </div>
+            </div>
+
+            {'<div class="info">ℹ️ Pour régénérer le schéma, vous devez être authentifié.</div>' if len(merged) == 0 else ''}
+
+            {types_html if types_html else '<div class="warning">⚠️ Aucun type RDF détecté. Cliquez sur "Régénérer le schéma" pour scanner votre endpoint SPARQL.</div>'}
+
+            <script>
+                function refreshSchema() {{
+                    if (confirm('Régénérer le schéma depuis l\\'endpoint SPARQL ?')) {{
+                        fetch('/schema/refresh', {{
+                            method: 'POST',
+                            credentials: 'include',
+                            headers: {{
+                                'Content-Type': 'application/json'
+                            }}
+                        }})
+                        .then(r => {{
+                            if (r.status === 401) {{
+                                alert('Vous devez être authentifié. Redirection vers la page de connexion...');
+                                window.location.href = '/login';
+                                return null;
+                            }}
+                            return r.json();
+                        }})
+                        .then(data => {{
+                            if (data) {{
+                                alert('Schéma régénéré: ' + data.types_detected + ' types détectés');
+                                location.reload();
+                            }}
+                        }})
+                        .catch(err => {{
+                            alert('Erreur: ' + err);
+                            console.error(err);
+                        }});
+                    }}
+                }}
+
+                function copyToClipboard(button) {{
+                    const query = button.getAttribute('data-query').replace(/\\n/g, '\\n');
+                    navigator.clipboard.writeText(query).then(() => {{
+                        const originalText = button.textContent;
+                        button.textContent = '✓ Copié!';
+                        button.style.background = '#4caf50';
+                        setTimeout(() => {{
+                            button.textContent = originalText;
+                            button.style.background = '#9c27b0';
+                        }}, 2000);
+                    }}).catch(err => {{
+                        alert('Erreur de copie: ' + err);
+                    }});
+                }}
+            </script>
+        </body>
+        </html>
+        '''
+    except Exception as e:
+        import traceback
+        error_detail = traceback.format_exc()
+        print(f"Erreur dans /schema/info: {error_detail}")
+
+        return f'''
+        <!DOCTYPE html>
+        <html>
+        <head><title>Erreur</title></head>
+        <body>
+            <h1>Erreur</h1>
+            <p>{str(e)}</p>
+            <pre>{error_detail}</pre>
+            <a href="/">Retour à l'accueil</a>
+        </body>
+        </html>
+        ''', 500
+
+def detect_type_to_graph_mapping() -> Dict[str, str]:
+    """
+    Détecte automatiquement le mapping type -> graphe nommé
+    Hypothèse: chaque type n'est défini (sujet) que dans un seul graphe
+    """
+
+    query = """
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+    SELECT DISTINCT ?type ?graph (COUNT(DISTINCT ?instance) as ?count) WHERE {
+        GRAPH ?graph {
+            {
+                ?instance rdf:type ?type .
+            } UNION {
+                ?instance wdt:P31 ?type .
+            }
+        }
+        FILTER(?type != rdf:Property && ?type != <http://www.w3.org/2000/01/rdf-schema#Class>)
+    }
+    GROUP BY ?type ?graph
+    ORDER BY ?type ?graph
+    """
+
+    results = sparql_client.query(query)
+
+    type_to_graphs = {}
+    graph_to_types = {}
+    violations = []
+
+    for result in results:
+        type_uri = result['type']
+        graph_uri = result['graph']
+        count = int(result['count'])
+
+        if type_uri not in type_to_graphs:
+            type_to_graphs[type_uri] = []
+
+        type_to_graphs[type_uri].append({
+            'graph': graph_uri,
+            'instance_count': count
+        })
+
+        if graph_uri not in graph_to_types:
+            graph_to_types[graph_uri] = []
+        graph_to_types[graph_uri].append(type_uri)
+
+    # Détecter les violations (type dans plusieurs graphes)
+    final_mapping = {}
+    for type_uri, graphs_info in type_to_graphs.items():
+        if len(graphs_info) > 1:
+            # Violation: le type est dans plusieurs graphes
+            violations.append({
+                'type': type_uri,
+                'graphs': [g['graph'] for g in graphs_info],
+                'counts': {g['graph']: g['instance_count'] for g in graphs_info}
+            })
+            # Prendre le graphe avec le plus d'instances
+            main_graph = max(graphs_info, key=lambda x: x['instance_count'])
+            final_mapping[type_uri] = main_graph['graph']
+        else:
+            final_mapping[type_uri] = graphs_info[0]['graph']
+
+    return {
+        'type_to_graph': final_mapping,
+        'graph_to_types': graph_to_types,
+        'violations': violations
+    }
+
+
+def save_graph_mapping_cache(mapping: Dict[str, Any]):
+    """Sauvegarde le mapping type->graph dans un fichier"""
+    cache_file = 'graph_mapping_cache.json'
+    with open(cache_file, 'w') as f:
+        # Convertir les sets en listes pour JSON
+        serializable = {
+            'type_to_graph': mapping['type_to_graph'],
+            'graph_to_types': {k: list(v) if isinstance(v, set) else v
+                               for k, v in mapping['graph_to_types'].items()},
+            'violations': mapping['violations'],
+            'manual_overrides': {}
+        }
+        json.dump(serializable, f, indent=2)
+
+
+def load_graph_mapping_cache() -> Dict[str, Any]:
+    """Charge le mapping depuis le cache"""
+    cache_file = 'graph_mapping_cache.json'
+    if os.path.exists(cache_file):
+        with open(cache_file, 'r') as f:
+            return json.load(f)
+    return {
+        'type_to_graph': {},
+        'graph_to_types': {},
+        'violations': [],
+        'manual_overrides': {}
+    }
+
+
+def merge_graph_mappings(auto: Dict, manual: Dict) -> Dict:
+    """Fusionne les mappings auto et manuels avec priorité au manuel"""
+    merged_type_to_graph = auto.get('type_to_graph', {}).copy()
+    merged_type_to_graph.update(manual.get('manual_overrides', {}))
+
+    return {
+        'type_to_graph': merged_type_to_graph,
+        'graph_to_types': auto.get('graph_to_types', {}),
+        'violations': auto.get('violations', []),
+        'manual_overrides': manual.get('manual_overrides', {})
+    }
+
+
+def get_graph_for_type_improved(type_name: str, type_uri: str) -> str:
+    """
+    Détermine le graphe nommé pour un type
+    Ordre de priorité:
+    1. Config statique TYPE_TO_GRAPH
+    2. Manual overrides dans le cache
+    3. Mapping automatique
+    4. Graphe par défaut
+    """
+    # 1. Config statique
+    if type_name in CONFIG.get('TYPE_TO_GRAPH', {}):
+        return CONFIG['TYPE_TO_GRAPH'][type_name]
+
+    # 2. Charger les mappings
+    graph_mapping = load_graph_mapping_cache()
+    merged = merge_graph_mappings(graph_mapping, graph_mapping)
+
+    # 3. Mapping automatique ou manuel
+    if type_uri in merged['type_to_graph']:
+        return merged['type_to_graph'][type_uri]
+
+    # 4. Fallback sur le schéma
+    schema = load_schema_cache()
+    merged_schema = merge_schema_definitions(schema['auto_generated'], schema['manual'])
+
+    if type_uri in merged_schema:
+        graphs = merged_schema[type_uri].get('graphs', [])
+        if graphs and graphs[0]:
+            return graphs[0]
+
+    # 5. Par défaut
+    return 'http://example.org/graphs/default'
+
+
+# ============================================================================
+# CORRECTION DU PROBLÈME idPiwigo
+# ============================================================================
+
+def create_advanced_resolver_fixed(type_name: str, type_uri: str, single: bool = True):
+    """
+    Résolveur corrigé avec mapping cohérent des propriétés
+    """
+
+    def resolver(root, info, id=None, use_cache=False):
+        """Résolveur avec support des sous-objets et mapping correct"""
+
+        try:
+            # Charger le schéma pour avoir le mapping URI -> nom GraphQL
+            schema_cache = load_schema_cache()
+            merged = merge_schema_definitions(
+                schema_cache.get('auto_generated', {}),
+                schema_cache.get('manual', {})
+            )
+
+            # Créer un mapping bidirectionnel prop_uri <-> graphql_name
+            prop_uri_to_name = {}
+            prop_name_to_uri = {}
+
+            if type_uri in merged:
+                for prop_uri, prop_info in merged[type_uri].get('properties', {}).items():
+                    graphql_name = sanitize_name(prop_info['label'])
+                    prop_uri_to_name[prop_uri] = graphql_name
+                    prop_name_to_uri[graphql_name] = prop_uri
+
+            # Analyser les champs demandés
+            selection_set = info.field_nodes[0].selection_set
+            requested_fields = {}
+
+            if selection_set:
+                for selection in selection_set.selections:
+                    field_name = selection.name.value
+                    if selection.selection_set:
+                        subfields = [s.name.value for s in selection.selection_set.selections]
+                        requested_fields[field_name] = subfields
+                    else:
+                        requested_fields[field_name] = None
+
+            print(f"  → Résolveur {type_name}: champs demandés = {list(requested_fields.keys())}")
+            print(f"  → Mapping disponible: {list(prop_uri_to_name.values())}")
+
+            if single and id:
+                # REQUÊTE POUR UN OBJET SPÉCIFIQUE
+                query = f"""
+                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+                SELECT ?property ?value WHERE {{
+                    {{
+                        <{id}> wdt:P31 <{type_uri}> .
+                        <{id}> ?property ?value .
+                    }} UNION {{
+                        <{id}> rdf:type <{type_uri}> .
+                        <{id}> ?property ?value .
+                    }}
+                }}
+                """
+
+                results = sparql_client.query(query, use_cache=use_cache)
+                obj = {'id': id}
+
+                for result in results:
+                    prop_uri = result['property']
+                    value = result['value']
+
+                    # UTILISER LE MAPPING
+                    prop_name = prop_uri_to_name.get(prop_uri)
+
+                    if not prop_name:
+                        continue  # Ignorer les propriétés non dans le schéma
+
+                    # Gérer les références
+                    if isinstance(value, str) and value.startswith('http'):
+                        if prop_name in requested_fields and requested_fields[prop_name]:
+                            obj[prop_name] = resolve_subobject(value, requested_fields[prop_name])
+                        else:
+                            obj[prop_name] = value
+                    else:
+                        obj[prop_name] = value
+
+                print(f"  ✓ Objet single résolu: {obj}")
+                return obj
+
+            else:
+                # REQUÊTE POUR TOUS LES OBJETS (LISTE)
+                # Étape 1: Récupérer tous les IDs
+                instances_query = f"""
+                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+                SELECT DISTINCT ?instance WHERE {{
+                    {{
+                        ?instance wdt:P31 <{type_uri}> .
+                    }} UNION {{
+                        ?instance rdf:type <{type_uri}> .
+                    }}
+                }}
+                LIMIT 100
+                """
+
+                instances_results = sparql_client.query(instances_query, use_cache=use_cache)
+                print(f"  → {len(instances_results)} instances trouvées")
+
+                objects = []
+
+                # Si seulement 'id' est demandé, retourner directement
+                if requested_fields == {'id': None} or not requested_fields:
+                    return [{'id': r['instance']} for r in instances_results]
+
+                # Étape 2: Pour chaque instance, récupérer les propriétés demandées
+                requested_uris = []
+                for field_name in requested_fields.keys():
+                    if field_name != 'id':
+                        prop_uri = prop_name_to_uri.get(field_name)
+                        if prop_uri:
+                            requested_uris.append(f"<{prop_uri}>")
+
+                if not requested_uris:
+                    # Aucune propriété connue demandée
+                    return [{'id': r['instance']} for r in instances_results]
+
+                # Étape 3: Requête optimisée pour TOUTES les instances
+                # Utiliser VALUES pour récupérer toutes les données en une seule requête
+                instances_values = ' '.join([f"<{r['instance']}>" for r in instances_results])
+
+                batch_query = f"""
+                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+                SELECT ?instance ?property ?value WHERE {{
+                    VALUES ?instance {{ {instances_values} }}
+                    ?instance ?property ?value .
+                    FILTER(?property IN ({', '.join(requested_uris)}))
+                }}
+                """
+
+                print(f"  → Requête batch pour propriétés: {requested_uris}")
+                batch_results = sparql_client.query(batch_query, use_cache=use_cache)
+                print(f"  → {len(batch_results)} triplets récupérés")
+
+                # Étape 4: Organiser les résultats par instance
+                instances_data = {}
+                for r in instances_results:
+                    instances_data[r['instance']] = {'id': r['instance']}
+
+                for result in batch_results:
+                    instance_id = result['instance']
+                    prop_uri = result['property']
+                    value = result['value']
+
+                    # MAPPING URI -> nom GraphQL
+                    prop_name = prop_uri_to_name.get(prop_uri)
+
+                    if prop_name and prop_name in requested_fields:
+                        if isinstance(value, str) and value.startswith('http'):
+                            if requested_fields[prop_name]:
+                                instances_data[instance_id][prop_name] = resolve_subobject(
+                                    value, requested_fields[prop_name]
+                                )
+                            else:
+                                instances_data[instance_id][prop_name] = value
+                        else:
+                            instances_data[instance_id][prop_name] = value
+
+                objects = list(instances_data.values())
+                print(f"  ✓ {len(objects)} objets liste résolus")
+
+                return objects
+
+        except Exception as e:
+            import traceback
+            error_detail = traceback.format_exc()
+            print(f"❌ Erreur dans le résolveur {type_name}: {error_detail}")
+            raise GraphQLError(f"Resolver error for {type_name}: {str(e)}")
+
+    return resolver
+
+
+# ============================================================================
+# ROUTE POUR GÉRER LES MAPPINGS DE GRAPHES
+# ============================================================================
+
+@app.route('/graphs/mapping', methods=['GET'])
+def get_graph_mapping():
+    """Affiche le mapping type->graphe avec les violations"""
+
+    graph_mapping = load_graph_mapping_cache()
+    merged = merge_graph_mappings(graph_mapping, graph_mapping)
+
+    html = f'''
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Mapping Types ↔ Graphes</title>
+        <style>
+            body {{
+                font-family: Arial, sans-serif;
+                max-width: 1200px;
+                margin: 20px auto;
+                padding: 20px;
+                background: #f5f5f5;
+            }}
+            .header {{
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                margin-bottom: 20px;
+            }}
+            .mapping-box {{
+                background: white;
+                padding: 20px;
+                margin: 15px 0;
+                border-radius: 8px;
+                border-left: 4px solid #3498db;
+            }}
+            .violation {{
+                background: #fff3cd;
+                border-left: 4px solid #ffc107;
+                padding: 15px;
+                margin: 15px 0;
+                border-radius: 4px;
+            }}
+            .btn {{
+                display: inline-block;
+                padding: 10px 20px;
+                background: #3498db;
+                color: white;
+                text-decoration: none;
+                border-radius: 4px;
+                margin: 5px;
+                cursor: pointer;
+                border: none;
+            }}
+            .btn-refresh {{
+                background: #27ae60;
+            }}
+            table {{
+                width: 100%;
+                border-collapse: collapse;
+                margin: 10px 0;
+            }}
+            th, td {{
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }}
+            th {{
+                background: #f8f9fa;
+            }}
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>📊 Mapping Types ↔ Graphes Nommés</h1>
+            <p>
+                <strong>Types mappés:</strong> {len(merged['type_to_graph'])}<br>
+                <strong>Graphes utilisés:</strong> {len(merged['graph_to_types'])}<br>
+                <strong>Violations détectées:</strong> {len(merged['violations'])}
+            </p>
+            <button onclick="refreshMapping()" class="btn btn-refresh">🔄 Régénérer le mapping</button>
+            <a href="/" class="btn">🏠 Accueil</a>
+        </div>
+
+        {"".join([f"""
+        <div class="violation">
+            <h3>⚠️ Violation: Type dans plusieurs graphes</h3>
+            <p><strong>Type:</strong> {v['type']}</p>
+            <p><strong>Graphes:</strong></p>
+            <ul>
+                {"".join([f"<li>{g}: {v['counts'][g]} instances</li>" for g in v['graphs']])}
+            </ul>
+        </div>
+        """ for v in merged['violations']])}
+
+        <div class="mapping-box">
+            <h2>Mapping Type → Graphe</h2>
+            <table>
+                <tr>
+                    <th>Type URI</th>
+                    <th>Graphe Nommé</th>
+                </tr>
+                {"".join([f"<tr><td>{t}</td><td>{g}</td></tr>" for t, g in merged['type_to_graph'].items()])}
+            </table>
+        </div>
+
+        <div class="mapping-box">
+            <h2>Mapping Graphe → Types</h2>
+            {"".join([f"""
+            <h3>{graph}</h3>
+            <ul>
+                {"".join([f"<li>{t}</li>" for t in types])}
+            </ul>
+            """ for graph, types in merged['graph_to_types'].items()])}
+        </div>
+
+    <script>
+    function refreshMapping() {{
+        if (confirm('Régénérer le mapping type->graphe ?')) {{
+            fetch('/graphs/mapping/refresh', {{
+                method: 'POST',
+                credentials: 'include'
+            }})
+            .then(r => r.json())
+            .then(data => {{
+                alert('Mapping régénéré!');
+                location.reload();
+            }})
+            .catch(err => alert('Erreur: ' + err));
+        }}
+    }}
+    </script>
+    </body>
+    </html>
+    '''
+
+    return html
+
+
+@app.route('/graphs/mapping/refresh', methods=['POST'])
+def refresh_graph_mapping():
+    """Régénère le mapping type->graphe"""
+
+    # Vérifier l'authentification
+    jwt_token = None
+    auth_header = request.headers.get('Authorization')
+    if auth_header and auth_header.startswith('Bearer '):
+        jwt_token = auth_header.split(' ')[1]
+    elif 'jwt_token' in session:
+        jwt_token = session['jwt_token']
+
+    if not jwt_token or not verify_jwt(jwt_token):
+        return jsonify({'error': 'Missing or invalid authorization'}), 401
+
+    try:
+        print("\n" + "=" * 60)
+        print("RÉGÉNÉRATION DU MAPPING TYPE->GRAPHE")
+        print("=" * 60)
+
+        mapping = detect_type_to_graph_mapping()
+        save_graph_mapping_cache(mapping)
+
+        print(f"✓ Mapping régénéré")
+        print(f"  - {len(mapping['type_to_graph'])} types mappés")
+        print(f"  - {len(mapping['graph_to_types'])} graphes")
+        print(f"  - {len(mapping['violations'])} violations")
+        print("=" * 60 + "\n")
+
+        return jsonify({
+            'message': 'Graph mapping refreshed',
+            'types_count': len(mapping['type_to_graph']),
+            'graphs_count': len(mapping['graph_to_types']),
+            'violations_count': len(mapping['violations']),
+            'violations': mapping['violations']
+        })
+    except Exception as e:
+        import traceback
+        error_detail = traceback.format_exc()
+        print(f"❌ Erreur: {error_detail}")
+        return jsonify({'error': str(e)}), 500
+
+
+# ============================================================================
+# INTÉGRATION DANS LE SCHÉMA
+# ============================================================================
+
+# REMPLACER create_advanced_resolver par create_advanced_resolver_fixed
+# dans build_complete_graphql_schema()
+
+# REMPLACER get_graph_for_type par get_graph_for_type_improved
+# dans create_advanced_mutation() et create_delete_mutation()
 
 # ============================================================================
 # MAIN
@@ -2349,10 +3777,10 @@ if __name__ == '__main__':
 
     print("\n" + "=" * 60)
     print("Serveur démarré sur http://localhost:5000")
-    print("="*60)
+    print("=" * 60)
     print("GraphiQL:      http://localhost:5000/graphiql")
     print("Documentation: http://localhost:5000/docs")
     print("Login OAuth:   http://localhost:5000/login")
-    print("="*60 + "\n")
+    print("=" * 60 + "\n")
 
     app.run(debug=False, port=5000, threaded=True)
