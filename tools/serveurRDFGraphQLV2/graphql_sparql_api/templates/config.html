@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="config-container">
+    <h1>⚙️ Configuration</h1>
+    
+    <div class="config-section">
+        <h2>🔐 OAuth Google</h2>
+        <div class="config-item">
+            <span class="label">Client ID:</span>
+            <span class="value">{{ config.GOOGLE_CLIENT_ID[:50] }}...</span>
+        </div>
+        <div class="config-item">
+            <span class="label">Client Secret:</span>
+            <span class="value">{{ '●' * 20 if config.GOOGLE_CLIENT_SECRET else 'Non configuré' }}</span>
+        </div>
+    </div>
+    
+    <div class="config-section">
+        <h2>🗄️ SPARQL</h2>
+        <div class="config-item">
+            <span class="label">Endpoint:</span>
+            <span class="value">{{ config.SPARQL_ENDPOINT }}</span>
+        </div>
+        <div class="config-item">
+            <span class="label">Update Endpoint:</span>
+            <span class="value">{{ config.SPARQL_UPDATE_ENDPOINT }}</span>
+        </div>
+    </div>
+    
+    <div class="config-section">
+        <h2>💾 Cache</h2>
+        <div class="config-item">
+            <span class="label">Répertoire:</span>
+            <span class="value">{{ config.QUERY_CACHE_DIR }}</span>
+        </div>
+        <div class="config-item">
+            <span class="label">Fichier schéma:</span>
+            <span class="value">{{ config.SCHEMA_CACHE_FILE }}</span>
+        </div>
+    </div>
+    
+    <div class="actions">
+        <a href="/" class="btn">🏠 Accueil</a>
+        <a href="/docs" class="btn">📚 Documentation</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="schema-container">
+    <h1>📊 Informations sur le Schéma GraphQL</h1>
+    
+    <div class="info-box">
+        <h2>Configuration</h2>
+        <p><strong>Endpoint SPARQL:</strong> {{ config.SPARQL_ENDPOINT }}</p>
+        <p><strong>Endpoint UPDATE:</strong> {{ config.SPARQL_UPDATE_ENDPOINT }}</p>
+        <p><strong>Cache:</strong> {{ config.SCHEMA_CACHE_FILE }}</p>
+    </div>
+    
+    <div class="actions">
+        <button onclick="refreshSchema()" class="btn btn-primary">🔄 Régénérer le schéma</button>
+        <button onclick="clearCache()" class="btn btn-secondary">🗑️ Vider le cache</button>
+    </div>
+    
+    <div id="schema-types">
+        <h2>Types RDF détectés</h2>
+        <p>Cliquez sur "Régénérer le schéma" pour détecter les types dans votre endpoint SPARQL.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/schema_refresh.js') }}"></script>
+{% endblock %}

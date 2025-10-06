@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="error-container">
+    <h1>❌ Erreur</h1>
+    
+    <div class="error-box">
+        <h2>{{ error }}</h2>
+        
+        {% if detail %}
+        <details>
+            <summary>Détails techniques</summary>
+            <pre>{{ detail }}</pre>
+        </details>
+        {% endif %}
+    </div>
+    
+    <div class="actions">
+        <a href="/" class="btn">🏠 Retour à l'accueil</a>
+        <a href="/login" class="btn">🔄 Réessayer</a>
+    </div>
+</div>
+{% endblock %}

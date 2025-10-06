@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <h1>🚀 API GraphQL-SPARQL</h1>
+    <p class="subtitle">Interrogez et modifiez vos données RDF via GraphQL</p>
+
+    {% if current_user %}
+    <div class="user-badge">
+        👤 Connecté en tant que <strong>{{ current_user.name }}</strong>
+    </div>
+    {% endif %}
+
+    <div class="actions">
+        {% if current_user %}
+        <a href="/graphiql" class="btn btn-primary">🎨 Ouvrir GraphiQL</a>
+        {% else %}
+        <a href="/login" class="btn btn-primary">🔐 Se connecter avec Google</a>
+        {% endif %}
+        <a href="/docs" class="btn btn-secondary">📚 Documentation</a>
+        <a href="/schema/info" class="btn btn-secondary">📊 Schéma GraphQL</a>
+    </div>
+</div>
+
+<div class="features">
+    <div class="feature-card">
+        <h3>🔍 Requêtes GraphQL</h3>
+        <p>Interrogez vos données RDF avec la puissance de GraphQL</p>
+    </div>
+    <div class="feature-card">
+        <h3>✏️ Mutations</h3>
+        <p>Créez, modifiez et supprimez des entités RDF</p>
+    </div>
+    <div class="feature-card">
+        <h3>⚡ Cache intelligent</h3>
+        <p>Optimisation automatique des performances</p>
+    </div>
+    <div class="feature-card">
+        <h3>🔐 Sécurisé</h3>
+        <p>Authentification OAuth et JWT</p>
+    </div>
+</div>
+{% endblock %}
+"""

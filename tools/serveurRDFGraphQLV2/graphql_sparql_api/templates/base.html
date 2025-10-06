@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}API GraphQL-SPARQL{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">🚀 GraphQL-SPARQL API</a>
+            <div class="nav-links">
+                <a href="/">Accueil</a>
+                <a href="/docs">Documentation</a>
+                <a href="/schema/info">Schéma</a>
+                {% if current_user %}
+                    <a href="/graphiql">GraphiQL</a>
+                    <span class="user-info">{{ current_user.name }}</span>
+                    <a href="/logout">Déconnexion</a>
+                {% else %}
+                    <a href="/login" class="btn-login">Se connecter</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>API GraphQL-SPARQL © 2024</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
+"""

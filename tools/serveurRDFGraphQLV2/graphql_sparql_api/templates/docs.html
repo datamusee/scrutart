@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="docs-container">
+    <h1>📚 Documentation API</h1>
+    
+    <section class="doc-section">
+        <h2>🔐 Authentification</h2>
+        <p>Toutes les requêtes nécessitent un token JWT.</p>
+        
+        <h3>Se connecter</h3>
+        <pre><code>GET /login</code></pre>
+        <p>Redirige vers Google OAuth pour l'authentification.</p>
+        
+        <h3>Récupérer le token</h3>
+        <pre><code>GET /token</code></pre>
+        <p>Retourne le token JWT de l'utilisateur connecté.</p>
+    </section>
+    
+    <section class="doc-section">
+        <h2>📊 GraphQL</h2>
+        
+        <h3>Endpoint principal</h3>
+        <pre><code>POST /graphql
+Authorization: Bearer &lt;token&gt;
+Content-Type: application/json
+
+{
+  "query": "query { allPaintings { id title } }",
+  "variables": {}
+}</code></pre>
+    </section>
+    
+    <section class="doc-section">
+        <h2>📝 Exemples GraphQL</h2>
+        
+        <h3>Requête simple</h3>
+        <pre><code>query {
+  getPainting(id: "http://example.org/painting/1") {
+    id
+    title
+  }
+}</code></pre>
+        
+        <h3>Mutation - Créer</h3>
+        <pre><code>mutation {
+  createPainting(
+    id: "http://example.org/painting/new"
+    data: "{\"title\": \"Mona Lisa\"}"
+  ) {
+    success
+    entity
+  }
+}</code></pre>
+    </section>
+    
+    <section class="doc-section">
+        <h2>⚙️ Administration</h2>
+        
+        <h3>Régénérer le schéma</h3>
+        <pre><code>POST /schema/refresh
+Authorization: Bearer &lt;token&gt;</code></pre>
+        
+        <h3>Vider le cache</h3>
+        <pre><code>POST /cache/clear
+Authorization: Bearer &lt;token&gt;</code></pre>
+    </section>
+</div>
+{% endblock %}

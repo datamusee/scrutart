@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+*.egg-info/
+
+# Environment
+.env
+
+# Cache
+query_cache/
+async_results/
+schema_cache.json
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
