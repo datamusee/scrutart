@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, session, render_template
 import sys
 import os
 
@@ -144,7 +144,7 @@ def init_admin_routes(app, auth_manager, schema_generator, cache_manager, config
                 </div>
                 """
 
-            return f'''
+            mainbloc =  f'''
             <!DOCTYPE html>
             <html>
             <head>
@@ -475,6 +475,8 @@ def init_admin_routes(app, auth_manager, schema_generator, cache_manager, config
             </body>
             </html>
             '''
+            current_user = session.get('user_info')
+            return render_template('schema_info_2.html', current_user=current_user, content=mainbloc)
         except Exception as e:
             import traceback
             error_detail = traceback.format_exc()
@@ -608,3 +610,182 @@ def init_admin_routes(app, auth_manager, schema_generator, cache_manager, config
         return jsonify({'message': 'Cache cleared'})
     
     app.register_blueprint(admin_bp)
+
+
+    @app.route('/graphs/mapping', methods=['GET'])
+    def get_graph_mapping():
+        """Affiche le mapping type->graphe avec les violations"""
+
+        graph_mapping = schema_generator.load_graph_mapping_cache()
+        merged = schema_generator.merge_graph_mappings(graph_mapping, graph_mapping)
+
+        html = f'''
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Mapping Types ↔ Graphes</title>
+            <style>
+                body {{
+                    font-family: Arial, sans-serif;
+                    max-width: 1200px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background: #f5f5f5;
+                }}
+                .header {{
+                    background: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                }}
+                .mapping-box {{
+                    background: white;
+                    padding: 20px;
+                    margin: 15px 0;
+                    border-radius: 8px;
+                    border-left: 4px solid #3498db;
+                }}
+                .violation {{
+                    background: #fff3cd;
+                    border-left: 4px solid #ffc107;
+                    padding: 15px;
+                    margin: 15px 0;
+                    border-radius: 4px;
+                }}
+                .btn {{
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background: #3498db;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 4px;
+                    margin: 5px;
+                    cursor: pointer;
+                    border: none;
+                }}
+                .btn-refresh {{
+                    background: #27ae60;
+                }}
+                table {{
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 10px 0;
+                }}
+                th, td {{
+                    padding: 8px;
+                    text-align: left;
+                    border-bottom: 1px solid #ddd;
+                }}
+                th {{
+                    background: #f8f9fa;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>📊 Mapping Types ↔ Graphes Nommés</h1>
+                <p>
+                    <strong>Types mappés:</strong> {len(merged['type_to_graph'])}<br>
+                    <strong>Graphes utilisés:</strong> {len(merged['graph_to_types'])}<br>
+                    <strong>Violations détectées:</strong> {len(merged['violations'])}
+                </p>
+                <button onclick="refreshMapping()" class="btn btn-refresh">🔄 Régénérer le mapping</button>
+                <a href="/" class="btn">🏠 Accueil</a>
+            </div>
+    
+            {"".join([f"""
+            <div class="violation">
+                <h3>⚠️ Violation: Type dans plusieurs graphes</h3>
+                <p><strong>Type:</strong> {v['type']}</p>
+                <p><strong>Graphes:</strong></p>
+                <ul>
+                    {"".join([f"<li>{g}: {v['counts'][g]} instances</li>" for g in v['graphs']])}
+                </ul>
+            </div>
+            """ for v in merged['violations']])}
+    
+            <div class="mapping-box">
+                <h2>Mapping Type → Graphe</h2>
+                <table>
+                    <tr>
+                        <th>Type URI</th>
+                        <th>Graphe Nommé</th>
+                    </tr>
+                    {"".join([f"<tr><td>{t}</td><td>{g}</td></tr>" for t, g in merged['type_to_graph'].items()])}
+                </table>
+            </div>
+    
+            <div class="mapping-box">
+                <h2>Mapping Graphe → Types</h2>
+                {"".join([f"""
+                <h3>{graph}</h3>
+                <ul>
+                    {"".join([f"<li>{t}</li>" for t in types])}
+                </ul>
+                """ for graph, types in merged['graph_to_types'].items()])}
+            </div>
+    
+        <script>
+        function refreshMapping() {{
+            if (confirm('Régénérer le mapping type->graphe ?')) {{
+                fetch('/graphs/mapping/refresh', {{
+                    method: 'POST',
+                    credentials: 'include'
+                }})
+                .then(r => r.json())
+                .then(data => {{
+                    alert('Mapping régénéré!');
+                    location.reload();
+                }})
+                .catch(err => alert('Erreur: ' + err));
+            }}
+        }}
+        </script>
+        </body>
+        </html>
+        '''
+
+        return html
+
+    @app.route('/graphs/mapping/refresh', methods=['POST'])
+    def refresh_graph_mapping():
+        """Régénère le mapping type->graphe"""
+
+        # Vérifier l'authentification
+        jwt_token = None
+        auth_header = request.headers.get('Authorization')
+        if auth_header and auth_header.startswith('Bearer '):
+            jwt_token = auth_header.split(' ')[1]
+        elif 'jwt_token' in session:
+            jwt_token = session['jwt_token']
+
+        if not jwt_token or not auth_manager.verify_jwt(jwt_token):
+            return jsonify({'error': 'Missing or invalid authorization'}), 401
+
+        try:
+            print("\n" + "=" * 60)
+            print("RÉGÉNÉRATION DU MAPPING TYPE->GRAPHE")
+            print("=" * 60)
+
+            mapping = schema_generator.sdetect_type_to_graph_mapping()
+            schema_generator.save_graph_mapping_cache(mapping)
+
+            print(f"✓ Mapping régénéré")
+            print(f"  - {len(mapping['type_to_graph'])} types mappés")
+            print(f"  - {len(mapping['graph_to_types'])} graphes")
+            print(f"  - {len(mapping['violations'])} violations")
+            print("=" * 60 + "\n")
+
+            return jsonify({
+                'message': 'Graph mapping refreshed',
+                'types_count': len(mapping['type_to_graph']),
+                'graphs_count': len(mapping['graph_to_types']),
+                'violations_count': len(mapping['violations']),
+                'violations': mapping['violations']
+            })
+        except Exception as e:
+            import traceback
+            error_detail = traceback.format_exc()
+            print(f"❌ Erreur: {error_detail}")
+            return jsonify({'error': str(e)}), 500
+

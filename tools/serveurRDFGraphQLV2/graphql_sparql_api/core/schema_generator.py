@@ -654,6 +654,75 @@ class SchemaGenerator():
 
         return schema
 
+    def detect_type_to_graph_mapping(self) -> Dict[str, str]:
+        """
+        Détecte automatiquement le mapping type -> graphe nommé
+        Hypothèse: chaque type n'est défini (sujet) que dans un seul graphe
+        """
+
+        query = """
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+        SELECT DISTINCT ?type ?graph (COUNT(DISTINCT ?instance) as ?count) WHERE {
+            GRAPH ?graph {
+                {
+                    ?instance rdf:type ?type .
+                } UNION {
+                    ?instance wdt:P31 ?type .
+                }
+            }
+            FILTER(?type != rdf:Property && ?type != <http://www.w3.org/2000/01/rdf-schema#Class>)
+        }
+        GROUP BY ?type ?graph
+        ORDER BY ?type ?graph
+        """
+
+        results = self.sparql_client.query(query)
+
+        type_to_graphs = {}
+        graph_to_types = {}
+        violations = []
+
+        for result in results:
+            type_uri = result['type']
+            graph_uri = result['graph']
+            count = int(result['count'])
+
+            if type_uri not in type_to_graphs:
+                type_to_graphs[type_uri] = []
+
+            type_to_graphs[type_uri].append({
+                'graph': graph_uri,
+                'instance_count': count
+            })
+
+            if graph_uri not in graph_to_types:
+                graph_to_types[graph_uri] = []
+            graph_to_types[graph_uri].append(type_uri)
+
+        # Détecter les violations (type dans plusieurs graphes)
+        final_mapping = {}
+        for type_uri, graphs_info in type_to_graphs.items():
+            if len(graphs_info) > 1:
+                # Violation: le type est dans plusieurs graphes
+                violations.append({
+                    'type': type_uri,
+                    'graphs': [g['graph'] for g in graphs_info],
+                    'counts': {g['graph']: g['instance_count'] for g in graphs_info}
+                })
+                # Prendre le graphe avec le plus d'instances
+                main_graph = max(graphs_info, key=lambda x: x['instance_count'])
+                final_mapping[type_uri] = main_graph['graph']
+            else:
+                final_mapping[type_uri] = graphs_info[0]['graph']
+
+        return {
+            'type_to_graph': final_mapping,
+            'graph_to_types': graph_to_types,
+            'violations': violations
+        }
+
     def create_resolver(self, type_name: str, type_uri: str, sparql_client, single: bool):
         # Crée un résolveur pour un type#
         from graphql import GraphQLError

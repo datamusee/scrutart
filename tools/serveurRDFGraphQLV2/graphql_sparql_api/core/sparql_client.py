@@ -23,6 +23,7 @@ class SPARQLClient:
         if use_cache and self.cache_manager:
             cached = self.cache_manager.get(sparql_query, 'sparql')
             if cached:
+                print(f"Résultat obtenu du cache: {cached}")
                 return cached
 
         sparql = SPARQLWrapper(self.endpoint)
