@@ -1,0 +1,117 @@
+<!-- templates/processing_generic.html -->
+{% extends "base.html" %}
+
+{% block title %}{{ task_type }} en cours...{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <div class="text-primary mb-3">
+                    <div class="spinner-border text-primary" role="status" style="width: 4rem; height: 4rem;">
+                        <span class="visually-hidden">Chargement...</span>
+                    </div>
+                </div>
+
+                <h2 class="card-title text-primary">⏳ {{ task_type }}</h2>
+
+                <div class="mt-4">
+                    <p class="text-muted">{{ description }}</p>
+                </div>
+
+                <div class="mt-4">
+                    <div class="progress mb-3" style="height: 25px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                             role="progressbar"
+                             id="progressBar"
+                             style="width: 0%">
+                            <span id="progressText">0%</span>
+                        </div>
+                    </div>
+
+                    <div id="statusMessage" class="alert alert-info">
+                        Traitement en cours...
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <a href="{{ url_for('menu') }}" class="btn btn-outline-secondary">
+                        ← Retour au menu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const taskId = '{{ task_id }}';
+const taskType = '{{ task_type }}';
+let pollInterval;
+
+function updateProgress(progress, status) {
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const statusMessage = document.getElementById('statusMessage');
+
+    progressBar.style.width = progress + '%';
+    progressText.textContent = progress + '%';
+
+    let message = '';
+    let className = 'alert alert-info';
+
+    switch(status) {
+        case 'pending':
+            message = 'En attente de traitement...';
+            break;
+        case 'processing':
+            message = taskType + ' en cours...';
+            break;
+        case 'completed':
+            message = 'Traitement terminé ! Redirection...';
+            className = 'alert alert-success';
+            break;
+        case 'error':
+            message = 'Erreur lors du traitement';
+            className = 'alert alert-danger';
+            break;
+    }
+
+    statusMessage.className = className;
+    statusMessage.textContent = message;
+}
+
+function pollTaskStatus() {
+    fetch(`/api/task/${taskId}`)
+        .then(response => response.json())
+        .then(data => {
+            updateProgress(data.progress || 0, data.status);
+
+            if (data.status === 'completed') {
+                clearInterval(pollInterval);
+                setTimeout(() => {
+                    window.location.href = `/task-result/${taskId}`;
+                }, 1500);
+            } else if (data.status === 'error') {
+                clearInterval(pollInterval);
+                document.getElementById('statusMessage').innerHTML =
+                    `<strong>Erreur :</strong> ${data.error}`;
+            }
+        })
+        .catch(error => {
+            console.error('Erreur lors de la vérification du statut:', error);
+        });
+}
+
+// Démarrer le polling
+pollInterval = setInterval(pollTaskStatus, 1000);
+pollTaskStatus();
+
+window.addEventListener('beforeunload', () => {
+    if (pollInterval) {
+        clearInterval(pollInterval);
+    }
+});
+</script>
+{% endblock %}

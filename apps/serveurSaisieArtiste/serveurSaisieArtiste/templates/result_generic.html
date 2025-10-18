@@ -1,0 +1,164 @@
+<!-- templates/result_generic.html -->
+{% extends "base.html" %}
+
+{% block title %}Résultat de la tâche{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    {% if result.status == 'completed' %}
+                    <div class="text-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                        </svg>
+                    </div>
+                    <h2 class="card-title text-success mt-3">✅ Tâche terminée</h2>
+                    {% elif result.status == 'error' %}
+                    <div class="text-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                    <h2 class="card-title text-danger mt-3">❌ Erreur</h2>
+                    {% endif %}
+                </div>
+
+                <!-- Message de statut -->
+                {% if result.status == 'completed' %}
+                <div class="alert alert-success text-center">
+                    <strong>La tâche s'est terminée avec succès</strong>
+                </div>
+                {% elif result.status == 'error' %}
+                <div class="alert alert-danger">
+                    <strong>Erreur :</strong> {{ result.error }}
+                </div>
+                {% endif %}
+
+                <!-- Informations de la tâche -->
+                <div class="card mb-3">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0">📋 Informations</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Type de tâche :</strong> {{ result.type | default('N/A') }}</p>
+                                <p><strong>Statut :</strong>
+                                    <span class="badge bg-{{ 'success' if result.status == 'completed' else 'danger' }}">
+                                        {{ result.status }}
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Résultats -->
+                {% if result.status == 'completed' %}
+                <div class="card mb-3">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">📊 Résultats</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Afficher les différents types de résultats selon ce qui est disponible -->
+
+                        {% if result.page_content %}
+                        <h6>Contenu de la page :</h6>
+                        <pre class="bg-light p-3 rounded small" style="max-height: 300px; overflow-y: auto;">{{ result.page_content }}</pre>
+                        {% endif %}
+
+                        {% if result.text_result %}
+                        <h6>Résultat texte :</h6>
+                        <pre class="bg-light p-3 rounded small" style="max-height: 300px; overflow-y: auto;">{{ result.text_result }}</pre>
+                        {% endif %}
+
+                        {% if result.json_result %}
+                        <h6>Résultat JSON :</h6>
+                        <button class="btn btn-sm btn-outline-primary mb-2" onclick="copyJson()">
+                            📋 Copier le JSON
+                        </button>
+                        <pre class="bg-light p-3 rounded small" id="jsonResult" style="max-height: 300px; overflow-y: auto;">{{ result.json_result | tojson(indent=2) }}</pre>
+                        {% endif %}
+
+                        {% if result.json_structure %}
+                        <h6>Structure JSON :</h6>
+                        <button class="btn btn-sm btn-outline-primary mb-2" onclick="copyStructure()">
+                            📋 Copier la structure
+                        </button>
+                        <pre class="bg-light p-3 rounded small" id="jsonStructure" style="max-height: 300px; overflow-y: auto;">{{ result.json_structure | tojson(indent=2) }}</pre>
+                        {% endif %}
+
+                        {% if not result.page_content and not result.text_result and not result.json_result and not result.json_structure %}
+                        <p class="text-muted">Aucun résultat détaillé disponible.</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Données complètes de la tâche -->
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#fullTaskData">
+                            🔧 Afficher toutes les données de la tâche
+                        </button>
+                    </div>
+                    <div id="fullTaskData" class="collapse">
+                        <div class="card-body">
+                            <pre class="bg-light p-3 rounded small" style="max-height: 400px; overflow-y: auto;">{{ result | tojson(indent=2) }}</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="mt-4 text-center">
+                    <a href="{{ url_for('menu') }}" class="btn btn-primary">
+                        🏠 Retour au menu
+                    </a>
+                    <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
+                        🔍 Nouvelle recherche
+                    </a>
+
+                    {% if result.type == 'images' and result.status == 'completed' %}
+                    <a href="{{ url_for('step_gallery_upload') }}" class="btn btn-outline-success">
+                        📤 Uploader vers la galerie
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function copyJson() {
+    const jsonText = document.getElementById('jsonResult').innerText;
+    navigator.clipboard.writeText(jsonText).then(() => {
+        alert('✅ JSON copié dans le presse-papiers !');
+    }).catch(err => {
+        console.error('Erreur lors de la copie:', err);
+        alert('❌ Erreur lors de la copie');
+    });
+}
+
+function copyStructure() {
+    const structureText = document.getElementById('jsonStructure').innerText;
+    navigator.clipboard.writeText(structureText).then(() => {
+        alert('✅ Structure JSON copiée dans le presse-papiers !');
+    }).catch(err => {
+        console.error('Erreur lors de la copie:', err);
+        alert('❌ Erreur lors de la copie');
+    });
+}
+</script>
+{% endblock %}
+<div class="col-md-6">
+                                <p><strong>Créée le :</strong> {{ result.created_at }}</p>
+                                {% if result.completed_at %}
+                                <p><strong>Terminée le :</strong> {{ result.completed_at }}</p>
+                                {% endif %}
+                            </div>

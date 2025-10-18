@@ -1,0 +1,147 @@
+<!-- templates/menu.html -->
+{% extends "base.html" %}
+
+{% block title %}Menu principal - Gestion Artistes{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="card-title text-center mb-4">🎨 Menu Principal - Gestion Artistes</h1>
+
+                <div class="alert alert-info">
+                    <strong>Bienvenue {{ session.user.name if session.user else 'Utilisateur' }} !</strong><br>
+                    Choisissez une action ci-dessous pour commencer.
+                </div>
+
+                <div class="row mt-4">
+                    <!-- Recherche d'artiste -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-primary">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0">🔍 Recherche d'artiste</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Recherchez un artiste sur Wikidata et générez sa page avec les informations structurées.
+                                </p>
+                                <ul class="small">
+                                    <li>Recherche Wikidata</li>
+                                    <li>Création de catégorie</li>
+                                    <li>Génération de structure JSON</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="{{ url_for('index') }}" class="btn btn-primary w-100">
+                                    Commencer la recherche →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Upload galerie -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-success">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0">📤 Upload vers la galerie</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Envoyez une liste d'images générée vers votre galerie en ligne.
+                                </p>
+                                <ul class="small">
+                                    <li>Upload automatique des images</li>
+                                    <li>Organisation par artiste</li>
+                                    <li>Génération de galerie web</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="{{ url_for('step_gallery_upload') }}" class="btn btn-success w-100">
+                                    Uploader des images →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post WordPress -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-warning">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0">📝 Créer un post WordPress</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Générez automatiquement un billet de blog WordPress à partir des données d'un artiste.
+                                </p>
+                                <ul class="small">
+                                    <li>Génération de contenu</li>
+                                    <li>Intégration WordPress</li>
+                                    <li>Publication automatique</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="{{ url_for('step_wordpress') }}" class="btn btn-warning w-100">
+                                    Créer un post →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Annonce d'exposition -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-danger">
+                            <div class="card-header bg-danger text-white">
+                                <h5 class="mb-0">📢 Annonce d'exposition</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Créez une annonce d'exposition professionnelle à partir d'une description web et de liens.
+                                </p>
+                                <ul class="small">
+                                    <li>Analyse de contenu web</li>
+                                    <li>Génération d'annonce</li>
+                                    <li>Template personnalisable</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="{{ url_for('step_exposition') }}" class="btn btn-danger w-100">
+                                    Créer une annonce →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workflow complet -->
+                <div class="card mt-4 border-info">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0">📋 Workflow complet recommandé</h5>
+                    </div>
+                    <div class="card-body">
+                        <ol>
+                            <li><strong>Recherche d'artiste</strong> → Génère la structure JSON de base</li>
+                            <li><strong>Génération d'images</strong> → Crée la liste des œuvres</li>
+                            <li><strong>Upload galerie</strong> → Publie les images en ligne</li>
+                            <li><strong>Post WordPress</strong> → Crée le contenu éditorial</li>
+                            <li><strong>Annonce d'exposition</strong> → Communication événementielle</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="{{ url_for('debug_tasks') }}" class="btn btn-outline-secondary btn-sm">
+                        🔧 Debug - Voir toutes les tâches
+                    </a>
+                    <a href="{{ url_for('profile') }}" class="btn btn-outline-info btn-sm">
+                        👤 Mon profil
+                    </a>
+                    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
+                        🚪 Déconnexion
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
