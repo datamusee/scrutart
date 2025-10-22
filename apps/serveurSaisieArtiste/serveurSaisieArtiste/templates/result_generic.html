@@ -54,6 +54,12 @@
                                     </span>
                                 </p>
                             </div>
+                            <div class="col-md-6">
+                                <p><strong>Créée le :</strong> {{ result.created_at }}</p>
+                                {% if result.completed_at %}
+                                <p><strong>Terminée le :</strong> {{ result.completed_at }}</p>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,9 +162,3 @@ function copyStructure() {
 }
 </script>
 {% endblock %}
-<div class="col-md-6">
-                                <p><strong>Créée le :</strong> {{ result.created_at }}</p>
-                                {% if result.completed_at %}
-                                <p><strong>Terminée le :</strong> {{ result.completed_at }}</p>
-                                {% endif %}
-                            </div>

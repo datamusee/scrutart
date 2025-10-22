@@ -1,0 +1,193 @@
+<!-- templates/result_exposition.html -->
+{% extends "base.html" %}
+
+{% block title %}Résultat - Annonce d'exposition{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    <div class="text-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">
+                            <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25 25 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009l.496.008a64 64 0 0 1 1.51.048m1.39 1.081q.428.032.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a66 66 0 0 1 1.692.064q.491.026.966.06"/>
+                        </svg>
+                    </div>
+                    <h2 class="card-title text-danger mt-3">✅ Annonce d'exposition générée</h2>
+                </div>
+
+                {% if result.exposition_result %}
+                <div class="alert alert-{{ 'success' if result.exposition_result.status == 'success' else 'warning' }}">
+                    <strong>{{ result.exposition_result.message }}</strong>
+                </div>
+
+                <!-- Annonce générée -->
+                <div class="card mb-3">
+                    <div class="card-header bg-danger text-white">
+                        <h5 class="mb-0">📢 Annonce finale</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="announcement-content">
+                            {{ result.exposition_result.announcement_text | nl2br | safe }}
+                        </div>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button class="btn btn-sm btn-outline-primary" onclick="copyAnnouncement()">
+                            📋 Copier l'annonce
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary" onclick="downloadAnnouncement()">
+                            💾 Télécharger (.txt)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sources utilisées -->
+                <div class="card mb-3">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0">🔗 Sources utilisées</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Page de description :</strong></p>
+                        <a href="{{ result.exposition_result.sources.description_url }}" target="_blank" class="btn btn-sm btn-outline-info mb-3">
+                            🌐 {{ result.exposition_result.sources.description_url }}
+                        </a>
+
+                        {% if result.exposition_result.sources.additional_links %}
+                        <p><strong>Liens additionnels :</strong></p>
+                        <ul class="list-group">
+                            {% for link in result.exposition_result.sources.additional_links %}
+                            <li class="list-group-item">
+                                <a href="{{ link }}" target="_blank">{{ link }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Statistiques -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0">📊 Statistiques</h5>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Nombre de mots :</strong>
+                                    <span id="wordCount">-</span>
+                                </p>
+                                <p><strong>Nombre de caractères :</strong>
+                                    <span id="charCount">-</span>
+                                </p>
+                                <p class="mb-0"><strong>Généré le :</strong> {{ result.completed_at }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0">⚙️ Configuration</h5>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Prompt utilisé :</strong></p>
+                                <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#promptDetails">
+                                    👁️ Voir le prompt
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prompt utilisé (collapsible) -->
+                <div class="collapse" id="promptDetails">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h6 class="mb-0">Template de prompt utilisé</h6>
+                        </div>
+                        <div class="card-body">
+                            <pre class="bg-light p-3 rounded small">{{ result.exposition_result.prompt_used }}</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Détails techniques -->
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#technicalDetails">
+                            🔧 Afficher les détails techniques
+                        </button>
+                    </div>
+                    <div id="technicalDetails" class="collapse">
+                        <div class="card-body">
+                            <pre class="bg-light p-3 rounded"><code>{{ result.exposition_result | tojson(indent=2) }}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="mt-4 text-center">
+                    <a href="{{ url_for('step_exposition') }}" class="btn btn-danger">
+                        📢 Nouvelle annonce
+                    </a>
+                    <a href="{{ url_for('menu') }}" class="btn btn-outline-primary">
+                        🏠 Retour au menu
+                    </a>
+                    <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
+                        🔍 Nouvelle recherche
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.announcement-content {
+    background-color: #fff;
+    padding: 30px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    min-height: 300px;
+}
+</style>
+
+<script>
+// Calculer les statistiques
+const announcementText = `{{ result.exposition_result.announcement_text | safe }}`.replace(/<[^>]*>/g, '');
+const wordCount = announcementText.trim().split(/\s+/).length;
+const charCount = announcementText.length;
+
+document.getElementById('wordCount').textContent = wordCount;
+document.getElementById('charCount').textContent = charCount;
+
+// Fonction pour copier l'annonce
+function copyAnnouncement() {
+    const text = document.querySelector('.announcement-content').innerText;
+    navigator.clipboard.writeText(text).then(() => {
+        alert('✅ Annonce copiée dans le presse-papiers !');
+    }).catch(err => {
+        console.error('Erreur lors de la copie:', err);
+        alert('❌ Erreur lors de la copie');
+    });
+}
+
+// Fonction pour télécharger l'annonce
+function downloadAnnouncement() {
+    const text = document.querySelector('.announcement-content').innerText;
+    const blob = new Blob([text], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'annonce_exposition_' + new Date().toISOString().split('T')[0] + '.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+</script>
+{% endblock %}

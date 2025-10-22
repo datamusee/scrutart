@@ -1,0 +1,193 @@
+<!-- templates/step_exposition.html -->
+{% extends "base.html" %}
+
+{% block title %}Créer une annonce d'exposition{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow">
+            <div class="card-body">
+                <h2 class="card-title text-danger">📢 Création d'annonce d'exposition</h2>
+
+                <div class="alert alert-info">
+                    Cette étape génère une annonce d'exposition professionnelle à partir d'une page web de description et de liens additionnels.
+                </div>
+
+                <form method="POST" action="{{ url_for('create_exposition_announcement') }}" id="expositionForm">
+                    <div class="mb-3">
+                        <label for="description_url" class="form-label">
+                            <strong>URL de la page de description de l'exposition</strong> <span class="text-danger">*</span>
+                        </label>
+                        <input
+                            type="url"
+                            class="form-control"
+                            id="description_url"
+                            name="description_url"
+                            required
+                            placeholder="https://example.com/exposition-details"
+                        >
+                        <div class="form-text">
+                            URL de la page web contenant les détails de l'exposition (dates, lieu, artistes, etc.)
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="additional_links" class="form-label">
+                            <strong>Liens additionnels</strong> (optionnel)
+                        </label>
+                        <textarea
+                            class="form-control"
+                            id="additional_links"
+                            name="additional_links"
+                            rows="4"
+                            placeholder="https://example.com/artiste1&#10;https://example.com/artiste2&#10;https://example.com/galerie"
+                        ></textarea>
+                        <div class="form-text">
+                            Ajoutez des liens supplémentaires (un par ligne ou séparés par des virgules) : pages des artistes, galerie, événements liés, etc.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="prompt_template" class="form-label">
+                            <strong>Template de prompt pour la génération</strong>
+                            <button type="button" class="btn btn-sm btn-outline-info" onclick="resetPrompt()">
+                                🔄 Réinitialiser au défaut
+                            </button>
+                        </label>
+                        <textarea
+                            class="form-control font-monospace small"
+                            id="prompt_template"
+                            name="prompt_template"
+                            rows="12"
+                        >{{ default_prompt }}</textarea>
+                        <div class="form-text">
+                            Personnalisez le prompt utilisé pour générer l'annonce. Utilisez <code>{description_url}</code> et <code>{additional_links}</code> comme variables.
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-danger btn-lg">
+                            📢 Générer l'annonce d'exposition
+                        </button>
+                        <a href="{{ url_for('menu') }}" class="btn btn-outline-secondary">
+                            ← Retour au menu
+                        </a>
+                    </div>
+                </form>
+
+                <!-- Section d'aide -->
+                <div class="mt-4">
+                    <button class="btn btn-outline-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#helpSection">
+                        💡 Afficher l'aide
+                    </button>
+                    <div class="collapse mt-2" id="helpSection">
+                        <div class="card card-body bg-light">
+                            <h6>Comment utiliser cette fonctionnalité :</h6>
+                            <ol class="small">
+                                <li><strong>URL de description :</strong> Fournissez l'URL de la page officielle de l'exposition contenant toutes les informations (dates, lieu, horaires, artistes présentés, etc.)</li>
+                                <li><strong>Liens additionnels :</strong> Ajoutez des URLs complémentaires pour enrichir l'analyse (pages Wikidata des artistes, site de la galerie, articles de presse, etc.)</li>
+                                <li><strong>Template de prompt :</strong> Personnalisez le style et le contenu de l'annonce en modifiant le prompt. Le système utilisera ce template pour générer le texte final.</li>
+                            </ol>
+
+                            <h6 class="mt-3">L'annonce générée inclura :</h6>
+                            <ul class="small">
+                                <li>Un titre accrocheur</li>
+                                <li>Une introduction engageante sur l'exposition</li>
+                                <li>Les informations pratiques (dates, lieu, horaires)</li>
+                                <li>Une description des œuvres ou artistes présentés</li>
+                                <li>Un appel à l'action pour inciter les visiteurs</li>
+                            </ul>
+
+                            <h6 class="mt-3">Variables disponibles dans le prompt :</h6>
+                            <ul class="small mb-0">
+                                <li><code>{description_url}</code> : L'URL de la page de description principale</li>
+                                <li><code>{additional_links}</code> : Liste des liens additionnels fournis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exemples -->
+                <div class="mt-4">
+                    <h5>Exemples de prompts :</h5>
+                    <div class="accordion" id="promptExamples">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example1">
+                                    Style formel/institutionnel
+                                </button>
+                            </h2>
+                            <div id="example1" class="accordion-collapse collapse" data-bs-parent="#promptExamples">
+                                <div class="accordion-body small">
+                                    <pre class="mb-0"><code>Rédigez une annonce d'exposition au ton formel et institutionnel basée sur {description_url}.
+
+Structure attendue :
+1. Titre officiel de l'exposition
+2. Présentation institutionnelle (musée/galerie)
+3. Description académique des œuvres
+4. Informations pratiques détaillées
+5. Contact et réservations
+
+Sources additionnelles : {additional_links}
+
+Ton : académique, précis, informatif
+Longueur : 400-600 mots</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#example2">
+                                    Style promotionnel/marketing
+                                </button>
+                            </h2>
+                            <div id="example2" class="accordion-collapse collapse" data-bs-parent="#promptExamples">
+                                <div class="accordion-body small">
+                                    <pre class="mb-0"><code>Créez une annonce promotionnelle captivante pour une exposition basée sur {description_url}.
+
+Objectif : attirer un large public et créer l'événement
+
+Éléments à inclure :
+- Titre impactant avec émojis
+- Accroche qui intrigue et séduit
+- Mise en avant des pièces phares
+- Témoignages ou citations marquantes
+- Call-to-action énergique
+- Hashtags pertinents
+
+Sources : {additional_links}
+
+Ton : dynamique, enthousiaste, accessible
+Longueur : 250-400 mots</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const defaultPrompt = {{ default_prompt|tojson }};
+
+function resetPrompt() {
+    document.getElementById('prompt_template').value = defaultPrompt;
+}
+
+// Validation du formulaire
+document.getElementById('expositionForm').addEventListener('submit', function(e) {
+    const url = document.getElementById('description_url').value;
+
+    try {
+        new URL(url);
+    } catch (error) {
+        e.preventDefault();
+        alert('Erreur : L\'URL de description n\'est pas valide.\n\nVeuillez entrer une URL complète (ex: https://example.com/exposition)');
+        return false;
+    }
+});
+</script>
+{% endblock %}

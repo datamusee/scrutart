@@ -1,70 +1,79 @@
+<!-- templates/processed.html -->
 {% extends "base.html" %}
 
-{% block title %}URI traitée{% endblock %}
+{% block title %}Page générée - {{ result.label }}{% endblock %}
 
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-md-10">
         <div class="card shadow">
             <div class="card-body">
-                <div class="text-success mb-3 text-center">
-                    <i class="display-4">✅</i>
+                <div class="text-center mb-4">
+                    <div class="text-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                        </svg>
+                    </div>
+                    <h2 class="card-title text-success mt-3">✅ Page générée avec succès</h2>
+                    <p class="text-muted">{{ result.label }} ({{ result.qid }})</p>
                 </div>
-                <h2 class="card-title text-center text-success">URI traitée avec succès</h2>
 
-                <div class="mt-4">
-                    <h5>Détails de l'entité traitée :</h5>
-                    <ul class="list-group mb-4">
-                        <li class="list-group-item">
-                            <strong>Label :</strong> {{ result.label }}
-                        </li>
-                        <li class="list-group-item">
-                            <strong>QID :</strong> <span class="qid-badge">{{ result.qid }}</span>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>URI :</strong>
-                            <a href="{{ result.uri }}" target="_blank">{{ result.uri }}</a>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>Statut :</strong>
-                            <span class="badge bg-success">{{ result.status.title() }}</span>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>Traitement terminé :</strong>
-                            {{ result.completed_at }}
-                        </li>
-                    </ul>
+                <!-- Structure JSON générée -->
+                {% if result.json_structure %}
+                <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">📋 Structure JSON générée</h5>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-sm btn-outline-primary mb-2" onclick="copyStructure()">
+                            📋 Copier la structure
+                        </button>
+                        <pre class="bg-light p-3 rounded" id="jsonStructure">{{ result.json_structure | tojson(indent=2) }}</pre>
+                    </div>
+                </div>
+                {% endif %}
 
-                    <div class="card">
-                        <div class="card-header d-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">📄 Contenu de la page générée</h5>
-                            <form method="POST" action="{{ url_for('build_images') }}" class="d-inline">
-                                <input type="hidden" name="page_content" value="{{ result.page_content }}">
-                                <input type="hidden" name="qid" value="{{ result.qid }}">
-                                <input type="hidden" name="label" value="{{ result.label }}">
-                                <button type="submit" class="btn btn-primary btn-sm">
-                                    🖼️ Générer liste d'images
-                                </button>
-                            </form>
-                        </div>
-                        <div class="card-body">
-                            <textarea class="form-control"
-                                      rows="15"
-                                      readonly
-                                      style="font-family: monospace; font-size: 0.9em;">{{ result.page_content }}</textarea>
-                            <div class="mt-2">
-                                <button class="btn btn-outline-secondary btn-sm"
-                                        onclick="copyToClipboard()">
-                                    📋 Copier le contenu
-                                </button>
-                            </div>
-                        </div>
+                <!-- Contenu de la page -->
+                {% if result.page_content %}
+                <div class="card mb-3">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0">📄 Contenu de la page</h5>
+                    </div>
+                    <div class="card-body">
+                        <pre class="bg-light p-3 rounded" style="max-height: 400px; overflow-y: auto; white-space: pre-wrap;">{{ result.page_content }}</pre>
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Étape suivante : Génération d'images -->
+                <div class="card mb-3 border-success">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">🖼️ Étape suivante : Génération d'images</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Générez maintenant la liste des œuvres de cet artiste depuis Wikidata.</p>
+                        <form method="POST" action="{{ url_for('build_images') }}">
+                            <input type="hidden" name="page_content" value="{{ result.page_content }}">
+                            <input type="hidden" name="qid" value="{{ result.qid }}">
+                            <input type="hidden" name="label" value="{{ result.label }}">
+                            {% if result.json_structure %}
+                            <input type="hidden" name="json_structure" value="{{ result.json_structure | tojson }}">
+                            {% endif %}
+                            <button type="submit" class="btn btn-success">
+                                🖼️ Générer la liste d'images
+                            </button>
+                        </form>
                     </div>
                 </div>
 
-                <div class="mt-4 text-center">
-                    <a href="{{ url_for('index') }}" class="btn btn-primary">
+                <!-- Actions -->
+                <div class="text-center mt-4">
+                    <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">
                         🔍 Nouvelle recherche
+                    </a>
+                    <a href="{{ url_for('menu') }}" class="btn btn-outline-info">
+                        📋 Retour au menu
                     </a>
                 </div>
             </div>
@@ -73,23 +82,14 @@
 </div>
 
 <script>
-function copyToClipboard() {
-    const textarea = document.querySelector('textarea');
-    textarea.select();
-    textarea.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(textarea.value);
-
-    const button = document.querySelector('button[onclick="copyToClipboard()"]');
-    const originalText = button.innerHTML;
-    button.innerHTML = '✅ Copié !';
-    button.classList.add('btn-success');
-    button.classList.remove('btn-outline-secondary');
-
-    setTimeout(() => {
-        button.innerHTML = originalText;
-        button.classList.remove('btn-success');
-        button.classList.add('btn-outline-secondary');
-    }, 2000);
+function copyStructure() {
+    const structureText = document.getElementById('jsonStructure').innerText;
+    navigator.clipboard.writeText(structureText).then(() => {
+        alert('✅ Structure JSON copiée dans le presse-papiers !');
+    }).catch(err => {
+        console.error('Erreur lors de la copie:', err);
+        alert('❌ Erreur lors de la copie');
+    });
 }
 </script>
 {% endblock %}
