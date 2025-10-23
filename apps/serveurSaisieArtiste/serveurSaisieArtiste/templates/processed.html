@@ -6,6 +6,28 @@
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-md-10">
+        <!-- Boutons d'action en haut -->
+        <div class="card shadow mb-3 bg-light">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">🚀 Prochaine étape</h5>
+                    <div>
+                        <form method="POST" action="{{ url_for('build_images') }}" class="d-inline">
+                            <input type="hidden" name="page_content" value="{{ result.page_content }}">
+                            <input type="hidden" name="qid" value="{{ result.qid }}">
+                            <input type="hidden" name="label" value="{{ result.label }}">
+                            {% if result.json_structure %}
+                            <input type="hidden" name="json_structure" value="{{ result.json_structure | tojson }}">
+                            {% endif %}
+                            <button type="submit" class="btn btn-success">
+                                🖼️ Générer la liste d'images
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="card shadow">
             <div class="card-body">
                 <div class="text-center mb-4">
@@ -29,7 +51,7 @@
                         <button class="btn btn-sm btn-outline-primary mb-2" onclick="copyStructure()">
                             📋 Copier la structure
                         </button>
-                        <pre class="bg-light p-3 rounded" id="jsonStructure">{{ result.json_structure | tojson(indent=2) }}</pre>
+                        <pre class="bg-light p-3 rounded" id="jsonStructure">{{ result.json_structure | tojson_utf8 if result.json_structure is mapping else result.json_structure }}</pre>
                     </div>
                 </div>
                 {% endif %}

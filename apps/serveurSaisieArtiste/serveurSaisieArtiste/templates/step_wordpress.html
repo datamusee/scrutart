@@ -16,7 +16,8 @@
 
                 {% if prefill_structure %}
                 <div class="alert alert-success">
-                    ✅ Le champ a été pré-rempli automatiquement avec les données de l'étape précédente
+                    <strong>✅ Champ pré-rempli automatiquement</strong><br>
+                    Les données de l'étape précédente ont été chargées. Vous pouvez les modifier si nécessaire.
                 </div>
                 {% endif %}
 
@@ -26,13 +27,13 @@
                             <strong>Structure JSON de l'artiste</strong>
                         </label>
                         <textarea
-                            class="form-control font-monospace"
+                            class="form-control font-monospace small"
                             id="json_structure"
                             name="json_structure"
                             rows="8"
                             required
                             placeholder='{"categoryName": "...", "qid": "...", "piwigoCategory": "...", "listimagespath": "..."}'
-                        >{{ prefill_structure if prefill_structure else '' }}</textarea>
+                        >{{ prefill_structure }}</textarea>
                         <div class="form-text">
                             Collez ici la structure JSON complète obtenue lors de la première étape (recherche d'artiste).
                         </div>
@@ -63,7 +64,7 @@
                     </div>
                 </form>
 
-                <!-- Section d'aide -->
+                <!-- Reste du template identique -->
                 <div class="mt-4">
                     <button class="btn btn-outline-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#helpSection">
                         💡 Afficher l'aide
@@ -77,37 +78,6 @@
   "piwigoCategory": "123",
   "listimagespath": "D:/path/to/images.json"
 }</code></pre>
-
-                            <h6 class="mt-3">Le post WordPress généré contiendra :</h6>
-                            <ul class="small">
-                                <li>Titre : "Découverte de l'artiste [Nom]"</li>
-                                <li>Contenu HTML formaté avec informations Wikidata</li>
-                                <li>Catégories et tags automatiques</li>
-                                <li>Images intégrées (si l'option est cochée)</li>
-                                <li>Métadonnées SEO optimisées</li>
-                            </ul>
-
-                            <h6 class="mt-3">Configuration WordPress requise :</h6>
-                            <p class="small mb-0">
-                                Assurez-vous que votre configuration WordPress permet l'API REST et que les credentials sont correctement définis dans vos variables d'environnement.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Aperçu de la structure -->
-                <div class="mt-4">
-                    <h5>Structure du post généré :</h5>
-                    <div class="card bg-light">
-                        <div class="card-body">
-                            <p class="small mb-2"><strong>Sections :</strong></p>
-                            <ol class="small mb-0">
-                                <li>Introduction sur l'artiste</li>
-                                <li>Informations biographiques (Wikidata)</li>
-                                <li>Galerie d'œuvres principales</li>
-                                <li>Liens et ressources externes</li>
-                                <li>Call-to-action pour visiter la galerie</li>
-                            </ol>
                         </div>
                     </div>
                 </div>
@@ -117,14 +87,11 @@
 </div>
 
 <script>
-// Validation JSON côté client
 document.getElementById('wordpressForm').addEventListener('submit', function(e) {
     const structureJson = document.getElementById('json_structure').value;
 
     try {
         const data = JSON.parse(structureJson);
-
-        // Vérifier les champs requis
         if (!data.categoryName || !data.qid) {
             throw new Error('Les champs "categoryName" et "qid" sont requis');
         }
