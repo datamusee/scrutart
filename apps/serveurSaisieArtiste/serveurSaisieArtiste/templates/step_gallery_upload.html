@@ -1,0 +1,122 @@
+<!-- templates/step_gallery_upload.html -->
+{% extends "base.html" %}
+
+{% block title %}Upload vers la galerie{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-body">
+                <h2 class="card-title text-success">📤 Upload d'images vers la galerie</h2>
+
+                <div class="alert alert-info">
+                    Cette étape permet d'envoyer une liste d'images générée vers votre galerie en ligne.
+                </div>
+
+                {% if prefill_images or prefill_structure %}
+                <div class="alert alert-success">
+                    <strong>✅ Champs pré-remplis automatiquement</strong><br>
+                    Les données de l'étape précédente ont été chargées. Vous pouvez les modifier si nécessaire.
+                </div>
+                {% endif %}
+
+                <form method="POST" action="{{ url_for('upload_to_gallery') }}" id="uploadForm">
+                    <div class="mb-3">
+                        <label for="images_json" class="form-label">
+                            <strong>Liste d'images (JSON)</strong>
+                        </label>
+                        <textarea
+                            class="form-control font-monospace small"
+                            id="images_json"
+                            name="images_json"
+                            rows="10"
+                            required
+                            placeholder='{"qid": "Q123", "label": "Artiste", "images": [...]}'
+                        >{{ prefill_images }}</textarea>
+                        <div class="form-text">
+                            Collez ici le JSON de la liste d'images obtenu à l'étape précédente.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="json_structure" class="form-label">
+                            <strong>Structure JSON de l'artiste</strong>
+                        </label>
+                        <textarea
+                            class="form-control font-monospace small"
+                            id="json_structure"
+                            name="json_structure"
+                            rows="6"
+                            required
+                            placeholder='{"categoryName": "...", "qid": "...", "piwigoCategory": "..."}'
+                        >{{ prefill_structure }}</textarea>
+                        <div class="form-text">
+                            Collez ici la structure JSON de base obtenue lors de la première étape.
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-success btn-lg">
+                            📤 Lancer l'upload vers la galerie
+                        </button>
+                        <a href="{{ url_for('menu') }}" class="btn btn-outline-secondary">
+                            ← Retour au menu
+                        </a>
+                    </div>
+                </form>
+
+                <!-- Section d'aide -->
+                <div class="mt-4">
+                    <button class="btn btn-outline-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#helpSection">
+                        💡 Afficher l'aide
+                    </button>
+                    <div class="collapse mt-2" id="helpSection">
+                        <div class="card card-body bg-light">
+                            <h6>Format attendu pour la liste d'images :</h6>
+                            <pre class="small"><code>{
+  "qid": "Q5582",
+  "label": "Vincent van Gogh",
+  "images": [
+    {
+      "uri": "http://www.wikidata.org/entity/Q...",
+      "url": "https://commons.wikimedia.org/...",
+      "titre_fr": "La Nuit étoilée",
+      "description": "..."
+    }
+  ],
+  "total_found": 10
+}</code></pre>
+
+                            <h6 class="mt-3">Format attendu pour la structure JSON :</h6>
+                            <pre class="small"><code>{
+  "categoryName": "Vincent van Gogh",
+  "qid": "Q5582",
+  "piwigoCategory": "123",
+  "listimagespath": "..."
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Validation JSON côté client
+document.getElementById('uploadForm').addEventListener('submit', function(e) {
+    const imagesJson = document.getElementById('images_json').value;
+    const structureJson = document.getElementById('json_structure').value;
+
+    try {
+        JSON.parse(imagesJson);
+        JSON.parse(structureJson);
+    } catch (error) {
+        e.preventDefault();
+        alert('Erreur : Format JSON invalide. Veuillez vérifier votre saisie.\n\n' + error.message);
+        return false;
+    }
+});
+</script>
+{% endblock %}
