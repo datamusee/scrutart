@@ -7,6 +7,8 @@ import sqlite3
 from datetime import datetime
 from CPiwigoManager import CPiwigoManager, CategoryType
 import re
+import time
+from urllib.parse import unquote
 
 app = Flask(__name__)
 
@@ -16,6 +18,14 @@ pimag = CPiwigoManager()
 PIWIGO_URL = "https://galeries.grains-de-culture.fr"
 PIWIGO_USER = pimag.login
 PIWIGO_PASSWORD = pimag.password
+
+
+# User-Agent pour respecter les directives de Wikimedia
+USER_AGENT = "PiwigoWikidataTagger/1.0 (https://grains-de-culture.fr; jcmoissinac@gmail.com)"
+
+# Délai entre les requêtes Wikidata (en secondes)
+WIKIDATA_DELAY = 0.5
+last_wikidata_request = 0
 
 # Base de données pour suivre les images traitées
 DB_PATH = "processed_images.db"
@@ -51,16 +61,6 @@ def mark_image_processed(image_id, tags_added, wikidata_entity=None):
     ''', (image_id, datetime.now().isoformat(), json.dumps(tags_added), wikidata_entity))
     conn.commit()
     conn.close()
-
-
-def is_image_processed(image_id):
-    """Vérifie si une image a déjà été traitée"""
-    conn = sqlite3.connect(DB_PATH)
-    cursor = conn.cursor()
-    cursor.execute('SELECT image_id FROM processed_images WHERE image_id = ?', (image_id,))
-    result = cursor.fetchone()
-    conn.close()
-    return result is not None
 
 
 def get_processed_images_info(image_id):
@@ -120,8 +120,8 @@ def get_piwigo_images(page=0, per_page=10):
     url = f"{PIWIGO_URL}/ws.php?format=json"
     data = {
         'method': 'pwg.images.search',
-        'query':'christ',
         'page': page,
+        'query': 'christ',
         'per_page': per_page
     }
     response = piwigo_session.post(url, data=data)
@@ -142,16 +142,90 @@ def get_image_info(image_id):
     return {}
 
 
+def extract_artwork_from_description(description):
+    """Extrait les informations de l'œuvre d'art depuis la description"""
+    if not description:
+        return None
+
+    # Pattern pour trouver "Élément Wikidata" suivi d'un lien vers une entité Q
+    pattern = r'Élément Wikidata[^<]*<a[^>]+href=["\']([^"\']*wikidata\.org/(?:wiki|entity)/(Q\d+))["\'][^>]*>([^<]*)</a>'
+
+    match = re.search(pattern, description, re.IGNORECASE)
+
+    if match:
+        wikidata_url = match.group(1)
+        qid = match.group(2)
+        link_text = match.group(3).strip()
+
+        # Normaliser l'URI
+        normalized_uri = f"https://www.wikidata.org/entity/{qid}"
+
+        # Le titre peut être dans le texte du lien ou on récupère via l'API
+        title = link_text if link_text and link_text != qid else get_wikidata_label(qid)
+
+        return {
+            'title': title,
+            'uri': normalized_uri,
+            'qid': qid
+        }
+
+    return None
+
+def extract_author_from_description(description):
+    """Extrait le nom de l'auteur et son URI Wikidata depuis la description"""
+    if not description:
+        return None
+
+    # Pattern pour capturer un lien HTML vers une entité Wikidata
+    # Capture le texte du lien et l'URL
+    pattern = r'<a[^>]+href=["\']([^"\']*wikidata\.org/(?:wiki|entity)/Q\d+)["\'][^>]*>([^<]+)</a>'
+
+    match = re.search(pattern, description, re.IGNORECASE)
+
+    if match:
+        wikidata_url = match.group(1)
+        author_name = match.group(2).strip()
+
+        # Normaliser l'URL pour toujours utiliser le format /entity/
+        entity_id = re.search(r'Q\d+', wikidata_url)
+        if entity_id:
+            normalized_uri = f"https://www.wikidata.org/entity/{entity_id.group(0)}"
+
+            return {
+                'name': author_name,
+                'uri': normalized_uri,
+                'entity_id': entity_id.group(0)
+            }
+
+    # Pattern alternatif pour lien simple sans balise HTML
+    simple_pattern = r'(https?://(?:www\.)?wikidata\.org/(?:wiki|entity)/Q\d+)'
+    simple_match = re.search(simple_pattern, description)
+
+    if simple_match:
+        wikidata_url = simple_match.group(1)
+        entity_id = re.search(r'Q\d+', wikidata_url)
+
+        if entity_id:
+            # Récupérer le nom via l'API Wikidata
+            author_name = get_wikidata_label(entity_id.group(0))
+            normalized_uri = f"https://www.wikidata.org/entity/{entity_id.group(0)}"
+
+            return {
+                'name': author_name,
+                'uri': normalized_uri,
+                'entity_id': entity_id.group(0)
+            }
+
+    return None
+
 def extract_author_from_categories(categories):
     """Extrait le nom de l'auteur depuis les catégories/galeries"""
     for cat in categories:
         name = cat.get('name', '')
-        # Recherche de patterns comme "Galerie XXX", "Artiste XXX", etc.
         if 'galerie' in name.lower():
             return name.replace('Galerie', '').replace('galerie', '').strip()
         if 'artiste' in name.lower():
             return name.replace('Artiste', '').replace('artiste', '').strip()
-        # Si c'est un nom propre (commence par majuscule et contient espace)
         if name and name[0].isupper() and ' ' in name:
             return name.strip()
     return None
@@ -164,18 +238,32 @@ def extract_commons_url(description):
 
     # Recherche d'URLs Wikimedia Commons
     patterns = [
-        r'https?://commons\.wikimedia\.org/wiki/File:([^"\s<>]+)',
-        r'https?://commons\.wikimedia\.org/wiki/([^"\s<>]+)',
-        r'commons\.wikimedia\.org/wiki/File:([^"\s<>]+)'
+        r'https?://commons\.wikimedia\.org/wiki/Special:FilePath/([^"\s<>\']+)',
+        r'https?://commons\.wikimedia\.org/wiki/File:([^"\s<>\']+)',
+        r'commons\.wikimedia\.org/wiki/File:([^"\s<>\']+)'
     ]
 
     for pattern in patterns:
         match = re.search(pattern, description)
         if match:
-            return match.group(0) if match.group(0).startswith(
-                'http') else f"https://commons.wikimedia.org/wiki/{match.group(1)}"
+            # Construire l'URL complète
+            if match.group(0).startswith('http'):
+                return match.group(0)
+            else:
+                return f"https://commons.wikimedia.org/wiki/File:{match.group(1)}"
 
     return None
+
+def rate_limit_wikidata():
+    """Applique un délai entre les requêtes Wikidata pour respecter les limites"""
+    global last_wikidata_request
+    current_time = time.time()
+    time_since_last = current_time - last_wikidata_request
+
+    if time_since_last < WIKIDATA_DELAY:
+        time.sleep(WIKIDATA_DELAY - time_since_last)
+
+    last_wikidata_request = time.time()
 
 
 def get_wikidata_from_commons(commons_url):
@@ -184,14 +272,14 @@ def get_wikidata_from_commons(commons_url):
         return None
 
     try:
-        # Extraire le nom du fichier
+        rate_limit_wikidata()
+
         match = re.search(r'File:(.+)$', commons_url)
         if not match:
             return None
 
         filename = match.group(1).replace('_', ' ')
 
-        # Rechercher sur Wikidata avec le nom du fichier
         url = "https://www.wikidata.org/w/api.php"
         params = {
             'action': 'wbsearchentities',
@@ -201,19 +289,26 @@ def get_wikidata_from_commons(commons_url):
             'search': filename,
             'limit': 1
         }
-        response = requests.get(url, params=params)
+        headers = {'User-Agent': USER_AGENT}
+
+        response = requests.get(url, params=params, headers=headers, timeout=10)
+        response.raise_for_status()
         data = response.json()
 
         if data.get('search'):
             return data['search'][0]['id']
+
+        return None
+
     except Exception as e:
         print(f"Erreur lors de la recherche Commons: {e}")
-
-    return None
+        return None
 
 
 def search_wikidata_entity(query):
-    """Recherche une entité sur Wikidata"""
+    """Recherche une entité sur Wikidata en respectant les directives"""
+    rate_limit_wikidata()
+
     url = "https://www.wikidata.org/w/api.php"
     params = {
         'action': 'wbsearchentities',
@@ -223,26 +318,96 @@ def search_wikidata_entity(query):
         'search': query,
         'limit': 1
     }
-    response = requests.get(url, params=params)
-    data = response.json()
-    if data.get('search'):
-        return data['search'][0]
-    return None
+    headers = {'User-Agent': USER_AGENT}
 
+    try:
+        response = requests.get(url, params=params, headers=headers, timeout=10)
+        response.raise_for_status()
+        data = response.json()
+
+        if data.get('search'):
+            return data['search'][0]
+
+        return None
+
+    except requests.exceptions.RequestException as e:
+        print(f"Erreur lors de la recherche Wikidata pour '{query}': {e}")
+        return None
+
+
+
+def find_artwork_by_creator_and_image(creator_qid, commons_url):
+    """Interroge WDQS pour trouver une peinture par créateur et image Commons"""
+    if not creator_qid or not commons_url:
+        return None
+
+    # Convertir l'URL Commons en format commons:
+    commons_filename = commons_url.replace('http://commons.wikimedia.org/wiki/Special:FilePath/', 'commons:')
+    commons_filename = commons_filename.replace('https://commons.wikimedia.org/wiki/Special:FilePath/', 'commons:')
+    commons_filename = commons_filename.replace('http://commons.wikimedia.org/wiki/File:', 'commons:')
+    commons_filename = commons_filename.replace('https://commons.wikimedia.org/wiki/File:', 'commons:')
+    commons_filename = unquote(commons_filename)
+
+    # Si ce n'est pas déjà au format commons:, l'extraire
+    if not commons_filename.startswith('commons:'):
+        file_match = re.search(r'File:(.+)$', commons_url)
+        if file_match:
+            commons_filename = 'commons:' + file_match.group(1)
+
+    # Construire la requête SPARQL
+    sparql_query = f"""
+    SELECT ?painting WHERE {{
+      ?painting wdt:P31 wd:Q3305213 ;
+                wdt:P170 wd:{creator_qid} ;
+                wdt:P18 "{commons_filename}" .
+    }}
+    LIMIT 1
+    """
+
+    # Interroger WDQS
+    rate_limit_wikidata()
+
+    url = "https://query.wikidata.org/sparql"
+    headers = {
+        'User-Agent': USER_AGENT,
+        'Accept': 'application/json'
+    }
+
+    try:
+        response = requests.get(
+            url,
+            params={'query': sparql_query, 'format': 'json'},
+            headers=headers,
+            timeout=30
+        )
+        response.raise_for_status()
+        data = response.json()
+
+        results = data.get('results', {}).get('bindings', [])
+
+        if results:
+            painting_uri = results[0]['painting']['value']
+            # Extraire l'entity_id
+            entity_match = re.search(r'Q\d+', painting_uri)
+            if entity_match:
+                return entity_match.group(0)
+
+        return None
+
+    except requests.exceptions.RequestException as e:
+        print(f"Erreur WDQS pour créateur {creator_qid}: {e}")
+        return None
 
 def search_artwork_on_wikidata(title, author=None):
     """Recherche une œuvre d'art sur Wikidata en utilisant le titre et l'auteur"""
-    # Construire la requête de recherche
     search_query = title
     if author:
         search_query = f"{title} {author}"
 
-    # Recherche initiale
     entity = search_wikidata_entity(search_query)
     if entity:
         return entity['id']
 
-    # Si pas trouvé et qu'on a un auteur, essayer juste avec le titre
     if author:
         entity = search_wikidata_entity(title)
         if entity:
@@ -253,36 +418,48 @@ def search_artwork_on_wikidata(title, author=None):
 
 def get_wikidata_depicts(entity_id):
     """Récupère les depicts d'une entité Wikidata"""
+    rate_limit_wikidata()
+
     url = "https://www.wikidata.org/w/api.php"
     params = {
         'action': 'wbgetclaims',
         'format': 'json',
         'entity': entity_id,
-        'property': 'P180'  # P180 = depicts
+        'property': 'P180'
     }
-    response = requests.get(url, params=params)
-    data = response.json()
+    headers = {'User-Agent': USER_AGENT}
 
-    depicts = []
-    claims = data.get('claims', {}).get('P180', [])
+    try:
+        response = requests.get(url, params=params, headers=headers, timeout=10)
+        response.raise_for_status()
+        data = response.json()
 
-    for claim in claims:
-        try:
-            depicted_entity = claim['mainsnak']['datavalue']['value']['id']
-            label = get_wikidata_label(depicted_entity)
-            depicts.append({
-                'id': depicted_entity,
-                'label': label,
-                'url': f"https://www.wikidata.org/wiki/{depicted_entity}"
-            })
-        except (KeyError, TypeError):
-            continue
+        depicts = []
+        claims = data.get('claims', {}).get('P180', [])
 
-    return depicts
+        for claim in claims:
+            try:
+                depicted_entity = claim['mainsnak']['datavalue']['value']['id']
+                label = get_wikidata_label(depicted_entity)
+                depicts.append({
+                    'id': depicted_entity,
+                    'label': label,
+                    'url': f"https://www.wikidata.org/wiki/{depicted_entity}"
+                })
+            except (KeyError, TypeError):
+                continue
+
+        return depicts
+
+    except requests.exceptions.RequestException as e:
+        print(f"Erreur lors de la récupération des depicts pour {entity_id}: {e}")
+        return []
 
 
 def get_wikidata_label(entity_id, langs=['fr', 'en', 'es']):
     """Récupère le label d'une entité Wikidata"""
+    rate_limit_wikidata()
+
     url = "https://www.wikidata.org/w/api.php"
     params = {
         'action': 'wbgetentities',
@@ -291,30 +468,34 @@ def get_wikidata_label(entity_id, langs=['fr', 'en', 'es']):
         'props': 'labels',
         'languages': '|'.join(langs)
     }
-    response = requests.get(url, params=params)
-    data = response.json()
+    headers = {'User-Agent': USER_AGENT}
 
-    entity = data.get('entities', {}).get(entity_id, {})
-    labels = entity.get('labels', {})
+    try:
+        response = requests.get(url, params=params, headers=headers, timeout=10)
+        response.raise_for_status()
+        data = response.json()
 
-    for lang in langs:
-        if lang in labels:
-            return labels[lang]['value']
+        entity = data.get('entities', {}).get(entity_id, {})
+        labels = entity.get('labels', {})
 
-    return entity_id
+        for lang in langs:
+            if lang in labels:
+                return labels[lang]['value']
+
+        return entity_id
+
+    except requests.exceptions.RequestException as e:
+        print(f"Erreur lors de la récupération du label pour {entity_id}: {e}")
+        return entity_id
 
 
 def add_tags_to_image(image_id, tags):
     """Ajoute des tags à une image dans Piwigo"""
     url = f"{PIWIGO_URL}/ws.php?format=json"
 
-    # Créer les tags s'ils n'existent pas et récupérer leurs IDs
     tag_ids = []
     for tag in tags:
-        # Rechercher si le tag existe
-        search_data = {
-            'method': 'pwg.tags.getList'
-        }
+        search_data = {'method': 'pwg.tags.getList'}
         response = piwigo_session.post(url, data=search_data)
         existing_tags = response.json().get('result', {}).get('tags', [])
 
@@ -324,7 +505,6 @@ def add_tags_to_image(image_id, tags):
                 tag_id = existing_tag.get('id')
                 break
 
-        # Créer le tag s'il n'existe pas
         if not tag_id:
             create_data = {
                 'method': 'pwg.tags.add',
@@ -341,7 +521,6 @@ def add_tags_to_image(image_id, tags):
         if tag_id:
             tag_ids.append(tag_id)
 
-    # Associer les tags à l'image
     if tag_ids:
         data = {
             'method': 'pwg.images.setInfo',
@@ -374,15 +553,12 @@ def get_images():
 
     result = []
     for img in images:
-        # Vérifier si l'image a déjà été traitée
         processed_info = get_processed_images_info(img['id'])
         is_processed = processed_info is not None
 
-        # Si l'image est traitée et qu'on ne veut pas voir les images traitées, on la saute
         if is_processed and not show_all:
             continue
 
-        # Récupérer les informations complètes de l'image
         img_info = get_image_info(img['id'])
 
         title = img_info.get('name', img_info.get('file', 'Sans nom'))
@@ -390,35 +566,34 @@ def get_images():
         categories = img_info.get('categories', [])
         description = img_info.get('comment', '')
 
-        # Extraire l'auteur depuis les catégories/galeries
-        author = extract_author_from_categories(categories)
+        artworkJson = extract_artwork_from_description(description)
+        artwork_id = artworkJson['qid'] if artworkJson else None
 
-        # Extraire l'URL Commons depuis la description
+        # author = extract_author_from_categories(categories)
+        authorJson = extract_author_from_description(description)
+
+        author = authorJson['name'] if authorJson else None
         commons_url = extract_commons_url(description)
 
-        # Rechercher l'entité Wikidata
-        entity_id = None
+        entity_id = artwork_id
         search_info = {
             'title': title,
             'author': author,
             'commons_url': commons_url
         }
 
-        # 1. Essayer d'abord avec l'URL Commons si disponible
-        if commons_url:
+        if commons_url and not entity_id:
             entity_id = get_wikidata_from_commons(commons_url)
 
-        # 2. Sinon, rechercher avec titre et auteur
         if not entity_id:
-            entity_id = search_artwork_on_wikidata(title, author)
+            # entity_id = search_artwork_on_wikidata(title, author)
+            find_artwork_by_creator_and_image(authorJson["entity_id"], commons_url)
 
-        # 3. En dernier recours, essayer avec les tags
         if not entity_id and tags:
             entity = search_wikidata_entity(tags[0]['name'])
             if entity:
                 entity_id = entity['id']
 
-        # Récupérer les depicts si on a trouvé une entité
         depicts = []
         if entity_id:
             depicts = get_wikidata_depicts(entity_id)
@@ -453,7 +628,6 @@ def add_tags():
     result = add_tags_to_image(image_id, validated_tags)
 
     if result.get('stat') == 'ok':
-        # Marquer l'image comme traitée
         mark_image_processed(image_id, validated_tags, wikidata_entity)
         return jsonify({'success': True, 'message': 'Tags ajoutés avec succès'})
     else:
@@ -462,25 +636,19 @@ def add_tags():
 
 @app.route('/api/unmark_image', methods=['POST'])
 def unmark_image():
-    """Permet de retirer le marquage d'une image pour la retraiter"""
     data = request.json
     image_id = data.get('image_id')
-
     unmark_image_processed(image_id)
     return jsonify({'success': True, 'message': 'Image marquée comme non traitée'})
 
 
 @app.route('/api/stats')
 def get_processing_stats():
-    """Récupère les statistiques de traitement"""
     return jsonify(get_stats())
 
 
 if __name__ == '__main__':
-    # Initialiser la base de données
     init_database()
-
-    # Créer le template HTML
     os.makedirs('templates', exist_ok=True)
 
     with open('templates/index.html', 'w', encoding='utf-8') as f:
@@ -567,7 +735,7 @@ if __name__ == '__main__':
                 const data = await response.json();
                 document.getElementById('processedCount').textContent = data.total_processed;
             } catch (error) {
-                console.error('Erreur lors du chargement des stats:', error);
+                console.error('Erreur stats:', error);
             }
         }
 
@@ -578,7 +746,7 @@ if __name__ == '__main__':
         }
 
         async function loadImages(page) {
-            document.getElementById('images').innerHTML = '<div class="loading">Chargement des images...</div>';
+            document.getElementById('images').innerHTML = '<div class="loading">Chargement...</div>';
 
             try {
                 const response = await fetch(`/api/images?page=${page}&show_all=${showAll}`);
@@ -604,7 +772,7 @@ if __name__ == '__main__':
             container.innerHTML = '';
 
             if (images.length === 0) {
-                container.innerHTML = '<div class="loading">✓ Aucune image non traitée sur cette page</div>';
+                container.innerHTML = '<div class="loading">✓ Aucune image non traitée</div>';
                 return;
             }
 
@@ -617,43 +785,43 @@ if __name__ == '__main__':
                         <div class="image-wrapper">
                             <img src="${img.url}" alt="${img.name}">
                             <p style="margin-top: 10px; font-weight: bold;">${img.name}</p>
-                            ${img.author ? `<p style="color: #666; font-size: 13px;">👤 Auteur: ${img.author}</p>` : ''}
-                            ${img.commons_url ? `<p style="font-size: 12px;"><a href="${img.commons_url}" target="_blank">🔗 Wikimedia Commons</a></p>` : ''}
-                            ${img.wikidata_entity ? `<p style="font-size: 12px;"><a href="https://www.wikidata.org/wiki/${img.wikidata_entity}" target="_blank">📊 Entité Wikidata: ${img.wikidata_entity}</a></p>` : '<p style="font-size: 12px; color: #999;">❌ Aucune entité Wikidata trouvée</p>'}
+                            ${img.author ? `<p style="color: #666; font-size: 13px;">👤 ${img.author}</p>` : ''}
+                            ${img.commons_url ? `<p style="font-size: 12px;"><a href="${img.commons_url}" target="_blank">🔗 Commons</a></p>` : ''}
+                            ${img.wikidata_entity ? `<p style="font-size: 12px;"><a href="https://www.wikidata.org/wiki/${img.wikidata_entity}" target="_blank">📊 ${img.wikidata_entity}</a></p>` : '<p style="font-size: 12px; color: #999;">❌ Pas d entité</p>'}
                         </div>
                         <div class="tags-section">
                             <div class="tags-group">
                                 <h3>Tags Piwigo actuels</h3>
                                 <div class="tag-list">
-                                    ${img.tags.length ? img.tags.map(t => `<span class="tag">${t.name}</span>`).join('') : '<em style="color: #999;">Aucun tag</em>'}
+                                    ${img.tags.length ? img.tags.map(t => `<span class="tag">${t.name}</span>`).join('') : '<em style="color: #999;">Aucun</em>'}
                                 </div>
                             </div>
                             ${img.is_processed ? `
                                 <div class="tags-group" style="background: #e8f5e9;">
-                                    <h3>Tags ajoutés lors du traitement</h3>
+                                    <h3>Tags ajoutés</h3>
                                     <div class="tag-list">
                                         ${img.processed_info.tags_added.map(t => `<span class="tag" style="background: #c8e6c9;">${t.label}</span>`).join('')}
                                     </div>
                                 </div>
                             ` : ''}
                             <div class="tags-group">
-                                <h3>Depicts Wikidata ${img.is_processed ? '(image déjà traitée)' : '(sélectionnez pour ajouter)'}</h3>
-                                ${img.wikidata_entity ? `<p style="font-size: 12px; color: #666; margin-bottom: 8px;">Recherche basée sur: ${img.search_info.commons_url ? '🔗 URL Commons' : img.search_info.author ? `📝 "${img.search_info.title}" par ${img.search_info.author}` : `📝 "${img.search_info.title}"`}</p>` : ''}
+                                <h3>Depicts Wikidata ${img.is_processed ? '(traitée)' : '(sélectionner)'}</h3>
+                                ${img.wikidata_entity ? `<p style="font-size: 12px; color: #666; margin-bottom: 8px;">Source: ${img.search_info.commons_url ? '🔗 Commons' : img.search_info.author ? `📝 "${img.search_info.title}" par ${img.search_info.author}` : `📝 "${img.search_info.title}"`}</p>` : ''}
                                 <div id="depicts-${img.id}">
                                     ${img.depicts.length ? img.depicts.map(d => `
                                         <div class="depicts-item">
                                             <input type="checkbox" id="dep-${img.id}-${d.id}" value="${d.id}" data-label="${d.label}" data-url="${d.url}" ${img.is_processed ? 'disabled' : ''}>
                                             <label class="depicts-label" for="dep-${img.id}-${d.id}">${d.label}</label>
-                                            <a href="${d.url}" target="_blank" class="depicts-link">Voir sur Wikidata →</a>
+                                            <a href="${d.url}" target="_blank" class="depicts-link">Wikidata →</a>
                                         </div>
-                                    `).join('') : '<em style="color: #999;">Aucun depicts trouvé sur cette entité</em>'}
+                                    `).join('') : '<em style="color: #999;">Aucun depicts</em>'}
                                 </div>
                             </div>
                             <div class="actions">
                                 ${img.is_processed ? `
-                                    <button class="btn btn-secondary" onclick="reprocessImage(${img.id})">🔄 Retraiter cette image</button>
+                                    <button class="btn btn-secondary" onclick="reprocessImage(${img.id})">🔄 Retraiter</button>
                                 ` : `
-                                    <button class="btn btn-primary" onclick="sendTags(${img.id}, '${img.wikidata_entity || ''}')" ${img.depicts.length === 0 ? 'disabled' : ''}>📤 Envoyer les tags validés</button>
+                                    <button class="btn btn-primary" onclick="sendTags(${img.id}, '${img.wikidata_entity || ''}')" ${img.depicts.length === 0 ? 'disabled' : ''}>📤 Envoyer</button>
                                 `}
                             </div>
                         </div>
@@ -672,7 +840,7 @@ if __name__ == '__main__':
             }));
 
             if (tags.length === 0) {
-                showMessage('Veuillez sélectionner au moins un tag', 'error');
+                showMessage('Sélectionnez au moins un tag', 'error');
                 return;
             }
 
@@ -690,20 +858,18 @@ if __name__ == '__main__':
                 const result = await response.json();
 
                 if (result.success) {
-                    showMessage('✓ Tags ajoutés avec succès - Image marquée comme traitée', 'success');
+                    showMessage('✓ Tags ajoutés', 'success');
                     loadImages(currentPage);
                 } else {
                     showMessage(result.message, 'error');
                 }
             } catch (error) {
-                showMessage("Erreur lors de l'envoi", 'error');
+                showMessage('Erreur envoi', 'error');
             }
         }
 
         async function reprocessImage(imageId) {
-            if (!confirm('Voulez-vous vraiment retraiter cette image ?')) {
-                return;
-            }
+            if (!confirm('Retraiter cette image ?')) return;
 
             try {
                 const response = await fetch('/api/unmark_image', {
@@ -715,13 +881,13 @@ if __name__ == '__main__':
                 const result = await response.json();
 
                 if (result.success) {
-                    showMessage('✓ Image marquée pour retraitement', 'success');
+                    showMessage('✓ Marquée pour retraitement', 'success');
                     loadImages(currentPage);
                 } else {
-                    showMessage('Erreur lors du marquage', 'error');
+                    showMessage('Erreur', 'error');
                 }
             } catch (error) {
-                showMessage('Erreur lors de la communication', 'error');
+                showMessage('Erreur', 'error');
             }
         }
 
@@ -754,13 +920,13 @@ if __name__ == '__main__':
     print("=" * 60)
     print("CONFIGURATION REQUISE:")
     print("=" * 60)
-    print("Avant de lancer l'application, modifiez les lignes suivantes:")
+    print("Modifiez ces lignes:")
     print(f"  PIWIGO_URL = '{PIWIGO_URL}'")
     print(f"  PIWIGO_USER = '{PIWIGO_USER}'")
     print(f"  PIWIGO_PASSWORD = '{PIWIGO_PASSWORD}'")
+    print(f"  USER_AGENT = '{USER_AGENT}'")
     print("=" * 60)
-    print("\nDépendances à installer:")
-    print("  pip install flask requests")
+    print("Installez: pip install flask requests")
     print("=" * 60)
 
     app.run(debug=False, port=5000)
