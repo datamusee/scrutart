@@ -19,7 +19,6 @@ PIWIGO_URL = "https://galeries.grains-de-culture.fr"
 PIWIGO_USER = pimag.login
 PIWIGO_PASSWORD = pimag.password
 
-
 # User-Agent pour respecter les directives de Wikimedia
 USER_AGENT = "PiwigoWikidataTagger/1.0 (https://grains-de-culture.fr; jcmoissinac@gmail.com)"
 
@@ -171,6 +170,7 @@ def extract_artwork_from_description(description):
 
     return None
 
+
 def extract_author_from_description(description):
     """Extrait le nom de l'auteur et son URI Wikidata depuis la description"""
     if not description:
@@ -218,6 +218,7 @@ def extract_author_from_description(description):
 
     return None
 
+
 def extract_author_from_categories(categories):
     """Extrait le nom de l'auteur depuis les catégories/galeries"""
     for cat in categories:
@@ -253,6 +254,7 @@ def extract_commons_url(description):
                 return f"https://commons.wikimedia.org/wiki/File:{match.group(1)}"
 
     return None
+
 
 def rate_limit_wikidata():
     """Applique un délai entre les requêtes Wikidata pour respecter les limites"""
@@ -335,7 +337,6 @@ def search_wikidata_entity(query):
         return None
 
 
-
 def find_artwork_by_creator_and_image(creator_qid, commons_url):
     """Interroge WDQS pour trouver une peinture par créateur et image Commons"""
     if not creator_qid or not commons_url:
@@ -397,6 +398,7 @@ def find_artwork_by_creator_and_image(creator_qid, commons_url):
     except requests.exceptions.RequestException as e:
         print(f"Erreur WDQS pour créateur {creator_qid}: {e}")
         return None
+
 
 def search_artwork_on_wikidata(title, author=None):
     """Recherche une œuvre d'art sur Wikidata en utilisant le titre et l'auteur"""
@@ -542,6 +544,8 @@ def index():
 def get_images():
     page = request.args.get('page', 0, type=int)
     show_all = request.args.get('show_all', 'false').lower() == 'true'
+    hide_no_depicts = request.args.get('hide_no_depicts', 'false').lower() == 'true'
+    hide_all_tagged = request.args.get('hide_all_tagged', 'false').lower() == 'true'
 
     login_piwigo()
     images_data = get_piwigo_images(page=page, per_page=10)
@@ -598,9 +602,23 @@ def get_images():
         if entity_id:
             depicts = get_wikidata_depicts(entity_id)
 
+        # Filtre : masquer les peintures sans depicts
+        if hide_no_depicts and len(depicts) == 0:
+            continue
+
+        # Filtre : masquer les peintures dont tous les depicts sont déjà dans les tags
+        if hide_all_tagged and len(depicts) > 0:
+            piwigo_tag_names = {tag['name'].lower() for tag in tags}
+            depicts_labels = {d['label'].lower() for d in depicts}
+
+            # Si tous les depicts sont déjà dans les tags Piwigo
+            if depicts_labels.issubset(piwigo_tag_names):
+                continue
+
         result.append({
             'id': img['id'],
             'url': img['derivatives']['large']['url'],
+            'piwigo_url': f"{PIWIGO_URL}/picture.php?/{img['id']}",
             'name': title,
             'author': author,
             'commons_url': commons_url,
@@ -667,8 +685,8 @@ if __name__ == '__main__':
         .stat-box { background: white; padding: 15px 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .stat-box strong { display: block; font-size: 24px; color: #1976d2; }
         .stat-box span { font-size: 13px; color: #666; }
-        .filter-controls { display: flex; gap: 15px; justify-content: center; align-items: center; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .filter-controls label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+        .filter-controls { display: flex; gap: 15px; justify-content: center; align-items: center; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); flex-wrap: wrap; }
+        .filter-controls label { display: flex; align-items: center; gap: 8px; cursor: pointer; white-space: nowrap; }
         .filter-controls input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; }
         .container { max-width: 1400px; margin: 0 auto; }
         .image-grid { display: grid; gap: 20px; }
@@ -711,8 +729,16 @@ if __name__ == '__main__':
         </div>
         <div class="filter-controls">
             <label>
-                <input type="checkbox" id="showAllCheckbox" onchange="toggleShowAll()">
+                <input type="checkbox" id="showAllCheckbox" onchange="applyFilters()">
                 <span>Afficher aussi les images déjà traitées</span>
+            </label>
+            <label>
+                <input type="checkbox" id="hideNoDepictsCheckbox" onchange="applyFilters()">
+                <span>Masquer les peintures sans depicts (P180)</span>
+            </label>
+            <label>
+                <input type="checkbox" id="hideAllTaggedCheckbox" onchange="applyFilters()">
+                <span>Masquer les peintures dont tous les depicts sont déjà taggés</span>
             </label>
         </div>
     </div>
@@ -728,6 +754,8 @@ if __name__ == '__main__':
     <script>
         let currentPage = 0;
         let showAll = false;
+        let hideNoDepicts = false;
+        let hideAllTagged = false;
 
         async function loadStats() {
             try {
@@ -739,8 +767,10 @@ if __name__ == '__main__':
             }
         }
 
-        function toggleShowAll() {
+        function applyFilters() {
             showAll = document.getElementById('showAllCheckbox').checked;
+            hideNoDepicts = document.getElementById('hideNoDepictsCheckbox').checked;
+            hideAllTagged = document.getElementById('hideAllTaggedCheckbox').checked;
             currentPage = 0;
             loadImages(currentPage);
         }
@@ -749,7 +779,7 @@ if __name__ == '__main__':
             document.getElementById('images').innerHTML = '<div class="loading">Chargement...</div>';
 
             try {
-                const response = await fetch(`/api/images?page=${page}&show_all=${showAll}`);
+                const response = await fetch(`/api/images?page=${page}&show_all=${showAll}&hide_no_depicts=${hideNoDepicts}&hide_all_tagged=${hideAllTagged}`);
                 const data = await response.json();
 
                 if (data.error) {
@@ -772,7 +802,7 @@ if __name__ == '__main__':
             container.innerHTML = '';
 
             if (images.length === 0) {
-                container.innerHTML = '<div class="loading">✓ Aucune image non traitée</div>';
+                container.innerHTML = '<div class="loading">✓ Aucune image correspondant aux filtres</div>';
                 return;
             }
 
@@ -786,6 +816,7 @@ if __name__ == '__main__':
                             <img src="${img.url}" alt="${img.name}">
                             <p style="margin-top: 10px; font-weight: bold;">${img.name}</p>
                             ${img.author ? `<p style="color: #666; font-size: 13px;">👤 ${img.author}</p>` : ''}
+                            <p style="font-size: 12px;"><a href="${img.piwigo_url}" target="_blank">🖼️ Voir dans Piwigo</a></p>
                             ${img.commons_url ? `<p style="font-size: 12px;"><a href="${img.commons_url}" target="_blank">🔗 Commons</a></p>` : ''}
                             ${img.wikidata_entity ? `<p style="font-size: 12px;"><a href="https://www.wikidata.org/wiki/${img.wikidata_entity}" target="_blank">📊 ${img.wikidata_entity}</a></p>` : '<p style="font-size: 12px; color: #999;">❌ Pas d entité</p>'}
                         </div>
