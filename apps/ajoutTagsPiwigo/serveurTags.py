@@ -32,6 +32,9 @@ DB_PATH = "processed_images.db"
 # Session Piwigo
 piwigo_session = requests.Session()
 
+# Cache en mémoire
+wikidata_cache = {'labels': {}, 'depicts': {}, 'entities': {}, 'commons': {}}
+piwigo_cache = {'images': {}, 'tags': None}
 
 def init_database():
     """Initialise la base de données pour suivre les images traitées"""
@@ -127,8 +130,13 @@ def get_piwigo_images(page=0, per_page=10):
     return response.json()
 
 
+
 def get_image_info(image_id):
-    """Récupère les informations complètes d'une image"""
+    """Récupère les informations complètes d'une image avec cache"""
+    # Vérifier le cache d'abord
+    if image_id in piwigo_cache['images']:
+        return piwigo_cache['images'][image_id]
+
     url = f"{PIWIGO_URL}/ws.php?format=json"
     data = {
         'method': 'pwg.images.getInfo',
@@ -137,9 +145,11 @@ def get_image_info(image_id):
     response = piwigo_session.post(url, data=data)
     result = response.json()
     if result.get('stat') == 'ok':
-        return result.get('result', {})
+        image_info = result.get('result', {})
+        # Mettre en cache
+        piwigo_cache['images'][image_id] = image_info
+        return image_info
     return {}
-
 
 def extract_artwork_from_description(description):
     """Extrait les informations de l'œuvre d'art depuis la description"""
@@ -239,9 +249,9 @@ def extract_commons_url(description):
 
     # Recherche d'URLs Wikimedia Commons
     patterns = [
-        r'https?://commons\.wikimedia\.org/wiki/Special:FilePath/([^"\s<>\']+)',
-        r'https?://commons\.wikimedia\.org/wiki/File:([^"\s<>\']+)',
-        r'commons\.wikimedia\.org/wiki/File:([^"\s<>\']+)'
+        r'https?://commons\.wikimedia\.org/wiki/Special:FilePath/([^"\s<>\'\)]+)',
+        r'https?://commons\.wikimedia\.org/wiki/File:([^"\s<>\'\)]+)',
+        r'commons\.wikimedia\.org/wiki/File:([^"\s<>\'\)]+)'
     ]
 
     for pattern in patterns:
@@ -267,15 +277,17 @@ def rate_limit_wikidata():
 
     last_wikidata_request = time.time()
 
-
 def get_wikidata_from_commons(commons_url):
-    """Récupère l'entité Wikidata depuis une page Wikimedia Commons"""
+    """Récupère l'entité Wikidata depuis une page Wikimedia Commons avec cache"""
     if not commons_url:
         return None
 
+    # Vérifier le cache
+    if commons_url in wikidata_cache['commons']:
+        return wikidata_cache['commons'][commons_url]
+
     try:
         rate_limit_wikidata()
-
         match = re.search(r'File:(.+)$', commons_url)
         if not match:
             return None
@@ -297,15 +309,17 @@ def get_wikidata_from_commons(commons_url):
         response.raise_for_status()
         data = response.json()
 
+        entity_id = None
         if data.get('search'):
-            return data['search'][0]['id']
+            entity_id = data['search'][0]['id']
 
-        return None
+        # Mettre en cache
+        wikidata_cache['commons'][commons_url] = entity_id
+        return entity_id
 
     except Exception as e:
         print(f"Erreur lors de la recherche Commons: {e}")
         return None
-
 
 def search_wikidata_entity(query):
     """Recherche une entité sur Wikidata en respectant les directives"""
@@ -327,10 +341,13 @@ def search_wikidata_entity(query):
         response.raise_for_status()
         data = response.json()
 
+        entity = None
         if data.get('search'):
-            return data['search'][0]
+            entity = data['search'][0]
 
-        return None
+        # Mettre en cache
+        wikidata_cache['entities'][query] = entity
+        return entity
 
     except requests.exceptions.RequestException as e:
         print(f"Erreur lors de la recherche Wikidata pour '{query}': {e}")
@@ -348,33 +365,32 @@ def find_artwork_by_creator_and_image(creator_qid, commons_url):
     commons_filename = commons_filename.replace('http://commons.wikimedia.org/wiki/File:', 'commons:')
     commons_filename = commons_filename.replace('https://commons.wikimedia.org/wiki/File:', 'commons:')
     commons_filename = unquote(commons_filename)
-
-    # Si ce n'est pas déjà au format commons:, l'extraire
-    if not commons_filename.startswith('commons:'):
-        file_match = re.search(r'File:(.+)$', commons_url)
-        if file_match:
-            commons_filename = 'commons:' + file_match.group(1)
-
-    # Construire la requête SPARQL
-    sparql_query = f"""
-    SELECT ?painting WHERE {{
-      ?painting wdt:P31 wd:Q3305213 ;
-                wdt:P170 wd:{creator_qid} ;
-                wdt:P18 "{commons_filename}" .
-    }}
-    LIMIT 1
-    """
-
-    # Interroger WDQS
-    rate_limit_wikidata()
-
-    url = "https://query.wikidata.org/sparql"
-    headers = {
-        'User-Agent': USER_AGENT,
-        'Accept': 'application/json'
-    }
-
     try:
+        # Si ce n'est pas déjà au format commons:, l'extraire
+        if not commons_filename.startswith('commons:'):
+            file_match = re.search(r'File:(.+)$', commons_url)
+            if file_match:
+                commons_filename = 'commons:' + file_match.group(1)
+
+        # Construire la requête SPARQL
+        sparql_query = f"""
+        SELECT ?painting WHERE {{
+          ?painting wdt:P31 wd:Q3305213 ;
+                    wdt:P170 wd:{creator_qid} ;
+                    wdt:P18 "{commons_filename}" .
+        }}
+        LIMIT 1
+        """
+
+        # Interroger WDQS
+        rate_limit_wikidata()
+
+        url = "https://query.wikidata.org/sparql"
+        headers = {
+            'User-Agent': USER_AGENT,
+            'Accept': 'application/json'
+        }
+
         response = requests.get(
             url,
             params={'query': sparql_query, 'format': 'json'},
@@ -395,10 +411,13 @@ def find_artwork_by_creator_and_image(creator_qid, commons_url):
 
         return None
 
+
     except requests.exceptions.RequestException as e:
         print(f"Erreur WDQS pour créateur {creator_qid}: {e}")
         return None
-
+    except Exception as e:
+        print(f"Erreur inattendue dans find_artwork_by_creator_and_image: {e}")
+        return None
 
 def search_artwork_on_wikidata(title, author=None):
     """Recherche une œuvre d'art sur Wikidata en utilisant le titre et l'auteur"""
@@ -420,6 +439,10 @@ def search_artwork_on_wikidata(title, author=None):
 
 def get_wikidata_depicts(entity_id):
     """Récupère les depicts d'une entité Wikidata"""
+    # Vérifier le cache
+    if entity_id in wikidata_cache['depicts']:
+        return wikidata_cache['depicts'][entity_id]
+
     rate_limit_wikidata()
 
     url = "https://www.wikidata.org/w/api.php"
@@ -451,6 +474,8 @@ def get_wikidata_depicts(entity_id):
             except (KeyError, TypeError):
                 continue
 
+        # Mettre en cache
+        wikidata_cache['depicts'][entity_id] = depicts
         return depicts
 
     except requests.exceptions.RequestException as e:
@@ -460,7 +485,10 @@ def get_wikidata_depicts(entity_id):
 
 def get_wikidata_label(entity_id, langs=['fr', 'en', 'es']):
     """Récupère le label d'une entité Wikidata"""
-    rate_limit_wikidata()
+    # Vérifier le cache
+    if entity_id in wikidata_cache['labels']:
+        return wikidata_cache['labels'][entity_id]
+        rate_limit_wikidata()
 
     url = "https://www.wikidata.org/w/api.php"
     params = {
@@ -480,11 +508,15 @@ def get_wikidata_label(entity_id, langs=['fr', 'en', 'es']):
         entity = data.get('entities', {}).get(entity_id, {})
         labels = entity.get('labels', {})
 
+        label = entity_id  # Valeur par défaut
         for lang in langs:
             if lang in labels:
-                return labels[lang]['value']
+                label = labels[lang]['value']
+                break
 
-        return entity_id
+        # Mettre en cache
+        wikidata_cache['labels'][entity_id] = label
+        return label
 
     except requests.exceptions.RequestException as e:
         print(f"Erreur lors de la récupération du label pour {entity_id}: {e}")
@@ -497,9 +529,13 @@ def add_tags_to_image(image_id, tags):
 
     tag_ids = []
     for tag in tags:
-        search_data = {'method': 'pwg.tags.getList'}
-        response = piwigo_session.post(url, data=search_data)
-        existing_tags = response.json().get('result', {}).get('tags', [])
+        # Récupérer ou mettre à jour le cache des tags
+        if piwigo_cache['tags'] is None:
+            search_data = {'method': 'pwg.tags.getList'}
+            response = piwigo_session.post(url, data=search_data)
+            piwigo_cache['tags'] = response.json().get('result', {}).get('tags', [])
+
+        existing_tags = piwigo_cache['tags']
 
         tag_id = None
         for existing_tag in existing_tags:
@@ -519,6 +555,8 @@ def add_tags_to_image(image_id, tags):
             result = create_response.json()
             if result.get('stat') == 'ok':
                 tag_id = result.get('result', {}).get('id')
+                # Invalider le cache des tags pour le prochain appel
+                piwigo_cache['tags'] = None
 
         if tag_id:
             tag_ids.append(tag_id)
@@ -530,6 +568,9 @@ def add_tags_to_image(image_id, tags):
             'tag_ids': ','.join(map(str, tag_ids))
         }
         response = piwigo_session.post(url, data=data)
+        # Invalider le cache de cette image car elle a été modifiée
+        if image_id in piwigo_cache['images']:
+            del piwigo_cache['images'][image_id]
         return response.json()
 
     return {'stat': 'fail', 'message': 'No tags to add'}
@@ -544,8 +585,8 @@ def index():
 def get_images():
     page = request.args.get('page', 0, type=int)
     show_all = request.args.get('show_all', 'false').lower() == 'true'
-    hide_no_depicts = request.args.get('hide_no_depicts', 'false').lower() == 'true'
-    hide_all_tagged = request.args.get('hide_all_tagged', 'false').lower() == 'true'
+    hide_no_depicts = request.args.get('hide_no_depicts', 'true').lower() == 'true'
+    hide_all_tagged = request.args.get('hide_all_tagged', 'true').lower() == 'true'
 
     login_piwigo()
     images_data = get_piwigo_images(page=page, per_page=10)
@@ -667,6 +708,13 @@ def get_processing_stats():
 
 if __name__ == '__main__':
     init_database()
+    print("=" * 60)
+    print("🚀 Initialisation du serveur Piwigo-Wikidata Tagger")
+    print("=" * 60)
+    print("📦 Cache initialisé (Wikidata + Piwigo)")
+    print("   - Cache réinitialisé à chaque lancement")
+    print("   - Accélération des requêtes répétées")
+    print("=" * 60)
     os.makedirs('templates', exist_ok=True)
 
     with open('templates/index.html', 'w', encoding='utf-8') as f:
@@ -754,8 +802,8 @@ if __name__ == '__main__':
     <script>
         let currentPage = 0;
         let showAll = false;
-        let hideNoDepicts = false;
-        let hideAllTagged = false;
+        let hideNoDepicts = true;
+        let hideAllTagged = true;
 
         async function loadStats() {
             try {
