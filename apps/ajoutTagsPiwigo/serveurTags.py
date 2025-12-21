@@ -9,6 +9,7 @@ from CPiwigoManager import CPiwigoManager, CategoryType
 import re
 import time
 from urllib.parse import unquote
+import random
 
 app = Flask(__name__)
 
@@ -36,6 +37,7 @@ piwigo_session = requests.Session()
 wikidata_cache = {'labels': {}, 'depicts': {}, 'entities': {}, 'commons': {}}
 piwigo_cache = {'images': {}, 'tags': None}
 
+
 def init_database():
     """Initialise la base de données pour suivre les images traitées"""
     conn = sqlite3.connect(DB_PATH)
@@ -53,7 +55,10 @@ def init_database():
 
 
 def mark_image_processed(image_id, tags_added, wikidata_entity=None):
-    """Marque une image comme traitée"""
+    """Marque une image comme traitée (seulement si des tags ont été ajoutés)"""
+    if not tags_added or len(tags_added) == 0:
+        return  # Ne pas marquer comme traitée si aucun tag ajouté
+
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute('''
@@ -117,23 +122,25 @@ def login_piwigo():
     return response.json()
 
 
-def get_piwigo_images(page=0, per_page=10):
+def get_piwigo_images(page=0, per_page=100):
     """Récupère les images de Piwigo"""
     url = f"{PIWIGO_URL}/ws.php?format=json"
+    category_id = random.randint(0,2000)
     data = {
-        'method': 'pwg.images.search',
-        'page': page,
-        'query': 'christ',
-        'per_page': per_page
+        "method": "pwg.categories.getImages",
+        #"params": {
+            "recursive":True,
+            "category_id": category_id,
+            "per_page": per_page,
+            "page": page
+        #}
     }
     response = piwigo_session.post(url, data=data)
     return response.json()
 
 
-
 def get_image_info(image_id):
     """Récupère les informations complètes d'une image avec cache"""
-    # Vérifier le cache d'abord
     if image_id in piwigo_cache['images']:
         return piwigo_cache['images'][image_id]
 
@@ -146,17 +153,16 @@ def get_image_info(image_id):
     result = response.json()
     if result.get('stat') == 'ok':
         image_info = result.get('result', {})
-        # Mettre en cache
         piwigo_cache['images'][image_id] = image_info
         return image_info
     return {}
+
 
 def extract_artwork_from_description(description):
     """Extrait les informations de l'œuvre d'art depuis la description"""
     if not description:
         return None
 
-    # Pattern pour trouver "Élément Wikidata" suivi d'un lien vers une entité Q
     pattern = r'Élément Wikidata[^<]*<a[^>]+href=["\']([^"\']*wikidata\.org/(?:wiki|entity)/(Q\d+))["\'][^>]*>([^<]*)</a>'
 
     match = re.search(pattern, description, re.IGNORECASE)
@@ -166,10 +172,8 @@ def extract_artwork_from_description(description):
         qid = match.group(2)
         link_text = match.group(3).strip()
 
-        # Normaliser l'URI
         normalized_uri = f"https://www.wikidata.org/entity/{qid}"
 
-        # Le titre peut être dans le texte du lien ou on récupère via l'API
         title = link_text if link_text and link_text != qid else get_wikidata_label(qid)
 
         return {
@@ -186,8 +190,6 @@ def extract_author_from_description(description):
     if not description:
         return None
 
-    # Pattern pour capturer un lien HTML vers une entité Wikidata
-    # Capture le texte du lien et l'URL
     pattern = r'<a[^>]+href=["\']([^"\']*wikidata\.org/(?:wiki|entity)/Q\d+)["\'][^>]*>([^<]+)</a>'
 
     match = re.search(pattern, description, re.IGNORECASE)
@@ -196,7 +198,6 @@ def extract_author_from_description(description):
         wikidata_url = match.group(1)
         author_name = match.group(2).strip()
 
-        # Normaliser l'URL pour toujours utiliser le format /entity/
         entity_id = re.search(r'Q\d+', wikidata_url)
         if entity_id:
             normalized_uri = f"https://www.wikidata.org/entity/{entity_id.group(0)}"
@@ -207,7 +208,6 @@ def extract_author_from_description(description):
                 'entity_id': entity_id.group(0)
             }
 
-    # Pattern alternatif pour lien simple sans balise HTML
     simple_pattern = r'(https?://(?:www\.)?wikidata\.org/(?:wiki|entity)/Q\d+)'
     simple_match = re.search(simple_pattern, description)
 
@@ -216,7 +216,6 @@ def extract_author_from_description(description):
         entity_id = re.search(r'Q\d+', wikidata_url)
 
         if entity_id:
-            # Récupérer le nom via l'API Wikidata
             author_name = get_wikidata_label(entity_id.group(0))
             normalized_uri = f"https://www.wikidata.org/entity/{entity_id.group(0)}"
 
@@ -229,25 +228,11 @@ def extract_author_from_description(description):
     return None
 
 
-def extract_author_from_categories(categories):
-    """Extrait le nom de l'auteur depuis les catégories/galeries"""
-    for cat in categories:
-        name = cat.get('name', '')
-        if 'galerie' in name.lower():
-            return name.replace('Galerie', '').replace('galerie', '').strip()
-        if 'artiste' in name.lower():
-            return name.replace('Artiste', '').replace('artiste', '').strip()
-        if name and name[0].isupper() and ' ' in name:
-            return name.strip()
-    return None
-
-
 def extract_commons_url(description):
     """Extrait l'URL Wikimedia Commons depuis la description"""
     if not description:
         return None
 
-    # Recherche d'URLs Wikimedia Commons
     patterns = [
         r'https?://commons\.wikimedia\.org/wiki/Special:FilePath/([^"\s<>\'\)]+)',
         r'https?://commons\.wikimedia\.org/wiki/File:([^"\s<>\'\)]+)',
@@ -257,7 +242,6 @@ def extract_commons_url(description):
     for pattern in patterns:
         match = re.search(pattern, description)
         if match:
-            # Construire l'URL complète
             if match.group(0).startswith('http'):
                 return match.group(0)
             else:
@@ -277,12 +261,12 @@ def rate_limit_wikidata():
 
     last_wikidata_request = time.time()
 
+
 def get_wikidata_from_commons(commons_url):
     """Récupère l'entité Wikidata depuis une page Wikimedia Commons avec cache"""
     if not commons_url:
         return None
 
-    # Vérifier le cache
     if commons_url in wikidata_cache['commons']:
         return wikidata_cache['commons'][commons_url]
 
@@ -313,13 +297,13 @@ def get_wikidata_from_commons(commons_url):
         if data.get('search'):
             entity_id = data['search'][0]['id']
 
-        # Mettre en cache
         wikidata_cache['commons'][commons_url] = entity_id
         return entity_id
 
     except Exception as e:
         print(f"Erreur lors de la recherche Commons: {e}")
         return None
+
 
 def search_wikidata_entity(query):
     """Recherche une entité sur Wikidata en respectant les directives"""
@@ -345,7 +329,6 @@ def search_wikidata_entity(query):
         if data.get('search'):
             entity = data['search'][0]
 
-        # Mettre en cache
         wikidata_cache['entities'][query] = entity
         return entity
 
@@ -359,20 +342,17 @@ def find_artwork_by_creator_and_image(creator_qid, commons_url):
     if not creator_qid or not commons_url:
         return None
 
-    # Convertir l'URL Commons en format commons:
     commons_filename = commons_url.replace('http://commons.wikimedia.org/wiki/Special:FilePath/', 'commons:')
     commons_filename = commons_filename.replace('https://commons.wikimedia.org/wiki/Special:FilePath/', 'commons:')
     commons_filename = commons_filename.replace('http://commons.wikimedia.org/wiki/File:', 'commons:')
     commons_filename = commons_filename.replace('https://commons.wikimedia.org/wiki/File:', 'commons:')
     commons_filename = unquote(commons_filename)
     try:
-        # Si ce n'est pas déjà au format commons:, l'extraire
         if not commons_filename.startswith('commons:'):
             file_match = re.search(r'File:(.+)$', commons_url)
             if file_match:
                 commons_filename = 'commons:' + file_match.group(1)
 
-        # Construire la requête SPARQL
         sparql_query = f"""
         SELECT ?painting WHERE {{
           ?painting wdt:P31 wd:Q3305213 ;
@@ -382,7 +362,6 @@ def find_artwork_by_creator_and_image(creator_qid, commons_url):
         LIMIT 1
         """
 
-        # Interroger WDQS
         rate_limit_wikidata()
 
         url = "https://query.wikidata.org/sparql"
@@ -404,13 +383,11 @@ def find_artwork_by_creator_and_image(creator_qid, commons_url):
 
         if results:
             painting_uri = results[0]['painting']['value']
-            # Extraire l'entity_id
             entity_match = re.search(r'Q\d+', painting_uri)
             if entity_match:
                 return entity_match.group(0)
 
         return None
-
 
     except requests.exceptions.RequestException as e:
         print(f"Erreur WDQS pour créateur {creator_qid}: {e}")
@@ -419,27 +396,9 @@ def find_artwork_by_creator_and_image(creator_qid, commons_url):
         print(f"Erreur inattendue dans find_artwork_by_creator_and_image: {e}")
         return None
 
-def search_artwork_on_wikidata(title, author=None):
-    """Recherche une œuvre d'art sur Wikidata en utilisant le titre et l'auteur"""
-    search_query = title
-    if author:
-        search_query = f"{title} {author}"
-
-    entity = search_wikidata_entity(search_query)
-    if entity:
-        return entity['id']
-
-    if author:
-        entity = search_wikidata_entity(title)
-        if entity:
-            return entity['id']
-
-    return None
-
 
 def get_wikidata_depicts(entity_id):
     """Récupère les depicts d'une entité Wikidata"""
-    # Vérifier le cache
     if entity_id in wikidata_cache['depicts']:
         return wikidata_cache['depicts'][entity_id]
 
@@ -474,7 +433,6 @@ def get_wikidata_depicts(entity_id):
             except (KeyError, TypeError):
                 continue
 
-        # Mettre en cache
         wikidata_cache['depicts'][entity_id] = depicts
         return depicts
 
@@ -485,10 +443,10 @@ def get_wikidata_depicts(entity_id):
 
 def get_wikidata_label(entity_id, langs=['fr', 'en', 'es']):
     """Récupère le label d'une entité Wikidata"""
-    # Vérifier le cache
     if entity_id in wikidata_cache['labels']:
         return wikidata_cache['labels'][entity_id]
-        rate_limit_wikidata()
+
+    rate_limit_wikidata()
 
     url = "https://www.wikidata.org/w/api.php"
     params = {
@@ -508,13 +466,12 @@ def get_wikidata_label(entity_id, langs=['fr', 'en', 'es']):
         entity = data.get('entities', {}).get(entity_id, {})
         labels = entity.get('labels', {})
 
-        label = entity_id  # Valeur par défaut
+        label = entity_id
         for lang in langs:
             if lang in labels:
                 label = labels[lang]['value']
                 break
 
-        # Mettre en cache
         wikidata_cache['labels'][entity_id] = label
         return label
 
@@ -529,7 +486,6 @@ def add_tags_to_image(image_id, tags):
 
     tag_ids = []
     for tag in tags:
-        # Récupérer ou mettre à jour le cache des tags
         if piwigo_cache['tags'] is None:
             search_data = {'method': 'pwg.tags.getList'}
             response = piwigo_session.post(url, data=search_data)
@@ -555,7 +511,6 @@ def add_tags_to_image(image_id, tags):
             result = create_response.json()
             if result.get('stat') == 'ok':
                 tag_id = result.get('result', {}).get('id')
-                # Invalider le cache des tags pour le prochain appel
                 piwigo_cache['tags'] = None
 
         if tag_id:
@@ -568,7 +523,6 @@ def add_tags_to_image(image_id, tags):
             'tag_ids': ','.join(map(str, tag_ids))
         }
         response = piwigo_session.post(url, data=data)
-        # Invalider le cache de cette image car elle a été modifiée
         if image_id in piwigo_cache['images']:
             del piwigo_cache['images'][image_id]
         return response.json()
@@ -589,7 +543,9 @@ def get_images():
     hide_all_tagged = request.args.get('hide_all_tagged', 'true').lower() == 'true'
 
     login_piwigo()
-    images_data = get_piwigo_images(page=page, per_page=10)
+    if page==0:
+        page = random.randint(0, 100)
+    images_data = get_piwigo_images(page=page, per_page=100)
 
     if images_data.get('stat') != 'ok':
         return jsonify({'error': 'Erreur lors de la récupération des images'}), 500
@@ -614,7 +570,6 @@ def get_images():
         artworkJson = extract_artwork_from_description(description)
         artwork_id = artworkJson['qid'] if artworkJson else None
 
-        # author = extract_author_from_categories(categories)
         authorJson = extract_author_from_description(description)
 
         author = authorJson['name'] if authorJson else None
@@ -630,9 +585,8 @@ def get_images():
         if commons_url and not entity_id:
             entity_id = get_wikidata_from_commons(commons_url)
 
-        if not entity_id:
-            # entity_id = search_artwork_on_wikidata(title, author)
-            find_artwork_by_creator_and_image(authorJson["entity_id"], commons_url)
+        if not entity_id and authorJson:
+            entity_id = find_artwork_by_creator_and_image(authorJson["entity_id"], commons_url)
 
         if not entity_id and tags:
             entity = search_wikidata_entity(tags[0]['name'])
@@ -642,17 +596,15 @@ def get_images():
         depicts = []
         if entity_id:
             depicts = get_wikidata_depicts(entity_id)
+        print(artwork_id, depicts)
 
-        # Filtre : masquer les peintures sans depicts
         if hide_no_depicts and len(depicts) == 0:
             continue
 
-        # Filtre : masquer les peintures dont tous les depicts sont déjà dans les tags
         if hide_all_tagged and len(depicts) > 0:
             piwigo_tag_names = {tag['name'].lower() for tag in tags}
             depicts_labels = {d['label'].lower() for d in depicts}
 
-            # Si tous les depicts sont déjà dans les tags Piwigo
             if depicts_labels.issubset(piwigo_tag_names):
                 continue
 
@@ -693,6 +645,49 @@ def add_tags():
         return jsonify({'success': False, 'message': 'Erreur lors de l\'ajout des tags'}), 500
 
 
+@app.route('/api/add_tags_batch', methods=['POST'])
+def add_tags_batch():
+    """Ajoute les tags sélectionnés pour toutes les images en une fois"""
+    data = request.json
+    images_data = data.get('images', [])
+
+    results = []
+    success_count = 0
+    error_count = 0
+
+    for img_data in images_data:
+        image_id = img_data.get('image_id')
+        validated_tags = img_data.get('tags', [])
+        wikidata_entity = img_data.get('wikidata_entity')
+
+        if not validated_tags or len(validated_tags) == 0:
+            continue
+
+        result = add_tags_to_image(image_id, validated_tags)
+
+        if result.get('stat') == 'ok':
+            mark_image_processed(image_id, validated_tags, wikidata_entity)
+            success_count += 1
+            results.append({
+                'image_id': image_id,
+                'success': True
+            })
+        else:
+            error_count += 1
+            results.append({
+                'image_id': image_id,
+                'success': False,
+                'error': result.get('message', 'Erreur inconnue')
+            })
+
+    return jsonify({
+        'success': True,
+        'processed': success_count,
+        'errors': error_count,
+        'results': results
+    })
+
+
 @app.route('/api/unmark_image', methods=['POST'])
 def unmark_image():
     data = request.json
@@ -718,7 +713,8 @@ if __name__ == '__main__':
     os.makedirs('templates', exist_ok=True)
 
     with open('templates/index.html', 'w', encoding='utf-8') as f:
-        f.write('''<!DOCTYPE html>
+        f.write('''
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -737,6 +733,8 @@ if __name__ == '__main__':
         .filter-controls label { display: flex; align-items: center; gap: 8px; cursor: pointer; white-space: nowrap; }
         .filter-controls input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; }
         .container { max-width: 1400px; margin: 0 auto; }
+        .batch-action-bar { background: #fff3cd; border: 2px solid #ffc107; padding: 15px; margin-bottom: 20px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+        .batch-action-bar .info { font-weight: bold; color: #856404; }
         .image-grid { display: grid; gap: 20px; }
         .image-card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: relative; }
         .image-card.processed { border: 3px solid #4caf50; }
@@ -759,6 +757,8 @@ if __name__ == '__main__':
         .btn-primary:disabled { background: #bdbdbd; cursor: not-allowed; }
         .btn-secondary { background: #757575; color: white; margin-right: 10px; }
         .btn-secondary:hover { background: #616161; }
+        .btn-warning { background: #ff9800; color: white; }
+        .btn-warning:hover { background: #f57c00; }
         .actions { display: flex; justify-content: flex-end; margin-top: 15px; }
         .loading { text-align: center; padding: 40px; color: #666; }
         .message { padding: 12px; margin: 10px 0; border-radius: 4px; }
@@ -781,16 +781,22 @@ if __name__ == '__main__':
                 <span>Afficher aussi les images déjà traitées</span>
             </label>
             <label>
-                <input type="checkbox" id="hideNoDepictsCheckbox" onchange="applyFilters()">
+                <input type="checkbox" id="hideNoDepictsCheckbox" checked onchange="applyFilters()">
                 <span>Masquer les peintures sans depicts (P180)</span>
             </label>
             <label>
-                <input type="checkbox" id="hideAllTaggedCheckbox" onchange="applyFilters()">
+                <input type="checkbox" id="hideAllTaggedCheckbox" checked onchange="applyFilters()">
                 <span>Masquer les peintures dont tous les depicts sont déjà taggés</span>
             </label>
         </div>
     </div>
     <div class="container">
+        <div id="batchActionBar" class="batch-action-bar" style="display: none;">
+            <div class="info">
+                <span id="selectedCount">0</span> image(s) avec des tags sélectionnés
+            </div>
+            <button class="btn btn-warning" onclick="sendAllTags()">📤 Envoyer tous les tags</button>
+        </div>
         <div id="messages"></div>
         <div id="images" class="image-grid"></div>
         <div class="actions" style="margin-top: 20px;">
@@ -835,11 +841,20 @@ if __name__ == '__main__':
                     return;
                 }
 
+                // Pagination automatique si aucune image ne correspond aux filtres
+                if (data.images.length === 0 && data.has_more) {
+                    currentPage++;
+                    loadImages(currentPage);
+                    return;
+                }
+
                 renderImages(data.images);
                 loadStats();
 
                 document.getElementById('prevBtn').disabled = page === 0;
                 document.getElementById('nextBtn').disabled = !data.has_more;
+                
+                updateBatchActionBar();
             } catch (error) {
                 showMessage('Erreur de connexion', 'error');
             }
@@ -889,7 +904,7 @@ if __name__ == '__main__':
                                 <div id="depicts-${img.id}">
                                     ${img.depicts.length ? img.depicts.map(d => `
                                         <div class="depicts-item">
-                                            <input type="checkbox" id="dep-${img.id}-${d.id}" value="${d.id}" data-label="${d.label}" data-url="${d.url}" ${img.is_processed ? 'disabled' : ''}>
+                                            <input type="checkbox" id="dep-${img.id}-${d.id}" value="${d.id}" data-label="${d.label}" data-url="${d.url}" data-image-id="${img.id}" data-wikidata-entity="${img.wikidata_entity || ''}" onchange="updateBatchActionBar()" ${img.is_processed ? 'disabled' : ''}>
                                             <label class="depicts-label" for="dep-${img.id}-${d.id}">${d.label}</label>
                                             <a href="${d.url}" target="_blank" class="depicts-link">Wikidata →</a>
                                         </div>
@@ -908,6 +923,85 @@ if __name__ == '__main__':
                 `;
                 container.appendChild(card);
             });
+        }
+
+        function updateBatchActionBar() {
+            const allCheckboxes = document.querySelectorAll('input[type="checkbox"][data-image-id]:checked:not([disabled])');
+            
+            // Compter le nombre d'images avec au moins un tag sélectionné
+            const imageIds = new Set();
+            allCheckboxes.forEach(cb => imageIds.add(cb.dataset.imageId));
+            const count = imageIds.size;
+            
+            const bar = document.getElementById('batchActionBar');
+            const countSpan = document.getElementById('selectedCount');
+            
+            if (count > 0) {
+                bar.style.display = 'flex';
+                countSpan.textContent = count;
+            } else {
+                bar.style.display = 'none';
+            }
+        }
+
+        async function sendAllTags() {
+            const allCheckboxes = document.querySelectorAll('input[type="checkbox"][data-image-id]:checked:not([disabled])');
+            
+            if (allCheckboxes.length === 0) {
+                showMessage('Aucun tag sélectionné', 'error');
+                return;
+            }
+            
+            // Compter les images avec tags
+            const imageIds = new Set();
+            allCheckboxes.forEach(cb => imageIds.add(cb.dataset.imageId));
+            
+            if (!confirm(`Envoyer les tags pour ${imageIds.size} image(s) ?`)) {
+                return;
+            }
+            
+            // Grouper les tags par image
+            const imageTagsMap = {};
+            
+            allCheckboxes.forEach(cb => {
+                const imageId = cb.dataset.imageId;
+                const wikidataEntity = cb.dataset.wikidataEntity;
+                
+                if (!imageTagsMap[imageId]) {
+                    imageTagsMap[imageId] = {
+                        image_id: parseInt(imageId),
+                        wikidata_entity: wikidataEntity,
+                        tags: []
+                    };
+                }
+                
+                imageTagsMap[imageId].tags.push({
+                    id: cb.value,
+                    label: cb.dataset.label,
+                    url: cb.dataset.url
+                });
+            });
+            
+            const imagesData = Object.values(imageTagsMap);
+            
+            try {
+                const response = await fetch('/api/add_tags_batch', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ images: imagesData })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showMessage(`✓ ${result.processed} image(s) traitée(s)${result.errors > 0 ? `, ${result.errors} erreur(s)` : ''}`, 'success');
+                    loadImages(currentPage);
+                } else {
+                    showMessage('Erreur lors du traitement', 'error');
+                }
+            } catch (error) {
+                showMessage('Erreur de connexion', 'error');
+            }
         }
 
         async function sendTags(imageId, wikidataEntity) {
@@ -1002,7 +1096,7 @@ if __name__ == '__main__':
     print("Modifiez ces lignes:")
     print(f"  PIWIGO_URL = '{PIWIGO_URL}'")
     print(f"  PIWIGO_USER = '{PIWIGO_USER}'")
-    print(f"  PIWIGO_PASSWORD = '{PIWIGO_PASSWORD}'")
+    print(f"  PIWIGO_PASSWORD = '{PIWIGO_PASSWORD[0:3]}...'")
     print(f"  USER_AGENT = '{USER_AGENT}'")
     print("=" * 60)
     print("Installez: pip install flask requests")
