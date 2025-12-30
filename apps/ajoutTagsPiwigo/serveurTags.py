@@ -15,6 +15,11 @@ app = Flask(__name__)
 
 pimag = CPiwigoManager()
 
+sans_depicts = set()
+avec_depicts = {}
+piwigo_ids = {}
+category_viewed = set()
+
 # Configuration Piwigo
 PIWIGO_URL = "https://galeries.grains-de-culture.fr"
 PIWIGO_USER = pimag.login
@@ -124,19 +129,23 @@ def login_piwigo():
 
 def get_piwigo_images(page=0, per_page=100):
     """Récupère les images de Piwigo"""
-    url = f"{PIWIGO_URL}/ws.php?format=json"
-    category_id = random.randint(0,2000)
-    data = {
-        "method": "pwg.categories.getImages",
-        #"params": {
-            "recursive":True,
-            "category_id": category_id,
-            "per_page": per_page,
-            "page": page
-        #}
-    }
-    response = piwigo_session.post(url, data=data)
-    return response.json()
+    images = {}
+    category_id = random.randint(0,1800)
+    if category_id not in category_viewed:
+        url = f"{PIWIGO_URL}/ws.php?format=json"
+        data = {
+            "method": "pwg.categories.getImages",
+            #"params": {
+                "recursive":True,
+                "category_id": category_id,
+                "per_page": per_page,
+                "page": page
+            #}
+        }
+        response = piwigo_session.post(url, data=data)
+        category_viewed.add(category_id)
+        images = response.json()
+    return images
 
 
 def get_image_info(image_id):
@@ -544,7 +553,7 @@ def get_images():
 
     login_piwigo()
     if page==0:
-        page = random.randint(0, 100)
+        page = random.randint(0, 50)
     images_data = get_piwigo_images(page=page, per_page=100)
 
     if images_data.get('stat') != 'ok':
@@ -554,7 +563,11 @@ def get_images():
 
     result = []
     for img in images:
-        processed_info = get_processed_images_info(img['id'])
+        if img['id'] in piwigo_ids:
+            processed_info = piwigo_ids[img['id']]
+        else:
+            processed_info = get_processed_images_info(img['id'])
+            piwigo_ids[img['id']] = processed_info
         is_processed = processed_info is not None
 
         if is_processed and not show_all:
@@ -595,8 +608,16 @@ def get_images():
 
         depicts = []
         if entity_id:
-            depicts = get_wikidata_depicts(entity_id)
-        print(artwork_id, depicts)
+            if entity_id in avec_depicts:
+                depicts = avec_depicts[entity_id]
+            else:
+                if not entity_id in sans_depicts:
+                    depicts = get_wikidata_depicts(entity_id)
+                    if not depicts:
+                        sans_depicts.add(entity_id)
+                    else:
+                        avec_depicts[entity_id] = depicts
+        print(entity_id, depicts, f"(sans depicts : {len(sans_depicts)}); avec depicts: {len(avec_depicts)}")
 
         if hide_no_depicts and len(depicts) == 0:
             continue
