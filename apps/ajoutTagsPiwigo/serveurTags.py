@@ -42,6 +42,77 @@ piwigo_session = requests.Session()
 wikidata_cache = {'labels': {}, 'depicts': {}, 'entities': {}, 'commons': {}}
 piwigo_cache = {'images': {}, 'tags': None}
 
+TRACK_DIR = "track"
+
+
+def load_tracking_data():
+    """Charge les données de tracking depuis les fichiers JSON"""
+    global sans_depicts, avec_depicts, category_viewed
+
+    os.makedirs(TRACK_DIR, exist_ok=True)
+
+    # Charger sans_depicts
+    sans_depicts_file = os.path.join(TRACK_DIR, "sans_depicts.json")
+    if os.path.exists(sans_depicts_file):
+        try:
+            with open(sans_depicts_file, 'r', encoding='utf-8') as f:
+                sans_depicts = set(json.load(f))
+            print(f"✓ Chargé {len(sans_depicts)} entités sans depicts")
+        except Exception as e:
+            print(f"⚠ Erreur chargement sans_depicts: {e}")
+            sans_depicts = set()
+
+    # Charger avec_depicts
+    avec_depicts_file = os.path.join(TRACK_DIR, "avec_depicts.json")
+    if os.path.exists(avec_depicts_file):
+        try:
+            with open(avec_depicts_file, 'r', encoding='utf-8') as f:
+                avec_depicts = json.load(f)
+            print(f"✓ Chargé {len(avec_depicts)} entités avec depicts")
+        except Exception as e:
+            print(f"⚠ Erreur chargement avec_depicts: {e}")
+            avec_depicts = {}
+
+    # Charger category_viewed
+    category_viewed_file = os.path.join(TRACK_DIR, "category_viewed.json")
+    if os.path.exists(category_viewed_file):
+        try:
+            with open(category_viewed_file, 'r', encoding='utf-8') as f:
+                category_viewed = set(json.load(f))
+            print(f"✓ Chargé {len(category_viewed)} catégories vues")
+        except Exception as e:
+            print(f"⚠ Erreur chargement category_viewed: {e}")
+            category_viewed = set()
+
+
+def save_tracking_data():
+    """Sauvegarde les données de tracking dans des fichiers JSON"""
+    os.makedirs(TRACK_DIR, exist_ok=True)
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    # Sauvegarder sans_depicts (avec et sans timestamp)
+    sans_depicts_list = list(sans_depicts)
+    with open(os.path.join(TRACK_DIR, f"sans_depicts_{timestamp}.json"), 'w', encoding='utf-8') as f:
+        json.dump(sans_depicts_list, f, ensure_ascii=False, indent=2)
+    with open(os.path.join(TRACK_DIR, "sans_depicts.json"), 'w', encoding='utf-8') as f:
+        json.dump(sans_depicts_list, f, ensure_ascii=False, indent=2)
+
+    # Sauvegarder avec_depicts (avec et sans timestamp)
+    with open(os.path.join(TRACK_DIR, f"avec_depicts_{timestamp}.json"), 'w', encoding='utf-8') as f:
+        json.dump(avec_depicts, f, ensure_ascii=False, indent=2)
+    with open(os.path.join(TRACK_DIR, "avec_depicts.json"), 'w', encoding='utf-8') as f:
+        json.dump(avec_depicts, f, ensure_ascii=False, indent=2)
+
+    # Sauvegarder category_viewed (avec et sans timestamp)
+    category_viewed_list = list(category_viewed)
+    with open(os.path.join(TRACK_DIR, f"category_viewed_{timestamp}.json"), 'w', encoding='utf-8') as f:
+        json.dump(category_viewed_list, f, ensure_ascii=False, indent=2)
+    with open(os.path.join(TRACK_DIR, "category_viewed.json"), 'w', encoding='utf-8') as f:
+        json.dump(category_viewed_list, f, ensure_ascii=False, indent=2)
+
+    return timestamp
+
 
 def init_database():
     """Initialise la base de données pour suivre les images traitées"""
@@ -104,7 +175,6 @@ def unmark_image_processed(image_id):
     conn.commit()
     conn.close()
 
-
 def get_stats():
     """Récupère les statistiques de traitement"""
     conn = sqlite3.connect(DB_PATH)
@@ -112,8 +182,12 @@ def get_stats():
     cursor.execute('SELECT COUNT(*) FROM processed_images')
     total = cursor.fetchone()[0]
     conn.close()
-    return {'total_processed': total}
-
+    return {
+        'total_processed': total,
+        'sans_depicts': len(sans_depicts),
+        'avec_depicts': len(avec_depicts),
+        'category_viewed': len(category_viewed)
+    }
 
 def login_piwigo():
     """Connexion à Piwigo"""
@@ -143,7 +217,7 @@ def get_piwigo_images(page=0, per_page=100):
             #}
         }
         response = piwigo_session.post(url, data=data)
-        category_viewed.add(category_id)
+        category_viewed.add(str(category_id))
         images = response.json()
     return images
 
@@ -544,6 +618,23 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/api/save_tracking', methods=['POST'])
+def api_save_tracking():
+    """API pour sauvegarder les données de tracking"""
+    try:
+        timestamp = save_tracking_data()
+        return jsonify({
+            'success': True,
+            'message': f'Données sauvegardées avec timestamp {timestamp}',
+            'timestamp': timestamp,
+            'stats': get_stats()
+        })
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'message': f'Erreur lors de la sauvegarde: {str(e)}'
+        }), 500
+
 @app.route('/api/images')
 def get_images():
     page = request.args.get('page', 0, type=int)
@@ -619,6 +710,14 @@ def get_images():
                         avec_depicts[entity_id] = depicts
         print(entity_id, depicts, f"(sans depicts : {len(sans_depicts)}); avec depicts: {len(avec_depicts)}")
 
+        hide_depicts_already_tagged = request.args.get('hide_depicts_already_tagged', 'false').lower() == 'true'
+
+        # Après avoir récupéré les depicts, ajouter ce filtrage:
+        filtered_depicts = depicts
+        if hide_depicts_already_tagged and depicts:
+            piwigo_tag_names_lower = {tag['name'].lower() for tag in tags}
+            filtered_depicts = [d for d in depicts if d['label'].lower() not in piwigo_tag_names_lower]
+
         if hide_no_depicts and len(depicts) == 0:
             continue
 
@@ -638,7 +737,8 @@ def get_images():
             'commons_url': commons_url,
             'wikidata_entity': entity_id,
             'tags': tags,
-            'depicts': depicts,
+            'depicts': filtered_depicts,  # Pour l'affichage
+            'all_depicts': depicts,  # Pour les stats
             'search_info': search_info,
             'is_processed': is_processed,
             'processed_info': processed_info
@@ -724,6 +824,7 @@ def get_processing_stats():
 
 if __name__ == '__main__':
     init_database()
+    load_tracking_data()  # AJOUTER CETTE LIGNE
     print("=" * 60)
     print("🚀 Initialisation du serveur Piwigo-Wikidata Tagger")
     print("=" * 60)
@@ -795,6 +896,15 @@ if __name__ == '__main__':
                 <strong id="processedCount">0</strong>
                 <span>images traitées</span>
             </div>
+            <div class="stat-box">
+                <strong id="sansDepictsCount">0</strong>
+                <span>sans depicts</span>
+            </div>
+            <div class="stat-box">
+                <strong id="avecDepictsCount">0</strong>
+                <span>avec depicts</span>
+            </div>
+            <button class="btn btn-primary" onclick="saveTracking()" style="margin-left: 20px;">💾 Sauvegarder</button>
         </div>
         <div class="filter-controls">
             <label>
@@ -808,6 +918,10 @@ if __name__ == '__main__':
             <label>
                 <input type="checkbox" id="hideAllTaggedCheckbox" checked onchange="applyFilters()">
                 <span>Masquer les peintures dont tous les depicts sont déjà taggés</span>
+            </label>
+            <label>
+                <input type="checkbox" id="hideDepictsAlreadyTaggedCheckbox" onchange="applyFilters()">
+                <span>Masquer les depicts déjà présents comme tags Piwigo</span>
             </label>
         </div>
     </div>
@@ -831,7 +945,42 @@ if __name__ == '__main__':
         let showAll = false;
         let hideNoDepicts = true;
         let hideAllTagged = true;
+        let hideDepictsAlreadyTagged = true;
 
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/stats');
+                const data = await response.json();
+                document.getElementById('processedCount').textContent = data.total_processed;
+                document.getElementById('sansDepictsCount').textContent = data.sans_depicts;
+                document.getElementById('avecDepictsCount').textContent = data.avec_depicts;
+            } catch (error) {
+                console.error('Erreur stats:', error);
+            }
+        }
+        
+        async function saveTracking() {
+            if (!confirm('Sauvegarder l\\'état actuel des données de tracking ?')) return;
+            
+            try {
+                const response = await fetch('/api/save_tracking', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showMessage(`✓ ${result.message}`, 'success');
+                    loadStats();
+                } else {
+                    showMessage(result.message, 'error');
+                }
+            } catch (error) {
+                showMessage('Erreur lors de la sauvegarde', 'error');
+            }
+        }
+        
         async function loadStats() {
             try {
                 const response = await fetch('/api/stats');
@@ -846,6 +995,7 @@ if __name__ == '__main__':
             showAll = document.getElementById('showAllCheckbox').checked;
             hideNoDepicts = document.getElementById('hideNoDepictsCheckbox').checked;
             hideAllTagged = document.getElementById('hideAllTaggedCheckbox').checked;
+            hideDepictsAlreadyTagged = document.getElementById('hideDepictsAlreadyTaggedCheckbox').checked;
             currentPage = 0;
             loadImages(currentPage);
         }
@@ -854,7 +1004,7 @@ if __name__ == '__main__':
             document.getElementById('images').innerHTML = '<div class="loading">Chargement...</div>';
 
             try {
-                const response = await fetch(`/api/images?page=${page}&show_all=${showAll}&hide_no_depicts=${hideNoDepicts}&hide_all_tagged=${hideAllTagged}`);
+                const response = await fetch(`/api/images?page=${page}&show_all=${showAll}&hide_no_depicts=${hideNoDepicts}&hide_all_tagged=${hideAllTagged}&hide_depicts_already_tagged=${hideDepictsAlreadyTagged}`);
                 const data = await response.json();
 
                 if (data.error) {
