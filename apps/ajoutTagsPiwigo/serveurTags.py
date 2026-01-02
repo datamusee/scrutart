@@ -201,20 +201,19 @@ def login_piwigo():
     return response.json()
 
 
-def get_piwigo_images(page=0, per_page=100):
+def get_piwigo_images(page=0, per_page=30, category_id=None):
     """Récupère les images de Piwigo"""
     images = {}
-    category_id = random.randint(0,1800)
+    if category_id is None:
+        category_id = random.randint(0,2000)
     if category_id not in category_viewed:
         url = f"{PIWIGO_URL}/ws.php?format=json"
         data = {
             "method": "pwg.categories.getImages",
-            #"params": {
-                "recursive":True,
-                "category_id": category_id,
-                "per_page": per_page,
-                "page": page
-            #}
+            "recursive":True,
+            "cat_id": category_id,
+            "per_page": per_page,
+            "page": page
         }
         response = piwigo_session.post(url, data=data)
         category_viewed.add(str(category_id))
@@ -642,10 +641,16 @@ def get_images():
     hide_no_depicts = request.args.get('hide_no_depicts', 'true').lower() == 'true'
     hide_all_tagged = request.args.get('hide_all_tagged', 'true').lower() == 'true'
 
+    category = request.args.get('category', 0, type=int)
+    if category == 0:
+        actual_category = random.randint(0, 2500)
+    else:
+        actual_category = category
+
     login_piwigo()
     if page==0:
-        page = random.randint(0, 50)
-    images_data = get_piwigo_images(page=page, per_page=100)
+        page = random.randint(0, 5)
+    images_data = get_piwigo_images(page=page, per_page=30, category_id=actual_category)
 
     if images_data.get('stat') != 'ok':
         return jsonify({'error': 'Erreur lors de la récupération des images'}), 500
@@ -702,7 +707,7 @@ def get_images():
             if entity_id in avec_depicts:
                 depicts = avec_depicts[entity_id]
             else:
-                if not entity_id in sans_depicts:
+                if entity_id not in sans_depicts:
                     depicts = get_wikidata_depicts(entity_id)
                     if not depicts:
                         sans_depicts.add(entity_id)
@@ -741,12 +746,24 @@ def get_images():
             'all_depicts': depicts,  # Pour les stats
             'search_info': search_info,
             'is_processed': is_processed,
-            'processed_info': processed_info
+            'processed_info': processed_info,
+            'stats': {
+                'sans_depicts': len(sans_depicts),
+                'avec_depicts': len(avec_depicts),
+                'category_viewed': len(category_viewed)
+            },
+            'current_category': actual_category
         })
 
     return jsonify({
         'images': result,
-        'has_more': len(images) == 10
+        'has_more': len(images) == 10,
+        'stats': {
+            'sans_depicts': len(sans_depicts),
+            'avec_depicts': len(avec_depicts),
+            'category_viewed': len(category_viewed)
+        },
+        'current_category': actual_category
     })
 
 
@@ -824,7 +841,7 @@ def get_processing_stats():
 
 if __name__ == '__main__':
     init_database()
-    load_tracking_data()  # AJOUTER CETTE LIGNE
+    load_tracking_data()
     print("=" * 60)
     print("🚀 Initialisation du serveur Piwigo-Wikidata Tagger")
     print("=" * 60)
@@ -904,6 +921,13 @@ if __name__ == '__main__':
                 <strong id="avecDepictsCount">0</strong>
                 <span>avec depicts</span>
             </div>
+            <div class="stat-box" style="min-width: 200px;">
+                <label style="font-size: 13px; color: #666; display: block; margin-bottom: 5px;">Catégorie:</label>
+                <input type="number" id="categoryInput" value="0" min="0" max="1800" 
+                       style="width: 100%; padding: 8px; font-size: 16px; font-weight: bold; 
+                              border: 2px solid #1976d2; border-radius: 4px; text-align: center;"
+                       onchange="changeCategoryAndReload()">
+            </div>
             <button class="btn btn-primary" onclick="saveTracking()" style="margin-left: 20px;">💾 Sauvegarder</button>
         </div>
         <div class="filter-controls">
@@ -920,7 +944,7 @@ if __name__ == '__main__':
                 <span>Masquer les peintures dont tous les depicts sont déjà taggés</span>
             </label>
             <label>
-                <input type="checkbox" id="hideDepictsAlreadyTaggedCheckbox" onchange="applyFilters()">
+                <input type="checkbox" id="hideDepictsAlreadyTaggedCheckbox" checked onchange="applyFilters()">
                 <span>Masquer les depicts déjà présents comme tags Piwigo</span>
             </label>
         </div>
@@ -946,19 +970,20 @@ if __name__ == '__main__':
         let hideNoDepicts = true;
         let hideAllTagged = true;
         let hideDepictsAlreadyTagged = true;
+        let currentCategory = 0;
 
-        async function loadStats() {
-            try {
-                const response = await fetch('/api/stats');
-                const data = await response.json();
-                document.getElementById('processedCount').textContent = data.total_processed;
-                document.getElementById('sansDepictsCount').textContent = data.sans_depicts;
-                document.getElementById('avecDepictsCount').textContent = data.avec_depicts;
-            } catch (error) {
-                console.error('Erreur stats:', error);
+        function changeCategoryAndReload() {
+            const newCategory = parseInt(document.getElementById('categoryInput').value);
+            if (newCategory >= 0 && newCategory <= 2000) {
+                currentCategory = newCategory;
+                localStorage.setItem('currentCategory', currentCategory);
+                currentPage = 0;
+                loadImages(currentPage);
+            } else {
+                showMessage('La catégorie doit être entre 0 et 2000', 'error');
             }
         }
-        
+
         async function saveTracking() {
             if (!confirm('Sauvegarder l\\'état actuel des données de tracking ?')) return;
             
@@ -969,7 +994,7 @@ if __name__ == '__main__':
                 });
                 
                 const result = await response.json();
-                
+
                 if (result.success) {
                     showMessage(`✓ ${result.message}`, 'success');
                     loadStats();
@@ -980,53 +1005,114 @@ if __name__ == '__main__':
                 showMessage('Erreur lors de la sauvegarde', 'error');
             }
         }
-        
         async function loadStats() {
             try {
                 const response = await fetch('/api/stats');
                 const data = await response.json();
+                console.log('Stats received:', data);  // DEBUG
                 document.getElementById('processedCount').textContent = data.total_processed;
+                document.getElementById('sansDepictsCount').textContent = data.sans_depicts;
+                document.getElementById('avecDepictsCount').textContent = data.avec_depicts;
             } catch (error) {
                 console.error('Erreur stats:', error);
             }
         }
-
+        
         function applyFilters() {
             showAll = document.getElementById('showAllCheckbox').checked;
             hideNoDepicts = document.getElementById('hideNoDepictsCheckbox').checked;
             hideAllTagged = document.getElementById('hideAllTaggedCheckbox').checked;
             hideDepictsAlreadyTagged = document.getElementById('hideDepictsAlreadyTaggedCheckbox').checked;
+            
+            // Sauvegarder dans localStorage
+            localStorage.setItem('hideDepictsAlreadyTagged', hideDepictsAlreadyTagged);
+            localStorage.setItem('showAll', showAll);
+            localStorage.setItem('hideNoDepicts', hideNoDepicts);
+            localStorage.setItem('hideAllTagged', hideAllTagged);
+            
+            currentPage = 0;
+            loadImages(currentPage);
+        }
+
+        function restoreFilters() {
+            // Restaurer depuis localStorage
+            if (localStorage.getItem('hideDepictsAlreadyTagged') !== null) {
+                hideDepictsAlreadyTagged = localStorage.getItem('hideDepictsAlreadyTagged') === 'true';
+                document.getElementById('hideDepictsAlreadyTaggedCheckbox').checked = hideDepictsAlreadyTagged;
+            }
+            if (localStorage.getItem('showAll') !== null) {
+                showAll = localStorage.getItem('showAll') === 'true';
+                document.getElementById('showAllCheckbox').checked = showAll;
+            }
+            if (localStorage.getItem('hideNoDepicts') !== null) {
+                hideNoDepicts = localStorage.getItem('hideNoDepicts') === 'true';
+                document.getElementById('hideNoDepictsCheckbox').checked = hideNoDepicts;
+            }
+            if (localStorage.getItem('hideAllTagged') !== null) {
+                hideAllTagged = localStorage.getItem('hideAllTagged') === 'true';
+                document.getElementById('hideAllTaggedCheckbox').checked = hideAllTagged;
+            }
+            if (localStorage.getItem('currentCategory') !== null) {
+                currentCategory = parseInt(localStorage.getItem('currentCategory'));
+                document.getElementById('categoryInput').value = currentCategory;
+            }
+        }
+
+        function changeCategoryAndReload() {
+            currentCategory = parseInt(document.getElementById('categoryInput').value);
+            localStorage.setItem('currentCategory', currentCategory);
             currentPage = 0;
             loadImages(currentPage);
         }
 
         async function loadImages(page) {
             document.getElementById('images').innerHTML = '<div class="loading">Chargement...</div>';
-
+        
             try {
-                const response = await fetch(`/api/images?page=${page}&show_all=${showAll}&hide_no_depicts=${hideNoDepicts}&hide_all_tagged=${hideAllTagged}&hide_depicts_already_tagged=${hideDepictsAlreadyTagged}`);
+                const url = `/api/images?page=${page}&show_all=${showAll}&hide_no_depicts=${hideNoDepicts}&hide_all_tagged=${hideAllTagged}&hide_depicts_already_tagged=${hideDepictsAlreadyTagged}&category=${currentCategory}`;
+                console.log('Fetching:', url);  // Debug
+                
+                const response = await fetch(url);
                 const data = await response.json();
+                
+                console.log('Received data:', data);  // Debug
 
                 if (data.error) {
                     showMessage(data.error, 'error');
                     return;
                 }
-
+        
+                // ===== CORRECTION PRINCIPALE: Mettre à jour les stats =====
+                if (data.stats) {
+                    document.getElementById('sansDepictsCount').textContent = data.stats.sans_depicts;
+                    document.getElementById('avecDepictsCount').textContent = data.stats.avec_depicts;
+                    console.log('Stats updated:', data.stats);  // Debug
+                }
+                
+                // ===== CORRECTION: Mettre à jour la catégorie affichée =====
+                if (data.current_category !== undefined) {
+                    currentCategory = data.current_category;
+                    document.getElementById('categoryInput').value = currentCategory;
+                    localStorage.setItem('currentCategory', currentCategory);
+                    console.log('Category updated:', currentCategory);  // Debug
+                }
+        
                 // Pagination automatique si aucune image ne correspond aux filtres
                 if (data.images.length === 0 && data.has_more) {
                     currentPage++;
                     loadImages(currentPage);
                     return;
                 }
-
+                loadStats();          
                 renderImages(data.images);
-                loadStats();
-
+                loadStats();  
+        
                 document.getElementById('prevBtn').disabled = page === 0;
                 document.getElementById('nextBtn').disabled = !data.has_more;
                 
                 updateBatchActionBar();
             } catch (error) {
+                console.error('Error loading images:', error);  // Debug
                 showMessage('Erreur de connexion', 'error');
             }
         }
@@ -1166,6 +1252,9 @@ if __name__ == '__main__':
 
                 if (result.success) {
                     showMessage(`✓ ${result.processed} image(s) traitée(s)${result.errors > 0 ? `, ${result.errors} erreur(s)` : ''}`, 'success');
+                    currentCategory = 0;
+                    document.getElementById('categoryInput').value = 0;
+                    localStorage.setItem('currentCategory', 0);
                     loadImages(currentPage);
                 } else {
                     showMessage('Erreur lors du traitement', 'error');
@@ -1255,6 +1344,7 @@ if __name__ == '__main__':
             }
         }
 
+        restoreFilters();  // Restaurer les filtres d'abord
         loadImages(0);
         loadStats();
     </script>
