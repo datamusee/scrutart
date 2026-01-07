@@ -18,7 +18,8 @@ pimag = CPiwigoManager()
 sans_depicts = set()
 avec_depicts = {}
 piwigo_ids = {}
-category_viewed = set()
+category_viewed = {}  # {category_id: max_page_seen}
+category_completed = set()  # Catégories entièrement parcourues
 
 # Configuration Piwigo
 PIWIGO_URL = "https://galeries.grains-de-culture.fr"
@@ -47,7 +48,7 @@ TRACK_DIR = "track"
 
 def load_tracking_data():
     """Charge les données de tracking depuis les fichiers JSON"""
-    global sans_depicts, avec_depicts, category_viewed
+    global sans_depicts, avec_depicts, category_viewed, category_completed
 
     os.makedirs(TRACK_DIR, exist_ok=True)
 
@@ -78,12 +79,21 @@ def load_tracking_data():
     if os.path.exists(category_viewed_file):
         try:
             with open(category_viewed_file, 'r', encoding='utf-8') as f:
-                category_viewed = set(json.load(f))
+                category_viewed = json.load(f)
             print(f"✓ Chargé {len(category_viewed)} catégories vues")
         except Exception as e:
             print(f"⚠ Erreur chargement category_viewed: {e}")
-            category_viewed = set()
+            category_viewed = {}
 
+    category_completed_file = os.path.join(TRACK_DIR, "category_completed.json")
+    if os.path.exists(category_completed_file):
+        try:
+            with open(category_completed_file, 'r', encoding='utf-8') as f:
+                category_completed = set(json.load(f))
+            print(f"✓ Chargé {len(category_completed)} catégories complètes")
+        except Exception as e:
+            print(f"⚠ Erreur chargement category_completed: {e}")
+            category_completed = set()
 
 def save_tracking_data():
     """Sauvegarde les données de tracking dans des fichiers JSON"""
@@ -105,11 +115,18 @@ def save_tracking_data():
         json.dump(avec_depicts, f, ensure_ascii=False, indent=2)
 
     # Sauvegarder category_viewed (avec et sans timestamp)
-    category_viewed_list = list(category_viewed)
+    # category_viewed_list = list(category_viewed)
     with open(os.path.join(TRACK_DIR, f"category_viewed_{timestamp}.json"), 'w', encoding='utf-8') as f:
-        json.dump(category_viewed_list, f, ensure_ascii=False, indent=2)
+        json.dump(category_viewed, f, ensure_ascii=False, indent=2)
     with open(os.path.join(TRACK_DIR, "category_viewed.json"), 'w', encoding='utf-8') as f:
-        json.dump(category_viewed_list, f, ensure_ascii=False, indent=2)
+        json.dump(category_viewed, f, ensure_ascii=False, indent=2)
+
+    #
+    category_completed_list = list(category_completed)
+    with open(os.path.join(TRACK_DIR, f"category_completed_{timestamp}.json"), 'w', encoding='utf-8') as f:
+        json.dump(category_completed_list, f, ensure_ascii=False, indent=2)
+    with open(os.path.join(TRACK_DIR, "category_completed.json"), 'w', encoding='utf-8') as f:
+        json.dump(category_completed_list, f, ensure_ascii=False, indent=2)
 
     return timestamp
 
@@ -186,7 +203,8 @@ def get_stats():
         'total_processed': total,
         'sans_depicts': len(sans_depicts),
         'avec_depicts': len(avec_depicts),
-        'category_viewed': len(category_viewed)
+        'category_viewed': len(category_viewed),
+        'category_completed': len(category_completed)
     }
 
 def login_piwigo():
@@ -203,23 +221,37 @@ def login_piwigo():
 
 def get_piwigo_images(page=0, per_page=30, category_id=None):
     """Récupère les images de Piwigo"""
-    images = {}
-    if category_id is None:
-        category_id = random.randint(0,2000)
-    if category_id not in category_viewed:
-        url = f"{PIWIGO_URL}/ws.php?format=json"
-        data = {
-            "method": "pwg.categories.getImages",
-            "recursive":True,
-            "cat_id": category_id,
-            "per_page": per_page,
-            "page": page
-        }
-        response = piwigo_session.post(url, data=data)
-        category_viewed.add(str(category_id))
-        images = response.json()
-    return images
+    if category_id is None or category_id == 0:
+        category_id = random.randint(1, 2000)
 
+    # Convertir en string pour cohérence
+    cat_str = str(category_id)
+
+    # Tracker la page vue pour cette catégorie
+    if cat_str not in category_viewed:
+        category_viewed[cat_str] = page
+    else:
+        category_viewed[cat_str] = max(category_viewed[cat_str], page)
+
+    url = f"{PIWIGO_URL}/ws.php?format=json"
+    data = {
+        "method": "pwg.categories.getImages",
+        "recursive": True,
+        "cat_id": category_id,
+        "per_page": per_page,
+        "page": page
+    }
+    response = piwigo_session.post(url, data=data)
+    result = response.json()
+
+    # Marquer comme complète si pas d'images ou moins que per_page
+    if result.get('stat') == 'ok':
+        images = result.get('result', {}).get('images', [])
+        if len(images) == 0 or len(images) < per_page:
+            category_completed.add(cat_str)
+            print(f"✓ Catégorie {category_id} marquée comme complète (page {page})")
+
+    return result
 
 def get_image_info(image_id):
     """Récupère les informations complètes d'une image avec cache"""
@@ -245,7 +277,8 @@ def extract_artwork_from_description(description):
     if not description:
         return None
 
-    pattern = r'Élément Wikidata[^<]*<a[^>]+href=["\']([^"\']*wikidata\.org/(?:wiki|entity)/(Q\d+))["\'][^>]*>([^<]*)</a>'
+    # pattern = r'Élément Wikidata[^<]*<a[^>]+href=["\']([^"\']*wikidata\.org/(?:wiki|entity)/(Q\d+))["\'][^>]*>([^<]*)</a>'
+    pattern = r'lément Wikidata[^<]*<a[^>]+href=["\']([^"\']*wikidata\.org/(?:wiki|entity)/(Q\d+))["\'][^>]*>([^<]*)</a>'
 
     match = re.search(pattern, description, re.IGNORECASE)
 
@@ -434,7 +467,7 @@ def find_artwork_by_creator_and_image(creator_qid, commons_url):
             file_match = re.search(r'File:(.+)$', commons_url)
             if file_match:
                 commons_filename = 'commons:' + file_match.group(1)
-
+        commons_filename = commons_filename.replace('"', '\\"')
         sparql_query = f"""
         SELECT ?painting WHERE {{
           ?painting wdt:P31 wd:Q3305213 ;
@@ -648,8 +681,6 @@ def get_images():
         actual_category = category
 
     login_piwigo()
-    if page==0:
-        page = random.randint(0, 5)
     images_data = get_piwigo_images(page=page, per_page=30, category_id=actual_category)
 
     if images_data.get('stat') != 'ok':
@@ -921,12 +952,18 @@ if __name__ == '__main__':
                 <strong id="avecDepictsCount">0</strong>
                 <span>avec depicts</span>
             </div>
+            <div class="stat-box">
+                <strong id="completedCount">0</strong>
+                <span>catégories complètes</span>
+            </div>
             <div class="stat-box" style="min-width: 200px;">
                 <label style="font-size: 13px; color: #666; display: block; margin-bottom: 5px;">Catégorie:</label>
                 <input type="number" id="categoryInput" value="0" min="0" max="1800" 
                        style="width: 100%; padding: 8px; font-size: 16px; font-weight: bold; 
                               border: 2px solid #1976d2; border-radius: 4px; text-align: center;"
                        onchange="changeCategoryAndReload()">
+                <button class="btn btn-secondary" onclick="randomCategory()" 
+                        style="margin-top: 5px;">🎲 Aléatoire</button>
             </div>
             <button class="btn btn-primary" onclick="saveTracking()" style="margin-left: 20px;">💾 Sauvegarder</button>
         </div>
@@ -1013,6 +1050,7 @@ if __name__ == '__main__':
                 document.getElementById('processedCount').textContent = data.total_processed;
                 document.getElementById('sansDepictsCount').textContent = data.sans_depicts;
                 document.getElementById('avecDepictsCount').textContent = data.avec_depicts;
+                document.getElementById('completedCount').textContent = data.category_completed;
             } catch (error) {
                 console.error('Erreur stats:', error);
             }
@@ -1086,6 +1124,9 @@ if __name__ == '__main__':
                 if (data.stats) {
                     document.getElementById('sansDepictsCount').textContent = data.stats.sans_depicts;
                     document.getElementById('avecDepictsCount').textContent = data.stats.avec_depicts;
+                    if (data.stats.category_completed !== undefined) {
+                        document.getElementById('completedCount').textContent = data.stats.category_completed;
+                    }
                     console.log('Stats updated:', data.stats);  // Debug
                 }
                 
@@ -1322,6 +1363,14 @@ if __name__ == '__main__':
             } catch (error) {
                 showMessage('Erreur', 'error');
             }
+        }
+        
+        function randomCategory() {
+            randcat = Math.floor(Math.random() * 2500);
+            document.getElementById('categoryInput').value = randcat;
+            currentCategory = randcat;
+            currentPage = 0;
+            loadImages(currentPage);
         }
 
         function showMessage(text, type) {

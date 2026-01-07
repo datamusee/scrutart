@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piwigo - Wikidata Tagger</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+        h1 { text-align: center; margin-bottom: 20px; color: #333; }
+        .header { max-width: 1400px; margin: 0 auto 20px; }
+        .stats { display: flex; gap: 20px; justify-content: center; align-items: center; margin-bottom: 20px; }
+        .stat-box { background: white; padding: 15px 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .stat-box strong { display: block; font-size: 24px; color: #1976d2; }
+        .stat-box span { font-size: 13px; color: #666; }
+        .filter-controls { display: flex; gap: 15px; justify-content: center; align-items: center; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); flex-wrap: wrap; }
+        .filter-controls label { display: flex; align-items: center; gap: 8px; cursor: pointer; white-space: nowrap; }
+        .filter-controls input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        .batch-action-bar { background: #fff3cd; border: 2px solid #ffc107; padding: 15px; margin-bottom: 20px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+        .batch-action-bar .info { font-weight: bold; color: #856404; }
+        .image-grid { display: grid; gap: 20px; }
+        .image-card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: relative; }
+        .image-card.processed { border: 3px solid #4caf50; }
+        .processed-badge { position: absolute; top: 10px; right: 10px; background: #4caf50; color: white; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+        .image-content { display: grid; grid-template-columns: 400px 1fr; gap: 20px; }
+        .image-wrapper img { width: 100%; height: auto; border-radius: 4px; }
+        .tags-section { display: flex; flex-direction: column; gap: 15px; }
+        .tags-group { padding: 10px; background: #f9f9f9; border-radius: 4px; }
+        .tags-group h3 { margin-bottom: 10px; font-size: 14px; color: #666; }
+        .tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { padding: 6px 12px; background: #e3f2fd; border-radius: 4px; font-size: 13px; color: #1976d2; }
+        .depicts-item { display: flex; align-items: center; gap: 10px; padding: 8px; background: white; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 8px; }
+        .depicts-item input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; }
+        .depicts-label { flex: 1; cursor: pointer; }
+        .depicts-link { color: #1976d2; text-decoration: none; font-size: 12px; }
+        .depicts-link:hover { text-decoration: underline; }
+        .btn { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold; }
+        .btn-primary { background: #1976d2; color: white; }
+        .btn-primary:hover { background: #1565c0; }
+        .btn-primary:disabled { background: #bdbdbd; cursor: not-allowed; }
+        .btn-secondary { background: #757575; color: white; margin-right: 10px; }
+        .btn-secondary:hover { background: #616161; }
+        .btn-warning { background: #ff9800; color: white; }
+        .btn-warning:hover { background: #f57c00; }
+        .actions { display: flex; justify-content: flex-end; margin-top: 15px; }
+        .loading { text-align: center; padding: 40px; color: #666; }
+        .message { padding: 12px; margin: 10px 0; border-radius: 4px; }
+        .message.success { background: #c8e6c9; color: #2e7d32; }
+        .message.error { background: #ffcdd2; color: #c62828; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🖼️ Piwigo - Wikidata Tagger</h1>
+        <div class="stats">
+            <div class="stat-box">
+                <strong id="processedCount">0</strong>
+                <span>images traitées</span>
+            </div>
+            <div class="stat-box">
+                <strong id="sansDepictsCount">0</strong>
+                <span>sans depicts</span>
+            </div>
+            <div class="stat-box">
+                <strong id="avecDepictsCount">0</strong>
+                <span>avec depicts</span>
+            </div>
+            <div class="stat-box">
+                <strong id="completedCount">0</strong>
+                <span>catégories complètes</span>
+            </div>
+            <div class="stat-box" style="min-width: 200px;">
+                <label style="font-size: 13px; color: #666; display: block; margin-bottom: 5px;">Catégorie:</label>
+                <input type="number" id="categoryInput" value="0" min="0" max="1800" 
+                       style="width: 100%; padding: 8px; font-size: 16px; font-weight: bold; 
+                              border: 2px solid #1976d2; border-radius: 4px; text-align: center;"
+                       onchange="changeCategoryAndReload()">
+                <button class="btn btn-secondary" onclick="randomCategory()" 
+                        style="margin-top: 5px;">🎲 Aléatoire</button>
+            </div>
+            <button class="btn btn-primary" onclick="saveTracking()" style="margin-left: 20px;">💾 Sauvegarder</button>
+        </div>
+        <div class="filter-controls">
+            <label>
+                <input type="checkbox" id="showAllCheckbox" onchange="applyFilters()">
+                <span>Afficher aussi les images déjà traitées</span>
+            </label>
+            <label>
+                <input type="checkbox" id="hideNoDepictsCheckbox" checked onchange="applyFilters()">
+                <span>Masquer les peintures sans depicts (P180)</span>
+            </label>
+            <label>
+                <input type="checkbox" id="hideAllTaggedCheckbox" checked onchange="applyFilters()">
+                <span>Masquer les peintures dont tous les depicts sont déjà taggés</span>
+            </label>
+            <label>
+                <input type="checkbox" id="hideDepictsAlreadyTaggedCheckbox" checked onchange="applyFilters()">
+                <span>Masquer les depicts déjà présents comme tags Piwigo</span>
+            </label>
+        </div>
+    </div>
+    <div class="container">
+        <div id="batchActionBar" class="batch-action-bar" style="display: none;">
+            <div class="info">
+                <span id="selectedCount">0</span> image(s) avec des tags sélectionnés
+            </div>
+            <button class="btn btn-warning" onclick="sendAllTags()">📤 Envoyer tous les tags</button>
+        </div>
+        <div id="messages"></div>
+        <div id="images" class="image-grid"></div>
+        <div class="actions" style="margin-top: 20px;">
+            <button class="btn btn-secondary" id="prevBtn" onclick="loadPrevPage()">← Précédent</button>
+            <button class="btn btn-primary" id="nextBtn" onclick="loadNextPage()">Suivant →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        let showAll = false;
+        let hideNoDepicts = true;
+        let hideAllTagged = true;
+        let hideDepictsAlreadyTagged = true;
+        let currentCategory = 0;
+
+        function changeCategoryAndReload() {
+            const newCategory = parseInt(document.getElementById('categoryInput').value);
+            if (newCategory >= 0 && newCategory <= 2000) {
+                currentCategory = newCategory;
+                localStorage.setItem('currentCategory', currentCategory);
+                currentPage = 0;
+                loadImages(currentPage);
+            } else {
+                showMessage('La catégorie doit être entre 0 et 2000', 'error');
+            }
+        }
+
+        async function saveTracking() {
+            if (!confirm('Sauvegarder l\'état actuel des données de tracking ?')) return;
+            
+            try {
+                const response = await fetch('/api/save_tracking', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                
+                const result = await response.json();
+
+                if (result.success) {
+                    showMessage(`✓ ${result.message}`, 'success');
+                    loadStats();
+                } else {
+                    showMessage(result.message, 'error');
+                }
+            } catch (error) {
+                showMessage('Erreur lors de la sauvegarde', 'error');
+            }
+        }
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/stats');
+                const data = await response.json();
+                console.log('Stats received:', data);  // DEBUG
+                document.getElementById('processedCount').textContent = data.total_processed;
+                document.getElementById('sansDepictsCount').textContent = data.sans_depicts;
+                document.getElementById('avecDepictsCount').textContent = data.avec_depicts;
+                document.getElementById('completedCount').textContent = data.category_completed;
+            } catch (error) {
+                console.error('Erreur stats:', error);
+            }
+        }
+        
+        function applyFilters() {
+            showAll = document.getElementById('showAllCheckbox').checked;
+            hideNoDepicts = document.getElementById('hideNoDepictsCheckbox').checked;
+            hideAllTagged = document.getElementById('hideAllTaggedCheckbox').checked;
+            hideDepictsAlreadyTagged = document.getElementById('hideDepictsAlreadyTaggedCheckbox').checked;
+            
+            // Sauvegarder dans localStorage
+            localStorage.setItem('hideDepictsAlreadyTagged', hideDepictsAlreadyTagged);
+            localStorage.setItem('showAll', showAll);
+            localStorage.setItem('hideNoDepicts', hideNoDepicts);
+            localStorage.setItem('hideAllTagged', hideAllTagged);
+            
+            currentPage = 0;
+            loadImages(currentPage);
+        }
+
+        function restoreFilters() {
+            // Restaurer depuis localStorage
+            if (localStorage.getItem('hideDepictsAlreadyTagged') !== null) {
+                hideDepictsAlreadyTagged = localStorage.getItem('hideDepictsAlreadyTagged') === 'true';
+                document.getElementById('hideDepictsAlreadyTaggedCheckbox').checked = hideDepictsAlreadyTagged;
+            }
+            if (localStorage.getItem('showAll') !== null) {
+                showAll = localStorage.getItem('showAll') === 'true';
+                document.getElementById('showAllCheckbox').checked = showAll;
+            }
+            if (localStorage.getItem('hideNoDepicts') !== null) {
+                hideNoDepicts = localStorage.getItem('hideNoDepicts') === 'true';
+                document.getElementById('hideNoDepictsCheckbox').checked = hideNoDepicts;
+            }
+            if (localStorage.getItem('hideAllTagged') !== null) {
+                hideAllTagged = localStorage.getItem('hideAllTagged') === 'true';
+                document.getElementById('hideAllTaggedCheckbox').checked = hideAllTagged;
+            }
+            if (localStorage.getItem('currentCategory') !== null) {
+                currentCategory = parseInt(localStorage.getItem('currentCategory'));
+                document.getElementById('categoryInput').value = currentCategory;
+            }
+        }
+
+        function changeCategoryAndReload() {
+            currentCategory = parseInt(document.getElementById('categoryInput').value);
+            localStorage.setItem('currentCategory', currentCategory);
+            currentPage = 0;
+            loadImages(currentPage);
+        }
+
+        async function loadImages(page) {
+            document.getElementById('images').innerHTML = '<div class="loading">Chargement...</div>';
+        
+            try {
+                const url = `/api/images?page=${page}&show_all=${showAll}&hide_no_depicts=${hideNoDepicts}&hide_all_tagged=${hideAllTagged}&hide_depicts_already_tagged=${hideDepictsAlreadyTagged}&category=${currentCategory}`;
+                console.log('Fetching:', url);  // Debug
+                
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                console.log('Received data:', data);  // Debug
+
+                if (data.error) {
+                    showMessage(data.error, 'error');
+                    return;
+                }
+        
+                // ===== CORRECTION PRINCIPALE: Mettre à jour les stats =====
+                if (data.stats) {
+                    document.getElementById('sansDepictsCount').textContent = data.stats.sans_depicts;
+                    document.getElementById('avecDepictsCount').textContent = data.stats.avec_depicts;
+                    if (data.stats.category_completed !== undefined) {
+                        document.getElementById('completedCount').textContent = data.stats.category_completed;
+                    }
+                    console.log('Stats updated:', data.stats);  // Debug
+                }
+                
+                // ===== CORRECTION: Mettre à jour la catégorie affichée =====
+                if (data.current_category !== undefined) {
+                    currentCategory = data.current_category;
+                    document.getElementById('categoryInput').value = currentCategory;
+                    localStorage.setItem('currentCategory', currentCategory);
+                    console.log('Category updated:', currentCategory);  // Debug
+                }
+        
+                // Pagination automatique si aucune image ne correspond aux filtres
+                if (data.images.length === 0 && data.has_more) {
+                    currentPage++;
+                    loadImages(currentPage);
+                    return;
+                }
+                loadStats();          
+                renderImages(data.images);
+                loadStats();  
+        
+                document.getElementById('prevBtn').disabled = page === 0;
+                document.getElementById('nextBtn').disabled = !data.has_more;
+                
+                updateBatchActionBar();
+            } catch (error) {
+                console.error('Error loading images:', error);  // Debug
+                showMessage('Erreur de connexion', 'error');
+            }
+        }
+
+        function renderImages(images) {
+            const container = document.getElementById('images');
+            container.innerHTML = '';
+
+            if (images.length === 0) {
+                container.innerHTML = '<div class="loading">✓ Aucune image correspondant aux filtres</div>';
+                return;
+            }
+
+            images.forEach(img => {
+                const card = document.createElement('div');
+                card.className = 'image-card' + (img.is_processed ? ' processed' : '');
+                card.innerHTML = `
+                    ${img.is_processed ? `<div class="processed-badge">✓ Traitée le ${new Date(img.processed_info.processed_date).toLocaleString('fr-FR')}</div>` : ''}
+                    <div class="image-content">
+                        <div class="image-wrapper">
+                            <img src="${img.url}" alt="${img.name}">
+                            <p style="margin-top: 10px; font-weight: bold;">${img.name}</p>
+                            ${img.author ? `<p style="color: #666; font-size: 13px;">👤 ${img.author}</p>` : ''}
+                            <p style="font-size: 12px;"><a href="${img.piwigo_url}" target="_blank">🖼️ Voir dans Piwigo</a></p>
+                            ${img.commons_url ? `<p style="font-size: 12px;"><a href="${img.commons_url}" target="_blank">🔗 Commons</a></p>` : ''}
+                            ${img.wikidata_entity ? `<p style="font-size: 12px;"><a href="https://www.wikidata.org/wiki/${img.wikidata_entity}" target="_blank">📊 ${img.wikidata_entity}</a></p>` : '<p style="font-size: 12px; color: #999;">❌ Pas d entité</p>'}
+                        </div>
+                        <div class="tags-section">
+                            <div class="tags-group">
+                                <h3>Tags Piwigo actuels</h3>
+                                <div class="tag-list">
+                                    ${img.tags.length ? img.tags.map(t => `<span class="tag">${t.name}</span>`).join('') : '<em style="color: #999;">Aucun</em>'}
+                                </div>
+                            </div>
+                            ${img.is_processed ? `
+                                <div class="tags-group" style="background: #e8f5e9;">
+                                    <h3>Tags ajoutés</h3>
+                                    <div class="tag-list">
+                                        ${img.processed_info.tags_added.map(t => `<span class="tag" style="background: #c8e6c9;">${t.label}</span>`).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+                            <div class="tags-group">
+                                <h3>Depicts Wikidata ${img.is_processed ? '(traitée)' : '(sélectionner)'}</h3>
+                                ${img.wikidata_entity ? `<p style="font-size: 12px; color: #666; margin-bottom: 8px;">Source: ${img.search_info.commons_url ? '🔗 Commons' : img.search_info.author ? `📝 "${img.search_info.title}" par ${img.search_info.author}` : `📝 "${img.search_info.title}"`}</p>` : ''}
+                                <div id="depicts-${img.id}">
+                                    ${img.depicts.length ? img.depicts.map(d => `
+                                        <div class="depicts-item">
+                                            <input type="checkbox" id="dep-${img.id}-${d.id}" value="${d.id}" data-label="${d.label}" data-url="${d.url}" data-image-id="${img.id}" data-wikidata-entity="${img.wikidata_entity || ''}" onchange="updateBatchActionBar()" ${img.is_processed ? 'disabled' : ''}>
+                                            <label class="depicts-label" for="dep-${img.id}-${d.id}">${d.label}</label>
+                                            <a href="${d.url}" target="_blank" class="depicts-link">Wikidata →</a>
+                                        </div>
+                                    `).join('') : '<em style="color: #999;">Aucun depicts</em>'}
+                                </div>
+                            </div>
+                            <div class="actions">
+                                ${img.is_processed ? `
+                                    <button class="btn btn-secondary" onclick="reprocessImage(${img.id})">🔄 Retraiter</button>
+                                ` : `
+                                    <button class="btn btn-primary" onclick="sendTags(${img.id}, '${img.wikidata_entity || ''}')" ${img.depicts.length === 0 ? 'disabled' : ''}>📤 Envoyer</button>
+                                `}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function updateBatchActionBar() {
+            const allCheckboxes = document.querySelectorAll('input[type="checkbox"][data-image-id]:checked:not([disabled])');
+            
+            // Compter le nombre d'images avec au moins un tag sélectionné
+            const imageIds = new Set();
+            allCheckboxes.forEach(cb => imageIds.add(cb.dataset.imageId));
+            const count = imageIds.size;
+            
+            const bar = document.getElementById('batchActionBar');
+            const countSpan = document.getElementById('selectedCount');
+            
+            if (count > 0) {
+                bar.style.display = 'flex';
+                countSpan.textContent = count;
+            } else {
+                bar.style.display = 'none';
+            }
+        }
+
+        async function sendAllTags() {
+            const allCheckboxes = document.querySelectorAll('input[type="checkbox"][data-image-id]:checked:not([disabled])');
+            
+            if (allCheckboxes.length === 0) {
+                showMessage('Aucun tag sélectionné', 'error');
+                return;
+            }
+            
+            // Compter les images avec tags
+            const imageIds = new Set();
+            allCheckboxes.forEach(cb => imageIds.add(cb.dataset.imageId));
+            
+            if (!confirm(`Envoyer les tags pour ${imageIds.size} image(s) ?`)) {
+                return;
+            }
+            
+            // Grouper les tags par image
+            const imageTagsMap = {};
+            
+            allCheckboxes.forEach(cb => {
+                const imageId = cb.dataset.imageId;
+                const wikidataEntity = cb.dataset.wikidataEntity;
+                
+                if (!imageTagsMap[imageId]) {
+                    imageTagsMap[imageId] = {
+                        image_id: parseInt(imageId),
+                        wikidata_entity: wikidataEntity,
+                        tags: []
+                    };
+                }
+                
+                imageTagsMap[imageId].tags.push({
+                    id: cb.value,
+                    label: cb.dataset.label,
+                    url: cb.dataset.url
+                });
+            });
+            
+            const imagesData = Object.values(imageTagsMap);
+            
+            try {
+                const response = await fetch('/api/add_tags_batch', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ images: imagesData })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showMessage(`✓ ${result.processed} image(s) traitée(s)${result.errors > 0 ? `, ${result.errors} erreur(s)` : ''}`, 'success');
+                    currentCategory = 0;
+                    document.getElementById('categoryInput').value = 0;
+                    localStorage.setItem('currentCategory', 0);
+                    loadImages(currentPage);
+                } else {
+                    showMessage('Erreur lors du traitement', 'error');
+                }
+            } catch (error) {
+                showMessage('Erreur de connexion', 'error');
+            }
+        }
+
+        async function sendTags(imageId, wikidataEntity) {
+            const checkboxes = document.querySelectorAll(`#depicts-${imageId} input[type="checkbox"]:checked`);
+            const tags = Array.from(checkboxes).map(cb => ({
+                id: cb.value,
+                label: cb.dataset.label,
+                url: cb.dataset.url
+            }));
+
+            if (tags.length === 0) {
+                showMessage('Sélectionnez au moins un tag', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/add_tags', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        image_id: imageId, 
+                        tags: tags,
+                        wikidata_entity: wikidataEntity
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showMessage('✓ Tags ajoutés', 'success');
+                    loadImages(currentPage);
+                } else {
+                    showMessage(result.message, 'error');
+                }
+            } catch (error) {
+                showMessage('Erreur envoi', 'error');
+            }
+        }
+
+        async function reprocessImage(imageId) {
+            if (!confirm('Retraiter cette image ?')) return;
+
+            try {
+                const response = await fetch('/api/unmark_image', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ image_id: imageId })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showMessage('✓ Marquée pour retraitement', 'success');
+                    loadImages(currentPage);
+                } else {
+                    showMessage('Erreur', 'error');
+                }
+            } catch (error) {
+                showMessage('Erreur', 'error');
+            }
+        }
+        
+        function randomCategory() {
+            randcat = Math.floor(Math.random() * 2500);
+            document.getElementById('categoryInput').value = randcat;
+            currentCategory = randcat;
+            currentPage = 0;
+            loadImages(currentPage);
+        }
+
+        function showMessage(text, type) {
+            const div = document.createElement('div');
+            div.className = `message ${type}`;
+            div.textContent = text;
+            document.getElementById('messages').appendChild(div);
+            setTimeout(() => div.remove(), 5000);
+        }
+
+        function loadNextPage() {
+            currentPage++;
+            loadImages(currentPage);
+        }
+
+        function loadPrevPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                loadImages(currentPage);
+            }
+        }
+
+        restoreFilters();  // Restaurer les filtres d'abord
+        loadImages(0);
+        loadStats();
+    </script>
+</body>
+</html>
