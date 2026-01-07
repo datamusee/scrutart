@@ -1,0 +1,610 @@
+{
+  "reference": {
+    "type": "str",
+    "examples": [
+      "000DE018167",
+      "000DE018615",
+      "000DE018112"
+    ],
+    "presence": 100.0
+  },
+  "ancien_depot": {
+    "type": "str",
+    "examples": [
+      "Paris, musée du Louvre",
+      "MUSEE DU LUXEMBOURG, GALERIE DU JEU DE PAUME; MUSEE NATIONAL D'ART MODERNE",
+      "MUSEE DU LUXEMBOURG; MUSEE DU LUXEMBOURG, GALERIE DU JEU DE PAUME; MUSEE NATIONAL D'ART MODERNE"
+    ],
+    "presence": 2.4
+  },
+  "appellation": {
+    "type": "str",
+    "examples": [
+      "construction",
+      "famille rose",
+      "terrine"
+    ],
+    "presence": 6.1
+  },
+  "ancienne_appartenance": {
+    "type": "str",
+    "examples": [
+      "Rodin Auguste, coll. de l'artiste",
+      "Colin Paul",
+      "vente anonyme, Angers, salle des ventes, 1983"
+    ],
+    "presence": 80.0
+  },
+  "ancienne_attribution": {
+    "type": "str",
+    "examples": [
+      "FAUCHIER LAURENT (AUQUIER)",
+      "NATOIRE CHARLES JOSEPH (attribué en 1869) ; ECOLE ESPAGNOLE (AUQUIER)",
+      "CANAL ANTONIO, ECOLE DE (GROBET-LABADIE)"
+    ],
+    "presence": 4.5
+  },
+  "auteur": {
+    "type": "str",
+    "examples": [
+      "Rodin Auguste (1840-1917)",
+      "DEVERIA Eugène",
+      "LANDELLE Charles"
+    ],
+    "presence": 95.4
+  },
+  "bibliographie": {
+    "type": "str",
+    "examples": [
+      "CAT. 1984 T.IV n° 5937",
+      "CAT. 1984 T.IV n° 5868",
+      "CAT. 1984 T.IV n° 5938"
+    ],
+    "presence": 24.2
+  },
+  "commentaires": {
+    "type": "str",
+    "examples": [
+      "traits à la mine de plomb avec rehauts d'aquarelle ; papier d'enveloppe découpée",
+      "crayon noir à gauche, crayon noir et mine de plomb à droite ; feuille composée de deux morceaux de papier irrégulièrement découpés et collés ; don de Mr Paul Colin en septembre 1888",
+      "traits à la mine de plomb repris à la plume et encre brune"
+    ],
+    "presence": 31.1
+  },
+  "presence_image": {
+    "type": "str",
+    "examples": [
+      "oui",
+      "non"
+    ],
+    "presence": 100.0
+  },
+  "date_d_acquisition": {
+    "type": "str",
+    "examples": [
+      "1916",
+      "1888",
+      "1983"
+    ],
+    "presence": 81.3
+  },
+  "date_de_depot": {
+    "type": "str",
+    "examples": [
+      "1869",
+      "1965",
+      "1946"
+    ],
+    "presence": 6.7
+  },
+  "decouverte_collecte": {
+    "type": "str",
+    "examples": [
+      "Marseille (lieu de provenance)",
+      "Lille (lieu de provenance)",
+      "Paris (lieu de provenance)"
+    ],
+    "presence": 6.9
+  },
+  "denomination": {
+    "type": "str",
+    "examples": [
+      "recto verso",
+      "carnet;élément d'ensemble",
+      "tableau"
+    ],
+    "presence": 70.7
+  },
+  "lieu_de_depot": {
+    "type": "str",
+    "examples": [
+      "attribution;Marseille;musée des beaux-arts",
+      "dépôt;Marseille;musée des beaux-arts",
+      "Attribution;Versailles;Musée du Château"
+    ],
+    "presence": 9.4
+  },
+  "description": {
+    "type": "str",
+    "examples": [
+      "Album Levy-Dhurmer Lucien -2-, dessiné sur le plat de devant ; Album cartonné, à dos de papier toilé vert, comprenant 65 folios numérotés en haut à droite. Cachet du papetier, sur le plat de derrière, et inscription au crayon sur les deux plats. H. 0,230 ; L. 0, 310. ; Annotation manuscrite au crayon bleu :Venise",
+      "Album Leprince Anne-Xavier -5-, folio 29., dessiné au recto ; Album cartonné vert à dos de cuir vert, composé de 57 folios numérotés en haut à droite. H. 0, 104 ; L. 0, 172. ; Annotation à la mine de plomb",
+      "Album Papety Dominique -6-, folio 28, rapporté au recto ; Mine de plomb, sur papier Japon ocre. Collé en plein. Rapporté au recto du folio 28"
+    ],
+    "presence": 43.3
+  },
+  "mesures": {
+    "type": "str",
+    "examples": [
+      "18 H ; 10.6 L",
+      "26.5 H ; 33.3 L",
+      "7.6 H ; 14.8 L"
+    ],
+    "presence": 92.2
+  },
+  "date_de_mise_a_jour": {
+    "type": "str",
+    "examples": [
+      "2023-02-17",
+      "2023-07-28",
+      "2024-11-12"
+    ],
+    "presence": 90.0
+  },
+  "date_creation": {
+    "type": "str",
+    "examples": [
+      "2005-12-26",
+      "2005-12-27",
+      "2005-12-28"
+    ],
+    "presence": 73.4
+  },
+  "domaine": [
+    {
+      "type": "str",
+      "examples": [
+        "dessin",
+        "peinture",
+        "beaux-arts"
+      ],
+      "presence": 134.2
+    }
+  ],
+  "region": {
+    "type": "str",
+    "examples": [
+      "Ile-de-France",
+      "Bretagne",
+      "Pays-de-la-Loire"
+    ],
+    "presence": 99.6
+  },
+  "departement": {
+    "type": "str",
+    "examples": [
+      "Paris",
+      "Ille-et-Vilaine",
+      "Mayenne"
+    ],
+    "presence": 99.6
+  },
+  "date_sujet_represente": {
+    "type": "str",
+    "examples": [
+      "1830 ; 1876",
+      "1839 né ; 1916 mort",
+      "1864 ; 1936"
+    ],
+    "presence": 9.4
+  },
+  "ecole_pays": {
+    "type": "str",
+    "examples": [
+      "France",
+      "France;Provence",
+      "Italie"
+    ],
+    "presence": 82.2
+  },
+  "epoque": {
+    "type": "str",
+    "examples": [
+      "romain républicain",
+      "romain;haut-empire",
+      "époque Qing (1644 - 1911)"
+    ],
+    "presence": 6.3
+  },
+  "exposition": {
+    "type": "str",
+    "examples": [
+      "salon des artistes contemporains, Marseille, 1953",
+      "A. Sérullaz, V. de Chillaz, Souvenirs de voyages, Paris, R.M.N., 1992, p.66",
+      "exposition d'art japonais, musée du jeu de paume, Paris, 1929"
+    ],
+    "presence": 11.3
+  },
+  "genese": {
+    "type": "str",
+    "examples": [
+      "ETUDE",
+      "étude;oeuvre en rapport",
+      "CROQUIS"
+    ],
+    "presence": 27.2
+  },
+  "geographie_historique": {
+    "type": "str",
+    "examples": [
+      "Thessalonique (lieu d'exécution)",
+      "Gaule (lieu d'exécution)"
+    ],
+    "presence": 0.6
+  },
+  "inscription": {
+    "type": "str",
+    "examples": [
+      "marque de musée (face),signature apocryphe (revers)",
+      "signé",
+      "marque de musée (face)"
+    ],
+    "presence": 38.1
+  },
+  "numero_inventaire": {
+    "type": "str",
+    "examples": [
+      "D 5937",
+      "INV 88.5.5",
+      "D 5868"
+    ],
+    "presence": 100.0
+  },
+  "appellation_musee_de_france": {
+    "type": "str",
+    "examples": [
+      "Musée de France#au sens de la loi n°2002-5 du 4 janvier 2002",
+      "Musée de France au sens de la loi n°2002-5 du 4 janvier 2002",
+      "Musée de France#au sens de la loi n°2002-5 du 4 janvier"
+    ],
+    "presence": 96.8
+  },
+  "lien_base_arcade": {
+    "type": "str",
+    "examples": [
+      "RODIN AUGUSTE",
+      "DEVERIA EUGENE",
+      "LANDELLE CHARLES"
+    ],
+    "presence": 34.1
+  },
+  "lieu_de_creation_utilisation": {
+    "type": "str",
+    "examples": [
+      "Istanbul (lieu d'exécution)",
+      "Civitavecchia (lieu d'exécution)",
+      "Lille (lieu d'exécution)"
+    ],
+    "presence": 22.8
+  },
+  "localisation": {
+    "type": "str",
+    "examples": [
+      "Paris ; musée Rodin",
+      "Rennes ; musée des beaux-arts",
+      "Laval ; musée du vieux château"
+    ],
+    "presence": 100.0
+  },
+  "ville": {
+    "type": "str",
+    "examples": [
+      "Paris",
+      "Rennes",
+      "Laval"
+    ],
+    "presence": 99.6
+  },
+  "lien_video": {
+    "type": "null",
+    "examples": [
+      null
+    ],
+    "presence": 100.0
+  },
+  "manquant": {
+    "type": "str",
+    "examples": [
+      "manquant",
+      "présumé détruit"
+    ],
+    "presence": 0.8
+  },
+  "manquant_com": {
+    "type": "str",
+    "examples": [
+      "présumé détruit",
+      "Présumé détruit lors des bombardements de juin et juillet 1944."
+    ],
+    "presence": 0.4
+  },
+  "millesime_de_creation": {
+    "type": "str",
+    "examples": [
+      "1844-1850",
+      "1840-1860",
+      "1912 EN"
+    ],
+    "presence": 43.1
+  },
+  "millesime_d_utilisation": {
+    "type": "str",
+    "examples": [
+      "1932/01/04",
+      "1917/11/12",
+      "1934/04/29"
+    ],
+    "presence": 0.6
+  },
+  "code_museofile": {
+    "type": "str",
+    "examples": [
+      "M5044",
+      "M0211",
+      "M0766"
+    ],
+    "presence": 100.0
+  },
+  "nom_officiel_musee": {
+    "type": "str",
+    "examples": [
+      "musée Rodin",
+      "musée des Beaux-Arts",
+      "musée du Vieux-Château"
+    ],
+    "presence": 99.6
+  },
+  "genre": {
+    "type": "str",
+    "examples": [
+      "masculin",
+      "féminin",
+      "féminin ; masculin"
+    ],
+    "presence": 24.5
+  },
+  "onomastique": {
+    "type": "str",
+    "examples": [
+      "Jeanne d'Arc",
+      "Ackté Aino",
+      "Léandre Charles-Lucien"
+    ],
+    "presence": 0.5
+  },
+  "precisions_sur_l_auteur": {
+    "type": "str",
+    "examples": [
+      "Paris, 1840 ; Meudon, 1917",
+      "Paris, 1808 ; Pau, 1865",
+      "Laval, 1821 ; Chennevières-sur-Marne, 1908"
+    ],
+    "presence": 68.0
+  },
+  "precisions_decouverte_collecte": {
+    "type": "str",
+    "examples": [
+      "domus",
+      "KESSLER Lin : Dolleren, 1902 ; Dijon, 1992 ; nationalité : Française",
+      "n° de fouille : BLH 198 - 01"
+    ],
+    "presence": 1.7
+  },
+  "periode_de_l_original_copie": {
+    "type": "str",
+    "examples": [
+      "17e siècle",
+      "3e quart 18e siècle",
+      "1er quart 16e siècle"
+    ],
+    "presence": 1.0
+  },
+  "periode_de_creation": {
+    "type": "str",
+    "examples": [
+      "2e moitié 19e siècle;1er quart 20e siècle",
+      "2e quart 19e siècle;3e quart 19e siècle",
+      "2e quart 19e siècle"
+    ],
+    "presence": 92.7
+  },
+  "periode_d_utilisation": {
+    "type": "str",
+    "examples": [
+      "1er quart 20e siècle",
+      "3e quart 19e siècle"
+    ],
+    "presence": 0.2
+  },
+  "precisions_inscriptions": {
+    "type": "str",
+    "examples": [
+      "A. RODIN 1907 (AU VERSO A LA MINE DE PLOMB) ; L.1915 A",
+      "EUG. D. (S.B.M. A CHEVAL SUR LES DEUX MORCEAUX DE PAPIER, A LA MINE DE PLOMB)",
+      "L.1915 A"
+    ],
+    "presence": 39.7
+  },
+  "precisions_lieux_creations": {
+    "type": "str",
+    "examples": [
+      "Paris, 51, rue d’Anjou (atelier Nadar)",
+      "Saint Martin de Vic (lieu de prise de vue) (lieu de création)",
+      "Atelier 1"
+    ],
+    "presence": 0.6
+  },
+  "precisions_sujets_representes": {
+    "type": "str",
+    "examples": [
+      "ROUESSE",
+      "LA CLARTE",
+      "LA PHLIPOTIERE"
+    ],
+    "presence": 25.9
+  },
+  "precisions_utilisation": {
+    "type": "str",
+    "examples": [
+      "Lorraine Renée de (utilisateur) ; L'inscription donne l'histoire du tableau : peint sur commande de Renée de Lorraine, Abbesse de Saint-Pierre-les-Dames, d'après une Sainte Face de Rome et sur les mesures du Saint Suaire de Turin, d'après les renseignements fournis par le cardinal Charles de Lorraine (ce qui explique l'allongement du corps). Saisies révolutionnaires sur l'Abbaye Saint-Pierre-les-Dames. Déposé à une date inconnue en l'église Saint-Remi.",
+      "Cette clochette est utilisée par les prêtres célébrant les rituels shivaïtes. Le culte de Shiva est l'un des courants majeurs de la tradition hindouïste. Les rites se déroulent en général dans un temple, le prêtre récite les shloka (vers psalmodiés lors de l'office religieux) et agite cette clochette selon un cérémoniel précis.",
+      "Cet instrument et joué en solo, en duo avec la cithare sur table dàn tranhI, avec la vièle dàn co mais aussi au sein d'ensembles exécutant un répertoire de divertissement ou des pièces musicales pour le théâtre. Selon les sources orales, il aurait été créé au plus tard au 18e siècle d'après le luth chinois yueqin mais les sources iconographiques attestent d'un luth en forme de lune sculpté sur une des colonnes de la pagode Phât Tich datant des 9e ou 10e siècles."
+    ],
+    "presence": 2.6
+  },
+  "references_memoires": {
+    "type": "null",
+    "examples": [
+      null
+    ],
+    "presence": 100.0
+  },
+  "references_merimee": {
+    "type": "null",
+    "examples": [
+      null
+    ],
+    "presence": 100.0
+  },
+  "reference_maj": {
+    "type": "str",
+    "examples": [
+      "M0250000417",
+      "M0250000505",
+      "M0250000529"
+    ],
+    "presence": 2.2
+  },
+  "references_palissy": {
+    "type": "null",
+    "examples": [
+      null
+    ],
+    "presence": 100.0
+  },
+  "sujet_represente": {
+    "type": "str",
+    "examples": [
+      "figure (femme : nu, en pied, de profil)",
+      "main,bras,draperie,main",
+      "vue d'architecture (moulure),paysage (feuillu)"
+    ],
+    "presence": 69.5
+  },
+  "lien_inha": {
+    "type": "str",
+    "examples": [
+      "http://www.purl.org/inha/agorha/003/24009",
+      "http://www.purl.org/inha/agorha/003/11348",
+      "http://www.purl.org/inha/agorha/003/11355"
+    ],
+    "presence": 1.3
+  },
+  "source_de_la_representation": {
+    "type": "str",
+    "examples": [
+      "essai : sur les arts,Rodin Auguste : Les cathédrales de France",
+      "Nouveau Testament",
+      "Epopée, Homère : L'Odysée"
+    ],
+    "presence": 5.2
+  },
+  "statut_juridique": {
+    "type": "str",
+    "examples": [
+      "propriété de l'Etat;donation;musée Rodin",
+      "propriété de la commune;don manuel;Rennes;musée des Beaux-Arts",
+      "propriété de la commune;achat;Laval;musée du Vieux Château"
+    ],
+    "presence": 100.0
+  },
+  "materiaux_techniques": [
+    {
+      "type": "str",
+      "examples": [
+        "mine de plomb",
+        "aquarelle",
+        "papier (beige)"
+      ],
+      "presence": 161.1
+    }
+  ],
+  "titre": {
+    "type": "str",
+    "examples": [
+      "FEMME NUE DEBOUT, DE PROFIL A GAUCHE",
+      "ETUDES DE MAINS",
+      "MOULURES, AU VERSO PAYSAGE AVEC DES ARBRES"
+    ],
+    "presence": 89.4
+  },
+  "utilisation": {
+    "type": "str",
+    "examples": [
+      "décor d'architecture",
+      "jeu",
+      "architecture;décor"
+    ],
+    "presence": 17.8
+  },
+  "lien_site_associe": {
+    "type": "str",
+    "examples": [
+      "http://arts-graphiques.louvre.fr/detail/oeuvres/1/36031-Annotation-manuscrite",
+      "http://arts-graphiques.louvre.fr/detail/oeuvres/1/28750-Place-du-Chatel-a-Provins",
+      "http://arts-graphiques.louvre.fr/detail/oeuvres/1/500757-Le-Capitaine-Vasso"
+    ],
+    "presence": 29.4
+  },
+  "coordonnees": {
+    "type": "null",
+    "examples": [
+      null
+    ],
+    "lon": {
+      "type": "float",
+      "examples": [
+        2.378424,
+        2.344553,
+        6.022938
+      ],
+      "count": 529
+    },
+    "lat": {
+      "type": "float",
+      "examples": [
+        49.015862,
+        48.850437,
+        47.240055
+      ],
+      "count": 529
+    },
+    "presence": 0.4
+  },
+  "artiste_sous_droits": {
+    "type": "str",
+    "examples": [
+      "VRAI"
+    ],
+    "presence": 2.5
+  },
+  "date_entree_dans_le_domaine_public": {
+    "type": "str",
+    "examples": [
+      "2054",
+      "2083",
+      "2044"
+    ],
+    "presence": 2.4
+  }
+}
