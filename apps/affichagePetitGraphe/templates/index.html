@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualiseur de Triplets RDF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h1>Visualiseur de Triplets RDF</h1>
+    <form id="triples-form">
+        <label for="triples">Triplets RDF (format NT) :</label><br/>
+        <textarea id="triples" name="triples" rows="10" cols="80" required>
+wdt:Q155626 rdf:type foaf:Person .
+wdt:Q155626 rdfs:label "John Singer Sargent"@fr .
+wdt:Q155626 foaf:givenName "John Singer" .
+wdt:Q155626 foaf:familyName "Sargent" .
+wdt:Q155626 schema:birthDate "1856-01-12" .
+wdt:Q155626 schema:birthPlace wdt:Q2044 .
+        </textarea><br/>
+        <label for="mode">Mode de visualisation :</label>
+        <select id="mode" name="mode">
+            <option value="base">Graphe RDF de base</option>
+            <option value="grouped">Graphe RDF avec littéraux regroupés</option>
+            <option value="cartouches">Graphe RDF avec cartouches</option>
+        </select><br/>
+        <div class="button-group">
+            <button type="submit">Générer le graphe</button>
+            <button type="button" id="fullscreen-button">Plein écran</button>
+        </div>
+    </form>
+
+    <div class="container">
+        <div class="code-container">
+            <h3>Données JSON</h3>
+            <textarea id="json-code" rows="15" readonly></textarea>
+            <button id="copy-button">Copier</button>
+        </div>
+        <div class="graph-container">
+            <h3>Visualisation</h3>
+            <div id="graph"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='d3_graph.js') }}"></script>
+    <script>
+        document.getElementById('fullscreen-button').addEventListener('click', async function() {
+            const formData = new FormData(document.getElementById('triples-form'));
+            const response = await fetch('/generate_and_redirect', {
+                method: 'POST',
+                body: formData
+            });
+            window.location.href = response.url;
+        });
+    </script>
+</body>
+</html>
