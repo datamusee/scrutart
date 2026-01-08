@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Série d'Articles - Vulgarisation Culture Picturale</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .article-card {
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            border-left: 5px solid #667eea;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(102, 126, 234, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.2);
+            border-left-color: #764ba2;
+        }
+        
+        .article-card:hover::before {
+            opacity: 1;
+        }
+        
+        .article-number {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .article-title {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .article-description {
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .article-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-tag {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        
+        .sparql-indicator {
+            background: #28a745;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .data-stats {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 4px solid #28a745;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stats-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .stats-list {
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .implementation-guide {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            border-left: 5px solid #2196f3;
+        }
+        
+        .guide-title {
+            color: #1565c0;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+        }
+        
+        .timeline-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .timeline-number {
+            background: #2196f3;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .timeline-content {
+            flex: 1;
+        }
+        
+        .timeline-title {
+            font-weight: 600;
+            color: #1565c0;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-desc {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            color: white;
+        }
+        
+        .cta-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 15px 30px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .article-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Culture Picturale & Données Structurées</h1>
+            <p class="subtitle">Une série d'articles pour explorer l'art à travers les bases de données culturelles</p>
+        </div>
+        
+        <div class="article-grid">
+            <div class="article-card" onclick="showArticleDetails(1)">
+                <div class="article-number">1</div>
+                <h3 class="article-title">Les Impressionnistes dans Wikidata : Cartographie Complète</h3>
+                <p class="article-description">
+                    Analyse comparative des œuvres de Monet, Renoir, Pissarro et Degas présentes dans Wikidata. Découverte des lacunes et richesses de ces collections numériques.
+                </p>
+                <div class="article-features">
+                    <span class="feature-tag">SPARQL</span>
+                    <span class="feature-tag">Analyse comparative</span>
+                    <span class="feature-tag">Visualisations</span>
+                </div>
+                <div class="sparql-indicator">🔍 12+ Requêtes SPARQL</div>
+                <div class="data-stats">
+                    <div class="stats-title">Données analysées :</div>
+                    <div class="stats-list">
+                        • ~3200 œuvres • 15 propriétés clés<br>
+                        • 840 images Commons • Géolocalisation
+                    </div>
+                </div>
+            </div>
+            
+            <div class="article-card" onclick="showArticleDetails(2)">
+                <div class="article-number">2</div>
+                <h3 class="article-title">Musées Français vs Wikidata : L'Art Sous-Représenté</h3>
+                <p class="article-description">
+                    Investigation sur les œuvres des collections nationales françaises absentes de Wikidata. Focus sur les musées d'Orsay, du Louvre et leurs "trésors cachés".
+                </p>
+                <div class="article-features">
+                    <span class="feature-tag">SemJoconde</span>
+                    <span class="feature-tag">Collections nationales</span>
+                    <span class="feature-tag">API Museums</span>
+                </div>
+                <div class="sparql-indicator">🏛️ Croisement de bases</div>
+                <div class="data-stats">
+                    <div class="stats-title">Sources croisées :</div>
+                    <div class="stats-list">
+                        • Base Joconde • Collections en ligne<br>
+                        • API Orsay/Louvre • Wikidata
+                    </div>
+                </div>
+            </div>
+            
+            <div class="article-card" onclick="showArticleDetails(3)">
+                <div class="article-number">3</div>
+                <h3 class="article-title">L'Art Féminin Invisible : Données et Préjugés</h3>
+                <p class="article-description">
+                    Analyse quantitative de la représentation des femmes artistes dans les bases de données culturelles. Étude des biais systémiques et pistes d'amélioration.
+                </p>
+                <div class="article-features">
+                    <span class="feature-tag">Analyse genre</span>
+                    <span class="feature-tag">Statistiques</span>
+                    <span class="feature-tag">Biais algorithmiques</span>
+                </div>
+                <div class="sparql-indicator">⚖️ Étude comparative</div>
+                <div class="data-stats">
+                    <div class="stats-title">Scope d'analyse :</div>
+                    <div class="stats-list">
+                        • 15,000+ artistes • 5 siècles<br>
+                        • Multi-sources • Graphiques interactifs
+                    </div>
+                </div>
+            </div>
+            
+            <div class="article-card" onclick="showArticleDetails(4)">
+                <div class="article-number">4</div>
+                <h3 class="article-title">Géolocaliser l'Art : De l'Atelier à l'Exposition</h3>
+                <p class="article-description">
+                    Cartographie interactive des lieux de création, d'exposition et de conservation des œuvres d'art majeures. Voyage dans la géographie artistique mondiale.
+                </p>
+                <div class="article-features">
+                    <span class="feature-tag">Géolocalisation</span>
+                    <span class="feature-tag">Cartographie</span>
+                    <span class="feature-tag">Interactif</span>
+                </div>
+                <div class="sparql-indicator">🗺️ Cartes dynamiques</div>
+                <div class="data-stats">
+                    <div class="stats-title">Éléments mappés :</div>
+                    <div class="stats-list">
+                        • 2000+ lieux • Ateliers d'artistes<br>
+                        • Salons historiques • Musées actuels
+                    </div>
+                </div>
+            </div>
+            
+            <div class="article-card" onclick="showArticleDetails(5)">
+                <div class="article-number">5</div>
+                <h3 class="article-title">IA et Attribution : Révolution ou Révélation ?</h3>
+                <p class="article-description">
+                    Comment l'intelligence artificielle transforme l'attribution d'œuvres d'art. Cas pratiques avec des œuvres controversées et découvertes récentes.
+                </p>
+                <div class="article-features">
+                    <span class="feature-tag">Intelligence artificielle</span>
+                    <span class="feature-tag">Attribution</span>
+                    <span class="feature-tag">Controverses</span>
+                </div>
+                <div class="sparql-indicator">🤖 Analyse technique</div>
+                <div class="data-stats">
+                    <div class="stats-title">Cas d'étude :</div>
+                    <div class="stats-list">
+                        • 10 attributions • Rembrandt/Caravage<br>
+                        • Méthodes IA • Débats d'experts
+                    </div>
+                </div>
+            </div>
+            
+            <div class="article-card" onclick="showArticleDetails(6)">
+                <div class="article-number">6</div>
+                <h3 class="article-title">Wikidata Playground : Créer ses Propres Requêtes</h3>
+                <p class="article-description">
+                    Guide pratique pour interroger Wikidata sur l'art. Templates de requêtes, astuces avancées et création d'outils personnalisés de recherche culturelle.
+                </p>
+                <div class="article-features">
+                    <span class="feature-tag">Tutorial</span>
+                    <span class="feature-tag">Templates</span>
+                    <span class="feature-tag">Pratique</span>
+                </div>
+                <div class="sparql-indicator">📚 Guide complet</div>
+                <div class="data-stats">
+                    <div class="stats-title">Ressources incluses :</div>
+                    <div class="stats-list">
+                        • 25+ requêtes prêtes • Exercices<br>
+                        • Cheat sheet • Cas d'usage
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="implementation-guide">
+            <h3 class="guide-title">🚀 Plan de Publication (6 semaines)</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Semaine 1-2 : Articles Fondamentaux</div>
+                        <div class="timeline-desc">Publication des articles 1 et 2 (Impressionnistes + Musées). Base solide pour la série.</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Semaine 3-4 : Analyses Sociétales</div>
+                        <div class="timeline-desc">Articles 3 et 4 (Art féminin + Géolocalisation). Élargissement des perspectives.</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Semaine 5-6 : Innovation & Pratique</div>
+                        <div class="timeline-desc">Articles 5 et 6 (IA + Tutorial). Modernité et outils pratiques.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h3>Prêt à plonger dans l'univers des données culturelles ?</h3>
+            <p>Cette série transformera votre approche de la recherche artistique et enrichira considérablement Grains de Culture</p>
+            <button class="cta-button" onclick="startSeries()">Commencer la Série</button>
+        </div>
+    </div>
+    
+    <script>
+        function showArticleDetails(articleNumber) {
+            const articles = {
+                1: {
+                    title: "Les Impressionnistes dans Wikidata",
+                    details: "Cet article utilisera des requêtes SPARQL avancées pour comparer la présence numérique de Monet, Renoir, Pissarro et Degas. Nous analyserons les propriétés les mieux documentées et identifierons les lacunes à combler.",
+                    sparql: "15+ requêtes incluant analyses temporelles, géographiques et thématiques"
+                },
+                2: {
+                    title: "Musées Français vs Wikidata",
+                    details: "Investigation approfondie croisant les bases Joconde, APIs des musées nationaux et Wikidata pour identifier les chefs-d'œuvre sous-représentés numériquement.",
+                    sparql: "Requêtes de croisement de données et API calls"
+                }
+                // Plus d'articles...
+            };
+            
+            const article = articles[articleNumber];
+            if (article) {
+                alert(`${article.title}\n\n${article.details}\n\nTechnique: ${article.sparql}`);
+            }
+        }
+        
+        function startSeries() {
+            alert("Parfait ! Commençons par l'article sur les Impressionnistes. Je peux te fournir le premier article complet avec toutes les requêtes SPARQL prêtes à utiliser. Veux-tu que je le rédige maintenant ?");
+        }
+        
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.article-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

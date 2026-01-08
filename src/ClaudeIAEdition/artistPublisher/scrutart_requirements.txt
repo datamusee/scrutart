@@ -1,0 +1,44 @@
+# Scrutart Automation - Requirements
+# Installation: pip install -r requirements.txt
+
+# Core Framework
+prefect>=2.14.0
+flask>=2.3.0
+flask-cors>=4.0.0
+flask-socketio>=5.3.0
+
+# Data Processing
+requests>=2.31.0
+pydantic>=2.4.0
+rdflib>=7.0.0
+
+# Database
+# sqlite3  # Built-in with Python
+
+# Web & API
+python-socketio>=5.9.0
+eventlet>=0.33.0
+
+# WordPress Integration
+python-wordpress-xmlrpc>=2.3
+
+# Data & Utilities
+python-dateutil>=2.8.0
+pytz>=2023.3
+asyncio  # Built-in with Python 3.7+
+
+# Monitoring & Logging
+structlog>=23.1.0
+
+# Development Dependencies (optional)
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+black>=23.7.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Production Dependencies (optional)
+gunicorn>=21.2.0
+psycopg2-binary>=2.9.0  # For PostgreSQL in production
+redis>=4.6.0  # For Redis caching
