@@ -1,0 +1,512 @@
+[
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+    "artist": "Leonardo da Vinci",
+    "style": "Renaissance",
+    "period": "1503",
+    "celebrity_level": 1.0,
+    "ref_tags": ["portrait", "femme", "sourire", "sfumato"],
+    "genre": {
+      "validated": ["portrait"],
+      "clip": {
+        "predicted": ["portrait"]
+      },
+      "blip": {
+        "predicted": ["portrait"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    "artist": "Vincent van Gogh",
+    "style": "Post-impressionnisme",
+    "period": "1889",
+    "celebrity_level": 0.98,
+    "ref_tags": ["nuit", "étoiles", "village", "cypres"],
+    "genre": {
+      "validated": ["paysage"],
+      "clip": {
+        "predicted": ["paysage"]
+      },
+      "blip": {
+        "predicted": ["paysage", "ville"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/800px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
+    "artist": "Edvard Munch",
+    "style": "Expressionnisme",
+    "period": "1893",
+    "celebrity_level": 0.96,
+    "ref_tags": ["cri", "angoisse", "pont", "existentiel"],
+    "genre": {
+      "validated": ["expressionnisme"],
+      "clip": {
+        "predicted": ["expressionnisme", "portrait"]
+      },
+      "blip": {
+        "predicted": ["art moderne", "émotionnel"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/800px-1665_Girl_with_a_Pearl_Earring.jpg",
+    "artist": "Johannes Vermeer",
+    "style": "Baroque",
+    "period": "1665",
+    "celebrity_level": 0.92,
+    "ref_tags": ["portrait", "perle", "turban", "regard"],
+    "genre": {
+      "validated": ["portrait"],
+      "clip": {
+        "predicted": ["portrait"]
+      },
+      "blip": {
+        "predicted": ["portrait", "femme"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/PicassoGuernica.jpg/1280px-PicassoGuernica.jpg",
+    "artist": "Pablo Picasso",
+    "style": "Cubisme",
+    "period": "1937",
+    "celebrity_level": 0.95,
+    "ref_tags": ["guerre", "taureau", "cheval", "politique"],
+    "genre": {
+      "validated": ["art historique"],
+      "clip": {
+        "predicted": ["art abstrait", "expressionnisme"]
+      },
+      "blip": {
+        "predicted": ["peinture moderne", "scène de bataille"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/1280px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg",
+    "artist": "Michel-Ange",
+    "style": "Renaissance",
+    "period": "1512",
+    "celebrity_level": 0.94,
+    "ref_tags": ["fresque", "création", "dieu", "adam"],
+    "genre": {
+      "validated": ["art religieux"],
+      "clip": {
+        "predicted": ["art religieux", "figure humaine"]
+      },
+      "blip": {
+        "predicted": ["fresque", "art classique"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1280px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+    "artist": "Sandro Botticelli",
+    "style": "Renaissance",
+    "period": "1485",
+    "celebrity_level": 0.91,
+    "ref_tags": ["vénus", "mythologie", "coquillage", "déesse"],
+    "genre": {
+      "validated": ["mythologique"],
+      "clip": {
+        "predicted": ["mythologique", "figure humaine"]
+      },
+      "blip": {
+        "predicted": ["art classique", "nu artistique"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/1280px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg",
+    "artist": "Diego Velázquez",
+    "style": "Baroque",
+    "period": "1656",
+    "celebrity_level": 0.89,
+    "ref_tags": ["infante", "cour", "miroir", "perspective"],
+    "genre": {
+      "validated": ["portrait de cour"],
+      "clip": {
+        "predicted": ["portrait", "scène de genre"]
+      },
+      "blip": {
+        "predicted": ["groupe", "intérieur royal"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Hokusai_Great_Wave.jpg/1280px-Hokusai_Great_Wave.jpg",
+    "artist": "Katsushika Hokusai",
+    "style": "Art japonais",
+    "period": "1831",
+    "celebrity_level": 0.93,
+    "ref_tags": ["vague", "mont fuji", "ukiyo-e", "océan"],
+    "genre": {
+      "validated": ["paysage"],
+      "clip": {
+        "predicted": ["paysage", "estampe"]
+      },
+      "blip": {
+        "predicted": ["art japonais", "marine"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/American_Gothic.jpg/800px-American_Gothic.jpg",
+    "artist": "Grant Wood",
+    "style": "Régionalisme américain",
+    "period": "1930",
+    "celebrity_level": 0.87,
+    "ref_tags": ["fermier", "américain", "fourche", "maison"],
+    "genre": {
+      "validated": ["portrait"],
+      "clip": {
+        "predicted": ["portrait", "réalisme"]
+      },
+      "blip": {
+        "predicted": ["couple", "scène rurale"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/8/88/Claude_Monet_-_Nymph%C3%A9as_%281905%29.jpg",
+    "artist": "Claude Monet",
+    "style": "Impressionnisme",
+    "period": "1905",
+    "celebrity_level": 0.85,
+    "ref_tags": ["eau", "fleurs", "nymphéas", "bassin"],
+    "genre": {
+      "validated": ["paysage"],
+      "clip": {
+        "predicted": ["paysage"]
+      },
+      "blip": {
+        "predicted": ["nature morte"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg/800px-Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg",
+    "artist": "Caspar David Friedrich",
+    "style": "Romantisme",
+    "period": "1818",
+    "celebrity_level": 0.83,
+    "ref_tags": ["brouillard", "montagne", "voyageur", "sublime"],
+    "genre": {
+      "validated": ["paysage"],
+      "clip": {
+        "predicted": ["paysage", "romantisme"]
+      },
+      "blip": {
+        "predicted": ["nature", "homme dans paysage"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Georges_Seurat_-_A_Sunday_on_La_Grande_Jatte_--_1884_-_Google_Art_Project.jpg/1280px-Georges_Seurat_-_A_Sunday_on_La_Grande_Jatte_--_1884_-_Google_Art_Project.jpg",
+    "artist": "Georges Seurat",
+    "style": "Pointillisme",
+    "period": "1886",
+    "celebrity_level": 0.82,
+    "ref_tags": ["dimanche", "jatte", "pointillisme", "bourgeois"],
+    "genre": {
+      "validated": ["scène de genre"],
+      "clip": {
+        "predicted": ["scène de genre", "paysage"]
+      },
+      "blip": {
+        "predicted": ["parc", "loisirs bourgeois"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Van_Gogh_-_The_Potato_Eaters.jpg/1280px-Van_Gogh_-_The_Potato_Eaters.jpg",
+    "artist": "Vincent van Gogh",
+    "style": "Post-impressionnisme",
+    "period": "1885",
+    "celebrity_level": 0.84,
+    "ref_tags": ["mangeurs", "pommes de terre", "paysans", "lampe"],
+    "genre": {
+      "validated": ["scène de genre"],
+      "clip": {
+        "predicted": ["scène de genre", "intérieur"]
+      },
+      "blip": {
+        "predicted": ["repas familial", "paysans"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Van_Gogh_-_Sunflowers_%28National_Gallery%2C_London%29.jpg/800px-Van_Gogh_-_Sunflowers_%28National_Gallery%2C_London%29.jpg",
+    "artist": "Vincent van Gogh",
+    "style": "Post-impressionnisme",
+    "period": "1888",
+    "celebrity_level": 0.88,
+    "ref_tags": ["tournesols", "jaune", "vase", "fleurs"],
+    "genre": {
+      "validated": ["nature morte"],
+      "clip": {
+        "predicted": ["nature morte", "fleurs"]
+      },
+      "blip": {
+        "predicted": ["tournesols", "bouquet"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Klimt_-_The_Kiss.jpg/800px-Klimt_-_The_Kiss.jpg",
+    "artist": "Gustav Klimt",
+    "style": "Art nouveau",
+    "period": "1908",
+    "celebrity_level": 0.90,
+    "ref_tags": ["baiser", "or", "couple", "décoratif"],
+    "genre": {
+      "validated": ["art décoratif"],
+      "clip": {
+        "predicted": ["portrait", "art décoratif"]
+      },
+      "blip": {
+        "predicted": ["couple", "motifs dorés"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Renoir_-_Dance_at_Bougival.jpg/800px-Renoir_-_Dance_at_Bougival.jpg",
+    "artist": "Pierre-Auguste Renoir",
+    "style": "Impressionnisme",
+    "period": "1883",
+    "celebrity_level": 0.79,
+    "ref_tags": ["danse", "bougival", "couple", "joie"],
+    "genre": {
+      "validated": ["scène de genre"],
+      "clip": {
+        "predicted": ["portrait", "danse"]
+      },
+      "blip": {
+        "predicted": ["couple dansant", "fête"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Edward_Hopper_-_Nighthawks_%281942%29.jpg/1280px-Edward_Hopper_-_Nighthawks_%281942%29.jpg",
+    "artist": "Edward Hopper",
+    "style": "Réalisme américain",
+    "period": "1942",
+    "celebrity_level": 0.86,
+    "ref_tags": ["diner", "nuit", "solitude", "urbain"],
+    "genre": {
+      "validated": ["scène urbaine"],
+      "clip": {
+        "predicted": ["scène urbaine", "intérieur"]
+      },
+      "blip": {
+        "predicted": ["restaurant", "ville la nuit"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Pollock_Number_1.jpg/1280px-Pollock_Number_1.jpg",
+    "artist": "Jackson Pollock",
+    "style": "Expressionnisme abstrait",
+    "period": "1948",
+    "celebrity_level": 0.78,
+    "ref_tags": ["dripping", "gestuel", "abstraction", "action"],
+    "genre": {
+      "validated": ["action painting"],
+      "clip": {
+        "predicted": ["art abstrait", "gestuel"]
+      },
+      "blip": {
+        "predicted": ["éclaboussures", "peinture abstraite"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Warhol_Marilyn.jpg/800px-Warhol_Marilyn.jpg",
+    "artist": "Andy Warhol",
+    "style": "Pop Art",
+    "period": "1962",
+    "celebrity_level": 0.81,
+    "ref_tags": ["marilyn", "sérigraphie", "pop", "célébrité"],
+    "genre": {
+      "validated": ["pop art"],
+      "clip": {
+        "predicted": ["pop art", "portrait"]
+      },
+      "blip": {
+        "predicted": ["marilyn monroe", "couleurs vives"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Salvador_Dali_MOMA.jpg/800px-Salvador_Dali_MOMA.jpg",
+    "artist": "Salvador Dalí",
+    "style": "Surréalisme",
+    "period": "1931",
+    "celebrity_level": 0.92,
+    "ref_tags": ["montres", "molles", "temps", "rêve"],
+    "genre": {
+      "validated": ["surréalisme"],
+      "clip": {
+        "predicted": ["surréalisme", "fantastique"]
+      },
+      "blip": {
+        "predicted": ["montres molles", "paysage onirique"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Goya_Saturn_Devouring_His_Son.jpg/800px-Goya_Saturn_Devouring_His_Son.jpg",
+    "artist": "Francisco Goya",
+    "style": "Romantisme noir",
+    "period": "1823",
+    "celebrity_level": 0.76,
+    "ref_tags": ["saturne", "fils", "cannibalisme", "sombre"],
+    "genre": {
+      "validated": ["peinture noire"],
+      "clip": {
+        "predicted": ["mythologique", "sombre"]
+      },
+      "blip": {
+        "predicted": ["créature", "violence"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/David_Oath_of_the_Horatii.jpg/1280px-David_Oath_of_the_Horatii.jpg",
+    "artist": "Jacques-Louis David",
+    "style": "Néoclassicisme",
+    "period": "1784",
+    "celebrity_level": 0.77,
+    "ref_tags": ["horace", "serment", "héroïsme", "antique"],
+    "genre": {
+      "validated": ["peinture d'histoire"],
+      "clip": {
+        "predicted": ["art historique", "antique"]
+      },
+      "blip": {
+        "predicted": ["soldats romains", "serment"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rothko_Red_Study.jpg/800px-Rothko_Red_Study.jpg",
+    "artist": "Mark Rothko",
+    "style": "Expressionnisme abstrait",
+    "period": "1958",
+    "celebrity_level": 0.74,
+    "ref_tags": ["rouge", "champs colorés", "méditation", "spirituel"],
+    "genre": {
+      "validated": ["art abstrait"],
+      "clip": {
+        "predicted": ["art abstrait", "couleur"]
+      },
+      "blip": {
+        "predicted": ["rectangles colorés", "minimalisme"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Kandinsky_Composition_VII.jpg/1280px-Kandinsky_Composition_VII.jpg",
+    "artist": "Wassily Kandinsky",
+    "style": "Art abstrait",
+    "period": "1913",
+    "celebrity_level": 0.73,
+    "ref_tags": ["composition", "abstrait", "couleurs", "formes"],
+    "genre": {
+      "validated": ["art abstrait"],
+      "clip": {
+        "predicted": ["art abstrait", "moderne"]
+      },
+      "blip": {
+        "predicted": ["couleurs vives", "formes"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Bosch_The_Garden_of_Earthly_Delights.jpg/1280px-Bosch_The_Garden_of_Earthly_Delights.jpg",
+    "artist": "Jérôme Bosch",
+    "style": "Primitifs flamands",
+    "period": "1515",
+    "celebrity_level": 0.80,
+    "ref_tags": ["jardin", "délices", "fantastique", "triptyque"],
+    "genre": {
+      "validated": ["art fantastique"],
+      "clip": {
+        "predicted": ["art fantastique", "religieux"]
+      },
+      "blip": {
+        "predicted": ["scène complexe", "créatures"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Magritte_TheTreacheryOfImages.jpg/1280px-Magritte_TheTreacheryOfImages.jpg",
+    "artist": "René Magritte",
+    "style": "Surréalisme",
+    "period": "1929",
+    "celebrity_level": 0.85,
+    "ref_tags": ["pipe", "trahison", "images", "texte"],
+    "genre": {
+      "validated": ["art conceptuel"],
+      "clip": {
+        "predicted": ["surréalisme", "objet"]
+      },
+      "blip": {
+        "predicted": ["pipe", "texte français"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Fragonard_-_The_Swing.jpg/800px-Fragonard_-_The_Swing.jpg",
+    "artist": "Jean-Honoré Fragonard",
+    "style": "Rococo",
+    "period": "1767",
+    "celebrity_level": 0.71,
+    "ref_tags": ["balançoire", "galanterie", "rococo", "jardin"],
+    "genre": {
+      "validated": ["scène galante"],
+      "clip": {
+        "predicted": ["scène de genre", "jardin"]
+      },
+      "blip": {
+        "predicted": ["femme", "balançoire"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Turner_-_Rain%2C_Steam_and_Speed.jpg/1280px-Turner_-_Rain%2C_Steam_and_Speed.jpg",
+    "artist": "J.M.W. Turner",
+    "style": "Romantisme",
+    "period": "1844",
+    "celebrity_level": 0.69,
+    "ref_tags": ["train", "vapeur", "vitesse", "pluie"],
+    "genre": {
+      "validated": ["paysage industriel"],
+      "clip": {
+        "predicted": ["paysage", "transport"]
+      },
+      "blip": {
+        "predicted": ["train", "météo"]
+      }
+    }
+  },
+  {
+    "filename": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Manet_-_Bar_at_the_Folies-Berg%C3%A8re.jpg/1280px-Manet_-_Bar_at_the_Folies-Berg%C3%A8re.jpg",
+    "artist": "Édouard Manet",
+    "style": "Impressionnisme",
+    "period": "1882",
+    "celebrity_level": 0.75,
+    "ref_tags": ["bar", "folies bergère", "serveuse", "miroir"],
+    "genre": {
+      "validated": ["scène de genre"],
+      "clip": {
+        "predicted": ["portrait", "intérieur"]
+      },
+      "blip": {
+        "predicted": ["bar", "femme au travail"]
+      }
+    }
+  }
+]

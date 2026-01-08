@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard complet – Synthèse et Heatmaps</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<style>
+body{font-family:sans-serif;}
+.container{display:flex; flex-wrap:wrap;}
+.card{border:1px solid #ccc;margin:5px;padding:5px;flex:1 1 350px; min-width:350px;}
+canvas{max-width:100%;height:300px;}
+</style>
+</head>
+<body>
+<h1>Dashboard complet – Synthèse & Heatmaps</h1>
+
+<div class="container">
+
+  <!-- Filtres -->
+  <div class="card">
+    <h2>Filtres</h2>
+    Style: <select id="filterStyle"><option value="">Tous</option></select><br>
+    Genre: <select id="filterGenre"><option value="">Tous</option></select><br>
+    Année: <input type="number" id="yearStart" placeholder="Début"> -
+           <input type="number" id="yearEnd" placeholder="Fin"><br>
+    <button id="applyFilters">Appliquer</button>
+    <button id="exportJSON">Exporter JSON</button>
+  </div>
+
+  <!-- Synthèse par catégorie -->
+  <div class="card">
+    <h2>Synthèse par modèle et catégorie</h2>
+    <canvas id="syntheseChart"></canvas>
+  </div>
+
+  <!-- Heatmaps classiques -->
+  <div class="card">
+    <h2>Heatmaps positives</h2>
+    <canvas id="heatmapPos"></canvas>
+    <h2>Heatmaps négatives</h2>
+    <canvas id="heatmapNeg"></canvas>
+  </div>
+
+  <!-- Heatmap matricielle -->
+  <div class="card">
+    <h2>Heatmap matricielle modèle × élément</h2>
+    <div id="heatmapMatrixDiv" style="width:100%;height:500px;"></div>
+  </div>
+
+  <!-- Ajout peinture -->
+  <div class="card">
+    <h2>Ajouter / compléter peinture</h2>
+    <iframe src="/add_painting" width="100%" height="400px" style="border:none;"></iframe>
+  </div>
+
+</div>
+
+<script>
+let dashboardData = {};
+
+async function loadDashboard(){
+    let resp = await fetch("/api/dashboard_data");
+    dashboardData = await resp.json();
+
+    // Filtres dynamiques
+    let styles = [...new Set(dashboardData.history.flatMap(r=>r.style.validated))];
+    styles.forEach(s=>$("#filterStyle").append(`<option>${s}</option>`));
+    let genres = [...new Set(dashboardData.history.flatMap(r=>r.genre.validated))];
+    genres.forEach(g=>$("#filterGenre").append(`<option>${g}</option>`));
+
+    renderCharts();
+    renderMatrix();
+}
+
+// --- Synthèse & Heatmaps classiques ---
+function renderCharts(filters={}) {
+    // Synthèse
+    const syntheseData = dashboardData.synthese;
+    const labels = Object.keys(syntheseData.tags);
+    const ctxSynth = document.getElementById("syntheseChart").getContext("2d");
+    if(window.synthChart) window.synthChart.destroy();
+    window.synthChart = new Chart(ctxSynth,{
+        type:'bar',
+        data:{
+            labels:labels,
+            datasets:[
+                {label:'Tags',data:Object.values(syntheseData.tags),backgroundColor:'green'},
+                {label:'Genres',data:Object.values(syntheseData.genres),backgroundColor:'orange'},
+                {label:'Styles',data:Object.values(syntheseData.styles),backgroundColor:'blue'}
+            ]
+        },
+        options:{responsive:true,maintainAspectRatio:false}
+    });
+
+    // Heatmaps positives
+    const heatPos = dashboardData.heatmaps;
+    const posData = heatPos.tags.positive.concat(heatPos.genres.positive).concat(heatPos.styles.positive);
+    const ctxPos = document.getElementById("heatmapPos").getContext("2d");
+    if(window.heatPosChart) window.heatPosChart.destroy();
+    window.heatPosChart = new Chart(ctxPos,{
+        type:'bar',
+        data:{
+            labels:posData.map(d=>d.y),
+            datasets:[{label:'Heatmap Positive',data:posData.map(d=>d.v),backgroundColor:'green'}]
+        },
+        options:{responsive:true,maintainAspectRatio:false}
+    });
+
+    // Heatmaps négatives
+    const negData = heatPos.tags.negative.concat(heatPos.genres.negative).concat(heatPos.styles.negative);
+    const ctxNeg = document.getElementById("heatmapNeg").getContext("2d");
+    if(window.heatNegChart) window.heatNegChart.destroy();
+    window.heatNegChart = new Chart(ctxNeg,{
+        type:'bar',
+        data:{
+            labels:negData.map(d=>d.y),
+            datasets:[{label:'Heatmap Negative',data:negData.map(d=>d.v),backgroundColor:'red'}]
+        },
+        options:{responsive:true,maintainAspectRatio:false}
+    });
+}
+
+// --- Heatmap matricielle modèle × élément ---
+function renderMatrix(filters={}) {
+    const heatmaps = dashboardData.heatmaps;
+    const models = dashboardData.models;
+    const elements = dashboardData.elements;
+
+    const z = elements.map(e=>{
+        return models.map(m=>{
+            let foundPos = false;
+            let foundNeg = false;
+            ["tags","genres","styles"].forEach(cat=>{
+                heatmaps[cat].positive.forEach(d=>{if(d.x==m && d.y==e) foundPos=true;});
+                heatmaps[cat].negative.forEach(d=>{if(d.x==m && d.y==e) foundNeg=true;});
+            });
+            if(foundPos) return 1;
+            if(foundNeg) return 0;
+            return null;
+        });
+    });
+
+    Plotly.newPlot("heatmapMatrixDiv",[{
+        z:z,
+        x:models,
+        y:elements,
+        type:'heatmap',
+        colorscale:[[0,'red'],[1,'green']],
+        showscale:true,
+        hoverongaps:true
+    }],{title:"Heatmap matricielle modèle × élément",margin:{t:50,b:150}});
+}
+
+// --- Boutons ---
+$("#applyFilters").click(()=>{
+    let style = $("#filterStyle").val() || null;
+    let genre = $("#filterGenre").val() || null;
+    let start = parseInt($("#yearStart").val()) || null;
+    let end = parseInt($("#yearEnd").val()) || null;
+    let year_range = (start && end) ? [start,end] : null;
+    renderCharts({style,genre,year_range});
+    renderMatrix({style,genre,year_range});
+});
+
+$("#exportJSON").click(()=>{
+    let blob = new Blob([JSON.stringify(dashboardData,null,2)],{type:"application/json"});
+    let url = URL.createObjectURL(blob);
+    let a = document.createElement("a");
+    a.href=url; a.download="dashboard_export.json"; a.click();
+});
+
+loadDashboard();
+</script>
+</body>
+</html>

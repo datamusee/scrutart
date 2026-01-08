@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Ajouter peinture</title></head>
+<body>
+<h3>Ajouter / compléter une peinture</h3>
+<form id="addForm">
+  URL image: <input type="text" id="filename"><br>
+  Titre: <input type="text" id="title"><br>
+  Artiste: <input type="text" id="artist"><br>
+  Tags (virgule): <input type="text" id="tags"><br>
+  Genres: <input type="text" id="genres"><br>
+  Styles: <input type="text" id="styles"><br>
+  <button type="submit">Envoyer</button>
+</form>
+<div id="status"></div>
+
+<script>
+$("#addForm").submit(async function(e){
+    e.preventDefault();
+    const data = {
+        filename: $("#filename").val(),
+        title: $("#title").val(),
+        artist: $("#artist").val(),
+        tags: $("#tags").val().split(",").map(s=>s.trim()),
+        genres: $("#genres").val().split(",").map(s=>s.trim()),
+        styles: $("#styles").val().split(",").map(s=>s.trim())
+    };
+    const resp = await fetch("/add_painting",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+    const result = await resp.json();
+    $("#status").text(result.message);
+});
+</script>
+</body>
+</html>

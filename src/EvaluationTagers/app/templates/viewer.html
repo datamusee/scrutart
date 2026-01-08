@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalogue Peintures</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; }
+    img { max-width: 80%; max-height: 500px; border: 1px solid #ccc; margin: 20px 0; }
+    .tags { margin: 10px 0; }
+    .tag { display:inline-block; padding:4px 8px; margin:2px; border-radius:8px; color:white; }
+    .tag-exact { background:#4CAF50; }
+    .tag-related { background:#FF9800; }
+    .tag-none { background:#F44336; }
+    .tag-ref { background:#2196F3; }
+    .nav { margin:20px; }
+    input[type=text] { padding:6px; }
+    button { padding:8px 12px; margin:4px; }
+    .validate { margin-left: 8px; font-size:12px; }
+  </style>
+</head>
+<body>
+  <h2>{{ filename }}</h2>
+  <div>
+    <img src="{{ img_url }}" alt="Image">
+    <p><strong>Peintre :</strong> {{ artist }}</p>
+  </div>
+
+  <div class="tags">
+    <h3>Tags de référence</h3>
+    {% for tag in ref_tags %}
+      <span class="tag tag-ref">{{ tag }}</span>
+    {% endfor %}
+  </div>
+
+  <div>
+    <h3>Prédictions</h3>
+    {% for model, tags in models.items() %}
+      <h4>{{ model }}</h4>
+      <div class="tags">
+      {% for tag, rel in tags %}
+        <span class="tag tag-{{ rel }}">{{ tag }}</span>
+        <button class="validate" onclick="validateTag('{{ filename }}', '{{ model }}', '{{ tag }}', 'correct')">✔</button>
+        <button class="validate" onclick="validateTag('{{ filename }}', '{{ model }}', '{{ tag }}', 'incorrect')">✘</button>
+      {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="nav">
+    <form method="get">
+      <input type="hidden" name="idx" value="{{ idx - 1 }}">
+      <input type="hidden" name="q" value="{{ query }}">
+      <button {% if idx <= 0 %}disabled{% endif %}>← Précédent</button>
+    </form>
+    <form method="get" style="display:inline;">
+      <input type="hidden" name="idx" value="{{ idx + 1 }}">
+      <input type="hidden" name="q" value="{{ query }}">
+      <button {% if idx >= total - 1 %}disabled{% endif %}>Suivant →</button>
+    </form>
+  </div>
+
+  <div class="search">
+    <form method="get">
+      <input type="text" name="q" placeholder="Rechercher par titre..." value="{{ query }}">
+      <button>Rechercher</button>
+    </form>
+  </div>
+
+  <script>
+    async function validateTag(filename, model, tag, validation) {
+      await fetch("/validate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ filename, model, tag, validation })
+      });
+      alert("Annotation enregistrée : " + model + " → " + tag + " = " + validation);
+    }
+  </script>
+</body>
+</html>
