@@ -1,0 +1,552 @@
+wd:Q28064630 rdfs:label """Cercles simultanés"""@fr.
+wd:Q28064630 wdt:P31 wd:wd:Q838948 .
+wd:Q28064630 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q28064630 wdt:P18 "None".
+wd:Q28064630 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28064630 pgdc:piwigo_image "13343".
+wd:Q28064630 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q28065502 rdfs:label """Nature morte au perroquet"""@fr.
+wd:Q28065502 wdt:P31 wd:wd:Q838948 .
+wd:Q28065502 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q28065502 wdt:P18 "None".
+wd:Q28065502 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28065502 pgdc:piwigo_image "8690".
+wd:Q28065502 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q28086209 rdfs:label """La Tour Eiffel"""@fr.
+wd:Q28086209 wdt:P31 wd:wd:Q838948 .
+wd:Q28086209 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q28086209 wdt:P18 "None".
+wd:Q28086209 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28086209 pgdc:piwigo_image "5835".
+wd:Q28086209 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q28073508 rdfs:label """Rythme n°2, décoration pour le Salon des Tuileries"""@fr.
+wd:Q28073508 wdt:P31 wd:wd:Q838948 .
+wd:Q28073508 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q28073508 wdt:P18 "None".
+wd:Q28073508 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28073508 pgdc:piwigo_image "13344".
+wd:Q28073508 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q28073513 rdfs:label """Rythme n°3, décoration pour le Salon des Tuileries"""@fr.
+wd:Q28073513 wdt:P31 wd:wd:Q838948 .
+wd:Q28073513 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q28073513 wdt:P18 "None".
+wd:Q28073513 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28073513 pgdc:piwigo_image "13345".
+wd:Q28073513 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q28073486 rdfs:label """Paysage aux vaches"""@fr.
+wd:Q28073486 wdt:P31 wd:wd:Q838948 .
+wd:Q28073486 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q28073486 wdt:P18 "None".
+wd:Q28073486 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28073486 pgdc:piwigo_image "8414".
+wd:Q28073486 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q28064689 rdfs:label """La Fenêtre"""@fr.
+wd:Q28064689 wdt:P31 wd:wd:Q838948 .
+wd:Q28064689 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q28064689 wdt:P18 "None".
+wd:Q28064689 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28064689 pgdc:piwigo_image "13346".
+wd:Q28064689 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q28073494 rdfs:label """Symphonie colorée"""@fr.
+wd:Q28073494 wdt:P31 wd:wd:Q838948 .
+wd:Q28073494 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q28073494 wdt:P18 "None".
+wd:Q28073494 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28073494 pgdc:piwigo_image "8612".
+wd:Q28073494 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q19018520 rdfs:label """La tour aux rideaux"""@fr.
+wd:Q19018520 wdt:P31 wd:wd:Q838948 .
+wd:Q19018520 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q19018520 wdt:P18 "None".
+wd:Q19018520 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19018520 pgdc:piwigo_image "5945".
+wd:Q19018520 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q19861805 rdfs:label """Autoportrait"""@fr.
+wd:Q19861805 wdt:P31 wd:wd:Q838948 .
+wd:Q19861805 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q19861805 wdt:P18 "None".
+wd:Q19861805 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861805 pgdc:piwigo_image "5793".
+wd:Q19861805 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q19861791 rdfs:label """Rythme"""@fr.
+wd:Q19861791 wdt:P31 wd:wd:Q838948 .
+wd:Q19861791 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q19861791 wdt:P18 "None".
+wd:Q19861791 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861791 pgdc:piwigo_image "13347".
+wd:Q19861791 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q18927291 rdfs:label """L'équipe de Cardiff"""@fr.
+wd:Q18927291 wdt:P31 wd:wd:Q838948 .
+wd:Q18927291 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q18927291 wdt:P18 "None".
+wd:Q18927291 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18927291 pgdc:piwigo_image "13348".
+wd:Q18927291 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q19861807 rdfs:label """Les Fenêtres simultanées sur la ville. 1re partie, 2e motif, 1re réplique"""@fr.
+wd:Q19861807 wdt:P31 wd:wd:Q838948 .
+wd:Q19861807 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q19861807 wdt:P18 "None".
+wd:Q19861807 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861807 pgdc:piwigo_image "5946".
+wd:Q19861807 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q19861759 rdfs:label """Rythme sans fin"""@fr.
+wd:Q19861759 wdt:P31 wd:wd:Q838948 .
+wd:Q19861759 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q19861759 wdt:P18 "None".
+wd:Q19861759 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861759 pgdc:piwigo_image "13349".
+wd:Q19861759 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q18927491 rdfs:label """Rythme n°1, décoration pour le Salon des Tuileries"""@fr.
+wd:Q18927491 wdt:P31 wd:wd:Q838948 .
+wd:Q18927491 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q18927491 wdt:P18 "None".
+wd:Q18927491 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18927491 pgdc:piwigo_image "13350".
+wd:Q18927491 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q19861758 rdfs:label """Fenêtres ouvertes simultanément (1ère partie 3ème motif)"""@fr.
+wd:Q19861758 wdt:P31 wd:wd:Q838948 .
+wd:Q19861758 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q19861758 wdt:P18 "None".
+wd:Q19861758 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861758 pgdc:piwigo_image "13351".
+wd:Q19861758 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q3030602 rdfs:label """Disque simultané"""@fr.
+wd:Q3030602 wdt:P31 wd:wd:Q838948 .
+wd:Q3030602 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q3030602 wdt:P18 "None".
+wd:Q3030602 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3030602 pgdc:piwigo_image "13352".
+wd:Q3030602 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q19858526 rdfs:label """Dans le jardin"""@fr.
+wd:Q19858526 wdt:P31 wd:wd:Q838948 .
+wd:Q19858526 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q19858526 wdt:P18 "None".
+wd:Q19858526 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19858526 pgdc:piwigo_image "13353".
+wd:Q19858526 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q18938342 rdfs:label """Paysage au Disque"""@fr.
+wd:Q18938342 wdt:P31 wd:wd:Q838948 .
+wd:Q18938342 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q18938342 wdt:P18 "None".
+wd:Q18938342 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18938342 pgdc:piwigo_image "8127".
+wd:Q18938342 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q19868511 rdfs:label """Formes circulaires"""@fr.
+wd:Q19868511 wdt:P31 wd:wd:Q838948 .
+wd:Q19868511 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q19868511 wdt:P18 "None".
+wd:Q19868511 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19868511 pgdc:piwigo_image "13354".
+wd:Q19868511 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q19861769 rdfs:label """Rythmes"""@fr.
+wd:Q19861769 wdt:P31 wd:wd:Q838948 .
+wd:Q19861769 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q19861769 wdt:P18 "None".
+wd:Q19861769 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861769 pgdc:piwigo_image "13355".
+wd:Q19861769 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q18927486 rdfs:label """Tour Eiffel"""@fr.
+wd:Q18927486 wdt:P31 wd:wd:Q838948 .
+wd:Q18927486 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q18927486 wdt:P18 "None".
+wd:Q18927486 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18927486 pgdc:piwigo_image "13356".
+wd:Q18927486 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q18927481 rdfs:label """Nu à la coiffeuse"""@fr.
+wd:Q18927481 wdt:P31 wd:wd:Q838948 .
+wd:Q18927481 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q18927481 wdt:P18 "None".
+wd:Q18927481 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18927481 pgdc:piwigo_image "13357".
+wd:Q18927481 pgdc:piwigo_gallery kgdc:gal511.
+wd:Q19861796 rdfs:label """Portrait de Wilhelm Uhde"""@fr.
+wd:Q19861796 wdt:P31 wd:wd:Q838948 .
+wd:Q19861796 wdt:P170 wd:Q33978.
+wd:Q33978 rdfs:label """Robert Delaunay"""@fr.
+wd:Q33978 wdt:P31 wd:Q3391743 .
+wd:Q19861796 wdt:P18 "None".
+wd:Q19861796 pgdc:sparql kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 .
+kgdc:sparqlA3SQYbksmMxYuQu7M1oyLHTQwaLpl77L4zOvgxpV6F5 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q33978 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861796 pgdc:piwigo_image "439".
+wd:Q19861796 pgdc:piwigo_gallery kgdc:gal511.

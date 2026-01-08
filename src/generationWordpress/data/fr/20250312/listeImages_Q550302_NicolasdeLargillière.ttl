@@ -1,0 +1,990 @@
+wd:Q131579576 rdfs:label """Portrait du planteur"""@fr.
+wd:Q131579576 wdt:P31 wd:Q838948 .
+wd:Q131579576 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q131579576 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%20-%20Portrait%20du%20planteur.jpg".
+wd:Q131579576 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131579576 pgdc:piwigo_image "13382".
+wd:Q131579576 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q115723063 rdfs:label """François-Marie Arouet dit Voltaire"""@fr.
+wd:Q115723063 wdt:P31 wd:Q838948 .
+wd:Q115723063 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q115723063 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%2C%20Fran%C3%A7ois-Marie%20Arouet%20dit%20Voltaire%20adjusted.png".
+wd:Q115723063 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115723063 pgdc:piwigo_image "13383".
+wd:Q115723063 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q115668986 rdfs:label """Portrait du Comte de la Châtre"""@fr.
+wd:Q115668986 wdt:P31 wd:Q838948 .
+wd:Q115668986 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q115668986 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largilli%C3%A8re%20-%20Le%20comte%20de%20la%20Ch%C3%A2tre%2C%20INV5664.jpg".
+wd:Q115668986 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115668986 pgdc:piwigo_image "13384".
+wd:Q115668986 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q123094909 rdfs:label """Portrait de Philippe Néricault Destouches"""@fr.
+wd:Q123094909 wdt:P31 wd:Q838948 .
+wd:Q123094909 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q123094909 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%2C%20Portrait%20de%20Philippe%20N%C3%A9ricault%20Destouches%20%281741%29.jpg".
+wd:Q123094909 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123094909 pgdc:piwigo_image "13385".
+wd:Q123094909 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q116297494 rdfs:label """Portrait d'un gentilhomme inconnu"""@fr.
+wd:Q116297494 wdt:P31 wd:Q838948 .
+wd:Q116297494 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q116297494 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largillierre%20portrait%20de%20gentilhomme.jpg".
+wd:Q116297494 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116297494 pgdc:piwigo_image "13386".
+wd:Q116297494 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q124248127 rdfs:label """Portrait de Fontenelle"""@fr.
+wd:Q124248127 wdt:P31 wd:Q838948 .
+wd:Q124248127 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q124248127 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Fontenelle.jpg".
+wd:Q124248127 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124248127 pgdc:piwigo_image "13387".
+wd:Q124248127 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q124053199 rdfs:label """Portrait de la baronne Le Leu d'Aubilly et de sa fille, Madame de Guinaumont"""@fr.
+wd:Q124053199 wdt:P31 wd:Q838948 .
+wd:Q124053199 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q124053199 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilliere%20-%20Portrait%20of%20Baroness%20Le%20Leu%20d%27Aubilly%20and%20her%20daughter%20Madame%20de%20Guinaumont.png".
+wd:Q124053199 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124053199 pgdc:piwigo_image "13388".
+wd:Q124053199 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q115674809 rdfs:label """Portrait de François-Jules du Vaucel"""@fr.
+wd:Q115674809 wdt:P31 wd:Q838948 .
+wd:Q115674809 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q115674809 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Monsieur%20du%20Vaucel.jpg".
+wd:Q115674809 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115674809 pgdc:piwigo_image "13389".
+wd:Q115674809 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q115676542 rdfs:label """Portrait d'homme"""@fr.
+wd:Q115676542 wdt:P31 wd:Q838948 .
+wd:Q115676542 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q115676542 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largilli%C3%A8re%20-%20Autoportrait%2C%20INV639%3B%20D872-1-12P.jpg".
+wd:Q115676542 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115676542 pgdc:piwigo_image "13390".
+wd:Q115676542 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q123912895 rdfs:label """Portrait de Charles Gobinet"""@fr.
+wd:Q123912895 wdt:P31 wd:Q838948 .
+wd:Q123912895 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q123912895 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Charles%20Gobinet%20attribu%C3%A9%20%C3%A0%20Nicolas%20de%20Largilli%C3%A8re%20mus%C3%A9e%20des%20Beaux-Arts%20de%20Chartres%20Eure-et-Loir%20France.jpg".
+wd:Q123912895 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123912895 pgdc:piwigo_image "13391".
+wd:Q123912895 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q106560630 rdfs:label """Portrait de jeune femme, dite Elisabeth de Beauharnais"""@fr.
+wd:Q106560630 wdt:P31 wd:Q838948 .
+wd:Q106560630 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q106560630 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largillierre%20-%20Elisabeth%20de%20Beauharnais.jpg".
+wd:Q106560630 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106560630 pgdc:piwigo_image "13392".
+wd:Q106560630 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q104445141 rdfs:label """Perdrix rouge dans une niche"""@fr.
+wd:Q104445141 wdt:P31 wd:Q838948 .
+wd:Q104445141 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q104445141 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%20-%20Partridge%20in%20a%20Niche%20-%20WGA12472.jpg".
+wd:Q104445141 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104445141 pgdc:piwigo_image "8759".
+wd:Q104445141 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q96813079 rdfs:label """Portrait de femme en buste."""@fr.
+wd:Q96813079 wdt:P31 wd:Q838948 .
+wd:Q96813079 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q96813079 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%20-%20Portrait%20de%20femme%20en%20buste.jpg".
+wd:Q96813079 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q96813079 pgdc:piwigo_image "7824".
+wd:Q96813079 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q112294903 rdfs:label """La marquise de Noailles et ses enfants"""@fr.
+wd:Q112294903 wdt:P31 wd:Q838948 .
+wd:Q112294903 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q112294903 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Marquise%20of%20Noailles%20and%20her%20Children%20by%20Nicolas%20de%20Largilliere%20circa%201698.jpg".
+wd:Q112294903 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q112294903 pgdc:piwigo_image "13393".
+wd:Q112294903 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q106963231 rdfs:label """Portrait présumé de Charles-Paris d'Orléans duc de Longueville et d'Estouville"""@fr.
+wd:Q106963231 wdt:P31 wd:Q838948 .
+wd:Q106963231 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q106963231 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20pr%C3%A9sum%C3%A9%20de%20Charles-Paris%20d%27Orl%C3%A9ans%20-%20Largilli%C3%A8re%20-%20Mus%C3%A9e%20Cond%C3%A9.jpg".
+wd:Q106963231 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106963231 pgdc:piwigo_image "13394".
+wd:Q106963231 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q104371717 rdfs:label """Portrait d'Anne-Thérèse de Marguenat de Courcelles, marquise de Lambert (1647-1733)"""@fr.
+wd:Q104371717 wdt:P31 wd:Q838948 .
+wd:Q104371717 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q104371717 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largillierre%20-%20Portrait%20d%27Anne-Th%C3%A9r%C3%A8se%20de%20Marguenat%20de%20Courcelles%2C%20marquise%20de%20Lambert%20%281647-1733%29%20-%20P2516%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104371717 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104371717 pgdc:piwigo_image "13395".
+wd:Q104371717 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q104370748 rdfs:label """Allégorie des fiançailles de Louis XV avec l'infante Marie-Anne-Victoire d'Espagne"""@fr.
+wd:Q104370748 wdt:P31 wd:Q838948 .
+wd:Q104370748 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q104370748 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largillierre%20-%20All%C3%A9gorie%20des%20fian%C3%A7ailles%20de%20Louis%20XV%20avec%20l%27infante%20Marie-Anne-Victoire%20d%27Espagne%20-%20P2764%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104370748 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104370748 pgdc:piwigo_image "4986".
+wd:Q104370748 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q104370108 rdfs:label """Portrait de Charles Boucher d'Orsay, prévôt des marchands de 1700 à 1708 (fragment)"""@fr.
+wd:Q104370108 wdt:P31 wd:Q838948 .
+wd:Q104370108 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q104370108 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Anonymous%20-%20Portrait%20de%20Charles%20Boucher%20d%27Orsay%2C%20pr%C3%A9v%C3%B4t%20des%20marchands%20de%201700%20%C3%A0%201708%20%28fragment%29%20-%20P207%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104370108 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104370108 pgdc:piwigo_image "13396".
+wd:Q104370108 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q112873823 rdfs:label """Porträt des La Bruyère"""@fr.
+wd:Q112873823 wdt:P31 wd:Q838948 .
+wd:Q112873823 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q112873823 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/230%20Nicolas%20de%20Largilli%C3%A8re%20Portrait%20de%20La%20Bruy%C3%A8re.jpg".
+wd:Q112873823 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q112873823 pgdc:piwigo_image "13397".
+wd:Q112873823 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q97653532 rdfs:label """Portrait présumé de Madame la duchesse de Beaufort"""@fr.
+wd:Q97653532 wdt:P31 wd:Q838948 .
+wd:Q97653532 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q97653532 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largillierre%2C%20Nicolas%20de%20-%20Portrait%20pr%C3%A9sum%C3%A9%20de%20Madame%20la%20duchesse%20de%20Beaufort%20-%20J%2072%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg".
+wd:Q97653532 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q97653532 pgdc:piwigo_image "13398".
+wd:Q97653532 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q104371510 rdfs:label """Portrait d'un échevin parisien Fragment du portrait collectif du Bureau de la Ville de Paris de 1702"""@fr.
+wd:Q104371510 wdt:P31 wd:Q838948 .
+wd:Q104371510 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q104371510 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largillierre%20-%20Portrait%20d%27un%20%C3%A9chevin%20parisien%20Fragment%20du%20portrait%20collectif%20du%20Bureau%20de%20la%20Ville%20de%20Paris%20de%201702%20-%20P2773%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104371510 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104371510 pgdc:piwigo_image "13399".
+wd:Q104371510 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q104370819 rdfs:label """Allégorie des fiançailles de Louis XV avec l'infante Marie-Anne-Victoire d'Espagne (1722)"""@fr.
+wd:Q104370819 wdt:P31 wd:Q838948 .
+wd:Q104370819 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q104370819 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largillierre%20-%20All%C3%A9gorie%20des%20fian%C3%A7ailles%20de%20Louis%20XV%20avec%20l%27infante%20Marie-Anne-Victoire%20d%27Espagne%20%281722%29%20-%20P1324%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104370819 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Fian%C3%A7ailles%20de%20Louis%20XV%20et%20Marie%20Anne%20Victoire%20de%20Bourbon%2C%20Nicolas%20de%20Largilli%C3%A8re%2C%201722%2C%20mus%C3%A9e%20Carnavalet%2C%20Paris.jpg".
+wd:Q104370819 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104370819 pgdc:piwigo_image "4987".
+wd:Q104370819 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q113991609 rdfs:label """Autoportrait"""@fr.
+wd:Q113991609 wdt:P31 wd:Q838948 .
+wd:Q113991609 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q113991609 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largillierre%20autoportrait%201726.jpg".
+wd:Q113991609 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113991609 pgdc:piwigo_image "5746".
+wd:Q113991609 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q112056892 rdfs:label """Portrait de la Princesse de Soubise, fille de Madame de Ventadour"""@fr.
+wd:Q112056892 wdt:P31 wd:Q838948 .
+wd:Q112056892 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q112056892 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Anne%20Genevi%C3%A8ve%20de%20L%C3%A9vis%20par%20Nicolas%20de%20Largilli%C3%A8re.jpg".
+wd:Q112056892 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q112056892 pgdc:piwigo_image "13400".
+wd:Q112056892 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q94700304 rdfs:label """Portrait de Jean Pupil de Craponne"""@fr.
+wd:Q94700304 wdt:P31 wd:Q838948 .
+wd:Q94700304 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q94700304 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largilli%C3%A8re%20-%20Portrait%20de%20Jean%20Pupil%20de%20Craponne%2C%201708.jpg".
+wd:Q94700304 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q94700304 pgdc:piwigo_image "7574".
+wd:Q94700304 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q106963415 rdfs:label """Un chevalier de l'ordre de saint Michel"""@fr.
+wd:Q106963415 wdt:P31 wd:Q838948 .
+wd:Q106963415 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q106963415 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20d%27un%20chevalier%20de%20l%27ordre%20de%20saint%20Michel%20-%20Largilli%C3%A8re%20-%20Mus%C3%A9e%20Cond%C3%A9.jpg".
+wd:Q106963415 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106963415 pgdc:piwigo_image "13401".
+wd:Q106963415 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q104371244 rdfs:label """Portrait de Voltaire (1694-1778) en 1718"""@fr.
+wd:Q104371244 wdt:P31 wd:Q838948 .
+wd:Q104371244 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q104371244 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%20-%20Portrait%20de%20Voltaire%20%281694-1778%29%20en%201718%20-%20P208%20-%20mus%C3%A9e%20Carnavalet%20-%205.jpg".
+wd:Q104371244 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104371244 pgdc:piwigo_image "13402".
+wd:Q104371244 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q104370818 rdfs:label """Portrait de deux échevins en fonction en 1702 : Hugues Desnotz, à droite, et un inconnu, supposé Boutet, à gauche (fragment)"""@fr.
+wd:Q104370818 wdt:P31 wd:Q838948 .
+wd:Q104370818 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q104370818 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largillierre%20-%20Portrait%20de%20deux%20%C3%A9chevins%20en%20fonction%20en%201702%20%2C%20Hugues%20Desnotz%2C%20%C3%A0%20droite%2C%20et%20un%20inconnu%2C%20suppos%C3%A9%20Boutet%2C%20%C3%A0%20gauche%20%28fragment%29%20-%20P209%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104370818 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104370818 pgdc:piwigo_image "13403".
+wd:Q104370818 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q97653534 rdfs:label """Portrait présumé d'Elisabeth Delpech, marquise de Cailly"""@fr.
+wd:Q97653534 wdt:P31 wd:Q838948 .
+wd:Q97653534 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q97653534 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largillierre%2C%20Nicolas%20de%20-%20Portrait%20pr%C3%A9sum%C3%A9%20d%27Elisabeth%20Delpech%2C%20marquise%20de%20Cailly%20-%20J%2073%20-%20Mus%C3%A9e%20Cognacq-Jay.jpg".
+wd:Q97653534 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q97653534 pgdc:piwigo_image "13404".
+wd:Q97653534 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q19304024 rdfs:label """Portrait de famille; dit autrefois le peintre, sa femme et sa fille"""@fr.
+wd:Q19304024 wdt:P31 wd:Q838948 .
+wd:Q19304024 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q19304024 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largilli%C3%A8re%2C%20Nicolas%20de%20-%20The%20Artist%20and%20his%20Family%20-%20c.%201710.jpg".
+wd:Q19304024 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19304024 pgdc:piwigo_image "5815".
+wd:Q19304024 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q19304032 rdfs:label """Composition décorative, avec rideaux, paysage et animaux"""@fr.
+wd:Q19304032 wdt:P31 wd:Q838948 .
+wd:Q19304032 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q19304032 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Composition%20d%C3%A9corative%2C%20avec%20rideaux%2C%20paysage%20et%20animaux%20-%20Nicolas%20de%20Largilli%C3%A8re%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%201979%2059.jpg".
+wd:Q19304032 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19304032 pgdc:piwigo_image "8101".
+wd:Q19304032 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q29849551 rdfs:label """Portrait d'homme en Apollon"""@fr.
+wd:Q29849551 wdt:P31 wd:Q838948 .
+wd:Q29849551 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q29849551 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largilli%C3%A8re%20-%20Portrait%20d%27homme%20en%20Apollon%2C%20MI1083.jpg".
+wd:Q29849551 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29849551 pgdc:piwigo_image "7151".
+wd:Q29849551 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q66107824 rdfs:label """Portrait de femme en Diane"""@fr.
+wd:Q66107824 wdt:P31 wd:Q838948 .
+wd:Q66107824 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q66107824 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%20-%20Portrait%20de%20femme%20en%20Diane.jpg".
+wd:Q66107824 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q66107824 pgdc:piwigo_image "7519".
+wd:Q66107824 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q29951755 rdfs:label """Portrait d'homme, probablement Jacques de Laage (né en 1660), receveur des tailles, secrétaire du roi en 1718"""@fr.
+wd:Q29951755 wdt:P31 wd:Q838948 .
+wd:Q29951755 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q29951755 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%20-%20Portrait%20d%27homme.jpg".
+wd:Q29951755 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29951755 pgdc:piwigo_image "7192".
+wd:Q29951755 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q29848896 rdfs:label """Portrait présumé de Marie Anne Mancini, duchesse de Bouillon (1649-1714)"""@fr.
+wd:Q29848896 wdt:P31 wd:Q838948 .
+wd:Q29848896 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q29848896 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/School%20of%20Largilli%C3%A8re%20-%20Presumed%20portrait%20of%20Marie%20Anne%20Mancini%20-%20Louvre.jpg".
+wd:Q29848896 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29848896 pgdc:piwigo_image "7152".
+wd:Q29848896 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q38519585 rdfs:label """La Belle Strasbourgeoise"""@fr.
+wd:Q38519585 wdt:P31 wd:Q838948 .
+wd:Q38519585 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q38519585 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largillierre%20belle%20Strasbourgeoise%20mba%20mb.jpg".
+wd:Q38519585 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q38519585 pgdc:piwigo_image "7345".
+wd:Q38519585 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q19307655 rdfs:label """Le prévôt des marchands et les échevins de la ville de Paris"""@fr.
+wd:Q19307655 wdt:P31 wd:Q838948 .
+wd:Q19307655 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q19307655 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largilli%C3%A8re%20-%20Le%20pr%C3%A9v%C3%B4t%20des%20marchands%20et%20les%20%C3%A9chevins%20de%20la%20ville%20de%20Paris%2C%201689%2C%20MI1077.jpg".
+wd:Q19307655 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19307655 pgdc:piwigo_image "6581".
+wd:Q19307655 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q29848846 rdfs:label """Portrait d'un magistrat"""@fr.
+wd:Q29848846 wdt:P31 wd:Q838948 .
+wd:Q29848846 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q29848846 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largilli%C3%A8re%20-%20Portrait%20d%27un%20magistrat%2C%20MI1084.jpg".
+wd:Q29848846 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29848846 pgdc:piwigo_image "7272".
+wd:Q29848846 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q19801910 rdfs:label """Études de mains"""@fr.
+wd:Q19801910 wdt:P31 wd:Q838948 .
+wd:Q19801910 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q19801910 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89tudes%20de%20mains%20-%20Nicolas%20de%20Largilli%C3%A8re%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20d%27Alger%20-%20d%C3%A9p%C3%B4t%20Mus%C3%A9e%20du%20Louvre%20Peintures%20DL%201970%2011%20-%20photo%202.jpg".
+wd:Q19801910 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19801910 pgdc:piwigo_image "13405".
+wd:Q19801910 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q64652030 rdfs:label """Portrait de dame en source, dit autrefois La princesse Palatine"""@fr.
+wd:Q64652030 wdt:P31 wd:Q838948 .
+wd:Q64652030 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q64652030 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Princesse%20Palatine%20en%20source%20-%20Nicolas%20de%20Largilli%C3%A8re%20%28Mus%C3%A9e%20Cond%C3%A9%29.jpg".
+wd:Q64652030 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64652030 pgdc:piwigo_image "7501".
+wd:Q64652030 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q20271732 rdfs:label """Autoportrait"""@fr.
+wd:Q20271732 wdt:P31 wd:Q838948 .
+wd:Q20271732 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q20271732 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%20-%20Self-Portrait%20-%201987.57%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20271732 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20271732 pgdc:piwigo_image "5753".
+wd:Q20271732 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q29849574 rdfs:label """Paysage"""@fr.
+wd:Q29849574 wdt:P31 wd:Q838948 .
+wd:Q29849574 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q29849574 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%20-%20Landscape%20-%20WGA12470.jpg".
+wd:Q29849574 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29849574 pgdc:piwigo_image "9917".
+wd:Q29849574 pgdc:piwigo_gallery kgdc:gal484.
+wd:Q29848883 rdfs:label """Portrait de Hugues Desnotz, échevin de la ville de Paris"""@fr.
+wd:Q29848883 wdt:P31 wd:Q838948 .
+wd:Q29848883 wdt:P170 wd:Q550302.
+wd:Q550302 rdfs:label """Nicolas de Largillière"""@fr.
+wd:Q550302 wdt:P31 wd:Q3391743 .
+wd:Q29848883 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Largilli%C3%A8re%20-%20HUGUES%20DESNOTZ%2C%201704%2C%20MI%201081.jpg".
+wd:Q29848883 pgdc:sparql kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac .
+kgdc:sparqlEbD01wjpjFSmsSk1Bs9MERLiEA7wSckwgN1QbvOlYac pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q550302 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29848883 pgdc:piwigo_image "7153".
+wd:Q29848883 pgdc:piwigo_gallery kgdc:gal484.

@@ -1,6 +1,6 @@
 # ce template est une ébauche multilingue avec l'hypothèse qu'au moins le français est défini pour chaque texte
 # ce qui fait qu'un texte non défini das une langue apparaitra en français
-from src.generationWordpress.WPTemplateManager import WPTemplate
+from WPTemplateManager import WPTemplate
 
 class WPGenreTemplate(WPTemplate):
     dataConfig = {

@@ -1,0 +1,92 @@
+wd:Q53806202 rdfs:label """Portrait de Philippe Chabot"""@fr.
+wd:Q53806202 wdt:P31 wd:Q838948 .
+wd:Q53806202 wdt:P170 wd:Q720941.
+wd:Q720941 rdfs:label """Corneille de Lyon"""@fr.
+wd:Q720941 wdt:P31 wd:Q3391743 .
+wd:Q53806202 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Philippe%20Chabot%20-%20Mus%C3%A9e%20Cond%C3%A9%20PE558.jpg".
+wd:Q53806202 pgdc:sparql kgdc:sparqlJzhQGpGsqcbwQLZkxXin5eLLkoYUdVeYzXDPQIwgB7C .
+kgdc:sparqlJzhQGpGsqcbwQLZkxXin5eLLkoYUdVeYzXDPQIwgB7C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q720941 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q53806202 pgdc:piwigo_image "7367".
+wd:Q53806202 pgdc:piwigo_gallery kgdc:gal658.
+wd:Q21523634 rdfs:label """Jean de Bourbon-Vendôme, comte de Soissons et d'Enghien (1528-1557)."""@fr.
+wd:Q21523634 wdt:P31 wd:Q838948 .
+wd:Q21523634 wdt:P170 wd:Q720941.
+wd:Q720941 rdfs:label """Corneille de Lyon"""@fr.
+wd:Q720941 wdt:P31 wd:Q3391743 .
+wd:Q21523634 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Corneille%20de%20Lyon%20-%20Jean%20de%20Bourbon-Vend%C3%B4me%20-%20WGA05236.jpg".
+wd:Q21523634 pgdc:sparql kgdc:sparqlJzhQGpGsqcbwQLZkxXin5eLLkoYUdVeYzXDPQIwgB7C .
+kgdc:sparqlJzhQGpGsqcbwQLZkxXin5eLLkoYUdVeYzXDPQIwgB7C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q720941 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21523634 pgdc:piwigo_image "521".
+wd:Q21523634 pgdc:piwigo_gallery kgdc:gal658.
+wd:Q21503474 rdfs:label """Françoise de Longwy, épouse de l'amiral Philippe Chabot, puis de Jacques de Péruse, seigneur d'Escars."""@fr.
+wd:Q21503474 wdt:P31 wd:Q838948 .
+wd:Q21503474 wdt:P170 wd:Q720941.
+wd:Q720941 rdfs:label """Corneille de Lyon"""@fr.
+wd:Q720941 wdt:P31 wd:Q3391743 .
+wd:Q21503474 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Corneille%20de%20Lyon%20-%20Fran%C3%A7oise%20de%20Longwy%2C%20femme%20de%20Philippe%20Chabot%20%28huile%20sur%20bois%29.jpg".
+wd:Q21503474 pgdc:sparql kgdc:sparqlJzhQGpGsqcbwQLZkxXin5eLLkoYUdVeYzXDPQIwgB7C .
+kgdc:sparqlJzhQGpGsqcbwQLZkxXin5eLLkoYUdVeYzXDPQIwgB7C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q720941 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21503474 pgdc:piwigo_image "670".
+wd:Q21503474 pgdc:piwigo_gallery kgdc:gal658.
+wd:Q19820064 rdfs:label """Portrait présumé de Louise de Rieux, dame d'Ancenis."""@fr.
+wd:Q19820064 wdt:P31 wd:Q838948 .
+wd:Q19820064 wdt:P170 wd:Q720941.
+wd:Q720941 rdfs:label """Corneille de Lyon"""@fr.
+wd:Q720941 wdt:P31 wd:Q3391743 .
+wd:Q19820064 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Corneille%20de%20Lyon%20-%20Portrait%20of%20Louise%20de%20Rieux%20-%20WGA05237.jpg".
+wd:Q19820064 pgdc:sparql kgdc:sparqlJzhQGpGsqcbwQLZkxXin5eLLkoYUdVeYzXDPQIwgB7C .
+kgdc:sparqlJzhQGpGsqcbwQLZkxXin5eLLkoYUdVeYzXDPQIwgB7C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q720941 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19820064 pgdc:piwigo_image "394".
+wd:Q19820064 pgdc:piwigo_gallery kgdc:gal658.

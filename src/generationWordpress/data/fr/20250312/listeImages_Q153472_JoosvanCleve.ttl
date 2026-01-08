@@ -1,0 +1,208 @@
+wd:Q36661471 rdfs:label """Portrait d'homme"""@fr.
+wd:Q36661471 wdt:P31 wd:Q838948 .
+wd:Q36661471 wdt:P170 wd:Q153472.
+wd:Q153472 rdfs:label """Joos van Cleve"""@fr.
+wd:Q153472 wdt:P31 wd:Q3391743 .
+wd:Q36661471 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Scorel%20%281495-1562%29%20-%20M%C3%A4nnliches%20Bildnis%20in%20schwarzem%20Mantel%20mit%20Pelzkragen%20-%201557%20-%20F%C3%BChrermuseum.jpg".
+wd:Q36661471 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%20080L17033%2098RKR.jpg".
+wd:Q36661471 pgdc:sparql kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ .
+kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q153472 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q36661471 pgdc:piwigo_image "7338".
+wd:Q36661471 pgdc:piwigo_gallery kgdc:gal483.
+wd:Q115674695 rdfs:label """Retable de la Déploration du Christ : La Cène."""@fr.
+wd:Q115674695 wdt:P31 wd:Q838948 .
+wd:Q115674695 wdt:P170 wd:Q153472.
+wd:Q153472 rdfs:label """Joos van Cleve"""@fr.
+wd:Q153472 wdt:P31 wd:Q3391743 .
+wd:Q115674695 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cleve%20-%20Retable%20de%20la%20D%C3%A9ploration%20du%20Christ%20La%20C%C3%A8ne%2C%201520%20-%201525%2C%20INV%201996%201%20%3B%20MR%20759.jpg".
+wd:Q115674695 pgdc:sparql kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ .
+kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q153472 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115674695 pgdc:piwigo_image "13406".
+wd:Q115674695 pgdc:piwigo_gallery kgdc:gal483.
+wd:Q115674664 rdfs:label """Retable de la Déploration du Christ : La Déploration"""@fr.
+wd:Q115674664 wdt:P31 wd:Q838948 .
+wd:Q115674664 wdt:P170 wd:Q153472.
+wd:Q153472 rdfs:label """Joos van Cleve"""@fr.
+wd:Q153472 wdt:P31 wd:Q3391743 .
+wd:Q115674664 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cleve%20-%20Retable%20de%20la%20D%C3%A9ploration%20du%20Christ%20La%20D%C3%A9ploration%2C%201520%20-%201525%2C%20INV%201996%202%20%3B%20MR%20759.jpg".
+wd:Q115674664 pgdc:sparql kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ .
+kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q153472 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115674664 pgdc:piwigo_image "13407".
+wd:Q115674664 pgdc:piwigo_gallery kgdc:gal483.
+wd:Q115673732 rdfs:label """Retable de la Déploration Christ : La Stigmatisation de saint François d'Assise."""@fr.
+wd:Q115673732 wdt:P31 wd:Q838948 .
+wd:Q115673732 wdt:P170 wd:Q153472.
+wd:Q153472 rdfs:label """Joos van Cleve"""@fr.
+wd:Q153472 wdt:P31 wd:Q3391743 .
+wd:Q115673732 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cleve%20-%20Retable%20de%20la%20D%C3%A9ploration%20Christ%20La%20Stigmatisation%20de%20saint%20Fran%C3%A7ois%20d%27Assise%2C%201520%20-%201525%2C%20INV%201996%203%20%3B%20MR%20759.jpg".
+wd:Q115673732 pgdc:sparql kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ .
+kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q153472 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115673732 pgdc:piwigo_image "13408".
+wd:Q115673732 pgdc:piwigo_gallery kgdc:gal483.
+wd:Q104373073 rdfs:label """Portrait de François Ier, roi de France"""@fr.
+wd:Q104373073 wdt:P31 wd:Q838948 .
+wd:Q104373073 wdt:P170 wd:Q153472.
+wd:Q153472 rdfs:label """Joos van Cleve"""@fr.
+wd:Q153472 wdt:P31 wd:Q3391743 .
+wd:Q104373073 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Joos%20Van%20Cleve%20-%20Portrait%20de%20Fran%C3%A7ois%20Ier%2C%20roi%20de%20France%20-%20P2214%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104373073 pgdc:sparql kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ .
+kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q153472 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104373073 pgdc:piwigo_image "13409".
+wd:Q104373073 pgdc:piwigo_gallery kgdc:gal483.
+wd:Q29649186 rdfs:label """Adam"""@fr.
+wd:Q29649186 wdt:P31 wd:Q838948 .
+wd:Q29649186 wdt:P170 wd:Q153472.
+wd:Q153472 rdfs:label """Joos van Cleve"""@fr.
+wd:Q153472 wdt:P31 wd:Q3391743 .
+wd:Q29649186 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cleve%20-%20Adam%2C%201507%2C%20RF%20839.jpg".
+wd:Q29649186 pgdc:sparql kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ .
+kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q153472 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29649186 pgdc:piwigo_image "13410".
+wd:Q29649186 pgdc:piwigo_gallery kgdc:gal483.
+wd:Q29649179 rdfs:label """Ève"""@fr.
+wd:Q29649179 wdt:P31 wd:Q838948 .
+wd:Q29649179 wdt:P170 wd:Q153472.
+wd:Q153472 rdfs:label """Joos van Cleve"""@fr.
+wd:Q153472 wdt:P31 wd:Q3391743 .
+wd:Q29649179 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cleve%20-%20%C3%88ve%2C%201507%2C%20RF%20840.jpg".
+wd:Q29649179 pgdc:sparql kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ .
+kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q153472 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29649179 pgdc:piwigo_image "13411".
+wd:Q29649179 pgdc:piwigo_gallery kgdc:gal483.
+wd:Q27303639 rdfs:label """Saint Bernard en prière devant la Vierge et l'Enfant"""@fr.
+wd:Q27303639 wdt:P31 wd:Q838948 .
+wd:Q27303639 wdt:P170 wd:Q153472.
+wd:Q153472 rdfs:label """Joos van Cleve"""@fr.
+wd:Q153472 wdt:P31 wd:Q3391743 .
+wd:Q27303639 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cleve%20-%20Saint%20Bernard%20en%20pri%C3%A8re%20devant%20la%20Vierge%20et%20l%27Enfant%2C%201505%20-%201510%2C%20RF%202230.jpg".
+wd:Q27303639 pgdc:sparql kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ .
+kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q153472 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27303639 pgdc:piwigo_image "13412".
+wd:Q27303639 pgdc:piwigo_gallery kgdc:gal483.
+wd:Q29643933 rdfs:label """La Vierge et l'Enfant avec un dominicain offrant son coeur"""@fr.
+wd:Q29643933 wdt:P31 wd:Q838948 .
+wd:Q29643933 wdt:P170 wd:Q153472.
+wd:Q153472 rdfs:label """Joos van Cleve"""@fr.
+wd:Q153472 wdt:P31 wd:Q3391743 .
+wd:Q29643933 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Joos%20van%20cleve%2C%20domenicano%20che%20offre%20il%20suo%20cuore%20alla%20madonna%20col%20bambino%2C%201500-1520%20ca..JPG".
+wd:Q29643933 pgdc:sparql kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ .
+kgdc:sparqlboPf9oTmxWgnWL1VglIeakUaCFKCSYQechVMtwyayuJ pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q153472 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29643933 pgdc:piwigo_image "13413".
+wd:Q29643933 pgdc:piwigo_gallery kgdc:gal483.

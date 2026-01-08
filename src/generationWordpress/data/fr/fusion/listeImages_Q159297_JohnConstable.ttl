@@ -1,0 +1,126 @@
+wd:Q18937975 rdfs:label """'Helmingham Dell' (Suffolk)"""@fr.
+wd:Q18937975 wdt:P31 wd:Q838948 .
+wd:Q18937975 wdt:P170 wd:Q159297.
+wd:Q159297 rdfs:label """John Constable"""@fr.
+wd:Q159297 wdt:P31 wd:Q3391743 .
+wd:Q18937975 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Constable%20-%20Helmingham%20Dell%20%28Suffolk%29%2C%201823%2C%20RF%201948%205.jpg".
+wd:Q18937975 pgdc:sparql kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 .
+kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q159297 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18938010 rdfs:label """Vue de Salisbury (Wiltshire)"""@fr.
+wd:Q18938010 wdt:P31 wd:Q838948 .
+wd:Q18938010 wdt:P170 wd:Q159297.
+wd:Q159297 rdfs:label """John Constable"""@fr.
+wd:Q159297 wdt:P31 wd:Q3391743 .
+wd:Q18938010 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Constable%20-%20View%20of%20Salisbury%20-%20WGA5199.jpg".
+wd:Q18938010 pgdc:sparql kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 .
+kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q159297 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18938010 rdfs:label """Vue de Salisbury (Wiltshire)"""@fr.
+wd:Q18938010 wdt:P31 wd:Q838948 .
+wd:Q18938010 wdt:P170 wd:Q159297.
+wd:Q159297 rdfs:label """John Constable"""@fr.
+wd:Q159297 wdt:P31 wd:Q3391743 .
+wd:Q18938010 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Constable%20-%20Vue%20de%20Salisbury%20%28Wiltshire%29%2C%201820%2C%20RF%201952%2025.jpg".
+wd:Q18938010 pgdc:sparql kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 .
+kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q159297 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27097977 rdfs:label """La baie de Weymouth (Dorset) à l'approche de l'orage"""@fr.
+wd:Q27097977 wdt:P31 wd:Q838948 .
+wd:Q27097977 wdt:P170 wd:Q159297.
+wd:Q159297 rdfs:label """John Constable"""@fr.
+wd:Q159297 wdt:P31 wd:Q3391743 .
+wd:Q27097977 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Baie%20de%20Weymouth%20%C3%A0%20l%27approche%20de%20l%27orage%20%E2%80%93%20John%20Constable%20%E2%80%93%20Mus%C3%A9e%20du%20Louvre%2C%20RF%2039%20%E2%80%93%20Q27097977.jpg".
+wd:Q27097977 pgdc:sparql kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 .
+kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q159297 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29654465 rdfs:label """Écluse sur la rivière Stour à Flatford Mill (Suffolk)"""@fr.
+wd:Q29654465 wdt:P31 wd:Q838948 .
+wd:Q29654465 wdt:P170 wd:Q159297.
+wd:Q159297 rdfs:label """John Constable"""@fr.
+wd:Q159297 wdt:P31 wd:Q3391743 .
+wd:Q29654465 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Constable%20-%20%C3%89cluse%20sur%20la%20rivi%C3%A8re%20Stour%20%C3%A0%20Flatford%20Mill%20%28Suffolk%29%2C%20vers%201812%2C%20RF%201937%2023.jpg".
+wd:Q29654465 pgdc:sparql kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 .
+kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q159297 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29654490 rdfs:label """Vue de Hampstead Heath, environs de Londres, effet d’orage ou L’Étang de Branch Hill à Hampstead"""@fr.
+wd:Q29654490 wdt:P31 wd:Q838948 .
+wd:Q29654490 wdt:P170 wd:Q159297.
+wd:Q159297 rdfs:label """John Constable"""@fr.
+wd:Q159297 wdt:P31 wd:Q3391743 .
+wd:Q29654490 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Constable%20-%20Vue%20de%20Hampstead%20Heath%2C%20environs%20de%20Londres%2C%20effet%20d%E2%80%99orage%20ou%20L%E2%80%99%C3%89tang%20de%20Branch%20Hill%20%C3%A0%20Hampstead%2C%20vers%201822%2C%20RF%20189.jpg".
+wd:Q29654490 pgdc:sparql kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 .
+kgdc:sparqleGWOK37JfxtcyzY93PQeGKvEUlGfPF1tGlLWVhikn79 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q159297 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

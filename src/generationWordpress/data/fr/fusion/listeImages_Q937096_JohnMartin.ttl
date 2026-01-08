@@ -1,0 +1,907 @@
+wd:Q18939074 rdfs:label """Le Pandemonium, 1841"""@fr.
+wd:Q18939074 wdt:P31 wd:Q838948 .
+wd:Q18939074 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q18939074 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20Le%20Pandemonium%20Louvre.JPG".
+wd:Q18939074 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18939074 pgdc:piwigo_image "12431".
+wd:Q18939074 pgdc:piwigo_gallery kgdc:gal808.
+wd:Q4884677 rdfs:label """Le Festin de Balthazar"""@fr.
+wd:Q4884677 wdt:P31 wd:Q838948 .
+wd:Q4884677 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q4884677 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Belshazzar%27s%20Feast%20-%20Google%20Art%20Project.jpg".
+wd:Q4884677 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q7732151 rdfs:label """Le grand jour de la colère de Dieu"""@fr.
+wd:Q7732151 wdt:P31 wd:Q838948 .
+wd:Q7732151 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q7732151 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20The%20Great%20Day%20of%20His%20Wrath%20-%20Google%20Art%20Project.jpg".
+wd:Q7732151 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q7397516 rdfs:label """Sadak à la recherche des eaux de l'oubli"""@fr.
+wd:Q7397516 wdt:P31 wd:Q838948 .
+wd:Q7397516 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q7397516 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Sadak%20in%20Search%20of%20the%20Waters%20of%20Oblivion%20-%201566-1983%20-%20Saint%20Louis%20Art%20Museum.jpg".
+wd:Q7397516 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q16934315 rdfs:label """La Destruction de Pompéi et Herculanum"""@fr.
+wd:Q16934315 wdt:P31 wd:Q838948 .
+wd:Q16934315 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q16934315 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Destruction%20of%20Pompeii%20and%20Herculaneum.jpg".
+wd:Q16934315 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18685516 rdfs:label """Macbeth"""@fr.
+wd:Q18685516 wdt:P31 wd:Q838948 .
+wd:Q18685516 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q18685516 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Macbeth%20-%20Google%20Art%20Project.jpg".
+wd:Q18685516 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Macbeth%20-%20NG%202115%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q18685516 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20183897 rdfs:label """Joshua Commanding the Sun to Stand Still upon Gibeon"""@fr.
+wd:Q20183897 wdt:P31 wd:Q838948 .
+wd:Q20183897 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20183897 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/JoshuaSun%20Martin.jpg".
+wd:Q20183897 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18686835 rdfs:label """Le Jugement dernier"""@fr.
+wd:Q18686835 wdt:P31 wd:Q838948 .
+wd:Q18686835 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q18686835 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20The%20Last%20Judgement%20-%20Google%20Art%20Project.jpg".
+wd:Q18686835 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354154 rdfs:label """Alphée et Aréthuse"""@fr.
+wd:Q20354154 wdt:P31 wd:Q838948 .
+wd:Q20354154 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354154 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Alpheus%20and%20Arethusa.jpg".
+wd:Q20354154 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20197079 rdfs:label """The Assuaging of the Waters"""@fr.
+wd:Q20197079 wdt:P31 wd:Q838948 .
+wd:Q20197079 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20197079 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Assuaging%20of%20the%20Waters%20by%20John%20Martin%2C%201840.jpg".
+wd:Q20197079 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354159 rdfs:label """La Destruction de Tyr"""@fr.
+wd:Q20354159 wdt:P31 wd:Q838948 .
+wd:Q20354159 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354159 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Destruction%20of%20Tyre%20-%20Google%20Art%20Project.jpg".
+wd:Q20354159 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354442 rdfs:label """Diogène jetant sa coupe"""@fr.
+wd:Q20354442 wdt:P31 wd:Q838948 .
+wd:Q20354442 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354442 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27Diogenes%20Throwing%20Away%20His%20Cup%27%2C%20oil%20on%20canvas%20painting%20by%20John%20Martin.jpg".
+wd:Q20354442 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18686847 rdfs:label """Les Plaines du Paradis"""@fr.
+wd:Q18686847 wdt:P31 wd:Q838948 .
+wd:Q18686847 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q18686847 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20The%20Plains%20of%20Heaven%20-%20Google%20Art%20Project.jpg".
+wd:Q18686847 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q6748553 rdfs:label """Manfred sur la Jungfrau"""@fr.
+wd:Q6748553 wdt:P31 wd:Q838948 .
+wd:Q6748553 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q6748553 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Manfred%20on%20the%20Jungfrau%20%281837%29.jpg".
+wd:Q6748553 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354444 rdfs:label """Anges déchus en enfer"""@fr.
+wd:Q20354444 wdt:P31 wd:Q838948 .
+wd:Q20354444 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354444 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20002.jpg".
+wd:Q20354444 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354457 rdfs:label """Hyde Park"""@fr.
+wd:Q20354457 wdt:P31 wd:Q838948 .
+wd:Q20354457 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354457 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Hyde%20Park%20-%20Google%20Art%20Project.jpg".
+wd:Q20354457 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354459 rdfs:label """Josué commandant au soleil de s'arrêter"""@fr.
+wd:Q20354459 wdt:P31 wd:Q838948 .
+wd:Q20354459 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354459 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Joshua%20Commanding%20the%20Sun%20to%20Stand%20Still%20-%20Google%20Art%20Project.jpg".
+wd:Q20354459 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354585 rdfs:label """Le Barde"""@fr.
+wd:Q20354585 wdt:P31 wd:Q838948 .
+wd:Q20354585 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354585 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20The%20Bard%20-%20Google%20Art%20Project.jpg".
+wd:Q20354585 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354588 rdfs:label """Paysage, l'île de Wight ou Richmond Hill"""@fr.
+wd:Q20354588 wdt:P31 wd:Q838948 .
+wd:Q20354588 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354588 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Landscape%2C%20Possibly%20the%20Isle%20of%20Wight%20or%20Richmond%20Hill%20-%20Google%20Art%20Project.jpg".
+wd:Q20354588 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354591 rdfs:label """Kensington Gardens"""@fr.
+wd:Q20354591 wdt:P31 wd:Q838948 .
+wd:Q20354591 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354591 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Kensington%20Gardens%20-%20Google%20Art%20Project%20%282334653%29.jpg".
+wd:Q20354591 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354597 rdfs:label """Paysage avec un château"""@fr.
+wd:Q20354597 wdt:P31 wd:Q838948 .
+wd:Q20354597 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354597 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Landscape%20with%20a%20Castle%20-%20Google%20Art%20Project.jpg".
+wd:Q20354597 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354594 rdfs:label """Le Déluge"""@fr.
+wd:Q20354594 wdt:P31 wd:Q838948 .
+wd:Q20354594 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354594 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Horror%20und%20Delight-Martin-The%20Deluge%20DSC2262.jpg".
+wd:Q20354594 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354689 rdfs:label """Ruins of an Ancient City"""@fr.
+wd:Q20354689 wdt:P31 wd:Q838948 .
+wd:Q20354689 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354689 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Ruins%20of%20an%20Ancient%20City%20-%201981.13%20-%20Cleveland%20Museum%20of%20Art.tiff".
+wd:Q20354689 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354600 rdfs:label """Le Jugement Dernier (étude)"""@fr.
+wd:Q20354600 wdt:P31 wd:Q838948 .
+wd:Q20354600 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354600 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20The%20Last%20Judgement%20%28study%29%20-%20Google%20Art%20Project.jpg".
+wd:Q20354600 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354692 rdfs:label """Sadak à la recherche des eaux de l'oubli"""@fr.
+wd:Q20354692 wdt:P31 wd:Q838948 .
+wd:Q20354692 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354692 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Martin%2C%20John%20-%20Sadak%20in%20Search%20of%20the%20Waters%20of%20Oblivion%20-%201812.jpg".
+wd:Q20354692 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354730 rdfs:label """Le Couronnement de la reine Victoria"""@fr.
+wd:Q20354730 wdt:P31 wd:Q838948 .
+wd:Q20354730 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354730 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Coronation%20of%20Queen%20Victoria%20-%20John%20Martin.jpg".
+wd:Q20354730 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354732 rdfs:label """La Destruction de Sodome et Gomorrhe"""@fr.
+wd:Q20354732 wdt:P31 wd:Q838948 .
+wd:Q20354732 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354732 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Sodom%20and%20Gomorrah.jpg".
+wd:Q20354732 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354735 rdfs:label """La Veille du Déluge"""@fr.
+wd:Q20354735 wdt:P31 wd:Q838948 .
+wd:Q20354735 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354735 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20The%20Eve%20of%20the%20Deluge%20-%20WGA14146.jpg".
+wd:Q20354735 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20%281789-1854%29%20-%20The%20Eve%20of%20the%20Deluge%20-%20RCIN%20407176%20-%20Royal%20Collection.jpg".
+wd:Q20354735 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354793 rdfs:label """Le Septième Plaie"""@fr.
+wd:Q20354793 wdt:P31 wd:Q838948 .
+wd:Q20354793 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354793 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Martin%2C%20John%20-%20The%20Seventh%20Plague%20-%201823.jpg".
+wd:Q20354793 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354759 rdfs:label """Le Dernier Homme"""@fr.
+wd:Q20354759 wdt:P31 wd:Q838948 .
+wd:Q20354759 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q20354759 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Martin%2C%20John%20-%20The%20Last%20Man%20-%201849.jpg".
+wd:Q20354759 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q23701367 rdfs:label """Kensington Garden"""@fr.
+wd:Q23701367 wdt:P31 wd:Q838948 .
+wd:Q23701367 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q23701367 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Kensington%20Gardens%20-%20Google%20Art%20Project%20%282335652%29.jpg".
+wd:Q23701367 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q23734067 rdfs:label """Kensington Garden"""@fr.
+wd:Q23734067 wdt:P31 wd:Q838948 .
+wd:Q23734067 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q23734067 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Kensington%20Gardens%20-%20Google%20Art%20Project.jpg".
+wd:Q23734067 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q49216365 rdfs:label """Repentance of Nineveh"""@fr.
+wd:Q49216365 wdt:P31 wd:Q838948 .
+wd:Q49216365 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q49216365 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Repentance%20of%20Nineveh%20-%201958.66%20-%20Yale%20University%20Art%20Gallery.jpg".
+wd:Q49216365 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30557635 rdfs:label """The Celestial City and the River of Bliss"""@fr.
+wd:Q30557635 wdt:P31 wd:Q838948 .
+wd:Q30557635 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q30557635 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27The%20Celestial%20City%20and%20the%20River%20of%20Bliss%27%20by%20John%20Martin%2C%201841.jpg".
+wd:Q30557635 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50817530 rdfs:label """Twilight in the woodlands"""@fr.
+wd:Q50817530 wdt:P31 wd:Q838948 .
+wd:Q50817530 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q50817530 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20%281789-1854%29%20-%20Twilight%20in%20the%20Woodlands%20-%201502%20-%20Fitzwilliam%20Museum.jpg".
+wd:Q50817530 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50813318 rdfs:label """Landscape: View in Richmond Park"""@fr.
+wd:Q50813318 wdt:P31 wd:Q838948 .
+wd:Q50813318 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q50813318 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/View%20in%20Richmond%20Park%2C%20John%20Martin%2C%201850.jpg".
+wd:Q50813318 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124246838 rdfs:label """Adam Listening to the Voice of God the Almighty"""@fr.
+wd:Q124246838 wdt:P31 wd:Q838948 .
+wd:Q124246838 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q124246838 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Listening%20to%20the%20Voice%20of%20God%20the%20Almighty.%20John%20Martin.jpg".
+wd:Q124246838 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130260356 rdfs:label """Arcadian Landscape"""@fr.
+wd:Q130260356 wdt:P31 wd:Q838948 .
+wd:Q130260356 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q130260356 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Arcadian%20Landscape%20by%20John%20Martin%2C%20Museum%20of%20the%20Shenandoah%20Valley.jpg".
+wd:Q130260356 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106805271 rdfs:label """Sadak auf der Suche nach den Wassern des Vergessens"""@fr.
+wd:Q106805271 wdt:P31 wd:Q838948 .
+wd:Q106805271 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q106805271 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Horror%20und%20Delight-Martin-Sadak%20in%20Search%20of%20the%20Waters%20of%20Oblivion%20DSC2259.jpg".
+wd:Q106805271 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106805270 rdfs:label """Christ Stilleth the Tempest"""@fr.
+wd:Q106805270 wdt:P31 wd:Q838948 .
+wd:Q106805270 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q106805270 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Horror%20und%20Delight-Martin-Christ%20Stilleth%20the%20Tempest%20DSC2182.jpg".
+wd:Q106805270 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123934770 rdfs:label """A landscape composition"""@fr.
+wd:Q123934770 wdt:P31 wd:Q838948 .
+wd:Q123934770 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q123934770 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/A%20landscape%20composition%2C%20John%20Martin%2C%201823.jpg".
+wd:Q123934770 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106866429 rdfs:label """Fall of the Rebel Angels"""@fr.
+wd:Q106866429 wdt:P31 wd:Q838948 .
+wd:Q106866429 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q106866429 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Martin%20-%20Fall%20of%20the%20Rebel%20Angels%20-%201967.77%20-%20Fogg%20Museum.jpg".
+wd:Q106866429 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106805272 rdfs:label """The Deluge"""@fr.
+wd:Q106805272 wdt:P31 wd:Q838948 .
+wd:Q106805272 wdt:P170 wd:Q937096.
+wd:Q937096 rdfs:label """John Martin"""@fr.
+wd:Q937096 wdt:P31 wd:Q3391743 .
+wd:Q106805272 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Horror%20und%20Delight-Martin-The%20Deluge%20DSC2270.jpg".
+wd:Q106805272 pgdc:sparql kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx .
+kgdc:sparqlYzXz5e0euGmsR4Tz2RI55yUdWuaf6gJ96tQ3XAaHOPx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q937096 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

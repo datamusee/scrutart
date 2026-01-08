@@ -15,7 +15,7 @@ import datetime
 import time
 import json
 import os
-import src.generationWordpress.PageBuilder as PageBuilder
+from PageBuilder import PageBuilder
 
 # ne traiter que ceux qui sont dans filterEntities en supprimant la page si elle existe déjà
 filterEntities = [

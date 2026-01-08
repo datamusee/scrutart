@@ -1,0 +1,2207 @@
+wd:Q124213262 rdfs:label """Jeune fille endormie"""@fr.
+wd:Q124213262 wdt:P31 wd:Q838948 .
+wd:Q124213262 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q124213262 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Chartres%20%28Eure-et-Loir%29%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20-%20%22Jeune%20fille%20endormie%22%20%28Thomas%20Couture%2C%201815-1879%29%20%2848017559788%29.jpg".
+wd:Q124213262 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124213262 pgdc:piwigo_image "12561".
+wd:Q124213262 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q104445394 rdfs:label """Etude de détail pour 'Les Romains de la décadence' : Les deux philosophes"""@fr.
+wd:Q104445394 wdt:P31 wd:Q838948 .
+wd:Q104445394 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q104445394 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Etude%20de%20d%C3%A9tail%20pour%20%22Les%20Romains%20de%20la%20d%C3%A9cadence%22%20%2C%20Les%20deux%20philosophes%20-%20PDUT1457%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104445394 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104445394 pgdc:piwigo_image "12562".
+wd:Q104445394 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q109180800 rdfs:label """Jardin du presbytère"""@fr.
+wd:Q109180800 wdt:P31 wd:Q838948 .
+wd:Q109180800 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q109180800 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Jardin%20du%20presbyt%C3%A8re.jpg".
+wd:Q109180800 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q109180800 pgdc:piwigo_image "9579".
+wd:Q109180800 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q110235305 rdfs:label """Jeune italien jouant de la flute"""@fr.
+wd:Q110235305 wdt:P31 wd:Q838948 .
+wd:Q110235305 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q110235305 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Young%20italian%20playing%20the%20flute%20%281877%29%20-%20Thomas%20Couture.jpg".
+wd:Q110235305 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110235305 pgdc:piwigo_image "12563".
+wd:Q110235305 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q104443895 rdfs:label """Portrait de Léon Ohnet"""@fr.
+wd:Q104443895 wdt:P31 wd:Q838948 .
+wd:Q104443895 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q104443895 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Portrait%20de%20L%C3%A9on%20Ohnet%20-%20PPP2124%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104443895 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104443895 pgdc:piwigo_image "12564".
+wd:Q104443895 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q104445435 rdfs:label """Etude faite d'après Jules Michelet"""@fr.
+wd:Q104445435 wdt:P31 wd:Q838948 .
+wd:Q104445435 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q104445435 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Etude%20faite%20d%27apr%C3%A8s%20Jules%20Michelet%20-%20PDUT1734%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104445435 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104445435 pgdc:piwigo_image "12565".
+wd:Q104445435 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q104373154 rdfs:label """Portrait de Jules Michelet (1798-1874), historien"""@fr.
+wd:Q104373154 wdt:P31 wd:Q838948 .
+wd:Q104373154 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q104373154 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jules%20Michelet%20par%20Thomas%20Couture.jpg".
+wd:Q104373154 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104373154 pgdc:piwigo_image "12566".
+wd:Q104373154 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q104444050 rdfs:label """Emile César Victor Perrin"""@fr.
+wd:Q104444050 wdt:P31 wd:Q838948 .
+wd:Q104444050 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q104444050 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Emile%20C%C3%A9sar%20Victor%20Perrin%20-%20PPP675%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104444050 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104444050 pgdc:piwigo_image "12567".
+wd:Q104444050 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q98094346 rdfs:label """Portrait de Marie-Dominique Sibour (1792-1857), archevêque de Paris de 1848 à 1857"""@fr.
+wd:Q98094346 wdt:P31 wd:Q838948 .
+wd:Q98094346 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q98094346 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Portrait%20de%20Marie-Dominique%20Sibour%20%281792-1857%29%2C%20archev%C3%AAque%20de%20Paris%20de%201848%20%C3%A0%201857%20-%20P2540%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q98094346 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q98094346 pgdc:piwigo_image "12568".
+wd:Q98094346 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q115739525 rdfs:label """Jules Michelet"""@fr.
+wd:Q115739525 wdt:P31 wd:Q838948 .
+wd:Q115739525 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q115739525 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/COUTURE%20Thomas%20Jules%20Michelet%20Huile%20sur%20toile.jpg".
+wd:Q115739525 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115739525 pgdc:piwigo_image "12569".
+wd:Q115739525 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q17496060 rdfs:label """Vase de pivoines"""@fr.
+wd:Q17496060 wdt:P31 wd:Q838948 .
+wd:Q17496060 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q17496060 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Ingres-Bourdelle%20-%20Vase%20de%20pivoines%20-%20Thomas%20Couture%20MID%2053-2-1%20-%20JocondeMNR00175.jpg".
+wd:Q17496060 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17496060 pgdc:piwigo_image "8585".
+wd:Q17496060 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q17491837 rdfs:label """Juliette"""@fr.
+wd:Q17491837 wdt:P31 wd:Q838948 .
+wd:Q17491837 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q17491837 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Augustins%20-%20Juliette%20-%20Thomas%20Couture%20D%201966%201.jpg".
+wd:Q17491837 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17491837 pgdc:piwigo_image "276".
+wd:Q17491837 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q44957558 rdfs:label """Le Duel après le bal masqué"""@fr.
+wd:Q44957558 wdt:P31 wd:Q838948 .
+wd:Q44957558 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q44957558 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Duel%20apr%C3%A8s%20le%20bal%20masqu%C3%A9%20-%20Thomas%20Couture%20-%20Wallace%20Collection.jpg".
+wd:Q44957558 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q44957558 pgdc:piwigo_image "12570".
+wd:Q44957558 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q29862672 rdfs:label """Marie Simonet, du village de Villemoyenne (Aisne)."""@fr.
+wd:Q29862672 wdt:P31 wd:Q838948 .
+wd:Q29862672 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q29862672 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Simonet%20-%20Thomas%20Couture%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%201699.jpg".
+wd:Q29862672 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29862672 pgdc:piwigo_image "7200".
+wd:Q29862672 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q21699365 rdfs:label """La Soif de l'or"""@fr.
+wd:Q21699365 wdt:P31 wd:Q838948 .
+wd:Q21699365 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q21699365 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Augustins%20-%20La%20soif%20de%20l%27or%2C%201844%20-%20Thomas%20Couture%202004%201%2098.jpg".
+wd:Q21699365 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21699365 pgdc:piwigo_image "12571".
+wd:Q21699365 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q48714597 rdfs:label """Courtisane"""@fr.
+wd:Q48714597 wdt:P31 wd:Q838948 .
+wd:Q48714597 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q48714597 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Courtisane.JPG".
+wd:Q48714597 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q48714597 pgdc:piwigo_image "9828".
+wd:Q48714597 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q29862676 rdfs:label """Adolphe Moreau (1827-1882), fils du collectionneur Adolphe Moreau et père du donateur des MuséesNationaux, Étienne Moreau-Nélaton."""@fr.
+wd:Q29862676 wdt:P31 wd:Q838948 .
+wd:Q29862676 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q29862676 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Adolphe%20Moreau%20-%20Thomas%20Couture%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%201698.jpg".
+wd:Q29862676 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29862676 pgdc:piwigo_image "7202".
+wd:Q29862676 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q64569619 rdfs:label """Jeune tambour, vue de profile"""@fr.
+wd:Q64569619 wdt:P31 wd:Q838948 .
+wd:Q64569619 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q64569619 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Drummer%20Boy%20-%2076.23%20-%20Detroit%20Institute%20of%20Arts.jpg".
+wd:Q64569619 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64569619 pgdc:piwigo_image "9235".
+wd:Q64569619 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q27974799 rdfs:label """La petite baigneuse"""@fr.
+wd:Q27974799 wdt:P31 wd:Q838948 .
+wd:Q27974799 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q27974799 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Couture%2C%20Thomas%20-%20Little%20Bather.jpg".
+wd:Q27974799 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27974799 pgdc:piwigo_image "1139".
+wd:Q27974799 pgdc:piwigo_gallery kgdc:gal748.
+wd:Q131572313 rdfs:label """Etude de tête de jeune fille"""@fr.
+wd:Q131572313 wdt:P31 wd:Q838948 .
+wd:Q131572313 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q131572313 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dijon%20%28C%C3%B4te-d%27Or%29%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20-%20Etude%20de%20t%C3%AAte%20de%20jeune%20fille%20%28Thomas%20Couture%29%20%2811725579565%29.jpg".
+wd:Q131572313 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131468703 rdfs:label """Danse macabre"""@fr.
+wd:Q131468703 wdt:P31 wd:Q838948 .
+wd:Q131468703 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q131468703 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Danse%20macabre%20thomas%20couture1504806.jpg".
+wd:Q131468703 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q636001 rdfs:label """Les Romains de la décadence"""@fr.
+wd:Q636001 wdt:P31 wd:Q838948 .
+wd:Q636001 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q636001 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Romans%20during%20the%20Decadence%20-%20Google%20Art%20Project.jpg".
+wd:Q636001 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q12901025 rdfs:label """La courtisane moderne"""@fr.
+wd:Q12901025 wdt:P31 wd:Q838948 .
+wd:Q12901025 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q12901025 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%2C%20The%20Thorny%20Path%20%281873%29.jpg".
+wd:Q12901025 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q12899337 rdfs:label """The Supper After the Masked Ball"""@fr.
+wd:Q12899337 wdt:P31 wd:Q838948 .
+wd:Q12899337 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q12899337 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20The%20Supper%20after%20the%20Masked%20Ball.jpg".
+wd:Q12899337 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17491666 rdfs:label """Homme poussant un canon : étude pour 'L'enrôlement des volontaires de 1792'"""@fr.
+wd:Q17491666 wdt:P31 wd:Q838948 .
+wd:Q17491666 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q17491666 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%27Enr%C3%B4lement%20des%20volontaires%20de%201792%20etude%20canon.jpg".
+wd:Q17491666 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17494369 rdfs:label """Nain avec un chien"""@fr.
+wd:Q17494369 wdt:P31 wd:Q838948 .
+wd:Q17494369 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q17494369 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Nain%20avec%20un%20chien.jpg".
+wd:Q17494369 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17495798 rdfs:label """Tête de femme au ruban bleu"""@fr.
+wd:Q17495798 wdt:P31 wd:Q838948 .
+wd:Q17495798 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q17495798 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Beauvais%20%2860%29%2C%20MUDO%2C%20Thomas%20Couture%20-%20T%C3%AAte%20de%20femme%20au%20ruban%20bleu%2C%20vers%201873%20%28mus%C3%A9e%20d%27Orsay%20inv.%2082.20%29%202.JPG".
+wd:Q17495798 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Beauvais%20%28Oise%29%20-%20MUDO%20-%20%22T%C3%AAte%20de%20femme%20au%20ruban%20bleu%22%20%28Thomas%20Couture%2C%20vers%201873%29.jpg".
+wd:Q17495798 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18749401 rdfs:label """Horace and Lydia"""@fr.
+wd:Q18749401 wdt:P31 wd:Q838948 .
+wd:Q18749401 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q18749401 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Horace%20and%20Lydia%20-%20Walters%203723.jpg".
+wd:Q18749401 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18607775 rdfs:label """Lust for Gold"""@fr.
+wd:Q18607775 wdt:P31 wd:Q838948 .
+wd:Q18607775 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q18607775 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20002.jpg".
+wd:Q18607775 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18749400 rdfs:label """Daydreams"""@fr.
+wd:Q18749400 wdt:P31 wd:Q838948 .
+wd:Q18749400 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q18749400 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Daydreams%20-%20Walters%203744.jpg".
+wd:Q18749400 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18749403 rdfs:label """The Prodigal Son"""@fr.
+wd:Q18749403 wdt:P31 wd:Q838948 .
+wd:Q18749403 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q18749403 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20The%20Prodigal%20Son%20-%20Walters%2037848.jpg".
+wd:Q18749403 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19119891 rdfs:label """L'Enrôlement des volontaires de 1792"""@fr.
+wd:Q19119891 wdt:P31 wd:Q838948 .
+wd:Q19119891 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q19119891 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%20enrolement%20des%20volontaires.jpg".
+wd:Q19119891 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18749402 rdfs:label """Lawyer Going to Court"""@fr.
+wd:Q18749402 wdt:P31 wd:Q838948 .
+wd:Q18749402 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q18749402 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Lawyer%20Going%20to%20Court%20-%20Walters%20371204.jpg".
+wd:Q18749402 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19858566 rdfs:label """An Allegory of Pilgrimage"""@fr.
+wd:Q19858566 wdt:P31 wd:Q838948 .
+wd:Q19858566 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q19858566 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn%20Museum%20-%20An%20Allegory%20of%20Pilgrimage%20-%20Thomas%20Couture.jpg".
+wd:Q19858566 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19858959 rdfs:label """The Fugitive, Study for Timon of Athens"""@fr.
+wd:Q19858959 wdt:P31 wd:Q838948 .
+wd:Q19858959 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q19858959 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn%20Museum%20-%20The%20Fugitive%20Study%20for%20Timon%20of%20Athens%20-%20Thomas%20Couture.jpg".
+wd:Q19858959 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20167054 rdfs:label """Soap Bubbles"""@fr.
+wd:Q20167054 wdt:P31 wd:Q838948 .
+wd:Q20167054 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20167054 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Soap%20Bubbles%20MET%20DT2143.jpg".
+wd:Q20167054 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20267413 rdfs:label """The Bird Catcher"""@fr.
+wd:Q20267413 wdt:P31 wd:Q838948 .
+wd:Q20267413 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20267413 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20The%20Bird%20Catcher%20-%201942.49%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20267413 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20564240 rdfs:label """Two Soldiers"""@fr.
+wd:Q20564240 wdt:P31 wd:Q838948 .
+wd:Q20564240 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20564240 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Two%20Soldiers%20-%2077.236%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20564240 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20564362 rdfs:label """Portrait de femme"""@fr.
+wd:Q20564362 wdt:P31 wd:Q838948 .
+wd:Q20564362 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20564362 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Portrait%20of%20a%20Woman%20-%2091.28%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20564362 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20564428 rdfs:label """Family Group"""@fr.
+wd:Q20564428 wdt:P31 wd:Q838948 .
+wd:Q20564428 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20564428 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Family%20Group%20-%2099.4%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20564428 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20564490 rdfs:label """Head of a Woman in Profile"""@fr.
+wd:Q20564490 wdt:P31 wd:Q838948 .
+wd:Q20564490 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20564490 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Head%20of%20a%20Woman%20in%20Profile%20-%2020.594%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20564490 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20564551 rdfs:label """A Soldier (study for The Enrollment of the Volunteers of 1792)"""@fr.
+wd:Q20564551 wdt:P31 wd:Q838948 .
+wd:Q20564551 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20564551 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20A%20Soldier%20%28study%20for%20The%20Enrollment%20of%20the%20Volunteers%20of%201792%29%20-%2023.462%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20564551 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20564598 rdfs:label """A Miser (study for Timon of Athens)"""@fr.
+wd:Q20564598 wdt:P31 wd:Q838948 .
+wd:Q20564598 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20564598 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20A%20Miser%20%28study%20for%20Timon%20of%20Athens%29%20-%2023.570%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20564598 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20564717 rdfs:label """A Widow"""@fr.
+wd:Q20564717 wdt:P31 wd:Q838948 .
+wd:Q20564717 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20564717 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20A%20Widow%20-%2023.499%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20564717 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20564658 rdfs:label """Nymph and Cupids"""@fr.
+wd:Q20564658 wdt:P31 wd:Q838948 .
+wd:Q20564658 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20564658 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Nymph%20and%20Cupids%20-%2024.226%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20564658 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20784423 rdfs:label """Head of a Woman, Study"""@fr.
+wd:Q20784423 wdt:P31 wd:Q838948 .
+wd:Q20784423 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20784423 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Head%20of%20a%20Woman%2C%20Study%20-%20A%20I%20308%20-%20Finnish%20National%20Gallery.jpg".
+wd:Q20784423 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20808779 rdfs:label """Paysage près de la mer"""@fr.
+wd:Q20808779 wdt:P31 wd:Q838948 .
+wd:Q20808779 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20808779 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20near%20the%20Sea%2C%20by%20Thomas%20Couture.JPG".
+wd:Q20808779 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20891114 rdfs:label """Young Italian Street Musician"""@fr.
+wd:Q20891114 wdt:P31 wd:Q838948 .
+wd:Q20891114 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q20891114 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Young%20Italian%20Street%20Musician%20-%2069.6%20-%20Minneapolis%20Institute%20of%20Arts.jpg".
+wd:Q20891114 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26705633 rdfs:label """Caught by the Tide"""@fr.
+wd:Q26705633 wdt:P31 wd:Q838948 .
+wd:Q26705633 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q26705633 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20%28imitator%20of%29%20-%20Caught%20by%20the%20Tide%20-%20NG4613%20-%20National%20Gallery.jpg".
+wd:Q26705633 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21618951 rdfs:label """Washerwomen"""@fr.
+wd:Q21618951 wdt:P31 wd:Q838948 .
+wd:Q21618951 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q21618951 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Wasvrouwen%20-%201357%20-%20Royal%20Museum%20of%20Fine%20Arts%20Antwerp.tiff".
+wd:Q21618951 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27964358 rdfs:label """Portrait of a Lady"""@fr.
+wd:Q27964358 wdt:P31 wd:Q838948 .
+wd:Q27964358 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q27964358 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20-%20Portrait%20of%20a%20Lady%20-%20NG%201202%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q27964358 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Portrait%20of%20a%20Lady%20-%20NG%201202%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q27964358 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27950675 rdfs:label """Q27950675"""@fr.
+wd:Q27950675 wdt:P31 wd:Q838948 .
+wd:Q27950675 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q27950675 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20repas%20de%20l%27Ogre%20-%20Thomas%20Couture.jpg".
+wd:Q27950675 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28792247 rdfs:label """Portrait de Madame Poullain-Dumesnil"""@fr.
+wd:Q28792247 wdt:P31 wd:Q838948 .
+wd:Q28792247 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q28792247 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Couture%20-%20Portrait%20de%20Madame%20Poullain-Dumesnil%2001.jpg".
+wd:Q28792247 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27998886 rdfs:label """Q27998886"""@fr.
+wd:Q27998886 wdt:P31 wd:Q838948 .
+wd:Q27998886 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q27998886 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Armstudie%20-%201597%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg".
+wd:Q27998886 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28792256 rdfs:label """Portrait de la baronne d'Astier de la Vigerie"""@fr.
+wd:Q28792256 wdt:P31 wd:Q838948 .
+wd:Q28792256 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q28792256 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Baronned%27astierdelavigerie.jpg".
+wd:Q28792256 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30064574 rdfs:label """Q30064574"""@fr.
+wd:Q30064574 wdt:P31 wd:Q838948 .
+wd:Q30064574 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q30064574 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Frauenkopf%20%28Modellstudie%29%20-%2010404%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30064574 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30067519 rdfs:label """Q30067519"""@fr.
+wd:Q30067519 wdt:P31 wd:Q838948 .
+wd:Q30067519 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q30067519 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%28Umkreis%29%20-%20Odaliske%20-%2013162%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30067519 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q47513610 rdfs:label """Richard Morris Hunt"""@fr.
+wd:Q47513610 wdt:P31 wd:Q838948 .
+wd:Q47513610 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q47513610 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Richard%20Morris%20Hunt%20-%20NPG.2014.7%20-%20National%20Portrait%20Gallery.jpg".
+wd:Q47513610 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q55432490 rdfs:label """Portrait Study of the german Painter Anselm Feyerbach"""@fr.
+wd:Q55432490 wdt:P31 wd:Q838948 .
+wd:Q55432490 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q55432490 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Portrait%20Study%20of%20the%20german%20Painter%20Anselm%20Feyerbach%20-%20NG.M.00718%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55432490 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Portrait%20study%20of%20the%20painter%20Anselm%20Feuerbach.jpg".
+wd:Q55432490 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture-Anselm%20Feuerbach%201852.JPG".
+wd:Q55432490 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50815817 rdfs:label """A girl's head"""@fr.
+wd:Q50815817 wdt:P31 wd:Q838948 .
+wd:Q50815817 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q50815817 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20-%20A%20Girl%27s%20Head%20-%202512%20-%20Fitzwilliam%20Museum.jpg".
+wd:Q50815817 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q49174616 rdfs:label """A Zouave"""@fr.
+wd:Q49174616 wdt:P31 wd:Q838948 .
+wd:Q49174616 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q49174616 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20A%20Zouave%20-%201988.39.1%20-%20Yale%20University%20Art%20Gallery.jpg".
+wd:Q49174616 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q60474538 rdfs:label """Pierrot in Criminal Court"""@fr.
+wd:Q60474538 wdt:P31 wd:Q838948 .
+wd:Q60474538 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q60474538 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Pierrot%20in%20Criminal%20Court%20-%201980.250%20-%20Cleveland%20Museum%20of%20Art.tif".
+wd:Q60474538 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q60514398 rdfs:label """A Volunteer of 1792"""@fr.
+wd:Q60514398 wdt:P31 wd:Q838948 .
+wd:Q60514398 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q60514398 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20A%20Volunteer%20of%201792%20-%201940.542%20-%20Cleveland%20Museum%20of%20Art.tiff".
+wd:Q60514398 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64512382 rdfs:label """Landscape with Woodchoppers"""@fr.
+wd:Q64512382 wdt:P31 wd:Q838948 .
+wd:Q64512382 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q64512382 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Landscape%20with%20Woodchoppers%20-%2020.072%20-%20Rhode%20Island%20School%20of%20Design%20Museum.jpg".
+wd:Q64512382 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q62059635 rdfs:label """Portrait de jeune femme assise"""@fr.
+wd:Q62059635 wdt:P31 wd:Q838948 .
+wd:Q62059635 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q62059635 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Seated%20Woman%20by%20Thomas%20Couture.jpg".
+wd:Q62059635 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64515722 rdfs:label """The Little Confectioner"""@fr.
+wd:Q64515722 wdt:P31 wd:Q838948 .
+wd:Q64515722 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q64515722 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20The%20Little%20Confectioner%20-%2053.108%20-%20Rhode%20Island%20School%20of%20Design%20Museum.jpg".
+wd:Q64515722 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64520080 rdfs:label """Mother and Child"""@fr.
+wd:Q64520080 wdt:P31 wd:Q838948 .
+wd:Q64520080 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q64520080 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Mother%20and%20Child%20-%2020.069%20-%20Rhode%20Island%20School%20of%20Design%20Museum.jpg".
+wd:Q64520080 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64517760 rdfs:label """Gamin"""@fr.
+wd:Q64517760 wdt:P31 wd:Q838948 .
+wd:Q64517760 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q64517760 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Gamin%20-%201986.207.2%20-%20Rhode%20Island%20School%20of%20Design%20Museum.jpg".
+wd:Q64517760 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64527464 rdfs:label """Romans of the Decadence"""@fr.
+wd:Q64527464 wdt:P31 wd:Q838948 .
+wd:Q64527464 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q64527464 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Romans%20of%20the%20Decadence%20-%2054.004%20-%20Rhode%20Island%20School%20of%20Design%20Museum.jpg".
+wd:Q64527464 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q70781141 rdfs:label """Romans of the Decadence"""@fr.
+wd:Q70781141 wdt:P31 wd:Q838948 .
+wd:Q70781141 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q70781141 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Romans%20of%20the%20Decadence%20-%201943.224%20-%20Fogg%20Museum.jpg".
+wd:Q70781141 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Romans%20of%20the%20Decadence%2C%20by%20Thomas%20Couture%2C%201847%2C%20oil%20on%20canvas%20-%20Fogg%20Art%20Museum%2C%20Harvard%20University%20-%20DSC01485.jpg".
+wd:Q70781141 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q70781146 rdfs:label """Paul Barroilhet (1810-1871)"""@fr.
+wd:Q70781146 wdt:P31 wd:Q838948 .
+wd:Q70781146 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q70781146 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Barroilhet%2C%20by%20Thomas%20Couture.jpg".
+wd:Q70781146 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Paul%20Barroilhet%20%281810-1871%29%20-%201943.223%20-%20Fogg%20Museum.jpg".
+wd:Q70781146 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q77484973 rdfs:label """Head of a Woman"""@fr.
+wd:Q77484973 wdt:P31 wd:Q838948 .
+wd:Q77484973 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q77484973 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Head%20of%20a%20Woman%20-%201930-1%20-%20Albright%E2%80%93Knox%20Art%20Gallery.tiff".
+wd:Q77484973 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q77954841 rdfs:label """A Sleeping Judge"""@fr.
+wd:Q77954841 wdt:P31 wd:Q838948 .
+wd:Q77954841 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q77954841 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Sleeping%20Judge%20.PNG".
+wd:Q77954841 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q77954845 rdfs:label """La Peinture Réaliste"""@fr.
+wd:Q77954845 wdt:P31 wd:Q838948 .
+wd:Q77954845 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q77954845 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Peinture%20R%C3%A9aliste%20.PNG".
+wd:Q77954845 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q77954848 rdfs:label """Pifferaro"""@fr.
+wd:Q77954848 wdt:P31 wd:Q838948 .
+wd:Q77954848 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q77954848 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pifferaro%20P1205.jpg".
+wd:Q77954848 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q78664243 rdfs:label """The Falconer"""@fr.
+wd:Q78664243 wdt:P31 wd:Q838948 .
+wd:Q78664243 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q78664243 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Falconer%20-%20Thomas%20Couture.jpg".
+wd:Q78664243 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q82119547 rdfs:label """Portrait of the Artist"""@fr.
+wd:Q82119547 wdt:P31 wd:Q838948 .
+wd:Q82119547 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q82119547 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20Autoritratto.jpg".
+wd:Q82119547 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q78664537 rdfs:label """Alice Ozy"""@fr.
+wd:Q78664537 wdt:P31 wd:Q838948 .
+wd:Q78664537 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q78664537 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Alice%20Ozy%20.jpg".
+wd:Q78664537 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q84962586 rdfs:label """La tragedienne"""@fr.
+wd:Q84962586 wdt:P31 wd:Q838948 .
+wd:Q84962586 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q84962586 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815%20-%201879%29%20-%20De%20trag%C3%A9dienne%20%28Rachel%29%20-%20hwm0080%20-%20The%20Mesdag%20Collection.jpg".
+wd:Q84962586 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q85400506 rdfs:label """Q85400506"""@fr.
+wd:Q85400506 wdt:P31 wd:Q838948 .
+wd:Q85400506 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q85400506 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Pierrot%20in%20Criminal%20Court%20-%201980.250%20-%20Cleveland%20Museum%20of%20Art.tif".
+wd:Q85400506 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q87780419 rdfs:label """A Volunteer"""@fr.
+wd:Q87780419 wdt:P31 wd:Q838948 .
+wd:Q87780419 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q87780419 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20-%20A%20Volunteer%20-%2035.70%20-%20Burrell%20Collection.jpg".
+wd:Q87780419 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q87780421 rdfs:label """Girl"""@fr.
+wd:Q87780421 wdt:P31 wd:Q838948 .
+wd:Q87780421 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q87780421 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20%28attributed%20to%29%20-%20Girl%20-%2035.71%20-%20Burrell%20Collection.jpg".
+wd:Q87780421 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88022528 rdfs:label """A Portrait Study"""@fr.
+wd:Q88022528 wdt:P31 wd:Q838948 .
+wd:Q88022528 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q88022528 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20%28attributed%20to%29%20-%20A%20Portrait%20Study%20-%20VIS.1219%20-%20Sheffield%20Galleries%20and%20Museums%20Trust.jpg".
+wd:Q88022528 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88022530 rdfs:label """Boy with a Falcon"""@fr.
+wd:Q88022530 wdt:P31 wd:Q838948 .
+wd:Q88022530 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q88022530 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20%28after%29%20-%20Boy%20with%20a%20Falcon%20-%20VIS.286%20-%20Sheffield%20Galleries%20and%20Museums%20Trust.jpg".
+wd:Q88022530 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88588360 rdfs:label """The Young Drummer"""@fr.
+wd:Q88588360 wdt:P31 wd:Q838948 .
+wd:Q88588360 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q88588360 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20-%20The%20Young%20Drummer%20-%20P262%20-%20The%20Wallace%20Collection.jpg".
+wd:Q88588360 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88588357 rdfs:label """Harlequin and Pierrot"""@fr.
+wd:Q88588357 wdt:P31 wd:Q838948 .
+wd:Q88588357 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q88588357 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20-%20Harlequin%20and%20Pierrot%20-%20P288%20-%20The%20Wallace%20Collection.jpg".
+wd:Q88588357 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88588362 rdfs:label """Timon of Athens"""@fr.
+wd:Q88588362 wdt:P31 wd:Q838948 .
+wd:Q88588362 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q88588362 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20-%20Timon%20of%20Athens%20-%20P265%20-%20The%20Wallace%20Collection.jpg".
+wd:Q88588362 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88588515 rdfs:label """Horace and Lydia"""@fr.
+wd:Q88588515 wdt:P31 wd:Q838948 .
+wd:Q88588515 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q88588515 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20-%20Horace%20and%20Lydia%20-%20P340%20-%20The%20Wallace%20Collection.jpg".
+wd:Q88588515 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q90735852 rdfs:label """Young Italian Girl"""@fr.
+wd:Q90735852 wdt:P31 wd:Q838948 .
+wd:Q90735852 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q90735852 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20-%20Young%20Italian%20Girl%20-%20K2882%20-%20Bristol%20City%20Museum%20and%20Art%20Gallery.jpg".
+wd:Q90735852 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q91249805 rdfs:label """A Portrait"""@fr.
+wd:Q91249805 wdt:P31 wd:Q838948 .
+wd:Q91249805 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q91249805 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20-%20A%20Portrait%20-%20BrO29%20-%20William%20Morris%20Gallery.jpg".
+wd:Q91249805 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q98152474 rdfs:label """Portrait of Antoine Etex (1808-88)"""@fr.
+wd:Q98152474 wdt:P31 wd:Q838948 .
+wd:Q98152474 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q98152474 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815-1879%29%20-%20Antoine%20Etex%20%281808%E2%80%931888%29%20-%201958P3%20-%20Birmingham%20Museums%20Trust.jpg".
+wd:Q98152474 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q105346979 rdfs:label """Portrait d'Henri Didier"""@fr.
+wd:Q105346979 wdt:P31 wd:Q838948 .
+wd:Q105346979 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q105346979 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Longchamp114%20Couture%20DIDIER.jpg".
+wd:Q105346979 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107437813 rdfs:label """portrait of La Marquise Magon de Boisgarin"""@fr.
+wd:Q107437813 wdt:P31 wd:Q838948 .
+wd:Q107437813 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q107437813 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Portrait%20of%20La%20187%20%281860%29.JPG".
+wd:Q107437813 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q109689891 rdfs:label """Portrait, dit de Degas"""@fr.
+wd:Q109689891 wdt:P31 wd:Q838948 .
+wd:Q109689891 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q109689891 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Portrait%2C%20dit%20de%20Degas.jpg".
+wd:Q109689891 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115090517 rdfs:label """Le Maître de cérémonie de Notre-Dame"""@fr.
+wd:Q115090517 wdt:P31 wd:Q838948 .
+wd:Q115090517 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q115090517 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/-%20Thomas%20Couture%20-%20Le%20Ma%C3%AEtre%20de%20c%C3%A9r%C3%A9monie%20de%20Notre-Dame.jpg".
+wd:Q115090517 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115460628 rdfs:label """Q115460628"""@fr.
+wd:Q115460628 wdt:P31 wd:Q838948 .
+wd:Q115460628 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q115460628 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20-%20Landweg%20in%20Frans%20berggebied.%20-%2055359%20-%20Museum%20Gouda.jpg".
+wd:Q115460628 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116298873 rdfs:label """Head of a youth"""@fr.
+wd:Q116298873 wdt:P31 wd:Q838948 .
+wd:Q116298873 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q116298873 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Couture%20%281815%20-%201879%29%20-%20Hoofd%20van%20een%20jongen%20-%20hwm0079%20-%20The%20Mesdag%20Collection.jpg".
+wd:Q116298873 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122832008 rdfs:label """Jeune femme nue, étude pour Timon d'Athènes"""@fr.
+wd:Q122832008 wdt:P31 wd:Q838948 .
+wd:Q122832008 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q122832008 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Senlis%20%28Oise%29%20-%20Mus%C3%A9e%20d%27art%20et%20d%27arch%C3%A9ologie%20-%20Chapelle%20du%20Chancelier%20Gu%C3%A9rin%20-%20Oeuvre%20de%20Thomas%20Couture%20%2820093782729%29.jpg".
+wd:Q122832008 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q117820474 rdfs:label """Étude de têtes"""@fr.
+wd:Q117820474 wdt:P31 wd:Q838948 .
+wd:Q117820474 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q117820474 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Beauvais%20%2860%29%2C%20MUDO%2C%20Thomas%20Couture%20-%20%C3%89tude%20de%20t%C3%AAtes%2C%20vers%201848-1850%20%28mus%C3%A9e%20d%27Orsay%20inv.%2054.19%29%201.JPG".
+wd:Q117820474 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122832001 rdfs:label """La Noblesse"""@fr.
+wd:Q122832001 wdt:P31 wd:Q838948 .
+wd:Q122832001 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q122832001 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Senlis%20%28Oise%29%20-%20Mus%C3%A9e%20d%27art%20et%20d%27arch%C3%A9ologie%20-%20Chapelle%20du%20Chancelier%20Gu%C3%A9rin%20-%20Oeuvre%20de%20Thomas%20Couture%20%2820286272371%29.jpg".
+wd:Q122832001 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122832014 rdfs:label """Portrait de jeune garçon"""@fr.
+wd:Q122832014 wdt:P31 wd:Q838948 .
+wd:Q122832014 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q122832014 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Senlis%20%28Oise%29%20-%20Mus%C3%A9e%20d%27art%20et%20d%27arch%C3%A9ologie%20-%20Chapelle%20du%20Chancelier%20Gu%C3%A9rin%20-%20Oeuvre%20de%20Thomas%20Couture%20%2820286315431%29.jpg".
+wd:Q122832014 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122832017 rdfs:label """Saint Rieul"""@fr.
+wd:Q122832017 wdt:P31 wd:Q838948 .
+wd:Q122832017 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q122832017 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Senlis%20%2860%29%2C%20mus%C3%A9e%20d%27art%20et%20d%27arch%C3%A9ologie%2C%20Thomas%20Couture%2C%20Saint-Rieul.JPG".
+wd:Q122832017 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122832019 rdfs:label """Tête de Pierrot"""@fr.
+wd:Q122832019 wdt:P31 wd:Q838948 .
+wd:Q122832019 wdt:P170 wd:Q326434.
+wd:Q326434 rdfs:label """Thomas Couture"""@fr.
+wd:Q326434 wdt:P31 wd:Q3391743 .
+wd:Q122832019 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Senlis%20%28Oise%29%20-%20Mus%C3%A9e%20d%27art%20et%20d%27arch%C3%A9ologie%20-%20Chapelle%20du%20Chancelier%20Gu%C3%A9rin%20-%20Oeuvre%20de%20Thomas%20Couture%20%2819657762714%29.jpg".
+wd:Q122832019 pgdc:sparql kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE .
+kgdc:sparqlsiqtaEqjCwbBLnSJrIXuNcYlnMwmgExQr2IDKQ1N3hE pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q326434 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

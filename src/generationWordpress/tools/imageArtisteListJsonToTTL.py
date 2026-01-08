@@ -3,7 +3,7 @@ import json
 import re
 from os import listdir
 from os.path import isfile, join
-from src.generationWordpress.CScrutartState import CScrutartState
+from CScrutartState import CScrutartState
 
 # but: mettre des images dans le graphe d'état scrutartStateTrial (plus tard scrutartState local et TPT)
 if __name__ == "__main__":

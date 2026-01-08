@@ -1,0 +1,302 @@
+wd:Q28091974 rdfs:label """Le corbeau dépouillé de son faux plumage"""@fr.
+wd:Q28091974 wdt:P31 wd:Q838948 .
+wd:Q28091974 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q28091974 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Raven%20Robbed%20of%20the%20Feathers%20He%20Wore%20to%20Adorn%20Himself%20by%20Melchior%20d%27Hondecoeter%20Mauritshuis%2059.jpg".
+wd:Q28091974 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20d%27%20Hondecoeter%20-%20The%20Raven%20Robbed%20of%20the%20Feathers%20He%20Wore%20to%20Adorn%20Himself%20-%2059%20-%20Rijksmuseum.jpg".
+wd:Q28091974 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28091974 pgdc:piwigo_image "13053".
+wd:Q28091974 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q43306390 rdfs:label """Oiseaux dans un parc"""@fr.
+wd:Q43306390 wdt:P31 wd:Q838948 .
+wd:Q43306390 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q43306390 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Oiseaux-dans-un-parc-melchior-d-hondecoeter-musee-d-art-et-d-histoire-de-saint-brieuc-doc-17-cropped.jpg".
+wd:Q43306390 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q43306390 pgdc:piwigo_image "13054".
+wd:Q43306390 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q57596468 rdfs:label """La poule blanche"""@fr.
+wd:Q57596468 wdt:P31 wd:Q838948 .
+wd:Q57596468 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q57596468 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/PeinturesMus%C3%A9eFabre024.jpg".
+wd:Q57596468 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q57596468 pgdc:piwigo_image "13055".
+wd:Q57596468 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q106498343 rdfs:label """Oiseaux de basse-cour"""@fr.
+wd:Q106498343 wdt:P31 wd:Q838948 .
+wd:Q106498343 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q106498343 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Oiseaux%20de%20basse-cour%20-%20Melchior%20de%20Hondecoeter%20-%20Mus%C3%A9e%20Cond%C3%A9.jpg".
+wd:Q106498343 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106498343 pgdc:piwigo_image "13056".
+wd:Q106498343 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q104445539 rdfs:label """Paons, mâle et femelle"""@fr.
+wd:Q104445539 wdt:P31 wd:Q838948 .
+wd:Q104445539 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q104445539 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20de%20Hondecoeter%20-%20Paons%2C%20m%C3%A2le%20et%20femelle%20-%20PPP2522%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104445539 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104445539 pgdc:piwigo_image "13057".
+wd:Q104445539 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q64518026 rdfs:label """Combat de coqs"""@fr.
+wd:Q64518026 wdt:P31 wd:Q838948 .
+wd:Q64518026 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q64518026 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20d%27%20Hondecoeter%20-%20Cocks%20Fighting%20-%2068.015%20-%20Rhode%20Island%20School%20of%20Design%20Museum.jpg".
+wd:Q64518026 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64518026 pgdc:piwigo_image "13058".
+wd:Q64518026 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q115860979 rdfs:label """Fillette aux paons"""@fr.
+wd:Q115860979 wdt:P31 wd:Q838948 .
+wd:Q115860979 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q115860979 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/DE%20HONDECOETER%20Melchior%20Fillette%20aux%20paons%20Huile%20sur%20toile.jpg".
+wd:Q115860979 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115860979 pgdc:piwigo_image "13059".
+wd:Q115860979 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q28026308 rdfs:label """Johan Ortt (1642-1701) à cheval franchit la porte du château de Nijenrode"""@fr.
+wd:Q28026308 wdt:P31 wd:Q838948 .
+wd:Q28026308 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q28026308 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20de%20Hondecoeter%20%28Utrecht%201636-Amsterdam%201695%29%20-%20Johan%20Ortt%20%281642-1701%29%20on%20Horseback%20outside%20the%20Gate%20of%20Nijenrode%20Castle%20-%20RCIN%20405956%20-%20Royal%20Collection.jpg".
+wd:Q28026308 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20d%27Hondecoeter%20-%20Johan%20Ortt%20%281642-1701%29%20on%20Horseback%20outside%20the%20Gate%20of%20Nijenrode%20RCIN%20405956.jpg".
+wd:Q28026308 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28026308 pgdc:piwigo_image "822".
+wd:Q28026308 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q20551506 rdfs:label """Des paons en compagnie de la volaille d'une basse-cour"""@fr.
+wd:Q20551506 wdt:P31 wd:Q838948 .
+wd:Q20551506 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q20551506 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20d%27%20Hondecoeter%20-%20Barnyard%20Fowl%20and%20Peacocks%20-%2007.501%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20551506 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20551506 pgdc:piwigo_image "13060".
+wd:Q20551506 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q26262626 rdfs:label """Paysage aux animaux exotiques"""@fr.
+wd:Q26262626 wdt:P31 wd:Q838948 .
+wd:Q26262626 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q26262626 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20with%20Exotic%20Animals%20by%20Melchior%20d%27Hondecoeter%20Het%20Loo.jpg".
+wd:Q26262626 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20d%27%20Hondecoeter%20-%20Landscape%20with%20Exotic%20Animals%20-%2060%20-%20Rijksmuseum.jpg".
+wd:Q26262626 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26262626 pgdc:piwigo_image "8447".
+wd:Q26262626 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q27979064 rdfs:label """Des oiseaux dans un parc"""@fr.
+wd:Q27979064 wdt:P31 wd:Q838948 .
+wd:Q27979064 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q27979064 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20d%27Hondecoeter%20-%20Birds%20in%20a%20Park%20-%20WGA11639.jpg".
+wd:Q27979064 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27979064 pgdc:piwigo_image "8437".
+wd:Q27979064 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q21673732 rdfs:label """Oiseaux aquatiques"""@fr.
+wd:Q21673732 wdt:P31 wd:Q838948 .
+wd:Q21673732 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q21673732 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20d%27Hondecoeter%20-%20Water%20Birds%20-%201882-F%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21673732 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21673732 pgdc:piwigo_image "13061".
+wd:Q21673732 pgdc:piwigo_gallery kgdc:gal653.
+wd:Q17341649 rdfs:label """Sept poussins"""@fr.
+wd:Q17341649 wdt:P31 wd:Q838948 .
+wd:Q17341649 wdt:P170 wd:Q304411.
+wd:Q304411 rdfs:label """Melchior de Hondecoeter"""@fr.
+wd:Q304411 wdt:P31 wd:Q3391743 .
+wd:Q17341649 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20d%27Hondecoeter%20-%20Zeven%20kuikens%20-%20SK-A-5023%20-%20Rijksmuseum.jpg".
+wd:Q17341649 pgdc:sparql kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy .
+kgdc:sparqlWNh13XWeBGjNOfLfnUD4RbJCPMmNMSgXonVpEtNyUMy pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q304411 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17341649 pgdc:piwigo_image "13062".
+wd:Q17341649 pgdc:piwigo_gallery kgdc:gal653.

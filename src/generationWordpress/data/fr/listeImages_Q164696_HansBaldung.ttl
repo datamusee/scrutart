@@ -1,0 +1,138 @@
+wd:Q40047099 rdfs:label """Portrait du chanoine Ambrosius Volmar Keller"""@fr.
+wd:Q40047099 wdt:P31 wd:wd:Q838948 .
+wd:Q40047099 wdt:P170 wd:Q164696.
+wd:Q164696 rdfs:label """Hans Baldung"""@fr.
+wd:Q164696 wdt:P31 wd:Q3391743 .
+wd:Q40047099 wdt:P18 "None".
+wd:Q40047099 pgdc:sparql kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 .
+kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q164696 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q40047099 pgdc:piwigo_image "7231".
+wd:Q40047099 pgdc:piwigo_gallery kgdc:gal527.
+wd:Q111685713 rdfs:label """La Lapidation de saint Étienne"""@fr.
+wd:Q111685713 wdt:P31 wd:wd:Q838948 .
+wd:Q111685713 wdt:P170 wd:Q164696.
+wd:Q164696 rdfs:label """Hans Baldung"""@fr.
+wd:Q164696 wdt:P31 wd:Q3391743 .
+wd:Q111685713 wdt:P18 "None".
+wd:Q111685713 pgdc:sparql kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 .
+kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q164696 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111685713 pgdc:piwigo_image "13302".
+wd:Q111685713 pgdc:piwigo_gallery kgdc:gal527.
+wd:Q101209734 rdfs:label """La Vierge à l'Enfant endormi"""@fr.
+wd:Q101209734 wdt:P31 wd:wd:Q838948 .
+wd:Q101209734 wdt:P170 wd:Q164696.
+wd:Q164696 rdfs:label """Hans Baldung"""@fr.
+wd:Q164696 wdt:P31 wd:Q3391743 .
+wd:Q101209734 wdt:P18 "None".
+wd:Q101209734 pgdc:sparql kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 .
+kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q164696 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q101209734 pgdc:piwigo_image "13303".
+wd:Q101209734 pgdc:piwigo_gallery kgdc:gal527.
+wd:Q101039912 rdfs:label """Saint Georges"""@fr.
+wd:Q101039912 wdt:P31 wd:wd:Q838948 .
+wd:Q101039912 wdt:P170 wd:Q164696.
+wd:Q164696 rdfs:label """Hans Baldung"""@fr.
+wd:Q164696 wdt:P31 wd:Q3391743 .
+wd:Q101039912 wdt:P18 "None".
+wd:Q101039912 pgdc:sparql kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 .
+kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q164696 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q101039912 pgdc:piwigo_image "13304".
+wd:Q101039912 pgdc:piwigo_gallery kgdc:gal527.
+wd:Q98688185 rdfs:label """Vierge à la treille"""@fr.
+wd:Q98688185 wdt:P31 wd:wd:Q838948 .
+wd:Q98688185 wdt:P170 wd:Q164696.
+wd:Q164696 rdfs:label """Hans Baldung"""@fr.
+wd:Q164696 wdt:P31 wd:Q3391743 .
+wd:Q98688185 wdt:P18 "None".
+wd:Q98688185 pgdc:sparql kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 .
+kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q164696 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q98688185 pgdc:piwigo_image "13305".
+wd:Q98688185 pgdc:piwigo_gallery kgdc:gal527.
+wd:Q115482671 rdfs:label """Tête de vieillard (Nicodème ?)"""@fr.
+wd:Q115482671 wdt:P31 wd:wd:Q838948 .
+wd:Q115482671 wdt:P170 wd:Q164696.
+wd:Q164696 rdfs:label """Hans Baldung"""@fr.
+wd:Q164696 wdt:P31 wd:Q3391743 .
+wd:Q115482671 wdt:P18 "None".
+wd:Q115482671 pgdc:sparql kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 .
+kgdc:sparqlZLIDhznB383eb6Y0kUQKKF4DmYczBXuG9tcz9UorA83 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q164696 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115482671 pgdc:piwigo_image "13306".
+wd:Q115482671 pgdc:piwigo_gallery kgdc:gal527.

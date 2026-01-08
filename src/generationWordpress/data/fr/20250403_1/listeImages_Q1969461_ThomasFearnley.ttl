@@ -1,0 +1,4235 @@
+wd:Q18600950 rdfs:label """Rock at Berchtesgaden"""@fr.
+wd:Q18600950 wdt:P31 wd:Q838948 .
+wd:Q18600950 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q18600950 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rock%20at%20Berchtesgaden%20%28Thomas%20Fearnley%29%20-%20Nationalmuseum%20-%2022071%20%28cropped%29.tif".
+wd:Q18600950 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19930658 rdfs:label """Scène de rue romaine avec ruines"""@fr.
+wd:Q19930658 wdt:P31 wd:Q838948 .
+wd:Q19930658 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q19930658 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20%28attr%29%20R%C3%B6mische%20Stra%C3%9Fenszene%20mit%20Ruinen.jpg".
+wd:Q19930658 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118358924 rdfs:label """From Procida and Ischia with Mount Epomeo"""@fr.
+wd:Q118358924 wdt:P31 wd:Q838948 .
+wd:Q118358924 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118358924 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Fra%20Procida%20og%20Ischia%20med%20fjellet%20Epomeo%20%281833%29.jpg".
+wd:Q118358924 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q119790493 rdfs:label """Bergen seen from Natlandshøyden"""@fr.
+wd:Q119790493 wdt:P31 wd:Q838948 .
+wd:Q119790493 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q119790493 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Bergen%20seen%20from%20Natlandsh%C3%B8yden%20-%20LKM.000073%20-%20Lillehammer%20Kunstmuseum.jpg".
+wd:Q119790493 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q120892675 rdfs:label """View from Castellamare"""@fr.
+wd:Q120892675 wdt:P31 wd:Q838948 .
+wd:Q120892675 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q120892675 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20from%20Castellamare%20-%20NG.M.00601%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q120892675 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118358862 rdfs:label """Summer landscape with three old oak trees"""@fr.
+wd:Q118358862 wdt:P31 wd:Q838948 .
+wd:Q118358862 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118358862 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Sommerlandschaft%20mit%20drei%20alten%20Eichen%20%281841%29.jpg".
+wd:Q118358862 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118358896 rdfs:label """From Procida"""@fr.
+wd:Q118358896 wdt:P31 wd:Q838948 .
+wd:Q118358896 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118358896 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Fra%20Procida%20%281833%29.jpg".
+wd:Q118358896 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q26492673 rdfs:label """Coast scene, possibly Capri"""@fr.
+wd:Q26492673 wdt:P31 wd:Q838948 .
+wd:Q26492673 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q26492673 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Coast%20scene%2C%20possibly%20Capri.jpg".
+wd:Q26492673 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20439265 rdfs:label """View of Meissen"""@fr.
+wd:Q20439265 wdt:P31 wd:Q838948 .
+wd:Q20439265 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q20439265 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20of%20Meissen%20-%20KMS8225%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20439265 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20355318 rdfs:label """Sketch from Parish in Norway"""@fr.
+wd:Q20355318 wdt:P31 wd:Q838948 .
+wd:Q20355318 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q20355318 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Sketch%20from%20Parish%20in%20Norway%20-%20KMS3434%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20355318 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20267815 rdfs:label """Pergola with Oranges"""@fr.
+wd:Q20267815 wdt:P31 wd:Q838948 .
+wd:Q20267815 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q20267815 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Pergola%20with%20Oranges%20-%20Art%20Institute%20of%20Chicago%20-%202002.599.jpg".
+wd:Q20267815 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q120914234 rdfs:label """Rider in a Landscape"""@fr.
+wd:Q120914234 wdt:P31 wd:Q838948 .
+wd:Q120914234 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q120914234 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Rytter%20i%20et%20landskap%20%281834%29.jpg".
+wd:Q120914234 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q120912915 rdfs:label """Taormina, Sicily"""@fr.
+wd:Q120912915 wdt:P31 wd:Q838948 .
+wd:Q120912915 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q120912915 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20fearnley%20taormina%20sicily105251%29%20%28cropped%29.jpg".
+wd:Q120912915 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q43220351 rdfs:label """Arco naturale, Capri"""@fr.
+wd:Q43220351 wdt:P31 wd:Q838948 .
+wd:Q43220351 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q43220351 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Arco%20naturale%2C%20Capri%20%28ca.%201833%29.jpg".
+wd:Q43220351 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27970368 rdfs:label """Fisherman at Derwentwater"""@fr.
+wd:Q27970368 wdt:P31 wd:Q838948 .
+wd:Q27970368 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q27970368 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Fisherman%20at%20Derwentwater%20-%20NG%202886%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q27970368 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q43220351 rdfs:label """Arco naturale, Capri"""@fr.
+wd:Q43220351 wdt:P31 wd:Q838948 .
+wd:Q43220351 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q43220351 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Arco%20Naturale%2C%20Capri%20-%20Nationalmuseum%20-%20NM%207281%20%28cropped%29.jpg".
+wd:Q43220351 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50820796 rdfs:label """Sunrise in the Wengernalp"""@fr.
+wd:Q50820796 wdt:P31 wd:Q838948 .
+wd:Q50820796 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q50820796 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20%281802-1842%29%20-%20Sunrise%20in%20the%20Wengeralp%20-%20PD.53-1998%20-%20Fitzwilliam%20Museum.jpg".
+wd:Q50820796 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q43303645 rdfs:label """Terrace in Procida"""@fr.
+wd:Q43303645 wdt:P31 wd:Q838948 .
+wd:Q43303645 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q43303645 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%2C%20Terrace%20in%20Procida%2C%201832%2C%20private%20collection.jpg".
+wd:Q43303645 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55410348 rdfs:label """From a Courtyard at the Scharfenberg Castle near Dresden"""@fr.
+wd:Q55410348 wdt:P31 wd:Q838948 .
+wd:Q55410348 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55410348 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20From%20a%20Courtyard%20at%20the%20Scharfenberg%20Castle%20near%20Dresden%20-%20NG.M.00455c%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55410348 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27970364 rdfs:label """Arco Naturale, Capri"""@fr.
+wd:Q27970364 wdt:P31 wd:Q838948 .
+wd:Q27970364 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q27970364 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Arco%20naturale%2C%20Capri%20%28c.%201833%29.jpg".
+wd:Q27970364 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55421613 rdfs:label """The Augustusbrücke in Dresden"""@fr.
+wd:Q55421613 wdt:P31 wd:Q838948 .
+wd:Q55421613 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55421613 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Augustusbr%C3%BCcke%20in%20Dresden%20-%20NG.M.02218%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55421613 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55421613 rdfs:label """The Augustusbrücke in Dresden"""@fr.
+wd:Q55421613 wdt:P31 wd:Q838948 .
+wd:Q55421613 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55421613 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Augustusbr%C3%BCcke%20in%20Dresden%20-%20Augustusbr%C3%BCcke%20i%20Dresden%20-%20Nasjonalmuseet%20-%20NG.M.02218.jpg".
+wd:Q55421613 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55421583 rdfs:label """Duck-shooting an Autum Morning by Königssee"""@fr.
+wd:Q55421583 wdt:P31 wd:Q838948 .
+wd:Q55421583 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55421583 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Duck-shooting%20an%20Autum%20Morning%20by%20K%C3%B6nigssee%20-%20NG.M.04422%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55421583 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422122 rdfs:label """From Capri"""@fr.
+wd:Q55422122 wdt:P31 wd:Q838948 .
+wd:Q55422122 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422122 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20From%20Capri%20-%20NG.M.01588%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422122 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422122 rdfs:label """From Capri"""@fr.
+wd:Q55422122 wdt:P31 wd:Q838948 .
+wd:Q55422122 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422122 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/From%20Capri%20-%20Fra%20Capri%20-%20Thomas%20Fearnley%20-%20IMG%209801-%20national%20gallery%20oslo%20%28cropped-2%29.jpg".
+wd:Q55422122 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422128 rdfs:label """Road in Carrara"""@fr.
+wd:Q55422128 wdt:P31 wd:Q838948 .
+wd:Q55422128 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422128 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Road%20in%20Carrara%20-%20NG.M.00455b%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422128 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422103 rdfs:label """From Aurland in Sogn"""@fr.
+wd:Q55422103 wdt:P31 wd:Q838948 .
+wd:Q55422103 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422103 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20From%20Aurland%20in%20Sogn%20-%20NG.M.01731%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422103 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55421948 rdfs:label """A Waterspout on the Bay of Naples"""@fr.
+wd:Q55421948 wdt:P31 wd:Q838948 .
+wd:Q55421948 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55421948 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20A%20Waterspout%20on%20the%20Bay%20of%20Naples%20-%20NG.M.00502%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55421948 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422066 rdfs:label """Farmhouses in Meiringen in Switzerland"""@fr.
+wd:Q55422066 wdt:P31 wd:Q838948 .
+wd:Q55422066 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422066 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Farmhouses%20in%20Meiringen%20in%20Switzerland%20-%20NG.M.01509%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422066 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55421637 rdfs:label """From Balestrand at the Sognefjord"""@fr.
+wd:Q55421637 wdt:P31 wd:Q838948 .
+wd:Q55421637 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55421637 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20From%20Balestrand%20at%20the%20Sognefjord%20-%20NG.M.01494%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55421637 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55421659 rdfs:label """Study of Birches in Romsdal"""@fr.
+wd:Q55421659 wdt:P31 wd:Q838948 .
+wd:Q55421659 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55421659 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Study%20of%20Birches%20in%20Romsdal%20-%20NG.M.00376%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55421659 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55421637 rdfs:label """From Balestrand at the Sognefjord"""@fr.
+wd:Q55421637 wdt:P31 wd:Q838948 .
+wd:Q55421637 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55421637 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20From%20Balestrand%20at%20the%20Sognefjord%20-%20Google%20Art%20Project.jpg".
+wd:Q55421637 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422155 rdfs:label """View from Grindelwald in Switzerland"""@fr.
+wd:Q55422155 wdt:P31 wd:Q838948 .
+wd:Q55422155 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422155 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20from%20Grindelwald%20in%20Switzerland%20-%20NG.M.00386%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422155 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422155 rdfs:label """View from Grindelwald in Switzerland"""@fr.
+wd:Q55422155 wdt:P31 wd:Q838948 .
+wd:Q55422155 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422155 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20from%20Grindelwald%20in%20Switzerland%20-%20Fra%20Grindelwald%2C%20Sveits%20-%20Nasjonalmuseet%20-%20NG.M.00386.png".
+wd:Q55422155 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422191 rdfs:label """The Labro Falls"""@fr.
+wd:Q55422191 wdt:P31 wd:Q838948 .
+wd:Q55422191 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422191 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Labro%20Falls%20-%20NG.M.01542%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422191 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422208 rdfs:label """View from Meiringen in Switzerland"""@fr.
+wd:Q55422208 wdt:P31 wd:Q838948 .
+wd:Q55422208 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422208 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20from%20Meiringen%20in%20Switzerland%20-%20NG.M.01752%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422208 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422235 rdfs:label """View of Olevano"""@fr.
+wd:Q55422235 wdt:P31 wd:Q838948 .
+wd:Q55422235 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422235 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20of%20Olevano%20-%20NG.M.01541%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422235 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422233 rdfs:label """From Oberhasli in Switzerland"""@fr.
+wd:Q55422233 wdt:P31 wd:Q838948 .
+wd:Q55422233 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422233 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20From%20Oberhasli%20in%20Switzerland%20-%20NG.M.00426-043%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422233 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422239 rdfs:label """View of Palermo"""@fr.
+wd:Q55422239 wdt:P31 wd:Q838948 .
+wd:Q55422239 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422239 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20of%20Palermo%20-%20NG.M.01627%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422239 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422242 rdfs:label """View from Romsdal"""@fr.
+wd:Q55422242 wdt:P31 wd:Q838948 .
+wd:Q55422242 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422242 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20from%20Romsdal%20-%20NG.M.01630%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422242 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586583 rdfs:label """Q131586583"""@fr.
+wd:Q131586583 wdt:P31 wd:Q838948 .
+wd:Q131586583 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q131586583 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Studie%20zum%20Rosenlauigletscher%20-%20ZKG.2018-0184%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586583 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422532 rdfs:label """Grindelwald glacier"""@fr.
+wd:Q55422532 wdt:P31 wd:Q838948 .
+wd:Q55422532 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422532 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Grindelwaldgletscher%20-%20Google%20Art%20Project.jpg".
+wd:Q55422532 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422532 rdfs:label """Grindelwald glacier"""@fr.
+wd:Q55422532 wdt:P31 wd:Q838948 .
+wd:Q55422532 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422532 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Grindelwaldgletscher%20-%20NG.M.00038%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422532 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422677 rdfs:label """The Bridge of Hauge outside Arendal"""@fr.
+wd:Q55422677 wdt:P31 wd:Q838948 .
+wd:Q55422677 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422677 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Bridge%20of%20Hauge%20outside%20Arendal%20-%20Google%20Art%20Project.jpg".
+wd:Q55422677 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422677 rdfs:label """The Bridge of Hauge outside Arendal"""@fr.
+wd:Q55422677 wdt:P31 wd:Q838948 .
+wd:Q55422677 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422677 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Bridge%20of%20Hauge%20outside%20Arendal%20-%20NG.M.04363%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422677 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422260 rdfs:label """From Sorrento"""@fr.
+wd:Q55422260 wdt:P31 wd:Q838948 .
+wd:Q55422260 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422260 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20From%20Sorrento%20-%20NG.M.01872%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422260 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422430 rdfs:label """Steep Roads in Lærdal"""@fr.
+wd:Q55422430 wdt:P31 wd:Q838948 .
+wd:Q55422430 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422430 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Steep%20Roads%20in%20L%C3%A6rdal%20-%20NG.M.01631%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422430 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422523 rdfs:label """The Grindelwaldgletscher"""@fr.
+wd:Q55422523 wdt:P31 wd:Q838948 .
+wd:Q55422523 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422523 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Grindelwaldgletscher%20-%20NG.M.00611%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422523 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422255 rdfs:label """From the Sognefjord"""@fr.
+wd:Q55422255 wdt:P31 wd:Q838948 .
+wd:Q55422255 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422255 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20From%20the%20Sognefjord%20-%20NG.M.01151%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422255 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422705 rdfs:label """The Harbour in Agrigento"""@fr.
+wd:Q55422705 wdt:P31 wd:Q838948 .
+wd:Q55422705 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422705 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Harbour%20in%20Agrigento%20-%20NG.M.00260%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422705 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423019 rdfs:label """The Mountain Jordalsnuten in Sogn"""@fr.
+wd:Q55423019 wdt:P31 wd:Q838948 .
+wd:Q55423019 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423019 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Mountain%20Jordalsnuten%20in%20Sogn%20-%20NG.M.00804%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423019 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423075 rdfs:label """Study of Cactus"""@fr.
+wd:Q55423075 wdt:P31 wd:Q838948 .
+wd:Q55423075 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423075 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Cactus%20-%20NG.M.01818%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423075 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423227 rdfs:label """L'entrée du roi Guillaume II à Amsterdam, le 27 novembre 1840"""@fr.
+wd:Q55423227 wdt:P31 wd:Q838948 .
+wd:Q55423227 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423227 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20King%20Vilhelm%20II%27s%20ceremonial%20Processsion%20in%20Amsterdam%20in%201840%20-%20NG.M.02481%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423227 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423183 rdfs:label """L'église de Patterdale"""@fr.
+wd:Q55423183 wdt:P31 wd:Q838948 .
+wd:Q55423183 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423183 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Church%20in%20Patterdale%20-%20NG.M.01753%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423183 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423144 rdfs:label """Canon dans le Cumberland"""@fr.
+wd:Q55423144 wdt:P31 wd:Q838948 .
+wd:Q55423144 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423144 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Cannon%20at%20Derwentwater%20-%20NG.M.02333%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423144 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55422769 rdfs:label """Cottage in the Wood"""@fr.
+wd:Q55422769 wdt:P31 wd:Q838948 .
+wd:Q55422769 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55422769 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Cottage%20in%20the%20Wood%20-%20NG.M.00501%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55422769 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423416 rdfs:label """The Labro Falls"""@fr.
+wd:Q55423416 wdt:P31 wd:Q838948 .
+wd:Q55423416 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423416 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Labro%20Falls%20-%20NG.M.01632%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423416 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423409 rdfs:label """From Königssee"""@fr.
+wd:Q55423409 wdt:P31 wd:Q838948 .
+wd:Q55423409 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423409 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20From%20K%C3%B6nigssee%20-%20NG.M.00896%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423409 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423416 rdfs:label """The Labro Falls"""@fr.
+wd:Q55423416 wdt:P31 wd:Q838948 .
+wd:Q55423416 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423416 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Labro%20Falls%20-%20Labrofossen%20-%20Nasjonalmuseet%20-%20NG.M.01632.png".
+wd:Q55423416 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423423 rdfs:label """Les chutes de Labro près de Kongsberg"""@fr.
+wd:Q55423423 wdt:P31 wd:Q838948 .
+wd:Q55423423 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423423 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Labro%20Falls%20at%20Kongsberg%20-%20Google%20Art%20Project.jpg".
+wd:Q55423423 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423423 rdfs:label """Les chutes de Labro près de Kongsberg"""@fr.
+wd:Q55423423 wdt:P31 wd:Q838948 .
+wd:Q55423423 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423423 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Labro%20Falls%20at%20Kongsberg%20-%20NG.M.00039%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423423 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423511 rdfs:label """Landscape with a Wanderer"""@fr.
+wd:Q55423511 wdt:P31 wd:Q838948 .
+wd:Q55423511 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423511 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Landscape%20with%20a%20Wanderer%20-%20NG.M.04452%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423511 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423511 rdfs:label """Landscape with a Wanderer"""@fr.
+wd:Q55423511 wdt:P31 wd:Q838948 .
+wd:Q55423511 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423511 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Landskap%20med%20vandringsmann%20-%20Google%20Art%20Project.jpg".
+wd:Q55423511 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423543 rdfs:label """Landscape study"""@fr.
+wd:Q55423543 wdt:P31 wd:Q838948 .
+wd:Q55423543 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423543 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Landscape%20study%20-%20NG.M.02598%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423543 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423614 rdfs:label """Study of a Cow"""@fr.
+wd:Q55423614 wdt:P31 wd:Q838948 .
+wd:Q55423614 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423614 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Study%20of%20a%20Cow%20-%20NG.M.02449%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423614 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423560 rdfs:label """Landscapestudy"""@fr.
+wd:Q55423560 wdt:P31 wd:Q838948 .
+wd:Q55423560 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423560 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Landscapestudy%20-%20NG.M.01152%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423560 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55423777 rdfs:label """The Painter and the Boy"""@fr.
+wd:Q55423777 wdt:P31 wd:Q838948 .
+wd:Q55423777 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55423777 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20The%20Painter%20and%20the%20Boy%20-%20NG.M.01750%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55423777 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55424762 rdfs:label """A Forest Road with an Altar"""@fr.
+wd:Q55424762 wdt:P31 wd:Q838948 .
+wd:Q55424762 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55424762 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20A%20Forest%20Road%20with%20an%20Altar%20-%20NG.M.00455a%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55424762 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55424792 rdfs:label """Forest Study from Romsdal"""@fr.
+wd:Q55424792 wdt:P31 wd:Q838948 .
+wd:Q55424792 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55424792 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Forest%20Study%20from%20Romsdal%20-%20NG.M.01309%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55424792 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55424038 rdfs:label """A Terrace in Amalfi in Moonlight"""@fr.
+wd:Q55424038 wdt:P31 wd:Q838948 .
+wd:Q55424038 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55424038 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20A%20Terrace%20in%20Amalfi%20in%20Moonlight%20-%20Google%20Art%20Project.jpg".
+wd:Q55424038 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55424038 rdfs:label """A Terrace in Amalfi in Moonlight"""@fr.
+wd:Q55424038 wdt:P31 wd:Q838948 .
+wd:Q55424038 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55424038 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20A%20Terrace%20in%20Amalfi%20in%20Moonlight%20-%20NG.M.01751%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55424038 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55424841 rdfs:label """Clouds over the Fjord"""@fr.
+wd:Q55424841 wdt:P31 wd:Q838948 .
+wd:Q55424841 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55424841 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Clouds%20over%20the%20Fjord%20-%20NG.M.02447%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55424841 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55424879 rdfs:label """Le bouleau de Slinde"""@fr.
+wd:Q55424879 wdt:P31 wd:Q838948 .
+wd:Q55424879 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55424879 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Old%20Birch%20Tree%20at%20the%20Sognefjord%20-%20NG.M.00363%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55424879 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55424801 rdfs:label """Forest Study from Romsdal"""@fr.
+wd:Q55424801 wdt:P31 wd:Q838948 .
+wd:Q55424801 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55424801 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Forest%20Study%20from%20Romsdal%20-%20NG.M.01308%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55424801 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425070 rdfs:label """Stockholm vu de la plage de Klaravik"""@fr.
+wd:Q55425070 wdt:P31 wd:Q838948 .
+wd:Q55425070 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425070 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20of%20Stockholm%20-%20NG.M.03667%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425070 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425070 rdfs:label """Stockholm vu de la plage de Klaravik"""@fr.
+wd:Q55425070 wdt:P31 wd:Q838948 .
+wd:Q55425070 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425070 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20Stockholm%20-%20Stockholm%20sett%20fra%20Klaravikstranden%20-%20Thomas%20Fearnley%20-%20IMG%209803-%20national%20gallery%20oslo%20%28cropped-2%29.jpg".
+wd:Q55425070 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425133 rdfs:label """Study of decaying Tree"""@fr.
+wd:Q55425133 wdt:P31 wd:Q838948 .
+wd:Q55425133 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425133 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Study%20of%20decaying%20Tree%20-%20NG.M.01496%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425133 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425085 rdfs:label """At the Bank, Winkel in Switzerland"""@fr.
+wd:Q55425085 wdt:P31 wd:Q838948 .
+wd:Q55425085 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425085 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20At%20the%20Bank%2C%20Winkel%20in%20Switzerland%20-%20NG.M.01873%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425085 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425156 rdfs:label """Study of Rocks at Capri"""@fr.
+wd:Q55425156 wdt:P31 wd:Q838948 .
+wd:Q55425156 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425156 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Study%20of%20Rocks%20at%20Capri%20-%20NG.M.03588%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425156 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425286 rdfs:label """Terrasse avec chêne vert, Sorrente"""@fr.
+wd:Q55425286 wdt:P31 wd:Q838948 .
+wd:Q55425286 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425286 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Terrace%20with%20Oak%2C%20Sorrento%20-%20Google%20Art%20Project.jpg".
+wd:Q55425286 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425286 rdfs:label """Terrasse avec chêne vert, Sorrente"""@fr.
+wd:Q55425286 wdt:P31 wd:Q838948 .
+wd:Q55425286 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425286 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Terrace%20with%20Oak%2C%20Sorrento%20-%20NG.M.03369%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425286 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425292 rdfs:label """Terrace near Amalfi"""@fr.
+wd:Q55425292 wdt:P31 wd:Q838948 .
+wd:Q55425292 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425292 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Terrace%20near%20Amalfi%20-%20NG.M.01749%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425292 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425557 rdfs:label """Logs at the Beach"""@fr.
+wd:Q55425557 wdt:P31 wd:Q838948 .
+wd:Q55425557 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425557 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Logs%20at%20the%20Beach%20-%20NG.M.02448%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425557 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425551 rdfs:label """Timber Yard"""@fr.
+wd:Q55425551 wdt:P31 wd:Q838948 .
+wd:Q55425551 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425551 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Timber%20Yard%20-%20NG.M.01495%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425551 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425661 rdfs:label """View of the Oslofjord"""@fr.
+wd:Q55425661 wdt:P31 wd:Q838948 .
+wd:Q55425661 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425661 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20of%20the%20Oslofjord%20-%20NG.M.00419%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425661 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55425699 rdfs:label """Stormy Landscape with a Rider"""@fr.
+wd:Q55425699 wdt:P31 wd:Q838948 .
+wd:Q55425699 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425699 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Stormy%20Landscape%20with%20a%20Rider%20-%20NG.M.01628%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425699 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55428783 rdfs:label """A vaulted Hall in the Scharfenberg Castle near Dresden"""@fr.
+wd:Q55428783 wdt:P31 wd:Q838948 .
+wd:Q55428783 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55428783 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20A%20vaulted%20Hall%20in%20the%20Scharfenberg%20Castle%20near%20Dresden%20-%20NG.M.01633%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55428783 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q96230462 rdfs:label """The Labro Falls"""@fr.
+wd:Q96230462 wdt:P31 wd:Q838948 .
+wd:Q96230462 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q96230462 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Labrofossen%20%281837%29.jpg".
+wd:Q96230462 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q75374822 rdfs:label """Q75374822"""@fr.
+wd:Q75374822 wdt:P31 wd:Q838948 .
+wd:Q75374822 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q75374822 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20M%C3%BCnchen%20nach%20dem%20Gewitter%20-%20G%2015032%20-%20Lenbachhaus.jpg".
+wd:Q75374822 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103062146 rdfs:label """Q103062146"""@fr.
+wd:Q103062146 wdt:P31 wd:Q838948 .
+wd:Q103062146 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103062146 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Capri%20set%20fra%20Sorrento%20-%20Thorvaldsens%20Museum%20-%20B192.jpg".
+wd:Q103062146 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103049313 rdfs:label """Q103049313"""@fr.
+wd:Q103049313 wdt:P31 wd:Q838948 .
+wd:Q103049313 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103049313 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Havet%20ved%20Palermo%20-%20Thorvaldsens%20Museum%20-%20B191.jpg".
+wd:Q103049313 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103036181 rdfs:label """Q103036181"""@fr.
+wd:Q103036181 wdt:P31 wd:Q838948 .
+wd:Q103036181 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103036181 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Helsing%C3%B8r%20mod%20Kronborg%2C%20vinter%20-%20Thorvaldsens%20Museum%20-%20B194.jpg".
+wd:Q103036181 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103045001 rdfs:label """Q103045001"""@fr.
+wd:Q103045001 wdt:P31 wd:Q838948 .
+wd:Q103045001 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103045001 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Helsing%C3%B8r%20mod%20Kronborg%2C%20efter%C3%A5r%20-%20Thorvaldsens%20Museum%20-%20B193.jpg".
+wd:Q103045001 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103069427 rdfs:label """Q103069427"""@fr.
+wd:Q103069427 wdt:P31 wd:Q838948 .
+wd:Q103069427 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103069427 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Norsk%20landskab%2C%20Marumfoss%20-%20Thorvaldsens%20Museum%20-%20B190.tif".
+wd:Q103069427 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103163098 rdfs:label """Tyrolean Landscape"""@fr.
+wd:Q103163098 wdt:P31 wd:Q838948 .
+wd:Q103163098 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103163098 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Landscape%2C%20Tyrol%20%28Thomas%20Fearnley%29%20-%20Nationalmuseum%20-%2022070%20%28cropped%29.tif".
+wd:Q103163098 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103200054 rdfs:label """Palermo and Monte Pellegrino"""@fr.
+wd:Q103200054 wdt:P31 wd:Q838948 .
+wd:Q103200054 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103200054 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Palermo%20and%20Monte%20Pellegrino%20-%20Nationalmuseum%20-%20NM%207500.jpg".
+wd:Q103200054 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103431833 rdfs:label """Q103431833"""@fr.
+wd:Q103431833 wdt:P31 wd:Q838948 .
+wd:Q103431833 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103431833 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Skatteinnkrever%20%28karikatur%29%20-%20Oslo%20Museum%20-%20OB.06144.jpg".
+wd:Q103431833 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103717704 rdfs:label """Study of trees"""@fr.
+wd:Q103717704 wdt:P31 wd:Q838948 .
+wd:Q103717704 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103717704 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Studie%20av%20tr%C3%A6r%20%281836%29.jpg".
+wd:Q103717704 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103820549 rdfs:label """Fearnley in his studio"""@fr.
+wd:Q103820549 wdt:P31 wd:Q838948 .
+wd:Q103820549 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103820549 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Fearnley%20in%20his%20studio%20-%20Fearnley%20i%20sitt%20atelier%20-%20Norsk%20portrettarkiv%20-%20Riksantikvaren%20-%20F000389.jpg".
+wd:Q103820549 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103797788 rdfs:label """Turner varnishing"""@fr.
+wd:Q103797788 wdt:P31 wd:Q838948 .
+wd:Q103797788 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103797788 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20fearnley%20turner%20fernisserer.jpg".
+wd:Q103797788 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103820504 rdfs:label """Ramsau"""@fr.
+wd:Q103820504 wdt:P31 wd:Q838948 .
+wd:Q103820504 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103820504 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Ramsau%20%281832%29.jpg".
+wd:Q103820504 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103824007 rdfs:label """From Fredrikshald"""@fr.
+wd:Q103824007 wdt:P31 wd:Q838948 .
+wd:Q103824007 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103824007 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Fra%20Fredrikshald%20%281829%29.jpg".
+wd:Q103824007 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103825409 rdfs:label """Gravensfjord"""@fr.
+wd:Q103825409 wdt:P31 wd:Q838948 .
+wd:Q103825409 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103825409 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Gravensfjord%20%281839%29.jpg".
+wd:Q103825409 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q103829047 rdfs:label """Haystacks, Rydal, Cumbria"""@fr.
+wd:Q103829047 wdt:P31 wd:Q838948 .
+wd:Q103829047 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q103829047 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20H%C3%B8ystakker%2C%20Rydal%2C%20Cumbria.jpg".
+wd:Q103829047 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q113349782 rdfs:label """From Romsdal"""@fr.
+wd:Q113349782 wdt:P31 wd:Q838948 .
+wd:Q113349782 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q113349782 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Romsdal.jpg".
+wd:Q113349782 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118352035 rdfs:label """Norwegian Waterfall"""@fr.
+wd:Q118352035 wdt:P31 wd:Q838948 .
+wd:Q118352035 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118352035 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Norske%20Fossen.jpg".
+wd:Q118352035 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118352119 rdfs:label """Tjugum Church, Balestrand"""@fr.
+wd:Q118352119 wdt:P31 wd:Q838948 .
+wd:Q118352119 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118352119 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Tjugum%20kyrkje%2C%20Balestrand.jpg".
+wd:Q118352119 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q112229192 rdfs:label """From Capri"""@fr.
+wd:Q112229192 wdt:P31 wd:Q838948 .
+wd:Q112229192 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q112229192 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20From%20Capri%20-%20NG.M.02332%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q112229192 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111802686 rdfs:label """Hunting at Königsee"""@fr.
+wd:Q111802686 wdt:P31 wd:Q838948 .
+wd:Q111802686 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q111802686 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27Hunting%20at%20K%C3%B6nigsee%27%20by%20Thomas%20Fearnley%2C%20Bergen%20Kunstmuseum.JPG".
+wd:Q111802686 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111802490 rdfs:label """Sorrento en plein air"""@fr.
+wd:Q111802490 wdt:P31 wd:Q838948 .
+wd:Q111802490 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q111802490 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/ThomasFearnleySorrento.jpg".
+wd:Q111802490 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111802457 rdfs:label """From Sorrento"""@fr.
+wd:Q111802457 wdt:P31 wd:Q838948 .
+wd:Q111802457 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q111802457 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Sorrento.jpg".
+wd:Q111802457 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111272648 rdfs:label """Gudvangen"""@fr.
+wd:Q111272648 wdt:P31 wd:Q838948 .
+wd:Q111272648 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q111272648 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gudvangen%20-%20MET%20DP-19487-001.jpg".
+wd:Q111272648 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111802479 rdfs:label """The Golf of Sorrento"""@fr.
+wd:Q111802479 wdt:P31 wd:Q838948 .
+wd:Q111802479 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q111802479 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27The%20Golf%20of%20Sorrento%27%20by%20Thomas%20Fearnley%2C%20Bergen%20Kunstmuseum.JPG".
+wd:Q111802479 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118352435 rdfs:label """View over the River Elbe"""@fr.
+wd:Q118352435 wdt:P31 wd:Q838948 .
+wd:Q118352435 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118352435 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Utsyn%20over%20Elben.jpg".
+wd:Q118352435 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118353107 rdfs:label """Winter landscape"""@fr.
+wd:Q118353107 wdt:P31 wd:Q838948 .
+wd:Q118353107 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118353107 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Vinterlandskap%20%281829%29.jpg".
+wd:Q118353107 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118352207 rdfs:label """View over Tistedal"""@fr.
+wd:Q118352207 wdt:P31 wd:Q838948 .
+wd:Q118352207 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118352207 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Utsikt%20over%20Tistedal.jpg".
+wd:Q118352207 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q112072965 rdfs:label """Grindelwald"""@fr.
+wd:Q112072965 wdt:P31 wd:Q838948 .
+wd:Q112072965 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q112072965 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Grindelwald%2C%20Switzerland.jpg".
+wd:Q112072965 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111272647 rdfs:label """Study of Water and Plants"""@fr.
+wd:Q111272647 wdt:P31 wd:Q838948 .
+wd:Q111272647 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q111272647 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Study%20of%20Water%20and%20Plants%20-%20MET%20DP-19486-001.jpg".
+wd:Q111272647 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118358823 rdfs:label """The Elbe near Dresden"""@fr.
+wd:Q118358823 wdt:P31 wd:Q838948 .
+wd:Q118358823 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118358823 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20%28zugeschr.%29%20-%20Die%20Elbe%20bei%20Dresden%20%28ca.%201840%29.jpg".
+wd:Q118358823 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118358810 rdfs:label """Landscape with houses"""@fr.
+wd:Q118358810 wdt:P31 wd:Q838948 .
+wd:Q118358810 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118358810 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Landskap%20med%20hus.jpg".
+wd:Q118358810 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118353134 rdfs:label """Thunderstorm over the Pozzuoli bay"""@fr.
+wd:Q118353134 wdt:P31 wd:Q838948 .
+wd:Q118353134 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q118353134 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20Tordenv%C3%A6r%20over%20Pozzuoli-bukten%20%281833%29.jpg".
+wd:Q118353134 pgdc:sparql kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW .
+kgdc:sparqlgrqmmACcWKkgivelw0m3X3NwXbLbFTW1wNOjJvKWgzW pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q1969461 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q1969461 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.

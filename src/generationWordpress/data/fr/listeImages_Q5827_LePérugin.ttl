@@ -1,0 +1,315 @@
+wd:Q3202430 rdfs:label """L'Ascension du Christ"""@fr.
+wd:Q3202430 wdt:P31 wd:wd:Q838948 .
+wd:Q3202430 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q3202430 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pietro%20Perugino%20cat48c.jpg".
+wd:Q3202430 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3213774 rdfs:label """La Vierge et l'Enfant entourés de deux anges, sainte Rose et sainte Catherine"""@fr.
+wd:Q3213774 wdt:P31 wd:wd:Q838948 .
+wd:Q3213774 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q3213774 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20and%20Child%20with%20Two%20Angels%20-%20Pietro%20Perugino%20-%20Louvre%20INV%20719.jpg".
+wd:Q3213774 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573084 rdfs:label """Saint Jérôme ressuscitant l'évêque Andréa"""@fr.
+wd:Q18573084 wdt:P31 wd:wd:Q838948 .
+wd:Q18573084 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q18573084 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Perugino%2C%20predella%20con%20storie%20di%20san%20girolamo%2C%201472%20ca.%2004.JPG".
+wd:Q18573084 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3463836 rdfs:label """Saint Herculan, évêque de Pérouse et Saint Jacques le Mineur"""@fr.
+wd:Q3463836 wdt:P31 wd:wd:Q838948 .
+wd:Q3463836 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q3463836 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pietro%20Perugino%20cat87d.jpg".
+wd:Q3463836 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573085 rdfs:label """Saint Jérôme soutenant deux jeunes pendus injustement condamnés"""@fr.
+wd:Q18573085 wdt:P31 wd:wd:Q838948 .
+wd:Q18573085 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q18573085 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Perugino%2C%20predella%20con%20storie%20di%20san%20girolamo%2C%201472%20ca.%2002.JPG".
+wd:Q18573085 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3221619 rdfs:label """Le Combat de l'Amour et de la Chasteté"""@fr.
+wd:Q3221619 wdt:P31 wd:wd:Q838948 .
+wd:Q3221619 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q3221619 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Combat%20de%20l%27Amour%20et%20de%20la%20Chastet%C3%A9%20-%20Le%20P%C3%A9rugin%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20722%20%3B%20MR%20401.jpg".
+wd:Q3221619 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3464081 rdfs:label """Saint Sébastien"""@fr.
+wd:Q3464081 wdt:P31 wd:wd:Q838948 .
+wd:Q3464081 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q3464081 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pietro%20Perugino%20cat22.jpg".
+wd:Q3464081 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3178035 rdfs:label """Jeune saint à l'épée, dit longtemps à tort saint Paul (saint Martin ?)"""@fr.
+wd:Q3178035 wdt:P31 wd:wd:Q838948 .
+wd:Q3178035 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q3178035 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Perugino%2C%20pala%20di%20sant%27agostino%2C%20santo%20giovane%20con%20spada.jpg".
+wd:Q3178035 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3213787 rdfs:label """La Vierge et l'Enfant entourés de saint Jean Baptiste et de sainte Catherine d'Alexandrie"""@fr.
+wd:Q3213787 wdt:P31 wd:wd:Q838948 .
+wd:Q3213787 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q3213787 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pietro%20Perugino%20cat34.jpg".
+wd:Q3213787 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3226018 rdfs:label """Vierge à l'Enfant adoré par les anges"""@fr.
+wd:Q3226018 wdt:P31 wd:wd:Q838948 .
+wd:Q3226018 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q3226018 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pietro%20Perugino%20cat48b.jpg".
+wd:Q3226018 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3464085 rdfs:label """Saint Sébastien et sainte Apolline"""@fr.
+wd:Q3464085 wdt:P31 wd:wd:Q838948 .
+wd:Q3464085 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q3464085 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pietro%20Perugino%20cat87g.jpg".
+wd:Q3464085 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573083 rdfs:label """Le Christ mort au tombeau"""@fr.
+wd:Q18573083 wdt:P31 wd:wd:Q838948 .
+wd:Q18573083 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q18573083 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Perugino%2C%20predella%20con%20storie%20di%20san%20girolamo%2C%201472%20ca.%2003.JPG".
+wd:Q18573083 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3226018 rdfs:label """Le Prophète David"""@fr.
+wd:Q3226018 wdt:P31 wd:wd:Q838948 .
+wd:Q3226018 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q3226018 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pietro%20Perugino%20cat48b.jpg".
+wd:Q3226018 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q121364540 rdfs:label """Saint Sébastien et un saint franciscain"""@fr.
+wd:Q121364540 wdt:P31 wd:wd:Q838948 .
+wd:Q121364540 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q121364540 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pietro%20Perugino%20cat11.jpg".
+wd:Q121364540 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124791349 rdfs:label """Vierge à l'Enfant sur le trône entre saint Jérôme, saint Augustin, quatre anges et deux chérubins"""@fr.
+wd:Q124791349 wdt:P31 wd:wd:Q838948 .
+wd:Q124791349 wdt:P170 wd:Q5827.
+wd:Q5827 rdfs:label """Le Pérugin"""@fr.
+wd:Q5827 wdt:P31 wd:Q3391743 .
+wd:Q124791349 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Perugino%20-%20Vierge%20%C3%A0%20l%27Enfant%20sur%20le%20tr%C3%B4ne%20entre%20saint%20J%C3%A9r%C3%B4me%2C%20saint%20Augustin%2C%20quatre%20anges%20et%20deux%20ch%C3%A9rubins%2C%20Bx%20E%2022.jpg".
+wd:Q124791349 pgdc:sparql kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx .
+kgdc:sparqlsxi4KAYFwRNWZJPG0DCZLiwxhaOciZCeRNx2OTsYKzx pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q5827 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

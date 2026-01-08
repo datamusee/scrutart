@@ -1,0 +1,42 @@
+wd:Q22115366 rdfs:label """Arbre"""@fr.
+wd:Q22115366 wdt:P31 wd:Q838948 .
+wd:Q22115366 wdt:P170 wd:Q151803.
+wd:Q151803 rdfs:label """Piet Mondrian"""@fr.
+wd:Q151803 wdt:P31 wd:Q3391743 .
+wd:Q22115366 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Piet%20Mondrian%20-%20Boom%20A.jpg".
+wd:Q22115366 pgdc:sparql kgdc:sparql3N2HhzRPZ6A24slmLOh5X2aNfU487AkFQBRdTUtFd13 .
+kgdc:sparql3N2HhzRPZ6A24slmLOh5X2aNfU487AkFQBRdTUtFd13 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q151803 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q60174207 rdfs:label """Composition en rouge, bleu et blanc II"""@fr.
+wd:Q60174207 wdt:P31 wd:Q838948 .
+wd:Q60174207 wdt:P170 wd:Q151803.
+wd:Q151803 rdfs:label """Piet Mondrian"""@fr.
+wd:Q151803 wdt:P31 wd:Q3391743 .
+wd:Q60174207 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Piet%20mondrian%2C%20compoisizione%20in%20rosso%2C%20blu%20e%20bianco%20II%2C%201937%2C%2001.JPG".
+wd:Q60174207 pgdc:sparql kgdc:sparql3N2HhzRPZ6A24slmLOh5X2aNfU487AkFQBRdTUtFd13 .
+kgdc:sparql3N2HhzRPZ6A24slmLOh5X2aNfU487AkFQBRdTUtFd13 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q151803 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

@@ -1,0 +1,2476 @@
+wd:Q113787683 rdfs:label """Louis II de Bourbon Condé et son fils Henri-Jules, duc d'Enghien"""@fr.
+wd:Q113787683 wdt:P31 wd:Q838948 .
+wd:Q113787683 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q113787683 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Louis%20II%20de%20Bourbon%20Cond%C3%A9%20and%20his%20son%20Henri-Jules%2C%20Duke%20of%20Enghien%20-%20Versailles%2C%20MV%208449.jpg".
+wd:Q113787683 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113787683 pgdc:piwigo_image "12753".
+wd:Q113787683 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q111650874 rdfs:label """Anne de Bavière, duchesse d’Enghien puis princesse de Condé, avec ses enfants"""@fr.
+wd:Q111650874 wdt:P31 wd:Q838948 .
+wd:Q111650874 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q111650874 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Madame-de-Montespan2.jpg".
+wd:Q111650874 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111650874 pgdc:piwigo_image "5113".
+wd:Q111650874 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q115671814 rdfs:label """Neptune offrant ses richesses à la France. Allégorie à Louis XIV"""@fr.
+wd:Q115671814 wdt:P31 wd:Q838948 .
+wd:Q115671814 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q115671814 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Compi%C3%A8gne%20Ch%C3%A2teau%20de%20Compi%C3%A8gne%20Innen%20Doppeltes%20Vorzimmer%20Gem%C3%A4lde%201.jpg".
+wd:Q115671814 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115671814 pgdc:piwigo_image "12754".
+wd:Q115671814 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q115748696 rdfs:label """Monseigneur Charles-Maurice Le Tellier"""@fr.
+wd:Q115748696 wdt:P31 wd:Q838948 .
+wd:Q115748696 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q115748696 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/MIGNARD%20Pierre%20Monseigneur%20Charles-Maurice%20Le%20Tellier%20Huile%20sur%20toile.jpg".
+wd:Q115748696 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115748696 pgdc:piwigo_image "12755".
+wd:Q115748696 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q115673290 rdfs:label """Sainte Catherine d'Alexandrie"""@fr.
+wd:Q115673290 wdt:P31 wd:Q838948 .
+wd:Q115673290 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q115673290 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Catherine%20d%20alexandrie%201304253%20p%20mignard.jpg".
+wd:Q115673290 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115673290 pgdc:piwigo_image "12756".
+wd:Q115673290 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q112272365 rdfs:label """La famille du Grand Dauphin, Louis de France (1687)"""@fr.
+wd:Q112272365 wdt:P31 wd:Q838948 .
+wd:Q112272365 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q112272365 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Louis%2C%20the%20Grand%20Dauphin%20of%20France%20with%20his%20Family%20-%20Versailles%20MV%208135.jpg".
+wd:Q112272365 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q112272365 pgdc:piwigo_image "5112".
+wd:Q112272365 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q116284502 rdfs:label """Portrait de Ninon de Lenclos"""@fr.
+wd:Q116284502 wdt:P31 wd:Q838948 .
+wd:Q116284502 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q116284502 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Ninon%20de%20l%27Enclos.jpg".
+wd:Q116284502 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116284502 pgdc:piwigo_image "12757".
+wd:Q116284502 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q115670055 rdfs:label """Saint Luc peignant la Vierge avec l'Autoportrait de Mignard"""@fr.
+wd:Q115670055 wdt:P31 wd:Q838948 .
+wd:Q115670055 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q115670055 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/MignardSaintLuc.jpg".
+wd:Q115670055 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115670055 pgdc:piwigo_image "12758".
+wd:Q115670055 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q130269745 rdfs:label """Portrait de femme tenant une corbeille de fleurs, le corsage fleuri d’une guirlande"""@fr.
+wd:Q130269745 wdt:P31 wd:Q838948 .
+wd:Q130269745 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q130269745 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Gascard%20-%20Portrait%20de%20femme%20tenant%20une%20corbeille%20de%20fleurs.png".
+wd:Q130269745 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130269745 pgdc:piwigo_image "12759".
+wd:Q130269745 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q29842561 rdfs:label """Portrait présumé de Mademoiselle de Blois"""@fr.
+wd:Q29842561 wdt:P31 wd:Q838948 .
+wd:Q29842561 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q29842561 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Marie-Anne%20de%20Bourbon%20by%20Pierre%20Mignard.jpg".
+wd:Q29842561 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29842561 pgdc:piwigo_image "7303".
+wd:Q29842561 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q106649406 rdfs:label """Portrait de dame de la cour"""@fr.
+wd:Q106649406 wdt:P31 wd:Q838948 .
+wd:Q106649406 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106649406 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Beaux-Arts%20de%20Carcassonne%20-%20Portrait%20de%20Dame%20de%20la%20cour%20-%20Pierre%20Mignard%20893.2.461%20Joconde04400001283.jpg".
+wd:Q106649406 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106649406 pgdc:piwigo_image "12760".
+wd:Q106649406 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q104377274 rdfs:label """La Circoncision"""@fr.
+wd:Q104377274 wdt:P31 wd:Q838948 .
+wd:Q104377274 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q104377274 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20La%20Circoncision%20-%20P2280%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104377274 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104377274 pgdc:piwigo_image "12761".
+wd:Q104377274 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q29842557 rdfs:label """Jésus sur le chemin du calvaire"""@fr.
+wd:Q29842557 wdt:P31 wd:Q838948 .
+wd:Q29842557 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q29842557 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/J%C3%A9sus%20sur%20le%20chemin%20du%20Calvaire%202012-06-29.jpg".
+wd:Q29842557 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29842557 pgdc:piwigo_image "12762".
+wd:Q29842557 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q106921731 rdfs:label """La rencontre d'Alexandre avec la reine des Amazones"""@fr.
+wd:Q106921731 wdt:P31 wd:Q838948 .
+wd:Q106921731 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106921731 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La-reine-des-amazones.jpg".
+wd:Q106921731 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106921731 pgdc:piwigo_image "12763".
+wd:Q106921731 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q107024507 rdfs:label """Portrait d'une dame inconnue"""@fr.
+wd:Q107024507 wdt:P31 wd:Q838948 .
+wd:Q107024507 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q107024507 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20d%27une%20dame%20inconnue%20-%20Mignard%20-%20Mus%C3%A9e%20Cond%C3%A9.jpg".
+wd:Q107024507 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107024507 pgdc:piwigo_image "12764".
+wd:Q107024507 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q19631652 rdfs:label """Autoportrait"""@fr.
+wd:Q19631652 wdt:P31 wd:Q838948 .
+wd:Q19631652 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q19631652 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard-autoportrait.jpg".
+wd:Q19631652 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19631652 pgdc:piwigo_image "5809".
+wd:Q19631652 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q104377264 rdfs:label """Françoise-Marguerite de Sévigné, comtesse de Grignan (1648-1705), vers 1669"""@fr.
+wd:Q104377264 wdt:P31 wd:Q838948 .
+wd:Q104377264 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q104377264 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Fran%C3%A7oise-Marguerite%20de%20S%C3%A9vign%C3%A9%2C%20comtesse%20de%20Grignan%20%281648-1705%29%2C%20vers%201669%20-%20P234%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104377264 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104377264 pgdc:piwigo_image "12765".
+wd:Q104377264 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q21725250 rdfs:label """Le Mariage mystique de sainte Catherine"""@fr.
+wd:Q21725250 wdt:P31 wd:Q838948 .
+wd:Q21725250 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q21725250 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Mystic%20Marriage%20of%20St%20Catherine%20-%20WGA15656.jpg".
+wd:Q21725250 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21725250 pgdc:piwigo_image "12766".
+wd:Q21725250 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q65097340 rdfs:label """Louise-Marie-Anne de Bourbon, dite mademoiselle de Tours"""@fr.
+wd:Q65097340 wdt:P31 wd:Q838948 .
+wd:Q65097340 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q65097340 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mademoiselle%20de%20Tours%20%28Louise%20Marie%20Anne%20de%20Bourbon%29%20by%20Pierre%20Mignard%20%28Versaiilles%29.jpg".
+wd:Q65097340 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q65097340 pgdc:piwigo_image "7469".
+wd:Q65097340 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q30098849 rdfs:label """Vierge à l'enfant"""@fr.
+wd:Q30098849 wdt:P31 wd:Q838948 .
+wd:Q30098849 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q30098849 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Maria%20mit%20dem%20Kinde%20-%202364%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30098849 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30098849 pgdc:piwigo_image "12767".
+wd:Q30098849 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q29644824 rdfs:label """Persée et Andromède"""@fr.
+wd:Q29644824 wdt:P31 wd:Q838948 .
+wd:Q29644824 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q29644824 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard-Andromeda%20and%20Perseus.jpg".
+wd:Q29644824 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29644824 pgdc:piwigo_image "12768".
+wd:Q29644824 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q63951550 rdfs:label """Louis XIV à cheval couronné par la Victoire, devant Namur"""@fr.
+wd:Q63951550 wdt:P31 wd:Q838948 .
+wd:Q63951550 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q63951550 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Equestrian%20portrait%20louis%20xiv%201692.jpg".
+wd:Q63951550 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q63951550 pgdc:piwigo_image "4830".
+wd:Q63951550 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q72675446 rdfs:label """La Fortune ou l'Abondance et la Libéralité"""@fr.
+wd:Q72675446 wdt:P31 wd:Q838948 .
+wd:Q72675446 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q72675446 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lille%20Pdba%20mignard%20fortune.JPG".
+wd:Q72675446 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q72675446 pgdc:piwigo_image "4817".
+wd:Q72675446 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q104377273 rdfs:label """Claude Le Peletier (1630-1711), prévôt des marchands de 1668 à 1676"""@fr.
+wd:Q104377273 wdt:P31 wd:Q838948 .
+wd:Q104377273 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q104377273 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Le%20Peletier%2C%20pr%C3%A9vot.jpg".
+wd:Q104377273 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104377273 pgdc:piwigo_image "12769".
+wd:Q104377273 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q107647366 rdfs:label """Portrait de Raymonde de Sade"""@fr.
+wd:Q107647366 wdt:P31 wd:Q838948 .
+wd:Q107647366 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q107647366 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Narbonne%29%20Portrait%20de%20femme%20-%20Pierre%20Mignard%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20Narbonne.jpg".
+wd:Q107647366 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107647366 pgdc:piwigo_image "12770".
+wd:Q107647366 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q107361212 rdfs:label """Portrait de Liselotte de Palatinat"""@fr.
+wd:Q107361212 wdt:P31 wd:Q838948 .
+wd:Q107361212 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q107361212 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Narbonne%29%20Portrait%20de%20Liselotte%20de%20Palatinat%20-%20Pierre%20Mignard%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20Narbonne.jpg".
+wd:Q107361212 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107361212 pgdc:piwigo_image "12771".
+wd:Q107361212 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q26709657 rdfs:label """Molière"""@fr.
+wd:Q26709657 wdt:P31 wd:Q838948 .
+wd:Q26709657 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q26709657 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Portrait%20de%20Jean-Baptiste%20Poquelin%20dit%20Moli%C3%A8re%20%281622-1673%29%20-%20Google%20Art%20Project%20%28cropped%29.jpg".
+wd:Q26709657 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26709657 pgdc:piwigo_image "7095".
+wd:Q26709657 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q106920116 rdfs:label """Clio et Calliope"""@fr.
+wd:Q106920116 wdt:P31 wd:Q838948 .
+wd:Q106920116 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106920116 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Euterpe%20et%20Clio%20by%20Pierre%20Mignard.jpg".
+wd:Q106920116 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106920116 pgdc:piwigo_image "12772".
+wd:Q106920116 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q106920095 rdfs:label """Euterpe, Érato et Uranie"""@fr.
+wd:Q106920095 wdt:P31 wd:Q838948 .
+wd:Q106920095 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106920095 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Calliope%2C%20Urania%20et%20Terpsichore%20by%20Pierre%20Mignard.jpg".
+wd:Q106920095 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106920095 pgdc:piwigo_image "12773".
+wd:Q106920095 pgdc:piwigo_gallery kgdc:gal697.
+wd:Q124822803 rdfs:label """Ritratto di donna"""@fr.
+wd:Q124822803 wdt:P31 wd:Q838948 .
+wd:Q124822803 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q124822803 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20mignard%20%28attr.%29%2C%20ritratto%20della%20marchesa%20di%20sauvignon%2C%20xviii%20secolo.jpg".
+wd:Q124822803 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123865020 rdfs:label """Portrait de jeune homme"""@fr.
+wd:Q123865020 wdt:P31 wd:Q838948 .
+wd:Q123865020 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q123865020 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Portrait%20de%20jeune%20homme%20-%20Mus%C3%A9e%20Grobet%20Labadi%C3%A9.png".
+wd:Q123865020 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q126074980 rdfs:label """La princesse de Lorraine, abbesse de Remiremont"""@fr.
+wd:Q126074980 wdt:P31 wd:Q838948 .
+wd:Q126074980 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q126074980 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Anne%20Charlotte%20of%20Lorraine%20%28Abbess%20of%20Remiremont%29%20by%20an%20unknown%20artist.jpg".
+wd:Q126074980 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124128081 rdfs:label """Q124128081"""@fr.
+wd:Q124128081 wdt:P31 wd:Q838948 .
+wd:Q124128081 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q124128081 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Abb%C3%A9%20Fyot%20comte%20de%20Bosjean.jpg".
+wd:Q124128081 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17583690 rdfs:label """Le Christ au roseau"""@fr.
+wd:Q17583690 wdt:P31 wd:Q838948 .
+wd:Q17583690 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q17583690 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20Christ%20%282004%201%2069%29.jpg".
+wd:Q17583690 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18574529 rdfs:label """The Comte de Toulouse as a Child"""@fr.
+wd:Q18574529 wdt:P31 wd:Q838948 .
+wd:Q18574529 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q18574529 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20The%20Comte%20de%20Toulouse%20as%20a%20Child%20-%20NM%202437%20-%20Nationalmuseum.jpg".
+wd:Q18574529 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123865019 rdfs:label """Portrait de femme"""@fr.
+wd:Q123865019 wdt:P31 wd:Q838948 .
+wd:Q123865019 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q123865019 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Portrait%20de%20femme%20-%20Mus%C3%A9e%20Grobet-Labadi%C3%A9.png".
+wd:Q123865019 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123865017 rdfs:label """Portrait de jeune femme"""@fr.
+wd:Q123865017 wdt:P31 wd:Q838948 .
+wd:Q123865017 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q123865017 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20-%20Portrait%20de%20jeune%20femme%20-%20Mus%C3%A9e%20Grobet%20Labadi%C3%A9.png".
+wd:Q123865017 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122233646 rdfs:label """So-called portrait of Madame de Montespan as Diana"""@fr.
+wd:Q122233646 wdt:P31 wd:Q838948 .
+wd:Q122233646 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q122233646 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Pierre%20Mignard%20-%20So-called%20Madame%20de%20Montespan%20%281640-1707%29%20as%20Diana.jpg".
+wd:Q122233646 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q16683032 rdfs:label """Vénus et Vulcain"""@fr.
+wd:Q16683032 wdt:P31 wd:Q838948 .
+wd:Q16683032 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q16683032 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Cahors%29%20V%C3%A9nus%20et%20Vulcain%20-%20Pierre%20Mignard%20-%20Mus%C3%A9e%20de%20Cahors%20Henri-Martin.jpg".
+wd:Q16683032 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18822428 rdfs:label """Portrait du duc d'Orléans"""@fr.
+wd:Q18822428 wdt:P31 wd:Q838948 .
+wd:Q18822428 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q18822428 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20painting%20of%20Philippe%20of%20France%2C%20Duke%20of%20Orl%C3%A9ans%20holding%20a%20crown%20of%20a%20child%20of%20France%20%28Pierre%20Mignard%2C%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20Bordeaux%29.jpg".
+wd:Q18822428 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130436960 rdfs:label """Portrait of Marie Johanne de la Carre Saumery"""@fr.
+wd:Q130436960 wdt:P31 wd:Q838948 .
+wd:Q130436960 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q130436960 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Johanne%20de%20Saumery.jpg".
+wd:Q130436960 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130710722 rdfs:label """Portrait d'une dame"""@fr.
+wd:Q130710722 wdt:P31 wd:Q838948 .
+wd:Q130710722 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q130710722 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Mignard%20-%20Portrait%20of%20a%20lady%20%28Anna%20de%20Gonzaga%2C%20Princess%20Palatine%3F%29.png".
+wd:Q130710722 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130710779 rdfs:label """Q130710779"""@fr.
+wd:Q130710779 wdt:P31 wd:Q838948 .
+wd:Q130710779 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q130710779 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Pierre%20Mignard%20-%20Portrait%20of%20a%20lady%20in%20a%20lace-trimmed%20gray%20and%20blue%20dress.png".
+wd:Q130710779 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130710839 rdfs:label """Hortense Mancini"""@fr.
+wd:Q130710839 wdt:P31 wd:Q838948 .
+wd:Q130710839 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q130710839 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Pierre%20Mignard%20-%20Hortense%20Mancini.png".
+wd:Q130710839 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130262203 rdfs:label """Portrait de Madame de Montespan soutenue par les grâces et couronnée par les amours"""@fr.
+wd:Q130262203 wdt:P31 wd:Q838948 .
+wd:Q130262203 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q130262203 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Madame%20de%20Montespan%20held%20by%20the%20three%20graces%20attributed%20to%20Mignard.jpg".
+wd:Q130262203 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130262176 rdfs:label """Madame de Montespan et ses enfants"""@fr.
+wd:Q130262176 wdt:P31 wd:Q838948 .
+wd:Q130262176 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q130262176 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Madame%20de%20Maintenon%20avec%20Vexin%20et%20Maine%2C%20Mignard.jpg".
+wd:Q130262176 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Macon%20%28Sa%C3%B4ne-et-Loire%29%20-%20Mus%C3%A9e%20des%20Ursulines%20-%20Portrait%20pr%C3%A9sum%C3%A9%20de%20Madame%20de%20Montespan%20et%20de%20ses%20enfants.jpg".
+wd:Q130262176 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20496980 rdfs:label """Queen Marie Thérèse of France  (1638-1683)"""@fr.
+wd:Q20496980 wdt:P31 wd:Q838948 .
+wd:Q20496980 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q20496980 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Queen%20Marie%20Th%C3%A9r%C3%A8se%20of%20France%20-%20KMSsp697%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20496980 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20355790 rdfs:label """The Young Louis XIV"""@fr.
+wd:Q20355790 wdt:P31 wd:Q838948 .
+wd:Q20355790 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q20355790 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Young%20Louis%20XIV%20%28by%20Pierre%20Mignard%29%20-%20National%20Gallery%20of%20Denmark%20%28Statens%20Museum%20for%20Kunst%29%2C%20Copenhagen%20-%20KMSsp696.jpg".
+wd:Q20355790 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q22071466 rdfs:label """Le Suicide de Porcia"""@fr.
+wd:Q22071466 wdt:P31 wd:Q838948 .
+wd:Q22071466 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q22071466 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Suicide%20de%20Porcia.JPG".
+wd:Q22071466 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q22342146 rdfs:label """Portrait d'Anne d'Autriche (1601-1666)."""@fr.
+wd:Q22342146 wdt:P31 wd:Q838948 .
+wd:Q22342146 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q22342146 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nieznany%20malarz%20polski%20-%20Portrait%20of%20Marie%20Louise%20Gonzaga%20-%5E-%20-%20MP%205274%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q22342146 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20Anne%20of%20Austria.jpg".
+wd:Q22342146 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27753834 rdfs:label """Saint John the Baptist"""@fr.
+wd:Q27753834 wdt:P31 wd:Q838948 .
+wd:Q27753834 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q27753834 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Jean%20Baptiste%20Mignard.jpg".
+wd:Q27753834 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27947461 rdfs:label """Portrait de Louis XIV enfant avec sa demi-sœur Henriette d'Angleterre."""@fr.
+wd:Q27947461 wdt:P31 wd:Q838948 .
+wd:Q27947461 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q27947461 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Malarz%20francuski%20XIX%20wiek%20-%20Portrait%20of%20two%20children%20%28Louis%20XIV%20as%20a%20child%20with%20his%20milk%20sister%29%20-%20M.Ob.286%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q27947461 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26692464 rdfs:label """The Marquise de Seignelay and Two of her Sons"""@fr.
+wd:Q26692464 wdt:P31 wd:Q838948 .
+wd:Q26692464 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q26692464 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20La%20Marquesa%20de%20Seignelay.jpg".
+wd:Q26692464 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28806056 rdfs:label """Madame La Comtesse de Saint Géran"""@fr.
+wd:Q28806056 wdt:P31 wd:Q838948 .
+wd:Q28806056 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q28806056 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Parrocel%2C%20attributed%20to%20-%20Madame%20La%20Comtesse%20de%20Saint%20G%C3%A9ran%20-%20Google%20Art%20Project.jpg".
+wd:Q28806056 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29126787 rdfs:label """portrait de mademoiselle de Fontanges"""@fr.
+wd:Q29126787 wdt:P31 wd:Q838948 .
+wd:Q29126787 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q29126787 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Marie%20Ang%C3%A9lique%20de%20Scorailles%2C%20duchesse%20de%20Fontanges%20-%20Chateau%20Aulteribe.jpg".
+wd:Q29126787 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28044705 rdfs:label """Louise de Kéroualle, Duchess of Portsmouth with an unknown female attendant"""@fr.
+wd:Q28044705 wdt:P31 wd:Q838948 .
+wd:Q28044705 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q28044705 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%2C%20Louise%20de%20K%C3%A9rouaille.jpg".
+wd:Q28044705 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28005683 rdfs:label """Olympe Mancini"""@fr.
+wd:Q28005683 wdt:P31 wd:Q838948 .
+wd:Q28005683 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q28005683 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Olympia%20Mancini%20%281639%E2%80%931708%29%20-%206278%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg".
+wd:Q28005683 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27982755 rdfs:label """Q27982755"""@fr.
+wd:Q27982755 wdt:P31 wd:Q838948 .
+wd:Q27982755 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q27982755 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20gen.%20M.%20le%20Romain%20-%20Hl.%20Antonius%20-%20GG%20800%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27982755 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28038998 rdfs:label """Pan and Syrinx"""@fr.
+wd:Q28038998 wdt:P31 wd:Q838948 .
+wd:Q28038998 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q28038998 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Pan%20and%20Syrinx%20-%20BF.1989.5%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q28038998 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28035529 rdfs:label """James II and Family"""@fr.
+wd:Q28035529 wdt:P31 wd:Q838948 .
+wd:Q28035529 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q28035529 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20II%20and%20Family%20%28Mignard%29.jpg".
+wd:Q28035529 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29175088 rdfs:label """saint Jean-Baptiste enfant"""@fr.
+wd:Q29175088 wdt:P31 wd:Q838948 .
+wd:Q29175088 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q29175088 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bellegarde%20%2845%29%20%C3%89glise%20Notre-Dame%20-%20Int%C3%A9rieur%20-%20Tableau%20-%2005.jpg".
+wd:Q29175088 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29173138 rdfs:label """portrait en pied de Philippe d'Orléans monsieur frère du roi Louis XIV"""@fr.
+wd:Q29173138 wdt:P31 wd:Q838948 .
+wd:Q29173138 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q29173138 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Chambord%20-%20tableau%20Philippe%20d%27Orl%C3%A9ans.jpg".
+wd:Q29173138 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29646490 rdfs:label """La Vierge à la grappe"""@fr.
+wd:Q29646490 wdt:P31 wd:Q838948 .
+wd:Q29646490 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q29646490 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20vierge%20raisins.jpg".
+wd:Q29646490 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29215565 rdfs:label """Portrait de Bossuet"""@fr.
+wd:Q29215565 wdt:P31 wd:Q838948 .
+wd:Q29215565 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q29215565 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacques-B%C3%A9nigne%20Bossuet%20%28Pierre%20Mignard%2C%20ca%201675%29.jpg".
+wd:Q29215565 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29965291 rdfs:label """Marie Anne Christine, Dauphine de France"""@fr.
+wd:Q29965291 wdt:P31 wd:Q838948 .
+wd:Q29965291 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q29965291 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20%28Umkreis%29%20-%20Maria%20Anna%20Christina%2C%20Dauphine%20von%20Frankreich%20%281660-1690%29%20-%207540%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29965291 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q47646939 rdfs:label """Descente de croix"""@fr.
+wd:Q47646939 wdt:P31 wd:Q838948 .
+wd:Q47646939 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q47646939 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Aigues%20Mortes-Chapelle%20des%20P%C3%A9nitents%20Gris-Ma%C3%AEtre%20autel%2C%20Tabernacle%2C%20Tabor-retable-20110824.jpg".
+wd:Q47646939 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50939041 rdfs:label """Clio"""@fr.
+wd:Q50939041 wdt:P31 wd:Q838948 .
+wd:Q50939041 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q50939041 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20001.jpg".
+wd:Q50939041 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q52226512 rdfs:label """The Death of Cleopatra"""@fr.
+wd:Q52226512 wdt:P31 wd:Q838948 .
+wd:Q52226512 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q52226512 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20I%20%281612-1695%29%20-%20The%20Death%20of%20Cleopatra%20-%20129988%20-%20National%20Trust.jpg".
+wd:Q52226512 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q59330705 rdfs:label """Le Grand Dauphin"""@fr.
+wd:Q59330705 wdt:P31 wd:Q838948 .
+wd:Q59330705 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q59330705 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/LeGrdDauphin-1795.jpg".
+wd:Q59330705 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q59771170 rdfs:label """Philippe de Bourbon, duc d'Anjou"""@fr.
+wd:Q59771170 wdt:P31 wd:Q838948 .
+wd:Q59771170 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q59771170 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Felipe%20de%20Borb%C3%B3n%2C%20duque%20de%20Anjou%20%28Museo%20del%20Prado%29.jpg".
+wd:Q59771170 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64652021 rdfs:label """Le cardinal Mazarin"""@fr.
+wd:Q64652021 wdt:P31 wd:Q838948 .
+wd:Q64652021 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q64652021 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cardinal%20Mazarin%20by%20Pierre%20Mignard%20%28Mus%C3%A9e%20Cond%C3%A9%29.jpg".
+wd:Q64652021 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q65097343 rdfs:label """Françoise d'Aubigné, marquise de Maintenon (1635-1719)"""@fr.
+wd:Q65097343 wdt:P31 wd:Q838948 .
+wd:Q65097343 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q65097343 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Fran%C3%A7oise%20d%27Aubign%C3%A9%2C%20marquise%20de%20Maintenon%20%281694%29.jpg".
+wd:Q65097343 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q65097512 rdfs:label """Philippe de France, duc d'Orléans"""@fr.
+wd:Q65097512 wdt:P31 wd:Q838948 .
+wd:Q65097512 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q65097512 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Philippe%20of%20France%2C%20Duke%20of%20Orl%C3%A9ans%20from%20the%20workshop%20of%20Pierre%20Mignard%20%28Versailles%29.jpg".
+wd:Q65097512 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q75868742 rdfs:label """Christ and the Woman of Samaria"""@fr.
+wd:Q75868742 wdt:P31 wd:Q838948 .
+wd:Q75868742 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q75868742 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christ%20and%20the%20Woman%20of%20Samaria%20-%20Pierre%20Mignard%20-%20Google%20Cultural%20Institute.jpg".
+wd:Q75868742 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88219109 rdfs:label """Equestrian Portrait of Louis XIV"""@fr.
+wd:Q88219109 wdt:P31 wd:Q838948 .
+wd:Q88219109 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q88219109 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20I%20%281612-1695%29%20%28after%29%20-%20Equestrian%20Portrait%20of%20Louis%20XIV%20-%20B.M.286%20-%20Bowes%20Museum.jpg".
+wd:Q88219109 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q76867772 rdfs:label """Portrait du Grand Dauphin"""@fr.
+wd:Q76867772 wdt:P31 wd:Q838948 .
+wd:Q76867772 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q76867772 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20du%20Grand%20Dauphin%20%28bgw17%201063%29.jpg".
+wd:Q76867772 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88219113 rdfs:label """Madame de Grignan (1646-1705), Daughter of the Comtesse de Sévigné"""@fr.
+wd:Q88219113 wdt:P31 wd:Q838948 .
+wd:Q88219113 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q88219113 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20I%20%281612-1695%29%20%28school%20of%29%20-%20Madame%20de%20Grignan%20%281646%E2%80%931705%29%2C%20Daughter%20of%20the%20Comtesse%20de%20S%C3%A9vign%C3%A9%20-%20B.M.337%20-%20Bowes%20Museum.jpg".
+wd:Q88219113 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88219122 rdfs:label """Portrait of a Young Lady, Time of Louis XIV"""@fr.
+wd:Q88219122 wdt:P31 wd:Q838948 .
+wd:Q88219122 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q88219122 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20I%20%281612-1695%29%20%28style%20of%29%20-%20Portrait%20of%20a%20Young%20Lady%2C%20Time%20of%20Louis%20XIV%20-%20B.M.247%20-%20Bowes%20Museum.jpg".
+wd:Q88219122 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q99976316 rdfs:label """Godefroy de Bouillon soigné par un ange"""@fr.
+wd:Q99976316 wdt:P31 wd:Q838948 .
+wd:Q99976316 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q99976316 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%2C%20Godefroy%20de%20Bouillon%20soign%C3%A9%20par%20un%20ange.jpg".
+wd:Q99976316 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88219119 rdfs:label """Portrait of a Lady"""@fr.
+wd:Q88219119 wdt:P31 wd:Q838948 .
+wd:Q88219119 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q88219119 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20I%20%281612-1695%29%20%28style%20of%29%20-%20Portrait%20of%20a%20Lady%20-%20B.M.336%20-%20Bowes%20Museum.jpg".
+wd:Q88219119 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106862814 rdfs:label """Portrait of a Lady, said to be the Duchess of Aiguillon (1604-1675)"""@fr.
+wd:Q106862814 wdt:P31 wd:Q838948 .
+wd:Q106862814 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106862814 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Portrait%20of%20a%20Lady%2C%20said%20to%20be%20the%20Duchess%20of%20Aiguillon%20%281604-1675%29%20-%201943.1349%20-%20Harvard%20Art%20Museums.jpg".
+wd:Q106862814 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104532697 rdfs:label """Portrait of a young woman"""@fr.
+wd:Q104532697 wdt:P31 wd:Q838948 .
+wd:Q104532697 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q104532697 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20I%20-%20Portrait%20of%20a%20young%20woman%20-%20M.Ob.1253%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104532697 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106917700 rdfs:label """Portrait d'un homme en costume polonais, très probablement Jean II Casimir Vasa, roi de Pologne"""@fr.
+wd:Q106917700 wdt:P31 wd:Q838948 .
+wd:Q106917700 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106917700 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20Portrait%20of%20a%20man%20in%20Polish%20costume.jpg".
+wd:Q106917700 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106917670 rdfs:label """Portrait d'une femme en costume polonais, très probablement Claudine Françoise Mignot, épouse de Jean Casimir Vasa"""@fr.
+wd:Q106917670 wdt:P31 wd:Q838948 .
+wd:Q106917670 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106917670 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20Portrait%20of%20a%20woman%20in%20Polish%20costume.jpg".
+wd:Q106917670 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106925088 rdfs:label """Time Clipping Cupid's Wings"""@fr.
+wd:Q106925088 wdt:P31 wd:Q838948 .
+wd:Q106925088 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106925088 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20%281610-1695%29%20-%20Time%20Clipping%20Cupid%27s%20Wings%20%281694%29.jpg".
+wd:Q106925088 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106938138 rdfs:label """Dieu le Père"""@fr.
+wd:Q106938138 wdt:P31 wd:Q838948 .
+wd:Q106938138 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106938138 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/God%20the%20Father.jpg".
+wd:Q106938138 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106971807 rdfs:label """Q106971807"""@fr.
+wd:Q106971807 wdt:P31 wd:Q838948 .
+wd:Q106971807 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106971807 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Pierre%20Mignard%20-%20Portrait%20dit%20de%20madame%20de%20La%20Valli%C3%A8re.png".
+wd:Q106971807 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106921480 rdfs:label """Le Temps coupant les ailes de l'Amour"""@fr.
+wd:Q106921480 wdt:P31 wd:Q838948 .
+wd:Q106921480 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106921480 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Collection%20Motais%20de%20Narbonne%20-%20Le%20Temps%20coupant%20les%20ailes%20de%20l%27Amour%201694%20-%20Pierre%20Mignard%20-%2068x54.jpg".
+wd:Q106921480 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106972398 rdfs:label """The Presentation of the Virgin in the Temple"""@fr.
+wd:Q106972398 wdt:P31 wd:Q838948 .
+wd:Q106972398 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106972398 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20The%20Presentation%20of%20the%20Virgin%20in%20the%20Temple%20-%20WGA15659.jpg".
+wd:Q106972398 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106971869 rdfs:label """Q106971869"""@fr.
+wd:Q106971869 wdt:P31 wd:Q838948 .
+wd:Q106971869 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q106971869 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Duchesse%20de%20la%20Valli%C3%A8re%20Pierre%20Mignard.jpg".
+wd:Q106971869 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111097399 rdfs:label """Mademoiselle de Roquelaure"""@fr.
+wd:Q111097399 wdt:P31 wd:Q838948 .
+wd:Q111097399 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q111097399 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Mignard%20-%20M.%20de%20Roquelaure%20-%20Bolton%20Museum.jpg".
+wd:Q111097399 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110907800 rdfs:label """Q110907800"""@fr.
+wd:Q110907800 wdt:P31 wd:Q838948 .
+wd:Q110907800 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q110907800 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Mignard%20-%20%22Ritratto%20di%20Madame%20de%20S%C3%A9vign%C3%A9%22%20-%20Museo%20Glauco%20Lombardi.jpg".
+wd:Q110907800 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108688754 rdfs:label """Marie Madeleine, Comtesse de Lafayette (1634-1693)"""@fr.
+wd:Q108688754 wdt:P31 wd:Q838948 .
+wd:Q108688754 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q108688754 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Madeleine%2C%20Comtesse%20de%20Lafayette%20%281634-1693%29%201952%20379.jpeg".
+wd:Q108688754 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107387338 rdfs:label """Mademoiselle de Soissons (1665–1705)"""@fr.
+wd:Q107387338 wdt:P31 wd:Q838948 .
+wd:Q107387338 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q107387338 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mademoiselle%20de%20Soissons%20%281665%E2%80%931705%29%20AKA%20Princess%20Marie%20Jeanne%20of%20Savoy%20by%20Pierre%20Mignard.jpg".
+wd:Q107387338 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110240452 rdfs:label """Portrait of a Lady as Venus with Cupid"""@fr.
+wd:Q110240452 wdt:P31 wd:Q838948 .
+wd:Q110240452 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q110240452 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Lady%20as%20Venus%20with%20Cupid%2C%20Pierre%20Mignard%2C%20Paris%2C%201680s%2C%20oil%20on%20canvas%20-%20Blanton%20Museum%20of%20Art%20-%20Austin%2C%20Texas%20-%20DSC07845.jpg".
+wd:Q110240452 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110866601 rdfs:label """Le Christ entre les soldats"""@fr.
+wd:Q110866601 wdt:P31 wd:Q838948 .
+wd:Q110866601 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q110866601 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ecce%20homo%20by%20Pierre%20Mignard.jpg".
+wd:Q110866601 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110905519 rdfs:label """Portrait de Mademoiselle de Roquelaure"""@fr.
+wd:Q110905519 wdt:P31 wd:Q838948 .
+wd:Q110905519 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q110905519 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%22Retrato%20de%20Mademoiselle%20de%20Roquelaure%20por%20Pierre%20Mignard%22.png".
+wd:Q110905519 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113991947 rdfs:label """La famille du Grand Dauphin"""@fr.
+wd:Q113991947 wdt:P31 wd:Q838948 .
+wd:Q113991947 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q113991947 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20La%20famille%20du%20Grand%20Dauphin.jpg".
+wd:Q113991947 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114081378 rdfs:label """Portrait équestre de Louis XIV couronné par la Victoire"""@fr.
+wd:Q114081378 wdt:P31 wd:Q838948 .
+wd:Q114081378 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q114081378 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Ludwig%20XIV.%20zu%20Pferde%20-%20hi%20res%201200dpi.jpg".
+wd:Q114081378 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113992128 rdfs:label """Portrait présumé de Marie Mancini (1639-1715)"""@fr.
+wd:Q113992128 wdt:P31 wd:Q838948 .
+wd:Q113992128 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q113992128 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20Marie%20Mancini.jpg".
+wd:Q113992128 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114241484 rdfs:label """Portrait de la comtesse de Grignan"""@fr.
+wd:Q114241484 wdt:P31 wd:Q838948 .
+wd:Q114241484 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q114241484 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Portrait%20of%20Fran%C3%A7oise-Marguerite%2C%20Countess%20of%20Grignan%20-%20WGA15658.jpg".
+wd:Q114241484 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20-%20Portrait%20of%20a%20woman%2C%20traditionally%20identified%20as%20Fran%C3%A7oise-Marguerite%20de%20Grignan%20-%20Uffizi.png".
+wd:Q114241484 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115309004 rdfs:label """Les Enfants du Duc de Bouillon"""@fr.
+wd:Q115309004 wdt:P31 wd:Q838948 .
+wd:Q115309004 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q115309004 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20The%20Children%20of%20the%20Duc%20de%20Bouillon%2C%201647.jpg".
+wd:Q115309004 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115612273 rdfs:label """Portrait du maréchal de Schomberg"""@fr.
+wd:Q115612273 wdt:P31 wd:Q838948 .
+wd:Q115612273 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q115612273 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20mignard%20I%2C%20ritratto%20di%20un%20maresciallo%20di%20francia%2C%20forse%20fran%C3%A7ois-henri%20de%20montmorency-bouteville%2C%20duca%20di%20lussemburgo%2C%20post%201688.jpg".
+wd:Q115612273 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116051580 rdfs:label """portrait de Jacques Louis de Beringhen"""@fr.
+wd:Q116051580 wdt:P31 wd:Q838948 .
+wd:Q116051580 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q116051580 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20Pierre%20Beringhen.jpg".
+wd:Q116051580 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111844088 rdfs:label """Portrait of a Young Lady as Ceres"""@fr.
+wd:Q111844088 wdt:P31 wd:Q838948 .
+wd:Q111844088 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q111844088 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20Portrait%20als%20Ceres.jpg".
+wd:Q111844088 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q112080390 rdfs:label """Allégorie de la peinture"""@fr.
+wd:Q112080390 wdt:P31 wd:Q838948 .
+wd:Q112080390 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q112080390 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Ingres-Bourdelle%20-%20All%C3%A9gorie%20de%20la%20peinture%20-%20Pierre%20Mignard%20-%20Joconde06070000165.jpg".
+wd:Q112080390 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q121092701 rdfs:label """Q121092701"""@fr.
+wd:Q121092701 wdt:P31 wd:Q838948 .
+wd:Q121092701 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q121092701 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Louise%20d%27Orl%C3%A9ans%20by%20Mignard%20wearing%20the%20Fleur-de-lis%20%28showing%20her%20dignity%20as%20a%20Grand%20daughter%20of%20France%29%20and%20the%20Spanish%20crown.jpg".
+wd:Q121092701 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122084703 rdfs:label """Mme de Montespan et le duc du Maine"""@fr.
+wd:Q122084703 wdt:P31 wd:Q838948 .
+wd:Q122084703 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q122084703 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20%28%3F%29%20-%20%22Mme%20de%20Montespan%20et%20le%20duc%20du%20Maine%22.jpg".
+wd:Q122084703 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q121090984 rdfs:label """Portrait of Elizabeth Charlotte, Princess Palatine (1652-1722)"""@fr.
+wd:Q121090984 wdt:P31 wd:Q838948 .
+wd:Q121090984 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q121090984 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Liselotte%2C%20Duchess%20of%20Orl%C3%A9ans%20in%201675%20by%20Mignard.jpg".
+wd:Q121090984 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q121462403 rdfs:label """Q121462403"""@fr.
+wd:Q121462403 wdt:P31 wd:Q838948 .
+wd:Q121462403 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q121462403 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20portrait%20painting%20of%20Marie%20Th%C3%A9r%C3%A8se%20de%20Bourbon%20%281666-1732%29%2C%20Princess%20of%20Conti.jpg".
+wd:Q121462403 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q118985826 rdfs:label """Portrait of an Unknown Lady in a Masque Costume"""@fr.
+wd:Q118985826 wdt:P31 wd:Q838948 .
+wd:Q118985826 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q118985826 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Unknown%20Lady%20in%20Masque%20Costume%20c1670.jpg".
+wd:Q118985826 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120999044 rdfs:label """Portrait of Konstancja Krystyna Wielopolska née Komorowska"""@fr.
+wd:Q120999044 wdt:P31 wd:Q838948 .
+wd:Q120999044 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q120999044 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Krystyna%20z%20Komorowskich%20Wielopolska.jpg".
+wd:Q120999044 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122209656 rdfs:label """Portrait de femme"""@fr.
+wd:Q122209656 wdt:P31 wd:Q838948 .
+wd:Q122209656 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q122209656 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard-Portrait%20de%20femme.jpg".
+wd:Q122209656 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130736745 rdfs:label """Jeune femme en buste"""@fr.
+wd:Q130736745 wdt:P31 wd:Q838948 .
+wd:Q130736745 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q130736745 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attribu%C3%A9%20%C3%A0%20Pierre%20Mignard%20-%20Jeune%20femme%20en%20buste.png".
+wd:Q130736745 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114692482 rdfs:label """Portrait of a Lady (thought to be Henrietta Anne Stuart, 1644–1670, Duchess of Orléans or Marie Mancini, 1646–1714, Princess Colonna)"""@fr.
+wd:Q114692482 wdt:P31 wd:Q838948 .
+wd:Q114692482 wdt:P170 wd:Q360010.
+wd:Q360010 rdfs:label """Pierre Mignard"""@fr.
+wd:Q360010 wdt:P31 wd:Q3391743 .
+wd:Q114692482 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Mignard%20-%20Portrait%20of%20a%20Lady%20%28thought%20to%20be%20Henrietta%20of%20England%20or%20Marie%20Mancini%29.jpg".
+wd:Q114692482 pgdc:sparql kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt .
+kgdc:sparqlp2boql80nLOp7XrEGJySNVcPJDzC96bnFnLycj0Dnxt pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q360010 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

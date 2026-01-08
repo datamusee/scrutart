@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import requests
 import json
 
-from src.generationWordpress.PageBuilder import  PageBuilder
+from PageBuilder import  PageBuilder
 
 
 TYPES = {

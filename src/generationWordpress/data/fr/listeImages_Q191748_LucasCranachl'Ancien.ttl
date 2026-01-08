@@ -1,0 +1,276 @@
+wd:Q56648748 rdfs:label """La Mélancolie"""@fr.
+wd:Q56648748 wdt:P31 wd:wd:Q838948 .
+wd:Q56648748 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q56648748 wdt:P18 "None".
+wd:Q56648748 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q56648748 pgdc:piwigo_image "4982".
+wd:Q56648748 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q29654733 rdfs:label """Portrait de Jean-Frédéric le Magnanime"""@fr.
+wd:Q29654733 wdt:P31 wd:wd:Q838948 .
+wd:Q29654733 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q29654733 wdt:P18 "None".
+wd:Q29654733 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29654733 pgdc:piwigo_image "7185".
+wd:Q29654733 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q84555018 rdfs:label """La Crucifixion"""@fr.
+wd:Q84555018 wdt:P31 wd:wd:Q838948 .
+wd:Q84555018 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q84555018 wdt:P18 "None".
+wd:Q84555018 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q84555018 pgdc:piwigo_image "12058".
+wd:Q84555018 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q88187184 rdfs:label """Les Amants mal assortis"""@fr.
+wd:Q88187184 wdt:P31 wd:wd:Q838948 .
+wd:Q88187184 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q88187184 wdt:P18 "None".
+wd:Q88187184 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88187184 pgdc:piwigo_image "4839".
+wd:Q88187184 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q72180200 rdfs:label """La Dérision du Christ"""@fr.
+wd:Q72180200 wdt:P31 wd:wd:Q838948 .
+wd:Q72180200 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q72180200 wdt:P18 "None".
+wd:Q72180200 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q72180200 pgdc:piwigo_image "12059".
+wd:Q72180200 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q88170880 rdfs:label """Hercule à la cour d'Omphale"""@fr.
+wd:Q88170880 wdt:P31 wd:wd:Q838948 .
+wd:Q88170880 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q88170880 wdt:P18 "None".
+wd:Q88170880 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q88170880 pgdc:piwigo_image "12060".
+wd:Q88170880 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q30109383 rdfs:label """Saint Pierre (volet de retable)"""@fr.
+wd:Q30109383 wdt:P31 wd:wd:Q838948 .
+wd:Q30109383 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q30109383 wdt:P18 "None".
+wd:Q30109383 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30109383 pgdc:piwigo_image "12061".
+wd:Q30109383 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q30109287 rdfs:label """Saint Paul (volet de retable)"""@fr.
+wd:Q30109287 wdt:P31 wd:wd:Q838948 .
+wd:Q30109287 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q30109287 wdt:P18 "None".
+wd:Q30109287 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30109287 pgdc:piwigo_image "12062".
+wd:Q30109287 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q3235872 rdfs:label """Les trois Grâces"""@fr.
+wd:Q3235872 wdt:P31 wd:wd:Q838948 .
+wd:Q3235872 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q3235872 wdt:P18 "None".
+wd:Q3235872 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3235872 pgdc:piwigo_image "5234".
+wd:Q3235872 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q116963234 rdfs:label """La Nymphe à la source"""@fr.
+wd:Q116963234 wdt:P31 wd:wd:Q838948 .
+wd:Q116963234 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q116963234 wdt:P18 "None".
+wd:Q116963234 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116963234 pgdc:piwigo_image "971".
+wd:Q116963234 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q124728479 rdfs:label """Portrait de jeune fille en buste"""@fr.
+wd:Q124728479 wdt:P31 wd:wd:Q838948 .
+wd:Q124728479 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q124728479 wdt:P18 "None".
+wd:Q124728479 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124728479 pgdc:piwigo_image "12063".
+wd:Q124728479 pgdc:piwigo_gallery kgdc:gal344.
+wd:Q120434737 rdfs:label """Vénus et l'Amour voleur de miel"""@fr.
+wd:Q120434737 wdt:P31 wd:wd:Q838948 .
+wd:Q120434737 wdt:P170 wd:Q191748.
+wd:Q191748 rdfs:label """Lucas Cranach l'Ancien"""@fr.
+wd:Q191748 wdt:P31 wd:Q3391743 .
+wd:Q120434737 wdt:P18 "None".
+wd:Q120434737 pgdc:sparql kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN .
+kgdc:sparql6NXHFfUgasgSy4i6TVSsNtFUsp2r9WDbxgRvWaxsCGN pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q191748 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120434737 pgdc:piwigo_image "5243".
+wd:Q120434737 pgdc:piwigo_gallery kgdc:gal344.

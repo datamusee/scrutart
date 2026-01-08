@@ -1,0 +1,3924 @@
+wd:Q493792 rdfs:label """Portrait d'Andrea Doria en Neptune"""@fr.
+wd:Q493792 wdt:P31 wd:Q838948 .
+wd:Q493792 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q493792 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Portrait%20of%20Andrea%20Doria%20as%20Neptune%20-%20WGA3261.jpg".
+wd:Q493792 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q493792 pgdc:piwigo_image "21178".
+wd:Q493792 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q128610363 rdfs:label """Ferdinando de' Medici"""@fr.
+wd:Q128610363 wdt:P31 wd:Q838948 .
+wd:Q128610363 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q128610363 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Ferdinando%20de%27%20Medici%20-%20WGA3252.jpg".
+wd:Q128610363 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q128610363 pgdc:piwigo_image "21179".
+wd:Q128610363 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q126381608 rdfs:label """St Mark"""@fr.
+wd:Q126381608 wdt:P31 wd:Q838948 .
+wd:Q126381608 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q126381608 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20St%20Mark%20-%20WGA03274.jpg".
+wd:Q126381608 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q126381608 pgdc:piwigo_image "21180".
+wd:Q126381608 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q126727913 rdfs:label """Portrait of Lucrezia di Cosimo"""@fr.
+wd:Q126727913 wdt:P31 wd:Q838948 .
+wd:Q126727913 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q126727913 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Lucrezia%20di%20Cosimo%20-%20WGA3256.jpg".
+wd:Q126727913 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q126727913 pgdc:piwigo_image "21181".
+wd:Q126727913 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q126285217 rdfs:label """St Matthew"""@fr.
+wd:Q126285217 wdt:P31 wd:Q838948 .
+wd:Q126285217 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q126285217 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20St%20Matthew%20-%20WGA03275.jpg".
+wd:Q126285217 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q126285217 pgdc:piwigo_image "21182".
+wd:Q126285217 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q131149519 rdfs:label """The Deposition of Christ"""@fr.
+wd:Q131149519 wdt:P31 wd:Q838948 .
+wd:Q131149519 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q131149519 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20The%20Deposition%20of%20Christ%20-%20Google%20Art%20Project.jpg".
+wd:Q131149519 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131149519 pgdc:piwigo_image "21183".
+wd:Q131149519 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q131463514 rdfs:label """Portrait of Luca Martini"""@fr.
+wd:Q131463514 wdt:P31 wd:Q838948 .
+wd:Q131463514 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q131463514 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20ritratto%20di%20Luca%20Martini%2C%201188096%2C%20Galleria%20Palatina.jpg".
+wd:Q131463514 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131463514 pgdc:piwigo_image "21184".
+wd:Q131463514 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q1131476 rdfs:label """La Déploration sur le Christ mort"""@fr.
+wd:Q1131476 wdt:P31 wd:Q838948 .
+wd:Q1131476 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q1131476 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/D%C3%A9ploration%20sur%20le%20Christ%20mort%20%28Bronzino%29.jpg".
+wd:Q1131476 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q1131476 pgdc:piwigo_image "21185".
+wd:Q1131476 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q1328065 rdfs:label """Portrait d'Éléonore de Tolède et son fils Giovanni de' Medici"""@fr.
+wd:Q1328065 wdt:P31 wd:Q838948 .
+wd:Q1328065 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q1328065 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Eleonora%20di%20Toledo%20col%20figlio%20Giovanni%20-%20Google%20Art%20Project.jpg".
+wd:Q1328065 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q1328065 pgdc:piwigo_image "21186".
+wd:Q1328065 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q1430990 rdfs:label """Allégorie du triomphe de Vénus"""@fr.
+wd:Q1430990 wdt:P31 wd:Q838948 .
+wd:Q1430990 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q1430990 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Venus%2C%20Cupid%2C%20Folly%20and%20Time%20-%20National%20Gallery%2C%20London.jpg".
+wd:Q1430990 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q1430990 pgdc:piwigo_image "21187".
+wd:Q1430990 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q1990128 rdfs:label """Portrait de Lucrezia Panciatichi"""@fr.
+wd:Q1990128 wdt:P31 wd:Q838948 .
+wd:Q1990128 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q1990128 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20di%20Cosimo%20Tori%20detto%20Bronzino%20%28Firenze%2C%201503-1572%29%20-%20Ritratto%20di%20Lucrezia%20Panciatichi%20-%20736%20-%20Uffizi%20Gallery.jpg".
+wd:Q1990128 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q1990128 pgdc:piwigo_image "21188".
+wd:Q1990128 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q3625842 rdfs:label """Portrait de Cosimo I de' Medici"""@fr.
+wd:Q3625842 wdt:P31 wd:Q838948 .
+wd:Q3625842 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q3625842 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Cosimo%20I%20de%27%20Medici%20in%20armour%2C%20by%20Agnolo%20Bronzino%20%28Uffizi%20Gallery%2C%20Florence%29.jpg".
+wd:Q3625842 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3625842 pgdc:piwigo_image "21189".
+wd:Q3625842 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q3784272 rdfs:label """Portrait de Giovanni de' Medici enfant"""@fr.
+wd:Q3784272 wdt:P31 wd:Q838948 .
+wd:Q3784272 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q3784272 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Portrait%20of%20Giovanni%20de%E2%80%99%20Medici%20-%201475%20-%20Uffizi%20Gallery.jpg".
+wd:Q3784272 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3784272 pgdc:piwigo_image "21190".
+wd:Q3784272 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q3937472 rdfs:label """Portrait de Bia de' Medici"""@fr.
+wd:Q3937472 wdt:P31 wd:Q838948 .
+wd:Q3937472 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q3937472 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bia%20di%20Cosimo%20de%E2%80%98%20Medici%2C%20by%20Agnolo%20Bronzino.jpg".
+wd:Q3937472 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937472 pgdc:piwigo_image "21191".
+wd:Q3937472 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q3937473 rdfs:label """Portrait de Bartolomeo Panciatichi"""@fr.
+wd:Q3937473 wdt:P31 wd:Q838948 .
+wd:Q3937473 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q3937473 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Painting%20-%20Portrait%20of%20Bartolomeo%20Panciatichi%20by%20Bronzino.jpg".
+wd:Q3937473 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937473 pgdc:piwigo_image "21192".
+wd:Q3937473 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q3937730 rdfs:label """Portrait d'un jeune homme"""@fr.
+wd:Q3937730 wdt:P31 wd:Q838948 .
+wd:Q3937730 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q3937730 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20%28Agnolo%20di%20Cosimo%20di%20Mariano%29%20-%20Portrait%20of%20a%20Young%20Man%20-%20The%20Metropolitan%20Museum%20of%20Art.jpg".
+wd:Q3937730 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937730 pgdc:piwigo_image "21193".
+wd:Q3937730 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q3944462 rdfs:label """Panciatichi La Sainte Famille"""@fr.
+wd:Q3944462 wdt:P31 wd:Q838948 .
+wd:Q3944462 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q3944462 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Sacra%20famiglia%20Panciatichi%20or%20Madonna%20Panciatichi%20-%20Google%20Art%20Project.jpg".
+wd:Q3944462 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3944462 pgdc:piwigo_image "21194".
+wd:Q3944462 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q7232310 rdfs:label """Portrait d'Ugolino Martelli"""@fr.
+wd:Q7232310 wdt:P31 wd:Q838948 .
+wd:Q7232310 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q7232310 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20portrait%20of%20Ugolino%20Martelli%20-%20WGA3264.jpg".
+wd:Q7232310 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q7232310 pgdc:piwigo_image "21195".
+wd:Q7232310 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q18572239 rdfs:label """Le Christ jardinier apparaît à sainte Madeleine"""@fr.
+wd:Q18572239 wdt:P31 wd:Q838948 .
+wd:Q18572239 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q18572239 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Christ%20en%20jardinier%20appara%C3%AEt%20aux%20trois%20Marie%20ou%20Noli%20Me%20tangere%20-%20Il%20Bronzino%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20130%20%3B%20MR%2079.jpg".
+wd:Q18572239 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18572239 pgdc:piwigo_image "12549".
+wd:Q18572239 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q17531832 rdfs:label """Portrait of a man (copy)"""@fr.
+wd:Q17531832 wdt:P31 wd:Q838948 .
+wd:Q17531832 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q17531832 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Portret%20van%20een%20heer%20-%20SA%203342%20-%20Amsterdam%20Museum.jpg".
+wd:Q17531832 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17531832 pgdc:piwigo_image "21196".
+wd:Q17531832 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q18572243 rdfs:label """La Sainte Famille avec sainte Anne et le petit saint Jean-Baptiste"""@fr.
+wd:Q18572243 wdt:P31 wd:Q838948 .
+wd:Q18572243 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q18572243 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20La%20Sainte%20Famille%20avec%20sainte%20Anne%20et%20le%20petit%20saint%20Jean-Baptiste%2002.jpg".
+wd:Q18572243 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18572243 pgdc:piwigo_image "12551".
+wd:Q18572243 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q18599876 rdfs:label """Isabelle de Médicis"""@fr.
+wd:Q18599876 wdt:P31 wd:Q838948 .
+wd:Q18599876 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q18599876 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Isabella%20de%20Medici%20%281542-1576%29%20%28Agnolo%20Bronzino%29%20-%20Nationalmuseum%20-%2017348.tif".
+wd:Q18599876 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18599876 pgdc:piwigo_image "21197".
+wd:Q18599876 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q18609058 rdfs:label """Portrait d'homme tenant une statuette"""@fr.
+wd:Q18609058 wdt:P31 wd:Q838948 .
+wd:Q18609058 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q18609058 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Portrait%20d%27homme%20tenant%20une%20statuette%2002.jpg".
+wd:Q18609058 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18609058 pgdc:piwigo_image "425".
+wd:Q18609058 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q18683039 rdfs:label """Portrait d'un jeune en Saint-Sébastien"""@fr.
+wd:Q18683039 wdt:P31 wd:Q838948 .
+wd:Q18683039 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q18683039 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Saint%20Sebastian%20-%20Google%20Art%20Project.jpg".
+wd:Q18683039 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18683039 pgdc:piwigo_image "21198".
+wd:Q18683039 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q18749422 rdfs:label """Portrait of a Baby Boy"""@fr.
+wd:Q18749422 wdt:P31 wd:Q838948 .
+wd:Q18749422 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q18749422 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Workshop%20of%20Agnolo%20Bronzino%20-%20Portrait%20of%20a%20Baby%20Boy%20-%20Walters%2037451.jpg".
+wd:Q18749422 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18749422 pgdc:piwigo_image "21199".
+wd:Q18749422 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q18748343 rdfs:label """The Feast Given by Joseph for His Brothers"""@fr.
+wd:Q18748343 wdt:P31 wd:Q838948 .
+wd:Q18748343 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q18748343 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20The%20Feast%20Given%20by%20Joseph%20for%20His%20Brothers%20-%20Walters%20371063.jpg".
+wd:Q18748343 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18748343 pgdc:piwigo_image "21200".
+wd:Q18748343 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q19857192 rdfs:label """Lodovico Capponi"""@fr.
+wd:Q19857192 wdt:P31 wd:Q838948 .
+wd:Q19857192 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q19857192 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20055.jpg".
+wd:Q19857192 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19857192 pgdc:piwigo_image "21201".
+wd:Q19857192 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q20175897 rdfs:label """The Holy Family"""@fr.
+wd:Q20175897 wdt:P31 wd:Q838948 .
+wd:Q20175897 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q20175897 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20The%20Holy%20Family%20-%20Google%20Art%20Project.jpg".
+wd:Q20175897 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20175897 pgdc:piwigo_image "21202".
+wd:Q20175897 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q20176599 rdfs:label """Eleonora di Toledo"""@fr.
+wd:Q20176599 wdt:P31 wd:Q838948 .
+wd:Q20176599 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q20176599 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Eleonora%20di%20Toledo%20-%20National%20Gallery%20of%20Art.jpg".
+wd:Q20176599 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20176599 pgdc:piwigo_image "21203".
+wd:Q20176599 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q20176299 rdfs:label """A Young Woman and Her Little Boy"""@fr.
+wd:Q20176299 wdt:P31 wd:Q838948 .
+wd:Q20176299 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q20176299 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20A%20Young%20Woman%20and%20Her%20Little%20Boy%20-%20Google%20Art%20Project.jpg".
+wd:Q20176299 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20176299 pgdc:piwigo_image "21204".
+wd:Q20176299 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q20179963 rdfs:label """St. John the Baptist"""@fr.
+wd:Q20179963 wdt:P31 wd:Q838948 .
+wd:Q20179963 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q20179963 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20St.%20John%20the%20Baptist%20-%2073.PB.70%20-%20J.%20Paul%20Getty%20Museum.jpg".
+wd:Q20179963 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20179963 pgdc:piwigo_image "21205".
+wd:Q20179963 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q20268355 rdfs:label """Virgin and Child with the Young Saint John the Baptist"""@fr.
+wd:Q20268355 wdt:P31 wd:Q838948 .
+wd:Q20268355 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q20268355 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20Virgin%20and%20Child%20with%20the%20Young%20Saint%20John%20the%20Baptist%20-%201963.206%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20268355 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20268355 pgdc:piwigo_image "21206".
+wd:Q20268355 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q20199680 rdfs:label """Portrait of an Elderly Lady"""@fr.
+wd:Q20199680 wdt:P31 wd:Q838948 .
+wd:Q20199680 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q20199680 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20an%20Elderly%20Lady%20by%20Agnolo%20Bronzino%2C%20California%20Palace%20of%20the%20Legion%20of%20Honor.JPG".
+wd:Q20199680 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20199680 pgdc:piwigo_image "21207".
+wd:Q20199680 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q20438813 rdfs:label """Cosme Ier de Toscane en armure"""@fr.
+wd:Q20438813 wdt:P31 wd:Q838948 .
+wd:Q20438813 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q20438813 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20Cosimo%20I%20de%27%20Medici%20in%20armour%20-%20Google%20Art%20Project.jpg".
+wd:Q20438813 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20438813 pgdc:piwigo_image "21208".
+wd:Q20438813 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q20440484 rdfs:label """Portrait of a Man, presumably a member of the Medici Family"""@fr.
+wd:Q20440484 wdt:P31 wd:Q838948 .
+wd:Q20440484 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q20440484 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20Portrait%20of%20a%20Man%2C%20presumably%20a%20member%20of%20the%20Medici%20Family%20-%20KMS563%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20440484 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20440484 pgdc:piwigo_image "21209".
+wd:Q20440484 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q20729893 rdfs:label """Éléonore de Tolède"""@fr.
+wd:Q20729893 wdt:P31 wd:Q838948 .
+wd:Q20729893 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q20729893 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%2C%20Agnolo%20-%20Eleonora%20of%20Toledo%20-%20National%20Gallery%20in%20Prague.jpg".
+wd:Q20729893 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20729893 pgdc:piwigo_image "21210".
+wd:Q20729893 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q20808504 rdfs:label """Portrait of Cosimo I de' Medici as Orpheus"""@fr.
+wd:Q20808504 wdt:P31 wd:Q838948 .
+wd:Q20808504 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q20808504 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20Portrait%20of%20Cosimo%20I%20de%27%20Medici%20as%20Orpheus%20-%20Google%20Art%20Project.jpg".
+wd:Q20808504 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20808504 pgdc:piwigo_image "21211".
+wd:Q20808504 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q21711382 rdfs:label """Cosimo de Medici in Armour"""@fr.
+wd:Q21711382 wdt:P31 wd:Q838948 .
+wd:Q21711382 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q21711382 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Cosimo%20I%20de%27%20Medici%20in%20Armour%20%28by%20Agnolo%20Bronzino%29%20-%20Museo%20Nacional%20Thyssen-Bornemisza%2C%20Madrid%20-%20%28Original%20colors%29.jpg".
+wd:Q21711382 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21711382 pgdc:piwigo_image "21212".
+wd:Q21711382 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q21723151 rdfs:label """Le Supplice de Marsyas"""@fr.
+wd:Q21723151 wdt:P31 wd:Q838948 .
+wd:Q21723151 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q21723151 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Sfida%20tra%20apollo%20e%20marsia.jpg".
+wd:Q21723151 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21723151 pgdc:piwigo_image "21213".
+wd:Q21723151 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q24049414 rdfs:label """Q24049414"""@fr.
+wd:Q24049414 wdt:P31 wd:Q838948 .
+wd:Q24049414 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q24049414 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20and%20Child%20with%20St%20John%20-%20Bronzino%20-%20Palazzo%20Abatellis%20-%20Italy%202015.JPG".
+wd:Q24049414 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q24049414 pgdc:piwigo_image "21214".
+wd:Q24049414 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q26706099 rdfs:label """Portrait de jeune homme"""@fr.
+wd:Q26706099 wdt:P31 wd:Q838948 .
+wd:Q26706099 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q26706099 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Portrait%20of%20a%20Young%20Man.jpg".
+wd:Q26706099 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q26706099 pgdc:piwigo_image "21215".
+wd:Q26706099 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q26707718 rdfs:label """Portrait of Piero de' Medici"""@fr.
+wd:Q26707718 wdt:P31 wd:Q838948 .
+wd:Q26707718 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q26707718 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Piero%20di%20Cosimo%20de%27%20Medici.jpg".
+wd:Q26707718 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q26707718 pgdc:piwigo_image "21216".
+wd:Q26707718 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q27697982 rdfs:label """Don García de' Medici"""@fr.
+wd:Q27697982 wdt:P31 wd:Q838948 .
+wd:Q27697982 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q27697982 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Garcia%20de%27%20Medici%20by%20Angelo%20Bronzino.jpg".
+wd:Q27697982 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27697982 pgdc:piwigo_image "21217".
+wd:Q27697982 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q26707762 rdfs:label """The Madonna and Child with Saints"""@fr.
+wd:Q26707762 wdt:P31 wd:Q838948 .
+wd:Q26707762 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q26707762 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20The%20Madonna%20and%20Child%20with%20Saint%20John%20the%20Baptist%20and%20Saint%20Elizabeth%2C%20National%20Gallery%2C%20London.jpg".
+wd:Q26707762 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q26707762 pgdc:piwigo_image "21218".
+wd:Q26707762 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q27970917 rdfs:label """Portrait of Cosimo I de'Medici"""@fr.
+wd:Q27970917 wdt:P31 wd:Q838948 .
+wd:Q27970917 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q27970917 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%2C%20ritratto%20di%20ragazzo.jpg".
+wd:Q27970917 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27970917 pgdc:piwigo_image "21219".
+wd:Q27970917 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q27979302 rdfs:label """Vierge à l'Enfant avec sainte Anne"""@fr.
+wd:Q27979302 wdt:P31 wd:Q838948 .
+wd:Q27979302 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q27979302 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20di%20Cosimo%2C%20gen.%20Bronzino%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Hl.%20Familie%20mit%20Hl.%20Anna%20und%20Johannesknaben%20-%20GG%20183%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27979302 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20di%20Cosimo%2C%20called%20Bronzino%20-%20Holy%20Family%20with%20St.%20Anne%20and%20the%20Infant%20St.%20John%20-%20Google%20Art%20Project.jpg".
+wd:Q27979302 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27979302 pgdc:piwigo_image "21220".
+wd:Q27979302 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q28028694 rdfs:label """Portrait d'une dame"""@fr.
+wd:Q28028694 wdt:P31 wd:Q838948 .
+wd:Q28028694 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q28028694 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20%281503-72%29%20-%20Portrait%20of%20a%20Lady%20in%20Green%20-%20RCIN%20405754%20-%20Royal%20Collection.jpg".
+wd:Q28028694 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28028694 pgdc:piwigo_image "21221".
+wd:Q28028694 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q28113318 rdfs:label """Portrait de Stefano Colonna"""@fr.
+wd:Q28113318 wdt:P31 wd:Q838948 .
+wd:Q28113318 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q28113318 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Ritratto%20di%20Stefano%20IV%20Colonna%20%281546%29.jpg".
+wd:Q28113318 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28113318 pgdc:piwigo_image "21222".
+wd:Q28113318 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q28797541 rdfs:label """La Sainte Famille"""@fr.
+wd:Q28797541 wdt:P31 wd:Q838948 .
+wd:Q28797541 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q28797541 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20The%20Holy%20Family%20with%20the%20Infant%20Saint%20John%20the%20Baptist%20%28Madonna%20Stroganoff%29%20-%20Google%20Art%20Project.jpg".
+wd:Q28797541 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28797541 pgdc:piwigo_image "21223".
+wd:Q28797541 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q46938357 rdfs:label """Portrait of Eleonora of Toledo and Her Son, Francesco de'Medici"""@fr.
+wd:Q46938357 wdt:P31 wd:Q838948 .
+wd:Q46938357 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q46938357 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20di%20Cosimo%20di%20Mariano%20Bronzino%20%28Italian%2C%20b.1503%2C%20d.1572%29%20-%20Portrait%20of%20Eleonora%20of%20Toledo%20and%20Her%20Son%2C%20Francesco%20de%27Medici%20-%201927.381%20-%20Cincinnati%20Art%20Museum.jpg".
+wd:Q46938357 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q46938357 pgdc:piwigo_image "21224".
+wd:Q46938357 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q48814933 rdfs:label """Portrait d'une jeune inconnue"""@fr.
+wd:Q48814933 wdt:P31 wd:Q838948 .
+wd:Q48814933 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q48814933 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Portrait%20of%20a%20Young%20Girl%20-%20WGA3270.jpg".
+wd:Q48814933 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q48814933 pgdc:piwigo_image "21225".
+wd:Q48814933 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q50323124 rdfs:label """Q50323124"""@fr.
+wd:Q50323124 wdt:P31 wd:Q838948 .
+wd:Q50323124 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q50323124 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gem%C3%A4ldegalerie%20Alte%20Meister%20%28Dresden%29%20Galeriewerk%20Braun%200064.jpg".
+wd:Q50323124 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50323124 pgdc:piwigo_image "21226".
+wd:Q50323124 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q50378007 rdfs:label """Portrait of Francesco I de' Medici"""@fr.
+wd:Q50378007 wdt:P31 wd:Q838948 .
+wd:Q50378007 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q50378007 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/FrancescodeMedici.jpg".
+wd:Q50378007 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50378007 pgdc:piwigo_image "21227".
+wd:Q50378007 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q50378015 rdfs:label """Portrait de Marie de Médicis"""@fr.
+wd:Q50378015 wdt:P31 wd:Q838948 .
+wd:Q50378015 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q50378015 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20Maria%20%28di%20Cosimo%20I%29%20de%27%20Medici.jpg".
+wd:Q50378015 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50378015 pgdc:piwigo_image "21228".
+wd:Q50378015 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q50474718 rdfs:label """Allégorie de la Félicité"""@fr.
+wd:Q50474718 wdt:P31 wd:Q838948 .
+wd:Q50474718 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q50474718 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Allegory%20of%20Fortune%2C%20by%20Agnolo%20Bronzino%20%28Ober%C3%B6sterreichische%20Landesmuseum%29%20%28cropped%29.jpg".
+wd:Q50474718 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50474718 pgdc:piwigo_image "21229".
+wd:Q50474718 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q50384906 rdfs:label """Portrait of a young man with a lute"""@fr.
+wd:Q50384906 wdt:P31 wd:Q838948 .
+wd:Q50384906 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q50384906 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20064.jpg".
+wd:Q50384906 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50384906 pgdc:piwigo_image "21230".
+wd:Q50384906 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q50902915 rdfs:label """Portrait of a Young Lady"""@fr.
+wd:Q50902915 wdt:P31 wd:Q838948 .
+wd:Q50902915 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q50902915 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Budapest%20bronzino.JPG".
+wd:Q50902915 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50902915 pgdc:piwigo_image "21231".
+wd:Q50902915 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q50906201 rdfs:label """Venus, Cupid and Jealousy"""@fr.
+wd:Q50906201 wdt:P31 wd:Q838948 .
+wd:Q50906201 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q50906201 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Venus%2C%20Cupid%20and%20Envy%20-%20WGA3298.jpg".
+wd:Q50906201 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50906201 pgdc:piwigo_image "21232".
+wd:Q50906201 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q50973173 rdfs:label """L’Adoration des bergers"""@fr.
+wd:Q50973173 wdt:P31 wd:Q838948 .
+wd:Q50973173 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q50973173 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Worship%20of%20the%20shepherds%20by%20bronzino.jpg".
+wd:Q50973173 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50973173 pgdc:piwigo_image "21233".
+wd:Q50973173 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q56036662 rdfs:label """Portrait of Cosimo I de' Medici"""@fr.
+wd:Q56036662 wdt:P31 wd:Q838948 .
+wd:Q56036662 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q56036662 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Bildnis%20Cosimo%20I.%2C%20Gro%C3%9Fherzog%20von%20Toscana%2C%20um%201550.jpg".
+wd:Q56036662 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q56036662 pgdc:piwigo_image "21234".
+wd:Q56036662 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q59501432 rdfs:label """Pierantonio Bandini"""@fr.
+wd:Q59501432 wdt:P31 wd:Q838948 .
+wd:Q59501432 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q59501432 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Pierantonio%20Bandini%20-%20c.%201550-55.jpg".
+wd:Q59501432 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q59501432 pgdc:piwigo_image "7393".
+wd:Q59501432 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q60472115 rdfs:label """Portrait of a Woman"""@fr.
+wd:Q60472115 wdt:P31 wd:Q838948 .
+wd:Q60472115 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q60472115 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Clevelandart%201972.121.jpg".
+wd:Q60472115 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q60472115 pgdc:piwigo_image "21235".
+wd:Q60472115 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q64515746 rdfs:label """Madonna and Child with Saint John the Baptist"""@fr.
+wd:Q64515746 wdt:P31 wd:Q838948 .
+wd:Q64515746 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q64515746 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20bronzino%2C%20madonna%20col%20bambino%20e%20san%20giovannino%2C%201540%20ca.%2001.jpg".
+wd:Q64515746 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20Madonna%20and%20Child%20with%20Saint%20John%20the%20Baptist%20-%2082.51%20-%20Detroit%20Institute%20of%20Arts.jpg".
+wd:Q64515746 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q64515746 pgdc:piwigo_image "21236".
+wd:Q64515746 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q64515739 rdfs:label """Costanza da Sommaia"""@fr.
+wd:Q64515739 wdt:P31 wd:Q838948 .
+wd:Q64515739 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q64515739 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Costanza%20da%20Sommaia%2C%20ca.%201540.jpg".
+wd:Q64515739 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q64515739 pgdc:piwigo_image "21237".
+wd:Q64515739 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q64515775 rdfs:label """Eleonora of Toledo and Her Son"""@fr.
+wd:Q64515775 wdt:P31 wd:Q838948 .
+wd:Q64515775 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q64515775 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Workshop%20of%20Bronzino%20-%20Eleonora%20of%20Toledo%20and%20Her%20Son%2C%20between%201545%20and%201550.jpg".
+wd:Q64515775 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q64515775 pgdc:piwigo_image "21238".
+wd:Q64515775 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q64788316 rdfs:label """Portrait d'une dame avec un chien de compagnie"""@fr.
+wd:Q64788316 wdt:P31 wd:Q838948 .
+wd:Q64788316 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q64788316 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Lady%20in%20Red%20%28Francesca%20Salviati%3F%29%20%28SM%201136%29.png".
+wd:Q64788316 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q64788316 pgdc:piwigo_image "21239".
+wd:Q64788316 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q64576694 rdfs:label """Portrait of a Young Man"""@fr.
+wd:Q64576694 wdt:P31 wd:Q838948 .
+wd:Q64576694 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q64576694 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Portrait%20of%20a%20Young%20Man%2C%201550-1555.jpg".
+wd:Q64576694 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q64576694 pgdc:piwigo_image "21240".
+wd:Q64576694 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q67201350 rdfs:label """Eleonora di Toledo with her son Francesco"""@fr.
+wd:Q67201350 wdt:P31 wd:Q838948 .
+wd:Q67201350 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q67201350 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20Eleonora%20di%20Toledo%20with%20her%20son%20Francesco.jpg".
+wd:Q67201350 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q67201350 pgdc:piwigo_image "21241".
+wd:Q67201350 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q71650320 rdfs:label """Resurrection of Christ"""@fr.
+wd:Q71650320 wdt:P31 wd:Q838948 .
+wd:Q71650320 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q71650320 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%2C%20resurrezione%2C%201552%2C%2001.jpg".
+wd:Q71650320 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q71650320 pgdc:piwigo_image "21242".
+wd:Q71650320 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q74810157 rdfs:label """Christ en croix"""@fr.
+wd:Q74810157 wdt:P31 wd:Q838948 .
+wd:Q74810157 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q74810157 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino-Christ-Nice.jpg".
+wd:Q74810157 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q74810157 pgdc:piwigo_image "12550".
+wd:Q74810157 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q77939166 rdfs:label """Saint Catherine of Alexandria"""@fr.
+wd:Q77939166 wdt:P31 wd:Q838948 .
+wd:Q77939166 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q77939166 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Catherine%20of%20Alexandria%20.PNG".
+wd:Q77939166 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q77939166 pgdc:piwigo_image "21243".
+wd:Q77939166 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q77881248 rdfs:label """Saint John the Baptist in the Wilderness"""@fr.
+wd:Q77881248 wdt:P31 wd:Q838948 .
+wd:Q77881248 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q77881248 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20John%20the%20Baptist%20in%20the%20Wilderness%20.PNG".
+wd:Q77881248 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q77881248 pgdc:piwigo_image "21244".
+wd:Q77881248 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q78667002 rdfs:label """Don Giovanni de’Medici"""@fr.
+wd:Q78667002 wdt:P31 wd:Q838948 .
+wd:Q78667002 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q78667002 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20bronzino%2C%20don%20giovanni%20de%27%20medici%2C%201551%20ca.jpg".
+wd:Q78667002 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q78667002 pgdc:piwigo_image "21245".
+wd:Q78667002 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q83295755 rdfs:label """Pietà"""@fr.
+wd:Q83295755 wdt:P31 wd:Q838948 .
+wd:Q83295755 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q83295755 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Piet%C3%A0%20-%20WGA3284.jpg".
+wd:Q83295755 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q83295755 pgdc:piwigo_image "21246".
+wd:Q83295755 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q105296029 rdfs:label """Vierge et l'Enfant avec saint Jean-Baptiste."""@fr.
+wd:Q105296029 wdt:P31 wd:Q838948 .
+wd:Q105296029 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q105296029 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%2C%20Madonna%20with%20Child%20and%20Saint%20John%2C%20Wroc%C5%82aw%20Muzeum%20Narodowe.jpg".
+wd:Q105296029 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q105296029 pgdc:piwigo_image "21247".
+wd:Q105296029 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q90485037 rdfs:label """Portrait of Laura Battiferri"""@fr.
+wd:Q90485037 wdt:P31 wd:Q838948 .
+wd:Q90485037 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q90485037 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Laura%20Battiferri%20by%20Angelo%20Bronzino.jpg".
+wd:Q90485037 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q90485037 pgdc:piwigo_image "21248".
+wd:Q90485037 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q79030035 rdfs:label """Portrait of Giovanna Chevara and Giovanni Montalvo"""@fr.
+wd:Q79030035 wdt:P31 wd:Q838948 .
+wd:Q79030035 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q79030035 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Antonio%20Montalvo%27s%20Wife%2C%20and%20One%20of%20His%20Sons%2C%20about%201560-1565.jpg".
+wd:Q79030035 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q79030035 pgdc:piwigo_image "21249".
+wd:Q79030035 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q105296824 rdfs:label """Portrait de Cosme I de Médicis en armure."""@fr.
+wd:Q105296824 wdt:P31 wd:Q838948 .
+wd:Q105296824 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q105296824 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20Cosimo%20de%27%20Medici.jpg".
+wd:Q105296824 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q105296824 pgdc:piwigo_image "21250".
+wd:Q105296824 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q107287657 rdfs:label """Le Christ dans les limbes"""@fr.
+wd:Q107287657 wdt:P31 wd:Q838948 .
+wd:Q107287657 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q107287657 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Refettorio%20santa%20croce%202009.JPG".
+wd:Q107287657 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107287657 pgdc:piwigo_image "21251".
+wd:Q107287657 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q107447067 rdfs:label """Q107447067"""@fr.
+wd:Q107447067 wdt:P31 wd:Q838948 .
+wd:Q107447067 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q107447067 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Bildnis%20eines%20J%C3%BCnglings%2C%20um%201560%2C%20S.2%20%28cropped%29.jpg".
+wd:Q107447067 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107447067 pgdc:piwigo_image "21252".
+wd:Q107447067 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q106839979 rdfs:label """Portrait d'une dame"""@fr.
+wd:Q106839979 wdt:P31 wd:Q838948 .
+wd:Q106839979 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q106839979 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ritratto%20di%20dama%2C%20Agnolo%20Bronzino%20001.JPG".
+wd:Q106839979 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q106839979 pgdc:piwigo_image "21253".
+wd:Q106839979 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q108314527 rdfs:label """Portrait of the Dwarf Nano Morgante"""@fr.
+wd:Q108314527 wdt:P31 wd:Q838948 .
+wd:Q108314527 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q108314527 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nano%20Morgante.jpg".
+wd:Q108314527 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q108314527 pgdc:piwigo_image "21254".
+wd:Q108314527 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q110015681 rdfs:label """Saint John the Baptist"""@fr.
+wd:Q110015681 wdt:P31 wd:Q838948 .
+wd:Q110015681 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q110015681 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20St%20John%20the%20Baptist%20-%20WGA03281.jpg".
+wd:Q110015681 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q110015681 pgdc:piwigo_image "21255".
+wd:Q110015681 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q111577849 rdfs:label """Pygmalion et Galatée"""@fr.
+wd:Q111577849 wdt:P31 wd:Q838948 .
+wd:Q111577849 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q111577849 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20068.jpg".
+wd:Q111577849 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111577849 pgdc:piwigo_image "21256".
+wd:Q111577849 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q111381253 rdfs:label """Vierge à l'Enfant avec sainte Élisabeth et saint Jean-Baptiste"""@fr.
+wd:Q111381253 wdt:P31 wd:Q838948 .
+wd:Q111381253 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q111381253 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Virgin%20and%20Child%20with%20Saint%20Elizabeth%20and%20Saint%20John%20the%20Baptist%20-2019.116%20The%20J.%20Paul%20Getty%20Museum.jpg".
+wd:Q111381253 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111381253 pgdc:piwigo_image "21257".
+wd:Q111381253 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q111641692 rdfs:label """Portrait of Francesco I de Medici"""@fr.
+wd:Q111641692 wdt:P31 wd:Q838948 .
+wd:Q111641692 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q111641692 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angiolo%20Bronzino%20%281502-1572%29%20-%20Portr%C3%A4t%20des%20Francesco%20Medici%20-%201112%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111641692 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111641692 pgdc:piwigo_image "21258".
+wd:Q111641692 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q111647865 rdfs:label """portrait of a gentleman with his dog"""@fr.
+wd:Q111647865 wdt:P31 wd:Q838948 .
+wd:Q111647865 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q111647865 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angiolo%20Bronzino%20%281502-1572%29%20-%20Bildnis%20eines%20jungen%20Mannes%20mit%20Radkragen%20und%20Degen%20-%202741%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111647865 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111647865 pgdc:piwigo_image "21259".
+wd:Q111647865 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q113648040 rdfs:label """Portrait of a young Man in black with a book"""@fr.
+wd:Q113648040 wdt:P31 wd:Q838948 .
+wd:Q113648040 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q113648040 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20young%20man%20with%20a%20book%20%28by%20Agnolo%20Bronzino%29.jpg".
+wd:Q113648040 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q113648040 pgdc:piwigo_image "21260".
+wd:Q113648040 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q113825024 rdfs:label """Portrait de Guidobaldo II della Rovere"""@fr.
+wd:Q113825024 wdt:P31 wd:Q838948 .
+wd:Q113825024 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q113825024 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Portrait%20of%20Guidobaldo%20della%20Rovere.jpg".
+wd:Q113825024 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q113825024 pgdc:piwigo_image "21261".
+wd:Q113825024 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q117795183 rdfs:label """portrait allegorique de Dante"""@fr.
+wd:Q117795183 wdt:P31 wd:Q838948 .
+wd:Q117795183 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q117795183 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dante03.jpg".
+wd:Q117795183 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117795183 pgdc:piwigo_image "21262".
+wd:Q117795183 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q117215371 rdfs:label """Portrait of Cosimo I de' Medici"""@fr.
+wd:Q117215371 wdt:P31 wd:Q838948 .
+wd:Q117215371 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q117215371 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20Bronzino%20-%20Portrait%20of%20Cosimo%20I%20de%27%20Medici%20-%20O%2014692%20-%20National%20Gallery%20Prague.jpg".
+wd:Q117215371 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117215371 pgdc:piwigo_image "21263".
+wd:Q117215371 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q120401056 rdfs:label """Portrait de Piero de' Medici"""@fr.
+wd:Q120401056 wdt:P31 wd:Q838948 .
+wd:Q120401056 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q120401056 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Piero%20de%27%20Medici%20by%20Bronzino.jpg".
+wd:Q120401056 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q120401056 pgdc:piwigo_image "21264".
+wd:Q120401056 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q118985390 rdfs:label """Portrait of a Lady in a Black Dress"""@fr.
+wd:Q118985390 wdt:P31 wd:Q838948 .
+wd:Q118985390 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q118985390 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Style%20of%20Agnolo%20Bronzino%20-%20Portrait%20of%20a%20Lady%20-%20Victoria%20and%20Albert%20Museum.jpg".
+wd:Q118985390 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118985390 pgdc:piwigo_image "21265".
+wd:Q118985390 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q118875046 rdfs:label """Giovanni de' Medici"""@fr.
+wd:Q118875046 wdt:P31 wd:Q838948 .
+wd:Q118875046 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q118875046 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Giovanni%20de%27%20Medici%2C%20c.%201550%20-%201551.jpg".
+wd:Q118875046 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118875046 pgdc:piwigo_image "21266".
+wd:Q118875046 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q123473584 rdfs:label """Portrait of a Lady"""@fr.
+wd:Q123473584 wdt:P31 wd:Q838948 .
+wd:Q123473584 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q123473584 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20060.jpg".
+wd:Q123473584 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q123473584 pgdc:piwigo_image "21267".
+wd:Q123473584 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q124347881 rdfs:label """Pietà"""@fr.
+wd:Q124347881 wdt:P31 wd:Q838948 .
+wd:Q124347881 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q124347881 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Santa%20croce%2C%20piet%C3%A0%20di%20bronzino.JPG".
+wd:Q124347881 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124347881 pgdc:piwigo_image "21268".
+wd:Q124347881 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q124350580 rdfs:label """Porträt des Lorenzo Lenzi"""@fr.
+wd:Q124350580 wdt:P31 wd:Q838948 .
+wd:Q124350580 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q124350580 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bronzino%20-%20Portrait%20of%20Lorenzo%20Lenzi.jpg".
+wd:Q124350580 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124350580 pgdc:piwigo_image "21269".
+wd:Q124350580 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q124348118 rdfs:label """Descent to Limbo"""@fr.
+wd:Q124348118 wdt:P31 wd:Q838948 .
+wd:Q124348118 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q124348118 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Italy-1110%20-%20Christ%20to%20Limbo%20%285203559587%29.jpg".
+wd:Q124348118 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124348118 pgdc:piwigo_image "21270".
+wd:Q124348118 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q124347898 rdfs:label """Portrait of a young Man"""@fr.
+wd:Q124347898 wdt:P31 wd:Q838948 .
+wd:Q124347898 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q124347898 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20bronzino%2C%20ritratto%20di%20giovane%20uomo%2C%201550-55%20ca.%2001.jpg".
+wd:Q124347898 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124347898 pgdc:piwigo_image "21271".
+wd:Q124347898 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q124354582 rdfs:label """Saint Lawrence with Angel"""@fr.
+wd:Q124354582 wdt:P31 wd:Q838948 .
+wd:Q124354582 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q124354582 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20bronzino%2C%20San%20Lorenzo%20e%20un%20angelo%2C%201523-24.jpg".
+wd:Q124354582 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124354582 pgdc:piwigo_image "21272".
+wd:Q124354582 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q124350611 rdfs:label """Portrait of Cardinal Ippolito de’ Medici"""@fr.
+wd:Q124350611 wdt:P31 wd:Q838948 .
+wd:Q124350611 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q124350611 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20bronzino%2C%20ritratto%20del%20cardinale%20ippolito%20de%27%20medici%2001.jpg".
+wd:Q124350611 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124350611 pgdc:piwigo_image "21273".
+wd:Q124350611 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q124354605 rdfs:label """Q124354605"""@fr.
+wd:Q124354605 wdt:P31 wd:Q838948 .
+wd:Q124354605 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q124354605 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Agnolo%20bronzino%2C%20San%20Lorenzo%20dona%20la%20vista%20ai%20ciechi%2C%201523-24%2C%2002.jpg".
+wd:Q124354605 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124354605 pgdc:piwigo_image "21274".
+wd:Q124354605 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q126009163 rdfs:label """Porträt des Luca Martini"""@fr.
+wd:Q126009163 wdt:P31 wd:Q838948 .
+wd:Q126009163 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q126009163 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angiolo%20Bronzino%20-%20Portrait%20of%20Luca%20Martini.jpg".
+wd:Q126009163 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q126009163 pgdc:piwigo_image "21275".
+wd:Q126009163 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q126164200 rdfs:label """Crossing of the Red Sea"""@fr.
+wd:Q126164200 wdt:P31 wd:Q838948 .
+wd:Q126164200 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q126164200 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Crossing%20of%20the%20Red%20Sea%20-%20WGA03294.jpg".
+wd:Q126164200 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q126164200 pgdc:piwigo_image "21276".
+wd:Q126164200 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q125964860 rdfs:label """Alessandro de' Medici"""@fr.
+wd:Q125964860 wdt:P31 wd:Q838948 .
+wd:Q125964860 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q125964860 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Alessandro%20de%27%20Medici%20-%20WGA3243.jpg".
+wd:Q125964860 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q125964860 pgdc:piwigo_image "21277".
+wd:Q125964860 pgdc:piwigo_gallery kgdc:gal758.
+wd:Q125958556 rdfs:label """Mary Magdalene (Young Florentine Woman portrayed as the Magdalene)"""@fr.
+wd:Q125958556 wdt:P31 wd:Q838948 .
+wd:Q125958556 wdt:P170 wd:Q7803.
+wd:Q7803 rdfs:label """Bronzino"""@fr.
+wd:Q7803 wdt:P31 wd:Q3391743 .
+wd:Q125958556 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Angelo%20Bronzino%20-%20Maria%20Magdalena.jpg".
+wd:Q125958556 pgdc:sparql kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 .
+kgdc:sparqlDYMmZjspZP7wkomXS59BTn2KaeP1r86PZH5xSgiuUf5 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q7803 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q7803 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q125958556 pgdc:piwigo_image "21278".
+wd:Q125958556 pgdc:piwigo_gallery kgdc:gal758.

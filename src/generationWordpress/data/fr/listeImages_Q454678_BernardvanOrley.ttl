@@ -1,0 +1,69 @@
+wd:Q123984607 rdfs:label """Portrait d'un secrétaire de Charles Quint"""@fr.
+wd:Q123984607 wdt:P31 wd:wd:Q838948 .
+wd:Q123984607 wdt:P170 wd:Q454678.
+wd:Q454678 rdfs:label """Bernard van Orley"""@fr.
+wd:Q454678 wdt:P31 wd:Q3391743 .
+wd:Q123984607 wdt:P18 "None".
+wd:Q123984607 pgdc:sparql kgdc:sparqlz7eo3YeQjjkeXIypzLlSZsSMtAZsXVBRIRQR5qhBAPH .
+kgdc:sparqlz7eo3YeQjjkeXIypzLlSZsSMtAZsXVBRIRQR5qhBAPH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q454678 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123984607 pgdc:piwigo_image "12622".
+wd:Q123984607 pgdc:piwigo_gallery kgdc:gal731.
+wd:Q116296337 rdfs:label """Volet gauche du retable de la confrérie de la Sainte-Croix à Furnes. Avers : Sainte Hélène devant le pape à Rome. Revers : Le Christ succombant sous la croix"""@fr.
+wd:Q116296337 wdt:P31 wd:wd:Q838948 .
+wd:Q116296337 wdt:P170 wd:Q454678.
+wd:Q454678 rdfs:label """Bernard van Orley"""@fr.
+wd:Q454678 wdt:P31 wd:Q3391743 .
+wd:Q116296337 wdt:P18 "None".
+wd:Q116296337 pgdc:sparql kgdc:sparqlz7eo3YeQjjkeXIypzLlSZsSMtAZsXVBRIRQR5qhBAPH .
+kgdc:sparqlz7eo3YeQjjkeXIypzLlSZsSMtAZsXVBRIRQR5qhBAPH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q454678 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116296337 pgdc:piwigo_image "12623".
+wd:Q116296337 pgdc:piwigo_gallery kgdc:gal731.
+wd:Q29647747 rdfs:label """Le Christ au jardin des oliviers"""@fr.
+wd:Q29647747 wdt:P31 wd:wd:Q838948 .
+wd:Q29647747 wdt:P170 wd:Q454678.
+wd:Q454678 rdfs:label """Bernard van Orley"""@fr.
+wd:Q454678 wdt:P31 wd:Q3391743 .
+wd:Q29647747 wdt:P18 "None".
+wd:Q29647747 pgdc:sparql kgdc:sparqlz7eo3YeQjjkeXIypzLlSZsSMtAZsXVBRIRQR5qhBAPH .
+kgdc:sparqlz7eo3YeQjjkeXIypzLlSZsSMtAZsXVBRIRQR5qhBAPH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q454678 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29647747 pgdc:piwigo_image "12624".
+wd:Q29647747 pgdc:piwigo_gallery kgdc:gal731.

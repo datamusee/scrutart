@@ -1,0 +1,1403 @@
+wd:Q63724809 rdfs:label """La Vierge à l'Enfant avec saint Jean-Baptiste"""@fr.
+wd:Q63724809 wdt:P31 wd:wd:Q838948 .
+wd:Q63724809 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q63724809 wdt:P18 "None".
+wd:Q63724809 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q63724809 pgdc:piwigo_image "13720".
+wd:Q63724809 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q29842254 rdfs:label """Le Ravissement de saint Paul"""@fr.
+wd:Q29842254 wdt:P31 wd:wd:Q838948 .
+wd:Q29842254 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q29842254 wdt:P18 "None".
+wd:Q29842254 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29842254 pgdc:piwigo_image "13721".
+wd:Q29842254 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q50807979 rdfs:label """La Sainte Famille"""@fr.
+wd:Q50807979 wdt:P31 wd:wd:Q838948 .
+wd:Q50807979 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q50807979 wdt:P18 "None".
+wd:Q50807979 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50807979 pgdc:piwigo_image "13722".
+wd:Q50807979 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q59542375 rdfs:label """Le martyre de saint Érasme"""@fr.
+wd:Q59542375 wdt:P31 wd:wd:Q838948 .
+wd:Q59542375 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q59542375 wdt:P18 "None".
+wd:Q59542375 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q59542375 pgdc:piwigo_image "13723".
+wd:Q59542375 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q23929172 rdfs:label """La Nourriture de Jupiter"""@fr.
+wd:Q23929172 wdt:P31 wd:wd:Q838948 .
+wd:Q23929172 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q23929172 wdt:P18 "None".
+wd:Q23929172 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q23929172 pgdc:piwigo_image "13724".
+wd:Q23929172 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q26251915 rdfs:label """Le Printemps"""@fr.
+wd:Q26251915 wdt:P31 wd:wd:Q838948 .
+wd:Q26251915 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q26251915 wdt:P18 "None".
+wd:Q26251915 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26251915 pgdc:piwigo_image "8444".
+wd:Q26251915 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q26251916 rdfs:label """L'Été"""@fr.
+wd:Q26251916 wdt:P31 wd:wd:Q838948 .
+wd:Q26251916 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q26251916 wdt:P18 "None".
+wd:Q26251916 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26251916 pgdc:piwigo_image "8445".
+wd:Q26251916 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q25445132 rdfs:label """L'Hiver"""@fr.
+wd:Q25445132 wdt:P31 wd:wd:Q838948 .
+wd:Q25445132 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q25445132 wdt:P18 "None".
+wd:Q25445132 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q25445132 pgdc:piwigo_image "8396".
+wd:Q25445132 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q29842261 rdfs:label """Moïse enfant foulant aux pieds la couronne de Pharaon"""@fr.
+wd:Q29842261 wdt:P31 wd:wd:Q838948 .
+wd:Q29842261 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q29842261 wdt:P18 "None".
+wd:Q29842261 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29842261 pgdc:piwigo_image "13725".
+wd:Q29842261 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q50660618 rdfs:label """Midas transformant en or le rameau d'une yeuse"""@fr.
+wd:Q50660618 wdt:P31 wd:wd:Q838948 .
+wd:Q50660618 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q50660618 wdt:P18 "None".
+wd:Q50660618 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50660618 pgdc:piwigo_image "13726".
+wd:Q50660618 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q50807824 rdfs:label """L'Annonciation"""@fr.
+wd:Q50807824 wdt:P31 wd:wd:Q838948 .
+wd:Q50807824 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q50807824 wdt:P18 "None".
+wd:Q50807824 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50807824 pgdc:piwigo_image "13727".
+wd:Q50807824 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q59538177 rdfs:label """Paysage avec une femme se lavant les pieds"""@fr.
+wd:Q59538177 wdt:P31 wd:wd:Q838948 .
+wd:Q59538177 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q59538177 wdt:P18 "None".
+wd:Q59538177 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q59538177 pgdc:piwigo_image "10026".
+wd:Q59538177 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q29784132 rdfs:label """La Mort de Chioné"""@fr.
+wd:Q29784132 wdt:P31 wd:wd:Q838948 .
+wd:Q29784132 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q29784132 wdt:P18 "None".
+wd:Q29784132 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29784132 pgdc:piwigo_image "13728".
+wd:Q29784132 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q26251901 rdfs:label """L'Automne"""@fr.
+wd:Q26251901 wdt:P31 wd:wd:Q838948 .
+wd:Q26251901 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q26251901 wdt:P18 "None".
+wd:Q26251901 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26251901 pgdc:piwigo_image "8446".
+wd:Q26251901 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q29842241 rdfs:label """Le Temps soustrait la Vérité aux atteintes de l'Envie et de la Discorde"""@fr.
+wd:Q29842241 wdt:P31 wd:wd:Q838948 .
+wd:Q29842241 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q29842241 wdt:P18 "None".
+wd:Q29842241 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29842241 pgdc:piwigo_image "4850".
+wd:Q29842241 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q29842255 rdfs:label """L'Assomption"""@fr.
+wd:Q29842255 wdt:P31 wd:wd:Q838948 .
+wd:Q29842255 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q29842255 wdt:P18 "None".
+wd:Q29842255 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29842255 pgdc:piwigo_image "13729".
+wd:Q29842255 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q50819841 rdfs:label """Éliézer et Rebecca"""@fr.
+wd:Q50819841 wdt:P31 wd:wd:Q838948 .
+wd:Q50819841 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q50819841 wdt:P18 "None".
+wd:Q50819841 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50819841 pgdc:piwigo_image "13730".
+wd:Q50819841 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q29784123 rdfs:label """Jésus Christ instituant l'Eucharistie"""@fr.
+wd:Q29784123 wdt:P31 wd:wd:Q838948 .
+wd:Q29784123 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q29784123 wdt:P18 "None".
+wd:Q29784123 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29784123 pgdc:piwigo_image "13731".
+wd:Q29784123 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q114029124 rdfs:label """Bacchanale d'enfants"""@fr.
+wd:Q114029124 wdt:P31 wd:wd:Q838948 .
+wd:Q114029124 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q114029124 wdt:P18 "None".
+wd:Q114029124 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114029124 pgdc:piwigo_image "13732".
+wd:Q114029124 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q107438288 rdfs:label """Jupiter enfant nourri par la chèvre Amalthée"""@fr.
+wd:Q107438288 wdt:P31 wd:wd:Q838948 .
+wd:Q107438288 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q107438288 wdt:P18 "None".
+wd:Q107438288 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107438288 pgdc:piwigo_image "13733".
+wd:Q107438288 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q110420226 rdfs:label """Apollon et Daphné"""@fr.
+wd:Q110420226 wdt:P31 wd:wd:Q838948 .
+wd:Q110420226 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q110420226 wdt:P18 "None".
+wd:Q110420226 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110420226 pgdc:piwigo_image "13734".
+wd:Q110420226 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q114029123 rdfs:label """Bacchanale d'enfants"""@fr.
+wd:Q114029123 wdt:P31 wd:wd:Q838948 .
+wd:Q114029123 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q114029123 wdt:P18 "None".
+wd:Q114029123 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114029123 pgdc:piwigo_image "13735".
+wd:Q114029123 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q106351850 rdfs:label """Mercure, Hersé et Aglaure"""@fr.
+wd:Q106351850 wdt:P31 wd:wd:Q838948 .
+wd:Q106351850 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q106351850 wdt:P18 "None".
+wd:Q106351850 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106351850 pgdc:piwigo_image "13736".
+wd:Q106351850 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q114771368 rdfs:label """Midas à la source du Pactole"""@fr.
+wd:Q114771368 wdt:P31 wd:wd:Q838948 .
+wd:Q114771368 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q114771368 wdt:P18 "None".
+wd:Q114771368 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114771368 pgdc:piwigo_image "13737".
+wd:Q114771368 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q3373686 rdfs:label """Paysage aux deux nymphes"""@fr.
+wd:Q3373686 wdt:P31 wd:wd:Q838948 .
+wd:Q3373686 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q3373686 wdt:P18 "None".
+wd:Q3373686 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3373686 pgdc:piwigo_image "8009".
+wd:Q3373686 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q1140358 rdfs:label """Les Bergers d'Arcadie"""@fr.
+wd:Q1140358 wdt:P31 wd:wd:Q838948 .
+wd:Q1140358 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q1140358 wdt:P18 "None".
+wd:Q1140358 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q1140358 pgdc:piwigo_image "13738".
+wd:Q1140358 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19911450 rdfs:label """Paysage avec Orion aveugle cherchant le soleil"""@fr.
+wd:Q19911450 wdt:P31 wd:wd:Q838948 .
+wd:Q19911450 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19911450 wdt:P18 "None".
+wd:Q19911450 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19911450 pgdc:piwigo_image "8164".
+wd:Q19911450 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19820173 rdfs:label """La Sainte Famille avec saint Jean et sainte Élisabeth dans un paysage"""@fr.
+wd:Q19820173 wdt:P31 wd:wd:Q838948 .
+wd:Q19820173 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19820173 wdt:P18 "None".
+wd:Q19820173 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19820173 pgdc:piwigo_image "13739".
+wd:Q19820173 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19820170 rdfs:label """Le jeune Pyrrhus sauvé"""@fr.
+wd:Q19820170 wdt:P31 wd:wd:Q838948 .
+wd:Q19820170 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19820170 wdt:P18 "None".
+wd:Q19820170 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19820170 pgdc:piwigo_image "13740".
+wd:Q19820170 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q970808 rdfs:label """La Fuite en Égypte"""@fr.
+wd:Q970808 wdt:P31 wd:wd:Q838948 .
+wd:Q970808 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q970808 wdt:P18 "None".
+wd:Q970808 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q970808 pgdc:piwigo_image "13741".
+wd:Q970808 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19593667 rdfs:label """L'Extrême Onction, Les Sept sacrements"""@fr.
+wd:Q19593667 wdt:P31 wd:wd:Q838948 .
+wd:Q19593667 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19593667 wdt:P18 "None".
+wd:Q19593667 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19593667 pgdc:piwigo_image "13742".
+wd:Q19593667 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q2502068 rdfs:label """Le Jugement de Salomon"""@fr.
+wd:Q2502068 wdt:P31 wd:wd:Q838948 .
+wd:Q2502068 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q2502068 wdt:P18 "None".
+wd:Q2502068 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q2502068 pgdc:piwigo_image "6503".
+wd:Q2502068 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q6485124 rdfs:label """Orphée et Eurydice"""@fr.
+wd:Q6485124 wdt:P31 wd:wd:Q838948 .
+wd:Q6485124 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q6485124 wdt:P18 "None".
+wd:Q6485124 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q6485124 pgdc:piwigo_image "7979".
+wd:Q6485124 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q9191521 rdfs:label """La Femme adultère"""@fr.
+wd:Q9191521 wdt:P31 wd:wd:Q838948 .
+wd:Q9191521 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q9191521 wdt:P18 "None".
+wd:Q9191521 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q9191521 pgdc:piwigo_image "13743".
+wd:Q9191521 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19820174 rdfs:label """Les Aveugles de Jéricho"""@fr.
+wd:Q19820174 wdt:P31 wd:wd:Q838948 .
+wd:Q19820174 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19820174 wdt:P18 "None".
+wd:Q19820174 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19820174 pgdc:piwigo_image "13744".
+wd:Q19820174 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q18761398 rdfs:label """La Nourriture de Bacchus"""@fr.
+wd:Q18761398 wdt:P31 wd:wd:Q838948 .
+wd:Q18761398 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q18761398 wdt:P18 "None".
+wd:Q18761398 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18761398 pgdc:piwigo_image "13745".
+wd:Q18761398 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q5849316 rdfs:label """Esther devant Assuérus"""@fr.
+wd:Q5849316 wdt:P31 wd:wd:Q838948 .
+wd:Q5849316 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q5849316 wdt:P18 "None".
+wd:Q5849316 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q5849316 pgdc:piwigo_image "13746".
+wd:Q5849316 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q3224378 rdfs:label """Le Massacre des Innocents"""@fr.
+wd:Q3224378 wdt:P31 wd:wd:Q838948 .
+wd:Q3224378 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q3224378 wdt:P18 "None".
+wd:Q3224378 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3224378 pgdc:piwigo_image "6421".
+wd:Q3224378 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q3620831 rdfs:label """Apparition de la Vierge à saint Jacques le Majeur"""@fr.
+wd:Q3620831 wdt:P31 wd:wd:Q838948 .
+wd:Q3620831 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q3620831 wdt:P18 "None".
+wd:Q3620831 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3620831 pgdc:piwigo_image "13747".
+wd:Q3620831 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q3204226 rdfs:label """L'Inspiration du poète"""@fr.
+wd:Q3204226 wdt:P31 wd:wd:Q838948 .
+wd:Q3204226 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q3204226 wdt:P18 "None".
+wd:Q3204226 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3204226 pgdc:piwigo_image "4784".
+wd:Q3204226 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q18761416 rdfs:label """Bacchanale à la joueuse de guitare"""@fr.
+wd:Q18761416 wdt:P31 wd:wd:Q838948 .
+wd:Q18761416 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q18761416 wdt:P18 "None".
+wd:Q18761416 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18761416 pgdc:piwigo_image "13748".
+wd:Q18761416 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q18688230 rdfs:label """Le Triomphe de Neptune ou La Naissance de Vénus"""@fr.
+wd:Q18688230 wdt:P31 wd:wd:Q838948 .
+wd:Q18688230 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q18688230 wdt:P18 "None".
+wd:Q18688230 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18688230 pgdc:piwigo_image "13749".
+wd:Q18688230 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q377810 rdfs:label """L'Adoration du Veau d'or"""@fr.
+wd:Q377810 wdt:P31 wd:wd:Q838948 .
+wd:Q377810 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q377810 wdt:P18 "None".
+wd:Q377810 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q377810 pgdc:piwigo_image "13750".
+wd:Q377810 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19820177 rdfs:label """Moïse changeant en serpent la verge d'Aaron"""@fr.
+wd:Q19820177 wdt:P31 wd:wd:Q838948 .
+wd:Q19820177 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19820177 wdt:P18 "None".
+wd:Q19820177 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19820177 pgdc:piwigo_image "13751".
+wd:Q19820177 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19944031 rdfs:label """Diogène jetant son écuelle"""@fr.
+wd:Q19944031 wdt:P31 wd:wd:Q838948 .
+wd:Q19944031 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19944031 wdt:P18 "None".
+wd:Q19944031 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19944031 pgdc:piwigo_image "6606".
+wd:Q19944031 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19820167 rdfs:label """Moïse sauvé des eaux"""@fr.
+wd:Q19820167 wdt:P31 wd:wd:Q838948 .
+wd:Q19820167 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19820167 wdt:P18 "None".
+wd:Q19820167 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19820167 pgdc:piwigo_image "13752".
+wd:Q19820167 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q18761428 rdfs:label """Le Triomphe de Flore"""@fr.
+wd:Q18761428 wdt:P31 wd:wd:Q838948 .
+wd:Q18761428 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q18761428 wdt:P18 "None".
+wd:Q18761428 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18761428 pgdc:piwigo_image "13753".
+wd:Q18761428 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q18761469 rdfs:label """La mort de Saphire"""@fr.
+wd:Q18761469 wdt:P31 wd:wd:Q838948 .
+wd:Q18761469 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q18761469 wdt:P18 "None".
+wd:Q18761469 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18761469 pgdc:piwigo_image "13754".
+wd:Q18761469 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q18761446 rdfs:label """Concert d'amours"""@fr.
+wd:Q18761446 wdt:P31 wd:wd:Q838948 .
+wd:Q18761446 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q18761446 wdt:P18 "None".
+wd:Q18761446 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18761446 pgdc:piwigo_image "13755".
+wd:Q18761446 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q3527390 rdfs:label """Thésée retrouve l'épée de son père"""@fr.
+wd:Q3527390 wdt:P31 wd:wd:Q838948 .
+wd:Q3527390 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q3527390 wdt:P18 "None".
+wd:Q3527390 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3527390 pgdc:piwigo_image "13756".
+wd:Q3527390 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19318315 rdfs:label """Saint Jean baptisant le peuple"""@fr.
+wd:Q19318315 wdt:P31 wd:wd:Q838948 .
+wd:Q19318315 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19318315 wdt:P18 "None".
+wd:Q19318315 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19318315 pgdc:piwigo_image "13757".
+wd:Q19318315 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q18522881 rdfs:label """Paysage avec un homme effrayé par un serpent"""@fr.
+wd:Q18522881 wdt:P31 wd:wd:Q838948 .
+wd:Q18522881 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q18522881 wdt:P18 "None".
+wd:Q18522881 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18522881 pgdc:piwigo_image "8071".
+wd:Q18522881 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q15934821 rdfs:label """La Vision de sainte Françoise Romaine"""@fr.
+wd:Q15934821 wdt:P31 wd:wd:Q838948 .
+wd:Q15934821 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q15934821 wdt:P18 "None".
+wd:Q15934821 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q15934821 pgdc:piwigo_image "13758".
+wd:Q15934821 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19820166 rdfs:label """Eliézer et Rébecca"""@fr.
+wd:Q19820166 wdt:P31 wd:wd:Q838948 .
+wd:Q19820166 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19820166 wdt:P18 "None".
+wd:Q19820166 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19820166 pgdc:piwigo_image "13759".
+wd:Q19820166 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19820171 rdfs:label """La Sainte Famille avec saint Jean, sainte Elisabeth et saint Joseph priant"""@fr.
+wd:Q19820171 wdt:P31 wd:wd:Q838948 .
+wd:Q19820171 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19820171 wdt:P18 "None".
+wd:Q19820171 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19820171 pgdc:piwigo_image "13760".
+wd:Q19820171 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19820169 rdfs:label """Apollon amoureux de Daphné"""@fr.
+wd:Q19820169 wdt:P31 wd:wd:Q838948 .
+wd:Q19820169 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19820169 wdt:P18 "None".
+wd:Q19820169 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19820169 pgdc:piwigo_image "13761".
+wd:Q19820169 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q9387720 rdfs:label """La Manne"""@fr.
+wd:Q9387720 wdt:P31 wd:wd:Q838948 .
+wd:Q9387720 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q9387720 wdt:P18 "None".
+wd:Q9387720 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q9387720 pgdc:piwigo_image "13762".
+wd:Q9387720 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q3900760 rdfs:label """La Peste d'Asdod"""@fr.
+wd:Q3900760 wdt:P31 wd:wd:Q838948 .
+wd:Q3900760 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q3900760 wdt:P18 "None".
+wd:Q3900760 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3900760 pgdc:piwigo_image "13763".
+wd:Q3900760 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q19820175 rdfs:label """Moïse sauvé des eaux"""@fr.
+wd:Q19820175 wdt:P31 wd:wd:Q838948 .
+wd:Q19820175 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q19820175 wdt:P18 "None".
+wd:Q19820175 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19820175 pgdc:piwigo_image "13764".
+wd:Q19820175 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q5817081 rdfs:label """Echo et Narcisse"""@fr.
+wd:Q5817081 wdt:P31 wd:wd:Q838948 .
+wd:Q5817081 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q5817081 wdt:P18 "None".
+wd:Q5817081 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q5817081 pgdc:piwigo_image "13765".
+wd:Q5817081 pgdc:piwigo_gallery kgdc:gal433.
+wd:Q18572435 rdfs:label """Camille livre le maître d'école de Faléries à ses écoliers"""@fr.
+wd:Q18572435 wdt:P31 wd:wd:Q838948 .
+wd:Q18572435 wdt:P170 wd:Q41554.
+wd:Q41554 rdfs:label """Nicolas Poussin"""@fr.
+wd:Q41554 wdt:P31 wd:Q3391743 .
+wd:Q18572435 wdt:P18 "None".
+wd:Q18572435 pgdc:sparql kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 .
+kgdc:sparqlUFrSwLfT8j9f40b1oElZ30RbVbMQWzhrySmvyYWWL30 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q41554 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18572435 pgdc:piwigo_image "13766".
+wd:Q18572435 pgdc:piwigo_gallery kgdc:gal433.

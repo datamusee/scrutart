@@ -21,13 +21,17 @@ if __name__=="__main__":
     # ne traiter que les entités qui sont dans filterEntities en supprimant la page si elle existe déjà
     # filterEntities =  [   "Q5597" ] # Raphaël entitiesList
     # filterEntities =  [   "Q334200" ] # Christian  Krohg  entitiesList
-    filterEntities =  [   "Q347139" ] # JB Greuze  entitiesList
+    # filterEntities =  [   "Q203371" ] # Georges de La Tour
+    # filterEntities =  [   "Q155626" ] # John Singer Sargent
+    filterEntities =  [   "Q83155" ] # Jacques-Louis David
+
     pageType = "Q1028181"
     labelType = {
         "Q1028181": "painter",
     }
     pageLang = "fr"
     targetDir = f"""./pages/{pageType}_{labelType[pageType]}/{pageLang}"""
+    print(targetDir)
     # detruire les pages à générer si elles existent déjà
     cleanTargetDirectory(targetDir, filterEntities)
 

@@ -1,0 +1,3004 @@
+wd:Q2317837 rdfs:label """Le Cauchemar"""@fr.
+wd:Q2317837 wdt:P31 wd:Q838948 .
+wd:Q2317837 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q2317837 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Henry%20Fuseli%20-%20The%20Nightmare.JPG".
+wd:Q2317837 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q2317837 pgdc:piwigo_image "15953".
+wd:Q2317837 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q18686639 rdfs:label """Titania et Bottom"""@fr.
+wd:Q18686639 wdt:P31 wd:Q838948 .
+wd:Q18686639 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q18686639 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Titania%20and%20Bottom%20-%20Google%20Art%20Project.jpg".
+wd:Q18686639 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18686639 pgdc:piwigo_image "15954".
+wd:Q18686639 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q18686644 rdfs:label """Percival Delivering Belisane from the Enchantment of Urma"""@fr.
+wd:Q18686644 wdt:P31 wd:Q838948 .
+wd:Q18686644 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q18686644 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Percival%20Delivering%20Belisane%20from%20the%20Enchantment%20of%20Urma%20-%20Google%20Art%20Project.jpg".
+wd:Q18686644 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18686644 pgdc:piwigo_image "15955".
+wd:Q18686644 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q18936876 rdfs:label """Lady Macbeth somnambule"""@fr.
+wd:Q18936876 wdt:P31 wd:Q838948 .
+wd:Q18936876 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q18936876 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20-%20Lady%20Macbeth%20-%20WGA8334.jpg".
+wd:Q18936876 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18936876 pgdc:piwigo_image "9023".
+wd:Q18936876 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q19905322 rdfs:label """La Sorcière de la nuit rendant visite aux sorcières de Laponie"""@fr.
+wd:Q19905322 wdt:P31 wd:Q838948 .
+wd:Q19905322 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q19905322 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Night-Hag%20Visiting%20Lapland%20Witches%20MET%20ep1980.411.R.jpg".
+wd:Q19905322 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19905322 pgdc:piwigo_image "15956".
+wd:Q19905322 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q19968926 rdfs:label """Titania caresse la tête de Bottom à tête d'âne"""@fr.
+wd:Q19968926 wdt:P31 wd:Q838948 .
+wd:Q19968926 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q19968926 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Titania%20liebkost%20Zettel%20mit%20dem%20Eselskopf%20-%202543%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q19968926 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Titania%20liebkost%20den%20eselk%C3%B6pfigen%20Bottom%20by%20Johann%20Heinrich%20F%C3%BCssli%20%E2%80%94%201895%20%E2%80%94%20Kunsthaus%20Z%C3%BCrich%20%28Altbau%29%20%E2%80%94%201.%20OG%20%28Erl%C3%A4uterungstafel%29%20Mattes%202022-07-28.jpg".
+wd:Q19968926 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCssli%2C%20Johann%20Heinrich%20-%20Titania%20liebkost%20den%20eselk%C3%B6pfigen%20Bottom%20-%20hi%20res.jpg".
+wd:Q19968926 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19968926 pgdc:piwigo_image "15957".
+wd:Q19968926 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q20032144 rdfs:label """Satan and Death with Sin Intervening"""@fr.
+wd:Q20032144 wdt:P31 wd:Q838948 .
+wd:Q20032144 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q20032144 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Henry%20Fuseli%20-%20Satan%20and%20Death%20with%20Sin%20Intervening%20-%20BStGS%20inv.%20no.%209494.jpg".
+wd:Q20032144 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20032144 pgdc:piwigo_image "15958".
+wd:Q20032144 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q20179419 rdfs:label """Oedipus Cursing His Son, Polynices"""@fr.
+wd:Q20179419 wdt:P31 wd:Q838948 .
+wd:Q20179419 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q20179419 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Oedipus%20Cursing%20His%20Son%2C%20Polynices%20A15036.jpg".
+wd:Q20179419 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20179419 pgdc:piwigo_image "15959".
+wd:Q20179419 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q20267462 rdfs:label """Sketch for 'Oath on the Rütli,' Female Figure (verso)"""@fr.
+wd:Q20267462 wdt:P31 wd:Q838948 .
+wd:Q20267462 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q20267462 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Sketch%20for%20%22Oath%20on%20the%20R%C3%BCtli%2C%22%20Female%20Figure%20%28verso%29%20-%201980.170%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20267462 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20267462 pgdc:piwigo_image "15960".
+wd:Q20267462 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q20267554 rdfs:label """Head of a Damned Soul from Dante's 'Inferno,' (verso)"""@fr.
+wd:Q20267554 wdt:P31 wd:Q838948 .
+wd:Q20267554 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q20267554 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Head%20of%20a%20Damned%20Soul%20from%20Dante%27s%20%22Inferno%2C%22%20%28verso%29%20-%201992.1531%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20267554 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20267554 pgdc:piwigo_image "15961".
+wd:Q20267554 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q20270916 rdfs:label """Milton Dictating to His Daughter"""@fr.
+wd:Q20270916 wdt:P31 wd:Q838948 .
+wd:Q20270916 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q20270916 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Milton%20Dictating%20to%20His%20Daughter%20-%201973.303%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20270916 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20270916 pgdc:piwigo_image "15962".
+wd:Q20270916 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q20881292 rdfs:label """Satan and Death with Sin Intervening"""@fr.
+wd:Q20881292 wdt:P31 wd:Q838948 .
+wd:Q20881292 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q20881292 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Satan%20and%20Death%20with%20Sin%20Intervening%20LACMA%2059.56.jpg".
+wd:Q20881292 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20881292 pgdc:piwigo_image "15963".
+wd:Q20881292 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q23699208 rdfs:label """Christ Disappearing at Emmaus"""@fr.
+wd:Q23699208 wdt:P31 wd:Q838948 .
+wd:Q23699208 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q23699208 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Christ%20Disappearing%20at%20Emmaus%20-%20Google%20Art%20Project.jpg".
+wd:Q23699208 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23699208 pgdc:piwigo_image "15964".
+wd:Q23699208 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q23740904 rdfs:label """Tekemessa and Eurysake"""@fr.
+wd:Q23740904 wdt:P31 wd:Q838948 .
+wd:Q23740904 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q23740904 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Tekemessa%20and%20Eurysakes%20-%20Google%20Art%20Project.jpg".
+wd:Q23740904 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23740904 pgdc:piwigo_image "15965".
+wd:Q23740904 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q23759272 rdfs:label """The Mandrake: a Charm"""@fr.
+wd:Q23759272 wdt:P31 wd:Q838948 .
+wd:Q23759272 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q23759272 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20The%20Mandrake%2C%20A%20Charm%20-%20B1981.25.291%20-%20Yale%20Center%20for%20British%20Art.jpg".
+wd:Q23759272 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23759272 pgdc:piwigo_image "15966".
+wd:Q23759272 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q23742712 rdfs:label """La Mort de Didon"""@fr.
+wd:Q23742712 wdt:P31 wd:Q838948 .
+wd:Q23742712 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q23742712 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Dido%20-%20Google%20Art%20Project.jpg".
+wd:Q23742712 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23742712 pgdc:piwigo_image "15967".
+wd:Q23742712 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q23948093 rdfs:label """Theodore Meets in the Wood the Spectre of His Ancestor Guido Cavalcanti"""@fr.
+wd:Q23948093 wdt:P31 wd:Q838948 .
+wd:Q23948093 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q23948093 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20-%20Theodore%20Meets%20in%20the%20Wood%20the%20Spectre%20of%20His%20Ancestor%20Guido%20Cavalcanti%20-%20Google%20Art%20Project.jpg".
+wd:Q23948093 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23948093 pgdc:piwigo_image "15968".
+wd:Q23948093 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q27882642 rdfs:label """The Serpent tempting Eve (Satan's first address to Eve)"""@fr.
+wd:Q27882642 wdt:P31 wd:Q838948 .
+wd:Q27882642 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q27882642 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20The%20Serpent%20tempting%20Eve%20%28Satan%27s%20first%20address%20to%20Eve%29%20-%201887-1-13%20-%20Auckland%20Art%20Gallery.jpg".
+wd:Q27882642 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27882642 pgdc:piwigo_image "15969".
+wd:Q27882642 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q27882040 rdfs:label """Study for the three witches in Macbeth"""@fr.
+wd:Q27882040 wdt:P31 wd:Q838948 .
+wd:Q27882040 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q27882040 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Study%20for%20the%20three%20witches%20in%20Macbeth%20-%201980-8%20-%20Auckland%20Art%20Gallery.jpg".
+wd:Q27882040 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27882040 pgdc:piwigo_image "15970".
+wd:Q27882040 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q28004357 rdfs:label """Thor luttant contre le serpent de Midgard"""@fr.
+wd:Q28004357 wdt:P31 wd:Q838948 .
+wd:Q28004357 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q28004357 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20Fussli-Tor%20and%20Jormundgandr.jpg".
+wd:Q28004357 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28004357 pgdc:piwigo_image "15971".
+wd:Q28004357 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q28564124 rdfs:label """The Shepherd’s Dream, from ‘Paradise Lost’"""@fr.
+wd:Q28564124 wdt:P31 wd:Q838948 .
+wd:Q28564124 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q28564124 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20%281741-1825%29%20-%20The%20Shepherd%27s%20Dream%2C%20from%20%27Paradise%20Lost%27%20-%20T00876%20-%20Tate.jpg".
+wd:Q28564124 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28564124 pgdc:piwigo_image "15972".
+wd:Q28564124 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q28555034 rdfs:label """Lady Macbeth saisissant les poignards"""@fr.
+wd:Q28555034 wdt:P31 wd:Q838948 .
+wd:Q28555034 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q28555034 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCssli%20-%20Lady%20Macbeth%20con%20los%20pu%C3%B1ales%20%281812%29%20Tate.jpg".
+wd:Q28555034 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28555034 pgdc:piwigo_image "15973".
+wd:Q28555034 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q43247594 rdfs:label """Leonora Discovers Alonzo’s Dagger"""@fr.
+wd:Q43247594 wdt:P31 wd:Q838948 .
+wd:Q43247594 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q43247594 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Leonore%20uppt%C3%A4cker%20Alonzos%20dolk%20%28Johann%20Heinrich%20F%C3%BCssli%29%20-%20Nationalmuseum%20-%20181034.tif".
+wd:Q43247594 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q43247594 pgdc:piwigo_image "15974".
+wd:Q43247594 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q49187924 rdfs:label """Danaë and Perseus on Seriphos (?)"""@fr.
+wd:Q49187924 wdt:P31 wd:Q838948 .
+wd:Q49187924 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q49187924 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Dana%C3%AB%20and%20Perseus%20on%20Seriphos%28%5E%29%20-%201958.65%20-%20Yale%20University%20Art%20Gallery.jpg".
+wd:Q49187924 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q49187924 pgdc:piwigo_image "15975".
+wd:Q49187924 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q52252060 rdfs:label """A Scene from 'The Wife of Bath's Tale' (from Geoffrey Chaucer's, 'Canterbury Tales') (recto); Falstaff in the Laundry Basket mocked by Five Women (?) (verso)"""@fr.
+wd:Q52252060 wdt:P31 wd:Q838948 .
+wd:Q52252060 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q52252060 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCssli%20-%20A%20Scene%20from%20%27The%20Wife%20of%20Bath%27s%20Tale%27%20%28from%20Geoffrey%20Chaucer%27s%20%27Canterbury%20Tales%27%29%20%28recto%29%2C%20c.1812.jpg".
+wd:Q52252060 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q52252060 pgdc:piwigo_image "15976".
+wd:Q52252060 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q52253397 rdfs:label """Macbeth, Banquo and the Witches (from William Shakespeare's 'Macbeth', Act I, sc.iii)"""@fr.
+wd:Q52253397 wdt:P31 wd:Q838948 .
+wd:Q52253397 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q52253397 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20%281741-1825%29%20-%20Macbeth%2C%20Banquo%20and%20the%20Witches%20%28from%20William%20Shakespeare%27s%20%27Macbeth%27%2C%20Act%20I%2C%20Scene%20iii%29%20-%20486261%20-%20National%20Trust.jpg".
+wd:Q52253397 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q52253397 pgdc:piwigo_image "15977".
+wd:Q52253397 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q55428928 rdfs:label """A Shakespearean Subject"""@fr.
+wd:Q55428928 wdt:P31 wd:Q838948 .
+wd:Q55428928 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q55428928 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCssli%20-%20A%20Shakespearean%20Subject%2C%201785-1786.jpg".
+wd:Q55428928 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55428928 pgdc:piwigo_image "15978".
+wd:Q55428928 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q55428931 rdfs:label """Mamillius conjuring up Sprites and Goblins for his Mother, Hermione (from  William Shakespeare's 'The Winter's Tale', Act II sc. i)"""@fr.
+wd:Q55428931 wdt:P31 wd:Q838948 .
+wd:Q55428931 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q55428931 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCssli%20-%20Mamillius%20Conjuring%20up%20Sprites%20and%20Goblins%20for%20His%20Mother%2C%20Hermione%20%28William%20Shakespeare%27s%20%27The%20Winter%27s%20Tale%27%29%2C%201785-1786.jpg".
+wd:Q55428931 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55428931 pgdc:piwigo_image "15979".
+wd:Q55428931 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q64548826 rdfs:label """Portrait of a Lady"""@fr.
+wd:Q64548826 wdt:P31 wd:Q838948 .
+wd:Q64548826 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q64548826 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20-%20Portrait%20of%20a%20Lady%20-%20Detroit%20Institute%20of%20Arts%2055.5.B.jpg".
+wd:Q64548826 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q64548826 pgdc:piwigo_image "15980".
+wd:Q64548826 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q61893796 rdfs:label """Le Cauchemar"""@fr.
+wd:Q61893796 wdt:P31 wd:Q838948 .
+wd:Q61893796 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q61893796 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Nightmare%20%281790-1791%29%20-%20Johann%20Heinrich%20F%C3%BCssli.jpg".
+wd:Q61893796 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q61893796 pgdc:piwigo_image "15981".
+wd:Q61893796 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q79143667 rdfs:label """John Milton's Paradise Lost, Satan and the Birth of Sin (Book II, 746-758)  Painting no. 6 from The Milton Gallery"""@fr.
+wd:Q79143667 wdt:P31 wd:Q838948 .
+wd:Q79143667 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q79143667 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20Fuseli%20-%20John%20Milton%27s%20Paradise%20Lost%2C%20Satan%20and%20the%20Birth%20of%20Sin%20%28Book%20II%2C%20746-758%29%20Painting%20no.%206%20from%20The%20Milton%20Gallery%20-%201996.104.FA%20-%20Dallas%20Museum%20of%20Art.jpg".
+wd:Q79143667 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q79143667 pgdc:piwigo_image "15982".
+wd:Q79143667 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q104525554 rdfs:label """Q104525554"""@fr.
+wd:Q104525554 wdt:P31 wd:Q838948 .
+wd:Q104525554 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q104525554 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCssli%20-%20Celadon%20und%20Amelia%2C%201801.jpg".
+wd:Q104525554 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104525554 pgdc:piwigo_image "15983".
+wd:Q104525554 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q98145408 rdfs:label """Dispute between Hotspur, Glendower, Mortimer and Worcester"""@fr.
+wd:Q98145408 wdt:P31 wd:Q838948 .
+wd:Q98145408 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q98145408 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20%281741-1825%29%20-%20Dispute%20between%20Hotspur%2C%20Glendower%2C%20Mortimer%20and%20Worcester%20%28from%20William%20Shakespeare%27s%20%27Henry%20IV%20Part%20I%27%29%20-%201947P6%20-%20Birmingham%20Museums%20Trust.jpg".
+wd:Q98145408 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q98145408 pgdc:piwigo_image "15984".
+wd:Q98145408 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107543371 rdfs:label """The Erinyes Drive Alcmaeon from the Corpse of his Mother, Eriphyle, Whom He Has Killed."""@fr.
+wd:Q107543371 wdt:P31 wd:Q838948 .
+wd:Q107543371 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107543371 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Erinyes%20Drive%20Alcmaeon%20from%20the%20Corpse%20of%20Eriphyle%20%28F%C3%BCssli%29.jpg".
+wd:Q107543371 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Die%20Erinnyen%20vertreiben%20Alkmaion%20von%20der%20Leiche%20seiner%20von%20ihm%20get%C3%B6teten%20Mutter%20Eriphyle%20-%202441%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q107543371 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107543371 pgdc:piwigo_image "15985".
+wd:Q107543371 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107526837 rdfs:label """Tirésias apparaît à Ulysse pendant le sacrifice"""@fr.
+wd:Q107526837 wdt:P31 wd:Q838948 .
+wd:Q107526837 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107526837 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20063.jpg".
+wd:Q107526837 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107526837 pgdc:piwigo_image "15986".
+wd:Q107526837 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107548110 rdfs:label """The Daughters of Pandareos"""@fr.
+wd:Q107548110 wdt:P31 wd:Q838948 .
+wd:Q107548110 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107548110 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20032.jpg".
+wd:Q107548110 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107548110 pgdc:piwigo_image "15987".
+wd:Q107548110 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107552750 rdfs:label """Ulysse face à Charybde et Scylla."""@fr.
+wd:Q107552750 wdt:P31 wd:Q838948 .
+wd:Q107552750 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107552750 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20054.jpg".
+wd:Q107552750 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107552750 pgdc:piwigo_image "15988".
+wd:Q107552750 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107543422 rdfs:label """Q107543422"""@fr.
+wd:Q107543422 wdt:P31 wd:Q838948 .
+wd:Q107543422 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107543422 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20065.jpg".
+wd:Q107543422 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107543422 pgdc:piwigo_image "15989".
+wd:Q107543422 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107572682 rdfs:label """Le Silence"""@fr.
+wd:Q107572682 wdt:P31 wd:Q838948 .
+wd:Q107572682 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107572682 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Das%20Schweigen%20-%201976-0025%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q107572682 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20-%20Silence%20-%20WGA08336.jpg".
+wd:Q107572682 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107572682 pgdc:piwigo_image "15990".
+wd:Q107572682 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107571155 rdfs:label """The Apotheosis Of Penelope Boothby."""@fr.
+wd:Q107571155 wdt:P31 wd:Q838948 .
+wd:Q107571155 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107571155 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Fuseli%20Henry%20The%20Apotheosis%20Of%20Penelope%20Boothby-1-1.jpg".
+wd:Q107571155 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107571155 pgdc:piwigo_image "15991".
+wd:Q107571155 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107571613 rdfs:label """Paolo Malatesta and Francesca da Polenta surprised by Gianciotto Malatesta"""@fr.
+wd:Q107571613 wdt:P31 wd:Q838948 .
+wd:Q107571613 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107571613 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20-%20Paolo%20und%20Francesca.jpg".
+wd:Q107571613 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107571613 pgdc:piwigo_image "15992".
+wd:Q107571613 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107572740 rdfs:label """Le Peintre en conversation avec Johann Jakob Bodmer"""@fr.
+wd:Q107572740 wdt:P31 wd:Q838948 .
+wd:Q107572740 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107572740 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Bodmer%20und%20F%C3%BCssli%20vor%20der%20B%C3%BCste%20Homers%20-%2070%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q107572740 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20012.jpg".
+wd:Q107572740 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107572740 pgdc:piwigo_image "15993".
+wd:Q107572740 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107573253 rdfs:label """Fairy Mab"""@fr.
+wd:Q107573253 wdt:P31 wd:Q838948 .
+wd:Q107573253 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107573253 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20038.jpg".
+wd:Q107573253 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107573253 pgdc:piwigo_image "15994".
+wd:Q107573253 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107573293 rdfs:label """Falstaff dans la corbeille à linge"""@fr.
+wd:Q107573293 wdt:P31 wd:Q838948 .
+wd:Q107573293 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107573293 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20039.jpg".
+wd:Q107573293 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Falstaff%20im%20W%C3%A4schekorb%20-%202541%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q107573293 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107573293 pgdc:piwigo_image "15995".
+wd:Q107573293 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107573343 rdfs:label """Q107573343"""@fr.
+wd:Q107573343 wdt:P31 wd:Q838948 .
+wd:Q107573343 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107573343 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20037.jpg".
+wd:Q107573343 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107573343 pgdc:piwigo_image "15996".
+wd:Q107573343 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107573501 rdfs:label """Q107573501"""@fr.
+wd:Q107573501 wdt:P31 wd:Q838948 .
+wd:Q107573501 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107573501 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20055.jpg".
+wd:Q107573501 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107573501 pgdc:piwigo_image "15997".
+wd:Q107573501 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107573434 rdfs:label """Portrait of Magdalena Hess from Zurich"""@fr.
+wd:Q107573434 wdt:P31 wd:Q838948 .
+wd:Q107573434 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107573434 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20056.jpg".
+wd:Q107573434 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107573434 pgdc:piwigo_image "15998".
+wd:Q107573434 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107573382 rdfs:label """Laying Nude and piano player"""@fr.
+wd:Q107573382 wdt:P31 wd:Q838948 .
+wd:Q107573382 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107573382 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20051.jpg".
+wd:Q107573382 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107573382 pgdc:piwigo_image "15999".
+wd:Q107573382 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q109907447 rdfs:label """The Italian Count"""@fr.
+wd:Q109907447 wdt:P31 wd:Q838948 .
+wd:Q109907447 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q109907447 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20-%20Ezzelin%20and%20Meduna%20-%20WGA08330.jpg".
+wd:Q109907447 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q109907447 pgdc:piwigo_image "16000".
+wd:Q109907447 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107648410 rdfs:label """Le Rêve de la reine Catherine"""@fr.
+wd:Q107648410 wdt:P31 wd:Q838948 .
+wd:Q107648410 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107648410 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Vision%20of%20Catherine%20of%20Aragon.jpg".
+wd:Q107648410 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107648410 pgdc:piwigo_image "16001".
+wd:Q107648410 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q110603937 rdfs:label """Psyche walks past the Fates undeterred"""@fr.
+wd:Q110603937 wdt:P31 wd:Q838948 .
+wd:Q110603937 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q110603937 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Augsburg%20Schaezlerpalais%20Mattes%202013-05-05%20%2846%29.JPG".
+wd:Q110603937 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q110603937 pgdc:piwigo_image "16002".
+wd:Q110603937 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107646253 rdfs:label """Robin Goodfellow-Puck"""@fr.
+wd:Q107646253 wdt:P31 wd:Q838948 .
+wd:Q107646253 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107646253 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCssli%20Robin%20Goodfellow-Puck%201787-1790.jpg".
+wd:Q107646253 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107646253 pgdc:piwigo_image "16003".
+wd:Q107646253 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q107646203 rdfs:label """The Spirit of Samuel Appearing to Saul"""@fr.
+wd:Q107646203 wdt:P31 wd:Q838948 .
+wd:Q107646203 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q107646203 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Blake%20The%20Witch%20of%20Endor%20Raising%20the%20Spirit%20of%20Samuel%201783%20Pen%20and%20watercolor%20New%20York%20Public%20Library.jpg".
+wd:Q107646203 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107646203 pgdc:piwigo_image "16004".
+wd:Q107646203 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q110768073 rdfs:label """Puck"""@fr.
+wd:Q110768073 wdt:P31 wd:Q838948 .
+wd:Q110768073 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q110768073 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Puck%20%28Fuseli%2C%201810-1820%29.jpg".
+wd:Q110768073 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q110768073 pgdc:piwigo_image "16005".
+wd:Q110768073 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q111087063 rdfs:label """Macbeth, Shakespeare: the three weird sisters"""@fr.
+wd:Q111087063 wdt:P31 wd:Q838948 .
+wd:Q111087063 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q111087063 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Macbeth%2C%20Shakespeare%3B%20the%20three%20weird%20sisters%20Wellcome%20V0044814.jpg".
+wd:Q111087063 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111087063 pgdc:piwigo_image "16006".
+wd:Q111087063 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q113660203 rdfs:label """Britomart Delivering Amoretta from the Enchantment of Busirane"""@fr.
+wd:Q113660203 wdt:P31 wd:Q838948 .
+wd:Q113660203 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q113660203 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Fuseli%20%E2%80%93%20Britomart.jpg".
+wd:Q113660203 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q113660203 pgdc:piwigo_image "16007".
+wd:Q113660203 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q111606388 rdfs:label """La Reine des fées apparaît au Prince Arthur"""@fr.
+wd:Q111606388 wdt:P31 wd:Q838948 .
+wd:Q111606388 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q111606388 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20058.jpg".
+wd:Q111606388 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111606388 pgdc:piwigo_image "16008".
+wd:Q111606388 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q115047172 rdfs:label """Le Serment du Grütli"""@fr.
+wd:Q115047172 wdt:P31 wd:Q838948 .
+wd:Q115047172 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q115047172 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20018.jpg".
+wd:Q115047172 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Die%20drei%20Eidgenossen%20beim%20Schwur%20auf%20dem%20R%C3%BCtli%20-%201989-0015%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q115047172 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q115047172 pgdc:piwigo_image "16009".
+wd:Q115047172 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q115228384 rdfs:label """Rezia plonge dans la mer avec Huon"""@fr.
+wd:Q115228384 wdt:P31 wd:Q838948 .
+wd:Q115228384 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q115228384 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCssli%20-%20Amanda%20Rezia%20throws%20herself%20with%20Huon%20into%20the%20sea%2C%20Fatime%20is%20held%20back%20by%20force%2C%201804-1805.jpg".
+wd:Q115228384 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q115228384 pgdc:piwigo_image "16010".
+wd:Q115228384 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q116968526 rdfs:label """Leonore Discovering the Dagger Left by Alonzo"""@fr.
+wd:Q116968526 wdt:P31 wd:Q838948 .
+wd:Q116968526 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q116968526 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27Leonore%20Discovering%20the%20Dagger%20Left%20by%20Alonzo%27%20by%20Johann%20Heinrich%20F%C3%BCssli.jpg".
+wd:Q116968526 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q116968526 pgdc:piwigo_image "16011".
+wd:Q116968526 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q115688372 rdfs:label """Q115688372"""@fr.
+wd:Q115688372 wdt:P31 wd:Q838948 .
+wd:Q115688372 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q115688372 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20Satan%2C%20von%20Ithuriels%20Speer%20ber%C3%BChrt.jpg".
+wd:Q115688372 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q115688372 pgdc:piwigo_image "16012".
+wd:Q115688372 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q117597685 rdfs:label """The Dream of Queen Katherine (from William Shakespeare's 'Henry VIII', Act IV, Scene 2)"""@fr.
+wd:Q117597685 wdt:P31 wd:Q838948 .
+wd:Q117597685 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q117597685 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCssli%20-%20The%20Dream%20of%20Queen%20Katherine%20%28from%20William%20Shakespeare%27s%20%27Henry%20VIII%27%2C%20Act%20IV%2C%20Scene%202%29%20%28fragment%29%2C%201386-1869.jpg".
+wd:Q117597685 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117597685 pgdc:piwigo_image "16013".
+wd:Q117597685 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q122695324 rdfs:label """Portrait of Maria Hess"""@fr.
+wd:Q122695324 wdt:P31 wd:Q838948 .
+wd:Q122695324 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q122695324 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20057.jpg".
+wd:Q122695324 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q122695324 pgdc:piwigo_image "16014".
+wd:Q122695324 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q130284299 rdfs:label """Ariel"""@fr.
+wd:Q130284299 wdt:P31 wd:Q838948 .
+wd:Q130284299 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q130284299 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ariel%20%28Fuseli%2C%20c.1800-1810%29.jpg".
+wd:Q130284299 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q130284299 pgdc:piwigo_image "16015".
+wd:Q130284299 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131584964 rdfs:label """Q131584964"""@fr.
+wd:Q131584964 wdt:P31 wd:Q838948 .
+wd:Q131584964 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131584964 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Satan%20%C3%BCber%20dem%20feurigen%20See%2C%20Beelzebub%20zu%20sich%20aufrufend%20-%201946-0013%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131584964 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131584964 pgdc:piwigo_image "16016".
+wd:Q131584964 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131585658 rdfs:label """Q131585658"""@fr.
+wd:Q131585658 wdt:P31 wd:Q838948 .
+wd:Q131585658 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131585658 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Die%20Damen%20von%20Hastings%20-%201984-0057%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131585658 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131585658 pgdc:piwigo_image "16017".
+wd:Q131585658 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131585785 rdfs:label """Q131585785"""@fr.
+wd:Q131585785 wdt:P31 wd:Q838948 .
+wd:Q131585785 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131585785 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Die%20drei%20Hexen%20-%202540%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131585785 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131585785 pgdc:piwigo_image "16018".
+wd:Q131585785 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586141 rdfs:label """Q131586141"""@fr.
+wd:Q131586141 wdt:P31 wd:Q838948 .
+wd:Q131586141 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586141 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Herakles%20erlegt%20den%20Adler%20des%20Prometheus%20-%201998-0002%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586141 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586141 pgdc:piwigo_image "16019".
+wd:Q131586141 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586268 rdfs:label """Q131586268"""@fr.
+wd:Q131586268 wdt:P31 wd:Q838948 .
+wd:Q131586268 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586268 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Einsamkeit%20im%20Morgenzwielicht%20-%202563%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586268 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586268 pgdc:piwigo_image "16020".
+wd:Q131586268 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586319 rdfs:label """Q131586319"""@fr.
+wd:Q131586319 wdt:P31 wd:Q838948 .
+wd:Q131586319 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586319 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Thetis%20bittet%20Hephaistos%20um%20Waffen%20f%C3%BCr%20Achilleus%20-%202561%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586319 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586319 pgdc:piwigo_image "16021".
+wd:Q131586319 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586322 rdfs:label """Q131586322"""@fr.
+wd:Q131586322 wdt:P31 wd:Q838948 .
+wd:Q131586322 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586322 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Kriemhild%20%C3%BCber%20der%20Leiche%20Siegfrieds%20-%202542%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586322 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586322 pgdc:piwigo_image "16022".
+wd:Q131586322 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586333 rdfs:label """Q131586333"""@fr.
+wd:Q131586333 wdt:P31 wd:Q838948 .
+wd:Q131586333 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586333 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Achilleus%20greift%20nach%20dem%20Schatten%20des%20Patroklos%20-%202562%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586333 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586333 pgdc:piwigo_image "16023".
+wd:Q131586333 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586498 rdfs:label """Q131586498"""@fr.
+wd:Q131586498 wdt:P31 wd:Q838948 .
+wd:Q131586498 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586498 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Oberon%20tr%C3%A4ufelt%20Blumensaft%20auf%20die%20Augen%20der%20schlafenden%20Titania%20-%201984-0056%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586498 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586498 pgdc:piwigo_image "16024".
+wd:Q131586498 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586668 rdfs:label """Q131586668"""@fr.
+wd:Q131586668 wdt:P31 wd:Q838948 .
+wd:Q131586668 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586668 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Das%20Gef%C3%A4ngnis%20-%201976-0023%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586668 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586668 pgdc:piwigo_image "16025".
+wd:Q131586668 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586706 rdfs:label """Q131586706"""@fr.
+wd:Q131586706 wdt:P31 wd:Q838948 .
+wd:Q131586706 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586706 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Almansaris%20besucht%20H%C3%BCon%20im%20Gef%C3%A4ngnis%20-%201576%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586706 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586706 pgdc:piwigo_image "16026".
+wd:Q131586706 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586708 rdfs:label """Q131586708"""@fr.
+wd:Q131586708 wdt:P31 wd:Q838948 .
+wd:Q131586708 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586708 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Titania%20findet%20am%20Strand%20den%20Zauberring%20-%201575%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586708 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586708 pgdc:piwigo_image "16027".
+wd:Q131586708 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586719 rdfs:label """Q131586719"""@fr.
+wd:Q131586719 wdt:P31 wd:Q838948 .
+wd:Q131586719 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586719 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Theseus%20und%20Ariadne%20-%201023%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586719 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586719 pgdc:piwigo_image "16028".
+wd:Q131586719 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586825 rdfs:label """Q131586825"""@fr.
+wd:Q131586825 wdt:P31 wd:Q838948 .
+wd:Q131586825 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586825 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Amor%20und%20Psyche%20-%201994-0012%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586825 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586825 pgdc:piwigo_image "16029".
+wd:Q131586825 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q132733091 rdfs:label """Q132733091"""@fr.
+wd:Q132733091 wdt:P31 wd:Q838948 .
+wd:Q132733091 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q132733091 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F%C3%BCssli%20-%20Gertrud%2C%20Hamlet%20und%20der%20Geist%20des%20Vaters%20-%201793.jpeg".
+wd:Q132733091 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q132733091 pgdc:piwigo_image "16030".
+wd:Q132733091 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131586830 rdfs:label """Q131586830"""@fr.
+wd:Q131586830 wdt:P31 wd:Q838948 .
+wd:Q131586830 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131586830 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Die%20Donaunixen%20prophezeien%20Hagen%20den%20ungl%C3%BCcklichen%20Ausgang%20von%20Gunthers%20Zug%20-%201978-0010%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131586830 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131586830 pgdc:piwigo_image "16031".
+wd:Q131586830 pgdc:piwigo_gallery kgdc:gal817.
+wd:Q131587410 rdfs:label """Q131587410"""@fr.
+wd:Q131587410 wdt:P31 wd:Q838948 .
+wd:Q131587410 wdt:P170 wd:Q122382.
+wd:Q122382 rdfs:label """Johann Heinrich Füssli"""@fr.
+wd:Q122382 wdt:P31 wd:Q3391743 .
+wd:Q131587410 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Fuseli%20-%20Die%20S%C3%BCnde%2C%20vom%20Tode%20verfolgt%20-%201838%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q131587410 pgdc:sparql kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz .
+kgdc:sparqlk08jKf6bDBpyETJPwTiyQoL8VadgHRF49Y4z0inAzkz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q122382 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q122382 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q131587410 pgdc:piwigo_image "16032".
+wd:Q131587410 pgdc:piwigo_gallery kgdc:gal817.

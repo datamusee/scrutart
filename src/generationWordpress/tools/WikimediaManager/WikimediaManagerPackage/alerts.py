@@ -2,7 +2,7 @@
 import time
 import logging
 from typing import Dict, Any, Optional
-from src.generationWordpress.tools.WikimediaManager.WikimediaManagerPackage.WikimediaAccess.metrics import metrics_collector
+from tools.WikimediaManager.WikimediaManagerPackage.WikimediaAccess.metrics import metrics_collector
 
 
 class AlertManager:

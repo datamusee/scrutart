@@ -1,0 +1,395 @@
+wd:Q24522798 rdfs:label """Drève ensoleillée"""@fr.
+wd:Q24522798 wdt:P31 wd:Q838948 .
+wd:Q24522798 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q24522798 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Sunny%20Lane%20-%202016-PK%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q24522798 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q24522798 pgdc:piwigo_image "12529".
+wd:Q24522798 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q120687119 rdfs:label """Les deux amis punis"""@fr.
+wd:Q120687119 wdt:P31 wd:Q838948 .
+wd:Q120687119 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q120687119 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%2C%20Twee%20Gestrafte%20Vrienden%2C%201876%2C%20olieverf%20op%20doek%2C%20108%20x%2055%2C%20Koninklijke%20Verzameling%20%28KM012280%29.jpg".
+wd:Q120687119 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120687119 pgdc:piwigo_image "12530".
+wd:Q120687119 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q21676046 rdfs:label """Arbre au soleil"""@fr.
+wd:Q21676046 wdt:P31 wd:Q838948 .
+wd:Q21676046 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q21676046 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Tree%20in%20the%20Sun%20-%201920-N%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21676046 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21676046 pgdc:piwigo_image "8278".
+wd:Q21676046 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q130468855 rdfs:label """Les Communiants"""@fr.
+wd:Q130468855 wdt:P31 wd:Q838948 .
+wd:Q130468855 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q130468855 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%2C%20The%20Communicants%2C%201893%2C%20Belfius%20Art%20Collection.jpg".
+wd:Q130468855 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130468855 pgdc:piwigo_image "12531".
+wd:Q130468855 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q21679538 rdfs:label """Les Glaneurs"""@fr.
+wd:Q21679538 wdt:P31 wd:Q838948 .
+wd:Q21679538 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q21679538 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Gathering%20Corn%20-%201950-AH%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21679538 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Het%20verzamelen%20van%20graan.jpg".
+wd:Q21679538 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21679538 pgdc:piwigo_image "12532".
+wd:Q21679538 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q21679537 rdfs:label """Portrait de l'artiste Anna De Weert"""@fr.
+wd:Q21679537 wdt:P31 wd:Q838948 .
+wd:Q21679537 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q21679537 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Portrait%20of%20the%20Artist%20Anna%20De%20Weert%20-%201950-AG%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21679537 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21679537 pgdc:piwigo_image "7090".
+wd:Q21679537 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q21674900 rdfs:label """Journée ensoleillée"""@fr.
+wd:Q21674900 wdt:P31 wd:Q838948 .
+wd:Q21674900 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q21674900 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Sunny%20Day%20-%201216%20-%20Collectie%20Vlaamse%20Gemeenschap.jpg".
+wd:Q21674900 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21674900 pgdc:piwigo_image "12533".
+wd:Q21674900 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q21675339 rdfs:label """Soleil couchant. Juin"""@fr.
+wd:Q21675339 wdt:P31 wd:Q838948 .
+wd:Q21675339 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q21675339 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ondergaande%20zon%2C%20Emile%20Claus%2C%201911%2C%20Koninklijk%20Museum%20voor%20Schone%20Kunsten%20Gent%2C%201912-E.jpg".
+wd:Q21675339 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Sunset%20-%201912-E%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21675339 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21675339 pgdc:piwigo_image "8279".
+wd:Q21675339 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q21680000 rdfs:label """Portrait de l'artiste Marie Moreels"""@fr.
+wd:Q21680000 wdt:P31 wd:Q838948 .
+wd:Q21680000 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q21680000 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Portrait%20of%20the%20Artist%20Marie%20Moreels%20-%201974-P%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21680000 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21680000 pgdc:piwigo_image "726".
+wd:Q21680000 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q120685215 rdfs:label """Le Châtaignier"""@fr.
+wd:Q120685215 wdt:P31 wd:Q838948 .
+wd:Q120685215 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q120685215 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le-chataignier-La-Boverie-Liege.jpg".
+wd:Q120685215 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120685215 pgdc:piwigo_image "12534".
+wd:Q120685215 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q21674093 rdfs:label """Les Patineurs"""@fr.
+wd:Q21674093 wdt:P31 wd:Q838948 .
+wd:Q21674093 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q21674093 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20De%20ijsvogels%20%281891%29.jpg".
+wd:Q21674093 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20The%20Skaters%20-%201892-A%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21674093 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21674093 pgdc:piwigo_image "12535".
+wd:Q21674093 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q21676189 rdfs:label """Midi à l'Estérel (Côte d'Azur)"""@fr.
+wd:Q21676189 wdt:P31 wd:Q838948 .
+wd:Q21676189 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q21676189 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Noon%20in%20Est%C3%A9rel%20%28C%C3%B4te%20d%E2%80%99Azur%29%20-%201922-B%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21676189 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21676189 pgdc:piwigo_image "12536".
+wd:Q21676189 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q21676114 rdfs:label """Reflet de lumière au matin, sur la Tamise à Londres"""@fr.
+wd:Q21676114 wdt:P31 wd:Q838948 .
+wd:Q21676114 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q21676114 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Morning%20Reflection%20on%20the%20Thames%20in%20London%20-%201922-A%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21676114 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21676114 pgdc:piwigo_image "5874".
+wd:Q21676114 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q21678865 rdfs:label """Profil de femme et meule de foin"""@fr.
+wd:Q21678865 wdt:P31 wd:Q838948 .
+wd:Q21678865 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q21678865 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Profile%20of%20a%20Woman%20and%20Wheatsheaves%20-%201938-M%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21678865 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21678865 pgdc:piwigo_image "12537".
+wd:Q21678865 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q123328540 rdfs:label """Autoportrait"""@fr.
+wd:Q123328540 wdt:P31 wd:Q838948 .
+wd:Q123328540 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q123328540 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20%281849-1924%29%20Zelfportret%20%28ca.1912%29%20MSK%20Gent%2022-10-2017%2011-51-34.JPG".
+wd:Q123328540 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Self-Portrait%20-%202014-SM%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q123328540 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123328540 pgdc:piwigo_image "5786".
+wd:Q123328540 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q123328543 rdfs:label """Autoportrait"""@fr.
+wd:Q123328543 wdt:P31 wd:Q838948 .
+wd:Q123328543 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q123328543 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Claus%20-%20Self-Portrait%20-%202014-SL%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q123328543 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123328543 pgdc:piwigo_image "5814".
+wd:Q123328543 pgdc:piwigo_gallery kgdc:gal762.
+wd:Q123423578 rdfs:label """Une avenue"""@fr.
+wd:Q123423578 wdt:P31 wd:Q838948 .
+wd:Q123423578 wdt:P170 wd:Q733002.
+wd:Q733002 rdfs:label """Émile Claus"""@fr.
+wd:Q733002 wdt:P31 wd:Q3391743 .
+wd:Q123423578 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89mile%20Claus%20-%20Une%20avenue%20%281895%29.jpg".
+wd:Q123423578 pgdc:sparql kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C .
+kgdc:sparqlK2hcMWS3ptffhJdZgCUeLJBrR00Lwaj7ctr0sjFXG8C pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q733002 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123423578 pgdc:piwigo_image "12538".
+wd:Q123423578 pgdc:piwigo_gallery kgdc:gal762.

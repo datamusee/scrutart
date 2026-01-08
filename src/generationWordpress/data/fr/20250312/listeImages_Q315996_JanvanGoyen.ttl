@@ -1,0 +1,370 @@
+wd:Q29656320 rdfs:label """Paysage avec charrette sur une digue"""@fr.
+wd:Q29656320 wdt:P31 wd:Q838948 .
+wd:Q29656320 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q29656320 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Paysage%20avec%20charrette%20sur%20une%20digue%20-%20Jan%20van%20Goyen%20-%20Mus%C3%A9e%20du%20Louvre.jpg".
+wd:Q29656320 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29656320 pgdc:piwigo_image "8418".
+wd:Q29656320 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q29656327 rdfs:label """Deux grandes barques à voiles sur un fleuve et bestiaux près de la rive"""@fr.
+wd:Q29656327 wdt:P31 wd:Q838948 .
+wd:Q29656327 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q29656327 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Mus%C3%A9e%20du%20Louvre%20-%20Jan%20van%20Goyen%20-%20Deux%20grandes%20barques%20%C3%A0%20voiles%20sur%20un%20fleuve%20et%20bestiaux%20pr%C3%A8s%20de%20la%20rive%20-%20INV%201303%20-.jpg".
+wd:Q29656327 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29656327 pgdc:piwigo_image "8419".
+wd:Q29656327 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q29647962 rdfs:label """Vue de Rhenen sur le Rhin avec l'église Sainte-Cunera"""@fr.
+wd:Q29647962 wdt:P31 wd:Q838948 .
+wd:Q29647962 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q29647962 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Goyen%20-%20View%20of%20Rhenen%2C%200000388045%20OG.jpeg".
+wd:Q29647962 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29647962 pgdc:piwigo_image "9985".
+wd:Q29647962 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q29656323 rdfs:label """La Meuse à Dordrecht avec la Grote Kerk; vue prise au sud-ouest"""@fr.
+wd:Q29656323 wdt:P31 wd:Q838948 .
+wd:Q29656323 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q29656323 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Goyen%20013.jpg".
+wd:Q29656323 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29656323 pgdc:piwigo_image "8420".
+wd:Q29656323 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q29647956 rdfs:label """Patineurs devant un château médiéval"""@fr.
+wd:Q29647956 wdt:P31 wd:Q838948 .
+wd:Q29647956 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q29647956 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Goyen%20014.jpg".
+wd:Q29647956 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29647956 pgdc:piwigo_image "9986".
+wd:Q29647956 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q19928837 rdfs:label """Paysage fluvial avec moulin et château en ruines"""@fr.
+wd:Q19928837 wdt:P31 wd:Q838948 .
+wd:Q19928837 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q19928837 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Goyen%20012.jpg".
+wd:Q19928837 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19928837 pgdc:piwigo_image "8206".
+wd:Q19928837 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q56872590 rdfs:label """Vue d'un village bordant une rivière"""@fr.
+wd:Q56872590 wdt:P31 wd:Q838948 .
+wd:Q56872590 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q56872590 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/221%20Jan%20van%20Goyen%20Vue%20d%27un%20village%20bordant%20une%20rivi%C3%A8re.jpg".
+wd:Q56872590 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q56872590 pgdc:piwigo_image "10004".
+wd:Q56872590 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q56871255 rdfs:label """Paysage aux chaumières"""@fr.
+wd:Q56871255 wdt:P31 wd:Q838948 .
+wd:Q56871255 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q56871255 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Goyen%2C%20Paysage%20aux%20chaumi%C3%A8res.jpg".
+wd:Q56871255 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q56871255 pgdc:piwigo_image "10025".
+wd:Q56871255 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q21679938 rdfs:label """Paysage de rivière avec un château fort"""@fr.
+wd:Q21679938 wdt:P31 wd:Q838948 .
+wd:Q21679938 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q21679938 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Goyen%20-%20River%20Landscape%20with%20a%20Castle%20-%201965-C%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21679938 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Burchtpoort%20in%20Nijmegen%2C%20Jan%20van%20Goyen%2C%201648%2C%20Koninklijk%20Museum%20voor%20Schone%20Kunsten%20Gent%2C%201965-C.jpg".
+wd:Q21679938 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Goyen%20-%20Old%20Castle%20Gate%20in%20Nijmegen.jpg".
+wd:Q21679938 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21679938 pgdc:piwigo_image "5972".
+wd:Q21679938 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q68697473 rdfs:label """Paysage fluvial"""@fr.
+wd:Q68697473 wdt:P31 wd:Q838948 .
+wd:Q68697473 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q68697473 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Goyen%2C%20Paysage%20fluvial.jpg".
+wd:Q68697473 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q68697473 pgdc:piwigo_image "10159".
+wd:Q68697473 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q63953308 rdfs:label """Le Chêne foudroyé ou la diseuse de bonne aventure"""@fr.
+wd:Q63953308 wdt:P31 wd:Q838948 .
+wd:Q63953308 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q63953308 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Goyen%20-%20Weathered%20Oak%20001-032-2937.jpg".
+wd:Q63953308 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q63953308 pgdc:piwigo_image "5676".
+wd:Q63953308 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q63346564 rdfs:label """Patineurs"""@fr.
+wd:Q63346564 wdt:P31 wd:Q838948 .
+wd:Q63346564 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q63346564 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Les%20patineurs.jpg".
+wd:Q63346564 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q63346564 pgdc:piwigo_image "14140".
+wd:Q63346564 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q104445454 rdfs:label """L'Auberge au bord de la rivière"""@fr.
+wd:Q104445454 wdt:P31 wd:Q838948 .
+wd:Q104445454 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q104445454 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Josefsz%20Van%20Goyen%20-%20L%27Auberge%20au%20bord%20de%20la%20rivi%C3%A8re%20-%20PDUT902%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104445454 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104445454 pgdc:piwigo_image "14141".
+wd:Q104445454 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q124831281 rdfs:label """Paysage"""@fr.
+wd:Q124831281 wdt:P31 wd:Q838948 .
+wd:Q124831281 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q124831281 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Paysage%20huile%20sur%20bois%20legs%20Pr%C3%A9voteau%201867%20%28inv.%202899%29%20mus%C3%A9e%20des%20Beaux-Arts%20de%20Chartres%20Eure-et-Loir%20France.jpg".
+wd:Q124831281 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124831281 pgdc:piwigo_image "14142".
+wd:Q124831281 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q124831440 rdfs:label """Paysage hollandais"""@fr.
+wd:Q124831440 wdt:P31 wd:Q838948 .
+wd:Q124831440 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q124831440 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Paysage%20huile%20sur%20bois%20XVII%20mus%C3%A9e%20des%20Beaux-Arts%20de%20Chartres%20%28inv.%205656%29%20Eure-et-Loir%20France.jpg".
+wd:Q124831440 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124831440 pgdc:piwigo_image "14143".
+wd:Q124831440 pgdc:piwigo_gallery kgdc:gal365.
+wd:Q124832566 rdfs:label """Paysage avec animaux"""@fr.
+wd:Q124832566 wdt:P31 wd:Q838948 .
+wd:Q124832566 wdt:P170 wd:Q315996.
+wd:Q315996 rdfs:label """Jan van Goyen"""@fr.
+wd:Q315996 wdt:P31 wd:Q3391743 .
+wd:Q124832566 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Paysage%20planche%20VIII%20dans%20Marcel%20Langlois%2C%20Le%20Mus%C3%A9e%20de%20Chartres%20-%2028%20gravures%20Soci%C3%A9t%C3%A9%20arch%C3%A9ologique%20d%27Eure-et-Loir%201906.png".
+wd:Q124832566 pgdc:sparql kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl .
+kgdc:sparqlmEpYVM0AxEjR69T2QbON5PUDWbz78mOCARkJuG3cNJl pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q315996 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124832566 pgdc:piwigo_image "14144".
+wd:Q124832566 pgdc:piwigo_gallery kgdc:gal365.

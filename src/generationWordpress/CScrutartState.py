@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from typing import Optional
 import datetime
 import requests
-from src.piwigoTools.CPiwigoManager import CPiwigoManager
+from CPiwigoManager import CPiwigoManager
 import SPARQLWrapper as sw
 
 

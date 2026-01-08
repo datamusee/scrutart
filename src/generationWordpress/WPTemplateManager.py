@@ -204,9 +204,9 @@ __TYPELIST__
 
     def buildQueryView_2_0(self, varstring=""):
         models = {
-            "fr": """<a href='""" + varstring + """'><img class="wp-image-710" style="width: 30px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="lien WDQS"></a>""",
-            "en": """<a href='""" + varstring + """'><img class="wp-image-710" style="width: 30px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="WDQS link"></a>""",
-            "es": """<a href='""" + varstring + """'><img class="wp-image-710" style="width: 30px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="en WDQS"></a>""",
+            "fr": """<a class="icon-link" href='""" + varstring + """'><img class="wp-image-710" style="width: 30px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="lien WDQS"></a>""",
+            "en": """<a class="icon-link" href='""" + varstring + """'><img class="wp-image-710" style="width: 30px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="WDQS link"></a>""",
+            "es": """<a class="icon-link" href='""" + varstring + """'><img class="wp-image-710" style="width: 30px;" src="https://scrutart.grains-de-culture.fr/wp-content/uploads/2025/05/boutonWDQS2.svg" alt="en WDQS"></a>""",
         }
         return models.get(self.lang, models["en"]) # self.wpWrapPara(models.get(self.lang, models["en"]))
 

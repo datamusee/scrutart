@@ -1,0 +1,529 @@
+wd:Q64491277 rdfs:label """Mon portrait"""@fr.
+wd:Q64491277 wdt:P31 wd:wd:Q838948 .
+wd:Q64491277 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q64491277 wdt:P18 "None".
+wd:Q64491277 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64491277 pgdc:piwigo_image "5783".
+wd:Q64491277 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q17493773 rdfs:label """Les Quais à Bordeaux"""@fr.
+wd:Q17493773 wdt:P31 wd:wd:Q838948 .
+wd:Q17493773 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q17493773 wdt:P18 "None".
+wd:Q17493773 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17493773 pgdc:piwigo_image "8029".
+wd:Q17493773 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q18822484 rdfs:label """L'homme ailé"""@fr.
+wd:Q18822484 wdt:P31 wd:wd:Q838948 .
+wd:Q18822484 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q18822484 wdt:P18 "None".
+wd:Q18822484 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18822484 pgdc:piwigo_image "5278".
+wd:Q18822484 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q17495022 rdfs:label """Plante verte dans une urne"""@fr.
+wd:Q17495022 wdt:P31 wd:wd:Q838948 .
+wd:Q17495022 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q17495022 wdt:P18 "None".
+wd:Q17495022 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17495022 pgdc:piwigo_image "8536".
+wd:Q17495022 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q17495553 rdfs:label """Saint Sébastien"""@fr.
+wd:Q17495553 wdt:P31 wd:wd:Q838948 .
+wd:Q17495553 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q17495553 wdt:P18 "None".
+wd:Q17495553 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17495553 pgdc:piwigo_image "12019".
+wd:Q17495553 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q17491405 rdfs:label """Fantasmagorie"""@fr.
+wd:Q17491405 wdt:P31 wd:wd:Q838948 .
+wd:Q17491405 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q17491405 wdt:P18 "None".
+wd:Q17491405 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17491405 pgdc:piwigo_image "12020".
+wd:Q17491405 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q18001840 rdfs:label """Pandore"""@fr.
+wd:Q18001840 wdt:P31 wd:wd:Q838948 .
+wd:Q18001840 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q18001840 wdt:P18 "None".
+wd:Q18001840 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18001840 pgdc:piwigo_image "12021".
+wd:Q18001840 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q17495208 rdfs:label """Portrait de l'artiste"""@fr.
+wd:Q17495208 wdt:P31 wd:wd:Q838948 .
+wd:Q17495208 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q17495208 wdt:P18 "None".
+wd:Q17495208 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17495208 pgdc:piwigo_image "5585".
+wd:Q17495208 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q17490792 rdfs:label """Autoportrait en buste"""@fr.
+wd:Q17490792 wdt:P31 wd:wd:Q838948 .
+wd:Q17490792 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q17490792 wdt:P18 "None".
+wd:Q17490792 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17490792 pgdc:piwigo_image "5586".
+wd:Q17490792 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q17496116 rdfs:label """La prière, visage, fleurs"""@fr.
+wd:Q17496116 wdt:P31 wd:wd:Q838948 .
+wd:Q17496116 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q17496116 wdt:P18 "None".
+wd:Q17496116 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17496116 pgdc:piwigo_image "12022".
+wd:Q17496116 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q28025469 rdfs:label """Apollon vainqueur du serpent Python"""@fr.
+wd:Q28025469 wdt:P31 wd:wd:Q838948 .
+wd:Q28025469 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q28025469 wdt:P18 "None".
+wd:Q28025469 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28025469 pgdc:piwigo_image "12023".
+wd:Q28025469 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q28567020 rdfs:label """Profile de femme avec vase de fleurs"""@fr.
+wd:Q28567020 wdt:P31 wd:wd:Q838948 .
+wd:Q28567020 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q28567020 wdt:P18 "None".
+wd:Q28567020 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28567020 pgdc:piwigo_image "12024".
+wd:Q28567020 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q104444034 rdfs:label """Le char du Soleil"""@fr.
+wd:Q104444034 wdt:P31 wd:wd:Q838948 .
+wd:Q104444034 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q104444034 wdt:P18 "None".
+wd:Q104444034 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104444034 pgdc:piwigo_image "12025".
+wd:Q104444034 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q131549132 rdfs:label """Bouquet de fleurs"""@fr.
+wd:Q131549132 wdt:P31 wd:wd:Q838948 .
+wd:Q131549132 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q131549132 wdt:P18 "None".
+wd:Q131549132 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131549132 pgdc:piwigo_image "12026".
+wd:Q131549132 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q111033789 rdfs:label """Caïn et Abel"""@fr.
+wd:Q111033789 wdt:P31 wd:wd:Q838948 .
+wd:Q111033789 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q111033789 wdt:P18 "None".
+wd:Q111033789 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111033789 pgdc:piwigo_image "12027".
+wd:Q111033789 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q116867532 rdfs:label """Fleurs dans un Vase bleu"""@fr.
+wd:Q116867532 wdt:P31 wd:wd:Q838948 .
+wd:Q116867532 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q116867532 wdt:P18 "None".
+wd:Q116867532 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116867532 pgdc:piwigo_image "12028".
+wd:Q116867532 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q103930561 rdfs:label """Nature morte"""@fr.
+wd:Q103930561 wdt:P31 wd:wd:Q838948 .
+wd:Q103930561 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q103930561 wdt:P18 "None".
+wd:Q103930561 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q103930561 pgdc:piwigo_image "8812".
+wd:Q103930561 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q131438392 rdfs:label """Saint Sébastien"""@fr.
+wd:Q131438392 wdt:P31 wd:wd:Q838948 .
+wd:Q131438392 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q131438392 wdt:P18 "None".
+wd:Q131438392 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131438392 pgdc:piwigo_image "12029".
+wd:Q131438392 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q104445774 rdfs:label """Prophète"""@fr.
+wd:Q104445774 wdt:P31 wd:wd:Q838948 .
+wd:Q104445774 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q104445774 wdt:P18 "None".
+wd:Q104445774 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104445774 pgdc:piwigo_image "12030".
+wd:Q104445774 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q104445773 rdfs:label """Composition à trois personnages (Flagellation ?)"""@fr.
+wd:Q104445773 wdt:P31 wd:wd:Q838948 .
+wd:Q104445773 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q104445773 wdt:P18 "None".
+wd:Q104445773 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104445773 pgdc:piwigo_image "12031".
+wd:Q104445773 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q123055484 rdfs:label """La Mer à Morgat"""@fr.
+wd:Q123055484 wdt:P31 wd:wd:Q838948 .
+wd:Q123055484 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q123055484 wdt:P18 "None".
+wd:Q123055484 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123055484 pgdc:piwigo_image "12032".
+wd:Q123055484 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q104445933 rdfs:label """Arabe musicien"""@fr.
+wd:Q104445933 wdt:P31 wd:wd:Q838948 .
+wd:Q104445933 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q104445933 wdt:P18 "None".
+wd:Q104445933 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104445933 pgdc:piwigo_image "12033".
+wd:Q104445933 pgdc:piwigo_gallery kgdc:gal412.
+wd:Q131438265 rdfs:label """Portrait de Madame Redon"""@fr.
+wd:Q131438265 wdt:P31 wd:wd:Q838948 .
+wd:Q131438265 wdt:P170 wd:Q154349.
+wd:Q154349 rdfs:label """Odilon Redon"""@fr.
+wd:Q154349 wdt:P31 wd:Q3391743 .
+wd:Q131438265 wdt:P18 "None".
+wd:Q131438265 pgdc:sparql kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO .
+kgdc:sparqlZBi5tzABPrJO1LKLsEuogsJNy0b1l8jSaAD521swuUO pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q154349 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131438265 pgdc:piwigo_image "12034".
+wd:Q131438265 pgdc:piwigo_gallery kgdc:gal412.

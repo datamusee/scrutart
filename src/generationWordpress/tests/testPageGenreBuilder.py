@@ -1,5 +1,6 @@
 import unittest
-import src.generationWordpress.PageBuilder as PageBuilder
+import PageBuilder as PageBuilder
+
 class TestGenreBuilder(unittest.TestCase):
     def test_genre_portrait(self):
         qid = "Q134307"

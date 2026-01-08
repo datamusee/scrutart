@@ -3,7 +3,7 @@ import time
 
 import requests
 from urllib.parse import urlencode, urlunsplit, quote_plus
-from src.generationWordpress.tools.WikimediaManager.WikimediaManagerPackage import configPrivee
+from tools.WikimediaManager.WikimediaManagerPackage import configPrivee
 import socketio
 
 

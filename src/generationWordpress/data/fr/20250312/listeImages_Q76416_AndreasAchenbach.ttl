@@ -1,0 +1,63 @@
+wd:Q19912890 rdfs:label """Coucher de soleil après une tempête sur la côte de la Sicile"""@fr.
+wd:Q19912890 wdt:P31 wd:Q838948 .
+wd:Q19912890 wdt:P170 wd:Q76416.
+wd:Q76416 rdfs:label """Andreas Achenbach"""@fr.
+wd:Q76416 wdt:P31 wd:Q3391743 .
+wd:Q19912890 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Andreas%20Achenbach%20-%20Sonnenuntergang%20nach%20einem%20Sturm%20an%20der%20K%C3%BCste%20von%20Sizilien.jpg".
+wd:Q19912890 pgdc:sparql kgdc:sparqlqD9X1L6fZeJDZagy2zelMeXd8lLszsWmtPiLs3t14Ke .
+kgdc:sparqlqD9X1L6fZeJDZagy2zelMeXd8lLszsWmtPiLs3t14Ke pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q76416 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21619576 rdfs:label """Un remorqueur quitte le port d'Ostende à marée haute"""@fr.
+wd:Q21619576 wdt:P31 wd:Q838948 .
+wd:Q21619576 wdt:P170 wd:Q76416.
+wd:Q76416 rdfs:label """Andreas Achenbach"""@fr.
+wd:Q76416 wdt:P31 wd:Q3391743 .
+wd:Q21619576 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Andreas%20Achenbach%20-%20Ein%20Schlepper%20verl%C3%A4sst%20den%20Hafen%20von%20Ostende%20bei%20Flut.jpg".
+wd:Q21619576 pgdc:sparql kgdc:sparqlqD9X1L6fZeJDZagy2zelMeXd8lLszsWmtPiLs3t14Ke .
+kgdc:sparqlqD9X1L6fZeJDZagy2zelMeXd8lLszsWmtPiLs3t14Ke pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q76416 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21619576 rdfs:label """Un remorqueur quitte le port d'Ostende à marée haute"""@fr.
+wd:Q21619576 wdt:P31 wd:Q838948 .
+wd:Q21619576 wdt:P170 wd:Q76416.
+wd:Q76416 rdfs:label """Andreas Achenbach"""@fr.
+wd:Q76416 wdt:P31 wd:Q3391743 .
+wd:Q21619576 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Andreas%20Achenbach%20-%20Een%20sleepboot%20verlaat%20de%20haven%20van%20Oostende%20bij%20hoogtij%20-%201500%20-%20Royal%20Museum%20of%20Fine%20Arts%20Antwerp.tiff".
+wd:Q21619576 pgdc:sparql kgdc:sparqlqD9X1L6fZeJDZagy2zelMeXd8lLszsWmtPiLs3t14Ke .
+kgdc:sparqlqD9X1L6fZeJDZagy2zelMeXd8lLszsWmtPiLs3t14Ke pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q76416 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

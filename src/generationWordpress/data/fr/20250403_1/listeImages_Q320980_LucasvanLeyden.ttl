@@ -1,0 +1,1505 @@
+wd:Q2248691 rdfs:label """Le Jugement dernier"""@fr.
+wd:Q2248691 wdt:P31 wd:Q838948 .
+wd:Q2248691 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q2248691 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Last%20Judgement%2C%20by%20Lucas%20van%20Leyden.jpg".
+wd:Q2248691 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3697614 rdfs:label """Christ de douleur"""@fr.
+wd:Q3697614 wdt:P31 wd:Q838948 .
+wd:Q3697614 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q3697614 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Luca%20di%20leida%2C%20cristo%20croficisso.jpg".
+wd:Q3697614 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q9019496 rdfs:label """La Partie d'échecs"""@fr.
+wd:Q9019496 wdt:P31 wd:Q838948 .
+wd:Q9019496 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q9019496 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20The%20Game%20of%20Chess%20-%20WGA12919.jpg".
+wd:Q9019496 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q9355519 rdfs:label """Worship of the Golden Calf"""@fr.
+wd:Q9355519 wdt:P31 wd:Q838948 .
+wd:Q9355519 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q9355519 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/De%20dans%20om%20het%20gouden%20kalf%20Rijksmuseum%20SK-A-3841.jpeg".
+wd:Q9355519 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17324209 rdfs:label """Volet de gauche d'un diptyque avec le Christ en homme de douleurs"""@fr.
+wd:Q17324209 wdt:P31 wd:Q838948 .
+wd:Q17324209 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q17324209 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christus%20met%20doornenkroon%20Rijksmuseum%20SK-A-1483.jpeg".
+wd:Q17324209 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17324210 rdfs:label """Inner right wing of a diptych with the Virgin as Mater Dolorosa"""@fr.
+wd:Q17324210 wdt:P31 wd:Q838948 .
+wd:Q17324210 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q17324210 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/After%20Lucas%20van%20Leyden%20002.jpg".
+wd:Q17324210 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17334813 rdfs:label """Vierge à l'Enfant"""@fr.
+wd:Q17334813 wdt:P31 wd:Q838948 .
+wd:Q17334813 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q17334813 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Maria%20met%20kind%20Rijksmuseum%20SK-A-3739.jpeg".
+wd:Q17334813 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17339380 rdfs:label """Salomé avec la tête de Jean-Baptiste"""@fr.
+wd:Q17339380 wdt:P31 wd:Q838948 .
+wd:Q17339380 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q17339380 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Salome%20met%20het%20hoofd%20van%20Johannes%20de%20Doper%20Rijksmuseum%20SK-A-4260.jpeg".
+wd:Q17339380 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19928105 rdfs:label """Potiphar's Wife Displays Joseph's Garment"""@fr.
+wd:Q19928105 wdt:P31 wd:Q838948 .
+wd:Q19928105 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q19928105 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Potiphar%27s%20Wife%20Displays%20Joseph%27s%20Garment%20-%20Google%20Art%20Project.jpg".
+wd:Q19928105 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20546827 rdfs:label """Moses and the Israelites after the Miracle of Water from the Rock"""@fr.
+wd:Q20546827 wdt:P31 wd:Q838948 .
+wd:Q20546827 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q20546827 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Moses%20and%20the%20Israelites%20after%20the%20Miracle%20of%20Water%20from%20the%20Rock%20-%2054.1432%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20546827 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20440332 rdfs:label """A Surgeon Operating on a Peasant"""@fr.
+wd:Q20440332 wdt:P31 wd:Q838948 .
+wd:Q20440332 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q20440332 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20A%20Surgeon%20Operating%20on%20a%20Peasant%20-%20KMSsp335%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20440332 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21614445 rdfs:label """L'engagement"""@fr.
+wd:Q21614445 wdt:P31 wd:Q838948 .
+wd:Q21614445 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q21614445 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20The%20Engagement%2C%20202.tif".
+wd:Q21614445 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21614445 rdfs:label """L'engagement"""@fr.
+wd:Q21614445 wdt:P31 wd:Q838948 .
+wd:Q21614445 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q21614445 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Verlobung%20%28Koniklijk%20Museum%29%20-%20600%20dpi.jpg".
+wd:Q21614445 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21614448 rdfs:label """David Playing his Harp for Saul"""@fr.
+wd:Q21614448 wdt:P31 wd:Q838948 .
+wd:Q21614448 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q21614448 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20David%20Playing%20his%20Harp%20for%20Saul%2C%20203.tif".
+wd:Q21614448 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21614449 rdfs:label """Q21614449"""@fr.
+wd:Q21614449 wdt:P31 wd:Q838948 .
+wd:Q21614449 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q21614449 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Saint%20Luke%2C%20na%201518%2C%20204.tif".
+wd:Q21614449 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21614450 rdfs:label """The Evangelists"""@fr.
+wd:Q21614450 wdt:P31 wd:Q838948 .
+wd:Q21614450 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q21614450 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20The%20Evangelists%2C%20na%201518%2C%20204-206.tif".
+wd:Q21614450 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21923402 rdfs:label """Chemin de croix avec sainte Véronique."""@fr.
+wd:Q21923402 wdt:P31 wd:Q838948 .
+wd:Q21923402 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q21923402 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Leyden%20Bearing%20of%20the%20Cross.jpg".
+wd:Q21923402 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21711541 rdfs:label """The Card Players"""@fr.
+wd:Q21711541 wdt:P31 wd:Q838948 .
+wd:Q21711541 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q21711541 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Card%20Players%20-%20WGA12923.jpg".
+wd:Q21711541 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21614452 rdfs:label """Saint Matthew"""@fr.
+wd:Q21614452 wdt:P31 wd:Q838948 .
+wd:Q21614452 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q21614452 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Saint%20Matthew%2C%20na%201518%2C%20206.tif".
+wd:Q21614452 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q26708019 rdfs:label """A Man aged 38"""@fr.
+wd:Q26708019 wdt:P31 wd:Q838948 .
+wd:Q26708019 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q26708019 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Portret%20van%20een%2038-jarige%20man%20-%20NG3604%20-%20National%20Gallery.jpg".
+wd:Q26708019 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21925569 rdfs:label """Les joueurs de cartes."""@fr.
+wd:Q21925569 wdt:P31 wd:Q838948 .
+wd:Q21925569 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q21925569 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Leyden%20Card%20players.jpg".
+wd:Q21925569 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q26941178 rdfs:label """Portrait of a man"""@fr.
+wd:Q26941178 wdt:P31 wd:Q838948 .
+wd:Q26941178 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q26941178 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28toegeschreven%20aan%29%20Lucas%20van%20Leyden%20-%20Jacob%20%28Johan%29%20Lubbers%2C%20stichter%20van%20het%20Ubbenagasthuis%2C%20-%200000.2384%20-%20Groninger%20Museum.jpg".
+wd:Q26941178 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29881863 rdfs:label """Annunciation"""@fr.
+wd:Q29881863 wdt:P31 wd:Q838948 .
+wd:Q29881863 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q29881863 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20008.jpg".
+wd:Q29881863 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27898197 rdfs:label """Allegory of Youth crossing between Fame and Folly"""@fr.
+wd:Q27898197 wdt:P31 wd:Q838948 .
+wd:Q27898197 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q27898197 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Allegory%20of%20Youth%20crossing%20between%20Fame%20and%20Folly%20-%2070.141%20-%20Indianapolis%20Museum%20of%20Art.jpg".
+wd:Q27898197 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29952231 rdfs:label """La Tireuse de cartes"""@fr.
+wd:Q29952231 wdt:P31 wd:Q838948 .
+wd:Q29952231 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q29952231 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Kartenlegerin%20-%201200%20dpi.jpg".
+wd:Q29952231 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29954323 rdfs:label """Mary with Child, St. Maria Magdalena and founder (separate outside, Inv. No. 7713)"""@fr.
+wd:Q29954323 wdt:P31 wd:Q838948 .
+wd:Q29954323 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q29954323 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20010.jpg".
+wd:Q29954323 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q41113358 rdfs:label """Les Fiancés"""@fr.
+wd:Q41113358 wdt:P31 wd:Q838948 .
+wd:Q41113358 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q41113358 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Fiancees%20mg%200008.jpg".
+wd:Q41113358 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q47035857 rdfs:label """Vierge à l'Enfant."""@fr.
+wd:Q47035857 wdt:P31 wd:Q838948 .
+wd:Q47035857 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q47035857 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Virgin%20and%20Child%20with%20Angels%20-%20Gem%C3%A4ldegalerie.jpg".
+wd:Q47035857 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50987675 rdfs:label """Card Players"""@fr.
+wd:Q50987675 wdt:P31 wd:Q838948 .
+wd:Q50987675 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q50987675 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Naar%20Lucas%20van%20Leyden%20-%20Kaartspelers%20-%20923%20-%20Museum%20of%20Fine%20Arts%2C%20Budapest.jpg".
+wd:Q50987675 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q49210843 rdfs:label """Saint Paul"""@fr.
+wd:Q49210843 wdt:P31 wd:Q838948 .
+wd:Q49210843 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q49210843 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Saint%20Paul%20-%201961.52%20-%20Yale%20University%20Art%20Gallery.jpg".
+wd:Q49210843 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55408875 rdfs:label """Vierge à l'Enfant"""@fr.
+wd:Q55408875 wdt:P31 wd:Q838948 .
+wd:Q55408875 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q55408875 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Madonna%20and%20Child%20-%20NG.M.01390%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55408875 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q57732387 rdfs:label """Autoportrait"""@fr.
+wd:Q57732387 wdt:P31 wd:Q838948 .
+wd:Q57732387 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q57732387 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Self-portrait%2C%20by%20Lucas%20van%20Leyden.jpg".
+wd:Q57732387 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104528003 rdfs:label """Saint Andrew"""@fr.
+wd:Q104528003 wdt:P31 wd:Q838948 .
+wd:Q104528003 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q104528003 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20Hugensz.%20van%20Leyden%20-%20Der%20Heilige%20Andreas%20in%20Halbfigur%20-%201478%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104528003 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q105834805 rdfs:label """Scenes from the life of St. Mary Magdalene."""@fr.
+wd:Q105834805 wdt:P31 wd:Q838948 .
+wd:Q105834805 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q105834805 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Leyden%20Life%20of%20St.%20Mary%20Magdalene.jpg".
+wd:Q105834805 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107438592 rdfs:label """St Jerome Penitent."""@fr.
+wd:Q107438592 wdt:P31 wd:Q838948 .
+wd:Q107438592 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q107438592 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Workshop%20of%20Lucas%20van%20Leyden%20001.jpg".
+wd:Q107438592 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q106867430 rdfs:label """Angel"""@fr.
+wd:Q106867430 wdt:P31 wd:Q838948 .
+wd:Q106867430 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q106867430 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20Angel%20-%201943.98%20-%20Fogg%20Museum.jpg".
+wd:Q106867430 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111645231 rdfs:label """Loth and his daughters"""@fr.
+wd:Q111645231 wdt:P31 wd:Q838948 .
+wd:Q111645231 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q111645231 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20%281494-1533%29%20-%20Lot%20und%20seine%20T%C3%B6chter%20-%202029%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111645231 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111646437 rdfs:label """Ecco Homo"""@fr.
+wd:Q111646437 wdt:P31 wd:Q838948 .
+wd:Q111646437 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q111646437 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20%281494-1533%29%20-%20%22Ecce%20homo%20%22%20-%202675%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111646437 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117196346 rdfs:label """Healing of Blind Man of Jericho (right panel, Portrait of Dirckgen van Lindenburgh)"""@fr.
+wd:Q117196346 wdt:P31 wd:Q838948 .
+wd:Q117196346 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q117196346 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20003.jpg".
+wd:Q117196346 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q116296255 rdfs:label """Q116296255"""@fr.
+wd:Q116296255 wdt:P31 wd:Q838948 .
+wd:Q116296255 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q116296255 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20-%20The%20Temptation%20of%20St%20Anthony%20-%20WGA12935.jpg".
+wd:Q116296255 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117196360 rdfs:label """Healing of Blind Man of Jericho (central panel)"""@fr.
+wd:Q117196360 wdt:P31 wd:Q838948 .
+wd:Q117196360 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q117196360 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Leyden%2C%20Lucas%20van%20%E2%80%94%20Healing%20of%20Blind%20Man%20of%20Jericho%20%28triptych%29%20%E2%80%94%20Hermitage%20Museum%2C%20%D0%93%D0%AD-407.jpg".
+wd:Q117196360 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117196419 rdfs:label """Healing of Blind Man of Jericho (left panel, Portrait of Jacob Florisz van Montfort)"""@fr.
+wd:Q117196419 wdt:P31 wd:Q838948 .
+wd:Q117196419 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q117196419 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20van%20Leyden%20004.jpg".
+wd:Q117196419 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q120913561 rdfs:label """Crucifixion"""@fr.
+wd:Q120913561 wdt:P31 wd:Q838948 .
+wd:Q120913561 wdt:P170 wd:Q320980.
+wd:Q320980 rdfs:label """Lucas van Leyden"""@fr.
+wd:Q320980 wdt:P31 wd:Q3391743 .
+wd:Q120913561 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cornelis%20engebrechtsz.%20%28cerchia%29%2C%20crocifissione%2C%201500-50%20ca.jpg".
+wd:Q120913561 pgdc:sparql kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz .
+kgdc:sparqlnepJd8AQvaMpjJRueWP03vnz2Bpxg4fkXHjMwk1gGXz pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q320980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q320980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.

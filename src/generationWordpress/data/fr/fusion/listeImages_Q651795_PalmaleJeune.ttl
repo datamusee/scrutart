@@ -1,0 +1,2062 @@
+wd:Q18573232 rdfs:label """Vincenzo Cappello (1469-1541), amiral, diplomate et procurateur vénitien, dit à tort Portrait de Nicolo Cappello (1547-1613), petit-fils du précédent et gouverneur de galère en 1576"""@fr.
+wd:Q18573232 wdt:P31 wd:Q838948 .
+wd:Q18573232 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q18573232 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Portrait%20of%20Vincenzo%20Cappello%20-%20WGA16925.jpg".
+wd:Q18573232 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573232 pgdc:piwigo_image "468".
+wd:Q18573232 pgdc:piwigo_gallery kgdc:gal683.
+wd:Q2665840 rdfs:label """Pietà"""@fr.
+wd:Q2665840 wdt:P31 wd:Q838948 .
+wd:Q2665840 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q2665840 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Accademia%20-%20Piet%C3%A0%20by%20Titian.jpg".
+wd:Q2665840 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q13365785 rdfs:label """Saint Jérôme lisant au désert"""@fr.
+wd:Q13365785 wdt:P31 wd:Q838948 .
+wd:Q13365785 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q13365785 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Francescostjerome.jpg".
+wd:Q13365785 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17323900 rdfs:label """Loth et ses filles"""@fr.
+wd:Q17323900 wdt:P31 wd:Q838948 .
+wd:Q17323900 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q17323900 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lot%20en%20zijn%20dochters%20Rijksmuseum%20SK-A-1235.jpeg".
+wd:Q17323900 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19912904 rdfs:label """Crucifixion"""@fr.
+wd:Q19912904 wdt:P31 wd:Q838948 .
+wd:Q19912904 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q19912904 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Crucifixion%20MET%20ep57.170.bw.R.jpg".
+wd:Q19912904 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20176990 rdfs:label """Déploration du Christ"""@fr.
+wd:Q20176990 wdt:P31 wd:Q838948 .
+wd:Q20176990 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q20176990 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lamentation%20G-002439-20120801.jpg".
+wd:Q20176990 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20185434 rdfs:label """Venus and Mars"""@fr.
+wd:Q20185434 wdt:P31 wd:Q838948 .
+wd:Q20185434 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q20185434 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Venus%20and%20Mars%2000065901.jpg".
+wd:Q20185434 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20267968 rdfs:label """Portrait of a Gentleman"""@fr.
+wd:Q20267968 wdt:P31 wd:Q838948 .
+wd:Q20267968 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q20267968 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Negretti%2C%20called%20Palma%20il%20Giovane%20-%20Portrait%20of%20a%20Gentleman%20-%201937.449%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20267968 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20354111 rdfs:label """Joseph et la femme de Potiphar"""@fr.
+wd:Q20354111 wdt:P31 wd:Q838948 .
+wd:Q20354111 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q20354111 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20%28il%20Giovane%29%20Palma%20-%20Joseph%20and%20Potiphar%27s%20Wife%20-%20KMS549%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20354111 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20540278 rdfs:label """Healing in the Temple"""@fr.
+wd:Q20540278 wdt:P31 wd:Q838948 .
+wd:Q20540278 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q20540278 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20%28Palma%20the%20Younger%29%20-%20Healing%20in%20the%20Temple%20-%2043.192%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20540278 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20540282 rdfs:label """Annnonciation avec le padre dieu"""@fr.
+wd:Q20540282 wdt:P31 wd:Q838948 .
+wd:Q20540282 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q20540282 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20%28Palma%20the%20Younger%29%20-%20The%20Annunciation%20with%20God%20the%20Father%20-%2001.5%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20540282 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21722790 rdfs:label """Apostles at the Virgin's Tomb"""@fr.
+wd:Q21722790 wdt:P31 wd:Q838948 .
+wd:Q21722790 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q21722790 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Apostles%20at%20the%20Virgin%27s%20Tomb%20-%20WGA16911.jpg".
+wd:Q21722790 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21727820 rdfs:label """St. Sebastien"""@fr.
+wd:Q21727820 wdt:P31 wd:Q838948 .
+wd:Q21727820 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q21727820 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20Giovane%20St.%20Sebastian.jpg".
+wd:Q21727820 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26728000 rdfs:label """Salomé with the Head of John the Baptist"""@fr.
+wd:Q26728000 wdt:P31 wd:Q838948 .
+wd:Q26728000 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q26728000 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20009.jpg".
+wd:Q26728000 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q22337522 rdfs:label """Q22337522"""@fr.
+wd:Q22337522 wdt:P31 wd:Q838948 .
+wd:Q22337522 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q22337522 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Assunta.jpg".
+wd:Q22337522 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26806596 rdfs:label """Lamentation with angels"""@fr.
+wd:Q26806596 wdt:P31 wd:Q838948 .
+wd:Q26806596 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q26806596 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20010.jpg".
+wd:Q26806596 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27698884 rdfs:label """The Conversion of Saint Paul"""@fr.
+wd:Q27698884 wdt:P31 wd:Q838948 .
+wd:Q27698884 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q27698884 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Conversi%C3%B3n%20de%20San%20Pablo%2C%20de%20Palma%20el%20Joven%20%28Museo%20del%20Prado%29.jpg".
+wd:Q27698884 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27978038 rdfs:label """Portrait of Niccolo da Ponte (1491-1585), Doge of Venice"""@fr.
+wd:Q27978038 wdt:P31 wd:Q838948 .
+wd:Q27978038 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q27978038 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Negretti%2C%20gen.%20Palma%20il%20Giovane%2C%20Schloss%20Ambras%20Innsbruck%20-%20Niccolo%20da%20Ponte%20%281491-1585%29%2C%20Doge%20von%20Venedig%20-%20GG%2038%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27978038 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27955631 rdfs:label """Dead Christ Supported by an Angel"""@fr.
+wd:Q27955631 wdt:P31 wd:Q838948 .
+wd:Q27955631 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q27955631 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Negretti%2C%20gen.%20Palma%20il%20Giovane%20-%20Leichnam%20Christi%2C%20von%20einem%20Engel%20gehalten%20-%20GG%209394%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27955631 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27982841 rdfs:label """Pietà with Angels"""@fr.
+wd:Q27982841 wdt:P31 wd:Q838948 .
+wd:Q27982841 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q27982841 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Negretti%2C%20gen.%20Palma%20il%20Giovane%20-%20Piet%C3%A0%20mit%20Engeln%20-%20GG%2045%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27982841 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27982838 rdfs:label """Portrait of a Sculptor"""@fr.
+wd:Q27982838 wdt:P31 wd:Q838948 .
+wd:Q27982838 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q27982838 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Negretti%2C%20gen.%20Palma%20il%20Giovane%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Kunstkammer%20Wien%20-%20Bildnis%20eines%20Bildhauers%20-%20GG%201935%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27982838 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27982840 rdfs:label """Cain and Abel"""@fr.
+wd:Q27982840 wdt:P31 wd:Q838948 .
+wd:Q27982840 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q27982840 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Cain%20and%20Abel%20GG%201576.jpg".
+wd:Q27982840 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27982842 rdfs:label """The prophet Nathan admonishes King David"""@fr.
+wd:Q27982842 wdt:P31 wd:Q838948 .
+wd:Q27982842 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q27982842 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Negretti%2C%20gen.%20Palma%20il%20Giovane%20und%20Werkstatt%20-%20Prophet%20Nathan%20ermahnt%20K%C3%B6nig%20David%20-%20GG%203816%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27982842 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28020569 rdfs:label """Prometheus Chained to the Caucasus"""@fr.
+wd:Q28020569 wdt:P31 wd:Q838948 .
+wd:Q28020569 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q28020569 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20Giovane%20%281548-1628%29%20-%20Prometheus%20Chained%20to%20the%20Caucasus%20-%20RCIN%20406075%20-%20Royal%20Collection.jpg".
+wd:Q28020569 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28030613 rdfs:label """Venus and Cupid"""@fr.
+wd:Q28030613 wdt:P31 wd:Q838948 .
+wd:Q28030613 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q28030613 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20Giovane%20%281548-1628%29%20-%20Venus%20and%20Cupid%20-%20RCIN%20402937%20-%20Royal%20Collection.jpg".
+wd:Q28030613 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28017350 rdfs:label """The Penitent Magdalene"""@fr.
+wd:Q28017350 wdt:P31 wd:Q838948 .
+wd:Q28017350 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q28017350 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20Giovane%20%281548-1628%29%20-%20The%20Penitent%20Magdalene%20-%20RCIN%20402730%20-%20Royal%20Collection.jpg".
+wd:Q28017350 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Penitent%20Magdalene%20RCIN%20402730.jpg".
+wd:Q28017350 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28031517 rdfs:label """The Expulsion of the Vices of the Church"""@fr.
+wd:Q28031517 wdt:P31 wd:Q838948 .
+wd:Q28031517 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q28031517 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20Giovane%20%281548-1628%29%20-%20The%20Expulsion%20of%20the%20Vices%20of%20the%20Church%20-%20RCIN%20402870%20-%20Royal%20Collection.jpg".
+wd:Q28031517 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28031873 rdfs:label """The Virgin and Child, Saint Luke and a Donor"""@fr.
+wd:Q28031873 wdt:P31 wd:Q838948 .
+wd:Q28031873 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q28031873 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Titian%20%28c.%201488-Venice%201576%29%20-%20The%20Virgin%20and%20Child%2C%20Saint%20Luke%20and%20a%20Donor%20-%20RCIN%20406070%20-%20Royal%20Collection.jpg".
+wd:Q28031873 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29898715 rdfs:label """Q29898715"""@fr.
+wd:Q29898715 wdt:P31 wd:Q838948 .
+wd:Q29898715 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q29898715 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Christus%20und%20die%20Samariterin%20-%201775%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29898715 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29898572 rdfs:label """Q29898572"""@fr.
+wd:Q29898572 wdt:P31 wd:Q838948 .
+wd:Q29898572 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q29898572 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Ecce%20homo%20-%202353%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29898572 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29903736 rdfs:label """déploration du Christ"""@fr.
+wd:Q29903736 wdt:P31 wd:Q838948 .
+wd:Q29903736 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q29903736 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Beweinung%20Christi%20-%204227%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29903736 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29909453 rdfs:label """Q29909453"""@fr.
+wd:Q29909453 wdt:P31 wd:Q838948 .
+wd:Q29909453 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q29909453 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Gei%C3%9Felung%20Christi%20-%20975%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29909453 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29946587 rdfs:label """Q29946587"""@fr.
+wd:Q29946587 wdt:P31 wd:Q838948 .
+wd:Q29946587 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q29946587 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20%28%5E%29%20-%20Moses%20bringt%20die%20Gesetzestafeln%20-%205896%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29946587 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29954939 rdfs:label """Q29954939"""@fr.
+wd:Q29954939 wdt:P31 wd:Q838948 .
+wd:Q29954939 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q29954939 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Anbetung%20der%20Hirten%20-%20910%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29954939 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30093758 rdfs:label """Q30093758"""@fr.
+wd:Q30093758 wdt:P31 wd:Q838948 .
+wd:Q30093758 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q30093758 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Beweinung%20Christi%20-%20486%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30093758 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29953769 rdfs:label """Q29953769"""@fr.
+wd:Q29953769 wdt:P31 wd:Q838948 .
+wd:Q29953769 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q29953769 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20%28Werkstatt%29%20-%20Christus%20als%20Lehrer%20-%206355%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29953769 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29953540 rdfs:label """Q29953540"""@fr.
+wd:Q29953540 wdt:P31 wd:Q838948 .
+wd:Q29953540 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q29953540 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Verk%C3%BCndigung%20Mari%C3%A4%20-%202230%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29953540 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30093763 rdfs:label """Lamentation of Christ"""@fr.
+wd:Q30093763 wdt:P31 wd:Q838948 .
+wd:Q30093763 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q30093763 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Beweinung%20Christi%20-%206352%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30093763 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30093957 rdfs:label """Saint Sebastian"""@fr.
+wd:Q30093957 wdt:P31 wd:Q838948 .
+wd:Q30093957 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q30093957 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Hl.%20Sebastian%20-%20575%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30093957 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30093872 rdfs:label """Ecce homo"""@fr.
+wd:Q30093872 wdt:P31 wd:Q838948 .
+wd:Q30093872 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q30093872 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Ecce%20homo%20-%201012%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30093872 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30094299 rdfs:label """Q30094299"""@fr.
+wd:Q30094299 wdt:P31 wd:Q838948 .
+wd:Q30094299 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q30094299 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Thetis%20auf%20dem%20Meere%20-%202291%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30094299 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30098028 rdfs:label """Q30098028"""@fr.
+wd:Q30098028 wdt:P31 wd:Q838948 .
+wd:Q30098028 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q30098028 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Beweinung%20Christi%20-%207374%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30098028 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30096433 rdfs:label """Q30096433"""@fr.
+wd:Q30096433 wdt:P31 wd:Q838948 .
+wd:Q30096433 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q30096433 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Beweinung%20Christi%20-%20907%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30096433 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q49876762 rdfs:label """Q49876762"""@fr.
+wd:Q49876762 wdt:P31 wd:Q838948 .
+wd:Q49876762 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q49876762 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Apari%C3%A7%C3%A3o%20da%20Virgem%20-%20Jacopo%20Palama%20-%201620.jpg".
+wd:Q49876762 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50813762 rdfs:label """Elijah and the Angel"""@fr.
+wd:Q50813762 wdt:P31 wd:Q838948 .
+wd:Q50813762 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q50813762 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20giovane%20%281544-1548-1628%29%20-%20Elijah%20and%20the%20Angel%20-%20111%20-%20Fitzwilliam%20Museum.jpg".
+wd:Q50813762 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50820536 rdfs:label """Christ calling Zacchaeus"""@fr.
+wd:Q50820536 wdt:P31 wd:Q838948 .
+wd:Q50820536 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q50820536 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20giovane%20%281544-1548-1628%29%20-%20Christ%20Calling%20Zacchaeus%20-%20108%20-%20Fitzwilliam%20Museum.jpg".
+wd:Q50820536 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q59556374 rdfs:label """A Venetian Senator"""@fr.
+wd:Q59556374 wdt:P31 wd:Q838948 .
+wd:Q59556374 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q59556374 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Un%20senador%20veneciano%2C%20de%20Palma%20el%20Joven%20%28Museo%20del%20Prado%29.jpg".
+wd:Q59556374 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q55131632 rdfs:label """David with Goliath's Head"""@fr.
+wd:Q55131632 wdt:P31 wd:Q838948 .
+wd:Q55131632 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q55131632 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/David%20vencedor%20de%20Goliat%2C%20de%20Palma%20el%20Joven%20%28Museo%20del%20Prado%29.jpg".
+wd:Q55131632 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q59646773 rdfs:label """Pietà"""@fr.
+wd:Q59646773 wdt:P31 wd:Q838948 .
+wd:Q59646773 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q59646773 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Piedad%2C%20de%20Palma%20el%20Joven%20%28Museo%20del%20Prado%29.jpg".
+wd:Q59646773 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q77870634 rdfs:label """Lamentation Over the Dead Christ"""@fr.
+wd:Q77870634 wdt:P31 wd:Q838948 .
+wd:Q77870634 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q77870634 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20-%20Lamentation%20Over%20the%20Dead%20Christ%2C%20late%201580s%2C%2061.163.jpg".
+wd:Q77870634 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20-%20Lamentation.jpg".
+wd:Q77870634 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q77978666 rdfs:label """The Virgin and Child with Saints and Angels"""@fr.
+wd:Q77978666 wdt:P31 wd:Q838948 .
+wd:Q77978666 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q77978666 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Virgin%20and%20Child%20with%20Saints%20and%20Angels%20.PNG".
+wd:Q77978666 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q98149998 rdfs:label """Portrait of a Man"""@fr.
+wd:Q98149998 wdt:P31 wd:Q838948 .
+wd:Q98149998 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q98149998 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Portrait%20of%20an%20Artist%2C%20c.1600%E2%80%931620%2C%201961P48.jpg".
+wd:Q98149998 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q103833573 rdfs:label """Scene from the History of Joseph"""@fr.
+wd:Q103833573 wdt:P31 wd:Q838948 .
+wd:Q103833573 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q103833573 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Scene%20from%20the%20History%20of%20Joseph%20-%20P15w38%20-%20Isabella%20Stewart%20Gardner%20Museum.jpg".
+wd:Q103833573 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q103834315 rdfs:label """Scene from the History of Joseph"""@fr.
+wd:Q103834315 wdt:P31 wd:Q838948 .
+wd:Q103834315 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q103834315 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20il%20Giovane%20-%20Scene%20from%20the%20History%20of%20Joseph%20-%20P16s20%20-%20Isabella%20Stewart%20Gardner%20Museum.jpg".
+wd:Q103834315 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q105328647 rdfs:label """The Massacre of the Innocents"""@fr.
+wd:Q105328647 wdt:P31 wd:Q838948 .
+wd:Q105328647 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q105328647 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/THE%20MASSACRE%20OF%20THE%20INNOCENTS.jpg".
+wd:Q105328647 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106854776 rdfs:label """Autoportrait"""@fr.
+wd:Q106854776 wdt:P31 wd:Q838948 .
+wd:Q106854776 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q106854776 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20Giovane%20-%20Self-portrait%20-%201919.562%20-%20Fogg%20Museum.jpg".
+wd:Q106854776 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644461 rdfs:label """panorama of a town u. riders"""@fr.
+wd:Q111644461 wdt:P31 wd:Q838948 .
+wd:Q111644461 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644461 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20%28Venezianische%20Reiter%20vor%20Padua%29%20-%201571%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644461 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106857023 rdfs:label """Victory of Francesco Bembo over Filippo Maria Visconti"""@fr.
+wd:Q106857023 wdt:P31 wd:Q838948 .
+wd:Q106857023 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q106857023 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20giovane%20victBembosoverFMViscontiMaggC.jpeg".
+wd:Q106857023 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644466 rdfs:label """Gentlemen on horse - back"""@fr.
+wd:Q111644466 wdt:P31 wd:Q838948 .
+wd:Q111644466 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644466 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20-%201572%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644466 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q59825642 rdfs:label """The Flagellation"""@fr.
+wd:Q59825642 wdt:P31 wd:Q838948 .
+wd:Q59825642 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q59825642 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Flagelaci%C3%B3n%20o%20Cristo%20atado%20a%20la%20Columna%2C%20atribuido%20a%20Palma%20el%20Joven%20%28Museo%20del%20Prado%29.jpg".
+wd:Q59825642 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644476 rdfs:label """soldiers on horseback"""@fr.
+wd:Q111644476 wdt:P31 wd:Q838948 .
+wd:Q111644476 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644476 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20-%201574%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644476 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644471 rdfs:label """six citizens after war scene"""@fr.
+wd:Q111644471 wdt:P31 wd:Q838948 .
+wd:Q111644471 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644471 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%28Gritti%2C%20Adrea%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20%28Vor%20Padua%29%20-%201573%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644471 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644494 rdfs:label """fighting soldiers"""@fr.
+wd:Q111644494 wdt:P31 wd:Q838948 .
+wd:Q111644494 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644494 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20-%201577%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644494 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644485 rdfs:label """Battle - scene in landscape with town"""@fr.
+wd:Q111644485 wdt:P31 wd:Q838948 .
+wd:Q111644485 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644485 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20-%201576%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644485 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644501 rdfs:label """supraporte: fighting soldiers"""@fr.
+wd:Q111644501 wdt:P31 wd:Q838948 .
+wd:Q111644501 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644501 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20-%201578%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644501 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644508 rdfs:label """soldiers on horseback"""@fr.
+wd:Q111644508 wdt:P31 wd:Q838948 .
+wd:Q111644508 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644508 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20-%201580%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644508 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644505 rdfs:label """Soldiers on horseback"""@fr.
+wd:Q111644505 wdt:P31 wd:Q838948 .
+wd:Q111644505 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644505 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20-%201579%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644505 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114647720 rdfs:label """Pasquale Cicogna in Dogal Robes Visiting the Church and Hospital of the Crociferi"""@fr.
+wd:Q114647720 wdt:P31 wd:Q838948 .
+wd:Q114647720 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114647720 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Pasquale%20Cicogna%20in%20Dogal%20Robes%20Visiting%20the%20Church%20and%20Hospital%20of%20the%20Crociferi%20-%20WGA16900.jpg".
+wd:Q114647720 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644518 rdfs:label """Fighting soldiers"""@fr.
+wd:Q111644518 wdt:P31 wd:Q838948 .
+wd:Q111644518 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644518 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20-%201581%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644518 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113158642 rdfs:label """Apollo and Marsyas"""@fr.
+wd:Q113158642 wdt:P31 wd:Q838948 .
+wd:Q113158642 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q113158642 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/05apol1.jpg".
+wd:Q113158642 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114657760 rdfs:label """Pasquale Cicogna Hearing Mass Celebrated in the Oratory of the Crociferi"""@fr.
+wd:Q114657760 wdt:P31 wd:Q838948 .
+wd:Q114657760 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114657760 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Pasquale%20Cicogna%20Hearing%20Mass%20Celebrated%20in%20the%20Oratory%20of%20the%20Crociferi%20-%20WGA16898.jpg".
+wd:Q114657760 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114678674 rdfs:label """Pasquale Cicogna in the Church of the Crociferi Receives News of His Election to the Dogeship"""@fr.
+wd:Q114678674 wdt:P31 wd:Q838948 .
+wd:Q114678674 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114678674 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Pasquale%20Cicogna%20in%20the%20Church%20of%20the%20Crociferi%20Receives%20News%20of%20His%20Election%20to%20the%20Dogeship%20-%20WGA16899.jpg".
+wd:Q114678674 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114683832 rdfs:label """St Lawrence Giving the Wealth to the Poor"""@fr.
+wd:Q114683832 wdt:P31 wd:Q838948 .
+wd:Q114683832 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114683832 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20St%20Lawrence%20Giving%20the%20Wealth%20to%20the%20Poor%20-%20WGA16902.jpg".
+wd:Q114683832 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114683893 rdfs:label """The Martyrdom of St Lawrence"""@fr.
+wd:Q114683893 wdt:P31 wd:Q838948 .
+wd:Q114683893 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114683893 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20The%20Martyrdom%20of%20St%20Lawrence%20-%20WGA16903.jpg".
+wd:Q114683893 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114683856 rdfs:label """La Trinité en Gloire et le Martyre des Saints Pierre et Paul"""@fr.
+wd:Q114683856 wdt:P31 wd:Q838948 .
+wd:Q114683856 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114683856 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20The%20Trinity%20in%20Glory%20and%20the%20Martyrdom%20of%20Saints%20Peter%20and%20Paul%20-%20Palma%20il%20Giovane.jpg".
+wd:Q114683856 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114683926 rdfs:label """The paschal lamb."""@fr.
+wd:Q114683926 wdt:P31 wd:Q838948 .
+wd:Q114683926 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114683926 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Passover%20-%20WGA16901.jpg".
+wd:Q114683926 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114683971 rdfs:label """Return of the Prodigal Son"""@fr.
+wd:Q114683971 wdt:P31 wd:Q838948 .
+wd:Q114683971 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114683971 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Return%20of%20the%20Prodigal%20Son%20-%20WGA16916.jpg".
+wd:Q114683971 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114684028 rdfs:label """The Martyrdom of St Giustina"""@fr.
+wd:Q114684028 wdt:P31 wd:Q838948 .
+wd:Q114684028 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114684028 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20The%20Martyrdom%20of%20St%20Giustina%20-%20WGA16920.jpg".
+wd:Q114684028 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114700413 rdfs:label """Annunciation"""@fr.
+wd:Q114700413 wdt:P31 wd:Q838948 .
+wd:Q114700413 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114700413 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20giovane%2C%20annunciazione%2C%2001.jpg".
+wd:Q114700413 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114700272 rdfs:label """Venice Crowned by Victory"""@fr.
+wd:Q114700272 wdt:P31 wd:Q838948 .
+wd:Q114700272 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114700272 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Venice%20Crowned%20by%20Victory%20-%20WGA16906.jpg".
+wd:Q114700272 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114700340 rdfs:label """Virgin and Child with Saints"""@fr.
+wd:Q114700340 wdt:P31 wd:Q838948 .
+wd:Q114700340 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114700340 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Virgin%20and%20Child%20with%20Saints%20-%20WGA16904.jpg".
+wd:Q114700340 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114700605 rdfs:label """Annunciation"""@fr.
+wd:Q114700605 wdt:P31 wd:Q838948 .
+wd:Q114700605 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q114700605 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20giovane%2C%20annunciazione%2C%201596-1605.jpg".
+wd:Q114700605 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116804064 rdfs:label """Présentation de Jésus au Temple"""@fr.
+wd:Q116804064 wdt:P31 wd:Q838948 .
+wd:Q116804064 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q116804064 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Presentation%20of%20Jesus%20in%20Temple%20-%20WGA16926.jpg".
+wd:Q116804064 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q118334949 rdfs:label """Allégorie de la victoire sur la Ligue de Cambrai"""@fr.
+wd:Q118334949 wdt:P31 wd:Q838948 .
+wd:Q118334949 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q118334949 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Allegoria%20della%20vittoria%20sulla%20Lega%20di%20Cambrai%20-%20Palma%20il%20Giovane%20-%20Sala%20del%20Senato.jpg".
+wd:Q118334949 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q117449687 rdfs:label """Massacre des habitants d'Hippone"""@fr.
+wd:Q117449687 wdt:P31 wd:Q838948 .
+wd:Q117449687 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q117449687 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/PeinturesMus%C3%A9eFabre128%20Palma%20Hippone1593.jpg".
+wd:Q117449687 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111644481 rdfs:label """soldiers on horseback"""@fr.
+wd:Q111644481 wdt:P31 wd:Q838948 .
+wd:Q111644481 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q111644481 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Palma%20%28gen.%20Il%20Giovane%29%20%281544-1628%29%20-%20Zehn%20Gem%C3%A4lde%20zu%20einem%20Fries%2C%20Belagerung%20einer%20Stadt%20-%201575%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644481 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q119949165 rdfs:label """Christ mort soutenu par trois anges"""@fr.
+wd:Q119949165 wdt:P31 wd:Q838948 .
+wd:Q119949165 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q119949165 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Dead%20Christ%20Supported%20by%20Three%20Angels%20by%20Palma%20Il%20Giovane%20-%20gallerie%20Accademia.jpg".
+wd:Q119949165 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q119409206 rdfs:label """Q119409206"""@fr.
+wd:Q119409206 wdt:P31 wd:Q838948 .
+wd:Q119409206 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q119409206 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Ukrzy%C5%BCowanie.jpg".
+wd:Q119409206 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q119558113 rdfs:label """Léda et le cygne"""@fr.
+wd:Q119558113 wdt:P31 wd:Q838948 .
+wd:Q119558113 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q119558113 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20Leda.jpg".
+wd:Q119558113 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q118875988 rdfs:label """Portrait of Doge Pasquale Cicogna"""@fr.
+wd:Q118875988 wdt:P31 wd:Q838948 .
+wd:Q118875988 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q118875988 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Tintoretto%20-%20Doge%20Pasquale%20Cicogna.jpg".
+wd:Q118875988 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q118383361 rdfs:label """Le pape permet à Otto d'aller chez son père pour négocier la paix"""@fr.
+wd:Q118383361 wdt:P31 wd:Q838948 .
+wd:Q118383361 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q118383361 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Il%20Papa%20permette%20a%20Ottone%20di%20recarsi%20presso%20il%20padre%20per%20trattare%20la%20pace%20-%20Jacopo%20Palma%20il%20Giovane%20-%20Sala%20del%20Maggior%20Consiglio.jpg".
+wd:Q118383361 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120026143 rdfs:label """The Dead Christ Supported by an Angel with two putti each supporting a Cero"""@fr.
+wd:Q120026143 wdt:P31 wd:Q838948 .
+wd:Q120026143 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q120026143 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christ%20supported%20by%20two%20cherubs%20supporting%20a%20Cero%20-%20Jacopo%20Negretti.jpg".
+wd:Q120026143 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q126709512 rdfs:label """Autoportrait"""@fr.
+wd:Q126709512 wdt:P31 wd:Q838948 .
+wd:Q126709512 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q126709512 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20Selbstportr%C3%A4t.jpg".
+wd:Q126709512 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120001352 rdfs:label """Saint Marc intronisé avec les saints Charles Borromée et Louis de Toulouse"""@fr.
+wd:Q120001352 wdt:P31 wd:Q838948 .
+wd:Q120001352 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q120001352 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Saint%20Mark%20Enthroned%20with%20saints%20Charles%20Borromeo%20and%20Louis%20of%20Toulouse%20-%20Palma%20il%20Giovane%20-%20gallerie%20Accademia.jpg".
+wd:Q120001352 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q133300941 rdfs:label """Vierge à l'Enfant en gloire et saints"""@fr.
+wd:Q133300941 wdt:P31 wd:Q838948 .
+wd:Q133300941 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q133300941 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Madonna%20col%20bambino%20in%20gloria%20e%20santi%20-%20Palma%20il%20giovane%2C%20Chiesa%20San%20Trovaso.jpg".
+wd:Q133300941 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130564663 rdfs:label """Ascension of Mary Magdalene"""@fr.
+wd:Q130564663 wdt:P31 wd:Q838948 .
+wd:Q130564663 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q130564663 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ascension%20of%20Mary%20Magdalene%20by%20Palma%20il%20Giovane%20%281610-1615%2C%20Pushkin%20museum%29.jpg".
+wd:Q130564663 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131100270 rdfs:label """Apollo and Marsyas"""@fr.
+wd:Q131100270 wdt:P31 wd:Q838948 .
+wd:Q131100270 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q131100270 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Palma%20il%20Giovane%20-%20Apollo%20and%20Marsyas%20-%20Herzog%20Anton%20Ulrich%20-%20Museum%20Braunschweig.jpg".
+wd:Q131100270 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130493079 rdfs:label """Saint Benoît accueille ses disciples, Maur et Place"""@fr.
+wd:Q130493079 wdt:P31 wd:Q838948 .
+wd:Q130493079 wdt:P170 wd:Q651795.
+wd:Q651795 rdfs:label """Palma le Jeune"""@fr.
+wd:Q651795 wdt:P31 wd:Q3391743 .
+wd:Q130493079 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Santa%20Giustina%20%28Padua%29%20-%20St.%20Benedict%20welcomes%20his%20disciples%2C%20Maurus%20and%20Placidus%20by%20Palma%20Il%20Giovane.jpg".
+wd:Q130493079 pgdc:sparql kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs .
+kgdc:sparqlfq9Kx3Hn6vufzP90OL30VgpA00IbdQakV2iQCZPZJTs pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q651795 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

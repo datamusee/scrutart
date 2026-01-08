@@ -1,0 +1,2211 @@
+wd:Q125844956 rdfs:label """Le Martyre de Sainte Ursule"""@fr.
+wd:Q125844956 wdt:P31 wd:Q838948 .
+wd:Q125844956 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q125844956 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%2C%20Le%20Martyre%20de%20Sainte%20Ursule.jpg".
+wd:Q125844956 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125844956 pgdc:piwigo_image "12475".
+wd:Q125844956 pgdc:piwigo_gallery kgdc:gal796.
+wd:Q110812509 rdfs:label """Ange à l'encensoir"""@fr.
+wd:Q110812509 wdt:P31 wd:Q838948 .
+wd:Q110812509 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110812509 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ange%20%C3%A0%20l%27encensoir%20avec%20une%20robe%20rouge.jpg".
+wd:Q110812509 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110812509 pgdc:piwigo_image "12476".
+wd:Q110812509 pgdc:piwigo_gallery kgdc:gal796.
+wd:Q110812274 rdfs:label """L'Ange thuriféraire vêtu d'une tunique jaune"""@fr.
+wd:Q110812274 wdt:P31 wd:Q838948 .
+wd:Q110812274 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110812274 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%E2%80%99Ange%20thurif%C3%A9raire%20v%C3%AAtu%20d%E2%80%99une%20tunique%20jaune.jpg".
+wd:Q110812274 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110812274 pgdc:piwigo_image "12477".
+wd:Q110812274 pgdc:piwigo_gallery kgdc:gal796.
+wd:Q111648034 rdfs:label """St.Peter and St. Paul"""@fr.
+wd:Q111648034 wdt:P31 wd:Q838948 .
+wd:Q111648034 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q111648034 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Striegel%20%281460-1528%29%20-%20Tafelbild%20mit%20Darstellung%20der%20Apostel%20Petrus%20und%20Paulus%20mit%20Grabmahl%20des%20Stifters%20%28Pfarrer%20Jakob%20Meusch%29%20-%202862%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111648034 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111647856 rdfs:label """betrothal of Maria with the founder"""@fr.
+wd:Q111647856 wdt:P31 wd:Q838948 .
+wd:Q111647856 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q111647856 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Striegel%20%281460-1528%29%20-%20Die%20Verm%C3%A4hlung%20Mariens%20-%202736%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111647856 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123739375 rdfs:label """The Crucifixion"""@fr.
+wd:Q123739375 wdt:P31 wd:Q838948 .
+wd:Q123739375 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q123739375 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20The%20Crucifixion%20NG.DO%202102.jpg".
+wd:Q123739375 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q245231 rdfs:label """Jésus parmi les docteurs du Temple"""@fr.
+wd:Q245231 wdt:P31 wd:Q838948 .
+wd:Q245231 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q245231 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Zwoelfjaehriger%20Jesus%20im%20Tempel%20von%20Bernhard%20Strigel-Memmingen.jpg".
+wd:Q245231 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q852539 rdfs:label """Déploration du Christ"""@fr.
+wd:Q852539 wdt:P31 wd:Q838948 .
+wd:Q852539 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q852539 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%2C%20Beweinung%20Christi%20%281509%2C%20Museum%20Memmingen%29.jpg".
+wd:Q852539 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q1777935 rdfs:label """Portrait de l'empereur Maximilien et de sa famille"""@fr.
+wd:Q1777935 wdt:P31 wd:Q838948 .
+wd:Q1777935 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q1777935 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Emperor%20Maximilian%20I%20with%20His%20Family%20-%20Google%20Art%20Project.jpg".
+wd:Q1777935 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q11795036 rdfs:label """St Ladislas Presents Wladislav II and his Sons to the Virgin"""@fr.
+wd:Q11795036 wdt:P31 wd:Q838948 .
+wd:Q11795036 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q11795036 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20St%20Ladislas%20Presents%20Wladislav%20II%20and%20his%20Sons%20to%20the%20Virgin%20-%20WGA21888.jpg".
+wd:Q11795036 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18748408 rdfs:label """Le Christ devant le grand prêtre"""@fr.
+wd:Q18748408 wdt:P31 wd:Q838948 .
+wd:Q18748408 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q18748408 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Christ%20Before%20the%20High%20Priest%20-%20Walters%2037673.jpg".
+wd:Q18748408 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18748409 rdfs:label """Pilate se lavant les mains de la mort du Christ"""@fr.
+wd:Q18748409 wdt:P31 wd:Q838948 .
+wd:Q18748409 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q18748409 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Pilate%20Washing%20His%20Hands%20of%20Guilt%20for%20Christ%27s%20Death%20-%20Walters%2037665.jpg".
+wd:Q18748409 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18748410 rdfs:label """L'arrrestation du Christ"""@fr.
+wd:Q18748410 wdt:P31 wd:Q838948 .
+wd:Q18748410 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q18748410 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20The%20Arrest%20of%20Christ%20-%20Walters%2037666.jpg".
+wd:Q18748410 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19911479 rdfs:label """Portrait de femme"""@fr.
+wd:Q19911479 wdt:P31 wd:Q838948 .
+wd:Q19911479 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q19911479 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Woman%20MET%20DP280381.jpg".
+wd:Q19911479 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18748411 rdfs:label """L'entrée dans Jérusalem"""@fr.
+wd:Q18748411 wdt:P31 wd:Q838948 .
+wd:Q18748411 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q18748411 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20The%20Entry%20Into%20Jerusalem%20-%20Walters%2037672.jpg".
+wd:Q18748411 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20175753 rdfs:label """Marie Cleophas et sa famille"""@fr.
+wd:Q20175753 wdt:P31 wd:Q838948 .
+wd:Q20175753 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q20175753 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Maria%20Kleophas%20und%20ihre%20Familie%20%28National%20Gallery%20of%20Art%29.jpg".
+wd:Q20175753 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20175763 rdfs:label """Marie Salomé et sa famille"""@fr.
+wd:Q20175763 wdt:P31 wd:Q838948 .
+wd:Q20175763 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q20175763 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Maria%20Salome%20und%20ihre%20Familie%20%28National%20Gallery%20of%20Art%29.jpg".
+wd:Q20175763 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20175874 rdfs:label """portrait de Hans Roth"""@fr.
+wd:Q20175874 wdt:P31 wd:Q838948 .
+wd:Q20175874 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q20175874 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20Bildnis%20Hans%20Rott%201527.jpg".
+wd:Q20175874 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20175906 rdfs:label """Margarethe Vöhlin, épouse de Hans Roth"""@fr.
+wd:Q20175906 wdt:P31 wd:Q838948 .
+wd:Q20175906 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q20175906 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20Bildnis%20Margarethe%20Rott%20geb%20V%C3%B6hlin%201527.jpg".
+wd:Q20175906 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20175885 rdfs:label """Hans Roth [reverse]"""@fr.
+wd:Q20175885 wdt:P31 wd:Q838948 .
+wd:Q20175885 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q20175885 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Hans%20Roth%20%28reverse%29%20-%201947.6.4.b%20-%20National%20Gallery%20of%20Art.jpg".
+wd:Q20175885 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20538346 rdfs:label """Saint Jean Baptiste"""@fr.
+wd:Q20538346 wdt:P31 wd:Q838948 .
+wd:Q20538346 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q20538346 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Saint%20John%20the%20Baptist%20-%2009.294%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20538346 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20175912 rdfs:label """Margarethe Vöhlin, Wife of Hans Roth [reverse]"""@fr.
+wd:Q20175912 wdt:P31 wd:Q838948 .
+wd:Q20175912 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q20175912 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Margarethe%20V%C3%B6hlin%2C%20Wife%20of%20Hans%20Roth%20%28reverse%29%20-%201947.6.5.b%20-%20National%20Gallery%20of%20Art.jpg".
+wd:Q20175912 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21589744 rdfs:label """Les adieux du Christ à sa mère"""@fr.
+wd:Q21589744 wdt:P31 wd:Q838948 .
+wd:Q21589744 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q21589744 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20Abschied%20Christi%20von%20seiner%20Mutter.jpg".
+wd:Q21589744 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21711497 rdfs:label """Vierge de l'Annonciation / Ange de l'Annonciation"""@fr.
+wd:Q21711497 wdt:P31 wd:Q838948 .
+wd:Q21711497 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q21711497 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20The%20Annunciation%20-%20WGA21881.jpg".
+wd:Q21711497 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21711435 rdfs:label """Portrait d'homme"""@fr.
+wd:Q21711435 wdt:P31 wd:Q838948 .
+wd:Q21711435 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q21711435 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Retrato%20de%20un%20caballero%201528.jpg".
+wd:Q21711435 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21711433 rdfs:label """L'Annonciation à Sainte-Anne"""@fr.
+wd:Q21711433 wdt:P31 wd:Q838948 .
+wd:Q21711433 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q21711433 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Strigel%20-%20The%20Annunciation%20to%20Saint%20Anne.jpg".
+wd:Q21711433 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21809336 rdfs:label """Saint-Antoine Abbé et Saint-Paul l'Ermite."""@fr.
+wd:Q21809336 wdt:P31 wd:Q838948 .
+wd:Q21809336 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q21809336 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Strigel%20St.%20Anthony%20and%20St.%20Paul.jpg".
+wd:Q21809336 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27980527 rdfs:label """La Sainte parenté"""@fr.
+wd:Q27980527 wdt:P31 wd:Q838948 .
+wd:Q27980527 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q27980527 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Heilige%20Sippe%20-%20GG%206411%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27980527 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27980528 rdfs:label """Le roi Ludwig II de Bohême et de Hongrie"""@fr.
+wd:Q27980528 wdt:P31 wd:Q838948 .
+wd:Q27980528 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q27980528 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20K%C3%B6nig%20Ludwig%20II.%20von%20B%C3%B6hmen%20und%20Ungarn%20als%20Knabe%20%281506-1526%29%20-%20GG%20827%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27980528 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27980530 rdfs:label """Saint Jean l'Evangéliste apprend à lire"""@fr.
+wd:Q27980530 wdt:P31 wd:Q838948 .
+wd:Q27980530 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q27980530 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20und%20Werkstatt%20-%20Johannes%20der%20Evangelist%20wird%20im%20Schreiben%20unterrichtet%20-%20GG%20900%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27980530 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27980531 rdfs:label """La Sainte famille avec des anges"""@fr.
+wd:Q27980531 wdt:P31 wd:Q838948 .
+wd:Q27980531 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q27980531 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20und%20Werkstatt%20-%20Heilige%20Familie%20mit%20Engeln%20-%20GG%20900a%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27980531 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27981127 rdfs:label """Portrait de Maximilien Ier du Saint-Empire"""@fr.
+wd:Q27981127 wdt:P31 wd:Q838948 .
+wd:Q27981127 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q27981127 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Maximilien%20Ier%20Bernhard%20Strigel.jpg".
+wd:Q27981127 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29480560 rdfs:label """Diptyque Rehlinger : Les huit enfants de Konrad Rehlinger"""@fr.
+wd:Q29480560 wdt:P31 wd:Q838948 .
+wd:Q29480560 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29480560 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20002.jpg".
+wd:Q29480560 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29480558 rdfs:label """Portrait de Sibylla (ou Sybilla) von Freyberg (née Gossenbrot)"""@fr.
+wd:Q29480558 wdt:P31 wd:Q838948 .
+wd:Q29480558 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29480558 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Sibylla%20von%20Freyberg%20%28born%20Gossenbrot%29.jpg".
+wd:Q29480558 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29480563 rdfs:label """Gardien du tombeau endormi avec masse et épée"""@fr.
+wd:Q29480563 wdt:P31 wd:Q838948 .
+wd:Q29480563 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29480563 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20005.jpg".
+wd:Q29480563 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29902396 rdfs:label """le Prophète Isaïe (autel Buxheimer)"""@fr.
+wd:Q29902396 wdt:P31 wd:Q838948 .
+wd:Q29902396 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29902396 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Buxheimer%20Altar%2C%20Prophet%20Isaias%20-%20WAF%201080%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29902396 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29901209 rdfs:label """Portrait d'un jeune homme en marié"""@fr.
+wd:Q29901209 wdt:P31 wd:Q838948 .
+wd:Q29901209 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29901209 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Bildnis%20eines%20jungen%20Mannes%20als%20Br%C3%A4utigam%20-%2013708%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29901209 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29902402 rdfs:label """Q29902402"""@fr.
+wd:Q29902402 wdt:P31 wd:Q838948 .
+wd:Q29902402 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29902402 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Strigel%2C%20Bernhard%20%E2%80%94%20Der%20Prophet%20Sachaja%20%E2%80%94%20c.%201500.JPG".
+wd:Q29902402 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29914675 rdfs:label """Portrait de Hieronymus Haller (Bavière)"""@fr.
+wd:Q29914675 wdt:P31 wd:Q838948 .
+wd:Q29914675 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29914675 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Bildnis%20des%20Hieronymus%20II.%20Haller%20zu%20Kalchreuth%20-%20WAF%201066%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29914675 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29939046 rdfs:label """Portrait de l'empereur Maximilien Ier (copie )"""@fr.
+wd:Q29939046 wdt:P31 wd:Q838948 .
+wd:Q29939046 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29939046 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20%28Kopie%20nach%29%20-%20Kaiser%20Maximilian%20I.%20-%201156%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29939046 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29939099 rdfs:label """Verso du Calvaire : Le Christ comme Homme de Douleurs"""@fr.
+wd:Q29939099 wdt:P31 wd:Q838948 .
+wd:Q29939099 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29939099 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20%28Umkreis%29%20-%20Kalvarienberg%20R%C3%BCckseite%2C%20Christus%20als%20Schmerzensmann%20-%201490%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29939099 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29939313 rdfs:label """Sainte Barbara"""@fr.
+wd:Q29939313 wdt:P31 wd:Q838948 .
+wd:Q29939313 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29939313 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Hl.%20Barbara%20-%20WAF%201074%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29939313 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29941309 rdfs:label """Gardien de la tombe endormi avec une arbalète"""@fr.
+wd:Q29941309 wdt:P31 wd:Q838948 .
+wd:Q29941309 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29941309 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Schlafender%20Grabw%C3%A4chter%20mit%20Armbrust%20-%2010068%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29941309 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29941243 rdfs:label """Q29941243"""@fr.
+wd:Q29941243 wdt:P31 wd:Q838948 .
+wd:Q29941243 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29941243 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Schiebedeckel%20zum%20Bildnis%20des%20Hieronymus%20II.%20Haller%20zu%20Kalchreuth%20-%20WAF%201066%20A%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29941243 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29946441 rdfs:label """Autel Mindelheimer : Eliud et Memelia avec Saint Servais"""@fr.
+wd:Q29946441 wdt:P31 wd:Q838948 .
+wd:Q29946441 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29946441 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernard%20stringel%2C%20pannelli%20dell%27altare%20della%20santa%20parentela%2C%201505-1506%20ca.%2001.JPG".
+wd:Q29946441 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29946444 rdfs:label """Autel Mindelheimer : Sainte famille"""@fr.
+wd:Q29946444 wdt:P31 wd:Q838948 .
+wd:Q29946444 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29946444 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Holy%20Family%20-%20WGA21884.jpg".
+wd:Q29946444 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29946450 rdfs:label """Autel Mindelheimer : Marie Salome et Zébédée"""@fr.
+wd:Q29946450 wdt:P31 wd:Q838948 .
+wd:Q29946450 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29946450 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernard%20stringel%2C%20pannelli%20dell%27altare%20della%20santa%20parentela%2C%201505-1506%20ca.%2002.JPG".
+wd:Q29946450 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29952214 rdfs:label """Diptyque Funk : portrait donateur de Hans Funk"""@fr.
+wd:Q29952214 wdt:P31 wd:Q838948 .
+wd:Q29952214 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29952214 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Funk-Diptychon%2C%20Stifterbildnis%20des%20Hans%20Funk%20-%2011416%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29952214 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29951311 rdfs:label """Le retour de David avec la tête de Goliath"""@fr.
+wd:Q29951311 wdt:P31 wd:Q838948 .
+wd:Q29951311 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29951311 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20R%C3%BCckkehr%20Davids%20mit%20dem%20Haupt%20des%20Goliath%20-%20WAF%201063%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29951311 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29952519 rdfs:label """Portrait de Maximilien Ier de Habsbourg"""@fr.
+wd:Q29952519 wdt:P31 wd:Q838948 .
+wd:Q29952519 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29952519 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20%28Kopie%20nach%29%20-%20Kaiser%20Maximilian%20I.%20-%20WAF%201081%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29952519 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29952761 rdfs:label """Saint-Servais, évêque de Tongres, lisant"""@fr.
+wd:Q29952761 wdt:P31 wd:Q838948 .
+wd:Q29952761 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29952761 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernard%20stringel%2C%20pannelli%20dell%27altare%20della%20santa%20parentela%2C%201505-1506%20ca.%2004.JPG".
+wd:Q29952761 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29952758 rdfs:label """Mindelheim Altarpiece: Esmeria and Ephrem with their Childs"""@fr.
+wd:Q29952758 wdt:P31 wd:Q838948 .
+wd:Q29952758 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29952758 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Mindelheimer%20Sippenaltar%2C%20Esmeria%20und%20Ephraim%20mit%20Eliud%20und%20Elisabeth%20-%20WAF%201070%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29952758 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29952763 rdfs:label """Mindelheim Altarpiece: Issachar and Susanna and their Childs"""@fr.
+wd:Q29952763 wdt:P31 wd:Q838948 .
+wd:Q29952763 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29952763 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Mindelheimer%20Sippenaltar%2C%20Ysaschar%20und%20Susanna%20mit%20Esmeria%20und%20Anna%20-%20WAF%201077%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29952763 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29952835 rdfs:label """Sleeping guardian of a grave with sword and halberd"""@fr.
+wd:Q29952835 wdt:P31 wd:Q838948 .
+wd:Q29952835 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29952835 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Schlafender%20Grabw%C3%A4chter%20mit%20Schwert%20und%20Hellebarde%20-%2010067%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29952835 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29953304 rdfs:label """Mindelheim Altarpiece: Mary of Clopas and Alphaeus with their Childs"""@fr.
+wd:Q29953304 wdt:P31 wd:Q838948 .
+wd:Q29953304 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29953304 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernard%20stringel%2C%20pannelli%20dell%27altare%20della%20santa%20parentela%2C%201505-1506%20ca.%2003.JPG".
+wd:Q29953304 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29953291 rdfs:label """Mort de Marie"""@fr.
+wd:Q29953291 wdt:P31 wd:Q838948 .
+wd:Q29953291 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29953291 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20%28Werkstatt%29%20-%20Tod%20Mariens%20%28R%C3%BCckseite%2C%20Hll.%20Dorothea%20und%20Margaretha%29%20-%20WAF%201007%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29953291 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29954017 rdfs:label """Mindelheim Altarpiece: Cleophas and Maria Cleophae and Childs"""@fr.
+wd:Q29954017 wdt:P31 wd:Q838948 .
+wd:Q29954017 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29954017 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Mindelheimer%20Sippenaltar%2C%20Cleophas%20und%20Maria%20Cleophae%2C%20Salomas%20und%20Maria%20Salome%20-%20WAF%201071%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29954017 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29954021 rdfs:label """Mindelheim Altarpiece: Elizabeth and Zacharias with John the Baptist"""@fr.
+wd:Q29954021 wdt:P31 wd:Q838948 .
+wd:Q29954021 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29954021 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Mindelheimer%20Sippenaltar%2C%20Elisabeth%20und%20Zacharias%20mit%20Johannes%20dem%20T%C3%A4ufer%20-%20WAF%201078%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29954021 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29955915 rdfs:label """Autel Mindelheimer : Anne et Joachim avec Marie"""@fr.
+wd:Q29955915 wdt:P31 wd:Q838948 .
+wd:Q29955915 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29955915 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Mindelheimer%20Sippenaltar%2C%20Anna%20und%20Joachim%20mit%20Maria%20-%20WAF%201072%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29955915 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29955475 rdfs:label """Diptyque Funk : Vierge à l'enfant"""@fr.
+wd:Q29955475 wdt:P31 wd:Q838948 .
+wd:Q29955475 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q29955475 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Funk-Diptychon%2C%20Maria%20mit%20dem%20Kind%20-%20WAF%201067%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29955475 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50942061 rdfs:label """Portrait de Hieronymus Haller (Budapest)"""@fr.
+wd:Q50942061 wdt:P31 wd:Q838948 .
+wd:Q50942061 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q50942061 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Hieronymus%20Haller%20%28Budapest%20copy%29.jpg".
+wd:Q50942061 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64789016 rdfs:label """Sainte Catherine d'Alexandrie"""@fr.
+wd:Q64789016 wdt:P31 wd:Q838948 .
+wd:Q64789016 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q64789016 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/St%20Catherine%20of%20Alexandria%20%28SM%201179%29.png".
+wd:Q64789016 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q52301227 rdfs:label """Portrait de l'Empereur Maximilien 1er"""@fr.
+wd:Q52301227 wdt:P31 wd:Q838948 .
+wd:Q52301227 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q52301227 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20%281460-1528%29%20-%20The%20Emperor%20Maximilian%20I%20%281459%E2%80%931519%29%20-%20446803%20-%20National%20Trust.jpg".
+wd:Q52301227 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q77975882 rdfs:label """Portrait du comte Jean II de Montfort et Rothenfels"""@fr.
+wd:Q77975882 wdt:P31 wd:Q838948 .
+wd:Q77975882 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q77975882 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20von%20Montfort-Rothenfels%201523.jpg".
+wd:Q77975882 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q102835362 rdfs:label """Portrait de Maximilien Ier"""@fr.
+wd:Q102835362 wdt:P31 wd:Q838948 .
+wd:Q102835362 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q102835362 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Portrait%20of%20Maximilian%20I%20Holy%20Roman%20Emperor.jpg".
+wd:Q102835362 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104525563 rdfs:label """Annonciation à Marie"""@fr.
+wd:Q104525563 wdt:P31 wd:Q838948 .
+wd:Q104525563 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q104525563 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Verk%C3%BCndigung%20an%20Maria%20-%2061%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104525563 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104529965 rdfs:label """Lavement des pieds du Christ"""@fr.
+wd:Q104529965 wdt:P31 wd:Q838948 .
+wd:Q104529965 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q104529965 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Fusswaschung%20Christi%20-%2062%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104529965 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104529851 rdfs:label """Prière du Christ au Mont des Oliviers"""@fr.
+wd:Q104529851 wdt:P31 wd:Q838948 .
+wd:Q104529851 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q104529851 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Gebet%20Christi%20am%20%C3%96lberg%20-%202876%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104529851 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104529975 rdfs:label """Lamentation du Christ"""@fr.
+wd:Q104529975 wdt:P31 wd:Q838948 .
+wd:Q104529975 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q104529975 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Beweinung%20Christi%20-%2059%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104529975 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104530120 rdfs:label """Le Christ couronné d'épines"""@fr.
+wd:Q104530120 wdt:P31 wd:Q838948 .
+wd:Q104530120 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q104530120 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Dornenkr%C3%B6nung%20Christi%20-%2060%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104530120 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104530050 rdfs:label """Portrait de Johann Casper von Laubenberg"""@fr.
+wd:Q104530050 wdt:P31 wd:Q838948 .
+wd:Q104530050 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q104530050 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Johann%20Casper%20von%20Laubenberg%20-%202375%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104530050 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107438630 rdfs:label """Q107438630"""@fr.
+wd:Q107438630 wdt:P31 wd:Q838948 .
+wd:Q107438630 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q107438630 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Eliud%20mit%20Memelia%20und%20dem%20heiligen%20Servatius%20als%20Kind%20%28gg0284%29.jpg".
+wd:Q107438630 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107438632 rdfs:label """Q107438632"""@fr.
+wd:Q107438632 wdt:P31 wd:Q838948 .
+wd:Q107438632 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q107438632 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Eck%C3%BCberh%C3%B6hung%20-%20Prophet%20mit%20Schriftrolle%20%28gg3200%20045%29%2003.jpg".
+wd:Q107438632 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107438637 rdfs:label """Q107438637"""@fr.
+wd:Q107438637 wdt:P31 wd:Q838948 .
+wd:Q107438637 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q107438637 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Eck%C3%BCberh%C3%B6hung%20-%20Prophet%20mit%20Schriftrolle%20%28gg3200%20045%29%2001.jpg".
+wd:Q107438637 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107438635 rdfs:label """Q107438635"""@fr.
+wd:Q107438635 wdt:P31 wd:Q838948 .
+wd:Q107438635 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q107438635 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Eck%C3%BCberh%C3%B6hung%20-%20Prophet%20mit%20Schriftrolle%20%28gg3200%20045%29%2002.jpg".
+wd:Q107438635 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107438639 rdfs:label """Q107438639"""@fr.
+wd:Q107438639 wdt:P31 wd:Q838948 .
+wd:Q107438639 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q107438639 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Eck%C3%BCberh%C3%B6hung%20-%20Prophet%20mit%20Schriftrolle%20%28gg3200%20045%29%2004.jpg".
+wd:Q107438639 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107440283 rdfs:label """The disguise of Christ"""@fr.
+wd:Q107440283 wdt:P31 wd:Q838948 .
+wd:Q107440283 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q107440283 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/1520%20Strigel%20Die%20Entkleidung%20Christi%20Gem%C3%A4ldegalerie%20Kat.Nr.%201197B%20anagoria.jpg".
+wd:Q107440283 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107443974 rdfs:label """L'empereur Maximilien avec un manuscrit roulé"""@fr.
+wd:Q107443974 wdt:P31 wd:Q838948 .
+wd:Q107443974 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q107443974 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Kaiser%20Maximilian%20I.%20%281459-1519%29%20mit%20einer%20Schriftrolle.jpg".
+wd:Q107443974 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107440282 rdfs:label """Le Christ prend congé de sa mère"""@fr.
+wd:Q107440282 wdt:P31 wd:Q838948 .
+wd:Q107440282 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q107440282 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Strigel%20-%20Christus%20nimmt%20Abschied%20von%20seiner%20Mutter.jpg".
+wd:Q107440282 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110640106 rdfs:label """Portrait de Marie de Bourgogne"""@fr.
+wd:Q110640106 wdt:P31 wd:Q838948 .
+wd:Q110640106 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110640106 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Strigel%20-%20Portrait%20of%20Mary%20of%20Burgundy.jpg".
+wd:Q110640106 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107446043 rdfs:label """Portrait d'homme"""@fr.
+wd:Q107446043 wdt:P31 wd:Q838948 .
+wd:Q107446043 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q107446043 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Strigel%20-%20Bildnis%20eines%20Mannes.jpg".
+wd:Q107446043 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110819336 rdfs:label """Portrait de Maximilien Ier du Saint-Empire (1459-1519)"""@fr.
+wd:Q110819336 wdt:P31 wd:Q838948 .
+wd:Q110819336 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110819336 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Strigel%2C%20Bernhard%20-%20Maximilian%20I%20-%20Tiroler%20Landesmuseum%20Ferdinandeum.jpg".
+wd:Q110819336 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110819267 rdfs:label """Ulrich von Frundsberg"""@fr.
+wd:Q110819267 wdt:P31 wd:Q838948 .
+wd:Q110819267 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110819267 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/276%20Schw%C3%A4bischer%20Bund%20Ulrich%20d.%C3%84.%20von%20Frundsberg.jpg".
+wd:Q110819267 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110819600 rdfs:label """Portrait de Magdalena von Montfort, geb. von Öttingen"""@fr.
+wd:Q110819600 wdt:P31 wd:Q838948 .
+wd:Q110819600 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110819600 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Magdalena%20von%20%C3%96ttingen.jpg".
+wd:Q110819600 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110819385 rdfs:label """Portrait de Georg Tannstetter"""@fr.
+wd:Q110819385 wdt:P31 wd:Q838948 .
+wd:Q110819385 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110819385 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Georg%20Tannstetter.jpg".
+wd:Q110819385 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110819914 rdfs:label """Portrait d'une dame"""@fr.
+wd:Q110819914 wdt:P31 wd:Q838948 .
+wd:Q110819914 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110819914 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/WP%20Strigel%20-%20Bildnis%20einer%20vornehmen%20Dame.jpg".
+wd:Q110819914 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110819862 rdfs:label """Portrait d'un noble"""@fr.
+wd:Q110819862 wdt:P31 wd:Q838948 .
+wd:Q110819862 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110819862 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernard%20Strigel%20-%20Bildnis%20eines%20Edelmann.jpg".
+wd:Q110819862 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110819799 rdfs:label """Portrait d'un homme barbu"""@fr.
+wd:Q110819799 wdt:P31 wd:Q838948 .
+wd:Q110819799 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110819799 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel-Bildnis%20eines%20%C3%A4lteren%20b%C3%A4rtigen%20Mannes-1092.jpg".
+wd:Q110819799 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110819953 rdfs:label """Portrait de la famille Cuspinian"""@fr.
+wd:Q110819953 wdt:P31 wd:Q838948 .
+wd:Q110819953 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110819953 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Strigel-retrato%20de%20la%20familia%20cuspinian.jpg".
+wd:Q110819953 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110819935 rdfs:label """Portrait de Maximilien 1er à la Toison d'Or"""@fr.
+wd:Q110819935 wdt:P31 wd:Q838948 .
+wd:Q110819935 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110819935 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20Portrait%20of%20the%20Emperor%20Maximilian%20I.jpg".
+wd:Q110819935 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110820013 rdfs:label """Portrait de l'apothicaire Holderich Wolfardt"""@fr.
+wd:Q110820013 wdt:P31 wd:Q838948 .
+wd:Q110820013 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110820013 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%2C%20Bildnis%20des%20Apothekers%20Holderich%20Wolfardt%2C%201526.jpg".
+wd:Q110820013 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110820364 rdfs:label """Autel des Rois Mages : L'Adoration des Mages"""@fr.
+wd:Q110820364 wdt:P31 wd:Q838948 .
+wd:Q110820364 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110820364 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20Anbetung.jpg".
+wd:Q110820364 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110820049 rdfs:label """Epitaphe de la Familie Funk von Memmingen"""@fr.
+wd:Q110820049 wdt:P31 wd:Q838948 .
+wd:Q110820049 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110820049 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Epitaph%20der%20Familie%20Funk%20von%20Memmingen%2C%201513.jpg".
+wd:Q110820049 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110821138 rdfs:label """Martyre de Saint Quirinius"""@fr.
+wd:Q110821138 wdt:P31 wd:Q838948 .
+wd:Q110821138 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110821138 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20Quirinus.jpg".
+wd:Q110821138 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111603473 rdfs:label """Saint Mary Salome and Her Family"""@fr.
+wd:Q111603473 wdt:P31 wd:Q838948 .
+wd:Q111603473 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q111603473 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20-%20Saint%20Mary%20Salome%20and%20Her%20Family%20-%201961.9.89%20-%20National%20Gallery%20of%20Art.jpg".
+wd:Q111603473 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110821346 rdfs:label """Le Mariage de la Vierge"""@fr.
+wd:Q110821346 wdt:P31 wd:Q838948 .
+wd:Q110821346 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110821346 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Marriage%20of%20the%20Virgin%20by%20Bernhard%20Strigel%20-%20Staatsgalerie%20-%20Stuttgart%20-%20Germany%202017.jpg".
+wd:Q110821346 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110821253 rdfs:label """Q110821253"""@fr.
+wd:Q110821253 wdt:P31 wd:Q838948 .
+wd:Q110821253 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110821253 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/St.%20Georg%20Obersaxen%20Altar%20rechts.jpg".
+wd:Q110821253 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110821264 rdfs:label """Q110821264"""@fr.
+wd:Q110821264 wdt:P31 wd:Q838948 .
+wd:Q110821264 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110821264 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/St.%20Georg%20Obersaxen%20Altar%20links.jpg".
+wd:Q110821264 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110821208 rdfs:label """Naissance de Marie"""@fr.
+wd:Q110821208 wdt:P31 wd:Q838948 .
+wd:Q110821208 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110821208 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20Strigel%20Geburt%20Mariae.jpg".
+wd:Q110821208 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110821247 rdfs:label """Q110821247"""@fr.
+wd:Q110821247 wdt:P31 wd:Q838948 .
+wd:Q110821247 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110821247 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/St.%20Georg%20Obersaxen%20Altar%20aussen%20links.jpg".
+wd:Q110821247 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q133096658 rdfs:label """Q133096658"""@fr.
+wd:Q133096658 wdt:P31 wd:Q838948 .
+wd:Q133096658 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q133096658 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bernhard%20strigel%2C%20conte%20giovanni%20II%20di%20montfort%20e%20rothenfels%2C%201523%2C%2002.jpg".
+wd:Q133096658 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110821307 rdfs:label """Portrait de Ulrich VII de Montfort"""@fr.
+wd:Q110821307 wdt:P31 wd:Q838948 .
+wd:Q110821307 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110821307 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ulrich%20VII.%20%27der%20J%C3%BCngere%27%20von%20Montfort-Tettnang.jpg".
+wd:Q110821307 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110821318 rdfs:label """Découverte de la Vraie Croix"""@fr.
+wd:Q110821318 wdt:P31 wd:Q838948 .
+wd:Q110821318 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110821318 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Strigelbernhard%20auffindungdeswahrenkreuzes.JPG".
+wd:Q110821318 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110821267 rdfs:label """Q110821267"""@fr.
+wd:Q110821267 wdt:P31 wd:Q838948 .
+wd:Q110821267 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110821267 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/St.%20Georg%20Obersaxen%20Altar%20aussen%20rechts.jpg".
+wd:Q110821267 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110821278 rdfs:label """Portrait de Maximilian Ier"""@fr.
+wd:Q110821278 wdt:P31 wd:Q838948 .
+wd:Q110821278 wdt:P170 wd:Q637420.
+wd:Q637420 rdfs:label """Bernhard Strigel"""@fr.
+wd:Q637420 wdt:P31 wd:Q3391743 .
+wd:Q110821278 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Holy%20Roman%20Emperor%20Maximilian%20I.jpg".
+wd:Q110821278 pgdc:sparql kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb .
+kgdc:sparqlJrGshmcLOujppVvBNmAXQWzW4Go8jL5WtpAIcmbDObb pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q637420 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

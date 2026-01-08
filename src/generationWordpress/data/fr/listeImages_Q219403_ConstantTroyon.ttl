@@ -1,0 +1,230 @@
+wd:Q124300575 rdfs:label """Étude de moutons"""@fr.
+wd:Q124300575 wdt:P31 wd:wd:Q838948 .
+wd:Q124300575 wdt:P170 wd:Q219403.
+wd:Q219403 rdfs:label """Constant Troyon"""@fr.
+wd:Q219403 wdt:P31 wd:Q3391743 .
+wd:Q124300575 wdt:P18 "None".
+wd:Q124300575 pgdc:sparql kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc .
+kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q219403 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124300575 pgdc:piwigo_image "12516".
+wd:Q124300575 pgdc:piwigo_gallery kgdc:gal772.
+wd:Q115672136 rdfs:label """Vue prise des hauteurs de Suresnes (Hauts-de-Seine)"""@fr.
+wd:Q115672136 wdt:P31 wd:wd:Q838948 .
+wd:Q115672136 wdt:P170 wd:Q219403.
+wd:Q219403 rdfs:label """Constant Troyon"""@fr.
+wd:Q219403 wdt:P31 wd:Q3391743 .
+wd:Q115672136 wdt:P18 "None".
+wd:Q115672136 pgdc:sparql kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc .
+kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q219403 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115672136 pgdc:piwigo_image "12517".
+wd:Q115672136 pgdc:piwigo_gallery kgdc:gal772.
+wd:Q115739504 rdfs:label """Vache paissant près d'une rivière bordée de saules"""@fr.
+wd:Q115739504 wdt:P31 wd:wd:Q838948 .
+wd:Q115739504 wdt:P170 wd:Q219403.
+wd:Q219403 rdfs:label """Constant Troyon"""@fr.
+wd:Q219403 wdt:P31 wd:Q3391743 .
+wd:Q115739504 wdt:P18 "None".
+wd:Q115739504 pgdc:sparql kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc .
+kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q219403 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115739504 pgdc:piwigo_image "12518".
+wd:Q115739504 pgdc:piwigo_gallery kgdc:gal772.
+wd:Q17490878 rdfs:label """Boeufs allant au labour; effet du matin"""@fr.
+wd:Q17490878 wdt:P31 wd:wd:Q838948 .
+wd:Q17490878 wdt:P170 wd:Q219403.
+wd:Q219403 rdfs:label """Constant Troyon"""@fr.
+wd:Q219403 wdt:P31 wd:Q3391743 .
+wd:Q17490878 wdt:P18 "None".
+wd:Q17490878 pgdc:sparql kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc .
+kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q219403 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17490878 pgdc:piwigo_image "8083".
+wd:Q17490878 pgdc:piwigo_gallery kgdc:gal772.
+wd:Q29839044 rdfs:label """Troupeau passant le gué"""@fr.
+wd:Q29839044 wdt:P31 wd:wd:Q838948 .
+wd:Q29839044 wdt:P170 wd:Q219403.
+wd:Q219403 rdfs:label """Constant Troyon"""@fr.
+wd:Q219403 wdt:P31 wd:Q3391743 .
+wd:Q29839044 wdt:P18 "None".
+wd:Q29839044 pgdc:sparql kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc .
+kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q219403 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29839044 pgdc:piwigo_image "12519".
+wd:Q29839044 pgdc:piwigo_gallery kgdc:gal772.
+wd:Q17495473 rdfs:label """Le retour du marché"""@fr.
+wd:Q17495473 wdt:P31 wd:wd:Q838948 .
+wd:Q17495473 wdt:P170 wd:Q219403.
+wd:Q219403 rdfs:label """Constant Troyon"""@fr.
+wd:Q219403 wdt:P31 wd:Q3391743 .
+wd:Q17495473 wdt:P18 "None".
+wd:Q17495473 pgdc:sparql kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc .
+kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q219403 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17495473 pgdc:piwigo_image "12520".
+wd:Q17495473 pgdc:piwigo_gallery kgdc:gal772.
+wd:Q29839081 rdfs:label """Vaches et veau à la mare"""@fr.
+wd:Q29839081 wdt:P31 wd:wd:Q838948 .
+wd:Q29839081 wdt:P170 wd:Q219403.
+wd:Q219403 rdfs:label """Constant Troyon"""@fr.
+wd:Q219403 wdt:P31 wd:Q3391743 .
+wd:Q29839081 wdt:P18 "None".
+wd:Q29839081 pgdc:sparql kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc .
+kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q219403 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29839081 pgdc:piwigo_image "12521".
+wd:Q29839081 pgdc:piwigo_gallery kgdc:gal772.
+wd:Q29839031 rdfs:label """Cours d'eau sous bois"""@fr.
+wd:Q29839031 wdt:P31 wd:wd:Q838948 .
+wd:Q29839031 wdt:P170 wd:Q219403.
+wd:Q219403 rdfs:label """Constant Troyon"""@fr.
+wd:Q219403 wdt:P31 wd:Q3391743 .
+wd:Q29839031 wdt:P18 "None".
+wd:Q29839031 pgdc:sparql kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc .
+kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q219403 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29839031 pgdc:piwigo_image "12522".
+wd:Q29839031 pgdc:piwigo_gallery kgdc:gal772.
+wd:Q29839015 rdfs:label """Le petit troupeau"""@fr.
+wd:Q29839015 wdt:P31 wd:wd:Q838948 .
+wd:Q29839015 wdt:P170 wd:Q219403.
+wd:Q219403 rdfs:label """Constant Troyon"""@fr.
+wd:Q219403 wdt:P31 wd:Q3391743 .
+wd:Q29839015 wdt:P18 "None".
+wd:Q29839015 pgdc:sparql kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc .
+kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q219403 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29839015 pgdc:piwigo_image "12523".
+wd:Q29839015 pgdc:piwigo_gallery kgdc:gal772.
+wd:Q21741220 rdfs:label """Départ pour le marche"""@fr.
+wd:Q21741220 wdt:P31 wd:wd:Q838948 .
+wd:Q21741220 wdt:P170 wd:Q219403.
+wd:Q219403 rdfs:label """Constant Troyon"""@fr.
+wd:Q219403 wdt:P31 wd:Q3391743 .
+wd:Q21741220 wdt:P18 "None".
+wd:Q21741220 pgdc:sparql kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc .
+kgdc:sparqluokBZ8gjOvBz8XXGC7mXkJquFtv8GTG9qLOC8a1WeTc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q219403 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21741220 pgdc:piwigo_image "12524".
+wd:Q21741220 pgdc:piwigo_gallery kgdc:gal772.

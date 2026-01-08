@@ -1,0 +1,63 @@
+wd:Q104445119 rdfs:label """L'Orage"""@fr.
+wd:Q104445119 wdt:P31 wd:Q838948 .
+wd:Q104445119 wdt:P170 wd:Q539036.
+wd:Q539036 rdfs:label """Allaert van Everdingen"""@fr.
+wd:Q539036 wdt:P31 wd:Q3391743 .
+wd:Q104445119 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Allart%20Van%20Everdingen%20-%20L%27Orage%20-%20PDUT900%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104445119 pgdc:sparql kgdc:sparqlBET7kmRZXuXrf4ojDuMS6u9VhAoqdChE5UwS6Ny80w1 .
+kgdc:sparqlBET7kmRZXuXrf4ojDuMS6u9VhAoqdChE5UwS6Ny80w1 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q539036 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29656358 rdfs:label """Rivière dans une vallée montagneuse"""@fr.
+wd:Q29656358 wdt:P31 wd:Q838948 .
+wd:Q29656358 wdt:P170 wd:Q539036.
+wd:Q539036 rdfs:label """Allaert van Everdingen"""@fr.
+wd:Q539036 wdt:P31 wd:Q3391743 .
+wd:Q29656358 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Mus%C3%A9e%20du%20Louvre%20-%20Allaert%20van%20Everdingen%20-%20Caprice%20scandinave%2C%20rivi%C3%A8re%20dans%20une%20vall%C3%A9e%20montagneuse%20-%20INV%201270%20-%20001.jpg".
+wd:Q29656358 pgdc:sparql kgdc:sparqlBET7kmRZXuXrf4ojDuMS6u9VhAoqdChE5UwS6Ny80w1 .
+kgdc:sparqlBET7kmRZXuXrf4ojDuMS6u9VhAoqdChE5UwS6Ny80w1 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q539036 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q38489201 rdfs:label """Paysage nordique avec un château sur une colline"""@fr.
+wd:Q38489201 wdt:P31 wd:Q838948 .
+wd:Q38489201 wdt:P170 wd:Q539036.
+wd:Q539036 rdfs:label """Allaert van Everdingen"""@fr.
+wd:Q539036 wdt:P31 wd:Q3391743 .
+wd:Q38489201 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Everdingen%2C%20Paysage%20nordique.jpg".
+wd:Q38489201 pgdc:sparql kgdc:sparqlBET7kmRZXuXrf4ojDuMS6u9VhAoqdChE5UwS6Ny80w1 .
+kgdc:sparqlBET7kmRZXuXrf4ojDuMS6u9VhAoqdChE5UwS6Ny80w1 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q539036 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

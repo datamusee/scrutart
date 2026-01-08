@@ -1,0 +1,63 @@
+wd:Q133254057 rdfs:label """Composition suprématiste"""@fr.
+wd:Q133254057 wdt:P31 wd:Q838948 .
+wd:Q133254057 wdt:P170 wd:Q130777.
+wd:Q130777 rdfs:label """Kasimir Malevitch"""@fr.
+wd:Q130777 wdt:P31 wd:Q3391743 .
+wd:Q133254057 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9A%D0%B0%D0%B7%D0%B8%D0%BC%D0%B8%D1%80%20%D0%9C%D0%B0%D0%BB%D0%B5%D0%B2%D0%B8%D1%87%2C%20%D0%A1%D1%83%D0%BF%D1%80%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8F%2C%201915.jpg".
+wd:Q133254057 pgdc:sparql kgdc:sparql8cw6sXCbOKy3DkpjnImk4zK7KPPc8vxgN1wUv5nXoGY .
+kgdc:sparql8cw6sXCbOKy3DkpjnImk4zK7KPPc8vxgN1wUv5nXoGY pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q130777 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q42422282 rdfs:label """Repos. Société avec des chapeaux hauts de forme"""@fr.
+wd:Q42422282 wdt:P31 wd:Q838948 .
+wd:Q42422282 wdt:P170 wd:Q130777.
+wd:Q130777 rdfs:label """Kasimir Malevitch"""@fr.
+wd:Q130777 wdt:P31 wd:Q3391743 .
+wd:Q42422282 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9E%D1%82%D0%B4%D1%8B%D1%85%20%28%D0%9E%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE%20%D0%B2%20%D1%86%D0%B8%D0%BB%D0%B8%D0%BD%D0%B4%D1%80%D0%B0%D1%85%29.%201908.%20%D0%93%D0%A0%D0%9C.png".
+wd:Q42422282 pgdc:sparql kgdc:sparql8cw6sXCbOKy3DkpjnImk4zK7KPPc8vxgN1wUv5nXoGY .
+kgdc:sparql8cw6sXCbOKy3DkpjnImk4zK7KPPc8vxgN1wUv5nXoGY pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q130777 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28548384 rdfs:label """Supremus"""@fr.
+wd:Q28548384 wdt:P31 wd:Q838948 .
+wd:Q28548384 wdt:P170 wd:Q130777.
+wd:Q130777 rdfs:label """Kasimir Malevitch"""@fr.
+wd:Q130777 wdt:P31 wd:Q3391743 .
+wd:Q28548384 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D1%83%D0%BF%D1%80%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%BC%20%E2%84%96%2057.jpg".
+wd:Q28548384 pgdc:sparql kgdc:sparql8cw6sXCbOKy3DkpjnImk4zK7KPPc8vxgN1wUv5nXoGY .
+kgdc:sparql8cw6sXCbOKy3DkpjnImk4zK7KPPc8vxgN1wUv5nXoGY pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q130777 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

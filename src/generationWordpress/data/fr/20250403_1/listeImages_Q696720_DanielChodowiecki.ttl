@@ -1,0 +1,370 @@
+wd:Q43223148 rdfs:label """Apelles, förr kallad minister i Berlin (eventuellt Ali Aziz Efendi, se Grh 2636a)"""@fr.
+wd:Q43223148 wdt:P31 wd:Q838948 .
+wd:Q43223148 wdt:P170 wd:Q696720.
+wd:Q696720 rdfs:label """Daniel Chodowiecki"""@fr.
+wd:Q696720 wdt:P31 wd:Q3391743 .
+wd:Q43223148 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Apelles%2C%20f%C3%B6rr%20kallad%20minister%20i%20Berlin%20%28eventuellt%20Ali%20Aziz%20Efendi%2C%20se%20Grh%202636a%29%20-%20Nationalmuseum%20-%2030537.tif".
+wd:Q43223148 pgdc:sparql kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf .
+kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q696720 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q696720 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q43223148 pgdc:piwigo_image "15743".
+wd:Q43223148 pgdc:piwigo_gallery kgdc:gal820.
+wd:Q51178139 rdfs:label """Q51178139"""@fr.
+wd:Q51178139 wdt:P31 wd:Q838948 .
+wd:Q51178139 wdt:P170 wd:Q696720.
+wd:Q696720 rdfs:label """Daniel Chodowiecki"""@fr.
+wd:Q696720 wdt:P31 wd:Q3391743 .
+wd:Q51178139 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Nikolaus%20Chodowiecki%20-%20Ve%C5%A1tenie%20z%20kar%C3%A1t%20%28Canasta%29%20-%20M%20385%20-%20Ernest%20Zmet%C3%A1k%20Art%20Gallery.jpg".
+wd:Q51178139 pgdc:sparql kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf .
+kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q696720 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q696720 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q51178139 pgdc:piwigo_image "15744".
+wd:Q51178139 pgdc:piwigo_gallery kgdc:gal820.
+wd:Q51178468 rdfs:label """Q51178468"""@fr.
+wd:Q51178468 wdt:P31 wd:Q838948 .
+wd:Q51178468 wdt:P170 wd:Q696720.
+wd:Q696720 rdfs:label """Daniel Chodowiecki"""@fr.
+wd:Q696720 wdt:P31 wd:Q3391743 .
+wd:Q51178468 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nezn%C3%A1my%20maliar%20-%20Ve%C5%A1tenie%20z%20dlane%20-%20M%20384%20-%20Ernest%20Zmet%C3%A1k%20Art%20Gallery.jpg".
+wd:Q51178468 pgdc:sparql kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf .
+kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q696720 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q696720 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q51178468 pgdc:piwigo_image "15745".
+wd:Q51178468 pgdc:piwigo_gallery kgdc:gal820.
+wd:Q22814987 rdfs:label """Menuet dans le parc."""@fr.
+wd:Q22814987 wdt:P31 wd:Q838948 .
+wd:Q22814987 wdt:P170 wd:Q696720.
+wd:Q696720 rdfs:label """Daniel Chodowiecki"""@fr.
+wd:Q696720 wdt:P31 wd:Q3391743 .
+wd:Q22814987 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Chodowiecki%20Minuet%20in%20the%20park.jpg".
+wd:Q22814987 pgdc:sparql kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf .
+kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q696720 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q696720 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q22814987 pgdc:piwigo_image "15746".
+wd:Q22814987 pgdc:piwigo_gallery kgdc:gal820.
+wd:Q107443622 rdfs:label """Childbed"""@fr.
+wd:Q107443622 wdt:P31 wd:Q838948 .
+wd:Q107443622 wdt:P170 wd:Q696720.
+wd:Q696720 rdfs:label """Daniel Chodowiecki"""@fr.
+wd:Q696720 wdt:P31 wd:Q3391743 .
+wd:Q107443622 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/1759%20Chodowiecki%20Die%20Wochenstube%20Gem%C3%A4ldegalerie%20Kat.Nr.%202006%20anagoria.jpg".
+wd:Q107443622 pgdc:sparql kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf .
+kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q696720 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q696720 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107443622 pgdc:piwigo_image "15747".
+wd:Q107443622 pgdc:piwigo_gallery kgdc:gal820.
+wd:Q107438362 rdfs:label """Scène de famille"""@fr.
+wd:Q107438362 wdt:P31 wd:Q838948 .
+wd:Q107438362 wdt:P170 wd:Q696720.
+wd:Q696720 rdfs:label """Daniel Chodowiecki"""@fr.
+wd:Q696720 wdt:P31 wd:Q3391743 .
+wd:Q107438362 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/1763%20Chodowiecki%20Familienszene%20anagoria.JPG".
+wd:Q107438362 pgdc:sparql kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf .
+kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q696720 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q696720 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107438362 pgdc:piwigo_image "15748".
+wd:Q107438362 pgdc:piwigo_gallery kgdc:gal820.
+wd:Q107443628 rdfs:label """Childbed"""@fr.
+wd:Q107443628 wdt:P31 wd:Q838948 .
+wd:Q107443628 wdt:P170 wd:Q696720.
+wd:Q696720 rdfs:label """Daniel Chodowiecki"""@fr.
+wd:Q696720 wdt:P31 wd:Q3391743 .
+wd:Q107443628 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/1759%20Chodowiecki%20Die%20Wochenstube%20Gem%C3%A4ldegalerie%20Kat.Nr.%202008%20anagoria.jpg".
+wd:Q107443628 pgdc:sparql kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf .
+kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q696720 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q696720 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107443628 pgdc:piwigo_image "15749".
+wd:Q107443628 pgdc:piwigo_gallery kgdc:gal820.
+wd:Q107447032 rdfs:label """Self-Portrait with his Wife"""@fr.
+wd:Q107447032 wdt:P31 wd:Q838948 .
+wd:Q107447032 wdt:P170 wd:Q696720.
+wd:Q696720 rdfs:label """Daniel Chodowiecki"""@fr.
+wd:Q696720 wdt:P31 wd:Q3391743 .
+wd:Q107447032 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Selbstbildnis%20mit%20seiner%20Frau%20-%20Gem%C3%A4ldegalerie%20Berlin%20-%204934800.jpg".
+wd:Q107447032 pgdc:sparql kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf .
+kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q696720 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q696720 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107447032 pgdc:piwigo_image "15750".
+wd:Q107447032 pgdc:piwigo_gallery kgdc:gal820.
+wd:Q117009920 rdfs:label """Q117009920"""@fr.
+wd:Q117009920 wdt:P31 wd:Q838948 .
+wd:Q117009920 wdt:P170 wd:Q696720.
+wd:Q696720 rdfs:label """Daniel Chodowiecki"""@fr.
+wd:Q696720 wdt:P31 wd:Q3391743 .
+wd:Q117009920 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Familie-Meyer-und-Chodowieci.png".
+wd:Q117009920 pgdc:sparql kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf .
+kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q696720 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q696720 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117009920 pgdc:piwigo_image "15751".
+wd:Q117009920 pgdc:piwigo_gallery kgdc:gal820.
+wd:Q111647941 rdfs:label """Selling milk"""@fr.
+wd:Q111647941 wdt:P31 wd:Q838948 .
+wd:Q111647941 wdt:P170 wd:Q696720.
+wd:Q696720 rdfs:label """Daniel Chodowiecki"""@fr.
+wd:Q696720 wdt:P31 wd:Q3391743 .
+wd:Q111647941 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Nikolaus%20Chodowiecki%20%281726-1801%29%20-%20Die%20Milchfrau%20-%202801%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111647941 pgdc:sparql kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf .
+kgdc:sparqlV3DzDVspfmk1fMroDlODN0K5N5vtrULmQOJjCPuPuTf pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q696720 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q696720 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111647941 pgdc:piwigo_image "15752".
+wd:Q111647941 pgdc:piwigo_gallery kgdc:gal820.

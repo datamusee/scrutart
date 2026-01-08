@@ -1,9 +1,8 @@
-import datetime
+# import datetime
 import time
-import json
-from src.generationWordpress.WPGenreTemplate import WPGenreTemplate as WPGenreTemplate
-from src.generationWordpress.WPPainterTemplate import WPPainterTemplate as WPPainterTemplate
-from src.generationWordpress.tools.WikimediaManager.WikimediaManagerPackage.WikimediaAccess import WikimediaAccess
+from WPGenreTemplate import WPGenreTemplate as WPGenreTemplate
+from WPPainterTemplate import WPPainterTemplate as WPPainterTemplate
+from tools.WikimediaManager.WikimediaManagerPackage.WikimediaAccess import WikimediaAccess
 
 # il parait souhaitable d'homogénéiser ici le code pour les différentes langues et les différents thèmes
 # dans le cas des créateurs, on a relativement peu d'instances d'œuvres et pas rencontré de timeout
@@ -51,7 +50,7 @@ class PageBuilder:
                     crtquery = elmt["sparql"].replace("__QID__", qid).replace("__LANG__", self.lang) if elmt["sparql"] else None
                     if crtquery:
                         res = w_obj.sparqlQuery(crtquery)
-                        print(crtquery, datetime.datetime.now())
+                        # print(crtquery, datetime.datetime.now())
                         # recuperation d'un lien vers WDQS pour la query courante
                         wdqsquery = w_obj.get_wdqs_query(crtquery)
                         # recuperation d'un lien d'affichage de bargraph pour la query courante

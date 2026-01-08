@@ -1,4 +1,4 @@
-from src.generationWordpress.WPTemplateManager import WPTemplate
+from WPTemplateManager import WPTemplate
 
 dataConfig = {
     # "__TITRE_TEMPLATE__":

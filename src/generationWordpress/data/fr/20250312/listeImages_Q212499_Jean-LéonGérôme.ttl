@@ -1,0 +1,1702 @@
+wd:Q125454057 rdfs:label """Taureau et picador"""@fr.
+wd:Q125454057 wdt:P31 wd:Q838948 .
+wd:Q125454057 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125454057 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gerome%20Taureau%20et%20picador%20%281867%29.png".
+wd:Q125454057 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125454057 pgdc:piwigo_image "9741".
+wd:Q125454057 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125463545 rdfs:label """Une collaboration : Corneille et Molière"""@fr.
+wd:Q125463545 wdt:P31 wd:Q838948 .
+wd:Q125463545 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125463545 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Une%20collaboration%20%28Moli%C3%A8re%20et%20Corneille%29.jpg".
+wd:Q125463545 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125463545 pgdc:piwigo_image "6751".
+wd:Q125463545 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125508813 rdfs:label """Polyphème"""@fr.
+wd:Q125508813 wdt:P31 wd:Q838948 .
+wd:Q125508813 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125508813 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gerome%20Polyph%C3%A8me%20471.jpg".
+wd:Q125508813 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125508813 pgdc:piwigo_image "13810".
+wd:Q125508813 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125542643 rdfs:label """Le Mur de Salomon"""@fr.
+wd:Q125542643 wdt:P31 wd:Q838948 .
+wd:Q125542643 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125542643 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gerome%20wall.jpg".
+wd:Q125542643 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125542643 pgdc:piwigo_image "9838".
+wd:Q125542643 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125542664 rdfs:label """Le Barde noir"""@fr.
+wd:Q125542664 wdt:P31 wd:Q838948 .
+wd:Q125542664 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125542664 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27Le%20Barde%20Noir%27%20by%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%2C%20c.%201888.jpg".
+wd:Q125542664 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125542664 pgdc:piwigo_image "13811".
+wd:Q125542664 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125464428 rdfs:label """La Nuit au désert"""@fr.
+wd:Q125464428 wdt:P31 wd:Q838948 .
+wd:Q125464428 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125464428 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20La%20nuit%20au%20d%C3%A9sert%20%281884%29%201.png".
+wd:Q125464428 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125464428 pgdc:piwigo_image "13812".
+wd:Q125464428 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125404736 rdfs:label """Le Lion maudit"""@fr.
+wd:Q125404736 wdt:P31 wd:Q838948 .
+wd:Q125404736 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125404736 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-Leon-Gerome-le%20Lion%20maudit%201895%20422.jpg".
+wd:Q125404736 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125404736 pgdc:piwigo_image "13813".
+wd:Q125404736 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125440494 rdfs:label """L'Épave"""@fr.
+wd:Q125440494 wdt:P31 wd:Q838948 .
+wd:Q125440494 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125440494 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%27%C3%89pave%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me.jpg".
+wd:Q125440494 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125440494 pgdc:piwigo_image "5508".
+wd:Q125440494 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125395859 rdfs:label """Bacchus et l'Amour ivres"""@fr.
+wd:Q125395859 wdt:P31 wd:Q838948 .
+wd:Q125395859 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125395859 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Drunken%20Bacchus%20and%20Cupid%20%281850%29%2C%20by%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me.jpg".
+wd:Q125395859 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125395859 pgdc:piwigo_image "13814".
+wd:Q125395859 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125429066 rdfs:label """Plaza de toros : l'entrée du taureau"""@fr.
+wd:Q125429066 wdt:P31 wd:Q838948 .
+wd:Q125429066 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125429066 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Leon%20Gerome%20-%20The%20Entry%20of%20the%20Bull.jpg".
+wd:Q125429066 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125429066 pgdc:piwigo_image "9742".
+wd:Q125429066 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125392385 rdfs:label """Femme circassienne voilée"""@fr.
+wd:Q125392385 wdt:P31 wd:Q838948 .
+wd:Q125392385 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125392385 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me--Femme%20circassienne%20voil%C3%A9e--Veiled%20Circassian%20Beauty--1876.jpg".
+wd:Q125392385 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125392385 pgdc:piwigo_image "13815".
+wd:Q125392385 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125471826 rdfs:label """Promenade de la Cour dans les jardins de Versailles"""@fr.
+wd:Q125471826 wdt:P31 wd:Q838948 .
+wd:Q125471826 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125471826 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gerome%20Promenade%20de%20la%20cour%20dans%20le%20parc%20de%20Versailles%20%281895%29%20438.jpg".
+wd:Q125471826 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125471826 pgdc:piwigo_image "6752".
+wd:Q125471826 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125504813 rdfs:label """Italienne jouant de la mandoline"""@fr.
+wd:Q125504813 wdt:P31 wd:Q838948 .
+wd:Q125504813 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125504813 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/An%20italian%20girl%20playing%20a%20mandolin%20%281855%29%2C%20by%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me.jpg".
+wd:Q125504813 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125504813 pgdc:piwigo_image "13816".
+wd:Q125504813 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125490938 rdfs:label """La Chasse aux lions chez les Indiens"""@fr.
+wd:Q125490938 wdt:P31 wd:Q838948 .
+wd:Q125490938 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125490938 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Chasse%20aux%20lions%20chez%20les%20Indiens%20G%C3%A9r%C3%B4me.jpg".
+wd:Q125490938 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125490938 pgdc:piwigo_image "13817".
+wd:Q125490938 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q104373108 rdfs:label """Rachel (1821-1858), en costume de tragédie"""@fr.
+wd:Q104373108 wdt:P31 wd:Q838948 .
+wd:Q104373108 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q104373108 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20Rachel%20%281821-1858%29%2C%20en%20costume%20de%20trag%C3%A9die%20-%20P1219%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104373108 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104373108 pgdc:piwigo_image "13818".
+wd:Q104373108 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q104444971 rdfs:label """La République"""@fr.
+wd:Q104444971 wdt:P31 wd:Q838948 .
+wd:Q104444971 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q104444971 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20La%20R%C3%A9publique%20-%20PPP4859%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104444971 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104444971 pgdc:piwigo_image "13819".
+wd:Q104444971 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q17627562 rdfs:label """Tête de femme coiffée de cornes de bélier"""@fr.
+wd:Q17627562 wdt:P31 wd:Q838948 .
+wd:Q17627562 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q17627562 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20Head%20of%20a%20Woman.png".
+wd:Q17627562 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17627562 pgdc:piwigo_image "7029".
+wd:Q17627562 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q19861917 rdfs:label """La Fin de la Séance"""@fr.
+wd:Q19861917 wdt:P31 wd:Q838948 .
+wd:Q19861917 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q19861917 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20end%20of%20the%20pose%2C%20by%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me.jpg".
+wd:Q19861917 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861917 pgdc:piwigo_image "963".
+wd:Q19861917 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q17275221 rdfs:label """La Vérité sortant du puits armée de son martinet pour châtier l’humanité"""@fr.
+wd:Q17275221 wdt:P31 wd:Q838948 .
+wd:Q17275221 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q17275221 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20L%C3%A9on%20Gerome%201896%20La%20V%C3%A9rit%C3%A9%20sortant%20du%20puits.JPG".
+wd:Q17275221 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17275221 pgdc:piwigo_image "850".
+wd:Q17275221 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q18711064 rdfs:label """Après le bain"""@fr.
+wd:Q18711064 wdt:P31 wd:Q838948 .
+wd:Q18711064 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q18711064 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20After%20the%20Bath.jpg".
+wd:Q18711064 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18711064 pgdc:piwigo_image "1000".
+wd:Q18711064 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q3211036 rdfs:label """L’Étoile"""@fr.
+wd:Q3211036 wdt:P31 wd:Q838948 .
+wd:Q3211036 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q3211036 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gerome%20venus.jpg".
+wd:Q3211036 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3211036 pgdc:piwigo_image "869".
+wd:Q3211036 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q17096334 rdfs:label """Marché romain aux esclaves"""@fr.
+wd:Q17096334 wdt:P31 wd:Q838948 .
+wd:Q17096334 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q17096334 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Leon%20Gerome%20Selling%20Slaves%20in%20Rome.jpg".
+wd:Q17096334 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17096334 pgdc:piwigo_image "852".
+wd:Q17096334 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q18748897 rdfs:label """Relais de chiens dans le désert"""@fr.
+wd:Q18748897 wdt:P31 wd:Q838948 .
+wd:Q18748897 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q18748897 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20On%20the%20Desert%20-%20Walters%203734.jpg".
+wd:Q18748897 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18748897 pgdc:piwigo_image "9100".
+wd:Q18748897 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q20275999 rdfs:label """Course de char"""@fr.
+wd:Q20275999 wdt:P31 wd:Q838948 .
+wd:Q20275999 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q20275999 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20Chariot%20Race%20-%201983.380%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20275999 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20275999 pgdc:piwigo_image "9229".
+wd:Q20275999 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q12899114 rdfs:label """Cléopâtre et César"""@fr.
+wd:Q12899114 wdt:P31 wd:Q838948 .
+wd:Q12899114 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q12899114 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cleopatra%20and%20Caesar%20by%20Jean-Leon-Gerome.jpg".
+wd:Q12899114 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q12899114 pgdc:piwigo_image "6458".
+wd:Q12899114 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q6543739 rdfs:label """Phryné devant l'Aréopage"""@fr.
+wd:Q6543739 wdt:P31 wd:Q838948 .
+wd:Q6543739 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q6543739 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%2C%20Phryne%20revealed%20before%20the%20Areopagus%20%281861%29%20-%2001.jpg".
+wd:Q6543739 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q6543739 pgdc:piwigo_image "926".
+wd:Q6543739 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q19861836 rdfs:label """Portrait d'enfant"""@fr.
+wd:Q19861836 wdt:P31 wd:Q838948 .
+wd:Q19861836 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q19861836 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%B0%20%D0%BC%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%D0%B0.jpg".
+wd:Q19861836 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861836 pgdc:piwigo_image "435".
+wd:Q19861836 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q2909909 rdfs:label """Œdipe"""@fr.
+wd:Q2909909 wdt:P31 wd:Q838948 .
+wd:Q2909909 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q2909909 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bonaparte%20ante%20la%20Esfinge%2C%20por%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me.jpg".
+wd:Q2909909 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q2909909 pgdc:piwigo_image "6557".
+wd:Q2909909 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q19861912 rdfs:label """Le Bain"""@fr.
+wd:Q19861912 wdt:P31 wd:Q838948 .
+wd:Q19861912 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q19861912 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9rome%20-%20Le%20bain%20%281880-85%29.jpg".
+wd:Q19861912 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861912 pgdc:piwigo_image "948".
+wd:Q19861912 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q12898913 rdfs:label """Ave Caesar Morituri te Salutant"""@fr.
+wd:Q12898913 wdt:P31 wd:Q838948 .
+wd:Q12898913 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q12898913 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ave%20Caesar%20Morituri%20te%20Salutant%20%28G%C3%A9r%C3%B4me%29%2001.jpg".
+wd:Q12898913 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q12898913 pgdc:piwigo_image "6459".
+wd:Q12898913 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q17491231 rdfs:label """Deux Paysannes italiennes et un enfant"""@fr.
+wd:Q17491231 wdt:P31 wd:Q838948 .
+wd:Q17491231 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q17491231 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%2C%20Deux%20Paysannes%20italiennes%20et%20un%20enfant.jpg".
+wd:Q17491231 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17491231 pgdc:piwigo_image "13820".
+wd:Q17491231 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q3224275 rdfs:label """Le Marché d'esclaves"""@fr.
+wd:Q3224275 wdt:P31 wd:Q838948 .
+wd:Q3224275 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q3224275 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Geromeslavemarket.jpg".
+wd:Q3224275 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3224275 pgdc:piwigo_image "861".
+wd:Q3224275 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q17305067 rdfs:label """Pygmalion et Galatée"""@fr.
+wd:Q17305067 wdt:P31 wd:Q838948 .
+wd:Q17305067 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q17305067 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pygmalion%20and%20Galatea%20%28G%C3%A9r%C3%B4me%29%20front%202.jpg".
+wd:Q17305067 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17305067 pgdc:piwigo_image "847".
+wd:Q17305067 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q18720658 rdfs:label """Le Roi Candaules"""@fr.
+wd:Q18720658 wdt:P31 wd:Q838948 .
+wd:Q18720658 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q18720658 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20El%20rey%20Candaules.jpg".
+wd:Q18720658 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18720658 pgdc:piwigo_image "993".
+wd:Q18720658 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q20198828 rdfs:label """Madame de la Pagerie"""@fr.
+wd:Q20198828 wdt:P31 wd:Q838948 .
+wd:Q20198828 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q20198828 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Madame%20de%20la%20Pagerie%20%28unknown%20date%29%2C%20by%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me.jpg".
+wd:Q20198828 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20198828 pgdc:piwigo_image "13821".
+wd:Q20198828 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q19886770 rdfs:label """Femme nue"""@fr.
+wd:Q19886770 wdt:P31 wd:Q838948 .
+wd:Q19886770 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q19886770 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9rome%2C%20Femme%20nue%2C%201889%20%285613508427%29.jpg".
+wd:Q19886770 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19886770 pgdc:piwigo_image "957".
+wd:Q19886770 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q18711096 rdfs:label """Intérieur grec"""@fr.
+wd:Q18711096 wdt:P31 wd:Q838948 .
+wd:Q18711096 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q18711096 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%20-%20Greek%20Interior%20sketch.jpg".
+wd:Q18711096 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18711096 pgdc:piwigo_image "995".
+wd:Q18711096 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q17353200 rdfs:label """Réception du Grand Condé par Louis XIV (Versailles, 1674)"""@fr.
+wd:Q17353200 wdt:P31 wd:Q838948 .
+wd:Q17353200 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q17353200 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Geromeconde.jpg".
+wd:Q17353200 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17353200 pgdc:piwigo_image "6596".
+wd:Q17353200 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q19861834 rdfs:label """Portrait d'une Romaine"""@fr.
+wd:Q19861834 wdt:P31 wd:Q838948 .
+wd:Q19861834 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q19861834 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20Head%20of%20an%20Italian%20Woman%20-%201980.264%20-%20Cleveland%20Museum%20of%20Art.tiff".
+wd:Q19861834 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861834 pgdc:piwigo_image "7057".
+wd:Q19861834 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q19861886 rdfs:label """La Grande Piscine de Brousse"""@fr.
+wd:Q19861886 wdt:P31 wd:Q838948 .
+wd:Q19861886 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q19861886 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20grande%20piscine%20de%20brousse.jpg".
+wd:Q19861886 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19861886 pgdc:piwigo_image "952".
+wd:Q19861886 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q18748908 rdfs:label """La folie des tulipes"""@fr.
+wd:Q18748908 wdt:P31 wd:Q838948 .
+wd:Q18748908 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q18748908 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20The%20Tulip%20Folly%20-%20Google%20Art%20Project.jpg".
+wd:Q18748908 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18748908 pgdc:piwigo_image "5053".
+wd:Q18748908 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q17491812 rdfs:label """Jeunes Grecs faisant battre des coqs"""@fr.
+wd:Q17491812 wdt:P31 wd:Q838948 .
+wd:Q17491812 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q17491812 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20Young%20Greeks%20Attending%20a%20Cock%20Fight%20-%20Google%20Art%20Project.jpg".
+wd:Q17491812 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17491812 pgdc:piwigo_image "833".
+wd:Q17491812 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q17627498 rdfs:label """Le Prisonnier"""@fr.
+wd:Q17627498 wdt:P31 wd:Q838948 .
+wd:Q17627498 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q17627498 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20Le%20Prisonnier.jpg".
+wd:Q17627498 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17627498 pgdc:piwigo_image "13822".
+wd:Q17627498 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q3503317 rdfs:label """Suites d'un bal masqué"""@fr.
+wd:Q3503317 wdt:P31 wd:Q838948 .
+wd:Q3503317 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q3503317 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Suites%20d%27un%20bal%20masqu%C3%A9%20-%20G%C3%A9r%C3%B4me%20-%20Mus%C3%A9e%20Cond%C3%A9.jpg".
+wd:Q3503317 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3503317 pgdc:piwigo_image "8972".
+wd:Q3503317 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q17305070 rdfs:label """Pygmalion et Galatée"""@fr.
+wd:Q17305070 wdt:P31 wd:Q838948 .
+wd:Q17305070 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q17305070 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pygmalion%20and%20Galatea%20MET%20DT1969.jpg".
+wd:Q17305070 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17305070 pgdc:piwigo_image "853".
+wd:Q17305070 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125022053 rdfs:label """Vieille Femme à la pipe"""@fr.
+wd:Q125022053 wdt:P31 wd:Q838948 .
+wd:Q125022053 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125022053 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/JL%20G%C3%A9r%C3%B4me%20-%20Vieille%20femme%20%C3%A0%20la%20pipe.jpg".
+wd:Q125022053 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125022053 pgdc:piwigo_image "13823".
+wd:Q125022053 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q116160584 rdfs:label """Jean Bart"""@fr.
+wd:Q116160584 wdt:P31 wd:Q838948 .
+wd:Q116160584 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q116160584 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Bart%20par%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20%281862%29.jpg".
+wd:Q116160584 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116160584 pgdc:piwigo_image "13824".
+wd:Q116160584 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q111651597 rdfs:label """Les Comédiens"""@fr.
+wd:Q111651597 wdt:P31 wd:Q838948 .
+wd:Q111651597 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q111651597 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gerome%20Les%20com%C3%A9diens%20%281863%29%20141.2.jpg".
+wd:Q111651597 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111651597 pgdc:piwigo_image "13825".
+wd:Q111651597 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q122885472 rdfs:label """L'Entrée du Christ à Jérusalem"""@fr.
+wd:Q122885472 wdt:P31 wd:Q838948 .
+wd:Q122885472 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q122885472 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%20-%20L%27entr%C3%A9e%20du%20Christ%20%C3%A0%20J%C3%A9rusalem.jpg".
+wd:Q122885472 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122885472 pgdc:piwigo_image "13826".
+wd:Q122885472 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q114354444 rdfs:label """Arnaute avec deux chiens whippets"""@fr.
+wd:Q114354444 wdt:P31 wd:Q838948 .
+wd:Q114354444 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q114354444 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%20-%20Arnaute%20avec%20deux%20chiens%20whippets%2C%201867.jpg".
+wd:Q114354444 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114354444 pgdc:piwigo_image "13827".
+wd:Q114354444 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q114263883 rdfs:label """le travail du marbre"""@fr.
+wd:Q114263883 wdt:P31 wd:Q838948 .
+wd:Q114263883 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q114263883 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%2C%20le%20travail%20du%20marbre%2C%201890%20%285613512697%29.jpg".
+wd:Q114263883 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114263883 pgdc:piwigo_image "13828".
+wd:Q114263883 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q114263705 rdfs:label """Achat d'une esclave"""@fr.
+wd:Q114263705 wdt:P31 wd:Q838948 .
+wd:Q114263705 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q114263705 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%2C%20Achat%20d%27une%20esclave%2C%201857%20%285613508015%29.jpg".
+wd:Q114263705 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114263705 pgdc:piwigo_image "13829".
+wd:Q114263705 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q124632162 rdfs:label """Saint Vincent de Paul"""@fr.
+wd:Q124632162 wdt:P31 wd:Q838948 .
+wd:Q124632162 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q124632162 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Vincent%20de%20Paule%20-%20Gerome.jpg".
+wd:Q124632162 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124632162 pgdc:piwigo_image "13830".
+wd:Q124632162 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q123283147 rdfs:label """Le Premier Baiser du soleil"""@fr.
+wd:Q123283147 wdt:P31 wd:Q838948 .
+wd:Q123283147 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q123283147 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20Le%20premier%20baiser%20du%20soleil%20%281886%29.jpg".
+wd:Q123283147 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123283147 pgdc:piwigo_image "13831".
+wd:Q123283147 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q124031041 rdfs:label """La Rentrée des félins au cirque"""@fr.
+wd:Q124031041 wdt:P31 wd:Q838948 .
+wd:Q124031041 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q124031041 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%20-%20La%20rentr%C3%A9e%20des%20f%C3%A9lins%2C%201902.jpg".
+wd:Q124031041 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124031041 pgdc:piwigo_image "13832".
+wd:Q124031041 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q124906185 rdfs:label """Les Mouettes"""@fr.
+wd:Q124906185 wdt:P31 wd:Q838948 .
+wd:Q124906185 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q124906185 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Les%20mouettes%20gerome%20vesoul.jpg".
+wd:Q124906185 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124906185 pgdc:piwigo_image "5494".
+wd:Q124906185 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q111022649 rdfs:label """Paysan de la campagne romaine, de face"""@fr.
+wd:Q111022649 wdt:P31 wd:Q838948 .
+wd:Q111022649 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q111022649 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Head%20of%20a%20peasant%20from%20the%20roman%20campagna%20%281843%29%2C%20by%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me.jpg".
+wd:Q111022649 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111022649 pgdc:piwigo_image "13833".
+wd:Q111022649 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q121672196 rdfs:label """Les Colosses de Thèbes, Memnon et Sesostris"""@fr.
+wd:Q121672196 wdt:P31 wd:Q838948 .
+wd:Q121672196 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q121672196 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Les%20Colosses%20de%20Th%C3%AAbes%2C%20Memnon%20et%20S%C3%A9sostris%20-%20Gerome.jpg".
+wd:Q121672196 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q121672196 pgdc:piwigo_image "13834".
+wd:Q121672196 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q115018637 rdfs:label """Tête de paysan de la campagne romaine"""@fr.
+wd:Q115018637 wdt:P31 wd:Q838948 .
+wd:Q115018637 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q115018637 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Head%20of%20a%20Peasant%20from%20the%20Roman%20Countryside%20%281844%29%2C%20by%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me.jpg".
+wd:Q115018637 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115018637 pgdc:piwigo_image "13835".
+wd:Q115018637 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q125022136 rdfs:label """Le Prophète désobéissant"""@fr.
+wd:Q125022136 wdt:P31 wd:Q838948 .
+wd:Q125022136 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q125022136 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20Le%20Proph%C3%A8te%20d%C3%A9sob%C3%A9issant%20Mus%C3%A9e%20Georges-Garret%2015072018.jpg".
+wd:Q125022136 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125022136 pgdc:piwigo_image "13836".
+wd:Q125022136 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q107207450 rdfs:label """Louis XIV et Molière"""@fr.
+wd:Q107207450 wdt:P31 wd:Q838948 .
+wd:Q107207450 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q107207450 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20Louis%20XIV%20and%20Moliere.jpg".
+wd:Q107207450 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107207450 pgdc:piwigo_image "6722".
+wd:Q107207450 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q114355038 rdfs:label """Atelier de Tanagra"""@fr.
+wd:Q114355038 wdt:P31 wd:Q838948 .
+wd:Q114355038 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q114355038 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%20-%20Painting%20Breathes%20Life%20into%20Sculpture.jpg".
+wd:Q114355038 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114355038 pgdc:piwigo_image "13837".
+wd:Q114355038 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q123985850 rdfs:label """Enfant avec un masque"""@fr.
+wd:Q123985850 wdt:P31 wd:Q838948 .
+wd:Q123985850 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q123985850 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%20enfant%20avec%20un%20masque%20Orsay%2001.jpg".
+wd:Q123985850 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123985850 pgdc:piwigo_image "13838".
+wd:Q123985850 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q115687062 rdfs:label """Le saut de Mettius Curtius"""@fr.
+wd:Q115687062 wdt:P31 wd:Q838948 .
+wd:Q115687062 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q115687062 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20leap%20of%20Marcus%20Curtius%20%281850-55%29%2C%20by%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me.jpg".
+wd:Q115687062 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115687062 pgdc:piwigo_image "13839".
+wd:Q115687062 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q114263943 rdfs:label """La danse de l'almée."""@fr.
+wd:Q114263943 wdt:P31 wd:Q838948 .
+wd:Q114263943 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q114263943 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%2C%20La%20danse%20de%20l%27alm%C3%A9e%2C%20%285613515081%29.jpg".
+wd:Q114263943 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114263943 pgdc:piwigo_image "13840".
+wd:Q114263943 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q123178612 rdfs:label """La Fin de la corrida"""@fr.
+wd:Q123178612 wdt:P31 wd:Q838948 .
+wd:Q123178612 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q123178612 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/JL%20G%C3%A9r%C3%B4me%20-%20La%20Fin%20de%20la%20corrida.jpg".
+wd:Q123178612 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123178612 pgdc:piwigo_image "13841".
+wd:Q123178612 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q124051984 rdfs:label """Boucher turc à Jérusalem"""@fr.
+wd:Q124051984 wdt:P31 wd:Q838948 .
+wd:Q124051984 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q124051984 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/A%20turkish%20butcher%20boy%20in%20Jerusalem%20%281862%29%2C%20by%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me.jpg".
+wd:Q124051984 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124051984 pgdc:piwigo_image "13842".
+wd:Q124051984 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q109969400 rdfs:label """Pifferaro"""@fr.
+wd:Q109969400 wdt:P31 wd:Q838948 .
+wd:Q109969400 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q109969400 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pifferaro%20%281856%29%20-%20Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20%28Nantes%20Museum%20of%20Arts%2C%20988%29.jpg".
+wd:Q109969400 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q109969400 pgdc:piwigo_image "13843".
+wd:Q109969400 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q122884879 rdfs:label """La Fuite en Égypte"""@fr.
+wd:Q122884879 wdt:P31 wd:Q838948 .
+wd:Q122884879 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q122884879 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%20-%20La%20fuite%20en%20Egypte.jpg".
+wd:Q122884879 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122884879 pgdc:piwigo_image "13844".
+wd:Q122884879 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q110843064 rdfs:label """Autoportrait peignant La Joueuse de boules"""@fr.
+wd:Q110843064 wdt:P31 wd:Q838948 .
+wd:Q110843064 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q110843064 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Self-portrait-painting-the-ball-player%20jean-leon-gerome.jpg".
+wd:Q110843064 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110843064 pgdc:piwigo_image "5715".
+wd:Q110843064 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q124613106 rdfs:label """L'Épouse du roi Candaule"""@fr.
+wd:Q124613106 wdt:P31 wd:Q838948 .
+wd:Q124613106 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q124613106 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%2C%20L%E2%80%99%C3%89pouse%20du%20roi%20Candaule%2C%201857.jpg".
+wd:Q124613106 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124613106 pgdc:piwigo_image "13845".
+wd:Q124613106 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q114355024 rdfs:label """Dispute d'Arabes"""@fr.
+wd:Q114355024 wdt:P31 wd:Q838948 .
+wd:Q114355024 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q114355024 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%A9r%C3%B4me%20-%20Dispute%20d%27Arabes%2C%201871.jpg".
+wd:Q114355024 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114355024 pgdc:piwigo_image "13846".
+wd:Q114355024 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q115740881 rdfs:label """Le Forum, la nuit"""@fr.
+wd:Q115740881 wdt:P31 wd:Q838948 .
+wd:Q115740881 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q115740881 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%89R%C3%94ME%20Jean-L%C3%A9on%20Le%20Forum%2C%20la%20nuit%20Huile%20sur%20bois.jpg".
+wd:Q115740881 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115740881 pgdc:piwigo_image "6028".
+wd:Q115740881 pgdc:piwigo_gallery kgdc:gal425.
+wd:Q110842602 rdfs:label """Baigneuse à la piscine de Brousse"""@fr.
+wd:Q110842602 wdt:P31 wd:Q838948 .
+wd:Q110842602 wdt:P170 wd:Q212499.
+wd:Q212499 rdfs:label """Jean-Léon Gérôme"""@fr.
+wd:Q212499 wdt:P31 wd:Q3391743 .
+wd:Q110842602 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Baigneuse%20%C3%A0%20la%20piscine%20de%20Brousse.png".
+wd:Q110842602 pgdc:sparql kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko .
+kgdc:sparqlujRVss6hgqIVfokY7ycjLzEhwIy6ThSxB3H015YX9Ko pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q212499 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110842602 pgdc:piwigo_image "13847".
+wd:Q110842602 pgdc:piwigo_gallery kgdc:gal425.

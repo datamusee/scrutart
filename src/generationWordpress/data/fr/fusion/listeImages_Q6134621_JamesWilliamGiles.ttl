@@ -1,0 +1,504 @@
+wd:Q28037788 rdfs:label """A View of Lochnagar"""@fr.
+wd:Q28037788 wdt:P31 wd:Q838948 .
+wd:Q28037788 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q28037788 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Giles%20%281801-70%29%20-%20A%20View%20of%20Lochnagar%20-%20RCIN%20405006%20-%20Royal%20Collection.jpg".
+wd:Q28037788 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28037182 rdfs:label """A View in Windsor Great Park"""@fr.
+wd:Q28037182 wdt:P31 wd:Q838948 .
+wd:Q28037182 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q28037182 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Giles%20%281801-70%29%20-%20A%20View%20in%20Windsor%20Great%20Park%20-%20RCIN%20401176%20-%20Royal%20Collection.jpg".
+wd:Q28037182 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28037789 rdfs:label """A View of Balmoral"""@fr.
+wd:Q28037789 wdt:P31 wd:Q838948 .
+wd:Q28037789 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q28037789 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Giles%20%281801-70%29%20-%20A%20View%20of%20Balmoral%20-%20RCIN%20405007%20-%20Royal%20Collection.jpg".
+wd:Q28037789 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q52151118 rdfs:label """Stags on the Highlands"""@fr.
+wd:Q52151118 wdt:P31 wd:Q838948 .
+wd:Q52151118 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q52151118 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Giles%20%281801-1870%29%20-%20Stags%20on%20the%20Highlands%20-%20290310%20-%20National%20Trust.jpg".
+wd:Q52151118 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q109661366 rdfs:label """Cicero's Tomb at the Bay of Gaeta"""@fr.
+wd:Q109661366 wdt:P31 wd:Q838948 .
+wd:Q109661366 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q109661366 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cicero%27s%20Tomb%20at%20The%20Bay%20of%20Gaeta%20by%20James%20Giles%20-%20James%20Giles%20-%20ABDAG000667.jpg".
+wd:Q109661366 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q52299710 rdfs:label """A Falconer"""@fr.
+wd:Q52299710 wdt:P31 wd:Q838948 .
+wd:Q52299710 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q52299710 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Giles%20%281801-1870%29%20-%20A%20Falconer%20-%20446673%20-%20National%20Trust.jpg".
+wd:Q52299710 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q109661435 rdfs:label """The Borghese Gardens, Rome"""@fr.
+wd:Q109661435 wdt:P31 wd:Q838948 .
+wd:Q109661435 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q109661435 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Borghese%20Gardens%2C%20Rome%20-%20James%20Giles%20-%20ABDAG002245.jpg".
+wd:Q109661435 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q109852132 rdfs:label """Landscape Sketch"""@fr.
+wd:Q109852132 wdt:P31 wd:Q838948 .
+wd:Q109852132 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q109852132 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Sketch%20-%20James%20Giles%20-%20ABDAG002424.jpg".
+wd:Q109852132 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q109661436 rdfs:label """Snipe Shooting"""@fr.
+wd:Q109661436 wdt:P31 wd:Q838948 .
+wd:Q109661436 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q109661436 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Giles%20%281801%20-%201870%29%20-%20Snipe%20Shooting%20-%20ABDAG002246%20-%20Aberdeen%20City%20Council%20%28Archives%2C%20Gallery%20and%20Museums%20Collection%29.jpg".
+wd:Q109661436 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q109910404 rdfs:label """Sketch of Deer - Evening"""@fr.
+wd:Q109910404 wdt:P31 wd:Q838948 .
+wd:Q109910404 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q109910404 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Sketch%20of%20Deer%20-%20Evening%20-%20James%20Giles%20-%20ABDAG002392.jpg".
+wd:Q109910404 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q109910411 rdfs:label """Deer"""@fr.
+wd:Q109910411 wdt:P31 wd:Q838948 .
+wd:Q109910411 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q109910411 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Deer%20-%20James%20Giles%20-%20ABDAG002421.jpg".
+wd:Q109910411 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110683251 rdfs:label """View of Aberdeen from the South"""@fr.
+wd:Q110683251 wdt:P31 wd:Q838948 .
+wd:Q110683251 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110683251 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20Aberdeen%20from%20the%20South%20-%20James%20Giles%20-%20ABDAG002425.jpg".
+wd:Q110683251 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110683250 rdfs:label """Gray Campbell"""@fr.
+wd:Q110683250 wdt:P31 wd:Q838948 .
+wd:Q110683250 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110683250 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gray%20Campbell%20-%20James%20Giles%20-%20ABDAG002422.jpg".
+wd:Q110683250 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q109910412 rdfs:label """Fyvie Castle"""@fr.
+wd:Q109910412 wdt:P31 wd:Q838948 .
+wd:Q109910412 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q109910412 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Fyvie%20Castle%20by%20James%20Giles%20-%20James%20Giles%20-%20ABDAG002423.jpg".
+wd:Q109910412 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110683253 rdfs:label """Findhorn"""@fr.
+wd:Q110683253 wdt:P31 wd:Q838948 .
+wd:Q110683253 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110683253 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Giles%20%281801%20-%201870%29%20-%20Findhorn%20-%20ABDAG002428%20-%20Aberdeen%20City%20Council%20%28Archives%2C%20Gallery%20and%20Museums%20Collection%29.jpg".
+wd:Q110683253 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110683252 rdfs:label """Heads of Aberdeen Personalities"""@fr.
+wd:Q110683252 wdt:P31 wd:Q838948 .
+wd:Q110683252 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110683252 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Heads%20of%20Aberdeen%20Personalities%20-%20James%20Giles%20-%20ABDAG002426.jpg".
+wd:Q110683252 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110683254 rdfs:label """Self Portrait"""@fr.
+wd:Q110683254 wdt:P31 wd:Q838948 .
+wd:Q110683254 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110683254 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Self%20Portrait%20-%20James%20Giles%20-%20ABDAG002429.jpg".
+wd:Q110683254 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110683255 rdfs:label """Self Portrait"""@fr.
+wd:Q110683255 wdt:P31 wd:Q838948 .
+wd:Q110683255 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110683255 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Self%20Portrait%20by%20James%20Giles%20-%20James%20Giles%20-%20ABDAG002430.jpg".
+wd:Q110683255 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110683256 rdfs:label """Archibald Simpson, Architect"""@fr.
+wd:Q110683256 wdt:P31 wd:Q838948 .
+wd:Q110683256 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110683256 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Archibald%20Simpson%2C%20Architect%20by%20James%20Giles%20-%20James%20Giles%20-%20ABDAG002431.jpg".
+wd:Q110683256 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110683357 rdfs:label """Heads of Aberdeen Personalities"""@fr.
+wd:Q110683357 wdt:P31 wd:Q838948 .
+wd:Q110683357 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110683357 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Heads%20of%20Aberdeen%20Personalities%20-%20James%20Giles%20-%20ABDAG002691.jpg".
+wd:Q110683357 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110685240 rdfs:label """John Ramsay"""@fr.
+wd:Q110685240 wdt:P31 wd:Q838948 .
+wd:Q110685240 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110685240 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Ramsay%20-%20James%20Giles%20-%20ABDAG014146.jpg".
+wd:Q110685240 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110686389 rdfs:label """Baillie James Forbes"""@fr.
+wd:Q110686389 wdt:P31 wd:Q838948 .
+wd:Q110686389 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110686389 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Baillie%20James%20Forbes%20-%20James%20Giles%20-%20ABDCC001003.jpg".
+wd:Q110686389 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110683258 rdfs:label """Sketch of Figure Walking"""@fr.
+wd:Q110683258 wdt:P31 wd:Q838948 .
+wd:Q110683258 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110683258 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Sketch%20of%20Figure%20Walking%20by%20Stream%20-%20James%20Giles%20-%20ABDAG002433.jpg".
+wd:Q110683258 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110683257 rdfs:label """On the Don"""@fr.
+wd:Q110683257 wdt:P31 wd:Q838948 .
+wd:Q110683257 wdt:P170 wd:Q6134621.
+wd:Q6134621 rdfs:label """James William Giles"""@fr.
+wd:Q6134621 wdt:P31 wd:Q3391743 .
+wd:Q110683257 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/On%20the%20Don%20-%20James%20Giles%20-%20ABDAG002432.jpg".
+wd:Q110683257 pgdc:sparql kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR .
+kgdc:sparqlkG7jGJuMQN0gvY7P6I8fmJZrNPYKvpIZVQlkb9mV7UR pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q6134621 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

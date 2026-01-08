@@ -1,5 +1,5 @@
 import unittest
-from src.generationWordpress.CScrutartState import CScrutartState, DCPiwigoArtwork, DCWikidataCreator, DCLangLabel, DCImage
+from CScrutartState import CScrutartState, DCPiwigoArtwork, DCWikidataCreator, DCLangLabel, DCImage
 class TestArtworkTtl(unittest.TestCase):
     def sampleArtwork(self):
         artwork = DCPiwigoArtwork(

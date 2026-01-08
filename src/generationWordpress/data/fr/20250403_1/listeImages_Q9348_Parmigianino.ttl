@@ -1,0 +1,2557 @@
+wd:Q282277 rdfs:label """Circoncision de Jésus"""@fr.
+wd:Q282277 wdt:P31 wd:Q838948 .
+wd:Q282277 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q282277 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20The%20Circumcision%20-%2030.295%20-%20Detroit%20Institute%20of%20Arts.jpg".
+wd:Q282277 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q282277 pgdc:piwigo_image "19151".
+wd:Q282277 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q699319 rdfs:label """Autoportrait dans un miroir convexe"""@fr.
+wd:Q699319 wdt:P31 wd:Q838948 .
+wd:Q699319 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q699319 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20Selfportrait.jpg".
+wd:Q699319 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q699319 pgdc:piwigo_image "19152".
+wd:Q699319 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q866489 rdfs:label """Autoportrait au béret rouge"""@fr.
+wd:Q866489 wdt:P31 wd:Q838948 .
+wd:Q866489 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q866489 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20Selfportrait%201540.jpg".
+wd:Q866489 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q866489 pgdc:piwigo_image "19153".
+wd:Q866489 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q866500 rdfs:label """Esclave turque"""@fr.
+wd:Q866500 wdt:P31 wd:Q838948 .
+wd:Q866500 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q866500 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20La%20schiava%20turca.jpg".
+wd:Q866500 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q866500 pgdc:piwigo_image "19154".
+wd:Q866500 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q867403 rdfs:label """La Vierge au long cou"""@fr.
+wd:Q867403 wdt:P31 wd:Q838948 .
+wd:Q867403 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q867403 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20Madonna%20and%20Child%20with%20Angels%2C%20known%20as%20the%20Madonna%20with%20the%20Long%20Neck.jpg".
+wd:Q867403 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q867403 pgdc:piwigo_image "19155".
+wd:Q867403 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q892604 rdfs:label """Cupidon fabriquant son arc"""@fr.
+wd:Q892604 wdt:P31 wd:Q838948 .
+wd:Q892604 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q892604 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Francesco%20Mazzola%20gen.%20Parmigianino%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Bogenschnitzender%20Amor%20-%20GG%20275%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q892604 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q892604 pgdc:piwigo_image "19156".
+wd:Q892604 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q867678 rdfs:label """Antea"""@fr.
+wd:Q867678 wdt:P31 wd:Q838948 .
+wd:Q867678 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q867678 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Antea%20-%20Parmigianino%20-%20Museo%20di%20Capodimonte%20Q%20108.jpg".
+wd:Q867678 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q867678 pgdc:piwigo_image "19157".
+wd:Q867678 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q1595032 rdfs:label """Saint Barbara"""@fr.
+wd:Q1595032 wdt:P31 wd:Q838948 .
+wd:Q1595032 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q1595032 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20Saint%20Barbara.jpg".
+wd:Q1595032 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q1595032 pgdc:piwigo_image "19158".
+wd:Q1595032 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q1896483 rdfs:label """Vierge à l'Enfant"""@fr.
+wd:Q1896483 wdt:P31 wd:Q838948 .
+wd:Q1896483 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q1896483 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27The%20Madonna%20and%20Child%27%2C%20oil%20on%20panel%20painting%20by%20Parmigianino%20%28Girolamo%20Francesco%20Maria%20Mazzola%29.jpg".
+wd:Q1896483 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q1896483 pgdc:piwigo_image "19159".
+wd:Q1896483 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3275305 rdfs:label """Vision de saint Jérôme"""@fr.
+wd:Q3275305 wdt:P31 wd:Q838948 .
+wd:Q3275305 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3275305 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20The%20Madonna%20and%20Child%20with%20Saints%20%28The%20Vision%20of%20St%20Jerome%29.jpg".
+wd:Q3275305 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3275305 pgdc:piwigo_image "19160".
+wd:Q3275305 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3605537 rdfs:label """L'Adoration des mages"""@fr.
+wd:Q3605537 wdt:P31 wd:Q838948 .
+wd:Q3605537 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3605537 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20adorazione%20dei%20magi%2C%201529%20ca.%2001.jpg".
+wd:Q3605537 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3605537 pgdc:piwigo_image "19161".
+wd:Q3605537 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3605550 rdfs:label """The Adoration of the Shepherds"""@fr.
+wd:Q3605550 wdt:P31 wd:Q838948 .
+wd:Q3605550 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3605550 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20adorazione%20dei%20pastori.jpg".
+wd:Q3605550 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3605550 pgdc:piwigo_image "19162".
+wd:Q3605550 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3636746 rdfs:label """Baptême du Christ"""@fr.
+wd:Q3636746 wdt:P31 wd:Q838948 .
+wd:Q3636746 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3636746 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20battesimo%20di%20cristo%200.jpg".
+wd:Q3636746 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3636746 pgdc:piwigo_image "19163".
+wd:Q3636746 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3689725 rdfs:label """The Conversion of Saint Paul"""@fr.
+wd:Q3689725 wdt:P31 wd:Q838948 .
+wd:Q3689725 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3689725 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Francesco%20Mazzola%20gen.%20Parmigianino%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Paulussturz%20-%20GG%202035%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q3689725 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20012.jpg".
+wd:Q3689725 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3689725 pgdc:piwigo_image "19164".
+wd:Q3689725 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3739205 rdfs:label """Boy with a Finger in His Mouth"""@fr.
+wd:Q3739205 wdt:P31 wd:Q838948 .
+wd:Q3739205 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3739205 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20fanciullo%20con%20abbecedario.jpg".
+wd:Q3739205 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3739205 pgdc:piwigo_image "19165".
+wd:Q3739205 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3839035 rdfs:label """Lucrèce"""@fr.
+wd:Q3839035 wdt:P31 wd:Q838948 .
+wd:Q3839035 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3839035 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20lucrezia%20romana%2C%201540.jpg".
+wd:Q3839035 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3839035 pgdc:piwigo_image "19166".
+wd:Q3839035 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3842398 rdfs:label """Vierge à l'Enfant"""@fr.
+wd:Q3842398 wdt:P31 wd:Q838948 .
+wd:Q3842398 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3842398 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20madonna%20doria%2C%20versione%20degli%20Uffizi.jpg".
+wd:Q3842398 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3842398 pgdc:piwigo_image "19167".
+wd:Q3842398 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3842425 rdfs:label """Madonna with child"""@fr.
+wd:Q3842425 wdt:P31 wd:Q838948 .
+wd:Q3842425 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3842425 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20madonna%20col%20bambino%20courtauld%20galleries.jpg".
+wd:Q3842425 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3842425 pgdc:piwigo_image "19168".
+wd:Q3842425 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3842495 rdfs:label """Vierge à l'Enfant."""@fr.
+wd:Q3842495 wdt:P31 wd:Q838948 .
+wd:Q3842495 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3842495 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20dettaglio%20madonna%20col%20bambino%20di%20palazzetto%20eucherio%20sanvitale.jpg".
+wd:Q3842495 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3842495 pgdc:piwigo_image "19169".
+wd:Q3842495 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3842680 rdfs:label """La Vierge à la rose"""@fr.
+wd:Q3842680 wdt:P31 wd:Q838948 .
+wd:Q3842680 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3842680 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20Madonna%20of%20the%20Rose.jpg".
+wd:Q3842680 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3842680 pgdc:piwigo_image "19170".
+wd:Q3842680 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3842736 rdfs:label """Madonna and Child with Saints"""@fr.
+wd:Q3842736 wdt:P31 wd:Q838948 .
+wd:Q3842736 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3842736 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20Madonna%20con%20Bambino%20e%20Santi%20%28Madonna%20di%20San%20Zaccaria%29%2C%20-%20Google%20Art%20Project.jpg".
+wd:Q3842736 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3842736 pgdc:piwigo_image "19171".
+wd:Q3842736 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3842737 rdfs:label """Vierge à l'Enfant et saints"""@fr.
+wd:Q3842737 wdt:P31 wd:Q838948 .
+wd:Q3842737 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3842737 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20Madonna%20and%20Child%20with%20Saints%20Margaret%2C%20Jerome%2C%20Petronius%20and%20Michael.jpg".
+wd:Q3842737 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3842737 pgdc:piwigo_image "19172".
+wd:Q3842737 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3851963 rdfs:label """Le Mariage mystique de sainte Catherine"""@fr.
+wd:Q3851963 wdt:P31 wd:Q838948 .
+wd:Q3851963 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3851963 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Mariage%20mystique%20de%20sainte%20Catherine%20-%20Parmigianino%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%201992%20411.jpg".
+wd:Q3851963 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3851963 pgdc:piwigo_image "12505".
+wd:Q3851963 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3851962 rdfs:label """The Mystic Marriage of Saint Catherine"""@fr.
+wd:Q3851962 wdt:P31 wd:Q838948 .
+wd:Q3851962 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3851962 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20The%20Mystic%20Marriage%20of%20Saint%20Catherine.jpg".
+wd:Q3851962 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3851962 pgdc:piwigo_image "19173".
+wd:Q3851962 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3858368 rdfs:label """Minerva by Parmigianino"""@fr.
+wd:Q3858368 wdt:P31 wd:Q838948 .
+wd:Q3858368 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3858368 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20Pallas%20Athene%20-%20c.%201539.jpg".
+wd:Q3858368 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3858368 pgdc:piwigo_image "19174".
+wd:Q3858368 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3873235 rdfs:label """Le Repos pendant la fuite en Égypte"""@fr.
+wd:Q3873235 wdt:P31 wd:Q838948 .
+wd:Q3873235 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3873235 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20nativit%C3%A0.jpg".
+wd:Q3873235 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3873235 pgdc:piwigo_image "19175".
+wd:Q3873235 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3873239 rdfs:label """Nativity of Christ with angels"""@fr.
+wd:Q3873239 wdt:P31 wd:Q838948 .
+wd:Q3873239 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3873239 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20nativit%C3%A0%20con%20angeli.jpg".
+wd:Q3873239 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3873239 pgdc:piwigo_image "19176".
+wd:Q3873239 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3889233 rdfs:label """Madonna and child with Saints Stephen and John the Baptist"""@fr.
+wd:Q3889233 wdt:P31 wd:Q838948 .
+wd:Q3889233 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3889233 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20Madonna%20and%20child%20with%20Saints%20Stephen%20and%20John%20the%20Baptist.jpg".
+wd:Q3889233 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3889233 pgdc:piwigo_image "19177".
+wd:Q3889233 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3889239 rdfs:label """Bardi Altarpiece"""@fr.
+wd:Q3889239 wdt:P31 wd:Q838948 .
+wd:Q3889239 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3889239 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Chiesa%20di%20Santa%20Maria%20Addolorata%20%28Bardi%29%20-%20Pala%20di%20Bardi%203%202022-05-16.jpg".
+wd:Q3889239 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3889239 pgdc:piwigo_image "19178".
+wd:Q3889239 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937392 rdfs:label """Portrait of Charles V"""@fr.
+wd:Q3937392 wdt:P31 wd:Q838948 .
+wd:Q3937392 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937392 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20Carlo%20V%20come%20dominatore%20del%20mondo%20%281530%29.jpg".
+wd:Q3937392 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937392 pgdc:piwigo_image "19179".
+wd:Q3937392 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937412 rdfs:label """Q3937412"""@fr.
+wd:Q3937412 wdt:P31 wd:Q838948 .
+wd:Q3937412 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937412 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20023.jpg".
+wd:Q3937412 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937412 pgdc:piwigo_image "19180".
+wd:Q3937412 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937415 rdfs:label """Homme avec un livre"""@fr.
+wd:Q3937415 wdt:P31 wd:Q838948 .
+wd:Q3937415 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937415 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20man%20with%20a%20Book%20by%20Parmigianino%20YORAG%20739.jpg".
+wd:Q3937415 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937415 pgdc:piwigo_image "19181".
+wd:Q3937415 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937424 rdfs:label """Portrait de Pianerlotto"""@fr.
+wd:Q3937424 wdt:P31 wd:Q838948 .
+wd:Q3937424 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937424 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20ritratto%20maschile%20galleria%20borghese.jpg".
+wd:Q3937424 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937424 pgdc:piwigo_image "19182".
+wd:Q3937424 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937503 rdfs:label """Portrait de Cecilia Gozzadini"""@fr.
+wd:Q3937503 wdt:P31 wd:Q838948 .
+wd:Q3937503 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937503 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20013.jpg".
+wd:Q3937503 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937503 pgdc:piwigo_image "19183".
+wd:Q3937503 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937480 rdfs:label """Portrait of Camilla Gonzaga and Her Three Sons"""@fr.
+wd:Q3937480 wdt:P31 wd:Q838948 .
+wd:Q3937480 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937480 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20ritratto%20di%20camilla%20gonzaga%20coi%20figli.jpg".
+wd:Q3937480 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937480 pgdc:piwigo_image "19184".
+wd:Q3937480 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937542 rdfs:label """Portrait de Galeazzo Sanvitale"""@fr.
+wd:Q3937542 wdt:P31 wd:Q838948 .
+wd:Q3937542 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937542 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20024.jpg".
+wd:Q3937542 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937542 pgdc:piwigo_image "19185".
+wd:Q3937542 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937595 rdfs:label """Portrait de Lorenzo Cybo"""@fr.
+wd:Q3937595 wdt:P31 wd:Q838948 .
+wd:Q3937595 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937595 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portr%C3%A6t%20af%20Lorenzo%20Cybo.jpg".
+wd:Q3937595 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937595 pgdc:piwigo_image "19186".
+wd:Q3937595 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937655 rdfs:label """Portrait of Pier Maria Rossi di San Secondo"""@fr.
+wd:Q3937655 wdt:P31 wd:Q838948 .
+wd:Q3937655 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937655 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20ritratto%20di%20pier%20maria%20rossi%20di%20sansecondo%2001.jpg".
+wd:Q3937655 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937655 pgdc:piwigo_image "19187".
+wd:Q3937655 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937704 rdfs:label """Q3937704"""@fr.
+wd:Q3937704 wdt:P31 wd:Q838948 .
+wd:Q3937704 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937704 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20ritratto%20di%20giovane%20hampoton%20court.jpg".
+wd:Q3937704 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937704 pgdc:piwigo_image "19188".
+wd:Q3937704 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937763 rdfs:label """Portrait of a Collector"""@fr.
+wd:Q3937763 wdt:P31 wd:Q838948 .
+wd:Q3937763 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937763 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20025.jpg".
+wd:Q3937763 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937763 pgdc:piwigo_image "19189".
+wd:Q3937763 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937792 rdfs:label """Portrait d'un homme"""@fr.
+wd:Q3937792 wdt:P31 wd:Q838948 .
+wd:Q3937792 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937792 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20ritratto%20maschile%20uffizi.jpg".
+wd:Q3937792 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937792 pgdc:piwigo_image "19190".
+wd:Q3937792 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3937794 rdfs:label """Q3937794"""@fr.
+wd:Q3937794 wdt:P31 wd:Q838948 .
+wd:Q3937794 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3937794 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20uomo%20su%20sfondo%20verde.jpg".
+wd:Q3937794 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3937794 pgdc:piwigo_image "19191".
+wd:Q3937794 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3944466 rdfs:label """Le Repos pendant la fuite en Égypte"""@fr.
+wd:Q3944466 wdt:P31 wd:Q838948 .
+wd:Q3944466 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3944466 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Sagrada%20Familia%20con%20%C3%A1ngeles%20%28Parmigianino%29.jpg".
+wd:Q3944466 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3944466 pgdc:piwigo_image "19192".
+wd:Q3944466 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3944485 rdfs:label """Sainte Famille avec le petit saint Jean"""@fr.
+wd:Q3944485 wdt:P31 wd:Q838948 .
+wd:Q3944485 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3944485 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20sacra%20famiglia%20con%20san%20giovannino.jpg".
+wd:Q3944485 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3944485 pgdc:piwigo_image "19193".
+wd:Q3944485 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3947291 rdfs:label """Saint Jerome"""@fr.
+wd:Q3947291 wdt:P31 wd:Q838948 .
+wd:Q3947291 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3947291 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Counterfaith%20of%20Parmigianino%2C%20san%20girolamo.jpg".
+wd:Q3947291 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3947291 pgdc:piwigo_image "19194".
+wd:Q3947291 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3947906 rdfs:label """Saint Rocco"""@fr.
+wd:Q3947906 wdt:P31 wd:Q838948 .
+wd:Q3947906 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3947906 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20san%20rocco%2C%20collezione%20privata%20parma.jpg".
+wd:Q3947906 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3947906 pgdc:piwigo_image "19195".
+wd:Q3947906 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3947911 rdfs:label """Saint Roch and a donor"""@fr.
+wd:Q3947911 wdt:P31 wd:Q838948 .
+wd:Q3947911 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3947911 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20san%20rocco%20e%20un%20donatore.jpg".
+wd:Q3947911 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3947911 pgdc:piwigo_image "19196".
+wd:Q3947911 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3948034 rdfs:label """Saint Vitalis and the horse"""@fr.
+wd:Q3948034 wdt:P31 wd:Q838948 .
+wd:Q3948034 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3948034 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20San%20vitale.jpg".
+wd:Q3948034 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3948034 pgdc:piwigo_image "19197".
+wd:Q3948034 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3948651 rdfs:label """Saint Agatha and the Executioner"""@fr.
+wd:Q3948651 wdt:P31 wd:Q838948 .
+wd:Q3948651 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3948651 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20Sant%27agata%20e%20il%20carnefice.jpg".
+wd:Q3948651 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3948651 pgdc:piwigo_image "19198".
+wd:Q3948651 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3949270 rdfs:label """Saint with two angels"""@fr.
+wd:Q3949270 wdt:P31 wd:Q838948 .
+wd:Q3949270 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3949270 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20Santa%20con%20due%20angeli.jpg".
+wd:Q3949270 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3949270 pgdc:piwigo_image "19199".
+wd:Q3949270 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3948950 rdfs:label """Saint Cecilia and David"""@fr.
+wd:Q3948950 wdt:P31 wd:Q838948 .
+wd:Q3948950 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3948950 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20Santa%20Cecilia%20e%20David.jpg".
+wd:Q3948950 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3948950 pgdc:piwigo_image "19200".
+wd:Q3948950 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3949310 rdfs:label """Saints Apollonia and Lucy"""@fr.
+wd:Q3949310 wdt:P31 wd:Q838948 .
+wd:Q3949310 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3949310 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20Sante%20apollonia%20e%20lucia.jpg".
+wd:Q3949310 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3949310 pgdc:piwigo_image "19201".
+wd:Q3949310 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3949373 rdfs:label """Saints Stephen and Lawrence"""@fr.
+wd:Q3949373 wdt:P31 wd:Q838948 .
+wd:Q3949373 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3949373 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20Santi%20stefano%20e%20lorenzo.jpg".
+wd:Q3949373 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3949373 pgdc:piwigo_image "19202".
+wd:Q3949373 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q3998159 rdfs:label """Trois Têtes"""@fr.
+wd:Q3998159 wdt:P31 wd:Q838948 .
+wd:Q3998159 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q3998159 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20tre%20teste.jpg".
+wd:Q3998159 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q3998159 pgdc:piwigo_image "19203".
+wd:Q3998159 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q4006164 rdfs:label """Homme tenant un livre"""@fr.
+wd:Q4006164 wdt:P31 wd:Q838948 .
+wd:Q4006164 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q4006164 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20uomo%20che%20sospede%20la%20lettura%2C%20vienna.jpg".
+wd:Q4006164 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Francesco%20Mazzola%20gen.%20Parmigianino%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Bildnis%20eines%20Mannes%20mit%20Buch%20-%20GG%20329%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q4006164 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q4006164 pgdc:piwigo_image "19204".
+wd:Q4006164 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q18572256 rdfs:label """Portrait de jeune homme"""@fr.
+wd:Q18572256 wdt:P31 wd:Q838948 .
+wd:Q18572256 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q18572256 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20Portrait%20of%20a%20Young%20man.jpg".
+wd:Q18572256 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18572256 pgdc:piwigo_image "450".
+wd:Q18572256 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q19966608 rdfs:label """Mystic Marriage of Saint Catherine"""@fr.
+wd:Q19966608 wdt:P31 wd:Q838948 .
+wd:Q19966608 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q19966608 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20Sposalizio%20mistico%20di%20Santa%20Caterina.jpg".
+wd:Q19966608 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19966608 pgdc:piwigo_image "19205".
+wd:Q19966608 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q26713754 rdfs:label """Cardinal Lorenzo Pucci"""@fr.
+wd:Q26713754 wdt:P31 wd:Q838948 .
+wd:Q26713754 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q26713754 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20019.jpg".
+wd:Q26713754 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q26713754 pgdc:piwigo_image "19206".
+wd:Q26713754 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q28020401 rdfs:label """Portrait of a Man (Condottiere Malatesta Baglioni?)"""@fr.
+wd:Q28020401 wdt:P31 wd:Q838948 .
+wd:Q28020401 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q28020401 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20015.jpg".
+wd:Q28020401 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Francesco%20Mazzola%20gen.%20Parmigianino%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Bildnis%20eines%20W%C3%BCrdentr%C3%A4gers%20%28fr%C3%BCher%2C%20Condottiere%20Malatesta%20Baglione%5E%29%20-%20GG%20277%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q28020401 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28020401 pgdc:piwigo_image "19207".
+wd:Q28020401 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q28035517 rdfs:label """Pallas Athena"""@fr.
+wd:Q28035517 wdt:P31 wd:Q838948 .
+wd:Q28035517 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q28035517 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20%28Parma%201503-Casalmaggiore%201540%29%20-%20Pallas%20Athena%20-%20RCIN%20405765%20-%20Royal%20Collection.jpg".
+wd:Q28035517 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28035517 pgdc:piwigo_image "19208".
+wd:Q28035517 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q28071078 rdfs:label """Child Saint John"""@fr.
+wd:Q28071078 wdt:P31 wd:Q838948 .
+wd:Q28071078 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q28071078 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Francesco%20Mazzola%20Parmigianino%20%281503-1540%29%20-%20Kinderkopf%20%28mit%20Schreibtafel%29%28Johannes%20der%20T%C3%A4ufer%29%20-%201405%20-%20F%C3%BChrermuseum.jpg".
+wd:Q28071078 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/St.%20John%20as%20a%20child%20by%20Parmigianino.jpg".
+wd:Q28071078 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28071078 pgdc:piwigo_image "19209".
+wd:Q28071078 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q29839542 rdfs:label """Madonna with Child and a monk - Parmigianino"""@fr.
+wd:Q29839542 wdt:P31 wd:Q838948 .
+wd:Q29839542 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q29839542 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Madonna%20with%20Child%20and%20a%20monk%20-%20Parmigianino.jpg".
+wd:Q29839542 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29839542 pgdc:piwigo_image "19210".
+wd:Q29839542 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q28035519 rdfs:label """Portrait of a Young Nobleman"""@fr.
+wd:Q28035519 wdt:P31 wd:Q838948 .
+wd:Q28035519 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q28035519 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20%28Parma%201503-Casalmaggiore%201540%29%20-%20Portrait%20of%20a%20Young%20Nobleman%20-%20RCIN%20406025%20-%20Royal%20Collection.jpg".
+wd:Q28035519 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28035519 pgdc:piwigo_image "19211".
+wd:Q28035519 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q30057024 rdfs:label """Q30057024"""@fr.
+wd:Q30057024 wdt:P31 wd:Q838948 .
+wd:Q30057024 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q30057024 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parma%20-%20Selene%20und%20Endymion%20-%201255%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30057024 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30057024 pgdc:piwigo_image "19212".
+wd:Q30057024 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q106262020 rdfs:label """Madonna Doria"""@fr.
+wd:Q106262020 wdt:P31 wd:Q838948 .
+wd:Q106262020 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q106262020 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%2C%20madonna%20doria.jpg".
+wd:Q106262020 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q106262020 pgdc:piwigo_image "19213".
+wd:Q106262020 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q65129606 rdfs:label """Q65129606"""@fr.
+wd:Q65129606 wdt:P31 wd:Q838948 .
+wd:Q65129606 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q65129606 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20%E2%80%94%20Brustbild%20eines%20Johanniters.jpg".
+wd:Q65129606 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q65129606 pgdc:piwigo_image "19214".
+wd:Q65129606 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q111642006 rdfs:label """Q111642006"""@fr.
+wd:Q111642006 wdt:P31 wd:Q838948 .
+wd:Q111642006 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q111642006 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Francesco%20Mazzola%20Parmigianino%20%281503-1540%29%20-%20Portr%C3%A4t%20eines%20Mannes%20mit%20Mantel%20und%20Degen%20-%201155%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111642006 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111642006 pgdc:piwigo_image "19215".
+wd:Q111642006 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q118676406 rdfs:label """The Mystic Marriage of Saint Catherine"""@fr.
+wd:Q118676406 wdt:P31 wd:Q838948 .
+wd:Q118676406 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q118676406 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Mystic%20Marriage%20of%20St%20Catherine%20-%20after%20Parmigianino.jpg".
+wd:Q118676406 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q118676406 pgdc:piwigo_image "19216".
+wd:Q118676406 pgdc:piwigo_gallery kgdc:gal783.
+wd:Q112078318 rdfs:label """Virgin and Child with Saint John the Baptist and Mary Magdalene"""@fr.
+wd:Q112078318 wdt:P31 wd:Q838948 .
+wd:Q112078318 wdt:P170 wd:Q9348.
+wd:Q9348 rdfs:label """Parmigianino"""@fr.
+wd:Q9348 wdt:P31 wd:Q3391743 .
+wd:Q112078318 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigianino%20-%20Virgin%20and%20Child%20with%20St.%20John%20the%20Baptist%20and%20Mary%20Magdalene.jpg".
+wd:Q112078318 pgdc:sparql kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp .
+kgdc:sparqlQGr2hzaUO9ztgUAH2T7bkr3F2HFxxIoCeZusd8oHoOp pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q9348 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q9348 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q112078318 pgdc:piwigo_image "19217".
+wd:Q112078318 pgdc:piwigo_gallery kgdc:gal783.

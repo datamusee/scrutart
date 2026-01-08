@@ -1,0 +1,507 @@
+wd:Q131807813 rdfs:label """Dispute de philosophes"""@fr.
+wd:Q131807813 wdt:P31 wd:Q838948 .
+wd:Q131807813 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q131807813 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20des%20Beaux-Arts%20de%20Bordeaux%20-%20Dispute%20de%20philosophes.jpg".
+wd:Q131807813 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131807813 pgdc:piwigo_image "13901".
+wd:Q131807813 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q104581613 rdfs:label """Un miracle de saint Benoît"""@fr.
+wd:Q104581613 wdt:P31 wd:Q838948 .
+wd:Q104581613 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q104581613 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/A%20miracle%20by%20Saint%20Benedict%20mg%200167.jpg".
+wd:Q104581613 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104581613 pgdc:piwigo_image "13902".
+wd:Q104581613 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q117745559 rdfs:label """DIANE ET CALLISTO"""@fr.
+wd:Q117745559 wdt:P31 wd:Q838948 .
+wd:Q117745559 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q117745559 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/DIANE%20ET%20CALLISTO.jpg".
+wd:Q117745559 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q117745559 pgdc:piwigo_image "13903".
+wd:Q117745559 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q118193121 rdfs:label """Le départ de Jacob de chez Laban"""@fr.
+wd:Q118193121 wdt:P31 wd:Q838948 .
+wd:Q118193121 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q118193121 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Albi%29%20Le%20d%C3%A9part%20de%20Jacob%20de%20chez%20Laban%20-%20Luca%20Giordano%20-%20Mus%C3%A9e%20Toulouse-Lautrec.jpg".
+wd:Q118193121 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q118193121 pgdc:piwigo_image "13904".
+wd:Q118193121 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q104471909 rdfs:label """Ecce Homo"""@fr.
+wd:Q104471909 wdt:P31 wd:Q838948 .
+wd:Q104471909 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q104471909 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Luca%20%28dit%20Fa%20Presto%29%20Giordano%20-%20Ecce%20Homo%20-%20PPP2534%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20la%20ville%20de%20Paris.jpg".
+wd:Q104471909 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104471909 pgdc:piwigo_image "13905".
+wd:Q104471909 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q115674134 rdfs:label """La Conversion de saint Paul sur le chemin de Damas"""@fr.
+wd:Q115674134 wdt:P31 wd:Q838948 .
+wd:Q115674134 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q115674134 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20d%27art%20et%20d%27arch%C3%A9ologie%20du%20P%C3%A9rigord%20-%20Luca%20Giordano%20-%20Saint%20Paul%20sur%20le%20chemin%20de%20Damas.jpg".
+wd:Q115674134 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115674134 pgdc:piwigo_image "13906".
+wd:Q115674134 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q59504099 rdfs:label """The Crucifixion of St. Andrew"""@fr.
+wd:Q59504099 wdt:P31 wd:Q838948 .
+wd:Q59504099 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q59504099 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Luca%20Giordano%20-%20Crucifixion%20of%20St%20Andrew.jpg".
+wd:Q59504099 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q59504099 pgdc:piwigo_image "13907".
+wd:Q59504099 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q65457007 rdfs:label """L'élévation de la croix"""@fr.
+wd:Q65457007 wdt:P31 wd:Q838948 .
+wd:Q65457007 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q65457007 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre-Luca%20Giordano%201685c%20L%27%C3%A9l%C3%A9vation%20de%20la%20croix.jpg".
+wd:Q65457007 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q65457007 pgdc:piwigo_image "13908".
+wd:Q65457007 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q18573365 rdfs:label """Philosophe avec une gourde à la ceinture"""@fr.
+wd:Q18573365 wdt:P31 wd:Q838948 .
+wd:Q18573365 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q18573365 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Luca%20giordano%2C%20filosofo%2C%201660%20ca.%2002.JPG".
+wd:Q18573365 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573365 pgdc:piwigo_image "13909".
+wd:Q18573365 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q18573368 rdfs:label """Saint Antoine de Padoue et l'enfant Jésus"""@fr.
+wd:Q18573368 wdt:P31 wd:Q838948 .
+wd:Q18573368 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q18573368 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Luca%20giordano%2C%20sant%27antonio%20da%20padova%20col%20bambin%20ges%C3%B9%2C%201655-60%20ca..JPG".
+wd:Q18573368 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573368 pgdc:piwigo_image "13910".
+wd:Q18573368 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q18573412 rdfs:label """Un concert"""@fr.
+wd:Q18573412 wdt:P31 wd:Q838948 .
+wd:Q18573412 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q18573412 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Un%20concert%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%2056%20%3B%20MR%20106.jpg".
+wd:Q18573412 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573412 pgdc:piwigo_image "13911".
+wd:Q18573412 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q18573363 rdfs:label """Philosophe aux lunettes"""@fr.
+wd:Q18573363 wdt:P31 wd:Q838948 .
+wd:Q18573363 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q18573363 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Luca%20giordano%2C%20filosofo%2C%201660%20ca.%2001.JPG".
+wd:Q18573363 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573363 pgdc:piwigo_image "13912".
+wd:Q18573363 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q18573566 rdfs:label """Mars et Vénus dans la forge de Vulcain"""@fr.
+wd:Q18573566 wdt:P31 wd:Q838948 .
+wd:Q18573566 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q18573566 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mars%20et%20V%C3%A9nus%20dans%20la%20forge%20de%20Vulcain%20-%20Luca%20Giordano%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%20306%20%3B%20MR%20244.jpg".
+wd:Q18573566 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573566 pgdc:piwigo_image "1068".
+wd:Q18573566 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q18573564 rdfs:label """Le Christ apparaissant à la Madeleine"""@fr.
+wd:Q18573564 wdt:P31 wd:Q838948 .
+wd:Q18573564 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q18573564 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Christ%20apparaissant%20%C3%A0%20la%20Madeleine%20-%20Luca%20Giordano%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%201983%2061.jpg".
+wd:Q18573564 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573564 pgdc:piwigo_image "13913".
+wd:Q18573564 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q3967207 rdfs:label """Le Mariage de la Vierge"""@fr.
+wd:Q3967207 wdt:P31 wd:Q838948 .
+wd:Q3967207 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q3967207 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/F0402%20Louvre%20Giordano%20Mariage%20Vierge%20MI868%20rwk.jpg".
+wd:Q3967207 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3967207 pgdc:piwigo_image "13914".
+wd:Q3967207 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q3605548 rdfs:label """L'Adoration des bergers"""@fr.
+wd:Q3605548 wdt:P31 wd:Q838948 .
+wd:Q3605548 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q3605548 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%27Adoration%20des%20bergers%20-%20Luca%20Giordano%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20MI%20869.jpg".
+wd:Q3605548 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3605548 pgdc:piwigo_image "13915".
+wd:Q3605548 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q21677943 rdfs:label """La Vision de Marie l'Egyptienne"""@fr.
+wd:Q21677943 wdt:P31 wd:Q838948 .
+wd:Q21677943 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q21677943 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Het%20visioen%20van%20Maria%20van%20Egypte%2C%20Luca%20Giordano%2C%20Museum%20voor%20Schone%20Kunsten%20Gent%2C%201931-AI%20%282%29.jpg".
+wd:Q21677943 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Luca%20Giordano%20-%20The%20Vision%20of%20Saint%20Mary%20of%20Egypt%20-%201931-AI%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21677943 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21677943 pgdc:piwigo_image "13916".
+wd:Q21677943 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q18573366 rdfs:label """Philosophe tenant un livre et un rouleau de papier"""@fr.
+wd:Q18573366 wdt:P31 wd:Q838948 .
+wd:Q18573366 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q18573366 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Luca%20giordano%2C%20filosofo%2C%201660%20ca.%2003.JPG".
+wd:Q18573366 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18573366 pgdc:piwigo_image "13917".
+wd:Q18573366 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q25395400 rdfs:label """Saint Luc peignant la Vierge"""@fr.
+wd:Q25395400 wdt:P31 wd:Q838948 .
+wd:Q25395400 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q25395400 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Lucas%20painting%20the%20Virgin-Luca%20Giordano-MBA%20Lyon%20A55-IMG%200374.jpg".
+wd:Q25395400 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q25395400 pgdc:piwigo_image "13918".
+wd:Q25395400 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q3863245 rdfs:label """La Mort de Sénèque"""@fr.
+wd:Q3863245 wdt:P31 wd:Q838948 .
+wd:Q3863245 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q3863245 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/La%20mort%20de%20seneque.jpg".
+wd:Q3863245 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3863245 pgdc:piwigo_image "13919".
+wd:Q3863245 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q18822258 rdfs:label """Dispute de théologiens"""@fr.
+wd:Q18822258 wdt:P31 wd:Q838948 .
+wd:Q18822258 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q18822258 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giordano-Th%C3%A9ologiens-Bordeaux.jpg".
+wd:Q18822258 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18822258 pgdc:piwigo_image "9098".
+wd:Q18822258 pgdc:piwigo_gallery kgdc:gal417.
+wd:Q21679914 rdfs:label """La Reine Isabelle dévorée par les chiens"""@fr.
+wd:Q21679914 wdt:P31 wd:Q838948 .
+wd:Q21679914 wdt:P170 wd:Q332494.
+wd:Q332494 rdfs:label """Luca Giordano"""@fr.
+wd:Q332494 wdt:P31 wd:Q3391743 .
+wd:Q21679914 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Luca%20Giordano%20-%20Dogs%20Devouring%20Queen%20Jezebel%20-%201961-F%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21679914 pgdc:sparql kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 .
+kgdc:sparqlTLQMfVqUdp97YkfNfRMwBzGfHaGVs7cBcqFByGhxQI2 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q332494 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21679914 pgdc:piwigo_image "13920".
+wd:Q21679914 pgdc:piwigo_gallery kgdc:gal417.

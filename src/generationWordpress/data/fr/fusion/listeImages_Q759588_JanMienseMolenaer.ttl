@@ -1,0 +1,2871 @@
+wd:Q51078175 rdfs:label """Joyeuse compagnie"""@fr.
+wd:Q51078175 wdt:P31 wd:Q838948 .
+wd:Q51078175 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51078175 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Molenaer%2C%20Joyeuse%20compagnie.jpg".
+wd:Q51078175 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51078175 pgdc:piwigo_image "9825".
+wd:Q51078175 pgdc:piwigo_gallery kgdc:gal647.
+wd:Q116702159 rdfs:label """Fête rustique"""@fr.
+wd:Q116702159 wdt:P31 wd:Q838948 .
+wd:Q116702159 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q116702159 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/N%C3%AEmes%2CBeaux%20Arts156.jpg".
+wd:Q116702159 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116702159 pgdc:piwigo_image "13076".
+wd:Q116702159 pgdc:piwigo_gallery kgdc:gal647.
+wd:Q21674588 rdfs:label """Kermesse de village"""@fr.
+wd:Q21674588 wdt:P31 wd:Q838948 .
+wd:Q21674588 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q21674588 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Village%20Fair%20-%201904-F%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21674588 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dorpsfeest%2C%20Jan%20Miense%20Molenaer%2C%201644%2C%20Koninklijk%20Museum%20voor%20Schone%20Kunsten%20Gent%2C%201904-F.jpg".
+wd:Q21674588 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21674588 pgdc:piwigo_image "13077".
+wd:Q21674588 pgdc:piwigo_gallery kgdc:gal647.
+wd:Q51095092 rdfs:label """Theatre Scene from Lucelle by Bredero"""@fr.
+wd:Q51095092 wdt:P31 wd:Q838948 .
+wd:Q51095092 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51095092 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Theatre%20Scene%20from%20Lucelle%20by%20Bredero.jpg".
+wd:Q51095092 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51096041 rdfs:label """Theatre Scene from Lucelle by Bredero"""@fr.
+wd:Q51096041 wdt:P31 wd:Q838948 .
+wd:Q51096041 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51096041 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Scene%20from%20Lucelle%207503.jpg".
+wd:Q51096041 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17275939 rdfs:label """Feestende boeren"""@fr.
+wd:Q17275939 wdt:P31 wd:Q838948 .
+wd:Q17275939 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17275939 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Feasting%20Peasants%20by%20Jan%20Miense%20Molenaer%20Rijksdienst%20voor%20het%20Cultureel%20Erfgoed.jpg".
+wd:Q17275939 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q4869985 rdfs:label """Battle Between Carnival and Lent"""@fr.
+wd:Q4869985 wdt:P31 wd:Q838948 .
+wd:Q4869985 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q4869985 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Molenaer%2C%20Jan%20Miense%20-%20Battle%20Between%20Carnival%20and%20Lent%20-%20Google%20Art%20Project.jpg".
+wd:Q4869985 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17275987 rdfs:label """Les Cinq Sens : Le Toucher"""@fr.
+wd:Q17275987 wdt:P31 wd:Q838948 .
+wd:Q17275987 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17275987 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Five%20Senses%2C%20Touch%20-%20572%20-%20Mauritshuis.jpg".
+wd:Q17275987 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51096489 rdfs:label """Itinerant Hawkers at a Fair"""@fr.
+wd:Q51096489 wdt:P31 wd:Q838948 .
+wd:Q51096489 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51096489 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Molenaer%2C%20Jan%20Miense%20-%20Fahrende%20H%C3%A4ndler%20auf%20einem%20Jahrmarkt.jpg".
+wd:Q51096489 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51097207 rdfs:label """Figures Smoking and Playing Music in an Inn"""@fr.
+wd:Q51097207 wdt:P31 wd:Q838948 .
+wd:Q51097207 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51097207 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Figures%20Smoking%20and%20Playing%20Music%20in%20an%20Inn.jpg".
+wd:Q51097207 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17275988 rdfs:label """Les Cinq Sens : La Vue"""@fr.
+wd:Q17275988 wdt:P31 wd:Q838948 .
+wd:Q17275988 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17275988 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Five%20Senses%2C%20Sight%20-%20573%20-%20Mauritshuis.jpg".
+wd:Q17275988 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51119663 rdfs:label """Figures Proclaiming the News on Barrels Outside an Inn"""@fr.
+wd:Q51119663 wdt:P31 wd:Q838948 .
+wd:Q51119663 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51119663 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Figures%20Proclaiming%20the%20News%20on%20Barrels%20Outside%20an%20Inn%20by%20Jan%20Miense%20Molenaer.jpg".
+wd:Q51119663 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17275989 rdfs:label """Les Cinq Sens : L'Ouïe"""@fr.
+wd:Q17275989 wdt:P31 wd:Q838948 .
+wd:Q17275989 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17275989 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Five%20Senses%2C%20Hearing%20-%20574%20-%20Mauritshuis.jpg".
+wd:Q17275989 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17275990 rdfs:label """Les Cinq Sens : L'Odorat"""@fr.
+wd:Q17275990 wdt:P31 wd:Q838948 .
+wd:Q17275990 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17275990 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Smell.jpg".
+wd:Q17275990 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Five%20Senses%2C%20Smell%20-%20575%20-%20Mauritshuis.jpg".
+wd:Q17275990 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17275991 rdfs:label """Les Cinq Sens : Le Goût"""@fr.
+wd:Q17275991 wdt:P31 wd:Q838948 .
+wd:Q17275991 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17275991 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Five%20Senses%2C%20Taste%20-%20576%20-%20Mauritshuis.jpg".
+wd:Q17275991 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51119871 rdfs:label """The Dentist"""@fr.
+wd:Q51119871 wdt:P31 wd:Q838948 .
+wd:Q51119871 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51119871 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Molenaer%20Jan%20Miense%20The%20Dentist%40Herzog%20Anton%20Ulrich%20Museum%20%281%29.JPG".
+wd:Q51119871 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51121606 rdfs:label """A Merry Company"""@fr.
+wd:Q51121606 wdt:P31 wd:Q838948 .
+wd:Q51121606 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51121606 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20Merry%20Company%203671.jpg".
+wd:Q51121606 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17331409 rdfs:label """Cheating at cards"""@fr.
+wd:Q17331409 wdt:P31 wd:Q838948 .
+wd:Q17331409 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17331409 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Het%20valse%20kaartspelen%20Rijksmuseum%20SK-A-3023.jpeg".
+wd:Q17331409 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17341974 rdfs:label """Femme jouant du virginal"""@fr.
+wd:Q17341974 wdt:P31 wd:Q838948 .
+wd:Q17341974 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17341974 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/De%20virginaalspeelster%2C%20SK-C-140.jpg".
+wd:Q17341974 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51124085 rdfs:label """Peasant Wedding Feast"""@fr.
+wd:Q51124085 wdt:P31 wd:Q838948 .
+wd:Q51124085 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51124085 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Peasant%20Wedding%20Feast%203326.jpg".
+wd:Q51124085 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17342110 rdfs:label """Saying grace"""@fr.
+wd:Q17342110 wdt:P31 wd:Q838948 .
+wd:Q17342110 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17342110 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Het%20gebed%20voor%20de%20maaltijd%20Rijksmuseum%20SK-C-188.jpeg".
+wd:Q17342110 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51124903 rdfs:label """Merry Company at a Table"""@fr.
+wd:Q51124903 wdt:P31 wd:Q838948 .
+wd:Q51124903 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51124903 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Merry%20Company%20at%20a%20Table%205165.jpg".
+wd:Q51124903 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51125806 rdfs:label """Merry Company making Music"""@fr.
+wd:Q51125806 wdt:P31 wd:Q838948 .
+wd:Q51125806 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51125806 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Merry%20Company%2C%201631%20L07030-37-lr-1.jpg".
+wd:Q51125806 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17524324 rdfs:label """Self-Portrait with the Artist's Family"""@fr.
+wd:Q17524324 wdt:P31 wd:Q838948 .
+wd:Q17524324 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17524324 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20004.jpg".
+wd:Q17524324 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/J.M.%20Molenaer%20-%20Zelfportret%20van%20Jan%20Miense%20Molenaer%20met%20zijn%20familie%20-%20NK3048%20-%20Frans%20Hals%20Museum.jpg".
+wd:Q17524324 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51126710 rdfs:label """The Village Inn"""@fr.
+wd:Q51126710 wdt:P31 wd:Q838948 .
+wd:Q51126710 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51126710 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Village%20Inn.jpg".
+wd:Q51126710 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17524344 rdfs:label """Peasants near a tavern"""@fr.
+wd:Q17524344 wdt:P31 wd:Q838948 .
+wd:Q17524344 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q17524344 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/J.M.%20Molenaer%20-%20Boerengezelschap%20voor%20een%20taveerne%20-%20NK2209%20-%20Frans%20Hals%20Museum.jpg".
+wd:Q17524344 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20MIense%20Molenaer%20-%20Gezelschap%20voor%20de%20herberg%20%60De%20Kroon%27.jpg".
+wd:Q17524344 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51131738 rdfs:label """Three Children drinking and Making Mischief"""@fr.
+wd:Q51131738 wdt:P31 wd:Q838948 .
+wd:Q51131738 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51131738 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Three%20Children%20drinking%20and%20Making%20Mischief%20038L14034%207GHFX.jpg".
+wd:Q51131738 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18601010 rdfs:label """Village festival"""@fr.
+wd:Q18601010 wdt:P31 wd:Q838948 .
+wd:Q18601010 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q18601010 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Dorpsfeest%20-%20NM%20558%20-%20Nationalmuseum.jpg".
+wd:Q18601010 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18601321 rdfs:label """Merry company"""@fr.
+wd:Q18601321 wdt:P31 wd:Q838948 .
+wd:Q18601321 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q18601321 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Drinking%20Bout%20in%20an%20Inn%20%28Jan%20Miense%20Molenaer%29%20-%20Nationalmuseum%20-%2023607.tif".
+wd:Q18601321 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19326053 rdfs:label """La Faiseuse de crêpes"""@fr.
+wd:Q19326053 wdt:P31 wd:Q838948 .
+wd:Q19326053 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q19326053 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20De%20pannenkoekenbakster%20FHM01%20OS-I-244%20W.JPG".
+wd:Q19326053 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18601555 rdfs:label """Scene from a Village School"""@fr.
+wd:Q18601555 wdt:P31 wd:Q838948 .
+wd:Q18601555 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q18601555 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Scene%20from%20a%20Village%20School%20%28Jan%20Miense%20Molenaer%29%20-%20Nationalmuseum%20-%2017683.tif".
+wd:Q18601555 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51132260 rdfs:label """Three Children playing Music"""@fr.
+wd:Q51132260 wdt:P31 wd:Q838948 .
+wd:Q51132260 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51132260 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Three%20children%20playing%20music.jpg".
+wd:Q51132260 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51134091 rdfs:label """Folk singers selling their songs"""@fr.
+wd:Q51134091 wdt:P31 wd:Q838948 .
+wd:Q51134091 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51134091 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Folk%20singers%20selling%20their%20songs%20AM1057-30-lr-1.jpg".
+wd:Q51134091 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19928358 rdfs:label """Merry company"""@fr.
+wd:Q19928358 wdt:P31 wd:Q838948 .
+wd:Q19928358 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q19928358 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Vrolijk%20gezelschap%20-%201530%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg".
+wd:Q19928358 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19928340 rdfs:label """Children teasing dwarves"""@fr.
+wd:Q19928340 wdt:P31 wd:Q838948 .
+wd:Q19928340 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q19928340 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Sc%C3%A8ne%20met%20dwergen%20-%20BRL%202011-08%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg".
+wd:Q19928340 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19925287 rdfs:label """Merry company, three men at a table and a woman standing"""@fr.
+wd:Q19925287 wdt:P31 wd:Q838948 .
+wd:Q19925287 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q19925287 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Vrolijk%20gezelschap%20-%201534%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg".
+wd:Q19925287 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20257725 rdfs:label """Marriage of Willem van Loon and Margaretha Bas"""@fr.
+wd:Q20257725 wdt:P31 wd:Q838948 .
+wd:Q20257725 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20257725 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Marriage%20of%20Willem%20van%20Loon%20and%20Margaretha%20Bas%201637%20JM%20Molenear.jpg".
+wd:Q20257725 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q52198726 rdfs:label """A Group of Children teasing a Dog with a Cat"""@fr.
+wd:Q52198726 wdt:P31 wd:Q838948 .
+wd:Q52198726 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q52198726 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20%28c.1610-1668%29%20-%20A%20Group%20of%20Children%20Teasing%20a%20Dog%20with%20a%20Cat%20-%20631059%20-%20National%20Trust.jpg".
+wd:Q52198726 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20278439 rdfs:label """Et umage par"""@fr.
+wd:Q20278439 wdt:P31 wd:Q838948 .
+wd:Q20278439 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20278439 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Et%20umage%20par%20-%20KMS3024%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20278439 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20268221 rdfs:label """The Jealous Wife"""@fr.
+wd:Q20268221 wdt:P31 wd:Q838948 .
+wd:Q20268221 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20268221 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Jealous%20Wife%20-%20KMSsp478%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20268221 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q55620384 rdfs:label """Gypsies in a Village"""@fr.
+wd:Q55620384 wdt:P31 wd:Q838948 .
+wd:Q55620384 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q55620384 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Gypsies%20in%20a%20Village%206891.jpg".
+wd:Q55620384 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q55434142 rdfs:label """The good drink"""@fr.
+wd:Q55434142 wdt:P31 wd:Q838948 .
+wd:Q55434142 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q55434142 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20good%20drink%20-%20NG.M.01368%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55434142 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20492634 rdfs:label """Festive Scene"""@fr.
+wd:Q20492634 wdt:P31 wd:Q838948 .
+wd:Q20492634 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20492634 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Festive%20Scene%20-%201956.11.36%20-%20Smithsonian%20American%20Art%20Museum.jpg".
+wd:Q20492634 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20422438 rdfs:label """Peasants at an Inn"""@fr.
+wd:Q20422438 wdt:P31 wd:Q838948 .
+wd:Q20422438 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20422438 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Peasants%20at%20an%20Inn%20-%20KMSsp479%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20422438 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q55623473 rdfs:label """Plundering Soldiers (theater scene)"""@fr.
+wd:Q55623473 wdt:P31 wd:Q838948 .
+wd:Q55623473 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q55623473 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Theatre%20Scene%207673.jpg".
+wd:Q55623473 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20538832 rdfs:label """The Bean King is Drinking"""@fr.
+wd:Q20538832 wdt:P31 wd:Q838948 .
+wd:Q20538832 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20538832 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Bean%20King%20is%20Drinking%20-%20KMSsp477%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20538832 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20540339 rdfs:label """Woman Holding a Jug"""@fr.
+wd:Q20540339 wdt:P31 wd:Q838948 .
+wd:Q20540339 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20540339 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20Woman%20Holding%20a%20Jug.jpg".
+wd:Q20540339 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20540341 rdfs:label """Peasants Carousing"""@fr.
+wd:Q20540341 wdt:P31 wd:Q838948 .
+wd:Q20540341 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20540341 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Peasants%20Carousing.jpg".
+wd:Q20540341 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q56036612 rdfs:label """School classroom with portrait of a family"""@fr.
+wd:Q56036612 wdt:P31 wd:Q838948 .
+wd:Q56036612 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q56036612 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20Schulstube%20mit%20Portrait%20einer%20Familie%201634.png".
+wd:Q56036612 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q55701057 rdfs:label """A Soldier's Family"""@fr.
+wd:Q55701057 wdt:P31 wd:Q838948 .
+wd:Q55701057 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q55701057 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Judith%20Leyster%20-%20a%20soldier%27s%20family.jpg".
+wd:Q55701057 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q60448408 rdfs:label """Scène pastorale"""@fr.
+wd:Q60448408 wdt:P31 wd:Q838948 .
+wd:Q60448408 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q60448408 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20%281610-1668%29%20-%20Tankred%20und%20Clorinde%20%28Geschichte%20von%20Granida%20und%20Daifilo%29%20-%203822%20-%20F%C3%BChrermuseum.jpg".
+wd:Q60448408 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q75135174 rdfs:label """The Pig Slaughtering"""@fr.
+wd:Q75135174 wdt:P31 wd:Q838948 .
+wd:Q75135174 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q75135174 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%2C%20Svineslagtningen%2C%20not%20dated%2C%200036NMK%2C%20Nivaagaards%20Malerisamling.jpg".
+wd:Q75135174 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20540774 rdfs:label """Peasant Family"""@fr.
+wd:Q20540774 wdt:P31 wd:Q838948 .
+wd:Q20540774 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20540774 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Peasant%20Family%20-%20KMS1858%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20540774 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20809461 rdfs:label """Quarreling Children"""@fr.
+wd:Q20809461 wdt:P31 wd:Q838948 .
+wd:Q20809461 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20809461 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Quarreling%20Children%20Cat438.jpg".
+wd:Q20809461 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20640610 rdfs:label """Portrait of the family of Haarlem mayor Ruychaver and Alijd van der Laen in 1629"""@fr.
+wd:Q20640610 wdt:P31 wd:Q838948 .
+wd:Q20640610 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q20640610 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20family%20of%20Haarlem%20mayor%20Ruychaver%20and%20Alijd%20van%20der%20Laen%201629.jpg".
+wd:Q20640610 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q78209266 rdfs:label """Musical company in an interior"""@fr.
+wd:Q78209266 wdt:P31 wd:Q838948 .
+wd:Q78209266 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q78209266 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Company%20Making%20Music%2C%201057-1465.jpg".
+wd:Q78209266 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104532650 rdfs:label """School"""@fr.
+wd:Q104532650 wdt:P31 wd:Q838948 .
+wd:Q104532650 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q104532650 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20School%20-%20M.Ob.1691%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104532650 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q105545939 rdfs:label """A Smiling Youth Wearing a Black Hat with a Feather and a Clay Pipe in the Brim"""@fr.
+wd:Q105545939 wdt:P31 wd:Q838948 .
+wd:Q105545939 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q105545939 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/A%20SMILING%20YOUTH%20WEARING%20A%20BLACK%20HAT%20WITH%20A%20FEATHER%20AND%20A%20CLAY%20PIPE%20IN%20THE%20BRIM%29.jpg".
+wd:Q105545939 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q105452143 rdfs:label """An elegant company merrymaking in an interior"""@fr.
+wd:Q105452143 wdt:P31 wd:Q838948 .
+wd:Q105452143 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q105452143 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/An%20elegant%20company%20merrymaking%20in%20an%20interior%20%29.jpg".
+wd:Q105452143 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21617768 rdfs:label """Saying Grace"""@fr.
+wd:Q21617768 wdt:P31 wd:Q838948 .
+wd:Q21617768 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q21617768 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Gebed%20voor%20de%20maaltijd%20-%20958%20-%20Royal%20Museum%20of%20Fine%20Arts%20Antwerp.tiff".
+wd:Q21617768 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21615047 rdfs:label """Shoot for a Prize"""@fr.
+wd:Q21615047 wdt:P31 wd:Q838948 .
+wd:Q21615047 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q21615047 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Prijsschieten%20-%20679%20-%20Royal%20Museum%20of%20Fine%20Arts%20Antwerp.tiff".
+wd:Q21615047 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106357894 rdfs:label """Village Wedding"""@fr.
+wd:Q106357894 wdt:P31 wd:Q838948 .
+wd:Q106357894 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q106357894 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Dorpsbruiloft%20-%20NM%201184%20-%20Nationalmuseum.jpg".
+wd:Q106357894 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111038995 rdfs:label """A happy couple in a landscape"""@fr.
+wd:Q111038995 wdt:P31 wd:Q838948 .
+wd:Q111038995 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q111038995 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20Happy%20Couple%20in%20a%20Landscape.jpg".
+wd:Q111038995 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21724910 rdfs:label """Winter Landscape with a Windmill"""@fr.
+wd:Q21724910 wdt:P31 wd:Q838948 .
+wd:Q21724910 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q21724910 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Winter%20Landscape%20with%20a%20Windmill%20-%20WGA16109.jpg".
+wd:Q21724910 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111635720 rdfs:label """Party of peasants"""@fr.
+wd:Q111635720 wdt:P31 wd:Q838948 .
+wd:Q111635720 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q111635720 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20%281610-1668%29%20-%20Zechende%20und%20tanzende%20Bauern%20-%200219%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111635720 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111641162 rdfs:label """family group"""@fr.
+wd:Q111641162 wdt:P31 wd:Q838948 .
+wd:Q111641162 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q111641162 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20%28und%20Judith%20Leyster%29%20%281610-1668%29%20-%20Familienszene%20mit%20Lautenspieler%20-%201005%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111641162 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111642516 rdfs:label """.........in an ... with violinist"""@fr.
+wd:Q111642516 wdt:P31 wd:Q838948 .
+wd:Q111642516 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q111642516 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20%281610-1668%29%20-%20Wirtshausszene%20-%201262%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111642516 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26692955 rdfs:label """Two Boys and a Girl making Music"""@fr.
+wd:Q26692955 wdt:P31 wd:Q838948 .
+wd:Q26692955 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q26692955 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Two%20Boys%20and%20a%20Girl%20Making%20Music%20-%20WGA16091.jpg".
+wd:Q26692955 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26706944 rdfs:label """A Young Man and Woman making Music"""@fr.
+wd:Q26706944 wdt:P31 wd:Q838948 .
+wd:Q26706944 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q26706944 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20Young%20Man%20playing%20a%20Theorbo%20and%20a%20Young%20Woman%20playing%20a%20Cittern%20NG%20NG%20NG1293.jpg".
+wd:Q26706944 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111649453 rdfs:label """Enfants jouant avec un chat"""@fr.
+wd:Q111649453 wdt:P31 wd:Q838948 .
+wd:Q111649453 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q111649453 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20%281610-1668%29%20-%20Bildnis%20zweier%20Kinder%20mit%20Katze%20-%203825%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111649453 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122802217 rdfs:label """Paysans buvant et fumant dans un intérieur"""@fr.
+wd:Q122802217 wdt:P31 wd:Q838948 .
+wd:Q122802217 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q122802217 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Paysans%20buvant%20et%20fumant%20dans%20un%20int%C3%A9rieur%2C%202011%20PAR%2001011%200034%20061404.jpg".
+wd:Q122802217 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26940801 rdfs:label """Q26940801"""@fr.
+wd:Q26940801 wdt:P31 wd:Q838948 .
+wd:Q26940801 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q26940801 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Dorpsomroeper%2C%20-%201948.0135%20-%20Groninger%20Museum.jpg".
+wd:Q26940801 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27982767 rdfs:label """Q27982767"""@fr.
+wd:Q27982767 wdt:P31 wd:Q838948 .
+wd:Q27982767 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q27982767 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miensz%20Molenaer%20-%20Musizierende%20Bauerngesellschaft%20-%20GG%205909%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27982767 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27000350 rdfs:label """Scene with Dwarves"""@fr.
+wd:Q27000350 wdt:P31 wd:Q838948 .
+wd:Q27000350 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q27000350 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Bullying%20Children%200342-01.jpg".
+wd:Q27000350 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114829130 rdfs:label """Q114829130"""@fr.
+wd:Q114829130 wdt:P31 wd:Q838948 .
+wd:Q114829130 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q114829130 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Lachende%20mansfiguur%20-%20MMB.0115.1%20-%20Museum%20Mayer%20van%20den%20Bergh.tiff".
+wd:Q114829130 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114760952 rdfs:label """Three Kings day feast"""@fr.
+wd:Q114760952 wdt:P31 wd:Q838948 .
+wd:Q114760952 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q114760952 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Driekoningenfeest%2C%20ca.%201660.jpg".
+wd:Q114760952 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28031002 rdfs:label """Head of a Laughing Youth"""@fr.
+wd:Q28031002 wdt:P31 wd:Q838948 .
+wd:Q28031002 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q28031002 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20%28Haarlem%201609-10-Haarlem%201668%29%20-%20Head%20of%20a%20Laughing%20Youth%20-%20RCIN%20405487%20-%20Royal%20Collection.jpg".
+wd:Q28031002 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20head%20of%20a%20laughing%20youth.jpg".
+wd:Q28031002 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28026404 rdfs:label """Peasants Merrymaking out of Doors"""@fr.
+wd:Q28026404 wdt:P31 wd:Q838948 .
+wd:Q28026404 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q28026404 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20%28Haarlem%201609-10-Haarlem%201668%29%20-%20Peasants%20Merrymaking%20out%20of%20Doors%20-%20RCIN%20405490%20-%20Royal%20Collection.jpg".
+wd:Q28026404 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28060243 rdfs:label """Children playing music in an interior"""@fr.
+wd:Q28060243 wdt:P31 wd:Q838948 .
+wd:Q28060243 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q28060243 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/J.M.%20Molenaer%20-%20Kinderen%20geven%20een%20concert%20-%20NK3055%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg".
+wd:Q28060243 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28060539 rdfs:label """Music-making children"""@fr.
+wd:Q28060539 wdt:P31 wd:Q838948 .
+wd:Q28060539 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q28060539 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/J.M.%20Molenaer%20-%20Musicerende%20kinderen%20-%20NK2696%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg".
+wd:Q28060539 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20%281610-1668%29%20-%20Musizierende%20Kinder%20-%201346%20-%20F%C3%BChrermuseum.jpg".
+wd:Q28060539 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Music-making%20children.jpg".
+wd:Q28060539 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28061194 rdfs:label """Village Festival"""@fr.
+wd:Q28061194 wdt:P31 wd:Q838948 .
+wd:Q28061194 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q28061194 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/J.M.%20Molenaer%20-%20Een%20dorpsfeest%20-%20NK2166%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg".
+wd:Q28061194 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28094367 rdfs:label """A Couple in an Interior"""@fr.
+wd:Q28094367 wdt:P31 wd:Q838948 .
+wd:Q28094367 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q28094367 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20Couple%20in%20an%20Interior%20-%20Google%20Art%20Project.jpg".
+wd:Q28094367 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20Couple%20in%20an%20Interior%20-%2050.35%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q28094367 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28100392 rdfs:label """The Ball Players"""@fr.
+wd:Q28100392 wdt:P31 wd:Q838948 .
+wd:Q28100392 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q28100392 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20De%20balspelers.jpg".
+wd:Q28100392 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28796740 rdfs:label """Allegory of Vanity"""@fr.
+wd:Q28796740 wdt:P31 wd:Q838948 .
+wd:Q28796740 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q28796740 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Allegory%20of%20Vanity%20-%20Google%20Art%20Project.jpg".
+wd:Q28796740 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28110751 rdfs:label """Q28110751"""@fr.
+wd:Q28110751 wdt:P31 wd:Q838948 .
+wd:Q28110751 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q28110751 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Peasant%20Wedding%20by%20Jan%20Miense%20Molenaer%20Rijksdienst%20voor%20het%20Cultureel%20Erfgoed%20B484.jpg".
+wd:Q28110751 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29846198 rdfs:label """The Clarinet Player"""@fr.
+wd:Q29846198 wdt:P31 wd:Q838948 .
+wd:Q29846198 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q29846198 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20De%20schalmeispeler%20-%201533%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg".
+wd:Q29846198 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29946299 rdfs:label """Autoportrait"""@fr.
+wd:Q29946299 wdt:P31 wd:Q838948 .
+wd:Q29946299 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q29946299 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20self%20portrait%201640.jpg".
+wd:Q29946299 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30093737 rdfs:label """Q30093737"""@fr.
+wd:Q30093737 wdt:P31 wd:Q838948 .
+wd:Q30093737 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q30093737 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Bauerngesellschaft%20im%20Wirtshaus%20-%202825%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30093737 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30094556 rdfs:label """Q30094556"""@fr.
+wd:Q30094556 wdt:P31 wd:Q838948 .
+wd:Q30094556 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q30094556 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Bauernstube%20-%205970%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30094556 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q31065175 rdfs:label """Allegory of Marital Fidelity"""@fr.
+wd:Q31065175 wdt:P31 wd:Q838948 .
+wd:Q31065175 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q31065175 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Allegory%20of%20Marital%20Fidelity.jpg".
+wd:Q31065175 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q43246667 rdfs:label """Två pojkar som leker med en katt"""@fr.
+wd:Q43246667 wdt:P31 wd:Q838948 .
+wd:Q43246667 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q43246667 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Tv%C3%A5%20pojkar%20som%20leker%20med%20en%20katt%20%28Jan%20Miense%20Molenaer%29%20-%20Nationalmuseum%20-%20159248.tif".
+wd:Q43246667 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q46047024 rdfs:label """A Clean Sweep"""@fr.
+wd:Q46047024 wdt:P31 wd:Q838948 .
+wd:Q46047024 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q46047024 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%2C%20Hendrik%20Martensz%20Sorgh%20historical%20attribution%20-%20Kartenspielende%20Kinder%20-%20R%2017%20-%20Kunsthaus%20Z%C3%BCrich.jpg".
+wd:Q46047024 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Clean%20Sweep%20%E2%80%93%20Jan%20Miense%20Molenaer%20%28Kunsthaus%20Z%C3%BCrich%29.jpg".
+wd:Q46047024 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q46205864 rdfs:label """Vanitas"""@fr.
+wd:Q46205864 wdt:P31 wd:Q838948 .
+wd:Q46205864 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q46205864 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20MIense%20Molenaer%20-%20Artist%20in%20his%20studio%2C%2080229.jpg".
+wd:Q46205864 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q46624704 rdfs:label """Self-Portrait as a Lute Player"""@fr.
+wd:Q46624704 wdt:P31 wd:Q838948 .
+wd:Q46624704 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q46624704 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Self-portrait%20as%20a%20Luteplayer.jpg".
+wd:Q46624704 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q46858113 rdfs:label """Artist in his Workshop"""@fr.
+wd:Q46858113 wdt:P31 wd:Q838948 .
+wd:Q46858113 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q46858113 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20%22Schilder%20in%20zijn%20Atelier%22.jpg".
+wd:Q46858113 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50940534 rdfs:label """'Slap Hands' (Handjeklap)"""@fr.
+wd:Q50940534 wdt:P31 wd:Q838948 .
+wd:Q50940534 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q50940534 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Clapping%20Game%20-%20Handjeklap%207535.jpg".
+wd:Q50940534 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50950357 rdfs:label """Portrait of a Young Lady"""@fr.
+wd:Q50950357 wdt:P31 wd:Q838948 .
+wd:Q50950357 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q50950357 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Monogrammist%20JPM%20-%20Portrait%20of%20a%20Young%20Lady.jpg".
+wd:Q50950357 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50973485 rdfs:label """The Duet"""@fr.
+wd:Q50973485 wdt:P31 wd:Q838948 .
+wd:Q50973485 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q50973485 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20005.jpg".
+wd:Q50973485 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50979454 rdfs:label """The Denial of Saint Peter"""@fr.
+wd:Q50979454 wdt:P31 wd:Q838948 .
+wd:Q50979454 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q50979454 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20006.jpg".
+wd:Q50979454 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50985683 rdfs:label """Christ Mocked and Crowned with Thorns"""@fr.
+wd:Q50985683 wdt:P31 wd:Q838948 .
+wd:Q50985683 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q50985683 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaar%20-%20Christ%20Mocked%20and%20Crowned%20with%20Thorns%20-%20Assendelft.jpg".
+wd:Q50985683 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50988730 rdfs:label """Card Players"""@fr.
+wd:Q50988730 wdt:P31 wd:Q838948 .
+wd:Q50988730 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q50988730 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Card%20Players.jpg".
+wd:Q50988730 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50979947 rdfs:label """Tavern of the Crescent Moon"""@fr.
+wd:Q50979947 wdt:P31 wd:Q838948 .
+wd:Q50979947 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q50979947 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20003.jpg".
+wd:Q50979947 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51035180 rdfs:label """The King Drinks"""@fr.
+wd:Q51035180 wdt:P31 wd:Q838948 .
+wd:Q51035180 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51035180 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20King%20Drinks%20-%20WGA16099.jpg".
+wd:Q51035180 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51034078 rdfs:label """The Duet"""@fr.
+wd:Q51034078 wdt:P31 wd:Q838948 .
+wd:Q51034078 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51034078 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Duet%20-%20WGA16097.jpg".
+wd:Q51034078 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51046031 rdfs:label """Self-Portrait with Judith Leyster: Duet"""@fr.
+wd:Q51046031 wdt:P31 wd:Q838948 .
+wd:Q51046031 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51046031 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Self-Portrait%20with%20Judith%20Leyster%2C%20Duet%20179N09102%20769JX.jpg".
+wd:Q51046031 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51044006 rdfs:label """A Family Merrymaking"""@fr.
+wd:Q51044006 wdt:P31 wd:Q838948 .
+wd:Q51044006 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51044006 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20Family%20Merrymaking%20VA%20PC%202006BC5951.jpg".
+wd:Q51044006 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51047502 rdfs:label """Boy smoking a pipe: Taste"""@fr.
+wd:Q51047502 wdt:P31 wd:Q838948 .
+wd:Q51047502 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51047502 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Boy%20smoking%20a%20pipe%20-%20Taste.jpg".
+wd:Q51047502 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51050105 rdfs:label """Portrait of a Gentleman"""@fr.
+wd:Q51050105 wdt:P31 wd:Q838948 .
+wd:Q51050105 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51050105 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Gentleman%20by%20Jan%20Miense%20Molenaer.jpg".
+wd:Q51050105 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51048825 rdfs:label """Children Playing and Merrymaking"""@fr.
+wd:Q51048825 wdt:P31 wd:Q838948 .
+wd:Q51048825 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51048825 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Children%20Playing%20and%20Merrymaking%20N08404-15-lr-1.jpg".
+wd:Q51048825 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51051558 rdfs:label """Three Women at a Virginal"""@fr.
+wd:Q51051558 wdt:P31 wd:Q838948 .
+wd:Q51051558 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51051558 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Three%20Women%20at%20a%20Virginal.jpg".
+wd:Q51051558 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51050387 rdfs:label """Portrait of a Young Violinist"""@fr.
+wd:Q51050387 wdt:P31 wd:Q838948 .
+wd:Q51050387 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51050387 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/An%20Interior%20with%20a%20Violinist.jpg".
+wd:Q51050387 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51069940 rdfs:label """A schoolroom interior, with a teacher at a podium, and pupils merrymaking"""@fr.
+wd:Q51069940 wdt:P31 wd:Q838948 .
+wd:Q51069940 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51069940 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20schoolroom%20interior%2C%20with%20a%20teacher%20at%20a%20podium%2C%20and%20pupils%20merrymaking.jpg".
+wd:Q51069940 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51070929 rdfs:label """A Boy with a Pipe"""@fr.
+wd:Q51070929 wdt:P31 wd:Q838948 .
+wd:Q51070929 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51070929 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Joven%20con%20Pipa.jpg".
+wd:Q51070929 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51071352 rdfs:label """Boy Holding a Tankard and a Pipe"""@fr.
+wd:Q51071352 wdt:P31 wd:Q838948 .
+wd:Q51071352 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51071352 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Boy%20Holding%20a%20Tankard%20and%20a%20Pipe.jpg".
+wd:Q51071352 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51074312 rdfs:label """The Artist's Studio"""@fr.
+wd:Q51074312 wdt:P31 wd:Q838948 .
+wd:Q51074312 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51074312 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Molenaer%2C%20Jan%20Miense%20-%20The%20Artist%27s%20Studio.jpg".
+wd:Q51074312 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51075206 rdfs:label """Les enfants faisant de la musique."""@fr.
+wd:Q51075206 wdt:P31 wd:Q838948 .
+wd:Q51075206 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51075206 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Molenaer%20Children%20making%20music.jpg".
+wd:Q51075206 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51075383 rdfs:label """Marchand ambulant"""@fr.
+wd:Q51075383 wdt:P31 wd:Q838948 .
+wd:Q51075383 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51075383 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Molenaer%20Itinerant%20peddler.jpg".
+wd:Q51075383 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51077206 rdfs:label """A Quack and His Assistant"""@fr.
+wd:Q51077206 wdt:P31 wd:Q838948 .
+wd:Q51077206 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51077206 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20Quack%20and%20His%20Assistant%20-%20WGA16106.jpg".
+wd:Q51077206 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51077324 rdfs:label """Smell"""@fr.
+wd:Q51077324 wdt:P31 wd:Q838948 .
+wd:Q51077324 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51077324 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Smell.jpg".
+wd:Q51077324 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51077340 rdfs:label """Three Children at a Table"""@fr.
+wd:Q51077340 wdt:P31 wd:Q838948 .
+wd:Q51077340 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51077340 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Three%20Children%20at%20a%20Table%203672.jpg".
+wd:Q51077340 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51077444 rdfs:label """Hearing"""@fr.
+wd:Q51077444 wdt:P31 wd:Q838948 .
+wd:Q51077444 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51077444 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Hearing%205204.jpg".
+wd:Q51077444 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51077472 rdfs:label """Le touché"""@fr.
+wd:Q51077472 wdt:P31 wd:Q838948 .
+wd:Q51077472 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51077472 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Touch.jpg".
+wd:Q51077472 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51078126 rdfs:label """Young Musicians and a Dancing Dwarf"""@fr.
+wd:Q51078126 wdt:P31 wd:Q838948 .
+wd:Q51078126 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51078126 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Young%20Musicians%20and%20a%20Dancing%20Dwarf%203167.jpg".
+wd:Q51078126 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51077882 rdfs:label """The Dentist"""@fr.
+wd:Q51077882 wdt:P31 wd:Q838948 .
+wd:Q51077882 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51077882 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Dentist%2052%209%2050.jpg".
+wd:Q51077882 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51078198 rdfs:label """Dance in a Village Street"""@fr.
+wd:Q51078198 wdt:P31 wd:Q838948 .
+wd:Q51078198 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51078198 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Dancing%20in%20a%20Village%20Street%205275.jpg".
+wd:Q51078198 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51078256 rdfs:label """La Main chaude"""@fr.
+wd:Q51078256 wdt:P31 wd:Q838948 .
+wd:Q51078256 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51078256 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Peasants%20in%20an%20Inn%20Playing%20%22La%20Main%20Chaude%22%20-%20WGA16102.jpg".
+wd:Q51078256 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51078274 rdfs:label """La Main chaude"""@fr.
+wd:Q51078274 wdt:P31 wd:Q838948 .
+wd:Q51078274 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51078274 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Peasants%20in%20an%20Inn%20Playing%20%22La%20Main%20Chaude%22%20-%20WGA16101.jpg".
+wd:Q51078274 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51078319 rdfs:label """The Drunken Peddler"""@fr.
+wd:Q51078319 wdt:P31 wd:Q838948 .
+wd:Q51078319 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51078319 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Drunken%20Peddler.jpg".
+wd:Q51078319 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51078405 rdfs:label """Departure of the Prodigal Son"""@fr.
+wd:Q51078405 wdt:P31 wd:Q838948 .
+wd:Q51078405 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51078405 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Departure%20of%20the%20Prodigal%20Son.jpg".
+wd:Q51078405 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51091986 rdfs:label """A young woman seated by a table"""@fr.
+wd:Q51091986 wdt:P31 wd:Q838948 .
+wd:Q51091986 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51091986 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20young%20woman%20seated%20by%20a%20table.jpg".
+wd:Q51091986 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51092598 rdfs:label """Portrait de femme assise"""@fr.
+wd:Q51092598 wdt:P31 wd:Q838948 .
+wd:Q51092598 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51092598 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Portrait%20of%20a%20Woman%20with%20Embroidered%20Gloves.jpg".
+wd:Q51092598 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51092843 rdfs:label """Peasants Teaching a Cat and Dog to Dance"""@fr.
+wd:Q51092843 wdt:P31 wd:Q838948 .
+wd:Q51092843 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51092843 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Peasants%20Teaching%20a%20Cat%20and%20Dog%20to%20Dance.jpg".
+wd:Q51092843 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51093492 rdfs:label """Card Players by Lamplight"""@fr.
+wd:Q51093492 wdt:P31 wd:Q838948 .
+wd:Q51093492 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51093492 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20Card%20Players%20by%20Lamplight.jpg".
+wd:Q51093492 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51093774 rdfs:label """A smoking man with an empty wine glass"""@fr.
+wd:Q51093774 wdt:P31 wd:Q838948 .
+wd:Q51093774 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51093774 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20A%20smoking%20man%20with%20an%20empty%20wine%20glass.jpg".
+wd:Q51093774 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51094273 rdfs:label """Taste"""@fr.
+wd:Q51094273 wdt:P31 wd:Q838948 .
+wd:Q51094273 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51094273 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20De%20smaak.jpg".
+wd:Q51094273 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q51094657 rdfs:label """The Fat Kitchen"""@fr.
+wd:Q51094657 wdt:P31 wd:Q838948 .
+wd:Q51094657 wdt:P170 wd:Q759588.
+wd:Q759588 rdfs:label """Jan Miense Molenaer"""@fr.
+wd:Q759588 wdt:P31 wd:Q3391743 .
+wd:Q51094657 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Miense%20Molenaer%20-%20The%20Fat%20Kitchen%202825.jpg".
+wd:Q51094657 pgdc:sparql kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF .
+kgdc:sparqlhwzyBPeGvinaMt8awPj5BW89b3zqQGDDluozRTsEysF pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q759588 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

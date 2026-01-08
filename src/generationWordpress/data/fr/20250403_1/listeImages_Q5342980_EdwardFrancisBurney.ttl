@@ -1,0 +1,70 @@
+wd:Q28553785 rdfs:label """Amateurs of Tye-Wig Music (‘Musicians of the Old School’)"""@fr.
+wd:Q28553785 wdt:P31 wd:Q838948 .
+wd:Q28553785 wdt:P170 wd:Q5342980.
+wd:Q5342980 rdfs:label """Edward Francis Burney"""@fr.
+wd:Q5342980 wdt:P31 wd:Q3391743 .
+wd:Q28553785 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Francis%20Burney%20%281760-1848%29%20-%20Amateurs%20of%20Tye-Wig%20Music%20%28%27Musicians%20of%20the%20Old%20School%27%29%20-%20T07278%20-%20Tate.jpg".
+wd:Q28553785 pgdc:sparql kgdc:sparqlMOVl9UmsNC6oGc2IDeoudIGt7bTf4LtK3j5Y6I2VoWU .
+kgdc:sparqlMOVl9UmsNC6oGc2IDeoudIGt7bTf4LtK3j5Y6I2VoWU pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q5342980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q5342980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28048093 rdfs:label """Frances d'Arblay ('Fanny Burney')"""@fr.
+wd:Q28048093 wdt:P31 wd:Q838948 .
+wd:Q28048093 wdt:P170 wd:Q5342980.
+wd:Q5342980 rdfs:label """Edward Francis Burney"""@fr.
+wd:Q5342980 wdt:P31 wd:Q3391743 .
+wd:Q28048093 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Frances%20d%27Arblay%20%28%27Fanny%20Burney%27%29%20by%20Edward%20Francisco%20Burney.jpg".
+wd:Q28048093 pgdc:sparql kgdc:sparqlMOVl9UmsNC6oGc2IDeoudIGt7bTf4LtK3j5Y6I2VoWU .
+kgdc:sparqlMOVl9UmsNC6oGc2IDeoudIGt7bTf4LtK3j5Y6I2VoWU pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q5342980 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q5342980 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.

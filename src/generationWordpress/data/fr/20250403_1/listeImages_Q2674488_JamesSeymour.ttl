@@ -1,0 +1,560 @@
+wd:Q23698379 rdfs:label """A Bay Racehorse with Jockey Up"""@fr.
+wd:Q23698379 wdt:P31 wd:Q838948 .
+wd:Q23698379 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q23698379 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20-%20A%20Bay%20Racehorse%20with%20Jockey%20Up%20-%20Google%20Art%20Project.jpg".
+wd:Q23698379 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19912805 rdfs:label """Portrait of a Horseman"""@fr.
+wd:Q19912805 wdt:P31 wd:Q838948 .
+wd:Q19912805 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q19912805 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Horseman%20MET%20DP169220.jpg".
+wd:Q19912805 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23700917 rdfs:label """Sir Roger Burgoyne Riding 'Badger'"""@fr.
+wd:Q23700917 wdt:P31 wd:Q838948 .
+wd:Q23700917 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q23700917 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20-%20Sir%20Roger%20Burgoyne%20Riding%20%27Badger%27%20-%20Google%20Art%20Project.jpg".
+wd:Q23700917 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23698404 rdfs:label """The Chaise Match Run on Newmarket Heath on Wednesday the 29th of August, 1750"""@fr.
+wd:Q23698404 wdt:P31 wd:Q838948 .
+wd:Q23698404 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q23698404 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20-%20The%20Chaise%20Match%20Run%20on%20Newmarket%20Heath%20on%20Wednesday%20the%2029th%20of%20August%2C%201750%20-%20B2014.5.25%20-%20Yale%20Center%20for%20British%20Art.jpg".
+wd:Q23698404 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23709274 rdfs:label """The Stables and Two Famous Running Horses belonging to His Grace, the Duke of Bolton"""@fr.
+wd:Q23709274 wdt:P31 wd:Q838948 .
+wd:Q23709274 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q23709274 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20-%20The%20Stables%20and%20Two%20Famous%20Running%20Horses%20belonging%20to%20His%20Grace%2C%20the%20Duke%20of%20Bolton%20-%20Google%20Art%20Project.jpg".
+wd:Q23709274 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23757957 rdfs:label """The Duke of Devonshire's Flying Childers"""@fr.
+wd:Q23757957 wdt:P31 wd:Q838948 .
+wd:Q23757957 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q23757957 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20-%20The%20Duke%20of%20Devonshire%27s%20Flying%20Childers%20-%20Google%20Art%20Project.jpg".
+wd:Q23757957 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23757977 rdfs:label """Old Fox held by a Groom"""@fr.
+wd:Q23757977 wdt:P31 wd:Q838948 .
+wd:Q23757977 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q23757977 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20-%20Old%20Fox%20held%20by%20a%20Groom%20-%20Google%20Art%20Project.jpg".
+wd:Q23757977 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28548330 rdfs:label """Mr Russell on his Bay Hunter"""@fr.
+wd:Q28548330 wdt:P31 wd:Q838948 .
+wd:Q28548330 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q28548330 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20%281702-1752%29%20-%20Mr%20Russell%20on%20his%20Bay%20Hunter%20-%20T02372%20-%20Tate.jpg".
+wd:Q28548330 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28548748 rdfs:label """A Kill at Ashdown Park"""@fr.
+wd:Q28548748 wdt:P31 wd:Q838948 .
+wd:Q28548748 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q28548748 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20%281702-1752%29%20-%20A%20Kill%20at%20Ashdown%20Park%20-%20T01115%20-%20Tate.jpg".
+wd:Q28548748 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28552032 rdfs:label """Chestnut Horse with a Groom near Newmarket"""@fr.
+wd:Q28552032 wdt:P31 wd:Q838948 .
+wd:Q28552032 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q28552032 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20%281702-1752%29%20-%20Chestnut%20Horse%20with%20a%20Groom%20near%20Newmarket%20-%20T02265%20-%20Tate.jpg".
+wd:Q28552032 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50821596 rdfs:label """Horse and groom"""@fr.
+wd:Q50821596 wdt:P31 wd:Q838948 .
+wd:Q50821596 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q50821596 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20%281702-1752%29%20-%20Horse%20and%20Groom%20-%20450%20-%20Fitzwilliam%20Museum.jpg".
+wd:Q50821596 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q52268844 rdfs:label """Hunting Scene: Hounds in Full Cry"""@fr.
+wd:Q52268844 wdt:P31 wd:Q838948 .
+wd:Q52268844 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q52268844 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20%281702-1752%29%20-%20Hunting%20Scene%20No.%201%20-%201271501%20-%20National%20Trust.jpg".
+wd:Q52268844 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q52268866 rdfs:label """Hunting Scene"""@fr.
+wd:Q52268866 wdt:P31 wd:Q838948 .
+wd:Q52268866 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q52268866 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Seymour%20%281702-1752%29%20-%20Hunting%20Scene%20No.%202%20-%201271502%20-%20National%20Trust.jpg".
+wd:Q52268866 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q122452079 rdfs:label """Q122452079"""@fr.
+wd:Q122452079 wdt:P31 wd:Q838948 .
+wd:Q122452079 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q122452079 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/1st%20Viscount%20Gage.jpg".
+wd:Q122452079 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q119812299 rdfs:label """Charles Powlett, 8th Marquess of Winchester (1685–1754)"""@fr.
+wd:Q119812299 wdt:P31 wd:Q838948 .
+wd:Q119812299 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q119812299 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/3rdDukeOfBolton.jpg".
+wd:Q119812299 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q105376610 rdfs:label """Mr John Martindale’s 'Sedbury', with Jockey Up"""@fr.
+wd:Q105376610 wdt:P31 wd:Q838948 .
+wd:Q105376610 wdt:P170 wd:Q2674488.
+wd:Q2674488 rdfs:label """James Seymour"""@fr.
+wd:Q2674488 wdt:P31 wd:Q3391743 .
+wd:Q105376610 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/MR%20JOHN%20MARTINDALE%E2%80%99S%20%27SEDBURY%27%2C%20WITH%20JOCKEY%20UP.jpg".
+wd:Q105376610 pgdc:sparql kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 .
+kgdc:sparqlrPdyFZMfDOfddLbCvyVQhhBRtQn9Dn8fttV4dvM2cv7 pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q2674488 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q2674488 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.

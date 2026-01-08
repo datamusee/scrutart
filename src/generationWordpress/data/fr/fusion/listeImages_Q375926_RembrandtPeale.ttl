@@ -1,0 +1,2059 @@
+wd:Q18507320 rdfs:label """portrait de Caroline Louisa Pratt Bartlett"""@fr.
+wd:Q18507320 wdt:P31 wd:Q838948 .
+wd:Q18507320 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q18507320 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Caroline%20Louisa%20Pratt%20Bartlett%20by%20Rembrandt%20Peale%20-%20BMA.jpg".
+wd:Q18507320 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19923848 rdfs:label """John Johnston"""@fr.
+wd:Q19923848 wdt:P31 wd:Q838948 .
+wd:Q19923848 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q19923848 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20John%20Johnston%20-%201980.77%20-%20Metropolitan%20Museum%20of%20Art.jpg".
+wd:Q19923848 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18749363 rdfs:label """Portrait of Dr. Meer"""@fr.
+wd:Q18749363 wdt:P31 wd:Q838948 .
+wd:Q18749363 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q18749363 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Portrait%20of%20Dr%20Meer%20-%20Walters%20372778.jpg".
+wd:Q18749363 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19925283 rdfs:label """Martha Washington"""@fr.
+wd:Q19925283 wdt:P31 wd:Q838948 .
+wd:Q19925283 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q19925283 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Martha%20Washington%20MET%20DT2059.jpg".
+wd:Q19925283 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20169720 rdfs:label """Michael Angelo and Emma Clara Peale"""@fr.
+wd:Q20169720 wdt:P31 wd:Q838948 .
+wd:Q20169720 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20169720 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Angelo%20and%20Emma%20Clara%20Peale.jpg".
+wd:Q20169720 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19925413 rdfs:label """The Marquis de Lafayette"""@fr.
+wd:Q19925413 wdt:P31 wd:Q838948 .
+wd:Q19925413 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q19925413 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Marquis%20de%20Lafayette%20MET%20DT2057.jpg".
+wd:Q19925413 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20170275 rdfs:label """George Washington"""@fr.
+wd:Q20170275 wdt:P31 wd:Q838948 .
+wd:Q20170275 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20170275 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/George%20Washington%20MET%20ap24.109.86.jpg".
+wd:Q20170275 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20172749 rdfs:label """George Washington"""@fr.
+wd:Q20172749 wdt:P31 wd:Q838948 .
+wd:Q20172749 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20172749 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20George%20Washington3.jpeg".
+wd:Q20172749 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20181472 rdfs:label """Timothy Matlack"""@fr.
+wd:Q20181472 wdt:P31 wd:Q838948 .
+wd:Q20181472 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20181472 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Timothy%20Matlack%20%28attributed%20to%20Rembrandt%20Peale%2C%201802%29.jpg".
+wd:Q20181472 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20181404 rdfs:label """Rubens Peale with a Geranium"""@fr.
+wd:Q20181404 wdt:P31 wd:Q838948 .
+wd:Q20181404 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20181404 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Rubens%20Peale%20with%20a%20Geranium%20-%20Google%20Art%20Project.jpg".
+wd:Q20181404 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20183759 rdfs:label """Richardson Stuart"""@fr.
+wd:Q20183759 wdt:P31 wd:Q838948 .
+wd:Q20183759 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20183759 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Richardson%20stuart.PNG".
+wd:Q20183759 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20187966 rdfs:label """George Washington"""@fr.
+wd:Q20187966 wdt:P31 wd:Q838948 .
+wd:Q20187966 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20187966 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/George%20Washington%20SC-000261.jpg".
+wd:Q20187966 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20188407 rdfs:label """George Washington"""@fr.
+wd:Q20188407 wdt:P31 wd:Q838948 .
+wd:Q20188407 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20188407 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/George%20washington%20-%20rembrandt%20peale.png".
+wd:Q20188407 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20188410 rdfs:label """Thomas Sully"""@fr.
+wd:Q20188410 wdt:P31 wd:Q838948 .
+wd:Q20188410 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20188410 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Sully%20G-000871-20111012.jpg".
+wd:Q20188410 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20202745 rdfs:label """George Washington"""@fr.
+wd:Q20202745 wdt:P31 wd:Q838948 .
+wd:Q20202745 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20202745 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20George%20Washington%20-%20Google%20Art%20Project%20%28721252%29.jpg".
+wd:Q20202745 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20198853 rdfs:label """Portrait of George Washington"""@fr.
+wd:Q20198853 wdt:P31 wd:Q838948 .
+wd:Q20198853 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20198853 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20George%20Washington.jpeg".
+wd:Q20198853 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20268162 rdfs:label """Samuel Fisher Bradford"""@fr.
+wd:Q20268162 wdt:P31 wd:Q838948 .
+wd:Q20268162 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20268162 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Samuel%20Fisher%20Bradford%20-%201986.21%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20268162 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20501071 rdfs:label """Portrait of Rosalba Peale"""@fr.
+wd:Q20501071 wdt:P31 wd:Q838948 .
+wd:Q20501071 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20501071 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Portrait%20of%20Rosalba%20Peale%20-%20Google%20Art%20Project.jpg".
+wd:Q20501071 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20501069 rdfs:label """Portrait of Edward Shippen Burd of Philadelphia"""@fr.
+wd:Q20501069 wdt:P31 wd:Q838948 .
+wd:Q20501069 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20501069 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Portrait%20of%20Edward%20Shippen%20Burd%20of%20Philadelphia%20-%20Google%20Art%20Project.jpg".
+wd:Q20501069 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20538925 rdfs:label """John B. Pendleton"""@fr.
+wd:Q20538925 wdt:P31 wd:Q838948 .
+wd:Q20538925 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20538925 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20John%20B.%20Pendleton%20-%201999.27.38%20-%20Smithsonian%20American%20Art%20Museum.jpg".
+wd:Q20538925 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20501073 rdfs:label """The Roman Daughter"""@fr.
+wd:Q20501073 wdt:P31 wd:Q838948 .
+wd:Q20501073 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20501073 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20roman%20daughter%20rembrandt%20peale.jpg".
+wd:Q20501073 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20268669 rdfs:label """Abigail Inskeep Bradford"""@fr.
+wd:Q20268669 wdt:P31 wd:Q838948 .
+wd:Q20268669 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20268669 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Abigail%20Inskeep%20Bradford%20-%202000.339%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q20268669 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20775640 rdfs:label """Dr. John Davidson Godman"""@fr.
+wd:Q20775640 wdt:P31 wd:Q838948 .
+wd:Q20775640 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20775640 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Dr.%20John%20Davidson%20Godman%20-%2043.136%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20775640 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20775637 rdfs:label """Duke of Wellington (copy after Sir Thomas Lawrence)"""@fr.
+wd:Q20775637 wdt:P31 wd:Q838948 .
+wd:Q20775637 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20775637 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Duke%20of%20Wellington%20%28copy%20after%20Sir%20Thomas%20Lawrence%29%20-%2003.1078%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20775637 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20862591 rdfs:label """George Washington, Patriae Pater"""@fr.
+wd:Q20862591 wdt:P31 wd:Q838948 .
+wd:Q20862591 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20862591 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27George%20Washington%2C%20Patriae%20Pater%27%20by%20Rembrandt%20Peale%2C%20c.%201824.JPG".
+wd:Q20862591 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20862585 rdfs:label """Chief Justice William Tilghman"""@fr.
+wd:Q20862585 wdt:P31 wd:Q838948 .
+wd:Q20862585 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20862585 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Chief%20Justice%20William%20Tilghman%20Rembrandt%20Peale.jpg".
+wd:Q20862585 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20775649 rdfs:label """George Washington"""@fr.
+wd:Q20775649 wdt:P31 wd:Q838948 .
+wd:Q20775649 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20775649 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20George%20Washington%20-%2030.474%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20775649 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20775643 rdfs:label """Samuel Rodman"""@fr.
+wd:Q20775643 wdt:P31 wd:Q838948 .
+wd:Q20775643 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20775643 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Samuel%20Rodman%20-%2049.1146%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20775643 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20775646 rdfs:label """Mrs. Samuel Rodman (Elizabeth Rotch)"""@fr.
+wd:Q20775646 wdt:P31 wd:Q838948 .
+wd:Q20775646 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20775646 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Mrs.%20Samuel%20Rodman%20%28Elizabeth%20Rotch%29%20-%2049.1147%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20775646 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20862592 rdfs:label """Hon. Edward Tilghman"""@fr.
+wd:Q20862592 wdt:P31 wd:Q838948 .
+wd:Q20862592 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20862592 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Hon.%20Edward%20Tilghman%20by%20Rembrandt%20Peale.jpg".
+wd:Q20862592 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20862594 rdfs:label """Jean Antoine Houdon"""@fr.
+wd:Q20862594 wdt:P31 wd:Q838948 .
+wd:Q20862594 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20862594 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20antoine%20houdon-rembrandt%20peale.jpg".
+wd:Q20862594 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20862600 rdfs:label """Autoportrait"""@fr.
+wd:Q20862600 wdt:P31 wd:Q838948 .
+wd:Q20862600 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20862600 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Self-Portrait%20by%20Rembrandt%20Peale%2C%20c.%201845.JPG".
+wd:Q20862600 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27896220 rdfs:label """Portrait of Helen Miller (Mrs. Charles G. McLean)"""@fr.
+wd:Q27896220 wdt:P31 wd:Q838948 .
+wd:Q27896220 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q27896220 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Portrait%20of%20Helen%20Miller%20%28Mrs.%20Charles%20G.%20McLean%29%20-%2029.166%20-%20Indianapolis%20Museum%20of%20Art.jpg".
+wd:Q27896220 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20881519 rdfs:label """Portrait of Jane Griffith Koch"""@fr.
+wd:Q20881519 wdt:P31 wd:Q838948 .
+wd:Q20881519 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20881519 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Jane%20Griffith%20Koch%20LACMA%2078.5.2.jpg".
+wd:Q20881519 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20890724 rdfs:label """Portrait of Commander Lewis Warrington (1782-1851)"""@fr.
+wd:Q20890724 wdt:P31 wd:Q838948 .
+wd:Q20890724 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20890724 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Portrait%20of%20Commander%20Lewis%20Warrington%20%281782-1851%29%20-%2031.53%20-%20Minneapolis%20Institute%20of%20Arts.jpg".
+wd:Q20890724 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27898078 rdfs:label """Portrait of David Cox"""@fr.
+wd:Q27898078 wdt:P31 wd:Q838948 .
+wd:Q27898078 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q27898078 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Raphaelle%20Peale%20-%20Portrait%20of%20David%20Cox%20-%2015.205%20-%20Indianapolis%20Museum%20of%20Art.jpg".
+wd:Q27898078 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20881517 rdfs:label """Portrait of Jacob Gerard Koch"""@fr.
+wd:Q20881517 wdt:P31 wd:Q838948 .
+wd:Q20881517 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q20881517 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Portrait%20of%20Jacob%20Gerard%20Koch.jpg".
+wd:Q20881517 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28036755 rdfs:label """Idealized Portrait"""@fr.
+wd:Q28036755 wdt:P31 wd:Q838948 .
+wd:Q28036755 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q28036755 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Idealized%20Portrait%20-%202004.2104%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q28036755 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28048924 rdfs:label """Charles Mathews"""@fr.
+wd:Q28048924 wdt:P31 wd:Q838948 .
+wd:Q28048924 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q28048924 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Mathews%20by%20Rembrandt%20Peale.jpg".
+wd:Q28048924 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28797097 rdfs:label """George Washington (Porthole type)"""@fr.
+wd:Q28797097 wdt:P31 wd:Q838948 .
+wd:Q28797097 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q28797097 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20George%20Washington%20%28Porthole%20type%29%20-%20Google%20Art%20Project.jpg".
+wd:Q28797097 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28797098 rdfs:label """George Washington"""@fr.
+wd:Q28797098 wdt:P31 wd:Q838948 .
+wd:Q28797098 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q28797098 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20George%20Washington%20-%20Google%20Art%20Project.jpg".
+wd:Q28797098 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28094907 rdfs:label """Portrait of Henry Robinson"""@fr.
+wd:Q28094907 wdt:P31 wd:Q838948 .
+wd:Q28094907 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q28094907 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Portrait%20of%20Henry%20Robinson%20-%20B.77.17%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q28094907 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28797100 rdfs:label """The Sisters (Eleanor and Rosalba Peale)"""@fr.
+wd:Q28797100 wdt:P31 wd:Q838948 .
+wd:Q28797100 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q28797100 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20The%20Sisters%20%28Eleanor%20and%20Rosalba%20Peale%29%20-%20Google%20Art%20Project.jpg".
+wd:Q28797100 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28797099 rdfs:label """Rubens Peale"""@fr.
+wd:Q28797099 wdt:P31 wd:Q838948 .
+wd:Q28797099 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q28797099 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Rubens%20Peale%20-%20Google%20Art%20Project.jpg".
+wd:Q28797099 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28797101 rdfs:label """Thomas Jefferson"""@fr.
+wd:Q28797101 wdt:P31 wd:Q838948 .
+wd:Q28797101 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q28797101 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Thomas%20Jefferson%20-%20Google%20Art%20Project.jpg".
+wd:Q28797101 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28806065 rdfs:label """Portrait of Governor John Hoskins Stone of Maryland"""@fr.
+wd:Q28806065 wdt:P31 wd:Q838948 .
+wd:Q28806065 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q28806065 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Governor%20John%20Hoskins%20Stone%20of%20Maryland%20by%20Rembrandt%20Peale.jpg".
+wd:Q28806065 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q36923846 rdfs:label """John Marshall"""@fr.
+wd:Q36923846 wdt:P31 wd:Q838948 .
+wd:Q36923846 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q36923846 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/VMFA%2056-10%20v1%20KW%20x-833x1024.jpg".
+wd:Q36923846 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28797102 rdfs:label """William Henry Harrison"""@fr.
+wd:Q28797102 wdt:P31 wd:Q838948 .
+wd:Q28797102 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q28797102 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20William%20Henry%20Harrison%20-%20Google%20Art%20Project.jpg".
+wd:Q28797102 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q46626818 rdfs:label """Washington before Yorktown"""@fr.
+wd:Q46626818 wdt:P31 wd:Q838948 .
+wd:Q46626818 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q46626818 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Washington%20Before%20Yorktown%20Rembrandt%20Peale%201823.jpeg".
+wd:Q46626818 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q46945392 rdfs:label """George Washington"""@fr.
+wd:Q46945392 wdt:P31 wd:Q838948 .
+wd:Q46945392 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q46945392 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20%27Porthole%27%20portrait%20og%20George%20Washington%2C%201825-1860%2C%20Cincinnati%20Art%20Museum.jpg".
+wd:Q46945392 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q47508951 rdfs:label """Juliana Westray Wood"""@fr.
+wd:Q47508951 wdt:P31 wd:Q838948 .
+wd:Q47508951 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q47508951 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Juliana%20Westray%20Wood%20-%20NPG.81.120%20-%20National%20Portrait%20Gallery.jpg".
+wd:Q47508951 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q47509147 rdfs:label """James Kent"""@fr.
+wd:Q47509147 wdt:P31 wd:Q838948 .
+wd:Q47509147 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q47509147 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20James%20Kent%20-%20NPG.90.81%20-%20National%20Portrait%20Gallery.jpg".
+wd:Q47509147 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q47509748 rdfs:label """John Witherspoon"""@fr.
+wd:Q47509748 wdt:P31 wd:Q838948 .
+wd:Q47509748 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q47509748 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20John%20Witherspoon%20-%20NPG.91.81%20-%20National%20Portrait%20Gallery.jpg".
+wd:Q47509748 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q47509874 rdfs:label """Martha Washington"""@fr.
+wd:Q47509874 wdt:P31 wd:Q838948 .
+wd:Q47509874 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q47509874 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Martha%20Washington%20-%20NPG.75.3%20-%20National%20Portrait%20Gallery.jpg".
+wd:Q47509874 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q47510447 rdfs:label """William Bainbridge"""@fr.
+wd:Q47510447 wdt:P31 wd:Q838948 .
+wd:Q47510447 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q47510447 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20William%20Bainbridge%20-%20NPG.79.172%20-%20National%20Portrait%20Gallery.jpg".
+wd:Q47510447 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q47509129 rdfs:label """Horatio Greenough"""@fr.
+wd:Q47509129 wdt:P31 wd:Q838948 .
+wd:Q47509129 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q47509129 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Horatio%20Greenough%20-%20NPG.82.106%20-%20National%20Portrait%20Gallery.jpg".
+wd:Q47509129 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64553228 rdfs:label """George Washington (The Gadsden-Morris-Clarke Portrait)"""@fr.
+wd:Q64553228 wdt:P31 wd:Q838948 .
+wd:Q64553228 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q64553228 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20George%20Washington%20%28The%20Gadsden-Morris-Clarke%20Portrait%29%20-%2061.163%20-%20Detroit%20Institute%20of%20Arts.jpg".
+wd:Q64553228 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q62129116 rdfs:label """portrait du General Erastus Root"""@fr.
+wd:Q62129116 wdt:P31 wd:Q838948 .
+wd:Q62129116 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q62129116 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27Portrait%20of%20General%20Erastus%20Root%27%20by%20Rembrandt%20Peale%2C%20High%20Museum.JPG".
+wd:Q62129116 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q78671737 rdfs:label """George Washington"""@fr.
+wd:Q78671737 wdt:P31 wd:Q838948 .
+wd:Q78671737 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q78671737 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20George%20Washington%20-%2030-2014%20-%20Saint%20Louis%20Art%20Museum.jpg".
+wd:Q78671737 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q79152426 rdfs:label """Portrait d'un homme"""@fr.
+wd:Q79152426 wdt:P31 wd:Q838948 .
+wd:Q79152426 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q79152426 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Portrait%20of%20a%20Man%20-%201992.B.54%20-%20Dallas%20Museum%20of%20Art.jpg".
+wd:Q79152426 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q78662062 rdfs:label """Colonel Mendes Cohen"""@fr.
+wd:Q78662062 wdt:P31 wd:Q838948 .
+wd:Q78662062 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q78662062 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Colonel%20Mendes%20Cohen%20-%2053-1930%20-%20Saint%20Louis%20Art%20Museum.jpg".
+wd:Q78662062 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q79172486 rdfs:label """George Washington"""@fr.
+wd:Q79172486 wdt:P31 wd:Q838948 .
+wd:Q79172486 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q79172486 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20George%20Washington%20-%201987.41%20-%20Dallas%20Museum%20of%20Art.jpg".
+wd:Q79172486 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64565913 rdfs:label """The Court of Death"""@fr.
+wd:Q64565913 wdt:P31 wd:Q838948 .
+wd:Q64565913 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q64565913 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Court-of-death-peale-1820.jpg".
+wd:Q64565913 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/1820%20Court%20of%20Death%20byRembrandtPeale%20Detroit%20Institute%20of%20Arts.png".
+wd:Q64565913 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64563438 rdfs:label """Man Reading by Candlelight"""@fr.
+wd:Q64563438 wdt:P31 wd:Q838948 .
+wd:Q64563438 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q64563438 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Man%20Reading%20by%20Candlelight%20-%2059.187%20-%20Detroit%20Institute%20of%20Arts.jpg".
+wd:Q64563438 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64568087 rdfs:label """Self Portrait"""@fr.
+wd:Q64568087 wdt:P31 wd:Q838948 .
+wd:Q64568087 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q64568087 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Self%20Portrait%20-%2045.469%20-%20Detroit%20Institute%20of%20Arts.jpg".
+wd:Q64568087 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q66619645 rdfs:label """Thomas Jefferson"""@fr.
+wd:Q66619645 wdt:P31 wd:Q838948 .
+wd:Q66619645 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q66619645 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Jefferson%201867%20306.jpeg".
+wd:Q66619645 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q83224957 rdfs:label """Jacques Henri Bernardin de Saint-Pierre"""@fr.
+wd:Q83224957 wdt:P31 wd:Q838948 .
+wd:Q83224957 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q83224957 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Jacques%20Henri%20Bernardin%20de%20Saint-Pierre%2C%201808%20%28by%20Rembrandt%20Peale%29.jpg".
+wd:Q83224957 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104009566 rdfs:label """Autoportrait"""@fr.
+wd:Q104009566 wdt:P31 wd:Q838948 .
+wd:Q104009566 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q104009566 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Self-Portrait%20-%202016.13%20-%20Crystal%20Bridges%20Museum%20of%20American%20Art.jpg".
+wd:Q104009566 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106768955 rdfs:label """David Hosack, Class of 1789 (1769-1835)"""@fr.
+wd:Q106768955 wdt:P31 wd:Q838948 .
+wd:Q106768955 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q106768955 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20David%20Hosack%2C%20Class%20of%201789%20%281769-1835%29%20-%20PP182%20-%20Princeton%20University%20Art%20Museum.jpg".
+wd:Q106768955 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q105622265 rdfs:label """Portrait of DeWitt Clinton"""@fr.
+wd:Q105622265 wdt:P31 wd:Q838948 .
+wd:Q105622265 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q105622265 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/DeWitt%20Clinton%20by%20Rembrandt%20Peale.jpg".
+wd:Q105622265 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106771087 rdfs:label """George Washington"""@fr.
+wd:Q106771087 wdt:P31 wd:Q838948 .
+wd:Q106771087 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q106771087 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20George%20Washington%20-%20y1966-262%20-%20Princeton%20University%20Art%20Museum.jpg".
+wd:Q106771087 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106865194 rdfs:label """Jared Sparks (1789-1866)"""@fr.
+wd:Q106865194 wdt:P31 wd:Q838948 .
+wd:Q106865194 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q106865194 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Jared%20Sparks%20%281789-1866%29%20-%20H244%20-%20Harvard%20Art%20Museums.jpg".
+wd:Q106865194 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106776088 rdfs:label """Reclining Venus"""@fr.
+wd:Q106776088 wdt:P31 wd:Q838948 .
+wd:Q106776088 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q106776088 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Reclining%20Venus%20-%20y1956-63%20-%20Princeton%20University%20Art%20Museum.jpg".
+wd:Q106776088 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106857066 rdfs:label """McKean Buchanan (1798-1872)"""@fr.
+wd:Q106857066 wdt:P31 wd:Q838948 .
+wd:Q106857066 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q106857066 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20McKean%20Buchanan%20%281798-1872%29%20-%201943.148%20-%20Fogg%20Museum.jpg".
+wd:Q106857066 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106775799 rdfs:label """Judith with the Head of Holofernes"""@fr.
+wd:Q106775799 wdt:P31 wd:Q838948 .
+wd:Q106775799 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q106775799 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20Judith%20with%20the%20Head%20of%20Holofernes%20-%20y1984-33%20-%20Princeton%20University%20Art%20Museum.jpg".
+wd:Q106775799 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106878748 rdfs:label """John Warren (1753-1815)"""@fr.
+wd:Q106878748 wdt:P31 wd:Q838948 .
+wd:Q106878748 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q106878748 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20John%20Warren%20%281753-1815%29%20-%20H715%20-%20Harvard%20Art%20Museums.jpg".
+wd:Q106878748 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108690440 rdfs:label """Alexander James Dallas (1759–1817)"""@fr.
+wd:Q108690440 wdt:P31 wd:Q838948 .
+wd:Q108690440 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108690440 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20James%20Dallas%20%281759%E2%80%931817%29%201873%2026%20lightened.jpeg".
+wd:Q108690440 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106866435 rdfs:label """George Washington (1732-1799)"""@fr.
+wd:Q106866435 wdt:P31 wd:Q838948 .
+wd:Q106866435 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q106866435 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20George%20Washington%20%281732-1799%29%20-%201977.37%20-%20Fogg%20Museum.jpg".
+wd:Q106866435 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108690825 rdfs:label """Oliver Hazard Perry (1785–1819)"""@fr.
+wd:Q108690825 wdt:P31 wd:Q838948 .
+wd:Q108690825 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108690825 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Oliver%20Hazard%20Perry%20%281785%E2%80%931819%29%201867%20312.jpeg".
+wd:Q108690825 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108690878 rdfs:label """William Pinkney (?)"""@fr.
+wd:Q108690878 wdt:P31 wd:Q838948 .
+wd:Q108690878 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108690878 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Pinkney%201938%20310.jpeg".
+wd:Q108690878 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108690509 rdfs:label """Joseph Priestley (1733–1804)"""@fr.
+wd:Q108690509 wdt:P31 wd:Q838948 .
+wd:Q108690509 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108690509 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Priestley%20%281733%E2%80%931804%29%201867%20307.jpeg".
+wd:Q108690509 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108691855 rdfs:label """Garret Byvanck Abeel"""@fr.
+wd:Q108691855 wdt:P31 wd:Q838948 .
+wd:Q108691855 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108691855 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Garret%20Byvanck%20Abeel%201918%208.jpeg".
+wd:Q108691855 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108691955 rdfs:label """John Slidell (ca. 1769 - ca. 1830)"""@fr.
+wd:Q108691955 wdt:P31 wd:Q838948 .
+wd:Q108691955 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108691955 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Slidell%20%28ca.%201769%20-%20ca.%201830%29%201962%2030.jpeg".
+wd:Q108691955 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108691869 rdfs:label """Philip Hone (1780–1851)"""@fr.
+wd:Q108691869 wdt:P31 wd:Q838948 .
+wd:Q108691869 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108691869 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Philip%20Hone%20%281780%E2%80%931851%29%201981%2013.jpeg".
+wd:Q108691869 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108692373 rdfs:label """George Newbold (1780-1858)"""@fr.
+wd:Q108692373 wdt:P31 wd:Q838948 .
+wd:Q108692373 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108692373 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/George%20Newbold%20%281780-1858%29%201944%2075.jpeg".
+wd:Q108692373 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108691464 rdfs:label """Edward Lyde (1773-1831)"""@fr.
+wd:Q108691464 wdt:P31 wd:Q838948 .
+wd:Q108691464 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108691464 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Lyde%20%281773-1831%29%201920%201.jpeg".
+wd:Q108691464 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108691406 rdfs:label """Unidentified naval officer"""@fr.
+wd:Q108691406 wdt:P31 wd:Q838948 .
+wd:Q108691406 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108691406 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Unidentified%20naval%20officer%201971%20117%20light.jpg".
+wd:Q108691406 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108691315 rdfs:label """Stephen Decatur (1779–1820)"""@fr.
+wd:Q108691315 wdt:P31 wd:Q838948 .
+wd:Q108691315 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108691315 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Stephen%20Decatur%20Jr.%20%28American%2C%201779%20%E2%80%93%201820%29%201867%20309.jpeg".
+wd:Q108691315 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108691179 rdfs:label """Jacob Jones, USN (1768–1850)"""@fr.
+wd:Q108691179 wdt:P31 wd:Q838948 .
+wd:Q108691179 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108691179 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20Jones%2C%20USN%20%281768%E2%80%931850%29.jpeg".
+wd:Q108691179 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108694347 rdfs:label """George Washington (1732–1799)"""@fr.
+wd:Q108694347 wdt:P31 wd:Q838948 .
+wd:Q108694347 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108694347 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/George%20Washington%20%281732%E2%80%931799%29%201910%203.jpeg".
+wd:Q108694347 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108693914 rdfs:label """George W. Bethune, DD (1805–1862)"""@fr.
+wd:Q108693914 wdt:P31 wd:Q838948 .
+wd:Q108693914 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108693914 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/George%20W.%20Bethune%2C%20DD%20%281805%E2%80%931862%29%201869%201.jpeg".
+wd:Q108693914 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108692514 rdfs:label """Rammohun Roy (1772–1833)"""@fr.
+wd:Q108692514 wdt:P31 wd:Q838948 .
+wd:Q108692514 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q108692514 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rammohun%20Roy%20%281772%E2%80%931833%29%201858%2088.jpeg".
+wd:Q108692514 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122842322 rdfs:label """Portrait of Joseph McMinn (1758-1824), Governor of Tennessee."""@fr.
+wd:Q122842322 wdt:P31 wd:Q838948 .
+wd:Q122842322 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q122842322 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/McMinn-joseph-by-rembrandt-peale.jpg".
+wd:Q122842322 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q112636261 rdfs:label """George Washington"""@fr.
+wd:Q112636261 wdt:P31 wd:Q838948 .
+wd:Q112636261 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q112636261 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Peale%20-%20George%20Washington%20-%202010.120%20-%20New%20Britain%20Museum%20of%20American%20Art.jpg".
+wd:Q112636261 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123015143 rdfs:label """George Taylor II"""@fr.
+wd:Q123015143 wdt:P31 wd:Q838948 .
+wd:Q123015143 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q123015143 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn%20Museum%20-%20George%20Taylor%20II%20-%20Rembrandt%20Peale%20-%20overall.jpg".
+wd:Q123015143 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125934813 rdfs:label """Andrew Jackson."""@fr.
+wd:Q125934813 wdt:P31 wd:Q838948 .
+wd:Q125934813 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q125934813 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20jackson%20rembrandt%20peale.jpg".
+wd:Q125934813 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124852990 rdfs:label """Alida Livingston Armstrong and Daughter"""@fr.
+wd:Q124852990 wdt:P31 wd:Q838948 .
+wd:Q124852990 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q124852990 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Alida%20Livingston%20Armstrong%20and%20Daughter.jpeg".
+wd:Q124852990 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123082163 rdfs:label """Porträt des John C. Calhoun (1782-1850)"""@fr.
+wd:Q123082163 wdt:P31 wd:Q838948 .
+wd:Q123082163 wdt:P170 wd:Q375926.
+wd:Q375926 rdfs:label """Rembrandt Peale"""@fr.
+wd:Q375926 wdt:P31 wd:Q3391743 .
+wd:Q123082163 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20C.%20Calhoun.jpeg".
+wd:Q123082163 pgdc:sparql kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH .
+kgdc:sparql5gDIIlCWvBc1KRUJWepbcg1cgPcfSLSJ1WALqECg0aH pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q375926 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

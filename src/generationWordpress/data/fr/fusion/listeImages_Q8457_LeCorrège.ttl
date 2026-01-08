@@ -1,0 +1,1903 @@
+wd:Q1133114 rdfs:label """Venus, Satyre et Cupidon ; dit a tort le  sommeil d'Antiope ou Jupiter et Antiope"""@fr.
+wd:Q1133114 wdt:P31 wd:Q838948 .
+wd:Q1133114 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q1133114 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Venus%20and%20Cupid%20with%20a%20Satyr.jpg".
+wd:Q1133114 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q1133114 pgdc:piwigo_image "5217".
+wd:Q1133114 pgdc:piwigo_gallery kgdc:gal812.
+wd:Q3851966 rdfs:label """Le Mariage mystique de sainte Catherine d'Alexandrie en présence de saint Sébastien ; dans le paysage, martyres de deux saints"""@fr.
+wd:Q3851966 wdt:P31 wd:Q838948 .
+wd:Q3851966 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3851966 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Mariage%20mystique%20de%20sainte%20Catherine%20d%27Alexandrie%20en%20pr%C3%A9sence%20de%20saint%20S%C3%A9bastien%20-%20Le%20Corr%C3%A8ge%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%2041.jpg".
+wd:Q3851966 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3851966 pgdc:piwigo_image "12428".
+wd:Q3851966 pgdc:piwigo_gallery kgdc:gal812.
+wd:Q3769183 rdfs:label """Judith et la servante"""@fr.
+wd:Q3769183 wdt:P31 wd:Q838948 .
+wd:Q3769183 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3769183 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Corr%C3%A8ge-Judith-Mus%C3%A9e%20des%20Bx-Arts%20Strasbourg%20%282%29.jpg".
+wd:Q3769183 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3769183 pgdc:piwigo_image "12429".
+wd:Q3769183 pgdc:piwigo_gallery kgdc:gal812.
+wd:Q700834 rdfs:label """Jupiter et Io"""@fr.
+wd:Q700834 wdt:P31 wd:Q838948 .
+wd:Q700834 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q700834 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Allegri%2C%20called%20Correggio%20-%20Jupiter%20and%20Io%20-%20Google%20Art%20Project.jpg".
+wd:Q700834 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Allegri%2C%20gen.%20Correggio%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Jupiter%20und%20Io%20-%20GG%20274%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q700834 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q939962 rdfs:label """L'Enlèvement de Ganymède"""@fr.
+wd:Q939962 wdt:P31 wd:Q838948 .
+wd:Q939962 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q939962 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Allegri%2C%20called%20Correggio%20-%20The%20Abduction%20of%20Ganymede%20-%20Google%20Art%20Project.jpg".
+wd:Q939962 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q1408753 rdfs:label """Danaé"""@fr.
+wd:Q1408753 wdt:P31 wd:Q838948 .
+wd:Q1408753 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q1408753 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20008.jpg".
+wd:Q1408753 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q1527541 rdfs:label """L'Adoration des bergers"""@fr.
+wd:Q1527541 wdt:P31 wd:Q838948 .
+wd:Q1527541 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q1527541 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20The%20Holy%20Night%20-%20Google%20Art%20Project.jpg".
+wd:Q1527541 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q2017819 rdfs:label """Portrait d'une femme"""@fr.
+wd:Q2017819 wdt:P31 wd:Q838948 .
+wd:Q2017819 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q2017819 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Hermitagecorreggioportraitofawoman.jpg".
+wd:Q2017819 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3202071 rdfs:label """L'Annonciation"""@fr.
+wd:Q3202071 wdt:P31 wd:Q838948 .
+wd:Q3202071 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3202071 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20annunciazione.jpg".
+wd:Q3202071 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3535914 rdfs:label """L'Agonie dans le jardin"""@fr.
+wd:Q3535914 wdt:P31 wd:Q838948 .
+wd:Q3535914 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3535914 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Allegri%2C%20called%20Correggio%20-%20The%20Agony%20in%20the%20Garden%20-%20WM.1585-1948%20-%20Apsley%20House.jpg".
+wd:Q3535914 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3605527 rdfs:label """L'Adoration des Mages"""@fr.
+wd:Q3605527 wdt:P31 wd:Q838948 .
+wd:Q3605527 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3605527 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20adorazione%20dei%20magi%2C%20brera.jpg".
+wd:Q3605527 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3605562 rdfs:label """Adoration de l'Enfant"""@fr.
+wd:Q3605562 wdt:P31 wd:Q838948 .
+wd:Q3605562 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3605562 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20La%20Vergine%20che%20adora%20il%20Bambino%20-%20Google%20Art%20Project.jpg".
+wd:Q3605562 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3612413 rdfs:label """Allégorie des Vices"""@fr.
+wd:Q3612413 wdt:P31 wd:Q838948 .
+wd:Q3612413 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3612413 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20037.jpg".
+wd:Q3612413 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3612419 rdfs:label """Allégorie de la Vertu"""@fr.
+wd:Q3612419 wdt:P31 wd:Q838948 .
+wd:Q3612419 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3612419 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Allegory%20of%20Virtues%20-%20WGA05338.jpg".
+wd:Q3612419 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3657723 rdfs:label """Peinture murale de la chapelle funéraire d'Andrea Mantegna"""@fr.
+wd:Q3657723 wdt:P31 wd:Q838948 .
+wd:Q3657723 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3657723 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20cappella%20funeraria%20del%20mantegna%2C%20cupola%2001.jpg".
+wd:Q3657723 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3684647 rdfs:label """Le Christ prenant congé de sa mère"""@fr.
+wd:Q3684647 wdt:P31 wd:Q838948 .
+wd:Q3684647 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3684647 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20commiato%20di%20cristo%20dalla%20madre.jpg".
+wd:Q3684647 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3685121 rdfs:label """Lamentation sur le Christ mort"""@fr.
+wd:Q3685121 wdt:P31 wd:Q838948 .
+wd:Q3685121 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3685121 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20compianto.jpg".
+wd:Q3685121 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3697624 rdfs:label """Christ jeune"""@fr.
+wd:Q3697624 wdt:P31 wd:Q838948 .
+wd:Q3697624 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3697624 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20cristo%20giovane%2C%20collezione%20privata.jpg".
+wd:Q3697624 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3697625 rdfs:label """Christ jeune au Temple"""@fr.
+wd:Q3697625 wdt:P31 wd:Q838948 .
+wd:Q3697625 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3697625 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20salvator%20mundi.jpg".
+wd:Q3697625 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3705701 rdfs:label """La Déposition"""@fr.
+wd:Q3705701 wdt:P31 wd:Q838948 .
+wd:Q3705701 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3705701 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20deposizione%20di%20sant%27andrea.jpg".
+wd:Q3705701 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3703643 rdfs:label """David devant l'Arche d'Alliance"""@fr.
+wd:Q3703643 wdt:P31 wd:Q838948 .
+wd:Q3703643 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3703643 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20Davide%20davanti%20all%27arca%20dell%27alleanza.jpg".
+wd:Q3703643 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3719885 rdfs:label """L'Éducation de Cupidon"""@fr.
+wd:Q3719885 wdt:P31 wd:Q838948 .
+wd:Q3719885 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3719885 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Cupido.jpg".
+wd:Q3719885 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3717885 rdfs:label """Ecce Homo"""@fr.
+wd:Q3717885 wdt:P31 wd:Q838948 .
+wd:Q3717885 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3717885 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20Ecce%20Homo.jpg".
+wd:Q3717885 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3766168 rdfs:label """Jeune homme fuyant la capture du Christ"""@fr.
+wd:Q3766168 wdt:P31 wd:Q838948 .
+wd:Q3766168 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3766168 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Cattura%20di%20Cristo%2C%20524.jpg".
+wd:Q3766168 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20giovane%20che%20fugge%20dalla%20cattura%20di%20Cristo.jpg".
+wd:Q3766168 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3821326 rdfs:label """La Zingarella"""@fr.
+wd:Q3821326 wdt:P31 wd:Q838948 .
+wd:Q3821326 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3821326 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20zingarella.jpg".
+wd:Q3821326 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Allegri%20Antonio%2C%20Madonna%20con%20Bambino%2C%2033112.jpg".
+wd:Q3821326 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3797772 rdfs:label """Le Couronnement de la Vierge"""@fr.
+wd:Q3797772 wdt:P31 wd:Q838948 .
+wd:Q3797772 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3797772 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20023.jpg".
+wd:Q3797772 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3829339 rdfs:label """Léda et le Cygne"""@fr.
+wd:Q3829339 wdt:P31 wd:Q838948 .
+wd:Q3829339 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3829339 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Leda%20and%20the%20Swan%20-%20Google%20Art%20Project.jpg".
+wd:Q3829339 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842386 rdfs:label """Madonna and Child"""@fr.
+wd:Q3842386 wdt:P31 wd:Q838948 .
+wd:Q3842386 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842386 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20Madonna%20Barrymore.jpg".
+wd:Q3842386 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842389 rdfs:label """Madone Bolognini"""@fr.
+wd:Q3842389 wdt:P31 wd:Q838948 .
+wd:Q3842389 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842389 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20048.jpg".
+wd:Q3842389 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842393 rdfs:label """Madone Campori"""@fr.
+wd:Q3842393 wdt:P31 wd:Q838948 .
+wd:Q3842393 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842393 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Madonna%20Campori%2C%20ca.%201517%20-%201518%2C%20R.C.G.E.%204172.png".
+wd:Q3842393 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842466 rdfs:label """Vierge à l'Enfant"""@fr.
+wd:Q3842466 wdt:P31 wd:Q838948 .
+wd:Q3842466 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842466 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20064.jpg".
+wd:Q3842466 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842518 rdfs:label """Vierge à l'Enfant et saint Jean"""@fr.
+wd:Q3842518 wdt:P31 wd:Q838948 .
+wd:Q3842518 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842518 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Virgin%20and%20Child%20with%20the%20Young%20Saint%20John%20the%20Baptist%20-%201965.688%20-%20Art%20Institute%20of%20Chicago.jpg".
+wd:Q3842518 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842519 rdfs:label """Vierge à l'Enfant avec Jean-Baptiste"""@fr.
+wd:Q3842519 wdt:P31 wd:Q838948 .
+wd:Q3842519 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842519 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20047.jpg".
+wd:Q3842519 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842555 rdfs:label """Vierge à l'Enfant accompagnée de deux anges musiciens"""@fr.
+wd:Q3842555 wdt:P31 wd:Q838948 .
+wd:Q3842555 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842555 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20madonna%20col%20bambino%20tra%20due%20angeli%20musicanti.jpg".
+wd:Q3842555 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842564 rdfs:label """Vierge à l'Enfant entre sainte Élisabeth et saint Jean-Baptiste"""@fr.
+wd:Q3842564 wdt:P31 wd:Q838948 .
+wd:Q3842564 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842564 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20Madonna%20col%20Bambino%20tra%20i%20santi%20Elisabetta%20e%20Giovanni%20Battista.jpg".
+wd:Q3842564 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Allegri%20Antonio%2C%20Madonna%20con%20Bambino%2C%20sant%27Elisabetta%20e%20san%20Giovannino%2C%2033305.jpg".
+wd:Q3842564 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842618 rdfs:label """Vierge allaitante et un ange"""@fr.
+wd:Q3842618 wdt:P31 wd:Q838948 .
+wd:Q3842618 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842618 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Nursing%20Madonna.jpg".
+wd:Q3842618 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842660 rdfs:label """La Vierge au Panier"""@fr.
+wd:Q3842660 wdt:P31 wd:Q838948 .
+wd:Q3842660 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842660 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Madonna%20of%20the%20Basket.jpg".
+wd:Q3842660 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842704 rdfs:label """Madone d'Albinea"""@fr.
+wd:Q3842704 wdt:P31 wd:Q838948 .
+wd:Q3842704 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842704 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Copia%20della%20madonna%20di%20albinea%20di%20correggio.jpg".
+wd:Q3842704 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842712 rdfs:label """Madone de Casalmaggiore"""@fr.
+wd:Q3842712 wdt:P31 wd:Q838948 .
+wd:Q3842712 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842712 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20preparazione%20madonna%20casalmaggiore%2C%20british%20museum.jpg".
+wd:Q3842712 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842732 rdfs:label """Vierge à l'Enfant avec saint François"""@fr.
+wd:Q3842732 wdt:P31 wd:Q838948 .
+wd:Q3842732 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842732 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20MadonnaSzentFerenccel.jpg".
+wd:Q3842732 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842733 rdfs:label """Madone de San Giorgio"""@fr.
+wd:Q3842733 wdt:P31 wd:Q838948 .
+wd:Q3842733 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842733 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20043.jpg".
+wd:Q3842733 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842735 rdfs:label """Madone de San Sebastiano"""@fr.
+wd:Q3842735 wdt:P31 wd:Q838948 .
+wd:Q3842735 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842735 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20Madonna%20di%20San%20Sebastiano.jpg".
+wd:Q3842735 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3842738 rdfs:label """Madone de Saint Jérôme"""@fr.
+wd:Q3842738 wdt:P31 wd:Q838948 .
+wd:Q3842738 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3842738 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Madonna%20and%20Child%20with%20Sts%20Jerome%20and%20Mary%20Magdalen%20%28The%20Day%29%20-%20WGA05327.jpg".
+wd:Q3842738 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3847397 rdfs:label """Marie-Madeleine"""@fr.
+wd:Q3847397 wdt:P31 wd:Q838948 .
+wd:Q3847397 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3847397 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20maria%20maddalena.jpg".
+wd:Q3847397 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3847409 rdfs:label """Marie-Madeleine allongée"""@fr.
+wd:Q3847409 wdt:P31 wd:Q838948 .
+wd:Q3847409 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3847409 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20maddalena%20leggente%2C%20perduto.jpg".
+wd:Q3847409 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3850306 rdfs:label """Martyre de quatre saints"""@fr.
+wd:Q3850306 wdt:P31 wd:Q838948 .
+wd:Q3850306 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3850306 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Martirio%20dei%20santi%20Placido%2C%20Flavia%2C%20Eutichio%20e%20Vittorino%2C%201524%20circa%2C%20GN353.jpg".
+wd:Q3850306 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3851960 rdfs:label """Mariage mystique de Sainte Catherine d'Alexandrie (museo Capodimonte)"""@fr.
+wd:Q3851960 wdt:P31 wd:Q838948 .
+wd:Q3851960 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3851960 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20015.jpg".
+wd:Q3851960 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3851968 rdfs:label """Mariage mystique de sainte Catherine d'Alexandrie et saints"""@fr.
+wd:Q3851968 wdt:P31 wd:Q838948 .
+wd:Q3851968 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3851968 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20matrimonio%20mistico%20%28washington%29.jpg".
+wd:Q3851968 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3851969 rdfs:label """Mariage mystique de sainte Catherine d'Alexandrie et trois saints dans un paysage"""@fr.
+wd:Q3851969 wdt:P31 wd:Q838948 .
+wd:Q3851969 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3851969 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20The%20Mystic%20Marriage%20of%20Saint%20Catherine%20-%2026.94%20-%20Detroit%20Institute%20of%20Arts.jpg".
+wd:Q3851969 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3873238 rdfs:label """Nativité avec sainte Élisabeth et saint Jean"""@fr.
+wd:Q3873238 wdt:P31 wd:Q838948 .
+wd:Q3873238 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3873238 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20007.jpg".
+wd:Q3873238 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3877896 rdfs:label """Noli me tangere"""@fr.
+wd:Q3877896 wdt:P31 wd:Q838948 .
+wd:Q3877896 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3877896 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20056.jpg".
+wd:Q3877896 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20Noli%20Me%20Tangere.jpg".
+wd:Q3877896 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3936375 rdfs:label """Le Repos pendant la Fuite en Égypte avec saint François"""@fr.
+wd:Q3936375 wdt:P31 wd:Q838948 .
+wd:Q3936375 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3936375 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20059.jpg".
+wd:Q3936375 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3927386 rdfs:label """Quatre saints"""@fr.
+wd:Q3927386 wdt:P31 wd:Q838948 .
+wd:Q3927386 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3927386 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Saints%20Peter%2C%20Martha%2C%20Mary%20Magdalen%2C%20and%20Leonard%20MET%20DT2838.jpg".
+wd:Q3927386 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3904387 rdfs:label """Pietà"""@fr.
+wd:Q3904387 wdt:P31 wd:Q838948 .
+wd:Q3904387 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3904387 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20piet%C3%A0.jpg".
+wd:Q3904387 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3937414 rdfs:label """Portrait d'un homme avec un livre"""@fr.
+wd:Q3937414 wdt:P31 wd:Q838948 .
+wd:Q3937414 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3937414 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20058.jpg".
+wd:Q3937414 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3937720 rdfs:label """Portrait de jeune femme"""@fr.
+wd:Q3937720 wdt:P31 wd:Q838948 .
+wd:Q3937720 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3937720 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20ritratto%20di%20giovane%20donna%2C%20lowe%20museum.jpg".
+wd:Q3937720 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3937757 rdfs:label """Portrait d'un étudiant"""@fr.
+wd:Q3937757 wdt:P31 wd:Q838948 .
+wd:Q3937757 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3937757 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20ritratto%20di%20scolaro.jpg".
+wd:Q3937757 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3944471 rdfs:label """Sainte Famille avec sainte Élisabeth et saint Jean"""@fr.
+wd:Q3944471 wdt:P31 wd:Q838948 .
+wd:Q3944471 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3944471 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20sacra%20famiglia%20coi%20santi%20elisabetta%20e%20giovannino.jpg".
+wd:Q3944471 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3944472 rdfs:label """Madone Pavia"""@fr.
+wd:Q3944472 wdt:P31 wd:Q838948 .
+wd:Q3944472 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3944472 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20madonna%20pavia.jpg".
+wd:Q3944472 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3944482 rdfs:label """Sainte Famille et saint Jean"""@fr.
+wd:Q3944482 wdt:P31 wd:Q838948 .
+wd:Q3944482 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3944482 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Holy%20Family%20with%20the%20Infant%20St.%20John%20LACMA%2046.48.jpg".
+wd:Q3944482 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3944483 rdfs:label """Sainte Famille avec saint Jean-Baptiste enfant"""@fr.
+wd:Q3944483 wdt:P31 wd:Q838948 .
+wd:Q3944483 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3944483 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20sacra%20famiglia%20con%20san%20giovannino%2C%20orleans.jpg".
+wd:Q3944483 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3947287 rdfs:label """Saint Jérôme"""@fr.
+wd:Q3947287 wdt:P31 wd:Q838948 .
+wd:Q3947287 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3947287 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20san%20girolamo.jpg".
+wd:Q3947287 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3947277 rdfs:label """Saint Jean et l'aigle"""@fr.
+wd:Q3947277 wdt:P31 wd:Q838948 .
+wd:Q3947277 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3947277 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20lunetta%20della%20sagrestia%20di%20san%20giovanni%20con%20san%20giovanni%20evangelista%20e%20l%27aquila%2C%201523%20ca.%2001%20%28cropped%29.jpg".
+wd:Q3947277 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3947332 rdfs:label """Saint Joseph et un dévot"""@fr.
+wd:Q3947332 wdt:P31 wd:Q838948 .
+wd:Q3947332 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3947332 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20san%20giuseppe%20e%20un%20devoto.jpg".
+wd:Q3947332 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3948946 rdfs:label """Sainte Catherine lisant"""@fr.
+wd:Q3948946 wdt:P31 wd:Q838948 .
+wd:Q3948946 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3948946 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20santa%20caterina%20leggente.jpg".
+wd:Q3948946 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Allegri%20Correggio%20%28c.%201489-1534%29%20-%20Saint%20Catherine%20Reading%20-%20RCIN%20405768%20-%20Royal%20Collection.jpg".
+wd:Q3948946 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3948768 rdfs:label """Antoine le Grand"""@fr.
+wd:Q3948768 wdt:P31 wd:Q838948 .
+wd:Q3948768 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q3948768 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20antonio%20abate.jpg".
+wd:Q3948768 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q4009400 rdfs:label """Tête du Christ"""@fr.
+wd:Q4009400 wdt:P31 wd:Q838948 .
+wd:Q4009400 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q4009400 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28Antonio%20Allegri%29%20%28Italian%29%20-%20Head%20of%20Christ%20-%20Google%20Art%20Project.jpg".
+wd:Q4009400 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q4016334 rdfs:label """Portrait du Christ"""@fr.
+wd:Q4016334 wdt:P31 wd:Q838948 .
+wd:Q4016334 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q4016334 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20volto%20di%20cristo.jpg".
+wd:Q4016334 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20433254 rdfs:label """The Betrothal of Saint Catharine"""@fr.
+wd:Q20433254 wdt:P31 wd:Q838948 .
+wd:Q20433254 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q20433254 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Correggio%20-%20The%20Betrothal%20of%20Saint%20Catharine%20-%20KMSsp72%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20433254 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20426227 rdfs:label """Madonna and Child with infant St John the Baptist"""@fr.
+wd:Q20426227 wdt:P31 wd:Q838948 .
+wd:Q20426227 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q20426227 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%2C%20Madonna%20and%20Child%20with%20infant%20St%20John%20the%20Baptist%201514%E2%80%9315.jpg".
+wd:Q20426227 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20539034 rdfs:label """The Mystic Marriage of Saint Catherine"""@fr.
+wd:Q20539034 wdt:P31 wd:Q838948 .
+wd:Q20539034 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q20539034 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28Antonio%20Allegri%29%20-%20The%20Mystic%20Marriage%20of%20Saint%20Catherine%20-%2012.378%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20539034 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21974439 rdfs:label """La Tête du Christ"""@fr.
+wd:Q21974439 wdt:P31 wd:Q838948 .
+wd:Q21974439 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q21974439 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20Head%20of%20Christ.jpg".
+wd:Q21974439 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q23014521 rdfs:label """Madonna della Scodella"""@fr.
+wd:Q23014521 wdt:P31 wd:Q838948 .
+wd:Q23014521 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q23014521 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20041.jpg".
+wd:Q23014521 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20539040 rdfs:label """Head of a Cherub"""@fr.
+wd:Q20539040 wdt:P31 wd:Q838948 .
+wd:Q20539040 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q20539040 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28Antonio%20Allegri%29%20-%20Head%20of%20a%20Cherub%20-%2056.265%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q20539040 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26492433 rdfs:label """Heads of Two Angels"""@fr.
+wd:Q26492433 wdt:P31 wd:Q838948 .
+wd:Q26492433 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q26492433 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28c.1489-1534%29%20-%20Heads%20of%20Two%20Angels%20-%20NG3921%20-%20National%20Gallery.jpg".
+wd:Q26492433 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26693158 rdfs:label """Head of an Angel"""@fr.
+wd:Q26693158 wdt:P31 wd:Q838948 .
+wd:Q26693158 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q26693158 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28c.1489-1534%29%20-%20Head%20of%20an%20Angel%20-%20NG3920%20-%20National%20Gallery.jpg".
+wd:Q26693158 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27968269 rdfs:label """An Allegory of Virtue (unfinished)"""@fr.
+wd:Q27968269 wdt:P31 wd:Q838948 .
+wd:Q27968269 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q27968269 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Anonymous%20-%20An%20Allegory%20of%20Virtue%20%28unfinished%29%20-%20NG%202584%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q27968269 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28c.1489-1534%29%20%28attributed%20to%29%20-%20An%20Allegory%20of%20Virtue%20-%20NG%202584%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q27968269 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26706539 rdfs:label """Head of an Angel"""@fr.
+wd:Q26706539 wdt:P31 wd:Q838948 .
+wd:Q26706539 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q26706539 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28c.1489-1534%29%20-%20Head%20of%20an%20Angel%20-%20NG4067%20-%20National%20Gallery.jpg".
+wd:Q26706539 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28029242 rdfs:label """Sainte Famille et saint Jérôme"""@fr.
+wd:Q28029242 wdt:P31 wd:Q838948 .
+wd:Q28029242 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q28029242 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Allegri%20Correggio%20%28c.%201489-1534%29%20-%20The%20Holy%20Family%20with%20Saint%20Jerome%20-%20RCIN%20400029%20-%20Royal%20Collection.jpg".
+wd:Q28029242 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29953490 rdfs:label """Q29953490"""@fr.
+wd:Q29953490 wdt:P31 wd:Q838948 .
+wd:Q29953490 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q29953490 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28Antonio%20Allegri%29%20%28Nachfolger%29%20-%20Lesender%20Amor%20-%20459%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29953490 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30056300 rdfs:label """Q30056300"""@fr.
+wd:Q30056300 wdt:P31 wd:Q838948 .
+wd:Q30056300 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q30056300 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28Antonio%20Allegri%29%20%28Nachahmer%29%20-%20B%C3%BC%C3%9Fende%20Magdalena%2C%20in%20einem%20Buch%20lesend%20-%206366%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30056300 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30093989 rdfs:label """Q30093989"""@fr.
+wd:Q30093989 wdt:P31 wd:Q838948 .
+wd:Q30093989 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q30093989 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28Antonio%20Allegri%29%20%28Schule%29%20-%20Engelskopf%20-%20WAF%20162%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30093989 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30093991 rdfs:label """Q30093991"""@fr.
+wd:Q30093991 wdt:P31 wd:Q838948 .
+wd:Q30093991 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q30093991 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28Antonio%20Allegri%29%20%28Kopie%20nach%29%20-%20Entf%C3%BChrung%20des%20Ganymed%20-%207448%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30093991 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30094534 rdfs:label """Q30094534"""@fr.
+wd:Q30094534 wdt:P31 wd:Q838948 .
+wd:Q30094534 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q30094534 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28Antonio%20Allegri%29%20%28Kopie%20nach%29%20-%20Christus%20am%20%C3%96lberg%20-%206506%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30094534 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64515611 rdfs:label """Vierge à l'Enfant"""@fr.
+wd:Q64515611 wdt:P31 wd:Q838948 .
+wd:Q64515611 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q64515611 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Circle%20of%20Correggio%20-%20Madonna%20and%20Child%2C%20between%201515%20and%201535%2C%2028.63.jpg".
+wd:Q64515611 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30098879 rdfs:label """Q30098879"""@fr.
+wd:Q30098879 wdt:P31 wd:Q838948 .
+wd:Q30098879 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q30098879 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20%28Antonio%20Allegri%29%20%28Schule%29%20-%20Maria%20mit%20Kind%20und%20Heiligen%20-%20934%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30098879 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q119129948 rdfs:label """Penitent Magdalene"""@fr.
+wd:Q119129948 wdt:P31 wd:Q838948 .
+wd:Q119129948 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q119129948 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Schedoni%20Maddalena%20penitente.jpg".
+wd:Q119129948 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64787450 rdfs:label """Madonna and Child with the Infant Saint John"""@fr.
+wd:Q64787450 wdt:P31 wd:Q838948 .
+wd:Q64787450 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q64787450 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Correggio%20-%20Maria%20met%20Christus%20en%20Johannes%20de%20Doper%20als%20kinderen%20-%201176%20-%20St%C3%A4del%20Museum.jpg".
+wd:Q64787450 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q77933101 rdfs:label """The Head of Saint Catherine the Martyr"""@fr.
+wd:Q77933101 wdt:P31 wd:Q838948 .
+wd:Q77933101 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q77933101 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Head%20of%20Saint%20Catherine%20the%20Martyr%20.PNG".
+wd:Q77933101 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107191364 rdfs:label """Die büßende Magdalena"""@fr.
+wd:Q107191364 wdt:P31 wd:Q838948 .
+wd:Q107191364 wdt:P170 wd:Q8457.
+wd:Q8457 rdfs:label """Le Corrège"""@fr.
+wd:Q8457 wdt:P31 wd:Q3391743 .
+wd:Q107191364 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gem%C3%A4ldegalerie%20Alte%20Meister%20%28Dresden%29%20Galeriewerk%20L%C3%BCcke%20012.jpg".
+wd:Q107191364 pgdc:sparql kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 .
+kgdc:sparql15CksVeeaNqPXdWPlpM1jKVJynFWscQM1vuQyv4wT75 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q8457 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

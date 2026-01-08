@@ -5,7 +5,7 @@ Dashboard simple pour monitoring WikimediaAccess
 import json
 import time
 from metrics import metrics_collector
-from src.generationWordpress.tools.WikimediaManager.WikimediaManagerPackage.alerts import alert_manager
+from tools.WikimediaManager.WikimediaManagerPackage.alerts import alert_manager
 
 
 def generate_dashboard_html():

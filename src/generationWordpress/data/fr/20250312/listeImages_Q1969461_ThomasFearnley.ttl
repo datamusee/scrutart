@@ -1,0 +1,24 @@
+wd:Q55425070 rdfs:label """Stockholm vu de la plage de Klaravik"""@fr.
+wd:Q55425070 wdt:P31 wd:Q838948 .
+wd:Q55425070 wdt:P170 wd:Q1969461.
+wd:Q1969461 rdfs:label """Thomas Fearnley"""@fr.
+wd:Q1969461 wdt:P31 wd:Q3391743 .
+wd:Q55425070 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Fearnley%20-%20View%20of%20Stockholm%20-%20NG.M.03667%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55425070 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20Stockholm%20-%20Stockholm%20sett%20fra%20Klaravikstranden%20-%20Thomas%20Fearnley%20-%20IMG%209803-%20national%20gallery%20oslo%20%28cropped-2%29.jpg".
+wd:Q55425070 pgdc:sparql kgdc:sparqlgBUO0Dpj8w3C6xxcla6wr6AwdlqixrlS9ScaQJPY19Z .
+kgdc:sparqlgBUO0Dpj8w3C6xxcla6wr6AwdlqixrlS9ScaQJPY19Z pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1969461 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q55425070 pgdc:piwigo_image "5941".
+wd:Q55425070 pgdc:piwigo_gallery kgdc:gal654.

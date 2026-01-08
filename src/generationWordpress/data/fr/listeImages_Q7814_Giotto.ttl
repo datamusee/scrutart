@@ -1,0 +1,92 @@
+wd:Q18609191 rdfs:label """La Crucifixion"""@fr.
+wd:Q18609191 wdt:P31 wd:wd:Q838948 .
+wd:Q18609191 wdt:P170 wd:Q7814.
+wd:Q7814 rdfs:label """Giotto"""@fr.
+wd:Q7814 wdt:P31 wd:Q3391743 .
+wd:Q18609191 wdt:P18 "None".
+wd:Q18609191 pgdc:sparql kgdc:sparqlMyOxyhUxRfqVJ7aOumwOsfRbJdVT9nWH2M1bZ70wfVk .
+kgdc:sparqlMyOxyhUxRfqVJ7aOumwOsfRbJdVT9nWH2M1bZ70wfVk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q7814 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18609191 pgdc:piwigo_image "13223".
+wd:Q18609191 pgdc:piwigo_gallery kgdc:gal572.
+wd:Q29117133 rdfs:label """la Présentation de Vierge au temple"""@fr.
+wd:Q29117133 wdt:P31 wd:wd:Q838948 .
+wd:Q29117133 wdt:P170 wd:Q7814.
+wd:Q7814 rdfs:label """Giotto"""@fr.
+wd:Q7814 wdt:P31 wd:Q3391743 .
+wd:Q29117133 wdt:P18 "None".
+wd:Q29117133 pgdc:sparql kgdc:sparqlMyOxyhUxRfqVJ7aOumwOsfRbJdVT9nWH2M1bZ70wfVk .
+kgdc:sparqlMyOxyhUxRfqVJ7aOumwOsfRbJdVT9nWH2M1bZ70wfVk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q7814 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29117133 pgdc:piwigo_image "13224".
+wd:Q29117133 pgdc:piwigo_gallery kgdc:gal572.
+wd:Q3698227 rdfs:label """Crucifixion"""@fr.
+wd:Q3698227 wdt:P31 wd:wd:Q838948 .
+wd:Q3698227 wdt:P170 wd:Q7814.
+wd:Q7814 rdfs:label """Giotto"""@fr.
+wd:Q7814 wdt:P31 wd:Q3391743 .
+wd:Q3698227 wdt:P18 "None".
+wd:Q3698227 pgdc:sparql kgdc:sparqlMyOxyhUxRfqVJ7aOumwOsfRbJdVT9nWH2M1bZ70wfVk .
+kgdc:sparqlMyOxyhUxRfqVJ7aOumwOsfRbJdVT9nWH2M1bZ70wfVk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q7814 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3698227 pgdc:piwigo_image "13225".
+wd:Q3698227 pgdc:piwigo_gallery kgdc:gal572.
+wd:Q23904 rdfs:label """saint François reçoit les stigmates"""@fr.
+wd:Q23904 wdt:P31 wd:wd:Q838948 .
+wd:Q23904 wdt:P170 wd:Q7814.
+wd:Q7814 rdfs:label """Giotto"""@fr.
+wd:Q7814 wdt:P31 wd:Q3391743 .
+wd:Q23904 wdt:P18 "None".
+wd:Q23904 pgdc:sparql kgdc:sparqlMyOxyhUxRfqVJ7aOumwOsfRbJdVT9nWH2M1bZ70wfVk .
+kgdc:sparqlMyOxyhUxRfqVJ7aOumwOsfRbJdVT9nWH2M1bZ70wfVk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q7814 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q23904 pgdc:piwigo_image "13226".
+wd:Q23904 pgdc:piwigo_gallery kgdc:gal572.

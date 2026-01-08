@@ -1,0 +1,3783 @@
+wd:Q124251258 rdfs:label """Flower bouquet"""@fr.
+wd:Q124251258 wdt:P31 wd:Q838948 .
+wd:Q124251258 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q124251258 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Tableaux%20anciens%20et%20modernes%20%281886%29%20%2814776978782%29.jpg".
+wd:Q124251258 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124251258 pgdc:piwigo_image "21376".
+wd:Q124251258 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q124305433 rdfs:label """Flowers in a glass vase, 1739"""@fr.
+wd:Q124305433 wdt:P31 wd:Q838948 .
+wd:Q124305433 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q124305433 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20or%20Jan%20Davidsz%20de%20Heem%20-%20Flowers%20in%20a%20glass%20vase%2C%201739.jpg".
+wd:Q124305433 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124305433 pgdc:piwigo_image "21377".
+wd:Q124305433 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17275773 rdfs:label """Nature morte aux fruits"""@fr.
+wd:Q17275773 wdt:P31 wd:Q838948 .
+wd:Q17275773 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17275773 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Fruit%20Still%20Life%20-%2070%20-%20Mauritshuis.jpg".
+wd:Q17275773 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Fruit%20Still%20Life%20by%20Jan%20van%20Huijsum%20Mauritshuis%2070.jpg".
+wd:Q17275773 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17275773 pgdc:piwigo_image "21378".
+wd:Q17275773 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17275774 rdfs:label """Nature morte aux fleurs"""@fr.
+wd:Q17275774 wdt:P31 wd:Q838948 .
+wd:Q17275774 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17275774 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flower%20Still%20Life%20-%2071%20-%20Mauritshuis.jpg".
+wd:Q17275774 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17275774 pgdc:piwigo_image "21379".
+wd:Q17275774 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17276277 rdfs:label """Paysage arcadien avec un buste de Flore"""@fr.
+wd:Q17276277 wdt:P31 wd:Q838948 .
+wd:Q17276277 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17276277 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Arcadian%20landscape%20with%20a%20bust%20of%20Flora%2C%20by%20Jan%20van%20Huijsum.jpg".
+wd:Q17276277 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Arcadian%20Landscape%20with%20a%20Bust%20of%20Flora%20-%201113%20-%20Mauritshuis.jpg".
+wd:Q17276277 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17276277 pgdc:piwigo_image "21380".
+wd:Q17276277 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17276278 rdfs:label """Arcadian Landscape with Saints Peter and John Healing the Lame Man"""@fr.
+wd:Q17276278 wdt:P31 wd:Q838948 .
+wd:Q17276278 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17276278 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Arcadian%20Landscape%20with%20Saints%20Peter%20and%20John%20Healing%20the%20Lame%20Man%20-%201114%20-%20Mauritshuis.jpg".
+wd:Q17276278 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17276278 pgdc:piwigo_image "21381".
+wd:Q17276278 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17319897 rdfs:label """Arcadian Landscape with Fishermen"""@fr.
+wd:Q17319897 wdt:P31 wd:Q838948 .
+wd:Q17319897 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17319897 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Arcadisch%20landschap%20met%20vissers%20Rijksmuseum%20SK-A-185.jpeg".
+wd:Q17319897 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17319897 pgdc:piwigo_image "21382".
+wd:Q17319897 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17319899 rdfs:label """Arcadian Landscape with a Ceremonial Sacrifice"""@fr.
+wd:Q17319899 wdt:P31 wd:Q838948 .
+wd:Q17319899 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17319899 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Arcadisch%20landschap%20met%20een%20offerfeest%20Rijksmuseum%20SK-A-186.jpeg".
+wd:Q17319899 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17319899 pgdc:piwigo_image "21383".
+wd:Q17319899 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17319900 rdfs:label """Nature morte aux fruits"""@fr.
+wd:Q17319900 wdt:P31 wd:Q838948 .
+wd:Q17319900 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17319900 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Stilleven%20met%20vruchten%20-%20SK-A-187%20-%20Rijksmuseum.jpg".
+wd:Q17319900 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17319900 pgdc:piwigo_image "21384".
+wd:Q17319900 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17319901 rdfs:label """Still Life with Flowers"""@fr.
+wd:Q17319901 wdt:P31 wd:Q838948 .
+wd:Q17319901 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17319901 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Stilleven%20met%20bloemen%20Rijksmuseum%20SK-A-188.jpeg".
+wd:Q17319901 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17319901 pgdc:piwigo_image "21385".
+wd:Q17319901 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17321572 rdfs:label """Flowers in a vase on a marble slab"""@fr.
+wd:Q17321572 wdt:P31 wd:Q838948 .
+wd:Q17321572 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17321572 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/J.%20van%20Huysum%20-%20Stilleven%20met%20bloemen%20-%20B293%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg".
+wd:Q17321572 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17321572 pgdc:piwigo_image "21386".
+wd:Q17321572 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17342012 rdfs:label """Still Life with Flowers and Fruit"""@fr.
+wd:Q17342012 wdt:P31 wd:Q838948 .
+wd:Q17342012 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17342012 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Stilleven%20met%20bloemen%20en%20vruchten%20Rijksmuseum%20SK-C-155.jpeg".
+wd:Q17342012 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17342012 pgdc:piwigo_image "21387".
+wd:Q17342012 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17342923 rdfs:label """Still life with flowers and fruit"""@fr.
+wd:Q17342923 wdt:P31 wd:Q838948 .
+wd:Q17342923 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17342923 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Stilleven%20met%20bloemen%20en%20vruchten%20-%20Google%20Art%20Project.jpg".
+wd:Q17342923 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17342923 pgdc:piwigo_image "21388".
+wd:Q17342923 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17558150 rdfs:label """Consider the lilies of the field"""@fr.
+wd:Q17558150 wdt:P31 wd:Q838948 .
+wd:Q17558150 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17558150 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/SA%207523-Stilleven%20met%20bloemen%2C%20%27Leli%C3%ABn%20des%20velts%27.jpg".
+wd:Q17558150 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17558150 pgdc:piwigo_image "21389".
+wd:Q17558150 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q19926078 rdfs:label """Basket with flowers"""@fr.
+wd:Q19926078 wdt:P31 wd:Q838948 .
+wd:Q19926078 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q19926078 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huijsum%20-%20Mandje%20met%20bloemen%20-%202501%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg".
+wd:Q19926078 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19926078 pgdc:piwigo_image "21390".
+wd:Q19926078 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q17815953 rdfs:label """Arcadian Landscape"""@fr.
+wd:Q17815953 wdt:P31 wd:Q838948 .
+wd:Q17815953 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q17815953 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/SA%2025174-Arcadisch%20landschap.jpg".
+wd:Q17815953 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17815953 pgdc:piwigo_image "21391".
+wd:Q17815953 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q20177776 rdfs:label """Nature morte aux fleurs et fruits"""@fr.
+wd:Q20177776 wdt:P31 wd:Q838948 .
+wd:Q20177776 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q20177776 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Still%20Life%20with%20Flowers%20and%20Fruit%20A16296.jpg".
+wd:Q20177776 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20177776 pgdc:piwigo_image "21392".
+wd:Q20177776 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q20177790 rdfs:label """Flowers in an Urn"""@fr.
+wd:Q20177790 wdt:P31 wd:Q838948 .
+wd:Q20177790 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q20177790 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Flowers%20in%20an%20Urn%20A33252.jpg".
+wd:Q20177790 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20177790 pgdc:piwigo_image "21393".
+wd:Q20177790 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q20178216 rdfs:label """Fruit Piece"""@fr.
+wd:Q20178216 wdt:P31 wd:Q838948 .
+wd:Q20178216 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q20178216 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20%28Dutch%20-%20Fruit%20Piece%20-%20Google%20Art%20Project.jpg".
+wd:Q20178216 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20178216 pgdc:piwigo_image "21394".
+wd:Q20178216 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q20184843 rdfs:label """Vase of Flowers"""@fr.
+wd:Q20184843 wdt:P31 wd:Q838948 .
+wd:Q20184843 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q20184843 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Vase%20of%20Flowers%20by%20Jan%20van%20Huysum%2C%20Getty%20Center.JPG".
+wd:Q20184843 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20184843 pgdc:piwigo_image "21395".
+wd:Q20184843 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q20422586 rdfs:label """Un Vase avec Fleurs"""@fr.
+wd:Q20422586 wdt:P31 wd:Q838948 .
+wd:Q20422586 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q20422586 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysums%20Blomsterstykke.jpg".
+wd:Q20422586 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20422586 pgdc:piwigo_image "21396".
+wd:Q20422586 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q20474208 rdfs:label """Landscape"""@fr.
+wd:Q20474208 wdt:P31 wd:Q838948 .
+wd:Q20474208 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q20474208 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Landscape%20-%20KMSst114%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20474208 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20474208 pgdc:piwigo_image "21397".
+wd:Q20474208 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q20540348 rdfs:label """Vase of Flowers in a Niche"""@fr.
+wd:Q20540348 wdt:P31 wd:Q838948 .
+wd:Q20540348 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q20540348 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Vase%20of%20Flowers%20in%20a%20Niche%20SC226791.jpg".
+wd:Q20540348 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20540348 pgdc:piwigo_image "21398".
+wd:Q20540348 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q20500318 rdfs:label """Landscape"""@fr.
+wd:Q20500318 wdt:P31 wd:Q838948 .
+wd:Q20500318 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q20500318 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Landscape%20-%20KMS1864%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20500318 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20500318 pgdc:piwigo_image "21399".
+wd:Q20500318 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q20738809 rdfs:label """Vase of Flowers on a Garden Ledge"""@fr.
+wd:Q20738809 wdt:P31 wd:Q838948 .
+wd:Q20738809 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q20738809 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Vase%20of%20Flowers%20on%20a%20Garden%20Ledge%20-%20c.%201730.jpg".
+wd:Q20738809 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20738809 pgdc:piwigo_image "21400".
+wd:Q20738809 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q20878970 rdfs:label """Bouquet of Flowers in an Urn"""@fr.
+wd:Q20878970 wdt:P31 wd:Q838948 .
+wd:Q20878970 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q20878970 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huijsum%20-%20Bouquet%20of%20Flowers%20in%20an%20Urn%20-%20WGA11818.jpg".
+wd:Q20878970 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bouquet%20of%20Flowers%20in%20an%20Urn.jpg".
+wd:Q20878970 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20878970 pgdc:piwigo_image "21401".
+wd:Q20878970 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q21722645 rdfs:label """Flowers"""@fr.
+wd:Q21722645 wdt:P31 wd:Q838948 .
+wd:Q21722645 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q21722645 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huijsum%20-%20Flowers%20-%20WGA11820.jpg".
+wd:Q21722645 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21722645 pgdc:piwigo_image "21402".
+wd:Q21722645 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q21731073 rdfs:label """Flowers and Fruit"""@fr.
+wd:Q21731073 wdt:P31 wd:Q838948 .
+wd:Q21731073 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q21731073 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huijsum%20-%20Flowers%20and%20Fruit%20-%20WGA11821.jpg".
+wd:Q21731073 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21731073 pgdc:piwigo_image "21403".
+wd:Q21731073 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q21727629 rdfs:label """Fleurs"""@fr.
+wd:Q21727629 wdt:P31 wd:Q838948 .
+wd:Q21727629 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q21727629 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rachel%20Ruysch%20-%20Still%20Life%20of%20Flowers%20Hermitage.jpg".
+wd:Q21727629 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21727629 pgdc:piwigo_image "21404".
+wd:Q21727629 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q23901127 rdfs:label """Still life of flowers in a terracotta vase, before a niche"""@fr.
+wd:Q23901127 wdt:P31 wd:Q838948 .
+wd:Q23901127 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q23901127 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Still%20life%20of%20flowers%20in%20a%20terracotta%20vase%2C%20before%20a%20niche%20-%201734.jpg".
+wd:Q23901127 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23901127 pgdc:piwigo_image "21405".
+wd:Q23901127 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q23901164 rdfs:label """Still life of flowers and fruit on a marble slab"""@fr.
+wd:Q23901164 wdt:P31 wd:Q838948 .
+wd:Q23901164 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q23901164 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Stilleven%20van%20bloemen%20en%20vruchten%20op%20een%20marmeren%20blad.jpg".
+wd:Q23901164 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23901164 pgdc:piwigo_image "21406".
+wd:Q23901164 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q23901170 rdfs:label """Flowers in a Terracotta Vase"""@fr.
+wd:Q23901170 wdt:P31 wd:Q838948 .
+wd:Q23901170 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q23901170 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flowers%20in%20a%20Terracotta%20Vase.jpg".
+wd:Q23901170 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23901170 pgdc:piwigo_image "21407".
+wd:Q23901170 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q23928496 rdfs:label """Vase with Flowers"""@fr.
+wd:Q23928496 wdt:P31 wd:Q838948 .
+wd:Q23928496 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q23928496 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Huysum%2C%20Jan%20-%20Vase%20with%20Flowers%20-%20Google%20Art%20Project.jpg".
+wd:Q23928496 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23928496 pgdc:piwigo_image "21408".
+wd:Q23928496 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q23902753 rdfs:label """Still life of fruit heaped in a basket, next to an urn"""@fr.
+wd:Q23902753 wdt:P31 wd:Q838948 .
+wd:Q23902753 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q23902753 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Still%20life%20of%20fruit%20heaped%20in%20a%20basket%2C%20next%20to%20an%20urn%20-%201730s.jpg".
+wd:Q23902753 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q23902753 pgdc:piwigo_image "21409".
+wd:Q23902753 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q25401886 rdfs:label """Italian Landscape"""@fr.
+wd:Q25401886 wdt:P31 wd:Q838948 .
+wd:Q25401886 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q25401886 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Italian%20Landscape%20-%2072%20-%20Mauritshuis.jpg".
+wd:Q25401886 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q25401886 pgdc:piwigo_image "21410".
+wd:Q25401886 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q26511970 rdfs:label """Hollyhocks and Other Flowers in a Vase"""@fr.
+wd:Q26511970 wdt:P31 wd:Q838948 .
+wd:Q26511970 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q26511970 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huijsum%20-%20Hollyhocks%20and%20Other%20Flowers%20in%20a%20Vase%20-%20WGA11824.jpg".
+wd:Q26511970 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q26511970 pgdc:piwigo_image "21411".
+wd:Q26511970 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q27149251 rdfs:label """Vase de fleurs dans une niche"""@fr.
+wd:Q27149251 wdt:P31 wd:Q838948 .
+wd:Q27149251 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q27149251 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huijsum%20-%20Vase%20of%20Flowers%20in%20a%20Niche%20-%20WGA11828.jpg".
+wd:Q27149251 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27149251 pgdc:piwigo_image "21412".
+wd:Q27149251 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q27960879 rdfs:label """Flower Still Life with Bird's Nest"""@fr.
+wd:Q27960879 wdt:P31 wd:Q838948 .
+wd:Q27960879 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q27960879 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Still%20Life%20of%20Roses%2C%20Tulips%2C%20Peonies%20and%20other%20Flowers%20in%20a%20Sculpted%20Vase%20and%20a%20Bird%E2%80%99s%20Nest%20on%20a%20Ledge.jpg".
+wd:Q27960879 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flower%20Still%20Life%20with%20Bird%27s%20Nest%20-%20NG%202868%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q27960879 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27960879 pgdc:piwigo_image "21413".
+wd:Q27960879 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q27982271 rdfs:label """Flower still life in a terracotta vase, for two columns and a park landscape with a statue of Venus"""@fr.
+wd:Q27982271 wdt:P31 wd:Q838948 .
+wd:Q27982271 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q27982271 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Blumenstrau%C3%9F%20vor%20Parklandschaft%20-%20GG%20560%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27982271 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27982271 pgdc:piwigo_image "21414".
+wd:Q27982271 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q28039759 rdfs:label """Still Life of Flowers and Fruit"""@fr.
+wd:Q28039759 wdt:P31 wd:Q838948 .
+wd:Q28039759 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q28039759 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Still%20Life%20of%20Flowers%20and%20Fruit%20-%2098.80%20-%20Museum%20of%20Fine%20Arts.jpg".
+wd:Q28039759 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Still%20Life%20of%20Flowers%20and%20Fruit%20-%20Google%20Art%20Project.jpg".
+wd:Q28039759 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28039759 pgdc:piwigo_image "21415".
+wd:Q28039759 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q27982273 rdfs:label """Flower Still Life near a Pedestal"""@fr.
+wd:Q27982273 wdt:P31 wd:Q838948 .
+wd:Q27982273 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q27982273 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%2C%20%2C%20Kunsthistorisches%20Museum%20Wien%2C%20Gem%C3%A4ldegalerie%20-%20Blumenstrau%C3%9F%20bei%20einer%20S%C3%A4ule%20-%20GG%20559%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27982273 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27982273 pgdc:piwigo_image "21416".
+wd:Q27982273 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q28106696 rdfs:label """Q28106696"""@fr.
+wd:Q28106696 wdt:P31 wd:Q838948 .
+wd:Q28106696 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q28106696 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/J.%20van%20Huysum%20-%20Italiaans%20Landschap%20-%20B98%20-%20Rijksmuseum%20Twenthe.jpg".
+wd:Q28106696 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28106696 pgdc:piwigo_image "21417".
+wd:Q28106696 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q29656209 rdfs:label """Vase de fleurs sur fond de parc avec statue"""@fr.
+wd:Q29656209 wdt:P31 wd:Q838948 .
+wd:Q29656209 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q29656209 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Vase%20de%20Fleurs%20sur%20Fond%20de%20Parc%20avec%20Statue.jpg".
+wd:Q29656209 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29656209 pgdc:piwigo_image "21418".
+wd:Q29656209 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q29656221 rdfs:label """Corbeille de fleurs avec papillon"""@fr.
+wd:Q29656221 wdt:P31 wd:Q838948 .
+wd:Q29656221 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q29656221 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20A%20Basket%20of%20Flowers%20with%20Butterflies.jpg".
+wd:Q29656221 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29656221 pgdc:piwigo_image "21419".
+wd:Q29656221 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q29656228 rdfs:label """Paysage animé avec ruine et pont"""@fr.
+wd:Q29656228 wdt:P31 wd:Q838948 .
+wd:Q29656228 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q29656228 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huijsum%20-%20Landscape%20with%20Ruin%20and%20Bridge%20-%20WGA11825.jpg".
+wd:Q29656228 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29656228 pgdc:piwigo_image "21420".
+wd:Q29656228 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q29881862 rdfs:label """Fruit, flowers and insects on a marble ledge"""@fr.
+wd:Q29881862 wdt:P31 wd:Q838948 .
+wd:Q29881862 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q29881862 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20002.jpg".
+wd:Q29881862 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29881862 pgdc:piwigo_image "21421".
+wd:Q29881862 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q29953742 rdfs:label """Flower still-life with oriental table carpet"""@fr.
+wd:Q29953742 wdt:P31 wd:Q838948 .
+wd:Q29953742 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q29953742 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20%28zugeschrieben%29%20-%20Blumenst%C3%BCck%20-%205600%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29953742 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29953742 pgdc:piwigo_image "21422".
+wd:Q29953742 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q29937223 rdfs:label """Q29937223"""@fr.
+wd:Q29937223 wdt:P31 wd:Q838948 .
+wd:Q29937223 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q29937223 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huijsum%20-%20Basket%20of%20Flowers%20-%20WGA11817.jpg".
+wd:Q29937223 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29937223 pgdc:piwigo_image "21423".
+wd:Q29937223 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q29964626 rdfs:label """Fruit and Flowers"""@fr.
+wd:Q29964626 wdt:P31 wd:Q838948 .
+wd:Q29964626 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q29964626 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Fr%C3%BCchte%20und%20Blumen%20-%202077%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29964626 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29964626 pgdc:piwigo_image "21424".
+wd:Q29964626 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q30094104 rdfs:label """Q30094104"""@fr.
+wd:Q30094104 wdt:P31 wd:Q838948 .
+wd:Q30094104 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q30094104 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Italienische%20Abendlandschaft%20-%207278%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30094104 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30094104 pgdc:piwigo_image "21425".
+wd:Q30094104 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q30098062 rdfs:label """Q30098062"""@fr.
+wd:Q30098062 wdt:P31 wd:Q838948 .
+wd:Q30098062 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q30098062 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Blumen-%20und%20Distelst%C3%BCck%20in%20einer%20Landschaft%20-%2013678%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30098062 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30098062 pgdc:piwigo_image "21426".
+wd:Q30098062 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50358031 rdfs:label """Still-life of grapes and a peach on a table-top"""@fr.
+wd:Q50358031 wdt:P31 wd:Q838948 .
+wd:Q50358031 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50358031 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Huysum%2C%20Jan%20van%20-%20Still-life%20of%20grapes%20and%20a%20peach%20on%20a%20table-top.png".
+wd:Q50358031 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50358031 pgdc:piwigo_image "21427".
+wd:Q50358031 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50357864 rdfs:label """Fruit and Flowers"""@fr.
+wd:Q50357864 wdt:P31 wd:Q838948 .
+wd:Q50357864 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50357864 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20003.jpg".
+wd:Q50357864 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50357864 pgdc:piwigo_image "21428".
+wd:Q50357864 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50359049 rdfs:label """Terracotta Vase with Flowers and Fruits"""@fr.
+wd:Q50359049 wdt:P31 wd:Q838948 .
+wd:Q50359049 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50359049 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Terracotta%20Vase%20with%20Flowers%20and%20Fruits%20-%20Jan%20van%20Huijsum%20-%20Google%20Cultural%20Institute.jpg".
+wd:Q50359049 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Tonvase%20mit%20Blumen%20daneben%20Fr%C3%BCchte%20-%20379%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q50359049 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50359049 pgdc:piwigo_image "21429".
+wd:Q50359049 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50359471 rdfs:label """Fruit on a marble table and a basket with flowers and a butterfly"""@fr.
+wd:Q50359471 wdt:P31 wd:Q838948 .
+wd:Q50359471 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50359471 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/G%20418%20vanHuysum.jpg".
+wd:Q50359471 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50359471 pgdc:piwigo_image "21430".
+wd:Q50359471 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50359739 rdfs:label """Roses and other flowers in a terracotta pot"""@fr.
+wd:Q50359739 wdt:P31 wd:Q838948 .
+wd:Q50359739 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50359739 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flowers%20in%20a%20Vase%20with%20a%20Bird%27s%20nest%20-%20Schwerin.jpg".
+wd:Q50359739 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50359739 pgdc:piwigo_image "21431".
+wd:Q50359739 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50377883 rdfs:label """A Still Life of Flowers and Fruit, upon a Ledge, in a Park Setting"""@fr.
+wd:Q50377883 wdt:P31 wd:Q838948 .
+wd:Q50377883 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50377883 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20A%20Still%20Life%20of%20Flowers%20and%20Fruit%2C%20upon%20a%20Ledge%2C%20in%20a%20Park%20Setting%20NTII%20DMS%20814216.jpg".
+wd:Q50377883 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50377883 pgdc:piwigo_image "21432".
+wd:Q50377883 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50378058 rdfs:label """Nature morte"""@fr.
+wd:Q50378058 wdt:P31 wd:Q838948 .
+wd:Q50378058 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50378058 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20still-life-1724.jpg".
+wd:Q50378058 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50378058 pgdc:piwigo_image "21433".
+wd:Q50378058 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50378108 rdfs:label """Festoon of Flowers"""@fr.
+wd:Q50378108 wdt:P31 wd:Q838948 .
+wd:Q50378108 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50378108 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Festoen%20of%20Flowers%202006%20CKS%2007253%200062%20000%28%29.jpg".
+wd:Q50378108 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50378108 pgdc:piwigo_image "21434".
+wd:Q50378108 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50378147 rdfs:label """Flowers in a Vase with Crown Imperial and Apple Blossom at the Top and a Statue of Flora 1731-2"""@fr.
+wd:Q50378147 wdt:P31 wd:Q838948 .
+wd:Q50378147 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50378147 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flowers%20in%20a%20Vase%20with%20Crown%20Imperial%20and%20Apple%20Blossom%20at%20the%20Top%20and%20a%20Statue%20of%20Flora%201731-2.jpg".
+wd:Q50378147 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50378147 pgdc:piwigo_image "21435".
+wd:Q50378147 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50379332 rdfs:label """Nature morte aux fruits"""@fr.
+wd:Q50379332 wdt:P31 wd:Q838948 .
+wd:Q50379332 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50379332 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/PeinturesMus%C3%A9eFabre021.jpg".
+wd:Q50379332 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50379332 pgdc:piwigo_image "21436".
+wd:Q50379332 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50379355 rdfs:label """Bouquet de fleurs"""@fr.
+wd:Q50379355 wdt:P31 wd:Q838948 .
+wd:Q50379355 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50379355 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/PeinturesMus%C3%A9eFabre022.jpg".
+wd:Q50379355 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50379355 pgdc:piwigo_image "21437".
+wd:Q50379355 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50379844 rdfs:label """Still Life with Hyacinths and Roses in a Terracotta Vase on a Marble Table"""@fr.
+wd:Q50379844 wdt:P31 wd:Q838948 .
+wd:Q50379844 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50379844 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Catalogue%20of%20the%20highly%20important%20collection%20of%20ancient%20and%20modern%20pictures%20formed%20by%20Jean%20Louis%20Mi%C3%A9ville%2C%20comprising%20works%20of%20the%20modern%20English%2C%20French%20and%20continental%20schools%2C%20and%20choice%20works%20of%20%2814596795089%29.jpg".
+wd:Q50379844 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50379844 pgdc:piwigo_image "21438".
+wd:Q50379844 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50379915 rdfs:label """Flower still-life and snails on a stone ledge"""@fr.
+wd:Q50379915 wdt:P31 wd:Q838948 .
+wd:Q50379915 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50379915 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flower%20still-life%20and%20snails%20on%20a%20stone%20ledge.jpg".
+wd:Q50379915 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50379915 pgdc:piwigo_image "21439".
+wd:Q50379915 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50380488 rdfs:label """Flower still-life in a glass vase on a stone ledge"""@fr.
+wd:Q50380488 wdt:P31 wd:Q838948 .
+wd:Q50380488 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50380488 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flower%20still-life%20in%20a%20glass%20vase%20on%20a%20stone%20ledge.jpg".
+wd:Q50380488 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50380488 pgdc:piwigo_image "21440".
+wd:Q50380488 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50380505 rdfs:label """Fruit and Flowers"""@fr.
+wd:Q50380505 wdt:P31 wd:Q838948 .
+wd:Q50380505 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50380505 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Still%20Life%20with%20Fruit%20MET%20DP820041.jpg".
+wd:Q50380505 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50380505 pgdc:piwigo_image "21441".
+wd:Q50380505 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50382499 rdfs:label """Fruit and Flowers in front of a Garden Vase with an Opium Poppy and a Row of Cypresses"""@fr.
+wd:Q50382499 wdt:P31 wd:Q838948 .
+wd:Q50382499 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50382499 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Fruit%20and%20Flowers%20in%20front%20of%20a%20Garden%20Vase%20with%20an%20Opium%20Poppy%20and%20a%20Row%20of%20Cypresses%201731-2.jpg".
+wd:Q50382499 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50382499 pgdc:piwigo_image "21442".
+wd:Q50382499 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50383191 rdfs:label """Hollyhocks and Fruit by Two Columns"""@fr.
+wd:Q50383191 wdt:P31 wd:Q838948 .
+wd:Q50383191 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50383191 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Huysum%20hollyhocks.jpg".
+wd:Q50383191 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50383191 pgdc:piwigo_image "21443".
+wd:Q50383191 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50383703 rdfs:label """Glass Vase with Flowers, a Poppy and a Finch Nest"""@fr.
+wd:Q50383703 wdt:P31 wd:Q838948 .
+wd:Q50383703 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50383703 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Glass%20Vase%20with%20Flowers%2C%20a%20Poppy%20and%20a%20Finch%20Nest%2C%201720-21.jpg".
+wd:Q50383703 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50383703 pgdc:piwigo_image "21444".
+wd:Q50383703 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50383930 rdfs:label """Fruit and Flowers on a Marble Table"""@fr.
+wd:Q50383930 wdt:P31 wd:Q838948 .
+wd:Q50383930 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50383930 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Fruit%20and%20Flowers%20on%20a%20Marble%20Table.jpg".
+wd:Q50383930 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50383930 pgdc:piwigo_image "21445".
+wd:Q50383930 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50414070 rdfs:label """Still Life of Flowers in a Vase with a Bird's Nest"""@fr.
+wd:Q50414070 wdt:P31 wd:Q838948 .
+wd:Q50414070 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50414070 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gem%C3%A4ldegalerie%20Alte%20Meister%20%28Dresden%29%20Galeriewerk%20Braun%201827.jpg".
+wd:Q50414070 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50414070 pgdc:piwigo_image "21446".
+wd:Q50414070 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50414094 rdfs:label """Fruits"""@fr.
+wd:Q50414094 wdt:P31 wd:Q838948 .
+wd:Q50414094 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50414094 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rigaud24%2CFruits%20Huysum.jpg".
+wd:Q50414094 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50414094 pgdc:piwigo_image "21447".
+wd:Q50414094 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50414247 rdfs:label """Flowerpiece in a niche with a bird nest and a snail"""@fr.
+wd:Q50414247 wdt:P31 wd:Q838948 .
+wd:Q50414247 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50414247 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flowerpiece%20in%20a%20niche%20with%20a%20bird%20nest%20and%20a%20snail.jpg".
+wd:Q50414247 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Blumenstrauss%20-%20380%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q50414247 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50414247 pgdc:piwigo_image "21448".
+wd:Q50414247 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50414333 rdfs:label """Vase de fleurs"""@fr.
+wd:Q50414333 wdt:P31 wd:Q838948 .
+wd:Q50414333 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50414333 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flowerpiece%20in%20a%20Garden%20Vase%20on%20a%20Pedestal.jpg".
+wd:Q50414333 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50414333 pgdc:piwigo_image "21449".
+wd:Q50414333 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50414431 rdfs:label """Flowerpiece in a Garden Vase on a Pedestal in a Niche"""@fr.
+wd:Q50414431 wdt:P31 wd:Q838948 .
+wd:Q50414431 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50414431 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Bloemstilleven%20in%20een%20terracotta%20vaas%2C%20met%20medallion%2C%20op%20een%20pi%C3%ABdestal%20in%20een%20nis.jpg".
+wd:Q50414431 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50414431 pgdc:piwigo_image "21450".
+wd:Q50414431 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50414508 rdfs:label """Flower piece with fruit and turf"""@fr.
+wd:Q50414508 wdt:P31 wd:Q838948 .
+wd:Q50414508 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50414508 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flower%20piece%20with%20fruit%20and%20turf.jpg".
+wd:Q50414508 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50414508 pgdc:piwigo_image "21451".
+wd:Q50414508 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50418165 rdfs:label """Flowers in a terracotta vase on a pedestal"""@fr.
+wd:Q50418165 wdt:P31 wd:Q838948 .
+wd:Q50418165 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50418165 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flowers%20in%20a%20terracotta%20vase%20on%20a%20pedestal%2068746%20l%201.jpg".
+wd:Q50418165 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50418165 pgdc:piwigo_image "21452".
+wd:Q50418165 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50422568 rdfs:label """Bouquet of Flowers"""@fr.
+wd:Q50422568 wdt:P31 wd:Q838948 .
+wd:Q50422568 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50422568 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Bouquet%20of%20Flowers.jpg".
+wd:Q50422568 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50422568 pgdc:piwigo_image "21453".
+wd:Q50422568 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50426535 rdfs:label """Floral Still Life with Hollyhock and Marigold"""@fr.
+wd:Q50426535 wdt:P31 wd:Q838948 .
+wd:Q50426535 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50426535 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Floral%20Still%20Life%20with%20Hollyhock%20and%20Marigold.jpg".
+wd:Q50426535 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20II%20-%20Floral%20Still%20Life%20with%20Hollyhock%20and%20Marigold%20-%202016.242%20-%20Fogg%20Museum.jpg".
+wd:Q50426535 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50426535 pgdc:piwigo_image "21454".
+wd:Q50426535 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50518172 rdfs:label """Fleurs dans un vase"""@fr.
+wd:Q50518172 wdt:P31 wd:Q838948 .
+wd:Q50518172 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50518172 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Vase%20de%20fleurs%201304237%20van%20huysum.jpg".
+wd:Q50518172 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50518172 pgdc:piwigo_image "21455".
+wd:Q50518172 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50476766 rdfs:label """Flowers in a Terracotta Vase"""@fr.
+wd:Q50476766 wdt:P31 wd:Q838948 .
+wd:Q50476766 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50476766 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flowers%20in%20a%20Terracotta%20Vase%2C%201724-1725.jpg".
+wd:Q50476766 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50476766 pgdc:piwigo_image "21456".
+wd:Q50476766 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50519264 rdfs:label """Vase de fleurs"""@fr.
+wd:Q50519264 wdt:P31 wd:Q838948 .
+wd:Q50519264 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50519264 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Husum%2C%20Jan%20van%20-%20Vase%20of%20flowers%20-%20Galleria%20Palatina.jpg".
+wd:Q50519264 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huijsum%20-%20Vase%20of%20Flowers%20with%20a%20Bird%27s%20Nest.jpg".
+wd:Q50519264 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50519264 pgdc:piwigo_image "21457".
+wd:Q50519264 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50521010 rdfs:label """Fruit and nuts still life on a marble ledge"""@fr.
+wd:Q50521010 wdt:P31 wd:Q838948 .
+wd:Q50521010 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50521010 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Fruit%20and%20Nuts%20on%20a%20Ledge.jpg".
+wd:Q50521010 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50521010 pgdc:piwigo_image "21458".
+wd:Q50521010 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50620952 rdfs:label """Still life of fruit upon a marble ledge, a bird's nest to the right and a basket of flowers above, insects throughout"""@fr.
+wd:Q50620952 wdt:P31 wd:Q838948 .
+wd:Q50620952 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50620952 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Still%20life%20of%20fruit%20upon%20a%20marble%20ledge%2C%20a%20bird%27s%20nest%20to%20the%20right%20and%20a%20basket%20of%20flowers%20above%2C%20insects%20throughout.jpg".
+wd:Q50620952 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50620952 pgdc:piwigo_image "21459".
+wd:Q50620952 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50662826 rdfs:label """Roses and other flowers in a wicker basket on a marble ledge"""@fr.
+wd:Q50662826 wdt:P31 wd:Q838948 .
+wd:Q50662826 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50662826 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Huysum%20flowers.jpg".
+wd:Q50662826 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50662826 pgdc:piwigo_image "21460".
+wd:Q50662826 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50820670 rdfs:label """A vase of flowers"""@fr.
+wd:Q50820670 wdt:P31 wd:Q838948 .
+wd:Q50820670 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50820670 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20%281682-1749%29%20%28attributed%20to%29%20-%20A%20Vase%20of%20Flowers%20-%20PD.78-1973%20-%20Fitzwilliam%20Museum.jpg".
+wd:Q50820670 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50820670 pgdc:piwigo_image "21461".
+wd:Q50820670 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q50821273 rdfs:label """Fruit and flowers"""@fr.
+wd:Q50821273 wdt:P31 wd:Q838948 .
+wd:Q50821273 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q50821273 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20%281682-1749%29%20%28after%29%20-%20Fruit%20and%20Flowers%20-%20M.66%20-%20Fitzwilliam%20Museum.jpg".
+wd:Q50821273 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50821273 pgdc:piwigo_image "21462".
+wd:Q50821273 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q52156372 rdfs:label """Still-life with Roses, Tulips, Hyacinths and other Flowers in a Classical Urn"""@fr.
+wd:Q52156372 wdt:P31 wd:Q838948 .
+wd:Q52156372 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q52156372 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20%281682-1749%29%20-%20Still%20Life%20with%20Roses%2C%20Tulips%2C%20Hyacinths%20and%20Other%20Flowers%20in%20a%20Classical%20Urn%20-%20814217%20-%20National%20Trust.jpg".
+wd:Q52156372 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q52156372 pgdc:piwigo_image "21463".
+wd:Q52156372 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q59842271 rdfs:label """Flowers in a Vase"""@fr.
+wd:Q59842271 wdt:P31 wd:Q838948 .
+wd:Q59842271 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q59842271 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Flowers%20in%20a%20Vase%20WLC%20WLC%20P149.jpg".
+wd:Q59842271 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q59842271 pgdc:piwigo_image "21464".
+wd:Q59842271 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q64529120 rdfs:label """Still Life with Flowers"""@fr.
+wd:Q64529120 wdt:P31 wd:Q838948 .
+wd:Q64529120 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q64529120 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20Still%20Life%20with%20Flowers%20-%2036.018%20-%20Rhode%20Island%20School%20of%20Design%20Museum.jpg".
+wd:Q64529120 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q64529120 pgdc:piwigo_image "21465".
+wd:Q64529120 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q64787097 rdfs:label """Italian Landscape"""@fr.
+wd:Q64787097 wdt:P31 wd:Q838948 .
+wd:Q64787097 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q64787097 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20Landscape%20%28SM%20307%29.png".
+wd:Q64787097 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q64787097 pgdc:piwigo_image "21466".
+wd:Q64787097 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q106322704 rdfs:label """Landscape with the Flight into Egypt"""@fr.
+wd:Q106322704 wdt:P31 wd:Q838948 .
+wd:Q106322704 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q106322704 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/ARCADIAN%20LANDSCAPE%20WITH%20THE%20REST%20ON%20THE%20FLGHT%20INTO%20EGYPT.PNG".
+wd:Q106322704 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q106322704 pgdc:piwigo_image "21467".
+wd:Q106322704 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q106771656 rdfs:label """Fleurs et fruits"""@fr.
+wd:Q106771656 wdt:P31 wd:Q838948 .
+wd:Q106771656 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q106771656 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Beaux-Arts%20de%20Pau%20-%20fleurs%20et%20fruits%20-%20Jan%20van%20Huijsum%20-%20Joconde00980001778.jpg".
+wd:Q106771656 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q106771656 pgdc:piwigo_image "8863".
+wd:Q106771656 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q110735420 rdfs:label """The Holy Family at rest in Egypt"""@fr.
+wd:Q110735420 wdt:P31 wd:Q838948 .
+wd:Q110735420 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q110735420 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20The%20Holy%20Family%20at%20rest%20in%20Egypt.jpg".
+wd:Q110735420 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q110735420 pgdc:piwigo_image "21468".
+wd:Q110735420 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q111645414 rdfs:label """flower piece"""@fr.
+wd:Q111645414 wdt:P31 wd:Q838948 .
+wd:Q111645414 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q111645414 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20%281682-1749%29%20-%20Blumenstrau%C3%9F%20-%202165%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111645414 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111645414 pgdc:piwigo_image "21469".
+wd:Q111645414 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q110778077 rdfs:label """Vase of flowers on a ledge, with  a rose, a snowball, daffodils, and irises"""@fr.
+wd:Q110778077 wdt:P31 wd:Q838948 .
+wd:Q110778077 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q110778077 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20-%20A%20rose%2C%20a%20snowball%2C%20daffodils%2C%20irises%20and%20other%20flowers%20in%20a%20glass%20vase%2C%20on%20a%20stone%20ledge%202015%20CKS%2010392%200136.jpg".
+wd:Q110778077 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q110778077 pgdc:piwigo_image "21470".
+wd:Q110778077 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q116913618 rdfs:label """Bouquet de fleurs"""@fr.
+wd:Q116913618 wdt:P31 wd:Q838948 .
+wd:Q116913618 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q116913618 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Huysum%2C%20Bouquet%20de%20fleurs.jpg".
+wd:Q116913618 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q116913618 pgdc:piwigo_image "21471".
+wd:Q116913618 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q111648633 rdfs:label """Still-life with flower+ fruits"""@fr.
+wd:Q111648633 wdt:P31 wd:Q838948 .
+wd:Q111648633 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q111648633 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20Huysum%20%281682-1749%29%20-%20Blumenstillleben%20mit%20Fr%C3%BCchten%20-%203233%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111648633 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111648633 pgdc:piwigo_image "21472".
+wd:Q111648633 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q124248389 rdfs:label """Flower still life with bird's nest"""@fr.
+wd:Q124248389 wdt:P31 wd:Q838948 .
+wd:Q124248389 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q124248389 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Blumenstillleben%20mit%20Vogeleiern%20%28SM%20826z%29.png".
+wd:Q124248389 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124248389 pgdc:piwigo_image "21473".
+wd:Q124248389 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q124248465 rdfs:label """Landscape with an Italian city near a mountain, with a ruined tempel and figures with a dog"""@fr.
+wd:Q124248465 wdt:P31 wd:Q838948 .
+wd:Q124248465 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q124248465 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Landschaft%20mit%20einer%20italienischen%20Stadt%20bei%20einem%20hohen%20Berg%2C%20rechts%20die%20Ruine%20eines%20Tempels%2C%20im%20Vordergrund%20zwei%20Figuren%20und%20ein%20Hund%20%28SM%206743z%29.png".
+wd:Q124248465 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124248465 pgdc:piwigo_image "21474".
+wd:Q124248465 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q124248353 rdfs:label """Fruit still life with hazelnuts"""@fr.
+wd:Q124248353 wdt:P31 wd:Q838948 .
+wd:Q124248353 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q124248353 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Fr%C3%BCchtest%C3%BCck%20mit%20Pfirsich%2C%20Haselnuss%2CTrauben%20und%20Pflaumen%20%28SM%20963z%29.png".
+wd:Q124248353 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124248353 pgdc:piwigo_image "21475".
+wd:Q124248353 pgdc:piwigo_gallery kgdc:gal756.
+wd:Q124248218 rdfs:label """Flowers and fruits"""@fr.
+wd:Q124248218 wdt:P31 wd:Q838948 .
+wd:Q124248218 wdt:P170 wd:Q527869.
+wd:Q527869 rdfs:label """Jan van Huysum"""@fr.
+wd:Q527869 wdt:P31 wd:Q3391743 .
+wd:Q124248218 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Flowers%20and%20fruits%2C%20van%20Huijsum%20%282022-12-06%29%20%28cropped%29.jpg".
+wd:Q124248218 pgdc:sparql kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI .
+kgdc:sparqls8lwK6waX3BhLHjE7Q1b6drtHotUVanRIm1rq4JAILI pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q527869 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q527869 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q124248218 pgdc:piwigo_image "21476".
+wd:Q124248218 pgdc:piwigo_gallery kgdc:gal756.

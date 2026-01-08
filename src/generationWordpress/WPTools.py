@@ -1,4 +1,4 @@
-import src.generationWordpress.configPrivee2 as configPrivee
+import configPrivee2 as configPrivee
 import base64
 import requests
 import tempfile

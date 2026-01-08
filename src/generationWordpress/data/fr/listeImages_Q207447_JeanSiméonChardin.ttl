@@ -1,0 +1,1265 @@
+wd:Q121349546 rdfs:label """Pêches et Prunes"""@fr.
+wd:Q121349546 wdt:P31 wd:wd:Q838948 .
+wd:Q121349546 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q121349546 wdt:P18 "None".
+wd:Q121349546 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q121349546 pgdc:piwigo_image "8894".
+wd:Q121349546 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q115674417 rdfs:label """Plateau de pêches avec noix, raisin, verre de vin et couteau"""@fr.
+wd:Q115674417 wdt:P31 wd:wd:Q838948 .
+wd:Q115674417 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q115674417 wdt:P18 "None".
+wd:Q115674417 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115674417 pgdc:piwigo_image "8858".
+wd:Q115674417 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q116241565 rdfs:label """Le Bocal d'abricots"""@fr.
+wd:Q116241565 wdt:P31 wd:wd:Q838948 .
+wd:Q116241565 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q116241565 wdt:P18 "None".
+wd:Q116241565 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116241565 pgdc:piwigo_image "8866".
+wd:Q116241565 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q122011644 rdfs:label """Nature morte (perdreau, bécasse, vanneau, perdrix rouge, bigarade)"""@fr.
+wd:Q122011644 wdt:P31 wd:wd:Q838948 .
+wd:Q122011644 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q122011644 wdt:P18 "None".
+wd:Q122011644 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122011644 pgdc:piwigo_image "13309".
+wd:Q122011644 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q125454650 rdfs:label """Le Melon entamé"""@fr.
+wd:Q125454650 wdt:P31 wd:wd:Q838948 .
+wd:Q125454650 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q125454650 wdt:P18 "None".
+wd:Q125454650 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125454650 pgdc:piwigo_image "8895".
+wd:Q125454650 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q122262911 rdfs:label """Fruits, Bouteille, Pichet et Massepain"""@fr.
+wd:Q122262911 wdt:P31 wd:wd:Q838948 .
+wd:Q122262911 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q122262911 wdt:P18 "None".
+wd:Q122262911 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122262911 pgdc:piwigo_image "8916".
+wd:Q122262911 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863230 rdfs:label """Le Bénédicité"""@fr.
+wd:Q29863230 wdt:P31 wd:wd:Q838948 .
+wd:Q29863230 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863230 wdt:P18 "None".
+wd:Q29863230 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863230 pgdc:piwigo_image "9061".
+wd:Q29863230 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q28957258 rdfs:label """Le Singe peintre."""@fr.
+wd:Q28957258 wdt:P31 wd:wd:Q838948 .
+wd:Q28957258 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q28957258 wdt:P18 "None".
+wd:Q28957258 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28957258 pgdc:piwigo_image "13310".
+wd:Q28957258 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863246 rdfs:label """Menu de maigre et ustensiles de cuisine."""@fr.
+wd:Q29863246 wdt:P31 wd:wd:Q838948 .
+wd:Q29863246 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863246 wdt:P18 "None".
+wd:Q29863246 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863246 pgdc:piwigo_image "8620".
+wd:Q29863246 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863225 rdfs:label """Panier de raisins, gobelet d'argent et bouteille"""@fr.
+wd:Q29863225 wdt:P31 wd:wd:Q838948 .
+wd:Q29863225 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863225 wdt:P18 "None".
+wd:Q29863225 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863225 pgdc:piwigo_image "8621".
+wd:Q29863225 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863240 rdfs:label """Le Singe antiquaire"""@fr.
+wd:Q29863240 wdt:P31 wd:wd:Q838948 .
+wd:Q29863240 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863240 wdt:P18 "None".
+wd:Q29863240 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863240 pgdc:piwigo_image "13311".
+wd:Q29863240 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863125 rdfs:label """Melon, poires, pêches et prunes"""@fr.
+wd:Q29863125 wdt:P31 wd:wd:Q838948 .
+wd:Q29863125 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863125 wdt:P18 "None".
+wd:Q29863125 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863125 pgdc:piwigo_image "8622".
+wd:Q29863125 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863238 rdfs:label """Ustensiles de cuisine, chaudron, poêlon et oeufs"""@fr.
+wd:Q29863238 wdt:P31 wd:wd:Q838948 .
+wd:Q29863238 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863238 wdt:P18 "None".
+wd:Q29863238 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863238 pgdc:piwigo_image "8626".
+wd:Q29863238 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863243 rdfs:label """Menu de gras et ustensiles de cuisine."""@fr.
+wd:Q29863243 wdt:P31 wd:wd:Q838948 .
+wd:Q29863243 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863243 wdt:P18 "None".
+wd:Q29863243 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863243 pgdc:piwigo_image "8627".
+wd:Q29863243 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863233 rdfs:label """Le Château de cartes."""@fr.
+wd:Q29863233 wdt:P31 wd:wd:Q838948 .
+wd:Q29863233 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863233 wdt:P18 "None".
+wd:Q29863233 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863233 pgdc:piwigo_image "13312".
+wd:Q29863233 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q6038776 rdfs:label """Nature morte avec des attributs des Arts"""@fr.
+wd:Q6038776 wdt:P31 wd:wd:Q838948 .
+wd:Q6038776 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q6038776 wdt:P18 "None".
+wd:Q6038776 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q6038776 pgdc:piwigo_image "8550".
+wd:Q6038776 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q19117238 rdfs:label """Le Bocal d'olives."""@fr.
+wd:Q19117238 wdt:P31 wd:wd:Q838948 .
+wd:Q19117238 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q19117238 wdt:P18 "None".
+wd:Q19117238 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19117238 pgdc:piwigo_image "8494".
+wd:Q19117238 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q18783516 rdfs:label """La Pourvoyeuse"""@fr.
+wd:Q18783516 wdt:P31 wd:wd:Q838948 .
+wd:Q18783516 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q18783516 wdt:P18 "None".
+wd:Q18783516 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18783516 pgdc:piwigo_image "9099".
+wd:Q18783516 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q15973625 rdfs:label """Le Bénédicité"""@fr.
+wd:Q15973625 wdt:P31 wd:wd:Q838948 .
+wd:Q15973625 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q15973625 wdt:P18 "None".
+wd:Q15973625 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q15973625 pgdc:piwigo_image "13313".
+wd:Q15973625 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q3230730 rdfs:label """Les Instruments de la musique civile."""@fr.
+wd:Q3230730 wdt:P31 wd:wd:Q838948 .
+wd:Q3230730 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q3230730 wdt:P18 "None".
+wd:Q3230730 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3230730 pgdc:piwigo_image "8576".
+wd:Q3230730 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q3212142 rdfs:label """La Raie"""@fr.
+wd:Q3212142 wdt:P31 wd:wd:Q838948 .
+wd:Q3212142 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q3212142 wdt:P18 "None".
+wd:Q3212142 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3212142 pgdc:piwigo_image "8577".
+wd:Q3212142 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q19911959 rdfs:label """La Soupière d'argent"""@fr.
+wd:Q19911959 wdt:P31 wd:wd:Q838948 .
+wd:Q19911959 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q19911959 wdt:P18 "None".
+wd:Q19911959 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19911959 pgdc:piwigo_image "8596".
+wd:Q19911959 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q27576593 rdfs:label """Pipes et vase à boire, dit aussi La Tabagie"""@fr.
+wd:Q27576593 wdt:P31 wd:wd:Q838948 .
+wd:Q27576593 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q27576593 wdt:P18 "None".
+wd:Q27576593 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27576593 pgdc:piwigo_image "8687".
+wd:Q27576593 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q19117195 rdfs:label """Raisins et grenades"""@fr.
+wd:Q19117195 wdt:P31 wd:wd:Q838948 .
+wd:Q19117195 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q19117195 wdt:P18 "None".
+wd:Q19117195 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19117195 pgdc:piwigo_image "8495".
+wd:Q19117195 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q19117320 rdfs:label """Le Gobelet d'argent"""@fr.
+wd:Q19117320 wdt:P31 wd:wd:Q838948 .
+wd:Q19117320 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q19117320 wdt:P18 "None".
+wd:Q19117320 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19117320 pgdc:piwigo_image "8496".
+wd:Q19117320 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q6025666 rdfs:label """Une petite fille jouant au volant"""@fr.
+wd:Q6025666 wdt:P31 wd:wd:Q838948 .
+wd:Q6025666 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q6025666 wdt:P18 "None".
+wd:Q6025666 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q6025666 pgdc:piwigo_image "8997".
+wd:Q6025666 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q27150251 rdfs:label """'La serinette', dit aussi 'Une Dame variant ses amusements'"""@fr.
+wd:Q27150251 wdt:P31 wd:wd:Q838948 .
+wd:Q27150251 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q27150251 wdt:P18 "None".
+wd:Q27150251 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27150251 pgdc:piwigo_image "9117".
+wd:Q27150251 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q12859898 rdfs:label """La garde attentive"""@fr.
+wd:Q12859898 wdt:P31 wd:wd:Q838948 .
+wd:Q12859898 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q12859898 wdt:P18 "None".
+wd:Q12859898 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q12859898 pgdc:piwigo_image "9051".
+wd:Q12859898 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q20890804 rdfs:label """Nature morte avec des attributs des Arts"""@fr.
+wd:Q20890804 wdt:P31 wd:wd:Q838948 .
+wd:Q20890804 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q20890804 wdt:P18 "None".
+wd:Q20890804 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20890804 pgdc:piwigo_image "13314".
+wd:Q20890804 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q3230728 rdfs:label """Les Attributs de la musique."""@fr.
+wd:Q3230728 wdt:P31 wd:wd:Q838948 .
+wd:Q3230728 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q3230728 wdt:P18 "None".
+wd:Q3230728 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3230728 pgdc:piwigo_image "8578".
+wd:Q3230728 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q19935742 rdfs:label """Portrait du peintre Joseph Aved (1702-0766), ami de l'artiste"""@fr.
+wd:Q19935742 wdt:P31 wd:wd:Q838948 .
+wd:Q19935742 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q19935742 wdt:P18 "None".
+wd:Q19935742 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19935742 pgdc:piwigo_image "511".
+wd:Q19935742 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q26921370 rdfs:label """Le bénédicité"""@fr.
+wd:Q26921370 wdt:P31 wd:wd:Q838948 .
+wd:Q26921370 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q26921370 wdt:P18 "None".
+wd:Q26921370 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26921370 pgdc:piwigo_image "9821".
+wd:Q26921370 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q19117209 rdfs:label """Panier de pêches, avec noix, couteau et verre de vin."""@fr.
+wd:Q19117209 wdt:P31 wd:wd:Q838948 .
+wd:Q19117209 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q19117209 wdt:P18 "None".
+wd:Q19117209 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19117209 pgdc:piwigo_image "8497".
+wd:Q19117209 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q19117273 rdfs:label """La Brioche"""@fr.
+wd:Q19117273 wdt:P31 wd:wd:Q838948 .
+wd:Q19117273 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q19117273 wdt:P18 "None".
+wd:Q19117273 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19117273 pgdc:piwigo_image "8498".
+wd:Q19117273 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q5640196 rdfs:label """L'Enfant au toton. Auguste Gabriel Godefroy (1728-1813), fils cadet du joaillier Charles Godefroy."""@fr.
+wd:Q5640196 wdt:P31 wd:wd:Q838948 .
+wd:Q5640196 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q5640196 wdt:P18 "None".
+wd:Q5640196 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q5640196 pgdc:piwigo_image "183".
+wd:Q5640196 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q19117297 rdfs:label """Poires, noix et verre de vin."""@fr.
+wd:Q19117297 wdt:P31 wd:wd:Q838948 .
+wd:Q19117297 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q19117297 wdt:P18 "None".
+wd:Q19117297 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19117297 pgdc:piwigo_image "8499".
+wd:Q19117297 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q15973749 rdfs:label """La Blanchisseuse"""@fr.
+wd:Q15973749 wdt:P31 wd:wd:Q838948 .
+wd:Q15973749 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q15973749 wdt:P18 "None".
+wd:Q15973749 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q15973749 pgdc:piwigo_image "9013".
+wd:Q15973749 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q21023868 rdfs:label """Les Instruments de la musique militaire."""@fr.
+wd:Q21023868 wdt:P31 wd:wd:Q838948 .
+wd:Q21023868 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q21023868 wdt:P18 "None".
+wd:Q21023868 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21023868 pgdc:piwigo_image "8571".
+wd:Q21023868 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q23940103 rdfs:label """Un bol de prunes"""@fr.
+wd:Q23940103 wdt:P31 wd:wd:Q838948 .
+wd:Q23940103 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q23940103 wdt:P18 "None".
+wd:Q23940103 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q23940103 pgdc:piwigo_image "8608".
+wd:Q23940103 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q12859906 rdfs:label """La Fontaine de cuivre"""@fr.
+wd:Q12859906 wdt:P31 wd:wd:Q838948 .
+wd:Q12859906 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q12859906 wdt:P18 "None".
+wd:Q12859906 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q12859906 pgdc:piwigo_image "8485".
+wd:Q12859906 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q3220656 rdfs:label """Le Buffet."""@fr.
+wd:Q3220656 wdt:P31 wd:wd:Q838948 .
+wd:Q3220656 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q3220656 wdt:P18 "None".
+wd:Q3220656 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q3220656 pgdc:piwigo_image "8579".
+wd:Q3220656 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q97651318 rdfs:label """Nature morte au chaudron de cuivre"""@fr.
+wd:Q97651318 wdt:P31 wd:wd:Q838948 .
+wd:Q97651318 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q97651318 wdt:P18 "None".
+wd:Q97651318 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q97651318 pgdc:piwigo_image "8740".
+wd:Q97651318 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q60448428 rdfs:label """Marmite de cuivre, écumoire, cruche et tranche de saumon"""@fr.
+wd:Q60448428 wdt:P31 wd:wd:Q838948 .
+wd:Q60448428 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q60448428 wdt:P18 "None".
+wd:Q60448428 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q60448428 pgdc:piwigo_image "13315".
+wd:Q60448428 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q114744032 rdfs:label """Le Singe peintre"""@fr.
+wd:Q114744032 wdt:P31 wd:wd:Q838948 .
+wd:Q114744032 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q114744032 wdt:P18 "None".
+wd:Q114744032 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114744032 pgdc:piwigo_image "9658".
+wd:Q114744032 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q104373051 rdfs:label """La Partie de billard"""@fr.
+wd:Q104373051 wdt:P31 wd:wd:Q838948 .
+wd:Q104373051 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q104373051 wdt:P18 "None".
+wd:Q104373051 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104373051 pgdc:piwigo_image "9284".
+wd:Q104373051 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q115674204 rdfs:label """Nature morte au lapin et à la perdrix, dit aussi Le Retour de la chasse"""@fr.
+wd:Q115674204 wdt:P31 wd:wd:Q838948 .
+wd:Q115674204 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q115674204 wdt:P18 "None".
+wd:Q115674204 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115674204 pgdc:piwigo_image "8859".
+wd:Q115674204 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863257 rdfs:label """La Table de cuisine, dit aussi Le Larron en bonne fortune, ou Les Harengs avec chat."""@fr.
+wd:Q29863257 wdt:P31 wd:wd:Q838948 .
+wd:Q29863257 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863257 wdt:P18 "None".
+wd:Q29863257 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863257 pgdc:piwigo_image "8623".
+wd:Q29863257 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863248 rdfs:label """La Table d'office, dit aussi Les Débris d'un déjeuner."""@fr.
+wd:Q29863248 wdt:P31 wd:wd:Q838948 .
+wd:Q29863248 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863248 wdt:P18 "None".
+wd:Q29863248 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863248 pgdc:piwigo_image "8624".
+wd:Q29863248 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863263 rdfs:label """Les Attributs des arts."""@fr.
+wd:Q29863263 wdt:P31 wd:wd:Q838948 .
+wd:Q29863263 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863263 wdt:P18 "None".
+wd:Q29863263 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863263 pgdc:piwigo_image "8625".
+wd:Q29863263 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q112056834 rdfs:label """Le panier de prunes"""@fr.
+wd:Q112056834 wdt:P31 wd:wd:Q838948 .
+wd:Q112056834 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q112056834 wdt:P18 "None".
+wd:Q112056834 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q112056834 pgdc:piwigo_image "8804".
+wd:Q112056834 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q111578201 rdfs:label """Le Panier de fraises des bois"""@fr.
+wd:Q111578201 wdt:P31 wd:wd:Q838948 .
+wd:Q111578201 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q111578201 wdt:P18 "None".
+wd:Q111578201 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111578201 pgdc:piwigo_image "13316".
+wd:Q111578201 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q111650896 rdfs:label """Une femme occupée à cacheter une lettre"""@fr.
+wd:Q111650896 wdt:P31 wd:wd:Q838948 .
+wd:Q111650896 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q111650896 wdt:P18 "None".
+wd:Q111650896 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111650896 pgdc:piwigo_image "13317".
+wd:Q111650896 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q29863254 rdfs:label """La Mère laborieuse."""@fr.
+wd:Q29863254 wdt:P31 wd:wd:Q838948 .
+wd:Q29863254 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q29863254 wdt:P18 "None".
+wd:Q29863254 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29863254 pgdc:piwigo_image "9062".
+wd:Q29863254 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q114744031 rdfs:label """Le Singe antiquaire"""@fr.
+wd:Q114744031 wdt:P31 wd:wd:Q838948 .
+wd:Q114744031 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q114744031 wdt:P18 "None".
+wd:Q114744031 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114744031 pgdc:piwigo_image "9659".
+wd:Q114744031 pgdc:piwigo_gallery kgdc:gal519.
+wd:Q52289225 rdfs:label """La Gouvernante"""@fr.
+wd:Q52289225 wdt:P31 wd:wd:Q838948 .
+wd:Q52289225 wdt:P170 wd:Q207447.
+wd:Q207447 rdfs:label """Jean Siméon Chardin"""@fr.
+wd:Q207447 wdt:P31 wd:Q3391743 .
+wd:Q52289225 wdt:P18 "None".
+wd:Q52289225 pgdc:sparql kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk .
+kgdc:sparql7wpLm1vhjv9HBRUm70EMRamVdsvMVh3IQDOklytJhIk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q207447 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q52289225 pgdc:piwigo_image "9140".
+wd:Q52289225 pgdc:piwigo_gallery kgdc:gal519.

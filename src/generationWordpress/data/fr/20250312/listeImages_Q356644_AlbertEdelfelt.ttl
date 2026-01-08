@@ -1,0 +1,138 @@
+wd:Q124409362 rdfs:label """Jeune homme torse nu"""@fr.
+wd:Q124409362 wdt:P31 wd:Q838948 .
+wd:Q124409362 wdt:P170 wd:Q356644.
+wd:Q356644 rdfs:label """Albert Edelfelt"""@fr.
+wd:Q356644 wdt:P31 wd:Q3391743 .
+wd:Q124409362 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Albert%20Edelfelt%20Jeune%20homme%20torse%20nu.jpg".
+wd:Q124409362 pgdc:sparql kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk .
+kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q356644 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124409362 pgdc:piwigo_image "13995".
+wd:Q124409362 pgdc:piwigo_gallery kgdc:gal383.
+wd:Q126172176 rdfs:label """Au piano"""@fr.
+wd:Q126172176 wdt:P31 wd:Q838948 .
+wd:Q126172176 wdt:P170 wd:Q356644.
+wd:Q356644 rdfs:label """Albert Edelfelt"""@fr.
+wd:Q356644 wdt:P31 wd:Q3391743 .
+wd:Q126172176 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Albert%20Edelfelt%20-%20Au%20piano%20%281889%29.png".
+wd:Q126172176 pgdc:sparql kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk .
+kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q356644 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q126172176 pgdc:piwigo_image "13996".
+wd:Q126172176 pgdc:piwigo_gallery kgdc:gal383.
+wd:Q20795291 rdfs:label """Académie d'homme"""@fr.
+wd:Q20795291 wdt:P31 wd:Q838948 .
+wd:Q20795291 wdt:P170 wd:Q356644.
+wd:Q356644 rdfs:label """Albert Edelfelt"""@fr.
+wd:Q356644 wdt:P31 wd:Q3391743 .
+wd:Q20795291 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Albert%20Edelfelt%20-%20Miesmalli%2C%20akatemiaharjoitelma%20-%20A%20I%20215%20H%20-%20Finnish%20National%20Gallery.jpg".
+wd:Q20795291 pgdc:sparql kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk .
+kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q356644 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20795291 pgdc:piwigo_image "13997".
+wd:Q20795291 pgdc:piwigo_gallery kgdc:gal383.
+wd:Q103457706 rdfs:label """Chez l'artiste (Les gravures)"""@fr.
+wd:Q103457706 wdt:P31 wd:Q838948 .
+wd:Q103457706 wdt:P170 wd:Q356644.
+wd:Q356644 rdfs:label """Albert Edelfelt"""@fr.
+wd:Q356644 wdt:P31 wd:Q3391743 .
+wd:Q103457706 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Albert%20Edelfelt%20-%20Chez%20L%27Artiste%20%28Les%20Gravures%29.jpg".
+wd:Q103457706 pgdc:sparql kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk .
+kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q356644 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q103457706 pgdc:piwigo_image "13998".
+wd:Q103457706 pgdc:piwigo_gallery kgdc:gal383.
+wd:Q103444391 rdfs:label """Au Jardin"""@fr.
+wd:Q103444391 wdt:P31 wd:Q838948 .
+wd:Q103444391 wdt:P170 wd:Q356644.
+wd:Q356644 rdfs:label """Albert Edelfelt"""@fr.
+wd:Q356644 wdt:P31 wd:Q3391743 .
+wd:Q103444391 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Albert%20Edelfelt%20-%20Au%20Jardin.jpg".
+wd:Q103444391 pgdc:sparql kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk .
+kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q356644 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q103444391 pgdc:piwigo_image "13999".
+wd:Q103444391 pgdc:piwigo_gallery kgdc:gal383.
+wd:Q102330053 rdfs:label """Au bar"""@fr.
+wd:Q102330053 wdt:P31 wd:Q838948 .
+wd:Q102330053 wdt:P170 wd:Q356644.
+wd:Q356644 rdfs:label """Albert Edelfelt"""@fr.
+wd:Q356644 wdt:P31 wd:Q3391743 .
+wd:Q102330053 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Albert%20Edelfelt%20-%20Nainen%20savuke%20k%C3%A4dess%C3%A4.jpg".
+wd:Q102330053 pgdc:sparql kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk .
+kgdc:sparqlDABAXNf8NYkFvZQFjE5LNdhgwsxQXn2EWtJ4nU6YHNk pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q356644 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q102330053 pgdc:piwigo_image "14000".
+wd:Q102330053 pgdc:piwigo_gallery kgdc:gal383.

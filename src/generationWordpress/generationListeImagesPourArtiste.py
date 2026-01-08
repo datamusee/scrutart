@@ -3,7 +3,7 @@ generer une liste d'images pour des artistes donnés par leur QID
 """
 
 import json
-from src.generationWordpress.tools.WikimediaManager.WikimediaManagerPackage.WikimediaAccess import WikimediaAccess
+from tools.WikimediaManager.WikimediaManagerPackage.WikimediaAccess import WikimediaAccess
 import argparse
 from pathlib import Path
 

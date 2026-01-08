@@ -1,0 +1,2614 @@
+wd:Q131375466 rdfs:label """À la campagne"""@fr.
+wd:Q131375466 wdt:P31 wd:Q838948 .
+wd:Q131375466 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q131375466 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/In%20the%20countryside%20%281872%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q131375466 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131375466 pgdc:piwigo_image "9858".
+wd:Q131375466 pgdc:piwigo_gallery kgdc:gal696.
+wd:Q104373039 rdfs:label """Portrait de Madame Torri, danseuse à l'Opéra"""@fr.
+wd:Q104373039 wdt:P31 wd:Q838948 .
+wd:Q104373039 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q104373039 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Portrait%20de%20Madame%20Torri%2C%20danseuse%20%C3%A0%20l%27Op%C3%A9ra%20-%20P1625%20-%20Mus%C3%A9e%20Carnavalet.jpg".
+wd:Q104373039 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104373039 pgdc:piwigo_image "12774".
+wd:Q104373039 pgdc:piwigo_gallery kgdc:gal696.
+wd:Q113114214 rdfs:label """Mademoiselle Lanthèlme"""@fr.
+wd:Q113114214 wdt:P31 wd:Q838948 .
+wd:Q113114214 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114214 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20Mademoiselle%20Lantelme.jpg".
+wd:Q113114214 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114214 pgdc:piwigo_image "12775".
+wd:Q113114214 pgdc:piwigo_gallery kgdc:gal696.
+wd:Q113443642 rdfs:label """Portrait de Georges Goursat, dit Sem"""@fr.
+wd:Q113443642 wdt:P31 wd:Q838948 .
+wd:Q113443642 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113443642 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Georges%20Goursat%20dit%20Sem%2C%201902.jpg".
+wd:Q113443642 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113443642 pgdc:piwigo_image "12776".
+wd:Q113443642 pgdc:piwigo_gallery kgdc:gal696.
+wd:Q104773713 rdfs:label """Jours tranquilles"""@fr.
+wd:Q104773713 wdt:P31 wd:Q838948 .
+wd:Q104773713 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q104773713 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Young%20woman%20crocheting%20%281875%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q104773713 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104773713 pgdc:piwigo_image "9232".
+wd:Q104773713 pgdc:piwigo_gallery kgdc:gal696.
+wd:Q17492870 rdfs:label """Le Comte Robert de Montesquiou"""@fr.
+wd:Q17492870 wdt:P31 wd:Q838948 .
+wd:Q17492870 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q17492870 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Montesquiou%2C%20Robert%20de%20-%20Boldini.jpg".
+wd:Q17492870 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17491648 rdfs:label """Henri Rochefort"""@fr.
+wd:Q17491648 wdt:P31 wd:Q838948 .
+wd:Q17491648 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q17491648 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Henri%20Rochefort.jpg".
+wd:Q17491648 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17495602 rdfs:label """Scène de fête au Moulin-Rouge"""@fr.
+wd:Q17495602 wdt:P31 wd:Q838948 .
+wd:Q17495602 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q17495602 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Feast%20Scene%20-%20Google%20Art%20Project.jpg".
+wd:Q17495602 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19905893 rdfs:label """Consuelo Vanderbilt (1876–1964), Duchess of Marlborough, and Her Son, Lord Ivor Spencer-Churchill (1898–1956)"""@fr.
+wd:Q19905893 wdt:P31 wd:Q838948 .
+wd:Q19905893 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q19905893 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Consuelo%20Vanderbilt.jpg".
+wd:Q19905893 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17493962 rdfs:label """Madame Charles Max"""@fr.
+wd:Q17493962 wdt:P31 wd:Q838948 .
+wd:Q17493962 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q17493962 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Madame%20Max%2C%20Boldini.png".
+wd:Q17493962 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19912511 rdfs:label """The Dispatch-Bearer"""@fr.
+wd:Q19912511 wdt:P31 wd:Q838948 .
+wd:Q19912511 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q19912511 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%2C%20The%20Dispatch-Bearer.jpg".
+wd:Q19912511 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19912358 rdfs:label """Gossip"""@fr.
+wd:Q19912358 wdt:P31 wd:Q838948 .
+wd:Q19912358 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q19912358 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gossip%20MET%20DT219388.jpg".
+wd:Q19912358 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19913399 rdfs:label """Mrs. Charles Warren-Cram (Ella Brooks Carter, 1846–1896)"""@fr.
+wd:Q19913399 wdt:P31 wd:Q838948 .
+wd:Q19913399 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q19913399 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Mrs.%20Charles%20Warren-Cram%20%28Ella%20Brooks%20Carter%2C%201846%E2%80%931896%29%20MET%20EP1482.jpg".
+wd:Q19913399 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20091566 rdfs:label """Portrait de Giuseppe Verdi à l'écharpe blanche et haut-de-forme"""@fr.
+wd:Q20091566 wdt:P31 wd:Q838948 .
+wd:Q20091566 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q20091566 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Verdi%20by%20Giovanni%20Boldini.jpg".
+wd:Q20091566 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125448002 rdfs:label """Portrait of Rodolfo Galli"""@fr.
+wd:Q125448002 wdt:P31 wd:Q838948 .
+wd:Q125448002 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125448002 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Rodolfo%20Galli%20%281868%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q125448002 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125584675 rdfs:label """Lady reclining on bergère"""@fr.
+wd:Q125584675 wdt:P31 wd:Q838948 .
+wd:Q125584675 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125584675 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Lady%20reclining%20on%20berg%C3%A8re%20%28c.1905%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q125584675 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125658276 rdfs:label """Berthe leaving for a walk"""@fr.
+wd:Q125658276 wdt:P31 wd:Q838948 .
+wd:Q125658276 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125658276 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Berthe%20leaving%20for%20a%20walk%20%281874%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q125658276 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125584854 rdfs:label """The Countess Speranza"""@fr.
+wd:Q125584854 wdt:P31 wd:Q838948 .
+wd:Q125584854 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125584854 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Countess%20Speranza%20%281899%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q125584854 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20183969 rdfs:label """Famous Connoisseur (Fameux Connaisseur)"""@fr.
+wd:Q20183969 wdt:P31 wd:Q838948 .
+wd:Q20183969 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q20183969 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Famous%20Connoisseur%20%28Fameux%20Connaisseur%29%20MET%20DT353872.jpg".
+wd:Q20183969 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125658306 rdfs:label """Rejane on stage"""@fr.
+wd:Q125658306 wdt:P31 wd:Q838948 .
+wd:Q125658306 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125658306 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Rejane%20on%20stage%20%28c.1878-84%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q125658306 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125658322 rdfs:label """Portrait of Ms. Wertheimer"""@fr.
+wd:Q125658322 wdt:P31 wd:Q838948 .
+wd:Q125658322 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125658322 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Ms.%20Wertheimer%20%281902%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q125658322 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125658354 rdfs:label """Gallant scene in the Park of Versailles"""@fr.
+wd:Q125658354 wdt:P31 wd:Q838948 .
+wd:Q125658354 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125658354 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gallant%20scene%20in%20the%20Park%20of%20Versailles%20%281877%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q125658354 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125658369 rdfs:label """Old song (II)"""@fr.
+wd:Q125658369 wdt:P31 wd:Q838948 .
+wd:Q125658369 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125658369 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Old%20song%20%281871-72%29.%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q125658369 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125678239 rdfs:label """Olympe Hériot en maître d’équipage"""@fr.
+wd:Q125678239 wdt:P31 wd:Q838948 .
+wd:Q125678239 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125678239 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%2C%201911%20-%20Olympe%20H%C3%A9riot.jpg".
+wd:Q125678239 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131358399 rdfs:label """Seated nude woman (Pearl colored nude)"""@fr.
+wd:Q131358399 wdt:P31 wd:Q838948 .
+wd:Q131358399 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q131358399 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nudo%20di%20Giovane%20Seduta%20%28Nudo%20color%20perla%29%20by%20Giovanni%20Boldini.jpg".
+wd:Q131358399 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131350036 rdfs:label """The Summer Stroll"""@fr.
+wd:Q131350036 wdt:P31 wd:Q838948 .
+wd:Q131350036 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q131350036 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20The%20Summer%20Stroll.jpg".
+wd:Q131350036 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131392375 rdfs:label """Portrait of the princess Marie Radziwiłł"""@fr.
+wd:Q131392375 wdt:P31 wd:Q838948 .
+wd:Q131392375 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q131392375 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Ritratto%20della%20principessa%20Radziwi%C5%82%C5%82%201910.jpg".
+wd:Q131392375 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131410960 rdfs:label """Madame Marthe Régnier"""@fr.
+wd:Q131410960 wdt:P31 wd:Q838948 .
+wd:Q131410960 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q131410960 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Portrait%20of%20Marthe%20R%C3%A9gnier.jpg".
+wd:Q131410960 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131418534 rdfs:label """The newspaper seller"""@fr.
+wd:Q131418534 wdt:P31 wd:Q838948 .
+wd:Q131418534 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q131418534 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20newspaper%20seller%20%28c.1880%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q131418534 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q133283985 rdfs:label """Dame à l'étole en fourrure foncée"""@fr.
+wd:Q133283985 wdt:P31 wd:Q838948 .
+wd:Q133283985 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q133283985 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Treviso%29%20Signora%20con%20stola%20di%20pelliccia%20scura%20by%20Giovanni%20Boldini%20-%20Bottega%20d%27Arte%2C%20Montecatini%20Terme%20-%20Forte%20dei%20Marmi.jpg".
+wd:Q133283985 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q133385144 rdfs:label """nude"""@fr.
+wd:Q133385144 wdt:P31 wd:Q838948 .
+wd:Q133385144 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q133385144 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20nude-1.jpg".
+wd:Q133385144 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q133320904 rdfs:label """Le rideau rouge"""@fr.
+wd:Q133320904 wdt:P31 wd:Q838948 .
+wd:Q133320904 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q133320904 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Treviso%29%20La%20tenda%20rossa%20-%20Giovanni%20Boldini.jpg".
+wd:Q133320904 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q133385268 rdfs:label """a-reclining-nude-on-a-day-bed"""@fr.
+wd:Q133385268 wdt:P31 wd:Q838948 .
+wd:Q133385268 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q133385268 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20a-reclining-nude-on-a-day-bed.jpg".
+wd:Q133385268 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q133304642 rdfs:label """Portrait de la comtesse Carlotta Aloisi Papudoff"""@fr.
+wd:Q133304642 wdt:P31 wd:Q838948 .
+wd:Q133304642 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q133304642 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Treviso%29%20Ritratto%20della%20contessa%20Carlotta%20Aloisi%20Papudoff%20-%20Giovanni%20Boldini%20-%20Bottega%20d%27Arte%2C%20Montecatini%20Terme%20-%20Forte%20dei%20Marmi.jpg".
+wd:Q133304642 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131823354 rdfs:label """Alaide Banti au coin du feu"""@fr.
+wd:Q131823354 wdt:P31 wd:Q838948 .
+wd:Q131823354 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q131823354 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Treviso%29%20Giovanni%20Boldini%20-%20Ritratto%20di%20Alaide%20Banti%20al%20caminetto%20-%20Firenze%2C%20Gallerie%20degli%20Uffizi.jpg".
+wd:Q131823354 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131439144 rdfs:label """Washerwoman and a young brunette by the Seine, Paris"""@fr.
+wd:Q131439144 wdt:P31 wd:Q838948 .
+wd:Q131439144 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q131439144 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Washerwoman%20and%20a%20young%20brunette%20by%20the%20Seine%2C%20Paris%20%28c.1878%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q131439144 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q133043349 rdfs:label """Berthe sewing in the garden"""@fr.
+wd:Q133043349 wdt:P31 wd:Q838948 .
+wd:Q133043349 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q133043349 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Berthe%20sewing%20in%20the%20garden%20%281874%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q133043349 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q132147331 rdfs:label """Élégante à la robe bleu"""@fr.
+wd:Q132147331 wdt:P31 wd:Q838948 .
+wd:Q132147331 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q132147331 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Bemberg%20Fondation%20Toulouse%2C%20El%C3%A9gante%20%C3%A0%20la%20robe%20bleu%2C%20Giovanni%20Boldini%2C%20Inv.2181%2072x51.jpg".
+wd:Q132147331 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20197385 rdfs:label """Portrait of Madame X"""@fr.
+wd:Q20197385 wdt:P31 wd:Q838948 .
+wd:Q20197385 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q20197385 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Madam%20X%20by%20Giovanni%20Boldini%2C%201907.JPG".
+wd:Q20197385 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20197410 rdfs:label """Portrait of Mrs. Whitney Warren, Sr."""@fr.
+wd:Q20197410 wdt:P31 wd:Q838948 .
+wd:Q20197410 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q20197410 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Portrait%20of%20Mrs.%20Whitney%20Warren%2C%201908.jpg".
+wd:Q20197410 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20202781 rdfs:label """Portrait of Mrs. Graham Fair Vanderbilt (née Virginia Graham Fair)"""@fr.
+wd:Q20202781 wdt:P31 wd:Q838948 .
+wd:Q20202781 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q20202781 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20Graham%20Fair%20Vanderbilt.jpg".
+wd:Q20202781 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20202782 rdfs:label """The Misses Muriel and Consuelo Vanderbilt"""@fr.
+wd:Q20202782 wdt:P31 wd:Q838948 .
+wd:Q20202782 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q20202782 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Consuelo%20and%20Muriel%20Vanderbilt.jpg".
+wd:Q20202782 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30880596 rdfs:label """Portrait de Donna Franca Florio"""@fr.
+wd:Q30880596 wdt:P31 wd:Q838948 .
+wd:Q30880596 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q30880596 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Franca%20Florio.jpg".
+wd:Q30880596 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q22205247 rdfs:label """Le Retour des bateaux de pêche, Étretat"""@fr.
+wd:Q22205247 wdt:P31 wd:Q838948 .
+wd:Q22205247 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q22205247 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Le%20retour%20des%20bateaux%20de%20p%C3%AAche%2C%20%C3%89tretat.jpg".
+wd:Q22205247 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28050749 rdfs:label """Portrait de Lady Colin Campbell, née Gertrude Elisabeth Blood"""@fr.
+wd:Q28050749 wdt:P31 wd:Q838948 .
+wd:Q28050749 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q28050749 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gertrudeelizabethladycolincampbell%20giovanni%20boldini%201897.jpg".
+wd:Q28050749 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q49855440 rdfs:label """Q49855440"""@fr.
+wd:Q49855440 wdt:P31 wd:Q838948 .
+wd:Q49855440 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q49855440 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%20-%20retrato%20de%20homem%20com%20cartola%20%28o%20poeta%20hanvin%2C%20o%20homem%20do%20figaro%29%2001.jpg".
+wd:Q49855440 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q49855528 rdfs:label """Sitting Lady (The Talk)"""@fr.
+wd:Q49855528 wdt:P31 wd:Q838948 .
+wd:Q49855528 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q49855528 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%20-%20senhora%20sentada%20%28a%20conversa%29%2001.jpg".
+wd:Q49855528 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q46631645 rdfs:label """After the bath"""@fr.
+wd:Q46631645 wdt:P31 wd:Q838948 .
+wd:Q46631645 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q46631645 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/After%20the%20bath%20%281873%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q46631645 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q56325710 rdfs:label """Conversation au café"""@fr.
+wd:Q56325710 wdt:P31 wd:Q838948 .
+wd:Q56325710 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q56325710 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Conversation%20at%20the%20Cafe.jpg".
+wd:Q56325710 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50116396 rdfs:label """Adolph von Menzel"""@fr.
+wd:Q50116396 wdt:P31 wd:Q838948 .
+wd:Q50116396 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q50116396 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20%28Ferrara%2C%2031%20dicembre%201842%20%E2%80%93%20Parigi%2C%2011%20gennaio%201931%29%20-%20il%20pittore%20Adolf%20Menzel%20%281895%29%20-%20Alte%20Nationalgalerie%2C%20Berlino.jpg".
+wd:Q50116396 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64515408 rdfs:label """Portrait of Mrs. Peter Cooper Hewitt"""@fr.
+wd:Q64515408 wdt:P31 wd:Q838948 .
+wd:Q64515408 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q64515408 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Portrait%20of%20Mrs.%20Peter%20Cooper%20Hewitt%20-%2057.044%20-%20Rhode%20Island%20School%20of%20Design%20Museum.jpg".
+wd:Q64515408 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q65610883 rdfs:label """View of Venice"""@fr.
+wd:Q65610883 wdt:P31 wd:Q838948 .
+wd:Q65610883 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q65610883 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20view-of-venice-1895.jpg".
+wd:Q65610883 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q49855611 rdfs:label """Lady Wearing a Straw Bonnet (Morning Promenade)"""@fr.
+wd:Q49855611 wdt:P31 wd:Q838948 .
+wd:Q49855611 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q49855611 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20passeiomatinal01.jpg".
+wd:Q49855611 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20891201 rdfs:label """Portrait of Ruggiero Leoncavallo, 1858-1919"""@fr.
+wd:Q20891201 wdt:P31 wd:Q838948 .
+wd:Q20891201 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q20891201 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Portrait%20of%20Ruggiero%20Leoncavallo%2C%201858-1919%20-%2074.3%20-%20Minneapolis%20Institute%20of%20Arts.jpg".
+wd:Q20891201 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20265063 rdfs:label """Portrait of Mme. Lina Cavalieri"""@fr.
+wd:Q20265063 wdt:P31 wd:Q838948 .
+wd:Q20265063 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q20265063 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Portrait%20of%20Mme.%20Lina%20Cavalieri%2C%201901.png".
+wd:Q20265063 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20808437 rdfs:label """Grand-Rue à Combs-la-Ville"""@fr.
+wd:Q20808437 wdt:P31 wd:Q838948 .
+wd:Q20808437 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q20808437 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%2C%20strada%20di%20combes-la-ville%2C%201873.JPG".
+wd:Q20808437 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104760725 rdfs:label """Portrait of Ferdynand Bryndza (1837–1891)"""@fr.
+wd:Q104760725 wdt:P31 wd:Q838948 .
+wd:Q104760725 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q104760725 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Portrait%20of%20Ferdynand%20Bryndza%20%281837%E2%80%931891%29%20-%20MNK%20XII-A-494%20-%20National%20Museum%20Krak%C3%B3w.jpg".
+wd:Q104760725 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104773714 rdfs:label """En traversant la rue"""@fr.
+wd:Q104773714 wdt:P31 wd:Q838948 .
+wd:Q104773714 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q104773714 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20Crossing%20the%20Street.jpg".
+wd:Q104773714 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104774155 rdfs:label """Guitar Player"""@fr.
+wd:Q104774155 wdt:P31 wd:Q838948 .
+wd:Q104774155 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q104774155 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Guitar%20player%20%281873%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q104774155 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104774157 rdfs:label """Recital"""@fr.
+wd:Q104774157 wdt:P31 wd:Q838948 .
+wd:Q104774157 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q104774157 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Recital%20%28c.1884%29%2C%20by%20Giovanni%20Boldini.tif".
+wd:Q104774157 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104774151 rdfs:label """Madame Céline Leclanché"""@fr.
+wd:Q104774151 wdt:P31 wd:Q838948 .
+wd:Q104774151 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q104774151 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Madame%20C%C3%A9line%20Leclanch%C3%A9%20%281881%29%2C%20by%20Giovanni%20Boldini.png".
+wd:Q104774151 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q105468958 rdfs:label """The Spanish girl"""@fr.
+wd:Q105468958 wdt:P31 wd:Q838948 .
+wd:Q105468958 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q105468958 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%20la%20spagnola100905%29.jpg".
+wd:Q105468958 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q105475773 rdfs:label """Gondolas in front of St. Mark's Square"""@fr.
+wd:Q105475773 wdt:P31 wd:Q838948 .
+wd:Q105475773 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q105475773 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gondolas%20in%20front%20of%20Saint%20Mark%27s%20Square%20%28c.1895%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q105475773 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104914270 rdfs:label """Channel in Venice"""@fr.
+wd:Q104914270 wdt:P31 wd:Q838948 .
+wd:Q104914270 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q104914270 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Artgate%20Fondazione%20Cariplo%20-%20Boldini%20Giovanni%2C%20Canale%20a%20Venezia%20con%20gondole.jpg".
+wd:Q104914270 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104774159 rdfs:label """Washerwomen"""@fr.
+wd:Q104774159 wdt:P31 wd:Q838948 .
+wd:Q104774159 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q104774159 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Washerwomen%20%281874%29%2C%20by%20Giovanni%20Boldini.tif".
+wd:Q104774159 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111244729 rdfs:label """Countess Gabrielle de Rasty on a sofa"""@fr.
+wd:Q111244729 wdt:P31 wd:Q838948 .
+wd:Q111244729 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q111244729 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Countess%20Gabrielle%20de%20Rasty%20on%20a%20sofa%2C%201878-1879.jpg".
+wd:Q111244729 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111294936 rdfs:label """Confidences"""@fr.
+wd:Q111294936 wdt:P31 wd:Q838948 .
+wd:Q111294936 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q111294936 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Confidences%20%28c.1875%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q111294936 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q111200258 rdfs:label """Nu de jeune femme assise"""@fr.
+wd:Q111200258 wdt:P31 wd:Q838948 .
+wd:Q111200258 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q111200258 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nudo%20di%20giovane%20seduta%2C%20Giovanni%20Boldini.jpg".
+wd:Q111200258 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q108740780 rdfs:label """Berthe admiring a fan"""@fr.
+wd:Q108740780 wdt:P31 wd:Q838948 .
+wd:Q108740780 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q108740780 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Berth%C3%A8%20che%20guarda%20un%20ventaglio.jpg".
+wd:Q108740780 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113005699 rdfs:label """Portrait de Francesco Boldini"""@fr.
+wd:Q113005699 wdt:P31 wd:Q838948 .
+wd:Q113005699 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113005699 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Portrait%20of%20Francesco%20Boldini.jpg".
+wd:Q113005699 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113089103 rdfs:label """Autoportrait à soixante-neuf ans"""@fr.
+wd:Q113089103 wdt:P31 wd:Q838948 .
+wd:Q113089103 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113089103 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%2C%20autoritratto%20a%2069%20anni%2C%201911.jpg".
+wd:Q113089103 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113085893 rdfs:label """La Cantatrice mondaine"""@fr.
+wd:Q113085893 wdt:P31 wd:Q838948 .
+wd:Q113085893 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113085893 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%2C%20The%20Mondona%20Singer.jpg".
+wd:Q113085893 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113045982 rdfs:label """Le « Cardinal » du Bernin dans la chambre du peintre"""@fr.
+wd:Q113045982 wdt:P31 wd:Q838948 .
+wd:Q113045982 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113045982 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%2C%20il%20cardinale%20del%20bernini%20nella%20camera%20del%20pittore%2C%201899%20ca.jpg".
+wd:Q113045982 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113095512 rdfs:label """Les Sœurs Lascaraky"""@fr.
+wd:Q113095512 wdt:P31 wd:Q838948 .
+wd:Q113095512 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113095512 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%2C%20le%20sorelle%20lascaraky%2C%201869.jpg".
+wd:Q113095512 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114224 rdfs:label """La Dame en rose"""@fr.
+wd:Q113114224 wdt:P31 wd:Q838948 .
+wd:Q113114224 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114224 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%2C%20Lady%20in%20Rose.jpg".
+wd:Q113114224 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114227 rdfs:label """Portrait de Rita de Acosta Lydig assise"""@fr.
+wd:Q113114227 wdt:P31 wd:Q838948 .
+wd:Q113114227 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114227 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Rita%20de%20Acosta%20Lydig%20by%20Giovanni%20Boldini.jpg".
+wd:Q113114227 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114226 rdfs:label """Portrait de Gladys Deacon"""@fr.
+wd:Q113114226 wdt:P31 wd:Q838948 .
+wd:Q113114226 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114226 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Gladys%20Deacon.jpg".
+wd:Q113114226 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114222 rdfs:label """Portrait de Miss Bell"""@fr.
+wd:Q113114222 wdt:P31 wd:Q838948 .
+wd:Q113114222 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114222 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Miss%20Bell%20%281903%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q113114222 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113100550 rdfs:label """Portrait de Gaetano Braga"""@fr.
+wd:Q113100550 wdt:P31 wd:Q838948 .
+wd:Q113100550 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113100550 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%2C%20Ritratto%20di%20Gaetano%20Braga%2C%201888.jpg".
+wd:Q113100550 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114218 rdfs:label """Portrait de Pauline Hugo avec son fils Jean"""@fr.
+wd:Q113114218 wdt:P31 wd:Q838948 .
+wd:Q113114218 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114218 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20madame-georges-hugo-and-her-son-jean-1898.jpg".
+wd:Q113114218 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114231 rdfs:label """La Marquise Luisa Casati avec des plumes de paon"""@fr.
+wd:Q113114231 wdt:P31 wd:Q838948 .
+wd:Q113114231 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114231 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Treviso%29%20Giovanni%20Boldini%20-%20La%20marchesa%20Luisa%20Casati%20-%20Musei%20civici%20-%20Santa%20Caterina.jpg".
+wd:Q113114231 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114232 rdfs:label """Autoportrait"""@fr.
+wd:Q113114232 wdt:P31 wd:Q838948 .
+wd:Q113114232 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114232 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Self%20Portrait%2C%201892%2C%2054795.jpg".
+wd:Q113114232 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114229 rdfs:label """La Promenade au bois"""@fr.
+wd:Q113114229 wdt:P31 wd:Q838948 .
+wd:Q113114229 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114229 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20La%20passeggiata%20al%20Bois%20de%20Boulogne%2C%201909.jpg".
+wd:Q113114229 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114228 rdfs:label """Portrait de la princesse Marthe-Lucile Bibesco"""@fr.
+wd:Q113114228 wdt:P31 wd:Q838948 .
+wd:Q113114228 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114228 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20portrait-of-princess-marthe-lucile-bibesco-1911.jpg".
+wd:Q113114228 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113114235 rdfs:label """Portrait du jardinier des Veil-Picard"""@fr.
+wd:Q113114235 wdt:P31 wd:Q838948 .
+wd:Q113114235 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113114235 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%2C%20ritratto%20del%20giardiniere%20dei%20veil-picard%2C%201897%20ca.%2002.jpg".
+wd:Q113114235 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113294088 rdfs:label """Le Peintre John Lewis Brown avec sa femme et sa fille"""@fr.
+wd:Q113294088 wdt:P31 wd:Q838948 .
+wd:Q113294088 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113294088 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Lewis%20Brown.jpg".
+wd:Q113294088 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113328601 rdfs:label """Alice Regnault à cheval"""@fr.
+wd:Q113328601 wdt:P31 wd:Q838948 .
+wd:Q113328601 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113328601 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%2C%20l%27amazzone%20%28alice%20regnault%20a%20cavallo%29%2C%201878%20circa.jpg".
+wd:Q113328601 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113401424 rdfs:label """Alaide Banti en robe blanche"""@fr.
+wd:Q113401424 wdt:P31 wd:Q838948 .
+wd:Q113401424 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113401424 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20portrait-of-alaide-banti-in-white-dress-1866.jpg".
+wd:Q113401424 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113443431 rdfs:label """Un coin de la table du peintre"""@fr.
+wd:Q113443431 wdt:P31 wd:Q838948 .
+wd:Q113443431 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113443431 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%2C%20un%20angolo%20della%20mensa%20del%20pittore%2C%201897%20ca.%2002.jpg".
+wd:Q113443431 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113443521 rdfs:label """Feu d'artifice"""@fr.
+wd:Q113443521 wdt:P31 wd:Q838948 .
+wd:Q113443521 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113443521 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20fuoco%20d%27artificio.png".
+wd:Q113443521 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113444842 rdfs:label """Portrait de Cristiano Banti"""@fr.
+wd:Q113444842 wdt:P31 wd:Q838948 .
+wd:Q113444842 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113444842 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Portrait%20of%20Cristiano%20Banti%20with%20his%20cane%2C%201866.jpg".
+wd:Q113444842 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113455540 rdfs:label """La Machine de Marly (La Seine à Bougival)"""@fr.
+wd:Q113455540 wdt:P31 wd:Q838948 .
+wd:Q113455540 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113455540 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20seine-in-bougival.jpg".
+wd:Q113455540 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113444586 rdfs:label """Portrait du peintre Joaquin Araujo y Ruano"""@fr.
+wd:Q113444586 wdt:P31 wd:Q838948 .
+wd:Q113444586 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113444586 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini-%20ritratto%20del%20pittore%20joaquin%20ruano.jpg".
+wd:Q113444586 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113444808 rdfs:label """Portrait de Cecilia de Madrazo Fortuny"""@fr.
+wd:Q113444808 wdt:P31 wd:Q838948 .
+wd:Q113444808 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113444808 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20portrait-of-cecilia-de-madrazo.jpg".
+wd:Q113444808 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113455559 rdfs:label """Portrait de Giuseppe Abbati"""@fr.
+wd:Q113455559 wdt:P31 wd:Q838948 .
+wd:Q113455559 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113455559 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Giuseppe%20Abbati.jpg".
+wd:Q113455559 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113455547 rdfs:label """Le Matador ou Couple en costume espagnol avec deux perroquets"""@fr.
+wd:Q113455547 wdt:P31 wd:Q838948 .
+wd:Q113455547 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113455547 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Il%20Matador%20%28Coppia%20in%20abito%20spagnolo%20con%20due%20pappagalli%29%20di%20Boldini%20Giovanni.jpg".
+wd:Q113455547 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114919912 rdfs:label """Portrait of John Singer Sargent"""@fr.
+wd:Q114919912 wdt:P31 wd:Q838948 .
+wd:Q114919912 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q114919912 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20%281842-1931%29%20-%20A%20Portrait%20of%20John%20Singer%20Sargent.jpg".
+wd:Q114919912 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116248166 rdfs:label """Old song (I)"""@fr.
+wd:Q116248166 wdt:P31 wd:Q838948 .
+wd:Q116248166 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116248166 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Old%20song%20%281871%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q116248166 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113444554 rdfs:label """Portrait d'Emiliana Concha de Ossa"""@fr.
+wd:Q113444554 wdt:P31 wd:Q838948 .
+wd:Q113444554 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113444554 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20-%20Emiliana%20Concha%20de%20Ossa-1888.jpg".
+wd:Q113444554 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113444533 rdfs:label """Portrait de l'actrice Alice Regnault"""@fr.
+wd:Q113444533 wdt:P31 wd:Q838948 .
+wd:Q113444533 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113444533 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Alice%20Regnault.jpg".
+wd:Q113444533 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113444181 rdfs:label """Femme en noir observant le « Pastel blanc »"""@fr.
+wd:Q113444181 wdt:P31 wd:Q838948 .
+wd:Q113444181 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113444181 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%2C%20Woman%20in%20Black.jpg".
+wd:Q113444181 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113444333 rdfs:label """Portrait du petit Subercaseaux"""@fr.
+wd:Q113444333 wdt:P31 wd:Q838948 .
+wd:Q113444333 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113444333 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%2C%20Picollo%20Subercaseaux.jpg".
+wd:Q113444333 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113444521 rdfs:label """Deux Chevaux blancs"""@fr.
+wd:Q113444521 wdt:P31 wd:Q838948 .
+wd:Q113444521 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113444521 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%2C%20due%20cavalli%20bianchi%2C%201881-86%20ca.jpg".
+wd:Q113444521 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116259243 rdfs:label """The Roman forum in Rome"""@fr.
+wd:Q116259243 wdt:P31 wd:Q838948 .
+wd:Q116259243 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116259243 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%2C%20Il%20Foro%20a%20Roma.jpg".
+wd:Q116259243 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116259373 rdfs:label """Church interior with a view of the organ"""@fr.
+wd:Q116259373 wdt:P31 wd:Q838948 .
+wd:Q116259373 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116259373 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%2C%20Interno%20di%20chiesa%20con%20vedura%20di%20organo.jpg".
+wd:Q116259373 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q113443581 rdfs:label """Statue dans le parc de Versailles"""@fr.
+wd:Q113443581 wdt:P31 wd:Q838948 .
+wd:Q113443581 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q113443581 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%2C%20Statue%20in%20the%20Park%20of%20Versaille.jpg".
+wd:Q113443581 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116259790 rdfs:label """At the piano"""@fr.
+wd:Q116259790 wdt:P31 wd:Q838948 .
+wd:Q116259790 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116259790 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20boldini%2C%20al%20pianoforte.jpg".
+wd:Q116259790 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116271995 rdfs:label """Portrait of Giorgio Sevieri"""@fr.
+wd:Q116271995 wdt:P31 wd:Q838948 .
+wd:Q116271995 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116271995 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Giorgio%20Sevieri%20%281866-67%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q116271995 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116272042 rdfs:label """Sur un banc au Bois"""@fr.
+wd:Q116272042 wdt:P31 wd:Q838948 .
+wd:Q116272042 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116272042 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/On%20the%20bench%20at%20the%20Bois%20%281872%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q116272042 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116279789 rdfs:label """From the attic in Ferrara"""@fr.
+wd:Q116279789 wdt:P31 wd:Q838948 .
+wd:Q116279789 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116279789 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%2C%20Dalla%20soffitta%20a%20Ferrara%2C%201870%20%28cropped%29.png".
+wd:Q116279789 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116690646 rdfs:label """The art connoisseur"""@fr.
+wd:Q116690646 wdt:P31 wd:Q838948 .
+wd:Q116690646 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116690646 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20the-art-connoisseur.jpg".
+wd:Q116690646 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116518086 rdfs:label """Portrait of Josefina Errazuriz Alvear holding a cat"""@fr.
+wd:Q116518086 wdt:P31 wd:Q838948 .
+wd:Q116518086 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116518086 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%2C%20Ritratto%20di%20Josefina%20Errazuriz%20Alvear%20con%20il%20suo%20gatto%2C%201910.jpg".
+wd:Q116518086 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116706611 rdfs:label """Spingtime"""@fr.
+wd:Q116706611 wdt:P31 wd:Q838948 .
+wd:Q116706611 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116706611 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Springtime%20%281873%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q116706611 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116692693 rdfs:label """A friend of the marquis"""@fr.
+wd:Q116692693 wdt:P31 wd:Q838948 .
+wd:Q116692693 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116692693 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20a-friend-of-the-marquis-1875.jpg".
+wd:Q116692693 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116924911 rdfs:label """Ecstasy"""@fr.
+wd:Q116924911 wdt:P31 wd:Q838948 .
+wd:Q116924911 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q116924911 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ecstasy.png".
+wd:Q116924911 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123516723 rdfs:label """Reclining Nude"""@fr.
+wd:Q123516723 wdt:P31 wd:Q838948 .
+wd:Q123516723 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q123516723 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20Reclining%20Nude.jpg".
+wd:Q123516723 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123516704 rdfs:label """Luisa Casati (1881-1957) with a greyhound"""@fr.
+wd:Q123516704 wdt:P31 wd:Q838948 .
+wd:Q123516704 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q123516704 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20%281842-1931%29%2C%20La%20Marchesa%20Luisa%20Casati%20%281881-1957%29%20con%20un%20levriero.jpg".
+wd:Q123516704 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124741656 rdfs:label """Portrait of the painter Alessandro Lanfredini"""@fr.
+wd:Q124741656 wdt:P31 wd:Q838948 .
+wd:Q124741656 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q124741656 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Alessandro%20Lanfredini.png".
+wd:Q124741656 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125346026 rdfs:label """Portrait of Lady Hanne Sophie Louise Wiborg"""@fr.
+wd:Q125346026 wdt:P31 wd:Q838948 .
+wd:Q125346026 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125346026 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Lady%20Hanne%20Sophie%20Louise%20Wiborg%20%281903%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q125346026 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125302053 rdfs:label """Portrait of James McNeill Whistler"""@fr.
+wd:Q125302053 wdt:P31 wd:Q838948 .
+wd:Q125302053 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125302053 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boldini%20-%20James%20McNeill%20Whistler.jpg".
+wd:Q125302053 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125301926 rdfs:label """Portrait of a lady"""@fr.
+wd:Q125301926 wdt:P31 wd:Q838948 .
+wd:Q125301926 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125301926 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn%20Museum%20-%20Portrait%20of%20a%20Lady%20-%20Giovanni%20Boldini.jpg".
+wd:Q125301926 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124807227 rdfs:label """Portrait du prince Ignazio Boncompagni Ludovisi"""@fr.
+wd:Q124807227 wdt:P31 wd:Q838948 .
+wd:Q124807227 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q124807227 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portr%C3%A4t%20der%20Ignazio%20Boncompagni%20Ludovisi.png".
+wd:Q124807227 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125393947 rdfs:label """The loyal friend"""@fr.
+wd:Q125393947 wdt:P31 wd:Q838948 .
+wd:Q125393947 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125393947 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Boldini%20L%E2%80%99amico%20fedele.jpg".
+wd:Q125393947 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q125398959 rdfs:label """Young woman in deshabillé (The self-care)"""@fr.
+wd:Q125398959 wdt:P31 wd:Q838948 .
+wd:Q125398959 wdt:P170 wd:Q362003.
+wd:Q362003 rdfs:label """Giovanni Boldini"""@fr.
+wd:Q362003 wdt:P31 wd:Q3391743 .
+wd:Q125398959 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Young%20woman%20in%20deshabill%C3%A9%20%28The%20self-care%29%20%28c.1880%29%2C%20by%20Giovanni%20Boldini.jpg".
+wd:Q125398959 pgdc:sparql kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU .
+kgdc:sparql7YdrkIMiyRCAAZ4pE2muRjyPj2xUVJv8hmWG58lx4iU pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q362003 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

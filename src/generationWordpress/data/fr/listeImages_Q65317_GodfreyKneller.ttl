@@ -1,0 +1,23 @@
+wd:Q59508287 rdfs:label """James Brydges et sa famille"""@fr.
+wd:Q59508287 wdt:P31 wd:wd:Q838948 .
+wd:Q59508287 wdt:P170 wd:Q65317.
+wd:Q65317 rdfs:label """Godfrey Kneller"""@fr.
+wd:Q65317 wdt:P31 wd:Q3391743 .
+wd:Q59508287 wdt:P18 "None".
+wd:Q59508287 pgdc:sparql kgdc:sparqlcRAPKeGenJ0LeXWVy8BKVwkISbAAZWcft1LMI1ewjNc .
+kgdc:sparqlcRAPKeGenJ0LeXWVy8BKVwkISbAAZWcft1LMI1ewjNc pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q65317 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q59508287 pgdc:piwigo_image "13945".
+wd:Q59508287 pgdc:piwigo_gallery kgdc:gal387.

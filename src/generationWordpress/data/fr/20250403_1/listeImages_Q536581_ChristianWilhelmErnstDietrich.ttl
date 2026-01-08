@@ -1,0 +1,4060 @@
+wd:Q116730810 rdfs:label """Landscape with a billet dam"""@fr.
+wd:Q116730810 wdt:P31 wd:Q838948 .
+wd:Q116730810 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q116730810 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Landschaft%20mit%20Kn%C3%BCppeldamm%20%281744%29.jpg".
+wd:Q116730810 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117228187 rdfs:label """Depiction of a picture cabinet"""@fr.
+wd:Q117228187 wdt:P31 wd:Q838948 .
+wd:Q117228187 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q117228187 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/1742%20Dietrich%20Gemaeldekabinett%20anagoria.JPG".
+wd:Q117228187 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117215260 rdfs:label """Hermit"""@fr.
+wd:Q117215260 wdt:P31 wd:Q838948 .
+wd:Q117215260 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q117215260 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Hermit%20-%20DO%204336%20-%20National%20Gallery%20Prague.jpg".
+wd:Q117215260 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q18599416 rdfs:label """View of a Town"""@fr.
+wd:Q18599416 wdt:P31 wd:Q838948 .
+wd:Q18599416 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q18599416 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20a%20Town%20%28Christian%20Wilhelm%20Ernst%20Dietrich%29%20-%20Nationalmuseum%20-%2017213.tif".
+wd:Q18599416 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19905417 rdfs:label """Surprised, or Infidelity Found Out"""@fr.
+wd:Q19905417 wdt:P31 wd:Q838948 .
+wd:Q19905417 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q19905417 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Surprised%2C%20or%20Infidelity%20Found%20Out%20MET%20DP273092.jpg".
+wd:Q19905417 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q17334149 rdfs:label """Portrait of a man, perhaps Rembrandt's father, Harmen Gerritsz van Rijn"""@fr.
+wd:Q17334149 wdt:P31 wd:Q838948 .
+wd:Q17334149 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q17334149 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portret%20van%20een%20man%2C%20misschien%20Rembrandts%20vader%2C%20Harmen%20Gerritsz%20van%20Rijn%20Rijksmuseum%20SK-A-3298.jpeg".
+wd:Q17334149 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117355405 rdfs:label """Le temple de Sibylle à Tivoli"""@fr.
+wd:Q117355405 wdt:P31 wd:Q838948 .
+wd:Q117355405 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q117355405 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dietrich-Temple%20de%20Sibylle.JPG".
+wd:Q117355405 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117355601 rdfs:label """Le Couronnement d'épines"""@fr.
+wd:Q117355601 wdt:P31 wd:Q838948 .
+wd:Q117355601 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q117355601 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Guillaume%20Ernest%20Dietricy%20-%20Die%20Dornenkr%C3%B6nung%20Christi%20%281757%29.jpg".
+wd:Q117355601 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19911972 rdfs:label """The Adoration of the Shepherds"""@fr.
+wd:Q19911972 wdt:P31 wd:Q838948 .
+wd:Q19911972 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q19911972 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Adoration%20of%20the%20Shepherds%20MET%20ep71.162.bw.R.jpg".
+wd:Q19911972 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q19912483 rdfs:label """Christ Healing the Sick"""@fr.
+wd:Q19912483 wdt:P31 wd:Q838948 .
+wd:Q19912483 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q19912483 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christ%20Healing%20the%20Sick%20MET%20ep85.9.bw.R.jpg".
+wd:Q19912483 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117355631 rdfs:label """Paysage, Deux ermites à l'entrée d'une grotte"""@fr.
+wd:Q117355631 wdt:P31 wd:Q838948 .
+wd:Q117355631 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q117355631 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Guillaume%20Ernest%20Dietricy%20-%20Paysage%2C%20Deux%20ermites%20%C3%A0%20l%27entr%C3%A9e%20d%27une%20grotte.jpg".
+wd:Q117355631 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20354167 rdfs:label """Storm"""@fr.
+wd:Q20354167 wdt:P31 wd:Q838948 .
+wd:Q20354167 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q20354167 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Storm%20-%20KMSst194%20-%20Statens%20Museum%20for%20Kunst.jpg".
+wd:Q20354167 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q20788870 rdfs:label """A Stormy landscape"""@fr.
+wd:Q20788870 wdt:P31 wd:Q838948 .
+wd:Q20788870 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q20788870 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20A%20Stormy%20landscape%20-%20A%20III%201785%20-%20Finnish%20National%20Gallery.jpg".
+wd:Q20788870 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21615037 rdfs:label """Portrait of a Man in Eastern Attire"""@fr.
+wd:Q21615037 wdt:P31 wd:Q838948 .
+wd:Q21615037 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q21615037 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Portret%20van%20een%20man%20in%20oosterse%20kledij%20-%20666%20-%20Royal%20Museum%20of%20Fine%20Arts%20Antwerp.tiff".
+wd:Q21615037 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21623225 rdfs:label """Italian Landscape"""@fr.
+wd:Q21623225 wdt:P31 wd:Q838948 .
+wd:Q21623225 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q21623225 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Italiaans%20landschap%20-%205012%20-%20Royal%20Museum%20of%20Fine%20Arts%20Antwerp.tiff".
+wd:Q21623225 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q119012237 rdfs:label """Merry Company in a Park"""@fr.
+wd:Q119012237 wdt:P31 wd:Q838948 .
+wd:Q119012237 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q119012237 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Gesellschaft%20im%20Park.jpg".
+wd:Q119012237 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q117355680 rdfs:label """Paysage et rochers, un ermite se repose à l'entrée d'une grotte"""@fr.
+wd:Q117355680 wdt:P31 wd:Q838948 .
+wd:Q117355680 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q117355680 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Guillaume%20Ernest%20Dietricy%20-%20Paysage%20et%20rochers%2C%20un%20ermite%20se%20repose%20%C3%A0%20l%27entr%C3%A9e%20d%27une%20grotte.jpg".
+wd:Q117355680 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q21728743 rdfs:label """Le Sacrifice d’Isaac"""@fr.
+wd:Q21728743 wdt:P31 wd:Q838948 .
+wd:Q21728743 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q21728743 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Sacrifice%20of%20Isaac%20-%20Eremitage.jpg".
+wd:Q21728743 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q122070789 rdfs:label """Paysage italien avec la pyramide de Cestius et bergers."""@fr.
+wd:Q122070789 wdt:P31 wd:Q838948 .
+wd:Q122070789 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q122070789 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dietrich%20Pyramid%20of%20Cestius.jpg".
+wd:Q122070789 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q120199485 rdfs:label """Q120199485"""@fr.
+wd:Q120199485 wdt:P31 wd:Q838948 .
+wd:Q120199485 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q120199485 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Albert%20en%20Nicolaas%20Rubens%20-%20RH.S.225%20-%20Rubenshuis.tiff".
+wd:Q120199485 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27964773 rdfs:label """Saint Boniface Felling the Sacred Oak"""@fr.
+wd:Q27964773 wdt:P31 wd:Q838948 .
+wd:Q27964773 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q27964773 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Saint%20Boniface%20Felling%20the%20Sacred%20Oak%20-%20NG%20619%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q27964773 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27964773 rdfs:label """Saint Boniface Felling the Sacred Oak"""@fr.
+wd:Q27964773 wdt:P31 wd:Q838948 .
+wd:Q27964773 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q27964773 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20Saint%20Boniface%20Felling%20the%20Sacred%20Oak%20-%20NG%20619%20-%20National%20Galleries%20of%20Scotland.jpg".
+wd:Q27964773 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27970943 rdfs:label """Waterfalls in the Environs of Rome"""@fr.
+wd:Q27970943 wdt:P31 wd:Q838948 .
+wd:Q27970943 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q27970943 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20006.jpg".
+wd:Q27970943 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q26692794 rdfs:label """The Wandering Musicians"""@fr.
+wd:Q26692794 wdt:P31 wd:Q838948 .
+wd:Q26692794 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q26692794 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Wandermusikanten%20%281745%29.jpg".
+wd:Q26692794 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q22988649 rdfs:label """Les Musiciens ambulants."""@fr.
+wd:Q22988649 wdt:P31 wd:Q838948 .
+wd:Q22988649 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q22988649 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dietrich%20Wandering%20musicians.jpg".
+wd:Q22988649 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q22988684 rdfs:label """Paysage rocheux avec staffage."""@fr.
+wd:Q22988684 wdt:P31 wd:Q838948 .
+wd:Q22988684 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q22988684 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dietrich%20Rocky%20landscape.jpg".
+wd:Q22988684 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q122459365 rdfs:label """Elegant Group in the Open"""@fr.
+wd:Q122459365 wdt:P31 wd:Q838948 .
+wd:Q122459365 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q122459365 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/1760%20Dietrich%20Gesellschaft%20im%20Freien%20anagoria.JPG".
+wd:Q122459365 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q125470828 rdfs:label """An alchemist blowing on a fire to heat a still (?)."""@fr.
+wd:Q125470828 wdt:P31 wd:Q838948 .
+wd:Q125470828 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q125470828 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/An%20alchemist%20blowing%20on%20a%20fire%20to%20heat%20a%20still%20%28%3F%29.%20Oil%20pain%20Wellcome%20V0017690.jpg".
+wd:Q125470828 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q122222024 rdfs:label """Jésus à l'âge de douze ans enseignait dans le temple."""@fr.
+wd:Q122222024 wdt:P31 wd:Q838948 .
+wd:Q122222024 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q122222024 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dietrich%20Jesus%20teaching%20in%20the%20Temple.jpg".
+wd:Q122222024 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27971296 rdfs:label """The Entombment"""@fr.
+wd:Q27971296 wdt:P31 wd:Q838948 .
+wd:Q27971296 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q27971296 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20De%20graflegging%20van%20Christus%20-%20%D0%93%D0%AD-1793%20-%20Hermitage%20Museum.jpg".
+wd:Q27971296 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q130299119 rdfs:label """Q130299119"""@fr.
+wd:Q130299119 wdt:P31 wd:Q838948 .
+wd:Q130299119 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q130299119 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dietrich%2C%20Christian%20Wilhelm%20Ernst%20-%20Schnitterin%20-%2018th%20century.jpg".
+wd:Q130299119 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q130387988 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q130387988 wdt:P31 wd:Q838948 .
+wd:Q130387988 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q130387988 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Art%20Museum%20Riga%20Bourse%20152.jpg".
+wd:Q130387988 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27981678 rdfs:label """Q27981678"""@fr.
+wd:Q27981678 wdt:P31 wd:Q838948 .
+wd:Q27981678 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q27981678 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%28Dietricy%29%20-%20Verk%C3%BCndigung%20an%20die%20Hirten%20-%20GG%201181%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27981678 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28016264 rdfs:label """Man Wearing a Turban"""@fr.
+wd:Q28016264 wdt:P31 wd:Q838948 .
+wd:Q28016264 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q28016264 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-74%29%20-%20Man%20Wearing%20a%20Turban%20-%20RCIN%20403555%20-%20Royal%20Collection.jpg".
+wd:Q28016264 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27981680 rdfs:label """Q27981680"""@fr.
+wd:Q27981680 wdt:P31 wd:Q838948 .
+wd:Q27981680 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q27981680 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%28Dietricy%29%20-%20Anbetung%20der%20Hirten%20-%20GG%201184%20-%20Kunsthistorisches%20Museum.jpg".
+wd:Q27981680 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q27975072 rdfs:label """Waterfalls in Tivoli"""@fr.
+wd:Q27975072 wdt:P31 wd:Q838948 .
+wd:Q27975072 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q27975072 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20007.jpg".
+wd:Q27975072 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28043354 rdfs:label """Nymphs Bathing"""@fr.
+wd:Q28043354 wdt:P31 wd:Q838948 .
+wd:Q28043354 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q28043354 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-74%29%20-%20Nymphs%20Bathing%20-%20RCIN%20406119%20-%20Royal%20Collection.jpg".
+wd:Q28043354 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28031473 rdfs:label """The Tribute Money"""@fr.
+wd:Q28031473 wdt:P31 wd:Q838948 .
+wd:Q28031473 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q28031473 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-74%29%20-%20The%20Tribute%20Money%20-%20RCIN%20405522%20-%20Royal%20Collection.jpg".
+wd:Q28031473 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29016506 rdfs:label """Bain des Nymphes."""@fr.
+wd:Q29016506 wdt:P31 wd:Q838948 .
+wd:Q29016506 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q29016506 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Bath%20of%20nymphs%20-%20M.Ob.344%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q29016506 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28031470 rdfs:label """Christ and the Woman taken in Adultery"""@fr.
+wd:Q28031470 wdt:P31 wd:Q838948 .
+wd:Q28031470 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q28031470 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-74%29%20-%20Christ%20and%20the%20Woman%20taken%20in%20Adultery%20-%20RCIN%20405521%20-%20Royal%20Collection.jpg".
+wd:Q28031470 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q28024912 rdfs:label """A Jewish Rabbi"""@fr.
+wd:Q28024912 wdt:P31 wd:Q838948 .
+wd:Q28024912 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q28024912 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Joodse%20rabbijn%20-%20RCIN%20403557%20-%20Royal%20Collection.jpg".
+wd:Q28024912 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29898546 rdfs:label """Q29898546"""@fr.
+wd:Q29898546 wdt:P31 wd:Q838948 .
+wd:Q29898546 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q29898546 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20D%C3%BCnenlandschaft%20-%20759%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29898546 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29906942 rdfs:label """Q29906942"""@fr.
+wd:Q29906942 wdt:P31 wd:Q838948 .
+wd:Q29906942 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q29906942 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Landschaft%20-%201679%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29906942 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29900985 rdfs:label """Q29900985"""@fr.
+wd:Q29900985 wdt:P31 wd:Q838948 .
+wd:Q29900985 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q29900985 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Bildnis%20eines%20alten%20Mannes%20%28Kopie%20nach%20Rembrandt%29%20-%201639%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29900985 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29952401 rdfs:label """Q29952401"""@fr.
+wd:Q29952401 wdt:P31 wd:Q838948 .
+wd:Q29952401 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q29952401 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dietrich%2C%20Christian%20Wilhelm%20Ernst%20-%20Bukolische%20Landschaft%20mit%20Urne.jpg".
+wd:Q29952401 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29958732 rdfs:label """Q29958732"""@fr.
+wd:Q29958732 wdt:P31 wd:Q838948 .
+wd:Q29958732 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q29958732 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Bildnis%20einer%20Dame%20mit%20Knaben%20-%209119%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29958732 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29964190 rdfs:label """The adoration of the shepherds"""@fr.
+wd:Q29964190 wdt:P31 wd:Q838948 .
+wd:Q29964190 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q29964190 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Anbetung%20der%20Hirten%20-%205538%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29964190 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29908872 rdfs:label """Q29908872"""@fr.
+wd:Q29908872 wdt:P31 wd:Q838948 .
+wd:Q29908872 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q29908872 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Der%20arme%20Lazarus%20und%20der%20reiche%20Prasser%20-%20761%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29908872 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29907114 rdfs:label """Q29907114"""@fr.
+wd:Q29907114 wdt:P31 wd:Q838948 .
+wd:Q29907114 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q29907114 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Landschaft%20mit%20einem%20Schloss%20auf%20einem%20Felskegel%20-%20WAF%20207%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29907114 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q29920210 rdfs:label """Q29920210"""@fr.
+wd:Q29920210 wdt:P31 wd:Q838948 .
+wd:Q29920210 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q29920210 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Hl.%20Bruno%20von%20K%C3%B6ln%20-%205950%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q29920210 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30056299 rdfs:label """Q30056299"""@fr.
+wd:Q30056299 wdt:P31 wd:Q838948 .
+wd:Q30056299 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30056299 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dietrich%2C%20Christian%20Wilhelm%20Ernst%20-%20Bukolische%20Landschaft%20mit%20Ruinen.jpg".
+wd:Q30056299 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30056886 rdfs:label """Q30056886"""@fr.
+wd:Q30056886 wdt:P31 wd:Q838948 .
+wd:Q30056886 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30056886 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Italienische%20Landschaft%20mit%20Bogenbr%C3%BCcke%20-%206292%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30056886 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30056972 rdfs:label """Q30056972"""@fr.
+wd:Q30056972 wdt:P31 wd:Q838948 .
+wd:Q30056972 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30056972 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Ruine%20am%20Ufer%20eines%20Flusses%20-%20WAF%20208%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30056972 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30096704 rdfs:label """The flight into Egypt"""@fr.
+wd:Q30096704 wdt:P31 wd:Q838948 .
+wd:Q30096704 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30096704 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Flucht%20nach%20%C3%84gypten%20-%205539%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30096704 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30096877 rdfs:label """Q30096877"""@fr.
+wd:Q30096877 wdt:P31 wd:Q838948 .
+wd:Q30096877 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30096877 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Hl.%20Antonius%20Eremita%20-%205948%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30096877 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30096273 rdfs:label """Q30096273"""@fr.
+wd:Q30096273 wdt:P31 wd:Q838948 .
+wd:Q30096273 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30096273 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Bildnis%20eines%20jungen%20Mannes%20-%205709%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30096273 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30095528 rdfs:label """Q30095528"""@fr.
+wd:Q30095528 wdt:P31 wd:Q838948 .
+wd:Q30095528 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30095528 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Der%20Marktschreier%20-%201678%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30095528 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30093690 rdfs:label """Q30093690"""@fr.
+wd:Q30093690 wdt:P31 wd:Q838948 .
+wd:Q30093690 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30093690 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Blinde%20am%20Abgrund%20-%20760%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30093690 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30094158 rdfs:label """Q30094158"""@fr.
+wd:Q30094158 wdt:P31 wd:Q838948 .
+wd:Q30094158 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30094158 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Stadt%20am%20Ufer%20im%20Mondschein%20-%201674%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30094158 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30094254 rdfs:label """Q30094254"""@fr.
+wd:Q30094254 wdt:P31 wd:Q838948 .
+wd:Q30094254 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30094254 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Ortschaft%20an%20einem%20Fluss%20-%20757%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30094254 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30058503 rdfs:label """Q30058503"""@fr.
+wd:Q30058503 wdt:P31 wd:Q838948 .
+wd:Q30058503 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30058503 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Ideallandschaft%20mit%20Gewitter%20-%206283%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30058503 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30098193 rdfs:label """Q30098193"""@fr.
+wd:Q30098193 wdt:P31 wd:Q838948 .
+wd:Q30098193 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30098193 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Gebirgslandschaft%20-%204855%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30098193 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30097810 rdfs:label """Q30097810"""@fr.
+wd:Q30097810 wdt:P31 wd:Q838948 .
+wd:Q30097810 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30097810 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Die%20Sennerin%20%28nach%20Berchem%29%20-%201682%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30097810 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30098138 rdfs:label """Q30098138"""@fr.
+wd:Q30098138 wdt:P31 wd:Q838948 .
+wd:Q30098138 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30098138 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Die%20Berufung%20des%20hl.%20Matth%C3%A4us%20-%201673%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30098138 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30094408 rdfs:label """Q30094408"""@fr.
+wd:Q30094408 wdt:P31 wd:Q838948 .
+wd:Q30094408 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30094408 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Verz%C3%BCckung%20der%20hl.%20Theresia%20-%205455%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30094408 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q52211080 rdfs:label """A Rocky Waterfall with City Walls (A Capriccio of Tivoli)"""@fr.
+wd:Q52211080 wdt:P31 wd:Q838948 .
+wd:Q52211080 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q52211080 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20A%20Rocky%20Waterfall%20with%20City%20Walls%20%28A%20Capriccio%20of%20Tivoli%29%20-%201530402%20-%20National%20Trust.jpg".
+wd:Q52211080 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55429002 rdfs:label """Landskap med sanddyner"""@fr.
+wd:Q55429002 wdt:P31 wd:Q838948 .
+wd:Q55429002 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q55429002 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Landskap%20med%20sanddyner%20-%20NG.M.04423%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55429002 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q55429478 rdfs:label """Hermit in a Rocky Cavern"""@fr.
+wd:Q55429478 wdt:P31 wd:Q838948 .
+wd:Q55429478 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q55429478 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Hermit%20in%20a%20Rocky%20Cavern%20-%20NG.M.00076%20-%20National%20Museum%20of%20Art%2C%20Architecture%20and%20Design.jpg".
+wd:Q55429478 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30097776 rdfs:label """Q30097776"""@fr.
+wd:Q30097776 wdt:P31 wd:Q838948 .
+wd:Q30097776 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30097776 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Abendlandschaft%20-%201681%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30097776 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q61742557 rdfs:label """Returning from the Hay Harvest"""@fr.
+wd:Q61742557 wdt:P31 wd:Q838948 .
+wd:Q61742557 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q61742557 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Terugkeer%20van%20het%20hooien%20-%20%D0%93%D0%AD-8673%20-%20Hermitage%20Museum.jpg".
+wd:Q61742557 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50326478 rdfs:label """The adoration of the Magi"""@fr.
+wd:Q50326478 wdt:P31 wd:Q838948 .
+wd:Q50326478 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q50326478 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20De%20aanbidding%20van%20de%20koningen%20-%20Gal.-Nr.%202103%20-%20Staatliche%20Kunstsammlungen%20Dresden.jpg".
+wd:Q50326478 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q30099172 rdfs:label """Q30099172"""@fr.
+wd:Q30099172 wdt:P31 wd:Q838948 .
+wd:Q30099172 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q30099172 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Mondscheinlandschaft%20-%201680%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30099172 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q52211068 rdfs:label """Rocky Waterfall with a Ruined Castle"""@fr.
+wd:Q52211068 wdt:P31 wd:Q838948 .
+wd:Q52211068 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q52211068 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20Rocky%20River%20with%20a%20Ruined%20Castle%20-%201530401%20-%20National%20Trust.jpg".
+wd:Q52211068 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q61743403 rdfs:label """The Descent from the Cross"""@fr.
+wd:Q61743403 wdt:P31 wd:Q838948 .
+wd:Q61743403 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q61743403 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20De%20bewening%20van%20Christus%20-%20%D0%93%D0%AD-1329%20-%20Hermitage%20Museum.jpg".
+wd:Q61743403 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q61747365 rdfs:label """View of the Roman Campagna"""@fr.
+wd:Q61747365 wdt:P31 wd:Q838948 .
+wd:Q61747365 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q61747365 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Gezicht%20op%20de%20Campania%20-%20%D0%93%D0%AD-1337%20-%20Hermitage%20Museum.jpg".
+wd:Q61747365 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50327320 rdfs:label """Southern landscape with bathing women"""@fr.
+wd:Q50327320 wdt:P31 wd:Q838948 .
+wd:Q50327320 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q50327320 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Zuidelijk%20landschap%20met%20badende%20vrouwen%20-%20Gal.-Nr.%202125%20-%20Staatliche%20Kunstsammlungen%20Dresden.jpg".
+wd:Q50327320 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q77891305 rdfs:label """The Sleeping Shepherd"""@fr.
+wd:Q77891305 wdt:P31 wd:Q838948 .
+wd:Q77891305 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q77891305 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Sleeping%20Shepherd%20P5301.jpg".
+wd:Q77891305 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q64523551 rdfs:label """Portrait of a Young Girl"""@fr.
+wd:Q64523551 wdt:P31 wd:Q838948 .
+wd:Q64523551 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q64523551 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Portrait%20of%20a%20Young%20Girl%20-%2004.169%20-%20Rhode%20Island%20School%20of%20Design%20Museum.jpg".
+wd:Q64523551 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q64549158 rdfs:label """The Expulsion of Hagar"""@fr.
+wd:Q64549158 wdt:P31 wd:Q838948 .
+wd:Q64549158 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q64549158 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20The%20Expulsion%20of%20Hagar%20-%2089.56%20-%20Detroit%20Institute%20of%20Arts.jpg".
+wd:Q64549158 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q50327455 rdfs:label """Venus hands over to Aeneas the armour forged by Vulcan"""@fr.
+wd:Q50327455 wdt:P31 wd:Q838948 .
+wd:Q50327455 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q50327455 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Venus%20overhandigt%20Aeneas%20de%20door%20Vulcanus%20gesmede%20wapenrusting%20-%20Gal.-Nr.%202127%20-%20Staatliche%20Kunstsammlungen%20Dresden.jpg".
+wd:Q50327455 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104523691 rdfs:label """The sacrifice of Abraham"""@fr.
+wd:Q104523691 wdt:P31 wd:Q838948 .
+wd:Q104523691 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104523691 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Das%20Opfer%20Abrahams%20-%201737%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104523691 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104523686 rdfs:label """Q104523686"""@fr.
+wd:Q104523686 wdt:P31 wd:Q838948 .
+wd:Q104523686 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104523686 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20N%C3%A4chtliche%20Landschaft%20mit%20brennender%20Stadt%20-%201735%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104523686 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104536781 rdfs:label """Old man looking to the right"""@fr.
+wd:Q104536781 wdt:P31 wd:Q838948 .
+wd:Q104536781 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104536781 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Old%20man%20looking%20to%20the%20right%20-%20M.Ob.361%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104536781 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104536545 rdfs:label """Merry-making in a park"""@fr.
+wd:Q104536545 wdt:P31 wd:Q838948 .
+wd:Q104536545 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104536545 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Merry-making%20in%20a%20park%20-%20M.Ob.142%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104536545 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104536452 rdfs:label """Nymphs in a grotto"""@fr.
+wd:Q104536452 wdt:P31 wd:Q838948 .
+wd:Q104536452 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104536452 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Nymphs%20in%20a%20grotto%20-%20M.Ob.345%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104536452 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104525269 rdfs:label """Q104525269"""@fr.
+wd:Q104525269 wdt:P31 wd:Q838948 .
+wd:Q104525269 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104525269 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Gesellschaft%20im%20Park%20-%202553%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104525269 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104525938 rdfs:label """Q104525938"""@fr.
+wd:Q104525938 wdt:P31 wd:Q838948 .
+wd:Q104525938 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104525938 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Die%20Anbetung%20der%20Hirten%20-%202822%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104525938 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104536782 rdfs:label """Old man turned to the left"""@fr.
+wd:Q104536782 wdt:P31 wd:Q838948 .
+wd:Q104536782 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104536782 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Old%20man%20turned%20to%20the%20left%20-%20M.Ob.362%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104536782 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104528381 rdfs:label """Q104528381"""@fr.
+wd:Q104528381 wdt:P31 wd:Q838948 .
+wd:Q104528381 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104528381 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Bergige%20Landschaft%20mit%20Bach%20-%201951%20-%20Staatliche%20Kunsthalle%20Karlsruhe.jpg".
+wd:Q104528381 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104537054 rdfs:label """Old man with blue fabric"""@fr.
+wd:Q104537054 wdt:P31 wd:Q838948 .
+wd:Q104537054 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104537054 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Old%20man%20with%20blue%20fabric%20-%20M.Ob.366%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104537054 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104536886 rdfs:label """Portrait of a boy"""@fr.
+wd:Q104536886 wdt:P31 wd:Q838948 .
+wd:Q104536886 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104536886 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Portrait%20of%20a%20boy%20-%20M.Ob.174%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104536886 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104537057 rdfs:label """Old man with green fabric"""@fr.
+wd:Q104537057 wdt:P31 wd:Q838948 .
+wd:Q104537057 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104537057 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Old%20man%20with%20green%20fabric%20-%20M.Ob.365%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104537057 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104539138 rdfs:label """Head of an old man (St. Paul?)"""@fr.
+wd:Q104539138 wdt:P31 wd:Q838948 .
+wd:Q104539138 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104539138 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Head%20of%20an%20old%20man%20%28St.%20Paul%5E%29%20-%20M.Ob.1340%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104539138 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104539144 rdfs:label """Portrait of an old man"""@fr.
+wd:Q104539144 wdt:P31 wd:Q838948 .
+wd:Q104539144 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104539144 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Portrait%20of%20an%20old%20man%20-%20M.Ob.1937%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104539144 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104539149 rdfs:label """Head of an old man (St. Peter?)"""@fr.
+wd:Q104539149 wdt:P31 wd:Q838948 .
+wd:Q104539149 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104539149 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Head%20of%20an%20old%20man%20%28St.%20Peter%5E%29%20-%20M.Ob.1345%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104539149 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104540911 rdfs:label """Inn"""@fr.
+wd:Q104540911 wdt:P31 wd:Q838948 .
+wd:Q104540911 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104540911 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Inn%20-%20128744%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg".
+wd:Q104540911 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104724659 rdfs:label """Portrait of an Old Man"""@fr.
+wd:Q104724659 wdt:P31 wd:Q838948 .
+wd:Q104724659 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104724659 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Portrait%20of%20an%20Old%20Man%20-%20MNK%20XII-A-556%20-%20National%20Museum%20Krak%C3%B3w.jpg".
+wd:Q104724659 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q104725983 rdfs:label """Bust of an Old Man"""@fr.
+wd:Q104725983 wdt:P31 wd:Q838948 .
+wd:Q104725983 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q104725983 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Bust%20of%20an%20Old%20Man%20-%20MNK%20XII-A-1%20-%20National%20Museum%20Krak%C3%B3w.jpg".
+wd:Q104725983 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q106584400 rdfs:label """The Circumcision"""@fr.
+wd:Q106584400 wdt:P31 wd:Q838948 .
+wd:Q106584400 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q106584400 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20The%20Circumcision%20-%20P153%20-%20The%20Wallace%20Collection.jpg".
+wd:Q106584400 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107444712 rdfs:label """Arcadian landscape with nymphs and a Roman ruin"""@fr.
+wd:Q107444712 wdt:P31 wd:Q838948 .
+wd:Q107444712 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q107444712 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Arcadisch%20landschap%20met%20nimfen%20en%20Romeinse%20ru%C3%AFne%20-%202279%20-%20Gem%C3%A4ldegalerie.jpg".
+wd:Q107444712 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111638061 rdfs:label """Paysage"""@fr.
+wd:Q111638061 wdt:P31 wd:Q838948 .
+wd:Q111638061 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111638061 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20Bauerngruppe%20mit%20Staffage%20%28s%C3%BCdliche%20Landschaft%29%20-%200533%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111638061 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111644396 rdfs:label """Q111644396"""@fr.
+wd:Q111644396 wdt:P31 wd:Q838948 .
+wd:Q111644396 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111644396 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20Herde%20an%20der%20Furt%20-%201525%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644396 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111639051 rdfs:label """Romantic landscape with figures +cattle"""@fr.
+wd:Q111639051 wdt:P31 wd:Q838948 .
+wd:Q111639051 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111639051 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20S%C3%BCdliche%20Landschaft%20mit%20Ruinen%20und%20Staffage%20-%200671%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111639051 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107214808 rdfs:label """Paysage"""@fr.
+wd:Q107214808 wdt:P31 wd:Q838948 .
+wd:Q107214808 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q107214808 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%28Narbonne%29%20Paysage%20-%20Christian-Wilhem%20Dietrich%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20de%20Narbonne.jpg".
+wd:Q107214808 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q107442447 rdfs:label """Family of peasants before a house"""@fr.
+wd:Q107442447 wdt:P31 wd:Q838948 .
+wd:Q107442447 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q107442447 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Boerengamilie%20voor%20een%20huis%20-%201749%20-%20Gem%C3%A4ldegalerie.jpg".
+wd:Q107442447 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111647832 rdfs:label """Q111647832"""@fr.
+wd:Q111647832 wdt:P31 wd:Q838948 .
+wd:Q111647832 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111647832 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20M%C3%A4dchenbildnis%20mit%20Federbarett%20und%20Halskrause%20-%202726%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111647832 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111648168 rdfs:label """Rocks with waterfall + boys"""@fr.
+wd:Q111648168 wdt:P31 wd:Q838948 .
+wd:Q111648168 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111648168 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20Felsenlandschaft%20mit%20Wasserfall%20und%20Staffage%20-%202926%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111648168 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111647735 rdfs:label """Q111647735"""@fr.
+wd:Q111647735 wdt:P31 wd:Q838948 .
+wd:Q111647735 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111647735 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20Rokoko-Tanzszene%20in%20einem%20Park%20-%202686%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111647735 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111647829 rdfs:label """Q111647829"""@fr.
+wd:Q111647829 wdt:P31 wd:Q838948 .
+wd:Q111647829 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111647829 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20Knabenbildnis%20mit%20rotem%20Barett%20-%202725%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111647829 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111644723 rdfs:label """Nymphes dans des ruines"""@fr.
+wd:Q111644723 wdt:P31 wd:Q838948 .
+wd:Q111644723 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111644723 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%28Dietricy%29%20%281712-1774%29%20-%20Antike%20Landschaft%20mit%20badenden%20Nymphen%20-%201682%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111644723 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q115626025 rdfs:label """Scene from rural life"""@fr.
+wd:Q115626025 wdt:P31 wd:Q838948 .
+wd:Q115626025 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q115626025 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20-%20Szene%20aus%20dem%20l%C3%A4ndlichen%20Leben.jpg".
+wd:Q115626025 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q116172660 rdfs:label """Q116172660"""@fr.
+wd:Q116172660 wdt:P31 wd:Q838948 .
+wd:Q116172660 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q116172660 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/N%C3%AEmes%2CBeaux%20Arts174.jpg".
+wd:Q116172660 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111648756 rdfs:label """Q111648756"""@fr.
+wd:Q111648756 wdt:P31 wd:Q838948 .
+wd:Q111648756 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111648756 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%28Dietricy%29%20%281712-1774%29%20-%20Hausierer%20und%20Kind%20-%203335%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111648756 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111649014 rdfs:label """landscape with ruins, cattle and peasants"""@fr.
+wd:Q111649014 wdt:P31 wd:Q838948 .
+wd:Q111649014 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111649014 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20%281712-1774%29%20-%20Italienische%20Landschaft%20mit%20Ruine%2C%20Herde%20und%20Hirt%20-%203502%20-%20F%C3%BChrermuseum.jpg".
+wd:Q111649014 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q112181531 rdfs:label """Parabole des ouvriers envoyés à la vigne."""@fr.
+wd:Q112181531 wdt:P31 wd:Q838948 .
+wd:Q112181531 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q112181531 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dietrich%20Workers%20in%20the%20vineyard.jpg".
+wd:Q112181531 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.
+wd:Q111822072 rdfs:label """Pilate Debates Christ's Fate"""@fr.
+wd:Q111822072 wdt:P31 wd:Q838948 .
+wd:Q111822072 wdt:P170 wd:Q536581.
+wd:Q536581 rdfs:label """Christian Wilhelm Ernst Dietrich"""@fr.
+wd:Q536581 wdt:P31 wd:Q3391743 .
+wd:Q111822072 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Wilhelm%20Ernst%20Dietrich%20001.jpg".
+wd:Q111822072 pgdc:sparql kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk .
+kgdc:sparql6uoCsLzbHmDilSJu6ghbCJwDVPptayJu1UznDpn5vgk pgdc:sparql_src """
+        select distinct ?uri ?createur ?createurLabel ?image ?titre_fr 
+        where {
+          values ?createur { wd:Q536581 }
+          values ?classRel { wdt:P31 wdt:P106 }
+          values ?class { wd:Q1028181 }
+          values ?rel { wdt:P170 }
+          {
+            SELECT ?createur ?createurLabel WHERE {
+            values ?createur { wd:Q536581 }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          ?uri wdt:P31 wd:Q3305213;    
+               ?rel ?createur;    
+               wdt:P18 ?image.
+          ?createur ?classRel ?class   
+          {
+            SELECT ?uri ?uriLabel WHERE {
+              ?uri wdt:P31 wd:Q3305213;    
+                 ?rel ?createur;    
+                 wdt:P18 ?image.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "fr, en, [AUTO_LANGUAGE],mul". }
+            }
+          }
+          bind( ?uriLabel as ?titre_fr)
+        }
+    """.

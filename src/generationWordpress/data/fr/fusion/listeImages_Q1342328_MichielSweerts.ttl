@@ -1,0 +1,2626 @@
+wd:Q116913630 rdfs:label """Double portrait d'hommes"""@fr.
+wd:Q116913630 wdt:P31 wd:Q838948 .
+wd:Q116913630 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q116913630 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20%28Attr.%29%20-%20Double%20portrait%20of%20two%20men.jpg".
+wd:Q116913630 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116913630 pgdc:piwigo_image "12823".
+wd:Q116913630 pgdc:piwigo_gallery kgdc:gal692.
+wd:Q21674480 rdfs:label """Portrait d'homme"""@fr.
+wd:Q21674480 wdt:P31 wd:Q838948 .
+wd:Q21674480 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q21674480 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Portrait%20of%20a%20Man%20-%201903-B%20-%20Museum%20of%20Fine%20Arts%20Ghent%20%28MSK%29.jpg".
+wd:Q21674480 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21674480 pgdc:piwigo_image "538".
+wd:Q21674480 pgdc:piwigo_gallery kgdc:gal692.
+wd:Q104590457 rdfs:label """L'Épouilleuse"""@fr.
+wd:Q104590457 wdt:P31 wd:Q838948 .
+wd:Q104590457 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q104590457 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/L%27%C3%A9pouilleuse.JPG".
+wd:Q104590457 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q104590457 pgdc:piwigo_image "9252".
+wd:Q104590457 pgdc:piwigo_gallery kgdc:gal692.
+wd:Q47125700 rdfs:label """Hommes se baignant"""@fr.
+wd:Q47125700 wdt:P31 wd:Q838948 .
+wd:Q47125700 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q47125700 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Sweerts%2C%20Hommes%20se%20baignant.jpg".
+wd:Q47125700 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q47125700 pgdc:piwigo_image "1173".
+wd:Q47125700 pgdc:piwigo_gallery kgdc:gal692.
+wd:Q106560581 rdfs:label """Un vieil homme tricotant avec un garçon à ses côtés"""@fr.
+wd:Q106560581 wdt:P31 wd:Q838948 .
+wd:Q106560581 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q106560581 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20An%20old%20man%20knitting%20with%20a%20boy%20by%20his%20side.jpg".
+wd:Q106560581 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q106560581 pgdc:piwigo_image "12824".
+wd:Q106560581 pgdc:piwigo_gallery kgdc:gal692.
+wd:Q29655648 rdfs:label """Soldats jouant aux cartes dans une caverne aménagée en corps de garde"""@fr.
+wd:Q29655648 wdt:P31 wd:Q838948 .
+wd:Q29655648 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q29655648 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Soldiers%20playing%20cards%20in%20a%20cave%20converted%20into%20a%20corps%20de%20garde.jpg".
+wd:Q29655648 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29655648 pgdc:piwigo_image "12825".
+wd:Q29655648 pgdc:piwigo_gallery kgdc:gal692.
+wd:Q29655644 rdfs:label """Jeune Homme et entremetteuse"""@fr.
+wd:Q29655644 wdt:P31 wd:Q838948 .
+wd:Q29655644 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q29655644 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Young%20Man%20and%20the%20Procuress%20-%20WGA22005.jpg".
+wd:Q29655644 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29655644 pgdc:piwigo_image "12826".
+wd:Q29655644 pgdc:piwigo_gallery kgdc:gal692.
+wd:Q60448415 rdfs:label """Gentilhomme arrivant dans un port méridional"""@fr.
+wd:Q60448415 wdt:P31 wd:Q838948 .
+wd:Q60448415 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q60448415 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Gentleman%20arriving%20in%20a%20southern%20port.jpg".
+wd:Q60448415 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q60448415 pgdc:piwigo_image "12827".
+wd:Q60448415 pgdc:piwigo_gallery kgdc:gal692.
+wd:Q4056410 rdfs:label """Portrait de jeune homme"""@fr.
+wd:Q4056410 wdt:P31 wd:Q838948 .
+wd:Q4056410 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q4056410 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Portrait%20of%20a%20Young%20Man%20%28Self-portrait%3F%29.jpg".
+wd:Q4056410 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q16027895 rdfs:label """L'Atelier de dessin"""@fr.
+wd:Q16027895 wdt:P31 wd:Q838948 .
+wd:Q16027895 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q16027895 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20De%20tekenles%20%281660%29.jpg".
+wd:Q16027895 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q130471664 rdfs:label """A Game of Backgammon"""@fr.
+wd:Q130471664 wdt:P31 wd:Q838948 .
+wd:Q130471664 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q130471664 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%2C%20A%20Game%20of%20Backgammon%2C%20c.1646-1654.jpg".
+wd:Q130471664 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q124862157 rdfs:label """The sense of taste"""@fr.
+wd:Q124862157 wdt:P31 wd:Q838948 .
+wd:Q124862157 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q124862157 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20The%20sense%20of%20taste.jpg".
+wd:Q124862157 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123739577 rdfs:label """Ministering to prisoners ( one of the seven acts of mercy)"""@fr.
+wd:Q123739577 wdt:P31 wd:Q838948 .
+wd:Q123739577 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q123739577 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ministering%20to%20Prisoners%20by%20Michael%20Sweerts%201649.jpg".
+wd:Q123739577 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q16038453 rdfs:label """Le Combat de lutteurs"""@fr.
+wd:Q16038453 wdt:P31 wd:Q838948 .
+wd:Q16038453 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q16038453 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Sweerts%2C%20Michael%20-1649-%20-%20Wrestling%20Match.jpg".
+wd:Q16038453 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131385469 rdfs:label """Penitent reading in a room"""@fr.
+wd:Q131385469 wdt:P31 wd:Q838948 .
+wd:Q131385469 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131385469 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Penitent%20reading%20in%20a%20room%20%28Self-portrait%3F%29.jpg".
+wd:Q131385469 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131385959 rdfs:label """Bathing Men in the Evening Light"""@fr.
+wd:Q131385959 wdt:P31 wd:Q838948 .
+wd:Q131385959 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131385959 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20%281624%E2%80%931664%29%20Badende%20M%C3%A4nner%20im%20Abendlicht%20um%201655%20%C3%96l%20auf%20Leinwand%2063%2C7%20%C3%97%2087%20cm.jpg".
+wd:Q131385959 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131385259 rdfs:label """Le Toucher"""@fr.
+wd:Q131385259 wdt:P31 wd:Q838948 .
+wd:Q131385259 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131385259 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20young%20man%20holding%20a%20cat%20%28An%20allegory%20of%20touch%29.jpg".
+wd:Q131385259 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q16038511 rdfs:label """Double portrait d'hommes en turban"""@fr.
+wd:Q16038511 wdt:P31 wd:Q838948 .
+wd:Q16038511 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q16038511 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20%28Flemish%20-%20Double%20Portrait%20-%20Google%20Art%20Project.jpg".
+wd:Q16038511 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131386810 rdfs:label """The Great Laundry Day"""@fr.
+wd:Q131386810 wdt:P31 wd:Q838948 .
+wd:Q131386810 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131386810 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20The%20great%20laundry%20day.jpg".
+wd:Q131386810 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131386842 rdfs:label """Allegory of Smell"""@fr.
+wd:Q131386842 wdt:P31 wd:Q838948 .
+wd:Q131386842 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131386842 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%2C%20Sense%20of%20Smell%2C%2031.25%20x%2024.25%20inch%20%28Akademie%20der%20bildenden%20K%C3%BCnste%2C%20Vienna%29.jpg".
+wd:Q131386842 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131386912 rdfs:label """Portrait of a man with a headscarf"""@fr.
+wd:Q131386912 wdt:P31 wd:Q838948 .
+wd:Q131386912 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131386912 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%2C%20T%C3%AAte%20d%27homme%2C%20dit%20Le%20juif.jpg".
+wd:Q131386912 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q16038723 rdfs:label """Soldats jouant aux dés"""@fr.
+wd:Q16038723 wdt:P31 wd:Q838948 .
+wd:Q16038723 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q16038723 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/SWEERTS%2C%20Michiel%20Soldados%20jugando%20a%20los%20dados%20384%20%281930.108%29%20HUM%20-F18-3.jpg".
+wd:Q16038723 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131388536 rdfs:label """Allegory of Hearing"""@fr.
+wd:Q131388536 wdt:P31 wd:Q838948 .
+wd:Q131388536 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131388536 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%2C%20Allegory%20of%20the%20Sense%20of%20Hearing.jpg".
+wd:Q131388536 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131387129 rdfs:label """Man Reading"""@fr.
+wd:Q131387129 wdt:P31 wd:Q838948 .
+wd:Q131387129 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131387129 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Sweerts%20Michael%20-%20sec.%20XVII%20-%20Figura%20maschile%20che%20legge.jpg".
+wd:Q131387129 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131388533 rdfs:label """Allegory of Taste"""@fr.
+wd:Q131388533 wdt:P31 wd:Q838948 .
+wd:Q131388533 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131388533 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%2C%20Allegory%20of%20the%20Sense%20of%20Taste.jpg".
+wd:Q131388533 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17276012 rdfs:label """A Sleeping Boy and a Man Removing Fleas from Himself"""@fr.
+wd:Q17276012 wdt:P31 wd:Q838948 .
+wd:Q17276012 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17276012 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20A%20Sleeping%20Boy%20and%20a%20Man%20Removing%20Fleas%20from%20Himself%20-%20657%20-%20Mauritshuis.jpg".
+wd:Q17276012 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20A%20man%20delousing%20himself%20and%20a%20sleeping%20boy.jpg".
+wd:Q17276012 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17276145 rdfs:label """Peasant Family, with a Man Removing Fleas from Himself"""@fr.
+wd:Q17276145 wdt:P31 wd:Q838948 .
+wd:Q17276145 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17276145 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Peasant%20Family%2C%20with%20a%20Man%20Removing%20Fleas%20from%20Himself%20-%20886%20-%20Mauritshuis.jpg".
+wd:Q17276145 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Peasant%20family%20with%20a%20man%20delousing%20himself.jpg".
+wd:Q17276145 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131388685 rdfs:label """Allegory of Sight"""@fr.
+wd:Q131388685 wdt:P31 wd:Q838948 .
+wd:Q131388685 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131388685 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%2C%20Allegory%20of%20the%20Sense%20of%20Sight.jpg".
+wd:Q131388685 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131389054 rdfs:label """Allegory of Hearing"""@fr.
+wd:Q131389054 wdt:P31 wd:Q838948 .
+wd:Q131389054 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131389054 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Allegory%20of%20hearing.jpg".
+wd:Q131389054 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131389072 rdfs:label """Portrait de jeune homme sonnant du cor"""@fr.
+wd:Q131389072 wdt:P31 wd:Q838948 .
+wd:Q131389072 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131389072 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Portrait%20of%20a%20young%20man%20playing%20a%20hunting%20horn.jpg".
+wd:Q131389072 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17325132 rdfs:label """A Painter’s Studio"""@fr.
+wd:Q17325132 wdt:P31 wd:Q838948 .
+wd:Q17325132 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17325132 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Een%20schildersatelier%20Rijksmuseum%20SK-A-1957.jpeg".
+wd:Q17325132 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131390397 rdfs:label """Un enfant tenant un fruit (allégorie du goût)"""@fr.
+wd:Q131390397 wdt:P31 wd:Q838948 .
+wd:Q131390397 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131390397 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20A%20boy%20holding%20a%20fruit%20%28An%20allegory%20of%20taste%29.jpg".
+wd:Q131390397 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131390255 rdfs:label """Allegory of Touch"""@fr.
+wd:Q131390255 wdt:P31 wd:Q838948 .
+wd:Q131390255 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131390255 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Oud%20Holland%20%28IA%20gri%2033125006108209%29%20%28page%20187%20crop%29.jpg".
+wd:Q131390255 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131392176 rdfs:label """Portrait d'homme"""@fr.
+wd:Q131392176 wdt:P31 wd:Q838948 .
+wd:Q131392176 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131392176 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%2C%20Portrait%20d%27homme%2C%20ca.%201650.%20Huile%20sur%20bois%2C%2023%20x%2019%20cm.%20Vienne%2C%20Kunsthistorische%20Museum.jpg".
+wd:Q131392176 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131392354 rdfs:label """The Card Players"""@fr.
+wd:Q131392354 wdt:P31 wd:Q838948 .
+wd:Q131392354 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131392354 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%2C%20Die%20Kartenspieler%20%28Harrach%29.jpg".
+wd:Q131392354 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17325141 rdfs:label """The Card Players"""@fr.
+wd:Q17325141 wdt:P31 wd:Q838948 .
+wd:Q17325141 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17325141 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/De%20kaartspelers%20Rijksmuseum%20SK-A-1958.jpeg".
+wd:Q17325141 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131439709 rdfs:label """The Schoolroom"""@fr.
+wd:Q131439709 wdt:P31 wd:Q838948 .
+wd:Q131439709 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131439709 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20The%20Schoolroom%2C%20ca.%201650%2C%2089.5%20x%20114%20cm%2C%20Oil%20on%20canvas%2C%20The%20Trustees%20of%20the%20Berkeley%20Will%20Trust%2C%20Berkeley%20Castle%2C%20Gloucesterhire.jpg".
+wd:Q131439709 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131439583 rdfs:label """Vieillard et fileuse"""@fr.
+wd:Q131439583 wdt:P31 wd:Q838948 .
+wd:Q131439583 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131439583 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%2C%20The%20Fortune%20Teller%20%28Mus%C3%A9e%20des%20beaux-arts%20de%20N%C3%AEmes%29.jpg".
+wd:Q131439583 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131392606 rdfs:label """Portrait of an unknown man"""@fr.
+wd:Q131392606 wdt:P31 wd:Q838948 .
+wd:Q131392606 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131392606 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20%28attr.%29%2C%20Bildnis%20eines%20Gelehrten%20%28Kunsthistorisches%20Museum%29.png".
+wd:Q131392606 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131441061 rdfs:label """Gypsy Girl With Tambourine"""@fr.
+wd:Q131441061 wdt:P31 wd:Q838948 .
+wd:Q131441061 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131441061 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Zingara%20con%20il%20tamburello%20%28Museo%20Baroffio%29.jpg".
+wd:Q131441061 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q131447348 rdfs:label """Portrait of a young man with a hat holding a book"""@fr.
+wd:Q131447348 wdt:P31 wd:Q838948 .
+wd:Q131447348 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q131447348 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/RITRATTO%20DI%20GIOVANE%20CON%20LIBRO%20CA.%201650%20-%20CA.%201670%20ATTRIBUITO%20A%20SWEERTS%20MICHIEL%20%28cropped%29.png".
+wd:Q131447348 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17330073 rdfs:label """The Draughts Players"""@fr.
+wd:Q17330073 wdt:P31 wd:Q838948 .
+wd:Q17330073 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17330073 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Damspelers%20Rijksmuseum%20SK-A-2574.jpeg".
+wd:Q17330073 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17331002 rdfs:label """Feeding the Hungry"""@fr.
+wd:Q17331002 wdt:P31 wd:Q838948 .
+wd:Q17331002 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17331002 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/De%20hongerigen%20spijzen%20Rijksmuseum%20SK-A-2845.jpeg".
+wd:Q17331002 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17331006 rdfs:label """Refreshing the Thirsty"""@fr.
+wd:Q17331006 wdt:P31 wd:Q838948 .
+wd:Q17331006 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17331006 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/De%20dorstigen%20laven%20Rijksmuseum%20SK-A-2846.jpeg".
+wd:Q17331006 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17331010 rdfs:label """Clothing the Naked"""@fr.
+wd:Q17331010 wdt:P31 wd:Q838948 .
+wd:Q17331010 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17331010 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/De%20naakten%20kleden%20Rijksmuseum%20SK-A-2847.jpeg".
+wd:Q17331010 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17331013 rdfs:label """Visiting the Sick"""@fr.
+wd:Q17331013 wdt:P31 wd:Q838948 .
+wd:Q17331013 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17331013 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/De%20zieken%20bezoeken%20Rijksmuseum%20SK-A-2848.jpeg".
+wd:Q17331013 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17335019 rdfs:label """Portrait of Joseph Deutz"""@fr.
+wd:Q17335019 wdt:P31 wd:Q838948 .
+wd:Q17335019 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17335019 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portret%20van%20Joseph%20Deutz%20Rijksmuseum%20SK-A-3855.jpeg".
+wd:Q17335019 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q17335324 rdfs:label """Market Scene in Rome, Piazza Navonna"""@fr.
+wd:Q17335324 wdt:P31 wd:Q838948 .
+wd:Q17335324 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q17335324 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Markttafereel%20in%20Rome%20Rijksmuseum%20SK-A-3896.jpeg".
+wd:Q17335324 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q18654876 rdfs:label """Roman Street Scene with a Young Artist"""@fr.
+wd:Q18654876 wdt:P31 wd:Q838948 .
+wd:Q18654876 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q18654876 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20%E2%80%93%20Roman%20Streetscene%20with%20a%20Young%20Artist.jpg".
+wd:Q18654876 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19913321 rdfs:label """Man Holding a Jug"""@fr.
+wd:Q19913321 wdt:P31 wd:Q838948 .
+wd:Q19913321 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q19913321 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Man%20Holding%20a%20Jug.jpg".
+wd:Q19913321 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19925873 rdfs:label """A boy with an extinguished candle - smell"""@fr.
+wd:Q19925873 wdt:P31 wd:Q838948 .
+wd:Q19925873 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q19925873 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20A%20boy%20with%20an%20extinguished%20candle%20%28Smell%29.jpg".
+wd:Q19925873 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/M.%20Sweerts%20-%20Reuk%20verpersoonlijkt%20door%20een%20jongen%20met%20een%20gedoofde%20kaars%20-%202385%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg".
+wd:Q19925873 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19926025 rdfs:label """Girl with a bandaged finger - feeling"""@fr.
+wd:Q19926025 wdt:P31 wd:Q838948 .
+wd:Q19926025 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q19926025 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Girl%20with%20a%20bandaged%20finger%20%28Feeling%29.jpg".
+wd:Q19926025 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/M.%20Sweerts%20-%20Tastzin%20verpersoonlijkt%20door%20een%20meisje%20met%20een%20vinger%20in%20het%20verband%20-%202386%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg".
+wd:Q19926025 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q19928080 rdfs:label """Sleeping old man and girl"""@fr.
+wd:Q19928080 wdt:P31 wd:Q838948 .
+wd:Q19928080 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q19928080 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Sleeping%20old%20man%20and%20girl.jpg".
+wd:Q19928080 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20167131 rdfs:label """Vêtir celui que tu vois nu"""@fr.
+wd:Q20167131 wdt:P31 wd:Q838948 .
+wd:Q20167131 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q20167131 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Clothing%20the%20Naked.jpg".
+wd:Q20167131 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20177236 rdfs:label """Anthonij de Bordes and His Valet"""@fr.
+wd:Q20177236 wdt:P31 wd:Q838948 .
+wd:Q20177236 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q20177236 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Anthonij%20de%20Bordes%20and%20His%20Valet.jpg".
+wd:Q20177236 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20202799 rdfs:label """Portrait of a Youth"""@fr.
+wd:Q20202799 wdt:P31 wd:Q838948 .
+wd:Q20202799 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q20202799 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Portrait%20of%20a%20Youth.jpg".
+wd:Q20202799 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20178111 rdfs:label """Head of a Woman"""@fr.
+wd:Q20178111 wdt:P31 wd:Q838948 .
+wd:Q20178111 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q20178111 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20%28Flemish%29%20-%20Head%20of%20a%20Woman%20-%20Google%20Art%20Project.jpg".
+wd:Q20178111 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20810139 rdfs:label """Four Youths around a Fire"""@fr.
+wd:Q20810139 wdt:P31 wd:Q838948 .
+wd:Q20810139 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q20810139 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/After%20Michiel%20Sweerts%20-%20Four%20Youths%20around%20a%20Fire%20Cat550.jpg".
+wd:Q20810139 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20810141 rdfs:label """Portrait of a Seated Man with a Boy"""@fr.
+wd:Q20810141 wdt:P31 wd:Q838948 .
+wd:Q20810141 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q20810141 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Naar%20Michael%20Sweerts%20-%20Zittende%20man%20met%20jongen%20-%20Cat.%201178%20-%20Philadelphia%20Museum%20of%20Art.jpg".
+wd:Q20810141 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20891178 rdfs:label """Boy Drawing before the Bust of a Roman Emperor"""@fr.
+wd:Q20891178 wdt:P31 wd:Q838948 .
+wd:Q20891178 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q20891178 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Boy%20Drawing%20before%20the%20Bust%20of%20a%20Roman%20Emperor%20-%2072.65%20-%20Minneapolis%20Institute%20of%20Arts.jpg".
+wd:Q20891178 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q20879241 rdfs:label """Plague in an Ancient City"""@fr.
+wd:Q20879241 wdt:P31 wd:Q838948 .
+wd:Q20879241 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q20879241 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Plague%20in%20an%20Ancient%20City%20LACMA%20AC1997.10.1%20%281%20of%202%29.jpg".
+wd:Q20879241 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q21711439 rdfs:label """Boy in a Turban holding a Nosegay"""@fr.
+wd:Q21711439 wdt:P31 wd:Q838948 .
+wd:Q21711439 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q21711439 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Boy%20in%20a%20turban%20holding%20a%20nosegay%2C%20by%20Michiel%20Sweerts.jpg".
+wd:Q21711439 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q26953878 rdfs:label """Tête de garçon"""@fr.
+wd:Q26953878 wdt:P31 wd:Q838948 .
+wd:Q26953878 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q26953878 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Portrait%20of%20a%20boy.jpg".
+wd:Q26953878 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Micha%C3%ABl%20Sweerts%20-%20Jongenshoofdje%2C%20Jongensportret%2C%20Borstbeeld%20van%20jonge%20knaap%2C%20-%201931.0123%20-%20Groninger%20Museum.jpg".
+wd:Q26953878 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q27971897 rdfs:label """Portrait d'homme"""@fr.
+wd:Q27971897 wdt:P31 wd:Q838948 .
+wd:Q27971897 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q27971897 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Portrait%20of%20a%20Man.jpg".
+wd:Q27971897 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28796925 rdfs:label """Old peasant"""@fr.
+wd:Q28796925 wdt:P31 wd:Q838948 .
+wd:Q28796925 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q28796925 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Old%20peasant%20-%20Google%20Art%20Project.jpg".
+wd:Q28796925 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q28796926 rdfs:label """Old pilgrim"""@fr.
+wd:Q28796926 wdt:P31 wd:Q838948 .
+wd:Q28796926 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q28796926 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Old%20pilgrim%20-%20Google%20Art%20Project.jpg".
+wd:Q28796926 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q29879089 rdfs:label """Tavern Scene"""@fr.
+wd:Q29879089 wdt:P31 wd:Q838948 .
+wd:Q29879089 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q29879089 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Tavern%20scene.jpg".
+wd:Q29879089 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30809421 rdfs:label """Boy with a Hat"""@fr.
+wd:Q30809421 wdt:P31 wd:Q838948 .
+wd:Q30809421 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q30809421 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Boy%20with%20a%20Hat%20-%20c.%201655.jpg".
+wd:Q30809421 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30098371 rdfs:label """Homely Scene"""@fr.
+wd:Q30098371 wdt:P31 wd:Q838948 .
+wd:Q30098371 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q30098371 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20H%C3%A4usliche%20Szene%20-%202352%20-%20Bavarian%20State%20Painting%20Collections.jpg".
+wd:Q30098371 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q30811149 rdfs:label """Autoportrait"""@fr.
+wd:Q30811149 wdt:P31 wd:Q838948 .
+wd:Q30811149 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q30811149 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Self-portrait%2C%20by%20Michiel%20Sweerts.jpg".
+wd:Q30811149 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q38227905 rdfs:label """Un jeune couple et un garçon dans un jardin"""@fr.
+wd:Q38227905 wdt:P31 wd:Q838948 .
+wd:Q38227905 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q38227905 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20A%20Young%20Couple%20and%20a%20Boy%20in%20a%20Garden.jpg".
+wd:Q38227905 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q46520577 rdfs:label """Portrait of a Young Woman"""@fr.
+wd:Q46520577 wdt:P31 wd:Q838948 .
+wd:Q46520577 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q46520577 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20sweerts%20-%20portret%20van%20jonge%20vrouw.JPG".
+wd:Q46520577 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q47007924 rdfs:label """Self-portrait with a Skull"""@fr.
+wd:Q47007924 wdt:P31 wd:Q838948 .
+wd:Q47007924 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q47007924 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20self%20portrait%20with%20a%20skull%20c.1660.jpg".
+wd:Q47007924 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q46522005 rdfs:label """Mars destroying the arts"""@fr.
+wd:Q46522005 wdt:P31 wd:Q838948 .
+wd:Q46522005 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q46522005 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20sweerts-mars%20destroying%20the%20arts.jpg".
+wd:Q46522005 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50819568 rdfs:label """An Old Woman Spinning"""@fr.
+wd:Q50819568 wdt:P31 wd:Q838948 .
+wd:Q50819568 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q50819568 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20%281618-1664%29%20-%20An%20Old%20Woman%20Spinning%20-%20PD.145-1994%20-%20Fitzwilliam%20Museum.jpg".
+wd:Q50819568 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q50819788 rdfs:label """A young gentleman"""@fr.
+wd:Q50819788 wdt:P31 wd:Q838948 .
+wd:Q50819788 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q50819788 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Dutch%20School%20-%20A%20Young%20Gentleman%20-%20328%20-%20Fitzwilliam%20Museum.jpg".
+wd:Q50819788 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q59773384 rdfs:label """Portrait of Man (possibly Jean Deutz), with a Red Cloak"""@fr.
+wd:Q59773384 wdt:P31 wd:Q838948 .
+wd:Q59773384 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q59773384 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Portrait%20of%20Man%2C%20possibly%20Jean%20Deutz%2C%20with%20a%20Red%20Cloak.jpeg".
+wd:Q59773384 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q79147372 rdfs:label """Portrait d'un gentilhomme"""@fr.
+wd:Q79147372 wdt:P31 wd:Q838948 .
+wd:Q79147372 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q79147372 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Portrait%20of%20a%20Gentleman%2C%20possibly%20a%20Member%20of%20the%20Deutz%20Family%20-%201987.25%20-%20Dallas%20Museum%20of%20Art.jpg".
+wd:Q79147372 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q64539465 rdfs:label """In the Studio"""@fr.
+wd:Q64539465 wdt:P31 wd:Q838948 .
+wd:Q64539465 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q64539465 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20In%20the%20Studio%20-%2030.297%20-%20Detroit%20Institute%20of%20Arts.jpg".
+wd:Q64539465 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107446039 rdfs:label """Old Woman With a Girl"""@fr.
+wd:Q107446039 wdt:P31 wd:Q838948 .
+wd:Q107446039 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q107446039 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%2C%20Alte%20Frau%20mit%20einem%20M%C3%A4dchen.jpg".
+wd:Q107446039 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110392528 rdfs:label """A lady sewing in an interior"""@fr.
+wd:Q110392528 wdt:P31 wd:Q838948 .
+wd:Q110392528 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110392528 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20A%20lady%20sewing%20in%20an%20interior.jpg".
+wd:Q110392528 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q107446941 rdfs:label """Old Man With a Boy"""@fr.
+wd:Q107446941 wdt:P31 wd:Q838948 .
+wd:Q107446941 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q107446941 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%2C%20Alter%20Mann%20mit%20einem%20Knaben.jpg".
+wd:Q107446941 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110392584 rdfs:label """Interior with an old man and a boy by a fire pit and a woman sweeping the floor"""@fr.
+wd:Q110392584 wdt:P31 wd:Q838948 .
+wd:Q110392584 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110392584 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Interior%20with%20an%20old%20man%20and%20a%20boy%20by%20a%20fire%20pit%20and%20a%20woman%20sweeping%20the%20floor%20%28Allegory%20of%20Winter%29.jpg".
+wd:Q110392584 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110392533 rdfs:label """Woman in an interior delousing a child"""@fr.
+wd:Q110392533 wdt:P31 wd:Q838948 .
+wd:Q110392533 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110392533 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Woman%20in%20an%20interior%20delousing%20a%20child.jpg".
+wd:Q110392533 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110392851 rdfs:label """Un artiste faisant un croquis près d'une fontaine avec d'autres personnages"""@fr.
+wd:Q110392851 wdt:P31 wd:Q838948 .
+wd:Q110392851 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110392851 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20An%20artist%20sketching%20by%20a%20fountain%20with%20other%20figures.jpg".
+wd:Q110392851 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110392650 rdfs:label """Woman making her toilet"""@fr.
+wd:Q110392650 wdt:P31 wd:Q838948 .
+wd:Q110392650 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110392650 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Woman%20making%20her%20toilet.jpg".
+wd:Q110392650 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110393618 rdfs:label """Hunting party resting by an inn"""@fr.
+wd:Q110393618 wdt:P31 wd:Q838948 .
+wd:Q110393618 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110393618 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20%28attributed%20to%29%20-%20Hunting%20party%20resting%20by%20an%20inn.jpg".
+wd:Q110393618 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110393775 rdfs:label """Woman making her toilet, Vanitas"""@fr.
+wd:Q110393775 wdt:P31 wd:Q838948 .
+wd:Q110393775 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110393775 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Woman%20making%20her%20toilet%2C%20Vanitas.jpg".
+wd:Q110393775 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110407006 rdfs:label """Elegant hunting company resting"""@fr.
+wd:Q110407006 wdt:P31 wd:Q838948 .
+wd:Q110407006 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110407006 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Elegant%20hunting%20company%20resting.jpg".
+wd:Q110407006 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110406876 rdfs:label """Portrait of a boy"""@fr.
+wd:Q110406876 wdt:P31 wd:Q838948 .
+wd:Q110406876 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110406876 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Portrait%20of%20a%20boy.jpg".
+wd:Q110406876 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110435653 rdfs:label """Elegant couple with shepherds in the Roman Campania"""@fr.
+wd:Q110435653 wdt:P31 wd:Q838948 .
+wd:Q110435653 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110435653 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Elegant%20couple%20with%20shepherds%20in%20the%20Roman%20Campania.jpg".
+wd:Q110435653 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110406862 rdfs:label """Jeune artiste dessinant des mendiants dans un paysage"""@fr.
+wd:Q110406862 wdt:P31 wd:Q838948 .
+wd:Q110406862 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110406862 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Young%20artist%20seated%20drawing%20among%20roman%20ruins%2C%20two%20friends%20behind%20him%20and%20a%20beggar%20with%20his%20family%20before%20him.jpg".
+wd:Q110406862 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110393835 rdfs:label """Men wrestling before a crowd"""@fr.
+wd:Q110393835 wdt:P31 wd:Q838948 .
+wd:Q110393835 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110393835 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Men%20wrestling%20before%20a%20crowd.jpg".
+wd:Q110393835 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110436358 rdfs:label """A young boy with a hat"""@fr.
+wd:Q110436358 wdt:P31 wd:Q838948 .
+wd:Q110436358 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110436358 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Portrait%20of%20a%20Young%20Boy%20with%20a%20Hat%20-%20MS-101%20-%20Leiden%20Collection.jpg".
+wd:Q110436358 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/A%20young%20boy%20with%20a%20hat%2C%20by%20Michael%20Sweerts.jpg".
+wd:Q110436358 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114709774 rdfs:label """Portrait of an unknown man"""@fr.
+wd:Q114709774 wdt:P31 wd:Q838948 .
+wd:Q114709774 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q114709774 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%2C%20Portret%20van%20een%20man%2C%20ca.%201655-59%20%28Phoebus%20Foundation%29.webp".
+wd:Q114709774 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q114455077 rdfs:label """A Woman Spinning"""@fr.
+wd:Q114455077 wdt:P31 wd:Q838948 .
+wd:Q114455077 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q114455077 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20De%20Spinster.%20-%2055250%20-%20Museum%20Gouda.jpg".
+wd:Q114455077 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q110437091 rdfs:label """Double portrait of a man and a boy"""@fr.
+wd:Q110437091 wdt:P31 wd:Q838948 .
+wd:Q110437091 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q110437091 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Double%20portrait%20of%20a%20man%20and%20a%20boy.jpg".
+wd:Q110437091 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q115765272 rdfs:label """Vieillard et fileuse"""@fr.
+wd:Q115765272 wdt:P31 wd:Q838948 .
+wd:Q115765272 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q115765272 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/N%C3%AEmes%2CBeaux%20Arts155.jpg".
+wd:Q115765272 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116556366 rdfs:label """Portrait of a girl"""@fr.
+wd:Q116556366 wdt:P31 wd:Q838948 .
+wd:Q116556366 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q116556366 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael-Sweerts%20Portret-van-een-meisje%20Leicester-MAG.jpg".
+wd:Q116556366 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116556851 rdfs:label """Portrait d'un garçon"""@fr.
+wd:Q116556851 wdt:P31 wd:Q838948 .
+wd:Q116556851 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q116556851 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Portrait%20of%20a%20Boy%20-%20WGA22002.jpg".
+wd:Q116556851 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116557467 rdfs:label """Genre scene"""@fr.
+wd:Q116557467 wdt:P31 wd:Q838948 .
+wd:Q116557467 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q116557467 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Genre%20scene.tiff".
+wd:Q116557467 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116960658 rdfs:label """Portrait of an Old Man Begging"""@fr.
+wd:Q116960658 wdt:P31 wd:Q838948 .
+wd:Q116960658 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q116960658 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/%27Portrait%20of%20an%20Old%20Man%20Begging%27%20by%20Michael%20Sweerts.jpg".
+wd:Q116960658 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q116974053 rdfs:label """Young Man in a Turban Holding a Rummer"""@fr.
+wd:Q116974053 wdt:P31 wd:Q838948 .
+wd:Q116974053 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q116974053 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Young%20man%20in%20a%20turban%20holding%20a%20roemer%20%28The%20fingernail%20test%29.jpg".
+wd:Q116974053 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q117243895 rdfs:label """Burying the dead (one of the seven acts of mercy)"""@fr.
+wd:Q117243895 wdt:P31 wd:Q838948 .
+wd:Q117243895 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q117243895 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Ensevelir%20les%20morts.JPG".
+wd:Q117243895 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q118893252 rdfs:label """Two Seated Figures with a Dog"""@fr.
+wd:Q118893252 wdt:P31 wd:Q838948 .
+wd:Q118893252 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q118893252 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Two%20Seated%20Figures%20with%20a%20Dog%2C%20attributed%20to%20Michael%20Sweerts%20-%20c.1648-1652%20-%20Temple%20Newsam%20House%20-%20WYL%20LMG%20128887-001.jpg".
+wd:Q118893252 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q119776429 rdfs:label """Portrait of a young man with a hat holding a book"""@fr.
+wd:Q119776429 wdt:P31 wd:Q838948 .
+wd:Q119776429 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q119776429 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20%28Attributed%29%20-%20Portrait%20of%20a%20young%20man%20with%20a%20hat%20holding%20a%20book.jpg".
+wd:Q119776429 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q119776420 rdfs:label """The Baptism of Christ"""@fr.
+wd:Q119776420 wdt:P31 wd:Q838948 .
+wd:Q119776420 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q119776420 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20%28Attr.%29%20-%20The%20Baptism%20of%20Christ.jpg".
+wd:Q119776420 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120122553 rdfs:label """The artist in his studio"""@fr.
+wd:Q120122553 wdt:P31 wd:Q838948 .
+wd:Q120122553 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120122553 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20The%20artist%20in%20his%20studio.png".
+wd:Q120122553 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q119942180 rdfs:label """L’Atelier de l’artiste avec une couturière"""@fr.
+wd:Q119942180 wdt:P31 wd:Q838948 .
+wd:Q119942180 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q119942180 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20The%20Artist%E2%80%99s%20Studio%20with%20a%20Seamstress%202023%20CKS%2020683%200006%20d6436456062948.jpg".
+wd:Q119942180 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120499512 rdfs:label """The Embroidery Lesson"""@fr.
+wd:Q120499512 wdt:P31 wd:Q838948 .
+wd:Q120499512 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120499512 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20The%20Embroidery%20Lesson.jpg".
+wd:Q120499512 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120240386 rdfs:label """Portrait of a young girl"""@fr.
+wd:Q120240386 wdt:P31 wd:Q838948 .
+wd:Q120240386 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120240386 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Portrait%20of%20a%20young%20girl.jpg".
+wd:Q120240386 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120240324 rdfs:label """Portrait of a young boy"""@fr.
+wd:Q120240324 wdt:P31 wd:Q838948 .
+wd:Q120240324 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120240324 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sweerts%20-%20Portrait%20of%20a%20young%20boy.jpg".
+wd:Q120240324 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120727746 rdfs:label """A beggar warming his hands on a pot of coal, with a boy in an interior"""@fr.
+wd:Q120727746 wdt:P31 wd:Q838948 .
+wd:Q120727746 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120727746 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20A%20beggar%20warming%20his%20hands%20on%20a%20pot%20of%20coal%2C%20with%20a%20boy%20in%20an%20interior.jpg".
+wd:Q120727746 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120728070 rdfs:label """A family and other figures before a humble structure, a landscape beyond"""@fr.
+wd:Q120728070 wdt:P31 wd:Q838948 .
+wd:Q120728070 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120728070 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20A%20family%20and%20other%20figures%20before%20a%20humble%20structure%2C%20a%20landscape%20beyond.jpg".
+wd:Q120728070 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120719586 rdfs:label """The burial of the dead, one of the works of mercy"""@fr.
+wd:Q120719586 wdt:P31 wd:Q838948 .
+wd:Q120719586 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120719586 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20The%20burial%20of%20the%20dead%2C%20one%20of%20the%20works%20of%20mercy.jpg".
+wd:Q120719586 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120727593 rdfs:label """Self-Portrait"""@fr.
+wd:Q120727593 wdt:P31 wd:Q838948 .
+wd:Q120727593 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120727593 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Self-Portrait.jpeg".
+wd:Q120727593 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120596549 rdfs:label """Self Portrait With a Pipe"""@fr.
+wd:Q120596549 wdt:P31 wd:Q838948 .
+wd:Q120596549 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120596549 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20Self%20portrait%20with%20a%20pipe.jpg".
+wd:Q120596549 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120595622 rdfs:label """Old Woman Spinning"""@fr.
+wd:Q120595622 wdt:P31 wd:Q838948 .
+wd:Q120595622 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120595622 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20An%20old%20woman%20spinning.jpg".
+wd:Q120595622 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q122281168 rdfs:label """Portrait of an unknown man"""@fr.
+wd:Q122281168 wdt:P31 wd:Q838948 .
+wd:Q122281168 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q122281168 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20d%27homme%20-%20Karel%20Dujardin%20-%20829.2-sc.jpg".
+wd:Q122281168 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q120728223 rdfs:label """A bearded man and other figures before a city gate"""@fr.
+wd:Q120728223 wdt:P31 wd:Q838948 .
+wd:Q120728223 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q120728223 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%20-%20A%20bearded%20man%20and%20other%20figures%20before%20a%20city%20gate.jpg".
+wd:Q120728223 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q121287421 rdfs:label """Heraclitus"""@fr.
+wd:Q121287421 wdt:P31 wd:Q838948 .
+wd:Q121287421 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q121287421 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michael-sweerts-heraclitus.jpg".
+wd:Q121287421 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123739568 rdfs:label """Self portrait reading"""@fr.
+wd:Q123739568 wdt:P31 wd:Q838948 .
+wd:Q123739568 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q123739568 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Sweerts%2C%20Selbstportrait%2C%20lesend.%20%C3%96l%20auf%20Leinwand.%2035%2C5x30%2C2%20cm.jpg".
+wd:Q123739568 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123739576 rdfs:label """The sheltering of strangers (one of the seven acts of mercy)"""@fr.
+wd:Q123739576 wdt:P31 wd:Q838948 .
+wd:Q123739576 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q123739576 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Harbouring%20the%20Stranger%20by%20Michael%20Sweerts%201649.jpg".
+wd:Q123739576 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123739579 rdfs:label """Portrait of an unknown woman"""@fr.
+wd:Q123739579 wdt:P31 wd:Q838948 .
+wd:Q123739579 wdt:P170 wd:Q1342328.
+wd:Q1342328 rdfs:label """Michiel Sweerts"""@fr.
+wd:Q1342328 wdt:P31 wd:Q3391743 .
+wd:Q123739579 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/RKD%20Research%20Portret%20van%20een%20onbekende%20vrouw%2C%20ca.%201660.jpg".
+wd:Q123739579 pgdc:sparql kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 .
+kgdc:sparqldocXzc62cP2ePf1XiwQdeh2CPjK0iJamtRrHTGkNpn9 pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q1342328 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".

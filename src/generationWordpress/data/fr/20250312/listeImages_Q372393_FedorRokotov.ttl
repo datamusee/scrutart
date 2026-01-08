@@ -1,0 +1,23 @@
+wd:Q123258957 rdfs:label """Portrait de Nikita A. Demidoff"""@fr.
+wd:Q123258957 wdt:P31 wd:Q838948 .
+wd:Q123258957 wdt:P170 wd:Q372393.
+wd:Q372393 rdfs:label """Fedor Rokotov"""@fr.
+wd:Q372393 wdt:P31 wd:Q3391743 .
+wd:Q123258957 wdt:P18 "http://commons.wikimedia.org/wiki/Special:FilePath/Nikita%20A.%20Demidoff.JPG".
+wd:Q123258957 pgdc:sparql kgdc:sparqlVgdmIlzpViJyVbeo1BEmCF23We2bfMbOG5kbcNy4LVq .
+kgdc:sparqlVgdmIlzpViJyVbeo1BEmCF23We2bfMbOG5kbcNy4LVq pgdc:sparql_src """select distinct ?uri ?createur ?createurLabel ?image ?titre_fr where { 
+                                values ?createur { wd:Q372393 }
+                                values ?classRel { wdt:P31 wdt:P106 }
+                                values ?class { wd:Q1028181 }
+                                values ?rel { wdt:P170 }
+                                ?uri wdt:P31 wd:Q3305213;    
+                                     ?rel ?createur;    
+                                     wdt:P18 ?image.
+                                ?createur rdfs:label ?createurLabel .
+                                filter(lang(?createurLabel)="fr")
+                                ?createur ?classRel ?class    
+                                OPTIONAL { ?uri wdt:P1476 ?titre_fr. }  
+                                FILTER((LANG(?titre_fr)) = "fr")
+                    }""".
+wd:Q123258957 pgdc:piwigo_image "12634".
+wd:Q123258957 pgdc:piwigo_gallery kgdc:gal725.

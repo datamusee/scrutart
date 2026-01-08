@@ -1,11 +1,11 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath('D:/wamp64/www/givingsense.eu/src/piwigoTools'))
+# sys.path.insert(0, os.path.abspath('D:/wamp64/www/givingsense.eu/src/piwigoTools'))
 
 from unittest import TestCase
-from src.piwigoTools.envoiImagePiwigo import postImageToPiwigo
-import src.piwigoTools.configPiwigo as cp
+from envoiImagePiwigo import postImageToPiwigo
+import configPiwigo as cp
 
 
 class Test(TestCase):
