@@ -569,25 +569,69 @@ def extract_qid_from_description(description: str) -> Optional[str]:
 
 def build_collection_mapping(piwigo: PiwigoAPI) -> Dict[str, Dict]:
     """Construit la table de correspondance collections -> catégories (avec piwigo_id et qid)"""
-    # Utilise la table sauvegardée si elle existe déjà
-    if state.collection_mapping:
-        logger.info(f"Utilisation de la table de correspondance sauvegardée: {len(state.collection_mapping)} entrées")
-        return state.collection_mapping
-
-    mapping = {}
+    # Récupération de toutes les catégories Piwigo sous la catégorie 854
     categories = piwigo.get_categories()
+    piwigo_collections = {}
 
     for cat in categories:
-        if cat.get('id_uppercat') == '854':  # Sous-catégories de 854
-            mapping[cat['name'].lower()] = {
+        if '854' in cat.get('uppercats'):  # Sous-catégories de 854
+            piwigo_collections[cat['name'].lower()] = {
                 'piwigo_id': int(cat['id']),
-                'qid': None  # Sera rempli lors de la première utilisation
+                'qid': None
             }
 
-    state.collection_mapping = mapping
-    state.force_save()
-    logger.info(f"Table de correspondance construite: {len(mapping)} catégories de collection")
-    return mapping
+    logger.info(f"Catégories Piwigo trouvées: {len(piwigo_collections)}")
+
+    # Si on a une table sauvegardée, la fusionner avec les catégories Piwigo
+    if state.collection_mapping:
+        logger.info(f"Table sauvegardée: {len(state.collection_mapping)} entrées")
+
+        # Vérifier les catégories manquantes dans le fichier de traces
+        missing_in_file = []
+        for coll_name, coll_info in piwigo_collections.items():
+            if coll_name not in state.collection_mapping:
+                missing_in_file.append(coll_name)
+                # Ajouter la catégorie manquante
+                state.collection_mapping[coll_name] = coll_info
+
+        if missing_in_file:
+            logger.info(f"⚠️  {len(missing_in_file)} catégories Piwigo absentes du fichier de traces, ajout en cours:")
+            for coll_name in missing_in_file:
+                logger.info(f"   + {coll_name}")
+            state.force_save()
+
+        # Vérifier les catégories du fichier qui n'existent plus dans Piwigo
+        extra_in_file = []
+        for coll_name in state.collection_mapping:
+            if coll_name not in piwigo_collections:
+                extra_in_file.append(coll_name)
+
+        if extra_in_file:
+            logger.info(f"ℹ️  {len(extra_in_file)} catégories du fichier n'existent plus dans Piwigo:")
+            for coll_name in extra_in_file:
+                logger.info(f"   - {coll_name}")
+
+        # Mettre à jour les piwigo_id au cas où ils auraient changé
+        updated_count = 0
+        for coll_name, piwigo_info in piwigo_collections.items():
+            if coll_name in state.collection_mapping:
+                if state.collection_mapping[coll_name]['piwigo_id'] != piwigo_info['piwigo_id']:
+                    old_id = state.collection_mapping[coll_name]['piwigo_id']
+                    state.collection_mapping[coll_name]['piwigo_id'] = piwigo_info['piwigo_id']
+                    updated_count += 1
+                    logger.info(f"   ID mis à jour pour '{coll_name}': {old_id} -> {piwigo_info['piwigo_id']}")
+
+        if updated_count > 0:
+            logger.info(f"🔄 {updated_count} ID de catégories mis à jour")
+            state.force_save()
+
+        return state.collection_mapping
+    else:
+        # Pas de sauvegarde, utiliser les catégories Piwigo
+        state.collection_mapping = piwigo_collections
+        state.force_save()
+        logger.info(f"Table de correspondance construite: {len(piwigo_collections)} catégories de collection")
+        return piwigo_collections
 
 
 def process_single_image(piwigo: PiwigoAPI, img: Dict, collection_mapping: Dict[str, Dict]) -> None:
@@ -603,7 +647,7 @@ def process_single_image(piwigo: PiwigoAPI, img: Dict, collection_mapping: Dict[
     # Vérifier si l'image est déjà dans une sous-catégorie de 854 (collections)
     categories = img_info.get('categories', [])
     for cat in categories:
-        if cat.get('id_uppercat') == '854':
+        if '854' in cat.get('uppercats'):  # Sous-catégories de 854
             logger.info(f"Image {img['id']} déjà dans la sous-catégorie '{cat['name']}' de 854, passage à la suivante")
             state.mark_image_processed(img['id'], 'already_in_collection', cat['name'])
             state.stats['processed'] += 1
@@ -646,6 +690,8 @@ def process_single_image(piwigo: PiwigoAPI, img: Dict, collection_mapping: Dict[
                 # Met à jour le QID dans le mapping si pas encore fait
                 if not cat_info.get('qid'):
                     state.update_collection_mapping(collection['label'], cat_info['piwigo_id'], collection['qid'])
+                # Pause pour permettre validation
+                time.sleep(10)
             else:
                 state.target_category = {
                     'id': None,
@@ -656,7 +702,7 @@ def process_single_image(piwigo: PiwigoAPI, img: Dict, collection_mapping: Dict[
         logger.info(f"Image {img['id']}: Collection '{collection['label']}' ({collection['qid']}) trouvée")
 
         # Pause pour permettre validation
-        time.sleep(10)
+        # time.sleep(10)
 
         if not state.running:
             return
@@ -705,14 +751,27 @@ def process_images():
     state.pwg_id = piwigo.pwg_id
 
     # Construction de la table de correspondance (ou chargement depuis la sauvegarde)
+    # Cette fonction vérifie aussi la cohérence avec Piwigo
     collection_mapping = build_collection_mapping(piwigo)
 
     # Récupération du nombre total d'images pour l'affichage
     total_images = piwigo.get_total_images_count(80, recursive=True)
     state.total_images = total_images
+
+    # Mise à jour du compteur d'images déjà traitées depuis le fichier
     already_processed = len(state.processed_images)
 
-    logger.info(f"Total: {total_images} images, Déjà traitées: {already_processed}, Restantes: {total_images - already_processed}")
+    # Mettre à jour les stats pour refléter le nombre réel d'images traitées
+    with state.lock:
+        # Le nombre dans stats.processed représente la session actuelle
+        # On repart de 0 pour cette session
+        state.stats['processed'] = 0
+
+    logger.info(f"📊 État au démarrage:")
+    logger.info(f"   Total d'images dans Piwigo (cat 80): {total_images}")
+    logger.info(f"   Images déjà traitées (fichier): {already_processed}")
+    logger.info(f"   Images restantes: {total_images - already_processed}")
+    logger.info(f"   Collections mappées: {len(collection_mapping)}")
 
     # Traitement par lots
     page = state.current_batch
@@ -724,19 +783,22 @@ def process_images():
         images, has_more = piwigo.get_category_images_batch(80, page, BATCH_SIZE, recursive=True)
 
         if not images:
-            logger.info("Aucune image à traiter dans ce lot, fin du traitement")
+            logger.info("Aucune image retournée par Piwigo, fin du traitement")
             break
 
         logger.info(f"Lot {page} chargé: {len(images)} images")
+
+        # Compteur d'images effectivement traitées dans ce lot (pas seulement skippées)
+        processed_in_batch = 0
 
         # Traitement de chaque image du lot
         for img in images:
             if not state.running:
                 break
 
-            # Skip si déjà traitée
+            # Skip si déjà traitée (dans le fichier de traces)
             if state.is_image_processed(img['id']):
-                logger.info(f"Image {img['id']} déjà traitée, passage à la suivante")
+                logger.info(f"Image {img['id']} déjà dans le fichier de traces, passage à la suivante")
                 continue
 
             # Pause si demandée
@@ -748,8 +810,15 @@ def process_images():
 
             # Traitement de l'image
             process_single_image(piwigo, img, collection_mapping)
+            processed_in_batch += 1
 
             logger.info(f"Image {img['id']} traitée ({state.stats['processed']}/{total_images})")
+
+        # Log du lot terminé
+        if processed_in_batch > 0:
+            logger.info(f"Lot {page}: {processed_in_batch} images traitées effectivement")
+        else:
+            logger.info(f"Lot {page}: toutes les images étaient déjà traitées")
 
         # Passage au lot suivant
         page += 1
@@ -759,10 +828,11 @@ def process_images():
         if not state.running:
             break
 
+        # Continue tant que Piwigo retourne des images (has_more)
         if has_more:
             logger.info(f"Lot {page-1} terminé, passage au lot suivant...")
         else:
-            logger.info("Tous les lots ont été traités")
+            logger.info("Tous les lots ont été récupérés de Piwigo")
 
     # Sauvegarde finale
     state.force_save()
@@ -790,6 +860,15 @@ HTML_TEMPLATE = """
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
+        }
+        .piwigo-image {
+            max-width: 30vw;
+            max-height: 30vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            margin: auto;
         }
         .container {
             max-width: 1600px;
@@ -1104,7 +1183,8 @@ HTML_TEMPLATE = """
                     document.getElementById('errors').textContent = data.stats.errors;
                     
                     if (data.total_images > 0) {
-                        const percent = ((data.stats.processed) / data.total_images * 100).toFixed(1);
+                        // const percent = ((data.already_processed + data.stats.processed) / data.total_images * 100).toFixed(1);
+                        const percent = ((data.already_processed) / data.total_images * 100).toFixed(1);
                         document.getElementById('progress').textContent = percent + '%';
                     }
 
@@ -1125,7 +1205,7 @@ HTML_TEMPLATE = """
                     // Affichage de l'image en cours
                     if (data.current_image) {
                         const piwigoLink = `${PIWIGO_URL}/picture.php?/${data.current_image.id}`;
-                        let html = `<a href="${piwigoLink}" target="_blank"><img src="${data.current_image.element_url}"></a>`;
+                        let html = `<a href="${piwigoLink}" target="_blank"><img src="${data.current_image.element_url}" class="piwigo-image"></a>`;
                         html += `<div class="info"><span class="label">ID:</span> <a href="${piwigoLink}" target="_blank" class="piwigo-link">${data.current_image.id}</a></div>`;
                         html += `<div class="info"><span class="label">Nom:</span> ${data.current_image.name}</div>`;
                         html += `<div class="info"><span class="label">Catégories:</span> ${data.current_categories.join(', ')}</div>`;
@@ -1267,12 +1347,46 @@ if __name__ == '__main__':
     print(f"💾 Sauvegarde tous les {SAVE_EVERY_N_IMAGES} images")
     print(f"📄 Format de sauvegarde: Version {VERSION_NUMBER}")
     print(f"💾 Fichier de progression: {SAVE_FILE}")
+
     if os.path.exists(SAVE_FILE):
         print(f"✅ Fichier de progression existant détecté")
-        print(f"   {len(state.processed_images)} images déjà traitées")
-        print(f"   {len(state.collection_mapping)} collections mappées")
+
+        # Nombre d'images traitées (mis à jour depuis le fichier)
+        images_count = len(state.processed_images)
+        print(f"   📊 {images_count} images déjà traitées")
+
+        # Nombre de collections
+        collections_count = len(state.collection_mapping)
+        print(f"   📚 {collections_count} collections mappées")
+
         # Compter les collections avec QID
         collections_with_qid = sum(1 for c in state.collection_mapping.values() if c.get('qid'))
-        print(f"   {collections_with_qid} collections avec QID Wikidata")
+        print(f"   🔗 {collections_with_qid} collections avec QID Wikidata")
+        print(f"   ⏱️  Lot de reprise: {state.current_batch}")
+
+        # Analyser les types d'images traitées
+        qid_types = {}
+        for img_info in state.processed_images.values():
+            qid = img_info.get('qid', 'unknown')
+            if qid.startswith('Q') and qid[1:].isdigit():
+                qid_type = 'with_qid'
+            elif qid == 'already_in_collection':
+                qid_type = 'already_in_collection'
+            elif qid in ['none', 'unknown', 'error']:
+                qid_type = qid
+            else:
+                qid_type = 'other'
+            qid_types[qid_type] = qid_types.get(qid_type, 0) + 1
+
+        if qid_types:
+            print(f"   📈 Répartition:")
+            for qid_type, count in sorted(qid_types.items(), key=lambda x: x[1], reverse=True):
+                print(f"      - {qid_type}: {count}")
+    else:
+        print(f"ℹ️  Aucun fichier de progression (premier démarrage)")
+
     print("="*60)
+    print("💡 Le serveur va vérifier la cohérence avec Piwigo au démarrage")
+    print("="*60)
+
     app.run(debug=False, port=5000)
