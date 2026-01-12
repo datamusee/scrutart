@@ -43,22 +43,30 @@ class ProcessState:
     def __init__(self):
         self.running = False
         self.paused = False
+        self.waiting_for_validation = False  # NOUVEAU
+        self.validation_received = False  # NOUVEAU
+        self.validated_movements = []  # NOUVEAU
+        self.apply_to_creator_works = False  # NOUVEAU: appliquer à toutes les œuvres du créateur
+        self.current_creator_qid = None  # NOUVEAU: QID du créateur de l'œuvre courante
         self.current_image = None
         self.current_categories = []
-        self.found_movements = []  # CHANGEMENT: liste au lieu d'un seul
-        self.target_categories = []  # CHANGEMENT: liste au lieu d'un seul
+        self.found_movements = []
+        self.target_categories = []
         self.stats = {
             'processed': 0,
             'with_movements': 0,
             'categories_created': 0,
-            'errors': 0
+            'errors': 0,
+            'auto_skipped': 0,
+            'auto_applied_from_creator': 0  # NOUVEAU
         }
         self.lock = Lock()
         self.pwg_id = None
 
         # Mémorisation pour reprise
-        self.processed_images: Dict[str, Dict] = {}  # {id: {qid, date, movements: [qids]}}
-        self.movement_mapping: Dict[str, Dict] = {}  # {name_lower: {piwigo_id, qid, type: "mouvement"}}
+        self.processed_images: Dict[str, Dict] = {}
+        self.movement_mapping: Dict[str, Dict] = {}
+        self.creator_movements_cache: Dict[str, List[str]] = {}  # NOUVEAU: {creator_qid: [movement_qids]}
         self.total_images = 0
         self.current_batch = 0
         self.version = VERSION_NUMBER
@@ -74,9 +82,11 @@ class ProcessState:
 
                 self.processed_images = data.get('processed_images', {})
                 self.movement_mapping = data.get('movement_mapping', {})
+                self.creator_movements_cache = data.get('creator_movements_cache', {})  # NOUVEAU
                 self.stats = data.get('stats', self.stats)
                 self.current_batch = data.get('current_batch', 0)
                 logger.info(f"Progression chargée: {len(self.processed_images)} images")
+                logger.info(f"Cache créateurs: {len(self.creator_movements_cache)} créateurs")
             except Exception as e:
                 logger.error(f"Erreur chargement progression: {e}")
 
@@ -87,6 +97,7 @@ class ProcessState:
                 'version': VERSION_NUMBER,
                 'processed_images': self.processed_images,
                 'movement_mapping': self.movement_mapping,
+                'creator_movements_cache': self.creator_movements_cache,  # NOUVEAU
                 'stats': self.stats,
                 'current_batch': self.current_batch,
                 'last_updated': time.strftime('%Y-%m-%d %H:%M:%S')
@@ -187,8 +198,7 @@ class PiwigoAPI:
             logger.error(f"Erreur récupération token: {e}")
             return None
 
-    def get_category_images_batch(self, cat_id: int, page: int, per_page: int, recursive: bool = True) -> tuple[
-        List[Dict], bool]:
+    def get_category_images_batch(self, cat_id: int, page: int, per_page: int, recursive: bool = True) -> tuple[List[Dict], bool]:
         """Récupère un lot d'images"""
         try:
             response = self.session.post(self.url, data={
@@ -334,8 +344,37 @@ class WikidataAPI:
     _lock = Lock()
 
     HEADERS = {
-        'User-Agent': 'PiwigoWikidataSync/1.0 (https://galeries.grains-de-culture.fr; jcmoissinac@gmail.com) Python/requests'
+        'User-Agent': 'PiwigoWikidataSync/1.0 (https://galeries.grains-de-culture.fr; contact@example.com) Python/requests'
     }
+
+    @staticmethod
+    def get_creator(qid: str) -> Optional[str]:
+        """Récupère le créateur (P170) d'une œuvre"""
+        try:
+            WikidataAPI._wait_before_request()
+
+            url = "https://www.wikidata.org/w/api.php"
+            params = {
+                'action': 'wbgetclaims',
+                'entity': qid,
+                'property': 'P170',
+                'format': 'json'
+            }
+            response = requests.get(url, params=params, headers=WikidataAPI.HEADERS)
+            data = response.json()
+
+            if 'claims' in data and 'P170' in data['claims']:
+                creator_claim = data['claims']['P170'][0]
+                try:
+                    creator_qid = creator_claim['mainsnak']['datavalue']['value']['id']
+                    return creator_qid
+                except (KeyError, TypeError):
+                    pass
+
+            return None
+        except Exception as e:
+            logger.error(f"Erreur récupération créateur pour {qid}: {e}")
+            return None
 
     @staticmethod
     def _wait_before_request():
@@ -348,11 +387,16 @@ class WikidataAPI:
 
     @staticmethod
     def get_movements(qid: str) -> List[Dict]:
-        """Récupère les mouvements (P135) d'une entité Wikidata - PEUT RETOURNER PLUSIEURS"""
+        """
+        Récupère les mouvements (P135) d'une entité Wikidata
+        Cherche d'abord sur l'œuvre, sinon sur son créateur (P170)
+        """
         try:
             WikidataAPI._wait_before_request()
 
             url = "https://www.wikidata.org/w/api.php"
+
+            # Tentative 1: Chercher P135 directement sur l'œuvre
             params = {
                 'action': 'wbgetclaims',
                 'entity': qid,
@@ -361,9 +405,6 @@ class WikidataAPI:
             }
             response = requests.get(url, params=params, headers=WikidataAPI.HEADERS)
             data = response.json()
-
-            # DEBUG
-            logger.info(f"DEBUG - Response for {qid}: {json.dumps(data, indent=2)}")
 
             movements = []
             if 'claims' in data and 'P135' in data['claims']:
@@ -379,6 +420,56 @@ class WikidataAPI:
                         })
                     except (KeyError, TypeError):
                         continue
+
+            # Si aucun mouvement trouvé, chercher via le créateur
+            if not movements:
+                logger.info(f"Aucun P135 direct sur {qid}, recherche via créateur (P170)")
+                WikidataAPI._wait_before_request()
+
+                # Récupérer le créateur (P170)
+                params_creator = {
+                    'action': 'wbgetclaims',
+                    'entity': qid,
+                    'property': 'P170',
+                    'format': 'json'
+                }
+                response_creator = requests.get(url, params=params_creator, headers=WikidataAPI.HEADERS)
+                data_creator = response_creator.json()
+
+                if 'claims' in data_creator and 'P170' in data_creator['claims']:
+                    # Prendre le premier créateur
+                    creator_claim = data_creator['claims']['P170'][0]
+                    try:
+                        creator_qid = creator_claim['mainsnak']['datavalue']['value']['id']
+                        logger.info(f"Créateur trouvé: {creator_qid}")
+
+                        # Chercher P135 sur le créateur
+                        WikidataAPI._wait_before_request()
+                        params_creator_movements = {
+                            'action': 'wbgetclaims',
+                            'entity': creator_qid,
+                            'property': 'P135',
+                            'format': 'json'
+                        }
+                        response_movements = requests.get(url, params=params_creator_movements, headers=WikidataAPI.HEADERS)
+                        data_movements = response_movements.json()
+
+                        if 'claims' in data_movements and 'P135' in data_movements['claims']:
+                            for claim in data_movements['claims']['P135']:
+                                try:
+                                    movement_qid = claim['mainsnak']['datavalue']['value']['id']
+                                    label = WikidataAPI.get_label(movement_qid, 'fr')
+                                    if not label or label == movement_qid:
+                                        label = WikidataAPI.get_label(movement_qid, 'en')
+                                    movements.append({
+                                        'qid': movement_qid,
+                                        'label': label
+                                    })
+                                    logger.info(f"Mouvement du créateur: {label} ({movement_qid})")
+                                except (KeyError, TypeError):
+                                    continue
+                    except (KeyError, TypeError):
+                        pass
 
             return movements
         except Exception as e:
@@ -442,7 +533,7 @@ def build_movement_mapping(piwigo: PiwigoAPI) -> Dict[str, Dict]:
     piwigo_movements = {}
 
     for cat in categories:
-        if '853' in cat.get('uppercats'):
+        if '853' in cat.get('uppercats'):  # CHANGEMENT: 853 au lieu de 854
             piwigo_movements[cat['name'].lower()] = {
                 'piwigo_id': int(cat['id']),
                 'qid': None,
@@ -475,7 +566,7 @@ def build_movement_mapping(piwigo: PiwigoAPI) -> Dict[str, Dict]:
 
 
 def process_single_image(piwigo: PiwigoAPI, img: Dict, movement_mapping: Dict[str, Dict]) -> None:
-    """Traite une seule image - CHANGEMENT: gestion de plusieurs mouvements"""
+    """Traite une seule image - avec validation humaine si mouvements trouvés"""
     img_info = piwigo.get_image_info(img['id'])
     if not img_info:
         state.mark_image_processed(img['id'], 'error', [])
@@ -487,13 +578,19 @@ def process_single_image(piwigo: PiwigoAPI, img: Dict, movement_mapping: Dict[st
 
     # Vérifier si déjà dans une sous-catégorie de 853
     categories = img_info.get('categories', [])
+    already_in_movement = False
     for cat in categories:
         if '853' in cat.get('uppercats'):
-            logger.info(f"Image {img['id']} déjà dans '{cat['name']}', skip")
+            logger.info(f"Image {img['id']} déjà dans '{cat['name']}', skip automatique")
             state.mark_image_processed(img['id'], qid, [cat.get('name', 'unknown')])
             state.stats['processed'] += 1
             state.stats['with_movements'] += 1
-            return
+            state.stats['auto_skipped'] += 1
+            already_in_movement = True
+            break
+
+    if already_in_movement:
+        return
 
     with state.lock:
         state.current_image = img_info
@@ -502,61 +599,97 @@ def process_single_image(piwigo: PiwigoAPI, img: Dict, movement_mapping: Dict[st
         state.target_categories = []
 
     if not qid:
+        logger.info(f"Image {img['id']} sans QID, skip automatique")
         state.mark_image_processed(img['id'], 'none', [])
         state.stats['processed'] += 1
+        state.stats['auto_skipped'] += 1
         return
 
-    # CHANGEMENT: Récupérer TOUS les mouvements (liste)
+    # Récupérer les mouvements
     movements = WikidataAPI.get_movements(qid)
 
-    if movements:
-        state.stats['with_movements'] += 1
-        movement_qids = []
+    if not movements:
+        logger.info(f"Image {img['id']}: Aucun mouvement trouvé, skip automatique")
+        state.mark_image_processed(img['id'], qid, [])
+        state.stats['processed'] += 1
+        state.stats['auto_skipped'] += 1
+        return
 
-        with state.lock:
-            state.found_movements = movements
-            state.target_categories = []
+    # Mouvements trouvés → PAUSE POUR VALIDATION
+    state.stats['with_movements'] += 1
+    movement_qids = []
 
-        for movement in movements:
-            movement_label_lower = movement['label'].lower()
-            movement_qids.append(movement['qid'])
+    with state.lock:
+        state.found_movements = movements
+        state.target_categories = []
+        state.waiting_for_validation = True
+        state.validation_received = False
+        state.validated_movements = []
 
-            if movement_label_lower in movement_mapping:
-                mov_info = movement_mapping[movement_label_lower]
-                with state.lock:
-                    state.target_categories.append({
-                        'id': mov_info['piwigo_id'],
-                        'name': movement['label'],
-                        'exists': True
-                    })
-                if True:  # Toujours mettre à jour le QID
-                    state.update_movement_mapping(movement['label'], mov_info['piwigo_id'], movement['qid'])
-            else:
-                with state.lock:
-                    state.target_categories.append({
-                        'id': None,
-                        'name': movement['label'],
-                        'exists': False
-                    })
+    for movement in movements:
+        movement_label_lower = movement['label'].lower()
+        movement_qids.append(movement['qid'])
 
-        logger.info(f"Image {img['id']}: {len(movements)} mouvement(s) trouvé(s)")
-        time.sleep(10)  # Pause pour validation
+        if movement_label_lower in movement_mapping:
+            mov_info = movement_mapping[movement_label_lower]
+            with state.lock:
+                state.target_categories.append({
+                    'id': mov_info['piwigo_id'],
+                    'name': movement['label'],
+                    'qid': movement['qid'],
+                    'exists': True
+                })
+            if True:
+                state.update_movement_mapping(movement['label'], mov_info['piwigo_id'], movement['qid'])
+        else:
+            with state.lock:
+                state.target_categories.append({
+                    'id': None,
+                    'name': movement['label'],
+                    'qid': movement['qid'],
+                    'exists': False
+                })
 
-        if not state.running:
-            return
+    logger.info(f"Image {img['id']}: {len(movements)} mouvement(s) trouvé(s) - EN ATTENTE DE VALIDATION")
 
-        for i, target in enumerate(state.target_categories):
+    # ATTENTE DE VALIDATION
+    while state.waiting_for_validation and state.running:
+        time.sleep(0.5)
+
+    if not state.running:
+        return
+
+    # Si validation reçue avec mouvements sélectionnés
+    if state.validation_received and state.validated_movements:
+        logger.info(f"Validation reçue: {len(state.validated_movements)} mouvement(s) sélectionné(s)")
+
+        # Ne traiter que les mouvements validés
+        validated_qids = []
+        for validated_mov in state.validated_movements:
+            # Trouver la catégorie correspondante
+            target = None
+            for cat in state.target_categories:
+                if cat['qid'] == validated_mov['qid']:
+                    target = cat
+                    break
+
+            if not target:
+                continue
+
+            validated_qids.append(validated_mov['qid'])
+
+            # Créer la catégorie si nécessaire
             if not target['exists']:
                 cat_id = piwigo.create_category(target['name'], 853)
                 if cat_id:
                     movement_mapping[target['name'].lower()] = {
                         'piwigo_id': cat_id,
-                        'qid': movements[i]['qid'],
+                        'qid': target['qid'],
                         'type': 'mouvement'
                     }
                     with state.lock:
-                        state.update_movement_mapping(target['name'], cat_id, movements[i]['qid'])
-                        state.target_categories[i]['id'] = cat_id
+                        state.update_movement_mapping(target['name'], cat_id, target['qid'])
+                        target['id'] = cat_id
                         state.stats['categories_created'] += 1
 
             # Associer l'image
@@ -567,9 +700,10 @@ def process_single_image(piwigo: PiwigoAPI, img: Dict, movement_mapping: Dict[st
                 else:
                     logger.error(f"Échec ajout image {img['id']} → {target['id']}")
 
-        state.mark_image_processed(img['id'], qid, movement_qids)
+        state.mark_image_processed(img['id'], qid, validated_qids)
     else:
-        logger.info(f"Image {img['id']}: Aucun mouvement trouvé pour {qid}")
+        # Bouton "Passer" cliqué ou aucun mouvement sélectionné
+        logger.info(f"Image {img['id']} passée sans association")
         state.mark_image_processed(img['id'], qid, [])
 
     state.stats['processed'] += 1
@@ -747,14 +881,14 @@ HTML_TEMPLATE = """
                     <span id="status" class="status stopped">Arrêté</span>
                 </div>
             </div>
-
+            
             <div class="card">
                 <h2>🖼️ Image en cours de traitement</h2>
                 <div id="current" class="image-container">
                     <div id="image-content">Aucune image en traitement</div>
                 </div>
             </div>
-
+            
             <div class="card">
                 <h2>📋 Dernières images traitées</h2>
                 <div class="recent-images">
@@ -774,45 +908,55 @@ HTML_TEMPLATE = """
                 </div>
             </div>
         </div>
-
+        
         <div class="sidebar">
             <div class="card">
                 <h2>📊 Statistiques</h2>
-
+                
                 <div class="batch-info">
                     Lot actuel: <span id="current_batch">0</span>
                 </div>
-
+                
                 <div class="stat-box" style="margin-bottom: 15px;">
                     <span class="stat-number" id="total_images">0</span>
                     <span class="stat-label">Images totales</span>
                 </div>
-
+                
                 <div class="stat-box" style="margin-bottom: 15px; background: linear-gradient(135deg, #4caf50, #45a049);">
                     <span class="stat-number" id="already_processed">0</span>
                     <span class="stat-label">Déjà traitées</span>
                 </div>
-
+                
                 <div class="stat-box" style="margin-bottom: 15px; background: linear-gradient(135deg, #2196f3, #1976d2);">
                     <span class="stat-number" id="processed">0</span>
                     <span class="stat-label">Session actuelle</span>
                 </div>
-
+                
                 <div class="stat-box" style="margin-bottom: 15px; background: linear-gradient(135deg, #ff9800, #f57c00);">
                     <span class="stat-number" id="with_movements">0</span>
                     <span class="stat-label">Avec mouvements</span>
                 </div>
-
+                
                 <div class="stat-box" style="margin-bottom: 15px; background: linear-gradient(135deg, #9c27b0, #7b1fa2);">
                     <span class="stat-number" id="categories_created">0</span>
                     <span class="stat-label">Catégories créées</span>
                 </div>
-
+                
+                <div class="stat-box" style="margin-bottom: 15px; background: linear-gradient(135deg, #607d8b, #455a64);">
+                    <span class="stat-number" id="auto_skipped">0</span>
+                    <span class="stat-label">Passées automatiquement</span>
+                </div>
+                
+                <div class="stat-box" style="margin-bottom: 15px; background: linear-gradient(135deg, #00bcd4, #0097a7);">
+                    <span class="stat-number" id="auto_applied_from_creator">0</span>
+                    <span class="stat-label">Appliquées depuis créateur</span>
+                </div>
+                
                 <div class="stat-box" style="background: linear-gradient(135deg, #f44336, #d32f2f);">
                     <span class="stat-number" id="errors">0</span>
                     <span class="stat-label">Erreurs</span>
                 </div>
-
+                
                 <div style="margin-top: 15px; padding: 12px; background: #e8f5e9; border-radius: 8px; text-align: center;">
                     <div style="font-size: 24px; font-weight: bold; color: #4caf50;">
                         <span id="progress">0%</span>
@@ -821,7 +965,7 @@ HTML_TEMPLATE = """
                         Progression totale
                     </div>
                 </div>
-
+                
                 <div class="version-info">
                     Version {{ version }}<br>
                     Dernière MAJ: <span id="last_updated">-</span>
@@ -829,10 +973,10 @@ HTML_TEMPLATE = """
             </div>
         </div>
     </div>
-
+    
     <script>
         const PIWIGO_URL = "{{ piwigo_url }}";
-
+        
         function updateStatus() {
             fetch('/status')
                 .then(r => r.json())
@@ -843,8 +987,10 @@ HTML_TEMPLATE = """
                     document.getElementById('processed').textContent = data.stats.processed;
                     document.getElementById('with_movements').textContent = data.stats.with_movements;
                     document.getElementById('categories_created').textContent = data.stats.categories_created;
+                    document.getElementById('auto_skipped').textContent = data.stats.auto_skipped;
+                    document.getElementById('auto_applied_from_creator').textContent = data.stats.auto_applied_from_creator;
                     document.getElementById('errors').textContent = data.stats.errors;
-
+                    
                     if (data.total_images > 0) {
                         const percent = ((data.already_processed) / data.total_images * 100).toFixed(1);
                         document.getElementById('progress').textContent = percent + '%';
@@ -876,9 +1022,48 @@ HTML_TEMPLATE = """
                             html += '<div class="movement"><span class="label">Mouvements trouvés:</span><div class="movement-list">';
                             data.found_movements.forEach(mov => {
                                 const qidLink = `https://www.wikidata.org/wiki/${mov.qid}`;
-                                html += `<div class="movement-item">${mov.label} <a href="${qidLink}" target="_blank" class="qid-link">${mov.qid}</a></div>`;
+                                const checkboxId = `mov_${mov.qid}`;
+                                html += `<div class="movement-item">
+                                    <input type="checkbox" id="${checkboxId}" value="${mov.qid}" 
+                                           data-label="${mov.label}" checked 
+                                           ${data.waiting_for_validation ? '' : 'disabled'}
+                                           style="margin-right: 8px;">
+                                    <label for="${checkboxId}" style="cursor: pointer;">${mov.label}</label>
+                                    <a href="${qidLink}" target="_blank" class="qid-link">${mov.qid}</a>
+                                </div>`;
                             });
-                            html += '</div></div>';
+                            html += '</div>';
+                            
+                            // Boutons de validation
+                            if (data.waiting_for_validation) {
+                                html += '<div style="margin-top: 15px;">';
+                                
+                                // Case à cocher pour appliquer au créateur
+                                if (data.current_creator_qid) {
+                                    html += `<div style="background: #fff3e0; padding: 12px; border-radius: 6px; margin-bottom: 10px; border-left: 3px solid #ff9800;">
+                                        <input type="checkbox" id="apply_to_creator" style="margin-right: 8px;">
+                                        <label for="apply_to_creator" style="cursor: pointer; font-weight: 600;">
+                                            🎨 Appliquer automatiquement à toutes les œuvres du créateur 
+                                            <a href="https://www.wikidata.org/wiki/${data.current_creator_qid}" target="_blank" class="qid-link">${data.current_creator_qid}</a>
+                                        </label>
+                                        <div style="font-size: 12px; color: #666; margin-top: 5px; margin-left: 26px;">
+                                            Les prochaines œuvres de ce créateur seront automatiquement associées aux mouvements sélectionnés, sans demande de validation.
+                                        </div>
+                                    </div>`;
+                                }
+                                
+                                html += `<div style="display: flex; gap: 10px; justify-content: center;">
+                                    <button onclick="skipImage()" style="background: linear-gradient(135deg, #757575, #616161); color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
+                                        ⏭️ Passer
+                                    </button>
+                                    <button onclick="validateMovements()" style="background: linear-gradient(135deg, #4caf50, #45a049); color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
+                                        ✓ Vers Piwigo
+                                    </button>
+                                </div>`;
+                                html += '</div>';
+                            }
+                            
+                            html += '</div>';
                         }
 
                         if (data.target_categories && data.target_categories.length > 0) {
@@ -893,7 +1078,7 @@ HTML_TEMPLATE = """
                     } else {
                         document.getElementById('image-content').innerHTML = 'Aucune image en traitement';
                     }
-
+                    
                     // Mise à jour des images récentes
                     if (data.recent_images && data.recent_images.length > 0) {
                         let tbody = '';
@@ -902,12 +1087,12 @@ HTML_TEMPLATE = """
                             const qidLink = img.qid !== 'unknown' && img.qid !== 'none' && img.qid !== 'error' 
                                 ? `<a href="https://www.wikidata.org/wiki/${img.qid}" target="_blank" class="qid-link">${img.qid}</a>`
                                 : img.qid;
-
+                            
                             let movementsText = 'N/A';
                             if (img.movements && img.movements.length > 0) {
                                 movementsText = img.movements.join(', ');
                             }
-
+                            
                             tbody += `<tr>
                                 <td><a href="${piwigoLink}" target="_blank" class="piwigo-link">#${img.id}</a></td>
                                 <td>${qidLink}</td>
@@ -917,7 +1102,7 @@ HTML_TEMPLATE = """
                         });
                         document.getElementById('recent-tbody').innerHTML = tbody;
                     }
-
+                    
                     if (data.last_updated) {
                         document.getElementById('last_updated').textContent = data.last_updated;
                     }
@@ -936,6 +1121,43 @@ HTML_TEMPLATE = """
             fetch('/stop', {method: 'POST'});
         }
 
+        function validateMovements() {
+            // Récupérer les mouvements cochés
+            const checkboxes = document.querySelectorAll('input[type="checkbox"][id^="mov_"]:checked');
+            const movements = [];
+            
+            checkboxes.forEach(cb => {
+                movements.push({
+                    qid: cb.value,
+                    label: cb.dataset.label
+                });
+            });
+            
+            if (movements.length === 0) {
+                alert('Veuillez sélectionner au moins un mouvement');
+                return;
+            }
+            
+            // Vérifier si la case "Appliquer au créateur" est cochée
+            const applyToCreatorCheckbox = document.getElementById('apply_to_creator');
+            const applyToCreator = applyToCreatorCheckbox ? applyToCreatorCheckbox.checked : false;
+            
+            fetch('/validate', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    movements: movements,
+                    apply_to_creator: applyToCreator
+                })
+            });
+        }
+
+        function skipImage() {
+            if (confirm('Passer cette image sans associer de mouvement ?')) {
+                fetch('/skip', {method: 'POST'});
+            }
+        }
+
         setInterval(updateStatus, 1000);
         updateStatus();
     </script>
@@ -947,9 +1169,9 @@ HTML_TEMPLATE = """
 @app.route('/')
 def index():
     return render_template_string(HTML_TEMPLATE,
-                                  batch_size=BATCH_SIZE,
-                                  version=VERSION_NUMBER,
-                                  piwigo_url=PIWIGO_URL)
+                                 batch_size=BATCH_SIZE,
+                                 version=VERSION_NUMBER,
+                                 piwigo_url=PIWIGO_URL)
 
 
 @app.route('/status')
@@ -971,6 +1193,8 @@ def status():
         return jsonify({
             'running': state.running,
             'paused': state.paused,
+            'waiting_for_validation': state.waiting_for_validation,
+            'current_creator_qid': state.current_creator_qid,
             'current_image': state.current_image,
             'current_categories': state.current_categories,
             'found_movements': state.found_movements,
@@ -982,6 +1206,35 @@ def status():
             'recent_images': recent_images,
             'last_updated': time.strftime('%Y-%m-%d %H:%M:%S')
         })
+
+
+@app.route('/validate', methods=['POST'])
+def validate():
+    """Reçoit la validation des mouvements sélectionnés"""
+    data = request.json
+    selected_movements = data.get('movements', [])
+    apply_to_creator = data.get('apply_to_creator', False)
+
+    with state.lock:
+        state.validated_movements = selected_movements
+        state.apply_to_creator_works = apply_to_creator
+        state.validation_received = True
+        state.waiting_for_validation = False
+
+    logger.info(f"Validation reçue: {len(selected_movements)} mouvement(s), apply_to_creator={apply_to_creator}")
+    return jsonify({'status': 'ok'})
+
+
+@app.route('/skip', methods=['POST'])
+def skip():
+    """Passe l'image sans associer de mouvement"""
+    with state.lock:
+        state.validated_movements = []
+        state.validation_received = False
+        state.waiting_for_validation = False
+
+    logger.info("Image passée sans association")
+    return jsonify({'status': 'ok'})
 
 
 @app.route('/start', methods=['POST'])
@@ -1009,9 +1262,9 @@ def stop():
 
 
 if __name__ == '__main__':
-    print("=" * 60)
+    print("="*60)
     print("🚀 Serveur de synchronisation Piwigo-Wikidata Mouvements")
-    print("=" * 60)
+    print("="*60)
     print(f"📍 URL: http://localhost:5000")
     print(f"📦 Traitement par lots de {BATCH_SIZE} images")
     print(f"💾 Sauvegarde tous les {SAVE_EVERY_N_IMAGES} images")
@@ -1035,20 +1288,20 @@ if __name__ == '__main__':
 
         # Analyser les images traitées
         with_movements = sum(1 for img in state.processed_images.values()
-                             if img.get('movements') and len(img.get('movements', [])) > 0)
+                           if img.get('movements') and len(img.get('movements', [])) > 0)
         multi_movements = sum(1 for img in state.processed_images.values()
-                              if img.get('movements') and len(img.get('movements', [])) > 1)
+                            if img.get('movements') and len(img.get('movements', [])) > 1)
 
         print(f"   📈 {with_movements} images avec mouvements")
         print(f"   🔀 {multi_movements} images avec plusieurs mouvements")
     else:
         print(f"ℹ️  Aucun fichier de progression (premier démarrage)")
 
-    print("=" * 60)
+    print("="*60)
     print("💡 Différences avec les collections:")
     print("   • Une image peut avoir PLUSIEURS mouvements")
-    print("   • Propriété P135 pour les mouvements dans Wikidata")
-    print("   • Catégorie 853 source des images")
-    print("=" * 60)
+    print("   • Propriété P135 au lieu de P195")
+    print("   • Catégorie 853 au lieu de 854")
+    print("="*60)
 
     app.run(debug=False, port=5500)
