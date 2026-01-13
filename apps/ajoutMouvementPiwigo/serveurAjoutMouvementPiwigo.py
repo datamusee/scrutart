@@ -652,6 +652,57 @@ def process_single_image(piwigo: PiwigoAPI, img: Dict, movement_mapping: Dict[st
 
     logger.info(f"Image {img['id']}: {len(movements)} mouvement(s) trouvé(s) - EN ATTENTE DE VALIDATION")
 
+    creator_qid = WikidataAPI.get_creator(qid)
+    with state.lock:
+        state.current_creator_qid = creator_qid
+
+    if creator_qid:
+        logger.info(f"Créateur trouvé pour {qid}: {creator_qid}")
+
+    auto_movements = []
+    if creator_qid and creator_qid in state.creator_movements_cache:
+        cached_movement_qids = state.creator_movements_cache[creator_qid]
+        logger.info(f"🎨 Créateur {creator_qid} trouvé dans le cache avec {len(cached_movement_qids)} mouvement(s)")
+
+        # Filtrer les mouvements pour ne garder que ceux du cache
+        auto_movements = [mov for mov in movements if mov['qid'] in cached_movement_qids]
+
+        if auto_movements:
+            logger.info(f"✅ Application automatique de {len(auto_movements)} mouvement(s) depuis le cache créateur")
+
+            # Appliquer automatiquement sans validation
+            for movement in auto_movements:
+                movement_label_lower = movement['label'].lower()
+
+                if movement_label_lower in movement_mapping:
+                    mov_info = movement_mapping[movement_label_lower]
+                    cat_id = mov_info['piwigo_id']
+                else:
+                    # Créer la catégorie si nécessaire
+                    cat_id = piwigo.create_category(movement['label'], 853)
+                    if cat_id:
+                        movement_mapping[movement_label_lower] = {
+                            'piwigo_id': cat_id,
+                            'qid': movement['qid'],
+                            'type': 'mouvement'
+                        }
+                        state.update_movement_mapping(movement['label'], cat_id, movement['qid'])
+                        state.stats['categories_created'] += 1
+
+                if cat_id:
+                    success = piwigo.add_image_to_category(img['id'], cat_id)
+                    if success:
+                        logger.info(f"✅ Image {img['id']} → catégorie {cat_id} ({movement['label']}) [AUTO CRÉATEUR]")
+
+            # Marquer comme traitée et incrémenter le compteur
+            state.mark_image_processed(img['id'], qid, [m['qid'] for m in auto_movements])
+            state.stats['processed'] += 1
+            state.stats['with_movements'] += 1
+            state.stats['auto_applied_from_creator'] += 1
+            return  # IMPORTANT : sortir de la fonction
+
+    # Si aucun mouvement trouvé dans le cache, continuer le traitement normal
+
     # ATTENTE DE VALIDATION
     while state.waiting_for_validation and state.running:
         time.sleep(0.5)
@@ -1038,19 +1089,33 @@ HTML_TEMPLATE = """
                             if (data.waiting_for_validation) {
                                 html += '<div style="margin-top: 15px;">';
                                 
-                                // Case à cocher pour appliquer au créateur
-                                if (data.current_creator_qid) {
-                                    html += `<div style="background: #fff3e0; padding: 12px; border-radius: 6px; margin-bottom: 10px; border-left: 3px solid #ff9800;">
-                                        <input type="checkbox" id="apply_to_creator" style="margin-right: 8px;">
-                                        <label for="apply_to_creator" style="cursor: pointer; font-weight: 600;">
-                                            🎨 Appliquer automatiquement à toutes les œuvres du créateur 
-                                            <a href="https://www.wikidata.org/wiki/${data.current_creator_qid}" target="_blank" class="qid-link">${data.current_creator_qid}</a>
-                                        </label>
-                                        <div style="font-size: 12px; color: #666; margin-top: 5px; margin-left: 26px;">
-                                            Les prochaines œuvres de ce créateur seront automatiquement associées aux mouvements sélectionnés, sans demande de validation.
-                                        </div>
-                                    </div>`;
+                                // Case à cocher pour appliquer au créateur - TOUJOURS AFFICHÉE
+                                const hasCreator = data.current_creator_qid && data.current_creator_qid !== null;
+                                const checkboxDisabled = hasCreator ? '' : 'disabled';
+                                const boxStyle = hasCreator ? 'background: #fff3e0; border-left: 3px solid #ff9800;' : 'background: #f5f5f5; border-left: 3px solid #bdbdbd; opacity: 0.6;';
+                                
+                                html += `<div style="${boxStyle} padding: 12px; border-radius: 6px; margin-bottom: 10px;">
+                                    <input type="checkbox" id="apply_to_creator" ${checkboxDisabled} style="margin-right: 8px;">
+                                    <label for="apply_to_creator" style="cursor: ${hasCreator ? 'pointer' : 'not-allowed'}; font-weight: 600;">
+                                        🎨 Appliquer automatiquement à toutes les œuvres du créateur`;
+                                
+                                if (hasCreator) {
+                                    html += ` <a href="https://www.wikidata.org/wiki/${data.current_creator_qid}" target="_blank" class="qid-link">${data.current_creator_qid}</a>`;
+                                } else {
+                                    html += ` <span style="color: #999;">(créateur inconnu)</span>`;
                                 }
+                                
+                                html += `</label>
+                                    <div style="font-size: 12px; color: #666; margin-top: 5px; margin-left: 26px;">`;
+                                
+                                if (hasCreator) {
+                                    html += `Les prochaines œuvres de ce créateur seront automatiquement associées aux mouvements sélectionnés, sans demande de validation.`;
+                                } else {
+                                    html += `Cette option n'est disponible que si le créateur de l'œuvre est connu dans Wikidata.`;
+                                }
+                                
+                                html += `</div>
+                                </div>`;
                                 
                                 html += `<div style="display: flex; gap: 10px; justify-content: center;">
                                     <button onclick="skipImage()" style="background: linear-gradient(135deg, #757575, #616161); color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
@@ -1108,7 +1173,7 @@ HTML_TEMPLATE = """
                     }
                 });
         }
-
+                
         function start() {
             fetch('/start', {method: 'POST'});
         }
@@ -1215,6 +1280,18 @@ def validate():
     selected_movements = data.get('movements', [])
     apply_to_creator = data.get('apply_to_creator', False)
 
+    # SÉCURITÉ: Ne pas appliquer au créateur si pas de créateur
+    if apply_to_creator and not state.current_creator_qid:
+        logger.warning("Tentative d'application au créateur sans créateur connu - ignoré")
+        apply_to_creator = False
+
+    # ENREGISTRER DANS LE CACHE SI DEMANDÉ
+    if apply_to_creator and state.current_creator_qid:
+        movement_qids = [mov['qid'] for mov in selected_movements]
+        state.creator_movements_cache[state.current_creator_qid] = movement_qids
+        logger.info(f"💾 Cache créateur mis à jour: {state.current_creator_qid} → {movement_qids}")
+        state.force_save()  # Sauvegarder immédiatement
+
     with state.lock:
         state.validated_movements = selected_movements
         state.apply_to_creator_works = apply_to_creator
@@ -1223,6 +1300,71 @@ def validate():
 
     logger.info(f"Validation reçue: {len(selected_movements)} mouvement(s), apply_to_creator={apply_to_creator}")
     return jsonify({'status': 'ok'})
+
+
+@app.route('/check_creator_consistency', methods=['POST'])
+def check_creator_consistency():
+    """Vérifie la cohérence des mouvements d'un créateur"""
+    data = request.json
+    creator_qid = data.get('creator_qid')
+
+    if not creator_qid:
+        return jsonify({'status': 'error', 'message': 'Pas de créateur'})
+
+    try:
+        # 1) Récupérer les mouvements du créateur (P135)
+        creator_movements = WikidataAPI.get_movements(creator_qid)
+        creator_movement_qids = set([mov['qid'] for mov in creator_movements])
+
+        condition1 = len(creator_movement_qids) == 1
+
+        # 2) Récupérer toutes les œuvres du créateur qui ont un mouvement direct
+        works_with_direct_movements = WikidataAPI.get_creator_works_with_movements(creator_qid)
+
+        # Extraire tous les mouvements différents trouvés sur les œuvres
+        all_work_movements = set()
+        for work in works_with_direct_movements:
+            all_work_movements.update(work['movement_qids'])
+
+        # Condition 2: aucun mouvement différent sur les œuvres
+        # (soit pas de mouvements du tout, soit uniquement celui/ceux du créateur)
+        condition2 = len(all_work_movements - creator_movement_qids) == 0
+
+        # Déterminer le statut
+        if condition1 and condition2:
+            status = 'green'
+            message = f"✓ Créateur avec 1 seul mouvement ({list(creator_movement_qids)[0] if creator_movement_qids else 'N/A'}), aucune œuvre avec mouvement différent"
+        elif condition1 or condition2:
+            status = 'orange'
+            message = f"⚠ "
+            if condition1:
+                message += f"Créateur avec 1 mouvement ({list(creator_movement_qids)[0]}), "
+            else:
+                message += f"Créateur avec {len(creator_movement_qids)} mouvements, "
+            if condition2:
+                message += "aucune œuvre avec mouvement différent"
+            else:
+                message += f"{len(all_work_movements - creator_movement_qids)} mouvement(s) différent(s) sur les œuvres"
+        else:
+            status = 'red'
+            message = f"✗ Créateur avec {len(creator_movement_qids)} mouvements, {len(all_work_movements - creator_movement_qids)} mouvement(s) différent(s) sur les œuvres"
+
+        return jsonify({
+            'status': 'ok',
+            'flag': status,
+            'message': message,
+            'details': {
+                'creator_movements': list(creator_movement_qids),
+                'work_movements': list(all_work_movements),
+                'different_movements': list(all_work_movements - creator_movement_qids),
+                'condition1': condition1,
+                'condition2': condition2
+            }
+        })
+
+    except Exception as e:
+        logger.error(f"Erreur vérification cohérence créateur: {e}")
+        return jsonify({'status': 'error', 'message': str(e)})
 
 
 @app.route('/skip', methods=['POST'])
@@ -1304,4 +1446,4 @@ if __name__ == '__main__':
     print("   • Catégorie 853 au lieu de 854")
     print("="*60)
 
-    app.run(debug=False, port=5500)
+    app.run(debug=False, port=5000)
