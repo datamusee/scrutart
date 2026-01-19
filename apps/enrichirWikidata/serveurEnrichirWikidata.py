@@ -15,6 +15,7 @@ from typing import Dict, List, Optional
 from extractor_manager import ExtractorManager
 from matcher_manager import MatcherManager
 from wikidata_enrichir import WikidataEnrichir
+from property_matcher import PropertyMatcher
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
@@ -32,6 +33,7 @@ os.makedirs('data/wikidata_cache', exist_ok=True)
 # Initialiser les gestionnaires
 extractor_manager = ExtractorManager('extractors')
 matcher_manager = MatcherManager('matchers')
+property_matcher = PropertyMatcher()
 
 
 class ProcessingManager:
@@ -430,6 +432,39 @@ def cache_stats():
 
     stats = enrichir.get_cache_stats()
     return jsonify(stats)
+
+
+@app.route('/match_properties', methods=['POST'])
+def match_properties():
+    """
+    Matcher les propriétés d'une entité extraite avec des entités Wikidata
+
+    Exemple de requête:
+    {
+        "extracted_data": {
+            "creator": "TOUDOUZE Edouard",
+            "creator_birth": "1848",
+            "creator_death": "1907",
+            "keywords": ["scène historique", "cadavre", "lit"],
+            "depicted_persons": ["Bertrand Du Guesclin"]
+        },
+        "entity_type": "painting"
+    }
+    """
+    data = request.json
+    extracted_data = data.get('extracted_data', {})
+    entity_type = data.get('entity_type', 'painting')
+
+    if not extracted_data:
+        return jsonify({'error': 'Données extraites manquantes'}), 400
+
+    # Matcher toutes les propriétés
+    property_matches = property_matcher.match_all_properties(extracted_data, entity_type)
+
+    return jsonify({
+        'success': True,
+        'property_matches': property_matches
+    })
 
 
 if __name__ == '__main__':

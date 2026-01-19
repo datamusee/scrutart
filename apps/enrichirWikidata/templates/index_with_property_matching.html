@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrichissement Wikidata - Peintures et Artistes</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Enrichissement Wikidata</h1>
+            <nav>
+                <a href="/" class="active">Accueil</a>
+                <a href="/config">Configuration</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <h2>Choisir la source</h2>
+                
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="single-url">URL Unique</button>
+                    <button class="tab-button" data-tab="url-list">Liste d'URLs</button>
+                </div>
+
+                <!-- Onglet URL unique -->
+                <div id="single-url" class="tab-content active">
+                    <div class="input-group">
+                        <label for="extractor-select-single">Extracteur :</label>
+                        <select id="extractor-select-single" class="extractor-select">
+                            <option value="">Auto (détection automatique)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="url-input">URL à traiter :</label>
+                        <input type="url" id="url-input" placeholder="https://exemple.com/peinture" />
+                        <button id="process-url-btn" class="btn-primary">Traiter</button>
+                    </div>
+                </div>
+
+                <!-- Onglet Liste d'URLs -->
+                <div id="url-list" class="tab-content">
+                    <div class="input-group">
+                        <label for="extractor-select-list">Extracteur pour la liste :</label>
+                        <select id="extractor-select-list" class="extractor-select">
+                            <option value="">Auto (détection automatique)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="file-input">Charger un fichier de liste :</label>
+                        <input type="file" id="file-input" accept=".txt,.csv" />
+                        <button id="upload-list-btn" class="btn-primary">Charger</button>
+                    </div>
+                    
+                    <div id="list-info" class="list-info" style="display: none;">
+                        <p>Fichier : <span id="list-filename"></span></p>
+                        <p>URLs : <span id="list-count"></span></p>
+                        <p>Extracteur : <span id="list-extractor"></span></p>
+                        <p>Progression : <span id="list-progress"></span></p>
+                        
+                        <div class="list-controls">
+                            <button id="reset-list-btn" class="btn-secondary">Réinitialiser</button>
+                            <button id="resume-list-btn" class="btn-secondary">Reprendre</button>
+                            <button id="restart-list-btn" class="btn-secondary">Tout retraiter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section de résultats -->
+            <div id="results-section" style="display: none;">
+                <h2>Résultats de l'extraction</h2>
+                
+                <div class="navigation-controls" id="nav-controls" style="display: none;">
+                    <button id="prev-btn" class="btn-secondary">← Précédent</button>
+                    <span id="current-position"></span>
+                    <button id="next-btn" class="btn-secondary">Suivant →</button>
+                </div>
+
+                <div id="content-info" class="content-card">
+                    <h3>Informations extraites</h3>
+                    <div class="extractor-badge" id="extractor-used"></div>
+                    <div id="content-details"></div>
+                    
+                    <!-- Bouton pour matcher les propriétés -->
+                    <div class="property-matching-actions">
+                        <button id="match-properties-btn" class="btn-match">
+                            🔍 Matcher les propriétés avec Wikidata
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Correspondances Wikidata -->
+                <div id="wikidata-matches" class="matches-section">
+                    <h3>Entités Wikidata correspondantes</h3>
+                    <div id="matches-list"></div>
+                    <button id="create-new-btn" class="btn-create">Créer une nouvelle entité</button>
+                </div>
+
+                <!-- Section de Property Matching -->
+                <div id="property-matching-section" class="matches-section" style="display: none;">
+                    <h3>🔗 Associations Propriétés → Wikidata</h3>
+                    <p class="info-text">
+                        Validez les associations proposées entre les propriétés extraites et les entités Wikidata.
+                    </p>
+                    <div id="property-matches-list"></div>
+                    <div class="property-matching-summary">
+                        <button id="validate-all-properties-btn" class="btn-primary" style="display: none;">
+                            Valider toutes les associations
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sections existantes -->
+                <div id="creator-section" class="matches-section" style="display: none;">
+                    <h3>Créateur</h3>
+                    <div id="creator-info"></div>
+                </div>
+
+                <div id="persons-section" class="matches-section" style="display: none;">
+                    <h3>Personnes représentées</h3>
+                    <div id="persons-list"></div>
+                </div>
+
+                <div id="concepts-section" class="matches-section" style="display: none;">
+                    <h3>Concepts et Mots-clés</h3>
+                    <div id="concepts-list"></div>
+                </div>
+
+                <!-- Section de validation -->
+                <div id="validation-section" style="display: none;">
+                    <h3>Validation des propriétés</h3>
+                    <div id="properties-list"></div>
+                    <div class="validation-actions">
+                        <button id="confirm-btn" class="btn-primary">Confirmer</button>
+                        <button id="cancel-btn" class="btn-secondary">Annuler</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section de création d'entité -->
+            <div id="creation-section" style="display: none;">
+                <h2>Création d'une nouvelle entité</h2>
+                <div id="creation-properties"></div>
+                <div class="creation-actions">
+                    <button id="create-confirm-btn" class="btn-primary">Créer l'entité</button>
+                    <button id="create-cancel-btn" class="btn-secondary">Annuler</button>
+                </div>
+            </div>
+
+            <!-- Messages -->
+            <div id="message-area" class="message-area"></div>
+        </main>
+    </div>
+
+    <script>
+        // État de l'application
+        let appState = {
+            mode: 'single',
+            currentListFile: null,
+            currentIndex: 0,
+            totalUrls: 0,
+            extractors: [],
+            currentContentInfo: null,
+            currentEntityType: null,
+            propertyMatches: null,
+            validatedProperties: {}
+        };
+
+        // [... le reste du JavaScript existant ...]
+        // Pour la concision, je vais ajouter seulement les nouvelles fonctions
+
+        // Bouton pour matcher les propriétés
+        document.getElementById('match-properties-btn').addEventListener('click', async () => {
+            if (!appState.currentContentInfo) {
+                showMessage('Aucune donnée à matcher', 'error');
+                return;
+            }
+            
+            showMessage('Recherche des correspondances...', 'info');
+            
+            try {
+                const response = await fetch('/match_properties', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        extracted_data: appState.currentContentInfo,
+                        entity_type: appState.currentEntityType || 'painting'
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Erreur lors du matching des propriétés');
+                }
+                
+                const data = await response.json();
+                appState.propertyMatches = data.property_matches;
+                
+                displayPropertyMatches(data.property_matches);
+                showMessage('Correspondances trouvées !', 'success');
+            } catch (error) {
+                showMessage('Erreur: ' + error.message, 'error');
+            }
+        });
+
+        // Afficher les property matches
+        function displayPropertyMatches(propertyMatches) {
+            const section = document.getElementById('property-matching-section');
+            const listDiv = document.getElementById('property-matches-list');
+            
+            if (!propertyMatches || Object.keys(propertyMatches).length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+            
+            section.style.display = 'block';
+            let html = '';
+            
+            // Créateur
+            if (propertyMatches.creator && propertyMatches.creator.length > 0) {
+                html += generatePropertyMatchSection('Créateur', 'creator', propertyMatches.creator);
+            }
+            
+            // Personnes représentées
+            if (propertyMatches.depicted_persons) {
+                for (const [person, matches] of Object.entries(propertyMatches.depicted_persons)) {
+                    html += generatePropertyMatchSection(
+                        `Personne: ${person}`, 
+                        `depicted_person_${person}`, 
+                        matches
+                    );
+                }
+            }
+            
+            // Mots-clés
+            if (propertyMatches.keywords) {
+                for (const [keyword, matches] of Object.entries(propertyMatches.keywords)) {
+                    html += generatePropertyMatchSection(
+                        `Concept: ${keyword}`, 
+                        `keyword_${keyword}`, 
+                        matches
+                    );
+                }
+            }
+            
+            // Matériau
+            if (propertyMatches.material && propertyMatches.material.length > 0) {
+                html += generatePropertyMatchSection('Matériau', 'material', propertyMatches.material);
+            }
+            
+            // Collection
+            if (propertyMatches.collection && propertyMatches.collection.length > 0) {
+                html += generatePropertyMatchSection('Collection', 'collection', propertyMatches.collection);
+            }
+            
+            // Mouvement
+            if (propertyMatches.movement && propertyMatches.movement.length > 0) {
+                html += generatePropertyMatchSection('Mouvement', 'movement', propertyMatches.movement);
+            }
+            
+            listDiv.innerHTML = html;
+            
+            // Afficher le bouton de validation globale
+            if (html) {
+                document.getElementById('validate-all-properties-btn').style.display = 'block';
+            }
+        }
+
+        // Générer une section de property match
+        function generatePropertyMatchSection(title, propertyKey, matches) {
+            let html = `
+                <div class="property-match-group">
+                    <h4>${title}</h4>
+                    <div class="property-match-options">
+            `;
+            
+            matches.forEach((match, index) => {
+                const matchId = `${propertyKey}_${index}`;
+                html += `
+                    <div class="property-match-option" data-property="${propertyKey}" data-match-id="${matchId}">
+                        <div class="match-header">
+                            <input type="radio" 
+                                   name="prop_${propertyKey}" 
+                                   id="${matchId}" 
+                                   value="${match.id}"
+                                   data-property="${match.property}"
+                                   data-property-label="${match.property_label}">
+                            <label for="${matchId}">
+                                <strong>${match.label}</strong> (${match.id})
+                                <span class="confidence-badge confidence-${getConfidenceClass(match.confidence)}">
+                                    ${(match.confidence * 100).toFixed(0)}%
+                                </span>
+                            </label>
+                        </div>
+                        ${match.description ? `<p class="match-desc">${match.description}</p>` : ''}
+                        ${match.birth || match.death ? `
+                            <p class="match-dates">
+                                ${match.birth ? `Naissance: ${match.birth}` : ''}
+                                ${match.death ? ` | Mort: ${match.death}` : ''}
+                            </p>
+                        ` : ''}
+                        <a href="${match.url}" target="_blank" class="match-link">Voir dans Wikidata →</a>
+                    </div>
+                `;
+            });
+            
+            html += `
+                        <div class="property-match-option">
+                            <input type="radio" 
+                                   name="prop_${propertyKey}" 
+                                   id="${propertyKey}_none" 
+                                   value="none">
+                            <label for="${propertyKey}_none">
+                                <em>Aucune correspondance / Ne pas ajouter</em>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            return html;
+        }
+
+        // Classe de confiance
+        function getConfidenceClass(confidence) {
+            if (confidence >= 0.9) return 'high';
+            if (confidence >= 0.7) return 'medium';
+            return 'low';
+        }
+
+        // Valider toutes les propriétés sélectionnées
+        document.getElementById('validate-all-properties-btn').addEventListener('click', () => {
+            const selectedProperties = [];
+            
+            // Parcourir tous les radio buttons sélectionnés
+            document.querySelectorAll('.property-match-option input[type="radio"]:checked').forEach(radio => {
+                if (radio.value !== 'none') {
+                    selectedProperties.push({
+                        property: radio.dataset.property,
+                        property_label: radio.dataset.propertyLabel,
+                        entity_id: radio.value
+                    });
+                }
+            });
+            
+            if (selectedProperties.length === 0) {
+                showMessage('Aucune propriété sélectionnée', 'warning');
+                return;
+            }
+            
+            appState.validatedProperties = selectedProperties;
+            
+            showMessage(`${selectedProperties.length} propriété(s) validée(s) et prête(s) à être ajoutée(s)`, 'success');
+            
+            // Afficher le récapitulatif
+            displayPropertySummary(selectedProperties);
+        });
+
+        // Afficher le récapitulatif des propriétés validées
+        function displayPropertySummary(properties) {
+            const summaryDiv = document.querySelector('.property-matching-summary');
+            
+            let html = `
+                <div class="property-summary">
+                    <h4>Propriétés à ajouter :</h4>
+                    <ul>
+            `;
+            
+            properties.forEach(prop => {
+                html += `<li><strong>${prop.property_label}</strong>: ${prop.entity_id}</li>`;
+            });
+            
+            html += `
+                    </ul>
+                    <p class="info-text">
+                        Ces propriétés seront ajoutées lorsque vous confirmerez l'enrichissement de l'entité.
+                    </p>
+                </div>
+            `;
+            
+            summaryDiv.innerHTML += html;
+        }
+
+        // Afficher un message
+        function showMessage(message, type) {
+            const div = document.createElement('div');
+            div.className = 'message message-' + type;
+            div.textContent = message;
+            document.getElementById('message-area').appendChild(div);
+            setTimeout(() => div.remove(), 5000);
+        }
+
+        // Charger les extracteurs au démarrage
+        async function loadExtractors() {
+            try {
+                const response = await fetch('/list_extractors');
+                const data = await response.json();
+                appState.extractors = data.extractors;
+                
+                // Remplir les selects
+                const selects = document.querySelectorAll('.extractor-select');
+                selects.forEach(select => {
+                    data.extractors.forEach(ext => {
+                        const option = document.createElement('option');
+                        option.value = ext.name;
+                        option.textContent = `${ext.name} - ${ext.description}`;
+                        select.appendChild(option);
+                    });
+                });
+            } catch (error) {
+                console.error('Erreur chargement extracteurs:', error);
+            }
+        }
+
+        // Charger au démarrage
+        loadExtractors();
+
+        // [... Le reste du code JavaScript existant ...]
+    </script>
+</body>
+</html>
