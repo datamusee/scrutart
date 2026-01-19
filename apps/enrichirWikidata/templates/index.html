@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrichissement Wikidata - Peintures et Artistes</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Enrichissement Wikidata</h1>
+            <nav>
+                <a href="/" class="active">Accueil</a>
+                <a href="/config">Configuration</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <h2>Choisir la source</h2>
+                
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="single-url">URL Unique</button>
+                    <button class="tab-button" data-tab="url-list">Liste d'URLs</button>
+                </div>
+
+                <!-- Onglet URL unique -->
+                <div id="single-url" class="tab-content active">
+                    <div class="input-group">
+                        <label for="extractor-select-single">Extracteur :</label>
+                        <select id="extractor-select-single" class="extractor-select">
+                            <option value="">Auto (détection automatique)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="url-input">URL à traiter :</label>
+                        <input type="url" id="url-input" placeholder="https://exemple.com/peinture" />
+                        <button id="process-url-btn" class="btn-primary">Traiter</button>
+                    </div>
+                </div>
+
+                <!-- Onglet Liste d'URLs -->
+                <div id="url-list" class="tab-content">
+                    <div class="input-group">
+                        <label for="extractor-select-list">Extracteur pour la liste :</label>
+                        <select id="extractor-select-list" class="extractor-select">
+                            <option value="">Auto (détection automatique)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="file-input">Charger un fichier de liste :</label>
+                        <input type="file" id="file-input" accept=".txt,.csv" />
+                        <button id="upload-list-btn" class="btn-primary">Charger</button>
+                    </div>
+                    
+                    <div id="list-info" class="list-info" style="display: none;">
+                        <p>Fichier : <span id="list-filename"></span></p>
+                        <p>URLs : <span id="list-count"></span></p>
+                        <p>Extracteur : <span id="list-extractor"></span></p>
+                        <p>Progression : <span id="list-progress"></span></p>
+                        
+                        <div class="list-controls">
+                            <button id="reset-list-btn" class="btn-secondary">Réinitialiser</button>
+                            <button id="resume-list-btn" class="btn-secondary">Reprendre</button>
+                            <button id="restart-list-btn" class="btn-secondary">Tout retraiter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section de résultats -->
+            <div id="results-section" style="display: none;">
+                <h2>Résultats de l'extraction</h2>
+                
+                <div class="navigation-controls" id="nav-controls" style="display: none;">
+                    <button id="prev-btn" class="btn-secondary">← Précédent</button>
+                    <span id="current-position"></span>
+                    <button id="next-btn" class="btn-secondary">Suivant →</button>
+                </div>
+
+                <div id="content-info" class="content-card">
+                    <h3>Informations extraites</h3>
+                    <div class="extractor-badge" id="extractor-used"></div>
+                    <div id="content-details"></div>
+                </div>
+
+                <!-- Correspondances Wikidata -->
+                <div id="wikidata-matches" class="matches-section">
+                    <h3>Entités Wikidata correspondantes</h3>
+                    <div id="matches-list"></div>
+                    <button id="create-new-btn" class="btn-create">Créer une nouvelle entité</button>
+                </div>
+
+                <!-- Créateur -->
+                <div id="creator-section" class="matches-section" style="display: none;">
+                    <h3>Créateur</h3>
+                    <div id="creator-info"></div>
+                </div>
+
+                <!-- Personnes représentées -->
+                <div id="persons-section" class="matches-section" style="display: none;">
+                    <h3>Personnes représentées</h3>
+                    <div id="persons-list"></div>
+                </div>
+
+                <!-- Concepts/Mots-clés -->
+                <div id="concepts-section" class="matches-section" style="display: none;">
+                    <h3>Concepts et Mots-clés</h3>
+                    <div id="concepts-list"></div>
+                </div>
+
+                <!-- Section de validation -->
+                <div id="validation-section" style="display: none;">
+                    <h3>Validation des propriétés</h3>
+                    <div id="properties-list"></div>
+                    <div class="validation-actions">
+                        <button id="confirm-btn" class="btn-primary">Confirmer</button>
+                        <button id="cancel-btn" class="btn-secondary">Annuler</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section de création d'entité -->
+            <div id="creation-section" style="display: none;">
+                <h2>Création d'une nouvelle entité</h2>
+                <div id="creation-properties"></div>
+                <div class="creation-actions">
+                    <button id="create-confirm-btn" class="btn-primary">Créer l'entité</button>
+                    <button id="create-cancel-btn" class="btn-secondary">Annuler</button>
+                </div>
+            </div>
+
+            <!-- Messages -->
+            <div id="message-area" class="message-area"></div>
+        </main>
+    </div>
+
+    <script>
+        // État de l'application
+        let appState = {
+            mode: 'single',
+            currentListFile: null,
+            currentIndex: 0,
+            totalUrls: 0,
+            extractors: []
+        };
+
+        // Charger les extracteurs disponibles
+        async function loadExtractors() {
+            try {
+                const response = await fetch('/list_extractors');
+                const data = await response.json();
+                appState.extractors = data.extractors;
+                
+                // Remplir les selects
+                const selects = document.querySelectorAll('.extractor-select');
+                selects.forEach(select => {
+                    data.extractors.forEach(ext => {
+                        const option = document.createElement('option');
+                        option.value = ext.name;
+                        option.textContent = `${ext.name} - ${ext.description}`;
+                        select.appendChild(option);
+                    });
+                });
+            } catch (error) {
+                console.error('Erreur chargement extracteurs:', error);
+            }
+        }
+
+        // Charger les extracteurs au démarrage
+        loadExtractors();
+
+        // Gestion des onglets
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                button.classList.add('active');
+                document.getElementById(button.dataset.tab).classList.add('active');
+                appState.mode = button.dataset.tab === 'single-url' ? 'single' : 'list';
+            });
+        });
+
+        // Traiter URL unique
+        document.getElementById('process-url-btn').addEventListener('click', async () => {
+            const url = document.getElementById('url-input').value;
+            const extractor = document.getElementById('extractor-select-single').value;
+            
+            if (!url) {
+                showMessage('Veuillez entrer une URL', 'error');
+                return;
+            }
+            
+            showMessage('Traitement en cours...', 'info');
+            
+            try {
+                const response = await fetch('/process_url', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        url: url,
+                        extractor: extractor || null
+                    })
+                });
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Erreur lors du traitement');
+                }
+                
+                const data = await response.json();
+                displayResults(data);
+                showMessage('Traitement terminé', 'success');
+            } catch (error) {
+                showMessage('Erreur: ' + error.message, 'error');
+            }
+        });
+
+        // Charger une liste
+        document.getElementById('upload-list-btn').addEventListener('click', async () => {
+            const fileInput = document.getElementById('file-input');
+            const file = fileInput.files[0];
+            const extractor = document.getElementById('extractor-select-list').value;
+            
+            if (!file) {
+                showMessage('Veuillez sélectionner un fichier', 'error');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('file', file);
+            if (extractor) {
+                formData.append('extractor', extractor);
+            }
+            
+            showMessage('Chargement en cours...', 'info');
+            
+            try {
+                const response = await fetch('/upload_list', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Erreur lors du chargement');
+                }
+                
+                const data = await response.json();
+                appState.currentListFile = data.filename;
+                appState.totalUrls = data.total_urls;
+                appState.currentIndex = data.state.current_index;
+                
+                updateListInfo(data.state);
+                showMessage('Liste chargée avec succès', 'success');
+                
+                // Traiter le premier élément
+                processListItem(appState.currentIndex);
+            } catch (error) {
+                showMessage('Erreur: ' + error.message, 'error');
+            }
+        });
+
+        // Traiter un élément de liste
+        async function processListItem(index) {
+            if (!appState.currentListFile) return;
+            
+            showMessage('Traitement en cours...', 'info');
+            
+            try {
+                const response = await fetch('/process_list_item', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        list_filename: appState.currentListFile,
+                        index: index
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Erreur lors du traitement');
+                }
+                
+                const data = await response.json();
+                appState.currentIndex = index;
+                displayResults(data);
+                
+                // Afficher les contrôles de navigation
+                document.getElementById('nav-controls').style.display = 'flex';
+                document.getElementById('current-position').textContent = 
+                    `${index + 1} / ${appState.totalUrls}`;
+                
+                showMessage('Traitement terminé', 'success');
+            } catch (error) {
+                showMessage('Erreur: ' + error.message, 'error');
+            }
+        }
+
+        // Navigation
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            if (appState.currentIndex > 0) {
+                processListItem(appState.currentIndex - 1);
+            }
+        });
+
+        document.getElementById('next-btn').addEventListener('click', () => {
+            if (appState.currentIndex < appState.totalUrls - 1) {
+                processListItem(appState.currentIndex + 1);
+            }
+        });
+
+        // Afficher les résultats
+        function displayResults(data) {
+            document.getElementById('results-section').style.display = 'block';
+            
+            // Afficher l'extracteur utilisé
+            const extractorBadge = document.getElementById('extractor-used');
+            const extractorName = data.content_info.extractor || 'Inconnu';
+            extractorBadge.textContent = `Extracteur: ${extractorName}`;
+            extractorBadge.style.display = 'block';
+            
+            // Afficher les informations
+            displayContentInfo(data.content_info);
+            displayWikidataMatches(data.wikidata_matches || []);
+            displayCreatorInfo(data.creator_match);
+            displayPersonsInfo(data.persons_mapping || {});
+            displayConceptsInfo(data.concepts_mapping || {});
+        }
+
+        // Afficher les informations de contenu
+        function displayContentInfo(info) {
+            const detailsDiv = document.getElementById('content-details');
+            let html = '<table class="info-table">';
+            
+            for (const [key, value] of Object.entries(info)) {
+                if (key === 'url' || key === 'extractor') continue;
+                
+                let displayValue = value;
+                if (key === 'image_url' && value) {
+                    displayValue = `<img src="${value}" alt="Image" style="max-width: 200px;" />`;
+                } else if (Array.isArray(value)) {
+                    displayValue = value.join(', ');
+                } else if (typeof value === 'object' && value !== null) {
+                    displayValue = JSON.stringify(value, null, 2);
+                } else if (typeof value === 'string' && value.length > 200) {
+                    displayValue = value.substring(0, 200) + '...';
+                }
+                
+                html += `
+                    <tr>
+                        <td><strong>${key}</strong></td>
+                        <td>${displayValue || 'N/A'}</td>
+                    </tr>
+                `;
+            }
+            
+            html += '</table>';
+            detailsDiv.innerHTML = html;
+        }
+
+        // Afficher les correspondances Wikidata
+        function displayWikidataMatches(matches) {
+            const matchesList = document.getElementById('matches-list');
+            
+            if (matches.length === 0) {
+                matchesList.innerHTML = '<p class="no-matches">Aucune correspondance trouvée</p>';
+                return;
+            }
+            
+            let html = '';
+            matches.forEach((match, index) => {
+                html += `
+                    <div class="match-card">
+                        <h4>
+                            <a href="${match.url}" target="_blank">${match.label || match.id}</a>
+                        </h4>
+                        <p class="match-description">${match.description || 'Pas de description'}</p>
+                        <div class="match-properties">
+                            ${Object.entries(match.properties || {}).map(([prop, values]) => `
+                                <div class="property">
+                                    <strong>${prop}:</strong> ${Array.isArray(values) ? values.join(', ') : values}
+                                </div>
+                            `).join('')}
+                        </div>
+                        <button class="btn-secondary select-match" data-entity-id="${match.id}">
+                            Sélectionner cette entité
+                        </button>
+                    </div>
+                `;
+            });
+            
+            matchesList.innerHTML = html;
+        }
+
+        // Afficher les infos du créateur
+        function displayCreatorInfo(creator) {
+            const section = document.getElementById('creator-section');
+            const infoDiv = document.getElementById('creator-info');
+            
+            if (!creator) {
+                section.style.display = 'none';
+                return;
+            }
+            
+            section.style.display = 'block';
+            infoDiv.innerHTML = `
+                <div class="match-card">
+                    <h4><a href="${creator.url}" target="_blank">${creator.label}</a></h4>
+                    <p>${creator.description || ''}</p>
+                </div>
+            `;
+        }
+
+        // Afficher les personnes représentées
+        function displayPersonsInfo(persons) {
+            const section = document.getElementById('persons-section');
+            const listDiv = document.getElementById('persons-list');
+            
+            if (Object.keys(persons).length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+            
+            section.style.display = 'block';
+            let html = '';
+            for (const [name, entity] of Object.entries(persons)) {
+                if (entity) {
+                    html += `
+                        <div class="concept-item">
+                            <span class="concept-name">${name}</span>
+                            <span class="concept-arrow">→</span>
+                            <a href="${entity.url}" target="_blank" class="concept-match">
+                                ${entity.label} (${entity.id})
+                            </a>
+                        </div>
+                    `;
+                }
+            }
+            listDiv.innerHTML = html;
+        }
+
+        // Afficher les concepts
+        function displayConceptsInfo(concepts) {
+            const section = document.getElementById('concepts-section');
+            const listDiv = document.getElementById('concepts-list');
+            
+            if (Object.keys(concepts).length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+            
+            section.style.display = 'block';
+            let html = '';
+            for (const [concept, entity] of Object.entries(concepts)) {
+                if (entity) {
+                    html += `
+                        <div class="concept-item">
+                            <span class="concept-name">${concept}</span>
+                            <span class="concept-arrow">→</span>
+                            <a href="${entity.url}" target="_blank" class="concept-match">
+                                ${entity.label} (${entity.id})
+                            </a>
+                        </div>
+                    `;
+                } else {
+                    html += `
+                        <div class="concept-item">
+                            <span class="concept-name">${concept}</span>
+                            <span class="concept-arrow">→</span>
+                            <span class="concept-nomatch">Non trouvé</span>
+                        </div>
+                    `;
+                }
+            }
+            listDiv.innerHTML = html;
+        }
+
+        // Mettre à jour les infos de liste
+        function updateListInfo(state) {
+            const listInfo = document.getElementById('list-info');
+            listInfo.style.display = 'block';
+            
+            document.getElementById('list-filename').textContent = state.list_file;
+            document.getElementById('list-count').textContent = state.total_urls;
+            document.getElementById('list-extractor').textContent = state.extractor || 'Auto';
+            document.getElementById('list-progress').textContent = 
+                `${state.current_index} / ${state.total_urls}`;
+        }
+
+        // Afficher un message
+        function showMessage(message, type) {
+            const div = document.createElement('div');
+            div.className = 'message message-' + type;
+            div.textContent = message;
+            document.getElementById('message-area').appendChild(div);
+            setTimeout(() => div.remove(), 5000);
+        }
+    </script>
+</body>
+</html>

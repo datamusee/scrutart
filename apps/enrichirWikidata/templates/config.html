@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration - Enrichissement Wikidata</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Configuration</h1>
+            <nav>
+                <a href="/">Accueil</a>
+                <a href="/config" class="active">Configuration</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="config-section">
+                <h2>Identifiants Wikidata</h2>
+                <p class="info-text">
+                    Pour pouvoir créer et modifier des entités Wikidata, vous devez fournir 
+                    vos identifiants de compte Wikidata.
+                </p>
+                
+                <form id="config-form">
+                    <div class="form-group">
+                        <label for="username">Nom d'utilisateur Wikidata :</label>
+                        <input type="text" 
+                               id="username" 
+                               name="username" 
+                               required />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Mot de passe :</label>
+                        <input type="password" 
+                               id="password" 
+                               name="password" 
+                               required />
+                        <small>Note : Pour une utilisation en production, utilisez OAuth</small>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Enregistrer</button>
+                    </div>
+                </form>
+                
+                <div id="config-message" class="message-area"></div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('config-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            
+            try {
+                const response = await fetch('/config', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                showMessage('Configuration sauvegardée avec succès', 'success');
+            } catch (error) {
+                showMessage('Erreur : ' + error.message, 'error');
+            }
+        });
+        
+        function showMessage(message, type) {
+            const messageArea = document.getElementById('config-message');
+            messageArea.innerHTML = '<div class="message message-' + type + '">' + message + '</div>';
+            setTimeout(() => { messageArea.innerHTML = ''; }, 5000);
+        }
+    </script>
+</body>
+</html>
