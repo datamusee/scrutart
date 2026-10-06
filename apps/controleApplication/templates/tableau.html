@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block contenu %}
+<header>
+  <h1>Applications pilotées</h1>
+  <form method="post" action="{{ url_for('deconnexion') }}">
+    <input type="hidden" name="csrf" value="{{ csrf }}">
+    <button type="submit" class="secondaire">Se déconnecter</button>
+  </form>
+</header>
+{% for c in cibles %}
+<section class="cible">
+  <h2>{{ c.libelle }} <small>({{ c.nom }})</small></h2>
+  <p>Statut : <strong>{{ c.statut }}</strong>{% if c.sante %} — santé : <strong>{{ c.sante }}</strong>{% endif %}</p>
+  <div class="actions">
+  {% for action, libelle in c.actions %}
+    <form method="post" action="{{ url_for('piloter', nom=c.nom, action=action) }}">
+      <input type="hidden" name="csrf" value="{{ csrf }}">
+      {% if action != 'start' %}
+        <input name="confirm" placeholder="tapez « {{ c.nom }} »" required aria-label="Confirmation">
+      {% endif %}
+      <button type="submit" class="{{ action }}">{{ libelle }}</button>
+    </form>
+  {% endfor %}
+  </div>
+</section>
+{% endfor %}
+{% endblock %}
