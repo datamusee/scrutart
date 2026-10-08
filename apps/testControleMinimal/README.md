@@ -1,16 +1,33 @@
-# testControleMinimal — test rapide, SANS contrôle d'accès
+# testControleMinimal — test rapide, SANS contrôle d'accès, avec diagnostics
 
 Sert uniquement à vérifier que `cloudlinux-selector` permet d'arrêter, démarrer
 et redémarrer une autre application Python sur o2switch. **À supprimer après le test.**
 
+## Installation
+
 1. Copier ce dossier dans `~/testControleMinimal`.
 2. cPanel › Setup Python App › Create application : *Application root* `testControleMinimal`,
-   un sous-domaine ou une URL peu devinable, *startup file* `passenger_wsgi.py`,
-   *entry point* `application`.
-3. Ajouter la variable d'environnement `CIBLE_APP_ROOT` = dossier de l'application à piloter
-   (tel qu'affiché dans Setup Python App, ex. `scrutart`), puis `pip install -r requirements.txt`
-   dans le virtualenv et *Restart*.
-4. Ouvrir l'URL : la page affiche la sortie brute de `cloudlinux-selector get` (statut de toutes
-   les applications) ; les boutons `start`, `stop`, `restart` affichent la commande, le code retour
-   et la sortie.
-5. **Supprimer l'application** dans Setup Python App une fois le test fini.
+   une URL peu devinable, *startup file* `passenger_wsgi.py`, *entry point* `application`.
+3. Variable d'environnement `CIBLE_APP_ROOT` = dossier de l'application à piloter
+   (exactement la valeur *Application root* de Setup Python App, ex. `scrutart`),
+   puis `pip install -r requirements.txt` dans le virtualenv et **Restart**
+   (une variable ajoutée n'est prise en compte qu'après le redémarrage).
+
+## Ce que montre la page
+
+1. **Environnement** : utilisateur, HOME, valeur exacte de `CIBLE_APP_ROOT` (ou « NON DÉFINIE »),
+   existence du dossier cible, présence et droits de `cloudlinux-selector`.
+2. **Applications vues par le sélecteur** : tableau de toutes les applications Python du compte
+   (app_root, statut, URL…), la cible surlignée, avec des boutons start / stop / restart
+   pour chacune. Avertissement si `CIBLE_APP_ROOT` ne correspond à aucune.
+3. **Processus** de la cible (`ps`).
+4. **Sortie brute** de `cloudlinux-selector get` (valeurs des variables d'environnement masquées).
+5. Même commande **sans nettoyer l'environnement** : si §4 et §5 diffèrent, c'est le virtualenv
+   de cette application qui perturbe le sélecteur.
+
+Après une action : statut / processus / réponse HTTP de la cible **avant et après**, commande exacte,
+code retour, stdout, stderr. Tout est aussi ajouté à `diagnostic.log` (lien « journal »).
+
+## Fin du test
+
+Supprimer l'application dans Setup Python App et le dossier `~/testControleMinimal`.
