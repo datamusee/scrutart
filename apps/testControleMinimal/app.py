@@ -31,14 +31,75 @@ app = Flask(__name__)
 ICI = Path(__file__).resolve().parent
 JOURNAL = ICI / "diagnostic.log"
 HOME = Path(os.environ.get("HOME") or Path.home())
-CIBLE_BRUTE = os.environ.get("CIBLE_APP_ROOT")
-CIBLE = (CIBLE_BRUTE or "").strip().strip("/")
+FICHIER_CIBLE = ICI / "cible.txt"
 SELECTOR = shutil.which("cloudlinux-selector") or "/usr/sbin/cloudlinux-selector"
 ACTIONS = ("start", "stop", "restart")
 MASQUE = "***masqué***"
 
 
 # ------------------------------------------------------------------ outils
+
+def lire_cible():
+    """Renvoie (valeur brute, source) de CIBLE_APP_ROOT.
+
+    Les variables saisies dans Setup Python App sont écrites dans .htaccess
+    (SetEnv) : selon la configuration, Passenger les place dans os.environ ou
+    seulement dans l'environnement WSGI de chaque requête (request.environ).
+    On cherche donc aux deux endroits, puis dans le fichier cible.txt.
+    """
+    if os.environ.get("CIBLE_APP_ROOT"):
+        return os.environ["CIBLE_APP_ROOT"], "os.environ"
+    try:
+        valeur = request.environ.get("CIBLE_APP_ROOT")
+    except RuntimeError:  # hors requête
+        valeur = None
+    if valeur:
+        return valeur, "request.environ (SetEnv du .htaccess)"
+    if FICHIER_CIBLE.exists():
+        return FICHIER_CIBLE.read_text(encoding="utf-8").strip(), f"fichier {FICHIER_CIBLE}"
+    return None, None
+
+
+def nom_cible():
+    return (lire_cible()[0] or "").strip().strip("/")
+
+
+def htaccess_mentionnant(nom):
+    """Lignes des .htaccess du compte qui mentionnent la variable."""
+    trouve = []
+    for motif in (".htaccess", "*/.htaccess", "public_html/*/.htaccess", "*/public_html/.htaccess"):
+        for f in HOME.glob(motif):
+            try:
+                for n, ligne in enumerate(f.read_text(encoding="utf-8", errors="replace").splitlines(), 1):
+                    if nom in ligne:
+                        trouve.append(f"{f}:{n}: {ligne.strip()}")
+            except OSError as ex:
+                trouve.append(f"{f}: illisible ({ex})")
+    return "\n".join(trouve) or "aucun .htaccess ne mentionne " + nom
+
+
+def bloc_env_htaccess():
+    """Contexte autour du bloc de variables CloudLinux dans le .htaccess (noms seulement)."""
+    sorties = []
+    for motif in (".htaccess", "*/.htaccess", "public_html/*/.htaccess", "*/public_html/.htaccess"):
+        for f in HOME.glob(motif):
+            try:
+                lignes = f.read_text(encoding="utf-8", errors="replace").splitlines()
+            except OSError:
+                continue
+            if not any("CIBLE_APP_ROOT" in l or "testControleMinimal" in l for l in lignes):
+                continue
+            extrait = []
+            for l in lignes:
+                l = l.strip()
+                if l.startswith(("SetEnv", "PassengerEnvVar")):
+                    morceaux = l.split(None, 2)
+                    l = " ".join(morceaux[:2]) + (" <valeur>" if len(morceaux) > 2 and morceaux[1] != "CIBLE_APP_ROOT"
+                                                  else (" " + morceaux[2] if len(morceaux) > 2 else ""))
+                if l.startswith(("#", "<", "SetEnv", "PassengerEnvVar", "Passenger")):
+                    extrait.append(l)
+            sorties.append(f"--- {f}\n" + "\n".join(extrait))
+    return "\n".join(sorties) or "aucun .htaccess pertinent trouvé"
 
 def journaliser(texte):
     with open(JOURNAL, "a", encoding="utf-8") as f:
@@ -185,7 +246,11 @@ def bloc_commande(r):
 
 
 def section_environnement():
+    brute, source = lire_cible()
+    CIBLE = nom_cible()
     dossier = HOME / CIBLE if CIBLE else None
+    noms_os = sorted(k for k in os.environ if "CIBLE" in k)
+    noms_req = sorted(k for k in request.environ if "CIBLE" in k)
     sel = Path(SELECTOR)
     lignes = [
         ("Utilisateur", f"{getpass.getuser()} (uid {os.getuid()})"),
@@ -193,8 +258,12 @@ def section_environnement():
         ("Dossier de cette app", ICI),
         ("Python", sys.executable),
         ("PATH", os.environ.get("PATH")),
-        ("CIBLE_APP_ROOT (brut)", repr(CIBLE_BRUTE) if CIBLE_BRUTE is not None
-         else "NON DÉFINIE — définir la variable puis Restart de cette application"),
+        ("CIBLE_APP_ROOT (brut)", repr(brute) if brute is not None
+         else "NON DÉFINIE — voir les lignes suivantes ; contournement : créer le fichier cible.txt"),
+        ("Source de la valeur", source or "-"),
+        ("Variables *CIBLE* dans os.environ", noms_os or "aucune"),
+        ("Variables *CIBLE* dans request.environ", noms_req or "aucune"),
+        ("Fichier cible.txt (secours)", f"{FICHIER_CIBLE} — {'présent' if FICHIER_CIBLE.exists() else 'absent'}"),
         ("CIBLE_APP_ROOT (normalisé)", repr(CIBLE)),
         ("Dossier cible", f"{dossier} — {'existe' if dossier and dossier.is_dir() else 'INTROUVABLE'}"
          if dossier else "-"),
@@ -205,6 +274,7 @@ def section_environnement():
 
 
 def section_applications(r):
+    CIBLE = nom_cible()
     apps = applications(r.get("json"))
     if not apps:
         return "<p class='ko'>Aucune application trouvée dans la sortie de <code>get</code> (voir la sortie brute plus bas).</p>"
@@ -251,8 +321,14 @@ def accueil():
     contenu = [
         "<h1>Diagnostic de pilotage</h1>",
         "<h2>1. Environnement</h2>", section_environnement(),
+        "<h2>1 bis. .htaccess mentionnant CIBLE_APP_ROOT</h2>",
+        f"<pre>{e(htaccess_mentionnant('CIBLE_APP_ROOT'))}</pre>",
+        "<details><summary>Configuration Passenger / variables dans ces .htaccess "
+        "(valeurs des autres variables masquées)</summary>",
+        f"<pre>{e(bloc_env_htaccess())}</pre></details>",
         "<h2>2. Applications vues par cloudlinux-selector</h2>", section_applications(r),
     ]
+    CIBLE = nom_cible()
     if CIBLE:
         contenu += [f"<h2>3. Cible « {e(CIBLE)} » : processus</h2><pre>{e(processus(CIBLE))}</pre>"]
     contenu += [

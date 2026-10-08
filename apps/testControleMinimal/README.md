@@ -13,10 +13,18 @@ et redémarrer une autre application Python sur o2switch. **À supprimer après 
    puis `pip install -r requirements.txt` dans le virtualenv et **Restart**
    (une variable ajoutée n'est prise en compte qu'après le redémarrage).
 
+   Setup Python App écrit les variables dans le `.htaccess` (`SetEnv`) ; selon la configuration,
+   elles arrivent dans `os.environ` ou seulement dans chaque requête (`request.environ`).
+   L'application cherche aux deux endroits. **Secours** : créer un fichier `cible.txt` dans
+   `~/testControleMinimal` contenant juste le nom du dossier cible (ex. `scrutart`).
+
 ## Ce que montre la page
 
-1. **Environnement** : utilisateur, HOME, valeur exacte de `CIBLE_APP_ROOT` (ou « NON DÉFINIE »),
-   existence du dossier cible, présence et droits de `cloudlinux-selector`.
+1. **Environnement** : utilisateur, HOME, valeur exacte de `CIBLE_APP_ROOT` et d'où elle vient
+   (os.environ, request.environ ou cible.txt), existence du dossier cible, présence et droits
+   de `cloudlinux-selector`.
+   **1 bis** : les `.htaccess` du compte qui mentionnent `CIBLE_APP_ROOT` et leur bloc de
+   configuration Passenger / variables (valeurs des autres variables masquées).
 2. **Applications vues par le sélecteur** : tableau de toutes les applications Python du compte
    (app_root, statut, URL…), la cible surlignée, avec des boutons start / stop / restart
    pour chacune. Avertissement si `CIBLE_APP_ROOT` ne correspond à aucune.
